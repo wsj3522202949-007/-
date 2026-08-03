@@ -1,0 +1,100 @@
+---
+id: tool-07300
+type: tool
+area: 库
+status: active
+tags: [Python, 协议宽松, 本地优先, 英文文档, 本地写作]
+title: gformer
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/hkuds/gformer
+created: 2026-07-18
+updated: 2026-07-18
+no: 7300
+category: 画龙补充 / 扩容入库 — 补充源
+repo: hkuds/gformer
+stars: 71
+url: https://github.com/hkuds/gformer
+tier: "A"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls: []
+related:
+  - methods/QUICK_START.md
+---
+
+# hkuds/gformer
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/hkuds/gformer
+- **Stars**：71
+- **语言**：Python
+- **License**：Apache-2.0
+- **Topics**：collaborative-filtering, graph-neural-networks, graph-representation-learning, graph-transformer, recommender-systems
+- **GitHub 描述**：[SIGIR'2023] "GFormer: Graph Transformer for Recommendation"
+- **本地描述**：gformer
+- **拉取时间**：2026-07-25 19:17:06
+
+---
+
+# Graph Transformer for Recommendation
+This is the PyTorch implementation for GFormer model proposed in this paper:
+
+ >**Graph Transformer for Recommendation**  
+ > Chaoliu Li, Lianghao Xia, Xubin Ren, Yaowen Ye, Yong Xu, Chao Huang*\
+ >*SIGIR 2023*
+ 
+## Introduction
+This paper presents a novel approach to representation learning in recommender systems by integrating generative self-supervised learning with graph transformer architecture. We highlight the importance of high-quality data augmentation with relevant self-supervised pretext tasks for improving performance. Towards this end, we propose a new approach that automates the self-supervision augmentation process through a rationale-aware generative SSL that distills informative user-item interaction patterns. The proposed recommender with Graph Transformer (GFormer) that offers parameterized collaborative rationale discovery for selective augmentation while preserving global-aware user-item relationships. In GFormer, we allow the rationale-aware SSL to inspire graph collaborative filtering with task-adaptive invariant rationalization in graph transformer. The experimental results reveal that our GFormer has the capability to consistently improve the performance over baselines on different datasets. Several in-depth experiments further investigate the invariant rationale-aware augmentation from various aspects.
+
+<img src='fig/framework.jpg'>
+
+## Environment
+The codes of GFormer are implemented and tested under the following development environment:
+  
+<p>PyTorch:
+
+</p>
+<ul>
+<li>python=3.8.13</li>
+<li>torch=1.9.1</li>
+<li>numpy=1.19.2</li>
+<li>scipy=1.9.0</li>
+<li>networkx = 2.8.6</li>
+</ul>
+  
+## Datasets
+We utilize three datasets for evaluating GFormer: <i>Yelp, Ifashion, </i>and <i>Lastfm</i>. Note that compared to the data used in our previous works, in this work we utilize a more sparse version of the three datasets, to increase the difficulty of recommendation task. Our evaluation follows the common implicit feedback paradigm. The datasets are divided into training set, validation set and test set by 70:5:25.
+| Dataset | \# Users | \# Items | \# Interactions | Interaction Density |
+|:-------:|:--------:|:--------:|:---------------:|:----related:
+  - methods/QUICK_START.md
+---:|
+|Yelp   |$42,712$|$26,822$|$182,357$|$1.6\times 10^{-4}$|
+|Ifashion|$31,668$|$38,048$|$618,629$|$5.1\times 10^{-4}$|
+|LastFm |$1,889$|$15,376$|$51,987$|$1.8\times 10^{-3}$|
+
+
+## How to Run the Code
+Please unzip the datasets first. Also you need to create the <code>History/</code> and the <code>Models/</code> directories. The command to train GFormer on the Yelp/Ifashion/Lastfm dataset is as follows. The commands specify the hyperparameter settings that generate the reported results in the paper.
+
+<ul>
+<li>Yelp<pre><code>python Main.py --data yelp --reg 1e-4 --ssl_reg 1 --gcn 3 --ctra 1e-3 --b2 1 --pnn 1</code></pre>
+</li>
+<li>Ifashion<pre><code>python Main.py --data ifashion --reg 1e-5 --ssl_reg 1 --gcn 2 --ctra 1e-3 --b2 1 --pnn 1</code></pre>
+</li>
+<li>Lastfm<pre><code>python Main.py --data lastfm --reg 1e-4 --ssl_reg 1 --gcn 2 --ctra 1e-3 --b2 1e-6 --pnn2</code></pre>
+</li>
+</ul>
+</body></html>
+
+## Citing our paper
+Please kindly cite our paper if you find this paper and the codes helpful.
+```
+@inproceedings{Li_2023, series={SIGIR ’23},
+   title={Graph Transformer for Recommendation},
+   url={http://dx.doi.org/10.1145/3539618.3591723},
+   DOI={10.1145/3539618.3591723},
+   booktitle={Proceedings of the 46th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+   publisher={ACM},
+   author={Li, Chaoliu and Xia, Lianghao and Ren, Xubin and Ye, Yaowen and Xu, Yong and Huang, Chao},
+   year={2023},
+   month=jul, collection={SIGIR ’23} }
+```

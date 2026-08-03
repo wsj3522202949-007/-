@@ -1,0 +1,296 @@
+---
+id: tool-07326
+type: tool
+area: 库
+status: active
+tags: [Python, 协议宽松, 需API密钥, 英文文档]
+title: traditional-chinese-historical-document-ocr-llm-fusion
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/jason9339/traditional-chinese-historical-document-ocr-llm-fusion
+created: 2026-07-18
+updated: 2026-07-18
+no: 7326
+category: 画龙补充 / 扩容入库 — 补充源
+repo: jason9339/traditional-chinese-historical-document-ocr-llm-fusion
+stars: 2
+url: https://github.com/jason9339/traditional-chinese-historical-document-ocr-llm-fusion
+tier: "B"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
+related:
+  - methods/QUICK_START.md
+---
+
+# jason9339/traditional-chinese-historical-document-ocr-llm-fusion
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/jason9339/traditional-chinese-historical-document-ocr-llm-fusion
+- **Stars**：2
+- **语言**：Python
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：—
+- **本地描述**：traditional-chinese-historical-document-ocr-llm-fusion
+- **拉取时间**：2026-07-25 19:17:56
+
+---
+
+# Decoding-Time Fusion of OCR and Large Language Models for Traditional Chinese Historical Document Recognition
+
+Official implementation of the paper: **"Decoding-Time Fusion of OCR and Large Language Models for Traditional Chinese Historical Document Recognition"**.
+
+## Overview
+
+This project proposes **Decoding-Time OCR–LLM Fusion** for Traditional Chinese historical document OCR. We use **TrOCR** as the visual recognition model and **Breeze-7B** as a semantic scorer, integrating them during **beam search** decoding. To address tokenization mismatches between OCR and LLM, we employ **UTF-8 byte space alignment** and **byte-prefix marginalization**, enabling semantic guidance without joint training.
+
+We provide reproducible research resources including:
+- A configurable **synthetic data generator** and **4.1M dataset**
+- A **web-based annotation system**
+- A benchmark of **921 manually annotated samples** from the Lo Chia-Luen Collection with geometric metadata
+
+Experiments show that fusion decoding consistently reduces CER on both semantic text and real historical manuscripts, outperforming LLM-based post-correction.
+
+---
+
+## Resources
+
+### Paper
+- Paper: Under review
+
+### Tools & Datasets
+- **Synthetic Generator**: [GitHub: ocr-synth-generator](https://github.com/Jason9339/ocr-synth-generator)
+- **Synthetic Dataset (4.1M)**: [Hugging Face: traditional-chinese-ocr-synthetic](https://huggingface.co/datasets/ZihCiLin/traditional-chinese-ocr-synthetic)
+- **Annotation System**: [GitHub: document-ocr-annotation-system](https://github.com/Jason9339/document-ocr-annotation-system)
+- **Lo Chia-Luen Benchmark (921)**: [Hugging Face: traditional-chinese-historical-ocr-lo-chia-luen](https://huggingface.co/datasets/ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen)
+
+### Models
+- **Baseline TrOCR**: [ZihCiLin/trocr-traditional-chinese-baseline](https://huggingface.co/ZihCiLin/trocr-traditional-chinese-baseline)
+- **Finetuned TrOCR**: [ZihCiLin/trocr-traditional-chinese-historical-finetune](https://huggingface.co/ZihCiLin/trocr-traditional-chinese-historical-finetune)
+- **Breeze-7B LLM**: [MediaTek-Research/Breeze-7B-32k-Base-v1_0](https://huggingface.co/MediaTek-Research/Breeze-7B-32k-Base-v1_0) (loaded automatically)
+
+---
+
+## Installation
+
+### System Requirements
+- **Python**: 3.10+
+- **GPU**: NVIDIA GPU with CUDA 11.7+ support
+  - Tested on: NVIDIA RTX A6000 (48GB VRAM), single GPU
+  - Minimum ~20GB VRAM recommended (Breeze-7B fp16 ~14GB + TrOCR + beam search overhead)
+- **RAM**: 32GB+ system memory
+- **Disk Space**: ~20GB for models and cache
+
+### Quick Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Jason9339/traditional-chinese-historical-document-ocr-llm-fusion.git
+cd traditional-chinese-historical-document-ocr-llm-fusion
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Remove transformer-engine (conflicts with PyTorch 2.0.1)
+pip uninstall transformer-engine -y
+```
+
+**Note**: PyTorch 2.0.1 is required. If `transformer-engine` is pre-installed on your system, it must be removed to avoid import errors.
+
+### Troubleshooting
+
+**CUDA Version Mismatch:**
+If you encounter CUDA-related errors, verify your CUDA version:
+```bash
+nvidia-smi  # Check CUDA driver version
+python -c "import torch; print(torch.cuda.is_available())"
+```
+
+**Dependency Conflicts:**
+In a clean environment, some packages may show version warnings. These can usually be ignored if the evaluation scripts run successfully.
+
+**transformer-engine Conflicts:**
+If you see import errors with `undefined symbol` messages, this is due to `transformer-engine` being incompatible with PyTorch 2.0.1. Uninstall it:
+```bash
+pip uninstall transformer-engine -y
+```
+Error example: `ImportError: undefined symbol: _ZN3c10ltERKNS_6SymIntEi`
+
+**Gated Dataset Access:**
+If you see "gated dataset" or "must be authenticated" errors:
+```
+Dataset 'ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen' is a gated dataset
+```
+This means you need to:
+1. Request access at the [dataset page](https://huggingface.co/datasets/ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen)
+2. Login with `huggingface-cli login` after approval
+
+---
+
+## Quickstart
+
+### ⚠️ Important: Dataset Access
+
+**Lo Chia-Luen Benchmark is a Gated Dataset**
+
+Test Set 3 uses the Lo Chia-Luen historical document dataset, which contains library materials from NCCU Libraries. Access is **automatically granted** upon agreeing to the usage terms (non-commercial research only).
+
+1. **Request Access**: Visit [ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen](https://huggingface.co/datasets/ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen)
+2. **Click "Request Access"** and accept the terms — access is granted immediately
+3. **Login to HuggingFace**:
+   ```bash
+   huggingface-cli login
+   # Or set your token: export HF_TOKEN="your-token"
+   ```
+
+> **RRPR Reviewers**: Access is automatically granted upon agreeing to the terms. If you encounter any issues, please contact the author at 111703004@g.nccu.edu.tw or jasonlin930309@gmail.com.
+
+**Note**: Test Set 1 & 2 (synthetic datasets) are publicly accessible and do not require approval.
+
+### Download Models and Data
+
+```bash
+# Test Set 1 & 2 are publicly accessible
+# Dataset: ZihCiLin/traditional-chinese-ocr-synthetic
+
+# Test Set 3 requires access approval (see above)
+# Dataset: ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen
+
+# Models are automatically downloaded when running evaluation scripts
+```
+
+---
+
+## Reproduce Paper Tables
+
+All experiments can be reproduced using the provided scripts in `experiments/`. Each script downloads models and datasets automatically on first run.
+
+### Tables 1 & 2: CER Results (Baseline and Finetuned TrOCR)
+
+Each script evaluates **both** models (Baseline / Finetuned) × **both** modes (Pure OCR / GFD fusion λ=0.3) in a single run.
+
+| Script | Dataset | Prerequisites | Est. Time |
+|--------|---------|---------------|-----------|
+| `run_testset1.sh` | Synthetic Random (1000 samples) | None | ~3–4 hrs |
+| `run_testset2.sh` | Synthetic Semantic (395 samples) | None | ~1–2 hrs |
+| `run_testset3.sh` | Real Historical (185 samples) | HF login (see below) | ~1 hr |
+
+```bash
+bash experiments/run_testset1.sh 2>&1 | tee testset1.log
+bash experiments/run_testset2.sh 2>&1 | tee testset2.log
+bash experiments/run_testset3.sh 2>&1 | tee testset3.log  # requires HF login
+```
+
+Results are saved to `results/testsetN_<timestamp>/`.
+
+### Table 3: Post-Correction vs. Decoding-Time Fusion (Test Set 3)
+
+Compares Pure OCR, LLM Post-Correction (GPT), and GFD on the real historical test set.
+
+**Requires OpenAI API key:**
+```bash
+export OPENAI_API_KEY="your_openai_api_key"
+bash experiments/run_postcorrection.sh 2>&1 | tee postcorrection.log
+```
+
+### Table 4: Fusion Weight λ Ablation (Test Set 3, Finetuned TrOCR)
+
+Sweeps λ ∈ {0.0, 0.1, 0.3, 0.5, 0.7, 0.9} on the real historical test set.
+
+**Requires HF login** (same dataset as Test Set 3):
+```bash
+bash experiments/run_lambda_ablation.sh 2>&1 | tee lambda_ablation.log
+```
+
+---
+
+## Project Structure
+
+```
+traditional-chinese-historical-document-ocr-llm-fusion/
+├── gfd/                    # Core fusion decoding implementation
+├── scripts/                # Evaluation scripts
+│   ├── train/             # Training scripts
+│   └── evaluate/          # Evaluation scripts
+├── config_files/          # Configuration files
+│   ├── model/            # Model configs
+│   └── prompt/           # Prompt templates
+├── experiments/           # Experiment scripts for paper reproduction
+├── models/                # Tokenizer files
+├── requirements.txt       # Python dependencies
+└── README.md
+```
+
+---
+
+## Training
+
+### Baseline Training
+
+Train TrOCR from scratch on 4.1M synthetic dataset (target: 100k steps):
+
+```bash
+python scripts/train/train_baseline.py \
+  --output_dir models/trocr_baseline \
+  --per_device_train_batch_size 64 \
+  --num_train_epochs 3
+```
+
+### Fine-tuning on Historical Documents
+
+Fine-tune the baseline model on Lo Chia-Luen historical document dataset:
+
+```bash
+python scripts/train/train_finetune.py \
+  --dataset ZihCiLin/traditional-chinese-historical-ocr-lo-chia-luen \
+  --output_dir models/trocr_finetuned \
+  --num_train_epochs 10
+```
+
+---
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@inproceedings{lin2026decoding,
+  title     = {Decoding-Time Fusion of OCR and Large Language Models for Traditional Chinese Historical Document Recognition},
+  author    = {Zih-Ci Lin and Wen-Hung Liao},
+  booktitle = {Proceedings of the 28th International Conference on Pattern Recognition (ICPR)},
+  year      = {2026},
+  note      = {ICPR 2026, Paper \#792}
+}
+```
+
+---
+
+## License
+
+- **Code**: MIT License
+- **Synthetic Dataset**: CC BY-NC 4.0
+- **Lo Chia-Luen Benchmark**: CC BY-NC 4.0 (non-commercial use only)
+
+## Persistent Identifier
+
+This repository is archived on [Software Heritage](https://archive.softwareheritage.org):
+
+```
+swh:1:rev:86ff48366f01b7ef851bb310be5d808118376d3f
+```
+
+---
+
+## Acknowledgments
+
+This work is based on the Lo Chia-Luen Manuscripts from the Special Collection Center of NCCU Libraries and leverages the [Generative Fusion Decoding](https://github.com/itsnamgyu/generative-fusion-decoding) framework.
+
+related:
+  - methods/QUICK_START.md
+---
+
+## Contact
+
+For questions or issues, please open an issue on GitHub or contact:
+- Zih-Ci Lin: 111703004@g.nccu.edu.tw / jasonlin930309@gmail.com

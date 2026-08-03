@@ -1,0 +1,48 @@
+---
+id: tool-01376
+type: tool
+area: 库
+status: active
+tags: [Python, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: Story-GeneratorAi
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/venkata-kusuma/story-generatorai
+created: 2026-07-18
+updated: 2026-07-18
+no: 1376
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: Venkata-Kusuma/Story-GeneratorAi
+stars: 0
+url: https://github.com/venkata-kusuma/story-generatorai
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Venkata-Kusuma/Story-GeneratorAi
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/venkata-kusuma/story-generatorai
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：This project is an AI-powered Story Generator built using Streamlit and OpenAI's GPT-4o model. Users can input the story's genre, characters, setting, and plot summary to generate a creative and engaging story instantly. It's a fun and interactive tool for writers, students, and storytelling enthusiasts.
+- **本地描述**：This project is an AI-powered Story Generator built using Streamlit and OpenAI's GPT-4o model. Users can input the story's genre, characters, setting, and plot summary to generate a creative and engaging story instantly. It's a fun and interactive tool for writers, students, and storytelling enthusiasts.
+- **拉取时间**：2026-07-23 23:19:14
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Story-GeneratorAi
+This project is an AI-powered Story Generator built using Streamlit and OpenAI's GPT-4o model. Users can input the story's genre, characters, setting, and plot summary to generate a creative and engaging story instantly. It's a fun and interactive tool for writers, students, and storytelling enthusiasts.

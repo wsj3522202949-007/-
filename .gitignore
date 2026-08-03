@@ -1,0 +1,12 @@
+# Local environment / private data
+.workbuddy/
+.obsidian/
+.tools/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

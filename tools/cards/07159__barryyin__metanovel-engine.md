@@ -1,0 +1,288 @@
+---
+id: tool-07159
+type: tool
+area: 库
+status: active
+tags: [协议宽松, 需API密钥, 中文友好]
+title: metanovel-engine
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/barryyin/metanovel-engine
+created: 2026-07-18
+updated: 2026-07-18
+no: 7159
+category: 画龙补充 / 扩容入库 — 补充源
+repo: barryyin/metanovel-engine
+stars: 0
+url: https://github.com/barryyin/metanovel-engine
+tier: "C"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+related:
+  - methods/QUICK_START.md
+---
+
+# barryyin/metanovel-engine
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/barryyin/metanovel-engine
+- **Stars**：0
+- **语言**：None
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：本项目提供一套结构化、分阶段的长篇小说创作工具链，旨在节省上下文 tokens、降低幻觉率，以工程化方式打磨故事。
+- **本地描述**：metanovel-engine
+- **拉取时间**：2026-07-25 19:12:38
+
+---
+
+# MetaNovel-Engine
+
+![Version](https://img.shields.io/badge/version-v0.0.3-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-green.svg)
+![License](https://img.shields.io/badge/license-MIT-yellow.svg)
+
+> AI辅助小说创作引擎 - 结构化、分阶段的长篇小说创作工具链
+
+## 📖 项目简介
+
+MetaNovel-Engine 是一套完整的AI辅助小说创作工具链，通过结构化的7步流程，帮助作家从一个简单的想法逐步扩展为完整的小说作品。采用JSON格式存储各阶段数据，有效节省上下文tokens、降低AI幻觉率，以工程化方式打磨故事。
+
+### 🎯 核心优势
+
+- **🏗️ 模块化架构**：从单一2700行文件重构为清晰的模块化架构
+- **🎯 渐进式创作**：7个步骤层层递进，从主题构思到完整小说
+- **🤖 智能AI辅助**：支持多种大语言模型，智能重试和异步并发
+- **📊 结构化管理**：JSON格式存储，完整的CRUD操作
+- **⚡ 高性能**：异步处理实现4-5倍速度提升
+- **🎮 友好界面**：现代化CLI界面，实时进度显示
+
+## 🚀 快速开始
+
+### 环境要求
+- Python 3.8+
+- OpenRouter API密钥
+
+### 安装步骤
+
+1. **克隆并安装**
+   ```bash
+   git clone https://github.com/your-username/MetaNovel-Engine.git
+   cd MetaNovel-Engine
+   pip install -r requirements.txt
+   ```
+
+2. **配置API密钥**
+   ```bash
+   # 复制环境变量模板
+   cp .env.example .env
+   
+   # 编辑.env文件，填入你的API密钥
+   nano .env
+   ```
+
+   **.env文件示例：**
+   ```bash
+   OPENROUTER_API_KEY=your_api_key_here
+   HTTP_PROXY=http://127.0.0.1:7890  # 可选：代理配置
+   HTTPS_PROXY=http://127.0.0.1:7890
+   ```
+
+3. **运行程序**
+   ```bash
+   python meta_novel_cli.py
+   ```
+
+## 📝 创作流程
+
+### 7步渐进式创作工作流
+
+| 步骤 | 功能 | 说明 |
+|------|------|------|
+| 1️⃣ | **确立一句话主题** | 定义小说的核心理念 |
+| 2️⃣ | **扩展成段落主题** | 将核心理念扩展为详细描述 |
+| 3️⃣ | **世界设定** | 创建角色、场景、道具的完整世界观 |
+| 4️⃣ | **编辑故事大纲** | 500-800字的详细故事框架 |
+| 5️⃣ | **编辑分章细纲** | 分解为5-10个章节的详细大纲 |
+| 6️⃣ | **编辑章节概要** | 每章节300-500字的详细概要 |
+| 7️⃣ | **生成小说正文** | 2000-4000字的完整章节正文 |
+
+### 世界设定管理
+
+- **👥 角色管理**：创建和管理小说中的重要人物
+- **🏛️ 场景管理**：设计故事发生的重要地点和环境  
+- **⚔️ 道具管理**：定义关键物品、武器、神器等元素
+
+每个步骤都支持完整的查看、编辑、删除操作，程序会自动检查前置条件，确保创作流程的完整性。
+
+## 📁 项目结构
+
+```
+MetaNovel-Engine/
+├── 🗂️ meta/                    # 创作数据存储
+│   ├── theme_one_line.json     # 一句话主题
+│   ├── theme_paragraph.json    # 段落主题
+│   ├── characters.json         # 角色信息
+│   ├── locations.json          # 场景信息
+│   ├── items.json              # 道具信息
+│   ├── story_outline.json      # 故事大纲
+│   ├── chapter_outline.json    # 分章细纲
+│   ├── chapter_summary.json    # 章节概要
+│   └── novel_text.json         # 小说正文
+├── 🗂️ meta_backup/             # 自动备份
+├── 🗂️ tests/                   # 单元测试
+├── 🔧 config.py                # 配置管理模块
+├── 💾 data_manager.py          # 数据管理模块
+├── 🤖 llm_service.py           # AI服务模块
+├── 🔄 retry_utils.py           # 智能重试工具
+├── 📊 progress_utils.py        # 进度显示工具
+├── 📝 prompts.json             # AI提示词配置
+├── 🎮 meta_novel_cli.py        # 主程序
+└── 🧪 run_tests.py             # 测试运行脚本
+```
+
+### 模块说明
+
+| 模块 | 功能 |
+|------|------|
+| `config.py` | 统一配置管理，包含AI模型、网络代理、重试机制等配置 |
+| `data_manager.py` | 数据层抽象，提供完整的CRUD操作接口 |
+| `llm_service.py` | AI服务封装，支持同步/异步调用和智能重试 |
+| `retry_utils.py` | 智能重试机制，支持指数退避、错误分类和批量重试 |
+| `progress_utils.py` | 进度显示系统，支持实时状态更新 |
+
+## ⚙️ 配置说明
+
+### API配置
+- 支持OpenRouter平台的多种模型
+- 默认使用`google/gemini-2.5-pro-preview-06-05`
+- 通过系统设置可调整AI模型参数
+
+### 网络代理配置
+支持通过环境变量配置HTTP/HTTPS代理：
+
+```bash
+# 方式1：在.env文件中配置
+HTTP_PROXY=http://127.0.0.1:7890
+HTTPS_PROXY=http://127.0.0.1:7890
+
+# 方式2：通过环境变量
+export HTTP_PROXY="http://127.0.0.1:7890"
+export HTTPS_PROXY="http://127.0.0.1:7890"
+```
+
+**常见端口号：**
+- Clash: 7890
+- V2Ray: 1080, 8118  
+- Shadowsocks: 1080
+
+### 智能重试配置
+- **最大重试次数**：1-10次，默认3次
+- **基础延迟时间**：0.1-10秒，默认1.0秒
+- **指数退避策略**：支持指数增长延迟时间
+- **随机抖动**：避免同时重试造成服务器压力
+- **错误分类**：自动识别可重试和不可重试的错误
+
+## 🌟 功能特色
+
+### 🧠 智能AI辅助
+- **智能依赖检查**：每个步骤都会检查前置条件
+- **上下文信息整合**：AI生成时自动整合所有相关信息
+- **智能重试机制**：自动重试失败的AI请求
+- **异步并发处理**：批量生成时实现4-5倍速度提升
+
+### 🎮 用户体验
+- **现代化CLI界面**：友好的命令行界面
+- **实时进度显示**：可视化进度条、状态反馈、重试信息
+- **系统设置面板**：用户可自定义重试参数、AI模型配置
+- **灵活的编辑功能**：支持对所有生成内容的查看、编辑、删除
+
+### 📤 导出功能
+- **智能文件命名**：小说名_章节范围_时间戳格式
+- **完整的元数据信息**：包含创作时间、字数统计、章节信息
+- **多种导出选项**：支持单章节或全本导出
+
+### ⚡ 性能与稳定性
+- **模块化架构**：清晰的代码结构，易于维护和扩展
+- **错误处理增强**：区分可重试和不可重试错误
+- **批量操作优化**：支持批量生成和批量重试
+
+## 🧪 测试与开发
+
+### 运行测试
+```bash
+# 运行所有测试
+python run_tests.py
+
+# 运行特定模块测试
+python -m pytest tests/test_data_manager.py -v
+```
+
+### 测试覆盖
+- 配置模块测试
+- 数据管理模块测试
+- AI服务模块测试
+- 实体管理模块测试
+
+## 🤝 贡献指南
+
+欢迎提交Issue和Pull Request！
+
+1. Fork本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启Pull Request
+
+## 📋 开发路线图
+
+### 🎯 短期目标
+- [ ] 导出功能：支持多种格式（TXT、Word、PDF、ePub）
+- [ ] 自动备份：定时备份、版本控制、恢复功能
+- [ ] 模板系统：预设的小说类型模板
+- [ ] 多任务管理：同时管理多篇小说的创作流程
+
+### 🔧 中期目标
+- [ ] 多AI模型支持：Claude、GPT-4、Gemini等模型切换
+- [ ] 创作进度跟踪：可视化创作进度、统计信息
+- [ ] 智能建议：基于已有内容的智能创作建议
+- [ ] 项目切换：快速在不同小说项目间切换
+
+### 🚀 长期目标
+- [ ] 图形界面：基于Tkinter或PyQt的GUI版本
+- [ ] Web版本：基于Flask/FastAPI的Web界面
+- [ ] 协作编辑：多人协作创作功能
+- [ ] 云端同步：多设备间的项目同步
+
+## 📄 许可证
+
+本项目采用MIT License，详见[LICENSE](LICENSE)文件。
+
+## 📝 版本历史
+
+### v0.0.3 (2025-06-28) - 大师级精炼版本
+- 🎯 数据模型升级：引入Pydantic提供类型安全和自动验证
+- 🎨 界面美化升级：使用Rich库创建现代化命令行界面
+- 🔧 代码质量提升：统一数据访问接口，减少重复代码
+- 📚 文档和示例：提供完整的使用示例和API文档
+
+### v0.0.2 (2025-06-27) - 模块化重构版本
+- 🏗️ 模块化架构重构：从单一2700行文件拆分为8个独立模块
+- ⚡ 异步并发处理：批量生成实现4-5倍速度提升
+- 🔄 智能重试机制：自动重试失败的AI请求，支持指数退避
+- 📊 实时进度显示：可视化进度条、状态反馈、重试信息
+- 🔐 安全性增强：环境变量管理，配置验证，代理支持
+- 🧪 完整测试体系：单元测试覆盖所有核心模块
+
+### v0.0.1 (2025-06-19) - 原型版本
+- 🎉 首个原型版本发布
+- ✨ 实现完整的7步创作流程
+- 🌍 支持世界设定管理（角色、场景、道具）
+- 🤖 OpenRouter API集成
+
+related:
+  - methods/QUICK_START.md
+---
+
+**开始您的AI辅助小说创作之旅吧！** 🚀

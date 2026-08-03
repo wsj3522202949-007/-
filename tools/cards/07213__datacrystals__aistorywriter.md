@@ -1,0 +1,171 @@
+---
+id: tool-07213
+type: tool
+area: 库
+status: active
+tags: [Python, 协议传染, 需API密钥, 英文文档]
+title: aistorywriter
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/datacrystals/aistorywriter
+created: 2026-07-18
+updated: 2026-07-18
+no: 7213
+category: 画龙补充 / 扩容入库 — 补充源
+repo: datacrystals/aistorywriter
+stars: 257
+url: https://github.com/datacrystals/aistorywriter
+tier: "S"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
+related:
+  - methods/QUICK_START.md
+---
+
+# datacrystals/aistorywriter
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/datacrystals/aistorywriter
+- **Stars**：257
+- **语言**：Python
+- **License**：AGPL-3.0
+- **Topics**：ai, command-line-tool, llm, llms, local-llama, local-llm, python, story-generator, storywriting
+- **GitHub 描述**：LLM story writer with a focus on high-quality long output based on a user provided prompt.
+- **本地描述**：aistorywriter
+- **拉取时间**：2026-07-25 19:14:20
+
+---
+
+# AI Story Generator 📚✨
+
+Generate full-length novels with AI! Harness the power of large language models to create engaging stories based on your prompts.
+
+[![Discord](https://img.shields.io/discord/1255847829763784754?color=7289DA&label=Discord&logo=discord&logoColor=white)](https://discord.gg/R2SySWDr2s)
+
+## 🚀 Features
+
+- Generate medium to full-length novels: Produce substantial stories with coherent narratives, suitable for novella or novel-length works.
+- Easy setup and use: Get started quickly with minimal configuration required.
+- Customizable prompts and models: Choose from existing prompts or create your own, and select from various language models.
+- Automatic model downloading: The system can automatically download required models via Ollama if they aren't already available.
+- Support for local models via Ollama: Run language models locally for full control and privacy.
+- Cloud provider support (currently Google): Access high-performance computing resources for those without powerful GPUs.
+- Flexible configuration options: Fine-tune the generation process through easily modifiable settings.
+- Works across all operating systems
+- Supoorts translation of the generated stories in all languages
+
+## 🏁 Quick Start
+
+Getting started with AI Story Generator is easy:
+
+1. Clone the repository
+2. Install [Ollama](https://ollama.com/) for local model support
+3. Run the generator:
+
+```sh
+./Write.py -Prompt Prompts/YourChosenPrompt.txt
+```
+
+That's it! The system will automatically download any required models and start generating your story.
+
+**Optional steps:**
+
+- Modify prompts in `Writer/Prompts.py` or create your own
+- Configure the model selection in `Writer/Config.py`
+
+## 💻 Hardware Recommendations
+
+Not sure which models to use with your GPU? Check out our [Model Recommendations](Docs/Models.md) page for suggestions based on different GPU capabilities. We provide a quick reference table to help you choose the right models for your hardware, ensuring optimal performance and quality for your story generation projects.
+
+## 🛠️ Usage
+
+You can customize the models used for different parts of the story generation process in two ways:
+
+### 1. Using Command-Line Arguments (Recommended)
+
+You can override the default models by specifying them as command-line arguments:
+
+```sh
+./Write.py -Prompt Prompts/YourChosenPrompt.txt -InitialOutlineModel "ollama://llama3:70b" ...
+```
+
+Available command-line arguments are stated in the `Write.py` file.
+
+The model format is: `{ModelProvider}://{ModelName}@{ModelHost}?parameter=value`
+
+- Default host is `127.0.0.1:11434` (currently only affects ollama)
+- Default ModelProvider is `ollama`
+- Supported providers: `ollama`, `google`, `openrouter`
+- For `ollama` we support the passing of parameters (e.g. `temperature`) on a per model basis
+
+Example:
+```sh
+./Write.py -Prompt Prompts/YourChosenPrompt.txt -InitialOutlineModel "google://gemini-1.5-pro" -ChapterOutlineModel "ollama://llama3:70b@192.168.1.100:11434" ...
+```
+
+This flexibility allows you to experiment with different models for various parts of the story generation process, helping you find the optimal combination for your needs.
+
+
+NOTE: If you're using a provider that needs an API key, please copy `.env.example` to `.env` and paste in your API keys there.
+
+
+### 2. Using Writer/Config.py
+
+
+Edit the `Writer/Config.py` file to change the default models:
+
+```python
+INITIAL_OUTLINE_WRITER_MODEL = "ollama://llama3:70b"
+CHAPTER_OUTLINE_WRITER_MODEL = "ollama://gemma2:27b"
+CHAPTER_WRITER_MODEL = "google://gemini-1.5-flash"
+...
+```
+
+## 🧰 Architecture Overview
+
+![Block Diagram](Docs/BlockDiagram.drawio.svg)
+
+## 🛠️ Customization
+
+- Experiment with different local models via Ollama: Try out various language models to find the best fit for your storytelling needs.
+- Test various model combinations for different story components: Mix and match models for outline generation, chapter writing, and revisions to optimize output quality.
+
+## 💪 What's Working Well
+
+- Generating decent-length stories: The system consistently produces narratives of substantial length, suitable for novella or novel-length works.
+- Character consistency: AI models maintain coherent character traits and development throughout the generated stories.
+- Interesting story outlines: The initial outline generation creates compelling story structures that serve as strong foundations for the full narratives.
+
+## 🔧 Areas for Improvement
+
+- Reducing repetitive phrases: We're working on enhancing the language variety to create more natural-sounding prose.
+- Improving chapter flow and connections: Efforts are ongoing to create smoother transitions between chapters and maintain narrative cohesion.
+- Addressing pacing issues: Refinements are being made to ensure proper story pacing and focus on crucial plot points.
+- Optimizing generation speed: We're continuously working on improving performance to reduce generation times without sacrificing quality.
+
+## 🤝 Contributing
+
+We're excited to hear from you! Your feedback and contributions are crucial to improving the AI Story Generator. Here's how you can get involved:
+
+1. 🐛 **Open Issues**: Encountered a bug or have a feature request? [Open an issue](https://github.com/datacrystals/AIStoryWriter/issues) and let us know!
+
+2. 💡 **Start Discussions**: Have ideas or want to brainstorm? [Start a discussion](https://github.com/datacrystals/AIStoryWriter/discussions) in our GitHub Discussions forum.
+
+3. 🔬 **Experiment and Share**: Try different model combinations and share your results. Your experiments can help improve the system for everyone!
+
+4. 🖊️ **Submit Pull Requests**: Ready to contribute code? We welcome pull requests for improvements and new features.
+
+5. 💬 **Join our Discord**: For real-time chat, support, and community engagement, [join our Discord server](https://discord.gg/R2SySWDr2s).
+
+Don't hesitate to reach out – your input is valuable, and we're here to help!
+
+## 📄 License
+
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This means that if you modify the code and use it to provide a service over a network, you must make your modified source code available to the users of that service. For more details, see the [LICENSE](LICENSE) file in the repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
+
+related:
+  - methods/QUICK_START.md
+---
+
+Join us in shaping the future of AI-assisted storytelling! 🖋️🤖

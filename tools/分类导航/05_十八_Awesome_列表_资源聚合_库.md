@@ -1,0 +1,36 @@
+---
+id: moc-05_十八_Awesome_列表_资源聚合_库
+type: moc
+area: 库
+status: active
+tags: []
+title: 十八、Awesome 列表 / 资源聚合 库
+summary: ↩ **回总地图**：🗺️ 知识库总地图（本页是子地图，统一从前门进入）
+created: 2026-07-31
+updated: 2026-07-31
+related:
+  - tools/分类导航/01_二_网文_长篇_AI_写作系统_库.md
+  - tools/分类导航/02_九_大纲_规划_结构软件_库.md
+  - tools/分类导航/03_六_多_Agent_小说生产_叙事引擎_库.md
+  - tools/分类导航/04_十_短剧_剧本_影视化生成_库.md
+  - tools/分类导航/06_十六_提示词库_写作_Agent_工作流_库.md
+---
+
+# 十八、Awesome 列表 / 资源聚合 库
+
+> ↩ **回总地图**：[🗺️ 知识库总地图](../../README.md)（本页是子地图，统一从前门进入）
+
+
+> 该类共 **1** 个真实仓库（README 已落盘本地）。下方 Stars>0 的 Top 50 按星标降序；全部见 [最终索引](../最终索引.md)。
+
+> **本类用途**：资源聚合导航（找更多工具）。优先试用 **S/A 级**（已验证）；B 级长尾按需挖；C 级多为 0★/空壳，先小范围测。
+> 按任务选型 → [工具选型指南](../工具选型指南.md) ｜ 标签含义 → [标签体系说明](../标签体系说明.md)
+> 本类分级：S 0 · A 0 · B 1 · C 0（空壳与 0★ 在 C）
+
+## Top 50（按 Stars）
+
+- [cavxn/Npc-Dialogue-Generator](../cards/03550__cavxn__Npc-Dialogue-Generator.md) ⭐3 — NPC Dialogue Generator — An AI-driven system that generates 
+
+## 全部 1 个（按星标）
+
+- [cavxn/Npc-Dialogue-Generator](../cards/03550__cavxn__Npc-Dialogue-Generator.md) ⭐3

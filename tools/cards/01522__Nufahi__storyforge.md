@@ -1,0 +1,196 @@
+---
+id: tool-01522
+type: tool
+area: 库
+status: active
+tags: [JavaScript, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: storyforge
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/nufahi/storyforge
+created: 2026-07-18
+updated: 2026-07-18
+no: 1522
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: Nufahi/storyforge
+stars: 3
+url: https://github.com/nufahi/storyforge
+tier: "B"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Nufahi/storyforge
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/nufahi/storyforge
+- **Stars**：3
+- **语言**：JavaScript
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：extension for one-click narrative tools: plot twists, NPC generation, random events, scene shifts, and fully customizable prompt injection for roleplay storytelling.
+- **本地描述**：extension for one-click narrative tools: plot twists, NPC generation, random events, scene shifts, and fully customizable prompt injection for roleplay storytelling.
+- **拉取时间**：2026-07-23 23:23:28
+
+---
+
+# StoryForge
+
+One-click narrative tools for SillyTavern roleplay.
+
+Plot twists, new NPCs, random events, scene shifts queue any story tool before the next AI response with a single click.
+
+---
+
+## Features
+
+8 built-in tools — each injects a specialized prompt into chat context before generation:
+
+| Tool | What it does |
+|------|-------------|
+| Plot Twist | Sudden unexpected turn that changes the scene's direction |
+| New NPC | Brand-new character with name, appearance, personality and secret motive |
+| NPC Action | An existing NPC takes a dramatic, potentially unexpected action |
+| Random Event | Disruptive event — ambush, discovery, explosion, uninvited guest |
+| Secret Reveal | Hidden secret about a character, location, or the world |
+| Scene Shift | Transition to a completely new location with vivid description |
+| Time Skip | Jump forward in time, summarizing what happened |
+| Raise Stakes | Escalate danger — urgent threats, deadlines, devastating losses |
+
+Full customization:
+
+- Edit any tool's prompt text directly in the panel
+- Create your own custom tools with any injection prompt
+- Rename tools inline — click the name, type, done
+- Delete any tool — hover and click x
+- Reset to defaults with one button
+
+Smart injection system:
+
+- Toggle tools on/off (click to activate, click again to deactivate)
+- One-shot mode — auto-clears after AI responds
+- Adjustable injection depth (0-10)
+- Floating badge shows active tools
+- Slash commands: /storyforge, /sf-clear
+
+---
+
+## Reminders (prompt folders)
+
+Persistent and periodic prompts that auto-inject so the model never forgets a detail (outfit, lore rule, OOC instruction...). No more tapping a button every turn.
+
+- **Folders** — group reminders by topic (Appearance, Lore, OOC rules...)
+- **Always** — the prompt stays in context on every reply
+- **Every N replies** — the prompt surfaces once every N model replies, then steps back (counts only the AI's replies)
+- Per-reminder **injection depth** (0-10) and **role** (System / User / Assistant)
+- A small status tag shows when each reminder will next fire (`always on`, `next reply`, `in 2`...)
+- **Reference image** — attach a thumbnail to any reminder (paste a gallery / web image URL or upload a file). Keep a visual of an outfit, a location or a face right next to the note.
+- **Describe with AI** — hit the eye button and the Choice Cards built-in **vision** model looks at the image and writes a plain-text description straight into the reminder. The main model then reads *words* (perfect for outfits) instead of needing to see the image at all. (Still want to ship the raw picture? Flip **Send to model** to best-effort attach it to the next generation for vision-capable backends.)
+- **Reorder & collapse** — drag reminders up/down with the arrows, and collapse/expand every reminder (or every Custom Prompt) at once with the toolbar buttons — handy when you have a dozen of them.
+
+Example: put your persona's outfit description in an "Appearance" folder set to **Every 2 replies** — it auto-injects on every other AI reply so the model keeps clothing consistent.
+
+Reminders are global (shared across chats); the every-N cycle resets when you switch chats.
+
+---
+
+## Director Mode (autonomous co-narrator)
+
+Turn it on and the story starts living its own life. After each AI reply the director rolls a d100 against the **Intensity** slider (0–100%). On success it secretly queues one weighted-random story tool for the next response — a plot twist, a new NPC, a raised stake.
+
+- **Intensity** — how often events happen (slider, 0–100% chance per eligible reply)
+- **Min gap** — guaranteed quiet replies after each event, so the pacing breathes
+- **Per-tool weight (1–10)** — how often each tool is picked
+- **Per-tool cooldown** — replies before the same tool can fire again (Time Skip won't spam)
+- **Surprise mode** — hide *which* tool was queued; the badge just shows `???`
+- **Direct now!** — force an event for the next reply, ignoring the dice
+- Queued events show in the floating badge with a clapperboard icon and can be cancelled with one tap
+
+Slash commands: `/sf-director` (toggle), `/sf-direct` (force an event).
+
+---
+
+## Lingering Consequences (Choice Cards)
+
+Turn a failed dice roll into a story that *remembers*. When a Choice Card roll fails, StoryForge can spawn a **temporary reminder** — "hurt arm after the fall", "the guard now distrusts you" — that auto-injects into context for a few replies, then quietly expires. No other ST extension carries failure forward like this.
+
+- **On / off** per failure, with a per-card prompt (write the fallout yourself) or **auto mode** (derived from the action)
+- **Lifespan** — how many bot replies the consequence lingers (then it auto-deletes itself)
+- **Inject every N replies** while alive, to save tokens
+- **Only on strong / critical failures** — narrow misses stay light
+- Consequences live in a dedicated *Consequences* reminder folder with a red tint and a countdown (`2 left`); delete one early any time
+
+Built entirely on top of the Reminders engine — consequences are just self-expiring reminders, so depth/role/folder management all work the same way.
+
+---
+
+## Installation
+
+### SillyTavern built-in installer (recommended)
+
+1. Open SillyTavern
+2. Go to Extensions > Install Extension
+3. Paste the URL:
+```
+https://github.com/Nufahi/storyforge
+```
+
+4. Click Install, then refresh with Ctrl+Shift+R
+
+### Manual
+
+```bash
+cd SillyTavern/data/default-user/extensions
+git clone https://github.com/Nufahi/storyforge.git
+```
+
+Then restart SillyTavern or press Ctrl+Shift+R.
+
+---
+
+## Usage
+
+1. Click the puzzle icon in the top bar > StoryForge
+2. Click any tool to queue it (turns green)
+3. Send your message — the AI weaves in the tool's instruction
+4. With auto-clear ON, the injection disappears after one use
+
+Stack tools — activate multiple at once. Queue Scene Shift + New NPC to move locations and introduce a character in one response.
+
+Custom tools — click "+ New tool" and write anything. Examples: Flashback, Plot Armor Off, Lore Drop.
+
+---
+
+## Settings
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| Enabled | On | Master toggle |
+| Injection Depth | 1 | Position in chat context (0 = last message) |
+| Auto-clear | On | Remove injections after generation (one-shot) |
+
+---
+
+## Slash Commands
+
+| Command | Action |
+|---------|--------|
+| /storyforge | Open StoryForge panel |
+| /sf-clear | Clear all active injections |
+
+---
+
+## License
+
+MIT
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---

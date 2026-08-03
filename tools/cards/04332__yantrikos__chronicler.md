@@ -1,0 +1,281 @@
+---
+id: tool-04332
+type: tool
+area: 库
+status: active
+tags: [TypeScript, 协议未明, 需API密钥, 英文文档, 人物设定, RAG]
+title: chronicler
+summary: 长篇人物/设定/伏笔一致性（RAG 记忆库）
+source: https://github.com/yantrikos/chronicler
+created: 2026-07-18
+updated: 2026-07-18
+no: 4332
+category: 四、长篇一致性 / RAG / 故事圣经 库
+repo: yantrikos/chronicler
+stars: 3
+url: https://github.com/yantrikos/chronicler
+tier: "B"
+use_case: "长篇人物/设定/伏笔一致性（RAG 记忆库）"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+  - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
+related:
+  - methods/人物思维蒸馏法.md
+  - methods/模板库.md
+---
+
+# yantrikos/chronicler
+
+- **分类**：四、长篇一致性 / RAG / 故事圣经 库
+- **链接**：https://github.com/yantrikos/chronicler
+- **Stars**：3
+- **语言**：TypeScript
+- **License**：NOASSERTION
+- **Topics**：anthropic, character-ai, character-card, docker, llm, local-first, memory, ollama, rag, react, roleplay, self-hosted, typescript
+- **GitHub 描述**：Local-first roleplay with living memory. Self-hosted. Imports v2/v3 character cards. Runs on any LLM.
+- **本地描述**：Local-first roleplay with living memory. Self-hosted. Imports v2/v3 character cards. Runs on any LLM.
+- **拉取时间**：2026-07-25 17:42:27
+
+---
+
+# Chronicler
+
+**Local-first roleplay client with a memory that actually works.**
+
+Chronicler is an open-source, self-hosted roleplay/character-chat app. You run it on your own machine via `docker compose up`. It imports the community v2/v3 character-card format (chub.ai-compatible), talks to any OpenAI-compatible LLM endpoint (OpenAI, Anthropic, Ollama, OpenRouter, llama.cpp, vLLM, nano-gpt, …), and remembers the things that matter about every character across every session — automatically, locally, without sending anything to a cloud.
+
+> The problem with existing RP clients isn't the UI — it's that memory falls apart after a few sessions. Chronicler is built around a persistent cognitive memory engine (YantrikDB) and a strict three-tier write contract that keeps canon clean and accumulates real continuity over hundreds of hours.
+
+---
+
+## Quick start
+
+**Fastest — one file, no clone:**
+
+```bash
+curl -O https://raw.githubusercontent.com/yantrikos/chronicler/main/docker-compose.yml
+docker compose up -d
+open http://localhost:3001
+```
+
+Docker pulls both published images (~500 MB total) from [GitHub Container Registry](https://github.com/orgs/yantrikos/packages) and starts the stack. First boot waits ~60s for YantrikDB to finish loading its embedding model.
+
+**Or clone for development:**
+
+```bash
+git clone https://github.com/yantrikos/chronicler && cd chronicler
+docker compose up -d
+```
+
+`docker compose up` prefers the published image; if you modify the source and run `docker compose build`, it rebuilds locally and your image replaces the pulled one.
+
+## Published images
+
+| Image | Purpose | Size |
+|---|---|---|
+| `ghcr.io/yantrikos/chronicler:latest` | Web + API proxy | ~270 MB |
+| `ghcr.io/yantrikos/chronicler-yantrikdb:latest` | YantrikDB MCP server + CPU-only torch | ~1.9 GB |
+
+Both are multi-platform (linux/amd64 + linux/arm64) and rebuilt on every push to `main` via [`.github/workflows/docker-images.yml`](.github/workflows/docker-images.yml). Semver tags (`v0.1.0`, etc.) publish stable versions as they're cut.
+
+## First-run in the app
+
+1. **Settings → Your persona** — name + optional description
+2. **Settings → Providers** — add Ollama (local), OpenAI-compat, or Anthropic with a model name
+3. **Settings → Extraction provider** (optional) — small/fast model for background fact extraction (e.g. `qwen2.5:1.5b`)
+4. **Settings → Proactive messages** — off by default; `passive` lets the character take initiative when urges accumulate and you've been idle
+5. **+ card** to import a v2/v3 character card, or **demo: Ren** to try the built-in character
+6. Type. Memories appear in the right sidebar as they land.
+
+First-run flow:
+
+1. **Settings → Your persona** — set your user name and (optionally) a short description.
+2. **Settings → Providers** — add an Ollama (local), OpenAI-compat (nano-gpt / OpenRouter / local endpoints), or Anthropic provider with a model name. For Qwen3-family Ollama models, check "disable thinking" — massive latency cut.
+3. **Settings → extraction provider** (optional) — pick a smaller, faster model to run the fact extractor in parallel with generation.
+4. **Settings → save.**
+5. **+ card** to import a v2/v3 character card (.png or .json), or **demo: Ren** to try a built-in character.
+6. Type and send. First reply takes a beat while memories seed; subsequent turns stream.
+
+---
+
+## What makes it different
+
+- **Three-tier write contract.** Every memory is tagged as **reflex** (ephemeral scene state), **heuristic** (inferred, reviewable), or **canon** (durable, user-confirmed). Chat noise doesn't pollute canon; drafts promote to canon only after repeated, uncorrected reinforcement across sessions. Full user-facing inspector with pin / demote / forget / retcon controls.
+- **Mechanically enforced privacy in group chats.** Each memory carries a `visible_to` ACL. In a group scene, a character physically cannot recall a secret they weren't told — the retrieval layer filters before ranking. Not prompt-engineered, not relying on the model's discretion.
+- **Semantic lorebook replacement.** Community `character_book` entries are honored with full trigger semantics (keys + secondary keys + selective + constant + position + insertion_order + case sensitivity) AND supplemented by semantic recall. Retires the brittle keyword-only mechanic without breaking compatibility.
+- **Session replay harness.** Every tier transition logs a structured entry; the auto-promotion threshold can be retuned and replayed against prior sessions to see exactly which promotions would have fired. The "sink-risk" of the whole system is visible and tunable.
+- **Anti-confabulation clause.** Prepended to every system prompt: "treat only the facts in `<canon>` and `<scene>` as real, do not reference prior events not in those sections." Combined with the visibility ACL, the model cannot invent memory it wasn't given.
+- **"Previously on..." recap at session start.** Pulled from consolidated canon, not raw chat history. Strict anti-confab prompting on the recap itself after we caught (and fixed) a real-world confabulation where the recap misattributed facts.
+- **Verified character learning.** Patterns the model shows repeatedly across sessions (deflection styles, conduct rules, decision rituals, lessons from past failures) get distilled into typed `skill_substrate` entries — but only after an LLM verifier passes on each candidate, biased toward rejection. Skills surface back into future prompts when relevant, score `+1` / `−1` from user reactions (regenerate / edit / delete vs accept and move on), and transition through `candidate → active → suppressed → archived` based on accumulated outcomes. There's a "Character development" tab next to "Memory" with approve / disable / archive controls; the local override always wins over the derived state. See [docs/LCDB-v0.md](docs/LCDB-v0.md) for the ablation harness that proves the contract holds.
+- **Crystallizing character identity** (Phase 11). Skills that hold up over weeks of sessions promote past `active` into a 5th state, `core_trait` — always-on identity facets like *"Adira is fundamentally guarded with strangers"* that inject into every system prompt unconditionally. Combined with a periodically-generated first-person self-model (*"I am Adira. I'm a wandering musician…"*), the substrate carries the character across LLMs. We measured it: same Adira through `qwen2.5:7b` and `qwen3.5:9b`, **σ=0.087** cross-provider on mean overall scores (moderate model-independence). The Identity inspector shows the crystallized traits + self-model + benchmark verdict. See [docs/CHARACTER-EMERGENCE.md](docs/CHARACTER-EMERGENCE.md) for the thesis and [docs/CHARACTER-EMERGENCE-RESULTS.md](docs/CHARACTER-EMERGENCE-RESULTS.md) for the run.
+
+All of the above is verified by automated tests: `three-day-continuity`, `auto-promote`, `secret-stays-private`, `session-replay`, `lorebook`, `extract`, `skill-former`, `skill-outcomes`, `lcdb-v0`, `mcp-connectivity`, `core-trait-promoter`, `self-model-generator`, `identity-aggregator`, `cross-model-benchmark`. Everything green.
+
+For a head-to-head comparison against SillyTavern, RisuAI, and AgnAistic, see [docs/COMPARISON.md](docs/COMPARISON.md). Headline:
+
+| | Chronicler | SillyTavern | RisuAI | AgnAistic |
+|---|---|---|---|---|
+| Tiered cross-session memory (canon / heuristic / reflex) | ✅ | 🟡 plugin | 🟡 lorebook | 🟡 memory book |
+| Anti-confabulation clause built into every prompt | ✅ | ❌ user adds | ❌ | ❌ |
+| Memory conflict detection + auto-resolve | ✅ | ❌ | ❌ | ❌ |
+| Skills + drift + preferences substrates (3 inspectors) | ✅ | ❌ | ❌ | ❌ |
+| **Model-independent character continuity** (substrate-driven) | ✅ Phase 11 (σ=0.087 within qwen family) | ❌ | ❌ | ❌ |
+| Prompt inspector with token budget + retrieval reasoning | ✅ | 🟡 structure only | 🟡 | ❌ |
+| Group-chat memory ACL (`visible_to`, retrieval-time filter) | ✅ | ❌ prompt-level | ❌ | ❌ |
+| Scene Intensity dropdown (first-class, no jailbreak) | ✅ | ❌ | ❌ | ❌ |
+| Extension ecosystem | ✅ Grimoire (v0.3 hooks + slash + UI slots + MCP tools/resources + npx scaffold) | ✅ huge | 🟡 | 🟡 |
+
+---
+
+## Table-stakes RP features
+
+Because the above is wasted if you can't actually RP:
+
+- **Edit / delete / regenerate / continue / swipes** — hover any message for the toolbar; cycle swipes on the last reply with ‹ › arrows.
+- **Impersonate user** — click "impersonate" near the Send button and the LLM suggests your next line, which you can edit before sending.
+- **Character avatars** — embedded card PNG image, or initials fallback with deterministic color per character.
+- **Markdown rendering** — `**bold**`, `*italic*`, code, block quotes, lists.
+- **Streaming tokens** — see the reply appear word by word.
+- **Author's note** — persistent scene-level steering instruction, per-session.
+- **Alternate greetings** — dropdown picker for multi-greeting cards.
+- **Sampling controls** — temperature, top_p, top_k, min_p, repetition_penalty; per provider.
+- **Prompt inspector** — see the exact system prompt + history sent to the LLM on every turn, including which lorebook entries activated.
+- **Session list** — switch between past chats, rename, delete, export each as a Markdown transcript.
+- **Backup / restore** — export full config + characters + all sessions as a single JSON for machine-to-machine transfer.
+- **User persona** — set your name + a short self-description, injected into every system prompt.
+- **Group chats** — add a second character; each turn composes context from that character's POV only (privacy ACLs enforced live).
+
+---
+
+## Updating
+
+```bash
+docker compose pull
+docker compose up -d
+```
+
+Pulls the latest published images and restarts. Your memory DB persists in the named volume (`chronicler-memory`) across restarts.
+
+## Stack
+
+- **Frontend:** React 19 + TypeScript + Vite + Tailwind v4 + react-markdown
+- **Server:** tiny Node HTTP proxy — serves the built SPA, routes `/api/mcp/*` to YantrikDB, routes `POST /api/llm` to configured providers (keeps API keys host-side, no browser CORS)
+- **Memory:** [YantrikDB](https://github.com/yantrikos/yantrikdb) — local semantic memory with knowledge graph, conflict detection, consolidation, temporal triggers, personality inference, procedural memory
+- **LLM:** Ollama native (`/api/chat` with `think: false` support) + OpenAI-compatible + Anthropic native; streaming on all three
+
+See [docs/ADR-001-stack.md](docs/ADR-001-stack.md) for why web+Docker over native (yes, we pivoted from Tauri).
+
+## Architecture
+
+```
+┌─── browser (React + TS) ──────────────────────────┐
+│  ChatPane    SessionList    MemoryInspector      │
+│  Settings    PromptInspector                     │
+└───────────────────────────┬───────────────────────┘
+                            │ fetch
+                            ▼
+┌─── Node proxy (same origin) ──────────────────────┐
+│  /api/mcp/*  → transparent reverse proxy         │
+│  POST /api/llm → { target_url, method, headers,  │
+│                     body }  → upstream provider  │
+│  /  /index.html  → serves dist/                  │
+└──┬─────────────────────┬──────────────────────────┘
+   │                     │
+   ▼                     ▼
+┌─────────────┐    ┌──────────────┐
+│  YantrikDB  │    │ any LLM      │
+│  (docker    │    │ (Ollama /    │
+│   service)  │    │  Anthropic / │
+│             │    │  OpenAI API) │
+└─────────────┘    └──────────────┘
+```
+
+## Repo layout
+
+```
+chronicler/
+  server/index.mjs              Node proxy + static
+  src/
+    lib/
+      yantrikdb/                typed MCP client + conventions
+      orchestrator/             per-turn pipeline, compose, write, extract, scene,
+                                auto-promote, lorebook scanner, anti-confabulation
+      cards/                    v2/v3 parser + decomposition
+      providers/                OpenAI-compat / Anthropic / Ollama / Mock
+      session/                  lifecycle, store, markdown export
+      recap/                    previously-on generator
+      instrumentation/          promotion + session logs (redacted by default)
+    components/
+      Chat/                     ChatPane with recap + swipes + toolbar
+      Inspector/                MemoryInspector + PromptInspector
+      Sessions/                 SessionList
+      Settings/                 SettingsPanel
+    App.tsx
+  Dockerfile                    web build + runtime
+  yantrikdb.Dockerfile          yantrikdb-mcp image with CPU-only torch
+  docker-compose.yml            both services wired
+  docs/
+    ADR-001-stack.md            why web+Docker
+    ADR-002-memory-conventions.md   the three-tier write contract
+    DOGFOOD.md                  pre-launch testing protocol
+    PATTERN.md                  the reusable memory pattern (standalone read)
+  tests/                        seven test suites, all required to ship
+```
+
+## Privacy
+
+- All traffic binds to `127.0.0.1` by default. Remote access requires you to remove that binding yourself and add an auth layer in front (Tailscale / Caddy).
+- LLM API keys live in your browser's localStorage and in the proxy request body; they never leave your machine except to reach the provider you configured.
+- Promotion and session logs redact memory text by default. Opt into verbose local-only logging with `CHRONICLER_VERBOSE_LOGS=1`.
+- **Session content is never transmitted to anywhere except your configured LLM provider.** The YantrikDB service runs alongside Chronicler in the same Docker network; your memories never leave your machine.
+- Group-chat privacy is enforced mechanically via per-memory `visible_to` ACLs and pre-ranking retrieval filters — verified by `tests/secret-stays-private.test.ts`.
+
+## Reporting bugs / getting involved
+
+- **Bugs and usage questions** → [SUPPORT.md](SUPPORT.md). GitHub Issues is intentionally disabled because session content is often sensitive; structural bugs route to Discussions, content-bearing reports route to private email.
+- **Contributing code** → [CONTRIBUTING.md](CONTRIBUTING.md). Scope is narrow and deliberate; discussion-first for new feature areas.
+- **Security** → [SECURITY.md](SECURITY.md). Private email, coordinated disclosure.
+- **Code of Conduct** → [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Contributor Covenant 2.1 + project-specific notes.
+
+## Develop
+
+```bash
+npm install
+
+# frontend dev with HMR (expects API sidecar on :3001)
+npm run dev
+
+# second terminal: API sidecar
+npm run dev:server
+
+# full prod-mode run
+npm run build && npm start
+
+# seven-suite test run (pure TS, no services required)
+npm test
+
+# live MCP integration smoke (requires compose stack running)
+npm run test:integration
+```
+
+## Non-goals (deferred by design, not oversight)
+
+- Autonomous character behavior / personality evolution without user consent — see `docs/ADR-002` for why this is a soft-suggestion-only feature
+- Mobile-responsive layout — desktop browser first
+- Image generation / TTS / sprite expressions — leave to adjacent tools
+- A hosted SaaS offering — this is self-hosted by design
+- Full plugin ecosystem — intentionally closed surface until dogfood signal says otherwise
+
+## License
+
+TBD before public release.
+
+related:
+  - methods/人物思维蒸馏法.md
+  - methods/模板库.md
+---
+
+Built by [@spranab](https://github.com/spranab). Powered by [YantrikDB](https://github.com/yantrikos/yantrikdb).
+
+Companion read: [docs/PATTERN.md](docs/PATTERN.md) — a standalone write-up of the memory architecture, useful if you're building anything that needs a trustworthy memory layer on top of a language model.

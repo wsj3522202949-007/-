@@ -1,0 +1,153 @@
+---
+id: tool-00359
+type: tool
+area: 库
+status: active
+tags: [Claude插件, TypeScript, 协议宽松, 本地优先, 英文文档, 本地写作]
+title: obsidian-inkswell-plugin
+summary: Claude Code 插件式写作流
+source: https://github.com/leethobbit/obsidian-inkswell-plugin
+created: 2026-07-18
+updated: 2026-07-18
+no: 359
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: leethobbit/obsidian-inkswell-plugin
+stars: 6
+url: https://github.com/leethobbit/obsidian-inkswell-plugin
+tier: "B"
+use_case: "Claude Code 插件式写作流"
+pitfalls: []
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# leethobbit/obsidian-inkswell-plugin
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/leethobbit/obsidian-inkswell-plugin
+- **Stars**：6
+- **语言**：TypeScript
+- **License**：MIT
+- **Topics**：obsidian-md, obsidian-plugin, writing-tool
+- **GitHub 描述**：Plan, draft, track, revise, and publish longform fiction entirely inside your Obsidian vault using a single host view that organizes Home, Plan, Write, Revise, Publish plus Codex and Track tools.
+- **本地描述**：Plan, draft, track, revise, and publish longform fiction entirely inside your Obsidian vault using a single host view that organizes Home, Plan, Write, Revise, Publish plus Codex and Track tools.
+- **拉取时间**：2026-07-23 22:49:35
+
+---
+
+# Inkswell
+
+**A local-first writer's suite for longform fiction in [Obsidian](https://obsidian.md).** Plan, draft, track, revise, and prepare to publish with Inkswell. My goal is to build the best end-to-end plugin toolkit for writers, especially those working on large series longform projects.
+
+![Inkswell — Plan · Write · Track · Revise · Publish, all inside Obsidian](assets/hero.gif)
+
+## Why Inkswell
+
+- **You can handle nearly the entire writing process just with Inkswell.** Inkswell organizes the entire arc of a novel — **Plan · Write · Revise · Publish**, plus a cross-cutting **Codex** and **Track** dashboard — into a single host view. Inkswell can get you from your first story ideas to a finished manuscript, with unique and powerful tools at each stage.
+- **Focus on UX with only the features you need.** I have noticed a trend in other writing tools to add every possible feature under the sun.  For some writers, this may be what they want, but my experience is that those tools often try to do too many things, and it makes it challenging to use them effectively.  Inkswell is built with user experience at the forefront - I have made a huge effort to deliver the most vital features for each stage of the writing journey, in order to get the most streamlined workflows possible without being overly opinionated. (I hope!) And when a surface isn't for you, **hide it** — Settings → Features (or right-click the tab) turns off optional tools like the board, plot grid, beats, or the publishing checklist, losslessly, so the app stays as lean as your workflow.
+- **Local-first. No AI.** Inkswell makes **no network calls**, collects **no telemetry**, and does not generate any text. Your manuscript lives in your vault's frontmatter and the notes you write. Inkswell is built to make it easier for you to write, not do the writing for you.
+- **Drop-in for Longform users.** I am a long time fan of the [Longform plugin](https://github.com/kevboh/longform), so I made Inkswell compatible with that format. Inkswell reads and writes the same `longform` frontmatter, so existing projects load with **zero migration**. Inkswell-only data lives under a separate `inkswell` key to avoid collisions.
+
+## What's inside
+
+Five pipeline phases — **Home · Plan · Write · Revise · Publish** — plus two cross-cutting tools, **Codex** and **Track**, that you reach for at any stage.
+
+| Surface | What it's for |
+|---------|------------related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| **Home** | Projects, a nestable scene tree, a cover-art hero card (logline / theme / word-target progress), multiple drafts per story, ideas inbox + quick capture, and series grouping for multi-book worlds. |
+| **Plan** | Overview fields, beat sheets (7 templates incl. Save the Cat!), and **Structure** — the outline tree, a Kanban board, and a plotline × chapter grid, behind one Tree / Board / Grid switcher. |
+| **Write** | A distraction-light Live-Preview editor, writing prompts, fast-drafting inline markers, and timed sprints. |
+| **Revise** | An Audit toolkit, a unified To-dos worklist (draft markers left in prose + logged revision decisions), and manuscript Analysis. |
+| **Publish** | A configurable compile/export pipeline plus a self-publishing checklist and launch planner. |
+| **Codex** | A story bible — characters, locations, worlds, factions, items, events, and concepts — with scene linking and mention auto-detect. |
+| **Track** | Word goals, streaks, a GitHub-style heatmap, lifetime records, a deadline pace calculator, and milestone zones. |
+
+### Home — organize the whole world
+
+Projects and a nestable scene tree, an ideas inbox with quick capture, and series grouping for multi-book worlds, all behind a global project switcher. Select a project to open a **hero card** — attach cover art and see the logline, theme, and a progress bar tracking words toward the target. A story can hold **multiple drafts** (a first draft, an editor pass…), switchable from the header, each a full independent copy of the manuscript and its planning.
+
+![Home: project list, nestable scene tree, and project switcher](assets/home.png)
+
+### Plan — structure before you draft
+
+A three-step flow: *Overview* (novel-level fields and long-form prose), *Beats* (7 outline templates incl. Save the Cat!, with scene scaffolding), and *Structure* — the same scenes seen three ways behind a **Tree | Board | Grid** switcher: the authoritative Act › Chapter › Scene outline tree, a Kanban board (by status / act / chapter / POV), and a plotline × chapter plot grid.
+
+![Plan: Kanban board with colored scene cards grouped by status](assets/plan.png)
+
+### Write — draft fast, fix later
+
+A distraction-light, Live-Preview manuscript editor with writing prompts and timed **sprints**. Five fast-drafting **inline markers** — for to-dos, research questions, dialogue gaps, missing scenes, and notes — highlight as you type (e.g. `[RESEARCH: what did 1920s lamplighters earn?]`), so you can mark a gap and keep moving forward. Find them all later in Revise → To-dos.
+
+![Write: Live-Preview editor with highlighted draft markers and a running sprint timer](assets/write.png)
+
+### Revise — from draft to book
+
+- **Audit** — per-scene and project revision checklists, a scene-purpose lift-out test, scene-opening variety, a character-arc grid, a side-character roster, and a style-sheet consistency scan.
+- **To-dos** — everything left to fix in one scene-grouped worklist: every draft marker left in the prose (to-dos, research questions, …), plus your **invisible-revision decisions** — capture *"from now on, assume X"* rulings (e.g. "the inn is now called the Gilded Wren") as typed, prioritized entries and **keep drafting forward** instead of breaking flow to backfill earlier chapters.
+- **Analysis** — readability, overused words, echoes, and composition mix.
+
+![Revise: the Audit toolkit — character-arc grid and revision checklists](assets/revise.png)
+
+### Publish — manuscript to market
+
+A configurable **compile/export** pipeline (Markdown & HTML built in; `.docx` / `.pdf` / `.epub` via pandoc when installed) with a step editor, chapter grouping, and a pre-export check. Plus a self-publishing **Checklist** (master checklist + book-metadata worksheet) and a **Launch** planner — pre-order timeline, budget, cover, marketing, and ARC trackers.
+
+![Publish: compile step editor and the self-publishing launch planner](assets/publish.png)
+
+### Codex — your story bible
+
+Characters, locations, worlds, factions, items, events, and concepts, each with its own profile. Every entry automatically lists the scenes that mention it — by name or alias, for any category — so your canon stays consistent as the manuscript grows. Can be scoped for single writing projects, or shared across a series.
+
+![Codex: a character profile in the story bible with linked scenes](assets/codex.png)
+
+### Track — view stats, keep pace, achieve goals
+
+Daily / weekly / monthly word goals, habit streaks, a GitHub-style heatmap, lifetime records, a writing-history chart, sprint stats, a **deadline pace calculator** (required daily words, ahead / on-track / behind), draft-milestone zones, and an optional daily mood.
+
+![Track: heatmap, streak, progress rings, and writing-history chart](assets/track.png)
+
+## Privacy & dependencies
+
+- **Local-first.** No network calls, no telemetry, no account. Everything is stored in your vault's frontmatter and the plugin's local `data.json`.
+- **No AI.** By design — Inkswell is tooling around your writing. It cannot generate any text.
+- **Optional pandoc.** Exporting to `.docx` / `.pdf` / `.epub` shells out to a [pandoc](https://pandoc.org/) binary on your machine. It's feature-detected and disabled gracefully when pandoc isn't present; Markdown and HTML export need nothing extra.
+- **Runs on mobile.** Inkswell installs on Obsidian mobile. On tablets and iPad the full suite is available with a responsive layout; on phones it focuses on drafting (a single-column editor with a slide-in scene list), while the planning/reference/publish surfaces point you to a larger screen. The only desktop-only piece is pandoc-based `.docx` / `.pdf` / `.epub` export, which disables itself gracefully elsewhere.
+
+## Install
+
+**Requirements:** Obsidian 1.7.4+ (pandoc optional, for `.docx` / `.pdf` / `.epub`).
+
+- **Community plugins:** Settings → *Community plugins* → *Browse* → search **Inkswell** → Install → Enable.
+- **Manual:** download `main.js`, `manifest.json`, and `styles.css` from the latest [release](https://github.com/leethobbit/obsidian-inkswell-plugin/releases) into `<vault>/.obsidian/plugins/inkswell/`, then enable Inkswell in *Community plugins*.
+
+Open Inkswell from the pen-tip ribbon icon or the *"Open Inkswell"* command.
+
+## Try it: the sample vault
+
+[`examples/sample-vault/`](examples/) is a complete, openable vault containing a mid-draft novel — *The Lamplighter's Archive* — wired up to exercise every Inkswell surface: beats, scenes, Codex, a populated Track dashboard, the revision audit, a compile recipe, and the self-publishing planner. Run `npm run build:sample`, then *Open folder as vault* on `examples/sample-vault`. See [examples/README.md](examples/README.md) for details.
+
+## Development
+
+```bash
+npm install
+npm run dev      # watch build into main.js
+npm run build    # typecheck + production bundle
+npm test         # unit tests (vitest)
+```
+
+Copy `main.js`, `manifest.json`, and `styles.css` into `<vault>/.obsidian/plugins/inkswell/` to test in a real vault. Architecture, conventions, and the compile/version workflows are documented in [AGENTS.md](AGENTS.md).
+
+## AI disclosure
+
+This plugin was developed with the assistance of **agentic AI coding tools and practices**. I have a mandate at work to learn AI tooling, and I wanted to channel that practice into something useful for a community I love - hopefully this counts as that. Direction, architecture, scope, and review are all handled by me; much of the implementation was AI-assisted under that direction. That said, there is absolutely NO AI-generation in the plugin itself.  I used agents to help build it, but the plugin itself has a strict "No AI" policy and no AI or word generation features will ever be added.
+
+## License
+
+MIT © Daniel King

@@ -1,0 +1,216 @@
+---
+id: tool-05245
+type: tool
+area: 库
+status: active
+tags: [文风迁移, Python, 协议未明, 本地优先, 英文文档, 改稿润色, 本地写作]
+title: fast-ai-detector
+summary: 风格微调/文风迁移
+source: https://github.com/ejhfast/fast-ai-detector
+created: 2026-07-18
+updated: 2026-07-18
+no: 5245
+category: 一、去 AI 味 / Humanizer 库
+repo: Ejhfast/fast-ai-detector
+stars: 6
+url: https://github.com/ejhfast/fast-ai-detector
+tier: "B"
+use_case: "风格微调/文风迁移"
+pitfalls:
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# Ejhfast/fast-ai-detector
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/ejhfast/fast-ai-detector
+- **Stars**：6
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：a fast local CLI for the detection of AI-generated text
+- **本地描述**：a fast local CLI for the detection of AI-generated text
+- **拉取时间**：2026-07-25 18:11:26
+
+---
+
+# fast-ai-detector
+
+`fast-ai-detector` is a local CLI for predicting whether text was AI-written. The core model is a very small distilled transformer (~40M param) that approximates mean-pooled residual representations from a larger (4B param) [Gemma model](https://huggingface.co/google/gemma-3-4b-pt). Those residual-style outputs can be annotated with SAE features from the original Gemma model's interpretability stack. Contrast vectors were computed from the [RAID](https://raid-bench.xyz/) training dataset.
+
+I wrote up the origins of this work [here](https://open.substack.com/pub/ethanfast/p/a-tiny-model-for-fast-interpretability).
+
+Modes:
+- `contrast` (default): contrast-based prediction and SAE-based document feature inspection
+- `raid-finetune`: the core transformer model finetuned with a classifier head (trained on the RAID dataset)
+
+Current reference numbers:
+
+| Dataset | Mode | Balanced Accuracy | ROC-AUC | TPR @ 5% FPR |
+| --- | --- | ---: | ---: | related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---: |
+| RAID held-out validation | `contrast` | `0.8078` | `0.9343` | `0.7637` |
+| RAID held-out validation | `raid-finetune` | `0.9642` | `0.9958` | `0.9801` |
+| Pangram benchmark | `contrast` | `0.8827` | `0.9425` | `0.7856` |
+| Pangram benchmark | `raid-finetune` | `0.6731` | `0.8993` | `0.6466` |
+
+The contrast model (default) is recommended for normal use as the raid-finetuned model seems poorly calibrated around the human/ai threshold for text that falls outside the distribution of the RAID training data. 
+
+The pangram benchmark is small and included in this repo for reproducability. 
+
+Note: the bundled benchmarks contain little or no output from GPT-5-era systems and later, so you should not expect these scores to transfer unchanged to the latest model outputs.
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+On first use, the selected model bundle is downloaded from Hugging Face and cached locally.
+
+## Scoring
+
+### Direct text
+
+Default output is a compact human-readable table. These are real examples from `examples/pangram_benchmark.csv`.
+
+Human-like Pangram review:
+
+```bash
+fast-ai-detector --text "Went there 3 weeks ago, the place was jammed. Service was great food (breakfast) was excellent. We will be going back."
+```
+
+```text
+mode      label  score       human_ai_scale
+contrast  human  -75.602432  38.080172
+```
+
+AI-like Pangram review:
+
+```bash
+fast-ai-detector --text "I love these stories. The characters are complex and relatable, and the plot twists keep me on the edge of my seat. The writing style is engaging and descriptive, making it easy to immerse myself in the world of the story. Each tale is unique and captivating, and I find myself thinking about them long after I've finished reading. I highly recommend these stories to anyone looking for thought-provoking and entertaining reads."
+```
+
+```text
+mode      label  score       human_ai_scale
+contrast  ai     423.319458  94.671712
+```
+
+`human_ai_scale` is a RAID-reference scale, not a probability:
+
+- `0` = strongly human side
+- `50` = near the decision boundary
+- `100` = strongly AI side
+
+If you want the RAID-specific finetune model instead of the default contrast model:
+
+```bash
+fast-ai-detector --mode raid-finetune --device cuda --text "Your text here"
+```
+
+For machine-readable direct output:
+
+```bash
+fast-ai-detector --text "Your text here" --json
+```
+
+### CSV / TSV
+
+The repo includes `examples/pangram_benchmark.csv` as a ready-to-run example dataset.
+
+```bash
+fast-ai-detector \
+  --input examples/pangram_benchmark.csv \
+  --text-column text \
+  --output examples/pangram_benchmark_scored.csv
+```
+
+The tool preserves the original columns and appends:
+
+- `fast_ai_detector_label`
+- `fast_ai_detector_score`
+- `fast_ai_detector_human_ai_scale`
+
+Example output rows:
+
+```csv
+text,label,tags,fast_ai_detector_label,fast_ai_detector_score,fast_ai_detector_human_ai_scale
+"Went there 3 weeks ago, the place was jammed. Service was great food (breakfast) was excellent. We will be going back.",0,"['reviews', None]",human,-75.602432,38.080172
+"I love these stories. The characters are complex and relatable, and the plot twists keep me on the edge of my seat. The writing style is engaging and descriptive, making it easy to immerse myself in the world of the story. Each tale is unique and captivating, and I find myself thinking about them long after I've finished reading. I highly recommend these stories to anyone looking for thought-provoking and entertaining reads.",1,"['reviews', 'gpt-3.5-turbo-1106']",ai,423.319458,94.671712
+```
+
+### Vector Export
+
+You can also use the CLI to export the distilled document representations directly. This is useful if you want to run your own clustering, nearest-neighbor search, contrast-vector experiments, or SAE projection analysis outside the detector.
+
+```bash
+fast-ai-detector \
+  --input examples/pangram_benchmark.csv \
+  --text-column text \
+  --export-vectors pangram_vectors.npy
+```
+
+By default this writes an `N x 2560` float32 `.npy` matrix containing the student-predicted Gemma 3 4B layer-17 mean residual representation for each row. For `.npy` output, the CLI also writes `pangram_vectors.metadata.csv` with row indices and the original input columns, plus `pangram_vectors.npy.json` with a small manifest.
+
+Supported vector outputs:
+
+- `.npy`: vectors only, plus sidecar metadata and manifest files
+- `.npz`: compressed archive containing `vectors`, `row_index`, and `manifest_json`
+- `.csv` / `.tsv`: original columns plus `vector_0000` ... `vector_2559`
+
+Available vector spaces:
+
+- `raw` (default): predicted Gemma layer-17 mean residual vector
+- `student-z`: raw vector normalized by the student checkpoint's target mean and scale
+- `detector-z`: raw vector normalized by the contrast detector's mean and scale
+
+Example:
+
+```bash
+fast-ai-detector \
+  --input examples/pangram_benchmark.csv \
+  --text-column text \
+  --export-vectors pangram_detector_z.npz \
+  --vector-space detector-z
+```
+
+## SAE
+
+`contrast` mode can also expose document-level SAE annotations derived from the Gemma interpretability stack the student was distilled from.
+
+```bash
+fast-ai-detector \
+  --text "Subject: Exciting New Classes Announcement Dear Valued Students, We are thrilled to announce the launch of our new class offerings! From advanced coding courses to creative writing workshops, there's something for everyone. Register now to secure your spot and embark on a new learning journey. Join us in exploring your passions and expanding your horizons. Let's grow together! Best, Your Team of Dedicated Educators." \
+  --explain-sae \
+  --sae-top-k 5
+```
+
+```text
+mode      label  score       human_ai_scale
+contrast  ai     328.589661  84.249271
+
+feature_index  title                              state_vs_midpoint  usual_assoc  ai_net_push
+942            categories and definitions         19.829247          ai           170.849304
+1310           improvements and explanations      17.385456          ai           115.146446
+7748           code snippets                      17.301167          ai           120.488045
+3341           struggling with                    16.845036          ai           54.685085
+7938           Corporate, data, September, items  12.203426          ai           54.555244
+```
+
+These annotations are intended as document fingerprints in SAE space, not as calibrated probabilities or exact causal attributions.
+
+## Approach
+
+This project grew out of experiments on whether much smaller models could approximate mean-pooled residual representations from larger LLMs closely enough to preserve useful downstream geometry. The resulting detector uses a compact 4-layer student trained to predict a Gemma layer-17 mean-pooled residual representation.
+
+From there, two detector variants were built on top of the student:
+
+- `contrast`: a contrast direction learned in the student's residual space
+- `raid-finetune`: a supervised classifier head trained for the RAID benchmark
+
+The main motivation for doing this at all was not just speed. If a small model can stay close enough to the teacher representation, then some of the interpretability infrastructure built around the teacher model can still be reused. That is what powers the optional SAE annotations in `contrast` mode: the small model is fast enough for local use, but the outputs can still be inspected with the teacher's SAE dictionary.

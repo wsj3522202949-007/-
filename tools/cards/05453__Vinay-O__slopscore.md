@@ -1,0 +1,438 @@
+---
+id: tool-05453
+type: tool
+area: 库
+status: active
+tags: [JavaScript, 协议宽松, 需API密钥, 英文文档, 去AI味]
+title: slopscore
+summary: 投稿前给正文降 AI 检测痕迹、改自然语气
+source: https://github.com/vinay-o/slopscore
+created: 2026-07-18
+updated: 2026-07-18
+no: 5453
+category: 一、去 AI 味 / Humanizer 库
+repo: Vinay-O/slopscore
+stars: 2
+url: https://github.com/vinay-o/slopscore
+tier: "B"
+use_case: "投稿前给正文降 AI 检测痕迹、改自然语气"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# Vinay-O/slopscore
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/vinay-o/slopscore
+- **Stars**：2
+- **语言**：JavaScript
+- **License**：MIT
+- **Topics**：ai-coding-assistant, ai-generated-code, ai-slop, anti-slop, claude-code, cli, code-quality, code-review, cursor, developer-tools, devsecops, linter, npm-package, security, static-analysis, vibe-coding, zero-dependency
+- **GitHub 描述**：Scan your codebase for AI slop. Get a Slop Score. Ship clean. A zero-dependency CLI (85 detectors: security, performance, code-quality, design tells) + a 181-pattern Anti-Slop Protocol for AI coding agents.
+- **本地描述**：Scan your codebase for AI slop. Get a Slop Score. Ship clean. A zero-dependency CLI (85 detectors: security, performance, code-quality, design tells) + a 181-pattern Anti-Slop Protocol for AI coding agents.
+- **拉取时间**：2026-07-25 18:19:15
+
+---
+
+<div align="center">
+
+# 🩺 slopscore
+
+### Scan your codebase for AI slop. Get a Slop Score. Ship clean.
+
+**A zero-dependency CLI + a 286-pattern protocol for AI coding agents.**
+The antidote to vibe-coded software: turn *generation* into *governance*.
+
+[![CI](https://github.com/Vinay-O/slopscore/actions/workflows/ci.yml/badge.svg)](https://github.com/Vinay-O/slopscore/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![node](https://img.shields.io/badge/node-%E2%89%A518-339933)](https://nodejs.org)
+[![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
+[![self-scan](https://img.shields.io/badge/slop%20score-0%20·%20pristine-brightgreen)](#it-passes-its-own-scan)
+
+</div>
+
+```bash
+npx slopscore
+```
+
+That's it. No install, no config, no API key. Point it at a repo and it tells you — in one number — how much AI slop you're about to ship, and exactly how to fix each instance.
+
+---
+
+## The problem
+
+In 2026, **46% of new code is AI-generated** and **92% of developers use AI tools daily** — but trust in that code fell from **77% to 60%**. GitClear's analysis of 211M lines found duplicated code up **4–8×**, refactoring collapsed **60%**, and AI PRs carry **~1.7× more issues**. Roughly **45% of AI-generated code ships a security weakness**.
+
+<sub>Sources: GitHub / Stack Overflow 2025–26 developer surveys (adoption, trust); [GitClear, *AI Copilot Code Quality 2025*](https://www.gitclear.com/ai_assistant_code_quality_2025_research) (211M lines — duplication, refactoring decline); CodeRabbit (~1.7× more issues in AI PRs); [Veracode, *2025 GenAI Code Security Report*](https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/) (45% of tasks introduced a vulnerability, across 100+ models). Full attributions in [`ANTI_SLOP_PROTOCOL.md` §8](ANTI_SLOP_PROTOCOL.md).</sub>
+
+The tools didn't create the problem. They revealed how little structure was there to begin with.
+
+AI slop is insidious because it *looks* finished — consistent naming, passing tests, a polished purple hero section — while being architecturally hollow. You can't catch it by glancing at it. **slopscore catches it for you.**
+
+## See it work
+
+<!-- Render the GIF once with `vhs docs/demo.tape`, then embed it here: -->
+<!-- ![slopscore scanning a sloppy file](docs/demo.gif) -->
+
+```text
+$ npx slopscore examples/slop.tsx
+
+  slopscore  ·  1 files  ·  0.03 kLOC
+
+  slop.tsx
+    :5  🔴 CRIT  [058] Hardcoded secret / API key
+        const API_KEY = "sk-proj-abc123def456ghi789jkl012mno345";
+        fix: Move to an env var / secret manager. A committed secret is COMPROMISED — rotate it now.
+    :12 🔴 CRIT  [073] Auth token in localStorage
+        localStorage.setItem("auth_token", "ey.some.jwt");
+        fix: Store auth in httpOnly, Secure, SameSite cookies — not localStorage (XSS-readable).
+    :13 🔴 CRIT  [072] SQL injection via template literal
+        const q = `SELECT * FROM users WHERE id = ${data.id}`;
+        fix: Use parameterized queries / prepared statements. Never interpolate input into SQL.
+    :15 🔴 CRIT  [053] Empty catch block (silent error swallowing)
+        } catch (e) {}
+        fix: At minimum log with context; better, handle or rethrow and surface a real message.
+    :29 🔴 CRIT  [071] dangerouslySetInnerHTML / .innerHTML without sanitization
+        <div dangerouslySetInnerHTML={{ __html: data.bio }} />
+        fix: Render as text, or sanitize with DOMPurify + an allowlist before injecting.
+    … and 18 more
+
+  ╔══════════════════════════════════════════╗
+  ║           S L O P   S C O R E            ║
+  ╚══════════════════════════════════════════╝
+
+   75 weighted   (33 lines scanned)
+   5 critical   9 major   9 minor
+   by rule: 105 ×1 · 176 ×1 · 216 ×1 · 220 ×1 · 058 ×1 · 054 ×1
+
+   ▶ Vibe-coded. Audit before anyone depends on it.
+```
+
+Every finding has a **severity**, a **catalog ID**, a **confidence**, the **exact location**, and a **fix**. No vague "code smells" — a punch list you can act on.
+
+## Quick start
+
+```bash
+npx slopscore                      # scan the current directory
+npx slopscore scan src --fail-on minor
+npx slopscore examples/slop.tsx    # watch a sloppy file score 75
+npx slopscore . --markdown > slop.md
+```
+
+Or install it:
+
+```bash
+npm i -g slopscore && slopscore
+```
+
+## Two ways to use it
+
+slopscore ships **two halves of the same idea**: a deterministic scanner you run, and a protocol you hand to an AI.
+
+### 1. The scanner (deterministic, zero-dependency)
+
+Runs **190 detectors** locally in milliseconds — a fast **security first-pass** (secrets across 15+ providers, SQL/command injection, disabled TLS verification, weak hashing, insecure randomness, hardcoded private keys, insecure deserialization, wildcard CORS, `eval`, unverified JWTs, cleartext HTTP, Dockerfile/CI footguns), plus a **robustness pass** (unguarded `JSON.parse`, unchecked `.find()`/`.match()`, `parseInt` w/o radix), empty catches, `any`, hallucinated APIs, missing `alt`, the VibeCode-purple gradient, AI buzzword copy, and god files. Regex/heuristic by default (a fast first pass, not a replacement for Semgrep/CodeQL); an opt-in `--ast` mode (acorn/@babel) adds accurate JS/TS complexity metrics, cross-file structural clone detection, and taint analysis — both intra- and single-file inter-procedural (user input flowing through a helper into a sink). No LLM, no network, zero runtime dependencies in the core.
+
+Run a focused security audit with `slopscore scan . --category security`.
+
+### 2. The protocol (for your coding agent)
+
+[`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md) is a **286-pattern operating manual** for AI agents. Hand it to Claude Code, Cursor, Codex CLI, Aider, Copilot, Windsurf, or Cline and say:
+
+> **"Check the system."**
+
+The agent runs a defined loop — orient → scan → score → triage → **fix** → verify → report — where every pattern carries a `DETECT`, a `FIX`, and a **fix authority** (🟢 auto-fix · 🟡 propose · 🔴 flag-for-human) so it knows what it may change on its own versus what needs your call. The **154 patterns the CLI already automates are tagged `⚙️ slopscore scan`** right in the catalog (generated from the scanner's own rule table, so the two halves never drift) — the untagged ones are where the agent earns its keep.
+
+```bash
+slopscore protocol | pbcopy        # copy the protocol to paste into your agent
+slopscore scan . --format agent    # compact, context-window-friendly output for an agent
+slopscore explain 058              # look up any one pattern + its fix, by id
+```
+
+**Make agents use it automatically.** You shouldn't have to remind your agent every session. `slopscore init` writes an **`AGENTS.md`** (the cross-tool standard that Cursor, Codex, Claude Code, Aider, Windsurf, and Cline all read) that tells the agent to load `npx slopscore protocol`, follow it, and gate on `npx slopscore scan` before declaring done — so the protocol is adopted on its own, no copy-paste required. If you already have an `AGENTS.md` or `CLAUDE.md`, it appends the section (idempotently) instead of overwriting.
+
+The scanner finds it. The protocol fixes it. The CI gate keeps it out. And `AGENTS.md` makes your agent do all three without being asked.
+
+## The Slop Score
+
+One number, weighted by severity **and confidence**, normalized per 1,000 lines so big repos don't look worse just for being big:
+
+```
+SLOP SCORE   = Σ  (severity weight)  ×  (confidence factor)
+               severity:   🔴 critical ×10 · 🟠 major ×3 · 🟡 minor ×1
+               confidence: high ×1 · medium ×0.5 · low ×0.25
+SLOP DENSITY = weighted findings per 1,000 lines (kLOC)
+```
+
+Confidence scaling means a precise detector (a hardcoded secret, SQL injection) counts full, while a heuristic idiom (a `var`, a `==`, a design tell, a duplicate-block guess) counts a fraction — so soft noise on mature code can't inflate a real, human-written library to "vibe-coded." (Each rule is also capped at 10 findings toward the score, so one loud detector can't define the verdict.)
+
+| Density (weighted / kLOC) | Verdict |
+|:--|:--|
+| 0 | **Pristine. Ship it.** |
+| ≤ 2 | Clean. Human-grade. |
+| 2–6 | Mild slop. A focused pass fixes it. |
+| 6–12 | Heavy slop. Needs real work. |
+| > 12 | Vibe-coded. Audit before anyone depends on it. |
+
+> Rough field observation (not yet a controlled, published benchmark — see the calibration work in progress): established codebases tend to run ~4.4 weighted findings/kLOC; vibe-coded ones ~14. Treat it as a directional heuristic, not a certified number.
+
+### The score reflects *production* risk
+
+A `console.log` in a test runner is not a SQL injection in production — so they shouldn't score the same. slopscore is context-aware by default:
+
+- **Generated and vendored files are skipped** — minified bundles (`*.min.js`), files with enormous single lines, and `@generated` headers are not your code, so they don't pollute the score.
+- **Test and tooling code is reported, not scored** — findings in `test/`, `e2e/`, `scripts/`, `__tests__/`, `*.spec.*`, etc. still surface, but they don't inflate the headline Slop Score (`5 critical … (production) · + 12 in test / tooling — reported, not scored`).
+
+The number you see is the risk you're actually shipping.
+
+## It passes its own scan
+
+A linter about not shipping slop had better not *be* slop. So slopscore holds itself to its own standard:
+
+- **Zero runtime dependencies.** The core is 100% Node built-ins. (The opt-in `--ast` mode uses `acorn`, an *optional* peer dependency you install only if you want it — `npm i -D acorn`.)
+- **`slopscore scan .` on this repo returns `0` — "Pristine."**
+- Its own CI runs the scanner on its own source at `--fail-on minor` and fails the build if anything slips.
+
+```bash
+npm run selfcheck     # → Pristine. Ship it.  (exit 0)
+```
+
+*(The rule-definition file and example fixtures are excluded — they necessarily contain the very strings slopscore looks for, exactly as ESLint excludes its own fixtures. See [`.slopscoreignore.md`](.slopscoreignore.md).)*
+
+## Drop it into CI
+
+```bash
+slopscore init     # writes .slopscore.json + a GitHub Action PR gate
+```
+
+Or paste this:
+
+```yaml
+# .github/workflows/anti-slop.yml
+name: anti-slop
+on: [pull_request]
+jobs:
+  slopscore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npx slopscore scan . --fail-on major
+```
+
+**Want findings inline on the PR diff?** Emit SARIF and upload it to GitHub code scanning:
+
+```yaml
+      - run: npx slopscore scan . --sarif --fail-on never > slopscore.sarif
+      - uses: github/codeql-action/upload-sarif@v3
+        with: { sarif_file: slopscore.sarif }
+```
+
+**Want the Slop Score posted on every PR?** Add a sticky comment from the Markdown report:
+
+```yaml
+      - run: npx slopscore scan . --markdown > slop.md || true
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with: { path: slop.md }
+```
+
+**Want the PR *delta* — exactly what this branch added or fixed — posted as a comment?** Use `compare` against the base branch (checkout with full history so the base ref is reachable):
+
+```yaml
+# .github/workflows/slopscore-delta.yml
+name: slopscore-delta
+on: [pull_request]
+jobs:
+  delta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }              # compare needs the base ref's history
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npx slopscore compare origin/${{ github.base_ref }} --markdown > delta.md || true
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with: { path: delta.md }              # updates one sticky comment per PR
+```
+
+The comment shows the score before/after, every finding the PR **introduced**, and every one it **fixed** — diffed by content so moving code never reads as new. Drop the `|| true` if you also want the job to **fail** when a PR adds slop (`compare` exits non-zero only then).
+
+**Pre-commit hook** (catches slop before it's even committed — scans only what you staged):
+
+```bash
+# .git/hooks/pre-commit  (chmod +x it)
+files=$(git diff --cached --name-only --diff-filter=ACM)
+[ -z "$files" ] || npx slopscore $files --fail-on major
+```
+
+### Adopting it on a messy codebase — ratchet mode
+
+A real repo won't score 0 on day one, and "Heavy slop" on your first run is how a tool gets closed and forgotten. So **baseline what's already there and fail only on _new_ slop:**
+
+```bash
+slopscore scan . --baseline        # first run: snapshots current findings, exits 0
+slopscore scan . --baseline        # from now on: passes unless you ADD slop
+slopscore scan . --update-baseline # accept the current state as the new floor
+```
+
+The baseline keys findings by content, not line number — so moving code around never registers as new slop. Commit `.slopscore-baseline.json` and your CI gate goes green today while the count only ever goes down.
+
+## Auto-fix the safe stuff
+
+Some slop has exactly one correct fix and no judgment call — a stray `console.log`, an `<img>` missing `alt`, Python's `== None`. `slopscore fix` applies those (and only those) for you:
+
+```bash
+slopscore fix . --dry-run      # preview every change, write nothing
+slopscore fix .                # apply them, then review the diff
+slopscore fix . --only 052     # just the console.logs
+slopscore fix . --except 069   # everything fixable except comment removal
+```
+
+It only ever touches the 🟢 **AUTO**-authority rules with a deterministic, behavior-preserving transform (today: `052` console.log, `069` step-narration comments, `081` `<img>` alt, `152` Python `== None`→`is None`, `169` `target="_blank"`→`rel="noopener"`). It is conservative by design — a multi-line `console.log`, a trailing comment, a line that's a braceless `if` body, or a comparison inside a string literal are all left alone (a fix that could change behavior or break structure is never applied). Propose-level fixers (e.g. `179` Python `== True`) apply only when you name them with `--only 179`. Everything else stays a propose/flag you review by hand.
+
+## Local development
+
+```bash
+slopscore scan . --watch       # re-scan on every save — a live conscience
+slopscore scan . --history     # record the score over time + a trend sparkline
+slopscore gate                 # pre-ship gate: fail only on production security + robustness crit/major
+slopscore scan . --changed     # scan only what git says changed (fast local + CI)
+slopscore compare main         # diff the score + findings vs a git ref (PR delta; fails if it adds slop)
+slopscore doctor               # diagnose config, ignored paths, stale suppressions
+slopscore scan . --ast         # opt-in AST metrics for JS/TS/JSX (needs: npm i -D acorn @babel/parser)
+slopscore scan . --sarif       # inline annotations on the PR diff (code scanning)
+slopscore scan . --format junit --out slop.xml   # JUnit XML for CI test-report panels
+slopscore scan . --format html --out slop.html   # a self-contained HTML dashboard to share
+slopscore scan . --markdown --out slop.md        # write a UTF-8 report file directly
+```
+
+`--history` writes `.slopscore-history.json` and prints `trend  █▃▁  0 weighted · down 100% since last run` — commit it and watch slop fall sprint over sprint.
+
+**Windows / legacy terminals.** slopscore auto-detects consoles that can't render Unicode (legacy `cmd`/PowerShell on a non-UTF-8 code page) and falls back to ASCII glyphs — force it either way with `--ascii` / `--unicode`. Prefer `--out <file>` over a `>` redirect: it writes UTF-8 straight from Node, so the report never comes out as mojibake or UTF-16.
+
+**Confidence.** Every finding carries a confidence (high / medium / low) separate from severity — precise detectors like secrets and SQL injection are high; design/copy idioms and the duplicate-block heuristic are softer. Gate CI on the strong signal with `--min-confidence high`, or just read the inline `~medium confidence` tag. Dead `slopscore-disable` directives (the finding they hid is gone) are flagged as **stale** so they don't accumulate.
+
+## Configuration
+
+`.slopscore.json` in your repo root:
+
+```json
+{
+  "preset": "library",
+  "ignore": ["examples", "legacy", "src/generated"],
+  "failOn": "major",
+  "rules": {
+    "054": false,
+    "099": "minor"
+  },
+  "paths": {
+    "legacy/": { "*": "minor" }
+  }
+}
+```
+
+| Option | Meaning |
+|:--|:--|
+| `preset` | Tune coverage to the project type (see below). Your `rules` always win over the preset. |
+| `ignore` | Extra paths to skip (added to the built-in `node_modules`, `dist`, etc.) |
+| `failOn` | Exit non-zero at `critical`, `major`, `minor`, or `never` |
+| `rules` | Per-rule overrides — `false`/`"off"` disables a rule; `"critical"`/`"major"`/`"minor"` overrides its severity |
+| `paths` | Per-directory overrides — same shape as `rules`, plus `"*"` to target every rule under a path (e.g. soften all of `legacy/`) |
+
+**Presets** (`--preset <name>` or the `preset` config key) tune coverage so you're not fighting irrelevant findings:
+
+| Preset | Effect |
+|:--|:--|
+| `web` / `marketing` | A styled web UI — everything on (the default). |
+| `library` / `backend` | No UI surface — turns off the **visual**, **copy**, and **a11y** categories; keeps code, security, and performance. |
+| `cli` | Like `library`, and also silences the stdout-debug rules (`console.log`, Python `print`, Rust `println!`) — stdout is the product. |
+| `mui` / `tailwind` / `chakra` / `mantine` / `emotion` / `styled-components` / `vanilla-extract` | Styling-framework aliases. slopscore's visual detectors are framework-agnostic (they match Tailwind classes **and** CSS-in-JS / MUI `sx` / styled / emotion alike), so these just confirm "web UI, all checks on." |
+
+**Suppress one finding inline** with a directive (require a reason for your future self):
+
+```ts
+// slopscore-disable-next-line 054 — deliberate cast at the Deno JSON boundary
+const config = data as any;
+```
+
+A bare `// slopscore-disable-next-line` (no id) suppresses every rule on the next line; `slopscore-disable-line <id>` works on the same line. The terminal report prints how many findings were suppressed, so they don't rot.
+
+**It also honors your `eslint-disable`.** A line you already, deliberately, signed off on with `// eslint-disable-next-line @typescript-eslint/no-explicit-any` (or `no-console`) isn't re-litigated — slopscore won't re-flag a decision your team already reviewed. **Security findings are the exception:** an `eslint-disable` can never silence `eval`, SQL injection, a hardcoded secret, etc. — catching the hole someone waved through is the whole point.
+
+## What it detects (190 of the 286)
+
+The CLI runs the deterministic subset; the [full 286-pattern catalog](ANTI_SLOP_PROTOCOL.md) (including visual, architectural, and judgment-heavy patterns) is what you hand your agent.
+
+| Category | Examples |
+|:--|:--|
+| 🔐 Security | Hardcoded secrets (AWS keys, GitHub PATs, **PEM private keys**) · SQL injection (template **and** string-concat) · command injection · **disabled TLS verification** · **weak hashing (MD5/SHA-1) for secrets** · **insecure randomness for tokens** · **insecure deserialization** (`pickle`, `yaml.load`) · **wildcard CORS** · **`eval`/`new Function`** · **unverified JWTs** (`alg: none`) · **cleartext HTTP** · `target="_blank"` without `noopener` · auth tokens in `localStorage` · secrets in URL params · `dangerouslySetInnerHTML` · stack traces to client · committed `.env` · **path traversal** · **open redirect** · **SSRF** · **NoSQL injection** · **mass assignment** · **insecure cookie flags** · **deprecated ciphers** (all taint-gated: fire only when a request/user source is present) |
+| 🧱 Code quality | Empty catch blocks · overly-broad exceptions · `any` everywhere · double assertions · hallucinated APIs · god files (cohesion-aware) · copy-pasted duplicate blocks · TODO/FIXME · `setTimeout` race "fixes" · tautological test assertions |
+| 🚀 Performance | Deep clone via `JSON.parse(JSON.stringify())` · `SELECT *` over-fetch · `forEach(async …)` (unawaited) · whole-library imports for one utility |
+| 🛡️ Robustness ("will it break?") | Unguarded `JSON.parse` of external data · unchecked `.find()`/`.match()`/`querySelector()` dereference · `parseInt` without a radix · `RegExp` built from user input (ReDoS) — a static pre-ship gate via `slopscore gate` |
+| 🎭 Fake features & tests | Hardcoded dashboard stats · mock/dummy data on a production path · `Math.random()` metrics · empty `onClick={() => {}}` handlers · canned-success stubs · tautological / matcher-less test assertions · sleep-based flaky tests |
+| 🐳 Config / IaC / CI | Dockerfile `:latest` / `USER root` / `curl \| sh` / baked secrets · docker-compose `privileged` · GitHub Actions `pull_request_target` · unpinned actions · `${{ github.event }}` script injection |
+| 📱 Mobile / a11y | Zoom-disabling viewport (`user-scalable=no`) · sub-12px body text · `width: 100vw` overflow · `<html>` missing `lang` · positive `tabIndex` |
+| 🐍 Language-specific | **Python:** mutable default args · `== None` · `eval`/`exec` · f-string SQL · `os.system`/`shell=True` · `print` debug · `DEBUG=True`. **Go:** empty `interface{}` · ignored errors · `fmt.Print` · `panic()`. **Rust:** `.unwrap()`/`.expect()` · `todo!`/`panic!` · `unsafe` · `dbg!`/`println!`. **Java:** `printStackTrace` · `System.out` · `Runtime.exec`. **C#:** `Console.Write` · `async void`. **Ruby:** `binding.pry` · `puts`/`pp` · `html_safe`/`raw`. **PHP:** `var_dump`/`print_r`. **Shell:** `curl \| sh` · `rm -rf $VAR` · `chmod 777`. **SQL:** `DELETE`/`UPDATE` without `WHERE` · `GRANT ALL`. **Kotlin:** `!!` force-unwrap · `println`. **Swift:** `try!` · `print`. **C/C++:** `gets`/`strcpy`/`sprintf` (overflow) · `system()` |
+| 📦 Supply chain | Dependency bloat · **unpinned versions (`*`/`latest`)** · **non-registry deps (git/http/tarball)** · **lifecycle install scripts** (`postinstall`) · unpinned/aliased LLM model strings (date-pinned ids exempt) · source maps shipped to production |
+| ♿ Accessibility | `<img>` without alt · interactive `<div onClick>` · `outline:none` with no focus style |
+| 🎨 Visual slop | VibeCode-purple gradient · conic/mesh gradients · glassmorphism · gradient-clip text · Sparkle/Wand icons · recycled AI fonts · confetti — matched across **Tailwind classes AND CSS-in-JS** (MUI `sx`, styled, emotion) |
+| ✍️ Copy | AI buzzwords ("supercharge", "seamlessly") · exclamation-mark CTAs · "Coming soon" · "Oops!" errors · "Submit" buttons · "Click here" links · lorem ipsum |
+| 🏗️ Architecture / API | Hardcoded localhost · `window.location` nav in SPAs · `location.reload()` recovery · errors returned as HTTP 200 · destructive GET · `z-index: 9999` · `alert()`/`confirm()` |
+
+Run `slopscore rules` to see the full list with severities and fix authority.
+
+## How it compares
+
+| | slopscore | ESLint | vibecop | Semgrep |
+|:--|:--:|:--:|:--:|:--:|
+| AI-slop-specific patterns | ✅ | ❌ | ✅ | ⚠️ |
+| Visual / design / copy tells | ✅ | ❌ | ❌ | ❌ |
+| Slop Score (one number) | ✅ | ❌ | ❌ | ❌ |
+| Agent-ready protocol (fix authority) | ✅ | ❌ | ❌ | ❌ |
+| Zero install (`npx`, no config) | ✅ | ⚠️ | ⚠️ | ⚠️ |
+| Zero dependencies | ✅ | ❌ | ❌ | ❌ |
+
+This table is scoped to **AI-slop detection specifically** — it is not a quality ranking. ESLint and Semgrep are excellent at what they're built for (correctness rules, taint analysis), and slopscore is no substitute for either; the `❌`s just mean "not designed to catch the AI tells slopscore targets." slopscore is intentionally a **fast, transparent, zero-runtime-dependency first pass** — regex/heuristic by default. Its opt-in `--ast` mode (acorn/@babel) adds accurate complexity/length/nesting metrics, cross-file structural clone detection, and taint analysis (intra- and single-file inter-procedural); for **full cross-file** taint and call-graph analysis, **run it alongside** [vibecop](https://github.com/bhvbhushan/vibecop), Semgrep, or CodeQL — the protocol ([`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md)) tells your agent exactly when to reach for those. It complements your linter; it doesn't replace it.
+
+## FAQ
+
+**Is regex enough to catch all AI slop?** No, and slopscore never claims it is. It nails the deterministically-detectable subset fast and with low false positives, then defers the judgment-heavy and AST-level patterns to the protocol + dedicated tools. Honesty over theater.
+
+**Will it touch my code?** The CLI only *reports*. Fixing is done by you, or by your AI agent following the protocol's fix-authority rules.
+
+**Does it work for Python / Go / Rust?** Yes — there are dedicated detectors for each (Python: mutable defaults, `== None`, `eval`/`exec`, f-string SQL, `pickle`, `print`; Go: ignored errors, `fmt.Print`, `panic`, command injection; Rust: `.unwrap()`, `panic!`, `unsafe`, `dbg!`). The comment/string masking is language-aware (Python `#` comments and docstrings aren't scanned as code), and `test_*.py` / `*_test.go` are correctly treated as the test zone. Security and copy detectors run on all source; the JS/TS surface is the deepest because that's where vibe-coded slop concentrates.
+
+**How accurate is it / false positives?** Low by design, and rigorously tested: clean, idiomatic code reliably scores zero. The scanner is comment- and string-aware (it won't flag `eval()` in a docstring, `console.log` in a comment, or `firstName + " and " + lastName` as SQL), honors your `eslint-disable`, skips test files, exempts ORM `Column == None` and date-pinned model ids, and ships **220+ tests** including a clean-code battery. On a mature codebase, a high-volume pattern (e.g. a design system's repeated markup) is **clustered** into one line so it can't bury the findings that matter, and a single noisy detector can never define the verdict (the score caps each rule). `slopscore fix` is verified non-corrupting — it never deletes a line that would break structure or rewrites inside a string. Found a bad finding? [Open an issue.](../../issues)
+
+## Contributing
+
+Adding a detector is one object in [`src/rules.js`](src/rules.js) + a test. See [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues are labeled `good first issue`.
+
+```bash
+git clone https://github.com/Vinay-O/slopscore && cd slopscore
+npm test          # 226 tests, zero dependencies
+npm run demo      # scan the sloppy fixture
+npm run selfcheck # prove the repo passes its own audit
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE). Use it, fork it, build it into your pipeline.
+
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+<div align="center">
+
+**If slopscore saved you from shipping slop, drop a ⭐ — it helps the next person find it.**
+
+*From generation to governance.*
+
+</div>

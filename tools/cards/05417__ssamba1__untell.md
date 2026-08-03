@@ -1,0 +1,488 @@
+---
+id: tool-05417
+type: tool
+area: 库
+status: active
+tags: [去AI味, Claude插件, Python, 协议宽松, 需API密钥, 英文文档]
+title: untell
+summary: 投稿前文本降 AI 痕、过检测
+source: https://github.com/ssamba1/untell
+created: 2026-07-18
+updated: 2026-07-18
+no: 5417
+category: 一、去 AI 味 / Humanizer 库
+repo: ssamba1/untell
+stars: 6
+url: https://github.com/ssamba1/untell
+tier: "B"
+use_case: "投稿前文本降 AI 痕、过检测"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# ssamba1/untell
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/ssamba1/untell
+- **Stars**：6
+- **语言**：Python
+- **License**：MIT
+- **Topics**：ai-detection, ai-detector, ai-humanizer, anti-ai-detection, bypass-ai-detection, bypass-turnitin, claude-code, claude-code-skill, gptzero, gptzero-bypass, humanize-ai, humanizer, nlp, open-source, text-humanizer, turnitin, undetectable-ai, undetectable-ai-alternative, writing-tools, zerogpt
+- **GitHub 描述**：untell — free, open-source AI humanizer that closes the loop: iteratively rewrites AI text against live detector scores (GPTZero, ZeroGPT, Originality.ai, Turnitin) while preserving meaning, citations & facts. Claude Code skill + CLI. Live-proven 100%→0% on ZeroGPT. MIT.
+- **本地描述**：untell — free, open-source AI humanizer that closes the loop: iteratively rewrites AI text against live detector scores (GPTZero, ZeroGPT, Originality.ai, Turnitin) while preserving meaning, citations & facts. Claude Code skill + CLI. Live-proven 100%→0% on ZeroGPT. MIT.
+- **拉取时间**：2026-07-25 18:17:49
+
+---
+
+<div align="center">
+
+<a href="https://ssamba1.github.io/untell/"><img src="docs/og.png" alt="untell — the open-source AI humanizer that closes the loop: rewrites AI text against live detector scores while keeping meaning, citations and facts intact" width="820"></a>
+
+# untell — the open-source AI humanizer that *closes the loop*
+
+### Iteratively rewrite AI-generated text against live AI-detector scores until it reads human — while keeping your meaning, citations, and facts intact.
+
+A **closed-loop, detector-feedback** AI humanizer, shipped as a **Claude Code skill** *and* a Python CLI.
+Free. Open source. Honest about what it can and can't do.
+
+[![CI](https://github.com/ssamba1/untell/actions/workflows/ci.yml/badge.svg)](https://github.com/ssamba1/untell/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-8A2BE2.svg)](#-quick-start)
+[![Zero-dependency lite tier](https://img.shields.io/badge/install-zero--dependency-brightgreen.svg)](#tiers)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](CONTRIBUTING.md)
+[![Live site](https://img.shields.io/badge/site-ssamba1.github.io%2Funtell-2ea44f.svg)](https://ssamba1.github.io/untell/)
+[![good first issues](https://img.shields.io/github/issues/ssamba1/untell/good%20first%20issue.svg?label=good%20first%20issues&color=7057ff)](https://github.com/ssamba1/untell/labels/good%20first%20issue)
+
+**Optimize against real detectors — with the detector *in the loop*, not blind guessing.** Out of the box it
+beats the **free web checkers** (ZeroGPT, live-proven 100%→0%). To actually beat **GPTZero · Originality.ai ·
+Turnitin-class · Copyleaks**, you wire *their* API into the loop (key-gated, paid) — the bundled **local
+proxies alone do *not* predict those, and we [say so plainly](#honest-caveats)** rather than fake a "99% human."
+[Why this is the most complete open humanizer →](#-why-this-is-the-best-open-source-ai-humanizer)
+
+</div>
+
+---
+
+## TL;DR
+
+Most "AI humanizers" do **one blind paraphrase pass** and plateau at 60–80% detector bypass. This one runs a
+**loop**: it *scores* your text against an ensemble of real AI detectors, *rewrites* using each detector's
+score as feedback (targeting the exact sentences that read as AI), and *re-scores* — repeating until the
+hardest detector stops flagging it **and** a semantic-similarity gate confirms the meaning is unchanged.
+
+That iterative, detector-feedback approach is the strongest *training-free* technique in the published
+literature ([arXiv 2506.07001](https://arxiv.org/abs/2506.07001): −88% TPR@1%FPR, transfers across detectors,
+preserves meaning) — and **no shipping tool, open or commercial, actually does it.** This repo does.
+
+> ```
+> Measured live:  a formulaic AI paragraph went  100% → 0% AI on ZeroGPT  in one loop.
+>                 a stickier one went             100% → 35% → 0%          once the loop
+>                 used per-sentence feedback to target only the flagged spans.
+> ```
+
+```bash
+# Zero dependencies. Works right now, in Claude Code:
+/untell  <paste your AI-sounding text or a file path>
+```
+
+---
+
+## ⚡ Quick start
+
+**Try it free, no install:** paste text into the **[in-browser AI detector](https://ssamba1.github.io/untell/demo.html)**
+for an instant AI-tell score (runs locally, nothing uploaded).
+
+**Install the Claude Code skill — one line:**
+
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/ssamba1/untell/main/install.sh | sh
+# Windows PowerShell
+irm https://raw.githubusercontent.com/ssamba1/untell/main/install.ps1 | iex
+```
+
+Then in Claude Code: **`/untell <your text or a file path>`**. Claude is the rewriter; the bundled scripts
+score the text and lock your facts. Zero dependencies (lite tier).
+
+**Or install as a Claude Code plugin** (marketplace):
+
+```text
+/plugin marketplace add ssamba1/untell
+/plugin install untell@untell
+```
+
+**As a Python package** (`pip install untell` lands with the first PyPI release — from source today):
+
+```bash
+git clone https://github.com/ssamba1/untell && cd untell
+pip install -e ".[full]"                          # real detector ensemble on CPU
+
+# One unified command (run `untell` with no args to see them all):
+untell humanize "Your AI-sounding paragraph here."   # the closed loop (alias: loop)
+untell humanize "text" --rewriter surgical           # NO key needed — runs the loop for $0
+untell score "text" --tier full --threshold 0.3      # just score it
+untell tells "text"                                  # count the AI writing tells (naturalness)
+untell verify --file draft.txt                       # honest pass/fail per detector
+untell compare                                       # head-to-head vs free-humanizer techniques
+untell ceiling --rewriter surgical --tier full       # measure free evasion of the local ensemble
+
+# (every subcommand is also a standalone `untell-<name>` script, e.g. `untell-loop`, `untell-tells`)
+```
+
+> **How far does free actually go?** We measured it. The training-free, no-key loop drops the local
+> open-detector ensemble from ~90% flagged to ~60% (mean max P(AI) 0.87 → 0.68) — and is
+> **powerless against content-locked detectors**, which no meaning-preserving rewrite can move. The
+> full numbers, method, and honest limits are in [`docs/free-ceiling-measured.md`](docs/free-ceiling-measured.md)
+> (the report: [`docs/free-ceiling-report.md`](docs/free-ceiling-report.md)).
+
+<details>
+<summary>Manual / MCP install</summary>
+
+```bash
+# Manual skill copy:
+git clone https://github.com/ssamba1/untell && cp -r untell/untell ~/.claude/skills/untell
+
+# MCP server (Claude Desktop & any MCP client) — exposes score/sentences/untell/verify/scrub as tools:
+pip install -e ".[mcp]" && untell-mcp     # (pip install "untell[mcp]" once on PyPI)
+```
+</details>
+
+---
+
+## How it works
+
+```
+/untell <text|file>
+  preserve-lock citations / numbers / quotes / URLs / entities   (scripts/preserve.py)
+  scrub hidden watermark / zero-width / homoglyph characters from the input
+  repeat up to N times:
+    score = scripts/score.py <text>          # ensemble of detectors -> {detector: P(AI), max}
+    sentences = scripts/sentences.py <text>  # which sentences read as AI (target only these)
+    sim   = scripts/quality.py <orig> <text> # semantic similarity, must stay >= 0.76
+    if max(score) < threshold and sim ok: stop
+    Claude rewrites the flagged sentences using the per-detector scores as feedback
+      (raise burstiness + perplexity, vary sentence architecture, kill clichés/formulaic
+       transitions, diversify vocab — while keeping meaning + every locked span)
+  restore locked spans -> humanized text + a before/after detector table
+```
+
+Three design choices make it work where blind paraphrasers fail:
+
+1. **It drives the `max` across detectors, not the average** — a rewrite only wins when the *hardest*
+   detector is satisfied (genuine multi-detector evasion).
+2. **Every rewrite is gated on a 0.76 semantic-similarity bar** (the P-SP threshold from the
+   watermark-removal literature) — it *refuses* the meaning-mangling that wrecks other tools' output.
+3. **Citations, numbers, quotes, URLs and named entities are locked byte-for-byte** via preserve-lock, so
+   your APA/IEEE/MLA references and your facts survive the rewrite untouched.
+
+---
+
+## 📉 The measured free ceiling
+
+*How far does $0 actually get you? We measured it.* Most humanizers sell a fantasy ("99% human, undetectable!"). We did the opposite: we **measured** the
+real ceiling of a free, training-free loop and published the numbers, the method, and the limits.
+The published state of the art (92–97.6% attack success) **needs GPU fine-tuning**; the literature had
+**no data point** for the inference-only regime this tool runs in. With a working local detector stack we
+produced it — see **[`docs/free-ceiling-measured.md`](docs/free-ceiling-measured.md)** (research:
+**[`docs/free-ceiling-report.md`](docs/free-ceiling-report.md)**).
+
+Reproduce it yourself, no API key, on CPU:
+
+```bash
+untell-ceiling --rewriter surgical --tier full      # ~90s; deterministic; $0
+```
+
+| Free, no-key rewrite vs the local open ensemble (n=10) | before | after |
+|---|---|---|
+| flagged rate (max P(AI) ≥ 0.30) | 0.90 | **0.60** |
+| mean max P(AI) | 0.87 | **0.68** |
+
+Two findings, both measured and both the *opposite* of the marketing:
+
+- **Surface edits strip the lexical tell but not the content tell.** Word-substitution moves the
+  perplexity detector (0.32 → 0.20) and RoBERTa-OpenAI (0.52 → 0.36), but a **content/genre** detector
+  (HC3-RoBERTa) barely budges (0.73 → 0.67). No meaning-preserving rewrite can move it — *the content is
+  the tell.*
+- **The local proxies partly anti-correlate with human-ness.** A rewrite that reads *obviously* more human
+  scored **higher** on the proxy (0.578 → 0.918). So a low local score means "passed the weak local
+  proxies," not "reads human" and **not** "beats GPTZero." That's exactly why the loop treats the local
+  score as a weak hint and gates hard on meaning instead.
+
+**The honest ceiling:** for free you can reliably strip the lexical/perplexity tells and clear the *free*
+web checkers; you cannot strip the content tell, and clearing the local proxies does not imply clearing
+GPTZero / Originality / Turnitin (which need their API in the loop — paid). The tool says so, everywhere.
+
+---
+
+## 🏆 Why this is the best open-source AI humanizer
+
+We surveyed **~110 open-source humanizer repos** (GitHub topics, papers-with-code, the research SOTA) as part
+of building this project. That deep-research survey ([`humanizer-research-report.md`](humanizer-research-report.md)) concluded, verbatim:
+
+> *"There is **no** open-source repo that combines (a) a real evasion approach validated against multiple
+> live detectors, (b) a quality/meaning-preservation verifier, (c) an iterative detector-feedback loop at
+> inference time, and (d) a user-installable package."*
+
+**This is the repo that has all four.** Here it is against the strongest open competitors:
+
+| Capability | **untell (this repo)** | lynote (1.4k★) | patina (196★) | StealthHumanizer (58★) | harshaneel (51★) | Aboudjem (97★) | StealthRL (research) |
+|---|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+| Inference-time **detector-feedback loop** | ✅ | ❌ | ◑ own score | ◑ multi-pass | ◑ manual | ❌ | ◑ train-time |
+| **Real detectors** in the loop (not an internal score) | ✅ | ❌ | ❌ | ❌ | ◑ Binoculars only | ❌ | ✅ ensemble |
+| **Commercial** adapters (Originality/GPTZero/Turnitin-class) | ✅ 6 | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Semantic meaning gate** + citation lock | ✅ | claim | ◑ rollback | ◑ keyword | heuristic | ❌ | ✅ BERTScore |
+| **Per-sentence** targeting | ✅ | ❌ | ◑ | ❌ | ❌ | ❌ | ❌ |
+| **Live bypass proof** (real score shown) | ✅ ZeroGPT 100→0 | ❌ | ❌ | ❌ | ◑ Binoculars | GIF | ✅ paper |
+| Packaged **install** (pip *and* Claude skill) | ✅ both | ✅ | ✅ | web app | ✅ skill | ✅ skill | ❌ research |
+| **CI** on real models | ✅ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ |
+| Runs **without a GPU** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❌ |
+| License | MIT | MIT | MIT | MIT | MIT | MIT | MIT |
+
+**Stars are not capability.** lynote (1.4k★) is an unvalidated translation chain with no loop or verifier;
+the highest-starred repos win on SEO, not architecture. The full, evidenced breakdown — including the *one*
+place we're honestly **not** #1 (StealthRL's GPU-trained RL policy is a stronger raw *attack model*, though
+it's a training framework, not a usable tool) — is in **[docs/why-best-open-repo.md](docs/why-best-open-repo.md)**
+and the ~110-repo capability audit in **[docs/competitive-gap-plan.md](docs/competitive-gap-plan.md)**.
+
+**vs the *free SaaS* humanizers** (Undetectable, QuillBot, HIX Bypass, Humanize AI Pro, …): they all
+reduce to 3–4 mechanisms we already implement, so we benchmark them apples-to-apples and measure that
+our loop is the **only** technique that drives the AI-tells rate to **zero while preserving meaning**.
+Their "99% bypass" claims don't survive independent testing (Originality flags the top "free" tool at
+**100% AI**). The reproducible head-to-head, the catalog, and the honest verdict:
+**[docs/humanizer-comparison.md](docs/humanizer-comparison.md)**.
+
+---
+
+## Tiers
+
+The scripts auto-detect what's installed and **degrade gracefully** — the score JSON reports which `tier`
+actually ran, so you always know how much to trust the number.
+
+| Tier | Install | Detectors | Notes |
+|---|---|---|---|
+| **lite** | *(default — nothing to install)* | perplexity + burstiness heuristic; token-overlap quality | Stdlib only, instant, **weak** — a demo signal, not an evasion claim. |
+| **full** | `pip install -e ".[full]"` | + RoBERTa-OpenAI, HC3-RoBERTa, MAGE, Fast-DetectGPT, GPT-2 perplexity; MiniLM cosine quality | Real proxy signal on CPU. Downloads models on first run. |
+| **+ RADAR** | `UNTELL_ENABLE_RADAR=1` (opt-in) | + RADAR — the **paraphrase-robust** detector, the hardest open one to fool | ⚠️ `TrustSafeAI/RADAR-Vicuna-7B` is **non-commercial licensed** — research/eval only. |
+| **heavy** | `pip install -e ".[heavy]"` | + Binoculars (2×Falcon-7B) | Strongest proxy; GPU recommended. Eval only. |
+| **commercial** | `pip install -e ".[commercial]"` + your keys | + Originality.ai, GPTZero, Winston, Sapling, ZeroGPT, Copyleaks, **LLM-as-judge** | The real checkers. Key-gated; nothing runs or bills unless you set a key. LLM-as-judge = a frontier model rates AI-likelihood against the ai-tells catalog (often the best free-of-proxy signal). |
+
+```bash
+untell-score "Your text here" --tier full --threshold 0.3
+echo "piped text" | untell-score
+```
+
+---
+
+## Passing the real commercial detectors
+
+Local detectors are *proxies*. To optimize for the checkers people actually care about — **GPTZero,
+Originality.ai, Turnitin-class, Copyleaks, ZeroGPT, Winston, Sapling** — wire the real APIs. Each is
+**key-gated**; nothing runs or bills unless you set its key.
+
+```bash
+pip install -e ".[commercial]"
+export GPTZERO_API_KEY=...      ORIGINALITY_API_KEY=...   WINSTON_API_KEY=...
+export SAPLING_API_KEY=...      ZEROGPT_API_KEY=...       COPYLEAKS_EMAIL=...  COPYLEAKS_API_KEY=...
+
+untell-loop  "text" --tier commercial      # rewrite until EVERY configured checker passes
+untell-verify "text" --threshold 0.30      # pass/fail per checker + overall verdict (exit 0 = all pass)
+untell-prove "Your AI text" --margin 0.10  # verify → loop → re-verify: one before/after table
+```
+
+`untell-verify` exits `0` only when **every** configured checker scores under the threshold. `untell-prove`
+runs the whole thing end-to-end so you get an honest before/after AI% per checker. (Each `--tier commercial`
+iteration calls every checker, so it **costs API credits** — cap with `--max-iters`.)
+
+### Free ways to test without paying
+
+```bash
+# No key at all — deterministic CPU word-substitution rewriter drives the loop ($0, no SDK):
+untell-loop "text" --rewriter surgical --tier full
+untell-ceiling --rewriter surgical --tier full     # measure the loop vs the local ensemble
+
+# Optimize against a REAL detector for free via its web UI (slow, needs a browser):
+pip install -e ".[browser]" && playwright install chromium
+untell-verify --browser zerogpt "text"     # drives the free ZeroGPT web UI — no API key, $0
+untell-loop   "text" --browser zerogpt      # iterate against the LIVE ZeroGPT detector until it clears
+```
+
+The **`--rewriter surgical`** path makes the whole loop runnable with **no API key, no GPU, no model
+download** — the bundled deterministic rewriter (PWWS/TextFooler-style word-importance substitution)
+stands in for the hosted LLM. Weaker than Claude-as-rewriter, but it's what makes the free measurement
+above reproducible. (In Claude Code, `/untell` uses Claude itself as the rewriter — also free.)
+
+The `--browser` path drives a real headless browser through a free web checker and reads the % score.
+**ZeroGPT ships built-in** (confirmed working live). Most other free detectors are now bot-gated
+(reCAPTCHA / login-redirect / iframe widgets) — see [docs/free-detector-probes.md](docs/free-detector-probes.md).
+Add your own site with **zero code** — it's just CSS selectors in a JSON file
+([examples/browser_sites.example.json](examples/browser_sites.example.json)).
+
+> ⚠️ Browser checking is **slow, fragile, and ToS-caveated** — for occasional checks on your own text, not
+> the hot loop. The reliable multi-detector path is the key-gated commercial tier.
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><b>Is there a free AI humanizer that actually works?</b></summary>
+
+Yes — the lite tier installs with **zero dependencies** and the `--browser zerogpt` path optimizes against a
+real detector for **$0**. "Actually works," honestly: the loop reliably clears the *free* web detectors
+(ZeroGPT live-measured 100%→0%), and the full/commercial tiers optimize against the harder ones. No tool —
+this one included — can promise it passes *every* commercial detector forever; the ones that claim "99%
+human" are lying. This repo tells you the real per-detector score instead.
+</details>
+
+<details>
+<summary><b>Does it bypass GPTZero / ZeroGPT / Turnitin / Originality.ai?</b></summary>
+
+It *optimizes and verifies against* them. ZeroGPT is built into the free browser path and live-proven.
+GPTZero, Originality.ai, Turnitin-class, Copyleaks, Winston and Sapling are wired as **key-gated commercial
+adapters** — the loop drives the max across every checker you configure below threshold. Originality.ai is
+genuinely the hardest (the research literature and public benchmarks consistently rank it the toughest to evade); we don't
+claim to beat it without your API key to prove it. Honesty is the point.
+</details>
+
+<details>
+<summary><b>Will it ruin my meaning, citations, or numbers?</b></summary>
+
+No — that's the core differentiator. A **semantic-similarity gate** rejects any rewrite that drifts too far
+from the original meaning, and **preserve-lock** freezes citations, numbers, quotes, URLs and named entities
+byte-for-byte. Other humanizers are known to inject grammar errors and even reverse facts when they paraphrase
+blindly; this one refuses meaning-breaking rewrites by design. Good for academic / legal / ESL writing.
+</details>
+
+<details>
+<summary><b>How is this different from Undetectable.ai / QuillBot / WriteHuman?</b></summary>
+
+Those are closed SaaS that do a single blind pass and report a fake binary "human/AI." This is open source,
+runs a **closed detector-feedback loop**, optimizes against **multiple real detectors at once**, gates on
+**meaning preservation**, and gives you an **honest, reproducible per-detector score** instead of a marketing
+claim. It's a research/defensive tool you can read, audit, and run yourself.
+</details>
+
+<details>
+<summary><b>Is this against the rules / ethical?</b></summary>
+
+AI detectors are noisy proxies — they falsely flag non-native English writers at high rates (~61% in some
+Stanford-cited studies). This exists as a **research harness and a defense against false positives**, not an
+academic-dishonesty aid. Don't use it to misrepresent authorship where that's prohibited. See the caveats
+below — we mean them.
+</details>
+
+---
+
+## Eval harness (research)
+
+Validates the thesis — closed loop beats single-pass — without a human in the seat (a scripted rewriter
+stands in for Claude so it's measurable):
+
+```bash
+pip install -e ".[full,eval]"
+python -m eval.benchmark --dataset builtin --n 5                      # zero-download smoke run
+python -m eval.benchmark --dataset raid --n 200 --tier full --enable-radar   # adversarial: hardest detector + RAID
+
+untell-ceiling --rewriter surgical --tier full       # measure free inference-only evasion (no key, $0)
+untell-eval-policy --policy out/rl-humanizer --vs-base   # A/B a trained LoRA policy vs the untuned base
+```
+
+The report shows **per-detector beat-rates** and names the **hardest detector to beat** (the honest
+headline). `untell-ceiling` measures how far the free loop moves the local ensemble (see the
+[measured ceiling](#-the-measured-free-ceiling)); `untell-eval-policy`
+scores the optional GPU-trained single-pass policy (`training/`) against held-out text.
+`--enable-radar` adds the paraphrase-robust RADAR detector (non-commercial — research/eval only).
+For broader cross-detector benchmarking, [IMGTB](https://github.com/kinit-sk/IMGTB) + the
+[RAID](https://github.com/liamdugan/raid) leaderboard are the standard references.
+
+---
+
+## Repo layout
+
+```
+untell/            # THE SKILL (this dir is what you install)
+  SKILL.md           # trigger + loop procedure + rewrite rubric
+  scripts/           # cli (unified `untell`) · score · tells · preserve · quality · sentences · run · verify
+  detectors/         # base protocol + tiered adapters (7 local + commercial incl. LLM-as-judge)
+  rewriter/          # optional rewriters: hosted (Anthropic/OpenAI) · surgical (no-key) · local LoRA policy
+  attacks/           # surgical substitution · homoglyph · scrub · back-translation
+  references/         # thresholds.md · prompt-rubric.md · ai-tells.md
+eval/                # benchmark · ceiling (free evasion) · compare_humanizers (vs technique classes) · eval_policy
+training/            # GPU moat: RL-against-ensemble (GRPO+LoRA) · surrogate distillation
+tests/               # unit tests (lite runs with zero ML)
+docs/                # humanizer-comparison · free-ceiling report + measured · why-we're-best · competitive audit
+```
+
+## Development
+
+```bash
+pip install -e ".[dev]"
+ruff check .
+pytest -q
+```
+
+CI runs a **lite** matrix (ruff + pytest, no downloads) across Python 3.9/3.11/3.12 **and** a **full-tier**
+job (Ubuntu, CPU torch + `.[full,eval]`) that loads the real RoBERTa / Fast-DetectGPT / GPT-2 detectors and
+runs the torch-gated tests. See **[CONTRIBUTING.md](CONTRIBUTING.md)** to get involved and
+**[ROADMAP.md](ROADMAP.md)** for what's next (the GPU RL-against-ensemble moat).
+
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+## Troubleshooting
+
+**Full-tier detectors come back as `null`, you see `failed_detectors`, or a "NumPy 2.x" warning.**
+The supervised detectors load `torch`/`transformers`; older builds of those were compiled against
+NumPy 1.x and crash on import when NumPy 2.x is present. untell **excludes** any detector that fails to
+load — it never fakes a neutral `0.5` that would silently pin your score — lists it under
+`failed_detectors`, and honestly downgrades the reported `tier` (so a broken full-tier run reports
+`lite`, not a fake `full`). To get the full ensemble back, align the versions, ideally in a fresh venv:
+
+```bash
+python -m venv .venv && . .venv/Scripts/activate     # (. .venv/bin/activate on macOS/Linux)
+pip install -e ".[full]"            # pulls torch/transformers matched to your NumPy
+# …or pin NumPy down in an existing env:
+pip install "numpy<2"
+```
+
+**`mage` is always `null`.** `yaful/MAGE` ships a config current `huggingface_hub` rejects (`id2label`
+validation). It's auto-excluded and the rest of the ensemble runs normally — nothing you need to fix.
+
+**Full tier feels slow.** Each `untell-score` call loads the models fresh, and the first run downloads
+~0.5 GB of weights (cached after that). For a multi-iteration run prefer the single-process headless
+loop — `untell-loop` loads the models once — over many one-off score calls. The **lite** tier and the
+[in-browser demo](https://ssamba1.github.io/untell/demo.html) need no downloads at all.
+
+## Honest caveats
+
+- **Proxy ≠ commercial.** The local detectors approximate; they aren't Originality.ai / Turnitin. The
+  ensemble is a *signal*, not a verdict. "Passes all checkers" is unprovable against detectors you don't run.
+- **Local proxies do NOT predict GPTZero / Originality.** Measured: a rewrite the bundled local ensemble rates
+  *low* can still score **100% AI on GPTZero**, which runs dedicated anti-humanizer ("AI Paraphrasing")
+  detection. A low local `max` means "passed the weak local proxies," **not** "undetectable." The only way to
+  optimize for a specific commercial detector is to put **it** in the loop (`--tier commercial` + its API key)
+  — and even then GPTZero/Originality are the hardest and nobody beats them reliably.
+- **lite is a demo.** The zero-install heuristic shows the loop; it's not an evasion claim. The full tier is
+  the honest baseline; Binoculars (GPU) is the strongest proxy.
+- **Claude is the rewriter.** Output quality and evasion depend on the running model.
+- **Ethics.** Detector false-positives disproportionately harm non-native writers. This is a research/eval
+  harness and a defense against that — not a plagiarism or academic-dishonesty aid.
+
+## Contributing
+
+PRs, detector adapters, and new free-checker selectors are welcome — see
+**[CONTRIBUTING.md](CONTRIBUTING.md)**, the **[good first issues](https://github.com/ssamba1/untell/issues)**,
+and our **[Code of Conduct](CODE_OF_CONDUCT.md)**. Found a security issue? See **[SECURITY.md](SECURITY.md)**.
+
+If this saved you from a false AI flag — or you just think it's the most honest humanizer on GitHub —
+a ⭐ helps others find it.
+
+## License
+
+[MIT](LICENSE). Free to use, modify, and distribute.

@@ -1,0 +1,229 @@
+---
+id: tool-01772
+type: tool
+area: 库
+status: active
+tags: [Swift, 协议宽松, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: RaccoonTools
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/juleslassoeur/raccoontools
+created: 2026-07-18
+updated: 2026-07-18
+no: 1772
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: Juleslassoeur/RaccoonTools
+stars: 1
+url: https://github.com/juleslassoeur/raccoontools
+tier: "B"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls: []
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Juleslassoeur/RaccoonTools
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/juleslassoeur/raccoontools
+- **Stars**：1
+- **语言**：Swift
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：macOS spotlight launcher with contextual AI writing assistant
+- **本地描述**：macOS spotlight launcher with contextual AI writing assistant
+- **拉取时间**：2026-07-23 23:30:41
+
+---
+
+# RaccoonTools
+
+[![CI](https://github.com/Juleslassoeur/RaccoonTools/actions/workflows/ci.yml/badge.svg)](https://github.com/Juleslassoeur/RaccoonTools/actions/workflows/ci.yml)
+
+A macOS spotlight-style launcher with built-in tools and a contextual AI writing assistant. Select text in any app, press a hotkey, and edit/translate/rephrase/ask questions about it — all without leaving your workflow. Works with any model: Claude, OpenAI, Gemini, or fully local via Ollama.
+
+![RaccoonTools demo — select text, fix it with one click, refine it, apply it in place](docs/demo.gif)
+
+## Install
+
+### Homebrew (recommended)
+
+```bash
+brew install juleslassoeur/tap/raccoontools
+cp -R "$(brew --prefix)/opt/raccoontools/RaccoonTools.app" /Applications/
+open /Applications/RaccoonTools.app
+```
+
+The app is compiled locally by Homebrew — no Gatekeeper warnings, nothing to unblock.
+
+### From source
+
+```bash
+git clone https://github.com/Juleslassoeur/RaccoonTools.git
+cd RaccoonTools
+chmod +x build.sh
+./build.sh
+```
+
+Requires: macOS 13+, Swift 5.9+, Homebrew (for some tools).
+
+On first launch, grant **Accessibility** permission in System Settings > Privacy & Security > Accessibility.
+
+## How it works
+
+**Hotkey** (default `Option+Cmd+Space`) opens the launcher. Two modes:
+
+### 1. Text selected = contextual mode
+
+Select text in any app, press the hotkey. RaccoonTools captures the selection automatically and the panel opens next to it (below or beside the text, never covering it), growing as the response streams in.
+
+- **Quick-action chips** (`Fix`, `Shorten`, `Rephrase`…) — one click or `Cmd+1…9`, configurable in Settings
+- **Type an instruction** ("make it shorter", "translate to spanish") — the AI edits your text
+- **Type a tool name** (`fix grammar`, `rephrase formal`, `synonym`) — the tool runs on the selected text
+- **Word-level diff** on edit cards (for partial rewordings of longer texts), with a Diff/Text toggle
+- **Version history** — chain instructions, navigate versions with `Cmd+[` / `Cmd+]`, apply any of them
+- **Enter** = apply the edit back to your document; **Undo** = restore the original
+- Read-only sources (PDFs, web pages) are detected: Apply becomes **Copy**, and a Copy button is always available
+- The whole exchange is a single multi-turn conversation, and responses stream in as they're generated
+
+Your clipboard is never clobbered: the selection grab and the apply-edit paste both snapshot and restore whatever you had copied, and neither shows up in the clipboard history.
+
+### 2. No text selected = tool launcher
+
+Browse and run tools with arrow keys, Tab to autocomplete, Enter to execute. Suggestions are ranked by how often and how recently you use each tool. Long-running tools (downloads, transcriptions) show real progress in the panel and the menu bar.
+
+### 3. Instant edit (optional)
+
+A second hotkey (default `Option+Cmd+E`, off by default — enable in Settings > Instant Edit) applies a tool of your choice (default `fix orth`) to the selection **in place, without opening any window** — just a small ✓ HUD.
+
+## Tools
+
+| Tool | Description |
+|---|---|
+| `translate` | Translate text (default target language configurable) |
+| `fix grammar` | Fix grammar and spelling |
+| `fix orth` | Fix only spelling/typos |
+| `rephrase msg` | Rephrase as casual message |
+| `rephrase mail` | Rephrase as professional email |
+| `rephrase formal` | Formal tone |
+| `rephrase casual` | Casual tone |
+| `rephrase idea` | Structure a rough idea |
+| `def` | Define a word |
+| `explain` | Explain a concept |
+| `synonym` | List synonyms (arrow-key selectable) |
+| `word` | Reverse dictionary |
+| `summarize txt` | Summarize pasted text |
+| `summarize link` | Summarize a webpage |
+| `summarize video` | Summarize a YouTube video |
+| `summarize file` | Summarize a local file |
+| `get youtube sound` | Download YouTube audio (MP3) |
+| `get youtube video` | Download YouTube video |
+| `get youtube transcript` | Download subtitles as .txt |
+| `get file transcript` | Transcribe audio/video (Whisper) |
+| `get file text` | Extract text from PDF/docx/image (OCR) |
+| `get file metadata` | Show file metadata |
+| `get file links` | Extract URLs from a file |
+| `get link txt` | Save webpage as plain text |
+| `file to pdf` | Convert file/images to PDF |
+| `file to markdown` | Convert PDF/docx to markdown |
+| `file compress` | Compress an image |
+| `file qa` | Chat with a file |
+| `color` | Pick colors + auto palette generator |
+| `subject` | Generate email subject line |
+| `google` | Search Google |
+| `meet` | Create Google Meet link |
+| `wifi` | Show WiFi name and password |
+| `history` | Browse clipboard history |
+| `chat` | Free multi-turn chat with LLM (streaming) |
+| `prompt` | Content + instructions workflow |
+
+## Keyboard shortcuts
+
+| Key | Action |
+|---|related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| `Option+Cmd+Space` | Open/close launcher (configurable) |
+| `Option+Cmd+E` | Instant edit on selection (configurable, off by default) |
+| `Enter` | Execute tool / apply edit / send message |
+| `Tab` | Autocomplete tool name |
+| `Arrow Up/Down` | Navigate suggestions |
+| `Arrow Right` | Enter tool folder |
+| `Arrow Left` | Go back / exit chat |
+| `Cmd+1…9` | Quick-action chips (contextual mode) |
+| `Cmd+[` / `Cmd+]` | Navigate edit versions (contextual mode) |
+| `Escape` | Close or go back |
+| Drag & drop | Drop files onto the launcher |
+
+## Settings
+
+Open from the menu bar icon > Settings.
+
+- **LLM Providers** — Configure Claude (default model `claude-sonnet-4-6`), OpenAI, Gemini, Ollama, or custom OpenAI-compatible endpoints
+- **Tools** — Assign a specific LLM provider and customize the system prompt per tool
+- **Contextual** — Quick-action chips (label + instruction) and per-app tone rules (e.g. Mail → "Always professional")
+- **Instant Edit** — Enable the headless hotkey, pick the tool and the shortcut
+- **Translate** — Default target language, engine (Google CLI or LLM)
+- **Tone & Style Rules** — Global rules injected into every LLM prompt (e.g. "Never use Hey", "Always be formal")
+- **Response Language** — Force LLM to respond in a specific language or auto-detect
+
+A short onboarding (accessibility permission, API key) runs on first launch.
+
+## Architecture
+
+Single Swift Package, no dependencies beyond macOS system frameworks.
+
+```
+Sources/RaccoonTools/
+  Main.swift                 — App entry, hotkey, text capture
+  SpotlightPanel.swift       — Floating panel (NSPanel)
+  SpotlightView.swift        — Main launcher UI (SwiftUI)
+  SpotlightChatViews.swift   — Chat UI + streaming LLM helpers
+  SpotlightFreeMode.swift    — Contextual text assistant view
+  SpotlightColorViews.swift  — Color tool (history + palette)
+  SpotlightHistoryViews.swift — Clipboard history view
+  SpotlightState.swift       — App state
+  CommandSystem.swift        — Tool registry, matching, tree navigation
+  BuiltinTools.swift         — Tool registration
+  Tools+Text.swift           — Text/LLM tools
+  Tools+Files.swift          — File tools (PDF, OCR, transcripts…)
+  Tools+YouTube.swift        — YouTube download/summarize tools
+  Tools+System.swift         — System tools (wifi, meet, google…)
+  ToolPrompts.swift          — Default system prompts for LLM tools
+  ShellExec.swift            — Shell execution + dependency management
+  LLMService.swift           — Claude/OpenAI/Gemini/Ollama API calls (streaming, multi-turn)
+  FreeReplyParser.swift      — EDIT/ANSWER reply protocol parsing
+  DiffEngine.swift           — Word-level diff for edit cards
+  InstantEdit.swift          — Headless hotkey edit flow + HUD
+  PanelGeometry.swift        — Adaptive height + contextual placement math
+  SelfSizingScrollView.swift — Content-hugging scroll areas for the adaptive panel
+  MarkdownText.swift         — Markdown rendering with copyable code blocks
+  OnboardingView.swift       — First-launch setup
+  KeyCombo.swift             — Hotkey formatting helpers
+  PasteboardSnapshot.swift   — Clipboard snapshot/restore around synthetic copy/paste
+  SettingsManager.swift      — Persistent settings
+  SettingsView.swift         — Settings UI
+  HistoryManager.swift       — Clipboard & command history
+  KeychainHelper.swift       — API keys in Keychain
+  PythonEnv.swift            — Python venv for PDF/OCR tools
+  MenuBarView.swift          — Menu bar UI
+  RaccoonIcon.swift          — Menu bar icon
+```
+
+Unit tests live in `Tests/RaccoonToolsTests` — run them with `swift test`.
+
+## FAQ
+
+**macOS asks to allow Keychain access after an update — is that normal?**
+Yes. Your API keys are stored in the macOS Keychain (never in plain files). RaccoonTools builds are compiled locally rather than signed with a paid Apple certificate, so after an update macOS can't prove the new binary is the same app and asks again before handing it your keys. Choose **Always Allow**. A fresh install never sees this prompt — it only appears on updates, and it's macOS security working as intended.
+
+**Why do I have to copy the app to /Applications myself after `brew install`?**
+Homebrew formulae can't write outside their own prefix. Signed apps ship as casks that install directly into /Applications; going certificate-free means a formula compiled on your machine — one extra `cp`, zero Gatekeeper warnings.
+
+## License
+
+MIT

@@ -1,0 +1,105 @@
+---
+id: tool-01878
+type: tool
+area: 库
+status: active
+tags: [JavaScript, 协议宽松, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: pleonasma-io
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/tanvesh01/pleonasma-io
+created: 2026-07-18
+updated: 2026-07-18
+no: 1878
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: tanvesh01/pleonasma-io
+stars: 2
+url: https://github.com/tanvesh01/pleonasma-io
+tier: "B"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls: []
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# tanvesh01/pleonasma-io
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/tanvesh01/pleonasma-io
+- **Stars**：2
+- **语言**：JavaScript
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：An open source everyday progress sharing platform through writing which helps in keeping accountability. Take resolutions publicly and achieve them faster. Follow, Learn and Master.
+- **本地描述**：An open source everyday progress sharing platform through writing which helps in keeping accountability. Take resolutions publicly and achieve them faster. Follow, Learn and Master.
+- **拉取时间**：2026-07-23 23:33:44
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Welcome to Pleonasma
+
+[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
+[![Build Status](https://travis-ci.org/tulsi-prasad/pleonasma-io.svg?branch=master)](https://travis-ci.org/tulsi-prasad/pleonasma-io)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+[![Chat-on-Slack](https://img.shields.io/badge/chat-slack-blueviolet)](https://join.slack.com/t/pleonasma/shared_invite/enQtODYxMDgxNDA0NTE1LWQ3YTljZTQ0OTM3MTQ5MWQ3OWNmZmRkOWE2ZTc1ZmZkNGY1ZDdhYzM2MTgyOWEyNGQyZGRlNTZiNmEwNTFiNmY)
+
+Hey there, you *Homosapien*. You are most welcome to check out the source for my blog website. By the way, did you even know that **Pleonasm** is a real word? Don't worry, it's not any tech stuff you're missing out from.
+
+It means:
+> The use of more words than are necessary to convey meaning, either as a fault of style or for emphasis.
+
+I found it fascinating, and that's why I chose to call my blog as it is.
+
+# What is Pleonasma?
+
+
+Pleonasma is the project which aims on making people able to achieve their milestones faster through the power of writing. We know, people often take on resolutions for bringing changes in their lives by making habits or learning something new and that if not taken seriously or with accountability results in a failed attempt, which is painful. We’ve experienced it ourselves, too. 
+
+We are a networking space which makes people live up to their mark with accountability. This space is dedicated to people taking resolutions to start doing anything they want with accountability. They can share their progress with the world by writing diary entries each day having all they did that day regarding to their commitment. This will not only help the fellow for taking accountability by pledging to the world rather massive number of people who are starting out their journey with the same commitment as yours. They can choose to refer your progress and follow accordingly. One can write as much as one can and also as little as one can regarding what they learnt, adversities they faced and steps they took to overcome them. This will empower the whole world to take resolutions and be on track every Monday. 
+
+
+## How are we going to achieve this?
+
+We are now working on building a frontend for the web application. The objectives to consider during the making are;
+* The user should be able to log in to his account to add his progress using,
+    * Google
+    * Facebook
+* After signing up, one can see his profile with the current resolution taken.
+* Now one can take a resolution and keep updating their progress daily.
+* One doesn’t have to sign up to read other entries by people.
+* To start writing one needs to give a topic (resolution) which will be categorized.
+* One can’t give more than one topics, until and unless the user quits the resolution.
+
+## How to contribute to this project?
+
+* fork and clone this repo
+* `cd pleonasma-io` 
+* `npm install`
+* to setup the backend built with express:
+    * `npm run api-install`
+* to setup the frontend built with react:
+    * `npm run client-install`
+* then install concurrently globally:
+    * `npm install concurrently -g`
+* then install express:
+    * `npm install express`        
+* finally to start local server
+    * `npm run start`
+* create an issue on github if anything goes wrong will get to you soon
+
+
+## Chapter of Pleonasma
+
+A chapter of Pleonasma refers to one directory of a person with a profile which is made when one signs up to the application. This contains a record of all your resolutions you have taken and each resolution contains each day of your work and learning you made, all within. Only condition is one can pledge only of one resolution at once and after finishing that only one can take another resolution. This is the underlying principle behind all achievements.
+
+
+You can make the difference.
+
+
+## And Nice to Meet You!
+
+Tulsi Prasad

@@ -1,0 +1,98 @@
+---
+id: tool-01455
+type: tool
+area: 库
+status: active
+tags: [JavaScript, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: belka-field-notes
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/harulerrz/belka-field-notes
+created: 2026-07-18
+updated: 2026-07-18
+no: 1455
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: HaruLerrz/belka-field-notes
+stars: 1
+url: https://github.com/harulerrz/belka-field-notes
+tier: "B"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# HaruLerrz/belka-field-notes
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/harulerrz/belka-field-notes
+- **Stars**：1
+- **语言**：JavaScript
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：Work notes and case studies on media production, public issue writing, prompting, interactive narrative systems, and AI-assisted prototyping.
+- **本地描述**：Work notes and case studies on media production, public issue writing, prompting, interactive narrative systems, and AI-assisted prototyping.
+- **拉取时间**：2026-07-23 23:21:30
+
+---
+
+# Belka Field Notes
+
+這裡整理我過去做過的一些內容、工具、流程與案例。
+
+這份 repo 是我至今的工作內容與實作紀錄庫，收錄影音新聞、社群內容、公共議題整理、網站與互動專案、prompt 設計、小型工具與工作流程紀錄，以及部分開發過程。
+
+## About
+
+我是 Jack／HaruLerrz，政大哲學系、陽明交大傳播研究所碩士班畢業（入學時以傳播所乙組名義招生，該組為現今傳播與科技學系碩士班的前身），曾任壹傳媒（原毅傳媒）攝影記者，也長期投入社群內容經營、公共議題整理、網站與互動敘事專案、prompt workflow 與小型工具實作。
+
+國際認證與檢定資格方面，我已通過日本語能力試驗（JLPT）N1／N2；另取得 International Organization of Professional Cultivation and Accreditation（IOPCA）核發之 Master of Communication Professional（MCP）專業認證。
+
+這個 repo 放的是一些我過去實際做過、用過，或整理到一半覺得值得留下來的東西。  
+有些來自新聞與影音工作，有些來自社群經營與公共議題整理，有些是自己寫來省時間的小工具，也有一些是網站、prompt、語氣結構與互動敘事相關的實驗。
+
+整體內容大致分為以下幾類：
+
+* 影音新聞與內容製作流程
+* 社群經營與公共議題整理
+* 網站、AI 系統與互動敘事專案
+* prompt 設計與結構化寫作模組
+* 小型工具、workflow scripts 與 AI 輔助原型
+* 其他問題拆解、流程整理與文件化紀錄
+
+## Start Here
+
+* [Resume Lite](profile/resume-lite.md)：學經歷、工作範圍、工具與資格摘要。
+* [Selected Works](profile/works.md)：分類作品、外部連結與案例摘要。
+* [完整影音作品集](https://linktr.ee/jacksunexe)：V新聞、長片新聞、生活消費與醫療內容。
+
+## Repository Map
+
+* [Case Notes](case-notes/)  
+  依問題、流程與結果整理的工作案例，涵蓋影音、社群、公共議題、網站建置與數位原型。
+
+* [Web / AI System Projects](projects/)  
+  整理 AI 互動敘事網站、公共議題查證原型、Node.js 後端、prompt packaging、來源流程、狀態管理與部署紀錄。
+
+* [Prompting / Structured Writing](prompting/)  
+  工作型 prompt、語氣辨識、AI 歌曲創作工作流、模組化指令與結構化寫作流程。
+
+* [Tools](tools/)  
+  由我依實際需求規劃，並使用 AI 協助撰寫、測試與修正的小型工具、workflow scripts 與操作輔助程式。
+
+## Reuse
+
+除個別資料夾另附 LICENSE 外，本 repo 的文件、prompt、圖片與程式目前未授予額外使用授權。如有重製、改作或商業使用需求，請先聯絡。
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+## Keywords
+
+media workflow, civic documentation, social analysis, web projects, AI system prototypes, issue tracing, source verification, interactive narrative, 3D viewer, static hosting, prompt design, AI-assisted prototyping, state management, UI iteration, workflow automation, Node.js, Python utilities, tool-assisted workflow

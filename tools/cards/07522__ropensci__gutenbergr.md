@@ -1,0 +1,217 @@
+---
+id: tool-07522
+type: tool
+area: 库
+status: active
+tags: [R, 协议未明, 本地优先, 英文文档, 本地写作]
+title: gutenbergr
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/ropensci/gutenbergr
+created: 2026-07-18
+updated: 2026-07-18
+no: 7522
+category: 画龙补充 / 扩容入库 — 补充源
+repo: ropensci/gutenbergr
+stars: 116
+url: https://github.com/ropensci/gutenbergr
+tier: "A"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# ropensci/gutenbergr
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/ropensci/gutenbergr
+- **Stars**：116
+- **语言**：R
+- **License**：None
+- **Topics**：digital-humanities, natural-language-processing, nlp, peer-reviewed, project-gutenberg, public-domain, r, r-package, rstats, text-mining
+- **GitHub 描述**：Search, download, and process public domain texts from Project Gutenberg
+- **本地描述**：gutenbergr
+- **拉取时间**：2026-07-25 19:24:28
+
+related:
+  - methods/QUICK_START.md
+---
+
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# gutenbergr <a href="https://docs.ropensci.org/gutenbergr/"><img src="man/figures/logo.png" align="right" height="160" alt="gutenbergr website" /></a>
+
+<!-- badges: start -->
+
+[![CRAN
+version](https://www.r-pkg.org/badges/version/gutenbergr)](https://CRAN.R-project.org/package=gutenbergr)
+[![CRAN
+checks](https://badges.cranchecks.info/summary/gutenbergr.svg?label=CRAN%20Status)](https://cran.r-project.org/web/checks/check_results_gutenbergr.html)
+[![rOpenSci
+peer-review](https://badges.ropensci.org/41_status.svg)](https://github.com/ropensci/software-review/issues/41)
+[![Project Status:
+Active](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![R-CMD-check](https://github.com/ropensci/gutenbergr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ropensci/gutenbergr/actions/workflows/R-CMD-check.yaml)
+[![Integration
+Tests](https://github.com/ropensci/gutenbergr/actions/workflows/integration-tests.yaml/badge.svg)](https://github.com/ropensci/gutenbergr/actions/workflows/integration-tests.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/ropensci/gutenbergr/graph/badge.svg)](https://app.codecov.io/gh/ropensci/gutenbergr)
+[![Monthly
+Downloads](https://cranlogs.r-pkg.org/badges/gutenbergr)](https://CRAN.R-project.org/package=gutenbergr)
+[![Total
+Downloads](https://cranlogs.r-pkg.org/badges/grand-total/gutenbergr)](https://CRAN.R-project.org/package=gutenbergr)
+<!-- badges: end -->
+
+Search, download, and process public domain texts from the [Project
+Gutenberg](https://www.gutenberg.org/) collection.
+
+## Installation
+
+<div class=".pkgdown-release">
+
+Install the released version from [CRAN](https://cran.r-project.org/):
+
+``` r
+install.packages("gutenbergr")
+```
+
+</div>
+
+<div class=".pkgdown-devel">
+
+Install the development version from [GitHub](https://github.com/):
+
+``` r
+# install.packages("pak")
+pak::pak("ropensci/gutenbergr")
+```
+
+</div>
+
+## Quick Start
+
+Load the package and any other required libraries:
+
+``` r
+library(gutenbergr)
+library(dplyr)
+```
+
+We’ll get and set our Project Gutenberg mirror:
+
+``` r
+gutenberg_get_mirror()
+```
+
+    #> [1] "https://gutenberg.pglaf.org"
+
+Search through the metadata to find Jane Austen’s *Persuasion*:
+
+``` r
+gutenberg_works(title == "Persuasion")
+```
+
+    #> # A tibble: 1 × 8
+    #>   gutenberg_id title      author       gutenberg_author_id language
+    #>          <int> <chr>      <chr>                      <int> <fct>   
+    #> 1          105 Persuasion Austen, Jane                  68 en      
+    #>   gutenberg_bookshelf                           rights                    has_text
+    #>   <chr>                                         <fct>                     <lgl>   
+    #> 1 Category: Novels/Category: British Literature Public domain in the USA. TRUE
+
+*Persuasion*’s `gutenberg_id` is 105. We’ll use this ID to download it
+and also set our cache option to `"persistent"` so that we don’t have to
+re-download it later.
+
+``` r
+options(gutenbergr_cache_type = "persistent")
+persuasion <- gutenberg_download(105)
+```
+
+``` r
+persuasion
+```
+
+    #> # A tibble: 8,357 × 2
+    #>    gutenberg_id text            
+    #>           <int> <chr>           
+    #>  1          105 "Persuasion"    
+    #>  2          105 ""              
+    #>  3          105 ""              
+    #>  4          105 "by Jane Austen"
+    #>  5          105 ""              
+    #>  6          105 "(1818)"        
+    #>  7          105 ""              
+    #>  8          105 ""              
+    #>  9          105 ""              
+    #> 10          105 ""              
+    #> # ℹ 8,347 more rows
+
+Multiple works can be downloaded at once. We’ll also download Edna
+St. Vincent Millay’s *Renascence and Other Poems* (`gutenberg_id` 161)
+and throw in `title` data from the metadata.
+
+``` r
+books <- gutenberg_download(c(105, 161), meta_fields = "title")
+```
+
+``` r
+books |> count(title)
+```
+
+    #> # A tibble: 2 × 2
+    #>   title                           n
+    #>   <chr>                       <int>
+    #> 1 Persuasion                   8357
+    #> 2 Renascence, and Other Poems  1222
+
+## Vignettes
+
+See the following vignettes for more advanced usage of gutenbergr.
+
+- [Getting Started with
+  gutenbergr](https://docs.ropensci.org/gutenbergr/articles/intro.html) -
+  explore metadata and download books
+- [Text Mining with gutenbergr and
+  tidytext](https://docs.ropensci.org/gutenbergr/articles/text-mining.html) -
+  complete analysis workflow with
+  [tidytext](https://github.com/juliasilge/tidytext)
+
+## FAQ
+
+### How were the metadata files generated?
+
+See the
+[`data-raw`](https://github.com/ropensci/gutenbergr/tree/master/data-raw)
+directory for scripts. Metadata was generated from [the Project
+Gutenberg
+catalog](https://www.gutenberg.org/ebooks/offline_catalogs.html) on **25
+June 2026**.
+
+### Do you respect robot access rules?
+
+Yes! The package follows [Project Gutenberg’s
+rules](https://www.gutenberg.org/policy/robot_access.html):
+
+- Retrieves books directly from mirrors using the authorized link format
+- Prioritizes `.zip` files to minimize bandwidth
+- Supports session and persistent caching
+- This package is designed for downloading individual works or small
+  collections, not the entire corpus. For bulk downloads, [set up a
+  mirror](https://www.gutenberg.org/policy/robot_access.html).
+
+See their [Terms of
+Use](https://www.gutenberg.org/policy/terms_of_use.html) for details.
+
+## Contributing
+
+See
+[`CONTRIBUTING.md`](https://docs.ropensci.org/gutenbergr/CONTRIBUTING.html).
+
+Note that this package is released with a [Contributor Code of
+Conduct](https://ropensci.org/code-of-conduct/). By contributing to this
+project, you agree to abide by its terms.
+
+[![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org/)

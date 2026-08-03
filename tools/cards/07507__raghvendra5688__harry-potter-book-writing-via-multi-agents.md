@@ -1,0 +1,125 @@
+---
+id: tool-07507
+type: tool
+area: 库
+status: active
+tags: [多Agent, Python, 协议未明, 需API密钥, 英文文档]
+title: harry-potter-book-writing-via-multi-agents
+summary: 多 Agent 协作自动产文
+source: https://github.com/raghvendra5688/harry-potter-book-writing-via-multi-agents
+created: 2026-07-18
+updated: 2026-07-18
+no: 7507
+category: 画龙补充 / 扩容入库 — 补充源
+repo: raghvendra5688/harry-potter-book-writing-via-multi-agents
+stars: 0
+url: https://github.com/raghvendra5688/harry-potter-book-writing-via-multi-agents
+tier: "C"
+use_case: "多 Agent 协作自动产文"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# raghvendra5688/harry-potter-book-writing-via-multi-agents
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/raghvendra5688/harry-potter-book-writing-via-multi-agents
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：book-writing, crewai, generative-ai, harry-potter, multi-agent-framework, outliner
+- **GitHub 描述**：Write next chapter of Harry Potter's Life as an Auror using CrewAI's multi-agent framework
+- **本地描述**：harry-potter-book-writing-via-multi-agents
+- **拉取时间**：2026-07-25 19:23:58
+
+related:
+  - methods/QUICK_START.md
+---
+
+# Write Harry Potter Book using Flow
+
+This flow is powered by [crewAI](https://crewai.com). The design sets up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal was to have collaborative agents with some agents working for book outline and other agents wearing the hat of researcher. The researcher crew researchers and writes each chapter. Specific prompts to maintain cohesiveness of the chapters along with what all materials to cover are provided. 
+
+## Overview
+
+This flow will guide you through the process of writing a book by leveraging multiple AI agents, each with specific roles. Here's a brief overview of what will happen in this flow:
+
+1. **Generate Book Outline**: The flow starts by using the `OutlineCrew` to create a comprehensive outline for your book. This crew will search the internet, define the structure, and main topics of the book based on the provided goal and topic.
+
+2. **Write Book Chapters**: Once the outline is ready, the flow will kick off a new crew, `WriteBookChapterCrew`, for each chapter outlined in the previous step. Each crew will be responsible for writing a specific chapter, ensuring that the content is detailed and coherent.
+
+3. **Join and Save Chapters**: In the final step, the flow will combine all the chapters into a single markdown file, creating a complete book. This file will be saved in the root folder of your project.
+
+By following this flow, you can efficiently produce a well-structured and comprehensive book, leveraging the power of multiple AI agents to handle different aspects of the writing process.
+
+We provide the essential prompts to create a book with adventures, describe adult life of Harry as an Auror and family man and his duels with dark wizards.
+
+## Installation
+
+Ensure you have Python >=3.10 <=3.13 installed on your system. First, if you haven't already, install CrewAI:
+
+```bash
+pip install crewai
+```
+
+Next, navigate to your project directory and install the dependencies:
+
+1. First lock the dependencies and then install them:
+
+```bash
+crewai install
+```
+
+### Customizing & Dependencies
+
+**Add your `SERPER_API_KEY` into the `.env` file**
+
+To customize the behavior of the book writing flow, you can update the agents and tasks defined in the `OutlineCrew` and `WriteBookChapterCrew`. If you want to adjust the flow itself, you will need to modify the flow in `main.py`.
+
+- **Agents and Tasks**: Modify `src/write_a_book_with_flows/config/agents.yaml` to define your agents and `src/write_a_book_with_flows/config/tasks.yaml` to define your tasks. This is where you can customize how the book outline is generated and how chapters are written.
+
+- **Flow Adjustments**: Modify `src/write_a_book_with_flows/main.py` to adjust the flow. This is where you can change how the flow orchestrates the different crews and tasks.
+
+## Running the Project
+
+To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
+
+```bash
+micromamba create -n book_writing python==3.12.0 
+micromamba activate book_writing
+pip3 install -r requirements.txt
+cp .env src/ write_a_book_with_flows/
+cd src
+nohup python3 write_a_book_with_flows/main.py >> out.log 2> out.err &
+```
+
+This command initializes the write_a_book_with_flows Crew, assembling the agents and assigning them tasks as defined in your configuration.
+
+When you run the above commands, it will orchestrate multiple crews to perform the tasks. 
+
+The flow will first generate a book outline, then create and run a crew for each chapter, and finally join all the chapters into a single markdown file.
+
+## Understanding Your Flow
+
+The write_a_book_with_flows Flow is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your flow.
+
+### Flow Structure
+
+1. **OutlineCrew**: This crew is responsible for generating the book outline. It defines the structure and main topics of the book based on the provided goal and topic.
+
+2. **WriteBookChapterCrew**: For each chapter outlined by the `OutlineCrew`, a new `WriteBookChapterCrew` is created. Each of these crews is responsible for writing a specific chapter, ensuring detailed and coherent content.
+
+3. **Join and Save**: After all chapters are written, the flow combines them into a single markdown file, creating a complete book.
+
+By understanding the flow structure, you can see how multiple crews are orchestrated to work together, each handling a specific part of the book writing process. This modular approach allows for efficient and scalable book production.
+
+## Support
+
+For support, questions, or feedback reach out to raghvendramall@ieee.org.
+
+- Visit CrewAI [documentation](https://docs.crewai.com)
+- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)

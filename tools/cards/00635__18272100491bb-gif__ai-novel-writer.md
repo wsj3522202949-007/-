@@ -1,0 +1,194 @@
+---
+id: tool-00635
+type: tool
+area: 库
+status: active
+tags: [提示词, 大纲规划, Go, 协议宽松, 本地优先, 中文友好, 本地写作]
+title: ai-novel-writer
+summary: 搭大纲/分卷/节拍
+source: https://github.com/18272100491bb-gif/ai-novel-writer
+created: 2026-07-18
+updated: 2026-07-18
+no: 635
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: 18272100491bb-gif/ai-novel-writer
+stars: 1
+url: https://github.com/18272100491bb-gif/ai-novel-writer
+tier: "B"
+use_case: "搭大纲/分卷/节拍"
+pitfalls: []
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# 18272100491bb-gif/ai-novel-writer
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/18272100491bb-gif/ai-novel-writer
+- **Stars**：1
+- **语言**：Go
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：AI-assisted novel/story writing tool with agent, outline generation, chapter writing, and memory system
+- **本地描述**：AI-assisted novel/story writing tool with agent, outline generation, chapter writing, and memory system
+- **拉取时间**：2026-07-23 22:57:34
+
+---
+
+# Show Me The Story · 白泽改造版
+
+> 基于 [Nigh/show-me-the-story](https://github.com/Nigh/show-me-the-story) 的深度改造 fork，聚焦长篇小说 AI 写作中记忆连贯、文笔自然、验收闭环三大痛点。
+
+## 改造亮点
+
+### 🧠 双轨叙事记忆
+
+AI 写长篇小说的最大问题是"记不住前面写了什么"。原版只靠生成 prompt 里的历史摘要压缩，章数一多细节全丢。
+
+我们引入 Mem0 本地侧车引擎，构建**热冷双轨记忆架构**：
+
+- **热记忆**：保留原版 progress.json 逐章片段，即时生效
+- **冷记忆**：Mem0 + BGE 本地向量检索，每 5 章触发一次融合检索（BM25 + embedding + 实体权重 + 邻近加权），跨章节召回被历史摘要压缩掉的关键细节
+
+同时每 20 章自动重算实体权重——让 AI 始终聚焦当前剧情线的核心角色，而不是被出场一两次的路人分散注意力。侧车进程不可用时自动降级回原生记忆，不影响生成流程。
+
+### 🎭 三层写作人格
+
+AI 的文笔问题，根源往往不是"不会写"，而是"没有明确的风格即由底层概率推测加训练偏好驱动，即便加一大推禁用规则AI通常也会模糊绕过"。在此基础上我们提出了三层人格架构。
+
+原版系统提示词只有一句扁平规则。我们改为**三层人格架构**：
+
+| 层级 | 定位 | 作用 |
+|------|------|------|
+| **顶层** | 身份与三观 | 定义 AI 的角色认知——满脑子操作的年轻人、较真但不教条 |
+| **中层** | 表达偏好 | 画面 > 解释、玩梗不文学腔、信息密度高、绝不注水 |
+| **底层** | 硬规则 | 不输出元信息、视角统一、不以 AI 口吻总结 |
+
+人格通过 `persona.txt` 文件可自定义。人格还充当记忆的"过滤器"——同样的记忆检索结果，在不同人格下会被不同地理解和运用，称为"选角联动"。
+
+### 📐 Prompt 三权分层
+
+原版把故事梗概、历史摘要、写作风格、角色设定等一股脑塞进 prompt，层次不分导致 AI 在长上下文中迷失重点。
+
+我们按**优先级分三层注入**：
+
+```
+🔴 核心指令  → 本章大纲 · 叙述视角 · 字数
+🟡 约束      → 前情梗概 · 项目指导 · 活跃伏笔
+🟢 参考      → 完整大纲 · 角色设定 · 世界观 · 记忆
+```
+
+删除 WritingStyle（已被系统人格覆盖）。PreviousEnding 移出写作 prompt，仅保留一致性检查。
+
+### ✅ 三维验收闭环
+
+原版每章生成后仅做事实核查，且陷入"核查 → 重写 → 再核查 → 再重写"的循环，浪费 token 且效果不佳。
+
+我们改为**一次 API 完成三维检测**：
+
+| 维度 | 规则数 | 检测内容 |
+|------|--------|-------related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| **事实核查** | 6 条 | 人设/地点/时间线/因果/能力/逻辑一致性 |
+| **Gate 7 · 情绪冗余** | 7 条 | 同一情绪重复声明、纯情绪词包裹动作、场面描写后追加无新信息的情绪总结、已间接表达又写心理、套话比喻等 |
+| **Gate 8 · 修辞自觉** | 5 条 | 修辞与场景格调一致、密度控制、角色身份匹配等 |
+
+检测发现问题则汇总为一份反馈，一次性交给 AI 修订，不循环不重新验证。验收报告（GateReports）存入章节数据，前端展示 PASS/FAIL 详情，用户自行决定是否修订或直接确认。
+
+### 🔄 生成流程优化
+
+原版在用户看到正文之前就消耗 token 做了摘要、伏笔更新、记忆同步。如果用户需要大幅修订，这些工作白做。
+
+调整后的流程：
+
+```
+生成正文 → 三维验收 → 可选修订 → 标 review
+                                    ↓ 用户确认后
+                              异步：摘要 → 伏笔更新 → 记忆同步 → 标 accepted
+```
+
+摘要、伏笔更新、记忆同步后置到确认阶段，节省至少一轮 API 调用。
+
+### 📋 大纲分叉架构
+
+原版将完整大纲直接注入生成 prompt，prompt 越滚越大。
+
+我们引入大纲解析接口 `/api/outline/parse`：上传完整大纲后，AI 提取到角色 / 世界观 / 组织 / 关系 / 伏笔五个结构化接口。生成时判断——接口有数据则不注入完整大纲文本，空则全量兜底。两者分层共存。
+
+### 其他改进
+
+- **500 字硬截断**：摘要代码层截断，不靠 AI 自觉
+- **关键词检索**：`.declarations/declarations.json` 纯关键词索引，按需调用不自动注入
+- **故事弧感知**：AI 助理可感知当前处于故事的哪个阶段（开端 / 发展 / 高潮 / 收尾）
+- **技能分类**：craft 类技能过滤，仅 polish 类自动注入，避免生成 prompt 被无关技能污染
+- **后端稳定性**：修复 ensureProject 空指针、PostChapterConfirm 并发竞态、大纲编辑权限限制
+- **异步确认**：确认章节改为后台异步执行，不阻塞用户操作
+
+## 快速开始
+
+### 获取
+
+```bash
+git clone <repo-url>
+cd show-me-the-story
+go build -o show-me-the-story .
+```
+
+### 3. 启动 Mem0 记忆侧车（可选，默认降级）
+
+记忆侧车提供向量检索增强，不启动也不影响基本使用（自动降级为原生记忆）：
+
+```bash
+# 创建 Python 虚拟环境
+python3 -m venv .venv
+source .venv/bin/activate
+
+# 安装依赖（仅需 fastembed）
+pip install fastembed
+
+# 启动侧车
+python3 mem0/mem0_server.py --dir ./data
+```
+
+侧车默认监听 `127.0.0.1:49152`，仅本地访问。
+
+### 4. 运行
+
+```bash
+./show-me-the-story
+```
+
+启动后访问 `http://localhost:48090`。
+
+### 配置
+
+1. 创建项目，填写故事类型、章节数、字数
+2. 在「配置」页填写 API 地址、模型名、API Key
+3. 生成大纲 → 逐章写作
+
+前端开发：
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## 技术栈
+
+- **后端**：Go（单文件二进制）
+- **前端**：Svelte 4 + Vite
+- **记忆检索**：Mem0 + BAAI/bge-small-zh-v1.5（全本地运行，不依赖外部服务）
+- **接口兼容**：任意 OpenAI 格式 API（OpenAI / DeepSeek / Ollama / LM Studio 等）
+
+## 致谢
+
+感谢 [Nigh/show-me-the-story](https://github.com/Nigh/show-me-the-story) 提供的优秀基础框架。
+
+拐子（方案）· 白泽（实现）

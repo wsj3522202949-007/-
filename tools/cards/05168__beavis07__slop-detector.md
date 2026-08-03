@@ -1,0 +1,306 @@
+---
+id: tool-05168
+type: tool
+area: 库
+status: active
+tags: [Claude插件, Python, 协议未明, 需API密钥, 英文文档]
+title: slop-detector
+summary: Claude Code 插件式写作流
+source: https://github.com/beavis07/slop-detector
+created: 2026-07-18
+updated: 2026-07-18
+no: 5168
+category: 一、去 AI 味 / Humanizer 库
+repo: beavis07/slop-detector
+stars: 13
+url: https://github.com/beavis07/slop-detector
+tier: "B"
+use_case: "Claude Code 插件式写作流"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# beavis07/slop-detector
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/beavis07/slop-detector
+- **Stars**：13
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：AI Slop to detect AI Slop
+- **本地描述**：AI Slop to detect AI Slop
+- **拉取时间**：2026-07-25 18:08:38
+
+---
+
+# Slop Detector
+
+Detect AI-generated content in GitHub repositories with high accuracy.
+
+> *"The best way to catch AI slop is with more AI slop."* — Ancient Proverb (2024)
+
+## The Pitch
+
+Have you ever looked at a codebase and thought *"This feels suspiciously competent... too competent"*? Have you wondered if that pristine documentation was written by a human who actually enjoys writing docs, or by a silicon-based entity that doesn't know any better?
+
+**Slop Detector** is here to help. Built in approximately 3 hours by an AI assistant following hastily-written prompts, this tool uses cutting-edge™ heuristics and definitely-not-made-up statistical analysis to determine if code was written by a human or by our new robot overlords.
+
+### Why Trust Us?
+
+Because we used AI to build an AI detector. It's like hiring a fox to guard the henhouse, except the fox has a PhD in henhouse security and a 98.7% confidence score (margin of error: ±97%).
+
+Our methodology is rigorous:
+1. We asked Claude to detect patterns that Claude uses
+2. Claude confidently identified said patterns
+3. We shipped it
+
+This is definitely not circular reasoning. This is *innovation*.
+
+### Features That Definitely Work*
+
+- **Definitive Detection**: We look for smoking guns like `CLAUDE.md` files and commit messages that literally say "🤖 Generated with Claude". Revolutionary.
+- **Heuristic Analysis**: We check if the code has "too many comments" or "suspiciously good variable names". Because real developers name things `x`, `temp2`, and `final_FINAL_v3`.
+- **Statistical Wizardry**: We calculate things like "burstiness" and "Zipf distribution deviation". We're not entirely sure what these mean, but they sound impressive on grant applications.
+- **Machine Learning** (Optional): Requires a 500MB model download that will definitely not hallucinate false positives.
+
+*\*Results may vary. Not responsible for existential crises when you discover that you are in fact an instance of GPT-4.*
+
+---
+
+## Overview
+
+Slop Detector analyzes repositories to determine:
+- **IF** a repository contains AI-generated content (with % probability)
+- **HOW MUCH** of the content is AI-generated (estimated %)
+- **WHAT TYPE** of content is AI-generated (code vs documentation vs configuration)
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+For ML-based detection (optional, requires ~500MB model download):
+```bash
+pip install -e ".[ml]"
+```
+
+## Quick Start
+
+Analyze a GitHub repository:
+```bash
+slop-detector analyze https://github.com/username/repo
+```
+
+Analyze a local repository:
+```bash
+slop-detector analyze ./path/to/repo
+```
+
+Check a code snippet:
+```bash
+slop-detector check "def hello(): print('Hello, World!')"
+```
+
+## Output Formats
+
+```bash
+# Console output (default)
+slop-detector analyze https://github.com/user/repo
+
+# JSON output
+slop-detector analyze https://github.com/user/repo -o json -f report.json
+
+# Markdown output
+slop-detector analyze https://github.com/user/repo -o markdown -f report.md
+
+# Detailed file-by-file analysis
+slop-detector analyze https://github.com/user/repo --detailed
+```
+
+## Detection Methods
+
+### 1. Heuristic Detection (Default)
+Pattern matching for known AI writing signatures:
+- AI-typical phrases ("Here's a simple implementation", "Let me explain")
+- Comment patterns (over-commenting, obvious comments)
+- Code structure (perfect indentation, uniform formatting)
+- Naming conventions (verbose/textbook-style names)
+- Placeholder patterns ("YOUR_API_KEY_HERE")
+
+### 2. Statistical Analysis (Default)
+Mathematical analysis of content patterns:
+- **Burstiness**: Human text has "bursty" word usage; AI is more uniform
+- **Zipf's Law**: Natural language follows Zipf's distribution
+- **Vocabulary Diversity**: Type-token ratio analysis
+- **Entropy Measures**: Character and line-level entropy
+
+### 3. ML-Based Detection (Optional)
+Transformer-based analysis using CodeBERT:
+- Perplexity scoring (AI text is more "predictable" to LLMs)
+- Requires `--enable-ml` flag and model download
+
+### 4. Commit History Analysis (Default)
+Git history patterns that suggest AI assistance:
+- Commit message patterns
+- Bulk commit detection
+- Timing anomalies
+- AI co-author tags
+
+## Accuracy Considerations
+
+Detection accuracy varies by content type:
+
+| Content Type | Estimated Accuracy | Notes |
+|--------------|-------------------|-------|
+| Documentation | 70-85% | Most reliable (prose-like) |
+| Code | 55-70% | Harder (functional constraints) |
+| Configuration | 40-55% | Hardest (highly structured) |
+
+**Important**: No AI detection is 100% accurate. Results should be interpreted as probability indicators, not definitive classifications.
+
+### Factors that reduce accuracy:
+- Heavily edited AI content
+- Short files (<50 lines)
+- Highly templated code
+- Multiple authors mixing styles
+
+### Factors that increase accuracy:
+- Longer files
+- Consistent patterns across repository
+- Multiple detection signals agreeing
+- Documentation and comments present
+
+## Exit Codes
+
+| Code | Meaning |
+|------|---------|
+| 0 | Low AI probability (<30%) |
+| 1 | Medium AI probability (30-70%) |
+| 2 | High AI probability (>70%) |
+
+Useful for CI/CD integration:
+```bash
+slop-detector analyze ./repo && echo "Likely human-written"
+```
+
+## CLI Options
+
+```
+slop-detector analyze [OPTIONS] REPO
+
+Options:
+  -o, --output [console|json|markdown]  Output format
+  -f, --output-file PATH                Output file path
+  -d, --detailed                        Show file-by-file analysis
+  -m, --max-files INTEGER               Max files to analyze (default: 500)
+  --enable-ml                           Enable ML detection
+  --no-commits                          Skip commit analysis
+  --shallow INTEGER                     Clone depth (default: 100)
+  --help                                Show help
+```
+
+## Programmatic Usage
+
+```python
+from slop_detector import SlopDetector, AnalyzerConfig
+from slop_detector.models import ContentType
+
+# Configure
+config = AnalyzerConfig(
+    enable_ml=False,
+    max_files=200,
+)
+
+detector = SlopDetector(config)
+
+# Analyze repository
+result = detector.analyze_repository("https://github.com/user/repo")
+print(f"AI Probability: {result.overall_ai_probability:.1%}")
+print(f"Confidence: {result.overall_confidence.value}")
+
+# Check individual text
+analysis = detector.analyze_text(
+    "def hello(): print('world')",
+    content_type=ContentType.CODE
+)
+print(f"AI Probability: {analysis.ai_probability:.1%}")
+```
+
+## Understanding Results
+
+### Overall AI Probability
+A weighted average across all analyzed content, with code weighted more heavily than documentation or configuration.
+
+### Confidence Level
+How certain the tool is about its assessment:
+- **Very High**: Many signals, strong agreement, extreme probability
+- **High**: Good signal count, reasonable agreement
+- **Medium**: Some signals, moderate agreement
+- **Low**: Few signals or mixed signals
+- **Very Low**: Insufficient data for reliable assessment
+
+### Detection Signals
+Individual indicators that contribute to the overall score. Each signal has:
+- **Score**: 0-1 (how strongly it indicates AI)
+- **Weight**: How much to trust this signal
+- **Evidence**: Specific examples found
+
+## Limitations
+
+1. **False Positives**: Clean, well-documented code may be flagged (because let's be honest, when's the last time a human wrote clean, well-documented code?)
+2. **False Negatives**: Heavily edited AI content may pass detection (congratulations, you've laundered your slop)
+3. **Content Type Bias**: Better at detecting AI prose than AI code (code is code, man)
+4. **Training Data**: Based on patterns from GPT/Claude/Copilot circa 2023-2024 (already obsolete by the time you read this)
+5. **Irony**: This tool was written by Claude, which means it can detect itself with 95% confidence. We're not sure if that's a feature or a cry for help.
+
+### Philosophical Concerns
+
+If an AI writes a detector to find AI-written code, and that detector flags itself, is the detection accurate? If you use AI to review the AI detector's code, and it says it looks "mostly human-written", should you trust it?
+
+These are the questions that keep us up at night. Well, not *us*—we don't sleep. But they should keep *you* up at night.
+
+## Research Background
+
+This tool is based on research from:
+- [DetectCodeGPT](https://github.com/YerbaPage/DetectCodeGPT) (ICSE 2025)
+- [CodeGPTSensor](https://dl.acm.org/doi/10.1145/3705300) (ACM TOSEM)
+- [aboutcode-org/ai-gen-code-search](https://github.com/aboutcode-org/ai-gen-code-search)
+- Statistical analysis methods from computational linguistics
+
+## Testimonials
+
+> *"I ran slop-detector on slop-detector and it returned 83%. I'm not sure what to do with this information."*
+> — The Author, moments before an existential crisis
+
+> *"Finally, a tool that lets me mass-reject PRs with scientific justification!"*
+> — Tech Lead who definitely reads the code they review
+
+> *"We integrated this into our CI/CD pipeline. Our deployment frequency dropped 400% but our smugness increased proportionally."*
+> — DevOps Engineer, probably
+
+## Disclaimer
+
+This tool is provided "as-is" and should be used for entertainment purposes only. Any hiring decisions, code reviews, or heated Slack arguments based on Slop Detector output are entirely your own fault.
+
+The creators of this tool accept no responsibility for:
+- Accusing your coworkers of being robots
+- Discovering that your "10x engineer" is actually Claude with a GitHub account
+- Realizing that the best code in your repo was written by an AI
+- The inevitable robot uprising
+
+## License
+
+MIT License
+
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+*🤖 This README was generated with [Claude Code](https://claude.com/claude-code) and it knows you know.*
