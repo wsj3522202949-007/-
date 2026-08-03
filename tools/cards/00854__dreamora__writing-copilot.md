@@ -1,0 +1,165 @@
+---
+id: tool-00854
+type: tool
+area: 库
+status: active
+tags: [TypeScript, 协议未明, 需API密钥, 英文文档, 大纲规划, 多Agent, 灵感创意]
+title: writing-copilot
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/dreamora/writing-copilot
+created: 2026-07-18
+updated: 2026-07-18
+no: 854
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: dreamora/writing-copilot
+stars: 0
+url: https://github.com/dreamora/writing-copilot
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# dreamora/writing-copilot
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/dreamora/writing-copilot
+- **Stars**：0
+- **语言**：TypeScript
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：A collaborative writing tool where AI amplifies human thought, clarity and material understanding.
+- **本地描述**：A collaborative writing tool where AI amplifies human thought, clarity and material understanding.
+- **拉取时间**：2026-07-23 23:03:55
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Writing Copilot
+
+Local writing assistant prototype with markdown editing, suggestion lifecycle, telemetry, and early learning substrate work.
+
+## Startup
+
+```bash
+bun install
+bun run db:migrate && bun run dev:api
+```
+
+Execution flow:
+
+```bash
+bun run db:migrate && bun run dev:api
+```
+
+Health check:
+
+```bash
+curl -s http://localhost:8788/api/health
+```
+
+The API server runs on `http://localhost:8788/` and exposes health plus `/api/*` routes.
+
+## ChatGPT auth setup
+
+Bun supports three operational modes:
+
+1. **Codex CLI transport (preferred when available)**
+   - if `codex` is installed and you are logged in, Bun uses Codex first
+   - no `OPENAI_API_KEY` is required for this path
+   - optional transport knobs: `CODEX_CLI_COMMAND`, `CODEX_MODEL`, `CODEX_TIMEOUT_MS`, `CODEX_SKIP_GIT_REPO_CHECK=...`
+   - the Codex subprocess is run with `--sandbox workspace-write` and falls back to stub mode if the CLI cannot start cleanly
+   - editor model dropdown defaults to `gpt-5.4-mini`
+
+2. **OpenAI API key path (fallback when Codex is unavailable)**
+   - set `OPENAI_API_KEY=sk-...`
+   - optional: `OPENAI_MODEL`, `OPENAI_TEMPERATURE`
+   - this uses the OpenAI SDK provider
+
+3. **OAuth browser-session path**
+   - provide `openai.type: "oauth"` in auth config
+   - start backend with `USE_BROWSER_SESSION_TRANSPORT=true`
+   - subject to chatgpt.com challenge behavior (403/401 remain possible)
+
+Common fallback mode
+- set `USE_STUB_PROVIDER=true` to force stub mode for deterministic offline behavior.
+
+Minimal example:
+
+```json
+{
+  "openai": {
+    "type": "oauth",
+    "refresh": "<token>",
+    "access": "<token>",
+    "expires": 1776691031314,
+    "accountId": "<uid>"
+  }
+}
+```
+
+If auth is missing, malformed, or the access token is expired, `/api/health` reports the resolved auth path and an actionable auth error while the app stays in stub mode.
+
+## Editorial roles
+
+The editor now supports a role selector in the toolbar. Choose the review stance you want before requesting a suggestion:
+
+- Professional lector
+- Rigorous reviewer
+- Precise editor
+- Sharp stylist
+- Joyful but adult
+- Marc voice
+
+`Marc voice` is derived from Marc's vault corpus and aims for grounded, sharp, adult edits instead of generic AI polish.
+
+## Local workspace context
+
+In Chromium-family browsers with File System Access directory support, the editor
+can open a local folder as a session-scoped writing workspace. Workspace mode
+lists visible `.md` and `.markdown` files from the selected folder, lets you
+choose the active draft, and lets you explicitly add other Markdown files as AI
+context.
+
+The browser owns local file access. Workspace files are read and saved through
+browser-granted file handles; the Bun server does not receive arbitrary local
+paths and does not scan folders outside the selected directory. If folder access
+is unavailable, cancelled, or revoked, the existing default-document flow remains
+available.
+
+Selected context is prepared as a visible bounded packet before an AI request.
+Only the selected draft span, surrounding draft context, and explicitly selected
+context documents are sent. Review-thread provenance stores relative document
+descriptors, inclusion modes, sizes, and hashes; it does not store absolute local
+paths or full context excerpts by default.
+
+## Architecture
+
+- `src/api/` — Bun HTTP server
+- `src/adapters/ai/` — provider bootstrap + auth loading
+- `src/domain/suggestions/` — prompt + lifecycle logic
+- `src/domain/telemetry/` — event + rewrite + timing capture
+- `src/domain/insights/` — compact learning queries
+- `src/db/` — SQLite migrations
+- `src/lib/` — shared utilities
+- `web/` — React + Vite shell UI
+- `docs/` — project docs and roadmap artifacts
+
+## Current direction
+
+MVP order:
+1. ChatGPT auth foundation
+2. Real AI suggestion loop
+3. FTS5 learning substrate
+
+Locks/concurrency work stays out of MVP unless a concrete race/corruption bug appears.

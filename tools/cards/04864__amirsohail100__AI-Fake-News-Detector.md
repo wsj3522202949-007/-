@@ -1,0 +1,124 @@
+---
+id: tool-04864
+type: tool
+area: 库
+status: active
+tags: [Jupyter Notebook, 协议未明, 本地优先, 英文文档, 去AI味, 本地写作]
+title: AI-Fake-News-Detector
+summary: 投稿前给正文降 AI 检测痕迹、改自然语气
+source: https://github.com/amirsohail100/ai-fake-news-detector
+created: 2026-07-18
+updated: 2026-07-18
+no: 4864
+category: 一、去 AI 味 / Humanizer 库
+repo: amirsohail100/AI-Fake-News-Detector
+stars: 0
+url: https://github.com/amirsohail100/ai-fake-news-detector
+tier: "C"
+use_case: "投稿前给正文降 AI 检测痕迹、改自然语气"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# amirsohail100/AI-Fake-News-Detector
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/amirsohail100/ai-fake-news-detector
+- **Stars**：0
+- **语言**：Jupyter Notebook
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：AI Fake News Detector: An advanced web application powered by a Deep Learning Artificial Neural Network (ANN) that analyzes news text and classifies it as Real or Fake with an outstanding 98% accuracy. Paste text for instant verification.
+- **本地描述**：AI Fake News Detector: An advanced web application powered by a Deep Learning Artificial Neural Network (ANN) that analyzes news text and classifies it as Real or Fake with an outstanding 98% accuracy. Paste text for instant verification.
+- **拉取时间**：2026-07-25 17:57:18
+
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# AI Fake News Detector
+
+An advanced web application powered by a Deep Learning Artificial Neural Network (ANN) model that analyzes news text and classifies whether the information is Real or Fake with an outstanding **98% accuracy**.
+
+## 🖥️ User Interface
+
+![AI Fake News Detector UI](UI.png)
+
+## ✨ Features
+
+- **High Accuracy:** Achieves a 98% success rate using a robust, multi-layered deep learning model.
+- **Instant Verification:** Paste any news text or paragraph for immediate real-time analysis.
+- **Clean Interface:** Intuitive web UI designed for straightforward and efficient user interaction.
+
+## 🛠️ Model Architecture
+
+The model is built using a Keras `Sequential` pipeline, combining Text Embeddings, Dense layers, Bidirectional LSTMs, and Dropout layers for optimal feature extraction and regularization:
+
+```python
+model_ann = Sequential([
+    Embedding(input_dim=Max_words, output_dim=embedding_dim, input_length=Max_len),
+    Dense(128, activation="relu"),
+    Bidirectional(LSTM(64, return_sequences=True)),
+    Dropout(0.4),
+    Dense(128, activation="relu"),
+    Bidirectional(LSTM(64, return_sequences=True)),
+    Dropout(0.3),
+    Dense(32, activation="relu"),
+    Bidirectional(LSTM(16, return_sequences=False)),
+    Dropout(0.2),
+    Dense(32, activation="relu"),
+    Dense(16, activation="relu"),
+    Dense(8, activation="relu"),
+    Dropout(0.1),
+    Dense(1, activation="sigmoid")
+])
+```
+
+## 📦 Required Pipeline Files
+
+To run this application properly, ensure the following pipeline files are present in your project directory:
+
+- `model_ann.h5` (Trained ANN Model)
+- `tokenizer.pkl` (Tokenizer file)
+- `columns.pkl` (Data preprocessing layout)
+
+## 🚀 Getting Started
+
+1. Clone this repository.
+2. Place the required pipeline files (`model_ann.h5`, `tokenizer.pkl`, `columns.pkl`) in the root directory.
+3. Run the application script to start the local server.
+
+## Cloud Deployment
+
+```bash
+git clone https://github.com/amirsohail100/AI-Fake-News-Detector.git
+```
+
+```bash
+cd AI-Fake-News-Detector
+```
+
+```bash
+streamlit run app.py
+```
+
+```bash
+python install -r requirements.txt
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📝 Author
+
+👤 **Amir Sohail**
+
+- Github: [@Amir Sohail](https://github.com/amirsohail100)
+
+AI Fake News Detector: An advanced web application powered by a Deep Learning Artificial Neural Network (ANN) that analyzes news text and classifies it as Real or Fake with an outstanding 98% accuracy. Paste text for instant verification.

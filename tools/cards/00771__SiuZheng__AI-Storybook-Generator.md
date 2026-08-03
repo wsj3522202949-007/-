@@ -1,0 +1,149 @@
+---
+id: tool-00771
+type: tool
+area: 库
+status: active
+tags: [Python, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: AI-Storybook-Generator
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/siuzheng/ai-storybook-generator
+created: 2026-07-18
+updated: 2026-07-18
+no: 771
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: SiuZheng/AI-Storybook-Generator
+stars: 1
+url: https://github.com/siuzheng/ai-storybook-generator
+tier: "B"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# SiuZheng/AI-Storybook-Generator
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/siuzheng/ai-storybook-generator
+- **Stars**：1
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：Generate story book image using LLM. Allow story and character creation to ensure consistency throughout the storybook.
+- **本地描述**：Generate story book image using LLM. Allow story and character creation to ensure consistency throughout the storybook.
+- **拉取时间**：2026-07-23 23:01:31
+
+---
+
+# 📖 Storybook AI Generator
+
+## Overview
+The **Storybook AI Generator** is an interactive web application built with **Streamlit** and **Google Gemini AI**. It allows users to generate complete, fully illustrated storybooks from a simple title and genre. The tool uses advanced Large Language Models (LLMs) to write the story and character descriptions, and state-of-the-art image generation models to create consistent illustrations for every page.
+<br>
+
+<img src="assets/1.jpg" width="400"><br>
+<img src="assets/2.jpg" width="400"><br>
+<img src="assets/3.jpg" width="400"><br>
+<img src="assets/4.jpg" width="400"><br>
+<img src="assets/5.jpg" width="400"><br>
+
+## ✨ Key Features
+
+### 1. Story Generation
+- **Customizable Settings**: Define your story's Title, Genre, Tone, Art Style, Target Age, and Page Count.
+- **AI Writer**: Automatically generates a cohesive story script divided into pages, along with detailed image prompts for each scene.
+
+### 2. Character Consistency & Customization
+- **Character Setup**: The AI identifies main characters and generates their physical descriptions.
+- **Visual Consistency**: You can generate reference images for your characters or upload your own. These reference images are used during the story generation process to ensure characters look the same across different pages.
+- **Image-to-Image Refinement**: If you're not happy with a character's look, you can regenerate it using the existing image as a base to refine the design while keeping the pose or composition.
+
+### 3. AI Illustration
+- **Batch Generation**: Generates illustrations for the entire story in one go.
+- **Smart Prompts**: Uses context-aware prompts that include character descriptions to maintain visual continuity.
+
+### 4. Interactive Editing & Regeneration
+- **Read Mode**: View your generated storybook side-by-side with text and images.
+- **Regeneration**: Don't like a specific page's illustration? You can:
+    -   **Edit the Prompt**: Tweak the text description and regenerate.
+    -   **Re-generate**: Create a completely new image.
+    -   **Re-generate with Original**: Use the current image as a reference to make subtle changes (Image-to-Image).
+
+### 5. Export
+- **Download**: Export all your generated assets (Story Images and Character Images) as a structured ZIP file, ready for publishing or sharing.
+
+---
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+- Python 3.8 or higher
+- A Google Cloud Project with the **Gemini API** enabled and billing enbled (for batch api).
+- An API Key for Google GenAI.
+
+### Installation
+
+1.  **Clone the repository** (if applicable) or download the source code.
+2.  **Install dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Run Streamlit**:
+    ```bash
+    streamlit run main.py
+    ```
+## 🚀 How to Use
+
+### Step 1: Configuration (Sidebar)
+- Open the sidebar to set up your story metadata:
+    -   **Title**: e.g., "The Brave Little Toaster"
+    -   **Genre**: e.g., Adventure, Fantasy
+    -   **Tone**: e.g., Whimsical, Dark
+    -   **Art Style**: e.g., Watercolor, 3D Pixar Style
+    -   **Page Settings**: Aspect ratio and number of pages.
+
+### Step 2: Create Story (Tab 1)
+1.  **Generate Story Text**: Click the "Generate Story" button. The AI will write the plot and define characters.
+2.  **Character Setup**:
+    -   Review the generated characters.
+    -   (Optional) Edit their names or traits.
+    -   **Generate Images**: Click "Generate Character Image via Nanobanana" for each character.
+    -   **Refine**: Use "Re-generate Character with Original Image" if you want to tweak the look.
+3.  **Generate Illustrations**: Once characters are set, click "Generate Images" at the bottom.
+
+### Step 3: Read & Refine (Tab 2)
+- Switch to the **"Read Storybook"** tab.
+- Scroll through your story pages.
+- If an image isn't quite right:
+    -   Edit the text in the "Image Prompt" box.
+    -   Click **"Re-generate Image"** for a fresh take.
+    -   Click **"Re-generate with Original Image"** to modify the existing picture.
+
+### Step 4: Download
+- Use the **Download** section in Tab 2 to save your work. You can choose to download just the story images, just the characters, or everything in a ZIP file.
+
+---
+
+## 📂 Project Structure
+
+- **`main.py`**: The main Streamlit application file containing the UI logic and workflow.
+- **`utils/`**:
+    -   **`llm_utils.py`**: Functions for interacting with the LLM to generate story text and prompts.
+    -   **`image_utils.py`**: Functions for interacting with the Image Generation API (Text-to-Image and Image-to-Image).
+- **`characters/`**: Directory where generated character reference images are stored.
+- **`images/`**: Directory where generated story illustrations are stored.
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+## 🤖 Technologies Used
+- **Streamlit**: For the web interface.
+- **Google Gemini 2.5 Flash**: For high-speed, high-quality text and image generation.
+- **Python**: Core programming language.

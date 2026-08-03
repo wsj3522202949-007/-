@@ -1,0 +1,449 @@
+---
+id: tool-07602
+type: tool
+area: 库
+status: active
+tags: [RAG, 大纲规划, Python, 协议宽松, 需API密钥, 中文友好, 人物设定]
+title: ocnovel
+summary: 长篇设定/人物一致性（RAG 记忆）
+source: https://github.com/wenjiazhu1980/ocnovel
+created: 2026-07-18
+updated: 2026-07-18
+no: 7602
+category: 画龙补充 / 扩容入库 — 补充源
+repo: wenjiazhu1980/ocnovel
+stars: 1
+url: https://github.com/wenjiazhu1980/ocnovel
+tier: "B"
+use_case: "长篇设定/人物一致性（RAG 记忆）"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+related:
+  - methods/QUICK_START.md
+---
+
+# wenjiazhu1980/ocnovel
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/wenjiazhu1980/ocnovel
+- **Stars**：1
+- **语言**：Python
+- **License**：MIT
+- **Topics**：ai, ai-writing, claude, creative-writing, desktop-app, fiction-writing, gemini, llm, long-form-generation, macos, novel-generator, openai, pyside6, python, rag, text-generation, windows
+- **GitHub 描述**：开源 AI 长篇小说生成器：三层大纲、章节生成、审计修订与 RAG 长期记忆；支持 Claude、Gemini、OpenAI 兼容模型，提供 PySide6 GUI/CLI 及 macOS、Windows 应用。
+- **本地描述**：ocnovel
+- **拉取时间**：2026-07-25 19:26:56
+
+---
+
+# OCNovel - AI小说生成系统
+
+[English](README_en.md) | 简体中文
+
+一个基于 Python 的 AI 小说自动生成系统，支持东方玄幻、仙侠、武侠等多种类型的小说创作。系统采用模块化设计，集成多种 AI 模型接口，提供从大纲生成到章节内容创作的全流程自动化。同时提供 PySide6 可视化界面，降低使用门槛。
+
+## 下载
+
+**[前往最新版 Release 下载 →](https://github.com/wenjiazhu1980/OCNovel/releases/latest)**
+
+无需配置 Python 环境，下载对应平台的压缩包，解压后即可直接运行 GUI：
+
+| 平台 | 下载链接 | 当前最新 |
+|------|----------|----------|
+| macOS (Apple Silicon) | [OCNovel-macOS-arm64.zip](https://github.com/wenjiazhu1980/OCNovel/releases/latest/download/OCNovel-macOS-arm64.zip) | v1.0.24 |
+| Windows (x64) | [OCNovel-Windows-x64.zip](https://github.com/wenjiazhu1980/OCNovel/releases/latest/download/OCNovel-Windows-x64.zip) | v1.0.24 |
+
+> 历史版本与更新日志：[Releases 页面](https://github.com/wenjiazhu1980/OCNovel/releases)  ·  本次发布：[v1.0.24](https://github.com/wenjiazhu1980/OCNovel/releases/tag/v1.0.24)
+
+> **macOS 用户首次启动**：因应用未经 Apple 公证（Apple Developer Program 收费 $99/年），
+> 解压后请在终端执行一次以下命令清除 quarantine 标记：
+>
+> ```bash
+> xattr -cr ~/Downloads/OCNovel.app   # 若已拖入 /Applications/，请改成对应路径
+> ```
+>
+> 之后双击即可正常启动。该命令仅清除下载隔离属性，不修改应用本身。
+
+## 仓库迁移说明
+
+本项目已从 `github.com/wenjiazhu/OCNovel` 迁移至 **[github.com/wenjiazhu1980/OCNovel](https://github.com/wenjiazhu1980/OCNovel)**。
+
+迁移原因：原 GitHub 账号 `wenjiazhu` 因账户策略调整不再用于开源项目维护，现统一迁移至新账号 `wenjiazhu1980` 以便长期管理和持续更新。所有历史提交、标签和分支均已完整保留，功能和使用方式不受影响。
+
+如果你之前 clone 了旧仓库，可通过以下命令更新远程地址：
+
+```bash
+git remote set-url origin https://github.com/wenjiazhu1980/OCNovel.git
+```
+
+## 作者与项目说明
+
+OCNovel 由 @wenjiazhu1980 个人发起并持续维护，是一个面向长篇小说创作场景的开源项目。项目目标是帮助用户更高效地完成长文本生成、内容规划和多轮迭代，并欢迎社区提出 issue、建议和 PR 共同完善。
+
+## 项目结构
+
+```text
+OCNovel/
+├── main.py                    # CLI 入口
+├── gui_main.py                # GUI 入口
+├── ocnovel.spec               # PyInstaller macOS 打包配置
+├── ocnovel_win.spec           # PyInstaller Windows 打包配置
+├── config.json.example        # 配置文件模板
+├── .env.example               # 环境变量模板
+├── requirements.txt           # Python 依赖
+├── assets/                    # App 图标等资源
+│
+├── src/
+│   ├── config/                # 配置管理
+│   │   ├── ai_config.py       # AI 模型配置（Claude/Gemini/OpenAI）
+│   │   └── config.py          # 通用配置管理
+│   │
+│   ├── generators/            # 内容生成器
+│   │   ├── common/            # 通用工具和数据结构
+│   │   ├── content/           # 章节内容生成 + 一致性检查 + 验证 + 审计 + 修订
+│   │   ├── outline/           # 大纲生成
+│   │   ├── finalizer/         # 定稿处理
+│   │   ├── prompts.py         # Prompt 模板
+│   │   ├── humanization_prompts.py
+│   │   └── title_generator.py
+│   │
+│   ├── models/                # AI 模型接口
+│   │   ├── base_model.py      # 基础模型抽象类
+│   │   ├── claude_model.py    # Anthropic Claude 实现
+│   │   ├── gemini_model.py    # Google Gemini 实现
+│   │   └── openai_model.py    # OpenAI 兼容实现
+│   │
+│   ├── knowledge_base/        # 知识库（向量检索 + Reranker）
+│   │   └── knowledge_base.py
+│   │
+│   ├── gui/                   # PySide6 可视化界面
+│   │   ├── app.py             # QApplication 工厂 + 全局样式
+│   │   ├── main_window.py     # 主窗口（3 Tab）
+│   │   ├── theme.py           # 主题色常量
+│   │   ├── i18n/              # 国际化翻译文件
+│   │   │   ├── translator.py  # 翻译管理器
+│   │   │   ├── zh_CN.ts       # 中文翻译源文件
+│   │   │   ├── en_US.ts       # 英文翻译源文件
+│   │   │   ├── zh_CN.qm       # 中文编译翻译文件
+│   │   │   └── en_US.qm       # 英文编译翻译文件
+│   │   ├── tabs/
+│   │   │   ├── model_config_tab.py   # 模型配置
+│   │   │   ├── novel_params_tab.py   # 小说参数
+│   │   │   └── progress_tab.py       # 创作进度
+│   │   ├── workers/
+│   │   │   ├── pipeline_worker.py    # 后台生成流水线
+│   │   │   ├── connection_tester.py  # 模型连接测试
+│   │   │   ├── marketing_worker.py   # 营销内容生成
+│   │   │   └── writing_guide_worker.py # AI 生成写作指南
+│   │   ├── widgets/
+│   │   │   ├── log_viewer.py         # 实时日志查看器
+│   │   │   └── chapter_list.py       # 章节状态列表
+│   │   └── utils/
+│   │       ├── config_io.py          # .env / config.json 读写
+│   │       ├── log_handler.py        # logging → Qt Signal 桥接
+│   │       ├── resource_path.py      # PyInstaller 路径兼容
+│   │       ├── platform_utils.py     # 跨平台工具（打开目录等）
+│   │       └── fonts.py              # 跨平台字体常量
+│   │
+│   └── tools/                 # 内置辅助工具
+│       ├── generate_config.py
+│       ├── generate_marketing.py
+│       ├── ai_density_checker.py
+│       └── recover_summary.py
+│
+├── tools/                     # 命令行维护工具
+│   ├── audit_outline.py
+│   ├── revise_outline_from_audit.py
+│   ├── fill_outline_gaps.py
+│   ├── recommend_arc_size.py
+│   └── backfill_emotion_tone.py
+│
+└── data/                      # 运行时数据（gitignored）
+    ├── cache/
+    ├── logs/
+    ├── output/
+    ├── reference/
+    └── style_sources/
+```
+
+## 快速开始
+
+### 1. 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. 配置
+
+```bash
+cp config.json.example config.json
+cp .env.example .env
+```
+
+编辑 `.env` 填入 API 密钥：
+
+```text
+# 方式一：使用 Claude 模型（推荐用于高质量创作）
+CLAUDE_API_KEY=your_claude_key
+CLAUDE_OUTLINE_MODEL=claude-3-5-sonnet-20241022
+CLAUDE_CONTENT_MODEL=claude-3-5-sonnet-20241022
+
+# 嵌入模型（必需，Claude 不支持嵌入）
+OPENAI_EMBEDDING_API_KEY=your_key
+OPENAI_EMBEDDING_API_BASE=https://api.siliconflow.cn/v1
+OPENAI_EMBEDDING_API_MODE=auto
+
+# 方式二：使用 OpenAI 兼容模型（推荐用于开发测试）
+OPENAI_EMBEDDING_API_KEY=your_key
+OPENAI_EMBEDDING_API_BASE=https://api.siliconflow.cn/v1
+OPENAI_OUTLINE_API_KEY=your_key
+OPENAI_OUTLINE_API_BASE=https://api.siliconflow.cn/v1
+OPENAI_OUTLINE_MODEL=Qwen/Qwen2.5-7B-Instruct
+OPENAI_OUTLINE_API_MODE=auto
+OPENAI_CONTENT_API_KEY=your_key
+OPENAI_CONTENT_API_BASE=https://api.siliconflow.cn/v1
+OPENAI_CONTENT_MODEL=Qwen/Qwen2.5-7B-Instruct
+OPENAI_CONTENT_API_MODE=auto
+
+# 方式三：使用 Gemini 模型
+GEMINI_API_KEY=your_gemini_key
+GEMINI_OUTLINE_MODEL=gemini-2.5-pro
+GEMINI_CONTENT_MODEL=gemini-2.5-flash
+
+# 备用模型（可选；不设置 FALLBACK_API_KEY 时自动禁用）
+FALLBACK_API_KEY=your_fallback_key
+FALLBACK_API_BASE=https://api.siliconflow.cn/v1
+FALLBACK_MODEL_ID=Qwen/Qwen2.5-7B-Instruct
+FALLBACK_API_MODE=auto
+```
+
+完整环境变量模板见 [`.env.example`](.env.example)。
+
+### 3. 启动
+
+**GUI 模式（推荐）：**
+
+```bash
+python gui_main.py
+```
+
+**CLI 模式：**
+
+```text
+# 自动执行完整流程（大纲 + 内容 + 定稿）
+python main.py auto
+
+# 生成大纲
+python main.py outline --start 1 --end 10
+
+# 从指定章节续写
+python main.py content --start-chapter 3
+
+# 重新生成指定章节
+python main.py content --target-chapter 5
+
+# 定稿处理
+python main.py finalize --chapter 8
+
+# 强制重生成大纲
+python main.py auto --force-outline
+
+# 仿写
+python main.py imitate --style-source 范文.txt --input-file 原文.txt --output-file 输出.txt
+
+# 根据章节内容审计报告修订正文（默认只处理 fatal C1/C2）
+python main.py revise-content --audit-report data/output/content_audit_report.json
+
+# 修订时也纳入 warning 级发现
+python main.py revise-content --include-warning
+
+# 只生成修订报告，不写回章节正文
+python main.py revise-content --dry-run
+
+# 修订后刷新已修改章节的 summary.json
+python main.py revise-content --update-summary
+
+# 只处理指定规则
+python main.py revise-content --rules C1,C2
+
+# ---- 大纲审计与修订（配套工具） ----
+
+# 全局大纲审计（纯算法 O1-O5：伏笔闭环/实体收口/任务闭环/人物身份/回收率）
+python tools/audit_outline.py --outline data/output/outline.json
+
+# 叠加 LLM 语义复核任务闭环（识破"母题复用"导致的假闭环）
+python tools/audit_outline.py --outline data/output/outline.json --llm --config config.json
+
+# JSON 输出（便于脚本消费）
+python tools/audit_outline.py --outline data/output/outline.json --json
+
+# 根据审计报告修订大纲（默认只处理 fatal 级发现）
+python tools/revise_outline_from_audit.py --outline data/output/outline.json --config config.json
+
+# 修订时纳入 warning 级发现
+python tools/revise_outline_from_audit.py --outline data/output/outline.json --config config.json --include-warning
+
+# 只生成修订报告，不写回大纲
+python tools/revise_outline_from_audit.py --outline data/output/outline.json --config config.json --dry-run
+
+# 只处理指定规则（如 O3 任务闭环、O4 人物身份）
+python tools/revise_outline_from_audit.py --outline data/output/outline.json --config config.json --rules O3,O4
+```
+
+## GUI 功能
+
+启动 `python gui_main.py` 后提供三个 Tab 页：
+
+- **模型配置** — 管理 Claude / Gemini / OpenAI / Fallback / Reranker 的 API 密钥、Base URL、模型名称，支持一键测试连接
+- **小说参数** — 编辑 config.json 中的小说设定、写作指南、生成参数（支持温度、Top_P、Humanizer-zh 校验等）、仿写配置、知识库和输出目录；支持 AI 自动生成写作指南、新建/备份配置
+- **创作进度** — 一键启停生成流水线，实时查看章节状态列表和彩色日志，进度条显示当前进度，支持断点续写；可单独「重新生成指定章节」、「仅生成大纲」、运行「大纲审计复核」与「修订大纲」、「章节内容审计」（支持整部或选中章节）、「修订内容」（根据审计报告自动修订正文）、一键合并所有章节并生成营销内容
+
+### 国际化支持
+
+GUI 界面支持**中文**和**英文**两种语言：
+
+- **自动检测**: 中文系统默认显示中文界面，非中文系统默认显示英文界面
+- **手动切换**: 通过菜单栏「语言 / Language」可随时切换界面语言
+- **持久化**: 语言偏好自动保存，重启应用后保持选择的语言
+- **覆盖范围**: 所有按钮、标签、菜单、消息框、工具提示均已翻译（242个文本，91.7%已翻译）
+
+> 注：核心生成模块的技术日志保持英文，以便调试和问题排查。
+
+### 打包为桌面应用
+
+**macOS：**
+
+```bash
+pyinstaller ocnovel.spec --clean
+# 输出 dist/OCNovel.app
+```
+
+**Windows：**
+
+```bash
+pyinstaller ocnovel_win.spec --clean
+# 输出 dist/OCNovel/OCNovel.exe
+```
+
+> 注：PyInstaller 不支持交叉编译，macOS 打包须在 macOS 上执行，Windows 打包须在 Windows 上执行。详见 [构建指南](BUILD.md)。
+
+## 核心架构
+
+- **模型抽象** — `BaseModel` ABC → `ClaudeModel` / `GeminiModel` / `OpenAIModel`
+- **配置分层** — `config.json`（小说参数）+ `.env`（API 密钥）+ `AIConfig`（模型默认值）
+- **生成流水线** — outline → content → finalize，通过 `auto` 命令串联
+- **知识库** — 文本分块 → 嵌入向量 → FAISS 检索 → Reranker API 精排
+- **重试/备用** — tenacity 重试 + 备用模型自动切换
+- **大纲质量保障** — 两套互补机制：
+  - *只读审计*（`outline_audit_enabled`）：全书大纲生成后跑跨章结构审计（O1 伏笔闭环 / O2 实体生命线 / O3 任务闭环 / O4 人物身份一致性 / O5 回收率），落盘 `outline_audit_report.json`，**不阻断生成**；可用 `tools/audit_outline.py --llm` 叠加 LLM 语义复核识破"母题复用"导致的假闭环
+  - *阻断式质量闸门*（`outline_quality_gate_enabled`）：`auto` 流程在大纲生成后跑算法审计 + LLM 复核，有 fatal 则自动调用修订器写回 `outline.json`（带 `.bak` 备份）并重审；仍不过则中止流水线、不进正文，落盘 `outline_quality_gate_report.json`
+  - 两套机制均可用 `tools/revise_outline_from_audit.py` 或 GUI「修订大纲」按钮手动触发修订
+- **情绪节奏** — `arc_config` 支持卷内 6 阶段螺旋情绪节奏（成长→挫折→绝境→爆发→跌落→新局），可按总章数自动推算最优分卷以对齐 25%/50%/75% 灾难锚点
+- **章节内容审计与修订** — 对已生成章节正文做只读审计（C0 输入完整性 / C1 大纲一致性 / C2 章节衔接），支持整部或选中章节审计；根据审计报告中的 fatal/warning 发现自动修订正文并备份原文件，修订后可选刷新章节摘要
+
+## 支持的 AI 模型
+
+### Claude (Anthropic)
+
+- **优势**: 强大的推理能力，200K tokens 长上下文，适合复杂创作
+- **推荐模型**: `claude-3-5-sonnet-20241022`
+- **注意**: 不支持嵌入功能，需配合 OpenAI 兼容的嵌入模型使用
+- **详细文档**: [Claude 集成指南](docs/claude_integration.md)
+
+### Gemini (Google)
+
+- **优势**: 官方 API 稳定，支持长上下文
+- **推荐模型**: `gemini-2.5-pro` (大纲) / `gemini-2.5-flash` (内容)
+- **注意**: 仅支持 Google 官方 API
+
+### OpenAI 兼容
+
+- **优势**: 生态丰富，支持多种第三方 API（如硅基流动）
+- **推荐模型**: `Qwen/Qwen2.5-7B-Instruct` (开源免费)
+- **适用场景**: 开发测试、成本敏感场景
+
+## 配置说明
+
+| 配置块                  | 说明                                                                                              |
+|------------------------|------------------------------------------------------------------------------------------------related:
+  - methods/QUICK_START.md
+---|
+| `novel_config`         | 小说基本信息、写作指南（世界观/角色/剧情/风格）                                                     |
+| `generation_config`    | 重试策略、模型选择、验证开关、人性化参数（Humanizer-zh）、采样参数（Temperature/Top_P）             |
+| `knowledge_base_config`| 参考文件列表、分块大小/重叠、缓存目录                                                               |
+| `output_config`        | 输出格式、编码、输出目录、合并分卷阈值（`max_volume_size_mb` 默认 2MB，超过自动按章节边界分卷，便于导入作家助手等写作软件） |
+| `imitation_config`     | 仿写开关、风格源列表、质量控制参数                                                                 |
+
+> **近期新增配置**：
+> - `novel_config.arc_config` — 卷内 6 阶段螺旋情绪节奏（`chapters_per_arc` 启用 / `auto_compute` 按总章数自动推算分卷，对齐 25%/50%/75% 灾难锚点）
+> - `generation_config.outline_auto_patch_holes` — `pipeline_worker` 检测到大纲缺洞时自动调用补洞流程
+> - `generation_config.outline_audit_enabled` — 全书大纲生成后跑只读全局审计（O1-O5：伏笔/事件线/人物身份），落盘 `outline_audit_report.json`；**只读报告，不阻断生成**
+> - `generation_config.outline_quality_gate_enabled` — `auto` 流程阻断式质量闸门（算法审计 + LLM 复核 → 有致命问题自动修订重审 → 仍不过则中止、不进正文）
+> - `generation_config.outline_quality_gate_llm_review` — 质量闸门内是否含 LLM 任务闭环复核（默认开；关闭则只跑算法审计，省额度）
+> - `generation_config.outline_quality_gate_max_rounds` — 闸门「修订→重审」最大轮数（默认 1 轮）
+> - `generation_config.content_audit_batch_size` — 章节内容审计的批量大小（默认 5），控制同时审计的章节数量
+
+## 环境要求
+
+- Python 3.9+
+- macOS / Linux / Windows
+- 至少配置一组 AI 模型 API 密钥（Claude / Gemini / OpenAI 兼容）
+- 如使用 Claude，需额外配置嵌入模型（OpenAI 兼容）
+
+## 开发与测试
+
+```bash
+# 全量测试（当前单元测试路径通常数秒至十余秒，取决于环境）
+python -m pytest tests/ -v
+
+# 静默模式 + 失败摘要
+python -m pytest tests/ -q --tb=short
+
+# 单文件 / 单用例
+python -m pytest tests/test_translator_h2.py -v
+python -m pytest tests/test_outline_generator.py::TestSpecificCase -v
+
+# 代码风格检查（与 GitHub Actions CI 一致，规则见 ruff.toml）
+ruff check src/ --select E,F,W --ignore E501
+```
+
+测试约定与 fixture 说明详见 [`tests/README.md`](tests/README.md)。
+
+> 推送到 GitHub 后由 GitHub Actions 自动跑 lint + 测试；CI 为减体积不安装 PySide6，依赖它的 GUI 测试会自动跳过（见 `tests/conftest.py`）。
+
+辅助工具（`tools/`）：`audit_outline.py`（全局大纲审计，可加 `--llm` 语义复核）、`revise_outline_from_audit.py`（根据审计报告修订大纲）、`recommend_arc_size.py`（推荐情绪节奏分卷数）、`fill_outline_gaps.py`（补全大纲缺失槽位）、`backfill_emotion_tone.py`（为既有大纲回填情绪阶段占位）。
+
+## 常见问题 (FAQ)
+
+### 1. 如何下载和运行 Mac App？
+
+1. 下载最新发布的 Mac App 压缩包。
+2. 解压后将 `OCNovel.app` 拖入”应用程序”文件夹（或在你希望的目录下）。
+3. 如果首次打开时系统提示应用”已损坏，无法打开”或”无法验证开发者”，请在终端执行以下命令清除隔离属性：
+
+   ```bash
+   sudo xattr -rd com.apple.quarantine /path/to/OCNovel.app
+   ```
+
+   *(请将 `/path/to/OCNovel.app` 替换为你实际存放 App 的路径)*，然后再次尝试打开该应用。
+
+### 2. 如何下载和运行 Windows 版？
+
+1. 下载最新发布的 Windows 压缩包。
+2. 解压后运行 `OCNovel.exe`。
+3. 首次启动时，应用会在用户主目录自动创建 `%USERPROFILE%\OCNovel\` 并初始化配置文件。
+4. 编辑 `%USERPROFILE%\OCNovel\.env` 填入 API 密钥后即可使用。
+
+### 3. 合并后为什么会出现 `_第1卷.txt`、`_第2卷.txt` 多个文件？
+
+为了便于导入作家助手、橙瓜等纯文本写作软件（这类软件对单文件大小通常有限制），
+合并产物超过 `output_config.max_volume_size_mb`（默认 **2MB**）时会按章节边界自动分卷：
+
+- 小于阈值 → 仍输出单文件 `{title}_完整版.txt`（与旧版本一致）
+- 超过阈值 → 输出 `{title}_完整版_第1卷.txt` / `_第2卷.txt` 等，每卷 ≤ 2MB
+
+如果不需要分卷，把配置里的 `max_volume_size_mb` 改成 `0` 即可禁用，回到单文件输出。
+
+此外，章节内容首行的 Markdown `#` 标题（LLM 自带输出）会在落盘与合并时自动剥离，
+避免在写作软件里被误识别为正文字符。

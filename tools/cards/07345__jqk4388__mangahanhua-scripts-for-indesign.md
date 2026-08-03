@@ -1,0 +1,264 @@
+---
+id: tool-07345
+type: tool
+area: 库
+status: active
+tags: [校对, JavaScript, 协议宽松, 本地优先, 中文友好, 改稿润色, 本地写作]
+title: mangahanhua-scripts-for-indesign
+summary: 错别字/语法/风格校对
+source: https://github.com/jqk4388/mangahanhua-scripts-for-indesign
+created: 2026-07-18
+updated: 2026-07-18
+no: 7345
+category: 画龙补充 / 扩容入库 — 补充源
+repo: jqk4388/mangahanhua-scripts-for-indesign
+stars: 15
+url: https://github.com/jqk4388/mangahanhua-scripts-for-indesign
+tier: "B"
+use_case: "错别字/语法/风格校对"
+pitfalls: []
+related:
+  - methods/QUICK_START.md
+---
+
+# jqk4388/mangahanhua-scripts-for-indesign
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/jqk4388/mangahanhua-scripts-for-indesign
+- **Stars**：15
+- **语言**：JavaScript
+- **License**：MIT
+- **Topics**：hanhua, indesign, labelplus, manga
+- **GitHub 描述**：漫画汉化专用ID脚本，测试于CC2025，原项目用于日漫英化修改新增了部分脚本用于汉化。A collection of InDesign scripts useful for the manga layout and lettering process.
+- **本地描述**：mangahanhua-scripts-for-indesign
+- **拉取时间**：2026-07-25 19:18:34
+
+---
+
+# 漫画排版 InDesign 脚本集
+
+本套 InDesign 自动化脚本旨在减少日漫英译/汉化排版中的重复劳动和误差。
+
+***
+
+脚本安装路径：`C:\Users\xxx\AppData\Roaming\Adobe\InDesign\Version 20.0-J\zh_CN\Scripts\Scripts Panel`
+
+或者放在其他任意位置，在脚本窗口中右键用户文件夹打开资源管理器把本项目的快捷方式放在`Scripts Panel`文件夹下
+
+***
+
+## 重要说明
+
+**这些脚本需作为套件配合使用。** 脚本依赖 `Library/KTUlib.jsx` 文件中的函数，需确保该文件与脚本处于同级目录。
+
+**[下载](https://github.com/jqk4388/Mangahanhua-Scripts-for-Indesign/releases)**：
+
+***
+
+## 功能目录
+
+以下为本项目所有脚本按功能分类的完整列表：
+
+## AI代理嵌字使用的Skill
+安装方法`npx skills add  https://github.com/jqk4388/Mangahanhua-Scripts-for-Indesign --skill  Indesign-script-for-claw -g -y`
+
+### 新增汉化专用脚本
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 1.开局新建图层图框.jsx | 初始化文档，创建图层和图框 |
+| 2.导入样式和复合字体.jsx | 导入字符样式和复合字体设置 |
+| 3.LabelPlusTXT导入ID脚本 | 导入LabelPlus格式的翻译文本 |
+| 3.样式匹配脚本(配合PDF注释生成脚本) | 根据PDF注释自动匹配样式 |
+| 4.放置图像 | 批量放置图像到文档 |
+| 5.导出脚本：1400分辨率（印刷tif图），268分辨率png（B6开本的web图源），前x页彩页分辨率600的RGB | 多种格式导出功能 |
+| 6.导出脚本：ID2LPtxt | 导出带坐标信息的文本用于校对 |
+| 7.结巴断句脚本 | 使用结巴分词进行中文断句 |
+| 8.大模型LLM断句脚本 | 使用大语言模型进行智能断句 |
+| 9.各种调用PS修改链接脚本 | 调用Photoshop处理链接图像 |
+| 10.调用AI修改矢量图形脚本 | 使用AI处理矢量图形 |
+
+### 文本修改
+
+#### 自动断句脚本
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 断句-CN/结巴断句.jsx | 使用结巴分词进行中文断句，支持外挂词典 |
+| 断句-CN/简单断句.jsx | 快速简单断句，适用于选中文本框 |
+| 断句-CN/大语言模型断句.jsx | 使用大语言模型进行智能断句 |
+| 断句-CN/移到前一行.jsx | 将行首字符移到前一行，用于快速修改断句 |
+| 断句-CN/移到下一行.jsx | 将光标后文本移到下一行并删除一个换行 |
+| 断句-CN/每字断行Stack Characters.jsx | 将文本按字符逐行排列 |
+| 断句-CN/不断句Remove Breaks.js | 移除文本中的断行 |
+| 断句-CN/U+xxxx 插入符号脚本 | 插入各种中文标点符号 |
+| 断句-EN/* 系列脚本 | 英文断句相关功能 |
+
+#### 文本框操作
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 文本修改-文本框/文本框转框架.js | 将文本框转换为框架 |
+| 文本修改-文本框/拉大溢流文本框Refit Overset Frames.js | 调整溢流文本框大小 |
+| 文本修改-文本框/查找空白文本框Find Empty Text Frames.jsx | 查找并选中文档中的空白文本框 |
+
+#### 格式化
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 文本修改-格式化/3.样式匹配.jsx | 根据配置文件匹配字符样式 |
+| 文本修改-格式化/A自动加点.jsx | 自动为文本添加着重号-位置右上 |
+| 文本修改-格式化/B自动加点.jsx | 自动为文本添加着重号-位置左下 |
+| 文本修改-格式化/A自动拼音.jsx | 自动为文本添加拼音 |
+| 文本修改-格式化/文本大小适合文本框.jsx | 自动调整文本大小以适应文本框 |
+| 文本修改-格式化/查找并转曲Convert Text to Outlines.js | 将文本转换为轮廓 |
+| 文本修改-格式化/每行添加文字addTextToEachLine.jsx | 为每一行添加指定文字 |
+| 文本修改-格式化/黑白字转换.jsx | 转换文字颜色（黑白互换） |
+
+#### 插入特殊符号
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 文本修改-插入特殊符号/U+xxxx 插入符号脚本 | 插入各种Unicode符号 |
+| 文本修改-插入特殊符号/选中转水平注释Create Translation Note Graphic.jsx | 将选中文本转为水平注释 |
+
+#### 选中包裹符号
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 文本修改-选中包裹符号/选中包裹“”.jsx | 用双引号包裹选中文本 |
+| 文本修改-选中包裹符号/选中包裹《》.jsx | 用书名号包裹选中文本 |
+| 文本修改-选中包裹符号/选中包裹「」.jsx | 用日文括号包裹选中文本 |
+| 文本修改-选中包裹符号/选中包裹『』.jsx | 用日文方括号包裹选中文本 |
+| 文本修改-选中包裹符号/选中包裹【】.jsx | 用方括号包裹选中文本 |
+| 文本修改-选中包裹符号/选中包裹（）.jsx | 用圆括号包裹选中文本 |
+
+### 样式修改
+
+#### 描边
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 样式修改-描边/描边-白字黑边1pt.js | 为文字添加1pt黑色描边 |
+| 样式修改-描边/描边-白字黑边2.5pt.js | 为文字添加2.5pt黑色描边 |
+| 样式修改-描边/描边-白字黑边4pt.js | 为文字添加4pt黑色描边 |
+| 样式修改-描边/描边-白边2.5pt.js | 为文字添加2.5pt白色描边 |
+| 样式修改-描边/描边-白边4pt.js | 为文字添加4pt白色描边 |
+| 样式修改-描边/描边-白边自定义pt.js | 为文字添加自定义宽度白色描边 |
+
+#### 放大缩小
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 样式修改-放大缩小/减小2号Adjust Size and Leading - Decrease.js | 减小字号和行距 |
+| 样式修改-放大缩小/减小字号Adjust Size and Leading - Decrease.js | 减小字号 |
+| 样式修改-放大缩小/放大2号Adjust Size and Leading - Increase.js | 增大字号和行距 |
+| 样式修改-放大缩小/放大字号Adjust Size and Leading - Increase.js | 增大字号 |
+| 样式修改-放大缩小/水平缩放减小Change Horizontal Scale - Decrease.js | 减小水平缩放 |
+| 样式修改-放大缩小/水平缩放放大Change Horizontal Scale - Increase.js | 增大水平缩放 |
+
+#### 文本特效
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 样式修改-文本特效/上行阶梯Ramp Up Characters.jsx | 创建上行阶梯文字效果 |
+| 样式修改-文本特效/下行阶梯Ramp Down Characters.jsx | 创建下行阶梯文字效果 |
+| 样式修改-文本特效/中部收缩Deflate Characters.jsx | 创建中部收缩文字效果 |
+| 样式修改-文本特效/中部膨胀Inflate Characters.jsx | 创建中部膨胀文字效果 |
+| 样式修改-文本特效/字符渐大Escalate Characters.jsx | 创建字符逐渐增大效果 |
+| 样式修改-文本特效/字符渐小De-Escalate Characters.jsx | 创建字符逐渐减小效果 |
+| 样式修改-文本特效/斜切字Skew Frame.js | 创建斜切文字效果 |
+| 样式修改-文本特效/第一行水平缩小Squeeze Line.jsx | 缩小第一行水平比例 |
+| 样式修改-文本特效/随机错位Jumble Characters.jsx | 创建随机错位文字效果 |
+| 样式修改-文本特效/AI特效-粗糙化.jsx | ID中选中一个文本框在AI中执行粗糙化特效，原文本框隐藏 |
+| 样式修改-文本特效/AI特效-黑底雕.jsx | 黑底雕特效，模仿字体ShinGoMin-Emboss/ShinMGoMin-Emboss |
+| 样式修改-文本特效/ID特效-白底雕.jsx | 白底雕特效，模仿字体RampartTL |
+| 样式修改-文本特效/ID特效-白底雕斜.jsx | 白底雕特效，模仿字体Rampart/Shadow |
+| 样式修改-文本特效/PS特效-背景字.jsx | ID中选中一个文本框或编组用PS复制到链接图里做背景字补图  |
+
+![文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)
+
+### 页码链接
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 页码链接/psd和tif链接互换.js | 在PSD和TIF链接间切换 |
+| 页码链接/倒序页码RtL Page Nums.js | 设置从右到左的页码 |
+| 页码链接/删除或重命名链接.jsx | 删除或重命名文档链接 |
+| 页码链接/左右开本切换Toggle Binding Direction.jsx | 切换文档装订方向 |
+| 页码链接/更新书籍或打开的文档中的链接并保存.jsx | 更新并保存文档链接 |
+| 页码链接/替换查找链接Links GREP Relink.jsx | 使用正则表达式重链接 |
+| 页码链接/链接位图转灰度.jsx | 将链接的位图转换为灰度 |
+| 页码链接/链接文件加页码Links Rename Add Page Number.jsx | 在链接文件名前添加页码 |
+| 页码链接/页码反转Reverse Interior.jsx | 反转文档页码顺序 |
+
+### 页面调整
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 页面调整/1.开局新建图层图框.jsx | 初始化文档图层和图框 |
+| 页面调整/两个图框置入交换.jsx | 交换两个图框的内容 |
+| 页面调整/全选右页Select All On Right Page.jsx | 选择右页所有对象 |
+| 页面调整/全选左页Select All On Left Page.jsx | 选择左页所有对象 |
+| 页面调整/全部重新链接Relink All Images.js | 重新链接所有图像 |
+| 页面调整/切换锁定图层 Text Art.js | 切换图层锁定状态 |
+| 页面调整/图像调整位置_精确数值.js | 精确调整图像位置 |
+| 页面调整/图层彩色Rainbow Layer Colors.js | 为图层添加彩色标签 |
+| 页面调整/图框放大到裁切线.jsx | 放大图框至裁切线 |
+| 页面调整/图框放大到辅助信息区.jsx | 放大图框至辅助信息区 |
+| 页面调整/文档设置页面大小_默认130×185.jsx | 设置文档页面大小 |
+| 页面调整/版心改成文本框大小SnapMarginsToTextFrame.jsx | 根据文本框调整版心 |
+| 页面调整/移动到页码图层.js | 将选中对象移至页码图层 |
+| 页面调整/解锁全部对象UnLock All Items.jsx | 解锁文档中所有对象 |
+| 页面调整/跳转页码Go to Page.js | 跳转到指定页码 |
+| 页面调整/选择页面上全部对象Select All on Page.js | 选择当前页面所有对象 |
+| 页面调整/锁定全部对象Lock All Items.jsx | 锁定文档中所有对象 |
+
+### 导入导出
+| 脚本名称 | 功能描述 |
+|---------|----------|
+| 导入导出/2.导入样式和复合字体.jsx | 导入样式和复合字体 |
+| 导入导出/3.LabelPlus-script-id-UI.jsx | 导入LabelPlus格式翻译文本 |
+| 导入导出/4.放置图像Place Art.js | 批量放置图像 |
+| 导入导出/5.导出彩页前3页RGB600jpg.jsx | 导出前3页彩页为RGB JPEG |
+| 导入导出/5.导出灰度1400分辨率jpg.jsx | 导出灰度1400分辨率JPEG |
+| 导入导出/5.导出灰度268分辨率png.jsx | 导出灰度268分辨率PNG |
+| 导入导出/保存idml副本.jsx | 保存IDML格式副本 |
+| 导入导出/保存并关闭所有文档.jsx | 保存并关闭所有打开的文档 |
+| 导入导出/导出主页应用报告.jsx | 导出主页应用报告 |
+| 导入导出/导出主页覆盖选项报告.jsx | 导出主页覆盖选项报告 |
+| 导入导出/导出字体和列表.jsx | 导出文档中使用的字体列表 |
+| 导入导出/收集文本带坐标导出ID2LPtxt.jsx | 导出带坐标信息的文本 |
+| 导入导出/链接图提取文本.jsx | 从链接图像中提取文本 |
+| 导入导出/高级查找_导出报告.jsx | 执行高级查找并导出报告 |
+
+### Library 库文件
+| 文件名称 | 功能描述 |
+|---------|-------related:
+  - methods/QUICK_START.md
+---|
+| Library/KTUlib.jsx | 核心库文件，提供基础函数 |
+| Library/json2.js | JSON处理库 |
+| Library/代码运行器1.0.jsx | 代码运行器工具 |
+| Library/新建字符样式.jsx | 创建字符样式工具 |
+| Library/新建段落样式.jsx | 创建段落样式工具 |
+| Library/调试光标后两字符.jsx | 调试工具，显示光标后字符 |
+
+## 使用说明
+
+1. 将整个项目复制到InDesign脚本面板目录：
+   ```
+   C:\Users\xxx\AppData\Roaming\Adobe\InDesign\Version 20.0-J\zh_CN\Scripts\Scripts Panel
+   ```
+   或者把文件夹的快捷方式复制到Scripts Panel目录。
+
+2. 确保 `Library/KTUlib.jsx` 与其他脚本处于同级或正确引用路径
+
+3. 安装Python依赖（如需使用结巴/大模型断句）：
+   ```bash
+   pip install jieba requests
+   ```
+
+4. 验证安装：
+   ```bash
+   python -m jieba
+   ```
+
+## 注意事项
+
+- 脚本需允许在InDesign中运行（需启用"允许脚本读取和写入文件"权限）
+- 部分脚本依赖第三方Python库，需来自可信源
+- 使用前请备份文档，避免意外修改
+
+## 技术支持
+
+如在使用过程中遇到问题，请提交Issue或联系项目维护者。

@@ -1,0 +1,159 @@
+---
+id: tool-07231
+type: tool
+area: 库
+status: active
+tags: [Python, 协议未明, 本地优先, 英文文档, 本地写作]
+title: bookbinder
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/drobilc/bookbinder
+created: 2026-07-18
+updated: 2026-07-18
+no: 7231
+category: 画龙补充 / 扩容入库 — 补充源
+repo: drobilc/bookbinder
+stars: 0
+url: https://github.com/drobilc/bookbinder
+tier: "C"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# drobilc/bookbinder
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/drobilc/bookbinder
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：Create your personal library with Bookbinder, the ultimate online story to ebook converter.
+- **本地描述**：bookbinder
+- **拉取时间**：2026-07-25 19:14:55
+
+---
+
+# Bookbinder
+
+*Bookbinder* is a user-friendly Python script created to effortlessly fetch stories from popular online platforms like Fanfiction, Archive of Our Own, and Wattpad and transform them into portable ebooks for convenient offline reading.
+
+## Installation
+
+To install, make sure that you are using at least **Python 3.6**, as the script relies on f-strings.
+
+```
+# Clone the repository
+git clone https://github.com/drobilc/bookbinder.git
+
+cd bookbinder
+
+# Install the project requirements
+pip install -r requirements.txt
+```
+
+## Usage
+
+Bookbinder currently supports the following sources:
+
+* [FanFiction](https://www.fanfiction.net/)
+* [Archive of Our Own](https://archiveofourown.org/)
+* JSON - intermediate representation for further processing
+
+It can generate the following outputs:
+
+* [epub file format](https://en.wikipedia.org/wiki/EPUB)
+* audiobook (experimental)
+* JSON - intermediate representation for further processing
+
+### Standard usage
+
+To create an ebook, you need to specify both a source and an ebook generator. The source indicates where to fetch the story, while the ebook generator transforms the downloaded content into the desired output file format.
+
+Below is an example of how to download a story with the `<STORY_ID>` from the FanFiction website and convert it into an epub file called `ebook.epub`, which is compatible with most ebook readers. You can also set the destination file using the `--output-file` flag. If this flag is not used, the script, `bookbinder.py`, will create a file named `book.epub`.
+
+```bash
+# Download a story from FanFiction, convert it to epub file format and save it as ebook.epub
+python3 bookbinder.py fanfiction epub <STORY_ID> --output-file ebook.epub
+```
+To download a story from Archive of Our Own (AO3), you can use the following command. In this case, the generator will create an epub file named `book.epub` as the default output.
+
+```bash
+# Download a story from Archive of Our Own (AO3), convert it to epub file format and save it as book.epub (default value)
+python3 bookbinder.py ao3 epub <STORY_ID>
+```
+
+### JSON
+
+At times, there may be a need to preserve a downloaded story in an intermediate format for potential future use in generating an output. In such cases, the JSON source and output option comes in handy. By designating it as the destination, the story will be fetched and preserved within a machine-readable JSON file. Later, when you intend to transform it into a finalized ebook, simply rerun the generator, specifying the JSON file as the input source. This way, you can conveniently generate ebooks from previously stored story data.
+
+```bash
+# Download a story from Archive of Our Own (AO3) and store it as JSON
+python3 bookbinder.py ao3 json <STORY_ID> --output-file story.json
+
+# Read the downloaded JSON file and convert it into epub
+python3 bookbinder.py json epub story.json --output-file ebook.epub
+```
+
+### Sources
+
+#### FanFiction source
+
+The FanFiction URL follows this structure: `https://www.fanfiction.net/s/<STORY_ID>/<CHAPTER>/<STORY_SLUG>`. In order to download a story, you must provide the `<STORY_ID>` argument to the ebook generator script.
+
+To download a story and create an ebook file named home_with_the_fairies.epub from the following URL `https://www.fanfiction.net/s/6024634/1/Home-with-the-Fairies``, use the following command:
+
+```bash
+python3 bookbinder.py fanfiction epub 6024634 --output-file home_with_the_fairies.epub
+```
+
+##### Additional information
+
+The FanFiction website employs Cloudflare protection to identify and prevent bot access attempts. To get around this, the [undetected-chromedriver](https://pypi.org/project/undetected-chromedriver/2.1.1/) library is used. For it to work, Google Chrome and the Python Selenium library must be installed on the system. When downloading a story, a new visible chrome window will appear and we will be able to monitor the scraper getting the story. To maintain a low profile and avoid detection by Cloudflare's bot-detection mechanisms, we introduce a deliberate delay, which does slow down the scraper significantly.
+
+| Flag | Description | Default value |
+| ---- | ----------- | ------------- |
+| `--page-load-timeout` | How many seconds the downloader should wait for fanfiction.net server to respond. | `120` seconds |
+| `--wait-between-requests` | How many seconds the downloader should wait before downloading the next chapter. If this value is set too low, the Cloudfare DDOS protection might display captcha. | `5` seconds |
+
+#### Archive of Our Own source
+
+The AO3 (Archive of Our Own) URL has the following structure: `https://archiveofourown.org/works/<STORY_ID>`. To download a story, you need to provide the `<STORY_ID>` argument to the ebook generator script.
+
+To download a work and generate an ebook file `ao3_304382.epub` from the following URL `https://archiveofourown.org/works/304382`, use the following command:
+
+```bash
+python3 bookbinder.py ao3 epub 304382 --output-file ao3_304382.epub
+```
+
+### Destinations
+
+#### Epub file format destination
+
+Bookbinder supports the generation of an **epub** file format from downloaded sources. This file format is compatible with almost all ebook readers. The generated ebook includes a summary page with the title, author, and description, as well as an index and all downloaded chapters.
+
+| Flag | Description | Default value |
+| ---- | ----------- | ------------- |
+| `--output-file` | Output file destination. | `book.epub` |
+
+#### Audiobook
+
+Bookbinder is able to create an audiobook using the [TTS](https://pypi.org/project/TTS/) text-to-speech and [pydub](https://pypi.org/project/pydub/) audio manipulation libraries. It supports choosing a text-to-speech generation model using the `--tts-model` flag. The text-to-speech speaker can be changed using the `--tts-speaker` flag. More information about TTS models and speakers can be found in the [TTS library documentation](https://tts.readthedocs.io/en/latest/index.html).
+
+To create an audiobook `audiobook.wav` from JSON file `ebook.json`, we can use the following command.
+
+```bash
+python3 bookbinder.py json audiobook ebook.json --output-file audiobook.wav
+```
+
+| Flag | Description | Default value |
+| ---- | ----------- | ----------related:
+  - methods/QUICK_START.md
+--- |
+| `--output-directory` | The directory in which to save the generated audiobook chapters. | `audiobook` |
+| `--merge-to-file` | If set, all the chapters will be combined into a single file at this location. |  |
+| `--tts-model` | Which text-to-speech model to use in order to generate the audiobook. For more information, check the [TTS library documentation](https://tts.readthedocs.io/en/latest/index.html). | `tts_models/en/vctk/vits` |
+| `--tts-speaker` | Which text-to-speech speaker to use in order to generate the audiobook. For more information, check the [TTS library documentation](https://tts.readthedocs.io/en/latest/index.html). | |

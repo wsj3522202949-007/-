@@ -1,0 +1,320 @@
+---
+id: tool-01138
+type: tool
+area: 库
+status: active
+tags: [HTML, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: aipenproapp
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/funstudy-click/aipenproapp
+created: 2026-07-18
+updated: 2026-07-18
+no: 1138
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: funstudy-click/aipenproapp
+stars: 0
+url: https://github.com/funstudy-click/aipenproapp
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# funstudy-click/aipenproapp
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/funstudy-click/aipenproapp
+- **Stars**：0
+- **语言**：HTML
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：AI Writing Assistant for Professionals. A tool that helps people write better emails, reports, proposals, and social posts. Businesses AND consumers need this daily
+- **本地描述**：AI Writing Assistant for Professionals. A tool that helps people write better emails, reports, proposals, and social posts. Businesses AND consumers need this daily
+- **拉取时间**：2026-07-23 23:12:13
+
+---
+
+# AIPenPro 🖊️
+
+AI-powered writing assistant for professionals. Generate emails, proposals, reports, social posts, and more in seconds.
+
+## Files
+
+- `index.html` — Landing page (hero, features, pricing, testimonials)
+- `app.html` — The writing app with free/paid tier logic, auth, email verification, social login
+- `api/generate.js` — Serverless API route that calls Hugging Face securely, enforces quotas
+- `api/usage.js` — Serverless API route to fetch per-user daily usage
+- `api/auth-throttle.js` — Rate-limiting for login attempts (5 per 15 min)
+- `api/paypal-config.js` — Exposes PayPal client config for checkout
+- `api/paypal-create-order.js` — Creates a PayPal order for Pro upgrade
+- `api/paypal-capture-order.js` — Captures PayPal order and upgrades user plan to Pro
+- `vercel.json` — Vercel deployment config
+
+## Features
+
+- **Secure Authentication**: Email/password signup with email verification required before use
+- **Social Login**: Sign in with Google or GitHub
+- **Free Tier**: 5 generations per day, enforced server-side with Supabase
+- **Pro Tier**: Unlimited generations (requires upgrade via Stripe or manual plan change)
+- **Login Protection**: Rate-limiting (5 attempts per 15 minutes) prevents brute-force attacks
+- **CAPTCHA**: Google reCAPTCHA v3 on all auth actions
+- **Email Verification**: Users must verify their email before generating content
+
+## How to Deploy on Vercel
+
+### Option A — Vercel Dashboard (easiest, no coding needed)
+
+1. Go to https://vercel.com and log in to your account
+2. Click **"Add New Project"**
+3. Click **"Upload"** (you'll see an option to drag and drop files)
+4. Drag the entire `aipenproapp` folder into the upload area
+5. Click **Deploy**
+6. Done! Vercel gives you a live URL like `https://aipenproapp.vercel.app`
+
+### Option B — Vercel CLI (faster for updates)
+
+```bash
+npm install -g vercel
+cd aipenproapp
+vercel
+```
+
+Follow the prompts. Your site will be live in ~30 seconds.
+
+### Option C — GitHub + Vercel (best for ongoing updates)
+
+1. Push this folder to a GitHub repo
+2. In Vercel, click "Import Git Repository"
+3. Select your repo — Vercel auto-deploys on every push
+
+## Environment Variables (Required)
+
+This app uses server-side API routes for all sensitive operations.
+
+### Vercel (required for runtime)
+
+1. Open your Vercel project
+2. Go to **Settings → Environment Variables**
+3. Add these variables (set Environment to Production, Preview, and Development):
+
+| Name | Value |
+|------|----related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| `HUGGINGFACE_API_TOKEN` | Your Hugging Face token from https://huggingface.co/settings/tokens |
+| `SUPABASE_URL` | Your Supabase URL (example: `https://xyzcompany.supabase.co`) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Your Supabase service role key (from Settings → API) |
+| `PAYPAL_CLIENT_ID` | PayPal REST app client ID (Sandbox or Live) |
+| `PAYPAL_CLIENT_SECRET` | PayPal REST app client secret (Sandbox or Live) |
+| `PAYPAL_ENV` | `sandbox` for testing, `live` for production |
+| `PAYPAL_PRO_PRICE_GBP` | Optional, defaults to `9.00` |
+
+4. **Redeploy** the project after adding variables
+
+### GitHub Environment Secret (optional)
+
+If deploying via GitHub Actions, also add to GitHub:
+
+- **Name**: `HUGGINGFACE_API_TOKEN`
+
+Note: GitHub secrets are available to workflows, not directly to browser runtime.
+
+## Supabase Setup (Auth + Quotas + Throttling)
+
+The app requires Supabase for authentication, daily usage tracking, and login protection.
+
+### 1) Create Supabase Project
+
+1. Go to https://supabase.com
+2. Create a new project
+3. Note your **Project URL** and **API keys** (Settings → API)
+4. In **Authentication → Providers**, keep Email enabled
+5. In **Authentication → URL Configuration**, set your Redirect URL to your deployed app URL (e.g., `https://myapp.vercel.app/app.html`)
+6. In **Email Templates**, customize if desired (default templates work fine)
+
+### 2) Create Required Database Tables
+
+Run each of these SQL blocks in Supabase SQL Editor:
+
+**Daily Usage Tracking (enforces 5 free / unlimited pro quota):**
+
+```sql
+create table if not exists public.usage_daily (
+	id bigint generated by default as identity primary key,
+	user_id uuid not null references auth.users(id) on delete cascade,
+	usage_date date not null default current_date,
+	count integer not null default 0,
+	created_at timestamptz not null default now(),
+	unique (user_id, usage_date)
+);
+
+alter table public.usage_daily enable row level security;
+
+create policy "users_see_own_usage" on public.usage_daily for all using (auth.uid() = user_id);
+
+create index idx_user_date on public.usage_daily(user_id, usage_date);
+```
+
+**Login Attempt Throttling (5 attempts per 15 minutes per email):**
+
+```sql
+create table if not exists public.login_attempts (
+	id bigint generated by default as identity primary key,
+	email text not null,
+	created_at timestamptz not null default now()
+);
+
+create index idx_login_email_time on public.login_attempts(email, created_at);
+```
+
+**User Profiles (tracks free vs pro plan):**
+
+```sql
+create table if not exists public.user_profiles (
+	id bigint generated by default as identity primary key,
+	user_id uuid not null unique references auth.users(id) on delete cascade,
+	plan text not null default 'free', -- 'free' or 'pro'
+	created_at timestamptz not null default now(),
+	updated_at timestamptz not null default now()
+);
+
+alter table public.user_profiles enable row level security;
+
+create policy "users_see_own_profile" on public.user_profiles for all using (auth.uid() = user_id);
+
+create index idx_profile_user on public.user_profiles(user_id);
+```
+
+### 3) Add Frontend Supabase Keys
+
+In `app.html`, replace these placeholders with your actual Supabase keys (from Settings → API):
+
+- `'https://uoljojbxntcwfaojggly.supabase.co'` → Your **Project URL**
+- `'sb_publishable__F51-ZwmibtVqHl6mY3z4A_4e-bbdqT'` → Your **Anon Key** (public key, safe for frontend)
+
+### 4) Add Server Supabase Keys in Vercel
+
+Add these in Vercel Environment Variables (Settings → Environment Variables):
+
+- `SUPABASE_URL` → Your Project URL
+- `SUPABASE_SERVICE_ROLE_KEY` → Your **Service Role Key** (secret, server-only)
+
+⚠️ **Never expose `SUPABASE_SERVICE_ROLE_KEY` in frontend code.**
+
+### 5) Enable Email Verification (Optional but Recommended)
+
+In Supabase, go to **Authentication → Email Templates**:
+
+- Check that **Signup/Confirmation** is enabled
+- Users must verify their email before generating content
+
+### 6) Setup Social Login (Google & GitHub)
+
+#### Google OAuth
+
+1. Go to https://console.cloud.google.com
+2. Create a new project
+3. Enable Google+ API
+4. Create OAuth 2.0 Client ID (Web application)
+5. Add redirect URL: `https://YOUR_SUPABASE_PROJECT.supabase.co/auth/v1/callback?provider=google`
+6. Copy Client ID and Secret
+7. In Supabase, go to **Authentication → Providers → Google**
+8. Enable Google provider
+9. Paste Client ID and Secret
+
+#### GitHub OAuth
+
+1. Go to https://github.com/settings/developers
+2. New OAuth App
+3. Authorization Callback URL: `https://YOUR_SUPABASE_PROJECT.supabase.co/auth/v1/callback?provider=github`
+4. Copy Client ID and Secret
+5. In Supabase, go to **Authentication → Providers → GitHub**
+6. Enable GitHub provider
+7. Paste Client ID and Secret
+
+## Adding a Custom Domain
+
+1. In your Vercel project, go to Settings → Domains
+2. Add your domain (e.g. `aipenproapp.com`)
+3. Update your DNS as instructed by Vercel
+
+## Adding Real Payments (PayPal)
+
+This project now supports PayPal checkout in the Upgrade modal:
+
+1. Create a PayPal developer app at https://developer.paypal.com
+2. Copy Sandbox credentials for testing first
+3. Add `PAYPAL_CLIENT_ID`, `PAYPAL_CLIENT_SECRET`, and `PAYPAL_ENV=sandbox` in Vercel
+4. Redeploy and test Pro checkout from `app.html`
+5. For production, switch to Live credentials and set `PAYPAL_ENV=live`
+
+Current behavior:
+- The app creates and captures a PayPal order server-side.
+- On successful capture, `user_profiles.plan` is upgraded to `pro`.
+
+Important for recurring billing:
+- The current flow captures one payment and upgrades the plan.
+- If you need strict monthly auto-renewal, move to PayPal Subscriptions and add webhook-based plan lifecycle handling.
+
+## How It Works
+
+### Authentication Flow
+
+1. User clicks "Register / Login"
+2. User signs up with email/password or social provider (Google/GitHub)
+3. Supabase sends verification email
+4. User confirms email by clicking link in email
+5. User logs in successfully
+6. Profile is created automatically with plan = 'free'
+
+### Quota Enforcement
+
+- **Frontend**: Shows remaining quota and blocks UI when limit reached
+- **Backend** (`api/generate.js`):
+  - Validates JWT token from Supabase
+  - Checks `email_confirmed_at` (must be verified)
+  - Queries `user_profiles` table for plan ('free' = 5/day, 'pro' = unlimited)
+  - Queries `usage_daily` table for today's count
+  - Returns 429 error if quota exceeded
+  - Increments counter after successful generation
+
+### Login Protection
+
+- **Frontend**: Shows throttle warning after too many attempts
+- **Backend** (`api/auth-throttle.js`):
+  - On failed login, logs attempt to `login_attempts` table
+  - On next login attempt, counts attempts from last 15 minutes
+  - Returns `blocked: true` if >= 5 attempts in last 15 minutes
+  - Blocks login for that email
+
+### reCAPTCHA v3
+
+- Embedded on all auth pages
+- Invisible to users (no checkbox)
+- Sends score to server (currently not validated, but ready for future use)
+- Helps prevent automated attacks
+
+## Customisation
+
+- **Your API Key**: The app uses `api/generate.js` to call Hugging Face securely on the server. Keep `HUGGINGFACE_API_TOKEN` only in environment variables, never in frontend code.
+- **Branding**: Change colours in the `:root` CSS variables at the top of each HTML file
+- **Pricing**: Update prices in `index.html` under the `#pricing` section
+- **Free Limit**: Change `const FREE_LIMIT = 5` in `app.html` and `const limit = 5` in API files
+
+## Tech Stack
+
+- **Frontend**: Pure HTML / CSS / JS — no build step, no frameworks
+- **Auth**: Supabase Auth (email, Google, GitHub)
+- **AI Model**: Hugging Face Inference API (Mistral 7B Instruct)
+- **Backend**: Vercel Serverless Functions (Node.js)
+- **Database**: Supabase PostgreSQL
+- **Security**: reCAPTCHA v3, email verification, login throttling, server-side quota enforcement
+- **Hosting**: Vercel (free tier works perfectly)

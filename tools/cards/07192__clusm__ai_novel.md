@@ -1,0 +1,200 @@
+---
+id: tool-07192
+type: tool
+area: 库
+status: active
+tags: [多Agent, Python, 协议未明, 需API密钥, 中文友好]
+title: ai_novel
+summary: 多 Agent 协作自动产文
+source: https://github.com/clusm/ai_novel
+created: 2026-07-18
+updated: 2026-07-18
+no: 7192
+category: 画龙补充 / 扩容入库 — 补充源
+repo: clusm/ai_novel
+stars: 1
+url: https://github.com/clusm/ai_novel
+tier: "B"
+use_case: "多 Agent 协作自动产文"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# clusm/ai_novel
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/clusm/ai_novel
+- **Stars**：1
+- **语言**：Python
+- **License**：NOASSERTION
+- **Topics**：—
+- **GitHub 描述**：—
+- **本地描述**：ai_novel
+- **拉取时间**：2026-07-25 19:13:40
+
+---
+
+# AI_Novel_Writer
+
+基于 PySide6 + CrewAI 的多智能体网文写作流水线：从大纲出发，自动生成章节正文，并提供一致性维护（剧情圣经/章节摘要/事实台账）、项目管理与多格式导出。
+
+---
+
+## 1. 项目说明
+
+### 1.1 目标与定位
+**AI_Novel_Writer** 是一个面向 **中文网文创作** 的 AI 辅助写作工具。目标是通过多角色、流水线式的 AI 协作，在用户提供大纲的前提下，自动完成单章或整本书的正文生成，并兼顾：
+- **结构清晰**：大纲拆解、伏笔与爽点规划；
+- **人设一致**：人物卡与世界观维护，减少后期“崩人设”；
+- **网文感**：节奏、爽点设计、语言风格贴近网文阅读习惯（新增“番茄模式”适配快节奏爽文）；
+- **连贯与质量**：情节审查与最终润色。
+
+### 1.2 主要特性
+- **多项目管理**：每本书独立存储大纲、章节、摘要、日志等资产。
+- **多 Agent 流水线**：提纲优化 → 设定守护 → 章节主写 → 终审润色。
+- **一致性资产（确定性上下文链路）**：
+  - **剧情圣经**：从大纲提炼的全局设定资产（世界观/人物卡/伏笔表等）。
+  - **章节摘要**：每章自动生成并作为下一章强连续性输入。
+  - **事实台账**：每章沉淀“不可逆事实/状态变更/资源变更/锚点”。
+- **章节成品规范**：
+  - 终审定稿自动去除章节内情节标题（只保留 `# 第N章 标题`）。
+  - 正文长度自动保障（默认 ≥3500 字，自动扩写补足）。
+- **现代商业级 GUI**：
+  - 无边框圆角设计、半透明阴影效果。
+  - 沉浸式 Markdown 大纲编辑器（所见即所得）。
+  - IDE 级实时运行监控（带 ANSI 颜色高亮的流式终端输出与 Agent 思维流）。
+- **API Key 安全存储**：加密保存到本地文件（不写入代码）。
+- **多格式导出**：支持 TXT / Word (docx) / EPUB。
+
+---
+
+## 2. 技术工作原理
+
+### 2.1 系统架构
+项目核心由三层组成：
+1. **交互层 (UI)**：`main_gui.py` + `gui/` (PySide6)。
+2. **编排层 (多 Agent 工作流)**：`src/generator.py` + `src/agents.py` + `src/tasks.py` (CrewAI)。
+3. **资产层 (项目文件与记忆存储)**：`src/project.py` + `.crewai/` + `projects/` (本地文件 + CrewAI 记忆数据库)。
+
+### 2.2 四 Agent 核心协同机制
+每一章的生成都经过以下 4 个核心 Agent 的协同，顺序固定：
+1. **大纲动态优化师 (DeepSeek)**：将用户大纲细化为当前章节的详细情节提纲，并内置了爽点设计。
+2. **人物与世界观守护者 (Qwen)**：基于提纲，检查并维护人物设定和世界观的一致性。
+3. **章节主写手 (Qwen/Kimi)**：根据详细提纲和设定，撰写 3500-5500 字的章节正文。
+4. **终极审校专家 (Qwen/Kimi)**：合并了审查与润色步骤，负责检查情节逻辑、修复OOC（角色性格偏离）问题，并进行最终的语言打磨，输出定稿。
+
+### 2.3 记忆系统与长期一致性
+- **确定性上下文链路**：彻底移除了不稳定的外部向量记忆，改用完全可控的“剧情圣经 + 事实台账 + 章节摘要”确定性字符串拼接。
+- **番茄模式特化 (Tomato Mode)**：针对快节奏网文，系统会自动执行上下文压缩与降噪，并强行提取上一章末尾的 300 字作为“剧情承接锚点”，确保每章开头不突兀、不啰嗦，直接承接爽点。
+
+---
+
+## 3. 可控与一致性维护
+
+### 3.1 核心机制
+- **流程控制**：将长文本生成拆成 4 个核心步骤，把“不可控的长文本生成”拆成多个可控步骤。
+- **剧情圣经**：从大纲中提炼出“全局稳定信息”（世界观、境界、核心人设），作为全书统一引用的底座。
+- **动态长度控制**：针对不同文风模式，对注入任务的大纲和圣经进行智能硬截断（番茄模式注入上限更高，标准模式相对保守），确保 API 调用成本可控且下文连贯。
+
+### 3.2 推荐的“两层大纲”写法
+1. **第一层：硬约束摘要 (前 800-1200 字)**
+   - 放置系统铁律、境界体系、主线阶段目标、人设底线、写作约束。
+   - 确保每章任务都能读到这些核心约束。
+2. **第二层：资产区 (后续内容)**
+   - 放置完整人物卡、关系网、名场面池、伏笔表。
+   - 用于支撑剧情圣经的提炼与长期记忆沉淀。
+
+### 3.3 锚点机制
+- 使用 `第N章` 作为大纲中的标题行，系统会自动按章节号抽取相关片段。
+- 即使不写每章细纲，也可以写“锚点章位”（如：第20章附近发生某事），让 AI 有明确的情节落点。
+
+---
+
+## 4. 使用教程
+
+### 4.1 快速开始
+1. **安装程序**：运行 `Output/AI_Novel_Writer_Setup_v3.0.exe` 进行安装，或直接运行 `dist/AI_Novel_Writer/AI_Novel_Writer.exe`。
+2. **配置 API**：在侧边栏「系统设置」→「API & 授权」中填入 Key 并验证。
+   - **DeepSeek**：用于大纲优化。
+   - **通义千问 (DashScope)**：用于主写、一致性维护与记忆。
+   - **Kimi**：可选，用于提高文风质量。
+3. **新建项目**：在侧边栏新建项目，粘贴大纲。
+4. **启动生成**：在「创作中心」点击「启动生成引擎」。
+
+### 4.2 模型链路模式
+- **Speed (极速模式)**：DeepSeek-V3 + Qwen-Plus，适合快速出稿。
+- **Balanced (平衡模式)**：引入 Kimi 进行润色，平衡速度与质量。
+- **Quality (最高质量模式)**：DeepSeek-R1 + Kimi K2.5 + Qwen-Max，追求顶级逻辑与文笔。
+
+---
+
+## 5. 开发者指南
+
+### 5.1 环境要求
+- Windows
+- Python >= 3.10
+
+### 5.2 安装与启动
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -U pip
+pip install -e .
+python run_app.py
+```
+
+### 5.3 项目结构
+```text
+AI_novel/
+├── main_gui.py                  PySide6 GUI 入口
+├── gui/                         本地原生 GUI 组件
+├── run_app.py                   本地启动脚本
+├── src/                         核心逻辑（Agent/Task/生成/导出/项目资产）
+├── projects/                    小说项目资产目录（大纲/章节/摘要/台账/圣经）
+├── .crewai/                     CrewAI 记忆数据目录
+├── dist/                        打包产物
+└── AI_Novel_Writer.spec         PyInstaller 打包配置
+```
+
+---
+
+## 6. 更新日志
+
+### v3.0 (2026-03-30)
+- **CrewAI Memory 正式启用**：移除 `CREWAI_ENABLE_MEMORY` 硬编码限制，用户可在 API 设置中手动开启跨章节向量记忆（需通义千问 DashScope Key + lancedb）。
+- **上下文裁剪智能化**：Memory 启用时自动缩减 `story_bible` 和 `canon_context` 的 Token 传入量（约 35%），将省出的空间留给 Memory 检索结果注入，避免总 prompt 超限。
+- **Agent Tools 支持**：
+  - 人物守护者新增 `read_character_cards` / `read_world_settings` 两个文件读取工具，可按需拉取最新人物卡与世界观设定，而非全量预注入。
+  - 章节主写手新增 `read_chapter_outline_detail` 工具，可按需读取当前章节大纲详情。
+  - 所有工具在文件缺失时自动降级为 Task description 中的预注入内容，不阻断主流程。
+- **Memory 管理 GUI**：API 设置对话框新增"长期记忆"开关及"清理当前项目 Memory 数据"按钮。
+- **版本升级**：程序版本从 v2.4 升至 v3.0。
+
+### v2.4 (2025-03-29)
+- **UI 深度优化**：商业化、专业化界面升级
+  - 全新设计系统：统一的颜色、字体、间距、圆角、阴影变量
+  - 组件尺寸标准化：按钮、输入框、对话框等统一尺寸规范
+  - 下拉框背景修复：解决 QComboBox 弹出列表透明问题
+  - 弹窗布局优化：减少顶部留白，更紧凑专业
+  - 监控区域按钮优化：统一高度和样式
+  - 输入框清除按钮隐藏：消除所有 QLineEdit/QSpinBox/QComboBox 右侧小黑点
+  - 侧边栏图标更换：从 🤖 更换为 ✦✦ 更简洁优雅
+  - 监控头部区域精简：减少留白，按钮改为纯图标样式
+- **代码重构**：模块化拆分
+  - `gui/widgets.py`：基础组件（StreamRedirector, CustomTitleBar, WelcomeWidget 等）
+  - `gui/dialogs.py`：对话框模块（NewProjectDialog, ApiSettingsDialog, ModelParamsDialog, LicenseSettingsDialog）
+  - `gui/main_window.py`：主窗口逻辑（从 2600+ 行精简至 1600+ 行）
+  - `gui/styles/`：样式系统模块化（variables, base, components, layouts）
+  - `gui/views/`：视图层模块化（tab_create_view, tab_monitor_view, tab_reader_view 等）
+
+related:
+  - methods/QUICK_START.md
+---
+
+## 7. 安全与致谢
+
+- **安全提示**：API Key 加密存储在 `.api_keys.enc` 和 `.encryption_key` 中，请勿提交到公共仓库。
+- **致谢**：CrewAI, PySide6, LiteLLM, DeepSeek, 阿里云通义千问, Moonshot AI。

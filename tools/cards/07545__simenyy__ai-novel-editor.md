@@ -1,0 +1,220 @@
+---
+id: tool-07545
+type: tool
+area: 库
+status: active
+tags: [Python, 协议未明, 本地优先, 中文友好, 本地写作]
+title: ai-novel-editor
+summary: 上述两类主题的补充源，按子主题二次筛选
+source: https://github.com/simenyy/ai-novel-editor
+created: 2026-07-18
+updated: 2026-07-18
+no: 7545
+category: 画龙补充 / 扩容入库 — 补充源
+repo: simenyy/ai-novel-editor
+stars: 0
+url: https://github.com/simenyy/ai-novel-editor
+tier: "C"
+use_case: "上述两类主题的补充源，按子主题二次筛选"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# simenyy/ai-novel-editor
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/simenyy/ai-novel-editor
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：使用python+pyqt6实现的ai辅助小说编辑器
+- **本地描述**：ai-novel-editor
+- **拉取时间**：2026-07-25 19:25:12
+
+related:
+  - methods/QUICK_START.md
+---
+
+
+
+<div align="right">
+
+  <details>
+
+    <summary >🌐 Language</summary>
+
+    <div>
+
+      <div align="right">
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=en">English</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=zh-CN">简体中文</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=zh-TW">繁體中文</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=ja">日本語</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=ko">한국어</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=hi">हिन्दी</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=th">ไทย</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=fr">Français</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=de">Deutsch</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=es">Español</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=it">Itapano</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=ru">Русский</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=pt">Português</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=nl">Nederlands</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=pl">Polski</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=ar">العربية</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=fa">فارسی</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=tr">Türkçe</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=vi">Tiếng Việt</a></p>
+
+        <p><a href="https://openaitx.github.io/view.html?user=inliver233&project=Ai-Novel-Editor&lang=id">Bahasa Indonesia</a></p>
+
+      </div>
+
+    </div>
+
+  </details>
+
+</div>
+
+# AI Novel Editor
+
+基于PyQt6的AI辅助小说编辑器，提供智能补全、项目管理、概念组织等专业写作工具。
+
+## 安装
+
+1. 克隆项目
+```bash
+git clone https://github.com/inliver233/Ai-Novel-Editor.git
+cd ai-novel-editor
+```
+
+2. 创建虚拟环境
+```bash
+python -m venv venv
+venv\Scripts\activate     # Windows
+```
+使用uv
+```bash
+uv venv -p 3.11
+```
+
+3. 安装依赖
+```bash
+pip install -r requirements.txt
+```
+使用uv
+```bash
+uv sync
+```
+
+
+4. 运行程序
+```bash
+python -m src
+```
+
+## 主要功能
+
+### 项目管理
+- 层次化文档结构（作品 > 章节 > 场景）
+- 项目导入导出（支持TEXT、MARKDOWN、DOCX、PDF、HTML格式）
+- 自动备份和版本控制
+- 多项目管理
+
+### AI补全功能
+- 三种补全模式：自动补全、手动补全(推荐 按一次tab触发一次 再按一次tab应用补全)、禁用补全
+- 三种上下文模式：
+  - 快速模式：轻量级上下文，快速响应
+  - 平衡模式：中等上下文，质量与速度平衡
+  - 全局模式：完整项目上下文，最佳效果
+- 支持多种AI服务：OpenAI、Claude、通义千问、智谱AI、DeepSeek、Groq等
+
+### 大纲管理
+- 可视化大纲树结构
+- 拖拽排序和层级调整
+- 文档快速导航
+- 大纲分析和优化建议
+
+### API配置
+- 统一的AI配置中心
+- 多服务商预设配置
+- 连接测试功能
+- 配置方案保存和导入导出
+
+### 智能补全设置
+- 可调节的触发延迟
+- 补全长度限制
+- 上下文长度配置
+- 流式响应支持
+
+### 提示词编辑
+- 内置多种写作模板
+- 自定义提示词模板
+- 模板分类管理
+- 模式特定模板配置
+
+### 界面功能
+- 明暗双主题
+- 三栏式布局（项目树、编辑器、概念面板）
+- 可折叠侧边栏
+- 全屏写作模式
+- 专注模式（句子、段落、打字机、禅模式、沉浸模式）
+
+### 搜索和替换
+- 全项目文本搜索
+- 正则表达式支持
+- 批量替换功能
+- 高级搜索选项
+
+### 概念管理
+- 自动检测角色、地点、物品
+- 概念关系管理
+- 标签和分类系统
+- 概念快速插入
+
+## 快捷键
+
+- `Ctrl+N`: 新建项目
+- `Ctrl+O`: 打开项目
+- `Ctrl+S`: 保存文档
+- `F11`: 全屏模式
+- `Tab`: 手动触发AI补全（手动模式下）
+- `Ctrl+F`: 查找
+- `Ctrl+H`: 查找替换
+- `Ctrl+Shift+H`: 高级查找替换
+
+
+## 系统要求
+
+- Python 3.8+
+- PyQt6
+- 操作系统：Windows、macOS、Linux
+
+## 作者
+
+**inliver**
+- 邮箱：inliverapi@outlook.com  
+- GitHub：https://github.com/inliver233

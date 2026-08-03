@@ -1,0 +1,282 @@
+---
+id: tool-01715
+type: tool
+area: 库
+status: active
+tags: [TypeScript, 协议未明, 需API密钥, 英文文档, 大纲规划, 多Agent, 灵感创意]
+title: notification_trigger_flow
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/shrabanag/notification_trigger_flow
+created: 2026-07-18
+updated: 2026-07-18
+no: 1715
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: ShrabanaG/notification_trigger_flow
+stars: 0
+url: https://github.com/shrabanag/notification_trigger_flow
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# ShrabanaG/notification_trigger_flow
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/shrabanag/notification_trigger_flow
+- **Stars**：0
+- **语言**：TypeScript
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：FlowForge is a full-stack, no-code workflow automation tool. Instead of writing code or wiring up integrations by hand, you visually stack up to 8 configurable steps — "when this happens → filter it → transform it → notify someone" — then save it, run it, and watch it execute in real time. It turns a ~3-hour manual setup into a few minutes of click
+- **本地描述**：FlowForge is a full-stack, no-code workflow automation tool. Instead of writing code or wiring up integrations by hand, you visually stack up to 8 configurable steps — "when this happens → filter it → transform it → notify someone" — then save it, run it, and watch it execute in real time. It turns a ~3-hour manual setup into a few minutes of click
+- **拉取时间**：2026-07-23 23:29:02
+
+---
+
+# ⚡ FlowForge — Workflow Automation Builder
+
+**FlowForge is a full-stack, no-code workflow automation tool.** Instead of writing
+code or wiring up integrations by hand, you visually stack up to **8 configurable
+steps** — *"when this happens → filter it → transform it → notify someone"* — then
+save it, run it, and watch it execute in real time. It turns a ~3-hour manual setup
+into a few minutes of clicking.
+
+Think of it as a focused, self-hostable alternative to Zapier or Make, built on a
+modern React + Supabase stack with a clean, animated UI and a real execution engine
+that sends actual emails and Slack messages.
+
+---
+
+## 📸 Screenshots
+
+### Login
+Secure email/password authentication — every user gets their own private workspace.
+
+![FlowForge login page](docs/screenshots/login-page.png)
+
+### Home
+A polished landing/dashboard with the value proposition and quick access to the builder.
+
+![FlowForge home page](docs/screenshots/home-page.png)
+
+
+
+---
+
+## ✨ Features
+
+- **8 step types** — Trigger, Filter, Transform, Notify, Integrate, Delay, Condition, Action
+- **Inline configuration** — each step expands with type-specific fields (dropdowns, inputs)
+- **Real execution engine** — a Supabase Edge Function runs your steps and sends actual emails / Slack messages
+- **Live activity feed** — watch runs stream in real time (Supabase Realtime) with a full step-by-step log
+- **Scheduled triggers** — fire a workflow on a CRON schedule via `pg_cron`
+- **Per-user accounts** — auth + Row-Level Security, so each user only sees their own workflows
+- **Light & dark themes** — toggle with a persisted preference
+- **Accessible & responsive** — WCAG 2.0 AA, keyboard navigation, mobile bottom-nav
+
+## 🛠 Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Frontend | React 18 + TypeScript, Vite |
+| UI / Motion | Framer Motion, Lucide icons, custom CSS |
+| Backend | Supabase (Postgres, Auth, Realtime, Edge Functions) |
+| Execution | Deno Edge Function + Resend (email) / Slack webhooks |
+| Hosting | AWS Amplify (frontend), Supabase (backend) |
+
+---
+
+## 🚀 How to Use the Product
+
+Once you're signed in, building an automation takes four steps:
+
+### 1. Sign up / Sign in
+Open the app and create an account with your email and a password. You land on the
+**Home** dashboard.
+
+### 2. Build a workflow
+- Go to **Builder** (left sidebar)
+- Give your workflow a **name** (required) and an optional description
+- Click **+ Add Step** and pick from the 8 step types — add up to 8
+- Click any step to **expand and configure** it. A typical notification flow:
+  1. **Trigger** — *when* it runs (Webhook, Schedule, Incoming Email, Form…)
+  2. **Filter** *(optional)* — only continue if a condition is met (e.g. `rating equals 1`)
+  3. **Notify** — the alert itself (Channel: Email/Slack, Recipient, Template)
+
+### 3. Simulate & Save
+- Hit **Simulate** to preview the flow — each step lights up and checks off in order
+- Hit **Save Workflow** to persist it to your account
+
+### 4. Run it & watch it live
+- Go to **Saved** — every workflow shows its steps, status, and an **Activity** panel
+- Click **Run** to fire it now. The execution log streams into the live Activity feed:
+  each step's result, success/failure, and the notification that was sent
+- Toggle a workflow **Active/Paused**, or delete it, anytime
+
+> **Tip:** A minimal "get a notification" workflow is just two steps —
+> `Trigger (Webhook) → Notify (Email, your@email.com)`. The Trigger decides *when*;
+> the Notify step *sends* the alert.
+
+---
+
+## Getting Started (local development)
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+```
+
+Visit `http://localhost:5173`. You'll need to configure Supabase (below) before
+you can sign in.
+
+## Supabase Setup (backend)
+
+FlowForge uses **Supabase** for the database and authentication. Workflows are
+saved per-user with Row-Level Security, so each account only sees its own data.
+
+### 1. Create a project
+- Go to [supabase.com](https://supabase.com) → **New project**
+- Wait for it to finish provisioning
+
+### 2. Create the database table
+- In your project, open **SQL Editor → New query**
+- Paste the contents of [`supabase/schema.sql`](supabase/schema.sql) and click **Run**
+- This creates the `workflows` table, an `updated_at` trigger, and RLS policies
+
+### 3. Add your credentials
+- In Supabase: **Settings → API**, copy the **Project URL** and **anon public key**
+- In the project root, copy `.env.example` to `.env.local`:
+  ```bash
+  cp .env.example .env.local      # macOS/Linux
+  copy .env.example .env.local    # Windows
+  ```
+- Fill in your values:
+  ```
+  VITE_SUPABASE_URL=https://your-project-ref.supabase.co
+  VITE_SUPABASE_ANON_KEY=your-anon-public-key
+  ```
+- **Restart the dev server** (`npm run dev`) so Vite picks up the env vars
+
+### 4. (Optional) Disable email confirmation for faster testing
+- **Authentication → Providers → Email** → turn off *"Confirm email"* if you want
+  to sign in immediately after sign-up without checking your inbox
+
+Once configured, the login screen lets you sign up / sign in, and saved
+workflows persist to your Supabase database.
+
+## Execution Engine (sending real notifications)
+
+The **Run** button on a saved workflow calls a Supabase **Edge Function**
+(`supabase/functions/run-workflow`) that runs each step in order and actually
+sends a notification at the Notify step.
+
+### 1. Install the Supabase CLI & link your project
+```bash
+npm install -g supabase
+supabase login
+supabase link --project-ref YOUR-PROJECT-REF
+```
+
+### 2. Deploy the function (public webhook — no JWT)
+```bash
+supabase functions deploy run-workflow --no-verify-jwt
+```
+
+### 3. Add an email provider secret (for real emails)
+Sign up at [resend.com](https://resend.com) (free tier), grab an API key, then:
+```bash
+supabase secrets set RESEND_API_KEY=re_your_key
+# optional: a verified sender, otherwise Resend's sandbox address is used
+supabase secrets set FROM_EMAIL="FlowForge <you@yourdomain.com>"
+```
+For Slack notifications, create an [Incoming Webhook](https://api.slack.com/messaging/webhooks) and:
+```bash
+supabase secrets set SLACK_WEBHOOK_URL=https://hooks.slack.com/services/...
+```
+
+> Without these secrets the engine still runs — it just reports a **DRY RUN**
+> for the notify step instead of sending. Great for testing the flow first.
+
+### 4. Try it
+- Build a workflow with a **Notify** step (Channel: Email, Recipient: your email)
+- Save it, go to **Saved**, click **Run**
+- You'll see a step-by-step execution log; with `RESEND_API_KEY` set, the email
+  actually lands in your inbox
+
+### Triggering from outside (real webhook)
+Any external system can fire a workflow by POSTing to the function:
+```bash
+curl -X POST https://YOUR-PROJECT-REF.supabase.co/functions/v1/run-workflow \
+  -H "Content-Type: application/json" \
+  -d '{ "workflowId": "<uuid>", "payload": { "review": { "rating": "1" } } }'
+```
+The `payload` is the trigger data your **Filter** steps evaluate against.
+
+> **Note:** `.env.local` is git-ignored — never commit your keys. The `anon`
+> key is safe for the browser; RLS is what protects the data.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Output goes to the `dist/` folder.
+
+## Deploying to AWS Amplify
+
+1. Push this repo to GitHub
+2. Go to [AWS Amplify Console](https://console.aws.amazon.com/amplify)
+3. Click **Host a web app** → connect your GitHub repo
+4. Amplify auto-detects Vite — confirm these settings:
+   - Build command: `npm run build`
+   - Output directory: `dist`
+5. Deploy — you get a public URL on every push to `main`
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── HomePage.tsx        # Landing page with hero and feature grid
+│   ├── WorkflowBuilder.tsx # Main builder canvas
+│   ├── StepCard.tsx        # Individual step card with expand/collapse
+│   ├── StepConfig.tsx      # Per-step-type configuration fields
+│   ├── StepPicker.tsx      # Step type palette popup
+│   ├── SavedWorkflows.tsx  # Saved workflows list
+│   └── Sidebar.tsx         # Navigation sidebar
+├── data/
+│   └── stepTemplates.ts    # Default config for each step type
+├── styles/
+│   └── app.css             # All styles (CSS variables, dark theme)
+└── types/
+    └── workflow.ts         # TypeScript types
+```
+
+## Step Types
+
+| Step | Purpose |
+|---|related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| Trigger | Start the workflow on an event (webhook, schedule, email, form) |
+| Filter | Route or block data based on field conditions |
+| Transform | Reshape or reformat data (JSON, XML, CSV) |
+| Notify | Send alerts via Email, Slack, SMS, Teams, Push |
+| Integrate | Connect to Salesforce, HubSpot, Jira, GitHub, Stripe |
+| Delay | Pause execution for seconds / minutes / hours / days |
+| Condition | Branch the workflow with true/false logic |
+| Action | Run a custom Node.js, Python, or Bash script |

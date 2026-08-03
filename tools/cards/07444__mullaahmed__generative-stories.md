@@ -1,0 +1,139 @@
+---
+id: tool-07444
+type: tool
+area: 库
+status: active
+tags: [RAG, 多Agent, Python, 协议未明, 需API密钥, 英文文档, 人物设定]
+title: generative-stories
+summary: 长篇设定/人物一致性（RAG 记忆）
+source: https://github.com/mullaahmed/generative-stories
+created: 2026-07-18
+updated: 2026-07-18
+no: 7444
+category: 画龙补充 / 扩容入库 — 补充源
+repo: mullaahmed/generative-stories
+stars: 0
+url: https://github.com/mullaahmed/generative-stories
+tier: "C"
+use_case: "长篇设定/人物一致性（RAG 记忆）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/QUICK_START.md
+---
+
+# mullaahmed/generative-stories
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/mullaahmed/generative-stories
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：—
+- **本地描述**：generative-stories
+- **拉取时间**：2026-07-25 19:22:03
+
+related:
+  - methods/QUICK_START.md
+---
+
+# Generative Stories
+
+A multi-agent narrative engine that creates dynamic stories through autonomous character interactions.
+
+## Quick Start
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Set up your API key:**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your API keys
+   ```
+
+   **Supported LLM Providers:**
+   - **Gemini** (Google): Set `GOOGLE_API_KEY` or `GEMINI_API_KEY`
+   - **OpenAI**: Set `OPENAI_API_KEY`
+   - **Groq**: Set `GROQ_API_KEY`
+   
+   You can set `DEFAULT_LLM_PROVIDER` to choose your preferred provider (gemini, openai, or groq).
+
+3. **Configure memory system:**
+   The system requires mem0 for memory management. Ensure the configuration in `config/mem0_config.json` is properly set up for your environment.
+
+4. **Run a story simulation:**
+   ```bash
+   python run_story.py
+   ```
+
+## Interactive Mode
+
+The runner will start in interactive mode where you can:
+- Choose from available scenarios
+- Name your story
+- Watch the simulation run in real-time
+
+## Generated Stories
+
+Stories are saved in organized directories under `data/stories/{story_name}/` with complete documentation and resumption data.
+
+## Configuration
+
+### Memory System Setup
+
+The system **requires** mem0 for memory management:
+
+```bash
+pip install mem0
+```
+
+**Important:** Configure mem0 by editing `config/mem0_config.json` to set up your preferred vector store and LLM provider for memory operations. The simulation will not run without a properly configured memory system.
+
+### Story Configuration
+
+Edit `stories/config/simulation_config.json` to customize:
+- Characters and their personalities
+- Locations and connections
+- Story themes and settings
+- Simulation parameters
+
+## Features
+
+- **Autonomous Agents**: Characters make their own decisions and interact naturally
+- **Dynamic Storytelling**: Stories emerge from character interactions
+- **Advanced Memory System**: Characters remember past interactions and experiences using mem0
+- **Narrator Intervention**: AI narrator adds events to improve story flow
+- **Multiple Formats**: Export stories as text, JSON, or markdown
+- **Dynamic Character Generation**: System can introduce new characters to enhance story dynamics
+- **Multiple LLM Providers**: Support for Gemini, OpenAI, and Groq models
+- **Save/Resume**: Save story progress and resume from any point
+- **Structured Documentation**: Complete data organization for analysis and resumption
+
+## Story Documentation Structure
+
+Each generated story creates a comprehensive directory structure:
+
+```
+data/stories/{story_name}/
+├── STORY_INFO.md              # Story-specific documentation
+├── README.json                # Machine-readable index
+├── simulation_state/          # Core simulation state for resumption
+├── characters/                # Character data and development
+├── conversations/             # All interactions and dialogue
+├── locations/                 # Environment and world data
+├── events/                    # Story events and narrator interventions
+├── relationships/             # Character relationship matrices
+├── memory_data/               # Memory system data
+├── narrative_output/          # Generated story text and chapters
+└── raw_data/                  # Complete simulation dumps
+```
+
+## Example Output
+
+The system generates complete stories with character development, dialogue, and narrative progression. Each story is unique based on the autonomous decisions of the AI characters.

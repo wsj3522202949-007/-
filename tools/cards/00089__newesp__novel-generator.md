@@ -1,0 +1,164 @@
+---
+id: tool-00089
+type: tool
+area: 库
+status: active
+tags: [TypeScript, 协议未明, 本地优先, 中文友好, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: novel-generator
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/newesp/novel-generator
+created: 2026-07-18
+updated: 2026-07-18
+no: 89
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: newesp/novel-generator
+stars: 0
+url: https://github.com/newesp/novel-generator
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# newesp/novel-generator
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/newesp/novel-generator
+- **Stars**：0
+- **语言**：TypeScript
+- **License**：NOASSERTION
+- **Topics**：ai-writing, llm, local-first, novel-writing, react, sqlite, tauri, typescript
+- **GitHub 描述**：Local-first Chinese novel generator with LLM-assisted outlining, drafting, Wiki knowledge management, search, comic image generation, and Tauri desktop MP4/SRT video export.
+- **本地描述**：Local-first Chinese novel generator with LLM-assisted outlining, drafting, Wiki knowledge management, search, comic image generation, and Tauri desktop MP4/SRT video export.
+- **拉取时间**：2026-07-23 22:41:28
+
+---
+
+# 小說產生器（Novel Generator）
+
+[English](README.en.md)
+
+> 版本：1.11（Mantine v2 本機工作區 UI）　更新：2026-07-18
+
+本機優先的中文小說創作工具，提供瀏覽器 Web App 與 Windows 桌面版（Tauri）。核心流程涵蓋書本管理、大綱、角色、章節正文、版本、LLM Wiki、全文檢索、知識圖、漫畫圖片生成，以及桌面版漫畫 TTS / MP4 / SRT 輸出、單格影片重輸出、鏡頭動態效果與章節內影片庫。
+
+- 目標語言：中文小說（優先）
+- 使用方式：本機瀏覽器或 Windows 桌面版
+- 目前資料層：瀏覽器版 IndexedDB（Dexie）；桌面版 SQLite（`tauri-plugin-sql`）
+- 輸出格式：已支援整本 `.txt` / `.html` / `.epub` 導出
+- 目前介面：Mantine Gray 主題；大綱、角色、場景、章節、Wiki、漫畫、影片各自使用獨立工作區，v1 保留於 tag `v1.0.0` / branch `release/v1`
+
+---
+
+## 快速開始
+
+### 瀏覽器版
+
+```bash
+npm install
+npm run dev
+```
+
+瀏覽器開 `http://localhost:5173`；首次使用點「偏好設定」填 LLM provider 與 API Key（支援 OpenAI-compatible、Google Gemini、Grok）。
+
+### 桌面版（Windows，Phase 5b）
+
+桌面版用 Tauri 包成原生 app、儲存走 SQLite（位於 `%AppData%\com.novelgenerator.app\novel-generator.db`），不受瀏覽器無痕模式 / 配額限制。
+
+前置：安裝 [Rust toolchain](https://rustup.rs/) + Visual Studio Build Tools (Desktop C++) + WebView2 Runtime（Win 10/11 通常已內建）。
+
+```bash
+# 開發（會啟 vite + Tauri webview）
+npm run tauri dev
+
+# 打包 MSI 安裝檔
+npm run tauri build
+# 產物：src-tauri/target/release/bundle/msi/*.msi
+```
+
+瀏覽器版資料可透過「匯出 JSON → 桌面版匯入」搬移。
+
+---
+
+## CI/CD
+
+GitHub Actions 使用 `.github/workflows/ci-cd.yml`：
+
+- Pull Request：在 `ubuntu-latest` 執行 `npm ci`、`npm run lint`、`npm run test`、`npm run build`。
+- `main` push：先跑同一組 CI；通過後在 `windows-latest` 建置 Tauri Windows MSI，並上傳為 workflow artifact。
+- 目前不部署 GitHub Pages。靜態 Pages 無法提供 Tauri SQLite、native file dialog、ffmpeg / Edge-TTS sidecar，也沒有 Vite dev-only `/llm-proxy`，因此只把可安裝桌面產物視為目前的 CD 目標。
+
+---
+
+## 系統分層
+
+1. **UI 層** — React 19 + TypeScript strict + Vite 8 + Mantine Gray 主題；既有自製元件保留為功能相容層。
+2. **業務邏輯層** — 大綱、角色、章節、版本、LLM Wiki、Context Budget、Lint、Graph、漫畫圖片。
+3. **LLM 適配層** — 自定義 OpenAI-compatible、Google Gemini、Grok（文字）；ComfyUI、OpenAI-compatible image、DeepInfra FLUX、Google Gemini Image（圖片）。
+4. **儲存層** — `StorageAdapter` 統一介面；瀏覽器版走 Dexie / IndexedDB，桌面版走 Tauri SQLite + FTS5。
+
+---
+
+## 模組總表
+
+| 檔案 | 模組 | Phase | 依賴 |
+|------|------|------|------|
+| [00-book.md](modules/00-book.md) | 書本管理（所有資料根容器） | 1 | — |
+| [01-outline.md](modules/01-outline.md) | 大綱生成系統 | 1 | 00, 02, 07, 08 |
+| [02-characters.md](modules/02-characters.md) | 角色系統 | 2 | 00, 04 |
+| [03-chapters.md](modules/03-chapters.md) | 章節管理器 | 1 | 00, 04, 05, 07 |
+| [04-knowledge.md](modules/04-knowledge.md) | 知識管理（Wiki、FTS5、Lint、Graph、問 Wiki） | 2 / 2.5 | 00, 07 |
+| [05-versions.md](modules/05-versions.md) | 章節版本管理 | 1 | 00 |
+| [06-polish.md](modules/06-polish.md) | 內容潤色器（未實作） | 3 | 00, 08 |
+| [07-context-budget.md](modules/07-context-budget.md) | Context Budget Manager（Wiki 摘要 + pick-pages + 摘要品質 ✅） | 1 / 2.5 | 04 |
+| [08-llm-adapter.md](modules/08-llm-adapter.md) | LLM 適配層 | 1 / 2 | tech-stack |
+| [09-multi-agent.md](modules/09-multi-agent.md) | Multi-Agent 協作引擎（未實作） | 4（選做） | 04, 07 |
+| [10-multimedia.md](modules/10-multimedia.md) | 多媒體生成（漫畫圖片、TTS、MP4、SRT、motion effects 與章節內影片庫） | 6 / 4（選做） | 00, tech-stack |
+
+---
+
+## 規格文件
+
+| 檔案 | 內容 |
+|------|------|
+| [tech-stack.md](specs/tech-stack.md) | 技術選型（版本以 `package.json` 為準） |
+| [roadmap.md](specs/roadmap.md) | Phase 1–7 開發階段與未完成項 |
+| [UI.md](specs/UI.md) | 視覺規範（色彩/字體/元件/動效） |
+| [UI-layout.md](specs/UI-layout.md) | 主編輯介面佈局 |
+| [output-formats.md](specs/output-formats.md) | 輸出格式規格 |
+| [deployment.md](specs/deployment.md) | 部署方式 |
+
+---
+
+## 接下來未完成重點
+
+- Phase 2.5 polish：手動批次摘要重建、LLM pick-pages、Graph 進階事件抽取 / 因果推理。
+- Phase 3：完整內容潤色器；v2 工作區基礎重整已完成，後續持續做局部 UI/UX polish。
+- Phase 4 / 6：Multi-Agent、封面圖生成、完整 Visual Bible 管理、provider reference weighting、全書級媒體庫、批次圖片/影片匯出、video orphan cleanup、多角色/對話 TTS、Web 版影片降級。
+- Phase 5 / 7：macOS / Linux 打包、code signing、首次啟動自動 IndexedDB→SQLite 遷移（目前採手動 JSON）、`WaSqliteAdapter` / `WebMediaAdapter` / PWA 回部署。
+
+詳細狀態以 [specs/roadmap.md](specs/roadmap.md) 為準。
+
+---
+
+## 授權
+
+本專案採用 GNU Affero General Public License v3.0 only（SPDX：`AGPL-3.0-only`）。完整授權摘要見 [LICENSE](LICENSE)。
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+## 文件維護原則
+
+- `package.json` 是套件版本權威來源。
+- `src/types/index.ts` 與 `src/lib/storage/types.ts` 是資料模型與儲存介面權威來源。
+- `docs/superpowers/specs/` 與 `docs/superpowers/plans/` 是歷史設計/實作紀錄，不回填成最新狀態；最新狀態以本 README、`modules/`、`specs/`、`docs/CHANGELOG.md` 與程式碼為準。

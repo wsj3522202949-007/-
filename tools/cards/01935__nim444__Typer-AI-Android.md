@@ -1,0 +1,164 @@
+---
+id: tool-01935
+type: tool
+area: 库
+status: active
+tags: [TTS, 校对, Kotlin, 协议未明, 需API密钥, 英文文档, 改稿润色]
+title: Typer-AI-Android
+summary: 小说转语音/有声书
+source: https://github.com/nim444/typer-ai-android
+created: 2026-07-18
+updated: 2026-07-18
+no: 1935
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: nim444/Typer-AI-Android
+stars: 0
+url: https://github.com/nim444/typer-ai-android
+tier: "C"
+use_case: "小说转语音/有声书"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# nim444/Typer-AI-Android
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/nim444/typer-ai-android
+- **Stars**：0
+- **语言**：Kotlin
+- **License**：NOASSERTION
+- **Topics**：—
+- **GitHub 描述**：A ubiquitous on-device writing copilot for Android
+- **本地描述**：A ubiquitous on-device writing copilot for Android
+- **拉取时间**：2026-07-23 23:35:24
+
+---
+
+
+![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+[![Unit Tests](https://github.com/nim444/Typer-AI-Android/actions/workflows/build.yml/badge.svg)](https://github.com/nim444/Typer-AI-Android/actions/workflows/build.yml)
+____
+<br>
+
+
+![Banner](assets/banner.png)
+
+
+An AI-powered Android typing assistant that fixes grammar and adjusts tone — accessible instantly from your Quick Settings tile or a persistent floating bubble.
+
+You're in any app, you have a messy draft. Swipe down, tap the **Typer** tile, type or speak your text, pick a tone, and get a clean rewrite — then tap **Copy & Close** to paste it wherever you were. No overlay permissions needed. No switching apps. Just a floating popup over your current screen.
+
+
+![Demo](assets/demo.png)
+
+
+---
+
+### License
+
+**PolyForm Noncommercial License 1.0.0**
+
+This software is licensed for non-commercial use only. You may use this project for personal, academic, and non-profit purposes. **Commercial use, including but not limited to selling this software or using it as part of a paid service, is strictly prohibited.**
+
+See the [LICENSE](LICENSE) file for the full legal text.
+
+___
+
+<br>
+<details Open>
+  <summary>1. Features</summary>
+
+- **Quick Settings Tile & Floating Button** — instant access to the AI from anywhere on Android
+- **Multi-Provider AI Options** — seamlessly pick between Google Gemini (2.5 & 3.0) and xAI Grok (4.1 & 3 Mini)
+- **Dedicated Settings App** — beautifully themed settings UI with light/dark adaptive designs and dynamic header images
+- **Customizable Pre-prompt** — write your own base instructions (e.g., "Rewrite to fix grammar and improve clarity")
+- **Voice Input** — tap the mic to let Android's built-in Speech-to-Text do the typing
+- **Copy & Close** — automatically copies the polished text to your clipboard and dismisses the window
+- **Hide API Keys** — secure password-style visibility toggles for your saved API keys
+- **Persistent Secure Storage** — Local DataStore preferences save everything safely on-device
+</details>
+
+<details Open>
+  <summary>2. Setup & Installation</summary>
+
+#### Get an API Key (Gemini or Grok)
+1. **Gemini:** Go to [aistudio.google.com/apikey](https://aistudio.google.com/apikey) to generate a free key.
+2. **Grok:** Go to [console.x.ai](https://console.x.ai/) to generate a Grok API key.
+
+#### Install the APK
+1. Go to the [Actions tab](../../actions) on GitHub.
+2. Open the latest successful **Build Android APK** run.
+3. Download the `Typer-APK` artifact and unzip it.
+4. Transfer `app-debug.apk` to your Android device.
+5. Enable **Install from unknown sources** in your device settings and install.
+</details>
+
+<details Open>
+  <summary>3. How To Use</summary>
+
+1. **Open the Typer app** from your app drawer.
+2. **Configure your AI Providers**: Enter your Gemini and/or Grok API keys and select your preferred models from the dropdowns. Choose your Default Provider.
+3. Customize your **App Theme** and toggle the **Floating Button** if you want a permanent on-screen shortcut.
+4. Alternatively, add the **Typer** Quick Settings tile to your notification shade.
+5. From any other app, drop down your notifications and tap the **Typer** tile or the floating bubble.
+6. A translucent popup will appear. Type your draft **or** tap the **mic** to speak it.
+7. Tap **Fix Grammar**.
+8. Review the result, then tap **Copy & Close** to paste into any app.
+</details>
+
+<details>
+  <summary>4. API Tier Limits (Reference)</summary>
+
+| Provider | Model | Typical Free Tier |
+|---|---|---|
+| Google (Gemini) | `gemini-2.5-flash` | 15 RPM / 1M TPM / 1,500 RPD |
+| xAI (Grok) | `grok-beta` series | Approx $5.00/1M tokens (depends on active tier) |
+
+*Always verify up-to-date quotas with your respective provider console.*
+</details>
+
+<details Open>
+  <summary>5. Tech Stack & Project Structure</summary>
+
+| Component | Technology |
+|---|related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---|
+| Language | Kotlin |
+| UI | Jetpack Compose + Material 3 |
+| AI | Google Gemini (1.5, 2.0, 2.5, 3.0 via SDK) & Grok (xAI API via pure HTTP) |
+| Storage | DataStore Preferences |
+| Voice | Android SpeechRecognizer |
+| Entry points | Floating Bubble Service, Quick Settings Tile, Direct Launcher |
+| Build | Gradle 8.7 / AGP 8.6.1 / Kotlin 1.9.22 |
+| CI | GitHub Actions → debug APK artifact |
+
+```text
+Typer-AI-Android/
+├── app/src/main/
+│   ├── java/com/tyzytyper/
+│   │   ├── SettingsActivity.kt    # Main Settings UI (AI Providers, Theme)
+│   │   ├── PopupActivity.kt       # Voice Input / AI Resolution overlay
+│   │   ├── FloatingButtonService.kt # Persistent floating bubble entry point
+│   │   ├── TyperTileService.kt    # Quick Settings tile target
+│   │   ├── AiService.kt           # Network dispatcher for Grok and Gemini
+│   │   ├── SettingsManager.kt     # DataStore preferences persistence
+│   │   └── ui/theme/              # Custom Blue Material 3 Theme Configuration
+│   ├── res/drawable/
+│   │   └── ic_tile.xml            # QS tile icon
+│   └── AndroidManifest.xml
+├── .github/workflows/
+│   └── build.yml                  # CI: builds debug APK
+├── app/build.gradle.kts
+├── build.gradle.kts
+├── settings.gradle.kts
+└── gradle.properties
+```
+</details>

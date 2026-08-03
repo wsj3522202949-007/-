@@ -1,0 +1,189 @@
+---
+id: tool-04846
+type: tool
+area: 库
+status: active
+tags: [Python, 协议未明, 本地优先, 英文文档, 去AI味, 本地写作]
+title: SeekAI
+summary: 投稿前给正文降 AI 检测痕迹、改自然语气
+source: https://github.com/dksaranya/seekai
+created: 2026-07-18
+updated: 2026-07-18
+no: 4846
+category: 一、去 AI 味 / Humanizer 库
+repo: dksaranya/SeekAI
+stars: 0
+url: https://github.com/dksaranya/seekai
+tier: "C"
+use_case: "投稿前给正文降 AI 检测痕迹、改自然语气"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+# dksaranya/SeekAI
+
+- **分类**：一、去 AI 味 / Humanizer 库
+- **链接**：https://github.com/dksaranya/seekai
+- **Stars**：0
+- **语言**：Python
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：SeekAI — free multimodal AI-content detector for text, images, and video with explainable authenticity scores
+- **本地描述**：SeekAI — free multimodal AI-content detector for text, images, and video with explainable authenticity scores
+- **拉取时间**：2026-07-25 17:56:36
+
+---
+
+# SeekAI
+
+### Free multimodal AI-content detector for text, images, and video frames
+
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-async-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Render-46E3B7?logo=render&logoColor=white)](https://seekai-detector.onrender.com)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> Paste text, drop an image, or upload a video — get an explainable authenticity score without a paywall.
+
+Solo-built by **[dksaranya](https://github.com/dksaranya)** — a production-shaped detector UI + API you can demo in an interview or self-host for free.
+
+**Live demo:** [seekai-detector.onrender.com](https://seekai-detector.onrender.com)
+
+---
+
+## What it does
+
+SeekAI combines **fast heuristics** with **optional neural models** so the product works on a free hosting tier and upgrades cleanly when you have more RAM:
+
+| Modality | Approach |
+|----------|----------|
+| **Text** | Style / predictability signals + optional transformer scoring |
+| **Images** | Visual artifact / model-based checks (when models load) |
+| **Video** | Frame sampling → same image pipeline |
+| **Demos** | One-click AI-style vs human-style samples — no upload needed |
+
+Results include a **score**, **label**, and **human-readable explanation** so users understand *why*, not just a black-box percentage.
+
+---
+
+## Highlights
+
+- Zero sign-up web UI — paste, upload, scan
+- REST API for scripting (`/api/analyze`, `/api/health`)
+- Scan history (SQLite; ephemeral on free Render redeploys)
+- Graceful degradation when ML models can't load (heuristics still work)
+- One-command local setup on Windows (`setup.bat` / `start.bat`)
+
+---
+
+## Table of contents
+
+1. [Live demo](#live-demo)
+2. [Quick start](#quick-start)
+3. [API](#api)
+4. [Deploy (Render)](#deploy-render)
+5. [Project layout](#project-layout)
+6. [Interview walkthrough](#interview-walkthrough)
+7. [License](#license)
+
+---
+
+## Live demo
+
+| | |
+|--|--|
+| **URL** | [https://seekai-detector.onrender.com](https://seekai-detector.onrender.com) |
+| **Cold start** | Free tier may sleep — first request can take 1–2 minutes |
+| **ML note** | Neural models need ~1 GB RAM; upgrade to Standard if scans OOM |
+
+Try the **AI-style text** / **Human-style text** buttons on the home page for an instant demo.
+
+---
+
+## Quick start
+
+```bat
+git clone https://github.com/dksaranya/seekai.git
+cd seekai
+setup.bat
+start.bat
+```
+
+Open **http://localhost:8000**
+
+Manual:
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python run.py
+```
+
+---
+
+## API
+
+```bash
+curl https://YOUR-APP.onrender.com/api/health
+
+curl -X POST https://YOUR-APP.onrender.com/api/analyze \
+  -F "text=Moreover it is worth noting that we must delve into comprehensive solutions."
+```
+
+Multipart fields support `text`, `image`, and `video` depending on the request.
+
+---
+
+## Deploy (Render)
+
+| Setting | Free | Paid / persistent |
+|---------|------|-------------------|
+| App | Web service from this repo | Same |
+| ML models | May fail / slow cold start | Recommended (~2 GB) |
+| Sleep | Spins down after idle | Always on |
+| History DB | Resets on redeploy | Persistent disk |
+
+`render.yaml` (if present) or manual: Python runtime, start `python run.py`, expose the configured port.
+
+---
+
+## Project layout
+
+```
+seekai/
+├── app/              # FastAPI routes, scoring, static UI
+├── models/           # Optional weights / loaders
+├── run.py            # Entry
+├── requirements.txt
+├── setup.bat / start.bat
+└── README.md
+```
+
+---
+
+## Interview walkthrough
+
+| Topic | Talking point |
+|-------|----------------|
+| Product sense | Free multimodal detector UX, not a notebook dump |
+| Engineering | FastAPI async API + static frontend, file uploads, health checks |
+| Reliability | Heuristics when models can't load; clear UX on cold starts |
+| Ops | Render deploy, RAM constraints, cold start awareness |
+
+**60-second demo:** open live site → click demo text → show score + explanation → optional image upload.
+
+related:
+  - methods/最强去AI味铁律.md
+  - methods/改稿润色指令库.md
+---
+
+## License
+
+MIT © [dksaranya](https://github.com/dksaranya)
+
+**SeekAI** — authenticity checks without the paywall.

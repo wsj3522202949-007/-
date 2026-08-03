@@ -1,0 +1,271 @@
+---
+id: tool-00675
+type: tool
+area: 库
+status: active
+tags: [JavaScript, 协议宽松, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: ghost-writer
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/jimmytheghost/ghost-writer
+created: 2026-07-18
+updated: 2026-07-18
+no: 675
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: jimmytheghost/ghost-writer
+stars: 0
+url: https://github.com/jimmytheghost/ghost-writer
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# jimmytheghost/ghost-writer
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/jimmytheghost/ghost-writer
+- **Stars**：0
+- **语言**：JavaScript
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：Ghost Writer is an open-source web-based writing tool designed to leverage the power of Large Language Models (LLMs) through Ollama. It aims to provide a streamlined writing experience for creating articles, essays, novels, and various other content types.
+- **本地描述**：Ghost Writer is an open-source web-based writing tool designed to leverage the power of Large Language Models (LLMs) through Ollama. It aims to provide a streamlined writing experience for creating articles, essays, novels, and various other content types.
+- **拉取时间**：2026-07-23 22:58:43
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# Ghost Writer
+
+<p align="center">
+  <img src="docs/_assets/gw-logo.jpg" alt="Ghost Writer Logo" width="520" />
+</p>
+
+Ghost Writer is a local-first, distraction-free Markdown editor that embeds AI assistance directly into the writing workflow using on-device LLMs via Ollama.
+
+For current active work, canonical docs, and release status, start with `docs/docs-index.md`.
+
+## Download
+
+[![Download for Windows](https://img.shields.io/badge/Download-Windows%20x64-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/jimmytheghost/ghost-writer/releases/download/v1.5.1/Ghost.Writer_1.5.1_x64-setup.exe)
+[![Download for macOS](https://img.shields.io/badge/Download-macOS%20Apple%20Silicon-000000?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/jimmytheghost/ghost-writer/releases/download/v1.5.1/Ghost.Writer_1.5.1_aarch64.dmg)
+[![View Release Notes](https://img.shields.io/badge/Release%20Notes-v1.5.1-6e40c9?style=for-the-badge)](https://github.com/jimmytheghost/ghost-writer/releases/tag/v1.5.1)
+
+## Highlights
+
+- Focused markdown editor with matching markdown preview mode
+- Local model integration via Ollama (`http://127.0.0.1:11434`)
+- Selection-aware AI insertion/replacement
+- Inline placeholder workflow with `{{...}}` tokens
+- Streaming generation with Stop/Undo/Redo
+- Save/Load markdown files (`.md`)
+- Copy full document or current selection
+- Light/dark theme toggle
+- Always-on-top toggle (desktop/Tauri)
+- Responsive layout with fixed footer controls
+- Custom in-app modals for Save and New-document confirmation
+- Single-line AI prompt input with Enter-to-send behavior
+
+## Current UI/UX Features
+
+- Footer quick actions: New, Save, Load, Copy, Markdown Preview toggle, Theme toggle, Always-on-top toggle
+- Markdown preview button remains visibly active while preview is on
+- Preview container and editor container are size-matched for consistent mode switching
+- Prompt actions are icon-based: Send, Stop, Undo/Redo, Clear
+- Prompt panel and editor use Noto Sans Mono; app and preview typography use Noto Sans
+- Preview rendering is sanitized before injection
+- Compact footer behavior at narrow widths (`<=430px`) with square model selector button
+
+## AI Editing Behavior
+
+When you submit a prompt:
+
+- If text is selected in the editor, AI output replaces that selection.
+- If no text is selected, AI output inserts at the cursor location.
+- Output streams into the document as it is generated.
+
+Inline placeholder behavior:
+
+- Typing `{{` immediately starts inline placeholder highlighting in blue.
+- Text remains highlighted while the placeholder is open.
+- Typing `}}` closes the placeholder highlight state.
+
+## Keyboard Shortcuts
+
+- `Ctrl/Cmd + B`: wrap selection with bold markdown markers (`**`)
+- `Ctrl/Cmd + I`: wrap selection with italic markdown markers (`*`)
+- `Ctrl/Cmd + M`: toggle markdown preview mode
+- `Ctrl/Cmd + S`: save document
+- `Ctrl/Cmd + O`: load document
+- `Ctrl/Cmd + N`: new document
+- `Ctrl/Cmd + P`: print rendered markdown
+- `Ctrl/Cmd + T`: toggle always-on-top (desktop/Tauri)
+- `Enter` (inside AI prompt input): send prompt
+- `Ctrl/Cmd + Enter` (inside AI prompt input): send prompt
+
+## Requirements
+
+- Node.js `20.19+` or `22.12+`
+- npm
+- Ollama installed locally with at least one installed model
+
+## Run Locally
+
+### Option 1: Launch scripts (Tauri helpers)
+
+- Windows: `scripts/dev/launch-dev.bat`
+- macOS: `scripts/dev/launch.command`
+- Shell: `scripts/dev/launch-dev.sh`
+
+Stop script (macOS): `scripts/dev/stop.command`
+
+### Option 2: Manual
+
+```bash
+cd src/ghost-writer-editor
+# if you use nvm
+# nvm use
+npm ci
+npm run dev
+```
+
+Then open: `http://localhost:5174`
+
+## Desktop App (Tauri)
+
+Ghost Writer uses a lightweight Tauri desktop wrapper.
+
+```bash
+cd src/ghost-writer-editor
+npm ci
+npm run dev:tauri
+```
+
+Build desktop artifacts:
+
+```bash
+cd src/ghost-writer-editor
+npm run build:tauri
+npm run build:tauri:win
+# npm run build:tauri:mac
+```
+
+`build:tauri:mac` now auto-selects an installed macOS Rust target (`aarch64-apple-darwin` or `x86_64-apple-darwin`) based on host architecture.
+You can override the target with `TAURI_MAC_TARGET`, for example:
+
+```bash
+TAURI_MAC_TARGET=x86_64-apple-darwin npm run build:tauri:mac
+```
+
+Default desktop window sizing:
+
+- Launch size: `600x900`
+- Minimum size: `430x560`
+
+Model dropdown behavior:
+
+- On desktop (macOS and Windows), Ghost Writer loads the user's installed Ollama models live when the app starts.
+- On desktop startup, Ghost Writer attempts to auto-start Ollama for local endpoints when Ollama is not already running.
+- The desktop app uses the Tauri backend to query Ollama at runtime, so each machine sees its own currently installed models.
+- If Ollama is truly unavailable (not installed, blocked, or unreachable), the model picker stays empty and shows a clear error instead of listing stale models.
+- `npm run sync:models` still writes:
+  - `src/ghost-writer-editor/public/ollama-models.json`
+  - `src/ghost-writer-editor/src/generated/ollama-models.json`
+- Those snapshot files are now support/build artifacts, not the desktop app's source of truth.
+
+### Load Local Models
+
+To load local models into the Ghost Writer dropdown:
+
+1. Install/pull one or more models with Ollama:
+
+```bash
+ollama pull llama3.1:8b
+# or any model you want to use
+```
+
+2. Confirm models exist locally:
+
+```bash
+ollama list
+```
+
+3. Start Tauri (Ghost Writer will auto-start Ollama when possible):
+
+```bash
+cd src/ghost-writer-editor
+npm run dev:tauri
+```
+
+4. Optional manual check/troubleshooting:
+
+```bash
+ollama serve
+```
+
+After launch, the footer model dropdown should show the models currently installed on that machine.
+If Ollama is truly unavailable, the dropdown should show no models and an error state.
+
+For full setup, failure recovery, and cross-machine behavior, use:
+- `docs/agent-workflows/local-models-runbook.md`
+
+For print/PDF maintenance and margin tuning, use:
+- `docs/agent-workflows/print-and-pdf-runbook.md`
+
+For editor dash-input stability (no `-` auto-conversion or caret jump), use:
+- `docs/agent-workflows/dash-input-stability-runbook.md`
+
+Performance metrics snapshot:
+
+```bash
+cd src/ghost-writer-editor
+npm run metrics:package
+npm run metrics:tauri
+```
+
+Tauri prerequisites:
+
+- Rust toolchain installed (`rustup`, `cargo`, `rustc`)
+
+Current packaging target outputs:
+
+- Bundles are produced under `src/ghost-writer-editor/src-tauri/target/release/bundle`.
+
+CI release path:
+
+- Tag-based desktop releases now run through GitHub Actions (`.github/workflows/release.yml`).
+- Push a `v*` tag to trigger matrix builds + checksums + draft GitHub Release artifacts.
+- Canonical process/runbook: `docs/agent-workflows/release-runbook.md`.
+
+## Model Endpoint
+
+Ghost Writer expects Ollama at:
+
+- `POST http://127.0.0.1:11434/api/generate` (stream responses)
+
+You can override the default endpoint with `VITE_OLLAMA_BASE_URL`.
+
+## Quality Checks
+
+```bash
+cd src/ghost-writer-editor
+npm run check
+```
+
+`npm run check` now includes a Node runtime preflight and fails fast when the active Node version is unsupported.
+
+## Project Policies
+
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+- `CODE_OF_CONDUCT.md`
+- `CHANGELOG.md`
+- `LICENSE`

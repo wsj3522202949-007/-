@@ -1,0 +1,344 @@
+---
+id: tool-00925
+type: tool
+area: 库
+status: active
+tags: [去AI味, TTS, Claude插件, JavaScript, 协议宽松, 需API密钥, 英文文档]
+title: obsidian-alembic
+summary: 投稿前文本降 AI 痕、过检测
+source: https://github.com/sedetweiler/obsidian-alembic
+created: 2026-07-18
+updated: 2026-07-18
+no: 925
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: sedetweiler/obsidian-alembic
+stars: 3
+url: https://github.com/sedetweiler/obsidian-alembic
+tier: "B"
+use_case: "投稿前文本降 AI 痕、过检测"
+pitfalls:
+  - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# sedetweiler/obsidian-alembic
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/sedetweiler/obsidian-alembic
+- **Stars**：3
+- **语言**：JavaScript
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：AI writing tools for Obsidian with prompts you actually own! Workflows live in your vault as Markdown files, edit them, share them, run them on any note.
+- **本地描述**：AI writing tools for Obsidian with prompts you actually own! Workflows live in your vault as Markdown files, edit them, share them, run them on any note.
+- **拉取时间**：2026-07-23 23:06:03
+
+---
+
+# Alembic
+
+AI writing workflows for Obsidian, with prompts you can create and share. Workflows live in your vault as Markdown files: edit them, share them, run them on any note.
+
+<img width="833" height="865" alt="the workflow panel" src="https://github.com/user-attachments/assets/d25f010b-9711-41c2-8c0e-5ac625a80f4b" />
+
+
+---
+
+## Quick start
+
+1. Install the plugin (see [[#Installation]])
+2. Open **Settings → Writers Alembic → Providers** and configure at least one AI backend
+3. Open any note, optionally select some text, and run **Writers Alembic: Run workflow** from the command palette
+4. Pick a workflow and see the result in your note
+
+---
+
+## Installation
+
+Alembic is a desktop-only plugin (it shells out to CLI tools and makes direct HTTP calls to local AI servers).  No API keys needed for things like Claude, Gemini, etc. if you have the CLI tools installed (e.g. Claude Code).
+
+**Manual install:**
+1. Download `main.js`, `styles.css`, and `manifest.json` from the latest release
+2. Copy them into `.obsidian/plugins/writers-alembic/` inside your vault
+3. Enable the plugin in Settings → Community plugins
+
+**Via Community Plug-ins**
+You can browse for it inside of Obsidian, or use the direct link to the community page: https://community.obsidian.md/plugins/writers-alembic
+
+---
+
+## Providers
+
+Go to **Settings → Writers Alembic → Providers** to add and configure backends. You can have as many as you like; each workflow can target a different one.
+
+### Claude CLI (default, no API key needed)
+
+Requires the [Claude CLI](https://docs.anthropic.com/en/docs/claude-code) to be installed and authenticated. Runs `claude --print` under the hood. No API key required in the plugin; authentication is handled by the CLI itself.
+
+```
+npm install -g @anthropic-ai/claude-code
+claude   # follow the login prompts
+```
+
+### Codex CLI (no API key needed)
+
+Requires the [Codex CLI](https://github.com/openai/codex) to be installed and authenticated. Runs `codex exec` under the hood. No API key required in the plugin; authentication is handled by the CLI itself.
+
+```
+npm install -g @openai/codex
+codex   # follow the login prompts
+```
+
+### Anthropic API
+
+Enter your API key from [console.anthropic.com](https://console.anthropic.com). Hit **Test connection** to fetch the live model list and pick one.
+
+### Gemini API
+
+Enter your API key from [aistudio.google.com](https://aistudio.google.com). Hit **Test connection** to see available models.
+
+### Gemini CLI
+
+Requires the [Gemini CLI](https://github.com/google-gemini/gemini-cli) to be installed and authenticated.
+
+### Ollama
+
+Point the Base URL at your Ollama instance (default: `http://localhost:11434`). Hit **Test connection** and your installed models will appear as chips below the model field. Click one to select it.
+
+### OpenAI
+
+Enter your API key from [platform.openai.com](https://platform.openai.com). The base URL defaults to `https://api.openai.com/v1` but can be changed for compatible local servers.
+
+### OpenRouter
+
+Enter your API key from [openrouter.ai](https://openrouter.ai). One key covers dozens of models from Anthropic, Google, Meta, Mistral, and others.
+
+---
+
+## Running workflows
+<img width="482" height="372" alt="image" src="https://github.com/user-attachments/assets/99e4d806-eef7-4de1-920d-287f93480e3c" />
+
+
+### Command palette
+
+Run **Writers Alembic: Run workflow** to open the picker. The freeform entry is always pinned at the top; your saved workflows follow. Fuzzy search works across all names.
+
+### Direct commands
+
+Every workflow is also registered as its own command: **Writers Alembic: [Workflow Name]**. Assign a hotkey to any workflow in Settings → Hotkeys for one-keystroke access.
+
+### Selection required
+
+Workflows whose prompt uses `{=SELECTION=}` require you to select text before running them. If nothing is selected, a flash message reminds you instead of running with empty input.
+
+### Where the output goes
+
+What happens with the AI's response depends on `replaceSelection` and whether you ran the workflow with text selected:
+
+- **Selection + `replaceSelection: true`** — the selected text is replaced with the output.
+- **No selection + `replaceSelection: true` + a prompt using `{=CONTEXT=}` (not `{=SELECTION=}`)** — Alembic treats this as a *full-note workflow* (like Lint or Add Structure) and replaces the entire document.
+- **No selection + `replaceSelection: false`** — the output is inserted at the cursor.
+
+### Canceling a run
+
+While a workflow is running, the notice in the corner has a **Cancel** button. Clicking it stops the in-flight request immediately.
+
+### Freeform (Ask Claude)
+
+Selecting **Ask Claude** from the picker opens a text box where you type a one-off instruction. The current note is always included as context. Use the **Humanize output** toggle to run the result through the Humanize workflow automatically.
+
+---
+
+## Built-in workflows
+
+| Workflow | What it does |
+|---|---|
+| **Ask Claude** | One-off prompt with full note context. Opens a text input at run time. |
+| **Lint** | Fixes spelling, grammar, punctuation, broken Markdown, and empty carriage returns. No rewrites. |
+| **Fix My Writing** | Corrects errors while preserving your voice, vocabulary, and tone. |
+| **Tighten This Up** | Cuts 20-40% of words without losing meaning. Targets throat-clearing, redundancy, and weak intensifiers. |
+| **Summarize** | Extracts the "so what", non-obvious insights, tensions, and what's missing. |
+| **Extract Action Items** | Pulls every task, commitment, and deadline into a Markdown checklist. |
+| **Add Structure** | Inserts headings and groups related content. Does not change any wording. |
+| **Expand This** | Develops a seed idea into a full piece with examples, stakes, and an open ending. |
+| **Continue Writing** | Continues your draft by matching your sentence rhythm, vocabulary, and tone exactly. |
+| **Devil's Advocate** | Challenges assumptions, finds counterevidence, and names the strongest opposing case. |
+| **Extract Key Terms** | Pulls domain-specific terms, proper nouns, and acronyms with context-specific definitions. |
+| **Convert to Table** | Converts structured text or lists into a Markdown table. |
+| **Humanize** | Strips AI writing patterns: removes cliches, overused vocabulary, em dashes, sycophantic openers, and soulless structure. Used automatically by workflows with "Humanize output" enabled. |
+| **Copywriting** | Writes conversion-focused marketing copy from a brief: headlines, subheadline, body, and CTA. Emphasises benefits over features and customer language over jargon. |
+| **Brainstorm** | Generates 8–12 diverse ideas from a seed topic or question, grouped loosely with "what if" reframes at the end. |
+| **Simplify** | Rewrites complex text so anyone can understand it on first read. Replaces jargon, shortens sentences, adds inline definitions. |
+| **Generate Questions** | Creates recall, understanding, and application questions from a note — useful for study or self-testing. |
+| **Make Outline** | Distills prose into a hierarchical Markdown outline that captures every key point. |
+| **Translate** | Translates selected text into English (auto-detects source language). Preserves formatting and tone. |
+| **Translate to Spanish** | Translates selected text into Spanish. Same rules as above. |
+| **Contextual Prompt** | Select an instruction inside your note and run it against the rest of the note as context. Useful for inline "do this" commands. |
+
+---
+
+## Workflow files
+
+Every workflow is stored as a plain Markdown file inside your **workflows folder** (default: `_alembic`). You can see and change the folder path at the top of the Workflows settings tab.
+
+The built-in workflows (the ones Alembic installs on first run) come from a `workflows/` folder in the plugin repo. They are bundled into the plugin at build time and written to your vault verbatim. You can read them, copy them, and edit them just like any other workflow file.
+
+A workflow file looks like this:
+
+```markdown
+---
+name: "✂️ Tighten This Up"
+id: "default-tighten"
+prompt: "{=SELECTION=}"
+replaceSelection: true
+humanize: true
+linkDepth: 1
+providerId: "default-claude-cli"
+---
+
+You are a ruthless copy editor. Your goal is maximum signal per word...
+```
+
+**Frontmatter fields:**
+
+| Field | Type | Description |
+|---|---|---|
+| `name` | string | Display name shown in the picker and command palette |
+| `id` | string | Unique identifier. Must not change after creation. |
+| `prompt` | string | The user message sent to the AI. Use tokens (see below). |
+| `replaceSelection` | boolean | `true` replaces the selected text — or the entire document if you ran without a selection and the prompt uses `{=CONTEXT=}`. `false` inserts at the cursor. See [[#Where the output goes]]. |
+| `humanize` | boolean | Runs a second Humanize pass on the output if `true` |
+| `linkDepth` | number (0–3) | How many levels of `[[wikilinks]]` to follow and include as context. Default: `1`. Set to `0` to disable. |
+| `providerId` | string | ID of the provider profile to use |
+
+**The file body** is the system prompt. Leave it blank for a basic assistant with no special instructions.
+
+---
+
+## Token placeholders
+
+Use these placeholders to inject live note content at run time. They substitute in **both** the `prompt` field and the file body (system prompt), so the system prompt can reference the same content the AI is about to see.
+
+| Token | Replaced with |
+|---|---|
+| `{=SELECTION=}` | The text currently selected in the editor |
+| `{=CONTEXT=}` | The full content of the current note |
+
+If you leave `prompt` blank, Alembic sends whatever is available: selected text first, then the full note.
+
+---
+
+## Link expansion (linkDepth)
+
+When `linkDepth` is set to 1 or higher, Alembic follows `[[wikilinks]]` in your note and includes the content of the linked notes as additional context sent to the AI. This gives the model a richer picture of related material without you having to copy-paste.
+
+Set it per workflow in **Settings → Writers Alembic → Workflows**: pick a workflow and use the **Link depth** dropdown in the detail panel. You can also set `linkDepth: 0–3` directly in the workflow file's frontmatter.
+
+- **0** — No expansion. Only the current note is sent.
+- **1** (default) — Includes notes linked directly from the current note.
+- **2–3** — Follows links recursively (links in linked notes, etc.). Useful for deeply interlinked knowledge bases but can produce large payloads.
+
+**How linked content gets injected:** each linked note is appended after the current note's content, separated by `---` and a `**Linked note: <basename>**` header. A note reachable via multiple paths is included only once per run, so cycles are safe.
+
+Link expansion reads files directly from your vault — no network calls, works offline. If the combined context exceeds ~100 KB, Alembic will show a confirmation prompt before sending.
+
+---
+
+## Creating a workflow
+
+**From settings:** click **+** in the Workflows sidebar. A new file called `New Workflow.md` is created in your workflows folder. Edit the frontmatter and body, hit Save, and the workflow is immediately available.
+
+**Directly in the vault:** create any `.md` file in your workflows folder with valid frontmatter (the `id` field is required and must be unique). Alembic picks it up automatically, no restart needed.
+
+---
+
+## Updating workflows
+
+Two buttons in **Settings → Writers Alembic → Workflows** help you stay current.
+
+**Reset to default** appears at the bottom of the detail panel for any built-in workflow. It overwrites that file with the prompt bundled in your installed version. Use it to undo edits you don't want to keep, or to pick up prompt improvements that shipped with a plugin update. Works offline.
+
+**↓ pull new workflows** sits at the bottom of the workflow list. It checks the plugin's GitHub repo and adds any workflows that don't already exist in your vault. It never touches files you already have, including ones you've edited. Requires an internet connection.
+
+Neither button affects workflows you've created yourself.
+
+---
+
+## Privacy & data flow
+
+Alembic is local-first. Nothing leaves your vault except the requests you configure, sent directly to the AI providers you set up — no telemetry, no analytics, no intermediate server.
+
+**Network requests made by the plugin:**
+
+- **AI provider calls.** When you run a workflow, the assembled prompt (selection / current note / `[[wikilink]]`-expanded notes per `linkDepth`) is sent to the provider configured on that workflow. HTTP-based providers (Anthropic, Gemini, OpenAI, OpenRouter, Ollama) are called directly from your machine; CLI providers (Claude CLI, Codex CLI, Gemini CLI) shell out to the local CLI binary.
+- **GitHub, opt-in.** Clicking **↓ pull new workflows** fetches the workflow template list from `api.github.com/repos/sedetweiler/obsidian-alembic/contents/workflows` and then downloads any new `.md` files from `raw.githubusercontent.com`. Nothing happens unless you click it.
+
+**Vault access:**
+
+- **Reads** the workflows folder (default `_alembic`), the active note you're operating on, and any notes reachable through `[[wikilinks]]` up to your configured `linkDepth`. To locate the workflows folder, Obsidian only exposes a full-vault file list, so Alembic enumerates it once on load and filters down to its own folder, it doesn't read files outside those paths.
+- **Writes** workflow `.md` files in your workflows folder (when you create, edit, reset to default, or pull new ones), and the active note (when a workflow's output is inserted at the cursor or replaces a selection / the whole document).
+
+**Shell execution:**
+
+- Automated plugin scanners flag Alembic for using `child_process` and warn that it has "full control over the system." That is the standard worst-case label for *any* plugin that can launch a local program, it describes the capability, not how Alembic uses it. In practice Alembic only spawns the specific CLI you configure (`claude`, `gemini`, or `codex`), with hardcoded arguments and no shell (`spawn` without `shell: true`). Your note content is passed to the CLI over stdin, never interpolated onto the command line so the plugin never runs commands derived from your notes or workflows.
+
+That's the full surface area.
+
+---
+
+## Sharing workflows
+
+Because workflows are just Markdown files, sharing is the same as sharing any note:
+
+- Drop a `.md` file into someone else's `_alembic` folder and it shows up immediately
+- Share them as Obsidian attachments, GitHub Gists, or Discord pastes
+- Version-control your whole `_alembic` folder in git
+- Submit a pull request to add it to the plugin defaults (see [[#Contributing workflows]])
+
+The only thing that won't transfer is the `providerId`. The recipient will need to update that field to match one of their own provider profiles, or it falls back to the first available provider automatically.
+
+---
+
+## Contributing workflows
+
+The built-in workflows ship from a `workflows/` folder at the root of the plugin repo. Each file is plain Markdown with YAML frontmatter. The build step reads them and bundles the content into the plugin.
+
+To add a new workflow to the defaults:
+
+1. Fork the repository
+2. Create a file in `workflows/` named after the workflow, e.g. `My Workflow.md`
+3. Add the frontmatter and write your system prompt as the file body
+4. Open a pull request
+
+The PR diff shows the prompt text directly. Reviewers can read it, suggest edits, and approve it the same way they would any other change. No compiled output to audit.
+
+**What makes a PR worth merging:**
+
+- **One job.** The best workflows have a clear input, a clear output, and no ambiguity about when to run them. If you can't describe it in one sentence, split it.
+- **A stable `id`.** Use something specific like `contrib-workflow-name`. The `id` must not change after a workflow ships, so get it right before the PR merges.
+- **`providerId: "default-claude-cli"`** for portability. Users can override it in their own copy. The default should work for anyone without extra setup.
+- **No preambles in the output.** Write the system prompt so the AI's only job is producing the deliverable. "Here is the result" and similar openers are bugs, not features.
+
+Not sure if something belongs in the defaults? Post it as a Gist or in [Discord](https://discord.com/invite/Y68Z7EJe9R) first. If people want it, then PR it.
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+## Tips
+
+- **Hotkeys are the fastest way to work.** Assign your most-used workflows in Settings → Hotkeys. Selecting text and hitting a key to fix it, tighten it, or expand it is faster than reaching for a menu.
+
+- **Lint before Humanize.** Run Lint first to fix mechanical errors, then Humanize to clean up the writing style. Both can be chained: enable "Humanize output" on any workflow to get both passes in one step.
+
+- **The Humanize workflow is for output only.** It runs as a second pass on AI-generated text. Running it directly on your own writing may over-edit your voice.
+
+- **Changing the workflows folder** renames the vault folder and moves all your files automatically. The new path takes effect immediately.
+
+- **Reload the plugin** to pick up new direct commands after adding workflow files. The workflow picker and settings panel update in real time, but the command palette requires a plugin reload.

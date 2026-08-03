@@ -1,0 +1,45 @@
+---
+id: tool-01949
+type: tool
+area: 库
+status: active
+tags: [Jupyter Notebook, 协议未明, 本地优先, 英文文档, 大纲规划, 多Agent, 本地写作, 灵感创意]
+title: -Vendor-Performance-Data-Analytics-project
+summary: 从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）
+source: https://github.com/yogeshr800/-vendor-performance-data-analytics-project
+created: 2026-07-18
+updated: 2026-07-18
+no: 1949
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: yogeshr800/-Vendor-Performance-Data-Analytics-project
+stars: 0
+url: https://github.com/yogeshr800/-vendor-performance-data-analytics-project
+tier: "C"
+use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续写/多Agent生产）"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# yogeshr800/-Vendor-Performance-Data-Analytics-project
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/yogeshr800/-vendor-performance-data-analytics-project
+- **Stars**：0
+- **语言**：Jupyter Notebook
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：I solve a real-world Vendor Performance Analysis project using SQL, Python, and Power BI just like in a real job. Perfect for your Data Analyst Portfolio, this project covers everything from understanding the business problem to building a dashboard and writing a report.
+- **本地描述**：I solve a real-world Vendor Performance Analysis project using SQL, Python, and Power BI just like in a real job. Perfect for your Data Analyst Portfolio, this project covers everything from understanding the business problem to building a dashboard and writing a report.
+- **拉取时间**：2026-07-23 23:35:49
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# -Vendor-Performance-Data-Analytics-project
+I solve a real-world Vendor Performance Analysis project using SQL, Python, and Power BI just like in a real job. Perfect for your Data Analyst Portfolio, this project covers everything from understanding the business problem to building a dashboard and writing a report.

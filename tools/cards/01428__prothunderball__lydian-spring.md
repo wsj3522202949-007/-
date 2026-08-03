@@ -1,0 +1,47 @@
+---
+id: tool-01428
+type: tool
+area: 库
+status: active
+tags: [文风迁移, 协议未明, 本地优先, 中文友好, 改稿润色, 本地写作]
+title: lydian-spring
+summary: 风格微调/文风迁移
+source: https://github.com/prothunderball/lydian-spring
+created: 2026-07-18
+updated: 2026-07-18
+no: 1428
+category: 二、网文 / 长篇 AI 写作系统 库
+repo: prothunderball/lydian-spring
+stars: 0
+url: https://github.com/prothunderball/lydian-spring
+tier: "C"
+use_case: "风格微调/文风迁移"
+pitfalls:
+  - "⚠️ 源仓库无 README，功能未经核验，建议先看作者的其他仓库或在线 demo"
+  - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+# prothunderball/lydian-spring
+
+- **分类**：二、网文 / 长篇 AI 写作系统 库
+- **链接**：https://github.com/prothunderball/lydian-spring
+- **Stars**：0
+- **语言**：None
+- **License**：None
+- **Topics**：—
+- **GitHub 描述**：Lydian Spring is an adventure game where the main character explores the area around her and uses objects she finds to construct tools, armor, and weapons to progress further in the game. The constructive nature of the the game has elements similar to Minecraft and Terraria, but this game will have more fixed areas of exploration and linear story. The game takes place in a futuristic semi-wasteland, with elements similar to Nausica of the Valley of the Winds - a central refuge surrounded on many sides by toxic danger. The main character works with her friends and neighbors to improve the environment around her village, increasing the area for cultivation and decreasing exposure to surrounding dangers. As the player explorers further beyond the village’s immediate boundaries, contact with outside forces and groups will influence the plot of the game.
+- **本地描述**：Lydian Spring is an adventure game where the main character explores the area around her and uses objects she finds to construct tools, armor, and weapons to progress further in the game. The constructive nature of the the game has elements similar to Minecraft and Terraria, but this game will have more fixed areas of exploration and linear story. The game takes place in a futuristic semi-wasteland, with elements similar to Nausica of the Valley of the Winds - a central refuge surrounded on many sides by toxic danger. The main character works with her friends and neighbors to improve the environment around her village, increasing the area for cultivation and decreasing exposure to surrounding dangers. As the player explorers further beyond the village’s immediate boundaries, contact with outside forces and groups will influence the plot of the game.
+- **拉取时间**：2026-07-23 23:20:44
+
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+related:
+  - methods/网文写作最强SOP.md
+  - methods/最强写作方法论_全球最强综合版.md
+---
+
+_该仓库无 README（默认分支 master 下未找到）_

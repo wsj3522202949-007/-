@@ -1,0 +1,120 @@
+---
+id: tool-07282
+type: tool
+area: 库
+status: active
+tags: [Claude插件, 协议宽松, 本地优先, 英文文档, 本地写作]
+title: atom-ink
+summary: Claude Code 插件式写作流
+source: https://github.com/h3y6e/atom-ink
+created: 2026-07-18
+updated: 2026-07-18
+no: 7282
+category: 画龙补充 / 扩容入库 — 补充源
+repo: h3y6e/atom-ink
+stars: 0
+url: https://github.com/h3y6e/atom-ink
+tier: "C"
+use_case: "Claude Code 插件式写作流"
+pitfalls:
+  - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
+related:
+  - methods/QUICK_START.md
+---
+
+# h3y6e/atom-ink
+
+- **分类**：画龙补充 / 扩容入库 — 补充源
+- **链接**：https://github.com/h3y6e/atom-ink
+- **Stars**：0
+- **语言**：None
+- **License**：MIT
+- **Topics**：—
+- **GitHub 描述**：IDE toolkit for Atom
+- **本地描述**：atom-ink
+- **拉取时间**：2026-07-25 19:16:33
+
+related:
+  - methods/QUICK_START.md
+---
+
+# Ink
+
+
+
+[![Build Status](https://travis-ci.org/JunoLab/atom-ink.svg?branch=master)](https://travis-ci.org/JunoLab/atom-ink) [![Chat](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/JunoLab/atom-ink)
+
+
+
+Ink is a toolkit for building IDEs in Atom – in particular, it's aimed at providing the UI
+
+pieces necessary to build richly interactive, live environments for programming – inspired
+
+by the likes of SmallTalk, Lisp, LightTable, DevTools, Swift, and others.
+
+
+
+Ink is currently used primarily from the
+
+[julia-client](https://github.com/JunoLab/atom-julia-client) plugin as an IDE for the
+
+Julia language, as well as the awesome [proto-repl](https://github.com/jasongilman/proto-repl) for Clojure. Although Ink is in an early state, people interested in
+
+getting it running with other languages are welcome to reach out.
+
+
+
+<div align="center"><img src="https://raw.githubusercontent.com/JunoLab/atom-ink/master/demos/full.gif" /></div>
+
+
+
+### Highlights
+
+
+
+*(These demos show off Ink as part of [Julia](https://github.com/JunoLab/atom-julia-client)
+
+since it's the most mature project using Ink, but there's nothing Julia-specific about
+
+Ink's design)*
+
+
+
+Evaluation of blocks and lines, with inline results, highlighting of the evaluated block,
+
+and loading indicators:
+
+
+
+<div align="center"><img src="https://raw.githubusercontent.com/JunoLab/atom-ink/master/demos/eval.gif" /></div>
+
+
+
+Smart tree views for complex results and data:
+
+
+
+<div align="center"><img src="https://raw.githubusercontent.com/JunoLab/atom-ink/master/demos/tree.gif" /></div>
+
+
+
+A rich console with the same support for results, as well as history, shell modes etc.:
+
+
+
+<div align="center"><img src="https://raw.githubusercontent.com/JunoLab/atom-ink/master/demos/console.gif" /></div>
+
+
+
+Smart errors with live links to files in the backtrace, as well as highlighting of those
+
+lines:
+
+
+
+<div align="center"><img src="https://raw.githubusercontent.com/JunoLab/atom-ink/master/demos/errors.gif" /></div>
+
+
+
+In future Ink will also support UIs for debugging (e.g. breakpoints), graphics (e.g. plotting panes), documentation (e.g. single-keystroke access to inline docs) and profiling/coverage results (e.g. inline "progress bars" and metrics overlaid with the code).
+
