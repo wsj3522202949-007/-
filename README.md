@@ -3,12 +3,12 @@ id: idx-vault-root
 type: index
 area: 索引
 status: active
-tags: [vault, 总入口, 目录冻结]
-title: 知识库总说明书（vault 唯一前门）
-summary: vault 根级机器可读说明书——长期主题、活跃项目、8 目录冻结职责、30 秒速查、迁移状态。
+tags: [vault, 首页, 工作台, 任务中心, 导航]
+title: 工作台 · 个人知识库首页（任务中心）
+summary: 任务中心化首页——创作/问题/工具/维护四大入口，静态导航零依赖，装 Dataview 后自动显示项目状态与统计。
 source: 内部制定
 created: 2026-07-31
-updated: 2026-08-02
+updated: 2026-08-04
 related:
   - schema/维护标准.md
   - schema/正文生命周期规范.md
@@ -18,192 +18,166 @@ see_also:
   - schema/链接规范.md
 ---
 
-# 知识库总说明书（vault 唯一前门）
+# 工作台 · 个人知识库首页
 
-> 本文件是 vault 根级的**机器可读说明书**。回答三个问题：**我在长期做什么、现在在写哪本书、卡住时去哪查**。
-> 顶层目录职责已**冻结**（见 [冻结书](archive/迁移计划-顶层目录职责冻结.md)），新增内容只能进对应目录。
-
----
-
-## 一、长期主题
-
-**一句话**：用一套可复用的「方法论 + AI 工具 + 合规骨架」工程化地持续生产长篇网文（目标 300 万字 / 单本）。
-
-三条长期主线，互为支撑：
-
-| 主线 | 是什么 | 入口 |
-|---|---|---|
-| ✍️ **创作主线** | 每本一个合规项目目录（当前无活跃项目） | [项目目录](projects/README.md) |
-| 📚 **方法论主线** | 从 50 份作家方法论 + 外部 Skill 蒸馏成的"照着做"网文创作系统（约 41 万字 / 115 文件） | [方法论导览](methods/导览.md) |
-| 🛠️ **工具主线** | 3574 篇 AI 写作工具情报卡，可检索可筛选，按任务/约束选型 | [工具情报网](tools/README.md) |
+> **想做什么，点对应的入口。任务优先，不绕目录。**
+> 本页所有导航都是**纯静态链接**，不装任何插件也能用；装了 **Dataview** 会自动显示项目状态、统计与最近变更（见底部「动态概览」）。
+> 高频任务**最多三次点击**到达：本页 → 入口 → 具体动作。
 
 ---
 
-## 二、活跃项目
+## ⚡ 今日工作 / 下一步动作
 
-| 书名 | 角色 | 题材 / 平台 | 当前阶段 | 进度 | 入口 |
-|---|---|---|---|---|---|
+> 高频动作直接放这里，点一下就干活。
 
-> 当前无活跃项目
+- [▶ 写下一章 · （已删除项目）（第11章）](ai/workflows/章节生产.md) → [当前章：第011章 初入投资圈](projects/（已删除项目）/chapters/第011章-初入投资圈.md)
+- [✎ 修改章节 · （已删除项目）](ai/workflows/改稿流程.md)
+- [▶ 写下一章 · 小说创作（章节5-10）](projects/小说创作/章节5-10.md)
+- [▶ 写下一章 · （已删除项目）（第3章）](projects/（已删除项目）/chapters/第003章-第一桶金.md)
+- [🧪 前三章体检 · （已删除项目）](methods/templates/02_前3章签约体检表.md)
+- [✅ 跑全库校验](tools/scripts/validation/run_all.py)
 
 ---
 
-## 三、冻结的顶层目录结构
+## 📚 当前活跃项目
 
-> 以下 8 个目录 + 本文件一经冻结，**不得新增、不得拆分、不得合并**。新增内容只能进对应目录。
-
-| 目录 | 职责（一句话） | 当前内容 | 禁止放入 |
+| 项目 | 类型 / 平台 | 进度 | 入口 |
 |---|---|---|---|
-| `schema/` | 规范与契约 | 10 个规范文件 | 脚本、正文、工具卡 |
-| `projects/` | 所有项目 | 当前无项目 | 方法论、工具卡、草稿（→drafts/） |
-| `knowledge/` | 结构化知识实体 | craft/ 20篇 · genres/ 29篇 · platforms/ 8篇 · 中国网文/ 4篇 | 可执行 SOP、模板、工具卡 |
-| `drafts/` | 写作中草稿 | inbox/ journal/ projects/ scratch/ | 已校验最终稿、归档 |
-| `archive/` | 归档 | 项目骨架模板-旧版/ | 活跃项目内容、常用参考资料 |
-| `references/` | 参考资料与外部素材 | 49 篇指南 + Skill 蒸馏 + 原始调研 + 原始来源包 | 自创的方法论、项目正文 |
-| `methods/` | 可复用的方法论 | 18 篇 + templates/ 15 篇 + 项目骨架模板/ | 知识实体、工具卡 |
-| `tools/` | 工具说明、选型与脚本 | cards/ 3574 卡 + 分类导航/ 21 MOC + scripts/ | 方法论正文、项目正文 |
+| [（已删除项目）](projects/（已删除项目）/README.md) | 男频 · 都市重生+系统流 · 番茄 | 6%（第11章 / 约1.9万字） | [README](projects/（已删除项目）/README.md) · [STATUS](projects/（已删除项目）/STATUS.md) · [当前章](projects/（已删除项目）/chapters/第011章-初入投资圈.md) |
+| [小说创作](projects/小说创作/README.md) | 日常写作练习 | 构思中 | [README](projects/小说创作/README.md) · [选题](projects/小说创作/选题分析.md) · [大纲](projects/小说创作/大纲.md) · [成稿](projects/小说创作/章节5-10.md) |
+| [（已删除项目）](projects/（已删除项目）/README.md) | 男频 · 都市脑洞 · 番茄 | 第3章 | [README](projects/（已删除项目）/README.md) · [第003章](projects/（已删除项目）/chapters/第003章-第一桶金.md) |
 
-**正文生命周期**：`drafts/`（写作中）→ `projects/*/chapters/`（已校验生产）→ `archive/`（归档保留）。详见 [正文生命周期规范](schema/正文生命周期规范.md)。
-
-**项目标准结构**：每个项目根级只有 4 文件 + 2 目录（README / STATUS / framework / outline + chapters/ + entities/）。详见 [项目结构规范](schema/项目结构规范.md)。
+> 完整项目清单见 [projects/README.md](projects/README.md)。（【示范】神瞳鉴宝 / 重逢有期 / （已删除项目） 为模板示范，非活跃创作。）
 
 ---
 
-## 四、30 秒速查（想做 X → 去 Y）
+## 🖊️ 当前章节
+
+- **（已删除项目）** → [第011章 初入投资圈](projects/（已删除项目）/chapters/第011章-初入投资圈.md)
+- **小说创作** → [章节5-10（最新成稿）](projects/小说创作/章节5-10.md)
+- **（已删除项目）** → [第003章 第一桶金](projects/（已删除项目）/chapters/第003章-第一桶金.md)
+
+---
+
+## 🚀 创作入口
+
+| 我要… | 主入口 | 配套 |
+|---|---|---|
+| **开新书** | [项目骨架模板](methods/项目骨架模板/README.md) | [新书启动工作流](ai/workflows/新书启动.md) · [0→首秀清单](methods/templates/07_新书0到首秀启动清单.md) |
+| **写下一章** | [章节生产工作流](ai/workflows/章节生产.md) | [正文章节模板](ai/templates/正文章节模板.md) · [网文写作最强SOP](methods/网文写作最强SOP.md) |
+| **修改章节** | [改稿流程](ai/workflows/改稿流程.md) | [最强去AI味铁律](methods/最强去AI味铁律.md) · [正文校验](ai/validation/正文校验.md) |
+| **前三章体检** | [前3章签约体检表](methods/templates/02_前3章签约体检表.md) | [签约体检工作流](ai/workflows/签约体检.md) · [已填示范](methods/templates/已填示范/【示范】重逢有期/前3章签约体检表_已填.md) |
+| **连载数据复盘** | [连载专项体检卡](methods/templates/11_连载专项体检卡.md) | [数据化复盘](knowledge/craft/数据化复盘.md) · [数据复盘体系](methods/skill_parts/16_数据复盘体系.md) |
+
+---
+
+## 🆘 问题入口（哪卡住点哪）
+
+| 症状 | 去这里 |
+|---|---|
+| **卡文** | [卡文急救](knowledge/craft/卡文急救.md) |
+| **人物扁平** | [人物思维蒸馏法](methods/人物思维蒸馏法.md) · [人物弧光](knowledge/craft/人物弧光.md) |
+| **节奏慢** | [节奏与留白](knowledge/craft/节奏与留白.md) |
+| **爽点不足** | [爽点与情绪曲线](knowledge/craft/爽点与情绪曲线.md) |
+| **AI 味** | [最强去AI味铁律](methods/最强去AI味铁律.md) · [去AI味提示词](ai/prompts/去AI味.md) |
+| **章末无钩子** | [开篇与钩子设计](knowledge/craft/开篇与钩子设计.md) · [钩子选用速查表](methods/templates/03_钩子选用速查表.md) |
+
+> 按症状一站式查方法论武器见 [QUICK_START](methods/QUICK_START.md)。
+
+---
+
+## 🧰 工具入口（三层）
+
+### ① 推荐层 · S/A 级精选（257 篇，人工维护，日常首选）
+- [工具卡推荐层](tools/推荐层/README.md) — 按任务/平台/成本给你首选、本地方案、免费方案、中文友好方案。
+
+### ② 检索层 · 全 3572 张工具卡
+- [工具检索层](tools/检索层/README.md) · [按任务找工具](tools/按任务找工具.md) · [工具选型矩阵](tools/工具选型矩阵.md) · [任务选型速查](tools/任务选型速查.md)
+
+### ③ 数据层 · 原始卡片（非日常入口）
+- [工具情报网（全部 3572 卡）](tools/README.md) — 原始卡片目录，**日常请用上面两层**，数据层仅在高级检索/补全时用。
+
+---
+
+## 🔧 维护入口
+
+| 我要… | 去这里 |
+|---|---|
+| **全库校验** | [run_all.py（一次跑完）](tools/scripts/validation/run_all.py) · [校验脚本](tools/scripts/validation/校验脚本.py) |
+| **断链报告** | [链接体检与修复](tools/scripts/validation/_run_link_fixed.py) — 运行后输出断链清单 |
+| **待整理文件** | [收件箱 drafts/inbox](drafts/README.md) — 待分类内容集中地 |
+| **最近变更** | [周度健康报告](tools/reports/README.md) — 自动生成的校验/清理记录 |
+| **备份状态** | [灾备策略](maintenance/灾备策略.md) · [Git 备份配置](maintenance/Git备份配置.md) |
+
+---
+
+## 📊 动态概览（启用 Dataview 后自动显示）
+
+> 以下为 Dataview 动态查询。**未安装 Dataview 时，上面「当前活跃项目 / 当前章节 / 维护入口」已完全够用**，这些块仅显示为代码，不影响导航。
+
+**当前活跃项目（自动列出）**
+```dataview
+LIST FROM "projects" WHERE type = "project" SORT file.name ASC
+```
+
+**最近变更（最近修改的 15 个文件）**
+```dataview
+LIST FROM "projects" OR "methods" OR "knowledge" OR "tools" OR "schema"
+SORT file.mtime DESC LIMIT 15
+```
+
+**最近校验结果**：脚本产物（非笔记元数据），请运行 [run_all.py](tools/scripts/validation/run_all.py) 获取；最近一次：PASS（0 ERROR / 0 WARN，2026-08-04）。
+
+**本周字数目标**：填写与追踪在 [目标级联系统](goals/README.md)（vision → yearly → monthly → weekly → daily）；各书总目标见其 [STATUS](projects/（已删除项目）/STATUS.md)。
+
+---
+
+## 🗺️ 结构参考（备查，非日常入口）
+
+> 顶层目录职责以 [知识库宪法](schema/知识库宪法.md) 为准，结构稳定、不随意增删。新增内容按职责归入对应目录（共 11 个顶层目录）。
+
+| 目录 | 职责（一句话） |
+|---|---|
+| `schema/` | 规范与契约 |
+| `projects/` | 所有项目（每书一目录） |
+| `knowledge/` | 结构化知识实体（craft / genres / platforms / 中国网文） |
+| `methods/` | 可复用方法论 + 模板 |
+| `tools/` | 工具说明、选型与脚本（cards / 推荐层 / 检索层） |
+| `ai/` | AI 专用资源（提示词 / 工作流 / 模板） |
+| `drafts/` | 写作中草稿（inbox / journal / projects / scratch） |
+| `goals/` | 目标级联系统 |
+| `references/` | 参考资料与外部素材 |
+| `maintenance/` | 维护入口、复盘与周期整理 |
+| `archive/` | 归档 |
+
+完整职责表、正文生命周期、项目标准结构见 [知识库宪法](schema/知识库宪法.md)。
+
+---
+
+## 📖 速查（想做 X → 去 Y）
 
 | 我现在想… | 直接去 |
 |---|---|
-| 按症状找方法论武器 | [QUICK_START](methods/QUICK_START.md) |
-| 学去 AI 味 / 改稿 | [最强去AI味铁律](methods/最强去AI味铁律.md) |
-| 搭大纲 / 人物 / 开篇 | [网文写作最强SOP](methods/网文写作最强SOP.md) + [模板库](methods/模板库.md) |
-| 看平台红线 | [平台差异手册](methods/平台差异手册.md) |
-| 找 / 对比 AI 写作工具 | [工具选型指南](tools/工具选型指南.md) · [任务选型速查](tools/任务选型速查.md) |
-| 深读实战指南 / 溯源 | [参考素材入口](references/README.md) |
-| 把 Word / 原稿入库成项目 | [原稿转创作知识库-SOP](methods/原稿转创作知识库-SOP.md) |
 | 新建一本书 | [项目骨架模板](methods/项目骨架模板/README.md) |
+| 搭大纲 / 人物 / 开篇 | [网文写作最强SOP](methods/网文写作最强SOP.md) |
+| 学去 AI 味 / 改稿 | [最强去AI味铁律](methods/最强去AI味铁律.md) |
+| 按症状找方法论武器 | [QUICK_START](methods/QUICK_START.md) |
+| 看平台红线 | [平台差异手册](methods/平台差异手册.md) |
+| 找 / 对比 AI 写作工具 | [工具选型指南](tools/工具选型指南.md) |
+| 把 Word / 原稿入库成项目 | [原稿转创作知识库-SOP](methods/原稿转创作知识库-SOP.md) |
 | 防知识库变乱 / 跑门禁 | [维护标准](schema/维护标准.md) → [校验脚本](tools/scripts/validation/校验脚本.py) |
-
----
-
-## 五、迁移状态
-
-> vault 已从「`小说/` 包裹式」迁移到「8 目录扁平式」。`小说/` 目录已删除，内容全部进入 8 目录。
-
-| 阶段 | 状态 | 说明 |
-|---|---|---|
-| Phase 0：创建骨架 | ✅ 完成 | 8 目录 + 本文件 |
-| Phase 1：移动空目录 | ✅ 完成 | 收件箱/日记/资料 → drafts/ |
-| Phase 2：archive → references | ✅ 完成 | 49 篇指南 + Skill 蒸馏 → references/ |
-| Phase 3：库/ → tools/ | ✅ 完成 | 3604 工具卡 → tools/cards/ |
-| Phase 4：projects/ 重构 | ✅ 完成 | 项目移至根级 projects/ |
-| Phase 5：methods/ 拆分 | ✅ 完成 | craft/genres/platforms → knowledge/；SOP/模板 → methods/ |
-| Phase 6：维护/ → schema/ + tools/ | ✅ 完成 | 规范文件 → schema/；脚本 → tools/scripts/validation/ |
-| Phase 7：合并 README | ✅ 完成 | 三合一 → 本文件 |
-| Phase 8：全库链接重写 | ✅ 完成 | 59 文件 127 处路径更新 |
-| Phase 9：验证 | ✅ 通过 | ERROR=0 + WARN=0（校验脚本 PASS） |
-
-完整迁移计划见 [迁移计划-顶层目录职责冻结](archive/迁移计划-顶层目录职责冻结.md)。
-
----
-
-## 六、维护说明
-
-- **编码**：全库 `.md` 统一 UTF-8 without BOM（已校验）。
-- **frontmatter**：所有笔记层文件已补齐 10 通用字段（id/type/area/status/tags/title/summary/source/created/updated），工具卡 3604 篇全部补齐，0 缺失。规范见 [frontmatter 规范](schema/frontmatter规范.md)。
-- **链接**：已废除 `[[wikilink]]` 作为唯一引用方式，改用标准 markdown 链接 + `related`/`see_also` 字段，规范见 [链接规范](schema/链接规范.md)。
-- **提交前门禁**：动到带 frontmatter 的笔记后，跑 [校验脚本](tools/scripts/validation/校验脚本.py)，ERROR=0 再提交。当前状态：**PASS ✅（0 ERROR, 0 WARN）**。
-
----
-
-## 七、新增系统（2026-08-02 优化）
-
-### 7.1 目标级联系统
-
-**目录**：`goals/`
-
-**级联结构**：
-```
-3年愿景 (vision.md)
-    ↓
-年度目标 (yearly/)
-    ↓
-月度目标 (monthly/)
-    ↓
-周回顾 (weekly/)
-    ↓
-日任务 (daily/)
-```
-
-**快速导航**：
-| 我想做什么 | 直接去 |
-|---|---|
 | 设定长期愿景 | `goals/vision.md` |
-| 制定年度目标 | `goals/yearly/YYYY.md` |
-| 分解月度目标 | `goals/monthly/YYYY-MM.md` |
 | 执行周回顾 | `goals/weekly/YYYY-Www.md` |
-| 记录日任务 | `goals/daily/YYYY-MM-DD.md` |
-| 学习目标管理 | `goals/GUIDE.md` |
-
-### 7.2 技能系统
-
-**目录**：`ai/skills/`
-
-**技能列表**：
-| 技能 | 调用方式 | 用途 |
-|---|---|---|
-| `/daily` | 创建日记 | 每日写作进度跟踪 |
-| `/weekly` | 周回顾 | 回顾本周成果 |
-| `/write` | 写正文 | 生成正文内容 |
-| `/revise` | 改稿 | 改稿润色 |
-| `/check` | 自检 | 自动检查内容 |
-| `/project` | 新建项目 | 一键生成项目骨架 |
-
-**使用方法**：在 AI 对话中直接输入技能名称。
-
-### 7.3 代理系统
-
-**目录**：`ai/agents/`
-
-**代理列表**：
-| 代理 | 用途 | 触发方式 |
-|---|---|---|
-| note-organizer | 整理笔记、修复链接 | 手动/定期 |
-| weekly-reviewer | 引导周回顾 | 每周一次 |
-| goal-aligner | 检查目标对齐 | 每月一次 |
-| inbox-processor | GTD 式收件箱处理 | 每日一次 |
-
-**使用方法**：在 AI 对话中输入代理名称。
-
-### 7.4 定期维护工作流
-
-**目录**：`ai/maintenance/`
-
-**维护任务**：
-| 任务 | 用途 | 执行时间 |
-|---|---|---|
-| 收件箱处理 | 整理未分类内容 | 每日晚上 |
-| 周回顾 | 回顾本周成果 | 每周日晚上 |
-| 笔记整理 | 整理笔记、修复链接 | 每周六上午 |
-| 月回顾 | 回顾本月成果 | 每月最后一天 |
-
-**使用方法**：在 AI 对话中输入维护任务名称。
-
-### 7.5 Dataview 动态视图
-
-**目录**：`tools/Dataview索引.md`、`methods/Dataview索引.md`
-
-**视图列表**：
-| 视图 | 用途 |
-|---|---|
-| 工具选型矩阵 | 按评级筛选工具 |
-| 按任务找工具 | 按任务筛选工具 |
-| 方法论速查 | 查询方法论 |
-| 目标进度 | 查询目标进度 |
-
-**使用方法**：在 Obsidian 中打开索引文件，直接查看动态视图。
 
 ---
 
-> 本文件是 vault 根级的机器可读说明书。详细规范见对应链接。
-#   -  
- 
+## 🤖 其他入口
+
+- **新手**：[新手入门](maintenance/新手入门.md) — 从零开始的完整指南
+- **AI 用户**：[ai/入口.md](ai/入口.md) — AI 技能、代理、工作流
+- **维护者**：[维护入口](maintenance/入口.md) — 校验、清理、备份全指南
+- **规范总览**：[知识库宪法](schema/知识库宪法.md) · [frontmatter 规范](schema/frontmatter规范.md) · [链接规范](schema/链接规范.md)
+
+---
+
+> 本文件是 vault 根级的任务中心首页。详细规范见对应链接。

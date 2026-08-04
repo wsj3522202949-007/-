@@ -152,7 +152,7 @@ see_also:
 - **总文件数**：4517
 - **有 frontmatter**：4003（88.6%）
 - **无 frontmatter**：514（11.4%，主要是 references/原始来源包/）
-- **类型分布**：3588 tool + 160 ref + 21 moc + 19 index + 12 guide + 11 template + ...
+- **类型分布**：3572 tool + 160 ref + 21 moc + 19 index + 12 guide + 11 template + ...
 - **标签分布**：22 个受控标签，支持多维度筛选
 
 ### 4.2 优化效果

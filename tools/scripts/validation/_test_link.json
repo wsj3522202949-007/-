@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-08-04T12:00:00",
+  "root": "e:\\个人知识库",
+  "fix_mode": false,
+  "zones": {
+    "core": {
+      "errors": [],
+      "warns": [],
+      "error_count": 0,
+      "warn_count": 0,
+      "pass": true
+    }
+  },
+  "summary": {
+    "total_errors": 0,
+    "total_warns": 0,
+    "pass": true
+  }
+}

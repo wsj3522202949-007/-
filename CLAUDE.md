@@ -74,9 +74,11 @@ E:\个人知识库\
 ├── knowledge/             # 结构化知识实体（63 文件）
 ├── ai/                    # AI 专用资源（26 文件）
 ├── tools/                 # 工具说明与脚本（3641 文件）
-├── projects/              # 项目目录（当前无活跃项目）
+├── projects/              # 项目目录（活跃项目见 README「当前项目」）
 ├── drafts/                # 写作中草稿
+├── goals/                 # 目标级联系统
 ├── references/            # 参考资料（916 文件）
+├── maintenance/           # 维护入口与周期整理
 └── archive/               # 归档
 ```
 
