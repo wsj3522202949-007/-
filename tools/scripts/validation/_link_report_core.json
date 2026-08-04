@@ -1,0 +1,7 @@
+﻿python : ============================================================
+At line:1 char:897
++ ... } catch {}; python "e:\个人知识库\tools\scripts\validation\_run_link_fixed ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (===============...===============:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

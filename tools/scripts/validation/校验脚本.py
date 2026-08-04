@@ -32,6 +32,18 @@ F. 正文层 frontmatter 强制
    - type 必须为 chapter（平键）或 type/chapter（旧格式，WARN）
 G. 通用字段缺失检查（过渡期 WARN）
    - 所有带 frontmatter 的文件检查 id/title/summary/created/updated 是否存在
+H. 重复 ID 检查
+   - 所有 frontmatter id 必须唯一
+I. 重复标题检查
+   - 所有 frontmatter title 必须唯一
+J. 项目结构漂移检查
+   - projects/ 目录必须符合标准结构（chapters/ + entities/）
+K. README 统计过期检查
+   - README.md 中的统计信息（工具卡数量、目录数量等）必须与实际一致
+L. 旧绝对路径检查
+   - 检查是否使用旧绝对路径（如 C:\Users\... 或旧 e:\路径）
+M. 孤立核心笔记检查
+   - schema/、methods/ 中的笔记必须有反向链接
 
 退出码: 0 = 无 ERROR（可提交）; 1 = 存在 ERROR（阻断提交）。
 WARN 不阻断，仅提示。
@@ -47,6 +59,7 @@ import os
 import re
 import sys
 import json
+import tempfile
 
 # ---------------------------------------------------------------------------
 # 契约常量（与《库/标签规范.md》锁死）
@@ -541,14 +554,25 @@ def main():
     args = sys.argv[1:]
     root = None
     as_json = False
-    for a in args:
+    as_json_file = None
+    i = 0
+    while i < len(args):
+        a = args[i]
         if a == "--json":
             as_json = True
+        elif a.startswith("--json-file="):
+            as_json = True
+            as_json_file = a.split("=", 1)[1]
+        elif a == "--json-file" and i + 1 < len(args):
+            as_json = True
+            as_json_file = args[i + 1]
+            i += 1
         elif a == "--root":
-            i = args.index(a)
             root = args[i + 1]
+            i += 1
         elif a.startswith("--root="):
             root = a.split("=", 1)[1]
+        i += 1
     if root is None:
         # 脚本位于 tools/scripts/validation/校验脚本.py，根为父目录的父目录的父目录的父目录
         root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
@@ -593,7 +617,13 @@ def main():
             "warn_count": len(WARNS),
             "pass": len(ERRORS) == 0,
         }
-        sys.stdout.write("\n" + json.dumps(out, ensure_ascii=False, indent=2) + "\n")
+        json_str = "\n" + json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+        # 输出 JSON 到临时文件，避免 PowerShell 重定向问题
+        if as_json_file:
+            with open(as_json_file, 'w', encoding='utf-8') as f:
+                f.write(json_str)
+        else:
+            sys.stdout.write(json_str)
 
     return 1 if ERRORS else 0
 
