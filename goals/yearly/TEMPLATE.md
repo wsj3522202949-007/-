@@ -103,18 +103,18 @@ see_also:
 
 | 月份 | 目标 | 入口 |
 |---|---|---|
-| 1月 | 目标 | [1月目标](../monthly/YYYY-01.md) |
-| 2月 | 目标 | [2月目标](../monthly/YYYY-02.md) |
-| 3月 | 目标 | [3月目标](../monthly/YYYY-03.md) |
-| 4月 | 目标 | [4月目标](../monthly/YYYY-04.md) |
-| 5月 | 目标 | [5月目标](../monthly/YYYY-05.md) |
-| 6月 | 目标 | [6月目标](../monthly/YYYY-06.md) |
-| 7月 | 目标 | [7月目标](../monthly/YYYY-07.md) |
-| 8月 | 目标 | [8月目标](../monthly/YYYY-08.md) |
-| 9月 | 目标 | [9月目标](../monthly/YYYY-09.md) |
-| 10月 | 目标 | [10月目标](../monthly/YYYY-10.md) |
-| 11月 | 目标 | [11月目标](../monthly/YYYY-11.md) |
-| 12月 | 目标 | [12月目标](../monthly/YYYY-12.md) |
+| 1月 | 目标 | `[1月目标](../monthly/YYYY-01.md)` |
+| 2月 | 目标 | `[2月目标](../monthly/YYYY-02.md)` |
+| 3月 | 目标 | `[3月目标](../monthly/YYYY-03.md)` |
+| 4月 | 目标 | `[4月目标](../monthly/YYYY-04.md)` |
+| 5月 | 目标 | `[5月目标](../monthly/YYYY-05.md)` |
+| 6月 | 目标 | `[6月目标](../monthly/YYYY-06.md)` |
+| 7月 | 目标 | `[7月目标](../monthly/YYYY-07.md)` |
+| 8月 | 目标 | `[8月目标](../monthly/YYYY-08.md)` |
+| 9月 | 目标 | `[9月目标](../monthly/YYYY-09.md)` |
+| 10月 | 目标 | `[10月目标](../monthly/YYYY-10.md)` |
+| 11月 | 目标 | `[11月目标](../monthly/YYYY-11.md)` |
+| 12月 | 目标 | `[12月目标](../monthly/YYYY-12.md)` |
 
 ---
 
