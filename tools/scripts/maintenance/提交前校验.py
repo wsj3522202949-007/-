@@ -36,6 +36,8 @@ r"""
     python tools/scripts/maintenance/提交前校验.py                 # 人类可读报告
     python tools/scripts/maintenance/提交前校验.py --json          # 机器可读 JSON
     python tools/scripts/maintenance/提交前校验.py --fix           # 自动修复可修复的问题
+    python tools/scripts/maintenance/提交前校验.py --core-only     # 仅校验核心区（projects/ methods/ schema/ maintenance/）
+    python tools/scripts/maintenance/提交前校验.py --exclude tools/cards --exclude references  # 排除指定目录
 """
 
 import os
@@ -50,6 +52,21 @@ from datetime import datetime
 # ---------------------------------------------------------------------------
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 PROJECTS_DIR = os.path.join(ROOT_DIR, "projects")
+
+# 核心校验目录
+CORE_DIRS = {"projects", "methods", "schema", "maintenance"}
+
+# 排除目录
+EXCLUDE_DIRS = {
+    "tools/cards",
+    "references",
+    "archive",
+    "__pycache__",
+    ".git",
+    "node_modules",
+    ".vscode",
+    ".idea"
+}
 
 # 受控的 frontmatter 字段取值
 VALID_TYPES = {
@@ -70,12 +87,25 @@ FRONTMATTER_PATTERN = re.compile(r'^---\s*\n(.*?)\n---\s*\n', re.DOTALL)
 FIELD_PATTERN = re.compile(r'^(\w+):\s*(.+)$', re.MULTILINE)
 
 
-def find_markdown_files(root_dir):
+def find_markdown_files(root_dir, core_only=False):
     """查找所有 Markdown 文件"""
     md_files = []
     for dirpath, dirnames, filenames in os.walk(root_dir):
+        rel_dir = os.path.relpath(dirpath, root_dir)
+        
         # 跳过隐藏目录
         dirnames[:] = [d for d in dirnames if not d.startswith('.')]
+        
+        # 排除目录
+        if any(rel_dir == d or rel_dir.startswith(d + os.sep) for d in EXCLUDE_DIRS):
+            continue
+        
+        # 核心区过滤
+        if core_only:
+            # 只保留核心目录及其子目录
+            if rel_dir != '' and not any(rel_dir == d or rel_dir.startswith(d + os.sep) for d in CORE_DIRS):
+                continue
+        
         for filename in filenames:
             if filename.endswith('.md'):
                 md_files.append(os.path.join(dirpath, filename))
@@ -358,18 +388,20 @@ def check_duplicates(files):
     return errors, warns
 
 
-def run_checks(root_dir, fix=False):
+def run_checks(root_dir, fix=False, core_only=False):
     """运行所有检查"""
     all_errors = []
     all_warns = []
 
     print("🔍 开始核心校验...")
     print(f"   根目录: {root_dir}")
+    if core_only:
+        print("   模式：仅核心区（projects/ methods/ schema/ maintenance/）")
     print()
 
     # 查找所有 Markdown 文件
     print("📁 扫描 Markdown 文件...")
-    files = find_markdown_files(root_dir)
+    files = find_markdown_files(root_dir, core_only=core_only)
     print(f"   找到 {len(files)} 个文件")
     print()
 
@@ -427,9 +459,10 @@ def main():
     # 解析参数
     json_output = "--json" in args
     fix_mode = "--fix" in args
+    core_only = "--core-only" in args
 
     # 运行检查
-    errors, warns = run_checks(ROOT_DIR, fix=fix_mode)
+    errors, warns = run_checks(ROOT_DIR, fix=fix_mode, core_only=core_only)
 
     # 输出结果
     if json_output:
