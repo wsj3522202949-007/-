@@ -32,7 +32,7 @@ from collections import defaultdict
 # 配置
 # ---------------------------------------------------------------------------
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-REPORTS_DIR = os.path.join(ROOT_DIR, "reports")
+REPORTS_DIR = os.path.join(ROOT_DIR, "maintenance", "reports")
 
 # 确保报告目录存在
 os.makedirs(REPORTS_DIR, exist_ok=True)
@@ -410,6 +410,26 @@ python tools/scripts/maintenance/季度清理.py --execute
 > 本报告由季度深度清理脚本自动生成
 > 最后更新时间：{report_date}
 """
+
+    # 添加 frontmatter
+    report_date_str = datetime.now().strftime("%Y-%m-%d")
+    quarter = (datetime.now().month - 1) // 3 + 1
+    report_quarter_str = f"{datetime.now().year}-Q{quarter}"
+    frontmatter = f"""---
+id: auto-quarterly-cleanup-{report_quarter_str}
+type: report
+area: 管理
+status: archived
+tags: [auto-generated]
+title: quarterly-cleanup-{report_quarter_str}
+summary: 自动生成的季度深度清理报告。
+source: 自动生成
+created: {report_date_str}
+updated: {report_date_str}
+---
+
+"""
+    report_content = frontmatter + report_content
 
     # 保存报告
     # 计算季度

@@ -43,7 +43,7 @@ updated: 2026-07-30
 - ❌ `[[E:/projects/…/林晚星]]`（绝对路径）——脚本判断链，Obsidian 也不认。
 - ✅ `[林晚星](projects/你的书名/人物/林晚星.md)`（标准 markdown 链接，相对路径）——AI/RAG/Obsidian 都认。
 
-> **规则：文档间引用一律用标准 markdown 链接 `[显示文本](相对路径.md)`。结构性关联用 frontmatter `related`/`see_also` 字段。** 详见 [链接规范](schema/链接规范.md)。
+> **规则：文档间引用一律用标准 markdown 链接 `[显示文本](相对路径.md)`。结构性关联用 frontmatter `related`/`see_also` 字段。** 详见 [链接规范](../schema/链接规范.md)。
 
 **现网 bug（顺手修）**：示范项目 `README.md` 里的回总地图链接实际指向**自己**（同目录 README），应改为 `[🗺️ 知识库总地图](../../README.md)` 才回得到总地图（从 `projects/你的书名/` 上跳两级到 vault 根）。
 

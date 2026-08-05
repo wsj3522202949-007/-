@@ -26,9 +26,9 @@ related:
 
 | 报告 | 说明 | 生成时间 |
 |---|---|---|
-| [周度健康报告 2026-08-04](weekly-health-2026-08-04.md) | 每周健康检查 | 2026-08-04 |
-| [月度清理 2026-08](monthly-cleanup-2026-08.md) | 每月清理检查 | 2026-08 |
-| [季度清理 2026-Q3](quarterly-cleanup-2026-Q3.md) | 季度深度清理 | 2026-Q3 |
+| [周度健康报告 2026-08-04](../../maintenance/reports/weekly-health-2026-08-04.md) | 每周健康检查 | 2026-08-04 |
+| [月度清理 2026-08](../../maintenance/reports/monthly-cleanup-2026-08.md) | 每月清理检查 | 2026-08 |
+| [季度清理 2026-Q3](../../maintenance/reports/quarterly-cleanup-2026-Q3.md) | 季度深度清理 | 2026-Q3 |
 
 ---
 

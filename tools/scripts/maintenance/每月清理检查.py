@@ -30,7 +30,7 @@ from collections import defaultdict
 # 配置
 # ---------------------------------------------------------------------------
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-REPORTS_DIR = os.path.join(ROOT_DIR, "reports")
+REPORTS_DIR = os.path.join(ROOT_DIR, "maintenance", "reports")
 
 # 确保报告目录存在
 os.makedirs(REPORTS_DIR, exist_ok=True)
@@ -402,8 +402,27 @@ def generate_report():
 > 最后更新时间：{report_date}
 """
 
+    # 添加 frontmatter
+    report_date_str = datetime.now().strftime("%Y-%m-%d")
+    report_month_str = datetime.now().strftime("%Y-%m")
+    frontmatter = f"""---
+id: auto-monthly-cleanup-{report_month_str}
+type: report
+area: 管理
+status: archived
+tags: [auto-generated]
+title: monthly-cleanup-{report_month_str}
+summary: 自动生成的每月清理检查报告。
+source: 自动生成
+created: {report_date_str}
+updated: {report_date_str}
+---
+
+"""
+    report_content = frontmatter + report_content
+
     # 保存报告
-    report_filename = f"monthly-cleanup-{datetime.now().strftime('%Y-%m')}.md"
+    report_filename = f"monthly-cleanup-{report_month_str}.md"
     report_path = os.path.join(REPORTS_DIR, report_filename)
 
     with open(report_path, 'w', encoding='utf-8') as f:

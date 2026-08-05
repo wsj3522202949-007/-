@@ -1,3 +1,16 @@
+---
+id: auto-Git基线标签创建指南
+type: report
+area: 管理
+status: archived
+tags: [auto-generated]
+title: Git基线标签创建指南
+summary: 自动生成报告，无需人工维护。
+source: 自动生成
+created: 2026-08-05
+updated: 2026-08-05
+---
+
 # Git基线标签创建指南
 
 ## 基线标签概述

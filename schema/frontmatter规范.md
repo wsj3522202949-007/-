@@ -232,6 +232,8 @@ category: 二、网文 / 长篇 AI 写作系统 库
 | `tool` | 工具卡 | 库/enriched/readmes/ |
 | `daily-note` | 每日笔记 | 日记/ |
 | `book-note` | 读书笔记 | 资料/ |
+| `plan` | 计划文档 | maintenance/ |
+| `report` | 报告文档 | maintenance/reports/ |
 
 ### 4.2 `area` 取值
 

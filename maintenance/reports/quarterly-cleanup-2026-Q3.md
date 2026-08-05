@@ -1,3 +1,16 @@
+---
+id: auto-quarterly-cleanup-2026-Q3
+type: report
+area: 管理
+status: archived
+tags: [auto-generated]
+title: quarterly-cleanup-2026-Q3
+summary: 自动生成报告，无需人工维护。
+source: 自动生成
+created: 2026-08-05
+updated: 2026-08-05
+---
+
 # 季度深度清理报告
 
 > 生成时间：2026-08-04

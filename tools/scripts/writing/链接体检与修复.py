@@ -49,7 +49,8 @@ TYPE_VALUES = {"index", "guide", "ref", "dashboard", "template", "moc",
                # —— 五层结构蓝图 L2 专用类型（与 维护/校验脚本.py 锁死）——
                "chapter", "character", "setting", "location", "prop",
                # —— 新增类型（与 frontmatter规范.md §四 锁死）——
-               "tool", "daily-note", "book-note"}
+               "tool", "daily-note", "book-note",
+               "plan", "report"}
 AREA_VALUES = {"库", "方法", "项目", "资料", "日记", "索引"}
 STATUS_VALUES = {"active", "demo", "wip", "done", "draft", "archived"}
 
