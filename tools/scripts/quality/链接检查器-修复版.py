@@ -21,9 +21,15 @@ r"""
    （另含 示例 / 外部 / 锚点 链接，同样不计入错误）
 
 4. 输出两份结果
-   - core_errors        ：核心知识区（schema/methods/knowledge/projects，
-                          模板子目录除外），必须为 0
-   - external_warnings  ：外部资料（references、tools/cards、根目录文档等），仅供参考
+   - core_errors        ：严格区断链，必须为 0
+   - external_warnings  ：外部区断链，仅供参考
+
+5. 范围划分不再由本文件自定义
+   历史上本文件与 run_all.py 各写了一份 CORE_DIRS（都只有
+   schema/methods/knowledge/projects），导致 README/CLAUDE/ai//goals//
+   maintenance//tools 导航层的断链被降级成 external_warnings，门禁因此
+   报「总体通过」——假绿灯。现统一从 tools/scripts/gate_scope.py 引入，
+   本文件不得再自行定义范围。
 
 用法
 ----
@@ -40,16 +46,32 @@ import re
 import sys
 import json
 import traceback
+import importlib.util
 from datetime import datetime
 
-# —— 核心知识区（必须为 0）。模板子目录不计入核心（允许占位符）——
-CORE_DIRS = ("schema", "knowledge", "projects", "methods")
 
-# —— 完全不扫描的目录（路径组件匹配）——
-SKIP_COMPONENTS = {
-    ".git", ".workbuddy", ".obsidian", "node_modules", "__pycache__",
-    ".tools", "archive", "原始来源包",
-}
+# ---------------------------------------------------------------------------
+# 范围定义：唯一权威来源 tools/scripts/gate_scope.py
+# 禁止在本文件重复定义 CORE_DIRS —— 历史上就是因为这里和 run_all.py 各写一份
+# （都只有 schema/methods/knowledge/projects），才让 README/CLAUDE/ai//goals//
+# maintenance//tools 导航层的断链被降级成 external_warnings，产生假绿灯。
+# ---------------------------------------------------------------------------
+def _load_gate_scope():
+    here = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.normpath(os.path.join(here, "..", "gate_scope.py"))
+    if not os.path.isfile(path):
+        raise RuntimeError(
+            f"缺少范围定义模块 gate_scope.py（期望位置: {path}）。"
+            "门禁范围必须由该模块统一定义，不提供局部回退，以免再次出现假绿灯。")
+    spec = importlib.util.spec_from_file_location("gate_scope", path)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+scope = _load_gate_scope()
+is_core = scope.is_strict            # 严格区判定（沿用旧函数名，语义已扩大）
+should_skip_dir = scope.should_skip_dir
 
 WIKILINK_RE = re.compile(r'\[\[([^\]]+)\]\]')
 MD_LINK_RE = re.compile(r'(?<!\!)\[([^\]]*)\]\((?!https?://|mailto:|ftp://)([^)]+)\)')
@@ -57,6 +79,13 @@ MD_LINK_RE = re.compile(r'(?<!\!)\[([^\]]*)\]\((?!https?://|mailto:|ftp://)([^)]
 PLACEHOLDER_RE = re.compile(r'(<\s*[^<>]+\s*>|{{[^}]+}}|<<[^>]+>>)')
 # 待填/待补充类占位词（常见于索引骨架）
 PLACEHOLDER_KW_RE = re.compile(r'(待补充|待定|待完善|待填|待写|待补|占位|占位符|TBD|TODO|XXX|见下文|详见|略)')
+# 元变量占位符：模板文件里代表「以后填进去」的形式参数，而非真实文件名。
+#   YYYY-01.md（goals/*/TEMPLATE.md）· 第NNN章-标题.md（命名契约示例）
+#   projects/书名/...（文档里的示意路径）· [文本](路径.md)（格式演示）
+# 注意：这是「链接分类」的修正，不是范围豁免——它不会让任何目录逃出严格区，
+# 只是不再把形式参数当成真实文件去解析。
+METAVAR_RE = re.compile(
+    r'(?:^|[/\-_])(?:YYYY|MM-DD|NNN|书名|路径|文本|标题|你的书名|某某)(?:$|[/\-_.])')
 OBSIDIAN_RE = re.compile(r'^(obsidian|app)://')
 EXTERNAL_RE = re.compile(r'(github|gitlab|bitbucket)\.com', re.I)
 EXAMPLE_KW_RE = re.compile(r'(示例|example|placeholder|测试|test)', re.I)
@@ -66,33 +95,6 @@ DOTPATH_RE = re.compile(r'^(\.\.?/?)+$')
 
 # 单独识别的类型（计入 recognized，不计入错误）
 RECOGNIZED = ("placeholder", "directory", "obsidian", "example", "external", "anchor")
-
-
-def is_core(rel):
-    """判断文件是否属于核心知识区。
-
-    注意：os.path.relpath 在 Windows 返回反斜杠路径，而 CORE_DIRS /
-    模板排除前缀用正斜杠书写。先统一规范为 '/'，避免 Windows 下
-    模板子目录（methods/templates、methods/项目骨架模板）排除失效、
-    被错划为核心区。
-    """
-    rel = rel.replace(os.sep, "/")
-    for d in CORE_DIRS:
-        if rel == d or rel.startswith(d + "/"):
-            if d == "methods":
-                # 模板区不计入核心（允许占位符/未填示例）
-                if rel.startswith("methods/templates/") or \
-                   rel.startswith("methods/项目骨架模板/"):
-                    return False
-            return True
-    return False
-
-
-def should_skip_dir(dir_path, root):
-    """目录是否应跳过（排除清单）。"""
-    rel = os.path.relpath(dir_path, root)
-    parts = rel.split(os.sep)
-    return any(c in parts for c in SKIP_COMPONENTS)
 
 
 def classify_link(target):
@@ -110,6 +112,8 @@ def classify_link(target):
         return "placeholder"     # 模板占位符 <...> / {{...}} / <<...>>
     if PLACEHOLDER_KW_RE.search(t):
         return "placeholder"     # 待补充 / 占位 / TBD / 详见 … 等待填标记
+    if METAVAR_RE.search(t):
+        return "placeholder"     # 元变量：YYYY / NNN / 书名 / 路径 / 文本
     if EXAMPLE_KW_RE.search(t):
         return "example"
     if EXTERNAL_RE.search(t):
@@ -144,7 +148,8 @@ def resolve(root, filedir, target):
 def strip_code(text):
     """去除 fenced / inline 代码块，避免代码里的字面 [[...]]/(...) 被当成链接。"""
     text = re.sub(r'```.*?```', '', text, flags=re.DOTALL)
-    text = re.sub(r'`[^`\n]*`', '', text)
+    # 支持单反引号和双反引号（markdown 中 `` `code` `` 表示含单反引号的代码）
+    text = re.sub(r'`+[^`]*?`+', '', text)
     return text
 
 
@@ -173,58 +178,63 @@ def safe_json(data):
 
 
 def run_link_check(root):
-    """扫描全库链接，返回 核心断链 / 外部警告 / 识别统计。
-    供统一门禁 run_all.py 直接导入调用，避免重复实现链接解析逻辑。"""
+    """扫描全库链接，返回 严格区断链 / 外部区警告 / 识别统计。
+    供统一门禁 run_all.py 直接导入调用，避免重复实现链接解析逻辑。
+
+    返回字段中 core_errors 沿用旧键名，实际语义为「严格区断链」，
+    范围由 gate_scope.is_strict 判定。"""
     core_errors = []
     external_warnings = []
     recognized = {k: 0 for k in RECOGNIZED}
     scanned = 0
+    strict_files = 0
+    external_files = 0
 
-    for dp, dn, fn in os.walk(root):
-        if should_skip_dir(dp, root):
+    for p, rel, zone in scope.iter_md_files(root):
+        dp = os.path.dirname(p)
+        try:
+            with open(p, encoding="utf-8", errors="replace") as fh:
+                text = fh.read()
+        except OSError:
             continue
-        for f in fn:
-            if not f.endswith(".md"):
-                continue
-            p = os.path.join(dp, f)
-            try:
-                with open(p, encoding="utf-8", errors="replace") as fh:
-                    text = fh.read()
-            except OSError:
-                continue
-            scanned += 1
-            rel = os.path.relpath(p, root)
-            text = strip_code(text)
-            core = is_core(rel)
+        scanned += 1
+        text = strip_code(text)
+        core = (zone == "strict")
+        if core:
+            strict_files += 1
+        else:
+            external_files += 1
 
-            # wikilinks
-            for m in WIKILINK_RE.finditer(text):
-                inner = m.group(1)
-                tgt = inner.split("|", 1)[0].strip()
-                lt = classify_link(tgt)
-                if lt in recognized:
-                    recognized[lt] += 1
-                    continue
-                if lt == "real" and not resolve(root, dp, tgt):
-                    msg = f"[wiki] 断链: {rel}  →  [[{inner}]]"
-                    (core_errors if core else external_warnings).append(msg)
+        # wikilinks
+        for m in WIKILINK_RE.finditer(text):
+            inner = m.group(1)
+            tgt = inner.split("|", 1)[0].strip()
+            lt = classify_link(tgt)
+            if lt in recognized:
+                recognized[lt] += 1
+                continue
+            if lt == "real" and not resolve(root, dp, tgt):
+                msg = f"[wiki] 断链: {rel}  →  [[{inner}]]"
+                (core_errors if core else external_warnings).append(msg)
 
-            # markdown 链接（相对路径，非外链协议）
-            for m in MD_LINK_RE.finditer(text):
-                url = m.group(2).strip()
-                lt = classify_link(url)
-                if lt in recognized:
-                    recognized[lt] += 1
-                    continue
-                if lt == "real" and not resolve(root, dp, url):
-                    msg = f"[md] 断链: {rel}  →  ({url})"
-                    (core_errors if core else external_warnings).append(msg)
+        # markdown 链接（相对路径，非外链协议）
+        for m in MD_LINK_RE.finditer(text):
+            url = m.group(2).strip()
+            lt = classify_link(url)
+            if lt in recognized:
+                recognized[lt] += 1
+                continue
+            if lt == "real" and not resolve(root, dp, url):
+                msg = f"[md] 断链: {rel}  →  ({url})"
+                (core_errors if core else external_warnings).append(msg)
 
     return {
         "core_errors": core_errors,
         "external_warnings": external_warnings,
         "recognized": recognized,
         "scanned": scanned,
+        "strict_files": strict_files,
+        "external_files": external_files,
     }
 
 

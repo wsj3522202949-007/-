@@ -1,62 +1,49 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-知识库维护校验脚本
-====================
-锁定《维护/frontmatter规范.md》定义的「不变量契约」，防止知识库越用越乱。
+校验脚本.py —— 已合并到统一门禁 run_all.py（单一权威入口）
 
-检查项
-------
-A. 工具卡 (tools/cards/*.md) 完整性
-   - frontmatter 四字段齐全: tier / tags / use_case / pitfalls (+ stars)
-   - tier ∈ {S,A,B,C}
-   - tags 每项是「受控词(17个)」或「技术语言(ASCII)」；禁止命名空间标签混入
-   - use_case / pitfalls 非空
-B. 笔记层 (非 readmes 的带 frontmatter 笔记) frontmatter 合规
-   - 新格式（平键）: type/area/status 为独立 YAML 键，取值受控 → ERROR 校验
-   - 旧格式（命名空间标签 tags:[type/xxx,area/xxx]）→ WARN（过渡期不阻断）
-   - area 取值 ∈ {库,方法,项目,资料,日记,索引}
-   - type ∈ {index,guide,ref,dashboard,template,moc,demo,project,chapter,character,setting,location,prop,tool,daily-note,book-note}
-   - status ∈ {active,demo,wip,done,draft,archived}
-C. 结构不变量
-   - 库/分类导航/*.md 每篇含 type: moc（平键）或 type/moc（旧标签，WARN）
-   - readme 文件命名: ^\d{5}__<owner>__<repo>\.md$
-   - tier 分布合计 == readme 总数
-D. 关键 wiki 链接有效
-   - 库/工具选型指南.md 与 仪表盘.md 中 [[tools/cards/...]] 目标文件存在
-E. 命名契约（五层蓝图 L2 专用）
-   - 正文层文件必须 第NNN章-标题.md（projects/<书名>/正文/ 下，README.md 除外；archive/ 豁免）
-   - 知识单页目录（人物/设定/地点/道具/）不得出现在 vault 根，必须位于 projects/<书名>/ 内
-F. 正文层 frontmatter 强制
-   - projects/<书名>/正文/第NNN章-*.md 必须带 frontmatter，含 title/chapter/status/type
-   - type 必须为 chapter（平键）或 type/chapter（旧格式，WARN）
-G. 通用字段缺失检查（过渡期 WARN）
-   - 所有带 frontmatter 的文件检查 id/title/summary/created/updated 是否存在
-H. 重复 ID 检查
-   - 所有 frontmatter id 必须唯一
-I. 重复标题检查
-   - 所有 frontmatter title 必须唯一
-J. 项目结构漂移检查
-   - projects/ 目录必须符合标准结构（chapters/ + entities/）
-K. README 统计过期检查
-   - README.md 中的统计信息（工具卡数量、目录数量等）必须与实际一致
-L. 旧绝对路径检查
-   - 检查是否使用旧绝对路径（如 C:\Users\... 或旧 e:\路径）
-M. 孤立核心笔记检查
-   - schema/、methods/ 中的笔记必须有反向链接
+本文件现为「委托包装器」：直接调用 run_all.py 的 main()，
+确保所有门禁入口给出**完全一致**的结果，不再各自为政。
 
-退出码: 0 = 无 ERROR（可提交）; 1 = 存在 ERROR（阻断提交）。
-WARN 不阻断，仅提示。
+原先独有的检查项（frontmatter、结构、旧路径、重复ID、编码、同目录重名、
+链接）已全部并入 run_all.py，并统一以 gate_scope.py 的严格区为唯一范围。
 
-用法
-----
-    python 维护/校验脚本.py                 # 人类可读报告
-    python 维护/校验脚本.py --json          # 机器可读 JSON 到 stdout
-    python 维护/校验脚本.py --root <路径>    # 指定仓库根（默认脚本所在目录的父级）
+用法（与以前兼容):
+  python 校验脚本.py            # 人类可读报告（= run_all.py）
+  python 校验脚本.py --json     # 机器可读 JSON（= run_all.py --json）
+  python 校验脚本.py --root <路径>
+
+说明：--fix / --core-only / --exclude / --zone 等历史参数已被忽略（统一门禁只认
+严格区，且不做自动修复）。如需这些能力，请直接在 run_all.py 上扩展。
 """
 
 import os
-import re
+import sys
+
+# 终端编码安全（同 run_all.py）
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_RUN_ALL = os.path.normpath(os.path.join(_HERE, "run_all.py"))
+
+if not os.path.isfile(_RUN_ALL):
+    sys.stderr.write(f"[校验脚本] 找不到统一门禁 run_all.py: {_RUN_ALL}\n")
+    sys.exit(2)
+
+import importlib.util
+_spec = importlib.util.spec_from_file_location("run_all", _RUN_ALL)
+_run_all_mod = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_run_all_mod)
+
+if __name__ == "__main__":
+    sys.stderr.write(
+        "[校验脚本] 已合并到 run_all.py，现委托执行（结果完全一致）。\n")
+    sys.exit(_run_all_mod.main())
 import sys
 import json
 import tempfile
@@ -97,7 +84,9 @@ TYPE_VALUES = {"index", "guide", "ref", "dashboard", "template", "moc",
                # —— 新增类型（frontmatter规范.md §4.1）——
                "tool",       # 工具卡
                "daily-note", # 每日笔记
-               "book-note"}  # 读书笔记
+               "book-note",  # 读书笔记
+               "plan",       # 计划文档
+               "report"}     # 报告文档
 AREA_VALUES = {"库", "方法", "项目", "资料", "日记", "索引"}
 STATUS_VALUES = {"active", "demo", "wip", "done", "draft", "archived"}
 

@@ -1,0 +1,1712 @@
+[
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [目录与命名规范.md](目录与命名规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [沈念](projects/你的书名/人物/沈念.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接规范.md](链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [frontmatter规范.md](frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [frontmatter规范.md](frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\五层结构蓝图.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目结构规范.md](项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [运行校验](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [修复链接](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [批量检查](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [提交前校验](tools/scripts/maintenance/提交前校验.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每周健康报告](tools/scripts/maintenance/每周健康报告.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每月清理检查](tools/scripts/maintenance/每月清理检查.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [季度清理](tools/scripts/maintenance/季度清理.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/校验脚本.py](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/_run_link_fixed.py](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/run_all.py](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接体检与修复](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [目标对齐](ai/agents/goal-aligner.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/run_all.py](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git 仓库整理项目完成通知.md](Git仓库整理项目完成通知.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [校验脚本](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准](schema/维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git 仓库整理](Git仓库整理项目完成通知.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [知识库宪法](schema/知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [frontmatter 规范](schema/frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [目录与命名规范](schema/目录与命名规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目结构规范](schema/项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接规范](schema/链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [AI 入口](ai/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\入口.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [README.md](README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\坑点记录.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [📋 维护标准](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准.md](维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](路径.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接规范](链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\排错与禁忌.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [frontmatter规范](frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [新建项目](methods/项目骨架模板/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [网文写作最强SOP](methods/网文写作最强SOP.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南](methods/开篇写作指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [QUICK_START](methods/QUICK_START.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [最强去AI味铁律](methods/最强去AI味铁律.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [卡文急救](knowledge/craft/卡文急救.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [选题分析](methods/选题与开书筹备.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲编写规则](methods/大纲编写规则.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物思维蒸馏法](methods/人物思维蒸馏法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南](methods/开篇写作指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具选型指南](tools/工具选型指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [任务选型速查](tools/任务选型速查.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具情报网](tools/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [AI 入口](ai/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护入口](maintenance/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [运行校验](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [修复链接](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [批量清理](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接文本](路径) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目说明](projects/项目名/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目骨架模板](methods/项目骨架模板/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [projects/](projects/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [网文写作最强SOP](methods/网文写作最强SOP.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲工程](knowledge/craft/大纲工程.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物学](knowledge/craft/人物学.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具选型指南](tools/工具选型指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [任务选型速查](tools/任务选型速查.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护入口](maintenance/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [校验脚本](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [网文写作最强SOP](methods/网文写作最强SOP.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目骨架模板](methods/项目骨架模板/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [选题分析](methods/选题与开书筹备.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南](methods/开篇写作指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [QUICK_START](methods/QUICK_START.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [卡文急救](knowledge/craft/卡文急救.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏与留白](knowledge/craft/节奏与留白.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具选型指南](tools/工具选型指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [任务选型速查](tools/任务选型速查.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具情报网](tools/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护入口](maintenance/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [校验脚本](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接体检与修复](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [批量清理](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\新手入门.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [README.md](README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\灾备策略.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [提交前校验](tools/scripts/maintenance/提交前校验.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\灾备策略.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每周健康报告](tools/scripts/maintenance/每周健康报告.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\灾备策略.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每月清理检查](tools/scripts/maintenance/每月清理检查.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\灾备策略.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [季度清理](tools/scripts/maintenance/季度清理.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\第七阶段验收报告_长期维护与灾备.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [提交前校验](tools/scripts/maintenance/提交前校验.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\第七阶段验收报告_长期维护与灾备.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每周健康报告](tools/scripts/maintenance/每周健康报告.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\第七阶段验收报告_长期维护与灾备.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [每月清理检查](tools/scripts/maintenance/每月清理检查.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\第七阶段验收报告_长期维护与灾备.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [季度清理](tools/scripts/maintenance/季度清理.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\Git仓库整理第二阶段规范统一总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [知识库宪法.md](知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\Git仓库整理第二阶段规范统一总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/知识库宪法.md](知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\Git仓库整理第二阶段规范统一总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [README.md](README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\Git仓库整理第二阶段规范统一总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [知识库宪法.md](知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\基础校验现状报告_2026-08-05.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [readmes/00254__linshenkx__prompt-optimizer.md](readmes/00254__linshenkx__prompt-optimizer.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\基础校验现状报告_2026-08-05.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [cards/00254__linshenkx__prompt-optimizer.md](cards/00254__linshenkx__prompt-optimizer.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第三阶段完成报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [质量门禁系统.py](computer://e:\\个人知识库\\tools\\scripts\\quality\\质量门禁系统.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第二阶段完成报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [第二阶段-知识库宪法.md](第二阶段-知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物思维蒸馏法](人物思维蒸馏法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲编写规则](大纲编写规则.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南](开篇写作指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [世界观构建](knowledge/craft/世界观构建.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏与留白](knowledge/craft/节奏与留白.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [描写与对话学](knowledge/craft/描写与对话学.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [写作辅助推荐](推荐层/分类/写作辅助.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [改稿润色推荐](推荐层/分类/改稿润色.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲规划推荐](推荐层/分类/大纲规划.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\第五阶段整理内容质量总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物设定推荐](推荐层/分类/人物设定.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第一阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库冻结状态报告.md](./GIT仓库冻结状态报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第一阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git工作区验证报告.md](./Git工作区验证报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第一阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库变更分析报告.md](./Git仓库变更分析报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第一阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库清理清单.md](./Git仓库清理清单.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第一阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git基线标签创建指南.md](./Git基线标签创建指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第二阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库清理清单.md](./Git仓库清理清单.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理第二阶段总结报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git基线标签创建指南.md](./Git基线标签创建指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完成通知.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库清理清单.md](./Git仓库清理清单.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完成通知.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git基线标签创建指南.md](./Git基线标签创建指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完成通知.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [GIT仓库冻结状态报告.md](./GIT仓库冻结状态报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完成通知.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git工作区验证报告.md](./Git工作区验证报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/知识库宪法.md](schema/知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/frontmatter规范.md](schema/frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/目录与命名规范.md](schema/目录与命名规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/项目结构规范.md](schema/项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/链接规范.md](schema/链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/AI协作规范.md](schema/AI协作规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/校验脚本.py](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/_run_link_fixed.py](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/run_all.py](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/analyze_errors.py](tools/scripts/validation/analyze_errors.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/生成首页统计.py](tools/scripts/生成首页统计.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/导航历史.py](tools/scripts/导航历史.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/分析工具卡数据层.py](tools/scripts/分析工具卡数据层.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/标记问题工具.py](tools/scripts/标记问题工具.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/清理问题工具.py](tools/scripts/清理问题工具.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/方法论重复检测.py](tools/scripts/方法论重复检测.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [README.md](README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [新手入门.md](新手入门.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [ai/入口.md](ai/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [maintenance/入口.md](maintenance/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/aliases.md](schema/aliases.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/推荐层/README.md](tools/推荐层/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/推荐层/分类/写作辅助.md](tools/推荐层/分类/写作辅助.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/推荐层/分类/改稿润色.md](tools/推荐层/分类/改稿润色.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/推荐层/分类/大纲规划.md](tools/推荐层/分类/大纲规划.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/检索层/README.md](tools/检索层/README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/分类导航.md](tools/分类导航.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [methods/方法论主页面索引.md](methods/方法论主页面索引.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [knowledge/craft/开篇与钩子设计.md](knowledge/craft/开篇与钩子设计.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第二阶段规范统一总结.md](Git仓库整理第二阶段规范统一总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第三阶段重建质量门禁总结.md](Git仓库整理第三阶段重建质量门禁总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第四阶段优化验证报告.md](Git仓库整理第四阶段优化验证报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [第四阶段重做入口和检索体验总结.md](第四阶段重做入口和检索体验总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目完整总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [第五阶段整理内容质量总结.md](第五阶段整理内容质量总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/知识库宪法.md](schema/知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/frontmatter规范.md](schema/frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/目录与命名规范.md](schema/目录与命名规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/项目结构规范.md](schema/项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/链接规范.md](schema/链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/AI协作规范.md](schema/AI协作规范.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/校验脚本.py](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/_run_link_fixed.py](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/run_all.py](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/validation/analyze_errors.py](tools/scripts/validation/analyze_errors.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/生成首页统计.py](tools/scripts/生成首页统计.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [tools/scripts/导航历史.py](tools/scripts/导航历史.py) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [README.md](README.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [新手入门.md](新手入门.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [ai/入口.md](ai/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [maintenance/入口.md](maintenance/入口.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [schema/aliases.md](schema/aliases.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第二阶段规范统一总结.md](Git仓库整理第二阶段规范统一总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第三阶段重建质量门禁总结.md](Git仓库整理第三阶段重建质量门禁总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库整理第四阶段优化验证报告.md](Git仓库整理第四阶段优化验证报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终总结.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [第四阶段重做入口和检索体验总结.md](第四阶段重做入口和检索体验总结.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终状态报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git仓库清理清单.md](./Git仓库清理清单.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终状态报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git基线标签创建指南.md](./Git基线标签创建指南.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终状态报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [GIT仓库冻结状态报告.md](./GIT仓库冻结状态报告.md) -> 目标不存在"
+  },
+  {
+    "file": "maintenance\\reports\\history\\Git仓库整理项目最终状态报告.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Git工作区验证报告.md](./Git工作区验证报告.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [🗺️ 知识库总地图](../../README.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [林晚星](projects/你的书名/人物/林晚星.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [显示文本](相对路径.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接规范](schema/链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [🗺️ 知识库总地图](../../README.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [林晚星](人物/林晚星.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\原稿转创作知识库-SOP.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [别名](相对路径.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物思维蒸馏法#执行步骤](人物思维蒸馏法.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲编写规则#执行步骤](大纲编写规则.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [示例大纲](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南#执行步骤](开篇写作指南.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [示例开篇](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [世界观构建#执行步骤](../knowledge/craft/世界观构建.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏与留白#执行步骤](../knowledge/craft/节奏与留白.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏控制表](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏示例](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [描写与对话学#执行步骤](../knowledge/craft/描写与对话学.md#执行步骤) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [对白模板](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\方法论主页面索引.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [对白示例](待补充) -> 目标不存在"
+  },
+  {
+    "file": "methods\\templates\\12_投稿信与编辑沟通模板.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [../../projects/<你的书名>/模板应用/前3章签约体检表\\_已填.md](../../projects/<你的书名>/模板应用/前3章签约体检表_已填.md) -> 目标不存在"
+  },
+  {
+    "file": "methods\\templates\\13_追读数据监控表.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [../../projects/<你的书名>/README.md](../../projects/<你的书名>/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [卡文急救](knowledge/craft/卡文急救.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [大纲工程](knowledge/craft/大纲工程.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物思维蒸馏法](methods/人物思维蒸馏法.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [对白进阶](knowledge/craft/对白进阶.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [节奏与留白](knowledge/craft/节奏与留白.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [爽点与情绪曲线](knowledge/craft/爽点与情绪曲线.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇写作指南](methods/开篇写作指南.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [开篇与钩子设计](knowledge/craft/开篇与钩子设计.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [描写与对话学](knowledge/craft/描写与对话学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [描写与对话学](knowledge/craft/描写与对话学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [结构学](knowledge/craft/结构学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [伏笔与悬念工程](knowledge/craft/伏笔与悬念工程.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [副线设计](knowledge/craft/副线设计.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [人物弧光](knowledge/craft/人物弧光.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [世界观构建](knowledge/craft/世界观构建.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [卖点包装](knowledge/craft/卖点包装.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [签约成功率提升方案](methods/签约成功率提升方案.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [平台差异手册](methods/平台差异手册.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [数据化复盘](knowledge/craft/数据化复盘.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [一致性检查工程](knowledge/craft/一致性检查工程.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [最强去AI味铁律](methods/最强去AI味铁律.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [改稿润色指令库](methods/改稿润色指令库.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [最强去AI味铁律](methods/最强去AI味铁律.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [改稿润色指令库](methods/改稿润色指令库.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [改稿润色指令库](methods/改稿润色指令库.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [自检清单_升级版](methods/自检清单_升级版.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [单章作战卡模板](methods/templates/obsidian/单章作战卡模板.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [前3章签约体检表](methods/templates/02_前3章签约体检表.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [平台差异手册](methods/平台差异手册.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [网文写作最强SOP](methods/网文写作最强SOP.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [QUICK_START](methods/QUICK_START.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [选题与开书筹备](methods/skill_parts/06_选题与开书筹备.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [原稿转创作知识库-SOP](methods/原稿转创作知识库-SOP.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [体检表](methods/templates/02_前3章签约体检表.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [导览](methods/导览.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [FRAMEWORK](methods/FRAMEWORK.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [INDEX](methods/INDEX.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [最强知识蒸馏总集](methods/最强知识蒸馏总集.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [最强写作方法论_全球最强综合版](methods/最强写作方法论_全球最强综合版.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [模板库](methods/模板库.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [模板库_三套可套用表单](methods/模板库_三套可套用表单.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [SKILL](methods/SKILL.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [05_入门与心态](methods/skill_parts/05_入门与心态.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [05_入门与心态](methods/skill_parts/05_入门与心态.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [14_世界观与设定集](methods/skill_parts/14_世界观与设定集.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [15_AI协作写作](methods/skill_parts/15_AI协作写作.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [17_多平台运营差异](methods/skill_parts/17_多平台运营差异.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [18_IP衍生与版权](methods/skill_parts/18_IP衍生与版权.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [19_AI协作工程化工作流](methods/skill_parts/19_AI协作工程化工作流.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [16_数据复盘体系](methods/skill_parts/16_数据复盘体系.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [12_签约与运营](methods/skill_parts/12_签约与运营.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [13_作者心法](methods/skill_parts/13_作者心法.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [11_写作技法与改稿](methods/skill_parts/11_写作技法与改稿.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [06_日更批次推进卡](methods/templates/06_日更批次推进卡.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [07_新书0到首秀启动清单](methods/templates/07_新书0到首秀启动清单.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [08_男频爽文启动包](methods/templates/08_男频爽文启动包.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [09_女频言情启动包](methods/templates/09_女频言情启动包.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [10_短篇盐言启动包](methods/templates/10_短篇盐言启动包.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [11_连载专项体检卡](methods/templates/11_连载专项体检卡.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [12_投稿信与编辑沟通模板](methods/templates/12_投稿信与编辑沟通模板.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [13_追读数据监控表](methods/templates/13_追读数据监控表.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [14_改稿优先级批次表](methods/templates/14_改稿优先级批次表.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具选型指南](tools/工具选型指南.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [任务选型速查](tools/任务选型速查.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具情报网](tools/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [分类导航](tools/分类导航.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具情报网](tools/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [工具选型指南](tools/工具选型指南.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [任务选型速查](tools/任务选型速查.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [分类导航](tools/分类导航.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Dataview索引](tools/Dataview索引.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [Obsidian使用指南](tools/Obsidian使用指南.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [3年愿景](goals/vision.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [年度目标](goals/yearly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [月度目标](goals/monthly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [周回顾](goals/weekly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [日任务](goals/daily/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [GUIDE](goals/GUIDE.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [3年愿景](goals/vision.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [年度目标](goals/yearly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [月度目标](goals/monthly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [周回顾](goals/weekly/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [日任务](goals/daily/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [GUIDE](goals/GUIDE.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [GUIDE](goals/GUIDE.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [校验脚本](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接体检与修复](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [质量门禁](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准](schema/维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [批量清理](tools/scripts/validation/run_all.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接体检与修复](tools/scripts/validation/_run_link_fixed.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [校验脚本](tools/scripts/validation/校验脚本.py) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [validation](tools/scripts/validation/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目骨架模板](methods/项目骨架模板/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [STATUS.md](schema/项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [项目结构规范](schema/项目结构规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [正文生命周期规范](archive/规范归档/正文生命周期规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [迁移状态](README.md#📋-迁移状态) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [知识库宪法](schema/知识库宪法.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [frontmatter规范](schema/frontmatter规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [目录与命名规范](schema/目录与命名规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [链接规范](schema/链接规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [AI协作规范](schema/AI协作规范.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [维护标准](schema/维护标准.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [drafts](drafts/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [drafts/journal](drafts/journal/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [drafts/inbox](drafts/inbox/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [drafts/projects](drafts/projects/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [drafts/scratch](drafts/scratch/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [references](references/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [外部Skill蒸馏](references/外部Skill蒸馏/README.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [在线调研](references/在线调研/INDEX.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [原始来源包](references/原始来源包/) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [别名](目标路径) -> 目标不存在"
+  },
+  {
+    "file": "schema\\aliases.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [目标文档](路径) -> 目标不存在"
+  },
+  {
+    "file": "schema\\维护标准.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [新名](projects/书名/对应目录/新名.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\维护标准.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [伏笔F-xxx](projects/书名/伏笔管理表.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [显示文本](相对路径/文件.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [结构学](../craft/结构学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [结构学](craft/结构学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [结构学](../craft/结构学.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [storyteller](../tools/enriched/readmes/00001__facedeer__storyteller.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [alias](相对路径.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\链接规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文件名](相对路径.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](正文/第001章.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](chapters/第001章.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](人物/陆远.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](entities/characters/陆远.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](设定/国产芯片.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](entities/settings/国产芯片.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](地点/电子城.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](entities/locations/电子城.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](道具/二手主板.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](entities/items/二手主板.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](框架.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](framework.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](分卷细纲.md) -> 目标不存在"
+  },
+  {
+    "file": "schema\\项目结构规范.md",
+    "type": "BROKEN_LINK",
+    "message": "断链: [文本](outline.md) -> 目标不存在"
+  }
+]
