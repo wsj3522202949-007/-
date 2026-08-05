@@ -42,7 +42,7 @@ related:
 
 A sophisticated AI-powered book generation system that creates complete novels in the style of famous authors. This project extends and enhances [Adam Larson's original AI Book Writer](https://github.com/adamwlarson/ai-book-writer) with multiple new features and improvements.
 
-!`[Book Generator UI](docs/screenshots/dashboard.png)`
+![Book Generator UI](docs/screenshots/dashboard.png)
 
 ## 🌟 Key Features
 
@@ -172,7 +172,7 @@ local_book.bat  # Windows
 The web interface provides a user-friendly way to interact with the book generator:
 
 ### Dashboard
-!`[Dashboard](docs/screenshots/dashboard.png)`
+![Dashboard](docs/screenshots/dashboard.png)
 
 - Real-time generation status
 - Progress tracking
@@ -180,14 +180,14 @@ The web interface provides a user-friendly way to interact with the book generat
 - Activity log
 
 ### Book Generation
-!`[Generate Book](docs/screenshots/generate.png)`
+![Generate Book](docs/screenshots/generate.png)
 
 - Customizable parameters
 - Multiple AI provider options
 - Model information and recommendations
 
 ### Library
-!`[Library](docs/screenshots/library.png)`
+![Library](docs/screenshots/library.png)
 
 - View and manage generated books
 - Preview content
@@ -238,7 +238,7 @@ This project builds upon [Adam Larson's AI Book Writer](https://github.com/adamw
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 

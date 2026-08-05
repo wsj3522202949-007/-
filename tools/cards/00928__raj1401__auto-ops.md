@@ -45,11 +45,11 @@ related:
 
 # Auto-Ops
 
-!`[Auto-Ops Multi-Agent Workflow](assets/auto-ops-diagram.png)`
+![Auto-Ops Multi-Agent Workflow](assets/auto-ops-diagram.png)
 
 Auto-Ops is an agentic automation backend for lead research, outreach writing, and email drafting, designed for B2B workflows. It leverages FastAPI to expose endpoints for running specialized agents and managing a TinyDB-based email database. The system is extensible and integrates with vector stores for document indexing and retrieval. The frontend written in React + TypeScript is available [here](https://github.com/raj1401/autoops-frontend).
 
-!`[Auto-Ops Tech Stack](assets/auto-ops-tech.png)`
+![Auto-Ops Tech Stack](assets/auto-ops-tech.png)
 
 ## Features
 

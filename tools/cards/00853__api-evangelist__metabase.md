@@ -90,8 +90,8 @@ The Metabase API provides programmatic access to dashboards, questions, database
 - [Getting Started](https://www.metabase.com/docs/latest/getting-started)
 - [Git Hub Org](https://github.com/metabase/metabase)
 - [OpenAPI](https://raw.githubusercontent.com/api-evangelist/metabase/refs/heads/main/openapi/metabase-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- `[Postman Collection](collections/metabase.postman_collection.json)` — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- `[Open Collection](collections/metabase.opencollection.json)` — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Postman Collection](collections/metabase.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
+- [Open Collection](collections/metabase.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
 ## Common Properties
 

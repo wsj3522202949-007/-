@@ -114,7 +114,7 @@ Then invoke it in any Claude Code session:
 
 1. Open [claude.ai](https://claude.ai) and go to a Project
 2. Click **Project instructions**
-3. Paste the full contents of `[`SKILL.md`](./SKILL.md)`
+3. Paste the full contents of [`SKILL.md`](./SKILL.md)
 
 Every conversation in that project will now humanize text on request.
 
@@ -140,7 +140,7 @@ print(message.content)
 
 ### Cowork (desktop)
 
-1. Download `[`SKILL.md`](./SKILL.md)`
+1. Download [`SKILL.md`](./SKILL.md)
 2. Drop it into `.skills/skills/` in your Cowork workspace
 
 ---

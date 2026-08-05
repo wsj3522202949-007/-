@@ -173,7 +173,7 @@ If ZeroOffice saves you time:
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)`
+MIT — see [LICENSE](LICENSE)
 
 related:
   - methods/网文写作最强SOP.md

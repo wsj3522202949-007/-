@@ -37,7 +37,7 @@ related:
 
 ---
 
-`[English](README_EN.md)` | `[中文](README.md)`
+[English](README_EN.md) | [中文](README.md)
 
 # 学习助手平台 (Learning Assistant Platform)
 

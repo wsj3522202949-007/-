@@ -43,7 +43,7 @@ If you've ever written something using ChatGPT, Claude, or any other AI tool, yo
 
 That's where TwainGPT comes in. It's an AI humanizer built to do one thing really well: take your AI-generated text and rewrite it so it sounds like a real human wrote it, while bypassing every major AI detector in the process.
 
-!`[TwainGPT Landing Page](twaingpt-landing-page.png)`
+![TwainGPT Landing Page](twaingpt-landing-page.png)
 
 ---
 
@@ -75,7 +75,7 @@ Using TwainGPT is straightforward. Paste your AI-generated text into the platfor
 
 You can also run your content through the AI detector first to see how it scores before and after humanizing. This gives you full visibility into the process and confidence before you publish or submit anything.
 
-!`[TwainGPT Dashboard](twaingpt-dashboard.webp)`
+![TwainGPT Dashboard](twaingpt-dashboard.webp)
 
 ---
 

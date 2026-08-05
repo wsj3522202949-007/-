@@ -358,9 +358,9 @@ mypy backend/ client/
 
 ## 📚 Documentation
 
-- `[Product Requirements Document](docs/01-prd/prd.md)`
-- `[Implementation Plan](docs/02-architecture/implementation-plan.md)`
-- `[User Stories](docs/06-user-stories/user-stories-v1.md)`
+- [Product Requirements Document](docs/01-prd/prd.md)
+- [Implementation Plan](docs/02-architecture/implementation-plan.md)
+- [User Stories](docs/06-user-stories/user-stories-v1.md)
 
 ## 🗺️ Roadmap
 
@@ -370,11 +370,11 @@ mypy backend/ client/
 
 ## 📄 License
 
-MIT License - see `[LICENSE](LICENSE)` for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 💬 Support
 

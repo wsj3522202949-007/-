@@ -267,7 +267,7 @@ webnovel-writer-opencode/
 
 ## 版权与许可
 
-本项目基于 `[GNU General Public License v3](LICENSE)` 发布。
+本项目基于 [GNU General Public License v3](LICENSE) 发布。
 
 ### 衍生说明
 

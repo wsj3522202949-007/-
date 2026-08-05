@@ -52,7 +52,7 @@ related:
 
 **Turn simple prompts into professional comics — with AI-powered storytelling, automatic speech bubbles, and a conversational refinement agent.**
 
-[🚀 Live Demo](https://github.com/RobinaMirbahar/Comic-Studio-Ai/blob/main/cloudbuild.yaml) · [📹 Video Demo](https://youtu.be/SLJ4K5hf4Ec) · [📝 Devpost](https://devpost.com/software/comiccrafter-ai) · `[📚 Usage Guide](docs/usage.md)` · `[📡 API Docs](docs/api.md)` · `[🏗️ Architecture](docs/architecture.md)`
+[🚀 Live Demo](https://github.com/RobinaMirbahar/Comic-Studio-Ai/blob/main/cloudbuild.yaml) · [📹 Video Demo](https://youtu.be/SLJ4K5hf4Ec) · [📝 Devpost](https://devpost.com/software/comiccrafter-ai) · [📚 Usage Guide](docs/usage.md) · [📡 API Docs](docs/api.md) · [🏗️ Architecture](docs/architecture.md)
 
 </div>
 
@@ -458,7 +458,7 @@ docker build -t comic-studio-ai .
 docker run -p 8080:8080 -e GEMINI_API_KEY=your_key_here comic-studio-ai
 ```
 
-For detailed steps, see the `[Deployment Guide](docs/deployment.md)`.
+For detailed steps, see the [Deployment Guide](docs/deployment.md).
 
 ---
 
@@ -542,7 +542,7 @@ Contributions are welcome and appreciated!
 
 ## 📄 License
 
-Distributed under the **Apache 2.0 License**. See `[`LICENSE`](LICENSE)` for details.
+Distributed under the **Apache 2.0 License**. See [`LICENSE`](LICENSE) for details.
 
 ---
 

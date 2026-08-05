@@ -73,7 +73,7 @@ related:
 - [💡 使用技巧与常见问题](#-使用技巧与常见问题)
 - [📚 资料分享](#-资料分享)
 - [📄 可下载范文模板](#-可下载范文模板)
-- [📖 使用说明](#-使用说明) <sup>（独立文件 `[USAGE.md](USAGE.md)`）</sup>
+- [📖 使用说明](#-使用说明) <sup>（独立文件 [USAGE.md](USAGE.md)）</sup>
 - [📄 许可证](#-许可证)
 - [🤝 贡献](#-贡献)
 - [⭐ 支持](#-支持)
@@ -95,10 +95,10 @@ related:
 
 | 编号 | 提示词名称 | 适用场景 | 效果示例 |
 | :---: | :--- | :--- | :--- |
-| 01 | 📝 六级议论文高分生成器 | 六级议论文 | `[查看截图](images/01_cet6_essay.png)` |
-| 02 | 🌏 六级翻译精讲专家 | 六级汉译英 | `[查看截图](images/02_cet6_trans.png)` |
-| 03 | 📄 四级议论文高分生成器 | 四级议论文 | `[查看截图](images/03_cet4_essay.png)` |
-| 04 | 🔄 四级翻译精讲专家 | 四级汉译英 | `[查看截图](images/04_cet4_trans.png)` |
+| 01 | 📝 六级议论文高分生成器 | 六级议论文 | [查看截图](images/01_cet6_essay.png) |
+| 02 | 🌏 六级翻译精讲专家 | 六级汉译英 | [查看截图](images/02_cet6_trans.png) |
+| 03 | 📄 四级议论文高分生成器 | 四级议论文 | [查看截图](images/03_cet4_essay.png) |
+| 04 | 🔄 四级翻译精讲专家 | 四级汉译英 | [查看截图](images/04_cet4_trans.png) |
 
 ### 提示词正文（复制即用）
 
@@ -132,11 +132,11 @@ related:
 
 | 话题 | 四级范文 | 六级范文 |
 | :--- | :--- | :--- |
-| 坚持与毅力 | `[下载](topics/perseverance/cet4.pdf)` | `[下载](topics/perseverance/cet6.pdf)` |
-| 创新与突破 | `[下载](topics/innovation/cet4.pdf)` | `[下载](topics/innovation/cet6.pdf)` |
-| 团队合作 | `[下载](topics/collaboration/cet4.pdf)` | `[下载](topics/collaboration/cet6.pdf)` |
-| 勇气与担当 | `[下载](topics/courage/cet4.pdf)` | `[下载](topics/courage/cet6.pdf)` |
-| 挫折与逆境 | `[下载](topics/adversity/cet4.pdf)` | `[下载](topics/adversity/cet6.pdf)` |
+| 坚持与毅力 | [下载](topics/perseverance/cet4.pdf) | [下载](topics/perseverance/cet6.pdf) |
+| 创新与突破 | [下载](topics/innovation/cet4.pdf) | [下载](topics/innovation/cet6.pdf) |
+| 团队合作 | [下载](topics/collaboration/cet4.pdf) | [下载](topics/collaboration/cet6.pdf) |
+| 勇气与担当 | [下载](topics/courage/cet4.pdf) | [下载](topics/courage/cet6.pdf) |
+| 挫折与逆境 | [下载](topics/adversity/cet4.pdf) | [下载](topics/adversity/cet6.pdf) |
 
 ## 📌 四、六级模板提示词使用建议
 
@@ -188,10 +188,10 @@ AI：生成一篇结合“team spirit”的具体范文框架，并标注高级�
 
 | AI 模型 | 生成结果示例 | 高级词汇标注 | 逐句讲解 | 稳定性⭐ | 优点 👍 | 缺点 👎 | 综合评分 (10分) |
 | :---: | :--- | :---: | :---: | :---: | :--- | :--- | :---: |
-| **DeepSeek** | `[查看截图](images/deepseek_01_result.png)` | ✅ | ✅ | ⭐⭐⭐⭐⭐ | 国产之光，无技术壁垒，质量顶流，分析透彻，形式多样，响应快 | 暂无，近乎完美 | **9.5** |
-| **豆包** | `[查看截图](images/doubao_01_result.png)` | ✅ | ✅ | ⭐⭐⭐⭐⭕ | 可一键转PDF，适合打印；交互友好，可多轮深度打磨 | 句子略简单（可能提示词可优化），多轮后效果更佳 | **8.5** |
-| **ChatGPT** (免费版) | `[查看截图](images/chatgpt_01_result.png)` | ✅ | ✅ | ⭐⭐⭐⭐ | 要点完整简洁，梯子稳时响应飞快 | 需要梯子，排版观感一般，作文像高级词拼凑，格式单一 | **7.5** |
-| **Kimi** | `[查看截图](images/kimi_01_result.png)` | ✅ | ✅ | ⭐⭐⭐ | 表格形式直观，排版不错，语言流畅，适合打磨文章 | 思考时间太长，理解有时偏差，时间成本高 | **6.0** |
+| **DeepSeek** | [查看截图](images/deepseek_01_result.png) | ✅ | ✅ | ⭐⭐⭐⭐⭐ | 国产之光，无技术壁垒，质量顶流，分析透彻，形式多样，响应快 | 暂无，近乎完美 | **9.5** |
+| **豆包** | [查看截图](images/doubao_01_result.png) | ✅ | ✅ | ⭐⭐⭐⭐⭕ | 可一键转PDF，适合打印；交互友好，可多轮深度打磨 | 句子略简单（可能提示词可优化），多轮后效果更佳 | **8.5** |
+| **ChatGPT** (免费版) | [查看截图](images/chatgpt_01_result.png) | ✅ | ✅ | ⭐⭐⭐⭐ | 要点完整简洁，梯子稳时响应飞快 | 需要梯子，排版观感一般，作文像高级词拼凑，格式单一 | **7.5** |
+| **Kimi** | [查看截图](images/kimi_01_result.png) | ✅ | ✅ | ⭐⭐⭐ | 表格形式直观，排版不错，语言流畅，适合打磨文章 | 思考时间太长，理解有时偏差，时间成本高 | **6.0** |
 
 > 💡 **作者锐评**：DeepSeek 是「人上人」；豆包是「准王者」；ChatGPT 是「国外老哥偶尔拉跨」；Kimi 是「思考人生型选手」。从夯到拉，各位按需食用～
 >
@@ -227,7 +227,7 @@ MIT License © 2026 ZhaoyuanLiu23
 
 ## 📖 使用说明
 
-详细的使用教程、最佳实践和常见问题，请查看 `[USAGE.md](USAGE.md)`。
+详细的使用教程、最佳实践和常见问题，请查看 [USAGE.md](USAGE.md)。
 
 
 ---
@@ -247,8 +247,8 @@ MIT License © 2026 ZhaoyuanLiu23
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 --- |
-| 四级写作万能模板 | PDF | 4种题型框架，可直接套用 | `[下载](examples/四级写作万能模板.pdf)` |
-| 六级翻译高频词汇表 | Excel | 分领域（经济、文化、科技）整理 | `[下载](examples/六级翻译高频词汇表.xlsx)` |
+| 四级写作万能模板 | PDF | 4种题型框架，可直接套用 | [下载](examples/四级写作万能模板.pdf) |
+| 六级翻译高频词汇表 | Excel | 分领域（经济、文化、科技）整理 | [下载](examples/六级翻译高频词汇表.xlsx) |
 
 ### ☁️ 网盘资源
 

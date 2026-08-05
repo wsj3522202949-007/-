@@ -425,11 +425,11 @@ Once the API service is running, you can access the API documentation at http://
 
 ## Windows Support 
 
-See the `[windows support guide](docs/windows_support.md)` for details.
+See the [windows support guide](docs/windows_support.md) for details.
 
 ## Quantization
 
-This model can be quantized using AWQ. Follow the instructions in the `[quantization guide](docs/Quantization.md)`.
+This model can be quantized using AWQ. Follow the instructions in the [quantization guide](docs/Quantization.md).
 
 ## Benchmark Results
 

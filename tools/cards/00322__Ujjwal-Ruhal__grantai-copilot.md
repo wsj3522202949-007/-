@@ -96,13 +96,13 @@ Proposal Display + Download (Frontend)
 ## 📸 Screenshots (UI Preview)
 
 ### 🏠 Home Page  
-!`[Home Page](screenshots/home_page.png)`
+![Home Page](screenshots/home_page.png)
 
 ### 🔎 Grant Search Results  
-!`[Grant Search Results](screenshots/search_results.png)`
+![Grant Search Results](screenshots/search_results.png)
 
 ### ✍️ Proposal Generator  
-!`[Proposal Page](screenshots/proposal_page.png)`
+![Proposal Page](screenshots/proposal_page.png)
 
 > 📌 Place actual screenshots in a folder named:
 

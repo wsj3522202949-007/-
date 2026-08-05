@@ -103,12 +103,12 @@ Easily switch or hand off tasks between:
 
 ## 📬 Contact
 
-For questions, reach out via GitHub Issues or `[muhammadusman5965etc@gmail.com](mailto:muhammadusman5965etc@gmail.com)`
+For questions, reach out via GitHub Issues or [muhammadusman5965etc@gmail.com](mailto:muhammadusman5965etc@gmail.com)
 
 ## 🚆Interface Preview
 
-!`[Interface](/images/Interface.png)`
+![Interface](/images/Interface.png)
 
 ## 📤Sample Output
 
-!`[Output](/images/Output.png)`
+![Output](/images/Output.png)

@@ -172,8 +172,8 @@ NovelSeed/
 ## 贡献
 
 欢迎 PR！开始前请阅读：
-- `[CONTRIBUTING.md](CONTRIBUTING.md)` — 如何贡献
-- `[AGENTS.md](AGENTS.md)` — AI Agent 编辑本仓库的规则
+- [CONTRIBUTING.md](CONTRIBUTING.md) — 如何贡献
+- [AGENTS.md](AGENTS.md) — AI Agent 编辑本仓库的规则
 
 ### 最需要帮助的方向
 - ✏️ 补充言情/科幻/历史类型模板（见 `references/genres/`）
@@ -199,4 +199,4 @@ NovelSeed 受到以下项目和方法的启发：
 
 ## 许可证
 
-`[AGPL-3.0](LICENSE)` — 自由使用、修改、分发，但修改后必须以相同许可证开源。
+[AGPL-3.0](LICENSE) — 自由使用、修改、分发，但修改后必须以相同许可证开源。

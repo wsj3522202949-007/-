@@ -206,7 +206,7 @@ TideFocus 支持 PWA（渐进式 Web 应用），可以：
 
 ### 📄 许可证
 
-MIT License - 详见 `[LICENSE](LICENSE)` 文件
+MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ### 📧 联系方式
 
@@ -333,7 +333,7 @@ To enable Firebase Analytics:
 
 ### 📄 License
 
-MIT License - see `[LICENSE](LICENSE)` file
+MIT License - see [LICENSE](LICENSE) file
 
 ### 📧 Contact
 

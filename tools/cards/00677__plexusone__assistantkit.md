@@ -810,4 +810,4 @@ AssistantKit is part of the AgentPlexus family of Go modules for building AI age
 
 ## License
 
-MIT License - see `[LICENSE](LICENSE)` for details.
+MIT License - see [LICENSE](LICENSE) for details.

@@ -210,15 +210,15 @@ export RENPY_SDK_PATH="/path/to/renpy-8.4.1-sdk"
 
 ## 📚 Documentation
 
-- **`[Examples](examples/README.md)`** - Claude Agent SDK and Strands integration examples
+- **[Examples](examples/README.md)** - Claude Agent SDK and Strands integration examples
 
 ## 🤝 Contributing
 
-We welcome contributions! See `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## 📄 License
 
-MIT License - see `[LICENSE](LICENSE)` for details.
+MIT License - see [LICENSE](LICENSE) for details.
 
 related:
   - methods/QUICK_START.md

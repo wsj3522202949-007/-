@@ -226,7 +226,7 @@ git push -u origin main
 * Confirm the workflow runs successfully when code is pushed or a pull request is created.
 
 **Screenshot:** Basic CI Workflow
-!`[Basic CI Workflow](./images/1.github_basic_workflow.png)`
+![Basic CI Workflow](./images/1.github_basic_workflow.png)
 
 ✅ **Task 2 Complete** – A working CI pipeline is now active and independent of Node.js.
 
@@ -335,7 +335,7 @@ Refactor the pipeline to use **reusable workflows** and implement **caching** fo
    ```
 
 **Screenshot:** Basic Checks Workflow
-!`[Basic Checks Workflow](./images/2.basic_checks.png)`
+![Basic Checks Workflow](./images/2.basic_checks.png)
 
 ✅ **Task 3 Complete** – You now have a modular workflow setup with caching and secret validation.
 
@@ -423,7 +423,7 @@ Enhance the pipeline’s security by properly managing secrets, applying least p
    * Verify repository permissions are minimized.
 
 **Screenshot:** Basic Checks Workflow Security Implementation
-!`[Basic Checks Workflow](./images/3.basic_checks_add_security.png)`
+![Basic Checks Workflow](./images/3.basic_checks_add_security.png)
 
 ✅ **Task 4 Complete** – Your workflows now follow **GitHub Actions security best practices**.
 
@@ -545,7 +545,7 @@ git push origin main
 * Ensure caching reduces execution time.
 
 **Screenshot:** Add parallel jobs, matrix testing, and improved caching
-!`[Add parallel jobs, matrix testing, and improved caching](./images/4.build.yml_add_parallel_jobs.png)`
+![Add parallel jobs, matrix testing, and improved caching](./images/4.build.yml_add_parallel_jobs.png)
 
 ✅ **Task 5 Complete** – Your CI/CD workflow is now **faster, more efficient**, and capable of handling multiple environments in parallel.
 
@@ -699,7 +699,7 @@ By completing these tasks, you have created a **robust, maintainable, and secure
 ## **Author**
 
 ### **Philip Oluwaseyi Oludolamu**
-* **Email:** `[oluphilix@gmail.com](mailto:oluphilix@gmail.com)`
+* **Email:** [oluphilix@gmail.com](mailto:oluphilix@gmail.com)
 * **GitHub:** [github.com/Holuphilix](https://github.com/Holuphilix)
 * **LinkedIn:** [linkedin.com/in/philipoludolamu](https://linkedin.com/in/philipoludolamu)
 * **Phone:** +905338763067

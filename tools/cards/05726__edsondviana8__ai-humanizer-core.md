@@ -259,7 +259,7 @@ TextHumanizer is designed to improve the readability and naturalness of AI-gener
 
 ## License
 
-This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for details. You are free to use, modify, distribute, and sublicense TextHumanizer in both commercial and personal projects.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. You are free to use, modify, distribute, and sublicense TextHumanizer in both commercial and personal projects.
 
 ---
 

@@ -43,7 +43,7 @@ Local continuity infrastructure for writing long novels with desktop agents.
 
 Long Novel Agent Kit does not replace the model, the writing agent, or the author's judgment. It gives local desktop agents a durable project memory and a set of safety gates so a long novel can survive long context windows, agent handoffs, source material updates, and multi-chapter continuity drift.
 
-`[中文说明](README.zh-CN.md)` · `[中文整体架构与功能说明](docs/system-overview.zh-CN.md)`
+[中文说明](README.zh-CN.md) · [中文整体架构与功能说明](docs/system-overview.zh-CN.md)
 
 ## The Short Version
 
@@ -230,7 +230,7 @@ release/long-novel-agent-runtime-macos-arm64/long-novel-agent desktop-handoff-bu
 
 The bundle contains `project/`, `pack/`, `runtime/`, launchers, MCP snippets, runtime command files, and `agent-read-me-first.md`. When both runtime executables are present, the target computer does not need Python.
 
-For a Windows `.exe` release, build on Windows and follow `[Windows Runtime Release](docs/windows-release.md)`. The GitHub Actions template is stored at `[docs/github-actions-windows-release.yml](docs/github-actions-windows-release.yml)`; copy it into `.github/workflows/` only when the GitHub token used for the push has `workflow` scope.
+For a Windows `.exe` release, build on Windows and follow [Windows Runtime Release](docs/windows-release.md). The GitHub Actions template is stored at [docs/github-actions-windows-release.yml](docs/github-actions-windows-release.yml); copy it into `.github/workflows/` only when the GitHub token used for the push has `workflow` scope.
 
 ## Quick Start From Source
 
@@ -314,4 +314,4 @@ Remote connector-only platforms are outside this local stdio MCP flow.
 
 ## License
 
-MIT. See `[LICENSE](LICENSE)`.
+MIT. See [LICENSE](LICENSE).

@@ -133,11 +133,11 @@ The pipeline is organized around a **Canonical Data Model (CDM)** that serves as
 
 ## Repository Documentation Index
 
-For active machine control and execution instructions, see `[doc/operator.md](doc/operator.md)`.
+For active machine control and execution instructions, see [doc/operator.md](doc/operator.md).
 
-For detailed structural paradigms and engineering design choices, see `[doc/design.md](doc/design.md)`.
+For detailed structural paradigms and engineering design choices, see [doc/design.md](doc/design.md).
 
-For transactional schema constraints and payload structural layers, see `[doc/cdm.md](doc/cdm.md)`.
+For transactional schema constraints and payload structural layers, see [doc/cdm.md](doc/cdm.md).
 
 related:
   - methods/网文写作最强SOP.md

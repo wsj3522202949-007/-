@@ -57,7 +57,7 @@ related:
 | 角色数据 | 245 | 档案 + 台词 |
 | **合计** | **2,022** | **110,348+** |
 
-→ 详细统计和角色名一览见 `[`ba-stories/README.md`](./ba-stories/README.md)`
+→ 详细统计和角色名一览见 [`ba-stories/README.md`](./ba-stories/README.md)
 
 ### 翻译对照表
 
@@ -77,13 +77,13 @@ JP→CN 翻译表覆盖角色、学校、社团、剧情标题、地名、术语
 
 来源：📗 国际服游戏数据 / 📘 萌娘百科（社区标准简中） / 📙 GameKee
 
-人类可读版：`[`翻译对照表.md`](./翻译对照表.md)` · 机器可读版：`utils/translation_table.json`
+人类可读版：[`翻译对照表.md`](./翻译对照表.md) · 机器可读版：`utils/translation_table.json`
 
 ### AI 角色卡生成（Claude Code Skill）
 
 从剧情语料自动分析角色说话方式、口癖、关系动态，生成 AI roleplay 人设档案，支持导出 SillyTavern 酒馆卡。
 
-详见 `[`.claude/skills/character-ai-profile/`](.claude/skills/character-ai-profile/)`
+详见 [`.claude/skills/character-ai-profile/`](.claude/skills/character-ai-profile/)
 
 ## 快速开始
 
@@ -116,7 +116,7 @@ python3 -m utils.build_md_report           # 生成 翻译对照表.md
 
 从剧情语料自动分析角色说话方式，生成 AI roleplay 人设档案，支持导出 SillyTavern 酒馆卡。
 
-支持多种 AI 编程工具，详见 `[skill README](.claude/skills/character-ai-profile/README.md)`：
+支持多种 AI 编程工具，详见 [skill README](.claude/skills/character-ai-profile/README.md)：
 
 | 工具 | 使用方式 |
 |------|---------|

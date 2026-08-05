@@ -85,13 +85,13 @@ When you add a skill to your project's `.opencode/skill/` directory, OpenCode au
 
 | Skill | Description | API Required |
 |-------|-------------|--------------|
-| `[n8n-mcp-tools-expert](./skill/n8n-mcp-tools-expert/)` | Expert guide for using n8n-mcp MCP tools effectively | None |
-| `[n8n-validation-expert](./skill/n8n-validation-expert/)` | Interpret validation errors and guide fixing them | None |
-| `[n8n-expression-syntax](./skill/n8n-expression-syntax/)` | Validate n8n expression syntax and fix common errors | None |
-| `[n8n-code-python](./skill/n8n-code-python/)` | Write Python code in n8n Code nodes | None |
-| `[n8n-workflow-patterns](./skill/n8n-workflow-patterns/)` | Proven workflow architectural patterns from real n8n workflows | None |
-| `[n8n-code-javascript](./skill/n8n-code-javascript/)` | Write JavaScript code in n8n Code nodes | None |
-| `[n8n-node-configuration](./skill/n8n-node-configuration/)` | Operation-aware node configuration guidance | None |
+| [n8n-mcp-tools-expert](./skill/n8n-mcp-tools-expert/) | Expert guide for using n8n-mcp MCP tools effectively | None |
+| [n8n-validation-expert](./skill/n8n-validation-expert/) | Interpret validation errors and guide fixing them | None |
+| [n8n-expression-syntax](./skill/n8n-expression-syntax/) | Validate n8n expression syntax and fix common errors | None |
+| [n8n-code-python](./skill/n8n-code-python/) | Write Python code in n8n Code nodes | None |
+| [n8n-workflow-patterns](./skill/n8n-workflow-patterns/) | Proven workflow architectural patterns from real n8n workflows | None |
+| [n8n-code-javascript](./skill/n8n-code-javascript/) | Write JavaScript code in n8n Code nodes | None |
+| [n8n-node-configuration](./skill/n8n-node-configuration/) | Operation-aware node configuration guidance | None |
 
 ## Quick Start
 
@@ -382,7 +382,7 @@ Operation-aware node configuration guidance. Covers node configuration, property
 
 ## Creating Your Own Skills
 
-Want to create a skill for a different service? See our `[Creating Skills Guide](./docs/creating-skills.md)`.
+Want to create a skill for a different service? See our [Creating Skills Guide](./docs/creating-skills.md).
 
 ### Skill File Structure
 
@@ -451,7 +451,7 @@ Contributions are welcome! If you've created a useful skill, consider submitting
 
 ## License
 
-MIT License - see `[LICENSE](./LICENSE)` for details.
+MIT License - see [LICENSE](./LICENSE) for details.
 
 ## Links
 

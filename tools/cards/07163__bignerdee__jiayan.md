@@ -55,7 +55,7 @@ related:
   * 利用无监督、无词典的[N元语法](https://baike.baidu.com/item/n元语法)和[隐马尔可夫模型](https://baike.baidu.com/item/隐马尔可夫模型)进行古汉语自动分词。
   * 利用词库构建功能产生的文言词典，基于有向无环词图、句子最大概率路径和动态规划算法进行分词。
 * [__词性标注__](#3)  
-  * 基于词的[条件随机场](https://baike.baidu.com/item/条件随机场)的序列标注，词性详见`[词性表](jiayan/postagger/README.md)`。
+  * 基于词的[条件随机场](https://baike.baidu.com/item/条件随机场)的序列标注，词性详见[词性表](jiayan/postagger/README.md)。
 * [__断句__](#4)
   * 基于字符的条件随机场的序列标注，引入点互信息及[t-测试值](https://baike.baidu.com/item/t检验/9910799?fr=aladdin)为特征，对文言段落进行自动断句。
 * [__标点__](#5)
@@ -70,7 +70,7 @@ related:
     $ pip install https://github.com/kpu/kenlm/archive/master.zip
 
 ## 使用  
-以下各模块的使用方法均来自`[examples.py](jiayan/examples.py)`。
+以下各模块的使用方法均来自[examples.py](jiayan/examples.py)。
 1. 下载模型并解压：[百度网盘](https://pan.baidu.com/s/1PXP0eSQWWcNmAb6lkuB5sw)，提取码：`p0sc`
    * jiayan.klm：语言模型，主要用来分词，以及句读标点任务中的特征提取；  
    * pos_model：CRF词性标注模型；
@@ -211,7 +211,7 @@ Current version supports [lexicon construction](#6), [tokenizing](#7), [POS tagg
   * With an unsupervised, no dictionary approach to tokenize a Classical Chinese sentence with [N-gram](https://en.wikipedia.org/wiki/N-gram) language model and [HMM](https://en.wikipedia.org/wiki/Hidden_Markov_model) (_Hidden Markov Model_).  
   * With the dictionary produced from lexicon construction, tokenize a Classical Chinese sentence with Directed Acyclic Word Graph, Max Probability Path and [Dynamic Programming](https://en.wikipedia.org/wiki/Dynamic_programming).  
 * [__POS Tagging__](#8)  
-  * Word level sequence tagging with [CRF](https://en.wikipedia.org/wiki/Conditional_random_field) (_Conditional Random Field_). See POS tag categories `[here](jiayan/postagger/README.md)`.  
+  * Word level sequence tagging with [CRF](https://en.wikipedia.org/wiki/Conditional_random_field) (_Conditional Random Field_). See POS tag categories [here](jiayan/postagger/README.md).  
 * [__Sentence Segmentation__](#9)
   * Character level sequence tagging with CRF, introduces PMI and [T-test](https://en.wikipedia.org/wiki/Student%27s_t-test) values as features.  
 * [__Punctuation__](#10)
@@ -223,7 +223,7 @@ Current version supports [lexicon construction](#6), [tokenizing](#7), [POS tagg
     $ pip install https://github.com/kpu/kenlm/archive/master.zip
 
 ## Usages  
-The usage codes below are all from `[examples.py](jiayan/examples.py)`.  
+The usage codes below are all from [examples.py](jiayan/examples.py).  
 1. Download the models and unzip them：[Google Drive](https://drive.google.com/open?id=1piZQBO8OXQ5Cpi17vAcZsrbJLPABnKzp)
    * jiayan.klm：the language model used for tokenizing and feature extraction for sentence segmentation and punctuation;    
    * pos_model：the CRF model for POS tagging;

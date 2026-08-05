@@ -40,7 +40,7 @@ related:
 
 A full-stack AI novel creation platform powered by Cloudflare Workers, with both Web and React Native App clients.
 
-`[中文文档](./README.zh.md)`
+[中文文档](./README.zh.md)
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/doctoroyy/novel-copilot)
 

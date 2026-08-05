@@ -46,7 +46,7 @@ related:
 
 > AI 视频脚本与分镜提示词生成器 · Claude Skill，同样适用于 ChatGPT / 其它 LLM
 
-**简体中文** | `[English](README.en.md)`
+**简体中文** | [English](README.en.md)
 
 > 本项目以 [liangdabiao/Seedance2-Storyboard-Generator](https://github.com/liangdabiao/Seedance2-Storyboard-Generator) 为基础，在 60 天内制作 60 个短视频、抖音涨粉 6000 的实战过程中，一点点更新、修改、完善而成。
 
@@ -119,7 +119,7 @@ Claude Code 会把仓库里的 `skills/seedance-prompts-skill/` 子目录克隆�
 
 ### 方式三：上传 zip 到 Claude（claude.ai / 桌面端）
 
-从 **[Releases](https://github.com/mantoufan/seedance-prompts-skill/releases/latest)** 或仓库根目录下载 **`[`seedance-prompts-skill.zip`](seedance-prompts-skill.zip)`**，在 Claude 的「设置 → Capabilities / Skills」处上传该 zip 即可安装。该 zip 顶层是单个 `seedance-prompts-skill/` 文件夹（内含 `SKILL.md` 与 `references/`），符合 Claude 技能上传规范，并由 CI 在 skill 变更时自动保持最新。
+从 **[Releases](https://github.com/mantoufan/seedance-prompts-skill/releases/latest)** 或仓库根目录下载 **[`seedance-prompts-skill.zip`](seedance-prompts-skill.zip)**，在 Claude 的「设置 → Capabilities / Skills」处上传该 zip 即可安装。该 zip 顶层是单个 `seedance-prompts-skill/` 文件夹（内含 `SKILL.md` 与 `references/`），符合 Claude 技能上传规范，并由 CI 在 skill 变更时自动保持最新。
 
 ### 方式四：手动克隆为本地 Skill
 
@@ -136,7 +136,7 @@ cp -r /tmp/seedance/skills/seedance-prompts-skill .claude/skills/
 
 ### 方式五：在 ChatGPT / 其他 LLM 上使用（OpenAI 等）
 
-本技能的正文（`[SKILL.md](skills/seedance-prompts-skill/SKILL.md)` + `[seedance-prompt-guide.md](skills/seedance-prompts-skill/references/seedance-prompt-guide.md)`）是**与模型无关的纯 Markdown 提示词工程内容**，可在任意大模型上复用：
+本技能的正文（[SKILL.md](skills/seedance-prompts-skill/SKILL.md) + [seedance-prompt-guide.md](skills/seedance-prompts-skill/references/seedance-prompt-guide.md)）是**与模型无关的纯 Markdown 提示词工程内容**，可在任意大模型上复用：
 
 - **ChatGPT Custom GPT（推荐）**：新建一个 GPT，把 `SKILL.md` 全文粘进 **Instructions**，把 `seedance-prompt-guide.md` 作为 **Knowledge** 文件上传，即可获得与本技能一致的剧本 / 分镜生成能力。
 - **ChatGPT Project / 普通对话**：把 `SKILL.md` 作为系统提示或首条消息粘入，再贴上你的小说 / 文章 / 大纲。
@@ -148,9 +148,9 @@ cp -r /tmp/seedance/skills/seedance-prompts-skill .claude/skills/
 
 `seedance-prompts-skill.zip` 由源文件打包而成，无需手动维护：
 
-- **CI 自动重建**：GitHub Action `[`build-skill-zip.yml`](.github/workflows/build-skill-zip.yml)` 监听 `skills/**` 变更，自动重新打包并把刷新后的 zip 提交回 `main`（构建可复现——固定时间戳 + 排序，仅内容变化时才产生差异，不会触发循环）。
+- **CI 自动重建**：GitHub Action [`build-skill-zip.yml`](.github/workflows/build-skill-zip.yml) 监听 `skills/**` 变更，自动重新打包并把刷新后的 zip 提交回 `main`（构建可复现——固定时间戳 + 排序，仅内容变化时才产生差异，不会触发循环）。
 - **本地手动重建**：`bash scripts/build-zip.sh`。
-- **本地提交时自动重建**（可选）：启用一次 `git config core.hooksPath .githooks`，之后凡提交涉及 `skills/` 的改动，`[`.githooks/pre-commit`](.githooks/pre-commit)` 会自动重打包并 `git add` 该 zip。
+- **本地提交时自动重建**（可选）：启用一次 `git config core.hooksPath .githooks`，之后凡提交涉及 `skills/` 的改动，[`.githooks/pre-commit`](.githooks/pre-commit) 会自动重打包并 `git add` 该 zip。
 
 ## 触发场景
 
@@ -169,15 +169,15 @@ cp -r /tmp/seedance/skills/seedance-prompts-skill .claude/skills/
 4. **创建资产生成计划** → C/S/P 编号 + 图像模型提示词。
 5. **生成 Seedance 2.0 分镜脚本** → 时间轴格式 + 素材上传清单 + 结尾帧描述（保证连续性）。
 
-详见 `[SKILL.md](skills/seedance-prompts-skill/SKILL.md)` 与 `[references/seedance-prompt-guide.md](skills/seedance-prompts-skill/references/seedance-prompt-guide.md)`。
+详见 [SKILL.md](skills/seedance-prompts-skill/SKILL.md) 与 [references/seedance-prompt-guide.md](skills/seedance-prompts-skill/references/seedance-prompt-guide.md)。
 
 ## 参考
 
 - 火山引擎官方提示词指南：https://www.volcengine.com/docs/82379/2222480?lang=zh
-- 视听语言实战技巧库蒸馏自抖音合集「AI 视频教程」（作者：李一帆 /「AI 界人民教师一帆」，17 集），见 `[references/cinematic-techniques.md](skills/seedance-prompts-skill/references/cinematic-techniques.md)`。
-- 提示词工程去 AI 感技巧库蒸馏自抖音合集「刺猬星球superi · ai创作者的乌托邦」（37 集），见 `[references/prompt-craft-and-realism.md](skills/seedance-prompts-skill/references/prompt-craft-and-realism.md)`。
-- Seedance 2.0 提示词配方手册蒸馏自抖音合集「Seedance2 教学计划」（作者：张百川AI，14 集），见 `[references/seedance2-prompt-cookbook.md](skills/seedance-prompts-skill/references/seedance2-prompt-cookbook.md)`。
-- AI 人物真实感关键词库蒸馏自抖音合集「AI视觉真实感系列」（作者：啊布 / AI短剧实战派）及 Jac.key 等创作者，见 `[references/portrait-realism-details.md](skills/seedance-prompts-skill/references/portrait-realism-details.md)`。
+- 视听语言实战技巧库蒸馏自抖音合集「AI 视频教程」（作者：李一帆 /「AI 界人民教师一帆」，17 集），见 [references/cinematic-techniques.md](skills/seedance-prompts-skill/references/cinematic-techniques.md)。
+- 提示词工程去 AI 感技巧库蒸馏自抖音合集「刺猬星球superi · ai创作者的乌托邦」（37 集），见 [references/prompt-craft-and-realism.md](skills/seedance-prompts-skill/references/prompt-craft-and-realism.md)。
+- Seedance 2.0 提示词配方手册蒸馏自抖音合集「Seedance2 教学计划」（作者：张百川AI，14 集），见 [references/seedance2-prompt-cookbook.md](skills/seedance-prompts-skill/references/seedance2-prompt-cookbook.md)。
+- AI 人物真实感关键词库蒸馏自抖音合集「AI视觉真实感系列」（作者：啊布 / AI短剧实战派）及 Jac.key 等创作者，见 [references/portrait-realism-details.md](skills/seedance-prompts-skill/references/portrait-realism-details.md)。
 
 > 以上技巧库均由创作者公开视频/合集的文案、画面与图片信息蒸馏整理，内容版权归原作者所有，仅供学习研究。
 

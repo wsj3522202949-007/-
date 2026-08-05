@@ -199,7 +199,7 @@ This system can help the organizations to:
 ## Authors
 **Mian Shakar Afzal**   &   **Muhammad Salman**  
 
-[LinkedIn](https://www.linkedin.com/in/mian-shakar-afzal-959b443a8/) | [GitHub](https://github.com/SHAKAR-AFZAL) | `[Email](mailto:mianshakarafzal@gmail.com)`
+[LinkedIn](https://www.linkedin.com/in/mian-shakar-afzal-959b443a8/) | [GitHub](https://github.com/SHAKAR-AFZAL) | [Email](mailto:mianshakarafzal@gmail.com)
 
 related:
   - methods/最强去AI味铁律.md

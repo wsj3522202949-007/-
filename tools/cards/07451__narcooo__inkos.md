@@ -137,7 +137,7 @@ InkOS Play 发布和 Studio 体验升级：你可以用一句自然语言创建�
 
 **Studio Chat** — 普通聊天、建书、短篇、封面、互动世界都走同一套 action surface。重动作先确认，生成物可预览，可通过聊天修改章节、封面提示词、世界状态和持久化文本产物。
 
-**Native English novel writing now supported！** Set `--lang en` to write in English. See `[English README](README.en.md)` for details.
+**Native English novel writing now supported！** Set `--lang en` to write in English. See [English README](README.en.md) for details.
 
 ## 欢迎交流
 
@@ -745,4 +745,4 @@ InkOS 的 agent 运行时构建在 [pi](https://github.com/badlogic/pi-mono)（`
 
 ## 许可证
 
-`[AGPL-3.0](LICENSE)`
+[AGPL-3.0](LICENSE)

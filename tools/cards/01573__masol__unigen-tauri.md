@@ -37,7 +37,7 @@ related:
 
 ---
 
-**English** | `[中文](./docs/README_CN.md)`
+**English** | [中文](./docs/README_CN.md)
 
 # UniGen: An Exploratory Natural Language Flow-Based Programming Compiler
 

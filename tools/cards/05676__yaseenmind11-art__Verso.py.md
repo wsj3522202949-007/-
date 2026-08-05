@@ -40,7 +40,7 @@ related:
   - methods/改稿润色指令库.md
 ---
 
-!`[Verso Logo](full_logo.png)`
+![Verso Logo](full_logo.png)
 # Verso.py 🔍
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://verso-ai.streamlit.app)
 Verso AI is a professional-grade research assistant designed to streamline the academic workflow...

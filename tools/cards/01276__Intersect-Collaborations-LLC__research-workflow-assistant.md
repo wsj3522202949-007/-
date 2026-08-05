@@ -41,7 +41,7 @@ related:
 
 An open-source, modular AI research assistant that runs inside **[VS Code](https://code.visualstudio.com/) + [GitHub Copilot](https://github.com/features/copilot)**. It connects to academic databases via MCP (Model Context Protocol) servers and encodes research best practices through custom Copilot agents. Built for reproducibility, ICMJE compliance, and human-centered research.
 
-All RWA outputs — manuscripts, protocols, reports, analysis scripts, dashboards, and progress briefs — use **[Quarto](https://quarto.org/)** (by [Posit](https://posit.co/)) as the default document format. Quarto supports R and Python code execution, multi-format rendering (HTML, PDF, Word, PowerPoint, dashboards, websites, books, slides), native Mermaid diagrams, and built-in bibliography management. See `[docs/posit-quarto-guide.md](docs/posit-quarto-guide.md)` for the full ecosystem guide.
+All RWA outputs — manuscripts, protocols, reports, analysis scripts, dashboards, and progress briefs — use **[Quarto](https://quarto.org/)** (by [Posit](https://posit.co/)) as the default document format. Quarto supports R and Python code execution, multi-format rendering (HTML, PDF, Word, PowerPoint, dashboards, websites, books, slides), native Mermaid diagrams, and built-in bibliography management. See [docs/posit-quarto-guide.md](docs/posit-quarto-guide.md) for the full ecosystem guide.
 
 > **Model note:** This project was developed and tested using **Claude Opus 4.6** and **GPT-5.3-Codex** in GitHub Copilot agent mode. You can switch between models depending on task type and preference. Other models available in Copilot ([model comparison](https://docs.github.com/en/copilot/reference/ai-models/model-comparison)) may also work, but behavior can vary by agent workflow, so validate critical outputs after switching.
 >
@@ -60,10 +60,10 @@ All RWA outputs — manuscripts, protocols, reports, analysis scripts, dashboard
 >
 > For comparison, frontier models on the same catalog include Anthropic Claude Opus 4.8 ($5/$25), OpenAI GPT-5.5 ($5/$30), and Anthropic Claude Sonnet 4.6 ($3/$15). The open-source options above can produce similar results for RWA workflows at a fraction of the cost. As with any model switch, validate critical outputs after changing providers.
 
-> **First time here?** Start with `[docs/quick-start.md](docs/quick-start.md)`,
+> **First time here?** Start with [docs/quick-start.md](docs/quick-start.md),
 > or open Copilot Chat and type `@setup` for an interactive guided setup.
 > If setup is complete and something is not working, use `@troubleshooter` for diagnostics and issue resolution.
-> For the full walkthrough, see `[docs/getting-started.md](docs/getting-started.md)`.
+> For the full walkthrough, see [docs/getting-started.md](docs/getting-started.md).
 
 > **Important:** Before using non-setup agents, you must accept the user disclaimer once via `@setup`.
 
@@ -186,7 +186,7 @@ graph TB
     class QMD,SCRIPTS,PFLOW,BRIEFS output
 ```
 
-> Also available as `[SVG](docs/rwa-architecture.svg)`, `[rendered HTML](docs/architecture-diagram.qmd)` (`quarto render docs/architecture-diagram.qmd`), or `[Mermaid source](docs/rwa-architecture.mmd)`.
+> Also available as [SVG](docs/rwa-architecture.svg), [rendered HTML](docs/architecture-diagram.qmd) (`quarto render docs/architecture-diagram.qmd`), or [Mermaid source](docs/rwa-architecture.mmd).
 
 ## ICMJE Compliance: You Are the Author
 
@@ -205,16 +205,16 @@ The tool enforces this by:
 
 Per ICMJE Section II.A.4: AI use must be disclosed in acknowledgments (writing assistance) and methods (data analysis). This tool generates those disclosures for you.
 
-Setup also captures a default author profile in `[.rwa-user-config.yaml](.rwa-user-config.yaml)`, and new projects can store per-project `authors` metadata in `[templates/project-config.yaml](templates/project-config.yaml)` so future reports and manuscripts start with the correct author front matter.
+Setup also captures a default author profile in [.rwa-user-config.yaml](.rwa-user-config.yaml), and new projects can store per-project `authors` metadata in [templates/project-config.yaml](templates/project-config.yaml) so future reports and manuscripts start with the correct author front matter.
 
-When RWA itself is cited in a Methods or Acknowledgments section, use the `vanzyl2026rwa` BibTeX entry from `[templates/rwa-citation.bib](templates/rwa-citation.bib)`.
+When RWA itself is cited in a Methods or Acknowledgments section, use the `vanzyl2026rwa` BibTeX entry from [templates/rwa-citation.bib](templates/rwa-citation.bib).
 
 ## Disclaimer and Readiness Gate
 
 RWA enforces a disclaimer/readiness gate before non-setup agent workflows.
 
-- Source disclaimer text: `[compliance/user-disclaimer.md](compliance/user-disclaimer.md)`
-- Acceptance state file: `[.rwa-user-config.yaml](.rwa-user-config.yaml)`
+- Source disclaimer text: [compliance/user-disclaimer.md](compliance/user-disclaimer.md)
+- Acceptance state file: [.rwa-user-config.yaml](.rwa-user-config.yaml)
 - Required value: `disclaimer_accepted: true` (boolean)
 
 When accepted through `@setup`, `.rwa-user-config.yaml` should include values like:
@@ -236,7 +236,7 @@ If acceptance is missing or invalid, agents will return:
 
 If you see this message unexpectedly:
 
-1. Confirm `[.rwa-user-config.yaml](.rwa-user-config.yaml)` exists at workspace root.
+1. Confirm [.rwa-user-config.yaml](.rwa-user-config.yaml) exists at workspace root.
 2. Confirm `disclaimer_accepted` is boolean `true` (not a quoted string).
 3. Run `@setup` again to refresh config if needed.
 4. Open a new Copilot Chat session after setup changes.
@@ -323,7 +323,7 @@ Open `.env` and add your credentials. At minimum:
 | `ZOTERO_API_KEY` | [Zotero key settings](https://www.zotero.org/settings/keys) | If using Zotero |
 | `ZOTERO_USER_ID` | Numeric ID shown at the top of the [Zotero keys page](https://www.zotero.org/settings/keys) (not your username) | If using Zotero |
 
-Full details: `[docs/api-setup-guide.md](docs/api-setup-guide.md)`. For Google Drive and Google Docs integration setup and the review-workflow round-trip, see `[docs/google-workspace-guide.md](docs/google-workspace-guide.md)`.
+Full details: [docs/api-setup-guide.md](docs/api-setup-guide.md). For Google Drive and Google Docs integration setup and the review-workflow round-trip, see [docs/google-workspace-guide.md](docs/google-workspace-guide.md).
 
 `PROJECTS_ROOT` should normally remain `./my_projects` unless you explicitly want projects in another folder.
 
@@ -357,7 +357,7 @@ Open Copilot Chat and try an agent:
 @project-manager Initialize a new project called "my-first-review" in my_projects/my-first-review.
 ```
 
-See `[docs/getting-started.md](docs/getting-started.md)` for the full guide, including project setup, multi-project workflows, and cross-workspace usage.
+See [docs/getting-started.md](docs/getting-started.md) for the full guide, including project setup, multi-project workflows, and cross-workspace usage.
 
 ### Usage examples
 
@@ -379,25 +379,25 @@ random-effects meta-analysis using the metafor package in R.
 
 ### Sample project
 
-The repository includes a fully worked sample project at `[`sample_projects/chw-maternal-mental-health/`](sample_projects/chw-maternal-mental-health/)` — a systematic review of community health worker interventions for maternal mental health in low- and middle-income countries. It demonstrates the end-to-end outputs that RWA generates:
+The repository includes a fully worked sample project at [`sample_projects/chw-maternal-mental-health/`](sample_projects/chw-maternal-mental-health/) — a systematic review of community health worker interventions for maternal mental health in low- and middle-income countries. It demonstrates the end-to-end outputs that RWA generates:
 
 | Output | Path | What it shows |
 |---|---|---|
-| Review protocol | `[`protocol.qmd`](sample_projects/chw-maternal-mental-health/protocol.qmd)` | PRISMA-compliant protocol with PICO framework |
-| Manuscript (source) | `[`manuscript.qmd`](sample_projects/chw-maternal-mental-health/manuscript.qmd)` | IMRaD manuscript with citations and AI disclosure |
-| Manuscript (HTML) | `[`manuscript.html`](sample_projects/chw-maternal-mental-health/manuscript.html)` | Rendered HTML version for browser viewing |
-| Manuscript (PDF) | `[`manuscript.pdf`](sample_projects/chw-maternal-mental-health/manuscript.pdf)` | Rendered PDF for print/submission |
-| Manuscript (Word) | `[`manuscript.docx`](sample_projects/chw-maternal-mental-health/manuscript.docx)` | Rendered DOCX for journal submission or collaboration |
-| Search results (SQLite) | `[`data/search_results.db`](sample_projects/chw-maternal-mental-health/data/)` | Structured database of results from PubMed, OpenAlex, CrossRef, Semantic Scholar |
-| Search results (Excel) | `[`data/search_results.xlsx`](sample_projects/chw-maternal-mental-health/data/)` | Filterable Excel workbook with clickable DOI/PMID hyperlinks |
-| Reproducible search scripts | `[`scripts/`](sample_projects/chw-maternal-mental-health/scripts/)` | Thin stub scripts that reproduce each database search |
-| Data extraction | `[`data-extraction.qmd`](sample_projects/chw-maternal-mental-health/data-extraction.qmd)` | Structured data extraction template |
-| Risk of bias | `[`rob2-assessments.qmd`](sample_projects/chw-maternal-mental-health/rob2-assessments.qmd)` | Cochrane RoB 2 assessments |
-| Evidence synthesis | `[`synthesis.qmd`](sample_projects/chw-maternal-mental-health/synthesis.qmd)` | Narrative and quantitative synthesis |
-| PRISMA flow | `[`review-tracking/`](sample_projects/chw-maternal-mental-health/review-tracking/)` | PRISMA flow diagram tracking data |
-| Project tracking | `[`project-tracking/`](sample_projects/chw-maternal-mental-health/project-tracking/)` | Milestones, tasks, and decision log |
-| AI contributions log | `[`ai-contributions-log.md`](sample_projects/chw-maternal-mental-health/ai-contributions-log.md)` | Full audit trail of AI-assisted work |
-| References | `[`references.bib`](sample_projects/chw-maternal-mental-health/references.bib)` | BibTeX bibliography managed via Zotero |
+| Review protocol | [`protocol.qmd`](sample_projects/chw-maternal-mental-health/protocol.qmd) | PRISMA-compliant protocol with PICO framework |
+| Manuscript (source) | [`manuscript.qmd`](sample_projects/chw-maternal-mental-health/manuscript.qmd) | IMRaD manuscript with citations and AI disclosure |
+| Manuscript (HTML) | [`manuscript.html`](sample_projects/chw-maternal-mental-health/manuscript.html) | Rendered HTML version for browser viewing |
+| Manuscript (PDF) | [`manuscript.pdf`](sample_projects/chw-maternal-mental-health/manuscript.pdf) | Rendered PDF for print/submission |
+| Manuscript (Word) | [`manuscript.docx`](sample_projects/chw-maternal-mental-health/manuscript.docx) | Rendered DOCX for journal submission or collaboration |
+| Search results (SQLite) | [`data/search_results.db`](sample_projects/chw-maternal-mental-health/data/) | Structured database of results from PubMed, OpenAlex, CrossRef, Semantic Scholar |
+| Search results (Excel) | [`data/search_results.xlsx`](sample_projects/chw-maternal-mental-health/data/) | Filterable Excel workbook with clickable DOI/PMID hyperlinks |
+| Reproducible search scripts | [`scripts/`](sample_projects/chw-maternal-mental-health/scripts/) | Thin stub scripts that reproduce each database search |
+| Data extraction | [`data-extraction.qmd`](sample_projects/chw-maternal-mental-health/data-extraction.qmd) | Structured data extraction template |
+| Risk of bias | [`rob2-assessments.qmd`](sample_projects/chw-maternal-mental-health/rob2-assessments.qmd) | Cochrane RoB 2 assessments |
+| Evidence synthesis | [`synthesis.qmd`](sample_projects/chw-maternal-mental-health/synthesis.qmd) | Narrative and quantitative synthesis |
+| PRISMA flow | [`review-tracking/`](sample_projects/chw-maternal-mental-health/review-tracking/) | PRISMA flow diagram tracking data |
+| Project tracking | [`project-tracking/`](sample_projects/chw-maternal-mental-health/project-tracking/) | Milestones, tasks, and decision log |
+| AI contributions log | [`ai-contributions-log.md`](sample_projects/chw-maternal-mental-health/ai-contributions-log.md) | Full audit trail of AI-assisted work |
+| References | [`references.bib`](sample_projects/chw-maternal-mental-health/references.bib) | BibTeX bibliography managed via Zotero |
 
 Browse the sample project to see what a completed RWA-assisted review looks like before starting your own.
 
@@ -462,11 +462,11 @@ The tool supports multiple systematic review reporting standards (user selects):
 
 ## Contributing
 
-Contributions are welcome. See `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-`[MIT License](LICENSE)`
+[MIT License](LICENSE)
 
 ## How To Cite
 
@@ -486,7 +486,7 @@ BibTeX:
 }
 ```
 
-You can also copy the canonical entry directly from `[templates/rwa-citation.bib](templates/rwa-citation.bib)` into your project's `references.bib`.
+You can also copy the canonical entry directly from [templates/rwa-citation.bib](templates/rwa-citation.bib) into your project's `references.bib`.
 
 ## Acknowledgments
 

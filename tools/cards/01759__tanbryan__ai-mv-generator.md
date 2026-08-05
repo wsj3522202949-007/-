@@ -190,4 +190,4 @@ These samples provide an example of the output you can expect from the system.
 
 ## License
 
-This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

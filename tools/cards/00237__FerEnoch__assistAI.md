@@ -419,7 +419,7 @@ For larger changes, please open an issue first to discuss the approach.
 
 ## License
 
-This project is licensed under the `[MIT License](LICENSE)`.
+This project is licensed under the [MIT License](LICENSE).
 
 related:
   - methods/网文写作最强SOP.md

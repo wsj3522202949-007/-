@@ -146,7 +146,7 @@ vibe-slop rules
 | S12 | Defensive Over-check | LOW | Guards for impossible conditions (`if x is not None and x != None`) |
 | S13 | TODO Graveyard | LOW | Excessive TODO/FIXME markers left in code |
 
-See `[TAXONOMY.md](TAXONOMY.md)` for full specification.
+See [TAXONOMY.md](TAXONOMY.md) for full specification.
 
 ## Slop Score
 

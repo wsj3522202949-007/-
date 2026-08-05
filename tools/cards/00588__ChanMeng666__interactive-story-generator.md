@@ -39,7 +39,7 @@ related:
 
 <div align="center"><a name="readme-top"></a>
 
-`[![Project Banner](./public/interactive-story-generator-logo.svg)`](#)
+[![Project Banner](./public/interactive-story-generator-logo.svg)](#)
 
 # 🎭 Interactive Story Generator<br/><h3>AI-Powered Collaborative Storytelling Platform</h3>
 
@@ -585,7 +585,7 @@ We welcome contributions! Here's how you can help improve the Interactive Story 
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 **License Benefits:**
 - ✅ Commercial use allowed
@@ -614,7 +614,7 @@ This project is licensed under the Apache License 2.0 - see the `[LICENSE](LICEN
 **Contact Information:**
 - <img src="https://cdn.simpleicons.org/github/181717" width="16" height="16"> GitHub: [ChanMeng666](https://github.com/ChanMeng666)
 - <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16"> LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
-- <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16"> Email: `[chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)`
+- <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16"> Email: [chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)
 - <img src="https://cdn.simpleicons.org/internetexplorer/0078D4" width="16" height="16"> Portfolio: [chanmeng.org](https://chanmeng.org/)
 
 ---

@@ -53,7 +53,7 @@ related:
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Node.js >= 20.19](https://img.shields.io/static/v1?label=node&message=%3E=20.19.0%20||%20%3E=22.12.0&logo=node.js&color=3f893e)](https://nodejs.org/about/releases)
 
-`[English](README.md)` · `[繁體中文](README.zh-TW.md)`
+[English](README.md) · [繁體中文](README.zh-TW.md)
 
 Noveler is a free, open-source **AI writing app** for authors of long-form fiction. Write or paste an opening, then drive the story forward turn by turn with plain-language author directives — the AI writes the prose while you stay the director. A built-in **Director** plans plot beats ahead, a persistent **World Memory** tracks characters, relationships and events, and automatic editor passes refine dialogue and narration as you go.
 
@@ -61,7 +61,7 @@ Bring your own model: connect **OpenAI**, **OpenRouter**, any **OpenAI-compatibl
 
 > Keywords: AI novel writer · LLM creative writing · interactive fiction generator · 小說生成器 · 網文/爽文 co-writing · Electron desktop app · OpenAI / OpenRouter / Ollama · 繁體中文 AI 寫作
 
-!`[Noveler — AI novel writing desktop app](docs/screenshot.png)`
+![Noveler — AI novel writing desktop app](docs/screenshot.png)
 
 ## Why Noveler
 

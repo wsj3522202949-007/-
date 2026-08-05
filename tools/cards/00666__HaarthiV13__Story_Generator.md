@@ -146,4 +146,4 @@ Contributions are welcome! Please follow these steps to contribute:
 
 ## 📧 Contact
 
-For any inquiries or feedback, please reach out to `[Haarthi Vallabhaneni](haarthivallabhaneni13@gmail.com)`.
+For any inquiries or feedback, please reach out to [Haarthi Vallabhaneni](haarthivallabhaneni13@gmail.com).

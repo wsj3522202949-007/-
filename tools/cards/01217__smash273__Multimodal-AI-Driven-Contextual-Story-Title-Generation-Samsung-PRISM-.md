@@ -272,14 +272,14 @@ In the v4 architecture, the multimodal inputs represent the following:
 
 Before training the **PRISM-FUSION v4** model, the raw video modalities must be pre-extracted into high-dimensional embeddings using the following modern extraction Jupyter notebooks:
 
-### 1. ⚡ On-Screen Text Extraction (`[PRISM_OCR_Colab.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_OCR_Colab.ipynb)`)
+### 1. ⚡ On-Screen Text Extraction ([PRISM_OCR_Colab.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_OCR_Colab.ipynb))
 *   **Purpose**: Extracts on-screen text overlays (chyrons, watermarks, presentation slides) on Google Colab T4.
 *   **Engine**: EasyOCR (GPU-accelerated via PyTorch & CUDA).
 *   **Output**: Saved as individual `.txt` files in `ocr_text/{video_id}.txt`.
 *   **Performance**: ~1.5–3s per video (~2.5–4 hours for all 4,500 videos).
 *   **Key Feature**: **Resume-safe design**. If your Colab session disconnects, simply re-run the main extraction cell; it automatically skips already-processed videos.
 
-### 2. 📝 Unified Text BERT Encoding (`[PRISM_BERT_Extract.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_BERT_Extract.ipynb)`)
+### 2. 📝 Unified Text BERT Encoding ([PRISM_BERT_Extract.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_BERT_Extract.ipynb))
 *   **Purpose**: Transcribes voice narration and encodes both speech (ASR) and on-screen text (OCR) into semantic vectors.
 *   **Engine**: `faster-whisper` (ASR) + `easyocr` (OCR fallback) + HuggingFace `bert-base-uncased`.
 *   **Outputs**:
@@ -288,7 +288,7 @@ Before training the **PRISM-FUSION v4** model, the raw video modalities must be 
     *   `ocr_text/{video_id}.txt` & `audio_text/{video_id}.txt`: Cleaned raw text files.
 *   **Filtering**: Employs an intelligent alpha-ratio scoring function to discard garbled OCR boxes, website URLs, and timestamps, ensuring only clean words are encoded.
 
-### 3. 🔊 Audio-Visual Feature Extraction (`[PRISM_AudioVision_Extract.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_AudioVision_Extract.ipynb)`)
+### 3. 🔊 Audio-Visual Feature Extraction ([PRISM_AudioVision_Extract.ipynb](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_AudioVision_Extract.ipynb))
 *   **Purpose**: Extracts deep acoustic event patterns and temporal visual features.
 *   **Engine**: Microsoft CLAP (Contrastive Language-Audio Pretraining) + OpenAI CLIP (`ViT-B/32`).
 *   **Outputs**:
@@ -373,7 +373,7 @@ gantt
 
 ### ☁️ Google Colab Workflow (`PRISM_Multimodal_v4_Colab.ipynb`)
 
-1. Open the `[Jupyter Notebook](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_Multimodal_v4_Colab.ipynb)` inside your Google Colab instance.
+1. Open the [Jupyter Notebook](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/PRISM_Multimodal_v4_Colab.ipynb) inside your Google Colab instance.
 2. Ensure you have selected a **GPU Runtime** (T4, L4, or A100 for high speeds).
 3. **Step 1 — Install Requirements**: Runs `!pip install` to setup transformers, peft, and evaluations libraries.
 4. **Step 2 — Mount Google Drive**: Mounts your drive to load pre-extracted visual (`clip5`), acoustic (`clap`), and text (`bert`) embeddings from `MyDrive/videostory_prism`.
@@ -414,7 +414,7 @@ For both local training and Colab configurations, structure your data folder as 
 
 ---
 
-## 🤖 Ground-Truth Generation (`[run_gt_a4000.py](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/run_gt_a4000.py)`)
+## 🤖 Ground-Truth Generation ([run_gt_a4000.py](file:///c:/Users/Admin/Documents/projects/githubprism/Multimodal-AI-Driven-Contextual-Story-Title-Generation/run_gt_a4000.py))
 
 If you are expanding the dataset with new videos or need to generate high-quality, factual descriptions to train your models, use the standalone ground truth generation script. It is highly optimized for server environments with an RTX A4000 GPU (16 GB VRAM) + 32 GB RAM, but can run on any CUDA-compatible machine.
 

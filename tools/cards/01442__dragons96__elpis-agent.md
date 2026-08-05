@@ -39,7 +39,7 @@ related:
 
 # Elpis Agent
 
-`[中文文档](README_zh.md)` | English
+[中文文档](README_zh.md) | English
 
 An ultra-lightweight command-line AI coding assistant tool that mimics Cursor implementation. Elpis is an intelligent code assistant based on LangChain and OpenAI API that helps developers with code writing, file operations, and project management through natural language interaction.
 
@@ -682,7 +682,7 @@ The following are the planned functional features that will be gradually impleme
 > 💡 **Contribution Tip**: If you are interested in the above features or have other suggestions, please feel free to submit an Issue or Pull Request!
 ## License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
@@ -690,7 +690,7 @@ We welcome contributions! Please feel free to submit a Pull Request. For major c
 
 ## Author
 
-- **dragons96** - `[521274311@qq.com](mailto:521274311@qq.com)`
+- **dragons96** - [521274311@qq.com](mailto:521274311@qq.com)
 
 related:
   - methods/网文写作最强SOP.md

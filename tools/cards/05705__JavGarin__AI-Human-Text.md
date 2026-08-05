@@ -54,7 +54,7 @@ AI Human Text is a web application that transforms AI-generated text into more n
 
 ## 🖼️ Screenshot
 
-!`[AI Human Text Screenshot](public/assets/imagenAPPWEB.png)`
+![AI Human Text Screenshot](public/assets/imagenAPPWEB.png)
 
 ## 💻 Tech Stack
 

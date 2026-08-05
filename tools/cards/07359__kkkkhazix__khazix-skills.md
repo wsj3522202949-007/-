@@ -38,7 +38,7 @@ related:
 
 <div align="center">
 
-**中文** · `[English](./README.en.md)`
+**中文** · [English](./README.en.md)
 
 # 🧰 Khazix Skills
 
@@ -127,7 +127,7 @@ C 盘满了
 storage analysis
 ```
 
-→ `[SKILL.md](./storage-analyzer/SKILL.md)` · [公众号讲解](https://mp.weixin.qq.com/s/NyOMIlOD986OC4SI9vmxlA)
+→ [SKILL.md](./storage-analyzer/SKILL.md) · [公众号讲解](https://mp.weixin.qq.com/s/NyOMIlOD986OC4SI9vmxlA)
 
 </td></tr>
 </table>
@@ -167,7 +167,7 @@ storage analysis
 curl -fsSL https://aihot.virxact.com/aihot-skill/install.sh | bash
 ```
 
-→ `[SKILL.md](./aihot/SKILL.md)` · [aihot.virxact.com](https://aihot.virxact.com) · [接入指南](https://aihot.virxact.com/agent)
+→ [SKILL.md](./aihot/SKILL.md) · [aihot.virxact.com](https://aihot.virxact.com) · [接入指南](https://aihot.virxact.com/agent)
 
 </td></tr>
 </table>
@@ -215,7 +215,7 @@ curl -fsSL https://aihot.virxact.com/aihot-skill/install.sh | bash
 
 [![Tessl](https://img.shields.io/badge/Tessl-0.1.1-3B82F6?style=flat-square)](https://tessl.io/registry/khazix-skills/neat-freak)
 
-→ `[SKILL.md](./neat-freak/SKILL.md)` · [公众号讲解](https://mp.weixin.qq.com/s/tg1wd-iN2gWHWhXdY0faeg)
+→ [SKILL.md](./neat-freak/SKILL.md) · [公众号讲解](https://mp.weixin.qq.com/s/tg1wd-iN2gWHWhXdY0faeg)
 
 </td></tr>
 </table>
@@ -247,7 +247,7 @@ curl -fsSL https://aihot.virxact.com/aihot-skill/install.sh | bash
 [![ClawHub](https://img.shields.io/badge/ClawHub-v1.0.0-EC4899?style=flat-square)](https://clawhub.ai)
 [![Tessl](https://img.shields.io/badge/Tessl-published-3B82F6?style=flat-square)](https://tessl.io/registry/khazix-skills/hv-analysis)
 
-→ `[SKILL.md](./hv-analysis/SKILL.md)` · [公众号讲解](https://mp.weixin.qq.com/s/Y_uRMYBmdLWUPnz_ac7jWA)
+→ [SKILL.md](./hv-analysis/SKILL.md) · [公众号讲解](https://mp.weixin.qq.com/s/Y_uRMYBmdLWUPnz_ac7jWA)
 
 </td></tr>
 </table>
@@ -278,7 +278,7 @@ curl -fsSL https://aihot.virxact.com/aihot-skill/install.sh | bash
 [![ClawHub](https://img.shields.io/badge/ClawHub-v1.0.0-EC4899?style=flat-square)](https://clawhub.ai)
 [![Tessl](https://img.shields.io/badge/Tessl-0.1.1-3B82F6?style=flat-square)](https://tessl.io/registry/khazix-skills/khazix-writer)
 
-→ `[SKILL.md](./khazix-writer/SKILL.md)` · [公众号讲解](https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg)
+→ [SKILL.md](./khazix-writer/SKILL.md) · [公众号讲解](https://mp.weixin.qq.com/s/AtxGrii_K-nzkwUM9SNhEg)
 
 </td></tr>
 </table>
@@ -297,7 +297,7 @@ related:
 
 <div align="center">
 
-`[MIT License](./LICENSE)` · 自由使用 / 修改 / 再分发
+[MIT License](./LICENSE) · 自由使用 / 修改 / 再分发
 
 Made by [@KKKKhazix](https://github.com/KKKKhazix)
 

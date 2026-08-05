@@ -72,7 +72,7 @@ A sample story can be found under _stories dir. The sample contains raw content 
 
 ## High Level Diagram
 
-!`[Alt text](docs/high-level-diagram.png?raw=true "Title")`
+![Alt text](docs/high-level-diagram.png?raw=true "Title")
 
 ## Prerequisites
 

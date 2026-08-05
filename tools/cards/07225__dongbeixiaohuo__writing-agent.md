@@ -90,19 +90,19 @@ related:
 
 如果你只想先判断这个仓库值不值得收藏，不要先看安装，先看这个真实样本：
 
-`[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)`
+[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 
 这不是只放一篇成品，而是把整条写作链路都放出来了，包括：
 
-- 选题和约束：`[01_theme.md](demo/工资的一半，是你受的气折算的/01_theme.md)`
-- 观点定牙齿：`[01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)`
-- 伤疤和证据：`[02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)`、`[02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)`
-- 结构和开头：`[03_outline.md](demo/工资的一半，是你受的气折算的/03_outline.md)`、`[05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)`
-- 草稿和去 AI 味：`[draft_v1.md](demo/工资的一半，是你受的气折算的/draft_v1.md)`、`[draft_v1_humanized.md](demo/工资的一半，是你受的气折算的/draft_v1_humanized.md)`
-- 审稿和传播测试：`[pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)`、`[wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)`
-- 事实核查：`[fact_claims.json](demo/工资的一半，是你受的气折算的/fact_claims.json)`、`[fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)`
-- 纯文本候选稿：`[draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)`
-- 运行态记录：`[run_manifest.json](demo/工资的一半，是你受的气折算的/run_manifest.json)`
+- 选题和约束：[01_theme.md](demo/工资的一半，是你受的气折算的/01_theme.md)
+- 观点定牙齿：[01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)
+- 伤疤和证据：[02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)、[02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)
+- 结构和开头：[03_outline.md](demo/工资的一半，是你受的气折算的/03_outline.md)、[05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)
+- 草稿和去 AI 味：[draft_v1.md](demo/工资的一半，是你受的气折算的/draft_v1.md)、[draft_v1_humanized.md](demo/工资的一半，是你受的气折算的/draft_v1_humanized.md)
+- 审稿和传播测试：[pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)、[wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)
+- 事实核查：[fact_claims.json](demo/工资的一半，是你受的气折算的/fact_claims.json)、[fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)
+- 纯文本候选稿：[draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)
+- 运行态记录：[run_manifest.json](demo/工资的一半，是你受的气折算的/run_manifest.json)
 
 建议浏览顺序：
 
@@ -126,7 +126,7 @@ related:
 
 下面不是虚构示例，是这个仓库里一篇真实跑完的文章项目。
 
-- Demo 目录：`[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)`
+- Demo 目录：[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 - 文章标题：`工资的一半，是你受的气折算的`
 - 主题：`工资的一半是“技术溢价”，一半是“情绪折价”`
 - 核心判断：`你的工资不是你值多少，而是市场价减去组织税之后剩下的数`
@@ -142,15 +142,15 @@ related:
 
 最关键的几个文件：
 
-- `[01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)`：先把文章的“牙齿”定下来，避免后面越写越软
-- `[02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)`：不是堆资料，而是打捞致命场景、隐秘代价、荒诞细节
-- `[02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)`：给数字、引文和历史材料建立可追踪的证据账本
-- `[04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)`：不是只做共情，而是设计读者为什么愿意转发
-- `[05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)`：先赛马开头，再锁定起手式
-- `[pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)`：发布前追问和红队挑刺
-- `[wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)`：模拟朋友圈、同行群、家族群的真实反应
-- `[fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)`：把通过项、黄色建议和红色问题分级留痕
-- `[draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)`：去 AI 味后的纯文本候选稿
+- [01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)：先把文章的“牙齿”定下来，避免后面越写越软
+- [02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)：不是堆资料，而是打捞致命场景、隐秘代价、荒诞细节
+- [02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)：给数字、引文和历史材料建立可追踪的证据账本
+- [04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)：不是只做共情，而是设计读者为什么愿意转发
+- [05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)：先赛马开头，再锁定起手式
+- [pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)：发布前追问和红队挑刺
+- [wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)：模拟朋友圈、同行群、家族群的真实反应
+- [fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)：把通过项、黄色建议和红色问题分级留痕
+- [draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)：去 AI 味后的纯文本候选稿
 
 如果你只看最终效果，这篇 Demo 的发布出口就是：
 
@@ -182,7 +182,7 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 | `工作流导演` | `workflow-producer` |
 | `公众号文章获取` | `web-article-extractor` |
 
-正常 `git pull` 会完成目录迁移；如果你有自定义脚本、快捷命令或文档直接引用旧目录，需要同步更新路径。完整变更见 `[CHANGELOG](CHANGELOG.md)`，面向发布和升级的说明见 `[v0.9.0 Release Notes](.github/releases/v0.9.0.md)`。
+正常 `git pull` 会完成目录迁移；如果你有自定义脚本、快捷命令或文档直接引用旧目录，需要同步更新路径。完整变更见 [CHANGELOG](CHANGELOG.md)，面向发布和升级的说明见 [v0.9.0 Release Notes](.github/releases/v0.9.0.md)。
 
 ### v0.8.1 风格提取重大升级：从"形似"到"神似"
 
@@ -195,7 +195,7 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 - **判断库（观点指纹）**：新增"这个作者反复表达的实质判断是什么、价值排序是什么"——句式可以模仿，但一个人会得出什么结论，是仿不出来的
 - **独立盲测验证**：仿写验证不再是自己写完自己打分（这样的分数必然虚高），改成拉一个完全没见过风格文件的独立 AI，把原文和仿写打乱顺序让它猜"哪个是仿的"。它猜错了，才算真的过关
 
-用新流程重新提取的两份风格文件（`[耍大刀风格](.claude/styles/耍大刀风格.md)`/金错刀、`[六六的风格](.claude/styles/六六的风格.md)`/刘润）已经验证：独立盲测员被骗过，误把原文当成了仿写。六六风格这一轮还挖出一条此前完全没发现的硬指纹——**全篇零感叹号**，靠短句和逗号顿挫表达情绪，而不是靠标点抒情。
+用新流程重新提取的两份风格文件（[耍大刀风格](.claude/styles/耍大刀风格.md)/金错刀、[六六的风格](.claude/styles/六六的风格.md)/刘润）已经验证：独立盲测员被骗过，误把原文当成了仿写。六六风格这一轮还挖出一条此前完全没发现的硬指纹——**全篇零感叹号**，靠短句和逗号顿挫表达情绪，而不是靠标点抒情。
 
 如果你之前觉得"风格学出来的文章有点像，但总差点意思"，这一版就是冲着这个问题去的。
 
@@ -236,11 +236,11 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 
 ### v0.7.6 深化生产骨架
 
-- `research-expert` 从泛泛调研改成“伤疤打捞”，核心产物是 `[02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)`
-- `empathy-designer` 从共情点设计升级成“社交转发动机”，核心产物是 `[04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)`
-- 新增 `opening-tournament`，在正式写稿前先赛马开头，核心产物是 `[05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)`
+- `research-expert` 从泛泛调研改成“伤疤打捞”，核心产物是 [02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)
+- `empathy-designer` 从共情点设计升级成“社交转发动机”，核心产物是 [04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)
+- 新增 `opening-tournament`，在正式写稿前先赛马开头，核心产物是 [05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)
 
-如果你只想知道仓库现在值不值得拉下来试，先看 `v0.9.0` 这几条就够了。更老的版本记录去 `[CHANGELOG](CHANGELOG.md)` 或 Releases 看，不应该堵在首页前面。
+如果你只想知道仓库现在值不值得拉下来试，先看 `v0.9.0` 这几条就够了。更老的版本记录去 [CHANGELOG](CHANGELOG.md) 或 Releases 看，不应该堵在首页前面。
 
 ---
 
@@ -329,7 +329,7 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 2. clone 本仓库并执行 `npm ci`
 3. 配好你要用的模型 API 或 Claude 账号
 4. 一定在项目根目录启动 `claude`
-5. 先用 `[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)` 理解流程，再开始正式写作
+5. 先用 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/) 理解流程，再开始正式写作
 
 如果你已经准备直接跑完整版，继续看：
 
@@ -826,7 +826,7 @@ npm run check
 
 ### 路线 A：先看 Demo，再安装
 
-1. 先看 `[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)`
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 2. 看明白 `01_theme.md -> draft_v1_humanized_clean.txt` 这条链路
 3. 再决定你要走哪家模型和哪种费用方案
 4. 最后开始安装和配置
@@ -952,7 +952,7 @@ see_also:
 
 ## 如果你只想记住最重要的 4 句话
 
-1. 先看 `[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)`，比先看安装说明更容易看懂项目价值。
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)，比先看安装说明更容易看懂项目价值。
 2. `DeepSeek-V3.2` 是默认推荐，不是因为它压过另外两家，而是因为它最适合低成本先把整套流程跑通。
 3. 完整版一定要在项目根目录启动 Claude Code，最后默认交付的是 `_clean.txt`，并可按需额外导出公众号排版 `.html`。
 4. 新版会在调研阶段生成 `02_evidence_ledger.json`，最终交付前生成 `fact_claims.json` 和 `fact_check_report.md`，用来拦截错误事实和失效引用。

@@ -369,4 +369,4 @@ related:
 
 Distributed under the **GNU General Public License v3.0** — the same license as the original WritingTools project.
 
-See `[LICENSE](LICENSE)` for details.
+See [LICENSE](LICENSE) for details.

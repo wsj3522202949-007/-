@@ -75,7 +75,7 @@ Additionally, we encourage research on detection of finetuned models.  We have r
 
 We're interested in seeing research in detectability of GPT-2 model family generations.
 
-We provide some `[initial analysis](detection.md)` of two baselines, as well as `[code](./baseline.py)` for the better baseline.
+We provide some [initial analysis](detection.md) of two baselines, as well as [code](./baseline.py) for the better baseline.
 
 Overall, we are able to achieve accuracies in the mid-90s for Top-K 40 generations, and mid-70s to high-80s (depending on model size) for random generations.  We also find some evidence that adversaries can evade detection via finetuning from released models.
 

@@ -200,7 +200,7 @@ Models' scepter_path:
 ### ACE++ FFT model  
 Fully finetuning a composite model with ACE’s data to support various editing and reference generation tasks through an instructive approach.
 
-We introduced 64 additional channels in the channel dimension to differentiate between the repainting task and the editing task. In these channels, we place the latent representation of the pixel space from the edited image, while keeping other channels consistent with the repainting task. One issue with this approach is that it changes the input channel number of the FLUX-Fill-Dev model from 384 to 448. The specific configuration can be referenced in the `[configuration file](config/ace_plus_fft.yaml)`.
+We introduced 64 additional channels in the channel dimension to differentiate between the repainting task and the editing task. In these channels, we place the latent representation of the pixel space from the edited image, while keeping other channels consistent with the repainting task. One issue with this approach is that it changes the input channel number of the FLUX-Fill-Dev model from 384 to 448. The specific configuration can be referenced in the [configuration file](config/ace_plus_fft.yaml).
 
 
 ### Examples

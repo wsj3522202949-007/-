@@ -100,13 +100,13 @@ Extwee supports multiple historical and current Twine-compatible formats.
 |----------------------------------------------------------------------------------------------------------------------------------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------related:
   - methods/QUICK_START.md
 ---|
-| `[Twine 1 HTML (2006 - 2015)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-1-htmloutput-doc.md )`          | Yes   | Partial support. Twine 1 HTML can be produced, but the  `StorySettings`  optional passage introduced in Twine 1.4.0 requires external libraries like jQuery not included with Extwee. |
-| `[Twine 1 TWS (2009 - 2015)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-1-twsoutput.md )`                | Yes   | Extwee does not support TWS (Python pickle) output because no current version of Twine or other story compilation tool produces this historical format.                                                |
-| `[Twine 2 HTML (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-htmloutput-spec.md )`      | Yes   | Yes                                                                                                                                                                                   |
-| `[Twine 2 Archive HTML (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-archive-spec.md )` | Yes   | Yes                                                                                                                                                                                   |
-| `[Twee 3 (2021 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twee-3-specification.md )`               | Yes   | Yes                                                                                                                                                                                   |
-| `[Twine 2 JSON (2023 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-jsonoutput-doc.md )`       | Yes   | Yes                                                                                                                                                                                   |
-| `[Twine 2 Story Format (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-storyformats-spec.md )`       | Yes   | Yes                                                                                                                                                                                   |
+| [Twine 1 HTML (2006 - 2015)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-1-htmloutput-doc.md )          | Yes   | Partial support. Twine 1 HTML can be produced, but the  `StorySettings`  optional passage introduced in Twine 1.4.0 requires external libraries like jQuery not included with Extwee. |
+| [Twine 1 TWS (2009 - 2015)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-1-twsoutput.md )                | Yes   | Extwee does not support TWS (Python pickle) output because no current version of Twine or other story compilation tool produces this historical format.                                                |
+| [Twine 2 HTML (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-htmloutput-spec.md )      | Yes   | Yes                                                                                                                                                                                   |
+| [Twine 2 Archive HTML (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-archive-spec.md ) | Yes   | Yes                                                                                                                                                                                   |
+| [Twee 3 (2021 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twee-3-specification.md )               | Yes   | Yes                                                                                                                                                                                   |
+| [Twine 2 JSON (2023 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-jsonoutput-doc.md )       | Yes   | Yes                                                                                                                                                                                   |
+| [Twine 2 Story Format (2015 - Present)]( https://github.com/iftechfoundation/twine-specs/blob/master/twine-2-storyformats-spec.md )       | Yes   | Yes                                                                                                                                                                                   |
 
 **Note:** Round-trip translations can present problems because of required fields and properties per format. Some metadata may be added or removed based on the specification being followed.
 
@@ -244,7 +244,7 @@ Enabling Twine 1 mode requires using the `--twine1` flag.
 
 When invoked from its command-line interface using `npx extwee`, it will look for a `extwee.config.json` file in the local directory. If found, and its fields are valid, processing will use the values found in the file.
 
-Consult the possible options in its `[dedicated file](extwee.config.md)`.
+Consult the possible options in its [dedicated file](extwee.config.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,7 +258,7 @@ When using the API, it is possible to only import a single function or object to
 
 ## Contributing
 
-Contributions are welcome! Please read our `[Contributing Guide](CONTRIBUTING.md)` for details on:
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on:
 
 - Setting up your development environment
 - Code style and standards
@@ -266,9 +266,9 @@ Contributions are welcome! Please read our `[Contributing Guide](CONTRIBUTING.md
 - Submitting pull requests
 
 See also:
-- `[Code of Conduct](CODE_OF_CONDUCT.md)`
-- `[Changelog](CHANGELOG.md)`
-- `[Security Policy](SECURITY.md)`
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Changelog](CHANGELOG.md)
+- [Security Policy](SECURITY.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

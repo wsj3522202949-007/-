@@ -44,7 +44,7 @@ related:
 
 A simple Flask-based web app that can detect if an image is AI-generated or if a text is written by AI. Uses OpenAI’s CLIP model for image analysis and a RoBERTa-based model for text analysis.
 
-!`[demo](./frontend/images/demo.gif)`
+![demo](./frontend/images/demo.gif)
 
 ## Running the App
 

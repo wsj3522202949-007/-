@@ -37,14 +37,14 @@ related:
   - methods/QUICK_START.md
 ---
 
-!`[Cover](assets/Cover.jpg)`
+![Cover](assets/Cover.jpg)
 <h1 align="center">
   <img src="assets/logo.png" height="70" alt="Logo" align="absmiddle">&nbsp;OpenStory (万象谱)
 </h1>
 
 <div align="center">
 
-`[简体中文](README.md)` | `[English](README_en.md)` 
+[简体中文](README.md) | [English](README_en.md) 
 
 </div>
 
@@ -75,20 +75,20 @@ OpenStory 是一个基于大语言模型（LLM）和 [Agent-Kernel](https://gith
 - **丰富的插件化机制与高可配性**：涵盖智能体感知、计划、执行、反思等完整生命周期插件，并支持通过 YAML 文件灵活管理系统、环境、动作与智能体配置。
 
 ## 📖 Story 1: 红楼梦 (Dream of the Red Chamber)
-!`[Cover](assets/Story1.png)`
+![Cover](assets/Story1.png)
 作为 OpenStory 框架的第一个官方落地故事，本项目中的 `examples/story_of_the_stone` 示例以中国古典名著《红楼梦》为背景。我们利用多智能体系统（MAS）技术，在一比一仿真的红楼梦大观园地图中，生动模拟了书中人物的日常行为、社交互动与故事推演。在这里，你可以看到林黛玉的敏感多思、贾宝玉的叛逆多情，以及整个贾府在历史车轮下的命运交织。
 
 ## 📖 Story 2: 西部世界（West World）
-!`[Cover](assets/Story2.png)`
+![Cover](assets/Story2.png)
 作为 OpenStory 框架的第二个官方故事，本项目中的 `examples/WestWorld` 示例以科幻剧集《西部世界》为背景，构建了一座由多智能体共同驱动的仿真乐园。Host 会感知场景、规划行动、移动交谈并积累记忆；那些反复出现的日常、难以解释的熟悉感与他人的只言片语，也会让他们逐渐发现循环背后的真相。在这里，你既可以在自由模式中观察 Dolores、Maeve、Teddy 等角色的自主互动与命运分岔，也可以在剧情模式中扮演一名 Host，选择结盟、隐藏异常或逃离乐园，并在 Overseer 的监控与干预下亲手推演属于自己的觉醒故事。
 
 ## 📖 Story 3： Coming Soon...
-!`[Cover](assets/Story4.png)`
+![Cover](assets/Story4.png)
 ## 🚀 快速开始
 
 > **📚 想要更详细的操作指南？**
 > 我们为您准备了详尽的图文教程，带您从零开始玩转红楼梦沙盘世界：
-> 👉 `[点击查看 OpenStory 红楼梦互动教程](tutorial/Story_Of_Stone/tutorial_zh.md)`
+> 👉 [点击查看 OpenStory 红楼梦互动教程](tutorial/Story_Of_Stone/tutorial_zh.md)
 
 ### 1. 环境准备
 
@@ -135,10 +135,10 @@ http://localhost:8000/frontend/index.html
 ```
 并在页面中选择游玩自由模式或剧情模式。
 
-详细玩法和模型配置请参阅 `[西部世界说明](examples/WestWorld/README.md)`。
+详细玩法和模型配置请参阅 [西部世界说明](examples/WestWorld/README.md)。
 
 ### 4. 访问可视化界面
-!`[Frontend Preview](assets/frontend.png)`
+![Frontend Preview](assets/frontend.png)
 当看到终端输出 `API Server started at http://0.0.0.0:8000` 后，在浏览器中打开以下地址：
 
 👉 [http://localhost:8000/frontend/index.html](http://localhost:8000/frontend/index.html)

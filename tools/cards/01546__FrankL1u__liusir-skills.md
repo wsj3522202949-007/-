@@ -57,9 +57,9 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| `[ls-multi-collector](./skills/ls-multi-collector)` | Collect Douyin, YouTube, WeChat, X, and generic web content into local bundles with video download, transcript, and article-fetch workflows |
-| `[ls-wechat-article](./skills/ls-wechat-article)` | Write and publish WeChat Official Account articles end-to-end — topic intake, drafting, SEO polish, cover and inline images, theme preview, draft publish, stats backfill, and learning workflows |
-| `[ls-xhs-note](./skills/ls-xhs-note)` | Create Xiaohongshu note assets end-to-end — topic intake, source article drafting, native note writing, visual planning, and image generation |
+| [ls-multi-collector](./skills/ls-multi-collector) | Collect Douyin, YouTube, WeChat, X, and generic web content into local bundles with video download, transcript, and article-fetch workflows |
+| [ls-wechat-article](./skills/ls-wechat-article) | Write and publish WeChat Official Account articles end-to-end — topic intake, drafting, SEO polish, cover and inline images, theme preview, draft publish, stats backfill, and learning workflows |
+| [ls-xhs-note](./skills/ls-xhs-note) | Create Xiaohongshu note assets end-to-end — topic intake, source article drafting, native note writing, visual planning, and image generation |
 
 ## Quick Install
 
@@ -98,7 +98,7 @@ Skill-specific notes:
 - `ls-wechat-article`: requires WeChat Official Account API credentials for publishing, and can optionally use TrendRadar MCP for topic signals
 - `ls-xhs-note`: does not publish directly; it can optionally use TrendRadar MCP for topic signals and image providers for Step 5 generation
 
-See the setup guides in `[skills/ls-multi-collector/README.md](./skills/ls-multi-collector/README.md)`, `[skills/ls-wechat-article/README.md](./skills/ls-wechat-article/README.md)`, and `[skills/ls-xhs-note/README.md](./skills/ls-xhs-note/README.md)`.
+See the setup guides in [skills/ls-multi-collector/README.md](./skills/ls-multi-collector/README.md), [skills/ls-wechat-article/README.md](./skills/ls-wechat-article/README.md), and [skills/ls-xhs-note/README.md](./skills/ls-xhs-note/README.md).
 
 ## Works With
 

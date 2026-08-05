@@ -364,7 +364,7 @@ pytest tests/ --cov=src/gpt_detector --cov-report=html
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our `[Contributing Guidelines](CONTRIBUTING.md)` for details on how to:
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
 
 - Report bugs
 - Suggest enhancements
@@ -373,7 +373,7 @@ We welcome contributions! Please see our `[Contributing Guidelines](CONTRIBUTING
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 

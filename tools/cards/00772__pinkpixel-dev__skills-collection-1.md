@@ -46,7 +46,7 @@ related:
 
 A large collection of AI/agent skills, resources, references, scripts, and supporting assets.
 
-This repo is organized for scale rather than a giant table of contents. Instead of listing every skill here, the repository keeps each skill in its own folder under `[`SKILLS/`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/SKILLS)`, where it can include its own instructions, references, scripts, and assets.
+This repo is organized for scale rather than a giant table of contents. Instead of listing every skill here, the repository keeps each skill in its own folder under [`SKILLS/`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/SKILLS), where it can include its own instructions, references, scripts, and assets.
 
 Related repos:
 
@@ -55,7 +55,7 @@ Related repos:
 
 ## What this repo contains
 
-- `969` skill folders in `[`SKILLS/`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/SKILLS)`
+- `969` skill folders in [`SKILLS/`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/SKILLS)
 - Skill definitions, typically in `SKILL.md`
 - Optional supporting material such as `references/`, `scripts/`, `assets/`, examples, and license files
 - A mix of engineering, security, research, writing, product, automation, frontend, growth, and domain-specific skills
@@ -96,4 +96,4 @@ find SKILLS -name SKILL.md
 
 ## License
 
-This repository is available under the MIT License. See `[`LICENSE`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/LICENSE)`.
+This repository is available under the MIT License. See [`LICENSE`](/home/sizzlebop/PINKPIXEL/PROJECTS/CURRENT/skills-collection-1/LICENSE).

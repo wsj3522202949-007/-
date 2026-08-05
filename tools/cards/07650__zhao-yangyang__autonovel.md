@@ -95,7 +95,7 @@ Fix the top issues. Repeat until the reviewer runs out of major items.
 Rebuild docs, typeset in LaTeX, generate art, produce audiobook scripts,
 build ePub, create landing page.
 
-See `[PIPELINE.md](PIPELINE.md)` for the full technical specification.
+See [PIPELINE.md](PIPELINE.md) for the full technical specification.
 
 ---
 

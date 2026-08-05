@@ -156,7 +156,7 @@ You will receive a CSV file containing the original tweet and the generated ques
 
 ## License
 
-This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 related:
   - methods/网文写作最强SOP.md

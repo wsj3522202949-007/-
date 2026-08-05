@@ -62,7 +62,7 @@ If this guide saved you time, a coffee goes a long way.
 
 **Select Your Language:**
 
-`[English](./README.md)` | `[简体中文](./README.zh-CN.md)` | `[日本語](./README.ja.md)`
+[English](./README.md) | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
 
 </div>
 
@@ -208,13 +208,13 @@ cd claudeforge && npm install && npm run dev
 
 ## How to Use This Repo
 
-1. **New to Claude?** Start with the `[Quick Start Guide](./docs/quick-start.md)`
-2. **Prompt engineering?** Read the `[Main Guide](./Claude-Prompt-Guide.md)`
-3. **Using Claude Code?** See the `[Claude Code Guide](./docs/claude-code-guide.md)` + `[Tips & Tricks](./docs/claude-code-tips-and-tricks.md)`
-4. **Want skills?** Browse the `[Skills Catalog](./docs/skills-catalog.md)` (100+ curated)
-5. **Building with API?** Read the `[API Guide](./docs/api-guide.md)`
-6. **Deep diving?** Explore the `[Deep Research Index](./docs/deep-research-index.md)` (13 community repos analyzed)
-7. **Need a template?** Pick from `[Templates](./templates/)`
+1. **New to Claude?** Start with the [Quick Start Guide](./docs/quick-start.md)
+2. **Prompt engineering?** Read the [Main Guide](./Claude-Prompt-Guide.md)
+3. **Using Claude Code?** See the [Claude Code Guide](./docs/claude-code-guide.md) + [Tips & Tricks](./docs/claude-code-tips-and-tricks.md)
+4. **Want skills?** Browse the [Skills Catalog](./docs/skills-catalog.md) (100+ curated)
+5. **Building with API?** Read the [API Guide](./docs/api-guide.md)
+6. **Deep diving?** Explore the [Deep Research Index](./docs/deep-research-index.md) (13 community repos analyzed)
+7. **Need a template?** Pick from [Templates](./templates/)
 
 ---
 
@@ -247,81 +247,81 @@ cd claude-kopitiam && bash INSTALL.sh
 
 | Guide | What You'll Learn |
 |-------|-------------------|
-| `[Claude Code Guide](./docs/claude-code-guide.md)` | CLI tool overview, v2.1.83 features, platforms, permissions |
-| `[CLAUDE.md Guide](./docs/claude-md-guide.md)` | Configuration files, rules files, auto-memory, best practices |
-| `[Hooks Guide](./docs/hooks-guide.md)` | All 24 hook events, 4 types, matchers, patterns |
-| `[Agent Teams Guide](./docs/agent-teams-guide.md)` | Multi-agent coordination, file ownership, team patterns |
-| `[Subagents Guide](./docs/subagents-guide.md)` | Agent tool, model routing, parallel execution, tool inheritance |
-| `[Plugins Guide](./docs/plugins-guide.md)` | Plugin structure, marketplace, top plugins, creating plugins |
-| `[Skills Guide](./docs/skills-guide.md)` | Skills system, progressive disclosure, skill creation |
-| `[Skills Catalog](./docs/skills-catalog.md)` | **100+ curated skills** across 15 categories |
-| `[Tips & Tricks](./docs/claude-code-tips-and-tricks.md)` | 50 power user tips, hidden features, community hacks |
-| `[Superpowers Guide](./docs/superpowers-guide.md)` | obra's Superpowers plugin: brainstorm, plan, execute, debug |
+| [Claude Code Guide](./docs/claude-code-guide.md) | CLI tool overview, v2.1.83 features, platforms, permissions |
+| [CLAUDE.md Guide](./docs/claude-md-guide.md) | Configuration files, rules files, auto-memory, best practices |
+| [Hooks Guide](./docs/hooks-guide.md) | All 24 hook events, 4 types, matchers, patterns |
+| [Agent Teams Guide](./docs/agent-teams-guide.md) | Multi-agent coordination, file ownership, team patterns |
+| [Subagents Guide](./docs/subagents-guide.md) | Agent tool, model routing, parallel execution, tool inheritance |
+| [Plugins Guide](./docs/plugins-guide.md) | Plugin structure, marketplace, top plugins, creating plugins |
+| [Skills Guide](./docs/skills-guide.md) | Skills system, progressive disclosure, skill creation |
+| [Skills Catalog](./docs/skills-catalog.md) | **100+ curated skills** across 15 categories |
+| [Tips & Tricks](./docs/claude-code-tips-and-tricks.md) | 50 power user tips, hidden features, community hacks |
+| [Superpowers Guide](./docs/superpowers-guide.md) | obra's Superpowers plugin: brainstorm, plan, execute, debug |
 
 ### Prompt Engineering
 
 | Guide | What You'll Learn |
 |-------|-------------------|
-| `[Main Prompt Guide](./Claude-Prompt-Guide.md)` | 10-component framework, Claude 4.x best practices, advanced techniques |
-| `[Ultrathink & Thinking Modes](./docs/ultrathink-thinking-modes.md)` | Adaptive thinking, effort levels, `ultrathink` keyword, API usage |
-| `[Quick Start](./docs/quick-start.md)` | Get started in 5 minutes |
-| `[API Guide](./docs/api-guide.md)` | Claude API integration, SDK usage, effort parameter |
+| [Main Prompt Guide](./Claude-Prompt-Guide.md) | 10-component framework, Claude 4.x best practices, advanced techniques |
+| [Ultrathink & Thinking Modes](./docs/ultrathink-thinking-modes.md) | Adaptive thinking, effort levels, `ultrathink` keyword, API usage |
+| [Quick Start](./docs/quick-start.md) | Get started in 5 minutes |
+| [API Guide](./docs/api-guide.md) | Claude API integration, SDK usage, effort parameter |
 
 ### Integrations & Ecosystem
 
 | Guide | What You'll Learn |
 |-------|-------------------|
-| `[MCP Integration](./docs/mcp-integration.md)` | Model Context Protocol setup and usage |
-| `[MCP Ecosystem Overview](./docs/mcp-ecosystem-overview.md)` | MCP landscape, server registry, community |
-| `[Messenger Integrations](./docs/messenger-integrations.md)` | WhatsApp, Telegram, Slack, Discord |
-| `[Remotion Video Guide](./docs/motion-graphics-claude-remotion-guide.md)` | React video generation with Claude Code |
-| `[Cowork Guide](./docs/cowork-guide.md)` | Claude Cowork autonomous workflows |
-| `[Antigravity Comparison](./docs/antigravity-comparison.md)` | Google Antigravity vs Claude Code |
+| [MCP Integration](./docs/mcp-integration.md) | Model Context Protocol setup and usage |
+| [MCP Ecosystem Overview](./docs/mcp-ecosystem-overview.md) | MCP landscape, server registry, community |
+| [Messenger Integrations](./docs/messenger-integrations.md) | WhatsApp, Telegram, Slack, Discord |
+| [Remotion Video Guide](./docs/motion-graphics-claude-remotion-guide.md) | React video generation with Claude Code |
+| [Cowork Guide](./docs/cowork-guide.md) | Claude Cowork autonomous workflows |
+| [Antigravity Comparison](./docs/antigravity-comparison.md) | Google Antigravity vs Claude Code |
 
 ### Research & Analysis
 
 | Guide | What You'll Learn |
 |-------|-------------------|
-| `[Research Report (Jan 2026)](./docs/research-report-jan-2026.md)` | 8,500+ word institutional-grade analysis |
-| `[Ecosystem Market Analysis](./docs/ecosystem-market-analysis.md)` | Market position and growth trends |
-| `[Pricing Comparison](./docs/pricing-comparison-jan-2026.md)` | Claude vs GPT-4 vs Gemini pricing |
-| `[OpenCode & AirLLM Research](./docs/research-opencode-clawbot-jan-2026.md)` | Alternative CLI tools |
+| [Research Report (Jan 2026)](./docs/research-report-jan-2026.md) | 8,500+ word institutional-grade analysis |
+| [Ecosystem Market Analysis](./docs/ecosystem-market-analysis.md) | Market position and growth trends |
+| [Pricing Comparison](./docs/pricing-comparison-jan-2026.md) | Claude vs GPT-4 vs Gemini pricing |
+| [OpenCode & AirLLM Research](./docs/research-opencode-clawbot-jan-2026.md) | Alternative CLI tools |
 
 ### Deep Research — Community Repository Analysis
 
-> **13 major Claude Code community repositories analyzed, synthesized, and rewritten from scratch.** `[Full index →](./docs/deep-research-index.md)`
+> **13 major Claude Code community repositories analyzed, synthesized, and rewritten from scratch.** [Full index →](./docs/deep-research-index.md)
 
 | Guide | What You'll Learn |
 |-------|-------------------|
-| `[Plugin Framework](./docs/plugin-framework/README.md)` | Complete dev workflow — brainstorm → plan → TDD → subagent execution → code review |
-| `[Everything Plugin](./docs/everything-plugin/README.md)` | Agent harness performance — 30 skills, 20 agents, 12 language ecosystems |
-| `[Production Skill Library](./docs/production-skill-library/README.md)` | 205 skills across 9 domains — the largest open-source skill collection |
-| `[Fullstack Skill Packs](./docs/fullstack-skill-packs/README.md)` | 66 developer skills with progressive disclosure, ~50% token reduction |
-| `[Subagent Catalog](./docs/subagent-catalog/README.md)` | 127+ agent definitions, orchestration patterns, model cost routing |
-| `[Multi-Agent Orchestration](./docs/multi-agent-orchestration/README.md)` | Enterprise swarm platform — 4 topologies, 5 consensus algorithms |
-| `[Agent Harness Fundamentals](./docs/agent-harness-fundamentals/README.md)` | Build AI agents from scratch in Python — 12-session curriculum |
-| `[Command & Config Reference](./docs/command-and-config-reference/README.md)` | All 64 slash commands, 13 frontmatter fields, settings hierarchy |
-| `[System Prompt Anatomy](./docs/system-prompt-anatomy/README.md)` | How Claude Code assembles behavior from 110+ prompt components |
-| `[Model Routing](./docs/model-routing/README.md)` | Route requests to any LLM provider — cost optimization, per-project routing |
-| `[Ecosystem Directory](./docs/ecosystem-directory/README.md)` | 150+ tools, plugins, hooks, workflows, and alternative clients |
-| `[Core Claude Code Runtime](./docs/core-claude-code-runtime/README.md)` | **NEW** Internal architecture from the March 2026 source disclosure — query engine, 40+ tools, 70+ commands, bridge, memory |
-| `[Claurst Integration](./docs/claurst-integration/README.md)` | **NEW** Rust reimplementation — unreleased features (KAIROS, Buddy, ULTRAPLAN, autoDream), 14-file spec, security findings |
+| [Plugin Framework](./docs/plugin-framework/README.md) | Complete dev workflow — brainstorm → plan → TDD → subagent execution → code review |
+| [Everything Plugin](./docs/everything-plugin/README.md) | Agent harness performance — 30 skills, 20 agents, 12 language ecosystems |
+| [Production Skill Library](./docs/production-skill-library/README.md) | 205 skills across 9 domains — the largest open-source skill collection |
+| [Fullstack Skill Packs](./docs/fullstack-skill-packs/README.md) | 66 developer skills with progressive disclosure, ~50% token reduction |
+| [Subagent Catalog](./docs/subagent-catalog/README.md) | 127+ agent definitions, orchestration patterns, model cost routing |
+| [Multi-Agent Orchestration](./docs/multi-agent-orchestration/README.md) | Enterprise swarm platform — 4 topologies, 5 consensus algorithms |
+| [Agent Harness Fundamentals](./docs/agent-harness-fundamentals/README.md) | Build AI agents from scratch in Python — 12-session curriculum |
+| [Command & Config Reference](./docs/command-and-config-reference/README.md) | All 64 slash commands, 13 frontmatter fields, settings hierarchy |
+| [System Prompt Anatomy](./docs/system-prompt-anatomy/README.md) | How Claude Code assembles behavior from 110+ prompt components |
+| [Model Routing](./docs/model-routing/README.md) | Route requests to any LLM provider — cost optimization, per-project routing |
+| [Ecosystem Directory](./docs/ecosystem-directory/README.md) | 150+ tools, plugins, hooks, workflows, and alternative clients |
+| [Core Claude Code Runtime](./docs/core-claude-code-runtime/README.md) | **NEW** Internal architecture from the March 2026 source disclosure — query engine, 40+ tools, 70+ commands, bridge, memory |
+| [Claurst Integration](./docs/claurst-integration/README.md) | **NEW** Rust reimplementation — unreleased features (KAIROS, Buddy, ULTRAPLAN, autoDream), 14-file spec, security findings |
 
 ### Templates & Examples
 
 | Resource | Description |
 |----------|-------------|
-| `[Minimal Template](./templates/minimal-prompt-template.md)` | Quick, lightweight prompt template |
-| `[Comprehensive Template](./templates/comprehensive-prompt-template.md)` | Full 10-component template |
-| `[Self-Evolving CLAUDE.md](./templates/example-clauderules.md)` | Auto-learning configuration pattern |
-| `[Coding Tasks](./docs/examples/coding-tasks.md)` | Code review and development prompts |
-| `[Research Tasks](./docs/examples/research-tasks.md)` | Research and information gathering |
-| `[Business Analysis](./docs/examples/business-analysis.md)` | Business and financial analysis |
-| `[Document Creation](./docs/examples/document-creation.md)` | Documentation and writing tasks |
+| [Minimal Template](./templates/minimal-prompt-template.md) | Quick, lightweight prompt template |
+| [Comprehensive Template](./templates/comprehensive-prompt-template.md) | Full 10-component template |
+| [Self-Evolving CLAUDE.md](./templates/example-clauderules.md) | Auto-learning configuration pattern |
+| [Coding Tasks](./docs/examples/coding-tasks.md) | Code review and development prompts |
+| [Research Tasks](./docs/examples/research-tasks.md) | Research and information gathering |
+| [Business Analysis](./docs/examples/business-analysis.md) | Business and financial analysis |
+| [Document Creation](./docs/examples/document-creation.md) | Documentation and writing tasks |
 
 ### Skills Collection (31 example skills)
 
-Browse `[skills/examples/](./skills/examples/)` for production-ready skills:
+Browse [skills/examples/](./skills/examples/) for production-ready skills:
 
 **Development:** Next.js App Router, Tailwind Design System, API Development, Prisma ORM, TypeScript Standards
 **Testing:** Vitest Unit Testing, Playwright E2E, TDD Workflow, Code Review
@@ -356,13 +356,13 @@ This guide is **free and always will be** — but keeping it accurate costs real
 
 ## Contributing
 
-We welcome contributions! See `[CONTRIBUTING.md](./CONTRIBUTING.md)` for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
 ---
 
 ## License
 
-MIT License — see `[LICENSE](./LICENSE)`.
+MIT License — see [LICENSE](./LICENSE).
 
 ---
 
@@ -392,6 +392,6 @@ related:
 
 [Star this repository](https://github.com/ThamJiaHe/claude-code-handbook) if you found it helpful!
 
-[Report Issues](https://github.com/ThamJiaHe/claude-code-handbook/issues) · `[Contribute](./CONTRIBUTING.md)` · [Discuss](https://github.com/ThamJiaHe/claude-code-handbook/discussions) · [Ko-Fi](https://ko-fi.com/thamjiahe)
+[Report Issues](https://github.com/ThamJiaHe/claude-code-handbook/issues) · [Contribute](./CONTRIBUTING.md) · [Discuss](https://github.com/ThamJiaHe/claude-code-handbook/discussions) · [Ko-Fi](https://ko-fi.com/thamjiahe)
 
 </div>

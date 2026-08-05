@@ -65,7 +65,7 @@ cd backend
 cp .env.example .env
 ```
 
-Required: `DATABASE_URL`, `HUGGINGFACE_TOKEN`. See `[backend/README.md](backend/README.md)` for Hugging Face setup.
+Required: `DATABASE_URL`, `HUGGINGFACE_TOKEN`. See [backend/README.md](backend/README.md) for Hugging Face setup.
 
 **Frontend** (`frontend/.env`):
 ```env

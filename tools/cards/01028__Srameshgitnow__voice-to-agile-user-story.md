@@ -62,7 +62,7 @@ Powered by:
 4. Prints the parsed Python `dict`.
 
 ## 🧱 Project layout
-!`[alt text](image-1.png)`
+![alt text](image-1.png)
 
 
 ---

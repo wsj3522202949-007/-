@@ -71,12 +71,12 @@ LoreViewer is still very early in its development. Many of my desired features a
 
 This interface is where the user's folder of lore files with settings is selected, and parsed lore is displayed
 
-!`[Main LoreViewer Interface](./docs/ParsedLore.png)`
+![Main LoreViewer Interface](./docs/ParsedLore.png)
 
 In the left side, under the 'Nodes and Collections' tab are lists of all the resulting elements and collections of elements defined in the markdown files.
 At the top left, buttons for navigating to the lore folder and refreshing parsed contents are readily available.
 
-!`[Main LoreViewer Interface Labeled](./docs/ParsedLore_RightSide.png)`
+![Main LoreViewer Interface Labeled](./docs/ParsedLore_RightSide.png)
 
 A selected element will display its infomation on the top right side panel.
 Any validation errors (files were able to be parsed fully, but some rules defined in schema were violated) will appear on the bottom right corner and give the user the opportunity to fix them, either using an in-app basic editor, or Notepad++ (if installed)
@@ -85,7 +85,7 @@ Any validation errors (files were able to be parsed fully, but some rules define
 
 The second tab, Errors and Warnings, shows any errors that prevented a markdown file from being parsed, and any warnings (which as of yet do not exist).
 
-!`[LoreViewer Errors Interface](./docs/ParsedLore_Errors.png)`
+![LoreViewer Errors Interface](./docs/ParsedLore_Errors.png)
 
 Errors will tell you which file had a parsing error, what the error was, where in the file the error occured, and provides a button to open the file to the relevant line (using Notepad++ if installed).
 
@@ -95,7 +95,7 @@ Errors will tell you which file had a parsing error, what the error was, where i
 
 LoreViewer now includes an in-app settings editor! Even though settings are in YAML and fairly easy to read and edit by hand, having an option to do so in the app is a vital piece of LoreViewer.
 
-!`[Settings Editor](./docs/Settings_Editor.png)`
+![Settings Editor](./docs/Settings_Editor.png)
 
 Here users can see all their defined Types and Collections, and add, remove, or alter any schema definitions. Types can be set to extend other types and inherit their fields, sections, etc. Fields can have their style changed (i.e. from a single value field to a field that contains subfields). And more.
 

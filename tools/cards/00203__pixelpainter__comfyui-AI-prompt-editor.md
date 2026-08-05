@@ -229,6 +229,6 @@ Bugs and feature requests → [open an issue](https://github.com/pixelpainter/co
 
 ## License
 
-GPL-3.0 © pixelpainter — see `[LICENSE](LICENSE)`.
+GPL-3.0 © pixelpainter — see [LICENSE](LICENSE).
 
 Free to use, including in commercial workflows. Modified or redistributed versions must remain open source under GPL-3.0. Commercial redistribution or resale of this code requires permission from the author.

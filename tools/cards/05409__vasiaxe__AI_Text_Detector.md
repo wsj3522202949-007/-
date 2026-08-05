@@ -105,19 +105,19 @@ The model has high recall for AI-generated text, meaning it misses relatively fe
 
 ### Confusion matrix
 
-!`[Confusion Matrix](results/confusion_matrix.png)`
+![Confusion Matrix](results/confusion_matrix.png)
 
 ### AI probability distribution
 
-!`[AI Probability Distribution](results/probability_distribution.png)`
+![AI Probability Distribution](results/probability_distribution.png)
 
 ### Error rate by confidence
 
-!`[Error Rate by Confidence](results/confidence_vs_error.png)`
+![Error Rate by Confidence](results/confidence_vs_error.png)
 
 ### Error rate by text length
 
-!`[Error Rate by Text Length](results/error_by_text_length.png)`
+![Error Rate by Text Length](results/error_by_text_length.png)
 
 ## Project structure
 

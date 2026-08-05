@@ -50,7 +50,7 @@ related:
 This repository contains a deep learning project that generates text based on a provided dataset of short stories using LSTM (Long Short-Term Memory) networks. The model takes keywords as input and generates short stories containing those keywords.
 
 
-!`[ModelParams](figs/model.png)`
+![ModelParams](figs/model.png)
 
 ## Project Structure
 
@@ -79,7 +79,7 @@ git clone https://github.com/ali-zeynali/ShortStoryGenerator.git
 ```
 
 ## Report
-Report is available from `[ShortStoryGenerator.pdf](ShortStoryGenerator.pdf)` file.
+Report is available from [ShortStoryGenerator.pdf](ShortStoryGenerator.pdf) file.
 ## Code
 The code is written in Jupyter-notebook environment under Python 3.x version. Simpy run command below to open jupyter-notebook:
 ```bash

@@ -52,7 +52,7 @@ related:
 
 we present IP-Adapter, an effective and lightweight adapter to achieve image prompt capability for the pre-trained text-to-image diffusion models. An IP-Adapter with only 22M parameters can achieve comparable or even better performance to a fine-tuned image prompt model. IP-Adapter can be generalized not only to other custom models fine-tuned from the same base model, but also to controllable generation using existing controllable tools. Moreover, the image prompt can also work well with the text prompt to accomplish multimodal image generation.
 
-!`[arch](assets/figs/fig1.png)`
+![arch](assets/figs/fig1.png)
 
 ## Release
 - [2024/01/19] 🔥 Add IP-Adapter-FaceID-Portrait, more information can be found [here](https://huggingface.co/h94/IP-Adapter-FaceID).
@@ -62,15 +62,15 @@ we present IP-Adapter, an effective and lightweight adapter to achieve image pro
 - [2023/12/27] 🔥 Add an experimental version of IP-Adapter-FaceID-Plus, more information can be found [here](https://huggingface.co/h94/IP-Adapter-FaceID).
 - [2023/12/20] 🔥 Add an experimental version of IP-Adapter-FaceID, more information can be found [here](https://huggingface.co/h94/IP-Adapter-FaceID).
 - [2023/11/22] IP-Adapter is available in [Diffusers](https://github.com/huggingface/diffusers/pull/5713) thanks to Diffusers Team.
-- [2023/11/10] 🔥 Add an updated version of IP-Adapter-Face. The demo is `[here](ip_adapter-full-face_demo.ipynb)`.
-- [2023/11/05] 🔥 Add text-to-image `[demo](ip_adapter_t2i_demo.ipynb)` with IP-Adapter and [Kandinsky 2.2 Prior](https://huggingface.co/kandinsky-community/kandinsky-2-2-prior)
+- [2023/11/10] 🔥 Add an updated version of IP-Adapter-Face. The demo is [here](ip_adapter-full-face_demo.ipynb).
+- [2023/11/05] 🔥 Add text-to-image [demo](ip_adapter_t2i_demo.ipynb) with IP-Adapter and [Kandinsky 2.2 Prior](https://huggingface.co/kandinsky-community/kandinsky-2-2-prior)
 - [2023/11/02] Support [safetensors](https://github.com/huggingface/safetensors)
 - [2023/9/08] 🔥 Update a new version of IP-Adapter with SDXL_1.0. More information can be found [here](#sdxl_10).
 - [2023/9/05] 🔥🔥🔥 IP-Adapter is supported in [WebUI](https://github.com/Mikubill/sd-webui-controlnet/discussions/2039) and [ComfyUI](https://github.com/laksjdjf/IPAdapter-ComfyUI) (or [ComfyUI_IPAdapter_plus](https://github.com/cubiq/ComfyUI_IPAdapter_plus)).
-- [2023/8/30] 🔥 Add an IP-Adapter with face image as prompt. The demo is `[here](ip_adapter-plus-face_demo.ipynb)`.
+- [2023/8/30] 🔥 Add an IP-Adapter with face image as prompt. The demo is [here](ip_adapter-plus-face_demo.ipynb).
 - [2023/8/29] 🔥 Release the training code.
-- [2023/8/23] 🔥 Add code and models of IP-Adapter with fine-grained features. The demo is `[here](ip_adapter-plus_demo.ipynb)`.
-- [2023/8/18] 🔥 Add code and models for [SDXL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0). The demo is `[here](ip_adapter_sdxl_demo.ipynb)`.
+- [2023/8/23] 🔥 Add code and models of IP-Adapter with fine-grained features. The demo is [here](ip_adapter-plus_demo.ipynb).
+- [2023/8/18] 🔥 Add code and models for [SDXL 1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0). The demo is [here](ip_adapter_sdxl_demo.ipynb).
 - [2023/8/16] 🔥 We release the code and models.
 
 
@@ -105,34 +105,34 @@ you can download models from [here](https://huggingface.co/h94/IP-Adapter). To r
 
 ### SD_1.5
 
-- `[**ip_adapter_demo**](ip_adapter_demo.ipynb)`: image variations, image-to-image, and inpainting with image prompt.
+- [**ip_adapter_demo**](ip_adapter_demo.ipynb): image variations, image-to-image, and inpainting with image prompt.
 - [![**ip_adapter_demo**](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tencent-ailab/IP-Adapter/blob/main/ip_adapter_demo.ipynb) 
 
-!`[image variations](assets/demo/image_variations.jpg)`
+![image variations](assets/demo/image_variations.jpg)
 
-!`[image-to-image](assets/demo/image-to-image.jpg)`
+![image-to-image](assets/demo/image-to-image.jpg)
 
-!`[inpainting](assets/demo/inpainting.jpg)`
+![inpainting](assets/demo/inpainting.jpg)
 
-- `[**ip_adapter_controlnet_demo**](ip_adapter_controlnet_demo_new.ipynb)`, `[**ip_adapter_t2i-adapter**](ip_adapter_t2i-adapter_demo.ipynb)`: structural generation with image prompt.
+- [**ip_adapter_controlnet_demo**](ip_adapter_controlnet_demo_new.ipynb), [**ip_adapter_t2i-adapter**](ip_adapter_t2i-adapter_demo.ipynb): structural generation with image prompt.
 - [![**ip_adapter_controlnet_demo**](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tencent-ailab/IP-Adapter/blob/main/ip_adapter_controlnet_demo.ipynb) 
 
-!`[structural_cond](assets/demo/structural_cond.jpg)`
-!`[structural_cond2](assets/demo/t2i-adapter_demo.jpg)`
+![structural_cond](assets/demo/structural_cond.jpg)
+![structural_cond2](assets/demo/t2i-adapter_demo.jpg)
 
-- `[**ip_adapter_multimodal_prompts_demo**](ip_adapter_multimodal_prompts_demo.ipynb)`: generation with multimodal prompts.
+- [**ip_adapter_multimodal_prompts_demo**](ip_adapter_multimodal_prompts_demo.ipynb): generation with multimodal prompts.
 - [![**ip_adapter_multimodal_prompts_demo**](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tencent-ailab/IP-Adapter/blob/main/ip_adapter_multimodal_prompts_demo.ipynb) 
 
-!`[multi_prompts](assets/demo/multi_prompts.jpg)`
+![multi_prompts](assets/demo/multi_prompts.jpg)
 
-- `[**ip_adapter-plus_demo**](ip_adapter-plus_demo.ipynb)`: the demo of IP-Adapter with fine-grained features.
+- [**ip_adapter-plus_demo**](ip_adapter-plus_demo.ipynb): the demo of IP-Adapter with fine-grained features.
 
-!`[ip_adpter_plus_image_variations](assets/demo/ip_adpter_plus_image_variations.jpg)`
-!`[ip_adpter_plus_multi](assets/demo/ip_adpter_plus_multi.jpg)`
+![ip_adpter_plus_image_variations](assets/demo/ip_adpter_plus_image_variations.jpg)
+![ip_adpter_plus_multi](assets/demo/ip_adpter_plus_multi.jpg)
 
-- `[**ip_adapter-plus-face_demo**](ip_adapter-plus-face_demo.ipynb)`: generation with face image as prompt.
+- [**ip_adapter-plus-face_demo**](ip_adapter-plus-face_demo.ipynb): generation with face image as prompt.
 
-!`[ip_adpter_plus_face](assets/demo/sd15_face.jpg)`
+![ip_adpter_plus_face](assets/demo/sd15_face.jpg)
 
 **Best Practice**
 - If you only use the image prompt, you can set the `scale=1.0` and `text_prompt=""`(or some generic text prompts, e.g. "best quality", you can also use any negative text prompt). If you lower the `scale`, more diverse images can be generated, but they may not be as consistent with the image prompt.
@@ -146,12 +146,12 @@ As the image is center cropped in the default image processor of CLIP, IP-Adapte
 
 ### SDXL_1.0
 
-- `[**ip_adapter_sdxl_demo**](ip_adapter_sdxl_demo.ipynb)`: image variations with image prompt.
-- `[**ip_adapter_sdxl_controlnet_demo**](ip_adapter_sdxl_controlnet_demo.ipynb)`: structural generation with image prompt.
+- [**ip_adapter_sdxl_demo**](ip_adapter_sdxl_demo.ipynb): image variations with image prompt.
+- [**ip_adapter_sdxl_controlnet_demo**](ip_adapter_sdxl_controlnet_demo.ipynb): structural generation with image prompt.
 
 The comparison of **IP-Adapter_XL** with [Reimagine XL](https://clipdrop.co/stable-diffusion-reimagine) is shown as follows:
 
-!`[sdxl_demo](assets/demo/sdxl_cmp.jpg)`
+![sdxl_demo](assets/demo/sdxl_cmp.jpg)
 
 **Improvements in new version (2023.9.8)**:
 - **Switch to CLIP-ViT-H**: we trained the new IP-Adapter with [OpenCLIP-ViT-H-14](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) instead of [OpenCLIP-ViT-bigG-14](https://huggingface.co/laion/CLIP-ViT-bigG-14-laion2B-39B-b160k). Although ViT-bigG is much larger than ViT-H, our experimental results did not find a significant difference, and the smaller model can reduce the memory usage in the inference phase.

@@ -171,13 +171,13 @@ novel-arch-skill/
 
 欢迎提交 [Issue](https://github.com/ahao0625/novel-arch-skill/issues) 报告问题或提出建议。
 
-提交 PR 前请阅读 `[CONTRIBUTING.md](CONTRIBUTING.md)`。
+提交 PR 前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
 ## 许可
 
-`[MIT](LICENSE)` © 2026 ahao0625
+[MIT](LICENSE) © 2026 ahao0625
 
 related:
   - methods/QUICK_START.md

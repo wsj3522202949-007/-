@@ -212,7 +212,7 @@ AI-Text-Detection-Tool/
 4. Push to your branch: `git push origin feature/awesome-new`
 5. Open a Pull Request  
 
-Please follow the `[Contributing Guidelines](CONTRIBUTING.md)` if available.
+Please follow the [Contributing Guidelines](CONTRIBUTING.md) if available.
 
 ---
 
@@ -235,13 +235,13 @@ Please follow the `[Contributing Guidelines](CONTRIBUTING.md)` if available.
 
 ## License
 
-This project is licensed under the MIT License – see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## Contact
 
-Michael Shpyl – `[michael.shpyl@gmail.com](mailto:michael.shpyl@gmail.com)`  
+Michael Shpyl – [michael.shpyl@gmail.com](mailto:michael.shpyl@gmail.com)  
 Project repo: https://github.com/MichaelShpyl/AI-Text-Detection-Tool
 
 related:

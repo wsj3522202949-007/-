@@ -471,6 +471,6 @@ cd frontend && npm test
 ## 支持
 
 如有问题或建议，请：
-- 提交 `[Issue](../../issues)`
+- 提交 [Issue](../../issues)
 - 查看 [API文档](http://localhost:8000/docs)
 - 阅读项目文档

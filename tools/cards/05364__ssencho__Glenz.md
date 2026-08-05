@@ -120,14 +120,14 @@ flowchart TD
 | Linguistic habits | Morphological features + gradient boosting | Spacing regularity, POS distribution, punctuation habits |
 | Predictability | Korean reference LM perplexity | Generalizes to unseen generators |
 
-Full design and analysis are in **`[METHODOLOGY.md](METHODOLOGY.md)`**.
+Full design and analysis are in **[METHODOLOGY.md](METHODOLOGY.md)**.
 
 ## Performance
 
 Measured on data held out from training. A token/perplexity-only detector (the basis of most public
 tools) collapses to a coin flip out-of-distribution; the ensemble does not.
 
-!`[Token-only vs. ensemble](assets/ablation.png)`
+![Token-only vs. ensemble](assets/ablation.png)
 
 | Benchmark | Accuracy |
 |---|---|
@@ -136,7 +136,7 @@ tools) collapses to a coin flip out-of-distribution; the ensemble does not.
 | Unseen genres (80) | 98.75% (0 human misclassified) |
 | Unseen generator (Gemini) | 96.7% |
 
-!`[Held-out benchmarks](assets/benchmarks.png)`
+![Held-out benchmarks](assets/benchmarks.png)
 
 ## API
 

@@ -50,7 +50,7 @@ related:
     🤗 <a href="https://huggingface.co/THU-KEG/LongWriter-Zero-32B" target="_blank">LongWriter-Zero</a> • 📜 <a href="https://arxiv.org/abs/2506.18841" target="_blank">LongWriter-Zero Paper</a>
 </p>
 
-`[English](./README.md)` | `[中文](./README_zh.md)` | `[日本語](./README_jp.md)`
+[English](./README.md) | [中文](./README_zh.md) | [日本語](./README_jp.md)
 
 https://github.com/user-attachments/assets/c7eedeca-98ed-43ec-8619-25137987bcde
 

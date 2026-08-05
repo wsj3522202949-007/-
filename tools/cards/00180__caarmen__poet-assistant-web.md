@@ -54,4 +54,4 @@ Poet Assistant is a single-page web app which offers a set of tools to help with
 
 
 More information:
-* `[Technical architecture](doc/architecture.md)`
+* [Technical architecture](doc/architecture.md)

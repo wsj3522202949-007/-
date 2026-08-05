@@ -47,7 +47,7 @@ ____
 <br>
 
 
-!`[Banner](assets/banner.png)`
+![Banner](assets/banner.png)
 
 
 An AI-powered Android typing assistant that fixes grammar and adjusts tone — accessible instantly from your Quick Settings tile or a persistent floating bubble.
@@ -55,7 +55,7 @@ An AI-powered Android typing assistant that fixes grammar and adjusts tone — a
 You're in any app, you have a messy draft. Swipe down, tap the **Typer** tile, type or speak your text, pick a tone, and get a clean rewrite — then tap **Copy & Close** to paste it wherever you were. No overlay permissions needed. No switching apps. Just a floating popup over your current screen.
 
 
-!`[Demo](assets/demo.png)`
+![Demo](assets/demo.png)
 
 
 ---
@@ -66,7 +66,7 @@ You're in any app, you have a messy draft. Swipe down, tap the **Typer** tile, t
 
 This software is licensed for non-commercial use only. You may use this project for personal, academic, and non-profit purposes. **Commercial use, including but not limited to selling this software or using it as part of a paid service, is strictly prohibited.**
 
-See the `[LICENSE](LICENSE)` file for the full legal text.
+See the [LICENSE](LICENSE) file for the full legal text.
 
 ___
 
@@ -92,7 +92,7 @@ ___
 2. **Grok:** Go to [console.x.ai](https://console.x.ai/) to generate a Grok API key.
 
 #### Install the APK
-1. Go to the `[Actions tab](../../actions)` on GitHub.
+1. Go to the [Actions tab](../../actions) on GitHub.
 2. Open the latest successful **Build Android APK** run.
 3. Download the `Typer-APK` artifact and unzip it.
 4. Transfer `app-debug.apk` to your Android device.

@@ -40,7 +40,7 @@ related:
 
 **Author:** Hsing-Yuan Ma
 **Affiliation:** National Chengchi University
-**Contact:** `[hsingyuanma@gmail.com](mailto:hsingyuanma@gmail.com)`
+**Contact:** [hsingyuanma@gmail.com](mailto:hsingyuanma@gmail.com)
 
 ---
 
@@ -53,18 +53,18 @@ This project offers an advanced Optical Character Recognition (OCR) solution spe
 To see the system in action, check out the [demo video](https://www.youtube.com/watch?v=RWgGDymY2Bc) and screenshot below!
 
 
-!`[sys_demo](assets/system_demo.png)`
+![sys_demo](assets/system_demo.png)
 
 
 ## 🖼️ Sample Output
 
 Input image:
 
-!`[input](assets/example_1.jpg)`
+![input](assets/example_1.jpg)
 
 Output with detected text, recognition results, and reading order:
 
-!`[output](assets/example_1_result.png)`
+![output](assets/example_1_result.png)
 ---
 
 ## 🏆 Key Features
@@ -178,7 +178,7 @@ Open-source for academic and research use.
 
 ## ✨ Contact
 
-For collaboration, deployment assistance, or inquiries, contact `[hsingyuanma@gmail.com](mailto:hsingyuanma@gmail.com)`.
+For collaboration, deployment assistance, or inquiries, contact [hsingyuanma@gmail.com](mailto:hsingyuanma@gmail.com).
 
 related:
   - methods/QUICK_START.md

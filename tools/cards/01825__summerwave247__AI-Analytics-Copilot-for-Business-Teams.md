@@ -41,7 +41,7 @@ related:
 
 An AI-powered analytics MVP that helps business users ask cross-table data questions in plain English and receive SQL-backed, auditable insights.
 
-!`[AI Analytics Copilot demo overview](assets/demo_03_stalled_opportunities.png)`
+![AI Analytics Copilot demo overview](assets/demo_03_stalled_opportunities.png)
 
 The app lets users upload structured CSV files, converts them into a local SQLite database, and uses an LLM-powered SQL workflow to answer recurring business questions without requiring users to write SQL manually.
 
@@ -71,7 +71,7 @@ This project focuses on turning a basic SQL agent into a more reliable business 
 
 ### 1. Campaign Efficiency
 
-!`[Campaign CPL with canonical SQL](assets/demo_02_campaign_cpl.png)`
+![Campaign CPL with canonical SQL](assets/demo_02_campaign_cpl.png)
 
 Question:
 
@@ -89,7 +89,7 @@ grouped by campaign channel, rather than using row-level `spend / qualified_lead
 
 ### 2. Stalled High-Value Opportunities
 
-!`[Stalled high-value opportunities](assets/demo_03_stalled_opportunities.png)`
+![Stalled high-value opportunities](assets/demo_03_stalled_opportunities.png)
 
 Question:
 
@@ -107,7 +107,7 @@ and uses the dataset reference date instead of the real current date for synthet
 
 ### 3. Multi-Turn Follow-Up
 
-!`[Enterprise follow-up query](assets/demo_04_followup_enterprise.png)`
+![Enterprise follow-up query](assets/demo_04_followup_enterprise.png)
 
 Question:
 
@@ -119,7 +119,7 @@ The app rewrites the vague follow-up into a standalone business question while p
 
 ### 4. Support Risk
 
-!`[Support risk test](assets/demo_05_support_risk.png)`
+![Support risk test](assets/demo_05_support_risk.png)
 
 Question:
 
@@ -135,7 +135,7 @@ status NOT IN ('Resolved', 'Closed')
 
 ### 5. Read-Only Safety
 
-!`[Read-only SQL safety test](assets/demo_06_safety_readonly.png)`
+![Read-only SQL safety test](assets/demo_06_safety_readonly.png)
 
 Unsafe request:
 

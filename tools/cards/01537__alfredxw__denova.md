@@ -68,26 +68,26 @@ related:
   当前版本：<strong>v0.3.2</strong>（2026-07-23） · Beta
 </p>
 
-!`[Denova 写作模式](./img/ide.png)`
+![Denova 写作模式](./img/ide.png)
 
 <details>
 <summary>查看更多界面截图</summary>
 
 ### 游戏模式
 
-!`[Denova 游戏模式](./img/interactive.png)`
+![Denova 游戏模式](./img/interactive.png)
 
 ### 剧情分支
 
-!`[剧情分支](./img/branch.png)`
+![剧情分支](./img/branch.png)
 
 ### 资料库
 
-!`[Denova 资料库](./img/setting.png)`
+![Denova 资料库](./img/setting.png)
 
 ### 方案预设
 
-!`[Denova 方案预设](./img/story-teller.png)`
+![Denova 方案预设](./img/story-teller.png)
 
 </details>
 
@@ -262,4 +262,4 @@ denova.example.com {
 
 ## License
 
-`[Apache-2.0](./LICENSE)`
+[Apache-2.0](./LICENSE)

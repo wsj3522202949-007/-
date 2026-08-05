@@ -67,4 +67,4 @@ related:
 6. **Review prompt examples** by clicking the "Show Examples" button.
 
 
-!`[Screenshot Description](images/your-screenshot.png)`
+![Screenshot Description](images/your-screenshot.png)

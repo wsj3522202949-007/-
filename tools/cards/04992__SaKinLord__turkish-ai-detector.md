@@ -131,7 +131,7 @@ python -m turkish_ai_detector --json --file makale.txt
 
 ## License
 
-MIT. See `[LICENSE](LICENSE)`.
+MIT. See [LICENSE](LICENSE).
 
 ## Reference
 

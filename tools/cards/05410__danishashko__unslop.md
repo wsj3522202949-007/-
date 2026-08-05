@@ -46,7 +46,7 @@ Paste any AI-generated text and instantly see how much slop it contains. Detects
 
 **Live:** [danishashko.github.io/unslop](https://danishashko.github.io/unslop/)
 
-!`[unslop screenshot](docs/screenshot.png)`
+![unslop screenshot](docs/screenshot.png)
 
 ## What it does
 

@@ -226,4 +226,4 @@ GNU General Public License v3.0
 
 ## Screenshot
 
-!`[Screenshot](screenshot.jpg)`
+![Screenshot](screenshot.jpg)

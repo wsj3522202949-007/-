@@ -45,7 +45,7 @@ related:
 
 # MangaGen
 
-!`[MangaGen Cover](examples/mangagen-cover-photo.png)`
+![MangaGen Cover](examples/mangagen-cover-photo.png)
 
 MangaGen is a local-first workspace for planning, generating, editing, assembling, importing, and exporting manga pages and illustrated storybooks. It stores project metadata and generated assets on disk, serves the app through an Express backend, and routes AI work through configurable providers instead of hardcoded per-screen model choices.
 

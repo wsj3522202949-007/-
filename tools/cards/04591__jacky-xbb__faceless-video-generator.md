@@ -60,7 +60,7 @@ Faceless Video Generator is a comprehensive multimedia content creation tool tha
 
 ## Demo
 
-!`[Demo](demo/demo.gif)`
+![Demo](demo/demo.gif)
 
 ## Key Features
 
@@ -195,7 +195,7 @@ You can modify these settings in the `config.json` file to customize the behavio
 
 ## Supported Fonts
 
-!`[Available Font Styles](assets/font.png)`
+![Available Font Styles](assets/font.png)
 
 The application supports the following font styles for text rendering:
 

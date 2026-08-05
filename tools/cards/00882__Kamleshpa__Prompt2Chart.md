@@ -51,10 +51,10 @@ Chat-based analytics dashboard where users ask questions in natural language, th
 ## Demo
 
 ### Chat to Chart and Pin
-!`[Chat to Chart and Pin](docs/demo-chat-to-chart-and-pin.gif)`
+![Chat to Chart and Pin](docs/demo-chat-to-chart-and-pin.gif)
 
 ### Dataset Switching
-!`[Dataset Switching](docs/demo-dataset-switch.gif)`
+![Dataset Switching](docs/demo-dataset-switch.gif)
 
 ## What You Get
 

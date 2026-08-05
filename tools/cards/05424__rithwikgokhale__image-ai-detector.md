@@ -44,7 +44,7 @@ Click-to-scan Chrome extension that flags AI-generated **images** and **text** o
 - Documentation hub: `site/docs/index.html`
 - Architecture overview: `site/docs/architecture.html`
 
-> **Status:** v1 rebuild in progress. The previous v0.1 (in `[/archive/](archive/)`) used a hash-based placeholder for "ML" — it was not a real detector. v1 is a ground-up rewrite with actual ML running locally in the browser.
+> **Status:** v1 rebuild in progress. The previous v0.1 (in [/archive/](archive/)) used a hash-based placeholder for "ML" — it was not a real detector. v1 is a ground-up rewrite with actual ML running locally in the browser.
 
 ## What it does (v1, in progress)
 
@@ -69,7 +69,7 @@ Click-to-scan Chrome extension that flags AI-generated **images** and **text** o
 - Boost providers: Google Gemini 2.5 Flash, OpenAI (GPT-4o-mini / GPT-5-mini), Hugging Face Inference API
 - No backend. No accounts. No telemetry by default.
 
-For the full architecture see `[ARCHITECTURE.md](ARCHITECTURE.md)`. For the build-out plan see `[ROADMAP.md](ROADMAP.md)`.
+For the full architecture see [ARCHITECTURE.md](ARCHITECTURE.md). For the build-out plan see [ROADMAP.md](ROADMAP.md).
 
 ## Install (developer mode, during build-out)
 
@@ -107,4 +107,4 @@ archive/               # v0.1 code + docs, kept for reference
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)`.
+MIT — see [LICENSE](LICENSE).

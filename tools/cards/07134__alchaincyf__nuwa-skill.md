@@ -71,7 +71,7 @@ related:
 
 **其他语言 / Other Languages:**
 
-`[English](README_EN.md)` · `[日本語](README_JA.md)` · `[한국어](README_KO.md)` · `[Español](README_ES.md)`
+[English](README_EN.md) · [日本語](README_JA.md) · [한국어](README_KO.md) · [Español](README_ES.md)
 
 <br>
 
@@ -248,7 +248,7 @@ git clone https://github.com/alchaincyf/nuwa-skill <上面对应的路径>
 | **纳瓦尔** | 财富/杠杆/人生哲学 | [naval-skill](https://github.com/alchaincyf/naval-skill) | `npx skills add alchaincyf/naval-skill` |
 | **塔勒布** | 风险/反脆弱/不确定性 | [taleb-skill](https://github.com/alchaincyf/taleb-skill) | `npx skills add alchaincyf/taleb-skill` |
 | **张雪峰** | 教育选择/职业规划/阶层流动 | [zhangxuefeng-skill](https://github.com/alchaincyf/zhangxuefeng-skill) | `npx skills add alchaincyf/zhangxuefeng-skill` |
-| **孙宇晨** | 营销/注意力经济/叙事操控 | `[仓库内examples/](examples/sun-yuchen-perspective/)` | 复制 `examples/sun-yuchen-perspective/` 到skills目录 |
+| **孙宇晨** | 营销/注意力经济/叙事操控 | [仓库内examples/](examples/sun-yuchen-perspective/) | 复制 `examples/sun-yuchen-perspective/` 到skills目录 |
 
 ### 主题Skill
 
@@ -258,7 +258,7 @@ git clone https://github.com/alchaincyf/nuwa-skill <上面对应的路径>
 
 人物Skill蒸馏一个人的思维方式；主题Skill蒸馏一个领域的方法论。每个仓库都包含完整的调研数据和效果示例对话。
 
-🧪 **保真度评分卡**：15个官方Skill已全部通过独立双agent盲测（立场一致性/风格辨识度/边缘诚实度/来源透明度/结构完整度，方法论见 `[references/fidelity-scorecard.md](references/fidelity-scorecard.md)`），**全员A级（≥85分）**。各分数：MrBeast/纳瓦尔/塔勒布/乔布斯/Karpathy/Paul Graham/张雪峰 97 · 芒格/费曼/X导师 96 · 特朗普 95 · Ilya 94 · 张一鸣 93 · 孙宇晨 91 · 马斯克 89。完整评分卡见各skill目录内的 `FIDELITY.md`。
+🧪 **保真度评分卡**：15个官方Skill已全部通过独立双agent盲测（立场一致性/风格辨识度/边缘诚实度/来源透明度/结构完整度，方法论见 [references/fidelity-scorecard.md](references/fidelity-scorecard.md)），**全员A级（≥85分）**。各分数：MrBeast/纳瓦尔/塔勒布/乔布斯/Karpathy/Paul Graham/张雪峰 97 · 芒格/费曼/X导师 96 · 特朗普 95 · Ilya 94 · 张一鸣 93 · 孙宇晨 91 · 马斯克 89。完整评分卡见各skill目录内的 `FIDELITY.md`。
 
 想蒸馏不在列表里的人或主题？安装女娲，说「蒸馏一个XXX」就行。
 
@@ -269,9 +269,9 @@ git clone https://github.com/alchaincyf/nuwa-skill <上面对应的路径>
 女娲的生态由社区一起长大，但走两条不同的路：
 
 - **`SKILL.md` 是核心资产，不接受外部PR改动**。发现方法论的bug或改进点→开issue讨论，被采纳的想法由维护者实现并在commit中致谢（先例见PR #59）
-- **社区蒸馏的人物skill走 `[COMMUNITY.md](COMMUNITY.md)` 索引**：放你自己的仓库（star归你），跑一遍`[保真度评分卡](references/fidelity-scorecard.md)`拿到B级以上，提一行PR即可收录
+- **社区蒸馏的人物skill走 [COMMUNITY.md](COMMUNITY.md) 索引**：放你自己的仓库（star归你），跑一遍[保真度评分卡](references/fidelity-scorecard.md)拿到B级以上，提一行PR即可收录
 
-完整规则见 `[CONTRIBUTING.md](CONTRIBUTING.md)`。社区已有的合集、多人格编排和主题应用，见 `[COMMUNITY.md](COMMUNITY.md)`。
+完整规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。社区已有的合集、多人格编排和主题应用，见 [COMMUNITY.md](COMMUNITY.md)。
 
 ---
 

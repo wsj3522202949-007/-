@@ -123,8 +123,8 @@ writing-assistant/
 
 ## Contributing 🤝
 
-Contributions, issues, and feature requests are welcome! Feel free to check the `[issues page](link-to-issues)`.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](link-to-issues).
 
 ## License 📄
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

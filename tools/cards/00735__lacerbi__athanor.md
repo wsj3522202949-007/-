@@ -238,7 +238,7 @@ npm ci
 
 </details>
 
-Read the [**full online tutorial**](https://athanor.works/docs/tutorial/introduction) or the `[local version](TUTORIAL.md)` for more detailed information.
+Read the [**full online tutorial**](https://athanor.works/docs/tutorial/introduction) or the [local version](TUTORIAL.md) for more detailed information.
 
 ## 👥 Development and Feedback
 
@@ -249,8 +249,8 @@ This project is in its alpha stage, and your feedback is crucial to help us impr
 - **User Experience Feedback:** Share your workflow experiences, what works well, what doesn't, and how Athanor fits into your development process. This is the most valuable contribution at this stage.
 - **General Questions, Ideas & Discussions:** Join the conversation on [GitHub Discussions](https://github.com/lacerbi/athanor/discussions).
 - **Bug Reports & Specific Feature Requests:** Please submit them via [GitHub Issues](https://github.com/lacerbi/athanor/issues). _(Consider using our issue templates for bugs and features.)_
-- **Contributing:** For those interested in contributing, our `[CONTRIBUTING.md](CONTRIBUTING.md)` file provides detailed information. While we accept code contributions that align with discussed issues, our current focus is on gathering user feedback. All contributions are licensed under the Apache License 2.0 and require agreement to the Developer Certificate of Origin (DCO) by signing off on commits.
+- **Contributing:** For those interested in contributing, our [CONTRIBUTING.md](CONTRIBUTING.md) file provides detailed information. While we accept code contributions that align with discussed issues, our current focus is on gathering user feedback. All contributions are licensed under the Apache License 2.0 and require agreement to the Developer Certificate of Origin (DCO) by signing off on commits.
 
 ## 📜 License
 
-Athanor is released under the `[Apache-2.0 license](LICENSE)`.
+Athanor is released under the [Apache-2.0 license](LICENSE).

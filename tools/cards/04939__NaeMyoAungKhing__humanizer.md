@@ -202,9 +202,9 @@ can do the same work for their own voices.
 
 ## Licenses
 
-- **Code** (`humanizer.jsx`, anything not in `profiles/`): MIT. See `[LICENSE](LICENSE)`.
+- **Code** (`humanizer.jsx`, anything not in `profiles/`): MIT. See [LICENSE](LICENSE).
 - **Voice profiles** (`profiles/*.md`): Creative Commons Attribution-ShareAlike 4.0.
-  See `[LICENSE-profiles](LICENSE-profiles)`.
+  See [LICENSE-profiles](LICENSE-profiles).
 - **Brand mark** (`assets/mark.*`): CC-BY-SA 4.0 alongside the profiles.
 
 The profiles are CC-BY-SA on purpose. They describe communities of writers; if you

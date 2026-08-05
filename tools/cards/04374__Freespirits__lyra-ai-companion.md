@@ -39,7 +39,7 @@ related:
 
 ---
 
-!`[Lyra](docs/media/banner.webp)`
+![Lyra](docs/media/banner.webp)
 
 # Lyra — the AI companion you call, not type at
 
@@ -52,16 +52,16 @@ an inline tag protocol, ElevenLabs v3 emotional speech, generated video scenes,
 live body swapping, mocap animation, a continuously simmering mood system, and
 typed persistent memory with reflection.
 
-!`[Lyra — live demo](docs/media/demo.gif)`
+![Lyra — live demo](docs/media/demo.gif)
 
 *She picks up, lip-syncs the reply, and changes her world mid-sentence — one skill, not half an hour of tools.*
 
-!`[Neon field](docs/media/scene-neon-field.png)`
+![Neon field](docs/media/scene-neon-field.png)
 
 | | | |
 |---|---|---|
-| !`[Sakura](docs/media/scene-sakura.png)` | !`[Rooftop](docs/media/scene-rooftop.png)` | !`[Gothic library](docs/media/scene-gothic-library.png)` |
-| !`[Living cosmos](docs/media/scene-cosmos-live.png)` | !`[Body swap](docs/media/body-vesper-sakura.png)` | !`[Call UI](docs/media/call-ui.png)` |
+| ![Sakura](docs/media/scene-sakura.png) | ![Rooftop](docs/media/scene-rooftop.png) | ![Gothic library](docs/media/scene-gothic-library.png) |
+| ![Living cosmos](docs/media/scene-cosmos-live.png) | ![Body swap](docs/media/body-vesper-sakura.png) | ![Call UI](docs/media/call-ui.png) |
 
 *Live word-synced captions, a breathing state halo, scenes she switches
 mid-sentence, and bodies you can swap without dropping the call.*
@@ -149,7 +149,7 @@ after the first sentence while the rest is still generating. Long replies are
 the default.
 
 The complete tag vocabulary and agent-facing contract is documented in
-`[docs/AGENT_PROTOCOL.md](docs/AGENT_PROTOCOL.md)`.
+[docs/AGENT_PROTOCOL.md](docs/AGENT_PROTOCOL.md).
 
 ## Mood, eyes, physics (the "alive" layer)
 
@@ -181,7 +181,7 @@ picker in the call bar) and Lyra (`[scene:name]`) control them.
 
 ## Characters
 
-!`[Bao](docs/media/body-bao-cosmos.png)`
+![Bao](docs/media/body-bao-cosmos.png)
 
 The six bodies are six distinct **characters** — each a different companion with
 their own personality, voice, and default scene: Lyra the steady one, Nova the
@@ -272,7 +272,7 @@ shift; cues are also folded into the next LLM call as
 
 ## License
 
-`[PolyForm Noncommercial 1.0.0](LICENSE.md)` — read it, run it, learn from it,
+[PolyForm Noncommercial 1.0.0](LICENSE.md) — read it, run it, learn from it,
 build on it for anything personal. **Commercial use requires a license from the
 author** ([@Freespirits](https://github.com/Freespirits)). Bundled third-party
 assets keep their own licenses (Polyhaven photos are CC0; VRoid sample bodies

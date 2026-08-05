@@ -43,7 +43,7 @@ related:
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178C6)](https://www.typescriptlang.org/)
 
-中文 | `[English](README_EN.md)`
+中文 | [English](README_EN.md)
 
 > 「让提示词去死」不是一个提示词收藏工具，也不只是一个生图工具。它通过可自定义的创作包，把模糊需求转换为结构化方案，再生成图片、文章、网页或产品功能文档。用户负责表达目标和做关键选择，系统负责处理复杂的模型指令与执行细节。
 
@@ -51,7 +51,7 @@ related:
 
 副标题：**说出想法，做出选择，剩下的交给 AI**
 
-!`[通用创作工作台首页](design-qa-artifacts/home-desktop.png)`
+![通用创作工作台首页](design-qa-artifacts/home-desktop.png)
 
 ## 快速开始
 

@@ -297,7 +297,7 @@ claude mcp add ai-novel \
 - **Ollama 本地小模型** tool calling 经常翻车,推荐配 Claude / GPT / DeepSeek 等
   正经支持 function calling 的 provider 当 MCP 客户端
 
-更详细的配置说明在 `[`backend/app/mcp/README.md`](backend/app/mcp/README.md)`。
+更详细的配置说明在 [`backend/app/mcp/README.md`](backend/app/mcp/README.md)。
 
 ## 开发约定
 
@@ -323,7 +323,7 @@ npm run build    # 生产构建
 
 ### 多语言与国际化
 
-前端用 [vue-i18n](https://vue-i18n.intlify.dev/) 管文案,右上角内置语言切换器,当前登记的语种在 `[`frontend/src/i18n/index.js`](frontend/src/i18n/index.js)` 的 `SUPPORTED_LOCALES`。
+前端用 [vue-i18n](https://vue-i18n.intlify.dev/) 管文案,右上角内置语言切换器,当前登记的语种在 [`frontend/src/i18n/index.js`](frontend/src/i18n/index.js) 的 `SUPPORTED_LOCALES`。
 
 **目录:**
 
@@ -342,9 +342,9 @@ frontend/src/i18n/
 **新增语种(比如日语 `ja-JP`):**
 
 1. `cp frontend/src/i18n/locales/en-US.js frontend/src/i18n/locales/ja-JP.js` 后逐项翻译
-2. 在 `[`frontend/src/i18n/index.js`](frontend/src/i18n/index.js)` `import` 进来,加进 `messages` 和 `SUPPORTED_LOCALES`
-3. 在 `[`frontend/src/components/LocaleSwitcher.vue`](frontend/src/components/LocaleSwitcher.vue)` 的 `LABELS` 加一条 `'ja-JP': '日本語'`
-4. 如果新语种在 Element Plus 也有对应 locale,在 `[`frontend/src/App.vue`](frontend/src/App.vue)` 里补一个映射(否则 Element Plus 弹窗/分页文案不会跟着切)
+2. 在 [`frontend/src/i18n/index.js`](frontend/src/i18n/index.js) `import` 进来,加进 `messages` 和 `SUPPORTED_LOCALES`
+3. 在 [`frontend/src/components/LocaleSwitcher.vue`](frontend/src/components/LocaleSwitcher.vue) 的 `LABELS` 加一条 `'ja-JP': '日本語'`
+4. 如果新语种在 Element Plus 也有对应 locale,在 [`frontend/src/App.vue`](frontend/src/App.vue) 里补一个映射(否则 Element Plus 弹窗/分页文案不会跟着切)
 
 **语言选择规则:**
 
@@ -395,14 +395,14 @@ const { t } = useI18n()
 - Phase 11:大纲模式(批量 AI 草拟连续 N 章的 title / summary / beats,
   落库为 outlined 占位章节;正文 tab 加章节-大纲对账,逐项 covered / partial / missing)
 - Phase 12:作者声音 + 客观风格信号(工程级语癖 / 风格描述自动注入 prompt;
-  文风检查附 6 维统计信号,详见 `[docs/author-voice-and-style-signals.md](docs/author-voice-and-style-signals.md)`)
+  文风检查附 6 维统计信号,详见 [docs/author-voice-and-style-signals.md](docs/author-voice-and-style-signals.md))
 
 候选:章节分卷、时间线人物泳道可视化、生成结果对比 / 重生成、评分跨模型对比视图、
 MCP 工具的章节全文搜索。
 
 ## License
 
-`[AGPL-3.0](LICENSE)`
+[AGPL-3.0](LICENSE)
 
 > 注意:AGPL-3.0 要求**网络服务**也要开源 — 如果你拿这个仓库改造后对外提供服务
 > (SaaS / 公网部署 / 给客户托管),需要把你的修改同样以 AGPL-3.0 公开。本地自用、

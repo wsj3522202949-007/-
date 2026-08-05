@@ -65,25 +65,25 @@ A complete full-stack AI-powered writing prompt generator built with FastAPI bac
 
 Configure your writing preferences and generate personalized prompts:
 
-!`[Custom Preferences](images/img1.png)`
+![Custom Preferences](images/img1.png)
 
 ### ✨ Generated Prompt Display
 
 View your AI-generated prompt with detailed metadata and action buttons:
 
-!`[Generated Prompt](images/img2.png)`
+![Generated Prompt](images/img2.png)
 
 ### 📚 Prompt Library Management
 
 Search, filter, and manage your saved writing prompts:
 
-!`[Prompt Library](images/img3.png)`
+![Prompt Library](images/img3.png)
 
 ### 📤 Library Export & Organization
 
 Organize your prompts and export your entire library:
 
-!`[Library Export](images/img4.png)`
+![Library Export](images/img4.png)
 
 ## 🏗️ Architecture
 

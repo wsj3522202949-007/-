@@ -169,16 +169,16 @@ http://localhost:3000
 ### 🖼️ Screenshots
 
 #### Home Page
-!`[Home Page](screenshots/HomePage.jpg)`
+![Home Page](screenshots/HomePage.jpg)
 
 #### About Us Page
-!`[About Us Page](screenshots/aboutUs.png)`
+![About Us Page](screenshots/aboutUs.png)
 
 #### Human Content detection
-!`[Human Content detection](screenshots/Human-text-output.png)`
+![Human Content detection](screenshots/Human-text-output.png)
 
 #### AI Content detection
-!`[AI Content detection](screenshots/AI-text-output.png)`
+![AI Content detection](screenshots/AI-text-output.png)
 
 #### Figma link
 ```bash

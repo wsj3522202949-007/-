@@ -42,7 +42,7 @@ related:
 
 ## Proof Of co-CREation
 
-`[White Paper](./resources/POCRE%20-%20White%20paper.pdf)`
+[White Paper](./resources/POCRE%20-%20White%20paper.pdf)
 
 For remixes, [mashups](https://en.wikipedia.org/wiki/Mashup_(culture)) & collaborative work, copyright is impossible. Authors/publishers don't recognize co-creations and new artists risk legal action.
 

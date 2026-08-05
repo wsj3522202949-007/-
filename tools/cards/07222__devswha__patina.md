@@ -71,11 +71,11 @@ related:
 
 <p align="center"><em>Paste AI-sounding text → patina rewrites it in place, keeps the facts (the "30 templates" number survives), and drops the deterministic AI signal 100 → 0 (MPS 100 / Fidelity 75).</em></p>
 
-**The words are not the tell. The architecture is.** We ran a pre-registered study with independent cross-family LLM judges: a rewrite can strip the AI vocabulary, yet judges still recognize AI documents by their *shape* — uniform paragraphs, checklist-complete coverage, the tidy problem→lesson arc. Word-level cleanup moved judged AI-likeness a lot on English documents (−23 points) and barely at all on long Korean ones. That result decides patina's design: detect both layers, and publish the losses next to the wins (`[the study](docs/research/2026-rewrite-efficacy-study1.md)`).
+**The words are not the tell. The architecture is.** We ran a pre-registered study with independent cross-family LLM judges: a rewrite can strip the AI vocabulary, yet judges still recognize AI documents by their *shape* — uniform paragraphs, checklist-complete coverage, the tidy problem→lesson arc. Word-level cleanup moved judged AI-likeness a lot on English documents (−23 points) and barely at all on long Korean ones. That result decides patina's design: detect both layers, and publish the losses next to the wins ([the study](docs/research/2026-rewrite-efficacy-study1.md)).
 
 patina is a deterministic, pattern-based humanizer for Korean, English, Chinese, and Japanese. It finds AI-sounding phrasing and rewrites it without changing the claim, numbers, polarity, or causation. It is not a black-box paraphraser, authorship detector, or detector-bypass tool — it is built for allowed AI-assisted drafting where the author wants cleaner voice, an audit trail, and meaning-preservation checks.
 
-More examples: `[Before/After Gallery](docs/EXAMPLES.md)` (`[한국어](docs/EXAMPLES_KR.md)`) · `[CLI transcript](docs/DEMO.md)`.
+More examples: [Before/After Gallery](docs/EXAMPLES.md) ([한국어](docs/EXAMPLES_KR.md)) · [CLI transcript](docs/DEMO.md).
 
 ## Quick Start
 
@@ -91,7 +91,7 @@ Open **[patina.vibetip.help](https://patina.vibetip.help/)** — paste KO / EN /
 Install patina by following https://raw.githubusercontent.com/devswha/patina/main/INSTALLATION.md
 ```
 
-The agent fetches `[`INSTALLATION.md`](INSTALLATION.md)` (written for AI agents) and runs the right install path for your host, then verifies it. Or do it yourself:
+The agent fetches [`INSTALLATION.md`](INSTALLATION.md) (written for AI agents) and runs the right install path for your host, then verifies it. Or do it yourself:
 
 **Claude Code — plugin marketplace (no clone, recommended):**
 
@@ -137,7 +137,7 @@ printf '%s\n' 'Coffee has emerged as a pivotal cultural phenomenon.' \
   | npx patina-cli --lang en --backend codex-cli
 ```
 
-Supported local backends: `codex-cli`, `claude-cli`, `gemini-cli`, `kimi-cli` — patina passes the strongest documented default model per backend. See `[Authentication](docs/AUTHENTICATION.md)` (`[한국어](docs/AUTHENTICATION_KR.md)`).
+Supported local backends: `codex-cli`, `claude-cli`, `gemini-cli`, `kimi-cli` — patina passes the strongest documented default model per backend. See [Authentication](docs/AUTHENTICATION.md) ([한국어](docs/AUTHENTICATION_KR.md)).
 
 For large `--batch` runs, prefer an OpenAI-compatible HTTP backend; local CLI backends are agent runtimes, capped conservatively with `--timeout-ms`, `--max-concurrency`, `--max-retries`, and `--max-failures` for batch safety.
 
@@ -145,7 +145,7 @@ For large `--batch` runs, prefer an OpenAI-compatible HTTP backend; local CLI ba
 
 |  |  |
 |---|---|
-| **184 patterns** | 37 rewrite-capable + 9 score-only viral-hook per language (46 each across KO/EN/ZH/JA) — see the full 184-pattern catalog in `[PATTERNS.md](docs/PATTERNS.md)` |
+| **184 patterns** | 37 rewrite-capable + 9 score-only viral-hook per language (46 each across KO/EN/ZH/JA) — see the full 184-pattern catalog in [PATTERNS.md](docs/PATTERNS.md) |
 | **Modes** | rewrite · verify · audit · score · diff |
 | **Surfaces** | agent skill · Node CLI · in-place preview · browser playground (rewrite + score) |
 | **Voice** | `--persona` (built-in + your own, ko/en/zh/ja) is the sole voice axis · `--tone` register · `--profile` pattern policy — composable with a fixed precedence |
@@ -153,7 +153,7 @@ For large `--batch` runs, prefer an OpenAI-compatible HTTP backend; local CLI ba
 | **Calibration** | 67.3% editing-hotspot catch [63.5–71.0%] across GPT-5.5 / Claude Sonnet 4.6 / Gemini 2.5 Pro (n=600, KO+EN); 16.0% false positives [11.6–21.7%] on KO+EN human controls (n=200) |
 | **License** | MIT |
 
-Scores are editing signals with false positives and false negatives, not proof of authorship. See `[Ethics](docs/ETHICS.md)`.
+Scores are editing signals with false positives and false negatives, not proof of authorship. See [Ethics](docs/ETHICS.md).
 
 ## Common Commands
 
@@ -229,7 +229,7 @@ jobs:
           comment: true
 ```
 
-Other integrations: `[pre-commit](docs/integrations/pre-commit.md)`, `[static sites](docs/integrations/static-sites.md)`, `[Docker](docs/integrations/docker.md)`, `[release workflow](docs/integrations/release.md)`.
+Other integrations: [pre-commit](docs/integrations/pre-commit.md), [static sites](docs/integrations/static-sites.md), [Docker](docs/integrations/docker.md), [release workflow](docs/integrations/release.md).
 
 ## How It Works
 
@@ -261,19 +261,19 @@ Project `.patina.yaml` overrides defaults. Pattern packs are auto-discovered by 
 
 Start here:
 
-- `[Cookbook](docs/COOKBOOK.md)` — common recipes and workflows
-- `[CLI Contract](docs/CLI.md)` — flags, formats, score gates, exit behavior
-- `[Authentication](docs/AUTHENTICATION.md)` — local CLI backends and API providers
-- `[Patterns](docs/PATTERNS.md)` — full pattern catalog
-- `[Subagents & strict flow](docs/agents.md)` — optional read-only detector/fidelity/naturalness subagents and the `--strict` multi-pass mode
-- `[Benchmarks](docs/benchmarks/README.md)` · `[latest report](docs/benchmarks/latest.md)` · `[2026 rebaseline](docs/research/2026-rebaseline.md)`
-- `[Measurement harness](docs/HARNESS.md)` — index of every benchmark, calibration, and gate tool (incl. the signal-impact ablation harness)
-- `[FAQ](docs/FAQ.md)` (`[한국어](docs/FAQ_KR.md)`)
-- `[Ethics](docs/ETHICS.md)`
-- `[Contributing](CONTRIBUTING.md)` (`[한국어](CONTRIBUTING_KR.md)`)
-- `[Changelog](CHANGELOG.md)`
+- [Cookbook](docs/COOKBOOK.md) — common recipes and workflows
+- [CLI Contract](docs/CLI.md) — flags, formats, score gates, exit behavior
+- [Authentication](docs/AUTHENTICATION.md) — local CLI backends and API providers
+- [Patterns](docs/PATTERNS.md) — full pattern catalog
+- [Subagents & strict flow](docs/agents.md) — optional read-only detector/fidelity/naturalness subagents and the `--strict` multi-pass mode
+- [Benchmarks](docs/benchmarks/README.md) · [latest report](docs/benchmarks/latest.md) · [2026 rebaseline](docs/research/2026-rebaseline.md)
+- [Measurement harness](docs/HARNESS.md) — index of every benchmark, calibration, and gate tool (incl. the signal-impact ablation harness)
+- [FAQ](docs/FAQ.md) ([한국어](docs/FAQ_KR.md))
+- [Ethics](docs/ETHICS.md)
+- [Contributing](CONTRIBUTING.md) ([한국어](CONTRIBUTING_KR.md))
+- [Changelog](CHANGELOG.md)
 
-Brand assets and usage rules live in `[Branding](docs/BRANDING.md)`. Design notes live in `[DESIGN.md](DESIGN.md)`.
+Brand assets and usage rules live in [Branding](docs/BRANDING.md). Design notes live in [DESIGN.md](DESIGN.md).
 
 ## Acknowledgements
 
@@ -281,4 +281,4 @@ Inspired by [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)'s plugin architectur
 
 ## License
 
-MIT. See `[LICENSE](LICENSE)` and `[NOTICE](NOTICE)`.
+MIT. See [LICENSE](LICENSE) and [NOTICE](NOTICE).

@@ -121,4 +121,4 @@ related:
 ---
 
 ## 📄 License
-Distributed under the MIT License. See `[LICENSE](file:///LICENSE)` for details.
+Distributed under the MIT License. See [LICENSE](file:///LICENSE) for details.

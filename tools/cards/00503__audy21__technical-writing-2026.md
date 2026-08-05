@@ -54,27 +54,27 @@ Each case study is a self-contained folder with its own narrative, deliverables,
 
 | # | Project | Domain | Deliverables | Words |
 |---|---------|--------|-------------|-------|
-| 1 | `[Re-documenting n8n: From Script to System](./n8n-portfolio/)` | Workflow automation / open-source | Conceptual guide + tutorial + documentation audit + narrative | ~9,400 |
-| 2 | `[Firebase Auth → Supabase Auth: Migration Guide](./supabase-auth-migration/)` | Identity / authentication platform | Concept mapping + migration guide + hardening checklist + narrative | ~12,340 |
-| 3 | `[The Missing AI SDK Docs — Production Patterns for LLM Apps](./vercel-ai-sdk/)` | AI/ML SDK / developer tools | Provider comparison guide + streaming patterns + production checklist + narrative | ~13,500 |
+| 1 | [Re-documenting n8n: From Script to System](./n8n-portfolio/) | Workflow automation / open-source | Conceptual guide + tutorial + documentation audit + narrative | ~9,400 |
+| 2 | [Firebase Auth → Supabase Auth: Migration Guide](./supabase-auth-migration/) | Identity / authentication platform | Concept mapping + migration guide + hardening checklist + narrative | ~12,340 |
+| 3 | [The Missing AI SDK Docs — Production Patterns for LLM Apps](./vercel-ai-sdk/) | AI/ML SDK / developer tools | Provider comparison guide + streaming patterns + production checklist + narrative | ~13,500 |
 
 ### 1. Re-documenting n8n — From Script to System
 
 Bridging the gap between n8n's "it works on my machine" and "it runs in production." A production-readiness conceptual guide, an end-to-end approval system tutorial, and a documentation audit with IA restructuring proposal.
 
-**`[Open case study →](./n8n-portfolio/)`**
+**[Open case study →](./n8n-portfolio/)**
 
 ### 2. Firebase Auth → Supabase Auth: A Production Migration Guide
 
 The definitive migration handbook that Supabase doesn't have. Covers everything from concept mapping (70+ Firebase-to-Supabase comparisons across 9 categories) through an 8-phase zero-downtime migration with code, SQL, and rollback plans, to a 47-item production hardening checklist. Designed for teams migrating from Firebase Auth to Supabase Auth with minimal user-facing impact.
 
-**`[Open case study →](./supabase-auth-migration/)`**
+**[Open case study →](./supabase-auth-migration/)**
 
 ### 3. The Missing AI SDK Docs — Production Patterns for LLM Applications
 
 The Vercel AI SDK docs tell you *how* to call LLMs — this tells you *how to run them in production.* Covers a 4-step provider decision framework with multi-provider strategies (fallback, routing, cascading), a deep-dive streaming guide with error taxonomy and timeout cascading patterns, and a 58-item production hardening checklist for AI applications.
 
-**`[Open case study →](./vercel-ai-sdk/)`**
+**[Open case study →](./vercel-ai-sdk/)**
 
 ---
 

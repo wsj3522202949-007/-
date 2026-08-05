@@ -91,7 +91,7 @@ Force activation: "Use the `human-writer-ar` skill to ...".
 
 ## What is inside
 
-The skill lives in `[`skills/human-writer-ar/`](skills/human-writer-ar/)`: a `SKILL.md` (routing, master checklist, anti-patterns), a `references/` library (stylistic, statistical, and structural tells, humanization techniques, and per-content-type adapters), and `scripts/` (`rules.yaml` plus the `analyze.py` 0-100 scorer and its tests).
+The skill lives in [`skills/human-writer-ar/`](skills/human-writer-ar/): a `SKILL.md` (routing, master checklist, anti-patterns), a `references/` library (stylistic, statistical, and structural tells, humanization techniques, and per-content-type adapters), and `scripts/` (`rules.yaml` plus the `analyze.py` 0-100 scorer and its tests).
 
 ## License
 

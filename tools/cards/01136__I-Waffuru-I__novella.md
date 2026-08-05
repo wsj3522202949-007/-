@@ -68,7 +68,7 @@ Currently, the only way to install *Novella* is to build it from source. This wi
 
 ## Documentation 
 
-Here is `[an example story file](./examples/park_walk.txt)`, the features of which I'll explain as we go.
+Here is [an example story file](./examples/park_walk.txt), the features of which I'll explain as we go.
 
 ```
 # character definitions

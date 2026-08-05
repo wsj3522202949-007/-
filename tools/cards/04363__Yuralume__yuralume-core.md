@@ -52,7 +52,7 @@ related:
   [![PostgreSQL 16](https://img.shields.io/badge/PostgreSQL-16%20%2B%20pgvector-336791.svg)](https://www.postgresql.org/)
   [![Status: alpha](https://img.shields.io/badge/status-alpha-orange.svg)](#status)
 
-  **English** · `[繁體中文](README.zh_TW.md)` · `[日本語](README.ja.md)`
+  **English** · [繁體中文](README.zh_TW.md) · [日本語](README.ja.md)
 
   [yuralume.com](https://yuralume.com) · [Live demo](https://yuralume.com/#demo) · [Self-host guide](https://yuralume.com/selfhost/) · [Discord](https://discord.gg/BP2bpFDgR)
 </div>
@@ -136,7 +136,7 @@ curl -fsSL https://yuralume.com/install.sh | bash
 irm https://yuralume.com/install.ps1 | iex
 ```
 
-Requires [Docker](https://www.docker.com/products/docker-desktop/); the app comes up at `http://127.0.0.1:8012`. The published images are built from this repository by `[CI](.github/workflows/publish-images.yml)` — what you build from source is what we ship. Prefer to read before you run, or want the manual step-by-step? See the [self-host guide](https://yuralume.com/selfhost/).
+Requires [Docker](https://www.docker.com/products/docker-desktop/); the app comes up at `http://127.0.0.1:8012`. The published images are built from this repository by [CI](.github/workflows/publish-images.yml) — what you build from source is what we ship. Prefer to read before you run, or want the manual step-by-step? See the [self-host guide](https://yuralume.com/selfhost/).
 
 <div align="center">
 <img src="assets/self-host_install_demo_timelapse.webp" alt="Timelapse of the one-line install, from one command to a character you can talk to" width="760" />
@@ -192,9 +192,9 @@ docker compose -f docker-compose.container.yml --profile storage-local up -d
 
 Both flows bring up PostgreSQL on `5554`, the local object-storage service on `9012`, the bundled WhatsApp sidecar on `32190`, and the full app on `http://127.0.0.1:8012`. New media rows store app-relative refs such as `/v1/public/...`; browsers resolve them through the app origin, Telegram sends generated images by reading object storage directly and uploading multipart, and URL-based external platforms use the Admin **Channel settings → Public Base URL** with `APP_BASE_URL` as fallback. A VPS/reverse-proxy deploy normally only needs the app domain public; `STORAGE_PUBLIC_URL` is only for compatibility when an external storage/CDN service returns URLs that the app must reverse-map. Browser Web Push is optional: configure VAPID keys when you want OS-level notifications for proactive messages and LumeGram replies, or leave them unset to keep the existing SSE/red-dot path only. WhatsApp accounts use the sidecar automatically: players create the WhatsApp channel and scan the QR shown in the account section, without entering a sidecar URL, session id, API token, Meta Business credentials, or public webhook URL. The `migrate` service runs `alembic upgrade head` before the app starts. Pin a specific build with `YURALUME_IMAGE_TAG=v0.1.0` in `.env.container`; default is `latest`. The running app exposes its package version plus image tag / commit / build time at `GET /api/v1/system/version`, includes the same payload in `GET /api/v1/auth/config`, and shows a compact `Core v...` label in the Player sidebar and Admin topbar. Images are published to `ghcr.io/yuralume/yuralume-core/{app,storage-local,postgres,whatsapp-sidecar}` for both `linux/amd64` and `linux/arm64`; pushes to `master` publish `latest` plus a `sha-*` tag, and manual workflow runs can publish a chosen tag.
 
-Want to generate images with your own local ComfyUI? Core doesn't talk to ComfyUI directly — it speaks a small normalized HTTP contract to a **Custom Media Gateway** you run yourself. See `[`docs/CUSTOM_MEDIA_GATEWAY_SPEC.md`](docs/CUSTOM_MEDIA_GATEWAY_SPEC.md)` for the full spec plus a minimal starter FastAPI reference server, or open it in-app from **Admin → Developer docs**. DIY self-hosters can implement the gateway themselves against the published contract; if you'd rather not tune per-model workflows yourself, a hosted media line is on the roadmap.
+Want to generate images with your own local ComfyUI? Core doesn't talk to ComfyUI directly — it speaks a small normalized HTTP contract to a **Custom Media Gateway** you run yourself. See [`docs/CUSTOM_MEDIA_GATEWAY_SPEC.md`](docs/CUSTOM_MEDIA_GATEWAY_SPEC.md) for the full spec plus a minimal starter FastAPI reference server, or open it in-app from **Admin → Developer docs**. DIY self-hosters can implement the gateway themselves against the published contract; if you'd rather not tune per-model workflows yourself, a hosted media line is on the roadmap.
 
-Want your own voice engine (GPT-SoVITS, XTTS, …)? Core speaks the same kind of small HTTP contract to a **Custom TTS Server** you run yourself — `GET /voices` + `POST /tts/synthesize`. See `[`docs/CUSTOM_TTS_SERVER_SPEC.md`](docs/CUSTOM_TTS_SERVER_SPEC.md)` for the full spec plus a minimal starter that wraps GPT-SoVITS, or open it in-app from **Admin → Developer docs**. Prefer BYOK without running anything? Configure the built-in OpenAI TTS provider instead.
+Want your own voice engine (GPT-SoVITS, XTTS, …)? Core speaks the same kind of small HTTP contract to a **Custom TTS Server** you run yourself — `GET /voices` + `POST /tts/synthesize`. See [`docs/CUSTOM_TTS_SERVER_SPEC.md`](docs/CUSTOM_TTS_SERVER_SPEC.md) for the full spec plus a minimal starter that wraps GPT-SoVITS, or open it in-app from **Admin → Developer docs**. Prefer BYOK without running anything? Configure the built-in OpenAI TTS provider instead.
 
 For self-host prompt overlays, place files under `./prompts/tuned` using the
 same relative paths as `src/kokoro_link/data/prompts/`, then set
@@ -306,12 +306,12 @@ Each character can be bound to a Telegram, LINE, Discord, or WhatsApp chat; mess
 
 ## Roadmap and status
 
-Yuralume is in **alpha**. The core companion loop — chat / memory / schedule / proactive / LumeGram / cross-channel / real-world fact injection / multimodal — is in place; the road ahead focuses on humanisation depth (self-reflection, autobiographical narrative, vulnerability protection) over breadth. Plain-language release notes live in `[`docs/changelog/`](docs/changelog/README.md)` (EN / 中文 / 日本語).
+Yuralume is in **alpha**. The core companion loop — chat / memory / schedule / proactive / LumeGram / cross-channel / real-world fact injection / multimodal — is in place; the road ahead focuses on humanisation depth (self-reflection, autobiographical narrative, vulnerability protection) over breadth. Plain-language release notes live in [`docs/changelog/`](docs/changelog/README.md) (EN / 中文 / 日本語).
 
 ## FAQ
 
 **Is it open source?**
-Source-available under `[BUSL-1.1](LICENSE)`, not OSI open source. Free for non-commercial self-host, research, and evaluation. Commercial production use requires a separate licence. Each version converts to Apache 2.0 four years after first publication.
+Source-available under [BUSL-1.1](LICENSE), not OSI open source. Free for non-commercial self-host, research, and evaluation. Commercial production use requires a separate licence. Each version converts to Apache 2.0 four years after first publication.
 
 **Can I run it without a GPU?**
 Yes. LLM is via an external provider (cloud or local LM Studio). The character image stage is just a CSS-driven slideshow over already-generated images. Image / video / TTS providers are optional and pluggable.
@@ -327,7 +327,7 @@ The public name changed in May 2026 (Yuralume was previously named Kokoro-Link),
 
 ## Contributing
 
-This is a personal project, but contributions and forks are welcome within the licence terms. The engineering red lines to respect: **LLM-first** (semantic decisions route through the LLM — no keyword shortcuts or `if/else` patches for individual cases), **port–adapter** (providers stay behind `contracts/` ports), and **per-character isolation** (nothing leaks between characters or users). Bug reports go to `[GitHub Issues](../../issues)`.
+This is a personal project, but contributions and forks are welcome within the licence terms. The engineering red lines to respect: **LLM-first** (semantic decisions route through the LLM — no keyword shortcuts or `if/else` patches for individual cases), **port–adapter** (providers stay behind `contracts/` ports), and **per-character isolation** (nothing leaks between characters or users). Bug reports go to [GitHub Issues](../../issues).
 
 ## Community
 
@@ -341,7 +341,7 @@ Built on the shoulders of: **FastAPI**, **SQLAlchemy 2**, **Alembic**, **asyncpg
 
 ## License
 
-`[Business Source License 1.1](LICENSE)`. Each version converts to Apache 2.0 four years after its first public distribution.
+[Business Source License 1.1](LICENSE). Each version converts to Apache 2.0 four years after its first public distribution.
 
 related:
   - methods/人物思维蒸馏法.md

@@ -164,4 +164,4 @@ related:
 ---
 
 ## ⚖️ License
-This project is licensed under the **CC BY-NC-SA 4.0** (Attribution-NonCommercial-ShareAlike). See the `[LICENSE](file:///c:/Users/win10/.gemini/antigravity/scratch/shorts-generator/LICENSE)` file for details.
+This project is licensed under the **CC BY-NC-SA 4.0** (Attribution-NonCommercial-ShareAlike). See the [LICENSE](file:///c:/Users/win10/.gemini/antigravity/scratch/shorts-generator/LICENSE) file for details.

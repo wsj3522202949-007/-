@@ -194,7 +194,7 @@ related:
 
 ## 📖 Komplett Dokumentation
 
-För fullständig dokumentation, se **`[MASTER.md](./MASTER.md)`** som innehåller:
+För fullständig dokumentation, se **[MASTER.md](./MASTER.md)** som innehåller:
 - Arkitektur och systemdesign
 - AI-system och transaktionsmallar
 - API-dokumentation

@@ -52,16 +52,16 @@ It started as a fake-news detector and has evolved into a production-style inves
 These screenshots are captured from the current FakeShield UI.
 
 ### Dashboard
-!`[FakeShield dashboard](docs/screenshots/dashboard-dark.png)`
+![FakeShield dashboard](docs/screenshots/dashboard-dark.png)
 
 ### Analysis Workspace
-!`[FakeShield analysis workspace](docs/screenshots/analysis-dark.png)`
+![FakeShield analysis workspace](docs/screenshots/analysis-dark.png)
 
 ### Global Watchlist
-!`[FakeShield global watchlist](docs/screenshots/watchlist-dark.png)`
+![FakeShield global watchlist](docs/screenshots/watchlist-dark.png)
 
 ### Light Theme
-!`[FakeShield light theme](docs/screenshots/analysis-light.png)`
+![FakeShield light theme](docs/screenshots/analysis-light.png)
 
 ## Core Capabilities
 
@@ -469,7 +469,7 @@ Java · Microservices · Full-Stack | Fintech & Core Banking
 - Portfolio: [rahul-alpha1.github.io/RahoolPortfolio.com](https://rahul-alpha1.github.io/RahoolPortfolio.com)
 - LinkedIn: [linkedin.com/in/rahool-goswami-4b055a126](https://linkedin.com/in/rahool-goswami-4b055a126)
 - GitHub: [@Rahul-AlPHA1](https://github.com/Rahul-AlPHA1)
-- Email: `[rahool.goswami16@gmail.com](mailto:rahool.goswami16@gmail.com)`
+- Email: [rahool.goswami16@gmail.com](mailto:rahool.goswami16@gmail.com)
 - Location: Karachi, Pakistan
 
 ## Support

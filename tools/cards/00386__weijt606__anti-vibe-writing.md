@@ -38,14 +38,14 @@ related:
 
 # anti-vibe-writing
 
-!`[anti-vibe-writing：黑白漫画风 banner，四格讲述 AI 写作如何从满屏破折号、emoji 被平台删帖，到人工去味、最终"倍地道"过审](./anti-vibe-writing-banner-cn.png)`
+![anti-vibe-writing：黑白漫画风 banner，四格讲述 AI 写作如何从满屏破折号、emoji 被平台删帖，到人工去味、最终"倍地道"过审](./anti-vibe-writing-banner-cn.png)
 
 [![中文](https://img.shields.io/badge/README-%E4%B8%AD%E6%96%87-15803d?style=flat-square)](./README.md)
 [![English](https://img.shields.io/badge/README-English-1f6feb?style=flat-square)](./README.en.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-111111?style=flat-square)](./LICENSE)
 [![Skill version](https://img.shields.io/badge/skill-1.7.0-orange?style=flat-square)](./CHANGELOG.md)
 
-> This README comes in two languages: **中文** (this page, the default) and **`[English](./README.en.md)`**. Use the badges above to switch.
+> This README comes in two languages: **中文** (this page, the default) and **[English](./README.en.md)**. Use the badges above to switch.
 
 > **目标只有一个：让 AI 说话，倍儿地道。**
 
@@ -90,7 +90,7 @@ git clone https://github.com/weijt606/anti-vibe-writing.git
 
 ## 快速示例
 
-外部读者扫一眼就能看到的前后对照在 `[examples/](./examples/)` 目录下。完整的回归基准仍放在 `references/` 里。
+外部读者扫一眼就能看到的前后对照在 [examples/](./examples/) 目录下。完整的回归基准仍放在 `references/` 里。
 
 ## 三种声音模式
 
@@ -112,7 +112,7 @@ related:
 
 ## 适用场景
 
-**最典型的一个场景：中文推特（X）。** 中文里的 AI 味在 X 上最容易露馅："赋能、打通""首先其次"、三连排比、机翻句式，一眼就能看出是 AI 写的。这个 skill 就是专门冲着这种"明显是机器写的"中文短贴去的，把它改回像真人随手发的那种。前后对照见 `[`examples/07-tweet-zh.md`](./examples/07-tweet-zh.md)` 和 `[`examples/08-translationese-zh.md`](./examples/08-translationese-zh.md)`。
+**最典型的一个场景：中文推特（X）。** 中文里的 AI 味在 X 上最容易露馅："赋能、打通""首先其次"、三连排比、机翻句式，一眼就能看出是 AI 写的。这个 skill 就是专门冲着这种"明显是机器写的"中文短贴去的，把它改回像真人随手发的那种。前后对照见 [`examples/07-tweet-zh.md`](./examples/07-tweet-zh.md) 和 [`examples/08-translationese-zh.md`](./examples/08-translationese-zh.md)。
 
 其他常见场景:
 
@@ -191,7 +191,7 @@ LICENSE
 
 ## 贡献
 
-新增 pattern、benchmark、场景预设的规则见 `[CONTRIBUTING.md](./CONTRIBUTING.md)`。
+新增 pattern、benchmark、场景预设的规则见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ## 许可证
 
@@ -242,4 +242,4 @@ LICENSE
 - host profile 模板与一次性风格提取提示词
 - 修正 SKILL.md 中 `tools:` 字段为 Claude Code 真实工具名
 
-完整版本历史见 `[CHANGELOG.md](./CHANGELOG.md)`。
+完整版本历史见 [CHANGELOG.md](./CHANGELOG.md)。

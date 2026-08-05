@@ -85,7 +85,7 @@ python3 -m living_storyworld.cli web
 
 The web app will open at `http://localhost:8001`. First-time setup will walk you through configuring API keys—I recommend using Gemini 2.5 Flash (free tier) plus Pollinations for images to get started without costs.
 
-!`[Setup wizard for initial configuration](screenshots/setup-wizard.png)`
+![Setup wizard for initial configuration](screenshots/setup-wizard.png)
 
 Once you're in, create a new world by clicking "New" (or use the random generator) and start generating chapters. You'll get choices at key points to steer the story direction.
 
@@ -97,35 +97,35 @@ Once you're in, create a new world by clicking "New" (or use the random generato
 
 When you first launch Living Storyworld, you'll see a setup wizard that guides you through configuring your API keys. You'll need at least one text provider (Gemini's free tier is solid) and optionally an image provider (Pollinations is free and requires no key).
 
-!`[Setup wizard for initial configuration](screenshots/setup-wizard.png)`
+![Setup wizard for initial configuration](screenshots/setup-wizard.png)
 
 You can always return to settings later to add more providers or change your defaults:
 
-!`[API keys configuration](screenshots/api-keys-settings.png)`
+![API keys configuration](screenshots/api-keys-settings.png)
 
 ### 2. World Management
 
 The main interface shows all your story worlds in one place. Each world card displays recent chapters with their illustrations, making it easy to jump back into any story.
 
-!`[Main interface showing world management](screenshots/main-page.png)`
+![Main interface showing world management](screenshots/main-page.png)
 
 ### 3. Creating a New World
 
 Click "New World" to start a fresh story. You can manually set the title, theme, genre, and art style, or use the random generator to create unique combinations instantly.
 
-!`[New world creation dialog](screenshots/new-world-dialog.png)`
+![New world creation dialog](screenshots/new-world-dialog.png)
 
 ### 4. Reading & Making Choices
 
 When reading chapters, you'll get a clean view optimized for enjoying your generated story. The interface shows the chapter illustration, narrative text, and your choices.
 
-!`[Clean reading interface](screenshots/reading-mode.png)`
+![Clean reading interface](screenshots/reading-mode.png)
 
 At key moments in the story, you'll be presented with choices that influence how the narrative unfolds. Select an option to guide the direction of the next chapter.
 
 These are PERMANENT! Choose carefully.
 
-!`[Interactive choice moments](screenshots/make-choices.png)`
+![Interactive choice moments](screenshots/make-choices.png)
 
 ---
 
@@ -384,7 +384,7 @@ Good enough for a local tool, not production-ready.
 
 ## Contributing
 
-Contributions are welcome! See `[CONTRIBUTING.md](CONTRIBUTING.md)` for development guidelines, code style requirements, and pull request process.
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines, code style requirements, and pull request process.
 
 **Found a bug?** Please [open an issue](https://github.com/jonmartin721/living-story-world/issues) on GitHub.
 
@@ -398,4 +398,4 @@ related:
 
 ## License
 
-This project is licensed under the MIT License — see `[LICENSE](LICENSE)` for details.
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.

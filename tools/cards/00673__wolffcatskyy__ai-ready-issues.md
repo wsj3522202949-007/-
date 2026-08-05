@@ -126,7 +126,7 @@ The AI-ready format has a cost. Writing a good issue takes 10-20 minutes of stru
 
 The maintainer's judgment is what makes this work. You know your codebase — you know which changes are self-contained enough for someone to pick up cold. That curation is the standard's real value.
 
-See the `[Maintainer Guide](guide/MAINTAINER_GUIDE.md)` for detailed guidance on when to use (and not use) this standard.
+See the [Maintainer Guide](guide/MAINTAINER_GUIDE.md) for detailed guidance on when to use (and not use) this standard.
 
 ## What This Is
 
@@ -146,8 +146,8 @@ See the `[Maintainer Guide](guide/MAINTAINER_GUIDE.md)` for detailed guidance on
 
 ### For Maintainers
 
-1. Copy the `[issue templates](.github/ISSUE_TEMPLATE/)` into your repo
-2. Adapt the `[CONTRIBUTING.md template](templates/CONTRIBUTING.md)` for your project
+1. Copy the [issue templates](.github/ISSUE_TEMPLATE/) into your repo
+2. Adapt the [CONTRIBUTING.md template](templates/CONTRIBUTING.md) for your project
 3. Write issues using the AI-Ready format
 4. Label them `ai-ready` so contributors can find them
 
@@ -170,12 +170,12 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| `[templates/CONTRIBUTING.md](templates/CONTRIBUTING.md)` | Drop-in CONTRIBUTING.md with AI contribution guidelines |
-| `[.github/ISSUE_TEMPLATE/ai-ready-bug.md](.github/ISSUE_TEMPLATE/ai-ready-bug.md)` | Bug report formatted for AI consumption |
-| `[.github/ISSUE_TEMPLATE/ai-ready-feature.md](.github/ISSUE_TEMPLATE/ai-ready-feature.md)` | Feature request formatted for AI consumption |
-| `[templates/PR_TEMPLATE.md](templates/PR_TEMPLATE.md)` | Pull request template with AI disclosure section |
-| `[guide/MAINTAINER_GUIDE.md](guide/MAINTAINER_GUIDE.md)` | How to write effective AI-ready issues |
-| `[guide/CONTRIBUTOR_GUIDE.md](guide/CONTRIBUTOR_GUIDE.md)` | How to use AI responsibly for contributions |
+| [templates/CONTRIBUTING.md](templates/CONTRIBUTING.md) | Drop-in CONTRIBUTING.md with AI contribution guidelines |
+| [.github/ISSUE_TEMPLATE/ai-ready-bug.md](.github/ISSUE_TEMPLATE/ai-ready-bug.md) | Bug report formatted for AI consumption |
+| [.github/ISSUE_TEMPLATE/ai-ready-feature.md](.github/ISSUE_TEMPLATE/ai-ready-feature.md) | Feature request formatted for AI consumption |
+| [templates/PR_TEMPLATE.md](templates/PR_TEMPLATE.md) | Pull request template with AI disclosure section |
+| [guide/MAINTAINER_GUIDE.md](guide/MAINTAINER_GUIDE.md) | How to write effective AI-ready issues |
+| [guide/CONTRIBUTOR_GUIDE.md](guide/CONTRIBUTOR_GUIDE.md) | How to use AI responsibly for contributions |
 
 ## Projects Using This Standard
 

@@ -185,7 +185,7 @@ On CPU you might want to tune parameters in `core/config.py`:
 ***
 
 
-!`[Streamlit home](img/streamlit_home.png)`
+![Streamlit home](img/streamlit_home.png)
 
 ## How it works (high level)
 

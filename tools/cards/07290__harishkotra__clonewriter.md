@@ -296,7 +296,7 @@ docker-compose up -d
 - 💾 Persistent volumes for data storage
 - 🔄 Auto-restart and health checks
 
-**See `[DOCKER.md](./DOCKER.md)` for complete documentation.**
+**See [DOCKER.md](./DOCKER.md) for complete documentation.**
 
 ### Cloud Deployment
 

@@ -50,24 +50,24 @@ canvas, the `palette` command-palette views, dynamic islands, and the
 default-deny sandbox model) so it stops inventing methods and writes scripts
 that run.
 
-The single **source of truth** is `[`skills/opal-scripting/`](skills/opal-scripting/)`:
+The single **source of truth** is [`skills/opal-scripting/`](skills/opal-scripting/):
 
-- `[`SKILL.md`](skills/opal-scripting/SKILL.md)`: the skill (structure, settings,
+- [`SKILL.md`](skills/opal-scripting/SKILL.md): the skill (structure, settings,
   events, renderer + color rule, palette views, islands, the sandbox, common
   mistakes).
-- `[`reference.md`](skills/opal-scripting/reference.md)`: the module/settings/event
+- [`reference.md`](skills/opal-scripting/reference.md): the module/settings/event
   model index, plus the `keys` table. Proxy globals are split by category:
-  - `[`reference/core.md`](skills/opal-scripting/reference/core.md)`: `client`,
+  - [`reference/core.md`](skills/opal-scripting/reference/core.md): `client`,
     `notification`, `overlay`, `modules`, `mc`, `timer`, `ScriptList`.
-  - `[`reference/character.md`](skills/opal-scripting/reference/character.md)`:
+  - [`reference/character.md`](skills/opal-scripting/reference/character.md):
     `player`, `movement`, `rotation`, `inventory`, `mc.interactionManager`.
-  - `[`reference/world.md`](skills/opal-scripting/reference/world.md)`: `world`,
+  - [`reference/world.md`](skills/opal-scripting/reference/world.md): `world`,
     `esp`, the class globals (`BlockPos`, `Vec2f`, `Vec3d`, `Color`, hand
     constants), and the wrapper types the proxies return (`ScriptVec3`,
     `ScriptEntity`, `ScriptEffect`, `ScriptBox2D`, …).
-  - `[`reference/ui.md`](skills/opal-scripting/reference/ui.md)`: `renderer`,
+  - [`reference/ui.md`](skills/opal-scripting/reference/ui.md): `renderer`,
     `palette`.
-- `[`palette-views.md`](skills/opal-scripting/palette-views.md)`: a complete
+- [`palette-views.md`](skills/opal-scripting/palette-views.md): a complete
   palette-view example.
 
 ## Install
@@ -128,14 +128,14 @@ the directory (`.claude/`, `AGENTS.md`, `GEMINI.md`, `.github/`, `.cursor/`,
 ## Manual adapters
 
 Don't want to run the installer? Copy a ready-made surface from
-`[`adapters/`](adapters/)`:
+[`adapters/`](adapters/):
 
-- `[`adapters/claude-code/`](adapters/claude-code/)`: Claude Code **plugin** form
+- [`adapters/claude-code/`](adapters/claude-code/): Claude Code **plugin** form
   (`.claude-plugin/plugin.json` + `skills/opal-scripting/` + a
   `/new-opal-script` command that scaffolds a new script file).
-- `[`adapters/codex/AGENTS.md`](adapters/codex/AGENTS.md)`
-- `[`adapters/gemini/GEMINI.md`](adapters/gemini/GEMINI.md)`
-- `[`adapters/copilot/.github/copilot-instructions.md`](adapters/copilot/.github/copilot-instructions.md)`
+- [`adapters/codex/AGENTS.md`](adapters/codex/AGENTS.md)
+- [`adapters/gemini/GEMINI.md`](adapters/gemini/GEMINI.md)
+- [`adapters/copilot/.github/copilot-instructions.md`](adapters/copilot/.github/copilot-instructions.md)
 
 ## In-client docs
 
@@ -143,7 +143,7 @@ The authoritative reference is the client itself. Reference scripts ship in the
 Opal install under `opal/scripts` (`ScriptScaffold.js`, `Chomp.js`); read them
 for idiomatic usage. Scripts run in a default-deny sandbox, and community
 scripts are additionally quarantined to `opal/scripts/pending` behind an
-explicit **"Trust & run"**; see `[`SECURITY.md`](SECURITY.md)`.
+explicit **"Trust & run"**; see [`SECURITY.md`](SECURITY.md).
 
 Finished scripts go in the official
 [`opalclient/scripts`](https://github.com/opalclient/scripts) repo:
@@ -155,9 +155,9 @@ example is **Chomp**, a roguelite arcade script that exercises `storage`.
 
 If you are an AI assistant working in this repo:
 
-- `[`CLAUDE.md`](CLAUDE.md)`: the mental model for this repo and how to change it.
-- `[`llms.txt`](llms.txt)`: a compact, link-first map of everything here.
-- `[`skills/opal-scripting/`](skills/opal-scripting/)`: the source of truth for
+- [`CLAUDE.md`](CLAUDE.md): the mental model for this repo and how to change it.
+- [`llms.txt`](llms.txt): a compact, link-first map of everything here.
+- [`skills/opal-scripting/`](skills/opal-scripting/): the source of truth for
   the Opal scripting API. **Use only the API documented there**; do not invent
   methods.
 
@@ -169,8 +169,8 @@ npm test        # node --test
 
 The installer is dependency-free ESM (`bin/install.mjs`). Edits to the skill
 live in `skills/opal-scripting/`; the `adapters/` surfaces are regenerated from
-it (see `[`CONTRIBUTING.md`](CONTRIBUTING.md)`).
+it (see [`CONTRIBUTING.md`](CONTRIBUTING.md)).
 
 ## License
 
-`[MIT](LICENSE)` © Opal.
+[MIT](LICENSE) © Opal.

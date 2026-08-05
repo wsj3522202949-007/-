@@ -99,7 +99,7 @@ related:
 | README / release note / forum / issue reply | 按发布目的收束，不把文档改成广告或客服话术 | README 先说是什么、给谁用 |
 | 中文长文 scope | 默认 `bounded`；句内清理，整句空话进待确认清单 | 不并句、不重排、不误删节奏 |
 
-详细边界见 `[references/](references/)`、`[场景规则](references/scene-packs.md)` 和 `[评测集](evals/benchmark.md)`。
+详细边界见 [references/](references/)、[场景规则](references/scene-packs.md) 和 [评测集](evals/benchmark.md)。
 
 英文去 AI 味已经有 [stop-slop](https://github.com/hardikpandya/stop-slop) 和 [humanizer](https://github.com/blader/humanizer)。`说人话` 补的是中文这一层：这些腔调在中文里长什么样、按发布场景分档处理、改写前先锁住事实。
 
@@ -135,7 +135,7 @@ related:
 >
 > 这版不做 Voice Calibration；相关方向推迟到 v1.9 评估。
 
-release note 的读者要的是变更清单，不是发布宣言。版本号保住，姿态层拆掉，没做的事也写出来。完整样本见 `[evals/real-samples.md](evals/real-samples.md)` RS-16。
+release note 的读者要的是变更清单，不是发布宣言。版本号保住，姿态层拆掉，没做的事也写出来。完整样本见 [evals/real-samples.md](evals/real-samples.md) RS-16。
 
 ### 公开介绍的宏大开场
 
@@ -147,7 +147,7 @@ release note 的读者要的是变更清单，不是发布宣言。版本号保�
 
 > AI 工具很多，但改完的中文常常还留着套话。这个项目专门清这些残味：过度承接、工程师腔、翻译腔、无源权威和自我拔高。
 
-更多例子见 `[references/examples.md](references/examples.md)` 和 `[evals/real-samples.md](evals/real-samples.md)`。
+更多例子见 [references/examples.md](references/examples.md) 和 [evals/real-samples.md](evals/real-samples.md)。
 
 ## 30 秒上手
 
@@ -160,7 +160,7 @@ release note 的读者要的是变更清单，不是发布宣言。版本号保�
 /plugin install shuorenhua@shuorenhua
 ```
 
-装好后在对话里说「把这段去 AI 味」就会命中。手动安装（cp / 软链跟随更新）见 `[install/claude-code.md](install/claude-code.md)`。
+装好后在对话里说「把这段去 AI 味」就会命中。手动安装（cp / 软链跟随更新）见 [install/claude-code.md](install/claude-code.md)。
 
 **Codex** — clone 后单次使用：
 
@@ -177,7 +177,7 @@ npx skills add MrGeDiao/shuorenhua
 
 更多安装选项见 `npx skills add --help`。
 
-项目内长期使用建议把 skill 文件拷进项目并在 `AGENTS.md` 写明触发条件，见 `[install/codex.md](install/codex.md)`。
+项目内长期使用建议把 skill 文件拷进项目并在 `AGENTS.md` 写明触发条件，见 [install/codex.md](install/codex.md)。
 
 **只想先看问题、不要改稿**：指令里加一句「按 annotation mode 只标注不改写」。
 
@@ -192,7 +192,7 @@ Cursor、OpenClaw 和自建 agent 见[安装](#安装)。
 完整流程固定六步：
 
 1. 判场景：`chat / status / docs / public-writing`；命中 README、release note、论坛帖、issue 回复时，再进对应的 Scene Pack
-2. 划保护片段：数字、版本、命令、路径、报错、引用原文、人名和责任归属先锁住（完整清单见 `[references/protected-spans.md](references/protected-spans.md)`）
+2. 划保护片段：数字、版本、命令、路径、报错、引用原文、人名和责任归属先锁住（完整清单见 [references/protected-spans.md](references/protected-spans.md)）
 3. 判命中强度（`Tier 1 / 2 / 3`），再分别定改写力度（`minimal / standard / aggressive`）和 scope（`structural / bounded / in-place`）；Tier 只描述问题命中多重，不直接等于力度
 4. 先按模式改，词表只兜底
 5. 保真回读：事实、术语、语域、保护片段逐项过
@@ -211,7 +211,7 @@ Cursor、OpenClaw 和自建 agent 见[安装](#安装)。
 
 ### 按发布目的细分（Scene Packs）
 
-可发布文本再按「发到哪里」细分，不是换语气，是按发布目的决定改法：README 第一屏要说清这是什么、给谁用；release note 要列清变更、验证和限制；论坛帖像维护者分享观察和取舍，不像公司公告；issue 回复先确认问题和下一步，不做客服式安抚。每个子场景的目标和常见病灶见 `[references/scene-packs.md](references/scene-packs.md)`。
+可发布文本再按「发到哪里」细分，不是换语气，是按发布目的决定改法：README 第一屏要说清这是什么、给谁用；release note 要列清变更、验证和限制；论坛帖像维护者分享观察和取舍，不像公司公告；issue 回复先确认问题和下一步，不做客服式安抚。每个子场景的目标和常见病灶见 [references/scene-packs.md](references/scene-packs.md)。
 
 ### 长文不缩水：三档 scope
 
@@ -223,7 +223,7 @@ Cursor、OpenClaw 和自建 agent 见[安装](#安装)。
 | `bounded`（长文默认） | 整句空话列成「建议删除（待确认）」清单，删多少你拍板 | `public-writing` 长文 |
 | `in-place` | 一句都不删，只句内降调 | 明确要求「完全原样」 |
 
-三档的取舍过程和模型实跑数据见 [#4](https://github.com/MrGeDiao/shuorenhua/issues/4) 和 `[evals/results-v1.8.6.md](evals/results-v1.8.6.md)`。
+三档的取舍过程和模型实跑数据见 [#4](https://github.com/MrGeDiao/shuorenhua/issues/4) 和 [evals/results-v1.8.6.md](evals/results-v1.8.6.md)。
 
 ### 改完往哪个方向靠
 
@@ -249,7 +249,7 @@ Cursor、OpenClaw 和自建 agent 见[安装](#安装)。
 | Long-form In-place | 4 | 长文保长度场景，检查字数留存、句数对齐和关键转场 |
 | Bounded | 3 | 长文整句空话进删除清单，但不误删实句和节奏句 |
 
-v1.9.0 起 benchmark 改为双模型实跑口径（Codex + Claude 交叉判分，见 `[evals/results-v1.9.0.md](evals/results-v1.9.0.md)`）；v2.0.0 起实跑盲测化：被测模型只看匿名乱序、不含预期的 `[evals/benchmark-blind.md](evals/benchmark-blind.md)`，judge 按映射表判分，每次实跑的评测集版本、模型和口径登记在 `[evals/run-manifest.md](evals/run-manifest.md)`。静态走查退为发版前快速自查。2026-07-23 起发布门槛分层：硬约束失败 0、SNF 误杀 < 10%、本版 targeted 达标；全量风格分按模型报告、只看趋势，分层判据见 `[evals/benchmark-tiers.md](evals/benchmark-tiers.md)`。完整用例集见 `[evals/benchmark.md](evals/benchmark.md)`，整段场景样本（高拟真合成）见 `[evals/real-samples.md](evals/real-samples.md)`。`results-v1.8.6.md` 保留为 v1.8.6 首次模型实跑归档。
+v1.9.0 起 benchmark 改为双模型实跑口径（Codex + Claude 交叉判分，见 [evals/results-v1.9.0.md](evals/results-v1.9.0.md)）；v2.0.0 起实跑盲测化：被测模型只看匿名乱序、不含预期的 [evals/benchmark-blind.md](evals/benchmark-blind.md)，judge 按映射表判分，每次实跑的评测集版本、模型和口径登记在 [evals/run-manifest.md](evals/run-manifest.md)。静态走查退为发版前快速自查。2026-07-23 起发布门槛分层：硬约束失败 0、SNF 误杀 < 10%、本版 targeted 达标；全量风格分按模型报告、只看趋势，分层判据见 [evals/benchmark-tiers.md](evals/benchmark-tiers.md)。完整用例集见 [evals/benchmark.md](evals/benchmark.md)，整段场景样本（高拟真合成）见 [evals/real-samples.md](evals/real-samples.md)。`results-v1.8.6.md` 保留为 v1.8.6 首次模型实跑归档。
 
 ## 安装
 
@@ -261,11 +261,11 @@ see_also:
   - 05151__DadaNanjesha__AI-Text-Humanizer-App.md
   - 05427__harshaneel__humanize.md
 ---|
-| Codex | `[install/codex.md](install/codex.md)` |
-| Claude Code | `[install/claude-code.md](install/claude-code.md)` |
-| Cursor / Windsurf | `[install/cursor.md](install/cursor.md)` |
-| OpenClaw | `[install/openclaw.md](install/openclaw.md)` |
-| ChatGPT / Custom GPT | `[install/chatgpt.md](install/chatgpt.md)` |
+| Codex | [install/codex.md](install/codex.md) |
+| Claude Code | [install/claude-code.md](install/claude-code.md) |
+| Cursor / Windsurf | [install/cursor.md](install/cursor.md) |
+| OpenClaw | [install/openclaw.md](install/openclaw.md) |
+| ChatGPT / Custom GPT | [install/chatgpt.md](install/chatgpt.md) |
 
 核心只需要 `SKILL.md` 一个文件（lite）；长期项目、公开文本和需要误杀防护的场景，建议带上 `references/` 完整包（full）。
 
@@ -279,7 +279,7 @@ see_also:
 
 ## English
 
-**shuorenhua (说人话)** is a Chinese-first AI writing humanizer for Codex, Claude Code, Cursor, and ChatGPT. It removes AI-flavored patterns in Chinese text — sycophantic openers, performative engineer-speak, translationese, unsourced authority claims — while preserving facts, numbers, commands, terminology, and attribution. It ships with an 82-case benchmark including false-positive guards, and a long-form mode that cleans up the text without shrinking it. Claude Code users can install it in two commands: `/plugin marketplace add MrGeDiao/shuorenhua`, then `/plugin install shuorenhua@shuorenhua`. Other agents can use `npx skills add MrGeDiao/shuorenhua`. Other install guides: `[install/](install/)`. Everything else in this repo is written in Chinese.
+**shuorenhua (说人话)** is a Chinese-first AI writing humanizer for Codex, Claude Code, Cursor, and ChatGPT. It removes AI-flavored patterns in Chinese text — sycophantic openers, performative engineer-speak, translationese, unsourced authority claims — while preserving facts, numbers, commands, terminology, and attribution. It ships with an 82-case benchmark including false-positive guards, and a long-form mode that cleans up the text without shrinking it. Claude Code users can install it in two commands: `/plugin marketplace add MrGeDiao/shuorenhua`, then `/plugin install shuorenhua@shuorenhua`. Other agents can use `npx skills add MrGeDiao/shuorenhua`. Other install guides: [install/](install/). Everything else in this repo is written in Chinese.
 
 ## 常见问题
 
@@ -303,13 +303,13 @@ see_also:
 
 欢迎提交新的评测样本、边界案例、真实问题案例、改写前后样本和误杀防护。
 
-如果你遇到“改完还是像 AI”的具体文本，可以用 `[bad case 模板](.github/ISSUE_TEMPLATE/bad-case.md)` 提交。请先脱敏，不要贴未授权私聊全文、密钥、内部链接或真实个人身份信息。也可以直接贴到[征集 issue](https://github.com/MrGeDiao/shuorenhua/issues/5)。
+如果你遇到“改完还是像 AI”的具体文本，可以用 [bad case 模板](.github/ISSUE_TEMPLATE/bad-case.md) 提交。请先脱敏，不要贴未授权私聊全文、密钥、内部链接或真实个人身份信息。也可以直接贴到[征集 issue](https://github.com/MrGeDiao/shuorenhua/issues/5)。
 
 在提交新词之前，先想一件事：
 
 > 这是一个“新模式”，还是只是“现有模式的变体”？
 
-详细规则见 `[CONTRIBUTING.md](CONTRIBUTING.md)`。
+详细规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 相关项目
 
@@ -323,4 +323,4 @@ see_also:
 
 ## 许可
 
-`[MIT](LICENSE)`
+[MIT](LICENSE)

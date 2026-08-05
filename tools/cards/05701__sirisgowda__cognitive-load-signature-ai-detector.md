@@ -198,19 +198,19 @@ The repository also includes:
 
 ## Model Comparison
 
-!`[Model Comparison](results/model_comparison.png)`
+![Model Comparison](results/model_comparison.png)
 
 ## ROC Curve
 
-!`[ROC Curve](results/figures/roc_curve.png)`
+![ROC Curve](results/figures/roc_curve.png)
 
 ## Confusion Matrix
 
-!`[Confusion Matrix](results/figures/confusion_matrix.png)`
+![Confusion Matrix](results/figures/confusion_matrix.png)
 
 ## Feature Importance
 
-!`[Feature Importance](results/figures/feature_importance.png)`
+![Feature Importance](results/figures/feature_importance.png)
 
 # Project Structure
 

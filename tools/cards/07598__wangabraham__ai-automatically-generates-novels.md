@@ -80,30 +80,30 @@ related:
 ## 功能速览
 思维导图.png
 
-!`[主页面预览](jpg/思维导图.png)`
+![主页面预览](jpg/思维导图.png)
 *可拖拽的思维导图*
 
 
-!`[主页面预览](jpg/AI迭代2.png)`
+![主页面预览](jpg/AI迭代2.png)
 *智能按照句子、段落、字符数智能切割 和预览*
 
-!`[主页面预览](jpg/ai迭代1.png)`
+![主页面预览](jpg/ai迭代1.png)
 *设定好分数和迭代次数*
 
-!`[主页面预览](jpg/主界面.png)`
+![主页面预览](jpg/主界面.png)
 *完整功能界面，支持多种智能写作辅助功能*
 
-!`[右键预览](jpg/右键功能.png)`
+![右键预览](jpg/右键功能.png)
 *智能右键润色功能*
 
 
-!`[最终提示词](jpg/提示词最终预览修改.png)`
+![最终提示词](jpg/提示词最终预览修改.png)
 *智能AI右键润色功能*
 
-!`[智能书名生成](jpg/ai生成书名.png)`
+![智能书名生成](jpg/ai生成书名.png)
 *AI智能书名生成功能展示*
 
-!`[智能简介生成](jpg/ai生成简介.png)`
+![智能简介生成](jpg/ai生成简介.png)
 *AI智能简介生成功能展示*
 
 
@@ -315,7 +315,7 @@ MIT License
 
 ## 问题反馈
 
-!`[图片](jpg/二维码.png)`
+![图片](jpg/二维码.png)
 
 - 项目主页：[GitHub](https://github.com/wfcz10086/AI-automatically-generates-novels)
 - 问题反馈：[Issues](https://github.com/wfcz10086/AI-automatically-generates-novels/issues)

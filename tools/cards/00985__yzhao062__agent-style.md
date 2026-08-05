@@ -65,7 +65,7 @@ related:
 
 ## Before and After
 
-!`[agent-style hero: 21 rules, then three real v0.3.0 bench before/after pairs (product description, design-doc section, paper related-work section) with rule violations highlighted in the AI drafts and concrete details highlighted in the agent-style-loaded revisions](docs/hero.png)`
+![agent-style hero: 21 rules, then three real v0.3.0 bench before/after pairs (product description, design-doc section, paper related-work section) with rule violations highlighted in the AI drafts and concrete details highlighted in the agent-style-loaded revisions](docs/hero.png)
 
 The top row is the identity: 21 rules, 12 canonical plus 9 field-observed; bordered red marks the two critical rules (RULE-01 curse-of-knowledge and RULE-H citation discipline). The bottom three rows are the mechanism, each pulled from a real v0.3.0 bench draft pair (same prompt, independent generations with and without the ruleset): a product description on Gemini 3 Flash (8 → 0 violations), a design-doc section on Claude Opus 4.7 (14 → 7), and a paper related-work section on Gemini 3 Flash (6 → 4; the source drafts are anchored to three prompt-named benchmarks (AgentBench, BFCL, tau-bench) so the style delta measured by `agent-style review` is isolated from fabricated-citation noise, though the displayed baseline snippet stops before the third name to keep the panel to three sentences). Each row shows the AI draft on the left with rule-violating phrases highlighted, the specific rules that fire in the middle, and the revised version on the right at the same length budget, same register, same document type.
 
@@ -92,7 +92,7 @@ Named in homage to Strunk & White's *The Elements of Style* (1918/1959), one of 
 
 ### Canonical Rules (RULE-01 through RULE-12)
 
-!`[Four writing authorities cited by RULE-01..12: Strunk & White (Elements of Style, 1959), Orwell (Politics and the English Language, 1946), Pinker (Sense of Style, 2014), Gopen & Swan (Science of Scientific Writing, 1990), with the rule IDs distilled from each](docs/sources.png)`
+![Four writing authorities cited by RULE-01..12: Strunk & White (Elements of Style, 1959), Orwell (Politics and the English Language, 1946), Pinker (Sense of Style, 2014), Gopen & Swan (Science of Scientific Writing, 1990), with the rule IDs distilled from each](docs/sources.png)
 
 Sourced from writing authorities; each rule cites its source by chapter, section, or essay rule.
 
@@ -129,13 +129,13 @@ Structural patterns logged from LLM output across research, proposal, documentat
 
 **Escape hatch** (Orwell 1946 Rule 6): *"Break any of these rules sooner than say anything outright barbarous."* Rules are guides to clarity, not ends in themselves.
 
-See `[`RULES.md`](RULES.md)` for the full per-rule blocks with BAD/GOOD examples, enforcement tier, and rationale.
+See [`RULES.md`](RULES.md) for the full per-rule blocks with BAD/GOOD examples, enforcement tier, and rationale.
 
 ## Does It Work?
 
-!`[agent-style v0.3.0 sanity bench across Claude Opus 4.7, OpenAI GPT-5.4 via Codex CLI, and Gemini 3 Flash: 105 to 58 (-45%), 51 to 28 (-45%), and 79 to 14 (-82%) AI-tell violations across 10 fixed prose tasks, per-rule breakdown, directional-not-statsig caveat](docs/bench.png)`
+![agent-style v0.3.0 sanity bench across Claude Opus 4.7, OpenAI GPT-5.4 via Codex CLI, and Gemini 3 Flash: 105 to 58 (-45%), 51 to 28 (-45%), and 79 to 14 (-82%) AI-tell violations across 10 fixed prose tasks, per-rule breakdown, directional-not-statsig caveat](docs/bench.png)
 
-Sanity bench on 10 fixed prose tasks (2 PR descriptions, 1 design-doc section, 1 commit message, 4 paper sections, 1 product description, 1 NSF-style specific aim), 2 generations per condition, flagship models drafting with `agent-style` loaded at generation time vs not. Three models shown: **Claude Opus 4.7 dropped 45% (105 → 58 violations); OpenAI GPT-5.4 via Codex CLI dropped 45% (51 → 28); Gemini 3 Flash dropped 82% (79 → 14).** The GitHub Copilot CLI runner was tested but excluded from the figure because its `-p` programmatic mode does not load instruction files (+3% noise; see `[`CHANGELOG.md`](CHANGELOG.md)` Notes). See `[`docs/bench-0.3.0.md`](docs/bench-0.3.0.md)` for the full scorecard across all 4 runners plus per-runner drafts under `[`docs/bench-0.3.0-drafts/`](docs/bench-0.3.0-drafts/)`, and `[`RELEASING.md`](RELEASING.md)` "Bench (Local Only)" for reproduction steps.
+Sanity bench on 10 fixed prose tasks (2 PR descriptions, 1 design-doc section, 1 commit message, 4 paper sections, 1 product description, 1 NSF-style specific aim), 2 generations per condition, flagship models drafting with `agent-style` loaded at generation time vs not. Three models shown: **Claude Opus 4.7 dropped 45% (105 → 58 violations); OpenAI GPT-5.4 via Codex CLI dropped 45% (51 → 28); Gemini 3 Flash dropped 82% (79 → 14).** The GitHub Copilot CLI runner was tested but excluded from the figure because its `-p` programmatic mode does not load instruction files (+3% noise; see [`CHANGELOG.md`](CHANGELOG.md) Notes). See [`docs/bench-0.3.0.md`](docs/bench-0.3.0.md) for the full scorecard across all 4 runners plus per-runner drafts under [`docs/bench-0.3.0-drafts/`](docs/bench-0.3.0-drafts/), and [`RELEASING.md`](RELEASING.md) "Bench (Local Only)" for reproduction steps.
 
 Numbers are directional, not statsig: 10 tasks × 2 generations × 2 conditions = 40 calls per runner. The takeaway is that the ruleset reduces mechanical AI-tell density across every frontier family where the instruction file actually reaches the model's context; the exact size of the drop varies with each model's baseline (heavier in models that emit more long sentences / em-dashes by default, smaller or zero in already-clean models).
 
@@ -261,7 +261,7 @@ For `print-only` and `multi-file-required`, the JSON output carries `manual_step
 | Kiro (AWS IDE) | `owned-file` | `.kiro/steering/agent-style.md` |
 | **style-review** (skill) | `skill-with-references` | `.claude/skills/style-review/SKILL.md` + `.agent-style/skills/style-review/references/` |
 
-Amazon Q Developer, JetBrains AI Assistant, Windsurf, Ollama, Replit, OpenCode, Continue.dev, Tabnine, OpenAI Agents SDK skills, and Copilot path-scoped variants beyond the above are planned for v1.1; see the "Planned adapters" section of `[`adapter-matrix.md`](adapter-matrix.md)`.
+Amazon Q Developer, JetBrains AI Assistant, Windsurf, Ollama, Replit, OpenCode, Continue.dev, Tabnine, OpenAI Agents SDK skills, and Copilot path-scoped variants beyond the above are planned for v1.1; see the "Planned adapters" section of [`adapter-matrix.md`](adapter-matrix.md).
 
 </details>
 
@@ -383,7 +383,7 @@ If the version string or rule count is missing, the file is on disk but not in y
 <summary><b>Complementary Post-Hoc Linting</b></summary>
 <br>
 
-This repo is read at generation time. For a linter that runs over committed prose in CI, see [ProseLint](https://github.com/amperser/proselint); per-rule check-ID mappings are in `[`enforcement/proselint-map.md`](enforcement/proselint-map.md)`. Vale users can plug ProseLint via its existing style-pack ecosystem.
+This repo is read at generation time. For a linter that runs over committed prose in CI, see [ProseLint](https://github.com/amperser/proselint); per-rule check-ID mappings are in [`enforcement/proselint-map.md`](enforcement/proselint-map.md). Vale users can plug ProseLint via its existing style-pack ecosystem.
 
 </details>
 
@@ -400,7 +400,7 @@ Opt out by adding `rule_packs: []` to `agent-config.yaml` at your project root; 
 
 ### v0.3.0 Roadmap
 
-Planned CLI additions: `agent-style update` (refresh installed adapters to latest), `agent-style override <RULE-ID> disable` (per-rule opt-out), `agent-style clean` (one-command uninstall), `.agent-style/config.toml` (project-level config), RULE-02 / 07 / 09 / 10 structural detectors filled in, and filled adapters for the planned-adapter set above (v1.1). Track progress in `[`CHANGELOG.md`](CHANGELOG.md)`.
+Planned CLI additions: `agent-style update` (refresh installed adapters to latest), `agent-style override <RULE-ID> disable` (per-rule opt-out), `agent-style clean` (one-command uninstall), `.agent-style/config.toml` (project-level config), RULE-02 / 07 / 09 / 10 structural detectors filled in, and filled adapters for the planned-adapter set above (v1.1). Track progress in [`CHANGELOG.md`](CHANGELOG.md).
 
 <details>
 <summary><b>Curation and method</b></summary>
@@ -432,7 +432,7 @@ Four writing authorities for prose content, plus two recent empirical papers for
 5. **Zhang, X. et al. (2026).** "Do Agent Rules Shape or Distort? Guardrails Beat Guidance in Coding Agents." arXiv:2604.11088. 25,532 rules across 679 instruction files; motivates negative-constraint phrasing for anti-pattern rules.
 6. **Bohr, J. (2025).** "Show and Tell: Prompt Strategies for Style Control in Multi-Turn LLM Code Generation." arXiv:2511.13972. Motivates the directive + BAD/GOOD example format used throughout `RULES.md`.
 
-See `[`SOURCES.md`](SOURCES.md)` for the full bibliography and recommended reading ranges per source.
+See [`SOURCES.md`](SOURCES.md) for the full bibliography and recommended reading ranges per source.
 
 </details>
 
@@ -448,14 +448,14 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 --- |
-| `RULES.md`, `SOURCES.md`, `NOTICE.md`, `agents/`, `adapter-matrix.md` | `[CC BY 4.0](LICENSES/CC-BY-4.0.txt)` |
-| `enforcement/`, `.github/workflows/`, generator scripts | `[MIT](LICENSES/MIT.txt)` |
+| `RULES.md`, `SOURCES.md`, `NOTICE.md`, `agents/`, `adapter-matrix.md` | [CC BY 4.0](LICENSES/CC-BY-4.0.txt) |
+| `enforcement/`, `.github/workflows/`, generator scripts | [MIT](LICENSES/MIT.txt) |
 
-Every source file carries an SPDX-License-Identifier header. See `[`NOTICE.md`](NOTICE.md)` for the attribution snippet consumers should retain on reuse.
+Every source file carries an SPDX-License-Identifier header. See [`NOTICE.md`](NOTICE.md) for the attribution snippet consumers should retain on reuse.
 
 ## Maintenance
 
-Maintained by [Yue Zhao](https://yzhao062.github.io), USC CS faculty and author of [PyOD](https://github.com/yzhao062/pyod). Issues and pull requests welcome; contributions that add a canonical rule must cite a source from the buckets above. See `[`CHANGELOG.md`](CHANGELOG.md)` for release history and upcoming work.
+Maintained by [Yue Zhao](https://yzhao062.github.io), USC CS faculty and author of [PyOD](https://github.com/yzhao062/pyod). Issues and pull requests welcome; contributions that add a canonical rule must cite a source from the buckets above. See [`CHANGELOG.md`](CHANGELOG.md) for release history and upcoming work.
 
 <div align="center">
 

@@ -109,7 +109,7 @@ WritingTool sends text only to the provider you select.
 - If you use **Ollama**, text stays on your machine.
 - If you use a cloud provider, text is sent to that provider's API endpoint.
 
-See `[`PRIVACY.md`](PRIVACY.md)` for the full privacy policy.
+See [`PRIVACY.md`](PRIVACY.md) for the full privacy policy.
 
 ## Code Signing Policy
 

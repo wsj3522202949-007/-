@@ -89,7 +89,7 @@ related:
 
 * **📖 Read Sample Stories**
   Download generated stories here:
-  👉 `[Tsinghua huggingface Link]([https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/](https://huggingface.co/datasets/THU-KEG/LongStory)`)
+  👉 [Tsinghua huggingface Link]([https://cloud.tsinghua.edu.cn/f/6173850b58114951ab7e/](https://huggingface.co/datasets/THU-KEG/LongStory))
 
 * **🛠️ Train Your Own Model**
   Use [LongWriter](https://github.com/THUDM/LongWriter/tree/main) to train on our dataset.

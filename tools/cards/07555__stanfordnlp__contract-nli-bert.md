@@ -88,7 +88,7 @@ We have tagged the implementations that we used for the experiments in our paper
 Please note that we have changed NLI label name since the experiments.
 You may need to alter "Entailment" to "true", "Contradiction" to "false" and "NotMentioned" to "na" in the dataset JSON files, or apply commit `b0c4987` as a patch.
 
-We carried out the experiments on `[ABCI](abci.ai)`, a GPU cluster with a PBS-like job queue.
+We carried out the experiments on [ABCI](abci.ai), a GPU cluster with a PBS-like job queue.
 While it would not run in most users' environment, we provide our experiment procedure so that users can implement a similar procedure for their clusters.
 
 ```bash
@@ -105,7 +105,7 @@ python aggregate_results.py -n 3 -m macro_label_micro_doc.class.accuracy -o aggr
 ## License
 
 Our dataset is released under Apache 2.0.
-Please refer attached "`[LICENSE](./LICENSE)`" for the exact terms.
+Please refer attached "[LICENSE](./LICENSE)" for the exact terms.
 
 This implementation has partially been derived from Huggingface's implementation of SQuAD BERT.
 Please refer the commit log for the full changes.

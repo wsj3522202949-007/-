@@ -36,7 +36,7 @@ related:
 
 ---
 
-!`[Tiny Tales AI banner](assets/readme-banner.png)`
+![Tiny Tales AI banner](assets/readme-banner.png)
 
 <div align="center">
   <h1>Tiny Tales AI</h1>
@@ -73,7 +73,7 @@ Tiny Tales AI combines a React Native mobile app with a local LLM (via [Ollama](
 - **Llama 3.1** for story generation, quizzes, and glossary support. Official Ollama model page: [ollama.com/library/llama3.1](https://ollama.com/library/llama3.1)
 - **Stable Diffusion v1.5** for page illustrations via the backend image server. Model card: [huggingface.co/runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
 
-In this codebase, the default text model is set to `llama3.1` in `[tiny-tales/App.js](/Users/rahul/vscode_projects/tiny-tales-ai/tiny-tales/App.js#L33)`, and the image backend loads `runwayml/stable-diffusion-v1-5` in `[backend/server.py](/Users/rahul/vscode_projects/tiny-tales-ai/backend/server.py#L52)`.
+In this codebase, the default text model is set to `llama3.1` in [tiny-tales/App.js](/Users/rahul/vscode_projects/tiny-tales-ai/tiny-tales/App.js#L33), and the image backend loads `runwayml/stable-diffusion-v1-5` in [backend/server.py](/Users/rahul/vscode_projects/tiny-tales-ai/backend/server.py#L52).
 
 ---
 
@@ -252,7 +252,7 @@ npx expo run:android --variant release
 
 The signed APK will appear in `android/app/build/outputs/apk/release/`.
 
-> A pre-built APK for v0.1 is available in `[release/tiny-tales_v0.1.apk](release/tiny-tales_v0.1.apk)`.
+> A pre-built APK for v0.1 is available in [release/tiny-tales_v0.1.apk](release/tiny-tales_v0.1.apk).
 
 ---
 
@@ -311,7 +311,7 @@ Visit [rahulrajasekharan.dev](https://www.rahulrajasekharan.dev/) for more detai
 
 ## License
 
-This project is licensed under the terms of the `[LICENSE](LICENSE)` file in this repository.
+This project is licensed under the terms of the [LICENSE](LICENSE) file in this repository.
 
 related:
   - methods/网文写作最强SOP.md

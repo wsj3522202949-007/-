@@ -49,7 +49,7 @@ related:
 <a href="https://github.com/imtheolin/prompt-handbook/stargazers"><img src="https://img.shields.io/github/stars/imtheolin/prompt-handbook?style=flat-square&logo=github&color=f4d03f" alt="GitHub Stars"></a>
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License"></a>
 
-`[简体中文](README_zh.md)` | `[English](README.md)`
+[简体中文](README_zh.md) | [English](README.md)
 
 </div>
 
@@ -68,23 +68,23 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 --- |
-| 💼 **Office** | Sedentary relief, pitfalls to avoid, time sink, flow state | `[Explore ->](./prompts/en/01-Office.md)` |
+| 💼 **Office** | Sedentary relief, pitfalls to avoid, time sink, flow state | [Explore ->](./prompts/en/01-Office.md) |
 | &nbsp; |  |  |
-| ✍️ **Writing** | Expression helper, synonyms, reference template, creative metaphors | `[Explore ->](./prompts/en/02-Writing.md)` |
+| ✍️ **Writing** | Expression helper, synonyms, reference template, creative metaphors | [Explore ->](./prompts/en/02-Writing.md) |
 | &nbsp; |  |  |
-| 🎓 **Teaching** | Test question analysis, lesson plan generation, lesson preparation assistant, mock Q&A | `[Explore ->](./prompts/en/03-Teaching.md)` |
+| 🎓 **Teaching** | Test question analysis, lesson plan generation, lesson preparation assistant, mock Q&A | [Explore ->](./prompts/en/03-Teaching.md) |
 | &nbsp; |  |  |
-| 🎯 **Job Search** | Salary negotiation, employment gap explanation, interview experience, JD analysis | `[Explore ->](./prompts/en/04-Job-Search.md)` |
+| 🎯 **Job Search** | Salary negotiation, employment gap explanation, interview experience, JD analysis | [Explore ->](./prompts/en/04-Job-Search.md) |
 | &nbsp; |  |  |
-| 🛠️ **Response Refinement** | Simplify response, answer in advance, anticipate follow-ups, guide thinking | `[Explore ->](./prompts/en/05-Response-Refinement.md)` |
+| 🛠️ **Response Refinement** | Simplify response, answer in advance, anticipate follow-ups, guide thinking | [Explore ->](./prompts/en/05-Response-Refinement.md) |
 | &nbsp; |  |  |
-| 🔍 **Problem Analysis** | Pros & cons, underlying logic, 80/20 rule, brainstorming | `[Explore ->](./prompts/en/06-Problem-Analysis.md)` |
+| 🔍 **Problem Analysis** | Pros & cons, underlying logic, 80/20 rule, brainstorming | [Explore ->](./prompts/en/06-Problem-Analysis.md) |
 | &nbsp; |  |  |
-| 🤝 **Social Skill** | Small talk, internal friction overcoming, effective questioning, the art of getting along | `[Explore ->](./prompts/en/07-Social-Skill.md)` |
+| 🤝 **Social Skill** | Small talk, internal friction overcoming, effective questioning, the art of getting along | [Explore ->](./prompts/en/07-Social-Skill.md) |
 | &nbsp; |  |  |
-| 🤯 **Whimsical Idea**| AI's dream, anywhere door, the flavor of time, the Moon's side jobs | `[Explore ->](./prompts/en/08-Whimsical-Idea.md)` |
+| 🤯 **Whimsical Idea**| AI's dream, anywhere door, the flavor of time, the Moon's side jobs | [Explore ->](./prompts/en/08-Whimsical-Idea.md) |
 | &nbsp; |  |  |
-| 📱 **Content Creator** | Trend analysis, social media growth plan, visual helper, creator persona development | `[Explore ->](./prompts/en/09-Content-Creator.md)` |
+| 📱 **Content Creator** | Trend analysis, social media growth plan, visual helper, creator persona development | [Explore ->](./prompts/en/09-Content-Creator.md) |
 
 ## 💡 How to Use
 
@@ -94,7 +94,7 @@ related:
 
 ## ✅ License
 
-This project is open source under the `[MIT License](./LICENSE.txt)`.
+This project is open source under the [MIT License](./LICENSE.txt).
 
 ## 👨‍💻 About the Author
 

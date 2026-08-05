@@ -364,4 +364,4 @@ related:
  
 ## License
  
-`[Apache 2.0](LICENSE)` © NatWest Group
+[Apache 2.0](LICENSE) © NatWest Group

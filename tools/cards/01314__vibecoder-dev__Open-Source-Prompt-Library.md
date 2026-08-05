@@ -112,7 +112,7 @@ We love contributions!
 * 📝 Fix typos, improve descriptions, or add categories
 * 💡 Suggest features via GitHub Issues
 
-Check `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
+Check [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 

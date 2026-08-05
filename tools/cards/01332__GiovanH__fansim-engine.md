@@ -64,7 +64,7 @@ If you have any comments, suggestions, complaints, or contributions, you're welc
 
 **For demo mods and asset packs, see [fse-extras.](https://github.com/GiovanH/fse-extras)**
 
-**For documentation, browse the guides in `[the `docs/` folder.](./doc/)`**
+**For documentation, browse the guides in [the `docs/` folder.](./doc/)**
 
 <!-- MarkdownTOC -->
 
@@ -88,7 +88,7 @@ FSE has a slightly different workflow, but as soon as you understand it your pro
 
 FSE makes you organize your mods as "packages" that *patch* a renpy game rather than replacing it. When you edit screens.rpy, script.rpy, etc from the base game, you risk breaking things. FSE helps you add anything you need without breaking the base game or other mods. Also, it provides a lot of powerful modding features that help greatly with the writing process, so there's a lot you don't need to worry about if you don't want to.
 
-Further, packages are better for users: You don't want to force people to download a large, standalone renpy game for every small fanroute (although you are able to distribute a standalone version, see `[here.](./doc/pqlite.md)`)
+Further, packages are better for users: You don't want to force people to download a large, standalone renpy game for every small fanroute (although you are able to distribute a standalone version, see [here.](./doc/pqlite.md))
 
 You want to edit your MOD, not the game, whenever possible. The more you edit distribution files, the less good FSE is able to do for you. **Don't worry**: You can still do everything you want, including changing the GUI (using litemods).
 
@@ -123,7 +123,7 @@ a partial list
 
 ## Documentation
 
-See the guides in `[the `docs/` folder](./doc/)` for detailed documentation.
+See the guides in [the `docs/` folder](./doc/) for detailed documentation.
 
 
 
@@ -135,7 +135,7 @@ or, "this is easier than documentation." AMA!
 
 **Q:** I want it! Gimmie it!
 
-**A:** Great! See the `[Developer Quickstart](doc/developer_quickstart.md)`
+**A:** Great! See the [Developer Quickstart](doc/developer_quickstart.md)
 
 **Q:** I updated and everything broke!
 
@@ -177,7 +177,7 @@ Recommended use is to execute the scripts from console while in the `src` folder
 
 **Q:** Can I package a mod as a standalone distributable that people who don't own pesterquest can play?
 
-**A:** Yes, but this is not recommended. Use `dist_standalone.py`. `[Read this document for more details.](./doc/pqlite.md)`
+**A:** Yes, but this is not recommended. Use `dist_standalone.py`. [Read this document for more details.](./doc/pqlite.md)
 
 **Q:** I packaged my mod as a standalone distributable but I get an error when I run it!
 
@@ -185,7 +185,7 @@ Recommended use is to execute the scripts from console while in the `src` folder
 
 **Q:** Is there any more documentation, besides the online ren'py documentation?
 
-**A:** Browse `[the `docs/` folder](./doc/)` to see supplemental documentation and tutorials as they're added.
+**A:** Browse [the `docs/` folder](./doc/) to see supplemental documentation and tutorials as they're added.
 
 If your question isn't answered here, skim this document and the resources in the `docs/` folder, and if you still have questions, just let me know.
 

@@ -129,8 +129,8 @@ The system automatically generates images with Leonardo AI, uploads to Cloudinar
 
 ## 📚 Documentation
 
-- `[comic-backend README](./comic-backend/README.md)` - LangChain agent documentation
-- `[comic-frontend README](./comic-frontend/README.md)` - Frontend documentation
+- [comic-backend README](./comic-backend/README.md) - LangChain agent documentation
+- [comic-frontend README](./comic-frontend/README.md) - Frontend documentation
 
 ## 🛠️ Tech Stack
 

@@ -168,4 +168,4 @@ related:
 
 ## License
 
-GNU GPL v3.0 - see `[LICENSE](LICENSE)` for details.
+GNU GPL v3.0 - see [LICENSE](LICENSE) for details.

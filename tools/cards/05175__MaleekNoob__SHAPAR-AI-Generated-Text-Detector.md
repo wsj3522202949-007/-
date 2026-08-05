@@ -86,7 +86,7 @@ This repository contains the code and resources for an AI detector project that 
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or create a pull request.
 
 ## License
-This project is licensed under the `[MIT License](LICENSE)`.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 - Mention any references, datasets, or tools that you used or were inspired by.

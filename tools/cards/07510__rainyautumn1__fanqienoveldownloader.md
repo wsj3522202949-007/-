@@ -80,7 +80,7 @@ related:
 
 ## 📅 更新日志
 
-> 完整更新记录请查看 `[CHANGELOG.md](CHANGELOG.md)`
+> 完整更新记录请查看 [CHANGELOG.md](CHANGELOG.md)
 
 ### 最新更新 (2025-12-20)
 - **下载管理系统重构**: 强制单线程下载以对抗风控，支持智能任务调度与实时进度反馈。
@@ -215,7 +215,7 @@ related:
 
 ## 许可证
 
-本项目基于 `[GPLv3 License](LICENSE)` 开源。
+本项目基于 [GPLv3 License](LICENSE) 开源。
 
 ### ⚠️ 禁止倒卖声明
 本软件为**免费开源软件**，遵循 GNU General Public License v3.0 协议。

@@ -45,7 +45,7 @@ related:
 
 <h3>Global Leading OCR Toolkit & Document AI Engine</h3>
 
-English | `[简体中文](./readme/README_cn.md)` | `[繁體中文](./readme/README_tcn.md)` | `[日本語](./readme/README_ja.md)` | `[한국어](./readme/README_ko.md)` | `[Français](./readme/README_fr.md)` | `[Русский](./readme/README_ru.md)` | `[Español](./readme/README_es.md)` | `[العربية](./readme/README_ar.md)`
+English | [简体中文](./readme/README_cn.md) | [繁體中文](./readme/README_tcn.md) | [日本語](./readme/README_ja.md) | [한국어](./readme/README_ko.md) | [Français](./readme/README_fr.md) | [Русский](./readme/README_ru.md) | [Español](./readme/README_es.md) | [العربية](./readme/README_ar.md)
 
 <!-- icon -->
 
@@ -184,7 +184,7 @@ English | `[简体中文](./readme/README_cn.md)` | `[繁體中文](./readme/REA
     - The high-stability service-oriented deployment solution also supports invocation via manually constructed HTTP requests, enabling client-side code development in any programming language.
 
 - **Benchmark Support:**
-    - **All production lines now support fine-grained benchmarking, enabling measurement of end-to-end inference time as well as per-layer and per-module latency data to assist with performance analysis. `[Here's](docs/version3.x/pipeline_usage/instructions/benchmark.en.md)` how to set up and use the benchmark feature.**
+    - **All production lines now support fine-grained benchmarking, enabling measurement of end-to-end inference time as well as per-layer and per-module latency data to assist with performance analysis. [Here's](docs/version3.x/pipeline_usage/instructions/benchmark.en.md) how to set up and use the benchmark feature.**
     - **Documentation has been updated to include key metrics for commonly used configurations on mainstream hardware, such as inference latency and memory usage, providing deployment references for users.**
 
 - **Bug Fixes:**
@@ -194,7 +194,7 @@ English | `[简体中文](./readme/README_cn.md)` | `[繁體中文](./readme/REA
 
 - **Other Enhancements:**
     - **Separated core and optional dependencies. Only minimal core dependencies are required for basic text recognition; additional dependencies for document parsing and information extraction can be installed as needed.**
-    - **Enabled support for NVIDIA RTX 50 series graphics cards on Windows; users can refer to the `[installation guide](docs/version3.x/installation.en.md)` for the corresponding PaddlePaddle framework versions.**
+    - **Enabled support for NVIDIA RTX 50 series graphics cards on Windows; users can refer to the [installation guide](docs/version3.x/installation.en.md) for the corresponding PaddlePaddle framework versions.**
     - **PP-OCR series models now support returning single-character coordinates.**
     - Added AIStudio, ModelScope, and other model download sources, allowing users to specify the source for model downloads.
     - Added support for chart-to-table conversion via the PP-Chart2Table module.
@@ -296,7 +296,7 @@ PaddleOCR wouldn't be where it is today without its incredible community! 💗 A
 | [haystack](https://github.com/deepset-ai/haystack)<a href="https://github.com/deepset-ai/haystack"><img src="https://img.shields.io/github/stars/deepset-ai/haystack"></a> |AI orchestration framework to build customizable, production-ready LLM applications.|
 | [OmniParser](https://github.com/microsoft/OmniParser)<a href="https://github.com/microsoft/OmniParser"><img src="https://img.shields.io/github/stars/microsoft/OmniParser"></a> |OmniParser: Screen Parsing tool for Pure Vision Based GUI Agent.|
 | [QAnything](https://github.com/netease-youdao/QAnything)<a href="https://github.com/netease-youdao/QAnything"><img src="https://img.shields.io/github/stars/netease-youdao/QAnything"></a> |Question and Answer based on Anything.|
-| `[Learn more projects](./awesome_projects.md)` | `[More projects based on PaddleOCR](./awesome_projects.md)`|
+| [Learn more projects](./awesome_projects.md) | [More projects based on PaddleOCR](./awesome_projects.md)|
 </div>
 
 ## 👩‍👩‍👧‍👦 Contributors
@@ -317,7 +317,7 @@ PaddleOCR wouldn't be where it is today without its incredible community! 💗 A
 
 
 ## 📄 License
-This project is released under the `[Apache 2.0 license](LICENSE)`.
+This project is released under the [Apache 2.0 license](LICENSE).
 
 ## 🎓 Citation
 

@@ -6,7 +6,7 @@ status: active
 tags: [协议未明, 本地优先, 中文友好, 本地写作]
 title: novel-writer](https:
 summary: 上述两类主题的补充源，按子主题二次筛选
-source: https://github.com/| `[tangemon/novel-writer](https:
+source: https://github.com/| [tangemon/novel-writer](https:
 created: 2026-07-18
 updated: 2026-07-18
 no: 7610
@@ -39,4 +39,4 @@ related:
   - methods/QUICK_START.md
 ---
 
-_README 获取失败 (HTTP -1)`_
+_README 获取失败 (HTTP -1)_

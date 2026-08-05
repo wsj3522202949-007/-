@@ -46,19 +46,19 @@ related:
 ## Demo
 
 ### Input Interface
-!`[Input Interface](demo%20(1)`.png)
+![Input Interface](demo%20(1).png)
 
 ### Emotion Detection — Seeking Support
-!`[Seeking Support](demo%20(2)`.png)
+![Seeking Support](demo%20(2).png)
 
 ### Full Result View
-!`[Full Result](demo%20(3)`.png)
+![Full Result](demo%20(3).png)
 
 ### Emotion Detection — Positive / Recovery
-!`[Positive Recovery](demo%20(4)`.png)
+![Positive Recovery](demo%20(4).png)
 
 ### Therapist Insight
-!`[Therapist Insight](demo%20(5)`.png)
+![Therapist Insight](demo%20(5).png)
 
 ---
 

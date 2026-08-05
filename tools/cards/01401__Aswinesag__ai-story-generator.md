@@ -101,8 +101,8 @@ HF_TOKEN	               Fine-grained Hugging Face access token (required for API
 HF_IMAGE_MODEL	           Optional: override image model (default: stabilityai/stable-diffusion-2)
 
 ✨ Example Screenshots
-!`[alt text](image.png)`
-!`[alt text](image-1.png)`
+![alt text](image.png)
+![alt text](image-1.png)
 
 🧩 Future Enhancements
 

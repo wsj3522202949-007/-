@@ -42,7 +42,7 @@ An AI-powered novel writing assistant with mind map integration
 
 **Map your thoughts, weave your stories.**
 
-!`[Preview](./docs/preview.png)`
+![Preview](./docs/preview.png)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)
 ![PWA](https://img.shields.io/badge/PWA-Ready-green)
@@ -61,13 +61,13 @@ This project name reflects our mission: an AI tool that supports deep thinking a
 ## 📖 Documentation
 
 ### User Documentation
-- `[🇯🇵 User Manual (日本語)](./docs/user_manual.md)` - ユーザー向け操作手順書
+- [🇯🇵 User Manual (日本語)](./docs/user_manual.md) - ユーザー向け操作手順書
 
 ### Engineer Documentation
-- `[🇯🇵 Engineer Manual (日本語)](./docs/engineer_manual.md)` - エンジニア向けシステムインストール・設定手順書
-- `[🇯🇵 Development & Improvement Plan (日本語)](./plans/project-improvements.md)` - 実装予定・機能リスト・改善提案
+- [🇯🇵 Engineer Manual (日本語)](./docs/engineer_manual.md) - エンジニア向けシステムインストール・設定手順書
+- [🇯🇵 Development & Improvement Plan (日本語)](./plans/project-improvements.md) - 実装予定・機能リスト・改善提案
 
-**`[🇯🇵 日本語版 README はこちら](./README_ja.md)`**
+**[🇯🇵 日本語版 README はこちら](./README_ja.md)**
 
 ---
 
@@ -75,7 +75,7 @@ This project name reflects our mission: an AI tool that supports deep thinking a
 
 ### 🧠 Mind Map Integration
 
-!`[Mind Map](./docs/screenshots/03_mindmap.png)`
+![Mind Map](./docs/screenshots/03_mindmap.png)
 
 - **Visual Plot Creation**: Visualize complex story structures with interactive mind maps
 - **Drag & Drop**: Intuitively organize and structure your ideas
@@ -102,7 +102,7 @@ This project name reflects our mission: an AI tool that supports deep thinking a
 
 ### 📖 Rich Editor
 
-!`[Editor](./docs/screenshots/05_editor.png)`
+![Editor](./docs/screenshots/05_editor.png)
 
 - **Notion-like Experience**: Comfortable and intuitive writing
 - **Vertical Text Mode**: Perfect for Japanese web novels and doujinshi
@@ -285,13 +285,13 @@ MIT License - Free for commercial use, modification, and distribution
 
 ---
 
-**`[🇯🇵 日本語版 README はこちら](./README_ja.md)`**
+**[🇯🇵 日本語版 README はこちら](./README_ja.md)**
 
 related:
   - methods/QUICK_START.md
 ---
 
-!`[GenSou Mindmap Example](./docs/screenshots/03_mindmap.png)`
+![GenSou Mindmap Example](./docs/screenshots/03_mindmap.png)
 
 **GenSou AI - Map your thoughts, weave your stories.**
 

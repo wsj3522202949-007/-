@@ -189,7 +189,7 @@ The app will be available at `http://localhost:5173`
 
 ### 📹 Demo: Keploy Recording and Replay
 
-!`[Keploy Recording and Test Replay Demo](backend/keploy-demo.gif)`
+![Keploy Recording and Test Replay Demo](backend/keploy-demo.gif)
 
 *The GIF above shows Keploy in action - automatically recording API traffic and replaying it as tests.*
 
@@ -438,7 +438,7 @@ sudo keploy record -c "node index.js"
 
 ## 📖 Documentation
 
-- **`[Keploy Testing Guide](backend/KEPLOY_TESTING.md)`** - Comprehensive testing documentation
+- **[Keploy Testing Guide](backend/KEPLOY_TESTING.md)** - Comprehensive testing documentation
 - **[Keploy Official Docs](https://docs.keploy.io)** - Full Keploy documentation
 - **[Groq API Docs](https://console.groq.com/docs)** - Groq API reference
 - **[HuggingFace API Docs](https://huggingface.co/docs/inference-api) - Image generation**

@@ -40,7 +40,7 @@ related:
 
 # 小說產生器（Novel Generator）
 
-`[English](README.en.md)`
+[English](README.en.md)
 
 > 版本：1.11（Mantine v2 本機工作區 UI）　更新：2026-07-18
 
@@ -107,17 +107,17 @@ GitHub Actions 使用 `.github/workflows/ci-cd.yml`：
 
 | 檔案 | 模組 | Phase | 依賴 |
 |------|------|------|------|
-| `[00-book.md](modules/00-book.md)` | 書本管理（所有資料根容器） | 1 | — |
-| `[01-outline.md](modules/01-outline.md)` | 大綱生成系統 | 1 | 00, 02, 07, 08 |
-| `[02-characters.md](modules/02-characters.md)` | 角色系統 | 2 | 00, 04 |
-| `[03-chapters.md](modules/03-chapters.md)` | 章節管理器 | 1 | 00, 04, 05, 07 |
-| `[04-knowledge.md](modules/04-knowledge.md)` | 知識管理（Wiki、FTS5、Lint、Graph、問 Wiki） | 2 / 2.5 | 00, 07 |
-| `[05-versions.md](modules/05-versions.md)` | 章節版本管理 | 1 | 00 |
-| `[06-polish.md](modules/06-polish.md)` | 內容潤色器（未實作） | 3 | 00, 08 |
-| `[07-context-budget.md](modules/07-context-budget.md)` | Context Budget Manager（Wiki 摘要 + pick-pages + 摘要品質 ✅） | 1 / 2.5 | 04 |
-| `[08-llm-adapter.md](modules/08-llm-adapter.md)` | LLM 適配層 | 1 / 2 | tech-stack |
-| `[09-multi-agent.md](modules/09-multi-agent.md)` | Multi-Agent 協作引擎（未實作） | 4（選做） | 04, 07 |
-| `[10-multimedia.md](modules/10-multimedia.md)` | 多媒體生成（漫畫圖片、TTS、MP4、SRT、motion effects 與章節內影片庫） | 6 / 4（選做） | 00, tech-stack |
+| [00-book.md](modules/00-book.md) | 書本管理（所有資料根容器） | 1 | — |
+| [01-outline.md](modules/01-outline.md) | 大綱生成系統 | 1 | 00, 02, 07, 08 |
+| [02-characters.md](modules/02-characters.md) | 角色系統 | 2 | 00, 04 |
+| [03-chapters.md](modules/03-chapters.md) | 章節管理器 | 1 | 00, 04, 05, 07 |
+| [04-knowledge.md](modules/04-knowledge.md) | 知識管理（Wiki、FTS5、Lint、Graph、問 Wiki） | 2 / 2.5 | 00, 07 |
+| [05-versions.md](modules/05-versions.md) | 章節版本管理 | 1 | 00 |
+| [06-polish.md](modules/06-polish.md) | 內容潤色器（未實作） | 3 | 00, 08 |
+| [07-context-budget.md](modules/07-context-budget.md) | Context Budget Manager（Wiki 摘要 + pick-pages + 摘要品質 ✅） | 1 / 2.5 | 04 |
+| [08-llm-adapter.md](modules/08-llm-adapter.md) | LLM 適配層 | 1 / 2 | tech-stack |
+| [09-multi-agent.md](modules/09-multi-agent.md) | Multi-Agent 協作引擎（未實作） | 4（選做） | 04, 07 |
+| [10-multimedia.md](modules/10-multimedia.md) | 多媒體生成（漫畫圖片、TTS、MP4、SRT、motion effects 與章節內影片庫） | 6 / 4（選做） | 00, tech-stack |
 
 ---
 
@@ -125,12 +125,12 @@ GitHub Actions 使用 `.github/workflows/ci-cd.yml`：
 
 | 檔案 | 內容 |
 |------|------|
-| `[tech-stack.md](specs/tech-stack.md)` | 技術選型（版本以 `package.json` 為準） |
-| `[roadmap.md](specs/roadmap.md)` | Phase 1–7 開發階段與未完成項 |
-| `[UI.md](specs/UI.md)` | 視覺規範（色彩/字體/元件/動效） |
-| `[UI-layout.md](specs/UI-layout.md)` | 主編輯介面佈局 |
-| `[output-formats.md](specs/output-formats.md)` | 輸出格式規格 |
-| `[deployment.md](specs/deployment.md)` | 部署方式 |
+| [tech-stack.md](specs/tech-stack.md) | 技術選型（版本以 `package.json` 為準） |
+| [roadmap.md](specs/roadmap.md) | Phase 1–7 開發階段與未完成項 |
+| [UI.md](specs/UI.md) | 視覺規範（色彩/字體/元件/動效） |
+| [UI-layout.md](specs/UI-layout.md) | 主編輯介面佈局 |
+| [output-formats.md](specs/output-formats.md) | 輸出格式規格 |
+| [deployment.md](specs/deployment.md) | 部署方式 |
 
 ---
 
@@ -141,13 +141,13 @@ GitHub Actions 使用 `.github/workflows/ci-cd.yml`：
 - Phase 4 / 6：Multi-Agent、封面圖生成、完整 Visual Bible 管理、provider reference weighting、全書級媒體庫、批次圖片/影片匯出、video orphan cleanup、多角色/對話 TTS、Web 版影片降級。
 - Phase 5 / 7：macOS / Linux 打包、code signing、首次啟動自動 IndexedDB→SQLite 遷移（目前採手動 JSON）、`WaSqliteAdapter` / `WebMediaAdapter` / PWA 回部署。
 
-詳細狀態以 `[specs/roadmap.md](specs/roadmap.md)` 為準。
+詳細狀態以 [specs/roadmap.md](specs/roadmap.md) 為準。
 
 ---
 
 ## 授權
 
-本專案採用 GNU Affero General Public License v3.0 only（SPDX：`AGPL-3.0-only`）。完整授權摘要見 `[LICENSE](LICENSE)`。
+本專案採用 GNU Affero General Public License v3.0 only（SPDX：`AGPL-3.0-only`）。完整授權摘要見 [LICENSE](LICENSE)。
 
 related:
   - methods/网文写作最强SOP.md

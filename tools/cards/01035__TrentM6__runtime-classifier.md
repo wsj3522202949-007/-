@@ -41,11 +41,11 @@ related:
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **New here?** Read the `[Getting Started guide](docs/08-USER-WORKFLOW.md)` for full setup and usage instructions.
+> **New here?** Read the [Getting Started guide](docs/08-USER-WORKFLOW.md) for full setup and usage instructions.
 
 **A thesis, proved out:** explicit style classification rules applied at runtime can substitute for fine-tuning when generating creative work. Cheaper, transparent, model-agnostic, easy to iterate — and the same pattern works across creative domains.
 
-This repo is the framework, the methodology, a **worked photography example** at `[`photography.md`](photography.md)`, intake scaffolds for art / graphic design / writing / music, and a minimal Python worker (~540 lines, one runtime dep) that proves the pipeline end-to-end.
+This repo is the framework, the methodology, a **worked photography example** at [`photography.md`](photography.md), intake scaffolds for art / graphic design / writing / music, and a minimal Python worker (~540 lines, one runtime dep) that proves the pipeline end-to-end.
 
 ---
 
@@ -60,7 +60,7 @@ Style is *explicit* — a creator can articulate why they chose a frame, a color
 - **Synthesis** — patterns become 6–10 rules with VALIDATION + GENERATION blocks
 - **Runtime** — at generation time, rules synthesize into the prompt; outputs are scored against the same rules; failures soft-retry
 
-Same `[domain].md` works with any image / text / audio model. Iteration is in hours, not days. See `[docs/02-THESIS.md](docs/02-THESIS.md)` for the full argument.
+Same `[domain].md` works with any image / text / audio model. Iteration is in hours, not days. See [docs/02-THESIS.md](docs/02-THESIS.md) for the full argument.
 
 ---
 
@@ -93,19 +93,19 @@ The framework isn't photography-specific. The same 8-dimension structure applies
 
 To build your own:
 
-1. Pick an intake from `[`templates/intake/`](templates/intake/)` — `photography`, `art`, `graphic-design`, `writing`, or `music`. Answer the 7 questions.
-2. Analyze ~100 portfolio items (`[docs/05-PORTFOLIO-ANALYSIS.md](docs/05-PORTFOLIO-ANALYSIS.md)`).
-3. Author your `[your-domain].md` using `[`templates/domain-md-template.md`](templates/domain-md-template.md)`. Format reference: `[docs/06-CLASSIFIER-FORMAT.md](docs/06-CLASSIFIER-FORMAT.md)`.
-4. For non-image domains, write a thin worker that reads your `.md` and calls a domain-appropriate generator (the photography worker is a ~540-line reference: `[scripts/photography_agent.py](scripts/photography_agent.py)`).
+1. Pick an intake from [`templates/intake/`](templates/intake/) — `photography`, `art`, `graphic-design`, `writing`, or `music`. Answer the 7 questions.
+2. Analyze ~100 portfolio items ([docs/05-PORTFOLIO-ANALYSIS.md](docs/05-PORTFOLIO-ANALYSIS.md)).
+3. Author your `[your-domain].md` using [`templates/domain-md-template.md`](templates/domain-md-template.md). Format reference: [docs/06-CLASSIFIER-FORMAT.md](docs/06-CLASSIFIER-FORMAT.md).
+4. For non-image domains, write a thin worker that reads your `.md` and calls a domain-appropriate generator (the photography worker is a ~540-line reference: [scripts/photography_agent.py](scripts/photography_agent.py)).
 5. Validate against your portfolio (target ≥90% pass at the 0.75 threshold).
 
-Full walkthrough: `[docs/08-USER-WORKFLOW.md](docs/08-USER-WORKFLOW.md)`.
+Full walkthrough: [docs/08-USER-WORKFLOW.md](docs/08-USER-WORKFLOW.md).
 
 ---
 
 ## Extending to other domains
 
-The 8 dimensions translate across creative domains. Excerpt — full matrix in `[docs/09-EXTENDING-TO-DOMAINS.md](docs/09-EXTENDING-TO-DOMAINS.md)`:
+The 8 dimensions translate across creative domains. Excerpt — full matrix in [docs/09-EXTENDING-TO-DOMAINS.md](docs/09-EXTENDING-TO-DOMAINS.md):
 
 | Dimension | Photography (shipped example) | Art | Graphic Design | Writing | Music |
 |---|---|---|---|---|---|
@@ -195,8 +195,8 @@ related:
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)`.
+MIT — see [LICENSE](LICENSE).
 
 ## Contributing
 
-PRs welcome, especially new domain examples. See `[CONTRIBUTING.md](CONTRIBUTING.md)`.
+PRs welcome, especially new domain examples. See [CONTRIBUTING.md](CONTRIBUTING.md).

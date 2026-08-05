@@ -159,7 +159,7 @@ related:
 | 样式修改-文本特效/第一行水平缩小Squeeze Line.jsx | 缩小第一行水平比例 |
 | 样式修改-文本特效/随机错位Jumble Characters.jsx | 创建随机错位文字效果 |
 
-!`[文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)`
+![文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)
 
 ### 页码链接
 | 脚本名称 | 功能描述 |

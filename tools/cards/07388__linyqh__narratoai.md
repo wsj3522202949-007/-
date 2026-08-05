@@ -243,7 +243,7 @@ uv run streamlit run webui.py --server.maxUploadSize=2048
 
 ## 许可证 📝
 
-点击查看 `[`LICENSE`](LICENSE)` 文件
+点击查看 [`LICENSE`](LICENSE) 文件
 
 ## Star History
 

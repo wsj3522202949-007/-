@@ -45,7 +45,7 @@ Free, modern and open-source timer application, right in your browser. Formerly 
 
 ![Netlify Status](https://api.netlify.com/api/v1/badges/7cb2b7fb-cacd-4acf-803b-8af9dad9f2a8/deploy-status) ![License](https://img.shields.io/github/license/Hanziness/AnotherPomodoro) ![GitHub package.json version](https://img.shields.io/github/package-json/v/Hanziness/AnotherPomodoro) [![Crowdin translation status](https://badges.crowdin.net/anotherpomodoro/localized.svg)](https://crowdin.com/project/anotherpomodoro)
 
-!`[Screenshot of the application showing a work section.](./public/assets/img/ProductImg_Default.png)`
+![Screenshot of the application showing a work section.](./public/assets/img/ProductImg_Default.png)
 
 ## What is it?
 
@@ -110,12 +110,12 @@ Production deployments (on Netlify or elsewhere) may use third-party (but privac
 The app itself does not collect any data (eg. when you're running it on your own machine) 💪
 
 ## 🖼 More screenshots
-!`[The display section of the settings panel](./public/assets/img/ProductImg_Settings.png)`
+![The display section of the settings panel](./public/assets/img/ProductImg_Settings.png)
 
-!`[The traditional timer with the to-do panel open](./public/assets/img/ProductImg_TodoOpen.png)`
+![The traditional timer with the to-do panel open](./public/assets/img/ProductImg_TodoOpen.png)
 ## 🏗 If you're a developer
 
-This is an open-source project that welcomes contributions. Please check the `[**contribution guidelines**](./CONTRIBUTING.md)` before opening issues, discussions or pull requests!
+This is an open-source project that welcomes contributions. Please check the [**contribution guidelines**](./CONTRIBUTING.md) before opening issues, discussions or pull requests!
 
 ### ❤ Technologies, packages used
 

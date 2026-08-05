@@ -240,7 +240,7 @@ Image generation settings (if you have a SillyTavern image generation extension 
 | `generateAvatarAfterSave` | Automatically generate a portrait after each save | `true` |
 | `generateSpritesAfterSave` | Also generate expression sprites | `false` |
 
-LLM provider and card format are internal extension points rather than user-facing settings. Adding alternative providers or card formats means writing a new adapter class. See `[DESIGN.md](./DESIGN.md)` for how this works.
+LLM provider and card format are internal extension points rather than user-facing settings. Adding alternative providers or card formats means writing a new adapter class. See [DESIGN.md](./DESIGN.md) for how this works.
 
 ## Architecture overview
 
@@ -252,12 +252,12 @@ This means:
 - Swapping the LLM provider, card format, or storage backend is one config switch plus one new adapter class.
 - The build system stays simple: no TypeScript compiler, no bundler, just JavaScript loaded directly by SillyTavern.
 
-Full details in `[DESIGN.md](./DESIGN.md)`.
+Full details in [DESIGN.md](./DESIGN.md).
 
 ## Project documentation
 
-- `[DESIGN.md](./DESIGN.md)` - architecture, ports, adapters, decisions and tradeoffs.
-- `[CONTRIBUTING.md](./CONTRIBUTING.md)` - dev setup, TDD workflow, commit conventions, code style.
+- [DESIGN.md](./DESIGN.md) - architecture, ports, adapters, decisions and tradeoffs.
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - dev setup, TDD workflow, commit conventions, code style.
 
 ## Troubleshooting
 
@@ -312,11 +312,11 @@ Character Forge ships with all core features complete:
 - ✅ **Full test coverage** - 624 unit and integration tests, all passing
 - ✅ **Hexagonal architecture** - Swap LLM providers, formatters, or storage without touching business logic
 
-See `[DESIGN.md](./DESIGN.md#slice-plan)` for the full development history.
+See [DESIGN.md](./DESIGN.md#slice-plan) for the full development history.
 
 ## License
 
-Character Forge is licensed under the MIT License. See `[LICENSE](./LICENSE)` for details.
+Character Forge is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
 ## Acknowledgments
 

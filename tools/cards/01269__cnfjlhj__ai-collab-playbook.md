@@ -55,10 +55,10 @@ related:
 
 ## 先读什么
 
-- **想看完整文章**：从 `[`docs/phd-ai-collab.md`](docs/phd-ai-collab.md)` 开始。
+- **想看完整文章**：从 [`docs/phd-ai-collab.md`](docs/phd-ai-collab.md) 开始。
 - **想快速抓主线**：先看下面三张图，再回到文章对应章节。
-- **想复用工作流**：看 `[`skills/full/README.md`](skills/full/README.md)` 和 `[`prompts/`](prompts)`。
-- **想看我怎么约束 Agent**：看 `[`AGENTS.md`](AGENTS.md)` / `[`CLAUDE.md`](CLAUDE.md)`。
+- **想复用工作流**：看 [`skills/full/README.md`](skills/full/README.md) 和 [`prompts/`](prompts)。
+- **想看我怎么约束 Agent**：看 [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md)。
 
 ## 这份手册在讲什么
 
@@ -74,17 +74,17 @@ related:
 
 **反效率幻觉。** 警惕把理解、审美、取舍和学习过程一起外包给 AI。效率很高但不理解自己在做什么，比低效更危险。
 
-`[![AI 协作框架图](docs/figs/phd-ai-agent-framework.png)`](docs/phd-ai-collab.md#code-agent-framework)
+[![AI 协作框架图](docs/figs/phd-ai-agent-framework.png)](docs/phd-ai-collab.md#code-agent-framework)
 
 ## 仓库内容
 
 | 类别 | 入口 | 说明 |
 |------|------|------|
-| 主文章 | `[`docs/phd-ai-collab.md`](docs/phd-ai-collab.md)` | 完整方法论，2026-06-08 版 |
-| 协作守则 | `[`AGENTS.md`](AGENTS.md)` / `[`CLAUDE.md`](CLAUDE.md)` | 我平时真在用的 AI 协作规则 |
-| Prompts | `[`prompts/`](prompts)` | 提示词优化器、概念解释器、论文精读等模板 |
-| 完整 Skills | `[`skills/full/README.md`](skills/full/README.md)` | 仓内所有 Skill 总目录 |
-| 配图 | `[`docs/figs/`](docs/figs)` | 总览图、学习指南、框架图、路线图 |
+| 主文章 | [`docs/phd-ai-collab.md`](docs/phd-ai-collab.md) | 完整方法论，2026-06-08 版 |
+| 协作守则 | [`AGENTS.md`](AGENTS.md) / [`CLAUDE.md`](CLAUDE.md) | 我平时真在用的 AI 协作规则 |
+| Prompts | [`prompts/`](prompts) | 提示词优化器、概念解释器、论文精读等模板 |
+| 完整 Skills | [`skills/full/README.md`](skills/full/README.md) | 仓内所有 Skill 总目录 |
+| 配图 | [`docs/figs/`](docs/figs) | 总览图、学习指南、框架图、路线图 |
 
 ## 独立维护的 Skills
 

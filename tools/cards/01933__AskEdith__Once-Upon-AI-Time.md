@@ -67,4 +67,4 @@ streamlit run main.py
 
 ## Example
 
-!`[Example Story](the_rock_president.jpeg)`
+![Example Story](the_rock_president.jpeg)

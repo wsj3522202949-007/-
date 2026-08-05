@@ -52,7 +52,7 @@ related:
 
 ## 截图展示
 
-!`[效果展示](./assets/screenshot.jpg "效果展示")`
+![效果展示](./assets/screenshot.jpg "效果展示")
 
 ## 性能评估
 

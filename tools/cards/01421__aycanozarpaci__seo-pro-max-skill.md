@@ -228,24 +228,24 @@ rm .github/copilot-instructions.md           # Copilot (or remove the section if
 5. **Phase 4** — implements in commit-sized chunks.
 6. **Phase 5** — verifies (build, typecheck, `curl -I`, real 404 probe, JSON-LD parse, sitemap fetch, alt-text audit, heading audit, Lighthouse CWV).
 
-Full protocol and all 23 surfaces: `[`SKILL.md`](SKILL.md)`.
+Full protocol and all 23 surfaces: [`SKILL.md`](SKILL.md).
 
 ## Supported platforms
 
 | Platform              | File                                                                                       |
 |-----------------------|--------------------------------------------------------------------------------------------|
-| Claude Code           | `[`platforms/claude-code/seo-pro-max/SKILL.md`](platforms/claude-code/seo-pro-max/SKILL.md)` |
-| Cursor                | `[`platforms/cursor/seo-pro-max.mdc`](platforms/cursor/seo-pro-max.mdc)`                     |
-| Windsurf              | `[`platforms/windsurf/.windsurfrules`](platforms/windsurf/.windsurfrules)` (short form)      |
-| Cline                 | `[`platforms/cline/.clinerules`](platforms/cline/.clinerules)`                               |
-| Roo Code              | `[`platforms/roo/.roo/rules/seo-pro-max.md`](platforms/roo/.roo/rules/seo-pro-max.md)`       |
-| GitHub Copilot Chat   | `[`platforms/copilot/.github/copilot-instructions.md`](platforms/copilot/.github/copilot-instructions.md)` |
-| Aider                 | `[`platforms/aider/CONVENTIONS.md`](platforms/aider/CONVENTIONS.md)`                         |
-| Continue.dev          | `[`platforms/continue/config-snippet.json`](platforms/continue/config-snippet.json)`         |
-| Zed AI                | `[`platforms/zed/settings-snippet.json`](platforms/zed/settings-snippet.json)`               |
-| Plain LLM / Custom GPT| `[`platforms/plain-llm/system-prompt.md`](platforms/plain-llm/system-prompt.md)`             |
+| Claude Code           | [`platforms/claude-code/seo-pro-max/SKILL.md`](platforms/claude-code/seo-pro-max/SKILL.md) |
+| Cursor                | [`platforms/cursor/seo-pro-max.mdc`](platforms/cursor/seo-pro-max.mdc)                     |
+| Windsurf              | [`platforms/windsurf/.windsurfrules`](platforms/windsurf/.windsurfrules) (short form)      |
+| Cline                 | [`platforms/cline/.clinerules`](platforms/cline/.clinerules)                               |
+| Roo Code              | [`platforms/roo/.roo/rules/seo-pro-max.md`](platforms/roo/.roo/rules/seo-pro-max.md)       |
+| GitHub Copilot Chat   | [`platforms/copilot/.github/copilot-instructions.md`](platforms/copilot/.github/copilot-instructions.md) |
+| Aider                 | [`platforms/aider/CONVENTIONS.md`](platforms/aider/CONVENTIONS.md)                         |
+| Continue.dev          | [`platforms/continue/config-snippet.json`](platforms/continue/config-snippet.json)         |
+| Zed AI                | [`platforms/zed/settings-snippet.json`](platforms/zed/settings-snippet.json)               |
+| Plain LLM / Custom GPT| [`platforms/plain-llm/system-prompt.md`](platforms/plain-llm/system-prompt.md)             |
 
-All platform files are auto-generated from `[`SKILL.md`](SKILL.md)` by `[`scripts/build-platforms.mjs`](scripts/build-platforms.mjs)`. Edit `SKILL.md` only.
+All platform files are auto-generated from [`SKILL.md`](SKILL.md) by [`scripts/build-platforms.mjs`](scripts/build-platforms.mjs). Edit `SKILL.md` only.
 
 ## How it compares
 
@@ -293,7 +293,7 @@ No, because there is currently no public, verifiable lever for that. Google has 
 To reach a global user base on Claude Code / Cursor / Windsurf. The skill itself works on projects of any language and explicitly handles multilingual content rules (Surface 14). My personal docs (publishing notes, NPM publishing guide) are in Turkish and gitignored.
 
 **How do I add a new Surface or improve an existing one?**
-Edit `SKILL.md`, run `node scripts/build-platforms.mjs`, open a PR. See `[CONTRIBUTING.md](CONTRIBUTING.md)`.
+Edit `SKILL.md`, run `node scripts/build-platforms.mjs`, open a PR. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Roadmap
 
@@ -361,7 +361,7 @@ seo-pro-max-skill/
 
 ## Contributing
 
-See `[CONTRIBUTING.md](CONTRIBUTING.md)`. Short version: edit `SKILL.md` (the single source of truth), regenerate platform files with `node scripts/build-platforms.mjs`, open a PR. Framework corrections, Google / Bing policy updates, and new Schema.org types are especially welcome.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Short version: edit `SKILL.md` (the single source of truth), regenerate platform files with `node scripts/build-platforms.mjs`, open a PR. Framework corrections, Google / Bing policy updates, and new Schema.org types are especially welcome.
 
 ## Support the project
 
@@ -379,4 +379,4 @@ Feedback, bug reports, and feature suggestions are best sent via GitHub Issues. 
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)`.
+MIT — see [LICENSE](LICENSE).

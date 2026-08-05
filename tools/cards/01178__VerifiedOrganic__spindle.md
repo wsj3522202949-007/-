@@ -196,7 +196,7 @@ Spindle's MCP surface gives your AI client tools for:
   hydration
 - **Export** — EPUB output, bible export, preflight checks
 
-See `[`docs/spindle-architecture.md`](docs/spindle-architecture.md)` for the
+See [`docs/spindle-architecture.md`](docs/spindle-architecture.md) for the
 full tool reference.
 
 ### LitRPG system blocks
@@ -218,11 +218,11 @@ Both render as styled XHTML `div` elements in exported EPUB files.
 
 - **Batch drafting.** `spindle-harness` is an operator-driven tool for
   unattended batch drafting with checkpointed editorial review and resumable
-  artifacts. See `[`docs/spindle-harness-usage.md`](docs/spindle-harness-usage.md)`.
+  artifacts. See [`docs/spindle-harness-usage.md`](docs/spindle-harness-usage.md).
 - **Custom model routing.** Bind specific tasks (drafting, editing,
   embeddings) to different models through `spindle.toml`. The embedding
   route can use an OpenAI-compatible embedding model for higher-quality
-  Bible search. See `[`docs/spindle-agent-config.md`](docs/spindle-agent-config.md)`.
+  Bible search. See [`docs/spindle-agent-config.md`](docs/spindle-agent-config.md).
 - **HTTP mode.** For multi-client or networked setups, run with
   `SPINDLE_HTTP_ADDR=127.0.0.1:8787` to expose the streamable HTTP MCP
   transport at `/mcp`. Currently experimental.
@@ -242,8 +242,8 @@ database. The workspace is split into:
 - `spindle-harness` — operator-driven batch drafting
 
 The architectural brief lives at
-`[`docs/spindle-implementation-brief.md`](docs/spindle-implementation-brief.md)`.
-See `[`docs/README.md`](docs/README.md)` for the full docs map.
+[`docs/spindle-implementation-brief.md`](docs/spindle-implementation-brief.md).
+See [`docs/README.md`](docs/README.md) for the full docs map.
 
 ## Build and contribute
 

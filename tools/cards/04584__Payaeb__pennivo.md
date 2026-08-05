@@ -65,11 +65,11 @@ related:
 
 |                                          Light theme                                         |                                            Dark theme                                            |
 | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------: |
-|    !`[Light theme](./assets/screenshots/01-light-default.png)`    |       !`[Dark theme](./assets/screenshots/02-dark-default.png)`       |
+|    ![Light theme](./assets/screenshots/01-light-default.png)    |       ![Dark theme](./assets/screenshots/02-dark-default.png)       |
 |                                      **Command palette**                                     |                                        **Settings panel**                                        |
-| !`[Command palette](./assets/screenshots/03-command-palette.png)` |          !`[Settings](./assets/screenshots/04-settings.png)`          |
+| ![Command palette](./assets/screenshots/03-command-palette.png) |          ![Settings](./assets/screenshots/04-settings.png)          |
 |                                     **Mermaid diagrams**                                     |                                     **Customizable toolbar**                                     |
-|     !`[Mermaid diagrams](./assets/screenshots/05-mermaid.png)`    | !`[Customize toolbar](./assets/screenshots/06-customize-toolbar.png)` |
+|     ![Mermaid diagrams](./assets/screenshots/05-mermaid.png)    | ![Customize toolbar](./assets/screenshots/06-customize-toolbar.png) |
 
 ## Why Pennivo
 
@@ -132,7 +132,7 @@ Pennivo v1.0 ships **unsigned**. When you run the installer Windows will show a 
 1. Click **More info**
 2. Click **Run anyway**
 
-The warning is expected and unavoidable until a code-signing certificate is in place. The installer is built directly from this repository by `[GitHub Actions](.github/workflows/release.yml)` — you can verify the source for each release against the published artifacts.
+The warning is expected and unavoidable until a code-signing certificate is in place. The installer is built directly from this repository by [GitHub Actions](.github/workflows/release.yml) — you can verify the source for each release against the published artifacts.
 
 ### Android
 
@@ -202,12 +202,12 @@ pnpm dev
 
 ### Notes for contributors
 
-* The workspace uses pnpm with `node-linker=hoisted` (see `[.npmrc](.npmrc)`). This is required for electron-builder to trace transitive dependencies into the packed `app.asar`. Don't change it.
+* The workspace uses pnpm with `node-linker=hoisted` (see [.npmrc](.npmrc)). This is required for electron-builder to trace transitive dependencies into the packed `app.asar`. Don't change it.
 
-* `electron` is pinned to an exact version in `[packages/desktop/package.json](packages/desktop/package.json)` — electron-builder requires a fixed version under hoisted layouts.
+* `electron` is pinned to an exact version in [packages/desktop/package.json](packages/desktop/package.json) — electron-builder requires a fixed version under hoisted layouts.
 
 * Issues and pull requests are welcome. For larger changes, please open an issue first so we can discuss the approach.
 
 ## License
 
-`[MIT](LICENSE)` © 2026 Paya Ebrahimi
+[MIT](LICENSE) © 2026 Paya Ebrahimi

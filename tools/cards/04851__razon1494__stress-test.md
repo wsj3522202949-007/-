@@ -59,9 +59,9 @@ per-domain calibration analysis estimates thresholds from the same clean domain
 slices used for evaluation. These limitations are stated here because they affect
 how the numbers should be interpreted.
 
-`[Paper draft](paper/main.tex)` · `[Generated results](results/)` ·
-`[Reproducibility guide](docs/reproducibility.md)` ·
-`[Result provenance](docs/result_provenance.md)`
+[Paper draft](paper/main.tex) · [Generated results](results/) ·
+[Reproducibility guide](docs/reproducibility.md) ·
+[Result provenance](docs/result_provenance.md)
 
 ## Research questions
 
@@ -104,9 +104,9 @@ What the current analysis suggests:
   cutoff has been checked against human judgments.
 
 Full generated tables are available in
-`[PER_DOMAIN.md](results/PER_DOMAIN.md)`, `[REPORT.md](results/REPORT.md)`,
-`[FAIRNESS.md](results/FAIRNESS.md)`, `[HARDNESS.md](results/HARDNESS.md)`, and
-`[STATS.md](results/STATS.md)`.
+[PER_DOMAIN.md](results/PER_DOMAIN.md), [REPORT.md](results/REPORT.md),
+[FAIRNESS.md](results/FAIRNESS.md), [HARDNESS.md](results/HARDNESS.md), and
+[STATS.md](results/STATS.md).
 
 ## Evaluation design
 
@@ -150,7 +150,7 @@ python scripts/04_make_report.py --help
 ```
 
 Some fairness corpora require separate downloads and cannot be redistributed in
-this repository. See the `[reproducibility guide](docs/reproducibility.md)` before
+this repository. See the [reproducibility guide](docs/reproducibility.md) before
 attempting a full run.
 
 ## Repository map
@@ -160,12 +160,12 @@ attempting a full run.
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
 ---|
-| `[`src/stress_test/`](src/stress_test/)` | Transformations, detectors, metrics, statistics, data utilities, and report generation |
-| `[`scripts/`](scripts/)` | Numbered experiment and analysis stages |
-| `[`tests/`](tests/)` | Unit tests for core research logic |
-| `[`results/`](results/)` | Committed generated summaries and structured outputs |
-| `[`paper/`](paper/)` | LaTeX manuscript draft and generated figure |
-| `[`docs/`](docs/)` | Reproduction instructions, annotation protocol, and related-work notes |
+| [`src/stress_test/`](src/stress_test/) | Transformations, detectors, metrics, statistics, data utilities, and report generation |
+| [`scripts/`](scripts/) | Numbered experiment and analysis stages |
+| [`tests/`](tests/) | Unit tests for core research logic |
+| [`results/`](results/) | Committed generated summaries and structured outputs |
+| [`paper/`](paper/) | LaTeX manuscript draft and generated figure |
+| [`docs/`](docs/) | Reproduction instructions, annotation protocol, and related-work notes |
 
 ## Current limitations
 
@@ -200,6 +200,6 @@ Until a preprint is released, cite the software repository:
 Mohammad Arifur Rahman · rahman.arif.cse@gmail.com ·
 [Portfolio](https://ari-fur.com/)
 
-The framework code is released under the `[MIT License](LICENSE)`. External
+The framework code is released under the [MIT License](LICENSE). External
 datasets and pretrained models remain subject to their original licenses and
 terms of use.

@@ -44,7 +44,7 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
-!`[Poromy](./public/images/og-image.jpg)`
+![Poromy](./public/images/og-image.jpg)
 
 # Poromy AI 🤖
 

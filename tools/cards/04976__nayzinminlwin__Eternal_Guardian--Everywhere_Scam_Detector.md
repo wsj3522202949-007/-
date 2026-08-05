@@ -39,7 +39,7 @@ related:
 
 ---
 
-!`[Eternal Guardian cover banner](docs/assets/Eternal_Guardian_CoverPic.png)`
+![Eternal Guardian cover banner](docs/assets/Eternal_Guardian_CoverPic.png)
 
 # Eternal Guardian: Everywhere Scam Detector
 

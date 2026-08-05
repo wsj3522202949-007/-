@@ -39,7 +39,7 @@ related:
   - methods/改稿润色指令库.md
 ---
 
-!`[DiaIQ Humanizer](./banner-humanizer-high-res.png)`
+![DiaIQ Humanizer](./banner-humanizer-high-res.png)
 
 # Humanize AI Text — Claude Code Skill
 

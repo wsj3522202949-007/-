@@ -50,9 +50,9 @@ related:
 
 **基于 RAG 技术的本地化智能写作系统**
 
-`[English](./README_EN.md)` | 简体中文
+[English](./README_EN.md) | 简体中文
 
-!`[AI4Write Demo](./demo.png)`
+![AI4Write Demo](./demo.png)
 
 </div>
 
@@ -374,7 +374,7 @@ npx prisma migrate deploy
 
 ## 📄 许可证
 
-本项目基于 MIT 许可证开源，详见 `[LICENSE](LICENSE)` 文件。
+本项目基于 MIT 许可证开源，详见 [LICENSE](LICENSE) 文件。
 
 ## 🙏 感谢
 

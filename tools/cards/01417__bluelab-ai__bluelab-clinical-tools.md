@@ -76,7 +76,7 @@ Tools for clinical data management documentation.
 - DMP (Data Management Plan) Draft Generator（DMP初稿生成工具）  
 - DVP (Data Validation Plan) Draft Generator（DVP初稿生成工具）  
 
-👉 `[`/data-management`](./data-management)`
+👉 [`/data-management`](./data-management)
 
 ---
 
@@ -89,7 +89,7 @@ Tools supporting statistical planning and analysis workflows.
 - TFL Shell Quality Check Tool（TFL shell漏项检测与预警工具）  
   (AI-assisted validation for completeness, missing sections, and structure issues)
 
-👉 `[`/stat-analysis`](./stat-analysis)`
+👉 [`/stat-analysis`](./stat-analysis)
 
 ---
 
@@ -100,7 +100,7 @@ Tools for statistical output generation and reporting automation.
 - TFL → CSR (Clinical Study Report) Results Draft Generator（基于TFL生成CSR结果段落初稿工具）  
 - Automated TFL Generation Pipeline (SAS + AI-assisted workflow)（基于SAS与AI的TFL自动生成工具，Demo版本）  
 
-👉 `[`/report-automation`](./report-automation)`
+👉 [`/report-automation`](./report-automation)
 
 ---
 
@@ -113,7 +113,7 @@ Tools assisting medical and scientific writing workflows.
   (Structured comparison of study design, population, interventions, outcomes, and results)  
 - Review & Meta-analysis Assistance Tool（综述与Meta分析辅助工具）  
 
-👉 `[`/medical-writing`](./medical-writing)`
+👉 [`/medical-writing`](./medical-writing)
 
 ---
 

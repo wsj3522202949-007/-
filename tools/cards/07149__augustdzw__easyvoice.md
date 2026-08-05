@@ -85,8 +85,8 @@ related:
 
 ## Screenshots📸
 
-!`[Home](./images/readme.home.jpg)`
-!`[Generate](./images/readme.generate.jpg)`
+![Home](./images/readme.home.jpg)
+![Generate](./images/readme.generate.jpg)
 
 ## 快速开始 🚀
 
@@ -199,7 +199,7 @@ curl -X POST http://localhost:3000/api/v1/tts/generateJson \
 #### 参数说明
 
 - text: 你需要转语音的文字。
-- voice: 你需要用到的声音，参考：`[支持的声音列表](./packages/backend/src/llm/prompt/voiceList.json)`
+- voice: 你需要用到的声音，参考：[支持的声音列表](./packages/backend/src/llm/prompt/voiceList.json)
 - rate: 语速调整，百分比形式，默认 +0%（正常），如 "+50%"（加快 50%），"-20%"（减慢 20%）。
 - volume: 音量调整，百分比形式，默认 +0%（正常），如 "+20%"（增 20%），"-10%"（减 10%）。
 - pitch: 音调调整，默认 +0Hz（正常），如 "+10Hz"（提高 10 赫兹），"-5Hz"（降低 5 赫兹）。

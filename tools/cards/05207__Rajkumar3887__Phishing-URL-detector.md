@@ -55,11 +55,11 @@ Built with Python, Flask, scikit-learn, TF-IDF vectorization, and a custom-train
 
 Here are some screenshots of the phishing URL detector in action.
 
-!`[Dashboard View](statics/screenshots/screenshot1.png "Dashboard View")`
+![Dashboard View](statics/screenshots/screenshot1.png "Dashboard View")
 
-!`[Analysis Result](statics/screenshots/screenshot2.png "Analysis Result")`
+![Analysis Result](statics/screenshots/screenshot2.png "Analysis Result")
 
-!`[Analysis Result](statics/screenshots/screenshot3.png "Analysis Result")`
+![Analysis Result](statics/screenshots/screenshot3.png "Analysis Result")
 ***
 
 ## AI Model Highlights

@@ -40,7 +40,7 @@ related:
 
 <div align="center">
 
-**English** | `[**中文**](README_zh.md)`
+**English** | [**中文**](README_zh.md)
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=42&duration=3000&pause=1000&color=9B6DFF&center=true&vCenter=true&multiline=false&repeat=true&width=600&height=70&lines=%E2%9A%A1+Awesome+Skills" alt="Awesome Skills" />
 
@@ -190,7 +190,7 @@ Automatically generates professional SVG illustrations for Markdown articles, re
 
 **Additional Features**: SVG to JPEG export, S-tier content can generate standalone bilingual illustration pages
 
-> Use when: Articles need visualization of flows/architecture/concepts, or complex concepts need conversion into easy-to-understand diagrams. English version available at `[article-diagram-en](skills/article-diagram-en/SKILL.md)`.
+> Use when: Articles need visualization of flows/architecture/concepts, or complex concepts need conversion into easy-to-understand diagrams. English version available at [article-diagram-en](skills/article-diagram-en/SKILL.md).
 
 ---
 
@@ -441,23 +441,23 @@ awesome-skills/
 
 ### Skill Documentation
 
-- `[SOUL](SOUL/SKILL.md)` - Core personality framework
-- `[Skill Creator](skills/claude-code-skill-creator/SKILL.md)` - Skill creation tool
-- `[Vibe Coding Launcher](skills/vibe-coding-launcher/SKILL.md)` - Vibe Coding project launcher
-- `[Canvas Architect](skills/canvas-architect/SKILL.md)` - Architecture visualization engine
-- `[Canvas Sequence](skills/canvas-sequence/SKILL.md)` - Interaction sequence diagram engine
-- `[Article Diagram](skills/article-diagram/SKILL.md)` - Article illustration generator (Chinese)
-- `[Article Diagram EN](skills/article-diagram-en/SKILL.md)` - Article illustration generator (English)
-- `[WeChat Article Writer](skills/wechat-article-writer/SKILL.md)` - WeChat article writing assistant
-- `[Baidu Search](skills/baidu-search/SKILL.md)` - Baidu AI Search
-- `[Cycle Investment Analysis](skills/cycle-investment-analysis/SKILL.md)` - Cyclical investment analysis framework
-- `[XHS Automator](skills/xhs-automator/SKILL.md)` - Xiaohongshu automation toolkit
+- [SOUL](SOUL/SKILL.md) - Core personality framework
+- [Skill Creator](skills/claude-code-skill-creator/SKILL.md) - Skill creation tool
+- [Vibe Coding Launcher](skills/vibe-coding-launcher/SKILL.md) - Vibe Coding project launcher
+- [Canvas Architect](skills/canvas-architect/SKILL.md) - Architecture visualization engine
+- [Canvas Sequence](skills/canvas-sequence/SKILL.md) - Interaction sequence diagram engine
+- [Article Diagram](skills/article-diagram/SKILL.md) - Article illustration generator (Chinese)
+- [Article Diagram EN](skills/article-diagram-en/SKILL.md) - Article illustration generator (English)
+- [WeChat Article Writer](skills/wechat-article-writer/SKILL.md) - WeChat article writing assistant
+- [Baidu Search](skills/baidu-search/SKILL.md) - Baidu AI Search
+- [Cycle Investment Analysis](skills/cycle-investment-analysis/SKILL.md) - Cyclical investment analysis framework
+- [XHS Automator](skills/xhs-automator/SKILL.md) - Xiaohongshu automation toolkit
 
 ### Development Standards
 
-- `[Vibe Coding Standard](Conventions/VIBE-CODING-STANDARD.md)` - AI agent-driven development global specification
-- `[Architecture Template](Conventions/ARCHITECTURE-TEMPLATE.md)` - Architecture document generation template
-- `[Plans Universal](Conventions/PLANS-UNIVERSAL.md)` - Execution specification template
+- [Vibe Coding Standard](Conventions/VIBE-CODING-STANDARD.md) - AI agent-driven development global specification
+- [Architecture Template](Conventions/ARCHITECTURE-TEMPLATE.md) - Architecture document generation template
+- [Plans Universal](Conventions/PLANS-UNIVERSAL.md) - Execution specification template
 
 ## Contributing
 

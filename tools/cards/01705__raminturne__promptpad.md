@@ -48,15 +48,15 @@ Shown in the **Mono** theme — 14 themes total (7 dark + 7 light) are available
 
 | Workspace — tabs, colored groups, placeholders & live fill | Fast Save — Telegram-style pinned quick notes |
 |:---:|:---:|
-| !`[Workspace](screenshots/01-workspace.png)` | !`[Fast Save](screenshots/02-fast-save.png)` |
+| ![Workspace](screenshots/01-workspace.png) | ![Fast Save](screenshots/02-fast-save.png) |
 
 | AI Chat — free built-in chat, no API key | Markdown preview — code blocks with Copy / Improve actions |
 |:---:|:---:|
-| !`[AI Chat](screenshots/03-ai-chat.png)` | !`[Markdown](screenshots/04-markdown.png)` |
+| ![AI Chat](screenshots/03-ai-chat.png) | ![Markdown](screenshots/04-markdown.png) |
 
 | AI actions — Improve, Translate, Summarize, Fix grammar, change tone | Settings — theme picker, tab size, handy dock & more |
 |:---:|:---:|
-| !`[AI actions](screenshots/05-ai-actions.png)` | !`[Settings](screenshots/06-settings.png)` |
+| ![AI actions](screenshots/05-ai-actions.png) | ![Settings](screenshots/06-settings.png) |
 
 ## ✨ Features
 

@@ -54,17 +54,17 @@ Novel Local AI 是面向 macOS 的本地优先 AI 小说写作工作台。它把
 
 ### 项目工作台
 
-!`[Novel Local AI 项目首页](docs/design_shots/01_dashboard.png)`
+![Novel Local AI 项目首页](docs/design_shots/01_dashboard.png)
 
 ### 从想法生成故事资料
 
-!`[Novel Local AI 创作中心](docs/design_shots/04_creative_studio.png)`
+![Novel Local AI 创作中心](docs/design_shots/04_creative_studio.png)
 
 ### 版本、连续性报告与审批
 
-!`[Novel Local AI Run 详情](docs/design_shots/08_run_detail.png)`
+![Novel Local AI Run 详情](docs/design_shots/08_run_detail.png)
 
-更多页面截图位于 `[`docs/design_shots/`](docs/design_shots/)`。
+更多页面截图位于 [`docs/design_shots/`](docs/design_shots/)。
 
 ## 核心能力
 
@@ -159,7 +159,7 @@ related:
 7. 人工 approve，或让 Auto Commit 在达到阈值后写入正式正文。
 8. 导出 Markdown。
 
-详细操作见 `[用户手册](docs/USER_GUIDE.md)`。
+详细操作见 [用户手册](docs/USER_GUIDE.md)。
 
 ## 测试
 
@@ -179,18 +179,18 @@ npm run build
 - API Key 当前保存在本地 SQLite，尚未接入 macOS Keychain；不要上传带密钥的数据库或日志。
 - 本地开发仓库与 LaunchAgent 部署副本可能是两个目录，修改后请明确同步目标。
 - 模型生成内容可能不准确；自动提交模式仍应保留版本、日志和人工回滚路径。
-- 安全问题请按 `[SECURITY.md](SECURITY.md)` 私下报告，不要在公开 Issue 中提交密钥或小说正文。
+- 安全问题请按 [SECURITY.md](SECURITY.md) 私下报告，不要在公开 Issue 中提交密钥或小说正文。
 
 ## 文档
 
-- `[用户手册](docs/USER_GUIDE.md)`
-- `[Agent 开发手册](AGENTS.md)`
-- `[项目交接文档](PROJECT_HANDOFF.md)`
-- `[当前能力索引](docs/AI_CURRENT_STATUS.md)`
-- `[运行与测试](docs/AI_RUN_AND_TEST_GUIDE.md)`
-- `[架构图](docs/AI_ARCHITECTURE_MAP.md)`
-- `[贡献指南](CONTRIBUTING.md)`
-- `[变更记录](CHANGELOG.md)`
+- [用户手册](docs/USER_GUIDE.md)
+- [Agent 开发手册](AGENTS.md)
+- [项目交接文档](PROJECT_HANDOFF.md)
+- [当前能力索引](docs/AI_CURRENT_STATUS.md)
+- [运行与测试](docs/AI_RUN_AND_TEST_GUIDE.md)
+- [架构图](docs/AI_ARCHITECTURE_MAP.md)
+- [贡献指南](CONTRIBUTING.md)
+- [变更记录](CHANGELOG.md)
 
 ## Roadmap
 
@@ -203,7 +203,7 @@ npm run build
 
 ## 开源许可
 
-本项目采用 `[Apache License 2.0](LICENSE)`。提交代码即表示你有权提交该内容，并同意其按 Apache-2.0 发布。第三方依赖和模型各自遵循其许可证；本仓库不授予任何模型权重的再分发权。
+本项目采用 [Apache License 2.0](LICENSE)。提交代码即表示你有权提交该内容，并同意其按 Apache-2.0 发布。第三方依赖和模型各自遵循其许可证；本仓库不授予任何模型权重的再分发权。
 
 ## English summary
 

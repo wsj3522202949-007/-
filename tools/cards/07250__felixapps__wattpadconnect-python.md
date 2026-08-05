@@ -137,7 +137,7 @@ print(json)
 ```
 
 Lets take a look at the JSONs structure:
-!`[An image showing the JSON output in the browser console.](images/example_1_screenshot_1.png)`
+![An image showing the JSON output in the browser console.](images/example_1_screenshot_1.png)
 
 You are now confronted with a huge pile of data.
 Let's see how you can extract the most important data.

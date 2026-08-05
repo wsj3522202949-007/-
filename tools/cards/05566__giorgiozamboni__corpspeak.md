@@ -201,7 +201,7 @@ Have an idea? [Open an issue](https://github.com/giorgiozamboni/corpspeak/issues
 
 ## 🤝 Contributing
 
-Contributions make the open-source world go round. Ideas welcome: new bridge phrases, sector flavors, a fourth level, or lexicon entries for your local office dialect. See `[CONTRIBUTING.md](CONTRIBUTING.md)`, open an issue, or send a PR.
+Contributions make the open-source world go round. Ideas welcome: new bridge phrases, sector flavors, a fourth level, or lexicon entries for your local office dialect. See [CONTRIBUTING.md](CONTRIBUTING.md), open an issue, or send a PR.
 
 And if corpspeak made you smile (or saved your next deck), a ⭐ on the repo goes a long way.
 
@@ -225,7 +225,7 @@ Built by **Giorgio Zamboni** at **[PlayMind Studio](https://playmindstudio.it/)*
 
 ## 📄 License
 
-MIT. Use it, fork it, ship it. See `[LICENSE](LICENSE)`.
+MIT. Use it, fork it, ship it. See [LICENSE](LICENSE).
 
 related:
   - methods/最强去AI味铁律.md

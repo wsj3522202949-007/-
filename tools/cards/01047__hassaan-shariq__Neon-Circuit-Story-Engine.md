@@ -49,7 +49,7 @@ related:
 
 ## 📸 Preview
 
-!`[Neon Circuit Story Engine](screenshot.png)`
+![Neon Circuit Story Engine](screenshot.png)
 
 ---
 

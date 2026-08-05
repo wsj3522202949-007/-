@@ -77,7 +77,7 @@ In this project, I built a small analytics stack that helps answer those questio
 ## Dataset
 
 - **Name:** Product Sales and Returns  
-- **Source:** Kaggle `[Product Sales and Returns Dataset](<https://www.kaggle.com/datasets/yaminh/product-sales-and-returns-dataset>)` (see `data/README.md`)  
+- **Source:** Kaggle [Product Sales and Returns Dataset](<https://www.kaggle.com/datasets/yaminh/product-sales-and-returns-dataset>) (see `data/README.md`)  
 - **Time range:** 2018-11-01 → 2019-04-30  
 - **Size:** ~70k rows
 - **Scale:** ~25k buyers, ~1k items, ~30k transactions  

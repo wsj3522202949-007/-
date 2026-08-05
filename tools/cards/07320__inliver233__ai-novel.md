@@ -253,7 +253,7 @@ python -m pytest -m known_issue -q        # bug 看板（红=待修，绿=已修
 python scripts/run_quality_gate.py        # 编译 + ruff + 安全网测试 + coverage≥62%
 ```
 
-详见 `[`backend/tests/README.md`](backend/tests/README.md)`。
+详见 [`backend/tests/README.md`](backend/tests/README.md)。
 
 ### 前端
 
@@ -268,7 +268,7 @@ npx tsc -p tsconfig.test.json --noEmit    # 测试类型检查
 npm run build                             # 生产构建门禁
 ```
 
-测试统一收纳在 `frontend/tests/`，支持 jsdom + @testing-library 的组件交互测试。详见 `[`frontend/tests/README.md`](frontend/tests/README.md)`。
+测试统一收纳在 `frontend/tests/`，支持 jsdom + @testing-library 的组件交互测试。详见 [`frontend/tests/README.md`](frontend/tests/README.md)。
 
 ---
 

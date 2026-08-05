@@ -62,7 +62,7 @@ Use it when you need to:
 
 ## 30 Second Quick Start
 
-!`[FictionOps quickstart terminal preview](fictionops/docs/assets/quickstart-terminal.svg)`
+![FictionOps quickstart terminal preview](fictionops/docs/assets/quickstart-terminal.svg)
 
 Install from the GitHub source checkout today:
 
@@ -115,22 +115,22 @@ fictionops agent-exec my-novel/00_management/agent_runs/ch_001 \
   --base-url https://api.deepseek.com
 ```
 
-The same runner can be used with Qwen/DashScope, Kimi/Moonshot, GLM/Zhipu, Doubao/Volcengine Ark, SiliconFlow, OpenAI-compatible local servers, and similar providers. See `[model providers](fictionops/docs/model-providers.md)`.
+The same runner can be used with Qwen/DashScope, Kimi/Moonshot, GLM/Zhipu, Doubao/Volcengine Ark, SiliconFlow, OpenAI-compatible local servers, and similar providers. See [model providers](fictionops/docs/model-providers.md).
 
 ## Documentation
 
-- `[Getting started](fictionops/docs/getting-started.md)`
-- `[CLI guide](fictionops/docs/cli.md)`
-- `[Agent integration guide](fictionops/docs/agent-integration.md)`
-- `[Agent evaluation protocol](fictionops/docs/agent-evaluation.md)`
-- `[Agent evaluation demo report](fictionops/docs/agent-evaluation-demo-report.md)`
-- `[Model providers](fictionops/docs/model-providers.md)`
-- `[Demo tutorial](fictionops/docs/tutorial-demo.md)`
-- `[Migration guide](fictionops/docs/migration.md)`
-- `[Roadmap](fictionops/docs/roadmap.md)`
-- `[0.1.1 release candidate plan](fictionops/docs/release-candidate-0.1.1.md)`
-- `[Promotion kit](fictionops/docs/promotion-kit.md)`
-- `[Chinese README](fictionops/README.zh-CN.md)`
+- [Getting started](fictionops/docs/getting-started.md)
+- [CLI guide](fictionops/docs/cli.md)
+- [Agent integration guide](fictionops/docs/agent-integration.md)
+- [Agent evaluation protocol](fictionops/docs/agent-evaluation.md)
+- [Agent evaluation demo report](fictionops/docs/agent-evaluation-demo-report.md)
+- [Model providers](fictionops/docs/model-providers.md)
+- [Demo tutorial](fictionops/docs/tutorial-demo.md)
+- [Migration guide](fictionops/docs/migration.md)
+- [Roadmap](fictionops/docs/roadmap.md)
+- [0.1.1 release candidate plan](fictionops/docs/release-candidate-0.1.1.md)
+- [Promotion kit](fictionops/docs/promotion-kit.md)
+- [Chinese README](fictionops/README.zh-CN.md)
 
 ## Project Layout
 
@@ -154,20 +154,20 @@ The current package is a 0.1.1 pre-alpha onboarding and packaging candidate with
 - documentation parity for outside contributors;
 - long-term 1.0 compatibility evidence.
 
-See the full `[roadmap](fictionops/docs/roadmap.md)` and `[milestone status](fictionops/docs/milestone-status.md)`.
+See the full [roadmap](fictionops/docs/roadmap.md) and [milestone status](fictionops/docs/milestone-status.md).
 
 ## Research Framing
 
-FictionOps can also be treated as a local-first evaluation harness for long-horizon writing agents: persistent workspace state, scoped context construction, staged model outputs, human review gates, continuity audits, and controller-loop traces. `fictionops eval-agent` can generate a no-network smoke report for that harness on a temporary fixture copy. See the `[agent evaluation protocol](fictionops/docs/agent-evaluation.md)` for baseline conditions, benchmark tasks, and metrics, and the `[demo report](fictionops/docs/agent-evaluation-demo-report.md)` for a first reproducible evidence record.
+FictionOps can also be treated as a local-first evaluation harness for long-horizon writing agents: persistent workspace state, scoped context construction, staged model outputs, human review gates, continuity audits, and controller-loop traces. `fictionops eval-agent` can generate a no-network smoke report for that harness on a temporary fixture copy. See the [agent evaluation protocol](fictionops/docs/agent-evaluation.md) for baseline conditions, benchmark tasks, and metrics, and the [demo report](fictionops/docs/agent-evaluation-demo-report.md) for a first reproducible evidence record.
 
 ## Contributing
 
-Contributions, bug reports, documentation fixes, and workflow feedback are welcome. Start with `[CONTRIBUTING](fictionops/CONTRIBUTING.md)`.
+Contributions, bug reports, documentation fixes, and workflow feedback are welcome. Start with [CONTRIBUTING](fictionops/CONTRIBUTING.md).
 
 ## Citation
 
-If FictionOps helps your writing workflow, research, article, or agent experiment, cite it using `[CITATION.cff](CITATION.cff)`.
+If FictionOps helps your writing workflow, research, article, or agent experiment, cite it using [CITATION.cff](CITATION.cff).
 
 ## License
 
-FictionOps is released under the `[MIT License](LICENSE)`.
+FictionOps is released under the [MIT License](LICENSE).

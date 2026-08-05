@@ -191,7 +191,7 @@ We welcome contributions to Zero-ZeroGPT! Please follow these steps to contribut
 4. Push to the branch: `git push origin feature/your-feature-name`
 5. Submit a pull request
 
-Please read our `[Contributing Guidelines](CONTRIBUTING.md)` for more details.
+Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details.
 
 ## Disclaimer
 
@@ -199,4 +199,4 @@ This project **does not promote plagiarism or the misuse of AI technology**. It 
 
 ## License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

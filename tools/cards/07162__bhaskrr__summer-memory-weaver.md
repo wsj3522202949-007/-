@@ -39,7 +39,7 @@ related:
   - methods/QUICK_START.md
 ---
 
-!`[banner-image](./media/banner.png)`
+![banner-image](./media/banner.png)
 
 # Summer Memory Weaver
 

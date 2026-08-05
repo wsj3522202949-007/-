@@ -43,7 +43,7 @@ This project implements an AI-powered advertising content generator that transfo
 
 **Live Showcase:** [https://mbettan.github.io/PersonaAdGen/](https://mbettan.github.io/PersonaAdGen/)
 
-!`[Live Showcase](docs/assets/readme_showcase.png)`
+![Live Showcase](docs/assets/readme_showcase.png)
 
 ## Overview
 

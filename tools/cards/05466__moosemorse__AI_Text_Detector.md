@@ -116,4 +116,4 @@ To start using the AI Text Detector, you can explore the Jupyter notebooks in th
 
 ## License
 
-This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

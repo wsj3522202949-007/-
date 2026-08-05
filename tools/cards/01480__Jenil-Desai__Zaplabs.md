@@ -155,13 +155,13 @@ Make sure you have **Node.js**, **PostgreSQL**, and **Kafka** installed locally.
 
 | Screen Name           | Screenshot                                                |
 |-----------------------|-----------------------------------------------------------|
-| **Create Zap Screen** | !`[Create Zap Screen](./Screenshots/create-zap-screen.png)` |
-| **Your Zaps Screen**  | !`[Your Zaps Screen](./Screenshots/your-zaps-screen.png)`   |
-| **Zaplabs in Action** | !`[Zaplabs in Action](./Screenshots/zaplabs-in-action.png)` |
-| **Automate Workflow** | !`[Automate Workflow](./Screenshots/automate-workflow.png)` |
-| **User Profile**      | !`[User Profile](./Screenshots/user-profile.png)`           |
-| **Dashboard**         | !`[Dashboard](./Screenshots/dashboard.png)`                 |
-| **Pricing Plans**     | !`[Pricing Plans](./Screenshots/pricing-plans.png)`         |
+| **Create Zap Screen** | ![Create Zap Screen](./Screenshots/create-zap-screen.png) |
+| **Your Zaps Screen**  | ![Your Zaps Screen](./Screenshots/your-zaps-screen.png)   |
+| **Zaplabs in Action** | ![Zaplabs in Action](./Screenshots/zaplabs-in-action.png) |
+| **Automate Workflow** | ![Automate Workflow](./Screenshots/automate-workflow.png) |
+| **User Profile**      | ![User Profile](./Screenshots/user-profile.png)           |
+| **Dashboard**         | ![Dashboard](./Screenshots/dashboard.png)                 |
+| **Pricing Plans**     | ![Pricing Plans](./Screenshots/pricing-plans.png)         |
 
 ---
 

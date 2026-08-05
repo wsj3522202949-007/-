@@ -97,11 +97,11 @@ familias de generadores **claude, palm y cohere excluidas por completo del entre
 **Decisión de producción:** elegí servir **LightGBM** (mejor AUC OOD del enfoque clásico).
 Me quedo con milisegundos de latencia en CPU y una imagen Docker liviana antes que con la
 cuarta cifra decimal del transformer. La justificación completa, con trade-offs, está en
-`[docs/decisions.md](docs/decisions.md)`.
+[docs/decisions.md](docs/decisions.md).
 
 ## Demo
 
-!`[Demo de Streamlit: predicción sobre un ensayo humano](docs/img/Prediction.png)`
+![Demo de Streamlit: predicción sobre un ensayo humano](docs/img/Prediction.png)
 
 La demo Streamlit consumiendo la API en vivo: un ensayo escrito por mí (traducido al
 inglés) clasificado como humano con P(IA) = 0.0%, en 178 ms de latencia sobre CPU con el
@@ -180,7 +180,7 @@ en lugar de DVC (los datasets son estáticos; time-travel no aporta); el CI vali
 pipeline con un modelo dummy pero nunca entrena (runners CPU-only); la API loggea
 predicciones sin texto crudo (privacidad) en JSONL (sin locks de SQLite en NTFS/9p); la
 demo Streamlit es cliente de la API, no carga el modelo (el monitoreo vive en el servicio).
-Detalle y trade-offs: `[docs/decisions.md](docs/decisions.md)`.
+Detalle y trade-offs: [docs/decisions.md](docs/decisions.md).
 
 ## Créditos y datos
 

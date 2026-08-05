@@ -179,7 +179,7 @@ Demo credentials from the seed: `demo@opentales.local` / `password123`.
 
 
 
-For a full walkthrough see **`[docs/getting-started.md](docs/getting-started.md)`**.
+For a full walkthrough see **[docs/getting-started.md](docs/getting-started.md)**.
 
 
 
@@ -285,16 +285,16 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 --- |
 
-| **`[Getting started](docs/getting-started.md)`** | Local setup walkthrough — your first project in five minutes. |
-| **`[Architecture](docs/architecture.md)`** | High-level system design, package layout, data model, and conventions. |
-| **`[AI system](docs/ai-system.md)`** | How project AI settings, agent sessions, streaming, tool calls, and approval-gated edits work. |
-| **`[AI assistive features](docs/ai-assistive-features.md)`** | SDK and endpoint notes for AI settings, docs, one-shot features, and agent tools. |
-| **`[Future directions](docs/future-directions.md)`** | Roadmap, refactor opportunities, and brainstormed features for novel writing. |
-| **`[Contributing](CONTRIBUTING.md)`** | How to set up a working copy and submit your first PR. |
+| **[Getting started](docs/getting-started.md)** | Local setup walkthrough — your first project in five minutes. |
+| **[Architecture](docs/architecture.md)** | High-level system design, package layout, data model, and conventions. |
+| **[AI system](docs/ai-system.md)** | How project AI settings, agent sessions, streaming, tool calls, and approval-gated edits work. |
+| **[AI assistive features](docs/ai-assistive-features.md)** | SDK and endpoint notes for AI settings, docs, one-shot features, and agent tools. |
+| **[Future directions](docs/future-directions.md)** | Roadmap, refactor opportunities, and brainstormed features for novel writing. |
+| **[Contributing](CONTRIBUTING.md)** | How to set up a working copy and submit your first PR. |
 
-| **`[Backend README](packages/backend/README.md)`** | Backend-specific notes. |
+| **[Backend README](packages/backend/README.md)** | Backend-specific notes. |
 
-| **`[SDK README](packages/sdk/README.md)`** | SDK usage and shape. |
+| **[SDK README](packages/sdk/README.md)** | SDK usage and shape. |
 
 Project docs are organized by folders and paths, not by `kind`. The `kind` field remains metadata for filtering and internal AI behavior, especially `instructions` docs that are injected into agent prompts.
 
@@ -303,7 +303,7 @@ Project docs are organized by folders and paths, not by `kind`. The `kind` field
 
 
 
-A few of the things we're thinking about next. Full list lives in `[`docs/future-directions.md`](docs/future-directions.md)`.
+A few of the things we're thinking about next. Full list lives in [`docs/future-directions.md`](docs/future-directions.md).
 
 
 
@@ -331,7 +331,7 @@ A few of the things we're thinking about next. Full list lives in `[`docs/future
 
 
 
-Issues, PRs, design feedback, and prose-tested feature ideas are all welcome. Start with **`[CONTRIBUTING.md](CONTRIBUTING.md)`** for setup steps and the development workflow, then pick something from **`[docs/future-directions.md](docs/future-directions.md)`** that excites you.
+Issues, PRs, design feedback, and prose-tested feature ideas are all welcome. Start with **[CONTRIBUTING.md](CONTRIBUTING.md)** for setup steps and the development workflow, then pick something from **[docs/future-directions.md](docs/future-directions.md)** that excites you.
 
 
 
@@ -339,7 +339,7 @@ Issues, PRs, design feedback, and prose-tested feature ideas are all welcome. St
 
 
 
-License TBD — see `[`docs/future-directions.md`](docs/future-directions.md)` for the roadmap. Build the writing tool you wish you had.
+License TBD — see [`docs/future-directions.md`](docs/future-directions.md) for the roadmap. Build the writing tool you wish you had.
 
 
 

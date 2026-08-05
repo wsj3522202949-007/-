@@ -176,12 +176,12 @@ Decoding on a single L20 GPU, using 26 different prompt_audio & target_text pair
 | F5-TTS Base (Vocos) | 1 (Batch_size) | -           | 0.0402 | Offline TRT-LLM |
 | F5-TTS Base (Vocos) | 1 (Batch_size) | -           | 0.1467 | Offline Pytorch |
 
-See `[detailed instructions](src/f5_tts/runtime/triton_trtllm/README.md)` for more information.
+See [detailed instructions](src/f5_tts/runtime/triton_trtllm/README.md) for more information.
 
 
 ## Inference
 
-- In order to achieve desired performance, take a moment to read `[detailed guidance](src/f5_tts/infer)`.
+- In order to achieve desired performance, take a moment to read [detailed guidance](src/f5_tts/infer).
 - By properly searching the keywords of problem encountered, [issues](https://github.com/SWivid/F5-TTS/issues?q=is%3Aissue) are very helpful.
 
 ### 1. Gradio App
@@ -191,7 +191,7 @@ Currently supported features:
 - Basic TTS with Chunk Inference
 - Multi-Style / Multi-Speaker Generation
 - Voice Chat powered by Qwen2.5-3B-Instruct
-- `[Custom inference with more language support](src/f5_tts/infer/SHARED.md)`
+- [Custom inference with more language support](src/f5_tts/infer/SHARED.md)
 
 ```bash
 # Launch a Gradio app (web interface)
@@ -255,7 +255,7 @@ f5-tts_infer-cli -c src/f5_tts/infer/examples/multi/story.toml
 
 ### 1. With Hugging Face Accelerate
 
-Refer to `[training & finetuning guidance](src/f5_tts/train)` for best practice.
+Refer to [training & finetuning guidance](src/f5_tts/train) for best practice.
 
 ### 2. With Gradio App
 
@@ -264,10 +264,10 @@ Refer to `[training & finetuning guidance](src/f5_tts/train)` for best practice.
 f5-tts_finetune-gradio
 ```
 
-Read `[training & finetuning guidance](src/f5_tts/train)` for more instructions.
+Read [training & finetuning guidance](src/f5_tts/train) for more instructions.
 
 
-## `[Evaluation](src/f5_tts/eval)`
+## [Evaluation](src/f5_tts/eval)
 
 
 ## Development

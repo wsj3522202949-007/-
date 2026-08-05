@@ -191,7 +191,7 @@ python3 benchmarks/evaluate_thresholds.py benchmarks/latest-results.json
 python3 benchmarks/evaluate_pyramid.py benchmarks/latest-results.json
 ```
 
-See `[`benchmarks/README.md`](benchmarks/README.md)` for details and limitations.
+See [`benchmarks/README.md`](benchmarks/README.md) for details and limitations.
 
 ## Source layout
 

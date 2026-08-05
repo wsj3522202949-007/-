@@ -43,7 +43,7 @@ related:
 
 <div align="center">
 
-`[English](README.md)` | `[中文](README.zh-CN.md)`
+[English](README.md) | [中文](README.zh-CN.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/linshenkx/prompt-optimizer)](https://github.com/linshenkx/prompt-optimizer/stargazers)
 ![Chrome Web Store Users](https://img.shields.io/chrome-web-store/users/cakkkhboolfnadechdlgdcnjammejlna?style=flat&label=Chrome%20Users&link=https%3A%2F%2Fchromewebstore.google.com%2Fdetail%2F%25E6%258F%2590%25E7%25A4%25BA%25E8%25AF%258D%25E4%25BC%2598%25E5%258C%2596%25E5%2599%25A8%2Fcakkkhboolfnadechdlgdcnjammejlna)
@@ -57,7 +57,7 @@ related:
 
 [Website](https://always200.com) | [Online Optimizer](https://prompt.always200.com) | [Prompt Garden](https://garden.always200.com) | [Docs](https://docs.always200.com) | [Quick Start](#quick-start) | [Chrome Extension](https://chromewebstore.google.com/detail/prompt-optimizer/cakkkhboolfnadechdlgdcnjammejlna)
 
-`[Development Docs](dev.md)` | `[Vercel Deployment Guide](docs/user/deployment/vercel_en.md)` | `[MCP Deployment Guide](docs/user/mcp-server_en.md)` | [DeepWiki Docs](https://deepwiki.com/linshenkx/prompt-optimizer) | [ZRead Docs](https://zread.ai/linshenkx/prompt-optimizer)
+[Development Docs](dev.md) | [Vercel Deployment Guide](docs/user/deployment/vercel_en.md) | [MCP Deployment Guide](docs/user/mcp-server_en.md) | [DeepWiki Docs](https://deepwiki.com/linshenkx/prompt-optimizer) | [ZRead Docs](https://zread.ai/linshenkx/prompt-optimizer)
 
 </div>
 
@@ -122,7 +122,7 @@ Prompts can start from manual writing, templates, local imports, or sources such
 - 🛠️ **Function Calling Support**: Function Calling integration with support for OpenAI and Gemini tool calling
 - 🔍 **Analysis and Evaluation Pipeline**: Supports analysis, evaluation, compare evaluation, and evaluation-driven smart rewrite in text modes
 
-For detailed usage instructions, please refer to the `[Image Mode Documentation](docs/image-mode.md)`
+For detailed usage instructions, please refer to the [Image Mode Documentation](docs/image-mode.md)
 
 ## Quick Start
 
@@ -145,7 +145,7 @@ Method 2: Fork the project and import to Vercel (Recommended):
   - `VITE_OPENAI_API_KEY` etc.: Configure API keys for various AI service providers
   
 For more detailed deployment steps and important notes, please check:
-- `[Vercel Deployment Guide](docs/user/deployment/vercel_en.md)`
+- [Vercel Deployment Guide](docs/user/deployment/vercel_en.md)
 
 ### 3. Download Desktop Application
 Download the latest version from [GitHub Releases](https://github.com/linshenkx/prompt-optimizer/releases). We provide both **installer** and **archive** formats for each platform.
@@ -299,7 +299,7 @@ Make sure to replace `localhost:8081` with the actual address and port where you
 - **optimize-system-prompt**: Optimize system prompts to improve LLM performance
 - **iterate-prompt**: Iteratively improve mature prompts based on specific requirements
 
-For more detailed information, please refer to the `[MCP Server User Guide](docs/user/mcp-server_en.md)`.
+For more detailed information, please refer to the [MCP Server User Guide](docs/user/mcp-server_en.md).
 </details>
 
 ## ⚙️ API Key Configuration
@@ -323,7 +323,7 @@ In addition to API keys, you can configure advanced LLM parameters for each mode
 - **Gemini**: `{"temperature": 0.8, "maxOutputTokens": 2048, "topP": 0.95}`
 - **DeepSeek**: `{"temperature": 0.5, "top_p": 0.9, "frequency_penalty": 0.1}`
 
-For more detailed information about `llmParams` configuration, please refer to the `[LLM Parameters Configuration Guide](docs/developer/llm-params-guide.md)`.
+For more detailed information about `llmParams` configuration, please refer to the [LLM Parameters Configuration Guide](docs/developer/llm-params-guide.md).
 
 ### Method 2: Via Environment Variables
 Configure environment variables through the `-e` parameter when deploying with Docker:
@@ -341,12 +341,12 @@ Configure environment variables through the `-e` parameter when deploying with D
 -e VITE_CUSTOM_API_MODEL_ollama=qwen2.5:7b
 ```
 
-> 📖 **Detailed Configuration Guide**: See `[Multiple Custom Models Documentation](./docs/user/multi-custom-models_en.md)` for complete configuration methods and advanced usage
+> 📖 **Detailed Configuration Guide**: See [Multiple Custom Models Documentation](./docs/user/multi-custom-models_en.md) for complete configuration methods and advanced usage
 
 </details>
 
 ## Local Development
-For detailed documentation, see `[Development Documentation](dev.md)`
+For detailed documentation, see [Development Documentation](dev.md)
 
 <details>
 <summary>Click to view local development commands</summary>
@@ -380,17 +380,17 @@ pnpm dev:fresh        # Complete reset and restart development environment
 - [x] Prompt favorites and template management
 - [ ] Support for workspace/project management
 
-For detailed project status, see `[Project Status Document](docs/project/project-status.md)`
+For detailed project status, see [Project Status Document](docs/project/project-status.md)
 
 ## 📖 Related Documentation
 
-- `[Documentation Index](docs/README.md)` - Index of all documentation
-- `[Technical Development Guide](docs/developer/technical-development-guide.md)` - Technology stack and development specifications
-- `[LLM Parameters Configuration Guide](docs/developer/llm-params-guide.md)` - Detailed guide for advanced LLM parameter configuration
-- `[Project Structure](docs/developer/project-structure.md)` - Detailed project structure description
-- `[Project Status](docs/project/project-status.md)` - Current progress and plans
-- `[Product Requirements](docs/project/prd.md)` - Product requirements document
-- `[Vercel Deployment Guide](docs/user/deployment/vercel_en.md)` - Detailed instructions for Vercel deployment
+- [Documentation Index](docs/README.md) - Index of all documentation
+- [Technical Development Guide](docs/developer/technical-development-guide.md) - Technology stack and development specifications
+- [LLM Parameters Configuration Guide](docs/developer/llm-params-guide.md) - Detailed guide for advanced LLM parameter configuration
+- [Project Structure](docs/developer/project-structure.md) - Detailed project structure description
+- [Project Status](docs/project/project-status.md) - Current progress and plans
+- [Product Requirements](docs/project/prd.md) - Product requirements document
+- [Vercel Deployment Guide](docs/user/deployment/vercel_en.md) - Detailed instructions for Vercel deployment
 
 ## Star History
 
@@ -500,7 +500,7 @@ This project was partly inspired by [LangGPT](https://github.com/langgptai/LangG
 
 ## 📄 License
 
-This project is licensed under `[AGPL-3.0](LICENSE)`.
+This project is licensed under [AGPL-3.0](LICENSE).
 
 **In simple terms**: You can freely use, modify, and commercialize this project, but if you turn it into a website or service for others, you must share your source code.
 

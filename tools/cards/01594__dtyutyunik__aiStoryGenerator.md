@@ -51,7 +51,7 @@ related:
 
 AI Story Generator is a creative tool that leverages OpenAI's GPT-3.5-turbo model to craft captivating stories. Users can define characters, settings, genres, and plot points, and then let the AI bring their vision to life with a story tailored to their preferences.
 
-!`[Intro Screen](./client/images/IntroScreen.png)`
+![Intro Screen](./client/images/IntroScreen.png)
 
 ## Features
 
@@ -59,12 +59,12 @@ AI Story Generator is a creative tool that leverages OpenAI's GPT-3.5-turbo mode
 - **Selectable Story Length**: Choose how long you want your story to be, ranging from under 3 paragraphs to 5-8 paragraphs.
 - **Live Loading Screen**: As the AI generates your story, watch the progress on a dynamic loading bar.
 
-!`[Loading Screen](./client/images/SampleLoadingScreen.png)`
+![Loading Screen](./client/images/SampleLoadingScreen.png)
 
 - **Scrollable Display**: The generated story is presented in a scrollable container, accommodating stories of any length without overwhelming the screen.
 - **Responsive Design**: Whether on desktop or mobile, the layout adjusts to provide an optimal viewing experience.
 
-!`[Generated Story](./client/images/SampleGeneratedImage.png)`
+![Generated Story](./client/images/SampleGeneratedImage.png)
 
 ## How It Works
 

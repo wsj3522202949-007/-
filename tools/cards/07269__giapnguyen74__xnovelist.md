@@ -69,7 +69,7 @@ Depending on how much you write and which models you choose, real-world cost can
 
 Not a coder? You don't need to be. Open **[giapnguyen74.github.io/xnovelist](https://giapnguyen74.github.io/xnovelist/)** in any browser and start writing immediately — nothing to download, no sign-up, no setup. It runs entirely in your browser and saves your work to your device. AI stays off until you choose to turn it on (add a provider key in Settings, or point it at a local model).
 
-!`[Your local novel library](assets/01-novel-list-page.png)`
+![Your local novel library](assets/01-novel-list-page.png)
 
 ---
 
@@ -88,7 +88,7 @@ xnovelist is a serious tool for writing long-form fiction. You can host it on Gi
 
 It works **fully without AI**: rich-text editor, chapter outline, Story Bible (characters, locations, voice, continuity), automatic snapshots with line-level diff, find/replace across the manuscript, distraction-free mode, DOCX export. The AI-off experience is the first-class experience, not a stripped-down one.
 
-!`[The writing canvas with Story Bible entities highlighted in the prose](assets/03-character-highlight.png)`
+![The writing canvas with Story Bible entities highlighted in the prose](assets/03-character-highlight.png)
 
 When you *do* want AI, it's introduced on a dial you control — see "The AI levels" below.
 
@@ -116,17 +116,17 @@ This is how xnovelist stays neutral on the AI debate: AI is **off by default** a
 
 The meaningful line is **L2 → L3**: at L2 and below, every word the AI touches was your word first; only at L3+ does it generate new prose. You set the level, and you can lower it any time — drop to 0 and the app is identical to its AI-free self.
 
-!`[The AI level dial and provider setup in Settings](assets/02-ai-levels-setting.png)`
+![The AI level dial and provider setup in Settings](assets/02-ai-levels-setting.png)
 
 Every AI result is a proposal in the Agent panel — you Accept or Reject; nothing touches your manuscript until you do:
 
-!`[The Agent panel proposing a change](assets/04-agent-panel.png)`
+![The Agent panel proposing a change](assets/04-agent-panel.png)
 
-!`[Reviewing the AI suggestion against your own text](assets/05-agent-panel2.png)`
+![Reviewing the AI suggestion against your own text](assets/05-agent-panel2.png)
 
 With Level 3 (Co-writer) active, you can outline beats in-place and generate prose directly in the editor:
 
-!`[Outlining and writing beats in the editor](assets/06-beat-writting.png)`
+![Outlining and writing beats in the editor](assets/06-beat-writting.png)
 
 ---
 
@@ -137,7 +137,7 @@ If you write novels and want a tool that takes your work as seriously as you do 
 - **The AI sceptic.** Turn AI off (or never turn it on) and get a first-class, distraction-free writing environment.
 - **The disciplined AI-curious.** The level dial and the accept/reject Agent panel keep every AI action named, scoped, and previewed. Nothing about the AI surface is unbounded.
 
-If you want a chat-based ghostwriter, a cloud collaboration suite, or a screenplay tool, xnovelist is the wrong product. See `[`docs/NON_GOALS.md`](docs/NON_GOALS.md)`.
+If you want a chat-based ghostwriter, a cloud collaboration suite, or a screenplay tool, xnovelist is the wrong product. See [`docs/NON_GOALS.md`](docs/NON_GOALS.md).
 
 ---
 
@@ -148,7 +148,7 @@ If you want a chat-based ghostwriter, a cloud collaboration suite, or a screenpl
 - **v0.4–0.7 — The Agent engine, Levels 1 & 2.** A modular AI engine where the model only *proposes* and the app *applies* on your Accept: L1 capture/summary/continuity tools and L2 selection edits, surfaced as accept/reject cards in the Agent panel, with style/continuity-aware context and local guardrails.
 - **v0.8–1.0 — Level 3 AI, Snapshots, and reasoning controls.** Inline co-writer beat generation, automatic snapshot intervals, dynamic word counts, and per-action reasoning policies. Levels 4–5 are designed and scaffolded.
 
-Design and decision logs live under `[`works/`](works)` (the `NN-action.md` slices) and `[`docs/`](docs)`.
+Design and decision logs live under [`works/`](works) (the `NN-action.md` slices) and [`docs/`](docs).
 
 ---
 
@@ -168,7 +168,7 @@ To use AI, open Settings → AI Connections, set the level to 1+, and add a prov
 
 ## Tech stack at a glance
 
-Next.js 15 (static export, `output: "export"`) · React 19 · Tiptap 3 · Tailwind 4 · IndexedDB via `idb` · zod for schema validation · `docx` for export. Build output is a folder of static files — that is the entire deployment artefact. See `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)`.
+Next.js 15 (static export, `output: "export"`) · React 19 · Tiptap 3 · Tailwind 4 · IndexedDB via `idb` · zod for schema validation · `docx` for export. Build output is a folder of static files — that is the entire deployment artefact. See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ---
 
@@ -176,16 +176,16 @@ Next.js 15 (static export, `output: "export"`) · React 19 · Tiptap 3 · Tailwi
 
 Planning, decisions, and concept documents live under `docs/`. First-pass reading order:
 
-1. `[`docs/VISION.md`](docs/VISION.md)` — what xnovelist is, who it's for, what it isn't
-2. `[`docs/PRINCIPLES.md`](docs/PRINCIPLES.md)` — the design invariants
-3. `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)` — tech stack, folder structure, module boundaries, i18n
-4. `[`docs/STORAGE.md`](docs/STORAGE.md)` — IndexedDB, schemas, migration, export
-5. `[`docs/EDITOR.md`](docs/EDITOR.md)` — the writing experience without AI
-6. `[`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md)` — characters, locations, style, continuity
-7. `[`docs/AI.md`](docs/AI.md)` — the general AI design: the level model, BYOAI matrix, the proposer/harness split, prompt architecture, guardrails, privacy
-8. `[`docs/AI_LEVELS.md`](docs/AI_LEVELS.md)` — the per-level tool catalogue (levels 0–5)
-9. `[`docs/ROADMAP.md`](docs/ROADMAP.md)` — milestones and gates
-10. `[`docs/NON_GOALS.md`](docs/NON_GOALS.md)` — explicit cuts, including the no-proxy commitment
+1. [`docs/VISION.md`](docs/VISION.md) — what xnovelist is, who it's for, what it isn't
+2. [`docs/PRINCIPLES.md`](docs/PRINCIPLES.md) — the design invariants
+3. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — tech stack, folder structure, module boundaries, i18n
+4. [`docs/STORAGE.md`](docs/STORAGE.md) — IndexedDB, schemas, migration, export
+5. [`docs/EDITOR.md`](docs/EDITOR.md) — the writing experience without AI
+6. [`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md) — characters, locations, style, continuity
+7. [`docs/AI.md`](docs/AI.md) — the general AI design: the level model, BYOAI matrix, the proposer/harness split, prompt architecture, guardrails, privacy
+8. [`docs/AI_LEVELS.md`](docs/AI_LEVELS.md) — the per-level tool catalogue (levels 0–5)
+9. [`docs/ROADMAP.md`](docs/ROADMAP.md) — milestones and gates
+10. [`docs/NON_GOALS.md`](docs/NON_GOALS.md) — explicit cuts, including the no-proxy commitment
 
 If you only read one, read `AI.md` — it captures the most distinctive decisions in the project.
 
@@ -245,7 +245,7 @@ Tùy bạn viết nhiều hay ít và chọn mô hình nào, chi phí thực t�
 
 Không biết lập trình? Không sao cả. Mở **[giapnguyen74.github.io/xnovelist](https://giapnguyen74.github.io/xnovelist/)** trên trình duyệt bất kỳ và bắt đầu viết ngay — không cần tải, không đăng ký, không thiết lập. Nó chạy hoàn toàn trong trình duyệt và lưu việc của bạn trên thiết bị. AI vẫn tắt cho đến khi bạn chọn bật (thêm khóa nhà cung cấp trong Cài đặt, hoặc trỏ tới mô hình cục bộ).
 
-!`[Thư viện tiểu thuyết cục bộ của bạn](assets/01-novel-list-page.png)`
+![Thư viện tiểu thuyết cục bộ của bạn](assets/01-novel-list-page.png)
 
 ---
 
@@ -264,7 +264,7 @@ xnovelist là một công cụ nghiêm túc để viết tiểu thuyết dài. B
 
 Nó hoạt động **đầy đủ mà không cần AI**: trình soạn thảo văn bản định dạng, dàn ý chương, Story Bible (nhân vật, địa điểm, giọng văn, mạch liên tục), ảnh chụp nhanh tự động với so sánh theo dòng, tìm/thay trên toàn bản thảo, chế độ tập trung, xuất DOCX. Trải nghiệm không-AI là trải nghiệm hạng nhất, không phải bản bị cắt xén.
 
-!`[Khung soạn thảo với các thực thể Story Bible được tô sáng trong văn bản](assets/03-character-highlight.png)`
+![Khung soạn thảo với các thực thể Story Bible được tô sáng trong văn bản](assets/03-character-highlight.png)
 
 Khi bạn *muốn* dùng AI, nó được đưa vào qua một núm xoay bạn kiểm soát — xem "Các cấp độ AI" bên dưới.
 
@@ -292,17 +292,17 @@ Bốn quyết định sản phẩm định hình mọi lựa chọn khác:
 
 Lằn ranh quan trọng là **Cấp 2 → Cấp 3**: ở Cấp 2 trở xuống, mọi từ AI chạm vào đều vốn là từ của bạn; chỉ từ Cấp 3 trở lên AI mới sinh ra văn mới. Bạn đặt cấp độ, và có thể hạ xuống bất cứ lúc nào — về 0 thì ứng dụng giống hệt phiên bản không-AI.
 
-!`[Núm xoay cấp độ AI và thiết lập nhà cung cấp trong Cài đặt](assets/02-ai-levels-setting.png)`
+![Núm xoay cấp độ AI và thiết lập nhà cung cấp trong Cài đặt](assets/02-ai-levels-setting.png)
 
 Mọi kết quả AI là một đề xuất trong Bảng Agent — bạn Chấp nhận hoặc Từ chối; không gì chạm vào bản thảo cho đến khi bạn làm vậy:
 
-!`[Bảng Agent đề xuất một thay đổi](assets/04-agent-panel.png)`
+![Bảng Agent đề xuất một thay đổi](assets/04-agent-panel.png)
 
-!`[Đối chiếu đề xuất của AI với văn của chính bạn](assets/05-agent-panel2.png)`
+![Đối chiếu đề xuất của AI với văn của chính bạn](assets/05-agent-panel2.png)
 
 Với Cấp độ 3 (Đồng tác giả), bạn có thể phác thảo dàn ý phân đoạn (beat) tại chỗ và tạo văn xuôi trực tiếp trong trình soạn thảo:
 
-!`[Phác thảo và viết beat trực tiếp trong trình soạn thảo](assets/06-beat-writting.png)`
+![Phác thảo và viết beat trực tiếp trong trình soạn thảo](assets/06-beat-writting.png)
 
 ---
 
@@ -313,7 +313,7 @@ Nếu bạn viết tiểu thuyết và muốn một công cụ coi trọng tác 
 - **Người hoài nghi AI.** Tắt AI (hoặc không bao giờ bật) và có một môi trường viết hạng nhất, không phân tâm.
 - **Người tò mò AI nhưng có kỷ luật.** Núm xoay cấp độ và Bảng Agent chấp nhận/từ chối giữ cho mọi hành động AI đều được đặt tên, giới hạn phạm vi và xem trước. Không có gì về mặt AI là vô giới hạn.
 
-Nếu bạn muốn một "người viết thuê" dạng chat, một bộ cộng tác trên đám mây, hay công cụ viết kịch bản, thì xnovelist không phải sản phẩm dành cho bạn. Xem `[`docs/NON_GOALS.md`](docs/NON_GOALS.md)`.
+Nếu bạn muốn một "người viết thuê" dạng chat, một bộ cộng tác trên đám mây, hay công cụ viết kịch bản, thì xnovelist không phải sản phẩm dành cho bạn. Xem [`docs/NON_GOALS.md`](docs/NON_GOALS.md).
 
 ---
 
@@ -324,7 +324,7 @@ Nếu bạn muốn một "người viết thuê" dạng chat, một bộ cộng 
 - **v0.4–0.7 — Engine Agent, Cấp 1 & 2.** Một engine AI mô-đun hóa, nơi mô hình chỉ *đề xuất* còn ứng dụng *áp dụng* khi bạn Chấp nhận: các công cụ Cấp 1 (thu thập/tóm tắt/kiểm tra mạch liên tục) và chỉnh sửa đoạn chọn ở Cấp 2, hiện ra dưới dạng thẻ chấp nhận/từ chối trong Bảng Agent, với ngữ cảnh nhận biết phong cách/mạch liên tục và các kiểm tra cục bộ.
 - **v0.8–1.0 — AI Cấp 3, Ảnh chụp nhanh và điều khiển lập luận.** Tạo văn xuôi theo beat tại chỗ, cấu hình chu kỳ chụp nhanh tự động, hiển thị số từ trực tiếp, và quy tắc lập luận AI theo hành động. Cấp 4–5 đã được thiết kế và dựng khung.
 
-Nhật ký thiết kế và quyết định nằm trong `[`works/`](works)` (các lát cắt `NN-action.md`) và `[`docs/`](docs)`.
+Nhật ký thiết kế và quyết định nằm trong [`works/`](works) (các lát cắt `NN-action.md`) và [`docs/`](docs).
 
 ---
 
@@ -344,7 +344,7 @@ Thư mục `out/` đã build là toàn bộ sản phẩm triển khai — host �
 
 ## Công nghệ tổng quan
 
-Next.js 15 (xuất tĩnh, `output: "export"`) · React 19 · Tiptap 3 · Tailwind 4 · IndexedDB qua `idb` · zod để kiểm tra schema · `docx` để xuất. Kết quả build là một thư mục tệp tĩnh — đó là toàn bộ sản phẩm triển khai. Xem `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)`.
+Next.js 15 (xuất tĩnh, `output: "export"`) · React 19 · Tiptap 3 · Tailwind 4 · IndexedDB qua `idb` · zod để kiểm tra schema · `docx` để xuất. Kết quả build là một thư mục tệp tĩnh — đó là toàn bộ sản phẩm triển khai. Xem [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ---
 
@@ -352,16 +352,16 @@ Next.js 15 (xuất tĩnh, `output: "export"`) · React 19 · Tiptap 3 · Tailwin
 
 Tài liệu kế hoạch, quyết định và ý tưởng nằm trong `docs/`. Thứ tự đọc lần đầu:
 
-1. `[`docs/VISION.md`](docs/VISION.md)` — xnovelist là gì, dành cho ai, không phải là gì
-2. `[`docs/PRINCIPLES.md`](docs/PRINCIPLES.md)` — các nguyên tắc bất biến trong thiết kế
-3. `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)` — công nghệ, cấu trúc thư mục, ranh giới mô-đun, i18n
-4. `[`docs/STORAGE.md`](docs/STORAGE.md)` — IndexedDB, schema, di trú, xuất
-5. `[`docs/EDITOR.md`](docs/EDITOR.md)` — trải nghiệm viết khi không có AI
-6. `[`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md)` — nhân vật, địa điểm, phong cách, mạch liên tục
-7. `[`docs/AI.md`](docs/AI.md)` — thiết kế AI tổng quát: mô hình cấp độ, ma trận BYOAI, phân tách "đề xuất/khung điều phối", kiến trúc prompt, lan can an toàn, quyền riêng tư
-8. `[`docs/AI_LEVELS.md`](docs/AI_LEVELS.md)` — danh mục công cụ theo từng cấp (cấp 0–5)
-9. `[`docs/ROADMAP.md`](docs/ROADMAP.md)` — cột mốc và điều kiện
-10. `[`docs/NON_GOALS.md`](docs/NON_GOALS.md)` — những gì chủ động không làm, gồm cam kết không-proxy
+1. [`docs/VISION.md`](docs/VISION.md) — xnovelist là gì, dành cho ai, không phải là gì
+2. [`docs/PRINCIPLES.md`](docs/PRINCIPLES.md) — các nguyên tắc bất biến trong thiết kế
+3. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — công nghệ, cấu trúc thư mục, ranh giới mô-đun, i18n
+4. [`docs/STORAGE.md`](docs/STORAGE.md) — IndexedDB, schema, di trú, xuất
+5. [`docs/EDITOR.md`](docs/EDITOR.md) — trải nghiệm viết khi không có AI
+6. [`docs/STORY_BIBLE.md`](docs/STORY_BIBLE.md) — nhân vật, địa điểm, phong cách, mạch liên tục
+7. [`docs/AI.md`](docs/AI.md) — thiết kế AI tổng quát: mô hình cấp độ, ma trận BYOAI, phân tách "đề xuất/khung điều phối", kiến trúc prompt, lan can an toàn, quyền riêng tư
+8. [`docs/AI_LEVELS.md`](docs/AI_LEVELS.md) — danh mục công cụ theo từng cấp (cấp 0–5)
+9. [`docs/ROADMAP.md`](docs/ROADMAP.md) — cột mốc và điều kiện
+10. [`docs/NON_GOALS.md`](docs/NON_GOALS.md) — những gì chủ động không làm, gồm cam kết không-proxy
 
 Nếu chỉ đọc một tài liệu, hãy đọc `AI.md` — nó nắm những quyết định đặc trưng nhất của dự án.
 

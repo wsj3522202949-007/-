@@ -161,5 +161,5 @@ Looking for help or want to meet likeminded writers/developers? Come say hello o
 
 # License
 
-**ink** and this package is released under the MIT license. Although we don't require attribution, we'd love to know if you decide to use **ink** a project! Let us know on [Twitter](http://www.twitter.com/inkleStudios) or `[by email](mailto:info@inklestudios.com)`.
+**ink** and this package is released under the MIT license. Although we don't require attribution, we'd love to know if you decide to use **ink** a project! Let us know on [Twitter](http://www.twitter.com/inkleStudios) or [by email](mailto:info@inklestudios.com).
 View the full licence [Here](https://github.com/inkle/ink-unity-integration/blob/master/LICENCE.md)

@@ -40,7 +40,7 @@ related:
 
 <div align="center">
 
-**English** · `[简体中文](./README.zh-CN.md)`
+**English** · [简体中文](./README.zh-CN.md)
 
 **Character-driven structures, organic plots, and thematic architecture based on John Truby's *The Anatomy of Story*.**
 
@@ -155,12 +155,12 @@ Analyze my protagonist's character web and set up a four-corner opposition matri
 
 | File | Purpose |
 |---|---|
-| `[SKILL.md](./SKILL.md)` | Main Agent workflow rules, scaling guidelines, and quality gates. |
-| `[premise_7steps.md](./references/premise_7steps.md)` | 10 steps to refine premise and the 7 key structural steps. |
-| `[character_theme.md](./references/character_theme.md)` | Archetype directories, four-corner opposition, and double reversal design. |
-| `[world_symbols.md](./references/world_symbols.md)` | Symbol networks, time structures, and spatial storytelling. |
-| `[plot_22steps.md](./references/plot_22steps.md)` | In-depth breakdown of the 22 plot steps. |
-| `[scene_dialogue.md](./references/scene_dialogue.md)` | Scene weaving techniques and three-track symphonic dialogue. |
+| [SKILL.md](./SKILL.md) | Main Agent workflow rules, scaling guidelines, and quality gates. |
+| [premise_7steps.md](./references/premise_7steps.md) | 10 steps to refine premise and the 7 key structural steps. |
+| [character_theme.md](./references/character_theme.md) | Archetype directories, four-corner opposition, and double reversal design. |
+| [world_symbols.md](./references/world_symbols.md) | Symbol networks, time structures, and spatial storytelling. |
+| [plot_22steps.md](./references/plot_22steps.md) | In-depth breakdown of the 22 plot steps. |
+| [scene_dialogue.md](./references/scene_dialogue.md) | Scene weaving techniques and three-track symphonic dialogue. |
 
 related:
   - methods/网文写作最强SOP.md
@@ -172,4 +172,4 @@ related:
 
 ## License
 
-`[MIT](./LICENSE)`
+[MIT](./LICENSE)

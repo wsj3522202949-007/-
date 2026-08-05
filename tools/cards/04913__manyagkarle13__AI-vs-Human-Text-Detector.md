@@ -63,10 +63,10 @@ The repository contains:
 The repository includes screenshots of the web interface and prediction results:
 
 **Human-Written Text Prediction:**
-!`[Human-written prediction](static/screenshot-demo-1.png)`
+![Human-written prediction](static/screenshot-demo-1.png)
 
 **AI-Generated Text Prediction:**
-!`[AI-generated prediction](static/screenshot-demo-2.png)`
+![AI-generated prediction](static/screenshot-demo-2.png)
 
 ## Key Features
 

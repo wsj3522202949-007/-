@@ -39,7 +39,7 @@ related:
 
 # MGTEval
 
-!`[MGTEval workflow](./workflow.png)`
+![MGTEval workflow](./workflow.png)
 
 <p align="center">
   <a href="./README.md"><strong>English</strong></a> |
@@ -50,7 +50,7 @@ related:
 **Project Website**: [http://uncoverai.cn](http://uncoverai.cn)
 
 This is the official repo of our `ACL 2026 Demo` submission `MGTEval: An Interactive Platform for Systematic Evaluation of Machine-Generated Text Detectors` and `ICLR 2026` paper [Learning From Dictionary: Enhancing Robustness of Machine-Generated Text Detection in Zero-Shot Language via Adversarial Training](https://openreview.net/forum?id=bTcFHJo1Zk).
-For the implementation of our ICLR 2026 method **TASTE**, please navigate to `[`src/detectors/finetuned/TASTE/README.md`](src/detectors/finetuned/TASTE/README.md)`.
+For the implementation of our ICLR 2026 method **TASTE**, please navigate to [`src/detectors/finetuned/TASTE/README.md`](src/detectors/finetuned/TASTE/README.md).
 This repo introduces MGTEval, an interactive platform for systematic evaluation of machine-generated text detectors. It covers dataset building, dataset attack, detector training, and performance evaluation in one workflow.
 This work was primarily completed at Xi’an Jiaotong University (XJTU) by `Yuanfan Li` and `Qi Zhou` under the supervision of Professor `Xiaoming Liu`.
 

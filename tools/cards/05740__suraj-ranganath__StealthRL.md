@@ -47,7 +47,7 @@ related:
 [Model (Hugging Face)](https://huggingface.co/suraj-ranganath/StealthRL)  
 [Benchmark Dataset (Hugging Face)](https://huggingface.co/datasets/suraj-ranganath/StealthRL-Benchmark)
 
-!`[StealthRL Pipeline Overview](figures/StealthRL_Pipeline_Final_Final.png)`
+![StealthRL Pipeline Overview](figures/StealthRL_Pipeline_Final_Final.png)
 
 ## Abstract
 

@@ -57,14 +57,14 @@ Use our fictional company **Nexora** to practice OKR creation. The company conte
 
 | Document | Description |
 |----------|-------------|
-| `[Q4 2025 Board Update](context/nexora-docs/q4-2025-board-update.md)` | Financials, ARR, margins, cash position, risks |
-| `[Strategy Memo 2026](context/nexora-docs/strategy-memo-2026.md)` | CEO's vision, strategic pillars, priorities |
-| `[All-Hands Notes — Jan 2026](context/nexora-docs/all-hands-notes-jan-2026.md)` | Leadership updates, challenges, Q&A |
-| `[Product Roadmap H1 2026](context/nexora-docs/product-roadmap-h1-2026.md)` | AI features, enterprise hardening, tech debt |
-| `[Competitive Landscape](context/nexora-docs/competitive-landscape-q1-2026.md)` | Competitor profiles, win/loss analysis |
-| `[Sales Pipeline Report](context/nexora-docs/sales-pipeline-q1-2026.md)` | Pipeline by segment, top deals, team metrics |
-| `[Customer Success Review](context/nexora-docs/customer-success-review-q4-2025.md)` | Churn, NPS, health scores, expansion |
-| `[Hiring Plan 2026](context/nexora-docs/hiring-plan-2026.md)` | Headcount, critical roles, attrition data |
+| [Q4 2025 Board Update](context/nexora-docs/q4-2025-board-update.md) | Financials, ARR, margins, cash position, risks |
+| [Strategy Memo 2026](context/nexora-docs/strategy-memo-2026.md) | CEO's vision, strategic pillars, priorities |
+| [All-Hands Notes — Jan 2026](context/nexora-docs/all-hands-notes-jan-2026.md) | Leadership updates, challenges, Q&A |
+| [Product Roadmap H1 2026](context/nexora-docs/product-roadmap-h1-2026.md) | AI features, enterprise hardening, tech debt |
+| [Competitive Landscape](context/nexora-docs/competitive-landscape-q1-2026.md) | Competitor profiles, win/loss analysis |
+| [Sales Pipeline Report](context/nexora-docs/sales-pipeline-q1-2026.md) | Pipeline by segment, top deals, team metrics |
+| [Customer Success Review](context/nexora-docs/customer-success-review-q4-2025.md) | Churn, NPS, health scores, expansion |
+| [Hiring Plan 2026](context/nexora-docs/hiring-plan-2026.md) | Headcount, critical roles, attrition data |
 
 **Exercise:** Ask Claude to synthesize these documents into a company overview, then use it to create team-level OKRs.
 
@@ -88,32 +88,32 @@ Get different perspectives on your OKRs:
 
 | Persona | Best For | Key Focus |
 |---------|----------|-----------|
-| `[Christina Wodtke](personas/christina-wodtke.md)` | Focus & prioritization | "Is this the ONE thing?" |
-| `[John Doerr](personas/john-doerr.md)` | Ambition & alignment | "Is this ambitious enough?" |
-| `[OKR Champion](personas/okr-champion.md)` | Process & facilitation | "Have you aligned with others?" |
-| `[CEO](personas/ceo.md)` | Strategy & vision | "Does this move us toward our vision?" |
-| `[Team Member](personas/team-member.md)` | Reality & execution | "Can we actually do this?" |
+| [Christina Wodtke](personas/christina-wodtke.md) | Focus & prioritization | "Is this the ONE thing?" |
+| [John Doerr](personas/john-doerr.md) | Ambition & alignment | "Is this ambitious enough?" |
+| [OKR Champion](personas/okr-champion.md) | Process & facilitation | "Have you aligned with others?" |
+| [CEO](personas/ceo.md) | Strategy & vision | "Does this move us toward our vision?" |
+| [Team Member](personas/team-member.md) | Reality & execution | "Can we actually do this?" |
 
 ### 3. Set Ground Rules Once
 
 Define organizational OKR rules to reuse in future sessions:
 
-`[`/okr-ground-rules`](skills/okr-ground-rules.md)` or `$okr-ground-rules` - Helps you define:
+[`/okr-ground-rules`](skills/okr-ground-rules.md) or `$okr-ground-rules` - Helps you define:
 - OKR levels and cycle cadence
 - Focus limits (<=3 Objectives, 2-4 KRs)
 - OKR type expectations (aspirational, committed, learning)
 - KR design, ownership, alignment, transparency, and incentives
 
-Rules are saved in `[`context/okr-ground-rules.md`](context/okr-ground-rules.md)`.
+Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
 
 ### 4. Draft, Rewrite, Review, and Audit
 
 Use separate skills for drafting vs KR rewriting vs refinement vs strict audit:
 
-- `[`/okr-write`](skills/okr-write.md)` or `$okr-write` - Guided draft creation from scratch (one question at a time)
-- `[`/okr-outcome-kr`](skills/okr-outcome-kr.md)` or `$okr-outcome-kr` - Convert input/output KRs into stronger outcome KRs with KPI grounding
-- `[`/okr-review`](skills/okr-review.md)` or `$okr-review` - Guided refinement of an existing draft (one question at a time)
-- `[`/okr-audit`](skills/okr-audit.md)` or `$okr-audit` - Mostly autonomous expert scorecard and risk audit
+- [`/okr-write`](skills/okr-write.md) or `$okr-write` - Guided draft creation from scratch (one question at a time)
+- [`/okr-outcome-kr`](skills/okr-outcome-kr.md) or `$okr-outcome-kr` - Convert input/output KRs into stronger outcome KRs with KPI grounding
+- [`/okr-review`](skills/okr-review.md) or `$okr-review` - Guided refinement of an existing draft (one question at a time)
+- [`/okr-audit`](skills/okr-audit.md) or `$okr-audit` - Mostly autonomous expert scorecard and risk audit
 
 Backward compatibility:
 - If `/okr-review` or `$okr-review` is used for strict audit, it routes to `okr-audit`.

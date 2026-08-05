@@ -169,8 +169,8 @@ ai-slop-remover baseline [path]    record current findings as the baseline
 
 ## How it works
 
-Deterministic AST analysis, a transparent scoring formula, and a hard line on false positives. The full write-up (architecture, every detector's heuristics, the drift engine, the score math, and how it was calibrated against real repos) is in `[docs/TECHNICAL.md](docs/TECHNICAL.md)`.
+Deterministic AST analysis, a transparent scoring formula, and a hard line on false positives. The full write-up (architecture, every detector's heuristics, the drift engine, the score math, and how it was calibrated against real repos) is in [docs/TECHNICAL.md](docs/TECHNICAL.md).
 
 ## License
 
-`[MIT](LICENSE)`
+[MIT](LICENSE)

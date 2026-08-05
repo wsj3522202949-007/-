@@ -232,8 +232,8 @@ The portal keeps the host you opened (`localhost` or `127.0.0.1`) when it sends 
 - easy to start, stop, and manage services
 - data persistence through volumes
 
-📖 See `[DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md)` for detailed Docker deployment guide.
-🤖 CLI/agent automation can use the token API in `[docs/AGENT_API.md](docs/AGENT_API.md)`.
+📖 See [DOCKER_DEPLOYMENT.md](DOCKER_DEPLOYMENT.md) for detailed Docker deployment guide.
+🤖 CLI/agent automation can use the token API in [docs/AGENT_API.md](docs/AGENT_API.md).
 
 </details>
 
@@ -408,7 +408,7 @@ related:
 - do not commit runtime databases, restored snapshots, or local keys after running the stack
 - treat `/claw/` as the main product route and `/select-mode` as its public entry
 
-See `[DEPLOYMENT.md](DEPLOYMENT.md)`, `[docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md)`, `[RUN_LOCAL_WEB.md](RUN_LOCAL_WEB.md)`, `[docs/LOCAL_RUN.zh-CN.md](docs/LOCAL_RUN.zh-CN.md)`, and `[WHAT_IS_SAFE_FOR_GITHUB.md](WHAT_IS_SAFE_FOR_GITHUB.md)` for operator-focused details.
+See [DEPLOYMENT.md](DEPLOYMENT.md), [docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md), [RUN_LOCAL_WEB.md](RUN_LOCAL_WEB.md), [docs/LOCAL_RUN.zh-CN.md](docs/LOCAL_RUN.zh-CN.md), and [WHAT_IS_SAFE_FOR_GITHUB.md](WHAT_IS_SAFE_FOR_GITHUB.md) for operator-focused details.
 
 </details>
 
@@ -417,10 +417,10 @@ See `[DEPLOYMENT.md](DEPLOYMENT.md)`, `[docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMEN
 
 ## Documentation 📚
 
-- 🇨🇳 Chinese README: `[README.zh-CN.md](README.zh-CN.md)`
-- 🌐 Local run guide: `[RUN_LOCAL_WEB.md](RUN_LOCAL_WEB.md)`
-- 🌐 本地运行指南: `[docs/LOCAL_RUN.zh-CN.md](docs/LOCAL_RUN.zh-CN.md)`
-- 🛠️ Deployment guide: `[DEPLOYMENT.md](DEPLOYMENT.md)`
-- 🛠️ 部署说明: `[docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md)`
-- 🔐 GitHub safety notes: `[WHAT_IS_SAFE_FOR_GITHUB.md](WHAT_IS_SAFE_FOR_GITHUB.md)`
-- ⚖️ License: `[MIT](LICENSE)`
+- 🇨🇳 Chinese README: [README.zh-CN.md](README.zh-CN.md)
+- 🌐 Local run guide: [RUN_LOCAL_WEB.md](RUN_LOCAL_WEB.md)
+- 🌐 本地运行指南: [docs/LOCAL_RUN.zh-CN.md](docs/LOCAL_RUN.zh-CN.md)
+- 🛠️ Deployment guide: [DEPLOYMENT.md](DEPLOYMENT.md)
+- 🛠️ 部署说明: [docs/DEPLOYMENT.zh-CN.md](docs/DEPLOYMENT.zh-CN.md)
+- 🔐 GitHub safety notes: [WHAT_IS_SAFE_FOR_GITHUB.md](WHAT_IS_SAFE_FOR_GITHUB.md)
+- ⚖️ License: [MIT](LICENSE)

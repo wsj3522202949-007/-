@@ -234,13 +234,13 @@ EmpiriForge is method-aware, not method-omniscient. It is grounded in a small se
 
 See:
 
-- `[Method Sources](docs/method-sources.md)`
-- `[Source Crosswalk](docs/source-crosswalk.md)`
-- `[Reading List](docs/reading-list.md)`
-- `[Stata Agent Workflow](docs/stata-agent-workflow.md)`
-- `[Knowledge Graph Navigation](docs/knowledge-graph-navigation.md)`
-- `[Irrigation Expansion Causal-Forest Paradigm](docs/irrigation-expansion-causal-forest-paradigm.md)`
-- `[Empirical Agent Ecosystem Bridge](docs/empirical-agent-ecosystem-bridge.md)`
+- [Method Sources](docs/method-sources.md)
+- [Source Crosswalk](docs/source-crosswalk.md)
+- [Reading List](docs/reading-list.md)
+- [Stata Agent Workflow](docs/stata-agent-workflow.md)
+- [Knowledge Graph Navigation](docs/knowledge-graph-navigation.md)
+- [Irrigation Expansion Causal-Forest Paradigm](docs/irrigation-expansion-causal-forest-paradigm.md)
+- [Empirical Agent Ecosystem Bridge](docs/empirical-agent-ecosystem-bridge.md)
 
 The repository does not replace econometrics textbooks, journal policies, or human peer review. Its purpose is to make those standards easier to apply repeatedly.
 
@@ -248,7 +248,7 @@ The repository does not replace econometrics textbooks, journal policies, or hum
 
 Graphify can be used as an optional navigation layer for large empirical projects, replication packages, and notes folders. It helps an agent start from `GRAPH_REPORT.md` and focused graph queries before reading raw files. It does not replace EmpiriForge guardrails for identification, reproducibility, prediction validity, Stata execution, or figure review.
 
-See `[Knowledge Graph Navigation](docs/knowledge-graph-navigation.md)`.
+See [Knowledge Graph Navigation](docs/knowledge-graph-navigation.md).
 
 ## Quick Demo
 

@@ -50,12 +50,12 @@ Built to work with Claude Projects or any Claude-compatible interface.
 
 | Agent | Role | When to Call |
 |---|---|---|
-| `[Architect](agents/architect/prompt.md)` | Code review & pattern enforcement | Before every commit |
-| `[Security Auditor](agents/security-auditor/prompt.md)` | Security & compliance review | Any change touching APIs, storage, or credentials |
-| `[Feature Planner](agents/feature-planner/prompt.md)` | Backlog & implementation breakdown | Before starting any new feature |
-| `[Test Writer](agents/test-writer/prompt.md)` | Unit test generation | After any new Service or ViewModel |
-| `[Doc Keeper](agents/doc-keeper/prompt.md)` | Documentation maintenance | After any merged feature |
-| `[Lighthouse](agents/lighthouse/prompt.md)` | Truth, integrity & hallucination detection | Before planning, before merging, when something feels off |
+| [Architect](agents/architect/prompt.md) | Code review & pattern enforcement | Before every commit |
+| [Security Auditor](agents/security-auditor/prompt.md) | Security & compliance review | Any change touching APIs, storage, or credentials |
+| [Feature Planner](agents/feature-planner/prompt.md) | Backlog & implementation breakdown | Before starting any new feature |
+| [Test Writer](agents/test-writer/prompt.md) | Unit test generation | After any new Service or ViewModel |
+| [Doc Keeper](agents/doc-keeper/prompt.md) | Documentation maintenance | After any merged feature |
+| [Lighthouse](agents/lighthouse/prompt.md) | Truth, integrity & hallucination detection | Before planning, before merging, when something feels off |
 
 ---
 

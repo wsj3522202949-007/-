@@ -167,7 +167,7 @@ related:
 | 样式修改-文本特效/ID特效-白底雕斜.jsx | 白底雕特效，模仿字体Rampart/Shadow |
 | 样式修改-文本特效/PS特效-背景字.jsx | ID中选中一个文本框或编组用PS复制到链接图里做背景字补图  |
 
-!`[文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)`
+![文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)
 
 ### 页码链接
 | 脚本名称 | 功能描述 |

@@ -113,4 +113,4 @@ related:
 
 ## 📝 ライセンス
 
-`[MIT License](LICENSE)`
+[MIT License](LICENSE)

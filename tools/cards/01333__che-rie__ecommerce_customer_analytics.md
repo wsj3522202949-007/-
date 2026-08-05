@@ -88,15 +88,15 @@ This project analyzes customer behavior, segmentation, and revenue patterns usin
 ## 📸 Dashboard Preview
 
 ### Overview
-!`[Overview](overview.png)`
+![Overview](overview.png)
 
 ### Customers
-!`[Customers](customers.png)`
+![Customers](customers.png)
 
 ## 📄 Full Project Report
 For detailed analysis, insights, and recommendations, see the full report below:
 
-`[Download Project Report](project_report.pdf)`
+[Download Project Report](project_report.pdf)
 
 ### Revenue
-!`[Revenue](revenue.png)`
+![Revenue](revenue.png)

@@ -58,7 +58,7 @@ other MCP-aware client.
 
 | Landing | Annotated passage | Score breakdown |
 |---------|------------------|-----------------|
-| !`[Landing page](docs/screenshots/landing.png)` | !`[Highlighted spans](docs/screenshots/highlights.png)` | !`[Score panel](docs/screenshots/score_panel.png)` |
+| ![Landing page](docs/screenshots/landing.png) | ![Highlighted spans](docs/screenshots/highlights.png) | ![Score panel](docs/screenshots/score_panel.png) |
 
 ---
 
@@ -139,8 +139,8 @@ Layers 1 and 2 are **pure Python, zero dependencies, always on**. Layers 3 and
 weight, so the CLI and MCP report can show the user which evidence drove the
 verdict.
 
-See `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)` and
-`[`docs/DETECTION_METHODS.md`](docs/DETECTION_METHODS.md)` for design notes.
+See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) and
+[`docs/DETECTION_METHODS.md`](docs/DETECTION_METHODS.md) for design notes.
 
 ---
 
@@ -205,7 +205,7 @@ aislop [TEXT] [-f FILE] [--json] [--score-only]
        [--max-chars N] [--quiet]
 ```
 
-See `[`docs/USAGE.md`](docs/USAGE.md)` for full CLI examples.
+See [`docs/USAGE.md`](docs/USAGE.md) for full CLI examples.
 
 ---
 

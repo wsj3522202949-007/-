@@ -39,7 +39,7 @@ related:
 ---
 
 
-!`[Kopano Context Banner](README-bannner.jpg)`
+![Kopano Context Banner](README-bannner.jpg)
 
    ![KPGS](https://img.shields.io/badge/KPGS-ALP%23168-7b61ff) ![POC](https://img.shields.io/badge/POC-VALIDATED-00E676) ![Deploy](https://github.com/Kopano-Labs/Introduction-to-MCP/actions/workflows/deploy-web.yml/badge.svg?branch=codex/kc-sovereign-gui-full-dev)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -61,7 +61,7 @@ related:
 **Full-Stack Multi-Agent Orchestration & South African Impact Ecosystem**
 **Official Reference Implementation for the Model Context Protocol (MCP)**
 
-📧 **Contact:** `[rkholofelo@context.kopanolabs.com](mailto:rkholofelo@context.kopanolabs.com)`
+📧 **Contact:** [rkholofelo@context.kopanolabs.com](mailto:rkholofelo@context.kopanolabs.com)
 
 > *Orchestrating intelligent discussions. Unifying social context. Empowering South African innovation.*
 >
@@ -80,7 +80,7 @@ related:
 - ✅ Listed in the SafeSkill registry
 - ✅ Safe to use in production
 
-!`[Kopano SafeSkill Verified 100/100](README-safeskill-verified.png)`
+![Kopano SafeSkill Verified 100/100](README-safeskill-verified.png)
 
 ---
 
@@ -112,7 +112,7 @@ related:
 ## 🌐 Production Surface
 - **Kopano Context Studio:** [www.context.kopanolabs.com](https://www.context.kopanolabs.com)
 - **Kasilink Market:** [www.kasilink.com](https://www.kasilink.com) (Beta)
-- **Support & Governance:** `[rkholofelo@context.kopanolabs.com](mailto:rkholofelo@context.kopanolabs.com)`
+- **Support & Governance:** [rkholofelo@context.kopanolabs.com](mailto:rkholofelo@context.kopanolabs.com)
 
 ---
 

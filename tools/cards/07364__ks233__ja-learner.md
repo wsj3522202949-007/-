@@ -81,19 +81,19 @@ related:
   * 双击搜索框清空搜索内容
   * 点击链接跳转至对应的词典网站
 
-!`[demo](README/demo.gif)`
+![demo](README/demo.gif)
 
 ### 窗口吸附
 
 在主窗口的“系统设置”面板中，首先点击“选择窗口”按钮，然后把鼠标移到想要吸附的窗口，点一下左键。此时右边选框中的文字会变成“与 xxx 对齐”，把选框勾上，窗口就吸附到游戏窗口边上了。
 
-!`[attach](README/attach.gif)`
+![attach](README/attach.gif)
 
 ### 游戏文本提取
 
 本项目**并没有**内置游戏文本提取的功能，但是可以实时读取剪贴板。建议使用 [Textractor](https://github.com/Artikash/Textractor)、[manga-ocr](https://github.com/kha-white/manga-ocr) 等文本提取工具将游戏文本提取至剪贴板，然后在本软件中勾选“读取剪贴板”，即可实时同步游戏文本。配合 Textractor 的使用效果如图：
 
-!`[text-extraction](README/text-extraction.gif)`
+![text-extraction](README/text-extraction.gif)
 
 ### 参考翻译
 
@@ -142,7 +142,7 @@ Deepseek：
 
 如果对默认的 Prompt 不满意也可以自行更改，配置好 ApiKey 就可以使用 AI 翻译和解说文本了。
 
-!`[gpt](README/gpt.gif)`
+![gpt](README/gpt.gif)
 
 ### 沉浸模式
 
@@ -150,7 +150,7 @@ Deepseek：
 - CTRL + 左键拖动窗口
 - 左键拖动窗口边缘调整窗口大小
 
-!`[immersive](README/immersive.gif)`
+![immersive](README/immersive.gif)
 
 ### 添加 Anki 卡片（测试功能，默认关闭）
 
@@ -187,7 +187,7 @@ Anki 是一款经典的记忆卡片软件，它的设计理念影响了很多背
 
 自动导入的单词卡片如图所示：
 
-!`[anki](README/anki.png)`
+![anki](README/anki.png)
 
 ## 使用建议
 

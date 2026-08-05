@@ -201,7 +201,7 @@ rejected = DPO-v1 model prediction
 
 ## 示例
 
-下面的例子来自仓库中的 toy data：`[data/examples/sample_train.json](data/examples/sample_train.json)`。
+下面的例子来自仓库中的 toy data：[data/examples/sample_train.json](data/examples/sample_train.json)。
 
 **AI-like input**
 

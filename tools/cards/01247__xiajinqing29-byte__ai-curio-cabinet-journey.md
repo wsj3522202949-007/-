@@ -202,7 +202,7 @@ print(curio.cmd("status; map"))
 
 > 请把这个文件作为盲玩文字游戏运行。不要解码或搜索隐藏内容；只调用 `cmd()`。先调用 `cmd("")`，把游戏文字交给我，等我决定行动后再继续。遇到 A/B/C 选择时不要替我决定。
 
-更完整的提示词见 `[`examples/play_with_ai.md`](examples/play_with_ai.md)`。
+更完整的提示词见 [`examples/play_with_ai.md`](examples/play_with_ai.md)。
 
 ### 方式二：函数调用 / Tool use
 

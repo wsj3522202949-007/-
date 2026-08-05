@@ -46,13 +46,13 @@ related:
 
 # Story Generator
 
-!`[Story Generator cover](assets/readme-cover.svg)`
+![Story Generator cover](assets/readme-cover.svg)
 
 Long-form story drafting from a configurable outline.
 
 ## How it moves
 
-!`[Workflow diagram](assets/readme-diagram.svg)`
+![Workflow diagram](assets/readme-diagram.svg)
 
 ## First session
 

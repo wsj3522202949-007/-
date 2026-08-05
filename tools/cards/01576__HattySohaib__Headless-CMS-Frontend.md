@@ -53,7 +53,7 @@ This application is designed to communicate with the central [Irada Backend API]
 
 ---
 >**Dashboard:**
-!`[Dashboard Screenshot](src/assets/dashboard-dark.png)`
+![Dashboard Screenshot](src/assets/dashboard-dark.png)
 ---
 
 ## ✨ Key Features

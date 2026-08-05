@@ -102,4 +102,4 @@ The config is required - generation will fail without it.
 
 ## License
 
-`[MIT](./LICENSE)`
+[MIT](./LICENSE)

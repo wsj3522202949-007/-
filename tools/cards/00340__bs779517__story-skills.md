@@ -122,7 +122,7 @@ Markdown is a simple way to format text using easy symbols. It’s perfect for w
 - `**bold text**` makes words bold.
 - `*italic text*` makes words italic.
 - Lists use `-` or `*` followed by space.
-- Links use ``[text](url)`` format.
+- Links use `[text](url)` format.
 
 story-skills shows your markdown as formatted text while you write. This helps keep your story neat without special skills.
 

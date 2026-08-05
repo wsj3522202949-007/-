@@ -106,10 +106,10 @@ GOOGLE_GENAI_USE_VERTEXAI=FALSE
 ### 2. SAM 3 Model Hosting (FastAPI & GCP Cloud Run - Optional)
 The whiteboard drawing sequence generator can utilize instance segmentation for advanced multi-pass drawing. We host a self-contained FastAPI server that wraps the **Segment Anything Model 3 (SAM 3)**.
 - **Optional Setup**: If no `SAM_API_URL` is provided, the pipeline will skip the segmentation phase and run the whiteboard animation in single-pass mode. This allows new users to start running the pipeline directly using just their Gemini API key.
-- **Hosting Instructions**: For complete setup instructions on obtaining weights, configuring the Docker container, and deploying to Google Cloud Run with GPU accelerators (NVIDIA L4), please refer to the detailed `[SAM 3 Hosting Guide](./sam3-hosting/README.md)` in the `sam3-hosting/` folder.
+- **Hosting Instructions**: For complete setup instructions on obtaining weights, configuring the Docker container, and deploying to Google Cloud Run with GPU accelerators (NVIDIA L4), please refer to the detailed [SAM 3 Hosting Guide](./sam3-hosting/README.md) in the `sam3-hosting/` folder.
 
 ### 3. Pipeline Configuration Settings (`config.py`)
-Core configuration parameters are set in `[genai-pipeline/config.py](./genai-pipeline/config.py)`:
+Core configuration parameters are set in [genai-pipeline/config.py](./genai-pipeline/config.py):
 - **`SAM_API_URL`**: Set this to your deployed SAM 3 Cloud Run endpoint (e.g., `https://sam3-service-xxxx-xx.a.run.app/predict`). If left as an empty string `""`, SAM3 segmentation is skipped, and whiteboard animations are drawn in single-pass mode.
 - **`MODEL_NAME`**: The model used for the Director Agent (default: `gemini-2.5-pro`).
 - **`IMAGE_GEN_MODEL`**: The image generation model used for drawing line art (default: `gemini-3-pro-image`).
@@ -117,8 +117,8 @@ Core configuration parameters are set in `[genai-pipeline/config.py](./genai-pip
 
 ### 4. Python Environment & Dependencies
 Set up your Python environment (Conda environment recommended) and install the verified dependencies:
-- **Core GenAI Pipeline**: Install dependencies via the root `[requirements.txt](./requirements.txt)`.
-- **SAM 3 Model Server**: Install dependencies via `[sam3-hosting/requirements.txt](./sam3-hosting/requirements.txt)` if not using the Docker image.
+- **Core GenAI Pipeline**: Install dependencies via the root [requirements.txt](./requirements.txt).
+- **SAM 3 Model Server**: Install dependencies via [sam3-hosting/requirements.txt](./sam3-hosting/requirements.txt) if not using the Docker image.
 - *Refer to the [How to Run & View Outputs](#-how-to-run--view-outputs) section below for installation and CLI execution steps.*
 
 ---
@@ -129,13 +129,13 @@ Set up your Python environment (Conda environment recommended) and install the v
 Depending on the component you are running, install the appropriate requirements:
 
 - **For the Core GenAI Pipeline**:
-  Install the main dependencies in your Python/Conda environment using the root `[requirements.txt](./requirements.txt)`:
+  Install the main dependencies in your Python/Conda environment using the root [requirements.txt](./requirements.txt):
   ```bash
   pip install -r requirements.txt
   ```
 
 - **For the SAM 3 Self-Hosting Server**:
-  If you are running or building the SAM 3 endpoint locally (instead of using the pre-configured `[Dockerfile](./sam3-hosting/Dockerfile)`), install the dependencies listed in `[sam3-hosting/requirements.txt](./sam3-hosting/requirements.txt)`:
+  If you are running or building the SAM 3 endpoint locally (instead of using the pre-configured [Dockerfile](./sam3-hosting/Dockerfile)), install the dependencies listed in [sam3-hosting/requirements.txt](./sam3-hosting/requirements.txt):
   ```bash
   pip install -r sam3-hosting/requirements.txt
   ```

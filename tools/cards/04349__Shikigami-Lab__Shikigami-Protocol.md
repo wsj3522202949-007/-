@@ -58,7 +58,7 @@ related:
 
 <br>
 
-[Quick start](#quick-start) · [Example personas](#example-personas) · [Features](#features) · [Discussions](https://github.com/Shikigami-Lab/Shikigami-Protocol/discussions) · [License](#license-community) · [Documentation](#documentation) · `[Changelog](CHANGELOG.md)`
+[Quick start](#quick-start) · [Example personas](#example-personas) · [Features](#features) · [Discussions](https://github.com/Shikigami-Lab/Shikigami-Protocol/discussions) · [License](#license-community) · [Documentation](#documentation) · [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -70,7 +70,7 @@ Most AI chat tools reset to zero when you close the tab. Shikigami Protocol is b
 - **Reflection + ASE** — background inner monologue while you're quiet; breaks the silence when urgency builds, not a dumb timer.
 - **Group chat** — multiple personas in one session, streamed with clear attribution.
 
-!`[Shikigami Protocol UI: Multiple themes — light, dark, and more](assets/readme/ui-themes.png)`
+![Shikigami Protocol UI: Multiple themes — light, dark, and more](assets/readme/ui-themes.png)
 
 The interface ships with multiple built-in themes, customizable sidebars, and a guided onboarding flow — beautiful out of the box.
 
@@ -214,7 +214,7 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ### FAQ
 
-> For complex issues see the `[full setup guide](docs/SETUP_FIRST_RUN.en.md)`.
+> For complex issues see the [full setup guide](docs/SETUP_FIRST_RUN.en.md).
 
 - **Blank page or can't connect on :7788** — the backend takes 5–15 seconds to start; wait and refresh. If it still fails, check the terminal for the specific error.
 - **Invalid API key / no response** — the variable name in `.env` must match the preset name in `config/app.yaml` (e.g. preset `Gemini-2.5` → variable `GEMINI_2_5_API_KEY`).
@@ -227,11 +227,11 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ## Features
 
-!`[Shikigami Protocol Core Architecture (Whiteboard Style)](assets/readme/shikigami_architecture_excalidraw.png)`
+![Shikigami Protocol Core Architecture (Whiteboard Style)](assets/readme/shikigami_architecture_excalidraw.png)
 
 ### 🧠 Memory System (Soul)
 
-!`[Shikigami Protocol Memory System: fact extraction, vector retrieval, and weight decay](assets/readme/memory-demo.png)`
+![Shikigami Protocol Memory System: fact extraction, vector retrieval, and weight decay](assets/readme/memory-demo.png)
 
 - **Long-term Facts**: Periodic LLM extraction into persistent JSON with Jaccard deduplication.
 - **Vector Retrieval**: Hybrid ChromaDB search for precise recall of details, even months later.
@@ -242,7 +242,7 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ### ❤️ Emotion & Affinity (Bones)
 
-!`[Shikigami Protocol Emotion & Affinity: energy, emotion layers, and relationship tiers](assets/readme/emotion-affinity.png)`
+![Shikigami Protocol Emotion & Affinity: energy, emotion layers, and relationship tiers](assets/readme/emotion-affinity.png)
 
 - **Emotion Engine**: Real-time state machine affecting tone and TTS sentiment.
 - **Energy System**:
@@ -252,7 +252,7 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ### 💭 Autonomous Drive (Will)
 
-!`[Shikigami Protocol Autonomous Drive: inner reflection state and proactive message](assets/readme/autonomous-demo.png)`
+![Shikigami Protocol Autonomous Drive: inner reflection state and proactive message](assets/readme/autonomous-demo.png)
 
 - **Background Reflection**:
   - **Inner Monologue**: AI thinks and daydreams while you are quiet.
@@ -339,7 +339,7 @@ shikigami-protocol/
 └── docs/                  # GETTING_STARTED.*, SETUP_FIRST_RUN.*, profile_prompts.*
 ```
 
-To author your own persona, use `profiles/example_luna.json` or `profiles/example_mochi.json` as a template. Full field reference: `[profile_prompts.en.md](docs/profile_prompts.en.md)`.
+To author your own persona, use `profiles/example_luna.json` or `profiles/example_mochi.json` as a template. Full field reference: [profile_prompts.en.md](docs/profile_prompts.en.md).
 
 <a id="documentation"></a>
 
@@ -347,10 +347,10 @@ To author your own persona, use `profiles/example_luna.json` or `profiles/exampl
 
 | Doc | Purpose |
 |---|---|
-| `[GETTING_STARTED.en.md](docs/GETTING_STARTED.en.md)` / `[.zh.md](docs/GETTING_STARTED.zh.md)` | **Start here** |
-| `[ARCHITECTURE_REFERENCE.en.md](docs/ARCHITECTURE_REFERENCE.en.md)` / `[.zh.md](docs/ARCHITECTURE_REFERENCE.zh.md)` | Architecture & module boundaries |
-| `[SETUP_FIRST_RUN.en.md](docs/SETUP_FIRST_RUN.en.md)` / `[.zh.md](docs/SETUP_FIRST_RUN.zh.md)` | Install, init, Docker, troubleshooting |
-| `[profile_prompts.en.md](docs/profile_prompts.en.md)` / `[.zh.md](docs/profile_prompts.zh.md)` | Persona JSON field reference |
+| [GETTING_STARTED.en.md](docs/GETTING_STARTED.en.md) / [.zh.md](docs/GETTING_STARTED.zh.md) | **Start here** |
+| [ARCHITECTURE_REFERENCE.en.md](docs/ARCHITECTURE_REFERENCE.en.md) / [.zh.md](docs/ARCHITECTURE_REFERENCE.zh.md) | Architecture & module boundaries |
+| [SETUP_FIRST_RUN.en.md](docs/SETUP_FIRST_RUN.en.md) / [.zh.md](docs/SETUP_FIRST_RUN.zh.md) | Install, init, Docker, troubleshooting |
+| [profile_prompts.en.md](docs/profile_prompts.en.md) / [.zh.md](docs/profile_prompts.zh.md) | Persona JSON field reference |
 
 When the app is running, open `/docs-viewer.html?doc=GETTING_STARTED.en.md` directly in the UI.
 
@@ -367,14 +367,14 @@ Need help, or want to share your custom persona? Join our community:
 
 ## License & community
 
-This repository is licensed under `[**AGPL-3.0**](LICENSE)`.
+This repository is licensed under [**AGPL-3.0**](LICENSE).
 
 - **Local / self-hosted use**: free to use, modify, and redistribute under AGPL terms.
 - **Network service / SaaS**: if you offer the modified program over a network, you must comply with AGPL source-offer obligations.
-- **Contributing**: PRs welcome — demo GIFs/screenshots, translations, bug reports (OS + Python version + logs). Read `[CONTRIBUTING.md](CONTRIBUTING.md)` first and sign off each commit with `git commit -s` per `[DCO 1.1](DCO.md)`.
-- **Security**: Report vulnerabilities privately; see `[SECURITY.md](SECURITY.md)`.
+- **Contributing**: PRs welcome — demo GIFs/screenshots, translations, bug reports (OS + Python version + logs). Read [CONTRIBUTING.md](CONTRIBUTING.md) first and sign off each commit with `git commit -s` per [DCO 1.1](DCO.md).
+- **Security**: Report vulnerabilities privately; see [SECURITY.md](SECURITY.md).
 
-*This section is a summary, not legal advice; the `[LICENSE](LICENSE)` and `[DCO](DCO.md)` texts prevail.*
+*This section is a summary, not legal advice; the [LICENSE](LICENSE) and [DCO](DCO.md) texts prevail.*
 
 related:
   - methods/人物思维蒸馏法.md

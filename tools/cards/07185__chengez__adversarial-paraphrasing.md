@@ -50,15 +50,15 @@ Adversarial Paraphrasing is a universal, training-free attack that humanizes AI-
 ## 🧠 Overview
 Adversarial paraphrasing is a training-free attack framework that universally humanizes any AI-generated text to evade detection more effectively. Our approach leverages an off-the-shelf instruction-following LLM to paraphrase AI-generated content under the guidance of an AI text detector, producing adversarial examples that are specifically optimized to bypass detection.
 
-!`[Adversarial Paraphrasing Algorithm](readme_imgs/algorithm.png)`
+![Adversarial Paraphrasing Algorithm](readme_imgs/algorithm.png)
 
 > **Key Insight**: Most, if not all, high-performing detectors tend to converge toward a common distribution that characterizes human-authored text. Consequently, if a paraphraser is guided to evade detection by a well-trained detector, its outputs will naturally align more closely with this shared, human-like distribution. As a result, the generated text becomes more difficult to detect—not only by the detector used for guidance, but also by others, since all are ideally calibrated to the same underlying distribution of human-written text.
 
 Ours experiments show that our attack is both broadly effective and highly transferable across several detection systems.
 
-!`[Main Results](readme_imgs/main_res.png)`
+![Main Results](readme_imgs/main_res.png)
 
-For questions or feedback, please email `[Yize Cheng](mailto:yzcheng@cs.umd.edu)` and `[Vinu Sankar Sadasivan](mailto:vinu@cs.umd.edu)`.
+For questions or feedback, please email [Yize Cheng](mailto:yzcheng@cs.umd.edu) and [Vinu Sankar Sadasivan](mailto:vinu@cs.umd.edu).
 
 
 ## 📁 Repository Structure

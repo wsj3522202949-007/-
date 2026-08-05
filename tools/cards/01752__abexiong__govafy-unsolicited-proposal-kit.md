@@ -112,7 +112,7 @@ flowchart TD
     class Start start
 ```
 
-Full explanation of each test with FAR citations is in `[`references/guide.md`](./references/guide.md)` Section 2, and the eligibility self-assessment worksheet is in Appendix E.
+Full explanation of each test with FAR citations is in [`references/guide.md`](./references/guide.md) Section 2, and the eligibility self-assessment worksheet is in Appendix E.
 
 ---
 
@@ -143,7 +143,7 @@ Both audiences use the same underlying content. The static Word documents and th
 If you don't use Claude Code, Cursor, or any other AI coding agent, this is the fastest path:
 
 1. Click the green **"Code"** button at the top of this repo and choose **"Download ZIP"**
-2. Open the `[`downloads/`](./downloads)` folder
+2. Open the [`downloads/`](./downloads) folder
 3. Open the master guide (`Govafy Guide to Writing Unsolicited Proposals.docx`) in Microsoft Word, Google Docs, or Apple Pages — read it cover to cover
 4. Open the sample closest to your situation (e.g., `Specific Sample 1 - SentinelMind (DCSA).docx`) — use it as a template, replace every fictional detail with your own real company name, personnel, numbers, and patent information
 5. Have a federal contracts or procurement attorney review the final document before submitting
@@ -317,26 +317,26 @@ Every time you invoke the kit through an AI agent, the agent greets you and asks
 
 ### The master guide
 
-- **`[`references/guide.md`](./references/guide.md)`** — *The Govafy Guide to Writing Unsolicited Proposals*. 12 sections covering eligibility, format, FAR 15.609 proprietary data markings, writing for evaluators, submission logistics, post-submission behavior, sample picking, and 9 appendices including an eligibility self-assessment worksheet and a pre-submission checklist.
+- **[`references/guide.md`](./references/guide.md)** — *The Govafy Guide to Writing Unsolicited Proposals*. 12 sections covering eligibility, format, FAR 15.609 proprietary data markings, writing for evaluators, submission logistics, post-submission behavior, sample picking, and 9 appendices including an eligibility self-assessment worksheet and a pre-submission checklist.
 
 ### General templates (use when picking a structure)
 
 | Template | When to use | Fictional example |
 |---|---|---|
-| `[Innovation / R&D](./references/general-samples/01-innovation-rd.md)` | Novel technology, patent, or research effort aimed at a research-oriented agency | *Nova Materials* → ONR |
-| `[Mission-Solution](./references/general-samples/02-mission-solution.md)` | Services or operational solution to a known mission need, innovative *approach* — **most broadly applicable** | *Meridian Workforce* → VA |
-| `[Crisis / Rapid-Response](./references/general-samples/03-crisis-rapid-response.md)` | Turnkey capability for an urgent or emerging need | *RapidResponse Water* → EPA |
+| [Innovation / R&D](./references/general-samples/01-innovation-rd.md) | Novel technology, patent, or research effort aimed at a research-oriented agency | *Nova Materials* → ONR |
+| [Mission-Solution](./references/general-samples/02-mission-solution.md) | Services or operational solution to a known mission need, innovative *approach* — **most broadly applicable** | *Meridian Workforce* → VA |
+| [Crisis / Rapid-Response](./references/general-samples/03-crisis-rapid-response.md) | Turnkey capability for an urgent or emerging need | *RapidResponse Water* → EPA |
 
 ### Agency-specific samples (use when your target agency matches, or when the teaching situation matches)
 
 | Sample | Teaching moment | Target agency |
 |---|---|---|
-| `[SentinelMind](./references/specific-samples/01-sentinelmind-dcsa.md)` | Protecting proprietary data in a security/intelligence context | DCSA |
-| `[NeuroEdge](./references/specific-samples/02-neuroedge-ussocom.md)` | Positioning a commercial dual-use technology for SOF mission use | USSOCOM |
-| `[ForgeForward](./references/specific-samples/03-forgeforward-mcsc.md)` | **How to propose a next-generation innovation when the agency already has something similar** | MCSC |
-| `[FedFacility IQ](./references/specific-samples/04-fedfacility-iq-gsa-pbs.md)` | Pitching operational/IT to a civilian real-property agency | GSA PBS |
-| `[LeadFed](./references/specific-samples/05-leadfed-opm.md)` | Targeting a successor office when the obvious program has been dismantled | OPM |
-| `[ReadyRelief](./references/specific-samples/06-readyrelief-fema.md)` | Crisis/rapid-response template applied to a real disaster-response agency | FEMA |
+| [SentinelMind](./references/specific-samples/01-sentinelmind-dcsa.md) | Protecting proprietary data in a security/intelligence context | DCSA |
+| [NeuroEdge](./references/specific-samples/02-neuroedge-ussocom.md) | Positioning a commercial dual-use technology for SOF mission use | USSOCOM |
+| [ForgeForward](./references/specific-samples/03-forgeforward-mcsc.md) | **How to propose a next-generation innovation when the agency already has something similar** | MCSC |
+| [FedFacility IQ](./references/specific-samples/04-fedfacility-iq-gsa-pbs.md) | Pitching operational/IT to a civilian real-property agency | GSA PBS |
+| [LeadFed](./references/specific-samples/05-leadfed-opm.md) | Targeting a successor office when the obvious program has been dismantled | OPM |
+| [ReadyRelief](./references/specific-samples/06-readyrelief-fema.md) | Crisis/rapid-response template applied to a real disaster-response agency | FEMA |
 
 **All samples are explicitly fictional.** Company names, personnel, patent numbers, pilot data, prices, and email addresses are invented. Agencies, regulations, program names, and mission language are real. Never let a fictional detail from a sample leak into a real submission.
 
@@ -344,14 +344,14 @@ Every time you invoke the kit through an AI agent, the agent greets you and asks
 
 ## 🤝 How to contribute
 
-Found a typo? Spotted a stale FAR citation after a FAC update? Have a better way to explain Section 7? Contributions are welcome. See `[`CONTRIBUTING.md`](./CONTRIBUTING.md)` for the full guide. The short version:
+Found a typo? Spotted a stale FAR citation after a FAC update? Have a better way to explain Section 7? Contributions are welcome. See [`CONTRIBUTING.md`](./CONTRIBUTING.md) for the full guide. The short version:
 
 1. Fork the repo on GitHub.
 2. Edit the Markdown file(s) in `references/`.
 3. Open a pull request describing what you changed and why.
 4. If you edit a Markdown file, don't worry about regenerating the `.docx` — a maintainer will do that on merge.
 
-For bug reports, unclear explanations, or feature requests, open an `[Issue](../../issues)` on GitHub.
+For bug reports, unclear explanations, or feature requests, open an [Issue](../../issues) on GitHub.
 
 ---
 
@@ -359,8 +359,8 @@ For bug reports, unclear explanations, or feature requests, open an `[Issue](../
 
 This repository uses a **dual license** because it contains two different kinds of material:
 
-- **Code and configuration** (`SKILL.md`, any scripts, GitHub Actions workflows) — licensed under the `[MIT License](./LICENSE)`.
-- **Written content** (the master guide, the nine sample proposals, this README) — licensed under `[Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE-CONTENT)`.
+- **Code and configuration** (`SKILL.md`, any scripts, GitHub Actions workflows) — licensed under the [MIT License](./LICENSE).
+- **Written content** (the master guide, the nine sample proposals, this README) — licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE-CONTENT).
 
 Both licenses permit unrestricted use, modification, and commercial redistribution. **CC BY 4.0 additionally requires attribution to Govafy.com** when the written content is used or adapted — a simple "Based on the Govafy.com Unsolicited Proposal Kit, CC BY 4.0" credit line is enough.
 
@@ -384,5 +384,5 @@ related:
 
 ## 💬 Questions or contact
 
-- **Issues and feature requests:** `[Open an issue on GitHub](../../issues)`
+- **Issues and feature requests:** [Open an issue on GitHub](../../issues)
 - **Website:** [govafy.com](https://govafy.com)

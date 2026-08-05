@@ -60,7 +60,7 @@ Emoji-Story is a creative and innovative AI-based short story generator that uti
 
 I created Emoji-Story as a short, fun and educational project while exploring AWS (Amazon Web Services) Cloud. The project combines technology and creativity, showcasing an accessible interaction using AI and cloud computing.
 Heres an overview of the emoji-story networks and services
-!`[Emoji-story-network-diagram](./emoji-story-network-diagram.png)`
+![Emoji-story-network-diagram](./emoji-story-network-diagram.png)
 
 ## Technologies Used
 
@@ -110,6 +110,6 @@ Once you've set up Emoji-Story, using it is simple and intuitive:
 
 ## License
 
-Emoji-Story is licensed under the `[MIT License](LICENSE)`, which means it's open source and free to use, modify, and distribute.
+Emoji-Story is licensed under the [MIT License](LICENSE), which means it's open source and free to use, modify, and distribute.
 
 Thank you for exploring Emoji-Story! I hope you enjoy using it as much as I enjoyed creating it. If you have any questions, feedback, or ideas, please don't hesitate to reach out. Happy storytelling! 📖✨🚀

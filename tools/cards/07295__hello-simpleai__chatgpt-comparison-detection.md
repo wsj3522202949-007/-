@@ -67,7 +67,7 @@ The first version of the HC3 datasets are now available on 🤗 Huggingface Data
 - [HC3-Chinese](https://www.modelscope.cn/datasets/simpleai/HC3-Chinese)
 
 
-> Train/Test splits & filtered versions of the paper, ref to Google Drive links in `[HC3/README.md](HC3/README.md)`.
+> Train/Test splits & filtered versions of the paper, ref to Google Drive links in [HC3/README.md](HC3/README.md).
 
 ### Dataset Copyright
 

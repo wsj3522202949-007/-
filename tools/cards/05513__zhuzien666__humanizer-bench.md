@@ -164,7 +164,7 @@ class MyDetector(BaseDetector):
 ```
 
 Attacks (`BaseAttack.transform`) and datasets (`BaseDataset.__iter__`) follow the same
-pattern. See `[`CONTRIBUTING.md`](CONTRIBUTING.md)`.
+pattern. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Roadmap
 
@@ -181,4 +181,4 @@ pattern. See `[`CONTRIBUTING.md`](CONTRIBUTING.md)`.
 
 ## License
 
-`[MIT](LICENSE)`.
+[MIT](LICENSE).

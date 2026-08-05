@@ -78,7 +78,7 @@ The assistant uses **retrieval-augmented generation**: relevant lore, manuscript
 Structured lore files (character, location, faction, event, item) are embedded and stored in `content/{novelId}/lore-index.json`.
 
 - **Default (`embeddingProvider: "current"` in `ai-config.json`)** — **Voyage** `voyage-3` (1024-d) via HTTPS REST. Requires `VOYAGE_API_KEY`. Without it, lore side degrades to keyword / heuristic matching.
-- **Optional** — **Gemini Embedding** when `embeddingProvider` is set to `"gemini"` in Admin; reindex uses `[`lib/ai/embeddings-gemini.ts`](lib/ai/embeddings-gemini.ts)` and `GEMINI_API_KEY`. A **full reindex** is required after switching providers.
+- **Optional** — **Gemini Embedding** when `embeddingProvider` is set to `"gemini"` in Admin; reindex uses [`lib/ai/embeddings-gemini.ts`](lib/ai/embeddings-gemini.ts) and `GEMINI_API_KEY`. A **full reindex** is required after switching providers.
 
 ### Manuscript RAG
 
@@ -91,13 +91,13 @@ At chat time for manuscript retrieval:
 
 1. **HyDE** — Groq generates a short hypothetical prose passage that matches the user’s intent
 2. That text is embedded (default: OpenRouter) and scored against chunks with cosine similarity plus keyword and entity-style boosts
-3. Top chunks are returned (see `[`lib/ai/manuscript-chat-retrieval.ts`](lib/ai/manuscript-chat-retrieval.ts)`)
+3. Top chunks are returned (see [`lib/ai/manuscript-chat-retrieval.ts`](lib/ai/manuscript-chat-retrieval.ts))
 
 Keep **`embeddingProvider` on `current`** unless you intentionally standardize on Gemini embeddings for your indexes and understand the implications for query-time embedding alignment.
 
 ### Global Bible & chapter distillation
 
-On **reindex**, each chapter can be **distilled** (summary, entities, tags) via **Gemini** (`[`lib/ai/chapter-distillation.ts`](lib/ai/chapter-distillation.ts)`). Summaries feed **Global Bible** generation or incremental patching (`[`lib/ai/global-bible.ts`](lib/ai/global-bible.ts)`). Model IDs come from `ai-config.json` (`distillationModel`, `bibleRebuildModel`, `biblePatchModel`). If `GEMINI_API_KEY` is unset, distillation and Global Bible generation are skipped.
+On **reindex**, each chapter can be **distilled** (summary, entities, tags) via **Gemini** ([`lib/ai/chapter-distillation.ts`](lib/ai/chapter-distillation.ts)). Summaries feed **Global Bible** generation or incremental patching ([`lib/ai/global-bible.ts`](lib/ai/global-bible.ts)). Model IDs come from `ai-config.json` (`distillationModel`, `bibleRebuildModel`, `biblePatchModel`). If `GEMINI_API_KEY` is unset, distillation and Global Bible generation are skipped.
 
 ### How retrieval works in chat
 
@@ -117,7 +117,7 @@ Use **Reindex RAG** from the editor AI sidebar or the reindex API. Modes include
 ## AI configuration
 
 - **Environment** — API keys in `.env.local` (see below).
-- **Runtime settings** — `/admin` reads and writes **`ai-config.json`** at the root of the **GitHub content repo** (not this app repo). Schema: `[`types/ai-config.ts`](types/ai-config.ts)` (`distillationModel`, `bibleRebuildModel`, `biblePatchModel`, `embeddingProvider`, `geminiEmbeddingModel`).
+- **Runtime settings** — `/admin` reads and writes **`ai-config.json`** at the root of the **GitHub content repo** (not this app repo). Schema: [`types/ai-config.ts`](types/ai-config.ts) (`distillationModel`, `bibleRebuildModel`, `biblePatchModel`, `embeddingProvider`, `geminiEmbeddingModel`).
 
 ---
 
@@ -130,7 +130,7 @@ Use **Reindex RAG** from the editor AI sidebar or the reindex API. Modes include
 - **Groq** — chat completions and HyDE expansion
 - **Voyage** — lore embeddings (REST, no `voyageai` SDK)
 - **OpenRouter** — manuscript embeddings (REST)
-- **Gemini (Google AI)** — REST for distillation, Global Bible, and optional embeddings (`[`lib/ai/gemini.ts`](lib/ai/gemini.ts)`, `[`lib/ai/embeddings-gemini.ts`](lib/ai/embeddings-gemini.ts)`)
+- **Gemini (Google AI)** — REST for distillation, Global Bible, and optional embeddings ([`lib/ai/gemini.ts`](lib/ai/gemini.ts), [`lib/ai/embeddings-gemini.ts`](lib/ai/embeddings-gemini.ts))
 - **gray-matter** — lore frontmatter
 
 ---
@@ -238,10 +238,10 @@ Deploy on [Vercel](https://vercel.com/) or any Node host that supports Next.js. 
 
 | Doc | Contents |
 |-----|----------|
-| `[docs/design-docs.md](docs/design-docs.md)` | Architecture, content schema, data flow |
-| `[docs/spec/ai-rag-plan.md](docs/spec/ai-rag-plan.md)` | Lore + RAG + AI routes (original spec) |
-| `[docs/nextjs-coding-guide.md](docs/nextjs-coding-guide.md)` | Next.js 16 / React 19 conventions |
-| `[docs/ui-ux.md](docs/ui-ux.md)` | UI stack and component patterns |
+| [docs/design-docs.md](docs/design-docs.md) | Architecture, content schema, data flow |
+| [docs/spec/ai-rag-plan.md](docs/spec/ai-rag-plan.md) | Lore + RAG + AI routes (original spec) |
+| [docs/nextjs-coding-guide.md](docs/nextjs-coding-guide.md) | Next.js 16 / React 19 conventions |
+| [docs/ui-ux.md](docs/ui-ux.md) | UI stack and component patterns |
 
 This project targets **Next.js 16** — see `node_modules/next/dist/docs/` for framework APIs.
 
@@ -255,4 +255,4 @@ related:
 
 ## License
 
-This project is licensed under the `[MIT License](LICENSE)`.
+This project is licensed under the [MIT License](LICENSE).

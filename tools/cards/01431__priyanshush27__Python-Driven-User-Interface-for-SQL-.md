@@ -105,5 +105,5 @@ This project demonstrates how data analysts can build tools that bridge technica
 ## 📬 Contact
 - [LinkedIn](https://www.linkedin.com/in/priyanshu-s-9b030a366/?trk=opento_sprofile_topcard)
 - [GitHub](https://github.com/priyanshush27)
-- `[Email](mailto:priyanshush2722@gmail.com)`
+- [Email](mailto:priyanshush2722@gmail.com)
 

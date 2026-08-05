@@ -70,7 +70,7 @@ from human prose:
 - Editor/journalist write-ups on AI tells (Washington Post, 2025)
 
 Trained text/image/audio classifiers will slot in behind the same
-`DetectSignal` interface without changing the API. See `[docs/METHOD.md](docs/METHOD.md)`.
+`DetectSignal` interface without changing the API. See [docs/METHOD.md](docs/METHOD.md).
 
 ## Install
 

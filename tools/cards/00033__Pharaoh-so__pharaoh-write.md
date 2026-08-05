@@ -200,4 +200,4 @@ related:
 
 MIT. Fork it, ship it, keep it private - whatever works.
 
-See `[LICENSE](LICENSE)`.
+See [LICENSE](LICENSE).

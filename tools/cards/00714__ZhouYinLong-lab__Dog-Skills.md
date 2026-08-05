@@ -189,124 +189,124 @@ Once installed, skills trigger automatically when Claude detects a matching task
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`comprehensive-thinking`](comprehensive-thinking/)` | "全面思考这个问题 / think comprehensively about this" |
-| `[`first-principles`](first-principles/)` | "从第一性原理出发" / "从本质出发重新思考" / "think from first principles" |
-| `[`storm-research`](storm-research/)` | "用 STORM 方法做技术调研" / "做一份深度研究简报" / "Stanford STORM research" |
-| `[`feynman-learning`](feynman-learning/)` | "用费曼学习法帮我理解" / "用费曼技巧深度学习" / "Feynman technique" |
-| `[`gpt-researcher`](gpt-researcher/)` | "帮我做一份 LLM Agent 框架的深度调研" / "调研 2025 年 AI 安全最佳实践" / "deep research on quantum computing" |
-| `[`hv-analysis`](hv-analysis/)` | "用横纵分析法研究一下Cursor / deep research on a product using HV analysis" |
-| `[`nuwa`](nuwa-skill/)` | "蒸馏 Paul Graham 的思维方式" / "分析张一鸣的决策框架" / "造一个 skill" |
-| `[`last30days`](last30days-skill/)` | "/last30days Cursor vs Copilot" / "research what people think about..." |
-| `[`life-designer`](life-designer/)` | "帮我设计人生，我最近有点迷茫 / life design — help me figure out my next move / 我想生成三个奥德赛计划" |
-| `[`ljg-blind`](ljg-blind/)` | "扫描我的思维盲区 / 照一照我有什么盲区 / 我昨天想漏了什么 / 检查认知盲区" |
-| `[`ljg-book`](ljg-book/)` | "帮我拆一下《思考，快与慢》 / analyze this book's x→f→f(x)" |
-| `[`ljg-constraint`](ljg-constraint/)` | "找这个领域的约束 / 分析这个角色的三层约束 / 这个行业的硬约束是什么 / 为什么产品和增长总吵架" |
-| `[`ljg-rank`](ljg-rank/)` | "给这个领域降秩 / 找这个领域的根骨架 / 背后的生成器是什么 / 把复杂领域砍到极简" |
-| `[`ljg-roundtable`](ljg-roundtable/)` | "开个圆桌讨论AI创造力 / 请几个人辩论自由意志 / 多方视角讨论这个议题" |
-| `[`ljg-skills`](ljg-skills/)` | "安装 ljg 技能集 / ljg 有哪些技能 / ljg-skills 思维工具 / 用什么思维工具分析约束" |
-| `[`scientific-research`](scientific-research/)` | "帮我做一份关于 XX 的科学研究综述" / "systematic literature review" / "学术文献调研" |
-| `[`thinking-toolkit`](thinking-toolkit/)` | "帮我做校准预测" / "对这三个方案做决策矩阵" / "用贝叶斯更新我的判断" / "沙盘推演未来走向" |
+| [`comprehensive-thinking`](comprehensive-thinking/) | "全面思考这个问题 / think comprehensively about this" |
+| [`first-principles`](first-principles/) | "从第一性原理出发" / "从本质出发重新思考" / "think from first principles" |
+| [`storm-research`](storm-research/) | "用 STORM 方法做技术调研" / "做一份深度研究简报" / "Stanford STORM research" |
+| [`feynman-learning`](feynman-learning/) | "用费曼学习法帮我理解" / "用费曼技巧深度学习" / "Feynman technique" |
+| [`gpt-researcher`](gpt-researcher/) | "帮我做一份 LLM Agent 框架的深度调研" / "调研 2025 年 AI 安全最佳实践" / "deep research on quantum computing" |
+| [`hv-analysis`](hv-analysis/) | "用横纵分析法研究一下Cursor / deep research on a product using HV analysis" |
+| [`nuwa`](nuwa-skill/) | "蒸馏 Paul Graham 的思维方式" / "分析张一鸣的决策框架" / "造一个 skill" |
+| [`last30days`](last30days-skill/) | "/last30days Cursor vs Copilot" / "research what people think about..." |
+| [`life-designer`](life-designer/) | "帮我设计人生，我最近有点迷茫 / life design — help me figure out my next move / 我想生成三个奥德赛计划" |
+| [`ljg-blind`](ljg-blind/) | "扫描我的思维盲区 / 照一照我有什么盲区 / 我昨天想漏了什么 / 检查认知盲区" |
+| [`ljg-book`](ljg-book/) | "帮我拆一下《思考，快与慢》 / analyze this book's x→f→f(x)" |
+| [`ljg-constraint`](ljg-constraint/) | "找这个领域的约束 / 分析这个角色的三层约束 / 这个行业的硬约束是什么 / 为什么产品和增长总吵架" |
+| [`ljg-rank`](ljg-rank/) | "给这个领域降秩 / 找这个领域的根骨架 / 背后的生成器是什么 / 把复杂领域砍到极简" |
+| [`ljg-roundtable`](ljg-roundtable/) | "开个圆桌讨论AI创造力 / 请几个人辩论自由意志 / 多方视角讨论这个议题" |
+| [`ljg-skills`](ljg-skills/) | "安装 ljg 技能集 / ljg 有哪些技能 / ljg-skills 思维工具 / 用什么思维工具分析约束" |
+| [`scientific-research`](scientific-research/) | "帮我做一份关于 XX 的科学研究综述" / "systematic literature review" / "学术文献调研" |
+| [`thinking-toolkit`](thinking-toolkit/) | "帮我做校准预测" / "对这三个方案做决策矩阵" / "用贝叶斯更新我的判断" / "沙盘推演未来走向" |
 
 ### 💻 Development
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`archify`](archify/)` | "画工作流/时序/数据流/生命周期图 / Mermaid转图 / JSON驱动架构图 / 双主题SVG" |
-| `[`architecture-diagram`](architecture-diagram/)` | "帮我画一个微服务架构图 / Generate an architecture diagram for my system / 画一个 AWS serverless 架构图" |
-| `[`cc-dispatch`](cc-dispatch/)` | "拆一个 Task Package 给 Claude Code" / "验收这份完成报告" |
-| `[`codex-claude-pm`](codex-claude-pm/)` | "Codex 作为 PM 帮我分配任务给 Claude Code" / "拆分 task package" / "Codex 审查实现结果" |
-| `[`fireworks-tech-graph`](fireworks-tech-graph/)` | "画一张RAG架构图，暗黑风格 / generate a microservices diagram in blueprint style" |
-| `[`code-review`](code-review/)` | "帮我审查代码" / "/code-review"→工程质量 / "做对抗式审查" / "adversarial review"→攻击视角 |
-| `[`website-cloner`](website-cloner/)` | "克隆这个网站" / "帮我复刻这个页面" / "/clone-website https://..." |
-| `[`claude-to-im`](claude-to-im-skill/)` | "帮我把 Claude 连到 Telegram" / "setup claude-to-im" / "在手机上跟 Claude 聊天" |
-| `[`superpowers`](superpowers/)` | "开始一个新功能开发" / "帮我按 Superpowers 流程来" / "brainstorm this feature" |
-| `[`planning-with-files`](planning-with-files/)` | "plan this feature" / "帮我做开发规划" / "记录这个设计决策" |
-| `[`code-simplifier`](code-simplifier/)` | "简化刚才生成的代码" / "优化这个模块的可读性" / "/simplify" |
-| `[`webapp-testing`](webapp-testing/)` | "测一下登录流程" / "部署前跑截图对比" / "帮我写 e2e 测试" |
-| `[`ralph-loop`](ralph-loop/)` | "自动迭代完成这些 story" / "启动循环开发" / "批量实现 PRD 任务" |
-| `[`repo-evaluator`](repo-evaluator/)` | "评估这个 GitHub 仓库" / "这个开源项目靠谱吗" / "对比这三个类似项目" |
-| `[`mcp-builder`](mcp-builder/)` | "帮我创建一个 MCP Server" / "把这个 API 包装成 MCP 工具" / "build an MCP server" |
-| `[`neat-freak`](neat-freak/)` | "整理一下项目文档 / sync up, tidy up docs, audit the rules" |
+| [`archify`](archify/) | "画工作流/时序/数据流/生命周期图 / Mermaid转图 / JSON驱动架构图 / 双主题SVG" |
+| [`architecture-diagram`](architecture-diagram/) | "帮我画一个微服务架构图 / Generate an architecture diagram for my system / 画一个 AWS serverless 架构图" |
+| [`cc-dispatch`](cc-dispatch/) | "拆一个 Task Package 给 Claude Code" / "验收这份完成报告" |
+| [`codex-claude-pm`](codex-claude-pm/) | "Codex 作为 PM 帮我分配任务给 Claude Code" / "拆分 task package" / "Codex 审查实现结果" |
+| [`fireworks-tech-graph`](fireworks-tech-graph/) | "画一张RAG架构图，暗黑风格 / generate a microservices diagram in blueprint style" |
+| [`code-review`](code-review/) | "帮我审查代码" / "/code-review"→工程质量 / "做对抗式审查" / "adversarial review"→攻击视角 |
+| [`website-cloner`](website-cloner/) | "克隆这个网站" / "帮我复刻这个页面" / "/clone-website https://..." |
+| [`claude-to-im`](claude-to-im-skill/) | "帮我把 Claude 连到 Telegram" / "setup claude-to-im" / "在手机上跟 Claude 聊天" |
+| [`superpowers`](superpowers/) | "开始一个新功能开发" / "帮我按 Superpowers 流程来" / "brainstorm this feature" |
+| [`planning-with-files`](planning-with-files/) | "plan this feature" / "帮我做开发规划" / "记录这个设计决策" |
+| [`code-simplifier`](code-simplifier/) | "简化刚才生成的代码" / "优化这个模块的可读性" / "/simplify" |
+| [`webapp-testing`](webapp-testing/) | "测一下登录流程" / "部署前跑截图对比" / "帮我写 e2e 测试" |
+| [`ralph-loop`](ralph-loop/) | "自动迭代完成这些 story" / "启动循环开发" / "批量实现 PRD 任务" |
+| [`repo-evaluator`](repo-evaluator/) | "评估这个 GitHub 仓库" / "这个开源项目靠谱吗" / "对比这三个类似项目" |
+| [`mcp-builder`](mcp-builder/) | "帮我创建一个 MCP Server" / "把这个 API 包装成 MCP 工具" / "build an MCP server" |
+| [`neat-freak`](neat-freak/) | "整理一下项目文档 / sync up, tidy up docs, audit the rules" |
 
 ### 🎨 Design & Frontend
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`algorithmic-art`](algorithmic-art/)` | "生成一幅流场艺术画" / "用 p5.js 画分形" / "create generative art" |
-| `[`animation-craft`](animation-craft/)` | "审查一下这个组件的动画" / "这个动效怎么感觉怪怪的" / "review my animations" |
-| `[`apple-design`](apple-design/)` | "做一个 iOS 风格的底部抽屉" / "像 Apple 那样丝滑的弹窗" / "create fluid gesture animation" |
-| `[`article-poster`](article-poster/)` | "把这篇文章做成信息图海报" / "生成知识卡片"→数据可视化风 |
-| `[`brand-workshop`](brand-workshop/)` | "帮我做品牌全案设计" / "run brand workshop for my startup" / "设计Logo和标语" |
-| `[`canvas-design`](canvas-design/)` | "帮我设计活动海报" / "生成宣传单页"→通用设计风 |
-| `[`dashi-ppt`](dashi-ppt/)` | "做PPT导出PPTX" / "浏览器里编辑幻灯片" / "12套主题选一套做演示" |
-| `[`design-buddy`](design-buddy/)` | "给这篇文章配图" / "画个用户旅程图" / "做公众号排版" / "生成故事分镜" |
-| `[`dog-frontier`](dog-frontier/)` | "帮我设计一个 AI SaaS 落地页" / "审查这个仪表盘的 UX" / "生成设计系统" / "反AI味审查" |
-| `[`dog-ppt`](dog-ppt/)` | "帮我做PPT但不知道用哪个工具" / "选哪个PPT skill" / "怎么做论文答辩PPT" |
-| `[`dog-poster`](dog-poster/)` | "帮我做海报"【先问风格再路由】 / "同主题三种风格各来一张" / "poster studio" |
-| `[`excalidraw-diagram`](excalidraw-diagram/)` | "画个架构草图，我之后还要改" / "用 Excalidraw 画个流程图" / "create a hand-drawn diagram" |
-| `[`html-video`](html_video/)` | "把这篇文章做成视频" / "用这个 GitHub 仓库生成一个介绍视频" / "做一个产品宣传动画" |
-| `[`huashu-design`](huashu-design/)` | "帮我设计一个AI产品落地页的视觉风格 / recommend design philosophy for my brand" |
-| `[`ljg-card`](ljg-card/)` | "把这段话铸成一张信息图 / cast this content into a PNG visual card" |
-| `[`lottie-animation`](lottie-animation/)` | "帮我做一个心跳动效" / "生成 Lottie 动画" / "create a Lottie animation" |
-| `[`pixel-art`](pixel-art/)` | "画一幅像素画" / "做一个等距像素场景" / "create pixel art" |
-| `[`presentation-design`](presentation-design/)` | "设计演示方案板" / "做一套投资人Pitch视觉方案" / "design presentation board" |
-| `[`slack-gif-creator`](slack-gif-creator/)` | "做一张 Slack 动图" / "把录屏转 GIF 发 Slack" / "create animated emoji" |
-| `[`soviet-storybook-grotesque`](soviet-storybook-grotesque/)` | "把这张照片变成苏联童书风" / "东欧绘本风格插画" |
-| `[`text-logic-diagram`](text-logic-diagram/)` | "把这段论述画成逻辑图" / "文章结构可视化" / "递进/层次/对比/矩阵图" |
-| `[`theme-factory`](theme-factory/)` | "给幻灯片换一个科技风主题" / "生成一套品牌配色" / "apply a dark theme" |
-| `[`torn-paper-collage-poster`](torn-paper-collage-poster/)` | "做一张撕纸拼贴海报" / "Zine 风格展览海报"→手工拼贴艺术风 |
-| `[`ui-ux-pro-max`](ui-ux-pro-max-skill/)` | "推荐一个 SaaS landing page 的配色" / "生成 design system" / "dashboard 用什么字体" |
+| [`algorithmic-art`](algorithmic-art/) | "生成一幅流场艺术画" / "用 p5.js 画分形" / "create generative art" |
+| [`animation-craft`](animation-craft/) | "审查一下这个组件的动画" / "这个动效怎么感觉怪怪的" / "review my animations" |
+| [`apple-design`](apple-design/) | "做一个 iOS 风格的底部抽屉" / "像 Apple 那样丝滑的弹窗" / "create fluid gesture animation" |
+| [`article-poster`](article-poster/) | "把这篇文章做成信息图海报" / "生成知识卡片"→数据可视化风 |
+| [`brand-workshop`](brand-workshop/) | "帮我做品牌全案设计" / "run brand workshop for my startup" / "设计Logo和标语" |
+| [`canvas-design`](canvas-design/) | "帮我设计活动海报" / "生成宣传单页"→通用设计风 |
+| [`dashi-ppt`](dashi-ppt/) | "做PPT导出PPTX" / "浏览器里编辑幻灯片" / "12套主题选一套做演示" |
+| [`design-buddy`](design-buddy/) | "给这篇文章配图" / "画个用户旅程图" / "做公众号排版" / "生成故事分镜" |
+| [`dog-frontier`](dog-frontier/) | "帮我设计一个 AI SaaS 落地页" / "审查这个仪表盘的 UX" / "生成设计系统" / "反AI味审查" |
+| [`dog-ppt`](dog-ppt/) | "帮我做PPT但不知道用哪个工具" / "选哪个PPT skill" / "怎么做论文答辩PPT" |
+| [`dog-poster`](dog-poster/) | "帮我做海报"【先问风格再路由】 / "同主题三种风格各来一张" / "poster studio" |
+| [`excalidraw-diagram`](excalidraw-diagram/) | "画个架构草图，我之后还要改" / "用 Excalidraw 画个流程图" / "create a hand-drawn diagram" |
+| [`html-video`](html_video/) | "把这篇文章做成视频" / "用这个 GitHub 仓库生成一个介绍视频" / "做一个产品宣传动画" |
+| [`huashu-design`](huashu-design/) | "帮我设计一个AI产品落地页的视觉风格 / recommend design philosophy for my brand" |
+| [`ljg-card`](ljg-card/) | "把这段话铸成一张信息图 / cast this content into a PNG visual card" |
+| [`lottie-animation`](lottie-animation/) | "帮我做一个心跳动效" / "生成 Lottie 动画" / "create a Lottie animation" |
+| [`pixel-art`](pixel-art/) | "画一幅像素画" / "做一个等距像素场景" / "create pixel art" |
+| [`presentation-design`](presentation-design/) | "设计演示方案板" / "做一套投资人Pitch视觉方案" / "design presentation board" |
+| [`slack-gif-creator`](slack-gif-creator/) | "做一张 Slack 动图" / "把录屏转 GIF 发 Slack" / "create animated emoji" |
+| [`soviet-storybook-grotesque`](soviet-storybook-grotesque/) | "把这张照片变成苏联童书风" / "东欧绘本风格插画" |
+| [`text-logic-diagram`](text-logic-diagram/) | "把这段论述画成逻辑图" / "文章结构可视化" / "递进/层次/对比/矩阵图" |
+| [`theme-factory`](theme-factory/) | "给幻灯片换一个科技风主题" / "生成一套品牌配色" / "apply a dark theme" |
+| [`torn-paper-collage-poster`](torn-paper-collage-poster/) | "做一张撕纸拼贴海报" / "Zine 风格展览海报"→手工拼贴艺术风 |
+| [`ui-ux-pro-max`](ui-ux-pro-max-skill/) | "推荐一个 SaaS landing page 的配色" / "生成 design system" / "dashboard 用什么字体" |
 
 ### 📝 Content & Writing
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`baokuan-title-generator`](baokuan-title-generator/)` | "帮我起个爆款标题" / "这篇文章叫什么好" / "标题优化" / "多组标题" |
-| `[`baoyu-skills`](baoyu-skills/)` | "帮我生成幻灯片" / "画一个架构图" / "翻译这篇文章" / "压缩图片" |
-| `[`humanizer-zh`](humanizer-zh/)` | "帮我把这段文字去AI味"【改已有文本】 / "改写得更像人写的" |
-| `[`humanize-ppt`](humanize-ppt/)` | "帮我把这份资料做成PPT" / "给我的deck做演讲体检" / "PPT渲染质检" |
-| `[`khazix-writer`](khazix-writer/)` | "写公众号文章, 帮我写稿子, 续写这篇文章 / "write a WeChat article", "continue writing this draft in Khazix's style", "turn this brief into a long-form article", "expand on this outline"" |
-| `[`ppt-master`](ppt-master/)` | "帮我把这份PDF做成PPT" / "生成一份麦肯锡风的10页幻灯片" / "make a PowerPoint from this document" |
-| `[`writing-assistant`](writing-assistant/)` | "帮我写一篇博客" / "写一份项目报告" / "draft a memo" |
-| `[`scientific-writing-editor`](scientific-writing-editor/)` | "润色这篇论文" / "写基金申请书" / "回复审稿意见" |
-| `[`ghostwriter`](ghostwriter/)` | "帮我回这封邮件（用我的语气）"【从零创作】 / "draft a reply in my voice" |
-| `[`huashu-proofreading`](huashu-proofreading/)` | "这篇文章AI味太重了，帮我审校一下 / proofread this article to reduce AI detection rate" |
-| `[`huashu-slides`](huashu-slides/)` | "帮我把这份资料做成PPT / make a presentation from this document" |
+| [`baokuan-title-generator`](baokuan-title-generator/) | "帮我起个爆款标题" / "这篇文章叫什么好" / "标题优化" / "多组标题" |
+| [`baoyu-skills`](baoyu-skills/) | "帮我生成幻灯片" / "画一个架构图" / "翻译这篇文章" / "压缩图片" |
+| [`humanizer-zh`](humanizer-zh/) | "帮我把这段文字去AI味"【改已有文本】 / "改写得更像人写的" |
+| [`humanize-ppt`](humanize-ppt/) | "帮我把这份资料做成PPT" / "给我的deck做演讲体检" / "PPT渲染质检" |
+| [`khazix-writer`](khazix-writer/) | "写公众号文章, 帮我写稿子, 续写这篇文章 / "write a WeChat article", "continue writing this draft in Khazix's style", "turn this brief into a long-form article", "expand on this outline"" |
+| [`ppt-master`](ppt-master/) | "帮我把这份PDF做成PPT" / "生成一份麦肯锡风的10页幻灯片" / "make a PowerPoint from this document" |
+| [`writing-assistant`](writing-assistant/) | "帮我写一篇博客" / "写一份项目报告" / "draft a memo" |
+| [`scientific-writing-editor`](scientific-writing-editor/) | "润色这篇论文" / "写基金申请书" / "回复审稿意见" |
+| [`ghostwriter`](ghostwriter/) | "帮我回这封邮件（用我的语气）"【从零创作】 / "draft a reply in my voice" |
+| [`huashu-proofreading`](huashu-proofreading/) | "这篇文章AI味太重了，帮我审校一下 / proofread this article to reduce AI detection rate" |
+| [`huashu-slides`](huashu-slides/) | "帮我把这份资料做成PPT / make a presentation from this document" |
 
 ### 📚 Learning & Teaching
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`exam-tutor`](tutor/)` | "帮我生成第5章复习资料" / "分析往年卷的高频考点" / "为这道题写一份习题讲解" |
-| `[`dog-tutor`](dog-tutor/)` | "帮我生成 Linux 入门教程" / "编制一份 R 语言学习材料" / "设计课程大纲" |
-| `[`learning-studio`](learning-studio/)` | "把机器学习做成一套课程" / "compare 三本书的观点" / "苏格拉底阅读模式" |
-| `[`teach`](teach/)` | "teach me Rust" / "教我学吉他" / "帮我做一个交互式Python入门" / "interactive learning" |
+| [`exam-tutor`](tutor/) | "帮我生成第5章复习资料" / "分析往年卷的高频考点" / "为这道题写一份习题讲解" |
+| [`dog-tutor`](dog-tutor/) | "帮我生成 Linux 入门教程" / "编制一份 R 语言学习材料" / "设计课程大纲" |
+| [`learning-studio`](learning-studio/) | "把机器学习做成一套课程" / "compare 三本书的观点" / "苏格拉底阅读模式" |
+| [`teach`](teach/) | "teach me Rust" / "教我学吉他" / "帮我做一个交互式Python入门" / "interactive learning" |
 
 ### 💼 Business & Strategy
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`creator-buddy`](creator-buddy/)` | "找选题 / 小红书搜热点 / 公众号爆款分析 / B站趋势 / 赛道分析" |
-| `[`dbskill`](dbskill/)` | "/问诊 我的商业模式有问题吗" / "/好问题" / "/决策系统" / "/对标" |
-| `[`huashu-data-pro`](huashu-data-pro/)` | "分析这份投放数据做ROI复盘 / analyze this Excel data and create a report" |
-| `[`ljg-invest`](ljg-invest/)` | "分析这个项目值不值得投 / 写一份投资分析报告 / 这个公司是秩序创造机器吗" |
-| `[`minimalist-entrepreneur`](minimalist-entrepreneur/)` | "帮我验证一个创业想法 / 一人公司怎么做 / 我该不该做这个功能 / validate my startup idea" |
+| [`creator-buddy`](creator-buddy/) | "找选题 / 小红书搜热点 / 公众号爆款分析 / B站趋势 / 赛道分析" |
+| [`dbskill`](dbskill/) | "/问诊 我的商业模式有问题吗" / "/好问题" / "/决策系统" / "/对标" |
+| [`huashu-data-pro`](huashu-data-pro/) | "分析这份投放数据做ROI复盘 / analyze this Excel data and create a report" |
+| [`ljg-invest`](ljg-invest/) | "分析这个项目值不值得投 / 写一份投资分析报告 / 这个公司是秩序创造机器吗" |
+| [`minimalist-entrepreneur`](minimalist-entrepreneur/) | "帮我验证一个创业想法 / 一人公司怎么做 / 我该不该做这个功能 / validate my startup idea" |
 
 ### 🔍 Tools & Discovery
 
 | Skill | Try saying... |
 |-------|---------------|
-| `[`find-skills`](vercel-labs-skills/)` | "有没有能做 PR 描述的 skill" / "find a skill for code review" |
-| `[`read-buddy`](read-buddy/)` | "读网页/RSS/播客/飞书/OCR/小宇宙/X分析——帮你把信息拿回来" |
-| `[`topic-collector`](topic-collector/)` | "今日AI热点 / 采集选题 / 看看今天有什么新闻 / daily AI briefing" |
-| `[`weread-skill`](weread-skill/)` | "帮我查查我的书架" / "分析我的阅读统计" / "搜索某本书的评分" |
-| `[`wx2md`](wx2md/)` | "帮我把这个公众号文章转成 Markdown" / "导出微信文章" / "WeChat article to Markdown" |
-| `[`token-optimizer`](token-optimizer/)` | "优化项目 token 消耗" / "cto audit" / "帮我清理上下文" / "检查 token 用量" |
-| `[`handshake`](handshake/)` | "/handshake 校准协作风格" / "帮我做 whoami 画像" / "calibrate how we work" |
-| `[`markitdown`](markitdown/)` | "帮我把这个PDF转成Markdown / convert this Word doc to Markdown for Obsidian / 用MarkItDown批量转换文档" |
-| `[`vibe-sing`](vibe-sing/)` | "/vibe-sing 给我来一首" / "/vibe-sing pro 完整版" / "写完了唱首歌" |
-| `[`agency-agents-zh`](agency-agents-zh/)` | "帮我找一个XX专家 / 切换到代码审查员角色 / 用什么角色做小红书运营 / 加载安全工程师角色 / 以产品经理身份分析 / 作为前端开发者实现" |
-| `[`family-doctor`](family-doctor/)` | "分析我最近一周的健康数据" / "血压高帮我查原因" / "解读体检报告" / "制定减脂计划" |
+| [`find-skills`](vercel-labs-skills/) | "有没有能做 PR 描述的 skill" / "find a skill for code review" |
+| [`read-buddy`](read-buddy/) | "读网页/RSS/播客/飞书/OCR/小宇宙/X分析——帮你把信息拿回来" |
+| [`topic-collector`](topic-collector/) | "今日AI热点 / 采集选题 / 看看今天有什么新闻 / daily AI briefing" |
+| [`weread-skill`](weread-skill/) | "帮我查查我的书架" / "分析我的阅读统计" / "搜索某本书的评分" |
+| [`wx2md`](wx2md/) | "帮我把这个公众号文章转成 Markdown" / "导出微信文章" / "WeChat article to Markdown" |
+| [`token-optimizer`](token-optimizer/) | "优化项目 token 消耗" / "cto audit" / "帮我清理上下文" / "检查 token 用量" |
+| [`handshake`](handshake/) | "/handshake 校准协作风格" / "帮我做 whoami 画像" / "calibrate how we work" |
+| [`markitdown`](markitdown/) | "帮我把这个PDF转成Markdown / convert this Word doc to Markdown for Obsidian / 用MarkItDown批量转换文档" |
+| [`vibe-sing`](vibe-sing/) | "/vibe-sing 给我来一首" / "/vibe-sing pro 完整版" / "写完了唱首歌" |
+| [`agency-agents-zh`](agency-agents-zh/) | "帮我找一个XX专家 / 切换到代码审查员角色 / 用什么角色做小红书运营 / 加载安全工程师角色 / 以产品经理身份分析 / 作为前端开发者实现" |
+| [`family-doctor`](family-doctor/) | "分析我最近一周的健康数据" / "血压高帮我查原因" / "解读体检报告" / "制定减脂计划" |
 
 ---
 
@@ -1055,7 +1055,7 @@ brainstorming → using-git-worktrees → writing-plans → subagent-driven-deve
 
 **Install**: `cp -r dashi-ppt/ ~/.claude/skills/dashi-ppt/`
 
-> 完整 PPT 技能对比与选型指南：`[`ppt/README.md`](ppt/README.md)`
+> 完整 PPT 技能对比与选型指南：[`ppt/README.md`](ppt/README.md)
 
 ---
 

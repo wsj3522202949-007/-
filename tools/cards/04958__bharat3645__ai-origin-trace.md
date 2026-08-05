@@ -217,4 +217,4 @@ and the aggregator's direction-labeling logic is tested directly.
 
 ## License
 
-MIT. See `[LICENSE](LICENSE)`. Copyright (c) 2026 Bharat Singh Parihar.
+MIT. See [LICENSE](LICENSE). Copyright (c) 2026 Bharat Singh Parihar.

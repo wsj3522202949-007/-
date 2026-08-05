@@ -169,11 +169,11 @@ To address this issue, two balancing strategies were used simultaneously:
 - Class-weighted CrossEntropyLoss
 
 # Class Distribution 
-!`[CL](Distr.png)`
+![CL](Distr.png)
 
 
 # Class Imbalance
-!`[Imb](DataDisbalance.png)`
+![Imb](DataDisbalance.png)
 
 
 This significantly improved minority class recognition performance.
@@ -213,7 +213,7 @@ Features:
 - AI-generated explanations
 
 # Interface:
-!`[Int](InterFace.png)`
+![Int](InterFace.png)
 
 
 The interface was designed for ease of use and rapid interaction.
@@ -237,10 +237,10 @@ The interface was designed for ease of use and rapid interaction.
 
 # Results
 # Confusion Metrics EfficientNet-B4
-!`[Conf](Confusion.png)`
+![Conf](Confusion.png)
 
 # F1 Score Metrics 
-!`[f1](F1Score.png)`
+![f1](F1Score.png)
 
 The trained EfficientNet-B4 classifier achieved strong performance on HAM10000.
 

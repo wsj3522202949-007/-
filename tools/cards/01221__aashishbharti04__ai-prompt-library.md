@@ -230,11 +230,11 @@ After my answers, summarize my day's top priority in one sentence.
 4. Iterate — add "make it shorter / more formal / give 3 options" to refine.
 
 ## 🤝 Contributing
-Got a prompt that works great? PRs welcome! See `[CONTRIBUTING.md](CONTRIBUTING.md)`.
+Got a prompt that works great? PRs welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
 Keep prompts tested, generic (use `[BRACKETS]` for variables), and in the right category.
 
 ## 📄 License
-`[MIT](LICENSE)` — free to use, share, and build on.
+[MIT](LICENSE) — free to use, share, and build on.
 
 related:
   - methods/网文写作最强SOP.md

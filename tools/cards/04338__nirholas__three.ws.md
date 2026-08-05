@@ -51,7 +51,7 @@ https://github.com/user-attachments/assets/d52515d1-cb04-4dd6-98bd-fef233312dc4
 
 ### Meet the avatar: a live 3D model, right here in markdown
 
-Drag to rotate. This is not an image or a video: it is an interactive 3D model rendered natively by GitHub. The avatar was generated from a one-line text prompt on [three.ws Forge](https://three.ws/forge) (free tier), decimated to 1,200 triangles, and embedded as ASCII STL with `[readme-3d](packages/readme-3d)`, our open-source toolkit for putting 3D models in any GitHub README, issue, or discussion.
+Drag to rotate. This is not an image or a video: it is an interactive 3D model rendered natively by GitHub. The avatar was generated from a one-line text prompt on [three.ws Forge](https://three.ws/forge) (free tier), decimated to 1,200 triangles, and embedded as ASCII STL with [readme-3d](packages/readme-3d), our open-source toolkit for putting 3D models in any GitHub README, issue, or discussion.
 
 ```stl
 solid threews_avatar
@@ -8458,7 +8458,7 @@ solid threews_avatar
 endsolid threews_avatar
 ```
 
-<sub>Want your own? `npx readme-3d your-model.glb` converts any GLB into a paste-ready markdown block. `[How it works →](packages/readme-3d)`</sub>
+<sub>Want your own? `npx readme-3d your-model.glb` converts any GLB into a paste-ready markdown block. [How it works →](packages/readme-3d)</sub>
 
 ### $THREE
 
@@ -8564,7 +8564,7 @@ At its core, it does five things:
 
 5. **Embed** — distributes the agent as an `<agent-3d>` web component that anyone can drop into a page, or as one of five purpose-built widget types (turntable, animation gallery, talking agent, passport card, hotspot tour) with Open Graph and oEmbed support built in.
 
-The backend is a set of serverless-style handlers (in `api/`) served in production by a single Google Cloud Run container (`[server/index.mjs](server/index.mjs)`), backed by Neon Postgres for metadata, Cloudflare R2 for model storage, and Upstash Redis for rate limiting. It exposes a full OAuth 2.1 authorization server and an MCP (Model Context Protocol) endpoint so external AI systems can drive avatars programmatically.
+The backend is a set of serverless-style handlers (in `api/`) served in production by a single Google Cloud Run container ([server/index.mjs](server/index.mjs)), backed by Neon Postgres for metadata, Cloudflare R2 for model storage, and Upstash Redis for rate limiting. It exposes a full OAuth 2.1 authorization server and an MCP (Model Context Protocol) endpoint so external AI systems can drive avatars programmatically.
 
 three.ws is production-ready and serves [three.ws](https://three.ws) live on Google Cloud Run. The entire stack — viewer, agent runtime, contracts, backend, and web component — is open source under Apache 2.0.
 
@@ -8827,24 +8827,24 @@ Image→3D is the same endpoint with `image_urls: ["https://…/front.png", …]
 
 ### From Claude, Cursor, or any MCP client
 
-The **3D Studio MCP server** at `https://three.ws/api/mcp-3d` exposes the full pipeline as 15 tools — `text_to_3d`, `image_to_3d`, `auto_rig_model`, `apply_animation`, `stylize_model`, `retexture_model`, `segment_model`, and more — so an AI assistant can generate, rig, and animate a model mid-conversation and render it as an inline interactive artifact. See `[docs/mcp-3d-studio.md](docs/mcp-3d-studio.md)`.
+The **3D Studio MCP server** at `https://three.ws/api/mcp-3d` exposes the full pipeline as 15 tools — `text_to_3d`, `image_to_3d`, `auto_rig_model`, `apply_animation`, `stylize_model`, `retexture_model`, `segment_model`, and more — so an AI assistant can generate, rig, and animate a model mid-conversation and render it as an inline interactive artifact. See [docs/mcp-3d-studio.md](docs/mcp-3d-studio.md).
 
 ### Pay-per-call for autonomous agents (x402)
 
-`POST /api/x402/forge` is the monetized twin: agents pay per generation in USDC on Base or Solana — no API key, no account. Draft $0.05, standard $0.15, high $0.50; polling is free; retried payments are idempotent and never double-charge. See `[docs/api/forge-x402.md](docs/api/forge-x402.md)`.
+`POST /api/x402/forge` is the monetized twin: agents pay per generation in USDC on Base or Solana — no API key, no account. Draft $0.05, standard $0.15, high $0.50; polling is free; retried payments are idempotent and never double-charge. See [docs/api/forge-x402.md](docs/api/forge-x402.md).
 
 ### Learn more
 
-- `[Tutorial: Turn a Text Prompt into a 3D Model](docs/tutorials/text-to-3d.md)` — first model in about a minute
-- `[Tutorial: Turn Photos into a 3D Model](docs/tutorials/image-to-3d.md)` — reconstruct a real object from 1–4 photos
-- `[3D Studio MCP server](docs/mcp-3d-studio.md)` — generate from inside Claude or Cursor
-- `[Paid generation API (x402)](docs/api/forge-x402.md)` — autonomous agent-to-agent generation
+- [Tutorial: Turn a Text Prompt into a 3D Model](docs/tutorials/text-to-3d.md) — first model in about a minute
+- [Tutorial: Turn Photos into a 3D Model](docs/tutorials/image-to-3d.md) — reconstruct a real object from 1–4 photos
+- [3D Studio MCP server](docs/mcp-3d-studio.md) — generate from inside Claude or Cursor
+- [Paid generation API (x402)](docs/api/forge-x402.md) — autonomous agent-to-agent generation
 
 ---
 
 ## Platform Pages
 
-A map of every user-facing route. `[`STRUCTURE.md`](STRUCTURE.md)` maps each product surface to the directory that implements it, and `[`data/pages.json`](data/pages.json)` is the registry every public route is generated from (sitemap, `llms.txt`, `features.json`, changelog).
+A map of every user-facing route. [`STRUCTURE.md`](STRUCTURE.md) maps each product surface to the directory that implements it, and [`data/pages.json`](data/pages.json) is the registry every public route is generated from (sitemap, `llms.txt`, `features.json`, changelog).
 
 | Section              | Key URLs                                                                                        | What it does                                                                                                    |
 | -------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -8900,7 +8900,7 @@ Then install any of the four plugins:
 /plugin install three-ws-3d@three-ws         # text→3D (free), text→avatar, mesh forge, auto-rig + scene/avatar MCP
 ```
 
-Run `/reload-plugins` and the skills appear under each plugin's namespace (e.g. `/three-ws-3d:forge-3d`). Plugins that expose MCP tools (`three-ws-developer`, `three-ws-3d`) wire the published `@three-ws/*` MCP servers automatically — `forge_free` is free (no wallet); the paid lanes settle over x402 in USDC. The canonical manifest lives at `[.claude-plugin/marketplace.json](.claude-plugin/marketplace.json)`.
+Run `/reload-plugins` and the skills appear under each plugin's namespace (e.g. `/three-ws-3d:forge-3d`). Plugins that expose MCP tools (`three-ws-developer`, `three-ws-3d`) wire the published `@three-ws/*` MCP servers automatically — `forge_free` is free (no wallet); the paid lanes settle over x402 in USDC. The canonical manifest lives at [.claude-plugin/marketplace.json](.claude-plugin/marketplace.json).
 
 ---
 
@@ -8910,7 +8910,7 @@ three.ws is available on major cloud marketplaces and open to infrastructure par
 
 | Cloud             | Status                                                                                                                                                                                                |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AWS**           | **AWS Partner** (APN Software Path). AWS Marketplace SaaS listing in review — see `[docs/aws-marketplace.md](docs/aws-marketplace.md)` and the public partner page at [three.ws/aws](https://three.ws/aws). Part of the stack runs on AWS `us-east-1` — the Forge sculptor Lambda (`three-ws-forge`) and the S3 avatar bucket — registered in AWS MyApplications under account `155407237916` (the main app runs on Google Cloud Run). |
+| **AWS**           | **AWS Partner** (APN Software Path). AWS Marketplace SaaS listing in review — see [docs/aws-marketplace.md](docs/aws-marketplace.md) and the public partner page at [three.ws/aws](https://three.ws/aws). Part of the stack runs on AWS `us-east-1` — the Forge sculptor Lambda (`three-ws-forge`) and the S3 avatar bucket — registered in AWS MyApplications under account `155407237916` (the main app runs on Google Cloud Run). |
 | **Alibaba Cloud** | Live: [product listing →](https://marketplace.alibabacloud.com/products/56724001/sgcmfw00036800.html) · [storefront →](https://marketplace.alibabacloud.com/store/3247293.html)                       |
 | **Google Cloud**  | Production runs on **Google Cloud Run** (`three-ws-api`, `us-central1`) fronted by a global HTTPS load balancer + Cloud CDN, with the ~80 scheduled jobs on Cloud Scheduler and GPU inference workers on Cloud Run — a natural fit for GCP's AI infrastructure and Vertex AI. Open to co-listing, credits, and joint GTM. |
 
@@ -8926,7 +8926,7 @@ three.ws is indexed in chain-ecosystem dApp directories so the community can dis
 
 ## IBM watsonx & Granite
 
-three.ws is an **IBM Business Partner**, and the agent runtime runs on **IBM Granite** foundation models served through **IBM watsonx.ai**. One IBM Cloud API key + project unlocks the whole suite; every call is real inference (no mock path — endpoints return `503` when unconfigured). Full docs: **`[docs/ibm.md](docs/ibm.md)`**. Live showcase: **[three.ws/ibm/galaxy](https://three.ws/ibm/galaxy)**.
+three.ws is an **IBM Business Partner**, and the agent runtime runs on **IBM Granite** foundation models served through **IBM watsonx.ai**. One IBM Cloud API key + project unlocks the whole suite; every call is real inference (no mock path — endpoints return `503` when unconfigured). Full docs: **[docs/ibm.md](docs/ibm.md)**. Live showcase: **[three.ws/ibm/galaxy](https://three.ws/ibm/galaxy)**.
 
 > **The public showcase is not the partnership.** The demos under `/ibm/*` are independent tools three.ws built for developers to explore Granite on watsonx.ai and build their own integrations — they are not official IBM partnership deliverables, not IBM products, and not endorsed by IBM. Our formal partnership work with IBM is being built on the IBM platform and is not yet public.
 
@@ -8938,11 +8938,11 @@ three.ws is an **IBM Business Partner**, and the agent runtime runs on **IBM Gra
 | `granite-embedding-278m-multilingual` | **Semantic** agent map + `/api/watsonx/embed` |
 | `granite-vision-3-2-2b` | **Vision** — reads an avatar into a full agent identity |
 
-Six showcase surfaces put it on screen, cross-linked by an in-page suite switcher: the [Agent Galaxy](https://three.ws/ibm/galaxy) (semantic 3D star-map), the [Granite Oracle](https://three.ws/ibm/oracle) (narrated forecast), the [Digital Twin](https://three.ws/ibm/twin) (back-test + what-if), the [Trust Layer](https://three.ws/ibm/trust-layer) (Guardian + hash-chained audit ledger), [Granite Proof](https://three.ws/ibm/proof) (a Guardian-governed forecast notarized on Solana), and [Granite Vision](https://three.ws/ibm/vision). The standalone connector `[`@three-ws/ibm-watsonx-mcp`](packages/ibm-watsonx-mcp/)` exposes watsonx.ai to any MCP host — it is community-built and not an IBM product; the hosted platform integration is what runs on IBM watsonx.ai.
+Six showcase surfaces put it on screen, cross-linked by an in-page suite switcher: the [Agent Galaxy](https://three.ws/ibm/galaxy) (semantic 3D star-map), the [Granite Oracle](https://three.ws/ibm/oracle) (narrated forecast), the [Digital Twin](https://three.ws/ibm/twin) (back-test + what-if), the [Trust Layer](https://three.ws/ibm/trust-layer) (Guardian + hash-chained audit ledger), [Granite Proof](https://three.ws/ibm/proof) (a Guardian-governed forecast notarized on Solana), and [Granite Vision](https://three.ws/ibm/vision). The standalone connector [`@three-ws/ibm-watsonx-mcp`](packages/ibm-watsonx-mcp/) exposes watsonx.ai to any MCP host — it is community-built and not an IBM product; the hosted platform integration is what runs on IBM watsonx.ai.
 
 ### Pay-per-call Granite over MCP (x402)
 
-The world's first **x402-enabled MCP server on IBM Cloud**: `[`@three-ws/ibm-x402-mcp`](packages/ibm-x402-mcp/)` turns IBM Granite into a metered utility any AI agent can call. The operator holds the IBM credentials and funds inference; the caller pays **a few cents of USDC per call** — no IBM Cloud account, no subscription, no API-key signup. Full guide: **`[docs/ibm-x402-mcp.md](docs/ibm-x402-mcp.md)`**.
+The world's first **x402-enabled MCP server on IBM Cloud**: [`@three-ws/ibm-x402-mcp`](packages/ibm-x402-mcp/) turns IBM Granite into a metered utility any AI agent can call. The operator holds the IBM credentials and funds inference; the caller pays **a few cents of USDC per call** — no IBM Cloud account, no subscription, no API-key signup. Full guide: **[docs/ibm-x402-mcp.md](docs/ibm-x402-mcp.md)**.
 
 | Tool | What it does | Price |
 | ---- | ------------ | ----- |
@@ -8960,11 +8960,11 @@ The same five tools ship over two transports: **stdio** (`npx @three-ws/ibm-x402
 
 | Viewer                                   | Widget Studio                                   |
 | ---------------------------------------- | ----------------------------------------------- |
-| !`[Viewer](public/screenshots/viewer.png)` | !`[Widget Studio](public/screenshots/studio.png)` |
+| ![Viewer](public/screenshots/viewer.png) | ![Widget Studio](public/screenshots/studio.png) |
 
 | Agent Discovery                              | Avatar Creation                          |
 | -------------------------------------------- | ---------------------------------------- |
-| !`[Discover](public/screenshots/discover.png)` | !`[Create](public/screenshots/create.png)` |
+| ![Discover](public/screenshots/discover.png) | ![Create](public/screenshots/create.png) |
 
 ---
 
@@ -9008,25 +9008,25 @@ The architecture above is the bird's-eye view; each load-bearing surface has a d
 
 | Spec                                                         | What it covers                                                                                                   |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
-| `[specs/AGENT_MANIFEST.md](specs/AGENT_MANIFEST.md)`           | Agent manifest JSON schema — body, brain, voice, memory, skills, signing. The contract every `<agent-3d>` reads. |
-| `[specs/3D_AGENT_CARD.md](specs/3D_AGENT_CARD.md)`             | The on-chain passport card layout — fields, signing, and rendering rules.                                        |
-| `[specs/SKILL_SPEC.md](specs/SKILL_SPEC.md)`                   | Skill bundle layout (`SKILL.md`, `tools.json`, `handlers.js`), trust modes, and distribution.                    |
-| `[specs/PERMISSIONS_SPEC.md](specs/PERMISSIONS_SPEC.md)`       | EIP-7710 delegated permissions model — capability scopes, redemption, revocation.                                |
-| `[specs/MEMORY_SPEC.md](specs/MEMORY_SPEC.md)`                 | Memory file format, types, salience model, and storage modes.                                                    |
-| `[specs/STAGE_SPEC.md](specs/STAGE_SPEC.md)`                   | Scene/stage configuration: camera presets, lighting, environment maps, hotspots.                                 |
-| `[specs/EDITOR_SPEC.md](specs/EDITOR_SPEC.md)`                 | Widget Studio + Embed Editor configuration surface and persistence shape.                                        |
-| `[specs/EMBED_SPEC.md](specs/EMBED_SPEC.md)`                   | The `<agent-3d>` element and chromeless iframe — attributes, JS API, and lifecycle.                              |
-| `[specs/EMBED_HOST_PROTOCOL.md](specs/EMBED_HOST_PROTOCOL.md)` | `postMessage` wire protocol between the iframe and its host page (origin lock, message kinds, RTT).              |
-| `[specs/CLAUDE_ARTIFACT.md](specs/CLAUDE_ARTIFACT.md)`         | Claude Artifact viewer integration — snippet loading and sandbox boundaries.                                     |
-| `[specs/ENS_AGENT_CLAIM.md](specs/ENS_AGENT_CLAIM.md)`         | ENS-based agent claim flow for verifiable owner ↔ agent binding.                                                |
-| `[specs/VALIDATORS.md](specs/VALIDATORS.md)`                   | Validator attestation rules — what gets signed, who can sign, how to read attestations.                          |
-| `[specs/SECURITY.md](specs/SECURITY.md)`                       | Threat model, trust boundaries, and the hardening checklist for production deployments.                          |
+| [specs/AGENT_MANIFEST.md](specs/AGENT_MANIFEST.md)           | Agent manifest JSON schema — body, brain, voice, memory, skills, signing. The contract every `<agent-3d>` reads. |
+| [specs/3D_AGENT_CARD.md](specs/3D_AGENT_CARD.md)             | The on-chain passport card layout — fields, signing, and rendering rules.                                        |
+| [specs/SKILL_SPEC.md](specs/SKILL_SPEC.md)                   | Skill bundle layout (`SKILL.md`, `tools.json`, `handlers.js`), trust modes, and distribution.                    |
+| [specs/PERMISSIONS_SPEC.md](specs/PERMISSIONS_SPEC.md)       | EIP-7710 delegated permissions model — capability scopes, redemption, revocation.                                |
+| [specs/MEMORY_SPEC.md](specs/MEMORY_SPEC.md)                 | Memory file format, types, salience model, and storage modes.                                                    |
+| [specs/STAGE_SPEC.md](specs/STAGE_SPEC.md)                   | Scene/stage configuration: camera presets, lighting, environment maps, hotspots.                                 |
+| [specs/EDITOR_SPEC.md](specs/EDITOR_SPEC.md)                 | Widget Studio + Embed Editor configuration surface and persistence shape.                                        |
+| [specs/EMBED_SPEC.md](specs/EMBED_SPEC.md)                   | The `<agent-3d>` element and chromeless iframe — attributes, JS API, and lifecycle.                              |
+| [specs/EMBED_HOST_PROTOCOL.md](specs/EMBED_HOST_PROTOCOL.md) | `postMessage` wire protocol between the iframe and its host page (origin lock, message kinds, RTT).              |
+| [specs/CLAUDE_ARTIFACT.md](specs/CLAUDE_ARTIFACT.md)         | Claude Artifact viewer integration — snippet loading and sandbox boundaries.                                     |
+| [specs/ENS_AGENT_CLAIM.md](specs/ENS_AGENT_CLAIM.md)         | ENS-based agent claim flow for verifiable owner ↔ agent binding.                                                |
+| [specs/VALIDATORS.md](specs/VALIDATORS.md)                   | Validator attestation rules — what gets signed, who can sign, how to read attestations.                          |
+| [specs/SECURITY.md](specs/SECURITY.md)                       | Threat model, trust boundaries, and the hardening checklist for production deployments.                          |
 
-Longer-form architecture and how-to documentation lives under `[docs/](docs/)`: `[docs/architecture.md](docs/architecture.md)`, `[docs/agent-system.md](docs/agent-system.md)`, `[docs/3d-asset-pipeline.md](docs/3d-asset-pipeline.md)`, `[docs/animations.md](docs/animations.md)`, `[docs/web-component.md](docs/web-component.md)`, `[docs/api-reference.md](docs/api-reference.md)`, `[docs/mcp.md](docs/mcp.md)`, `[docs/permissions.md](docs/permissions.md)`, `[docs/security.md](docs/security.md)`, `[docs/smart-contracts.md](docs/smart-contracts.md)`, and more.
+Longer-form architecture and how-to documentation lives under [docs/](docs/): [docs/architecture.md](docs/architecture.md), [docs/agent-system.md](docs/agent-system.md), [docs/3d-asset-pipeline.md](docs/3d-asset-pipeline.md), [docs/animations.md](docs/animations.md), [docs/web-component.md](docs/web-component.md), [docs/api-reference.md](docs/api-reference.md), [docs/mcp.md](docs/mcp.md), [docs/permissions.md](docs/permissions.md), [docs/security.md](docs/security.md), [docs/smart-contracts.md](docs/smart-contracts.md), and more.
 
 ### 3D asset pipeline — FBX, GLB, JSON
 
-Every avatar the site renders is a **GLB** (binary glTF 2.0 — the body, rig, and textures in one file); every shared gesture and dance is a format-light **clip JSON** (a serialized `THREE.AnimationClip` — motion only, retargeted onto any rig at runtime); and both originate as **FBX** source from Mixamo or a DCC tool. Two conversions come off one FBX — `npm run convert:fbx` for a full character GLB, `npm run build:animations` for a reusable library clip — then `npm run optimize:glb` makes it web-ready (~90% smaller). The full explainer, format specs, runtime modules, and the generate→rig→animate→export capability chain are in **`[docs/3d-asset-pipeline.md](docs/3d-asset-pipeline.md)`**.
+Every avatar the site renders is a **GLB** (binary glTF 2.0 — the body, rig, and textures in one file); every shared gesture and dance is a format-light **clip JSON** (a serialized `THREE.AnimationClip` — motion only, retargeted onto any rig at runtime); and both originate as **FBX** source from Mixamo or a DCC tool. Two conversions come off one FBX — `npm run convert:fbx` for a full character GLB, `npm run build:animations` for a reusable library clip — then `npm run optimize:glb` makes it web-ready (~90% smaller). The full explainer, format specs, runtime modules, and the generate→rig→animate→export capability chain are in **[docs/3d-asset-pipeline.md](docs/3d-asset-pipeline.md)**.
 
 ---
 
@@ -9040,7 +9040,7 @@ Every avatar the site renders is a **GLB** (binary glTF 2.0 — the body, rig, a
 
 **Backend (Google Cloud Run)**
 
-- **Runtime**: Node.js — serverless-style handlers in `api/` served by one Express container (`[server/index.mjs](server/index.mjs)`) on Cloud Run (`three-ws-api`, `us-central1`).
+- **Runtime**: Node.js — serverless-style handlers in `api/` served by one Express container ([server/index.mjs](server/index.mjs)) on Cloud Run (`three-ws-api`, `us-central1`).
 - **Database**: Neon Postgres (serverless)
 - **Storage**: Cloudflare R2 for model and avatar storage.
 - **Rate Limiting**: Upstash Redis.
@@ -9067,7 +9067,7 @@ The viewer targets every browser that ships WebGL 2.0 on a desktop or modern mob
 **Capabilities and graceful degradation**
 
 - **WebGL 2.0** is required; the viewer refuses to boot without it and shows a fallback message.
-- **WebAssembly** is required for the Draco / KTX2 / Meshopt decoders that ship under `[`public/three/draco/`](public/three/draco/)`, `[`public/three/basis/`](public/three/basis/)`, and `node_modules/three/examples/jsm/libs/`.
+- **WebAssembly** is required for the Draco / KTX2 / Meshopt decoders that ship under [`public/three/draco/`](public/three/draco/), [`public/three/basis/`](public/three/basis/), and `node_modules/three/examples/jsm/libs/`.
 - **`getUserMedia` (microphone)** requires HTTPS — see [Common gotchas](#common-gotchas). Without it the agent falls back to text input.
 - **`speechSynthesis`** is detected at runtime; agents fall back to silent text replies when TTS is unavailable.
 - **WebGPU** is not required and is not used yet — Phase 4 reserves it for client-side inference experiments.
@@ -9341,23 +9341,23 @@ For the absolute simplest way to embed an agent, use this snippet. It requires n
 <script type="module" src="https://three.ws/artifact.js"></script>
 ```
 
-The loader (`[public/artifact.js](public/artifact.js)`) mounts a rotatable 3D viewer into every `[data-agent-id]` element on the page. You can find your agent ID in the agent's settings page. This method is great for quick integrations on platforms like WordPress, Ghost, or any static HTML site — size it with the `style` attribute. For a configurable snippet (chat mode, environments, size presets), use the [Embed editor](#embed-editor) at `/embed`.
+The loader ([public/artifact.js](public/artifact.js)) mounts a rotatable 3D viewer into every `[data-agent-id]` element on the page. You can find your agent ID in the agent's settings page. This method is great for quick integrations on platforms like WordPress, Ghost, or any static HTML site — size it with the `style` attribute. For a configurable snippet (chat mode, environments, size presets), use the [Embed editor](#embed-editor) at `/embed`.
 
 ---
 
 ## Tutorials
 
-Step-by-step guides in `[`docs/tutorials/`](docs/tutorials/)`:
+Step-by-step guides in [`docs/tutorials/`](docs/tutorials/):
 
 | Tutorial                                                       | What you'll build                                                    | Time    |
 | -------------------------------------------------------------- | -------------------------------------------------------------------- | ------- |
-| `[Turn a Text Prompt into a 3D Model](docs/tutorials/text-to-3d.md)` | A real, textured, downloadable 3D model from a one-line description | ~5 min  |
-| `[Turn Photos into a 3D Model](docs/tutorials/image-to-3d.md)`   | A GLB reconstructed from 1–4 photos of a real object                 | ~10 min |
-| `[Build Your First Agent](docs/tutorials/first-agent.md)`        | A talking 3D character on a shareable page, from zero                | ~20 min |
-| `[Embed on Your Website](docs/tutorials/embed-on-website.md)`    | Add an agent to any page — plain HTML, React, Webflow, WordPress     | ~15 min |
-| `[Write a Custom Skill](docs/tutorials/custom-skill.md)`         | A new tool the agent can call (e.g., fetch live weather data)        | ~30 min |
-| `[Register On-Chain](docs/tutorials/register-onchain.md)`        | Mint your agent onchain — ERC-8004 on EVM or Metaplex Core on Solana | ~20 min |
-| `[Build a Personal AI Site](docs/tutorials/personal-ai-site.md)` | A full personal site with an embedded AI version of yourself         | ~45 min |
+| [Turn a Text Prompt into a 3D Model](docs/tutorials/text-to-3d.md) | A real, textured, downloadable 3D model from a one-line description | ~5 min  |
+| [Turn Photos into a 3D Model](docs/tutorials/image-to-3d.md)   | A GLB reconstructed from 1–4 photos of a real object                 | ~10 min |
+| [Build Your First Agent](docs/tutorials/first-agent.md)        | A talking 3D character on a shareable page, from zero                | ~20 min |
+| [Embed on Your Website](docs/tutorials/embed-on-website.md)    | Add an agent to any page — plain HTML, React, Webflow, WordPress     | ~15 min |
+| [Write a Custom Skill](docs/tutorials/custom-skill.md)         | A new tool the agent can call (e.g., fetch live weather data)        | ~30 min |
+| [Register On-Chain](docs/tutorials/register-onchain.md)        | Mint your agent onchain — ERC-8004 on EVM or Metaplex Core on Solana | ~20 min |
+| [Build a Personal AI Site](docs/tutorials/personal-ai-site.md) | A full personal site with an embedded AI version of yourself         | ~45 min |
 
 ### Common gotchas
 
@@ -9384,7 +9384,7 @@ For sandboxed iframes use the widget embed path instead — it runs in its own b
 ## Project Structure
 
 - `src/`: The core frontend JavaScript for the main application, including the 3D viewer, agent protocol, custom element, and feature modules (`club-*.js`, `walk*.js`, `pose-*.js`, `voice/`, `selfie-*.js`). Social/gameplay surfaces live in `game/` (Coin Communities: `coincommunities*`, `spin-wheel-ui`, `cosmetics-visual`, `avatar-rig`), `city/` (the `/city` world), `social/` (sentiment, X-post impact), `community/` (coin lobby/town), plus `friends.js`, `communities.js`, `marketplace*.js`, and `token-pay.js`.
-- `api/`: Serverless-style handlers that form the backend API, served in production by the Cloud Run container (`[server/index.mjs](server/index.mjs)`) with `vercel.json`-parity routing. Subdirectories include `x402/`, `a2a/`, `club/`, `pump/`, `persona/`, `news/`, `admin/`, `agents/`, `auth/`, `oauth/`, `cron/`, plus the social/game surfaces `play/`, `token/`, `three-token/`, `friends/`, `social/`, `community/`, `marketplace/`, and `mocap/`.
+- `api/`: Serverless-style handlers that form the backend API, served in production by the Cloud Run container ([server/index.mjs](server/index.mjs)) with `vercel.json`-parity routing. Subdirectories include `x402/`, `a2a/`, `club/`, `pump/`, `persona/`, `news/`, `admin/`, `agents/`, `auth/`, `oauth/`, `cron/`, plus the social/game surfaces `play/`, `token/`, `three-token/`, `friends/`, `social/`, `community/`, `marketplace/`, and `mocap/`.
 - `public/`: Static assets and various sub-applications (`club/`, `seeker/`, `news/`, `persona/`, `vanity-wallet.html`, `pumpfun.html`).
 - `chat/`: A standalone Svelte application for the chat interface.
 - `character-studio/`: A sub-project for in-browser character creation; also serves the rebranded **Avatar Studio** marketplace.
@@ -9396,7 +9396,7 @@ For sandboxed iframes use the widget embed path instead — it runs in its own b
 - `solana-agent-sdk/`: SDK for Solana blockchain interactions (Metaplex Core mints, SIWS, attestations).
 - `pump-fun-skills/`: Skills related to the pump.fun integration.
 - `scripts/`: Node.js scripts for development, build, deployment, and pump.fun launch automation.
-- `workers/`: Code for background workers — includes the Cloudflare Worker mirror of the pump.fun MCP read API in `[`workers/pump-fun-mcp/`](workers/pump-fun-mcp/)`.
+- `workers/`: Code for background workers — includes the Cloudflare Worker mirror of the pump.fun MCP read API in [`workers/pump-fun-mcp/`](workers/pump-fun-mcp/).
 - `docs/`: Public-facing developer docs.
 - `docs/internal/`: Working docs (PLAN, STATUS, TODO, NEXT, PROGRESS, RELEASE_CHECKLIST, club venue notes) — not part of the published docs surface.
 - `tests/`: Vitest unit tests (`tests/api/`, `tests/src/`, `tests/workers/`) and Playwright end-to-end smokes (`tests/e2e/`).
@@ -9614,7 +9614,7 @@ Memory.registerBackend('vector', {
 <agent-3d src="agent://…" memory="vector"></agent-3d>
 ```
 
-Only `load` is required; `persist` makes it durable, `recall` makes search semantic (it falls back to substring matching if it throws). To swap *only* the ranker while keeping built-in storage, point `manifest.json → memory.retriever` at a skill instead. Full reference: `[specs/MEMORY_SPEC.md → Custom backends](specs/MEMORY_SPEC.md)`.
+Only `load` is required; `persist` makes it durable, `recall` makes search semantic (it falls back to substring matching if it throws). To swap *only* the ranker while keeping built-in storage, point `manifest.json → memory.retriever` at a skill instead. Full reference: [specs/MEMORY_SPEC.md → Custom backends](specs/MEMORY_SPEC.md).
 
 #### Memory snapshot contract
 
@@ -9689,7 +9689,7 @@ For when you want a chromeless iframe that you control from the parent page (rat
 </script>
 ```
 
-**Origin contract.** The SDK derives the iframe's origin from `iframe.src` and refuses to start if it can't (no wildcard targets, ever). The iframe locks onto the parent's origin from the first authenticated message it sees and ignores any later messages from a different origin. See `[specs/EMBED_SPEC.md](specs/EMBED_SPEC.md)` §"Bridge origin model" for the full rules.
+**Origin contract.** The SDK derives the iframe's origin from `iframe.src` and refuses to start if it can't (no wildcard targets, ever). The iframe locks onto the parent's origin from the first authenticated message it sees and ignores any later messages from a different origin. See [specs/EMBED_SPEC.md](specs/EMBED_SPEC.md) §"Bridge origin model" for the full rules.
 
 ### Typed host bridge (npm-friendly)
 
@@ -9746,7 +9746,7 @@ Widgets are stored as JSON config in Postgres, pointing at an avatar in R2.
 
 ## Embed Editor
 
-The **Embed editor** at `/embed` (`[src/editor/embed-editor.js](src/editor/embed-editor.js)`) is a WYSIWYG configurator for embedding a three.ws avatar or agent on any website. Pick an avatar from the gallery picker, choose an embed mode, tune the environment and size, and copy a ready-to-paste snippet.
+The **Embed editor** at `/embed` ([src/editor/embed-editor.js](src/editor/embed-editor.js)) is a WYSIWYG configurator for embedding a three.ws avatar or agent on any website. Pick an avatar from the gallery picker, choose an embed mode, tune the environment and size, and copy a ready-to-paste snippet.
 
 | Feature              | Description                                                                              |
 | -------------------- | ---------------------------------------------------------------------------------------- |
@@ -9766,9 +9766,9 @@ The **Embed editor** at `/embed` (`[src/editor/embed-editor.js](src/editor/embed
 
 | Module         | Path                                           | Role                                        |
 | -------------- | ---------------------------------------------- | ------------------------------------------- |
-| Mannequin      | `[src/pose-rig.js](src/pose-rig.js)`             | Articulated rig with named joints + IK      |
-| Preset library | `[src/pose-presets.js](src/pose-presets.js)`     | Standing, sitting, action, idle, expressive |
-| Studio shell   | `[src/pose-studio.js](src/pose-studio.js)`       | Scene, controls, export, props, lighting    |
+| Mannequin      | [src/pose-rig.js](src/pose-rig.js)             | Articulated rig with named joints + IK      |
+| Preset library | [src/pose-presets.js](src/pose-presets.js)     | Standing, sitting, action, idle, expressive |
+| Studio shell   | [src/pose-studio.js](src/pose-studio.js)       | Scene, controls, export, props, lighting    |
 
 Poses author cleanly into the avatar runtime via the `play_clip` tool — the agent can adopt any saved pose on demand. Exported PNGs are useful as marketing renders or as reference frames for downstream image/video pipelines.
 
@@ -9814,7 +9814,7 @@ Launchpad templates are JSON-configured and can embed any combination of `<agent
 
 `/walk` is an authoritative multiplayer walk scene. Players join a shared 3D space, see each other's avatars in real time, and emit gestures over a WebSocket connection.
 
-The serverless-style request/response layer can't hold long-lived WebSockets, so the multiplayer server lives in its own workspace at `[`multiplayer/`](multiplayer/)` — a [Colyseus](https://colyseus.io) server packaged with a Fly.io `fly.toml` and Dockerfile. The Vite client at `/walk` autodiscovers the server (`ws://localhost:2567` in dev, your deployed host in prod).
+The serverless-style request/response layer can't hold long-lived WebSockets, so the multiplayer server lives in its own workspace at [`multiplayer/`](multiplayer/) — a [Colyseus](https://colyseus.io) server packaged with a Fly.io `fly.toml` and Dockerfile. The Vite client at `/walk` autodiscovers the server (`ws://localhost:2567` in dev, your deployed host in prod).
 
 ```bash
 # Run both servers together
@@ -9942,12 +9942,12 @@ export default paidEndpoint({
 });
 ```
 
-The helper handles the 402 challenge, Permit2 sibling, receipt write-back, idempotency-token enforcement, and CSRF/SSRF guards. See `[api/\_lib/x402-paid-endpoint.js](api/_lib/x402-paid-endpoint.js)`.
+The helper handles the 402 challenge, Permit2 sibling, receipt write-back, idempotency-token enforcement, and CSRF/SSRF guards. See [api/\_lib/x402-paid-endpoint.js](api/_lib/x402-paid-endpoint.js).
 
 ### Wire checks
 
 - Wire-level CORS, CDP, and Permit2 sibling checks: `tests/e2e/`
-- Offer receipts schema + buyer fetch: `[api/\_lib/x402-buyer-fetch.js](api/_lib/x402-buyer-fetch.js)`
+- Offer receipts schema + buyer fetch: [api/\_lib/x402-buyer-fetch.js](api/_lib/x402-buyer-fetch.js)
 - Error envelope: full 402 body returned in the `PAYMENT-REQUIRED` header
 
 ---
@@ -10005,11 +10005,11 @@ Set `mode="talk"` on the `<agent-3d>` element and supply an ElevenLabs voice ID 
 1. User speaks → `getUserMedia` captures audio → Web Speech API produces a text transcript.
 2. Transcript enters the LLM tool-loop; the final reply text is sent to ElevenLabs TTS.
 3. The returned `AudioBuffer` is piped through a Web Audio API `AnalyserNode`.
-4. The lip-sync driver (`[`src/voice/lipsync-driver.js`](src/voice/lipsync-driver.js)`) samples the analyser every animation frame, extracts amplitude and spectral centroid, and maps them to ARKit-52 blendshape weights.
-5. Weights are applied directly to the loaded GLB's morph targets via `[`src/voice/avatar-morph-target.js`](src/voice/avatar-morph-target.js)` — no scene re-render required.
+4. The lip-sync driver ([`src/voice/lipsync-driver.js`](src/voice/lipsync-driver.js)) samples the analyser every animation frame, extracts amplitude and spectral centroid, and maps them to ARKit-52 blendshape weights.
+5. Weights are applied directly to the loaded GLB's morph targets via [`src/voice/avatar-morph-target.js`](src/voice/avatar-morph-target.js) — no scene re-render required.
 6. The Empathy Layer injects its emotional morph weights in the same frame, so articulation and emotion blend simultaneously without fighting each other.
 
-The driver is source-agnostic: it accepts any `AudioBuffer`, so it works identically with ElevenLabs, browser TTS, or a pre-recorded clip. The canonical ARKit-52 blendshape table lives in `[`src/voice/arkit-blendshapes.js`](src/voice/arkit-blendshapes.js)`; per-rig binding (mapping standard names to the specific morph targets in a loaded GLB) is handled by `[`src/voice/avatar-morph-target.js`](src/voice/avatar-morph-target.js)`.
+The driver is source-agnostic: it accepts any `AudioBuffer`, so it works identically with ElevenLabs, browser TTS, or a pre-recorded clip. The canonical ARKit-52 blendshape table lives in [`src/voice/arkit-blendshapes.js`](src/voice/arkit-blendshapes.js); per-rig binding (mapping standard names to the specific morph targets in a loaded GLB) is handled by [`src/voice/avatar-morph-target.js`](src/voice/avatar-morph-target.js).
 
 ---
 
@@ -10030,7 +10030,7 @@ On **Seeker / Saga** hardware the app prefers seed-vault-backed signing — priv
 
 **Release pipeline**
 
-- dApp Store listing copy and release config live under `[`solana-mobile/publish/`](solana-mobile/publish/)`
+- dApp Store listing copy and release config live under [`solana-mobile/publish/`](solana-mobile/publish/)
 - Release pipeline scripts handle build → sign → APK submission for dApp Store updates
 - The listing targets Seeker-first and is compatible with Saga Gen 1 and Gen 2
 
@@ -10042,8 +10042,8 @@ Anyone takes 3 selfies (left, center, right) and receives a rigged, animatable 3
 
 | Module        | Path                                             | Role                                                                                                                 |
 | ------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| Capture UX    | `[src/selfie-capture.js](src/selfie-capture.js)`   | Mobile-first 3-shot capture with real-time quality gates (lighting, framing, blur)                                   |
-| Pipeline      | `[src/selfie-pipeline.js](src/selfie-pipeline.js)` | Multi-view fit → FLAME / 3DMM face → base body mesh → rigged GLB                                                     |
+| Capture UX    | [src/selfie-capture.js](src/selfie-capture.js)   | Mobile-first 3-shot capture with real-time quality gates (lighting, framing, blur)                                   |
+| Pipeline      | [src/selfie-pipeline.js](src/selfie-pipeline.js) | Multi-view fit → FLAME / 3DMM face → base body mesh → rigged GLB                                                     |
 | Sandbox route | `/creating`                                      | Isolated reconstruction test bench, decoupled from the main flow                                                     |
 | Output        | Cloudflare R2                                    | Meshopt-compressed GLB pinned to IPFS and minted as a draft agent token — ERC-8004 on EVM or Metaplex Core on Solana |
 
@@ -10070,18 +10070,18 @@ The avatar isn't just _you_ — the agent _acts_ like you. The Voice & Persona H
 
 | Surface             | Path                                                                 | Purpose                                                          |
 | ------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Persona extraction  | `[api/persona/extract.js](api/persona/extract.js)`                     | Short onboarding interview → tone, vocabulary, interests profile |
-| Persona preview     | `[api/persona/preview.js](api/persona/preview.js)`                     | Try the extracted persona against test prompts before saving     |
+| Persona extraction  | [api/persona/extract.js](api/persona/extract.js)                     | Short onboarding interview → tone, vocabulary, interests profile |
+| Persona preview     | [api/persona/preview.js](api/persona/preview.js)                     | Try the extracted persona against test prompts before saving     |
 | Persona keys        | `scripts/generate-persona-key.mjs`                                   | Per-agent signing key + persona SSO setup                        |
-| Voice clone modal   | `[src/voice/voice-clone-modal.js](src/voice/voice-clone-modal.js)`     | 3–10s recording → ElevenLabs custom voice bound to the agent     |
-| Talk controller     | `[src/voice/talk-controller.js](src/voice/talk-controller.js)`         | Push-to-talk and continuous talk modes                           |
-| ARKit blendshapes   | `[src/voice/arkit-blendshapes.js](src/voice/arkit-blendshapes.js)`     | Standard ARKit-52 morph table                                    |
-| Lip-sync driver     | `[src/voice/lipsync-driver.js](src/voice/lipsync-driver.js)`           | Web Audio analyser → blendshape weights per frame                |
-| Avatar morph target | `[src/voice/avatar-morph-target.js](src/voice/avatar-morph-target.js)` | Per-rig binding of ARKit blendshapes to the loaded GLB           |
-| Avatar snapshot     | `[src/voice/avatar-snapshot.js](src/voice/avatar-snapshot.js)`         | Render-time pose capture for thumbnails and OG cards             |
-| Persona docs        | `[docs/persona-hub.md](docs/persona-hub.md)`                           | Full design + onboarding flow                                    |
+| Voice clone modal   | [src/voice/voice-clone-modal.js](src/voice/voice-clone-modal.js)     | 3–10s recording → ElevenLabs custom voice bound to the agent     |
+| Talk controller     | [src/voice/talk-controller.js](src/voice/talk-controller.js)         | Push-to-talk and continuous talk modes                           |
+| ARKit blendshapes   | [src/voice/arkit-blendshapes.js](src/voice/arkit-blendshapes.js)     | Standard ARKit-52 morph table                                    |
+| Lip-sync driver     | [src/voice/lipsync-driver.js](src/voice/lipsync-driver.js)           | Web Audio analyser → blendshape weights per frame                |
+| Avatar morph target | [src/voice/avatar-morph-target.js](src/voice/avatar-morph-target.js) | Per-rig binding of ARKit blendshapes to the loaded GLB           |
+| Avatar snapshot     | [src/voice/avatar-snapshot.js](src/voice/avatar-snapshot.js)         | Render-time pose capture for thumbnails and OG cards             |
+| Persona docs        | [docs/persona-hub.md](docs/persona-hub.md)                           | Full design + onboarding flow                                    |
 
-Memory seed extensions (X, GitHub, Farcaster) feed the agent's memory store at creation time with explicit user consent — see `[docs/persona-hub.md](docs/persona-hub.md)`.
+Memory seed extensions (X, GitHub, Farcaster) feed the agent's memory store at creation time with explicit user consent — see [docs/persona-hub.md](docs/persona-hub.md).
 
 The per-agent fine-tuned system prompt is stored in the manifest, signed, and pinned to IPFS — the persona becomes a verifiable part of the agent's onchain identity.
 
@@ -10116,7 +10116,7 @@ A local-only news/blog CMS at `/admin/news` produces signed posts that auto-synd
 | Dev.to         | syndication adapter                                        | Cross-posts with canonical URL pointing back        |
 | Medium         | syndication adapter                                        | Same, with format-aware re-render                   |
 | CMC handoff    | syndication adapter                                        | Coinmarketcap article + announcement listing        |
-| Newsletter     | `[api/newsletter-subscribe.js](api/newsletter-subscribe.js)` | Resend-backed double-opt-in newsletter              |
+| Newsletter     | [api/newsletter-subscribe.js](api/newsletter-subscribe.js) | Resend-backed double-opt-in newsletter              |
 
 Each article is a static HTML file in `public/news/` with metadata in Postgres. The CMS supports a cover-image convention for listing thumbnails and OG previews. Articles can be published once and reach HackerNoon, Dev.to, and Medium readers without manual cross-posting.
 
@@ -10149,40 +10149,40 @@ Fifteen packages ship from this repo, all published to npm under the **`@three-w
 
 | Package | Install | What it does |
 | --- | --- | --- |
-| `[`@three-ws/avatar`](avatar-sdk/)` | `npm i @three-ws/avatar` | 3D avatar viewer, creator iframe, AR/VR runtime + React bindings (`/react`) |
-| `[`@three-ws/agent-ui`](agent-ui-sdk/)` | `npm i @three-ws/agent-ui` | Drop a 3D avatar overlay into any UI; it reacts to buttons, inputs, and navigation |
-| `[`@three-ws/avatar-schema`](packages/avatar-schema/)` | `npm i @three-ws/avatar-schema` | JSON Schema + validator for on-chain avatar manifests |
-| `[`@three-ws/viewer-presets`](packages/viewer-presets/)` | `npm i @three-ws/viewer-presets` | Tuned light-rig, floor-reflection, and bloom presets for avatar viewers |
-| `[`@three-ws/avatar-cli`](packages/avatar-cli/)` | `npm i -g @three-ws/avatar-cli` | Scaffold, validate, hash, and preview avatar manifests from your shell or CI |
+| [`@three-ws/avatar`](avatar-sdk/) | `npm i @three-ws/avatar` | 3D avatar viewer, creator iframe, AR/VR runtime + React bindings (`/react`) |
+| [`@three-ws/agent-ui`](agent-ui-sdk/) | `npm i @three-ws/agent-ui` | Drop a 3D avatar overlay into any UI; it reacts to buttons, inputs, and navigation |
+| [`@three-ws/avatar-schema`](packages/avatar-schema/) | `npm i @three-ws/avatar-schema` | JSON Schema + validator for on-chain avatar manifests |
+| [`@three-ws/viewer-presets`](packages/viewer-presets/) | `npm i @three-ws/viewer-presets` | Tuned light-rig, floor-reflection, and bloom presets for avatar viewers |
+| [`@three-ws/avatar-cli`](packages/avatar-cli/) | `npm i -g @three-ws/avatar-cli` | Scaffold, validate, hash, and preview avatar manifests from your shell or CI |
 
 **Agents & payments**
 
 | Package | Install | What it does |
 | --- | --- | --- |
-| `[`@three-ws/sdk`](sdk/)` | `npm i @three-ws/sdk` | Ship an ERC-8004 agent: chat panel, voice I/O, on-chain registration, `.well-known` manifests |
-| `[`@three-ws/solana-agent`](solana-agent-sdk/)` | `npm i @three-ws/solana-agent` | Solana agent ops — keypair + browser wallet, transfers, swaps, x402 exact-scheme payments |
-| `[`@three-ws/agent-payments`](agent-payments-sdk/)` | `npm i @three-ws/agent-payments` | Agent-token payments — USDC/Token-2022, v2 trades, plus EVM / x402 / a2a / cross-chain |
+| [`@three-ws/sdk`](sdk/) | `npm i @three-ws/sdk` | Ship an ERC-8004 agent: chat panel, voice I/O, on-chain registration, `.well-known` manifests |
+| [`@three-ws/solana-agent`](solana-agent-sdk/) | `npm i @three-ws/solana-agent` | Solana agent ops — keypair + browser wallet, transfers, swaps, x402 exact-scheme payments |
+| [`@three-ws/agent-payments`](agent-payments-sdk/) | `npm i @three-ws/agent-payments` | Agent-token payments — USDC/Token-2022, v2 trades, plus EVM / x402 / a2a / cross-chain |
 
 **MCP servers** (run over stdio with one command — also in the [official MCP registry](https://registry.modelcontextprotocol.io/?q=io.github.nirholas))
 
 | Package | Run | What it does |
 | --- | --- | --- |
-| `[`@three-ws/mcp-server`](mcp-server/)` | `npx -y @three-ws/mcp-server` | 16 tools: free text→3D (`forge_free`) + 15 paid x402 — text/image→3D, rigging, pose, pump.fun, ERC-8004, vanity, AgenC, aixbt |
-| `[`@three-ws/avatar-agent`](packages/avatar-agent-mcp/)` | `npx -y @three-ws/avatar-agent` | Spawn a textured GLB avatar with a Solana wallet, a voice, and pump.fun launch powers |
-| `[`@three-ws/avatar-mcp`](packages/threews-avatar-mcp/)` | `npx -y @three-ws/avatar-mcp` | Render a live, rotatable on-chain avatar inline + a paste-anywhere embed (free) |
-| `[`@three-ws/pumpfun-mcp`](packages/pumpfun-mcp/)` | `npx -y @three-ws/pumpfun-mcp` | 23 free, read-only pump.fun + Solana tools — no API key |
-| `[`@three-ws/three-token-mcp`](packages/three-token-mcp/)` | `npx -y @three-ws/three-token-mcp` | Price, hold, and burn **$THREE** on Solana — deflation as an agent primitive |
-| `[`@three-ws/ibm-watsonx-mcp`](packages/ibm-watsonx-mcp/)` | `npx -y @three-ws/ibm-watsonx-mcp` | IBM watsonx.ai Granite (chat, generate, embed, forecast) with your own IBM key |
-| `[`@three-ws/ibm-x402-mcp`](packages/ibm-x402-mcp/)` | `npx -y @three-ws/ibm-x402-mcp` | Pay-per-use IBM Granite — USDC on Solana, no IBM account required |
-| `[`@three-ws/mcp-bridge`](mcp-bridge/)` | `npx -y @three-ws/mcp-bridge` | x402 universal payer — auto-pay any x402 endpoint on the open web, with Bazaar discovery + spend caps |
-| `[`@three-ws/x402-mcp`](packages/x402-mcp/)` | `npx -y @three-ws/x402-mcp` | Self-custodial x402 wallet — discover, inspect, and pay any x402 service in USDC |
-| `[`@three-ws/scene-mcp`](packages/scene-mcp/)` | `npx -y @three-ws/scene-mcp` | Compose a placed 3D diorama from one sentence, then browse the saved scene gallery |
-| `[`@three-ws/intel-mcp`](packages/intel-mcp/)` | `npx -y @three-ws/intel-mcp` | Coin smart-money scores, wallet reputation, signal feeds, and KOL leaderboards |
-| `[`@three-ws/vanity-mcp`](packages/vanity-mcp/)` | `npx -y @three-ws/vanity-mcp` | Solana vanity-address bounty market — quote difficulty + USDC price, browse the board |
-| `[`@three-ws/marketplace-mcp`](packages/marketplace-mcp/)` | `npx -y @three-ws/marketplace-mcp` | Browse the public three.ws agent marketplace + skills catalog (read-only) |
-| `[`@three-ws/naming-mcp`](packages/naming-mcp/)` | `npx -y @three-ws/naming-mcp` | On-chain identity for agents — resolve .sol names, reverse-lookup wallets, check handles |
+| [`@three-ws/mcp-server`](mcp-server/) | `npx -y @three-ws/mcp-server` | 16 tools: free text→3D (`forge_free`) + 15 paid x402 — text/image→3D, rigging, pose, pump.fun, ERC-8004, vanity, AgenC, aixbt |
+| [`@three-ws/avatar-agent`](packages/avatar-agent-mcp/) | `npx -y @three-ws/avatar-agent` | Spawn a textured GLB avatar with a Solana wallet, a voice, and pump.fun launch powers |
+| [`@three-ws/avatar-mcp`](packages/threews-avatar-mcp/) | `npx -y @three-ws/avatar-mcp` | Render a live, rotatable on-chain avatar inline + a paste-anywhere embed (free) |
+| [`@three-ws/pumpfun-mcp`](packages/pumpfun-mcp/) | `npx -y @three-ws/pumpfun-mcp` | 23 free, read-only pump.fun + Solana tools — no API key |
+| [`@three-ws/three-token-mcp`](packages/three-token-mcp/) | `npx -y @three-ws/three-token-mcp` | Price, hold, and burn **$THREE** on Solana — deflation as an agent primitive |
+| [`@three-ws/ibm-watsonx-mcp`](packages/ibm-watsonx-mcp/) | `npx -y @three-ws/ibm-watsonx-mcp` | IBM watsonx.ai Granite (chat, generate, embed, forecast) with your own IBM key |
+| [`@three-ws/ibm-x402-mcp`](packages/ibm-x402-mcp/) | `npx -y @three-ws/ibm-x402-mcp` | Pay-per-use IBM Granite — USDC on Solana, no IBM account required |
+| [`@three-ws/mcp-bridge`](mcp-bridge/) | `npx -y @three-ws/mcp-bridge` | x402 universal payer — auto-pay any x402 endpoint on the open web, with Bazaar discovery + spend caps |
+| [`@three-ws/x402-mcp`](packages/x402-mcp/) | `npx -y @three-ws/x402-mcp` | Self-custodial x402 wallet — discover, inspect, and pay any x402 service in USDC |
+| [`@three-ws/scene-mcp`](packages/scene-mcp/) | `npx -y @three-ws/scene-mcp` | Compose a placed 3D diorama from one sentence, then browse the saved scene gallery |
+| [`@three-ws/intel-mcp`](packages/intel-mcp/) | `npx -y @three-ws/intel-mcp` | Coin smart-money scores, wallet reputation, signal feeds, and KOL leaderboards |
+| [`@three-ws/vanity-mcp`](packages/vanity-mcp/) | `npx -y @three-ws/vanity-mcp` | Solana vanity-address bounty market — quote difficulty + USDC price, browse the board |
+| [`@three-ws/marketplace-mcp`](packages/marketplace-mcp/) | `npx -y @three-ws/marketplace-mcp` | Browse the public three.ws agent marketplace + skills catalog (read-only) |
+| [`@three-ws/naming-mcp`](packages/naming-mcp/) | `npx -y @three-ws/naming-mcp` | On-chain identity for agents — resolve .sol names, reverse-lookup wallets, check handles |
 
-Per-server deep dives (every tool, argument, env var, and example): [Scenes](https://three.ws/docs/mcp-scenes) · [x402 Wallet](https://three.ws/docs/mcp-x402) · [Intel](https://three.ws/docs/mcp-intel) · [Vanity](https://three.ws/docs/mcp-vanity) · [Naming](https://three.ws/docs/mcp-naming) · [Marketplace](https://three.ws/docs/mcp-marketplace). Full catalog: `[docs/mcp.md](docs/mcp.md)`.
+Per-server deep dives (every tool, argument, env var, and example): [Scenes](https://three.ws/docs/mcp-scenes) · [x402 Wallet](https://three.ws/docs/mcp-x402) · [Intel](https://three.ws/docs/mcp-intel) · [Vanity](https://three.ws/docs/mcp-vanity) · [Naming](https://three.ws/docs/mcp-naming) · [Marketplace](https://three.ws/docs/mcp-marketplace). Full catalog: [docs/mcp.md](docs/mcp.md).
 
 **`@three-ws/sdk` quickstart:**
 
@@ -10202,7 +10202,7 @@ agent.mount(document.body);
 loadAvatar('a_abc123', document.getElementById('avatar-slot'));
 ```
 
-`@three-ws/sdk` also exposes `AgentClient` (x402 paid calls), `PermissionsClient`, and ERC-8004 registry helpers. See `[sdk/README.md](sdk/README.md)`, the `[SDK guide](docs/sdk.md)`, and `[examples](docs/examples.md)`.
+`@three-ws/sdk` also exposes `AgentClient` (x402 paid calls), `PermissionsClient`, and ERC-8004 registry helpers. See [sdk/README.md](sdk/README.md), the [SDK guide](docs/sdk.md), and [examples](docs/examples.md).
 
 ---
 
@@ -10245,7 +10245,7 @@ Once configured, Claude can call these tools directly in conversation — no API
 | `agent_reputation` | $0.01       | Agent reputation — ERC-8004 ReputationRegistry on EVM, attestation-memo roll-up on Solana |
 | `vanity_grinder`   | up to $0.50 | Mine a Solana keypair with a custom address prefix                                        |
 
-See `[`mcp-server/README.md`](mcp-server/README.md)` for full environment variable reference and programmatic client usage.
+See [`mcp-server/README.md`](mcp-server/README.md) for full environment variable reference and programmatic client usage.
 
 ### 2. Slash commands (`marketplace/plugins/three-ws-developer/commands/`)
 
@@ -10257,13 +10257,13 @@ This repo ships three Claude Code slash commands that work in any project refere
 | `/scaffold-agent`        | Scaffolds a new three.ws agent in your project: installs dependencies, creates `agent.js` with MCP client wiring, and adds `.env.example` |
 | `/use-tools [tool_name]` | Produces a complete, runnable Node.js script for calling a specific paid MCP tool with automatic x402 payment handling                    |
 
-Commands live in `[`marketplace/plugins/three-ws-developer/commands/`](marketplace/plugins/three-ws-developer/commands/)` and ship with the `three-ws-developer` plugin, so Claude Code picks them up once that plugin is installed.
+Commands live in [`marketplace/plugins/three-ws-developer/commands/`](marketplace/plugins/three-ws-developer/commands/) and ship with the `three-ws-developer` plugin, so Claude Code picks them up once that plugin is installed.
 
 ---
 
 ## Demos Hub
 
-`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in `[`public/demos/`](public/demos/)` — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
+`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in [`public/demos/`](public/demos/) — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
 
 | Demo                                | Path                             | What it shows                                            |
 | ----------------------------------- | -------------------------------- | -------------------------------------------------------- |
@@ -10296,7 +10296,7 @@ The demos are intentionally separate from production routes (`/create`, `/avatar
 
 ## Skill Library
 
-The platform ships with a set of built-in agent skills, packaged in `src/agent-skills-*.js` and registered via `[`public/skills-index.json`](public/skills-index.json)`.
+The platform ships with a set of built-in agent skills, packaged in `src/agent-skills-*.js` and registered via [`public/skills-index.json`](public/skills-index.json).
 
 | Skill                  | Module                                   | What it does                                                                               |
 | ---------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -10315,7 +10315,7 @@ The platform ships with a set of built-in agent skills, packaged in `src/agent-s
 | **Memory**             | `src/agent-memory.js`                    | File-based memory CRUD (see [Memory](#memory))                                             |
 | **Reputation**         | `src/agent-reputation.js`                | Read on-chain reputation, surface in the chat UI                                           |
 
-Third-party skills are distributed over IPFS / Arweave / HTTP. See `[docs/skills.md](docs/skills.md)` for the full skill manifest spec and authoring guide.
+Third-party skills are distributed over IPFS / Arweave / HTTP. See [docs/skills.md](docs/skills.md) for the full skill manifest spec and authoring guide.
 
 ---
 
@@ -10325,9 +10325,9 @@ The avatar runtime ships with a slot-based animation manager that decouples anim
 
 | Module        | Path                                                             | Role                                                                  |
 | ------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------- |
-| Manager       | `[src/animation-manager.js](src/animation-manager.js)`             | Load, blend, and crossfade clips per slot (idle, gesture, locomotion) |
-| State machine | `[src/animation-state-machine.js](src/animation-state-machine.js)` | Drives slot transitions from protocol events                          |
-| Idle library  | `[src/idle-animation.js](src/idle-animation.js)`                   | Subtle breath / weight-shift loops that play under everything else    |
+| Manager       | [src/animation-manager.js](src/animation-manager.js)             | Load, blend, and crossfade clips per slot (idle, gesture, locomotion) |
+| State machine | [src/animation-state-machine.js](src/animation-state-machine.js) | Drives slot transitions from protocol events                          |
+| Idle library  | [src/idle-animation.js](src/idle-animation.js)                   | Subtle breath / weight-shift loops that play under everything else    |
 | Fetcher       | `npm run fetch-animations`                                       | Downloads the canonical clip library from R2                          |
 | Builder       | `scripts/build-animations.mjs`                                   | Re-packs clip bundles into Meshopt + Draco-compressed GLB             |
 
@@ -10343,7 +10343,7 @@ Avatars are not just GLB files — they're composable rigs that the runtime can 
 
 ### Accessories
 
-- Hats, glasses, props attached to named bone slots via `[src/agent-accessories.js](src/agent-accessories.js)`
+- Hats, glasses, props attached to named bone slots via [src/agent-accessories.js](src/agent-accessories.js)
 - Accessories are themselves ERC-1155 tokens, ownable and tradeable independently of the avatar
 - Equipping is non-destructive — the agent's base manifest stays unchanged, the accessory is layered at runtime
 
@@ -10390,7 +10390,7 @@ Provider selection is per-agent and controlled by the manifest `brain.provider` 
 }
 ```
 
-Supported `provider` values: `anthropic` · `groq` · `openrouter` · `null` (offline). Adding a new provider means implementing the two-method interface (`chat()` and `stream()`) in `[`src/runtime/providers.js`](src/runtime/providers.js)` — no other files need to change.
+Supported `provider` values: `anthropic` · `groq` · `openrouter` · `null` (offline). Adding a new provider means implementing the two-method interface (`chat()` and `stream()`) in [`src/runtime/providers.js`](src/runtime/providers.js) — no other files need to change.
 
 **Free-first routing policy**
 
@@ -10404,7 +10404,7 @@ When an agent has a paying owner — established via ERC-8004 mint or x402 subsc
 - Access to higher-tier models (Claude Sonnet / Opus vs Groq fallback)
 - An owner-attribution card displayed below the avatar in the embed chrome
 
-The gating check runs server-side in `[`api/chat.js`](api/chat.js)` against the agent's subscription record in Postgres. It cannot be bypassed from the client — the model selection and context limit are applied at the API layer before the request reaches the LLM provider.
+The gating check runs server-side in [`api/chat.js`](api/chat.js) against the agent's subscription record in Postgres. It cannot be bypassed from the client — the model selection and context limit are applied at the API layer before the request reaches the LLM provider.
 
 ---
 
@@ -10483,7 +10483,7 @@ The full OpenAPI 3.1 spec is available at `/openapi.json`. The key API surface i
 
 Cron schedules are declared in `vercel.json` (still the live cron/route config the server reads) and executed in production by **Google Cloud Scheduler**, which calls each endpoint on its schedule. All cron endpoints are fail-closed — a missing auth token aborts with an error rather than silently skipping (see [Security Hardening](#security-hardening)).
 
-The ~80 crons in `vercel.json` are routed through a single dynamic handler at [`api/cron/[name].js`](api/cron/[name].js); the `name` segment selects the handler function. Scheduler jobs are provisioned from the `vercel.json` cron list via `[scripts/create-gcp-scheduler.mjs](scripts/create-gcp-scheduler.mjs)`; the schedules below match `vercel.json` verbatim.
+The ~80 crons in `vercel.json` are routed through a single dynamic handler at [`api/cron/[name].js`](api/cron/[name].js); the `name` segment selects the handler function. Scheduler jobs are provisioned from the `vercel.json` cron list via [scripts/create-gcp-scheduler.mjs](scripts/create-gcp-scheduler.mjs); the schedules below match `vercel.json` verbatim.
 
 | Schedule             | Endpoint                                | Purpose                                                                                                                      |
 | -------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -10564,7 +10564,7 @@ Access tokens are short-lived JWTs (1 hour). Refresh tokens are opaque strings s
 
 ## MCP Server
 
-`[`api/mcp.js`](api/mcp.js)` is a thin HTTP entrypoint (POST / GET-SSE / DELETE) that implements the [Model Context Protocol](https://modelcontextprotocol.io) 2025-06-18 specification over JSON-RPC 2.0. The protocol logic is split across `[`api/_mcp/`](api/_mcp/)` — `auth.js` (Bearer/OAuth + x402 paywall), `dispatch.js` (JSON-RPC routing), `catalog.js` (dynamic tool catalog), `payments.js` (x402 paid-tool settlement), `render.js`, and `embed-policy.js`. Tools are registered per category under `[`api/_mcp/tools/`](api/_mcp/tools/)` (`avatars.js`, `models.js`, `solana.js`, `pumpfun.js`). External AI systems (including Claude Desktop, other agents, or custom integrations) can drive avatars programmatically through this surface.
+[`api/mcp.js`](api/mcp.js) is a thin HTTP entrypoint (POST / GET-SSE / DELETE) that implements the [Model Context Protocol](https://modelcontextprotocol.io) 2025-06-18 specification over JSON-RPC 2.0. The protocol logic is split across [`api/_mcp/`](api/_mcp/) — `auth.js` (Bearer/OAuth + x402 paywall), `dispatch.js` (JSON-RPC routing), `catalog.js` (dynamic tool catalog), `payments.js` (x402 paid-tool settlement), `render.js`, and `embed-policy.js`. Tools are registered per category under [`api/_mcp/tools/`](api/_mcp/tools/) (`avatars.js`, `models.js`, `solana.js`, `pumpfun.js`). External AI systems (including Claude Desktop, other agents, or custom integrations) can drive avatars programmatically through this surface.
 
 **Endpoint:** `POST /api/mcp` (tools), `GET /api/mcp` (SSE), `DELETE /api/mcp` (session terminate)
 **Auth:** OAuth 2.1 Bearer token with `mcp` scope; some tools additionally require x402 USDC payment
@@ -10575,7 +10575,7 @@ Access tokens are short-lived JWTs (1 hour). Refresh tokens are opaque strings s
 
 The catalog is assembled dynamically at request time from the per-category tool modules. Current tools:
 
-_Avatars_ (`[`api/_mcp/tools/avatars.js`](api/_mcp/tools/avatars.js)`)
+_Avatars_ ([`api/_mcp/tools/avatars.js`](api/_mcp/tools/avatars.js))
 
 | Tool                    | Description                                                                                                                                |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10585,7 +10585,7 @@ _Avatars_ (`[`api/_mcp/tools/avatars.js`](api/_mcp/tools/avatars.js)`)
 | `render_avatar`         | Produce an HTML `<model-viewer>` snippet that renders the given avatar, with configurable background, camera orbit, poster, and AR button. |
 | `delete_avatar`         | Soft-delete an avatar you own. Requires the `avatars:delete` scope.                                                                        |
 
-_Models_ (`[`api/_mcp/tools/models.js`](api/_mcp/tools/models.js)`)
+_Models_ ([`api/_mcp/tools/models.js`](api/_mcp/tools/models.js))
 
 | Tool             | Description                                                                                                                                                                                                                |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -10593,7 +10593,7 @@ _Models_ (`[`api/_mcp/tools/models.js`](api/_mcp/tools/models.js)`)
 | `inspect_model`  | Parse a GLB/glTF and return structural stats: scene/node/mesh counts, vertex and triangle totals, material and texture summaries, and extensions used. Pure inspection — no advice.                                        |
 | `optimize_model` | Inspect the model and return actionable suggestions for reducing size and draw-call overhead: triangle budget, Draco/Meshopt, oversized textures, KTX2 transcoding, non-indexed primitives, redundant materials, and more. |
 
-_Solana_ (`[`api/_mcp/tools/solana.js`](api/_mcp/tools/solana.js)`) — all public, no auth required
+_Solana_ ([`api/_mcp/tools/solana.js`](api/_mcp/tools/solana.js)) — all public, no auth required
 
 | Tool                        | Description                                                                                                                                                                                    |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -10601,7 +10601,7 @@ _Solana_ (`[`api/_mcp/tools/solana.js`](api/_mcp/tools/solana.js)`) — all publ
 | `solana_agent_attestations` | List recent on-chain attestations (feedback, validation, task offers, acceptances, disputes) about a Solana agent; each row includes verified/disputed/revoked flags.                          |
 | `solana_agent_passport`     | Full discovery card for a Solana agent: identity, owner wallet, reputation summary, latest validation result, and attestation schema endpoint — the Solana equivalent of an ERC-8004 passport. |
 
-_Pump.fun_ (`[`api/_mcp/tools/pumpfun.js`](api/_mcp/tools/pumpfun.js)`)
+_Pump.fun_ ([`api/_mcp/tools/pumpfun.js`](api/_mcp/tools/pumpfun.js))
 
 | Tool                         | Description                                                                                                                                                                                      |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -10645,7 +10645,7 @@ On **Solana**, the equivalent identity is a **Metaplex Core asset**: the asset p
 
 ### Deployment Addresses
 
-See `[`contracts/DEPLOYMENTS.md`](contracts/DEPLOYMENTS.md)` for current mainnet and testnet addresses. All three registries are deployed via **CREATE2** against a custom vanity-prefixed factory, so the **same address is used on every supported EVM chain** within an environment class — mainnet contracts have one address, testnet contracts another.
+See [`contracts/DEPLOYMENTS.md`](contracts/DEPLOYMENTS.md) for current mainnet and testnet addresses. All three registries are deployed via **CREATE2** against a custom vanity-prefixed factory, so the **same address is used on every supported EVM chain** within an environment class — mainnet contracts have one address, testnet contracts another.
 
 **Mainnet (across Ethereum, Optimism, BSC, Gnosis, Polygon, Fantom, zkSync Era, Moonbeam, Mantle, Base, Arbitrum One, Celo, Avalanche, Linea, Scroll):**
 
@@ -10726,7 +10726,7 @@ const rows = await listAttestations({ agentAsset, kind: 'all', network: 'devnet'
 
 Server read endpoint: `GET /api/agents/solana-attestations?asset=<pubkey>&kind=feedback|validation|all&network=devnet|mainnet`.
 
-Demo page: `[sdk/example/solana-attest.html](sdk/example/solana-attest.html)`.
+Demo page: [sdk/example/solana-attest.html](sdk/example/solana-attest.html).
 
 ### Pump.fun signals (Solana off-chain reputation)
 
@@ -10734,18 +10734,18 @@ Solana agents can ingest live pump.fun activity (GitHub social-fee claims, token
 
 | Surface       | Path                                                                                 | Purpose                                                                                                                                                                                                               |
 | ------------- | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| MCP client    | `[api/\_lib/pumpfun-mcp.js](api/_lib/pumpfun-mcp.js)`                                  | Cached JSON-RPC client to upstream `pumpfun-claims-bot`                                                                                                                                                               |
-| Read API      | `[api/agents/pumpfun.js](api/agents/pumpfun.js)`                                       | `GET ?op=claims\|graduations\|token\|creator`, plus `?_handler=feed` for the SSE event stream and `?_handler=metadata` for token metadata. Auth: session or bearer (`mcp`/`profile` scope).                           |
+| MCP client    | [api/\_lib/pumpfun-mcp.js](api/_lib/pumpfun-mcp.js)                                  | Cached JSON-RPC client to upstream `pumpfun-claims-bot`                                                                                                                                                               |
+| Read API      | [api/agents/pumpfun.js](api/agents/pumpfun.js)                                       | `GET ?op=claims\|graduations\|token\|creator`, plus `?_handler=feed` for the SSE event stream and `?_handler=metadata` for token metadata. Auth: session or bearer (`mcp`/`profile` scope).                           |
 | Write actions | [api/agents/pumpfun/[action].js](api/agents/pumpfun/[action].js)                     | Dynamic dispatcher for `buy`, `sell`, `swap`, `launch`, `pay`, `portfolio`, `balances`, and buyback lifecycle (`create`, `accept`, `withdraw`, `distribute`, `extend_account`, `update_authority`, `update_buyback`). |
 | Cron crawler  | [api/cron/[name].js](api/cron/[name].js) (`name=pumpfun-signals`)                    | 15-min sweep that writes the `pumpfun_signals` table; routed through the dynamic cron handler.                                                                                                                        |
-| Skills        | `[src/agent-skills-pumpfun-watch.js](src/agent-skills-pumpfun-watch.js)`               | `recent-claims`, `token-intel`, `watch-start`, `watch-stop`                                                                                                                                                           |
-| Widget        | `[src/widgets/pumpfun-feed.js](src/widgets/pumpfun-feed.js)`                           | Live cards overlay                                                                                                                                                                                                    |
+| Skills        | [src/agent-skills-pumpfun-watch.js](src/agent-skills-pumpfun-watch.js)               | `recent-claims`, `token-intel`, `watch-start`, `watch-stop`                                                                                                                                                           |
+| Widget        | [src/widgets/pumpfun-feed.js](src/widgets/pumpfun-feed.js)                           | Live cards overlay                                                                                                                                                                                                    |
 | Reputation    | [api/agents/solana/[action].js](api/agents/solana/[action].js) (`action=reputation`) | Reputation summary with the `pumpfun_signals` block included in the response                                                                                                                                          |
 | Passport      | [api/agents/solana/[action].js](api/agents/solana/[action].js) (`action=card`)       | Public passport card with the `pumpfun` block on the agent card                                                                                                                                                       |
 
-The crawler runs on a `*/15 * * * *` schedule (see `[vercel.json](vercel.json)`) and writes into the `pumpfun_signals` table. Agents subscribed via `watch-start` react to incoming events through the existing protocol bus — no new event types required.
+The crawler runs on a `*/15 * * * *` schedule (see [vercel.json](vercel.json)) and writes into the `pumpfun_signals` table. Agents subscribed via `watch-start` react to incoming events through the existing protocol bus — no new event types required.
 
-Full design and configuration in `[docs/solana-pumpfun.md](docs/solana-pumpfun.md)`.
+Full design and configuration in [docs/solana-pumpfun.md](docs/solana-pumpfun.md).
 
 ---
 
@@ -10753,9 +10753,9 @@ Full design and configuration in `[docs/solana-pumpfun.md](docs/solana-pumpfun.m
 
 Beyond the Solana reputation signals described above, the platform also ships consumer-facing pump.fun tooling:
 
-- **Token Launcher** — UI for creating and launching new tokens, at `[public/pumpfun.html](public/pumpfun.html)`.
-- **Live Dashboard** — real-time tracker for new tokens, at `[pages/pump-live.html](pages/pump-live.html)`.
-- **Skills** — the `[pump-fun-skills/](pump-fun-skills/)` directory contains agent skills for reading and acting on pump.fun.
+- **Token Launcher** — UI for creating and launching new tokens, at [public/pumpfun.html](public/pumpfun.html).
+- **Live Dashboard** — real-time tracker for new tokens, at [pages/pump-live.html](pages/pump-live.html).
+- **Skills** — the [pump-fun-skills/](pump-fun-skills/) directory contains agent skills for reading and acting on pump.fun.
 
 ### Token launcher (USDC v2)
 
@@ -10774,7 +10774,7 @@ The launcher uses pump.fun's v2 USDC quote payload and supports a creator-signer
 
 ### Pump-swap buyback
 
-A buyback flow lets an agent route revenue from x402 paid endpoints into pump-swap purchases of its own token — closing the loop between paid usage and tokenholder value. See `[scripts/pump-launch-usdc.mjs](scripts/pump-launch-usdc.mjs)` and the inaugural-launch self-contained prompts in `[docs/internal/](docs/internal/)`.
+A buyback flow lets an agent route revenue from x402 paid endpoints into pump-swap purchases of its own token — closing the loop between paid usage and tokenholder value. See [scripts/pump-launch-usdc.mjs](scripts/pump-launch-usdc.mjs) and the inaugural-launch self-contained prompts in [docs/internal/](docs/internal/).
 
 ### Pump visualizer
 
@@ -10790,7 +10790,7 @@ The visualizer supports search, sort, live pulses, and auto-refresh. Backed by t
 
 ### Pump.fun MCP edge worker
 
-For external agents that need pump.fun data with strict latency, a Cloudflare Worker mirror of the read API lives in `[workers/pump-fun-mcp/](workers/pump-fun-mcp/)`. Deploy with `wrangler deploy` — the worker proxies the upstream `pumpfun-claims-bot` and answers MCP `tools/call` requests at the edge.
+For external agents that need pump.fun data with strict latency, a Cloudflare Worker mirror of the read API lives in [workers/pump-fun-mcp/](workers/pump-fun-mcp/). Deploy with `wrangler deploy` — the worker proxies the upstream `pumpfun-claims-bot` and answers MCP `tools/call` requests at the edge.
 
 ### Channel & Telegram bridge
 
@@ -10809,7 +10809,7 @@ The platform's pump.fun launches pre-grind vanity mint addresses with the WASM g
 
 ## Database Schema
 
-The Postgres schema (`[`api/_lib/schema.sql`](api/_lib/schema.sql)`) is fully idempotent — every `CREATE TABLE` uses `IF NOT EXISTS`, so the file is safe to re-run on any environment. Per-feature migrations live under `[`api/_lib/migrations/`](api/_lib/migrations/)` and are applied with `npm run db:migrate`.
+The Postgres schema ([`api/_lib/schema.sql`](api/_lib/schema.sql)) is fully idempotent — every `CREATE TABLE` uses `IF NOT EXISTS`, so the file is safe to re-run on any environment. Per-feature migrations live under [`api/_lib/migrations/`](api/_lib/migrations/) and are applied with `npm run db:migrate`.
 
 The schema currently defines ~53 tables grouped below. Columns shown are the most commonly queried ones; the source file is authoritative.
 
@@ -10976,14 +10976,14 @@ npm run claude -- <command>
 
 ### Production Deployment (Google Cloud Run)
 
-Production runs on **Google Cloud Run** (`three-ws-api`, region `us-central1`): one Express container (`[server/index.mjs](server/index.mjs)`) serves the static frontend, the `vercel.json` route table, and every `api/**` handler, fronted by a global HTTPS load balancer + Cloud CDN. Deployment is two steps — build the frontend, then submit the container build:
+Production runs on **Google Cloud Run** (`three-ws-api`, region `us-central1`): one Express container ([server/index.mjs](server/index.mjs)) serves the static frontend, the `vercel.json` route table, and every `api/**` handler, fronted by a global HTTPS load balancer + Cloud CDN. Deployment is two steps — build the frontend, then submit the container build:
 
 ```bash
 npm run build       # frontend build to dist/ (only when frontend changed)
 npm run deploy:gcp  # check:dist + db:check, gcloud builds submit, purge CDN
 ```
 
-`npm run deploy:gcp` runs `gcloud builds submit --config server/cloudbuild.yaml`. Routing, cache headers, and cron schedules are defined in `vercel.json`, which the server reads at runtime. The ~80 scheduled jobs run on **Cloud Scheduler** (provisioned by `[scripts/create-gcp-scheduler.mjs](scripts/create-gcp-scheduler.mjs)`); the GPU inference workers run as their own Cloud Run services. Full ops runbook (load balancer, DNS/TLS, env, rollback, recovery): **`[docs/ops/gcp-production.md](docs/ops/gcp-production.md)`**.
+`npm run deploy:gcp` runs `gcloud builds submit --config server/cloudbuild.yaml`. Routing, cache headers, and cron schedules are defined in `vercel.json`, which the server reads at runtime. The ~80 scheduled jobs run on **Cloud Scheduler** (provisioned by [scripts/create-gcp-scheduler.mjs](scripts/create-gcp-scheduler.mjs)); the GPU inference workers run as their own Cloud Run services. Full ops runbook (load balancer, DNS/TLS, env, rollback, recovery): **[docs/ops/gcp-production.md](docs/ops/gcp-production.md)**.
 
 **Environment variables** live on the Cloud Run service, not in `.env` files — inspect or update them with `gcloud run services describe/update three-ws-api --region us-central1`. See [Environment Variables](#environment-variables) for the full list.
 
@@ -10993,7 +10993,7 @@ For a traditional server deployment:
 
 1. Build: `npm run build` → `dist/`
 2. Serve `dist/` as static files (nginx, Caddy, Express)
-3. Run `api/` endpoints via Node.js (serve them with the Express container in `[server/index.mjs](server/index.mjs)`, same as production)
+3. Run `api/` endpoints via Node.js (serve them with the Express container in [server/index.mjs](server/index.mjs), same as production)
 4. Connect to Postgres (Neon or self-hosted)
 5. Connect to S3-compatible storage (R2, MinIO, AWS S3)
 6. Schedule cron jobs with node-cron or systemd timers
@@ -11018,7 +11018,7 @@ server {
 
 ### Versioning & Compatibility
 
-three.ws follows [Semantic Versioning](https://semver.org). The authoritative version lives in `[package.json](package.json)`; the current release is reflected in the badge at the top of this README.
+three.ws follows [Semantic Versioning](https://semver.org). The authoritative version lives in [package.json](package.json); the current release is reflected in the badge at the top of this README.
 
 **What "stable" means**
 
@@ -11030,7 +11030,7 @@ three.ws follows [Semantic Versioning](https://semver.org). The authoritative ve
 | OAuth 2.1 endpoints (`/oauth/*`, `/.well-known/*`)                           | **Stable** — frozen by the relevant RFCs                                                           | n/a                                                                  |
 | MCP surface at `POST /api/mcp`                                               | **Stable** — pinned to protocol version `2025-06-18`; tool catalogue is additive                   | The protocol version is part of every response                       |
 | Internal handlers, helpers under `api/_lib/`, `api/_mcp/`                     | **Unstable** — no compatibility guarantees                                                         | Subject to refactor between releases                                 |
-| Solidity contracts in `contracts/`                                           | **Stable per deployment** — see `[contracts/DEPLOYMENTS.md](contracts/DEPLOYMENTS.md)` for addresses | New chains add rows; existing deployments are immutable              |
+| Solidity contracts in `contracts/`                                           | **Stable per deployment** — see [contracts/DEPLOYMENTS.md](contracts/DEPLOYMENTS.md) for addresses | New chains add rows; existing deployments are immutable              |
 
 **Pinning recommendations**
 
@@ -11136,51 +11136,51 @@ npm run test:e2e                        # Playwright only
 npm run verify                          # Prettier check + Vite build
 ```
 
-**Representative Vitest coverage** (full inventory under `[tests/](tests/)`):
+**Representative Vitest coverage** (full inventory under [tests/](tests/)):
 
 | Area                         | File                                                                                                                                                                                                                                                                                                                                                                         |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Agent CRUD                   | `[tests/api/agents.test.js](tests/api/agents.test.js)`                                                                                                                                                                                                                                                                                                                         |
-| Agent memory                 | `[tests/api/agent-memory.test.js](tests/api/agent-memory.test.js)`, `[tests/src/agent-memory.test.js](tests/src/agent-memory.test.js)`                                                                                                                                                                                                                                           |
-| Agent protocol bus           | `[tests/agent-protocol.test.js](tests/agent-protocol.test.js)`, `[tests/src/agent-protocol.test.js](tests/src/agent-protocol.test.js)`                                                                                                                                                                                                                                           |
-| Widget CRUD                  | `[tests/api/widgets.test.js](tests/api/widgets.test.js)`                                                                                                                                                                                                                                                                                                                       |
-| Widget types                 | `[tests/src/widget-types.test.js](tests/src/widget-types.test.js)`                                                                                                                                                                                                                                                                                                             |
-| OAuth flow                   | `[tests/api/oauth-authorize.test.js](tests/api/oauth-authorize.test.js)`, `[tests/api/oauth-token.test.js](tests/api/oauth-token.test.js)`, `[tests/api/oauth-introspect.test.js](tests/api/oauth-introspect.test.js)`                                                                                                                                                             |
-| SIWE / SIWS wallet auth      | `[tests/api/siwe.test.js](tests/api/siwe.test.js)`                                                                                                                                                                                                                                                                                                                             |
-| Email + password auth        | `[tests/api/auth-email.test.js](tests/api/auth-email.test.js)`, `[tests/api/auth-helpers.test.js](tests/api/auth-helpers.test.js)`                                                                                                                                                                                                                                               |
-| API keys                     | `[tests/api/api-keys.test.js](tests/api/api-keys.test.js)`                                                                                                                                                                                                                                                                                                                     |
-| LLM proxy                    | `[tests/api/llm-anthropic.test.js](tests/api/llm-anthropic.test.js)`, `[tests/api/chat-proxy-ratelimit.test.js](tests/api/chat-proxy-ratelimit.test.js)`                                                                                                                                                                                                                         |
-| MCP server                   | `[tests/api/mcp.test.js](tests/api/mcp.test.js)`                                                                                                                                                                                                                                                                                                                               |
-| Schema validation            | `[tests/api-validate.test.js](tests/api-validate.test.js)`                                                                                                                                                                                                                                                                                                                     |
-| Crypto utilities             | `[tests/api/crypto.test.js](tests/api/crypto.test.js)`                                                                                                                                                                                                                                                                                                                         |
-| Embed CORS policy            | `[tests/api/embed-policy.test.js](tests/api/embed-policy.test.js)`                                                                                                                                                                                                                                                                                                             |
-| Embed bridge handshake       | `[tests/embed-bridge-origin.test.js](tests/embed-bridge-origin.test.js)`, `[tests/embed-bridge-roundtrip.test.js](tests/embed-bridge-roundtrip.test.js)`                                                                                                                                                                                                                         |
-| Animation slots / state      | `[tests/src/animation-slots.test.js](tests/src/animation-slots.test.js)`, `[tests/animation-state-machine.test.js](tests/animation-state-machine.test.js)`, `[tests/animations.test.js](tests/animations.test.js)`                                                                                                                                                                 |
-| ARKit-52 morphs / lipsync    | `[tests/arkit52.test.js](tests/arkit52.test.js)`, `[tests/arkit-blendshapes.test.js](tests/arkit-blendshapes.test.js)`, `[tests/agent-avatar-lipsync.test.js](tests/agent-avatar-lipsync.test.js)`, `[tests/lipsync-driver.test.js](tests/lipsync-driver.test.js)`, `[tests/src/lip-sync-analyser.test.js](tests/src/lip-sync-analyser.test.js)`                                       |
-| x402 protocol                | `[tests/api/x402.test.js](tests/api/x402.test.js)`, `[tests/api/x402-spec.test.js](tests/api/x402-spec.test.js)`, `[tests/api/x402-paid-endpoint-siwx.test.js](tests/api/x402-paid-endpoint-siwx.test.js)`, `[tests/api/x402-gas-sponsoring.test.js](tests/api/x402-gas-sponsoring.test.js)`, `[tests/api/x402-payment-identifier.test.js](tests/api/x402-payment-identifier.test.js)` |
-| Persona                      | `[tests/api/persona.test.js](tests/api/persona.test.js)`                                                                                                                                                                                                                                                                                                                       |
-| Pump.fun MCP / skills        | `[tests/api/pump-fun-mcp.test.js](tests/api/pump-fun-mcp.test.js)`, `[tests/pump-mcp-tools.test.js](tests/pump-mcp-tools.test.js)`, `[tests/pumpfun-ported-skills.test.js](tests/pumpfun-ported-skills.test.js)`, `[tests/src/pump-fun-skill.test.js](tests/src/pump-fun-skill.test.js)`                                                                                             |
-| Pump.fun pricing / curves    | `[tests/api/pump-curve.test.js](tests/api/pump-curve.test.js)`, `[tests/bonding-curve.test.js](tests/bonding-curve.test.js)`, `[tests/pump-swap-ix.test.js](tests/pump-swap-ix.test.js)`                                                                                                                                                                                           |
-| Pump.fun signals / live feed | `[tests/pumpfun-signals.test.js](tests/pumpfun-signals.test.js)`, `[tests/pumpfun-ws-feed.test.js](tests/pumpfun-ws-feed.test.js)`, `[tests/pump-live-stream.test.js](tests/pump-live-stream.test.js)`, `[tests/carbon-graduations.test.js](tests/carbon-graduations.test.js)`                                                                                                       |
-| Club tips / payouts          | `[tests/api/club-tips.test.js](tests/api/club-tips.test.js)`, `[tests/api/club-tips-stream.test.js](tests/api/club-tips-stream.test.js)`, `[tests/api/club-payouts-cron.test.js](tests/api/club-payouts-cron.test.js)`, `[tests/api/dance-tip.test.js](tests/api/dance-tip.test.js)`                                                                                                 |
-| Club performance / venue     | `[tests/club-audio.test.js](tests/club-audio.test.js)`, `[tests/club-camera.test.js](tests/club-camera.test.js)`, `[tests/club-perf.test.js](tests/club-perf.test.js)`, `[tests/club-venue-load.test.js](tests/club-venue-load.test.js)`, `[tests/club-sequence.test.js](tests/club-sequence.test.js)`                                                                                 |
-| Avatar bake / snapshot       | `[tests/avatar-bake.test.js](tests/avatar-bake.test.js)`, `[tests/avatar-snapshot.test.js](tests/avatar-snapshot.test.js)`, `[tests/api/avatar-og.test.js](tests/api/avatar-og.test.js)`                                                                                                                                                                                           |
-| glTF canonicalize / extras   | `[tests/glb-canonicalize.test.js](tests/glb-canonicalize.test.js)`, `[tests/src/gltf-extras.test.js](tests/src/gltf-extras.test.js)`, `[tests/src/validator.test.js](tests/src/validator.test.js)`                                                                                                                                                                                 |
-| Vanity (Solana + EVM)        | `[tests/vanity-wasm-grinder.test.js](tests/vanity-wasm-grinder.test.js)`, `[tests/src/eth-vanity-derivation.test.js](tests/src/eth-vanity-derivation.test.js)`, `[tests/src/eth-vanity-server-verify.test.js](tests/src/eth-vanity-server-verify.test.js)`, `[tests/src/vanity-validation.test.js](tests/src/vanity-validation.test.js)`                                             |
-| Build asset paths            | `[tests/build-asset-paths.test.js](tests/build-asset-paths.test.js)`                                                                                                                                                                                                                                                                                                           |
-| Agent monetization           | `[tests/agent-monetization.test.js](tests/agent-monetization.test.js)`                                                                                                                                                                                                                                                                                                         |
-| Billing                      | `[tests/billing.test.js](tests/billing.test.js)`                                                                                                                                                                                                                                                                                                                               |
-| Branding / camera presets    | `[tests/branding.test.js](tests/branding.test.js)`, `[tests/camera-presets.test.js](tests/camera-presets.test.js)`                                                                                                                                                                                                                                                               |
+| Agent CRUD                   | [tests/api/agents.test.js](tests/api/agents.test.js)                                                                                                                                                                                                                                                                                                                         |
+| Agent memory                 | [tests/api/agent-memory.test.js](tests/api/agent-memory.test.js), [tests/src/agent-memory.test.js](tests/src/agent-memory.test.js)                                                                                                                                                                                                                                           |
+| Agent protocol bus           | [tests/agent-protocol.test.js](tests/agent-protocol.test.js), [tests/src/agent-protocol.test.js](tests/src/agent-protocol.test.js)                                                                                                                                                                                                                                           |
+| Widget CRUD                  | [tests/api/widgets.test.js](tests/api/widgets.test.js)                                                                                                                                                                                                                                                                                                                       |
+| Widget types                 | [tests/src/widget-types.test.js](tests/src/widget-types.test.js)                                                                                                                                                                                                                                                                                                             |
+| OAuth flow                   | [tests/api/oauth-authorize.test.js](tests/api/oauth-authorize.test.js), [tests/api/oauth-token.test.js](tests/api/oauth-token.test.js), [tests/api/oauth-introspect.test.js](tests/api/oauth-introspect.test.js)                                                                                                                                                             |
+| SIWE / SIWS wallet auth      | [tests/api/siwe.test.js](tests/api/siwe.test.js)                                                                                                                                                                                                                                                                                                                             |
+| Email + password auth        | [tests/api/auth-email.test.js](tests/api/auth-email.test.js), [tests/api/auth-helpers.test.js](tests/api/auth-helpers.test.js)                                                                                                                                                                                                                                               |
+| API keys                     | [tests/api/api-keys.test.js](tests/api/api-keys.test.js)                                                                                                                                                                                                                                                                                                                     |
+| LLM proxy                    | [tests/api/llm-anthropic.test.js](tests/api/llm-anthropic.test.js), [tests/api/chat-proxy-ratelimit.test.js](tests/api/chat-proxy-ratelimit.test.js)                                                                                                                                                                                                                         |
+| MCP server                   | [tests/api/mcp.test.js](tests/api/mcp.test.js)                                                                                                                                                                                                                                                                                                                               |
+| Schema validation            | [tests/api-validate.test.js](tests/api-validate.test.js)                                                                                                                                                                                                                                                                                                                     |
+| Crypto utilities             | [tests/api/crypto.test.js](tests/api/crypto.test.js)                                                                                                                                                                                                                                                                                                                         |
+| Embed CORS policy            | [tests/api/embed-policy.test.js](tests/api/embed-policy.test.js)                                                                                                                                                                                                                                                                                                             |
+| Embed bridge handshake       | [tests/embed-bridge-origin.test.js](tests/embed-bridge-origin.test.js), [tests/embed-bridge-roundtrip.test.js](tests/embed-bridge-roundtrip.test.js)                                                                                                                                                                                                                         |
+| Animation slots / state      | [tests/src/animation-slots.test.js](tests/src/animation-slots.test.js), [tests/animation-state-machine.test.js](tests/animation-state-machine.test.js), [tests/animations.test.js](tests/animations.test.js)                                                                                                                                                                 |
+| ARKit-52 morphs / lipsync    | [tests/arkit52.test.js](tests/arkit52.test.js), [tests/arkit-blendshapes.test.js](tests/arkit-blendshapes.test.js), [tests/agent-avatar-lipsync.test.js](tests/agent-avatar-lipsync.test.js), [tests/lipsync-driver.test.js](tests/lipsync-driver.test.js), [tests/src/lip-sync-analyser.test.js](tests/src/lip-sync-analyser.test.js)                                       |
+| x402 protocol                | [tests/api/x402.test.js](tests/api/x402.test.js), [tests/api/x402-spec.test.js](tests/api/x402-spec.test.js), [tests/api/x402-paid-endpoint-siwx.test.js](tests/api/x402-paid-endpoint-siwx.test.js), [tests/api/x402-gas-sponsoring.test.js](tests/api/x402-gas-sponsoring.test.js), [tests/api/x402-payment-identifier.test.js](tests/api/x402-payment-identifier.test.js) |
+| Persona                      | [tests/api/persona.test.js](tests/api/persona.test.js)                                                                                                                                                                                                                                                                                                                       |
+| Pump.fun MCP / skills        | [tests/api/pump-fun-mcp.test.js](tests/api/pump-fun-mcp.test.js), [tests/pump-mcp-tools.test.js](tests/pump-mcp-tools.test.js), [tests/pumpfun-ported-skills.test.js](tests/pumpfun-ported-skills.test.js), [tests/src/pump-fun-skill.test.js](tests/src/pump-fun-skill.test.js)                                                                                             |
+| Pump.fun pricing / curves    | [tests/api/pump-curve.test.js](tests/api/pump-curve.test.js), [tests/bonding-curve.test.js](tests/bonding-curve.test.js), [tests/pump-swap-ix.test.js](tests/pump-swap-ix.test.js)                                                                                                                                                                                           |
+| Pump.fun signals / live feed | [tests/pumpfun-signals.test.js](tests/pumpfun-signals.test.js), [tests/pumpfun-ws-feed.test.js](tests/pumpfun-ws-feed.test.js), [tests/pump-live-stream.test.js](tests/pump-live-stream.test.js), [tests/carbon-graduations.test.js](tests/carbon-graduations.test.js)                                                                                                       |
+| Club tips / payouts          | [tests/api/club-tips.test.js](tests/api/club-tips.test.js), [tests/api/club-tips-stream.test.js](tests/api/club-tips-stream.test.js), [tests/api/club-payouts-cron.test.js](tests/api/club-payouts-cron.test.js), [tests/api/dance-tip.test.js](tests/api/dance-tip.test.js)                                                                                                 |
+| Club performance / venue     | [tests/club-audio.test.js](tests/club-audio.test.js), [tests/club-camera.test.js](tests/club-camera.test.js), [tests/club-perf.test.js](tests/club-perf.test.js), [tests/club-venue-load.test.js](tests/club-venue-load.test.js), [tests/club-sequence.test.js](tests/club-sequence.test.js)                                                                                 |
+| Avatar bake / snapshot       | [tests/avatar-bake.test.js](tests/avatar-bake.test.js), [tests/avatar-snapshot.test.js](tests/avatar-snapshot.test.js), [tests/api/avatar-og.test.js](tests/api/avatar-og.test.js)                                                                                                                                                                                           |
+| glTF canonicalize / extras   | [tests/glb-canonicalize.test.js](tests/glb-canonicalize.test.js), [tests/src/gltf-extras.test.js](tests/src/gltf-extras.test.js), [tests/src/validator.test.js](tests/src/validator.test.js)                                                                                                                                                                                 |
+| Vanity (Solana + EVM)        | [tests/vanity-wasm-grinder.test.js](tests/vanity-wasm-grinder.test.js), [tests/src/eth-vanity-derivation.test.js](tests/src/eth-vanity-derivation.test.js), [tests/src/eth-vanity-server-verify.test.js](tests/src/eth-vanity-server-verify.test.js), [tests/src/vanity-validation.test.js](tests/src/vanity-validation.test.js)                                             |
+| Build asset paths            | [tests/build-asset-paths.test.js](tests/build-asset-paths.test.js)                                                                                                                                                                                                                                                                                                           |
+| Agent monetization           | [tests/agent-monetization.test.js](tests/agent-monetization.test.js)                                                                                                                                                                                                                                                                                                         |
+| Billing                      | [tests/billing.test.js](tests/billing.test.js)                                                                                                                                                                                                                                                                                                                               |
+| Branding / camera presets    | [tests/branding.test.js](tests/branding.test.js), [tests/camera-presets.test.js](tests/camera-presets.test.js)                                                                                                                                                                                                                                                               |
 
 ### Playwright end-to-end smokes
 
-Browser-driven smokes live in `[tests/e2e/](tests/e2e/)` and run against the local dev stack (Vite + the `api/` handlers). They cover user-visible flows that don't fit in Vitest.
+Browser-driven smokes live in [tests/e2e/](tests/e2e/) and run against the local dev stack (Vite + the `api/` handlers). They cover user-visible flows that don't fit in Vitest.
 
 | Smoke                                            | What it exercises                                                        |
 | ------------------------------------------------ | ------------------------------------------------------------------------ |
-| `[tests/e2e/club.spec.js](tests/e2e/club.spec.js)` | `/club` venue + HDRI load and audio session within the cold-start budget |
+| [tests/e2e/club.spec.js](tests/e2e/club.spec.js) | `/club` venue + HDRI load and audio session within the cold-start budget |
 
-Run with `npx playwright test` (or `npm run test:e2e`). Configuration in `[playwright.config.js](playwright.config.js)`; results in `test-results/` (gitignored).
+Run with `npx playwright test` (or `npm run test:e2e`). Configuration in [playwright.config.js](playwright.config.js); results in `test-results/` (gitignored).
 
 ### Smart contracts
 
@@ -11190,7 +11190,7 @@ Smart contract tests are in `contracts/test/` and run via Foundry:
 cd contracts && forge test
 ```
 
-CREATE2 vanity grinds for the multichain factory and payment contracts are recorded in `[contracts/DEPLOYMENTS.md](contracts/DEPLOYMENTS.md)`.
+CREATE2 vanity grinds for the multichain factory and payment contracts are recorded in [contracts/DEPLOYMENTS.md](contracts/DEPLOYMENTS.md).
 
 ---
 
@@ -11203,7 +11203,7 @@ No. The viewer, agent runtime, manifest editor, and `/app` work without a wallet
 Not unless you explicitly choose to publish or register the agent. Drag-and-drop in the viewer is fully client-side — the file never leaves the browser. The "Publish" and "Register" flows are the points where the GLB is uploaded to R2.
 
 **Which LLM does the agent use?**
-The default is Anthropic Claude (`claude-sonnet-4-6` for production, `claude-haiku-4-5-20251001` for low-cost development). Brain routing is configurable per-agent through the manifest and via the `brain` attribute on `<agent-3d>`. Other providers can be wired in by extending `[`src/runtime/providers.js`](src/runtime/providers.js)`.
+The default is Anthropic Claude (`claude-sonnet-4-6` for production, `claude-haiku-4-5-20251001` for low-cost development). Brain routing is configurable per-agent through the manifest and via the `brain` attribute on `<agent-3d>`. Other providers can be wired in by extending [`src/runtime/providers.js`](src/runtime/providers.js).
 
 **Can I run three.ws fully offline?**
 Yes for the viewer, no for the agent runtime. With `sandbox` set on `<agent-3d>` the element refuses all network calls; you can still load a local GLB, play animations, and exercise the manifest. The LLM brain, voice, and on-chain features require network connectivity.
@@ -11237,7 +11237,7 @@ Increment `JWT_KID` and add the new secret. Existing tokens continue to validate
 
 ## Contributing
 
-See `[CONTRIBUTING.md](CONTRIBUTING.md)` for the full contributor guide. Contributors are expected to follow the `[Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md)` in every project space — issues, pull requests, discussions, and any community channel that links to this repository.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full contributor guide. Contributors are expected to follow the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md) in every project space — issues, pull requests, discussions, and any community channel that links to this repository.
 
 **Quick rules:**
 
@@ -11269,7 +11269,7 @@ Please **do not** file public GitHub issues for vulnerabilities. Disclosure runs
 2. You will receive an acknowledgement within two business days.
 3. We aim to ship a fix or mitigation within 30 days for high-severity reports, and to credit reporters in the release notes (unless you ask to remain anonymous).
 
-The current threat model and hardening notes live in `[specs/SECURITY.md](specs/SECURITY.md)` and `[docs/security.md](docs/security.md)`. The [Security Hardening](#security-hardening) section above summarises the in-tree controls.
+The current threat model and hardening notes live in [specs/SECURITY.md](specs/SECURITY.md) and [docs/security.md](docs/security.md). The [Security Hardening](#security-hardening) section above summarises the in-tree controls.
 
 In-scope: this repository and its deployed surfaces (`three.ws`, `cdn.three.ws`, `*.three.ws`). Out-of-scope: third-party services we integrate with (Google Cloud, Neon, Cloudflare R2, Upstash, Privy, Anthropic, ElevenLabs, pump.fun) — please report directly to them.
 
@@ -11293,4 +11293,4 @@ related:
 
 ## License
 
-All rights reserved. See `[LICENSE](LICENSE)`.
+All rights reserved. See [LICENSE](LICENSE).

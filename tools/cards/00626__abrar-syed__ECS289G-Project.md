@@ -46,7 +46,7 @@ related:
 
 # [ECS 289G-Project] Constructing Compelling Narratives: A Multimodal Framework for Story Generation
 
-!`[Architecture](architecture.png)`
+![Architecture](architecture.png)
 
 ## How to run?
 

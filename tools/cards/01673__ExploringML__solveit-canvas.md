@@ -182,7 +182,7 @@ click the nav button to hide and re-show it.
 ## Contributing
 
 Contributions are welcome! If you find a bug or have a feature idea, please
-`[open an issue](../../issues)`. Pull requests are also appreciated — for larger
+[open an issue](../../issues). Pull requests are also appreciated — for larger
 changes, consider opening an issue first to discuss the approach.
 
 ### Project Structure

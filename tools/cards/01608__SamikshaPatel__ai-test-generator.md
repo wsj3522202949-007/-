@@ -142,22 +142,22 @@ Each feature maps to an engineering or business decision made at the QA Manager 
 ## Screenshots
 
 ### Allure Report — 58/58 Passing, 100%
-!`[Allure Overview](docs/screenshots/allure-overview.png)`
+![Allure Overview](docs/screenshots/allure-overview.png)
 
 ### Allure Suites — Full Test Detail with Step Breakdown
-!`[Allure Suites](docs/screenshots/allure-suites.png)`
+![Allure Suites](docs/screenshots/allure-suites.png)
 
 ### Self-Healing in Action — Terminal Output
 Intentionally broken selectors auto-recovered at runtime. No test failures, no manual fix needed.
-!`[Self-Heal Banner](docs/screenshots/self-heal-banner.png)`
+![Self-Heal Banner](docs/screenshots/self-heal-banner.png)
 
 ### Trend Dashboard — 5 Charts, 50 Runs Tracked
 Built-in Chart.js dashboard tracking pass/fail trends, self-heal frequency, page registry coverage, avg response time, and AI quality score across every run. Automatically committed back to `main` after each CI full run.
-!`[Trend Dashboard](docs/screenshots/trend-dashboard.png)`
+![Trend Dashboard](docs/screenshots/trend-dashboard.png)
 
 ### Agent Activity Report — Locator Resolutions + Masked Secrets
 Per-run HTML report showing exactly which selectors resolved, which healed, which variables were substituted (sensitive values always masked), and the AI quality score for this run.
-!`[Agent Activity Report](docs/screenshots/agent-activity.png)`
+![Agent Activity Report](docs/screenshots/agent-activity.png)
 
 ---
 
@@ -575,9 +575,9 @@ Set `LOGIN_PASS` (required) and `ANTHROPIC_API_KEY` (API mode only) as Actions s
 
 ### Pipeline in Action
 
-!`[CI Pipeline Overview](docs/screenshots/gitHubActions-CI_Pipeline.png)`
+![CI Pipeline Overview](docs/screenshots/gitHubActions-CI_Pipeline.png)
 
-!`[CI Job Detail — Full Tests / Chromium](docs/screenshots/gitHubActions-CI.png)`
+![CI Job Detail — Full Tests / Chromium](docs/screenshots/gitHubActions-CI.png)
 
 ---
 
@@ -626,4 +626,4 @@ related:
 
 ## License
 
-`[MIT](LICENSE)`
+[MIT](LICENSE)

@@ -60,16 +60,16 @@ related:
 ## 📸 Screenshots
 
 **Home — Speak, Choose, or Type your story**
-!`[Sleepy Seeds Home](./sleepy_home.png)`
+![Sleepy Seeds Home](./sleepy_home.png)
 
 **Category Picker — Princess, Animals, Space, Surprise Me! and more**
-!`[Category Picker](./sleepy_category.png)`
+![Category Picker](./sleepy_category.png)
 
 **Generated Story — Read Aloud · Download PDF · New Story**
-!`[Generated Story](./sleepy_story.png)`
+![Generated Story](./sleepy_story.png)
 
 > *Curious what happens when **Cumulus the Cloud** goes looking for the end of the rainbow? 🌈☁️  
-> `[📄 Download the story to find out!](./bedtime_story.pdf)`
+> [📄 Download the story to find out!](./bedtime_story.pdf)
 
 ---
 

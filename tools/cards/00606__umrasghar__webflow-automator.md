@@ -40,7 +40,7 @@ related:
 
 # WebFlow Automator
 
-!`[WebFlow Automator Logo](docs/images/logo.png)`
+![WebFlow Automator Logo](docs/images/logo.png)
 
 WebFlow Automator is a standalone desktop application for visually automating web-based workflows. It allows you to create, record, and execute browser automation sequences without writing code.
 
@@ -64,11 +64,11 @@ WebFlow Automator is a standalone desktop application for visually automating we
 
 ## Screenshots
 
-!`[Main UI](docs/images/main-ui.png)`
+![Main UI](docs/images/main-ui.png)
 
 *WebFlow Automator main interface*
 
-!`[Workflow Builder](docs/images/workflow-builder.png)`
+![Workflow Builder](docs/images/workflow-builder.png)
 
 *Creating automation workflows*
 
@@ -90,7 +90,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-For detailed installation instructions, see the `[Installation Guide](docs/installation.md)`.
+For detailed installation instructions, see the [Installation Guide](docs/installation.md).
 
 ### Creating Your First Workflow
 
@@ -101,7 +101,7 @@ For detailed installation instructions, see the `[Installation Guide](docs/insta
 5. Save your workflow
 6. Click "Start" to run it
 
-For a more comprehensive guide, see the `[Getting Started Guide](docs/getting-started.md)`.
+For a more comprehensive guide, see the [Getting Started Guide](docs/getting-started.md).
 
 ## Architecture
 
@@ -135,11 +135,11 @@ WebFlow Automator is built with a modular architecture that separates concerns:
 
 ## Contributing
 
-Contributions are welcome! Please read our `[Contributing Guidelines](CONTRIBUTING.md)` before submitting a pull request.
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a pull request.
 
 ## License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 

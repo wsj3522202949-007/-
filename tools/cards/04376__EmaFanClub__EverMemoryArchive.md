@@ -80,7 +80,7 @@ Ema 当前支持 macOS、Linux 与 Windows。运行 Ema 至少需要：
 ### 1. 下载安装包
 
 > [!NOTE]
-> 在 Ema 没有正式发布 Release 版本之前，请参考`[安装文档](docs/installation.md)`进行安装。
+> 在 Ema 没有正式发布 Release 版本之前，请参考[安装文档](docs/installation.md)进行安装。
 
 打开 GitHub Release 页面：https://github.com/EmaFanClub/EverMemoryArchive/releases
 
@@ -100,7 +100,7 @@ Ema 启动后，必须至少配置一个模型 API Key。
 
 获取 API Key 后，在 Ema 设置页面中填写即可。
 
-Ema 也提供 `minimal` 版本、GitHub Actions 构建产物、Tavily 搜索引擎和 NapCatQQ 接入等进阶选择，详见`[安装文档](docs/installation.md)`。
+Ema 也提供 `minimal` 版本、GitHub Actions 构建产物、Tavily 搜索引擎和 NapCatQQ 接入等进阶选择，详见[安装文档](docs/installation.md)。
 
 ## Ema 技术特点
 
@@ -149,8 +149,8 @@ Ema 支持用户使用以下预置角色，或自行创建角色。
 
 ## 如何参与贡献
 
-请参考 `[贡献指南](.github/CONTRIBUTING.md)` 参与贡献。
+请参考 [贡献指南](.github/CONTRIBUTING.md) 参与贡献。
 
 ## 协议
 
-本项目采用 **Apache-2.0** 开源协议，详见 `[LICENSE](LICENSE)` 文件。
+本项目采用 **Apache-2.0** 开源协议，详见 [LICENSE](LICENSE) 文件。

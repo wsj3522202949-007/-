@@ -191,7 +191,7 @@ npm run check:all
 
 ## Contributing
 
-Contributions are welcome! Please read the `[Contributing Guide](CONTRIBUTING.md)` before submitting a PR.
+Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) before submitting a PR.
 
 - 🐛 [Report bugs](https://github.com/smith-and-web/kindling/issues/new?template=bug_report.yml)
 - 💡 [Request features](https://github.com/smith-and-web/kindling/issues/new?template=feature_request.yml)
@@ -212,7 +212,7 @@ Your sponsorship helps keep Kindling free and open source.
 
 ## License
 
-`[MIT](LICENSE)` — free for personal and commercial use.
+[MIT](LICENSE) — free for personal and commercial use.
 
 ## Acknowledgments
 

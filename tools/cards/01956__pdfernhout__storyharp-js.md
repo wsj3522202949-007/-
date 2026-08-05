@@ -42,4 +42,4 @@ StoryHarp 3.0 Copyright 1998-2025 Paul D. Fernhout and Cynthia F. Kurtz
 
 StoryHarp is a trademark of Paul D. Fernhout and Cynthia F. Kurtz
 
-!`[StoryHarp editor screenshot](screenshots/StoryHarp-Editor-Screenshot-2018-05-03.png "StoryHarp Editor Screenshot showing table view")`
+![StoryHarp editor screenshot](screenshots/StoryHarp-Editor-Screenshot-2018-05-03.png "StoryHarp Editor Screenshot showing table view")

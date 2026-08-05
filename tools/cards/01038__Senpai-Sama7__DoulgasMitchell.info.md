@@ -93,4 +93,4 @@ related:
 
 ## Developer Integration Docs
 
-- `[Gravatar API Documentation v3.0.0 – LLMS.TXT](./LLMS.TXT)`
+- [Gravatar API Documentation v3.0.0 – LLMS.TXT](./LLMS.TXT)

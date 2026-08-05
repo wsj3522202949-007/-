@@ -113,7 +113,7 @@ Click the button below and it will help you create a new repo, create a new Netl
       netlify init # initialize a new Netlify project & deploy
       ```
 
-   It will use the information from the included Netlify configuration file, `[`netlify.toml`](./netlify.toml)`, to set up the build command as `gatsby build` to create a static project and locate the build project in the `public` directory.
+   It will use the information from the included Netlify configuration file, [`netlify.toml`](./netlify.toml), to set up the build command as `gatsby build` to create a static project and locate the build project in the `public` directory.
 
    The `init` process will also set up continuous deployment for your project so that a new build will be triggered & deployed when you push code to the repo (you can change this from your project dashboard: Site Settings/Build & deploy/Continuous Deployment).
 
@@ -153,7 +153,7 @@ On the homepage of the website and a few other places, there is a full-width ima
 />
 ```
 
-You can see it in action under `[`src/pages/index.js`](./src/pages/index.js)` or see the component in `[`src/components/Hero/Hero.js`](./src/components/Hero/Hero.js)`.
+You can see it in action under [`src/pages/index.js`](./src/pages/index.js) or see the component in [`src/components/Hero/Hero.js`](./src/components/Hero/Hero.js).
 
 ### Making content changes to the Header or Footer
 

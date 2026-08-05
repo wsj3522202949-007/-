@@ -149,4 +149,4 @@ isort --check-only --diff . && black --check --diff .
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)` for details.
+MIT — see [LICENSE](LICENSE) for details.

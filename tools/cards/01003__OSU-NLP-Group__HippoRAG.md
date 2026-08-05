@@ -108,7 +108,7 @@ uv pip install -e .
 
 ### OpenAI
 
-The complete runnable version is `[`examples/demo_openai.py`](examples/demo_openai.py)`. A minimal workflow is:
+The complete runnable version is [`examples/demo_openai.py`](examples/demo_openai.py). A minimal workflow is:
 
 Set `OPENAI_API_KEY` before using OpenAI models:
 
@@ -499,9 +499,9 @@ When preparing your data, you may need to chunk each passage, as longer passage 
 ## Contact
 
 Questions or issues? File an issue or contact 
-`[Bernal Jiménez Gutiérrez](mailto:jimenezgutierrez.1@osu.edu)`,
-`[Yiheng Shu](mailto:shu.251@osu.edu)`,
-`[Yu Su](mailto:su.809@osu.edu)`,
+[Bernal Jiménez Gutiérrez](mailto:jimenezgutierrez.1@osu.edu),
+[Yiheng Shu](mailto:shu.251@osu.edu),
+[Yu Su](mailto:su.809@osu.edu),
 The Ohio State University
 
 ## Citation

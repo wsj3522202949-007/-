@@ -72,7 +72,7 @@ The system coordinates several decoupled components:
   ```
 
 ### Environment Variables
-Create a `.env` file in the root directory using the `[.env.example](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/.env.example)` template:
+Create a `.env` file in the root directory using the [.env.example](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/.env.example) template:
 ```env
 SAKURA_API_KEY="your-sakura-key"
 DEEPSEEK_API_KEY="your-deepseek-key"
@@ -96,7 +96,7 @@ projects/[ProjectName]/
     └── translation_memory.json # Compiled vector database (generated)
 ```
 
-Refer to `[projects/example/](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/projects/example/)` for a template structure.
+Refer to [projects/example/](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/projects/example/) for a template structure.
 
 ## Usage
 
@@ -125,9 +125,9 @@ python pipeline.py --config /path/to/config.json
 
 ### 3. Prompt Customisation
 Default system prompts for the agents are stored in the global `prompts/` directory:
-- `[translator_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/prompts/translator_skill.md)`
-- `[proofreader_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレ原_祝福的寝取系女主/prompts/proofreader_skill.md)`
-- `[polisher_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/prompts/polisher_skill.md)`
+- [translator_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/prompts/translator_skill.md)
+- [proofreader_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレ原_祝福的寝取系女主/prompts/proofreader_skill.md)
+- [polisher_skill.md](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/prompts/polisher_skill.md)
 
 To customise behaviour or style guidelines for a specific novel (e.g. character voices, explicit descriptions), place customized prompt files inside the project prompts directory:
 `projects/[ProjectName]/prompts/custom_polisher_skill.md`

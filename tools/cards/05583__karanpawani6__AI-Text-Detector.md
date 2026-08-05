@@ -126,7 +126,7 @@ Both models were trained through three iterative dataset phases, each correcting
 | 2 | HC3 + Persuasive Essays (34k) | Severe domain overfitting to essay-style writing |
 | 3 | MAGE (170k, 7 domains, ~29 models) | Realistic, generalizable evaluation — final configuration |
 
-Full methodology, parameter sweeps, cross-validation results, and failure-case analysis are documented in `[`reports/AI_Text_Detection_Final_Report.docx`](reports/AI_Text_Detection_Final_Report.docx)`.
+Full methodology, parameter sweeps, cross-validation results, and failure-case analysis are documented in [`reports/AI_Text_Detection_Final_Report.docx`](reports/AI_Text_Detection_Final_Report.docx).
 
 ## Results Summary
 

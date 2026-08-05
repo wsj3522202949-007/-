@@ -46,7 +46,7 @@ Nexus 是一个 **本地优先的 AI 桌面伙伴**。
 
 一句话：**Nexus 是一个住在电脑里的 AI 伙伴。**
 
-> **当前稳定版：** v0.4.3，与 `package.json` 保持一致；发行说明见 `[RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)`。正式安装包只由受保护的 tag 工作流发布到 GitHub Releases；更早历史统一放在 Releases。
+> **当前稳定版：** v0.4.3，与 `package.json` 保持一致；发行说明见 [RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)。正式安装包只由受保护的 tag 工作流发布到 GitHub Releases；更早历史统一放在 Releases。
 
 ## 这个项目是什么
 
@@ -132,8 +132,8 @@ Nexus 的形象应该服务于三个感觉：
 
 每个阶段都应该先完成一个可用闭环，再进入下一个阶段。Nexus 可以很大，但不能一开始就把所有系统塞进去。
 
-更具体的执行拆分见 `[Nexus 升级整合计划](docs/NEXUS_UPGRADE_INTEGRATION_PLAN.md)`，可执行任务表见
-`[EXECUTABLE_OPTIMIZATION_TASKS](docs/EXECUTABLE_OPTIMIZATION_TASKS.md)`。
+更具体的执行拆分见 [Nexus 升级整合计划](docs/NEXUS_UPGRADE_INTEGRATION_PLAN.md)，可执行任务表见
+[EXECUTABLE_OPTIMIZATION_TASKS](docs/EXECUTABLE_OPTIMIZATION_TASKS.md)。
 
 ## 当前实现状态
 
@@ -158,7 +158,7 @@ Phase 1 已经开始落地，当前默认体验正在收敛到最小闭环：
 
 ## 本次更新 — v0.4.3
 
-> **主题：Check-In 策略和发布门禁对齐。** 中文说明见 `[RELEASE-NOTES-v0.4.3.zh-CN.md](docs/RELEASE-NOTES-v0.4.3.zh-CN.md)`，英文完整说明见 `[RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)`。
+> **主题：Check-In 策略和发布门禁对齐。** 中文说明见 [RELEASE-NOTES-v0.4.3.zh-CN.md](docs/RELEASE-NOTES-v0.4.3.zh-CN.md)，英文完整说明见 [RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)。
 
 0.4.3 继续保持 v0.4 桌面陪伴感知的保守边界：温和 check-in 只先形成本地、可压制的 in-app 决策，不发送消息、不执行工具、不创建外部通知，也不把精确计时或原始桌面内容送进模型边界。
 
@@ -172,7 +172,7 @@ Phase 1 已经开始落地，当前默认体验正在收敛到最小闭环：
 
 ## 上一公开版本 — v0.4.1
 
-> **主题：陪伴 UI、设置和可靠性加固。** 中文说明见 `[RELEASE-NOTES-v0.4.1.zh-CN.md](docs/RELEASE-NOTES-v0.4.1.zh-CN.md)`，英文完整说明见 `[RELEASE-NOTES-v0.4.1.md](docs/RELEASE-NOTES-v0.4.1.md)`。
+> **主题：陪伴 UI、设置和可靠性加固。** 中文说明见 [RELEASE-NOTES-v0.4.1.zh-CN.md](docs/RELEASE-NOTES-v0.4.1.zh-CN.md)，英文完整说明见 [RELEASE-NOTES-v0.4.1.md](docs/RELEASE-NOTES-v0.4.1.md)。
 
 0.4.1 把 v0.4 的陪伴感知地基推进到更适合公开测试的形态：主对话面板、设置页和 Image4 伙伴场域被拆成更清楚的源码边界；设置入口继续保持懒加载；隐私、安全、UI 和性能审计进入 `verify:pr`，让后续迭代不容易悄悄退化。
 
@@ -186,7 +186,7 @@ Phase 1 已经开始落地，当前默认体验正在收敛到最小闭环：
 
 ## 更早更新 — v0.4.0
 
-> **主题：桌面陪伴感知地基。** 中文说明见 `[RELEASE-NOTES-v0.4.0.zh-CN.md](docs/RELEASE-NOTES-v0.4.0.zh-CN.md)`，英文完整说明见 `[RELEASE-NOTES-v0.4.0.md](docs/RELEASE-NOTES-v0.4.0.md)`。
+> **主题：桌面陪伴感知地基。** 中文说明见 [RELEASE-NOTES-v0.4.0.zh-CN.md](docs/RELEASE-NOTES-v0.4.0.zh-CN.md)，英文完整说明见 [RELEASE-NOTES-v0.4.0.md](docs/RELEASE-NOTES-v0.4.0.md)。
 
 0.4.0 正式开始“打开 Nexus 后，它能安静理解时间流逝”的桌面陪伴感知。它会优先保持安静，只形成短期、粗粒度、可暂停和可清理的陪伴摘要；进入模型的是脱敏摘要，不是原始截图、完整剪贴板、私人消息或精确计时。
 
@@ -200,7 +200,7 @@ Phase 1 已经开始落地，当前默认体验正在收敛到最小闭环：
 
 ## 旧版本记录
 
-README 顶部只保留当前稳定版 v0.4.3 和上一公开版本 v0.4.1 的重点。更早版本的完整历史统一放在 `[CHANGELOG](CHANGELOG.md)` 和 [GitHub Releases](https://github.com/FanyinLiu/Nexus/releases)，避免首页继续滚动维护旧版本号。
+README 顶部只保留当前稳定版 v0.4.3 和上一公开版本 v0.4.1 的重点。更早版本的完整历史统一放在 [CHANGELOG](CHANGELOG.md) 和 [GitHub Releases](https://github.com/FanyinLiu/Nexus/releases)，避免首页继续滚动维护旧版本号。
 
 ## 设计原则
 
@@ -362,15 +362,15 @@ npm run distribution:audit
 - v0.4 桌面陪伴感知的使用反馈：时间说法是否自然、提醒是否太频繁、暂停是否明显。
 
 社区文档不是某个版本的小功能，而是项目长期变大的入口。社区入口见
-`[COMMUNITY.md](docs/COMMUNITY.md)`，0.4 系列方向见
-`[v0.4 Desktop Companion Awareness](docs/V0.4_DESKTOP_COMPANION_AWARENESS.md)`，
+[COMMUNITY.md](docs/COMMUNITY.md)，0.4 系列方向见
+[v0.4 Desktop Companion Awareness](docs/V0.4_DESKTOP_COMPANION_AWARENESS.md)，
 0.4 当前稳定版说明见
-`[RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)`，
+[RELEASE-NOTES-v0.4.3.md](docs/RELEASE-NOTES-v0.4.3.md)，
 发布加固清单见
-`[RELEASE-CANDIDATE-v0.4-HARDENING.md](docs/RELEASE-CANDIDATE-v0.4-HARDENING.md)`。
-提交人格、提示词或桌宠素材前，请先看 `[Nexus Companion Prompt Baseline](docs/NEXUS_COMPANION_PROMPT.md)`；
+[RELEASE-CANDIDATE-v0.4-HARDENING.md](docs/RELEASE-CANDIDATE-v0.4-HARDENING.md)。
+提交人格、提示词或桌宠素材前，请先看 [Nexus Companion Prompt Baseline](docs/NEXUS_COMPANION_PROMPT.md)；
 它定义了 Nexus 的稳定身份、边界和社区投稿格式。新人格可以从
-`[Persona Contribution Template](docs/PERSONA_CONTRIBUTION_TEMPLATE.md)` 开始填。
+[Persona Contribution Template](docs/PERSONA_CONTRIBUTION_TEMPLATE.md) 开始填。
 
 ## 项目边界
 
@@ -382,7 +382,7 @@ Nexus 的长期想象空间很大，但当前最重要的是把方向讲清楚�
 
 ## License
 
-Released under the `[MIT License](LICENSE)`.
+Released under the [MIT License](LICENSE).
 
 Bundled Live2D sample characters are subject to Live2D's separate terms. See
-`[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)` before redistributing Nexus.
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before redistributing Nexus.

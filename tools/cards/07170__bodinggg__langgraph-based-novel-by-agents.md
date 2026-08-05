@@ -100,7 +100,7 @@ related:
 2025-10-08： 利用gradio搭建前端，css配置样式，现在可以在前端直观看到结果以及简化的运行过程了，具体日志还可以通过terminal/log文件去查看。
 
 ## 示例（您仅仅需要输入意图，模型帮你考虑一切）
-!`[Gradio前端界面](assets/graph_human_outline_init.png)`
+![Gradio前端界面](assets/graph_human_outline_init.png)
 ![](assets/graph_human_outline.png)
 ## 安装指南
 
@@ -349,5 +349,5 @@ pytest tests/integration/ -v
 
 ## 流程图
 既然能看到最后，那这个流程图也会有耐心看的（我猜）
-!`[workflow display](assets/graph_master.png)`
-!`[workflow_display](assets/graph.png)`
+![workflow display](assets/graph_master.png)
+![workflow_display](assets/graph.png)

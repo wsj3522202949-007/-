@@ -54,12 +54,12 @@ Frontend:https://spam-detector-red-five.vercel.app/
 Backend:https://spam-detector-u6hc.onrender.com/
  
 ## Screenshots
-!`[alt text](notebook/class_distribution.png)`
+![alt text](notebook/class_distribution.png)
 
 
-!`[alt text](notebook/confusion_matrix.png)`
+![alt text](notebook/confusion_matrix.png)
 
-!`[alt text](notebook/top_spam_words.png)`
+![alt text](notebook/top_spam_words.png)
 
 
 ## Tech Stack

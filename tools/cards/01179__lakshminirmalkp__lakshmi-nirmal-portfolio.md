@@ -65,10 +65,10 @@ Staff Technical Writer with 12+ years of experience in Semiconductor and Telecom
 - Mentor and onboard new hires, building strong and efficient teams.  
 
 ## 📂 Portfolio Highlights
-- `[Documentation Samples](./documentation-samples)` – User manuals, guides, KB articles
-- `[Automation Projects](./automation-projects)` – Scripts, workflows, and ROI case studies  
-- `[Testing Experience](./testing-experience)` – QA docs, validation reports, test cases  
-- `[Achievements](./achievements)` – Measurable impact and success stories  
+- [Documentation Samples](./documentation-samples) – User manuals, guides, KB articles
+- [Automation Projects](./automation-projects) – Scripts, workflows, and ROI case studies  
+- [Testing Experience](./testing-experience) – QA docs, validation reports, test cases  
+- [Achievements](./achievements) – Measurable impact and success stories  
 
 ## 🛠️ Skills Snapshot
 - **Content Architecture:** DITA/XML, Oxygen XML
@@ -80,5 +80,5 @@ Staff Technical Writer with 12+ years of experience in Semiconductor and Telecom
 *"Where technical writing meets automation and quality assurance."*
 
 ## 📫 Contact
-- `[LinkedIn](www.linkedin.com/in/lakshmi-nirmal-b2500164)`  
-- `[Resume](./Lakshmi_Nirmal_Resume.pdf)`
+- [LinkedIn](www.linkedin.com/in/lakshmi-nirmal-b2500164)  
+- [Resume](./Lakshmi_Nirmal_Resume.pdf)

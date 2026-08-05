@@ -130,4 +130,4 @@ data/stories/          Created at runtime for uploads (gitignored)
 
 ## License
 
-MIT — see `[LICENSE](LICENSE)`.
+MIT — see [LICENSE](LICENSE).

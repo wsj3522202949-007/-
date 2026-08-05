@@ -42,7 +42,7 @@ related:
 
 **An open-source, self-hostable text humanizer that makes AI-assisted writing sound like a real person — specifically, like *you*.**
 
-Most "humanizer" tools are a single hidden prompt behind a paywall. `trueform` is different by design: it's free, runs on your own API key (pennies per document) or fully local via `[Ollama]($0)`, and its quality comes from its **architecture**, not a copy-pasteable prompt.
+Most "humanizer" tools are a single hidden prompt behind a paywall. `trueform` is different by design: it's free, runs on your own API key (pennies per document) or fully local via [Ollama]($0), and its quality comes from its **architecture**, not a copy-pasteable prompt.
 
 > Status: **v0.5** — multi-pass humanization loop, local scoring, explainability reports, `doctor` setup checker, and a local web UI. Style-learning and semantic fidelity guard are on the roadmap.
 
@@ -68,7 +68,7 @@ python -m trueform serve
 # open http://127.0.0.1:8765
 ```
 
-For **real rewrites at $0**, install `[Ollama](docs/ollama-setup.md)` and use `--provider ollama`.
+For **real rewrites at $0**, install [Ollama](docs/ollama-setup.md) and use `--provider ollama`.
 
 related:
   - methods/最强去AI味铁律.md

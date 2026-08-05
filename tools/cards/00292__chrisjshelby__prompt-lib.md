@@ -54,9 +54,9 @@ Feel free to use them as-is, modify them to fit your needs, or just read through
 
 - Coding Prompts (/coding/responses.md)
 - Writing Prompts
-    - `[Miscellaneous Writing Prompts](/writing/misc.md)`
-    - `[Writing Style Prompts](/writing/style.md)`
-    - `[Job Hunt Prompts](/writing/jobhunt.md)`
+    - [Miscellaneous Writing Prompts](/writing/misc.md)
+    - [Writing Style Prompts](/writing/style.md)
+    - [Job Hunt Prompts](/writing/jobhunt.md)
 - [Brainstorming Prompts](#brainstorming-prompts)
 - [Miscellaneous Prompts](#miscellaneous-prompts)
 - [Contributing](#contributing)

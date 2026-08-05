@@ -77,14 +77,14 @@ This portfolio documents real workflows, evaluation methodologies, prompt engine
 
 | Section | Description |
 |---|---|
-| `[📋 About Me](./docs/about.md)` | Background, positioning, skills, and availability |
-| `[🔬 AI Evaluation Case Studies](./case-studies/)` | 5 full evaluations with rubrics, scores, and feedback |
-| `[⚙️ Prompt Engineering Portfolio](./prompts/)` | 10 advanced prompts with analysis and improvements |
-| `[✍️ Technical Writing Samples](./writing/)` | Documentation, how-to guides, KB articles |
-| `[🔍 Research & Fact-Checking](./research/)` | Verification workflows and investigation examples |
-| `[✅ Quality Assurance](./qa/)` | Review processes, checklists, evaluation standards |
-| `[🛠 Skills & Tools](./docs/skills.md)` | Full technical stack and competency overview |
-| `[📄 Resume](./docs/resume.md)` | ATS-optimized resume |
+| [📋 About Me](./docs/about.md) | Background, positioning, skills, and availability |
+| [🔬 AI Evaluation Case Studies](./case-studies/) | 5 full evaluations with rubrics, scores, and feedback |
+| [⚙️ Prompt Engineering Portfolio](./prompts/) | 10 advanced prompts with analysis and improvements |
+| [✍️ Technical Writing Samples](./writing/) | Documentation, how-to guides, KB articles |
+| [🔍 Research & Fact-Checking](./research/) | Verification workflows and investigation examples |
+| [✅ Quality Assurance](./qa/) | Review processes, checklists, evaluation standards |
+| [🛠 Skills & Tools](./docs/skills.md) | Full technical stack and competency overview |
+| [📄 Resume](./docs/resume.md) | ATS-optimized resume |
 
 ---
 

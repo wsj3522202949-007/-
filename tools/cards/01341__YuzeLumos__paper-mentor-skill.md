@@ -93,7 +93,7 @@ related:
 
 ## Copy-Paste Prompts
 
-See `[PROMPTS.md](PROMPTS.md)` for a ready-to-use prompt pack.
+See [PROMPTS.md](PROMPTS.md) for a ready-to-use prompt pack.
 
 Popular starters:
 

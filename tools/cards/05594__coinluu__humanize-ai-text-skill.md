@@ -42,7 +42,7 @@ related:
 > 一个 Agent 可调用的中文文本真人化编辑 Skill。  
 > 用于把 AI 生成的文章、文案、口播稿、小红书笔记、公众号文章、朋友圈内容、销售文案、商务文档等，改写成更自然、更像真人表达、更符合平台场景的版本。
 
-`[English Version](./README_EN.md)`
+[English Version](./README_EN.md)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status: v1.0.0](https://img.shields.io/badge/Status-v1.0.0-blue.svg)
@@ -90,7 +90,7 @@ related:
 AI 工作流可以帮助个人和团队提升效率，优化重复性工作流程，并更好地管理日常任务。
 ```
 
-更多调用模板见：`[examples/usage_examples.md](./examples/usage_examples.md)` 和 `[docs/usage.md](./docs/usage.md)`。
+更多调用模板见：[examples/usage_examples.md](./examples/usage_examples.md) 和 [docs/usage.md](./docs/usage.md)。
 
 ## 核心能力
 
@@ -173,7 +173,7 @@ AI 感诊断
 输出结果
 ```
 
-完整流程说明见：`[docs/integration.md](./docs/integration.md)`。
+完整流程说明见：[docs/integration.md](./docs/integration.md)。
 
 ## 输出示例
 
@@ -207,7 +207,7 @@ AI 感诊断
 未发现需要特别提示的风险。
 ```
 
-更多输出模式见：`[docs/output_modes.md](./docs/output_modes.md)`。
+更多输出模式见：[docs/output_modes.md](./docs/output_modes.md)。
 
 ## 参考样本模式
 
@@ -232,7 +232,7 @@ Skill 只提炼通用表达规律，例如：
 - 标题
 - 强识别性表达
 
-最终改写必须基于用户原文重新组织表达，而不是复用样本具体内容。详见：`[docs/reference_sample_mode.md](./docs/reference_sample_mode.md)`。
+最终改写必须基于用户原文重新组织表达，而不是复用样本具体内容。详见：[docs/reference_sample_mode.md](./docs/reference_sample_mode.md)。
 
 ## 安全边界
 
@@ -242,7 +242,7 @@ Skill 只提炼通用表达规律，例如：
 - 高风险行业降低改写强度
 - 避免过度口水化、油腻化、营销号化
 
-更多安全说明见：`[docs/safety.md](./docs/safety.md)` 和 `[SECURITY.md](./SECURITY.md)`。
+更多安全说明见：[docs/safety.md](./docs/safety.md) 和 [SECURITY.md](./SECURITY.md)。
 
 ## 项目结构
 
@@ -292,30 +292,30 @@ humanize-ai-text-skill/
 
 ## 示例
 
-- `[普通去 AI 味](./examples/basic_humanize_example.md)`
-- `[小红书改写](./examples/xiaohongshu_example.md)`
-- `[抖音口播](./examples/douyin_script_example.md)`
-- `[公众号文章](./examples/wechat_article_example.md)`
-- `[朋友圈内容](./examples/moments_example.md)`
-- `[销售文案](./examples/sales_copy_example.md)`
-- `[商务文档](./examples/business_doc_example.md)`
-- `[参考样本风格](./examples/sample_guided_example.md)`
-- `[Protected Facts 保真](./examples/protected_facts_example.md)`
-- `[防过度真人化](./examples/anti_overhumanize_example.md)`
-- `[调用模板合集](./examples/usage_examples.md)`
+- [普通去 AI 味](./examples/basic_humanize_example.md)
+- [小红书改写](./examples/xiaohongshu_example.md)
+- [抖音口播](./examples/douyin_script_example.md)
+- [公众号文章](./examples/wechat_article_example.md)
+- [朋友圈内容](./examples/moments_example.md)
+- [销售文案](./examples/sales_copy_example.md)
+- [商务文档](./examples/business_doc_example.md)
+- [参考样本风格](./examples/sample_guided_example.md)
+- [Protected Facts 保真](./examples/protected_facts_example.md)
+- [防过度真人化](./examples/anti_overhumanize_example.md)
+- [调用模板合集](./examples/usage_examples.md)
 
 ## 测试
 
 `tests/` 覆盖：
 
-- `[基础改写](./tests/basic_test.md)`
-- `[平台适配](./tests/platform_test.md)`
-- `[内容类型识别](./tests/content_type_test.md)`
-- `[参考样本引导](./tests/sample_guided_test.md)`
-- `[安全检查](./tests/safety_test.md)`
-- `[Protected Facts 保真](./tests/protected_facts_test.md)`
-- `[禁止虚构](./tests/no_fabrication_test.md)`
-- `[防过度真人化](./tests/anti_overhumanize_test.md)`
+- [基础改写](./tests/basic_test.md)
+- [平台适配](./tests/platform_test.md)
+- [内容类型识别](./tests/content_type_test.md)
+- [参考样本引导](./tests/sample_guided_test.md)
+- [安全检查](./tests/safety_test.md)
+- [Protected Facts 保真](./tests/protected_facts_test.md)
+- [禁止虚构](./tests/no_fabrication_test.md)
+- [防过度真人化](./tests/anti_overhumanize_test.md)
 
 ## Roadmap｜路线图
 
@@ -326,15 +326,15 @@ humanize-ai-text-skill/
 - 评测 benchmark
 - Agent 集成示例
 
-详见：`[docs/roadmap.md](./docs/roadmap.md)`。
+详见：[docs/roadmap.md](./docs/roadmap.md)。
 
 ## Contributing｜贡献
 
-欢迎提交平台规则、内容类型规则、before/after 示例和测试样本。请先阅读 `[CONTRIBUTING.md](./CONTRIBUTING.md)`。
+欢迎提交平台规则、内容类型规则、before/after 示例和测试样本。请先阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ## License｜许可证
 
-MIT License. See `[LICENSE](./LICENSE)`.
+MIT License. See [LICENSE](./LICENSE).
 
 ## Citation｜引用
 

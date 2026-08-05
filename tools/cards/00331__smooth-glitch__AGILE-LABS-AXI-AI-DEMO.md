@@ -50,7 +50,7 @@ related:
 
 ### Home Screen
 
-!`[Home Page](./screenshots/home-page.png)`
+![Home Page](./screenshots/home-page.png)
 
 *Clean welcome screen with the AI composer, AI provider selector, Data Bin picker, Templates, and prompt editor all accessible from the bottom control bar.*
 
@@ -58,7 +58,7 @@ related:
 
 ### AI Provider Selection
 
-!`[Provider Dropdown](./screenshots/provider-dropdown.png)`
+![Provider Dropdown](./screenshots/provider-dropdown.png)
 
 *Switch between connected AI providers — OpenAI, Google Gemini, and OpenRouter — directly from the chat interface.*
 
@@ -66,7 +66,7 @@ related:
 
 ### Chat Response & Actions
 
-!`[Response Features](./screenshots/response-features.png)`
+![Response Features](./screenshots/response-features.png)
 
 *AI responses include record count chips, quick action buttons (Visualize as chart, Show trend over time), export tools, and contextual follow-up suggestion chips.*
 
@@ -74,7 +74,7 @@ related:
 
 ### Prompt Templates
 
-!`[Prompt Templates](./screenshots/prompt-templates.png)`
+![Prompt Templates](./screenshots/prompt-templates.png)
 
 *Built-in analysis templates (Executive Summary, Anomaly Detection, Correlation Analysis, Data Quality Report) plus user-saved custom templates for one-click prompting.*
 
@@ -82,7 +82,7 @@ related:
 
 ### Edit System Prompt
 
-!`[Edit Prompt](./screenshots/edit-prompt-dropdown.png)`
+![Edit Prompt](./screenshots/edit-prompt-dropdown.png)
 
 *Fully customizable system prompt — tune how AXI thinks, responds, and what rules it follows. Saved per user.*
 
@@ -90,7 +90,7 @@ related:
 
 ### Data Bin — Add Datasource
 
-!`[Datasource Page](./screenshots/datasource-page.png)`
+![Datasource Page](./screenshots/datasource-page.png)
 
 *Step 1 of the Data Bin flow: search and select one or more live Axpert datasources to include as AI context.*
 
@@ -98,7 +98,7 @@ related:
 
 ### Data Bin — File Upload
 
-!`[File Upload](./screenshots/file-upload-page.png)`
+![File Upload](./screenshots/file-upload-page.png)
 
 *Step 2: drag-and-drop file uploads alongside datasources. Supports CSV, XLSX, XLS, TXT, PDF, DOCX, and JSON.*
 
@@ -106,7 +106,7 @@ related:
 
 ### Data Bin — Dropdown
 
-!`[Data Bin Dropdown](./screenshots/databin-dropdown.png)`
+![Data Bin Dropdown](./screenshots/databin-dropdown.png)
 
 *Quickly switch between saved Data Bins from the composer bar. Each bin shows its datasource and file count.*
 
@@ -114,7 +114,7 @@ related:
 
 ### Data Bin — Control Center (Admin)
 
-!`[Data Bin Control Center](./screenshots/databin-control-center.png)`
+![Data Bin Control Center](./screenshots/databin-control-center.png)
 
 *Admin view for managing all saved Data Bins — create, edit, delete, and assign bins to user groups.*
 
@@ -122,7 +122,7 @@ related:
 
 ### Access Assignments (Admin)
 
-!`[Assignments](./screenshots/assignments.png)`
+![Assignments](./screenshots/assignments.png)
 
 *Assign a Data Bin and AI provider key to a specific user group — so users in that group get pre-configured access without needing to set up their own keys.*
 
@@ -139,7 +139,7 @@ AXI AI can export any response as a polished, multi-page **PDF report**. Below i
 > - **barchart** — 7 performance metric records; EMP-0001 stands out with a value of 47 vs. a baseline of 1 across others.
 > - Includes **5 auto-generated charts** visualising the key findings across all datasets.
 
-*The full exported report (4 pages, with charts) is included in this repo as `[`analytics-example.pdf`](./analytics-example.pdf)`.*
+*The full exported report (4 pages, with charts) is included in this repo as [`analytics-example.pdf`](./analytics-example.pdf).*
 
 ---
 

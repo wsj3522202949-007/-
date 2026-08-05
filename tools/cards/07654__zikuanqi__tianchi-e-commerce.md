@@ -544,7 +544,7 @@ related:
 
 **作者**：[綦子宽](https://github.com/zikuanqi)
 
-**许可证**：`[MIT License](LICENSE)`
+**许可证**：[MIT License](LICENSE)
 
 ## 参考
 

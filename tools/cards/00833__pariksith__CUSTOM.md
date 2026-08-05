@@ -261,7 +261,7 @@ related:
 
 ## 📜 License
 
-`[All Rights Reserved](LICENSE)` - this project may not be used, copied, modified, redistributed, published, or deployed without prior written permission from the owner. Unauthorized use may result in legal action.
+[All Rights Reserved](LICENSE) - this project may not be used, copied, modified, redistributed, published, or deployed without prior written permission from the owner. Unauthorized use may result in legal action.
 
 <div align="center">
 

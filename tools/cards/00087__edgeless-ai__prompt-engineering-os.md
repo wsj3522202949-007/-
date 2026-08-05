@@ -155,4 +155,4 @@ Made by [Edgeless](https://edgeless.gumroad.com). Built for people who build wit
 
 ## License
 
-The content in this repository is released under the `[MIT License](LICENSE)`. The full product is separately licensed - see the product page for terms.
+The content in this repository is released under the [MIT License](LICENSE). The full product is separately licensed - see the product page for terms.

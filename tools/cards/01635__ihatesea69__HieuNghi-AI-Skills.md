@@ -211,7 +211,7 @@ AI agents will automatically discover skills via `AGENTS.md` when the workspace 
 
 ## Adding New Skills
 
-See `[CONTRIBUTING.md](./CONTRIBUTING.md)` for the full guide on adding skills, including:
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide on adding skills, including:
 
 - Choosing the right collection
 - SKILL.md format and frontmatter requirements
@@ -302,6 +302,6 @@ related:
 
 ## License
 
-MIT — See `[LICENSE](./LICENSE)` for details.
+MIT — See [LICENSE](./LICENSE) for details.
 
 Individual skill collections may reference libraries with separate licenses. See each upstream repository for details.

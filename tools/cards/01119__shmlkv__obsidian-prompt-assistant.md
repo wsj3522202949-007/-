@@ -41,9 +41,9 @@ related:
 
 AI chat assistant for Obsidian with customizable prompts for any workflow. Supports ChatGPT, DeepSeek, Gemini, Claude, and 100+ other models.
 
-!`[Custom Prompts](docs/Screenshot%202025-10-16%20at%2023.58.15.png)`
+![Custom Prompts](docs/Screenshot%202025-10-16%20at%2023.58.15.png)
 
-!`[Menu with Custom Prompts](docs/Screenshot%202025-10-16%20at%2023.57.51.png)`
+![Menu with Custom Prompts](docs/Screenshot%202025-10-16%20at%2023.57.51.png)
 
 ## Features
 

@@ -43,7 +43,7 @@ A Windows desktop application that scrapes Google search results, performs multi
 
 Built for internet marketers, SEO professionals, and content creators who need data-backed writing briefs instead of generic AI output.
 
-!`[Search Tab](screenshots/01-search-tab.png)`
+![Search Tab](screenshots/01-search-tab.png)
 
 ---
 
@@ -70,27 +70,27 @@ The result: a complete writing brief with target keywords, recommended outline, 
 ### Batch Keyword Processing
 Enter multiple keywords (one per line) and process them as a concurrent batch. URLs queue up for scraping while Serper API calls continue in parallel.
 
-!`[Pending Queue](screenshots/02-pending-queue.png)`
+![Pending Queue](screenshots/02-pending-queue.png)
 
 ### Session History
 After analysis completes, results are saved to session history with full statistics — keyword count, entity count, heading count, content type, intent, and tone.
 
-!`[Batch Complete](screenshots/03-batch-complete.png)`
+![Batch Complete](screenshots/03-batch-complete.png)
 
 ### Generated Prompt & Analysis
 The Analysis tab shows the generated system prompt alongside a keyword summary panel. Four prompt templates are available: Full System Prompt, Keywords Only, Outline Only, and Competitive Brief. A built-in Content Gap Analyzer lets you paste existing content to find missing keywords and headings.
 
-!`[Analysis Tab](screenshots/04-analysis-tab.png)`
+![Analysis Tab](screenshots/04-analysis-tab.png)
 
 ### Settings — Connection
 Configure Serper API keys (with round-robin rotation for multiple keys), private proxies, thread count, and HTTP timeout settings.
 
-!`[Settings Connection](screenshots/05-settings-connection.png)`
+![Settings Connection](screenshots/05-settings-connection.png)
 
 ### Settings — Data & Tools
 Manage the domain blocklist, download ONNX NLP models, purge the database, and monitor system resources (CPU, RAM, GPU utilization).
 
-!`[Settings Data](screenshots/06-settings-data.png)`
+![Settings Data](screenshots/06-settings-data.png)
 
 ---
 
@@ -286,4 +286,4 @@ related:
 
 ## Contributing
 
-Bug reports and feature requests are welcome via `[GitHub Issues](../../issues)`.
+Bug reports and feature requests are welcome via [GitHub Issues](../../issues).

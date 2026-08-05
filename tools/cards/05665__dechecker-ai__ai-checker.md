@@ -46,7 +46,7 @@ related:
 
 ## 🌐 Language Switch / 语言切换
 
-- `[English](README.md)` | `[中文](README.zh-CN.md)`
+- [English](README.md) | [中文](README.zh-CN.md)
 
 ---
 
@@ -236,5 +236,5 @@ related:
 
 * 🌐 Official Site: [Dechecker](https://dechecker.ai)
 * 📘 API Docs: Coming soon
-* 🧑‍💻 Developer Contact: `[support@dechecker.ai](mailto:support@dechecker.ai)`
+* 🧑‍💻 Developer Contact: [support@dechecker.ai](mailto:support@dechecker.ai)
 

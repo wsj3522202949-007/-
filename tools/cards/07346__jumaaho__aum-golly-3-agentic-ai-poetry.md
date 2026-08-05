@@ -133,7 +133,7 @@ Choose from 15+ supported forms in `prompts/forms/`:
 
 ## Architecture
 
-See `[ARCHITECTURE.md](ARCHITECTURE.md)` for detailed system design.
+See [ARCHITECTURE.md](ARCHITECTURE.md) for detailed system design.
 
 **Core Components:**
 - `main.py` - Streamlit UI
@@ -189,7 +189,7 @@ You may use this software for:
 - Noncommercial artistic work
 - Nonprofit organizations
 
-Commercial use requires a separate license. See `[LICENSE](LICENSE)` for full terms.
+Commercial use requires a separate license. See [LICENSE](LICENSE) for full terms.
 
 ## Attribution
 

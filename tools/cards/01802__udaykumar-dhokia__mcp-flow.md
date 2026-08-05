@@ -40,7 +40,7 @@ related:
 
 A visual, node-based platform for building and deploying MCP (Model Context Protocol) servers without writing code. Design tool workflows using a drag-and-drop editor, then export production-ready TypeScript servers compatible with Claude, ChatGPT, Cursor, and Copilot.
 
-!`[MCP-Flow](./frontend/public/demo.gif)`
+![MCP-Flow](./frontend/public/demo.gif)
 
 ## Architecture
 

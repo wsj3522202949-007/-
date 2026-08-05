@@ -422,7 +422,7 @@ CharacterArc/
 
 ## 📄 License
 
-`[MIT](./LICENSE)` © zhouyeshan
+[MIT](./LICENSE) © zhouyeshan
 
 <div align="center">
 

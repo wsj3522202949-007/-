@@ -344,7 +344,7 @@ Privacy note:
 
 ## 6) Polish and OOD local evaluation (`data/evaluation/`, TMR-only)
 
-See `[`data/evaluation/README.md`](data/evaluation/README.md)` for the local
+See [`data/evaluation/README.md`](data/evaluation/README.md) for the local
 sample inventory, source notes, commands, and interpretation.
 
 The Polish snapshots below are `tmr`-only outputs (`weights: 0,1,0`):

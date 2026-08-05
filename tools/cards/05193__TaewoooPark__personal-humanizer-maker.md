@@ -308,7 +308,7 @@ ${CODEX_HOME:-~/.codex}/skills/humanize-NAME/    # Codex
 **Two questions:** can a one-document profile generalize to other texts by the same author,
 and can an emitted skill actually move a different input into the learned style bands?
 Tested with public corpora and smoke-test rewrites in both English and Korean. Full method:
-`[`docs/benchmark.md`](./docs/benchmark.md)`.
+[`docs/benchmark.md`](./docs/benchmark.md).
 
 **Generalization:** build from one Paul Graham essay (*How to Work Hard*), test on five
 held-out essays:
@@ -374,4 +374,4 @@ personal-humanizer-maker/
 
 ## License
 
-Original work in this repository is released under the `[MIT License](./LICENSE)`.
+Original work in this repository is released under the [MIT License](./LICENSE).

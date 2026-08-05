@@ -460,7 +460,7 @@ We welcome contributions! Here's how to get started:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### Acknowledgments
 
@@ -482,10 +482,10 @@ This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` fi
 
 ### Resources
 
-- **📚 Setup Guide**: `[SETUP_GUIDE.md](SETUP_GUIDE.md)`
-- **🔧 Configuration**: `[config.py](config.py)`
-- **📊 Feature Documentation**: `[features/README.md](features/README.md)`
-- **🧪 Testing**: `[tests/README.md](tests/README.md)`
+- **📚 Setup Guide**: [SETUP_GUIDE.md](SETUP_GUIDE.md)
+- **🔧 Configuration**: [config.py](config.py)
+- **📊 Feature Documentation**: [features/README.md](features/README.md)
+- **🧪 Testing**: [tests/README.md](tests/README.md)
 
 related:
   - methods/最强去AI味铁律.md

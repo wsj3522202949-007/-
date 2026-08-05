@@ -130,7 +130,7 @@ Apply mode verifies the exact book, creates a complete local backup, rechecks th
 - Backups remain on the user's computer and are ignored by Git by default.
 - Bug reports must never include private manuscript text, manuscript backups, credentials, or personal configuration files.
 
-See `[PRIVACY.md](PRIVACY.md)` for the complete privacy statement.
+See [PRIVACY.md](PRIVACY.md) for the complete privacy statement.
 
 ## Requirements
 
@@ -296,16 +296,16 @@ The application has no third-party runtime dependencies.
 
 ## Support and Security
 
-- For safe troubleshooting guidance, see `[SUPPORT.md](SUPPORT.md)`.
-- For security reporting, see `[SECURITY.md](SECURITY.md)`.
-- Contributions are welcome under `[CONTRIBUTING.md](CONTRIBUTING.md)`.
+- For safe troubleshooting guidance, see [SUPPORT.md](SUPPORT.md).
+- For security reporting, see [SECURITY.md](SECURITY.md).
+- Contributions are welcome under [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Sponsor QuantumNovel
 
 QuantumNovel is free and open source. Sponsorship helps fund compatibility testing, safety improvements, documentation, and future adapters for other writing tools.
 
-Use the **Sponsor** button at the top of the GitHub repository or see `[SPONSORSHIP.md](SPONSORSHIP.md)`.
+Use the **Sponsor** button at the top of the GitHub repository or see [SPONSORSHIP.md](SPONSORSHIP.md).
 
 ## License
 
-QuantumNovel is licensed under the `[Mozilla Public License 2.0](LICENSE)`. Modifications to MPL-licensed files must remain available under the MPL, while the project may still be combined with separately licensed software.
+QuantumNovel is licensed under the [Mozilla Public License 2.0](LICENSE). Modifications to MPL-licensed files must remain available under the MPL, while the project may still be combined with separately licensed software.

@@ -41,7 +41,7 @@ related:
 
 # mybook
 
-> `[中文](README_CN.md)`
+> [中文](README_CN.md)
 
 **AI-powered infinite-flow novel writing tool** — executed by your AI agent (Claude, GPT, Hermes, Clawbot, etc.). Zero API keys.
 

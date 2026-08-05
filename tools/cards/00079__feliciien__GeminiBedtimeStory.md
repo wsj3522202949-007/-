@@ -91,7 +91,7 @@ Developed by Youknowsthevibes.
 
 ### Support
 
-For any issues or inquiries, please reach out to `[feliciien@gmail.com](mailto:feliciien@gmail.com)`.
+For any issues or inquiries, please reach out to [feliciien@gmail.com](mailto:feliciien@gmail.com).
 
 
 

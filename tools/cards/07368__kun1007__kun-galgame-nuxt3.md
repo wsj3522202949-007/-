@@ -38,7 +38,7 @@ related:
 
 ![kun-galgame-forum](https://kungal.com/kungalgame.webp)
 
-### **`[English](/README.md)`** | **`[日本語](/docs/readme/jp.md)`** | **`[简体中文](/docs/readme/chs.md)`** | **`[繁體中文](/docs/readme/cht.md)`**
+### **[English](/README.md)** | **[日本語](/docs/readme/jp.md)** | **[简体中文](/docs/readme/chs.md)** | **[繁體中文](/docs/readme/cht.md)**
 
 **Contact us：[Telegram](https://telegram.me/kungalgame) | [Discord](https://discord.com/invite/5F4FS2cXhX)**
 
@@ -137,7 +137,7 @@ This is a **pnpm workspace monorepo** with a Go backend and a Nuxt frontend. It 
 >
 > The checked-in `.env.example` files are already wired to that stack (127.0.0.1
 > at the prod ports, public dev OAuth credentials). See
-> `[`kun-galgame-infra/docs/dev-environment.md`](../kun-galgame-infra/docs/dev-environment.md)`.
+> [`kun-galgame-infra/docs/dev-environment.md`](../kun-galgame-infra/docs/dev-environment.md).
 
 ```bash
 # Install workspace dependencies
@@ -156,7 +156,7 @@ pnpm dev
 #   pnpm dev:web   # Nuxt only                     → http://127.0.0.1:2333
 ```
 
-Or run the whole stack in containers (see `[`docker/README.md`](/docker/README.md)`):
+Or run the whole stack in containers (see [`docker/README.md`](/docker/README.md)):
 
 ```bash
 docker compose up -d api web        # kun-galgame-infra must be running first

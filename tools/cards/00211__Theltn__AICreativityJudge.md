@@ -105,7 +105,7 @@ A RoBERTa-base transformer is fine-tuned to predict the weighted composite of th
 | 4th | Claude | 3.69 | +0.06 |
 | 5th | Copilot | 3.22 | −0.41 |
 
-> See `[Docs/LLM_Evaluation_Report.md](Docs/LLM_Evaluation_Report.md)` for the full analysis.
+> See [Docs/LLM_Evaluation_Report.md](Docs/LLM_Evaluation_Report.md) for the full analysis.
 
 ---
 
@@ -380,7 +380,7 @@ This trains:
 
 **Option B: Train on Google Colab (free GPU)**
 
-See `[Docs/Colab_Training_Instructions.md](Docs/Colab_Training_Instructions.md)` for step-by-step instructions. Upload the notebooks from `notebooks/` to Colab and run them there.
+See [Docs/Colab_Training_Instructions.md](Docs/Colab_Training_Instructions.md) for step-by-step instructions. Upload the notebooks from `notebooks/` to Colab and run them there.
 
 ### Step 5: Run the Web App
 
@@ -465,10 +465,10 @@ Or upload to [Google Colab](https://colab.research.google.com/) for free GPU acc
 
 | Document | Description |
 |---|---|
-| `[LLM_Evaluation_Report.md](Docs/LLM_Evaluation_Report.md)` | Full analysis of 5 LLMs vs human baseline |
-| `[Project_Plan.md](Docs/Project_Plan.md)` | Original project roadmap and milestones |
-| `[Colab_Training_Instructions.md](Docs/Colab_Training_Instructions.md)` | How to train on Google Colab |
-| `[PC_Training_Setup.md](Docs/PC_Training_Setup.md)` | Windows/NVIDIA setup guide |
+| [LLM_Evaluation_Report.md](Docs/LLM_Evaluation_Report.md) | Full analysis of 5 LLMs vs human baseline |
+| [Project_Plan.md](Docs/Project_Plan.md) | Original project roadmap and milestones |
+| [Colab_Training_Instructions.md](Docs/Colab_Training_Instructions.md) | How to train on Google Colab |
+| [PC_Training_Setup.md](Docs/PC_Training_Setup.md) | Windows/NVIDIA setup guide |
 
 ---
 

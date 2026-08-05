@@ -64,7 +64,7 @@ A book recommender system using user-based Collaborative Filtering.
 
 ## Description
 
-The dataset contains 278858 users, 1149780 ratings and 271360 books. It might take some time to load the search bar as it is using a large dataset _(it sits on my economic server)_. All the trained models are saved in the `[`models`](model/)` folder. The `[`data`](data/)` folder contains the dataset and the `[`recommender.ipynb`](recommender.ipynb)`  Jupyter notebooks used for data exploration and visualization.
+The dataset contains 278858 users, 1149780 ratings and 271360 books. It might take some time to load the search bar as it is using a large dataset _(it sits on my economic server)_. All the trained models are saved in the [`models`](model/) folder. The [`data`](data/) folder contains the dataset and the [`recommender.ipynb`](recommender.ipynb)  Jupyter notebooks used for data exploration and visualization.
 
 * Content-based filtering is used to provide popular 50 books to users.
 * The logic for user-based collaborative filtering is how many votes a user has given to a book. Books with more than 250 votes are considered for popularity.

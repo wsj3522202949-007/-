@@ -39,7 +39,7 @@ related:
 
 ---
 
-`[🇨🇳 中文版](./README.zh-CN.md)`
+[🇨🇳 中文版](./README.zh-CN.md)
 
 # Content Humanizer
 

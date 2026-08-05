@@ -46,7 +46,7 @@ related:
 [![License](https://img.shields.io/badge/license-MIT-orange)](LICENSE)
 [![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red)](https://streamlit.io/)
 
-**English** | `[简体中文](README.zh.md)` | `[日本語](README.ja.md)`
+**English** | [简体中文](README.zh.md) | [日本語](README.ja.md)
 
 ---
 
@@ -172,7 +172,7 @@ Visit `http://localhost:8501` in your browser
 
 ### Interface Overview
 
-!`[StoryCraft Interface](assets/images/README/1769336295497.png)`
+![StoryCraft Interface](assets/images/README/1769336295497.png)
 
 **Left Sidebar - Configuration**:
 - 📝 **Story Creation**: Input ideas, character name, story length
@@ -246,7 +246,7 @@ Enter title and author name
 Click "Generate and Download PDF"
 ```
 
-!`[PDF Generation](assets/images/README/1769336380598.png)`
+![PDF Generation](assets/images/README/1769336380598.png)
 
 ---
 
@@ -367,7 +367,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

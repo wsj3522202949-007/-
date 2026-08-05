@@ -43,7 +43,7 @@ related:
 
 **A manuscript editor that catches continuity errors while you write — and remembers your whole story, locally, on Supermemory.**
 
-!`[StoryCanon — write the story, it remembers the canon](assets/readme.png)`
+![StoryCanon — write the story, it remembers the canon](assets/readme.png)
 
 > Built for the **Supermemory Local Hackathon**. Everything — memory, embeddings,
 > search, extraction — runs on your machine. No account, no cloud store.
@@ -117,7 +117,7 @@ to underline; Supermemory's actually knows who everyone is.
 
 ## Architecture
 
-!`[StoryCanon architecture](assets/architecture.png)`
+![StoryCanon architecture](assets/architecture.png)
 
 **The live loop** (per paragraph, as you type): extract facts + claims → search
 canon filtered to earlier chapters → judge each against its canon → store new facts

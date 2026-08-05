@@ -47,7 +47,7 @@ Helps you instantly generate optimized prompts for different tasks with selected
 
 ## 📸 Preview
 
-!`[Promptify Screenshot](screenshot.png)` <!-- (optional, add screenshot to your repo if you have one) -->
+![Promptify Screenshot](screenshot.png) <!-- (optional, add screenshot to your repo if you have one) -->
 
 ---
 

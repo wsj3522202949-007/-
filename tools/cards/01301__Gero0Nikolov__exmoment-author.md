@@ -49,7 +49,7 @@ ExMoment Author is a modular WordPress plugin for AI-assisted content authoring,
 
 ## Documentation
 
-Project documentation is organized under `[`docs/index.md`](docs/index.md)`.
+Project documentation is organized under [`docs/index.md`](docs/index.md).
 
 ## What This Plugin Includes
 
@@ -78,4 +78,4 @@ Project documentation is organized under `[`docs/index.md`](docs/index.md)`.
 
 ## Related Entrypoint
 
-Contributor/agent orientation is documented in `[`AGENTS.md`](AGENTS.md)`.
+Contributor/agent orientation is documented in [`AGENTS.md`](AGENTS.md).

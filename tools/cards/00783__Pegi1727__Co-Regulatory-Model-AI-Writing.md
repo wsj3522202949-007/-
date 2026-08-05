@@ -47,11 +47,11 @@ Official repository for the *Co-Regulatory Model of AI-Assisted Writing* study. 
 - `/notebooks`: Python scripts (Jupyter Notebooks) used for statistical analysis, including Repeated Measures ANOVA and developmental trend visualizations.
 - `/figures`: 
     - **Graphical Abstract:** 
-      !`[Graphical Abstract](figures/ga.png)`
+      ![Graphical Abstract](figures/ga.png)
     - **Key Visualizations:**
-      !`[Standardized Z-scores](figures/Figure_1.png)`
-      !`[ANOVA Results](figures/Figure_2.png)`
-      !`[Regression Path Diagram](figures/Figure_5.png)`
+      ![Standardized Z-scores](figures/Figure_1.png)
+      ![ANOVA Results](figures/Figure_2.png)
+      ![Regression Path Diagram](figures/Figure_5.png)
       *(Note: Figures 3-4 also available in this directory)*
 - `/appendices`: Supplementary documentation, including the Prompt Quality Rubric (PQR) and categorized examples of prompts.
 - `README.md`: Project documentation and theoretical summary.

@@ -219,4 +219,4 @@ Found a bug or have an idea? Open an issue — no template needed, just describe
 
 ## License
 
-`[MIT](LICENSE)` — Copyright (c) 2026 Simen
+[MIT](LICENSE) — Copyright (c) 2026 Simen

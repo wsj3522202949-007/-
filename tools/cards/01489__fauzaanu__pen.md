@@ -121,4 +121,4 @@ This builds the plugin, then reads your Obsidian config to find all your vaults.
 
 ## License
 
-`[MIT](LICENSE)`
+[MIT](LICENSE)

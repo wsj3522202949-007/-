@@ -275,7 +275,7 @@ flowchart LR
 | SAST (CodeQL) + SCA (Trivy) + secret-scan (gitleaks) in CI | ✅ |
 | Quarterly threat-model review | ✅ |
 
-A full **STRIDE** threat model is published at `[`docs/security/threat-model.md`](docs/security/threat-model.md)`.
+A full **STRIDE** threat model is published at [`docs/security/threat-model.md`](docs/security/threat-model.md).
 
 ### Compliance frameworks
 
@@ -309,7 +309,7 @@ The platform is designed to **degrade gracefully** under load: circuit breakers,
 
 ## 🚀 Quickstart
 
-> For a deeper walkthrough see `[`specs/001-nl2sql-copilot/quickstart.md`](specs/001-nl2sql-copilot/quickstart.md)`.
+> For a deeper walkthrough see [`specs/001-nl2sql-copilot/quickstart.md`](specs/001-nl2sql-copilot/quickstart.md).
 
 ```bash
 # 1. Clone the repository
@@ -352,7 +352,7 @@ You should see a typed result, a plain-English summary, and a bar chart in **und
 
 ### Ten runnable scenarios
 
-The full validation suite has 10 scenarios — register, end-to-end, disambiguation, row policies, column redaction, validation, saved queries, drift, explanation, PII. See `[`specs/001-nl2sql-copilot/quickstart.md`](specs/001-nl2sql-copilot/quickstart.md)`.
+The full validation suite has 10 scenarios — register, end-to-end, disambiguation, row policies, column redaction, validation, saved queries, drift, explanation, PII. See [`specs/001-nl2sql-copilot/quickstart.md`](specs/001-nl2sql-copilot/quickstart.md).
 
 ---
 
@@ -436,14 +436,14 @@ A: In v1 the only supported vector store is **pgvector** on the same Postgres cl
 
 | If you are a… | Read this next |
 |---|---|
-| 👩‍💼 Business user | `[`docs/user-guide/`](docs/user-guide/)` — "How to ask your first question" |
-| 🧑‍⚖️ Data steward | `[`docs/user-guide/`](docs/user-guide/)` — "Authoring policies" |
-| ⚙️ Platform engineer | `[`docs/operator-runbook/`](docs/operator-runbook/)` — "Deploying QueryPilot" |
-| 🔍 Evaluator / procurement | `[`specs/001-nl2sql-copilot/spec.md`](specs/001-nl2sql-copilot/spec.md)` + `[`data-model.md`](specs/001-nl2sql-copilot/data-model.md)` |
-| 🔒 Security reviewer | `[`docs/security/threat-model.md`](docs/security/threat-model.md)` |
-| 👩‍💻 Developer | `[`docs/dev-onboarding/`](docs/dev-onboarding/)` + `[`quickstart.md`](specs/001-nl2sql-copilot/quickstart.md)` |
-| 🌐 LinkedIn / pitch | `[`docs/linkedin-pitch.md`](docs/linkedin-pitch.md)` |
-| 📊 Client presentation | `[`docs/presentation.md`](docs/presentation.md)` |
+| 👩‍💼 Business user | [`docs/user-guide/`](docs/user-guide/) — "How to ask your first question" |
+| 🧑‍⚖️ Data steward | [`docs/user-guide/`](docs/user-guide/) — "Authoring policies" |
+| ⚙️ Platform engineer | [`docs/operator-runbook/`](docs/operator-runbook/) — "Deploying QueryPilot" |
+| 🔍 Evaluator / procurement | [`specs/001-nl2sql-copilot/spec.md`](specs/001-nl2sql-copilot/spec.md) + [`data-model.md`](specs/001-nl2sql-copilot/data-model.md) |
+| 🔒 Security reviewer | [`docs/security/threat-model.md`](docs/security/threat-model.md) |
+| 👩‍💻 Developer | [`docs/dev-onboarding/`](docs/dev-onboarding/) + [`quickstart.md`](specs/001-nl2sql-copilot/quickstart.md) |
+| 🌐 LinkedIn / pitch | [`docs/linkedin-pitch.md`](docs/linkedin-pitch.md) |
+| 📊 Client presentation | [`docs/presentation.md`](docs/presentation.md) |
 
 ---
 
