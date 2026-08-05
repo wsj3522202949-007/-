@@ -107,7 +107,7 @@ print("重复 owner/repo 数:", len(dups))
 工具库若发生增删/改名（跑过 `_enrich_readmes.py` 或手动整理后），重生成索引：
 
 ```bash
-# 仓库根目录 E:\小说 下执行
+# 仓库根目录 e:\个人知识库 下执行
 python - <<'PY'
 import os, re, glob, json
 BASE = "tools/cards"

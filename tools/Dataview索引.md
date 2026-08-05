@@ -20,7 +20,7 @@ see_also:
 # Dataview 动态视图
 
 > 本文件是 Dataview 动态视图的**核心入口**。所有查询基于实际 frontmatter 字段，Obsidian 打开即可实时渲染。
-> **前置**：需安装 [Dataview 社区插件](obsidian://show-plugin?id=dataview)。
+> **前置**：需安装 `[Dataview 社区插件](obsidian://show-plugin?id=dataview)`。
 
 ---
 
