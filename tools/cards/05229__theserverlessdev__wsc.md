@@ -48,7 +48,7 @@ A prose linter and AI-slop detector. WSC finds **AI tells** — words, phrases, 
 
 **[Live: wsc.theserverless.dev](https://wsc.theserverless.dev)**
 
-![Screenshot of Writing Style Checker](static/images/ss.png)
+!`[Screenshot of Writing Style Checker](static/images/ss.png)`
 
 ## Features
 
@@ -245,7 +245,7 @@ npx wsc-lint check "**/*.md" --format github
 npx wsc-lint init
 ```
 
-See the [`wsc-lint` README](cli/README.md) for full documentation.
+See the `[`wsc-lint` README](cli/README.md)` for full documentation.
 
 ---
 
@@ -352,7 +352,7 @@ related:
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, testing, and pull request guidelines.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for development setup, testing, and pull request guidelines.
 
 For substantial changes, please [open an issue](https://github.com/theserverlessdev/wsc/issues) first.
 
@@ -364,4 +364,4 @@ For substantial changes, please [open an issue](https://github.com/theserverless
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`

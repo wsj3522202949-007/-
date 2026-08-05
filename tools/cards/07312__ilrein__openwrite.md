@@ -45,7 +45,7 @@ OpenWrite helps you plan, organize, and write long-form fiction — with an AI a
 
 **Try it:** [openwrite.iliareingold.com](https://openwrite.iliareingold.com)
 
-![One sentence becomes a connected story map: a premise node expands into acts, acts into chapters, and a chapter is promoted straight into the manuscript](.github/story-map-demo.gif)
+!`[One sentence becomes a connected story map: a premise node expands into acts, acts into chapters, and a chapter is promoted straight into the manuscript](.github/story-map-demo.gif)`
 
 *One sentence in → a connected story map out. Expand any node with AI, then promote chapters straight into your manuscript.*
 
@@ -155,4 +155,4 @@ Issues and PRs are welcome — the roadmap above is a good place to start, and t
 
 ## License
 
-[AGPL-3.0](LICENSE.md)
+`[AGPL-3.0](LICENSE.md)`

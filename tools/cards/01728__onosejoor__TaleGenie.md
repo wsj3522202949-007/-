@@ -141,7 +141,7 @@ We welcome contributions to TaleGenie! Here's how you can help:
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the `[MIT License](LICENSE)`.
 
 ## 🧑‍💻 Author
 

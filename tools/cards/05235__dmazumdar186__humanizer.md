@@ -112,7 +112,7 @@ If you set both `GEMINI_API_KEY` and `OPENROUTER_API_KEY`, `--tier gemini` alway
 
 - **Tool-use structured output:** forces a reliable JSON schema via `submit_humanized` function-calling (OpenAI/OpenRouter format, Anthropic format, Gemini function-calling). No regex parsing of free-text responses — the LLM must return structured output or the call fails cleanly.
 
-- **Platform-aware post-process:** LinkedIn strips markdown (`**bold**`, `# headings`, backtick code, `[link](url)`). Slack converts bold to italic and keeps code spans. Tweet hard-caps at 280 characters. Email preserves paragraph structure. Generic passes through with only max-length enforcement.
+- **Platform-aware post-process:** LinkedIn strips markdown (`**bold**`, `# headings`, backtick code, ``[link](url)``). Slack converts bold to italic and keeps code spans. Tweet hard-caps at 280 characters. Email preserves paragraph structure. Generic passes through with only max-length enforcement.
 
 ---
 
@@ -245,7 +245,7 @@ Model registry cache is written to `.tmp/model_registry.json` (gitignored, 7-day
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT — see `[LICENSE](LICENSE)`
 
 related:
   - methods/最强去AI味铁律.md

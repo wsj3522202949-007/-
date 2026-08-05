@@ -65,14 +65,14 @@ The framework has two parts:
 
 | Step | Explanation | Templates Folder |
 |------|-----------|-----------------|
-| **1. Concept** | [Story Concept & Premise](explanations/01-Story-Concept-and-Premise.md) | [`01-story-concept/`](templates/01-story-concept/) — Story Concept Sheet |
-| **2. World** | [World Building & Magic Systems](explanations/02-World-Building-and-Magic-Systems.md) | [`02-world-and-magic/`](templates/02-world-and-magic/) — World Bible · Magic System Worksheet |
-| **3. Characters** | [Characters](explanations/03-Characters.md) | [`03-characters/`](templates/03-characters/) — Character Sheet _(copy per character)_ · Contrast Grid |
-| **4. Plot** | [Plot Structure & Promises](explanations/04-Plot-Structure-and-Promises.md) | [`04-plot-structure/`](templates/04-plot-structure/) — Plot Architecture · Promise Tracker · Subplot Tracker |
-| **5. Outline** | [Outlining & Scene Writing](explanations/05-Outlining-and-Scene-Writing.md) | [`05-outlining-and-scenes/`](templates/05-outlining-and-scenes/) — Book Outline Grid · Chapter Outline _(copy per chapter)_ · Scene Checklist |
+| **1. Concept** | `[Story Concept & Premise](explanations/01-Story-Concept-and-Premise.md)` | `[`01-story-concept/`](templates/01-story-concept/)` — Story Concept Sheet |
+| **2. World** | `[World Building & Magic Systems](explanations/02-World-Building-and-Magic-Systems.md)` | `[`02-world-and-magic/`](templates/02-world-and-magic/)` — World Bible · Magic System Worksheet |
+| **3. Characters** | `[Characters](explanations/03-Characters.md)` | `[`03-characters/`](templates/03-characters/)` — Character Sheet _(copy per character)_ · Contrast Grid |
+| **4. Plot** | `[Plot Structure & Promises](explanations/04-Plot-Structure-and-Promises.md)` | `[`04-plot-structure/`](templates/04-plot-structure/)` — Plot Architecture · Promise Tracker · Subplot Tracker |
+| **5. Outline** | `[Outlining & Scene Writing](explanations/05-Outlining-and-Scene-Writing.md)` | `[`05-outlining-and-scenes/`](templates/05-outlining-and-scenes/)` — Book Outline Grid · Chapter Outline _(copy per chapter)_ · Scene Checklist |
 | **6. Write** | _Just write. Don't revise. Get Draft 1 done._ | |
-| **7. Foreshadow** | [Foreshadowing & Mysteries](explanations/06-Foreshadowing-and-Mysteries.md) | [`06-foreshadowing/`](templates/06-foreshadowing/) — Foreshadowing Tracker · Chekhov's Gun Audit |
-| **8. Revise** | [Revision & Editing](explanations/07-Revision-and-Editing.md) | [`07-revision/`](templates/07-revision/) — Revision Bug List · Draft Pass Checklist · Beta Reader Feedback |
+| **7. Foreshadow** | `[Foreshadowing & Mysteries](explanations/06-Foreshadowing-and-Mysteries.md)` | `[`06-foreshadowing/`](templates/06-foreshadowing/)` — Foreshadowing Tracker · Chekhov's Gun Audit |
+| **8. Revise** | `[Revision & Editing](explanations/07-Revision-and-Editing.md)` | `[`07-revision/`](templates/07-revision/)` — Revision Bug List · Draft Pass Checklist · Beta Reader Feedback |
 
 ---
 
@@ -96,6 +96,6 @@ related:
 
 ## Reference
 
-- Original lecture notes: [Writing Rules.md](Writing%20Rules.md)
+- Original lecture notes: `[Writing Rules.md](Writing%20Rules.md)`
 - Sanderson's lecture notes: [brandonsanderson.com/blogs/blog/tagged/2025-lecture-notes](https://www.brandonsanderson.com/blogs/blog/tagged/2025-lecture-notes)
 - Full lecture playlist: [YouTube](https://www.youtube.com/playlist?list=PLSH_xM-KC3ZvzkfVo_Dls0B5GiE2oMcLY)

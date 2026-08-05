@@ -45,7 +45,7 @@ related:
 
 # AI Comic Generator
 
-[English](./README.md) | [中文](./README_CN.md)
+`[English](./README.md)` | `[中文](./README_CN.md)`
 
 An open-source AI-powered manga creation tool that transforms text stories into fully illustrated comics using Google Gemini models. Features include automatic storyboard generation, character consistency checks, and a visual editor.
 
@@ -185,25 +185,25 @@ Access in browser: `http://localhost:5173`
     *   Set global styles (e.g., "Japanese Shonen"), aspect ratio, etc.
     *   Click "Generate Storyboard Config", and AI will generate the character list and storyboard script.
     
-    ![Story & Configuration](assets/story_config.png)
+    !`[Story & Configuration](assets/story_config.png)`
 
 4.  **Character Workshop**:
     *   View AI-generated character settings.
     *   Click "Draw" to generate character portraits.
     *   If there are duplicate characters, use the "Merge Characters" function to clean them up.
 
-    ![Character Workshop](assets/character_studio.png)
+    !`[Character Workshop](assets/character_studio.png)`
 
 5.  **Storyboard Editing**:
     *   Check the description of each panel in the storyboard list.
     *   Click "Generate Image" or "Generate All" to start drawing the comic.
     *   Click on an image to view it in large size and support downloading.
 
-    ![Storyboard Editor](assets/storyboard.png)
+    !`[Storyboard Editor](assets/storyboard.png)`
 
 ## 🖼️ Examples
 
-You can find a complete example project in the [example/](./example/) directory, including story scripts, character designs, and generated storyboard panels.
+You can find a complete example project in the `[example/](./example/)` directory, including story scripts, character designs, and generated storyboard panels.
 
 ### Character Design
 

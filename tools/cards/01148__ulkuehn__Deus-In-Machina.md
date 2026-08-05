@@ -162,4 +162,4 @@ There is no specific ordering intended in this list. Also, it's just ideas, and 
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-See the [LICENSE](./LICENSE.md) file for license rights and limitations.
+See the `[LICENSE](./LICENSE.md)` file for license rights and limitations.

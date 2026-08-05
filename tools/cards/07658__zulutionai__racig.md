@@ -130,7 +130,7 @@ python run_gradio.py
 ```
 
 
-For more detailed instruction, see [Gradio Interface Instructions (EN)](docs/gradio_instruction_en.md) or [Gradio Interface Instructions (中文)](docs/gradio_instruction_cn.md)
+For more detailed instruction, see `[Gradio Interface Instructions (EN)](docs/gradio_instruction_en.md)` or `[Gradio Interface Instructions (中文)](docs/gradio_instruction_cn.md)`
 
 
 ## 🛠️ Training

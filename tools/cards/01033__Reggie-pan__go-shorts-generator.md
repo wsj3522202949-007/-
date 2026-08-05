@@ -41,11 +41,11 @@ related:
 
 <div align="center">
 
-#### 中文 | [English](README_EN.md)
+#### 中文 | `[English](README_EN.md)`
 
 </div>
 
-![Brand Banner](assets/images/banner.jpg)
+!`[Brand Banner](assets/images/banner.jpg)`
 
 <div align="center">
 
@@ -186,4 +186,4 @@ related:
 
 ## 授權條款 📝
 
-本專案採用 [MIT License](LICENSE) 授權。
+本專案採用 `[MIT License](LICENSE)` 授權。

@@ -204,7 +204,7 @@ GitHub device login, Hugging Face uploads, and results push in one script.
 
 After filtering at $L \le 512$ tokens: train $8891$, validation $1107$, test $1112$.
 
-![Token length distribution](results/plots/token_length_distribution.png)
+!`[Token length distribution](results/plots/token_length_distribution.png)`
 
 ### Preference construction
 
@@ -212,13 +212,13 @@ From $8891$ train abstracts the pipeline retained $6396$ DPO pairs. $2495$ pairs
 
 Logit margin probe on $512$ train pairs: mean $|z_1 - z_2| = 2.42$, median $1.80$, IQR $[0.87, 3.36]$, maximum gap $11.24$.
 
-![Logit probe summary](results/plots/analysis/logit_probe_summary.png)
+!`[Logit probe summary](results/plots/analysis/logit_probe_summary.png)`
 
 ### Training
 
 DPO ran for four epochs on $6396$ preference pairs. On a validation subset of $276$ texts, mean detector AI probability at step $0$ was $0.674$ and at the last monitor step $0.244$, a change of $-0.430$. Final logged DPO loss was $0.256$.
 
-![Training monitor](results/plots/analysis/training_monitor_analysis.png)
+!`[Training monitor](results/plots/analysis/training_monitor_analysis.png)`
 
 ### Evaluation
 
@@ -236,13 +236,13 @@ One paraphrase per validation and test abstract was generated with the base inst
 
 On the test split the fine-tuned model lowered mean AI probability from $0.653$ to $0.239$ and mean logit from $1.558$ to $-1.873$ relative to the base model. Under the AI-positive labelling convention, accuracy and F1 drop because fewer paraphrases exceed the $0.5$ threshold. MCC remains zero and ROC-AUC is undefined because all ground-truth labels are AI-generated.
 
-![Evaluation summary](results/plots/analysis/evaluation_summary.png)
+!`[Evaluation summary](results/plots/analysis/evaluation_summary.png)`
 
-![Score distributions](results/plots/analysis/score_distributions.png)
+!`[Score distributions](results/plots/analysis/score_distributions.png)`
 
-![Confusion matrix validation](results/plots/confusion_matrix_validation.png)
+!`[Confusion matrix validation](results/plots/confusion_matrix_validation.png)`
 
-![Confusion matrix test](results/plots/confusion_matrix_test.png)
+!`[Confusion matrix test](results/plots/confusion_matrix_test.png)`
 
 ## Evaluation metrics
 

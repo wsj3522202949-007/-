@@ -199,7 +199,7 @@ curl -X POST http://127.0.0.1:5000/analyze \
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check the [issues page](../../issues).
+Contributions, issues, and feature requests are welcome. Feel free to check the `[issues page](../../issues)`.
 
 ---
 

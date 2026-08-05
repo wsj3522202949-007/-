@@ -160,13 +160,13 @@ cp -R humanize/humanize humanize/ai-check ~/.config/opencode/skills/
 The web and desktop apps don't read from disk. Upload through the UI instead:
 
 1. Open **Settings → Capabilities → Skills**.
-2. Click **Create skill** and upload `[humanize/SKILL.md](humanize/SKILL.md)`.
-3. Repeat with `[ai-check/SKILL.md](ai-check/SKILL.md)`.
+2. Click **Create skill** and upload ``[humanize/SKILL.md](humanize/SKILL.md)``.
+3. Repeat with ``[ai-check/SKILL.md](ai-check/SKILL.md)``.
 4. Toggle each skill on in conversations where you want it active.
 
 ### Any other chat agent (ChatGPT, Gemini, Cursor, Aider, Cline)
 
-No install needed. Open `[humanize/SKILL.md](humanize/SKILL.md)`, copy the raw contents, and paste into a new conversation prefaced with: *"Use these instructions whenever I ask you to humanize text."* Same for `[ai-check/SKILL.md](ai-check/SKILL.md)`.
+No install needed. Open ``[humanize/SKILL.md](humanize/SKILL.md)``, copy the raw contents, and paste into a new conversation prefaced with: *"Use these instructions whenever I ask you to humanize text."* Same for ``[ai-check/SKILL.md](ai-check/SKILL.md)``.
 
 ---
 

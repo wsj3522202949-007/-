@@ -194,11 +194,11 @@ No pip install needed. Pure Python 3 stdlib.
 
 If you've spotted an AI pattern the detector misses, or found a banned word that should be on the list, PRs are welcome.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the process.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for the process.
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`
 
 related:
   - methods/QUICK_START.md

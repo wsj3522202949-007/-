@@ -68,10 +68,10 @@ REST API for managing multi-step automation workflows in Albato. Supports creati
 #### Properties
 
 - [Documentation](https://albato.com)
-- [OpenAPI](openapi/albato-automations-openapi.yaml)
-- [JSONSchema](json-schema/albato-albato-automations-automation-schema.json)
-- [JSONSchema](json-schema/albato-albato-automations-automation-step-schema.json)
-- [JSONSchema](json-schema/albato-albato-automations-execution-schema.json)
+- `[OpenAPI](openapi/albato-automations-openapi.yaml)`
+- `[JSONSchema](json-schema/albato-albato-automations-automation-schema.json)`
+- `[JSONSchema](json-schema/albato-albato-automations-automation-step-schema.json)`
+- `[JSONSchema](json-schema/albato-albato-automations-execution-schema.json)`
 
 ### Albato Connections API
 REST API for managing app connections and webhooks in Albato. Supports connecting 1,000+ apps via OAuth, API key, basic auth, and creating inbound webhook endpoints.
@@ -85,10 +85,10 @@ REST API for managing app connections and webhooks in Albato. Supports connectin
 #### Properties
 
 - [Documentation](https://albato.com)
-- [OpenAPI](openapi/albato-connections-openapi.yaml)
-- [JSONSchema](json-schema/albato-albato-connections-connection-schema.json)
-- [JSONSchema](json-schema/albato-albato-connections-app-schema.json)
-- [JSONSchema](json-schema/albato-albato-connections-webhook-schema.json)
+- `[OpenAPI](openapi/albato-connections-openapi.yaml)`
+- `[JSONSchema](json-schema/albato-albato-connections-connection-schema.json)`
+- `[JSONSchema](json-schema/albato-albato-connections-app-schema.json)`
+- `[JSONSchema](json-schema/albato-albato-connections-webhook-schema.json)`
 
 ## Common Properties
 
@@ -137,39 +137,39 @@ Machine-readable API specifications organized by format.
 
 ### OpenAPI
 
-- [Albato Automations API](openapi/albato-automations-openapi.yaml)
-- [Albato Connections API](openapi/albato-connections-openapi.yaml)
+- `[Albato Automations API](openapi/albato-automations-openapi.yaml)`
+- `[Albato Connections API](openapi/albato-connections-openapi.yaml)`
 
 ### JSON Schema
 
-- [albato-albato-automations-automation-schema.json](json-schema/albato-albato-automations-automation-schema.json)
-- [albato-albato-automations-automation-step-schema.json](json-schema/albato-albato-automations-automation-step-schema.json)
-- [albato-albato-automations-execution-schema.json](json-schema/albato-albato-automations-execution-schema.json)
-- [albato-albato-connections-connection-schema.json](json-schema/albato-albato-connections-connection-schema.json)
-- [albato-albato-connections-app-schema.json](json-schema/albato-albato-connections-app-schema.json)
-- [albato-albato-connections-webhook-schema.json](json-schema/albato-albato-connections-webhook-schema.json)
+- `[albato-albato-automations-automation-schema.json](json-schema/albato-albato-automations-automation-schema.json)`
+- `[albato-albato-automations-automation-step-schema.json](json-schema/albato-albato-automations-automation-step-schema.json)`
+- `[albato-albato-automations-execution-schema.json](json-schema/albato-albato-automations-execution-schema.json)`
+- `[albato-albato-connections-connection-schema.json](json-schema/albato-albato-connections-connection-schema.json)`
+- `[albato-albato-connections-app-schema.json](json-schema/albato-albato-connections-app-schema.json)`
+- `[albato-albato-connections-webhook-schema.json](json-schema/albato-albato-connections-webhook-schema.json)`
 
 ### JSON Structure
 
-- [albato-albato-automations-automation-structure.json](json-structure/albato-albato-automations-automation-structure.json)
-- [albato-albato-automations-automation-step-structure.json](json-structure/albato-albato-automations-automation-step-structure.json)
-- [albato-albato-automations-execution-structure.json](json-structure/albato-albato-automations-execution-structure.json)
-- [albato-albato-connections-connection-structure.json](json-structure/albato-albato-connections-connection-structure.json)
-- [albato-albato-connections-app-structure.json](json-structure/albato-albato-connections-app-structure.json)
-- [albato-albato-connections-webhook-structure.json](json-structure/albato-albato-connections-webhook-structure.json)
+- `[albato-albato-automations-automation-structure.json](json-structure/albato-albato-automations-automation-structure.json)`
+- `[albato-albato-automations-automation-step-structure.json](json-structure/albato-albato-automations-automation-step-structure.json)`
+- `[albato-albato-automations-execution-structure.json](json-structure/albato-albato-automations-execution-structure.json)`
+- `[albato-albato-connections-connection-structure.json](json-structure/albato-albato-connections-connection-structure.json)`
+- `[albato-albato-connections-app-structure.json](json-structure/albato-albato-connections-app-structure.json)`
+- `[albato-albato-connections-webhook-structure.json](json-structure/albato-albato-connections-webhook-structure.json)`
 
 ### JSON-LD
 
-- [albato-albato-context.jsonld](json-ld/albato-albato-context.jsonld)
+- `[albato-albato-context.jsonld](json-ld/albato-albato-context.jsonld)`
 
 ### Examples
 
-- [albato-albato-automations-automation-example.json](examples/albato-albato-automations-automation-example.json)
-- [albato-albato-automations-automation-step-example.json](examples/albato-albato-automations-automation-step-example.json)
-- [albato-albato-automations-execution-example.json](examples/albato-albato-automations-execution-example.json)
-- [albato-albato-connections-connection-example.json](examples/albato-albato-connections-connection-example.json)
-- [albato-albato-connections-app-example.json](examples/albato-albato-connections-app-example.json)
-- [albato-albato-connections-webhook-example.json](examples/albato-albato-connections-webhook-example.json)
+- `[albato-albato-automations-automation-example.json](examples/albato-albato-automations-automation-example.json)`
+- `[albato-albato-automations-automation-step-example.json](examples/albato-albato-automations-automation-step-example.json)`
+- `[albato-albato-automations-execution-example.json](examples/albato-albato-automations-execution-example.json)`
+- `[albato-albato-connections-connection-example.json](examples/albato-albato-connections-connection-example.json)`
+- `[albato-albato-connections-app-example.json](examples/albato-albato-connections-app-example.json)`
+- `[albato-albato-connections-webhook-example.json](examples/albato-albato-connections-webhook-example.json)`
 
 ## Capabilities
 
@@ -177,8 +177,8 @@ Naftiko capabilities organized as shared per-API definitions composed into custo
 
 ### Shared Per-API Definitions
 
-- [Albato Automations API](capabilities/shared/automations-api.yaml) — 6 operations for automation management
-- [Albato Connections API](capabilities/shared/connections-api.yaml) — 3 operations for connection management
+- `[Albato Automations API](capabilities/shared/automations-api.yaml)` — 6 operations for automation management
+- `[Albato Connections API](capabilities/shared/connections-api.yaml)` — 3 operations for connection management
 
 ### Workflow Capabilities
 
@@ -190,15 +190,15 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [Workflow Automation](capabilities/workflow-automation.yaml) | albato-automations, albato-connections | 5 | Automation Builder, Operations Manager |
+| `[Workflow Automation](capabilities/workflow-automation.yaml)` | albato-automations, albato-connections | 5 | Automation Builder, Operations Manager |
 
 ## Vocabulary
 
-- [Albato Vocabulary](vocabulary/albato-vocabulary.yaml) — Unified taxonomy mapping 5 resources, 7 actions, 1 workflow, and 2 personas across operational (OpenAPI) and capability (Naftiko) dimensions
+- `[Albato Vocabulary](vocabulary/albato-vocabulary.yaml)` — Unified taxonomy mapping 5 resources, 7 actions, 1 workflow, and 2 personas across operational (OpenAPI) and capability (Naftiko) dimensions
 
 ## Rules
 
-- [Albato Spectral Rules](rules/albato-spectral-rules.yml) — 25 rules across 8 categories enforcing Albato API conventions
+- `[Albato Spectral Rules](rules/albato-spectral-rules.yml)` — 25 rules across 8 categories enforcing Albato API conventions
 
 ## Maintainers
 

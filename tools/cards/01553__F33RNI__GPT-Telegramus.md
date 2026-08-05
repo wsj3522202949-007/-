@@ -41,7 +41,7 @@ related:
 
 # 🤖 GPT-Telegramus v5
 
-| ![GPT-Telegramus logo](logo.png) | <h3>The best free Telegram bot for ChatGPT, Microsoft Copilot (aka Bing AI / Sidney / EdgeGPT), Microsoft Copilot Designer (aka BingImageCreator), Gemini and Groq with stream writing, requests with images, multiple languages, admin control, data logging and more!</h3> |
+| !`[GPT-Telegramus logo](logo.png)` | <h3>The best free Telegram bot for ChatGPT, Microsoft Copilot (aka Bing AI / Sidney / EdgeGPT), Microsoft Copilot Designer (aka BingImageCreator), Gemini and Groq with stream writing, requests with images, multiple languages, admin control, data logging and more!</h3> |
 | -------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 <div style="width:100%;text-align:center;">
@@ -70,7 +70,7 @@ related:
     </p>
 </div>
 
-![Project banner](banner.png)
+!`[Project banner](banner.png)`
 
 ----------
 
@@ -256,7 +256,7 @@ See **🐧 Running as service on linux**, **🍓 Running on Raspberry Pi (ARM)**
 
 ### From GitHub Package
 
-1. Clone repo or download [`config.json`](./config.json) and [`module_configs`](./module_configs) and [`langs`](./langs)
+1. Clone repo or download `[`config.json`](./config.json)` and `[`module_configs`](./module_configs)` and `[`langs`](./langs)`
 2. Edit the `config.json`, set options in the `files` section to the path in the container (`/app/config/<FILE_NAME>`)
 3. Run the container
 

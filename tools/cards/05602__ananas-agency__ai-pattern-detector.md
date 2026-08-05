@@ -142,4 +142,4 @@ skills/
 
 ## License
 
-[MIT](LICENSE) © Ananas Agency
+`[MIT](LICENSE)` © Ananas Agency

@@ -48,7 +48,7 @@ This repository contains code and data for the paper: [Capturing Global Structur
 ## Introduction
 The proposed model (CGSN) takes a long document and a question as the input to select the question-related evidence paragraphs from the document. 
 
-![model](./images/model.png)
+!`[model](./images/model.png)`
 
 Afterward, we take the selected evidence paragraphs and the question as the input into [an LED answer generator](https://github.com/allenai/qasper-led-baseline) to generate the final answer.
 
@@ -193,4 +193,4 @@ Please cite the paper in the following format if you use our model or dataset du
 ```
 
 ## Q&A
-If you encounter any problem, feel free to either directly contact the [first author](mailto:jerrrynie@gmail.com) or leave an issue in the Github repo.
+If you encounter any problem, feel free to either directly contact the `[first author](mailto:jerrrynie@gmail.com)` or leave an issue in the Github repo.

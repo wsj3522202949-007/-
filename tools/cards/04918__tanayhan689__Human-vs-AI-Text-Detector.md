@@ -194,7 +194,7 @@ The Streamlit app (`app/app.py`) has three tabs:
 
 ## 📄 License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see `[LICENSE](LICENSE)` for details.
 
 related:
   - methods/最强去AI味铁律.md

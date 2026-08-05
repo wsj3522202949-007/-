@@ -49,7 +49,7 @@ related:
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/stevendong/ai-novel-assistant/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-[English](./README.en.md) | 简体中文
+`[English](./README.en.md)` | 简体中文
 
 **AI驱动的智能小说创作协作平台**
 
@@ -1123,8 +1123,8 @@ git commit -m "docs: update deployment guide"
 ### 开发环境设置
 
 详细的开发指南请参考：
-- [CLAUDE.md](./CLAUDE.md) - Claude Code 开发指南
-- [MONOREPO.md](./MONOREPO.md) - Monorepo 架构说明
+- `[CLAUDE.md](./CLAUDE.md)` - Claude Code 开发指南
+- `[MONOREPO.md](./MONOREPO.md)` - Monorepo 架构说明
 
 ---
 
@@ -1229,7 +1229,7 @@ git commit -m "docs: update deployment guide"
 
 ## 📄 开源许可
 
-本项目采用 [MIT License](LICENSE) 开源协议。
+本项目采用 `[MIT License](LICENSE)` 开源协议。
 
 ```
 MIT License

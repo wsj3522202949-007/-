@@ -355,6 +355,6 @@ related:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.
 
 Copyright (c) 2026 Nguyen Thanh Long

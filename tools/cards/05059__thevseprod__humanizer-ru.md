@@ -38,7 +38,7 @@ related:
 
 # humanizer-ru
 
-![humanizer-ru - убираем «запах ИИ» из текста, заточен под русский](assets/banner.png)
+!`[humanizer-ru - убираем «запах ИИ» из текста, заточен под русский](assets/banner.png)`
 
 > Делает текст нейросети живым, как будто писал человек. Заточен под русский, есть и английская версия.
 > Makes AI text read like a human wrote it. Built for Russian, works for English too.
@@ -69,7 +69,7 @@ Claude Code, Cursor, Codex и другие агенты.
 
 ### Пример
 
-![До и после humanizer-ru - один смысл без «запаха нейросети»](assets/before-after.png)
+!`[До и после humanizer-ru - один смысл без «запаха нейросети»](assets/before-after.png)`
 
 Слева типичный AI-текст со всеми признаками машины, справа - та же мысль после humanizer-ru: без штампов, канцелярита и длинного тире, зато с позицией и живым ритмом.
 
@@ -92,8 +92,8 @@ npx skills add thevseprod/humanizer-ru
 
 **Без установки, любая нейросеть (ChatGPT / Claude / Gemini / …):**
 
-- **Отдать файл агенту** - дай [`humanizer.ru.md`](humanizer.ru.md) своему AI (Cursor, кастомный GPT и т.п.), он сам прочитает правила.
-- **Скопировать в чат** - открой [`humanizer.ru.md`](humanizer.ru.md) и вставь часть от `ЗАДАЧА` до конца первым сообщением.
+- **Отдать файл агенту** - дай `[`humanizer.ru.md`](humanizer.ru.md)` своему AI (Cursor, кастомный GPT и т.п.), он сам прочитает правила.
+- **Скопировать в чат** - открой `[`humanizer.ru.md`](humanizer.ru.md)` и вставь часть от `ЗАДАЧА` до конца первым сообщением.
 
 Потом кинь текст, который надо оживить. Готово.
 
@@ -104,9 +104,9 @@ npx skills add thevseprod/humanizer-ru
 
 | Файл | Что это |
 |---|---|
-| [`SKILL.md`](SKILL.md) | Скилл для Claude Code и других агентов |
-| [`humanizer.ru.md`](humanizer.ru.md) | Правила для **русского** текста |
-| [`humanizer.en.md`](humanizer.en.md) | Правила для **английского** текста |
+| `[`SKILL.md`](SKILL.md)` | Скилл для Claude Code и других агентов |
+| `[`humanizer.ru.md`](humanizer.ru.md)` | Правила для **русского** текста |
+| `[`humanizer.en.md`](humanizer.en.md)` | Правила для **английского** текста |
 | `LICENSE` | MIT |
 
 ### Автор
@@ -165,8 +165,8 @@ Into every agent at once: `npx skills add thevseprod/humanizer-ru --agent '*'`. 
 
 **No install, any LLM (ChatGPT / Claude / Gemini / …):**
 
-- **Hand the file to your agent** - give [`humanizer.en.md`](humanizer.en.md) to your AI (Cursor, a custom GPT, etc.) and it reads the rules itself.
-- **Copy into the chat** - open [`humanizer.en.md`](humanizer.en.md) and paste the part from `TASK` to the end as your first message.
+- **Hand the file to your agent** - give `[`humanizer.en.md`](humanizer.en.md)` to your AI (Cursor, a custom GPT, etc.) and it reads the rules itself.
+- **Copy into the chat** - open `[`humanizer.en.md`](humanizer.en.md)` and paste the part from `TASK` to the end as your first message.
 
 Then send the text you want to humanize. Done.
 
@@ -188,4 +188,4 @@ related:
 
 ## License
 
-MIT, see [`LICENSE`](LICENSE). Use it, fork it, ship it.
+MIT, see `[`LICENSE`](LICENSE)`. Use it, fork it, ship it.

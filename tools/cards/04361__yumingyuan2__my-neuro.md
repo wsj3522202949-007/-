@@ -670,7 +670,7 @@ python security_check.py
 
 
 
-本项目采用 MIT 许可证，详见 [LICENSE.txt](LICENSE.txt) 文件。
+本项目采用 MIT 许可证，详见 `[LICENSE.txt](LICENSE.txt)` 文件。
 
 
 
@@ -713,7 +713,7 @@ related:
 
 
 
-**English Documentation**: [English Version](./README_English.md)
+**English Documentation**: `[English Version](./README_English.md)`
 
 
 

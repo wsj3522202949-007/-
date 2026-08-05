@@ -314,7 +314,7 @@ pip install -e ".[dev]"
 pytest tests/ -v  # 68 tests should pass
 ```
 
-See [AGENTS.md](AGENTS.md) for coding conventions and pattern implementation guide.
+See `[AGENTS.md](AGENTS.md)` for coding conventions and pattern implementation guide.
 
 ---
 

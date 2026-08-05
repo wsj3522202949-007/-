@@ -65,8 +65,8 @@ related:
 - **max_tokens=65536**: 全部主要智能体支持含reasoning token的思维链模型
 - **Default Tuning**: `chapters_per_plot` 5→2, `num_climaxes` 10→20 for better default novel structure
 - **参数调优**: chapters_per_plot 5→2，num_climaxes 10→20，默认结构更合理
-- **Detailed Changelog**: See [CHANGELOG.md](CHANGELOG.md) for the full change list
-- **详细变更记录**: 完整变更列表见 [CHANGELOG.md](CHANGELOG.md)
+- **Detailed Changelog**: See `[CHANGELOG.md](CHANGELOG.md)` for the full change list
+- **详细变更记录**: 完整变更列表见 `[CHANGELOG.md](CHANGELOG.md)`
 
 ---
 
@@ -142,7 +142,7 @@ related:
 - **多智能体系统**: 专业化写作智能体分工协作
 - **9个AI提供商**: 支持多个主流AI服务
 
-[View Full Changelog](CHANGELOG.md) | [查看完整更新日志](CHANGELOG.md)
+`[View Full Changelog](CHANGELOG.md)` | `[查看完整更新日志](CHANGELOG.md)`
 
 > README 版本历史仅保留最近 5 次更新及大版本（x.0.0）记录。
 
@@ -160,7 +160,7 @@ related:
 - 🚨 **Configuration files contain API keys**: The `config.py` file contains your AI provider API keys and must never be uploaded to public repositories
 - 🛡️ **User data protection**: The `output/` and `autosave/` directories contain your creative content and should remain private
 - ✅ **Security check**: The project includes a `github_upload_ready.py` script - please run security checks before uploading
-- 📖 **Detailed guide**: See [GitHub Upload Security Guide](GITHUB_UPLOAD_GUIDE.md) for complete security measures
+- 📖 **Detailed guide**: See `[GitHub Upload Security Guide](GITHUB_UPLOAD_GUIDE.md)` for complete security measures
 
 ```bash
 # Run security check
@@ -416,7 +416,7 @@ TEMPERATURE_SETTINGS = {
 
 ## 🆕 Version History | 版本历史
 
-> 本 README 仅保留最近 5 次更新及大版本（x.0.0）更新记录，完整历史见 [CHANGELOG.md](CHANGELOG.md)。
+> 本 README 仅保留最近 5 次更新及大版本（x.0.0）更新记录，完整历史见 `[CHANGELOG.md](CHANGELOG.md)`。
 
 ### v5.3.0 (2026-06-25) 🔧
 - 📖 **章节标题系统重构**：三层补全架构（验证→启发式推断→LLM批量生成），新增storyline_chapter_utils/storyline_title_service/chapter_content_utils三个专用模块
@@ -453,23 +453,23 @@ TEMPERATURE_SETTINGS = {
 - ✨ **Humanizer-zh去AI味**：识别并去除24种常见AI写作模式
 - 💾 **断点续传**：自动保存生成进度，支持一键恢复
 
-### v3.0.0 (2025-07-26) 🚀 - [详细系统文档](SYSTEM_DOCS.md)
+### v3.0.0 (2025-07-26) 🚀 - `[详细系统文档](SYSTEM_DOCS.md)`
 - 🎉 **重大更新**：全面升级到 Gradio 5.38.0 现代化界面
 - 🚀 **完整功能实现**：所有生成功能从演示模式升级为完整实现
 - 🔍 **新增AI提供商**：Fireworks AI, Grok (xAI), Lambda Labs
 
-[查看完整更新日志](CHANGELOG.md)
+`[查看完整更新日志](CHANGELOG.md)`
 
 ## 📚 文档资源
 
-- 📖 [安装指南](INSTALL.md) - 详细安装步骤
-- 🔒 [安全指南](GITHUB_UPLOAD_GUIDE.md) - GitHub上传安全措施
-- 🗂️ [文件管理通用准则](GITHUB_FILE_MANAGEMENT_GUIDE.md) - 适用于所有项目的文件管理最佳实践
-- 🔧 [配置指南](README_Provider_Config.md) - AI提供商配置
-- 💾 [数据管理](LOCAL_DATA_MANAGEMENT.md) - 本地数据管理
-- 🏗️ [架构文档](ARCHITECTURE.md) - 系统架构设计
-- 📦 [代码重构指南](docs/CODE_RESTRUCTURING.md) - v5.2.0模块化架构重构说明
-- 🚀 [优化策略探索](docs/optimization_strategies/) - 下一步功能优化计划和可行性分析
+- 📖 `[安装指南](INSTALL.md)` - 详细安装步骤
+- 🔒 `[安全指南](GITHUB_UPLOAD_GUIDE.md)` - GitHub上传安全措施
+- 🗂️ `[文件管理通用准则](GITHUB_FILE_MANAGEMENT_GUIDE.md)` - 适用于所有项目的文件管理最佳实践
+- 🔧 `[配置指南](README_Provider_Config.md)` - AI提供商配置
+- 💾 `[数据管理](LOCAL_DATA_MANAGEMENT.md)` - 本地数据管理
+- 🏗️ `[架构文档](ARCHITECTURE.md)` - 系统架构设计
+- 📦 `[代码重构指南](docs/CODE_RESTRUCTURING.md)` - v5.2.0模块化架构重构说明
+- 🚀 `[优化策略探索](docs/optimization_strategies/)` - 下一步功能优化计划和可行性分析
 
 ## ❓ 常见问题
 
@@ -480,7 +480,7 @@ TEMPERATURE_SETTINGS = {
 - **DeepSeek**: [platform.deepseek.com](https://platform.deepseek.com/)
 - **OpenRouter**: [openrouter.ai](https://openrouter.ai/)
 - **Claude**: [console.anthropic.com](https://console.anthropic.com/)
-- **更多**: 参见[配置指南](README_Provider_Config.md)
+- **更多**: 参见`[配置指南](README_Provider_Config.md)`
 </details>
 
 <details>
@@ -531,11 +531,11 @@ pip install -r requirements_gradio5.txt
 ### 🛡️ 安全提醒
 - 不要提交包含API密钥的文件
 - 运行 `python github_upload_ready.py` 检查安全性
-- 遵循[安全指南](GITHUB_UPLOAD_GUIDE.md)
+- 遵循`[安全指南](GITHUB_UPLOAD_GUIDE.md)`
 
 ## 📄 开源协议
 
-本项目采用 [MIT License](LICENSE) 开源协议。
+本项目采用 `[MIT License](LICENSE)` 开源协议。
 
 ## 💝 支持项目
 
@@ -567,7 +567,7 @@ Made with ❤️ by AI Novel Generator Team
 ### 虚拟环境管理
 - 📂 `gradio5_env/` 目录包含项目运行必需的所有依赖包
 - 🚫 **请不要删除虚拟环境目录**
-- 📖 如需了解虚拟环境管理详情，请查看 [`VIRTUAL_ENV_MANAGEMENT.md`](VIRTUAL_ENV_MANAGEMENT.md)
+- 📖 如需了解虚拟环境管理详情，请查看 `[`VIRTUAL_ENV_MANAGEMENT.md`](VIRTUAL_ENV_MANAGEMENT.md)`
 
 ---
 
@@ -582,7 +582,7 @@ Made with ❤️ by AI Novel Generator Team
 
 - [What's New in v5.3.0](#-whats-new-in-v530-2026-06-25) — 最新版本详情
 - [Version History | 版本历史](#-version-history--版本历史) — 保留的版本记录
-- [CHANGELOG.md](CHANGELOG.md) — 全部历史版本
+- `[CHANGELOG.md](CHANGELOG.md)` — 全部历史版本
 
 ### 🔒 重要安全提醒
 
@@ -591,7 +591,7 @@ Made with ❤️ by AI Novel Generator Team
 - 🚨 **配置文件包含API密钥**：`config.py` 文件包含您的AI提供商API密钥，绝对不能上传到公开仓库
 - 🛡️ **用户数据保护**：`output/` 和 `autosave/` 目录包含您的创作内容，应保持私有
 - ✅ **安全检查**：项目内置 `github_upload_ready.py` 脚本，上传前请运行安全检查
-- 📖 **详细指南**：参见 [GitHub上传安全指南](GITHUB_UPLOAD_GUIDE.md) 了解完整的安全措施
+- 📖 **详细指南**：参见 `[GitHub上传安全指南](GITHUB_UPLOAD_GUIDE.md)` 了解完整的安全措施
 
 ```bash
 # 运行安全检查
@@ -693,14 +693,14 @@ python app.py
 
 ### 📚 文档资源
 
-- 📖 [系统文档](SYSTEM_DOCS.md) - 完整的系统说明
-- 🔧 [安装指南](INSTALL.md) - 详细安装步骤
-- 🔒 [安全指南](GITHUB_UPLOAD_GUIDE.md) - GitHub上传安全措施
-- 🗂️ [文件管理通用准则](GITHUB_FILE_MANAGEMENT_GUIDE.md) - 适用于所有项目的文件管理最佳实践
-- ⚙️ [配置指南](README_Provider_Config.md) - AI提供商配置
-- 💾 [数据管理](LOCAL_DATA_MANAGEMENT.md) - 本地数据管理
-- 🏗️ [架构文档](ARCHITECTURE.md) - 系统架构设计
-- 📦 [代码重构指南](docs/CODE_RESTRUCTURING.md) - v5.2.0模块化架构重构说明
+- 📖 `[系统文档](SYSTEM_DOCS.md)` - 完整的系统说明
+- 🔧 `[安装指南](INSTALL.md)` - 详细安装步骤
+- 🔒 `[安全指南](GITHUB_UPLOAD_GUIDE.md)` - GitHub上传安全措施
+- 🗂️ `[文件管理通用准则](GITHUB_FILE_MANAGEMENT_GUIDE.md)` - 适用于所有项目的文件管理最佳实践
+- ⚙️ `[配置指南](README_Provider_Config.md)` - AI提供商配置
+- 💾 `[数据管理](LOCAL_DATA_MANAGEMENT.md)` - 本地数据管理
+- 🏗️ `[架构文档](ARCHITECTURE.md)` - 系统架构设计
+- 📦 `[代码重构指南](docs/CODE_RESTRUCTURING.md)` - v5.2.0模块化架构重构说明
 
 ### ❓ 常见问题
 
@@ -711,7 +711,7 @@ python app.py
 - **DeepSeek**: [platform.deepseek.com](https://platform.deepseek.com/)
 - **OpenRouter**: [openrouter.ai](https://openrouter.ai/)
 - **Claude**: [console.anthropic.com](https://console.anthropic.com/)
-- **更多**: 参见[配置指南](README_Provider_Config.md)
+- **更多**: 参见`[配置指南](README_Provider_Config.md)`
 </details>
 
 <details>
@@ -762,11 +762,11 @@ pip install -r requirements_gradio5.txt
 #### 🛡️ 安全提醒
 - 不要提交包含API密钥的文件
 - 运行 `python github_upload_ready.py` 检查安全性
-- 遵循[安全指南](GITHUB_UPLOAD_GUIDE.md)
+- 遵循`[安全指南](GITHUB_UPLOAD_GUIDE.md)`
 
 ### 📄 开源协议
 
-本项目采用 [MIT License](LICENSE) 开源协议。
+本项目采用 `[MIT License](LICENSE)` 开源协议。
 
 ### 💝 支持项目
 
@@ -800,4 +800,4 @@ Made with ❤️ by AI Novel Generator Team
 #### 虚拟环境管理
 - 📂 `gradio5_env/` 目录包含项目运行必需的所有依赖包
 - 🚫 **请不要删除虚拟环境目录**
-- 📖 如需了解虚拟环境管理详情，请查看 [`VIRTUAL_ENV_MANAGEMENT.md`](VIRTUAL_ENV_MANAGEMENT.md)
+- 📖 如需了解虚拟环境管理详情，请查看 `[`VIRTUAL_ENV_MANAGEMENT.md`](VIRTUAL_ENV_MANAGEMENT.md)`

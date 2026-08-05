@@ -1399,7 +1399,7 @@ or trusted deployment, so it ships hardened defaults:
   targets are rejected).
 - `TEXTHUMANIZE_API_CORS_ORIGIN` locks the CORS origin down from the default `*`.
 
-See [SECURITY.md](SECURITY.md#rest-api-hardening-network-safety) for details.
+See `[SECURITY.md](SECURITY.md#rest-api-hardening-network-safety)` for details.
 
 For FastAPI deployments, see `examples/fastapi_integration.py`. It includes
 request body limits, text and batch size limits, per-request timeouts,
@@ -1933,7 +1933,7 @@ Try the [Live Demo](https://texthumanize.link/). For local use, the REST API + S
 - **Two inverted signals fixed.** `voice` no longer scores passive as AI (English GPT-4o uses agentless passive at ~half the human rate; in RU/UK/DE passive+nominal is ordinary bureaucratic register) — it now leans on nominalization, the robust ×1.5–2 tell. `punctuation` no longer treats semicolons / colons / em-dashes / « » as AI — those are marks of careful human editing, and the metric had been firing on well-edited prose.
 - **Anti-evasion normalization** — homoglyph and zero-width insertion (which collapse token-frequency detectors by 42–76 pp in the RAID benchmark) are stripped/folded before analysis; whole-word Cyrillic/Greek text is preserved.
 - **Weights rebalanced** against measured per-metric separation, and the AI-cliché dictionary gained the 2025–2026 assistant register — feeding both detection and humanization.
-- **Self-improving weights** — a new offline training pipeline (`training/`) fits the metric weights from a labelled corpus and is gated by a benchmark so a release never ships a regression. See [`training/README.md`](training/README.md).
+- **Self-improving weights** — a new offline training pipeline (`training/`) fits the metric weights from a labelled corpus and is gated by a benchmark so a release never ships a regression. See `[`training/README.md`](training/README.md)`.
 
 ### Media provenance (0.35.0)
 - **Fixed a false-positive class** — a human photo carrying a `Description` / `Title` / `Comment` / `Software` metadata chunk was reported as AI. Generic keys now require an actual generation-parameter value; only tool-unique chunk keys (`parameters`, `workflow`, `sd-metadata`, `invokeai_metadata`, `sui_image_params`, `dream`) are conclusive on the key name alone.
@@ -1943,7 +1943,7 @@ Try the [Live Demo](https://texthumanize.link/). For local use, the REST API + S
 - **Fixed an unauthenticated reflected SSRF (CWE-918)** in the REST API. `POST /humanize` forwarded a client-supplied `oss_api_url` straight into an outbound request, so an anonymous caller could make the server fetch internal/loopback/cloud-metadata URLs and read the response. Reported responsibly by Natnael Wodsnoen.
 - **Secure-by-default REST API** — remote AI backends (`backend`, `oss_api_url`, `openai_api_key`, `ollama_url`) are now **disabled by default** (HTTP `403` unless `TEXTHUMANIZE_API_ALLOW_REMOTE_BACKENDS=1`); the server **binds to `127.0.0.1`** (was `0.0.0.0`); CORS is configurable via `TEXTHUMANIZE_API_CORS_ORIGIN`.
 - **New SSRF guard** — `validate_outbound_url()` / `safe_urlopen()` (and `UnsafeURLError`) reject loopback, private, link-local (cloud-metadata), reserved and multicast targets, non-http(s) schemes and embedded credentials, and cap outbound response size. Reuse them in your own wrappers.
-- **Supply-chain & CI** — `bandit` + `pip-audit`, **CodeQL**, and **Dependabot** now run in CI, plus a coverage gate and `ThreadingHTTPServer` for the REST API. See [`SECURITY.md`](SECURITY.md#rest-api-hardening-network-safety).
+- **Supply-chain & CI** — `bandit` + `pip-audit`, **CodeQL**, and **Dependabot** now run in CI, plus a coverage gate and `ThreadingHTTPServer` for the REST API. See `[`SECURITY.md`](SECURITY.md#rest-api-hardening-network-safety)`.
 
 ### Media watermark forensics — images, audio & video (0.33.0)
 - **New `texthumanize.media_watermark` engine** — `detect_media_watermarks()` and `clean_media_watermarks()` audit and strip AI-watermark/provenance signals in **images, audio and video**, pure-Python + numpy (Pillow optional), fully offline.
@@ -2022,14 +2022,14 @@ Try the [Live Demo](https://texthumanize.link/). For local use, the REST API + S
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, testing, and PR guidelines.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for development setup, testing, and PR guidelines.
 
 **Areas for contribution:** New language packs · Improved synonym dictionaries · Better grammar rules · Performance optimizations · Additional integrations
 
 Starter tasks with acceptance criteria are listed in the
 [Good First Issues guide](https://ksanyok.github.io/TextHumanize/contributing/good-first-issues/).
 
-See [CONTRIBUTORS.md](CONTRIBUTORS.md) for the full list of contributors.
+See `[CONTRIBUTORS.md](CONTRIBUTORS.md)` for the full list of contributors.
 
 ```bash
 git clone https://github.com/ksanyok/TextHumanize.git
@@ -2089,11 +2089,11 @@ TextHumanize uses a **dual license model**:
 | Commercial — 1 dev, 1 project | Indie | **$29/mo** |
 | Commercial — up to 5 devs | Startup | **$79/mo** |
 | Commercial — up to 20 devs | Business | **$199/mo** |
-| Enterprise / On-prem / SLA / White-label | Enterprise | [Contact us](mailto:ksanyok@me.com) |
+| Enterprise / On-prem / SLA / White-label | Enterprise | `[Contact us](mailto:ksanyok@me.com)` |
 
 All commercial licenses include full source code, all updates, priority email support, and access to PHANTOM™ + ASH™ proprietary technologies. **100% offline — no data leaves your server, no per-request fees, no cloud lock-in.** Monthly billing, cancel any time.
 
-**[Full licensing details →](COMMERCIAL.md)** · See [LICENSE](LICENSE) for legal text · **Contact:** [ksanyok@me.com](mailto:ksanyok@me.com)
+**`[Full licensing details →](COMMERCIAL.md)`** · See `[LICENSE](LICENSE)` for legal text · **Contact:** `[ksanyok@me.com](mailto:ksanyok@me.com)`
 
 related:
   - methods/QUICK_START.md

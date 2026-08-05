@@ -351,7 +351,7 @@ MIT License - see LICENSE file
 
 ## 📞 Support
 
-- 📖 [Documentation](./README.md)
+- 📖 `[Documentation](./README.md)`
 - 🐛 [Issues](https://github.com/saraawan2588-bit/intelligent-pdf-extractor/issues)
 - 💬 [Discussions](https://github.com/saraawan2588-bit/intelligent-pdf-extractor/discussions)
 

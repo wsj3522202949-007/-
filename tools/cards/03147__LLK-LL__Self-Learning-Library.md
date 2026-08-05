@@ -295,10 +295,10 @@ Before writing into the document, show me the proposed replacement text in chat.
 
 ## Examples
 
-- [Build a domain-specific vault](examples/domain-vault-adaptation.md)
-- [Use lightweight retrieval before a task](examples/lightweight-rag.md)
-- [Run a full rule iteration](examples/full-iteration.md)
-- [No-regression guard pattern](examples/no-regression-guard.md)
+- `[Build a domain-specific vault](examples/domain-vault-adaptation.md)`
+- `[Use lightweight retrieval before a task](examples/lightweight-rag.md)`
+- `[Run a full rule iteration](examples/full-iteration.md)`
+- `[No-regression guard pattern](examples/no-regression-guard.md)`
 
 ## Repository Layout
 
@@ -347,7 +347,7 @@ You can keep the current vault name or rename it and update constants in:
 - Keep unresolved contradictions in `50_Conflicts/` instead of forcing a false rule.
 - Review the included vault before using it as a public template.
 
-See [Security and publishing](docs/security-and-publishing.md).
+See `[Security and publishing](docs/security-and-publishing.md)`.
 
 ## Project Status
 
@@ -367,7 +367,7 @@ See the latest published release metadata on the [GitHub Releases page](https://
 
 Contributions are welcome when they keep the project local-first, inspectable, and evidence-grounded. Good contributions include new domain templates, safer publishing guidance, retrieval improvements, tests, and clear workflow examples.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See `[CONTRIBUTING.md](CONTRIBUTING.md)`.
 
 ## One-Sentence Summary
 

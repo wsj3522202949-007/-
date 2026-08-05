@@ -98,7 +98,7 @@ text by the ratio of an observer model's log-perplexity to the observer/performe
 cross-perplexity, which cancels the prompt/topic bias that makes single-model
 perplexity brittle. **On real human-vs-ChatGPT text (HC3) it scores accuracy
 1.000 with FPR 0.000**, with its decision boundary fitted on a held-out split.
-See [docs/benchmarks/](docs/benchmarks/).
+See `[docs/benchmarks/](docs/benchmarks/)`.
 
 It is available standalone, via the benchmark CLI (`--analyzer binoculars`), and
 **drives the default ensemble verdict** (`weight_binoculars=1.0`; GPT-2/NLTK run
@@ -180,7 +180,7 @@ python -m src.evaluation.benchmark --analyzer binoculars \
 
 **Use Binoculars.** GPT-2 alone flags *half of real human text as AI* — single-model
 perplexity is as brittle as the literature says. Full report, plots, and the
-held-out calibration procedure: [docs/benchmarks/](docs/benchmarks/).
+held-out calibration procedure: `[docs/benchmarks/](docs/benchmarks/)`.
 
 ### ⚠️ Fairness — false-positive rate by population (human-only)
 
@@ -206,7 +206,7 @@ accused. Measured on 785 **human-authored** samples (any flag is a false positiv
   but still not perfect: 5.5% for non-native writers vs 0% for native speakers.
 
 **Do not use any analyzer here to accuse a specific person.** Full breakdown with
-confidence intervals: [docs/benchmarks/FAIRNESS.md](docs/benchmarks/FAIRNESS.md).
+confidence intervals: `[docs/benchmarks/FAIRNESS.md](docs/benchmarks/FAIRNESS.md)`.
 
 > ⚠️ **Limits of these numbers.** HC3 is ChatGPT-era output; edited, paraphrased,
 > and human/AI-mixed text are harder and unmeasured. 200 samples means wide
@@ -225,13 +225,13 @@ confidence intervals: [docs/benchmarks/FAIRNESS.md](docs/benchmarks/FAIRNESS.md)
 
 ## Contributing and Security
 
-- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
-- Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-- Security policy: [SECURITY.md](SECURITY.md)
-- Changelog: [CHANGELOG.md](CHANGELOG.md)
+- Contribution guide: `[CONTRIBUTING.md](CONTRIBUTING.md)`
+- Code of Conduct: `[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)`
+- Security policy: `[SECURITY.md](SECURITY.md)`
+- Changelog: `[CHANGELOG.md](CHANGELOG.md)`
 
 ## Documentation
 
-- API reference: [docs/API.md](docs/API.md)
-- Benchmarks: [docs/benchmarks/](docs/benchmarks/)
-- Deployment guide: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)
+- API reference: `[docs/API.md](docs/API.md)`
+- Benchmarks: `[docs/benchmarks/](docs/benchmarks/)`
+- Deployment guide: `[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md)`

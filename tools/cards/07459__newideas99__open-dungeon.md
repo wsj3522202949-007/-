@@ -41,7 +41,7 @@ The first **easy-to-use, fully local** AI roleplay app. The story and the
 **inline scene images** are both generated on your own machine — no accounts,
 no API keys, no cloud, no GPU rig. Your stories never leave your computer.
 
-![A story scene with an inline generated image](docs/hero.png)
+!`[A story scene with an inline generated image](docs/hero.png)`
 
 - **Local text generation** via [Ollama](https://ollama.com) (Gemma 4 QAT),
   or **Connect a server** to any OpenAI-compatible backend — llama.cpp,
@@ -78,7 +78,7 @@ Ollama or your own server as the narrator.
 **Windows:** download the release zip (or clone), then double-click
 `Launch-Windows.bat`. It checks Node.js, builds the app, and starts
 http://localhost:3000. Ollama and image generation are optional prompts —
-see the [Windows guide](docs/windows.md).
+see the `[Windows guide](docs/windows.md)`.
 
 **From a clone (any OS):**
 
@@ -108,10 +108,10 @@ rewrite it in place. Everything saves to the local database as you go.
 |---|related:
   - methods/QUICK_START.md
 ---|
-| [Text backends](docs/text-backends.md) | Gemma 4 model choices and benchmarks, Connect a server, long-story memory |
-| [Image generation](docs/image-generation.md) | FLUX worker setup, ComfyUI backend, AMD GPUs, the story image tool |
-| [Windows](docs/windows.md) | Launcher details, image smoke tests, diagnostics, tuning |
-| [Configuration](docs/configuration.md) | Environment variables, playing from your phone, local data |
+| `[Text backends](docs/text-backends.md)` | Gemma 4 model choices and benchmarks, Connect a server, long-story memory |
+| `[Image generation](docs/image-generation.md)` | FLUX worker setup, ComfyUI backend, AMD GPUs, the story image tool |
+| `[Windows](docs/windows.md)` | Launcher details, image smoke tests, diagnostics, tuning |
+| `[Configuration](docs/configuration.md)` | Environment variables, playing from your phone, local data |
 
 ## Content note
 

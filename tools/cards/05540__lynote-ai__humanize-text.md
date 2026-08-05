@@ -60,7 +60,7 @@ related:
 
 An AI text humanization toolkit. This repo evolved through two stages:
 
-- **v1.0** — Documented **4 humanization methodologies** as reference implementations (translation chain, multi-turn LLM rewriting, detection-guided feedback loop, mixed-engine translation). See [docs/techniques.md](docs/techniques.md).
+- **v1.0** — Documented **4 humanization methodologies** as reference implementations (translation chain, multi-turn LLM rewriting, detection-guided feedback loop, mixed-engine translation). See `[docs/techniques.md](docs/techniques.md)`.
 - **v1.5 (current)** — Added the **Standard Pipeline**: a production-grade integration of Method 1 (Translation Chain) + Method 2 (LLM Rewriting), fixed as a 5-step chain we actually run and recommend.
 
 ### v1.5.1 — Standard Pipeline (Recommended)
@@ -71,9 +71,9 @@ The Standard Pipeline preserves the original writing style while routing text th
 Input (EN) → Chinese (LLM) → Japanese (LLM) → Finnish (Google) → English (Niutrans)
 ```
 
-LLM steps use **DeepSeek** (default) or **[OpenRouter](https://openrouter.ai)** — any OpenAI-compatible chat API. Configure via `[llm]` in `config.toml`. See [Configuration Guide](docs/configuration.md).
+LLM steps use **DeepSeek** (default) or **[OpenRouter](https://openrouter.ai)** — any OpenAI-compatible chat API. Configure via `[llm]` in `config.toml`. See `[Configuration Guide](docs/configuration.md)`.
 
-**See [`examples/showcase/`](examples/showcase/) for 5 real samples with full intermediate-step outputs and AI-detection verdicts.**
+**See `[`examples/showcase/`](examples/showcase/)` for 5 real samples with full intermediate-step outputs and AI-detection verdicts.**
 
 **Characteristics:**
 - Best original style preservation among all approaches
@@ -143,7 +143,7 @@ The Standard pipeline above is **one of three tiers** available. Each has differ
 | Method | Who It's For | How |
 |--------|-------------|-----|
 | Lynote.ai | Everyone — all tiers, zero setup | Visit lynote.ai|
-| n8n Workflow | No-code automation users | Import [`n8n/humanize_standard.json`](n8n/humanize_standard.json) |
+| n8n Workflow | No-code automation users | Import `[`n8n/humanize_standard.json`](n8n/humanize_standard.json)` |
 | Python Script | Developers | See below |
 
 ### Python
@@ -192,7 +192,7 @@ provider = "atlascloud"
 model = "qwen/qwen3.5-flash"
 ```
 
-Override the API endpoint with `base_url` in `[llm]`, or via `LLM_BASE_URL` / `LLM_API_KEY` environment variables. Full reference: [docs/configuration.md](docs/configuration.md).
+Override the API endpoint with `base_url` in `[llm]`, or via `LLM_BASE_URL` / `LLM_API_KEY` environment variables. Full reference: `[docs/configuration.md](docs/configuration.md)`.
 
 ### n8n Workflow
 
@@ -208,13 +208,13 @@ We ran the pipeline end-to-end on 5 real input texts and saved every intermediat
 
 | # | Topic | Detection | Confidence |
 |---|-------|-----------|------------|
-| [01](examples/showcase/example_01.md) | Quantum Computing | `human` | 0.9997 |
-| [02](examples/showcase/example_02.md) | Quantum Readiness Strategy | `human` | 0.9982 |
-| [03](examples/showcase/example_03.md) | Sustainable Supply Chains | `human` | 0.7810 |
-| [04](examples/showcase/example_04.md) | Financial Literacy | `human` | 0.9924 |
-| [05](examples/showcase/example_05.md) | Peer Review in Science | `human` | 0.7218 |
+| `[01](examples/showcase/example_01.md)` | Quantum Computing | `human` | 0.9997 |
+| `[02](examples/showcase/example_02.md)` | Quantum Readiness Strategy | `human` | 0.9982 |
+| `[03](examples/showcase/example_03.md)` | Sustainable Supply Chains | `human` | 0.7810 |
+| `[04](examples/showcase/example_04.md)` | Financial Literacy | `human` | 0.9924 |
+| `[05](examples/showcase/example_05.md)` | Peer Review in Science | `human` | 0.7218 |
 
-Each example shows: original input → Step 1 (中文改写) → Step 2 (日语改写) → Step 3 (一轮翻译) → Step 4 (二轮翻译, final). See [`examples/showcase/`](examples/showcase/) for full traces.
+Each example shows: original input → Step 1 (中文改写) → Step 2 (日语改写) → Step 3 (一轮翻译) → Step 4 (二轮翻译, final). See `[`examples/showcase/`](examples/showcase/)` for full traces.
 
 ---
 
@@ -250,12 +250,12 @@ Tested on 50 text pairs with expert evaluation:
 
 ## Documentation
 
-- [Standard Pipeline Technical Details](docs/pipeline.md) — v1.5 production pipeline
-- [4 Methodologies Reference](docs/techniques.md) — v1.0 underlying methods
-- [Configuration Guide](docs/configuration.md)
-- [n8n Workflow Guide](docs/n8n-guide.md)
-- [Lynote.ai vs Open Source Comparison](docs/lynote-comparison.md)
-- [FAQ](docs/faq.md)
+- `[Standard Pipeline Technical Details](docs/pipeline.md)` — v1.5 production pipeline
+- `[4 Methodologies Reference](docs/techniques.md)` — v1.0 underlying methods
+- `[Configuration Guide](docs/configuration.md)`
+- `[n8n Workflow Guide](docs/n8n-guide.md)`
+- `[Lynote.ai vs Open Source Comparison](docs/lynote-comparison.md)`
+- `[FAQ](docs/faq.md)`
 
 ### Repo Structure
 
@@ -287,7 +287,7 @@ examples/
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See `[LICENSE](LICENSE)` for details.
 
 related:
   - methods/最强去AI味铁律.md

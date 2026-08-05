@@ -54,7 +54,7 @@ related:
 
 <div align="center">
 
-![Word Cloud](img/output_1.png)
+!`[Word Cloud](img/output_1.png)`
 
 </div>
 

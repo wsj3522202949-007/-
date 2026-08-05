@@ -70,17 +70,17 @@ tao-kb 是一个由 AI Agent 协作构建的道教典籍知识工程项目。它
 
 审计入口：
 
-- [reports/tag_audit.md](reports/tag_audit.md)
-- [reports/tag_audit.json](reports/tag_audit.json)
+- `[reports/tag_audit.md](reports/tag_audit.md)`
+- `[reports/tag_audit.json](reports/tag_audit.json)`
 
 总纲入口：
 
-- [docs/corpus_outline.md](docs/corpus_outline.md)
-- [data/corpus_outline.json](data/corpus_outline.json)
+- `[docs/corpus_outline.md](docs/corpus_outline.md)`
+- `[data/corpus_outline.json](data/corpus_outline.json)`
 
 阅读器入口：
 
-- [docs/index.html](docs/index.html)
+- `[docs/index.html](docs/index.html)`
 
 ## 已收集典籍
 
@@ -187,7 +187,7 @@ tao-kb 是一个由 AI Agent 协作构建的道教典籍知识工程项目。它
 全角左标记 + @标签类型:标签名 + 全角右标记
 ```
 
-当前标签类型映射见 [tag_taxonomy.json](tag_taxonomy.json)。
+当前标签类型映射见 `[tag_taxonomy.json](tag_taxonomy.json)`。
 
 主要层级：
 
@@ -296,17 +296,17 @@ python3 scripts/audit_markdown_tags.py
 
 先读这几个文件：
 
-1. [README.md](README.md)：项目地图和书目总览
-2. [docs/corpus_outline.md](docs/corpus_outline.md)：全库书目总纲，按门类看哪些书已标注、哪些还没动
-3. [reports/tag_audit.md](reports/tag_audit.md)：当前质量状态和标签统计
-4. [tag_taxonomy.json](tag_taxonomy.json)：标签类型到一级分类的映射
-5. [entities/index.json](entities/index.json)：由标签聚合出的统一实体索引
-6. [scripts/build_corpus_outline.py](scripts/build_corpus_outline.py)：总纲生成逻辑
-7. [scripts/build_entity_index.py](scripts/build_entity_index.py)：实体索引生成逻辑
-8. [scripts/auto_tag_batch.py](scripts/auto_tag_batch.py)：通用批量标注
-9. [scripts/auto_tag_fulu_terms.py](scripts/auto_tag_fulu_terms.py)：符箓/神咒/科仪专门标注
-10. [scripts/auto_tag_ethics_terms.py](scripts/auto_tag_ethics_terms.py)：劝善/功过格专门标注
-11. [scripts/render_tao_html.py](scripts/render_tao_html.py)：阅读器与实体卡片生成逻辑
+1. `[README.md](README.md)`：项目地图和书目总览
+2. `[docs/corpus_outline.md](docs/corpus_outline.md)`：全库书目总纲，按门类看哪些书已标注、哪些还没动
+3. `[reports/tag_audit.md](reports/tag_audit.md)`：当前质量状态和标签统计
+4. `[tag_taxonomy.json](tag_taxonomy.json)`：标签类型到一级分类的映射
+5. `[entities/index.json](entities/index.json)`：由标签聚合出的统一实体索引
+6. `[scripts/build_corpus_outline.py](scripts/build_corpus_outline.py)`：总纲生成逻辑
+7. `[scripts/build_entity_index.py](scripts/build_entity_index.py)`：实体索引生成逻辑
+8. `[scripts/auto_tag_batch.py](scripts/auto_tag_batch.py)`：通用批量标注
+9. `[scripts/auto_tag_fulu_terms.py](scripts/auto_tag_fulu_terms.py)`：符箓/神咒/科仪专门标注
+10. `[scripts/auto_tag_ethics_terms.py](scripts/auto_tag_ethics_terms.py)`：劝善/功过格专门标注
+11. `[scripts/render_tao_html.py](scripts/render_tao_html.py)`：阅读器与实体卡片生成逻辑
 
 接手时注意：
 

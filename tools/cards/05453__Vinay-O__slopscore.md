@@ -67,7 +67,7 @@ That's it. No install, no config, no API key. Point it at a repo and it tells yo
 
 In 2026, **46% of new code is AI-generated** and **92% of developers use AI tools daily** — but trust in that code fell from **77% to 60%**. GitClear's analysis of 211M lines found duplicated code up **4–8×**, refactoring collapsed **60%**, and AI PRs carry **~1.7× more issues**. Roughly **45% of AI-generated code ships a security weakness**.
 
-<sub>Sources: GitHub / Stack Overflow 2025–26 developer surveys (adoption, trust); [GitClear, *AI Copilot Code Quality 2025*](https://www.gitclear.com/ai_assistant_code_quality_2025_research) (211M lines — duplication, refactoring decline); CodeRabbit (~1.7× more issues in AI PRs); [Veracode, *2025 GenAI Code Security Report*](https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/) (45% of tasks introduced a vulnerability, across 100+ models). Full attributions in [`ANTI_SLOP_PROTOCOL.md` §8](ANTI_SLOP_PROTOCOL.md).</sub>
+<sub>Sources: GitHub / Stack Overflow 2025–26 developer surveys (adoption, trust); [GitClear, *AI Copilot Code Quality 2025*](https://www.gitclear.com/ai_assistant_code_quality_2025_research) (211M lines — duplication, refactoring decline); CodeRabbit (~1.7× more issues in AI PRs); [Veracode, *2025 GenAI Code Security Report*](https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/) (45% of tasks introduced a vulnerability, across 100+ models). Full attributions in `[`ANTI_SLOP_PROTOCOL.md` §8](ANTI_SLOP_PROTOCOL.md)`.</sub>
 
 The tools didn't create the problem. They revealed how little structure was there to begin with.
 
@@ -76,7 +76,7 @@ AI slop is insidious because it *looks* finished — consistent naming, passing 
 ## See it work
 
 <!-- Render the GIF once with `vhs docs/demo.tape`, then embed it here: -->
-<!-- ![slopscore scanning a sloppy file](docs/demo.gif) -->
+<!-- !`[slopscore scanning a sloppy file](docs/demo.gif)` -->
 
 ```text
 $ npx slopscore examples/slop.tsx
@@ -141,7 +141,7 @@ Run a focused security audit with `slopscore scan . --category security`.
 
 ### 2. The protocol (for your coding agent)
 
-[`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md) is a **286-pattern operating manual** for AI agents. Hand it to Claude Code, Cursor, Codex CLI, Aider, Copilot, Windsurf, or Cline and say:
+`[`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md)` is a **286-pattern operating manual** for AI agents. Hand it to Claude Code, Cursor, Codex CLI, Aider, Copilot, Windsurf, or Cline and say:
 
 > **"Check the system."**
 
@@ -201,7 +201,7 @@ A linter about not shipping slop had better not *be* slop. So slopscore holds it
 npm run selfcheck     # → Pristine. Ship it.  (exit 0)
 ```
 
-*(The rule-definition file and example fixtures are excluded — they necessarily contain the very strings slopscore looks for, exactly as ESLint excludes its own fixtures. See [`.slopscoreignore.md`](.slopscoreignore.md).)*
+*(The rule-definition file and example fixtures are excluded — they necessarily contain the very strings slopscore looks for, exactly as ESLint excludes its own fixtures. See `[`.slopscoreignore.md`](.slopscoreignore.md)`.)*
 
 ## Drop it into CI
 
@@ -366,7 +366,7 @@ A bare `// slopscore-disable-next-line` (no id) suppresses every rule on the nex
 
 ## What it detects (190 of the 286)
 
-The CLI runs the deterministic subset; the [full 286-pattern catalog](ANTI_SLOP_PROTOCOL.md) (including visual, architectural, and judgment-heavy patterns) is what you hand your agent.
+The CLI runs the deterministic subset; the `[full 286-pattern catalog](ANTI_SLOP_PROTOCOL.md)` (including visual, architectural, and judgment-heavy patterns) is what you hand your agent.
 
 | Category | Examples |
 |:--|:--|
@@ -397,7 +397,7 @@ Run `slopscore rules` to see the full list with severities and fix authority.
 | Zero install (`npx`, no config) | ✅ | ⚠️ | ⚠️ | ⚠️ |
 | Zero dependencies | ✅ | ❌ | ❌ | ❌ |
 
-This table is scoped to **AI-slop detection specifically** — it is not a quality ranking. ESLint and Semgrep are excellent at what they're built for (correctness rules, taint analysis), and slopscore is no substitute for either; the `❌`s just mean "not designed to catch the AI tells slopscore targets." slopscore is intentionally a **fast, transparent, zero-runtime-dependency first pass** — regex/heuristic by default. Its opt-in `--ast` mode (acorn/@babel) adds accurate complexity/length/nesting metrics, cross-file structural clone detection, and taint analysis (intra- and single-file inter-procedural); for **full cross-file** taint and call-graph analysis, **run it alongside** [vibecop](https://github.com/bhvbhushan/vibecop), Semgrep, or CodeQL — the protocol ([`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md)) tells your agent exactly when to reach for those. It complements your linter; it doesn't replace it.
+This table is scoped to **AI-slop detection specifically** — it is not a quality ranking. ESLint and Semgrep are excellent at what they're built for (correctness rules, taint analysis), and slopscore is no substitute for either; the `❌`s just mean "not designed to catch the AI tells slopscore targets." slopscore is intentionally a **fast, transparent, zero-runtime-dependency first pass** — regex/heuristic by default. Its opt-in `--ast` mode (acorn/@babel) adds accurate complexity/length/nesting metrics, cross-file structural clone detection, and taint analysis (intra- and single-file inter-procedural); for **full cross-file** taint and call-graph analysis, **run it alongside** [vibecop](https://github.com/bhvbhushan/vibecop), Semgrep, or CodeQL — the protocol (`[`ANTI_SLOP_PROTOCOL.md`](ANTI_SLOP_PROTOCOL.md)`) tells your agent exactly when to reach for those. It complements your linter; it doesn't replace it.
 
 ## FAQ
 
@@ -407,11 +407,11 @@ This table is scoped to **AI-slop detection specifically** — it is not a quali
 
 **Does it work for Python / Go / Rust?** Yes — there are dedicated detectors for each (Python: mutable defaults, `== None`, `eval`/`exec`, f-string SQL, `pickle`, `print`; Go: ignored errors, `fmt.Print`, `panic`, command injection; Rust: `.unwrap()`, `panic!`, `unsafe`, `dbg!`). The comment/string masking is language-aware (Python `#` comments and docstrings aren't scanned as code), and `test_*.py` / `*_test.go` are correctly treated as the test zone. Security and copy detectors run on all source; the JS/TS surface is the deepest because that's where vibe-coded slop concentrates.
 
-**How accurate is it / false positives?** Low by design, and rigorously tested: clean, idiomatic code reliably scores zero. The scanner is comment- and string-aware (it won't flag `eval()` in a docstring, `console.log` in a comment, or `firstName + " and " + lastName` as SQL), honors your `eslint-disable`, skips test files, exempts ORM `Column == None` and date-pinned model ids, and ships **220+ tests** including a clean-code battery. On a mature codebase, a high-volume pattern (e.g. a design system's repeated markup) is **clustered** into one line so it can't bury the findings that matter, and a single noisy detector can never define the verdict (the score caps each rule). `slopscore fix` is verified non-corrupting — it never deletes a line that would break structure or rewrites inside a string. Found a bad finding? [Open an issue.](../../issues)
+**How accurate is it / false positives?** Low by design, and rigorously tested: clean, idiomatic code reliably scores zero. The scanner is comment- and string-aware (it won't flag `eval()` in a docstring, `console.log` in a comment, or `firstName + " and " + lastName` as SQL), honors your `eslint-disable`, skips test files, exempts ORM `Column == None` and date-pinned model ids, and ships **220+ tests** including a clean-code battery. On a mature codebase, a high-volume pattern (e.g. a design system's repeated markup) is **clustered** into one line so it can't bury the findings that matter, and a single noisy detector can never define the verdict (the score caps each rule). `slopscore fix` is verified non-corrupting — it never deletes a line that would break structure or rewrites inside a string. Found a bad finding? `[Open an issue.](../../issues)`
 
 ## Contributing
 
-Adding a detector is one object in [`src/rules.js`](src/rules.js) + a test. See [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues are labeled `good first issue`.
+Adding a detector is one object in `[`src/rules.js`](src/rules.js)` + a test. See `[CONTRIBUTING.md](CONTRIBUTING.md)`. Good first issues are labeled `good first issue`.
 
 ```bash
 git clone https://github.com/Vinay-O/slopscore && cd slopscore
@@ -422,7 +422,7 @@ npm run selfcheck # prove the repo passes its own audit
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Use it, fork it, build it into your pipeline.
+MIT — see `[LICENSE](LICENSE)`. Use it, fork it, build it into your pipeline.
 
 related:
   - methods/最强去AI味铁律.md

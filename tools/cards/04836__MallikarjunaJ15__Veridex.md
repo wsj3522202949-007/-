@@ -65,19 +65,19 @@ Unlike traditional fact-checkers that classify an entire article and return a si
 
 ### Landing Page
 
-![Landing](./public/screenshots/landing.png)
+!`[Landing](./public/screenshots/landing.png)`
 
 ### Analyze Page
 
-![Analyze](./public/screenshots/analyze.png)
+!`[Analyze](./public/screenshots/analyze.png)`
 
 ### Analysis Report
 
-![Report](./public/screenshots/output.png)
+!`[Report](./public/screenshots/output.png)`
 
 ### Dashboard
 
-![Dashboard](./public/screenshots/dashboard.png)
+!`[Dashboard](./public/screenshots/dashboard.png)`
 
 ---
 

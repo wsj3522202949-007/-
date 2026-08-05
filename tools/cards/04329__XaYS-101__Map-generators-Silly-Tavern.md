@@ -40,7 +40,7 @@ related:
   - methods/模板库.md
 ---
 
-[English](README.md) | [Русский](README_ru.md)
+`[English](README.md)` | `[Русский](README_ru.md)`
 
 # Map Generators — SillyTavern extension
 

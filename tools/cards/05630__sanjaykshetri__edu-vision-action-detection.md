@@ -75,7 +75,7 @@ If you're reviewing this repo as a hiring manager:
 
 ## 🧠 Project Architecture
 
-![Architecture Diagram](./diagrams/architecture.png)
+!`[Architecture Diagram](./diagrams/architecture.png)`
 
 - **Modular Components:** Clear separation of data, model, and UI code
 - **Scalability:** Easily add classes, augmentations, or models

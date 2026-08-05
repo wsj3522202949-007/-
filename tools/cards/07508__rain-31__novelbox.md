@@ -159,7 +159,7 @@ pnpm run electron:release
 
 ## 许可证
 
-本项目采用GNU通用公共许可证v3.0（GPL-3.0）进行许可。详情请参阅[LICENSE](LICENSE)文件。
+本项目采用GNU通用公共许可证v3.0（GPL-3.0）进行许可。详情请参阅`[LICENSE](LICENSE)`文件。
 
 ---
 
@@ -262,7 +262,7 @@ We welcome contributions of all forms!
 
 ## License
 
-This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the `[LICENSE](LICENSE)` file for details.
 
 related:
   - methods/QUICK_START.md

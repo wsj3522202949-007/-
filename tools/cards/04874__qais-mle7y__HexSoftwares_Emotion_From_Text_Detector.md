@@ -173,4 +173,4 @@ HexSoftwares_Emotion_From_Text_Detector/
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Released under the `[MIT License](LICENSE)`.

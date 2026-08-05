@@ -56,10 +56,10 @@ Writing good, clean code is about more than whether it “works” (produces the
 
 ## Challenges
 
-- Copy each [example prompt](example-prompts/) from this repo into a shared Google doc. Think about what purpose each part of the prompt serves. What components can you identify? Use color coding or highlighting to “diagram” the prompts.
+- Copy each `[example prompt](example-prompts/)` from this repo into a shared Google doc. Think about what purpose each part of the prompt serves. What components can you identify? Use color coding or highlighting to “diagram” the prompts.
 - In VS Code, break each prompt into modular components (“functions”) that can be combined into the original prompt (“module”).
 - Do code review on the modularized prompts. Include things of interest, surprises, and potential opportunities for improvement. Refactor and add comments to the code where appropriate
-- Pair program through the [prompting challenges](prompting-challenges/) provided, following the driver/navigator approach to write pseudocode and draft prompts for each challenge. **Don't “run” your prompts with an LLM!** You're just whiteboarding. 📝
+- Pair program through the `[prompting challenges](prompting-challenges/)` provided, following the driver/navigator approach to write pseudocode and draft prompts for each challenge. **Don't “run” your prompts with an LLM!** You're just whiteboarding. 📝
 
 
 -related:

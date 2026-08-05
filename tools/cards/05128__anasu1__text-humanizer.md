@@ -172,7 +172,7 @@ see_also:
 
 # License
 
-[MIT](LICENSE) License.
+`[MIT](LICENSE)` License.
 
 
 

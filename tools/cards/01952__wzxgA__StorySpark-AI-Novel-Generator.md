@@ -241,4 +241,4 @@ npm run electron:build
 
 ## 许可证
 
-[MIT](LICENSE) © 2026 wzxgA
+`[MIT](LICENSE)` © 2026 wzxgA

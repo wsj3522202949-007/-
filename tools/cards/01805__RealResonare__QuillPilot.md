@@ -440,4 +440,4 @@ Get-Content README.md -Encoding UTF8 -TotalCount 40
 
 ## 许可证
 
-QuillPilot 基于 [MIT License](LICENSE) 开源。
+QuillPilot 基于 `[MIT License](LICENSE)` 开源。

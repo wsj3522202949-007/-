@@ -271,8 +271,8 @@ Part 6 当前在 active `STAGE_ORDER` 中，但它不是自动投稿系统：
 
 ## 当前文档入口
 
-- [docs/01_build_target.md](docs/01_build_target.md)：当前开源版目标合同，已吸收 Part 3 / Part 5 / Part 6 / DOCX 导出架构结论。
-- [docs/02_architecture.md](docs/02_architecture.md)：当前开源版架构合同，已吸收 Part 3 / Part 5 / Part 6 / DOCX 导出架构结论。
+- `[docs/01_build_target.md](docs/01_build_target.md)`：当前开源版目标合同，已吸收 Part 3 / Part 5 / Part 6 / DOCX 导出架构结论。
+- `[docs/02_architecture.md](docs/02_architecture.md)`：当前开源版架构合同，已吸收 Part 3 / Part 5 / Part 6 / DOCX 导出架构结论。
 
 此前的 Part 3 / Part 5 / Part 6 专项 architecture 文档已同步并入 `docs/01_build_target.md` 与 `docs/02_architecture.md`，不再作为独立文档保留。
 

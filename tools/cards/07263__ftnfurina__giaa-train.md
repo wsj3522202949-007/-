@@ -51,7 +51,7 @@ git clone --recurse-submodules https://github.com/ftnfurina/giaa-train.git
 
 ### 确认 CUDA 版本
 
-通过 `nvitop` 查看 CUDA 版本, 将 [pyproject.toml](./pyproject.toml) 中的 `paddlepaddle-gpu` `url` 改为对应版本的链接。
+通过 `nvitop` 查看 CUDA 版本, 将 `[pyproject.toml](./pyproject.toml)` 中的 `paddlepaddle-gpu` `url` 改为对应版本的链接。
 
 ```bash
 pip install nvitop

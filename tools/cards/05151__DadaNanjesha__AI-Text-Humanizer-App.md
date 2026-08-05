@@ -64,7 +64,7 @@ Building new version of this project here in this repos [https://github.com/Dada
 ## 🚀 Live   
 🔗 **[Try the AI Text Humanizer App on Streamlit](https://ai-text-humanizer-app-by-dada.streamlit.app/)** *
 
-![AI-Text-Humanizer-App](media/AITOHUMAN.png)
+!`[AI-Text-Humanizer-App](media/AITOHUMAN.png)`
 
 ---
 

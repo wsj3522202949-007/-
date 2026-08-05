@@ -132,7 +132,7 @@ npm run start
 
 本项目支持使用 Docker 进行部署，适合在生产环境中快速部署和扩展。
 
-详细部署教程请查看：[Docker部署教程.md](Docker部署教程.md)
+详细部署教程请查看：`[Docker部署教程.md](Docker部署教程.md)`
 
 
 

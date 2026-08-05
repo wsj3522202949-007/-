@@ -248,4 +248,4 @@ evals/files/VOICE.md              voice baseline used by the voice-deviation eva
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.

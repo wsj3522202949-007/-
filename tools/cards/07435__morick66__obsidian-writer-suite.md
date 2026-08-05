@@ -114,15 +114,15 @@ obsidian小说创作插件
 
 ### 书架视图
 
-![alt text](images/image.png)
+!`[alt text](images/image.png)`
 
 ### 短篇小说
 
-![alt text](images/image-1.png)
+!`[alt text](images/image-1.png)`
 
 ### 长篇小说
 
-![alt text](images/image-2.png)
+!`[alt text](images/image-2.png)`
 
 ## 使用
 

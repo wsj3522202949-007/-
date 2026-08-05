@@ -315,27 +315,27 @@ pip install -r config/requirements.txt --upgrade
 
 #### 📚 必读文档（总共约50分钟）
 
-1. **[FOR_AI_AGENT.md](./docs/FOR_AI_AGENT.md)** - AI Agent专用指南 ⭐⭐⭐⭐⭐
+1. **`[FOR_AI_AGENT.md](./docs/FOR_AI_AGENT.md)`** - AI Agent专用指南 ⭐⭐⭐⭐⭐
    - 用途：整体概览和快速上手
    - 阅读时间：5分钟
    - 重要性：必读
 
-2. **[WORKFLOW_SOP.md](./docs/WORKFLOW_SOP.md)** - 工作流标准操作流程 ⭐⭐⭐⭐⭐
+2. **`[WORKFLOW_SOP.md](./docs/WORKFLOW_SOP.md)`** - 工作流标准操作流程 ⭐⭐⭐⭐⭐
    - 用途：详细的执行步骤和检查清单
    - 阅读时间：20分钟
    - 重要性：必读
 
-3. **[DECISION_TREE.md](./docs/DECISION_TREE.md)** - 决策树与用户交互逻辑 ⭐⭐⭐⭐⭐
+3. **`[DECISION_TREE.md](./docs/DECISION_TREE.md)`** - 决策树与用户交互逻辑 ⭐⭐⭐⭐⭐
    - 用途：不同用户输入下的决策逻辑
    - 阅读时间：10分钟
    - 重要性：必读
 
-4. **[PROMPT_TEMPLATES.md](./docs/PROMPT_TEMPLATES.md)** - Prompt模板库 ⭐⭐⭐⭐
+4. **`[PROMPT_TEMPLATES.md](./docs/PROMPT_TEMPLATES.md)`** - Prompt模板库 ⭐⭐⭐⭐
    - 用途：标准化各阶段的Prompt
    - 阅读时间：15分钟
    - 重要性：推荐
 
-5. **[EXAMPLE_CONVERSATION.md](./docs/EXAMPLE_CONVERSATION.md)** - 示例对话 ⭐⭐⭐
+5. **`[EXAMPLE_CONVERSATION.md](./docs/EXAMPLE_CONVERSATION.md)`** - 示例对话 ⭐⭐⭐
    - 用途：实际对话示例
    - 阅读时间：10分钟
    - 重要性：有助于理解
@@ -436,9 +436,9 @@ AIContentFlow有6大工作流，最重要的是：
 
 #### 🔗 需要帮助？
 
-- 阅读 **[FOR_AI_AGENT.md](./docs/FOR_AI_AGENT.md)** 获取完整指南
-- 查看 **[EXAMPLE_CONVERSATION.md](./docs/EXAMPLE_CONVERSATION.md)** 了解实际对话示例
-- 遇到问题时参考 **[WORKFLOW_SOP.md](./docs/WORKFLOW_SOP.md)** 的异常处理章节
+- 阅读 **`[FOR_AI_AGENT.md](./docs/FOR_AI_AGENT.md)`** 获取完整指南
+- 查看 **`[EXAMPLE_CONVERSATION.md](./docs/EXAMPLE_CONVERSATION.md)`** 了解实际对话示例
+- 遇到问题时参考 **`[WORKFLOW_SOP.md](./docs/WORKFLOW_SOP.md)`** 的异常处理章节
 
 ---
 

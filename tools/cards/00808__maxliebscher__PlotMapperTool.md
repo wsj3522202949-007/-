@@ -170,11 +170,11 @@ npm.cmd run smoke
 ```
 
 The app source lives in `src/`; `scripts/build.mjs` generates the standalone `index.html`.
-Release notes, asset order, tagging, branch cleanup, and GitHub Pages checks are documented in [docs/release-runbook.md](docs/release-runbook.md).
+Release notes, asset order, tagging, branch cleanup, and GitHub Pages checks are documented in `[docs/release-runbook.md](docs/release-runbook.md)`.
 
 ### License
 
-Indie devs and small studios may use and adapt this freely. Commercial use by larger companies (10+ employees) requires permission. See [LICENSE.md](LICENSE.md).
+Indie devs and small studios may use and adapt this freely. Commercial use by larger companies (10+ employees) requires permission. See `[LICENSE.md](LICENSE.md)`.
 
 ## Deutsch
 
@@ -237,11 +237,11 @@ npm.cmd run smoke
 ```
 
 Der Quellcode liegt in `src/`; `scripts/build.mjs` erzeugt die Standalone-Datei `index.html`.
-Release-Notizen, Asset-Reihenfolge, Tagging, Branch-Cleanup und GitHub-Pages-Checks stehen in [docs/release-runbook.md](docs/release-runbook.md).
+Release-Notizen, Asset-Reihenfolge, Tagging, Branch-Cleanup und GitHub-Pages-Checks stehen in `[docs/release-runbook.md](docs/release-runbook.md)`.
 
 ### Lizenz
 
-Indie-Entwickler, Studierende und kleine Studios dürfen PlotMapper frei verwenden und anpassen. Kommerzielle Nutzung durch Unternehmen mit mehr als 10 Mitarbeitern nur mit Genehmigung. Siehe [LICENSE.md](LICENSE.md).
+Indie-Entwickler, Studierende und kleine Studios dürfen PlotMapper frei verwenden und anpassen. Kommerzielle Nutzung durch Unternehmen mit mehr als 10 Mitarbeitern nur mit Genehmigung. Siehe `[LICENSE.md](LICENSE.md)`.
 
 related:
   - methods/网文写作最强SOP.md

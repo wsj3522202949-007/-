@@ -42,7 +42,7 @@ related:
 
 ![](./logo.png)
 
-English|[简体中文](./README-zh.md)
+English|`[简体中文](./README-zh.md)`
 
 🐛🐛🐛 `text-image` can "textify" text, images, and videos, and can be used with simple configuration
 

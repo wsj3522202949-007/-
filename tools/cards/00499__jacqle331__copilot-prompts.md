@@ -64,7 +64,7 @@ related:
 
 ## 🚀 How to use a prompt
 
-1. Find a prompt in the categories below (or browse the [`prompts/`](./prompts) folder).
+1. Find a prompt in the categories below (or browse the `[`prompts/`](./prompts)` folder).
 2. Click it, then copy the prompt text.
 3. Fill in any `{{placeholders}}` with your own details.
 4. Paste it into your favorite AI assistant — and go! ✨
@@ -73,63 +73,63 @@ related:
 
 ### 📊 Productivity
 *Meetings, planning, summarizing, and staying organized.*
-- [**Summarize Meeting Notes**](./prompts/summarize-meeting-notes.md) — turn raw notes into a clean summary with decisions and action items
-- [**Close Out the Week and Plan Monday**](./prompts/close-out-week-plan-monday.md) — wrap up the week and walk into Monday with a focused plan
-- [**Prioritize Your Task List**](./prompts/prioritize-task-list.md) — rank your to-dos by importance, effort, and deadline so you know what to do first
-- [**Tame Your Inbox**](./prompts/tame-your-inbox.md) — triage a pile of emails into reply-now, delegate, wait, or archive (with draft replies)
-- [**Plan a Project or Initiative**](./prompts/plan-a-project.md) — turn a goal into phases, milestones, owners, and a realistic timeline
-- [**Run a Better Meeting**](./prompts/run-a-better-meeting.md) — build a tight, timeboxed agenda with clear objectives and outcomes
-- [**Build a Time-Blocked Daily Plan**](./prompts/build-time-blocked-day.md) — turn your priorities and meetings into a realistic hour-by-hour day with protected focus time
-- [**Delegate a Task Cleanly**](./prompts/delegate-a-task-cleanly.md) — hand off work with clear context, expectations, deadline, and check-in points so it lands the first time
+- `[**Summarize Meeting Notes**](./prompts/summarize-meeting-notes.md)` — turn raw notes into a clean summary with decisions and action items
+- `[**Close Out the Week and Plan Monday**](./prompts/close-out-week-plan-monday.md)` — wrap up the week and walk into Monday with a focused plan
+- `[**Prioritize Your Task List**](./prompts/prioritize-task-list.md)` — rank your to-dos by importance, effort, and deadline so you know what to do first
+- `[**Tame Your Inbox**](./prompts/tame-your-inbox.md)` — triage a pile of emails into reply-now, delegate, wait, or archive (with draft replies)
+- `[**Plan a Project or Initiative**](./prompts/plan-a-project.md)` — turn a goal into phases, milestones, owners, and a realistic timeline
+- `[**Run a Better Meeting**](./prompts/run-a-better-meeting.md)` — build a tight, timeboxed agenda with clear objectives and outcomes
+- `[**Build a Time-Blocked Daily Plan**](./prompts/build-time-blocked-day.md)` — turn your priorities and meetings into a realistic hour-by-hour day with protected focus time
+- `[**Delegate a Task Cleanly**](./prompts/delegate-a-task-cleanly.md)` — hand off work with clear context, expectations, deadline, and check-in points so it lands the first time
 
 ### ✍️ Writing & Communication
 *Emails, posts, messaging, and presentations.*
-- [**Write a LinkedIn Post**](./prompts/write-linkedin-post.md) — turn an idea or win into an engaging post in your voice
-- [**Draft an Executive Summary or Status Recap**](./prompts/draft-exec-summary-recap.md) — turn details into a crisp, executive-ready update
-- [**Write a Professional Email**](./prompts/write-professional-email.md) — draft clear, well-toned emails for any work situation
-- [**Turn Notes into a Presentation Outline**](./prompts/notes-to-presentation-outline.md) — go from rough thoughts to a structured slide flow
-- [**Rewrite for Tone & Clarity**](./prompts/rewrite-for-tone-clarity.md) — polish any message to be clearer, warmer, or more concise
-- [**Difficult Message, Said Well**](./prompts/difficult-message-said-well.md) — draft sensitive or tough messages with empathy and tact
-- [**Write a Persuasive Business Case**](./prompts/write-persuasive-business-case.md) — turn an idea or ask into a decision-ready, one-page case
-- [**Say No Gracefully**](./prompts/say-no-gracefully.md) — decline a request or invite professionally while keeping the relationship warm
+- `[**Write a LinkedIn Post**](./prompts/write-linkedin-post.md)` — turn an idea or win into an engaging post in your voice
+- `[**Draft an Executive Summary or Status Recap**](./prompts/draft-exec-summary-recap.md)` — turn details into a crisp, executive-ready update
+- `[**Write a Professional Email**](./prompts/write-professional-email.md)` — draft clear, well-toned emails for any work situation
+- `[**Turn Notes into a Presentation Outline**](./prompts/notes-to-presentation-outline.md)` — go from rough thoughts to a structured slide flow
+- `[**Rewrite for Tone & Clarity**](./prompts/rewrite-for-tone-clarity.md)` — polish any message to be clearer, warmer, or more concise
+- `[**Difficult Message, Said Well**](./prompts/difficult-message-said-well.md)` — draft sensitive or tough messages with empathy and tact
+- `[**Write a Persuasive Business Case**](./prompts/write-persuasive-business-case.md)` — turn an idea or ask into a decision-ready, one-page case
+- `[**Say No Gracefully**](./prompts/say-no-gracefully.md)` — decline a request or invite professionally while keeping the relationship warm
 
 ### 🔍 Research & Analysis
 *Gathering information, comparing options, and summarizing findings.*
-- [**Compare Options in a Decision Table**](./prompts/compare-options-decision-table.md) — weigh choices side by side with a clear recommendation
-- [**Evaluate the Success of a GTM Program**](./prompts/evaluate-gtm-program.md) — assess program performance against goals and decide what's next
-- [**Analyze a Dataset for Insights**](./prompts/analyze-dataset-for-insights.md) — pull trends, outliers, and takeaways out of your data in plain language
-- [**Find the Story in Your Numbers**](./prompts/find-the-story-in-your-numbers.md) — turn raw metrics into a clear, memorable narrative
-- [**Summarize a Long Document or Report**](./prompts/summarize-long-document.md) — distill a dense doc into key points, takeaways, and actions
-- [**Research a Topic Quickly**](./prompts/research-a-topic-quickly.md) — get a structured briefing with key facts, players, and smart questions
-- [**Pressure-Test an Idea (Red Team)**](./prompts/pressure-test-an-idea.md) — stress-test a plan to find assumptions, risks, and objections before others do
-- [**Build a SWOT Analysis**](./prompts/build-swot-analysis.md) — turn a situation into strengths, weaknesses, opportunities, and threats with a clear recommendation
+- `[**Compare Options in a Decision Table**](./prompts/compare-options-decision-table.md)` — weigh choices side by side with a clear recommendation
+- `[**Evaluate the Success of a GTM Program**](./prompts/evaluate-gtm-program.md)` — assess program performance against goals and decide what's next
+- `[**Analyze a Dataset for Insights**](./prompts/analyze-dataset-for-insights.md)` — pull trends, outliers, and takeaways out of your data in plain language
+- `[**Find the Story in Your Numbers**](./prompts/find-the-story-in-your-numbers.md)` — turn raw metrics into a clear, memorable narrative
+- `[**Summarize a Long Document or Report**](./prompts/summarize-long-document.md)` — distill a dense doc into key points, takeaways, and actions
+- `[**Research a Topic Quickly**](./prompts/research-a-topic-quickly.md)` — get a structured briefing with key facts, players, and smart questions
+- `[**Pressure-Test an Idea (Red Team)**](./prompts/pressure-test-an-idea.md)` — stress-test a plan to find assumptions, risks, and objections before others do
+- `[**Build a SWOT Analysis**](./prompts/build-swot-analysis.md)` — turn a situation into strengths, weaknesses, opportunities, and threats with a clear recommendation
 
 ### 🌱 Career & Leadership
 *Coaching, feedback, growth, and reflection.*
-- [**Prepare for a Coaching Conversation**](./prompts/prepare-coaching-conversation.md) — build supportive, specific talking points for a 1:1
-- [**Create an Impact Map (Visual Career Map)**](./prompts/impact-map.md) — generate a whiteboard-style one-page map of your impact, values, and growth path, with your headshot blended in ([see a real example](./prompts/examples/impact-map-example.png))
-- [**Improve Cross-Functional Collaboration**](./prompts/improve-cross-functional-collaboration.md) — diagnose friction and build a plan for teams to work better together
-- [**Prepare for Your Manager 1:1 (Weekly)**](./prompts/prepare-manager-1-1.md) — turn your week into a focused, high-impact 1:1 agenda
-- [**Write Your Self-Reflection or Year-End Review**](./prompts/write-self-reflection-review.md) — turn your wins and growth into a confident, evidence-based self-review
-- [**Give Constructive Feedback That Lands**](./prompts/give-constructive-feedback.md) — prep specific, kind, actionable feedback using the Situation-Behavior-Impact structure
+- `[**Prepare for a Coaching Conversation**](./prompts/prepare-coaching-conversation.md)` — build supportive, specific talking points for a 1:1
+- `[**Create an Impact Map (Visual Career Map)**](./prompts/impact-map.md)` — generate a whiteboard-style one-page map of your impact, values, and growth path, with your headshot blended in (`[see a real example](./prompts/examples/impact-map-example.png)`)
+- `[**Improve Cross-Functional Collaboration**](./prompts/improve-cross-functional-collaboration.md)` — diagnose friction and build a plan for teams to work better together
+- `[**Prepare for Your Manager 1:1 (Weekly)**](./prompts/prepare-manager-1-1.md)` — turn your week into a focused, high-impact 1:1 agenda
+- `[**Write Your Self-Reflection or Year-End Review**](./prompts/write-self-reflection-review.md)` — turn your wins and growth into a confident, evidence-based self-review
+- `[**Give Constructive Feedback That Lands**](./prompts/give-constructive-feedback.md)` — prep specific, kind, actionable feedback using the Situation-Behavior-Impact structure
 
 ### 🎨 Creativity & Fun
 *Lighter prompts for work and life — team building, celebration, and creative spark.*
-- [**Plan a Team Icebreaker or Energizer**](./prompts/plan-team-icebreaker.md) — get inclusive, tailored icebreakers for any meeting or offsite
-- [**Write a Team Celebration or Shout-Out**](./prompts/write-team-celebration-shoutout.md) — craft warm, specific recognition that doesn't sound generic
-- [**Brainstorm Names for a Project or Program**](./prompts/brainstorm-project-names.md) — generate creative, on-theme name ideas with a top-3 pick
-- [**Plan a Themed Team Event or Offsite**](./prompts/plan-themed-team-event.md) — design a fun, inclusive event with a theme, run-of-show, and activities
-- [**Run a Team Retrospective (Fun Format)**](./prompts/run-team-retrospective.md) — design an engaging retro with a theme, reflection prompts, and owned action items
+- `[**Plan a Team Icebreaker or Energizer**](./prompts/plan-team-icebreaker.md)` — get inclusive, tailored icebreakers for any meeting or offsite
+- `[**Write a Team Celebration or Shout-Out**](./prompts/write-team-celebration-shoutout.md)` — craft warm, specific recognition that doesn't sound generic
+- `[**Brainstorm Names for a Project or Program**](./prompts/brainstorm-project-names.md)` — generate creative, on-theme name ideas with a top-3 pick
+- `[**Plan a Themed Team Event or Offsite**](./prompts/plan-themed-team-event.md)` — design a fun, inclusive event with a theme, run-of-show, and activities
+- `[**Run a Team Retrospective (Fun Format)**](./prompts/run-team-retrospective.md)` — design an engaging retro with a theme, reflection prompts, and owned action items
 
 ## 🙌 Contributing
 
 Got a prompt that works well? **Please share it!** 🎉
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the quick steps, and use [`prompts/_TEMPLATE.md`](./prompts/_TEMPLATE.md) as your starting point. Every great prompt makes this library more useful for everyone.
+See `[CONTRIBUTING.md](./CONTRIBUTING.md)` for the quick steps, and use `[`prompts/_TEMPLATE.md`](./prompts/_TEMPLATE.md)` as your starting point. Every great prompt makes this library more useful for everyone.
 
 ## 📄 License
 
-Released under the [MIT License](./LICENSE) — use these prompts freely.
+Released under the `[MIT License](./LICENSE)` — use these prompts freely.
 
 <div align="center">
 <br>

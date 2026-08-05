@@ -141,7 +141,7 @@ These agents do not follow rigid rules. They negotiate with each other, sometime
 
 This project is released under the **MIT License**. You are free to use, modify, distribute, and sublicense NarrativeDust for personal, educational, or commercial projects — provided the original copyright notice and permission notice are included in all copies or substantial portions of the software.
 
-For full terms, see the [LICENSE](LICENSE) file.
+For full terms, see the `[LICENSE](LICENSE)` file.
 
 ---
 

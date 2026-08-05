@@ -203,7 +203,7 @@ MIT License
 
 ## 📞 联系方式
 
-- Issue: [GitHub Issues](项目Issue地址)
-- 文档: [详细文档](docs/)
-- 启动与使用指南: [startup_usage_guide.md](docs/startup_usage_guide.md)
-- 规划: [实施方案](/.claude/plans/inherited-twirling-sutton.md)
+- Issue: `[GitHub Issues](项目Issue地址)`
+- 文档: `[详细文档](docs/)`
+- 启动与使用指南: `[startup_usage_guide.md](docs/startup_usage_guide.md)`
+- 规划: `[实施方案](/.claude/plans/inherited-twirling-sutton.md)`

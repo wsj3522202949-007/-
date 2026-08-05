@@ -37,7 +37,7 @@ related:
   - methods/QUICK_START.md
 ---
 
-![AO3 Header](header.png)
+!`[AO3 Header](header.png)`
 
 # Fandom Categorization and Genre Writing
 
@@ -62,7 +62,7 @@ Reading fanfiction feels different than reading traditionally published literatu
 
 Most of the code here was written referencing [the notebooks in this GitHub repo from the Berkeley D-Lab, written by Evan Muzzall and edited by Brooks Jessup](https://github.com/dlab-berkeley/DIGHUM101-2021).
 
-![project poster](poster_ao3_analysis.png)
+!`[project poster](poster_ao3_analysis.png)`
 
 
 ## Research Questions

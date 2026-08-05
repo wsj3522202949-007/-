@@ -42,7 +42,7 @@ related:
 
 # Language Detector
 
-![app.png](./app.png)
+!`[app.png](./app.png)`
 
 This app used pretrained [xlm-roberta-base](https://huggingface.co/xlm-roberta-base) model and fine-tuned on the
 [common_language](https://huggingface.co/datasets/common_language) dataset under PyTorch and HuggingFace framework. It can detect 45 languages based on user text input and is hosted on HuggingFace space platform.

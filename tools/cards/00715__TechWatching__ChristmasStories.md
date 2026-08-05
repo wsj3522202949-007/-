@@ -62,7 +62,7 @@ A delightful web application that generates personalized Christmas stories for 5
 - **Perfect Reading Length** - Each story is 750-1500 words (5-10 minutes reading time)
 - **Real-time Generation** - Watch the magic happen with AI-powered story creation
 
-![Christmas Story Generator website](docs/website_01.png)
+!`[Christmas Story Generator website](docs/website_01.png)`
 
 ## Getting Started
 

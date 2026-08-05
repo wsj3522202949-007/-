@@ -63,7 +63,7 @@ Unlike simple AI-writing detectors, this project is built as a full skill:
 
 ## At A Glance
 
-![humanize-text-skill capability map](./docs/capability-map.svg)
+!`[humanize-text-skill capability map](./docs/capability-map.svg)`
 
 ## Why It Exists
 
@@ -126,7 +126,7 @@ npm test
 This repository is usually used as a skill package inside an agent runtime.
 
 - Claude Code: copy `SKILL.md`, `references/`, and `policy/` into `.claude/skills/humanize-text-skill/`
-- Cursor: use [`cursor-rules/humanize-text-skill.mdc`](./cursor-rules/humanize-text-skill.mdc)
+- Cursor: use `[`cursor-rules/humanize-text-skill.mdc`](./cursor-rules/humanize-text-skill.mdc)`
 - Codex / OpenClaw / Hermes: point the tool at the repo root
 
 ### ClawHub publish readiness
@@ -135,7 +135,7 @@ This repository is prepared for ClawHub upload:
 
 - canonical entry file: `SKILL.md`
 - runtime support files: `detector/`, `references/`, `policy/`
-- publish filter: [`.clawhubignore`](./.clawhubignore)
+- publish filter: `[`.clawhubignore`](./.clawhubignore)`
 
 Suggested publish command:
 
@@ -264,7 +264,7 @@ Important:
 
 ## Skill Runtime
 
-![humanize-text-skill skill architecture](./docs/skill-architecture.svg)
+!`[humanize-text-skill skill architecture](./docs/skill-architecture.svg)`
 
 The detector is only one layer. The full skill runtime is:
 
@@ -276,22 +276,22 @@ The detector is only one layer. The full skill runtime is:
 6. run a second-pass residue audit
 7. return output in a scene-appropriate shape
 
-See [references/skill-architecture.md](./references/skill-architecture.md) for the full map.
+See `[references/skill-architecture.md](./references/skill-architecture.md)` for the full map.
 
 ## Repository Map
 
-- [SKILL.md](./SKILL.md): top-level skill contract
-- [detector/](./detector/): executable detector and voice engine
-- [references/](./references/): human-readable rules, scene packs, examples, checklists
-- [policy/](./policy/): auditable scene/tier/voice policy in TOML
-- [evals/](./evals/): benchmark cases, fixtures, voice samples
+- `[SKILL.md](./SKILL.md)`: top-level skill contract
+- `[detector/](./detector/)`: executable detector and voice engine
+- `[references/](./references/)`: human-readable rules, scene packs, examples, checklists
+- `[policy/](./policy/)`: auditable scene/tier/voice policy in TOML
+- `[evals/](./evals/)`: benchmark cases, fixtures, voice samples
 
 Good entry points:
 
-- [references/scene-packs.md](./references/scene-packs.md)
-- [references/examples.md](./references/examples.md)
-- [references/quick-checklist.md](./references/quick-checklist.md)
-- [references/voice-contract.md](./references/voice-contract.md)
+- `[references/scene-packs.md](./references/scene-packs.md)`
+- `[references/examples.md](./references/examples.md)`
+- `[references/quick-checklist.md](./references/quick-checklist.md)`
+- `[references/voice-contract.md](./references/voice-contract.md)`
 
 ## Related Work
 

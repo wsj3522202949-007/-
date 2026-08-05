@@ -56,7 +56,7 @@ Built from [Wikipedia's catalog of "Signs of AI writing"](https://en.wikipedia.o
 >
 > It's your request, and a good tool will tell you which file it's creating before it does. It writes the rules into the right config for that tool (skill folder, `.cursor/rules`, `AGENTS.md`, `copilot-instructions.md`).
 >
-> **Web chatbots (Claude.ai, ChatGPT, Gemini web) can't install anything.** They have no file access. For those, paste [`PROMPT.md`](PROMPT.md) into the tool's style or custom-instructions box. See [Install](#-install) below.
+> **Web chatbots (Claude.ai, ChatGPT, Gemini web) can't install anything.** They have no file access. For those, paste `[`PROMPT.md`](PROMPT.md)` into the tool's style or custom-instructions box. See [Install](#-install) below.
 
 ## 🤖 What is this? (TL;DR for humans and AI assistants)
 
@@ -67,7 +67,7 @@ Built from [Wikipedia's catalog of "Signs of AI writing"](https://en.wikipedia.o
 ## ❓ FAQ
 
 **How do I make ChatGPT (or Claude, Gemini, Grok) sound human?**
-Paste [`PROMPT.md`](PROMPT.md) into the model's custom-instructions / system field. It bans AI vocabulary and slop patterns and tells the model to self-check before replying.
+Paste `[`PROMPT.md`](PROMPT.md)` into the model's custom-instructions / system field. It bans AI vocabulary and slop patterns and tells the model to self-check before replying.
 
 **Does this beat AI detectors?**
 It removes the statistical and stylistic tells detectors and humans look for. No tool can promise 100% — but stripping the patterns in `references/ai-tells.md` is exactly what makes text read as human.
@@ -105,15 +105,15 @@ cat draft.md | node bin/humanize-check.mjs
 npx -y github:haidrrrry/humanize-ai-writing your-draft.md
 ```
 Exit code is non-zero when tells are found. Wire it into CI or a pre-commit hook
-with the ready-made [templates](templates/) (GitHub Action + git hook). See
-[EXAMPLES.md](EXAMPLES.md) for before/after rewrites.
+with the ready-made `[templates](templates/)` (GitHub Action + git hook). See
+`[EXAMPLES.md](EXAMPLES.md)` for before/after rewrites.
 
 ## 🔍 Why this one
 
 There are other humanizer repos. This one is built to be **portable and zero-friction**:
 
 - **Every tool, one ruleset.** The same rules ship as a paste-in `PROMPT.md` (ChatGPT, Gemini, Grok, Kimi, DeepSeek) *and* a native Claude skill. Learn it once.
-- **One-command install** for Claude, plus an [`INSTALL.md`](INSTALL.md) block written **for AI agents** — so you can tell your assistant "add this skill" and it just does it.
+- **One-command install** for Claude, plus an `[`INSTALL.md`](INSTALL.md)` block written **for AI agents** — so you can tell your assistant "add this skill" and it just does it.
 - **Sourced, not vibes.** Rules map directly to [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), with a fix and before/after for each tell.
 - **Honest scope.** It strips human-visible slop and known tells. It does not claim to "beat AI detectors" — those measure token statistics, a different thing.
 
@@ -123,11 +123,11 @@ There are other humanizer repos. This one is built to be **portable and zero-fri
 ```bash
 curl -fsSL https://raw.githubusercontent.com/haidrrrry/humanize-ai-writing/main/install.sh | bash
 ```
-Then restart Claude and say *"humanize this."* Full per-tool steps in [INSTALL.md](INSTALL.md).
+Then restart Claude and say *"humanize this."* Full per-tool steps in `[INSTALL.md](INSTALL.md)`.
 
-> ⚠️ **Only Claude has a "Skills" feature.** ChatGPT, Gemini, and Grok **cannot load a skill file** — there's nowhere to upload it. For those tools you **paste** [`PROMPT.md`](PROMPT.md) instead. Trying to install a skill in ChatGPT is the #1 "it doesn't work" mistake. Full steps: [INSTALL.md](INSTALL.md).
+> ⚠️ **Only Claude has a "Skills" feature.** ChatGPT, Gemini, and Grok **cannot load a skill file** — there's nowhere to upload it. For those tools you **paste** `[`PROMPT.md`](PROMPT.md)` instead. Trying to install a skill in ChatGPT is the #1 "it doesn't work" mistake. Full steps: `[INSTALL.md](INSTALL.md)`.
 
-> 🧩 **Not a Claude user?** It works in **20+ tools** — Cursor, Windsurf, Google Antigravity, GitHub Copilot, Cline, Aider, ChatGPT, Gemini, Grok, Kimi, DeepSeek, Perplexity and more. See [**USAGE-IN-AI-TOOLS.md**](USAGE-IN-AI-TOOLS.md) for the exact slot in each. For coding tools, copy [`for-ai-tools/AGENTS.md`](for-ai-tools/AGENTS.md) to your project root — Antigravity, Cursor, Codex, Claude Code and opencode all read it at once.
+> 🧩 **Not a Claude user?** It works in **20+ tools** — Cursor, Windsurf, Google Antigravity, GitHub Copilot, Cline, Aider, ChatGPT, Gemini, Grok, Kimi, DeepSeek, Perplexity and more. See `[**USAGE-IN-AI-TOOLS.md**](USAGE-IN-AI-TOOLS.md)` for the exact slot in each. For coding tools, copy `[`for-ai-tools/AGENTS.md`](for-ai-tools/AGENTS.md)` to your project root — Antigravity, Cursor, Codex, Claude Code and opencode all read it at once.
 
 ### Claude — install as a skill (auto-triggers)
 - **Claude Code / Desktop:** run the one-command installer above, or:
@@ -137,10 +137,10 @@ Then restart Claude and say *"humanize this."* Full per-tool steps in [INSTALL.m
   cp -r ./humanize-ai-writing/humanize-ai-writing ~/.claude/skills/
   ```
   Then say "humanize this" or type `/humanize-ai-writing`.
-- **claude.ai / mobile (web):** the web app has no file system, so nothing auto-installs. Either paste [`PROMPT.md`](PROMPT.md) into **Settings → Styles** (works on any plan), or, on a paid plan with code execution, upload [`humanize-ai-writing.zip`](humanize-ai-writing.zip) via **Settings → Features → Skills → Upload skill**. See [INSTALL.md](INSTALL.md#claudeai--claude-mobile-web-app).
+- **claude.ai / mobile (web):** the web app has no file system, so nothing auto-installs. Either paste `[`PROMPT.md`](PROMPT.md)` into **Settings → Styles** (works on any plan), or, on a paid plan with code execution, upload `[`humanize-ai-writing.zip`](humanize-ai-writing.zip)` via **Settings → Features → Skills → Upload skill**. See `[INSTALL.md](INSTALL.md#claudeai--claude-mobile-web-app)`.
 
 ### ChatGPT — paste (no skills)
-- **Custom Instructions:** Settings → Personalization → Custom Instructions → paste [`PROMPT.md`](PROMPT.md) into "How would you like ChatGPT to respond?"
+- **Custom Instructions:** Settings → Personalization → Custom Instructions → paste `[`PROMPT.md`](PROMPT.md)` into "How would you like ChatGPT to respond?"
 - **Custom GPT:** Create a GPT → Instructions → paste `PROMPT.md`.
 
 ### Gemini — paste (no skills)
@@ -193,7 +193,7 @@ blog/                              # Sample posts written with the skill
 
 ## 🤝 Contributing
 
-New tells, better fixes, tool-specific install tips — PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+New tells, better fixes, tool-specific install tips — PRs welcome. See `[CONTRIBUTING.md](CONTRIBUTING.md)`.
 
 ## ⭐ Star this repo
 
@@ -201,7 +201,7 @@ If this killed the slop in your AI output, **[star it](https://github.com/haidrr
 
 ## 📄 License
 
-[MIT](LICENSE). Tells catalog adapted from [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (CC BY-SA).
+`[MIT](LICENSE)`. Tells catalog adapted from [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (CC BY-SA).
 
 related:
   - methods/最强去AI味铁律.md

@@ -120,7 +120,7 @@ Contributions are welcome! Please fork the repo, create a feature branch, and su
 
 ## 📜 License  
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.  
+This project is licensed under the MIT License – see the `[LICENSE](LICENSE)` file for details.  
 
 related:
   - methods/网文写作最强SOP.md

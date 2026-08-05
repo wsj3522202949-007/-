@@ -146,7 +146,7 @@ graph TB
     A1 --> A2
 ```
 
-> 📖 **Deep dive:** See [docs/architecture.md](docs/architecture.md) for full technical details on each branch.
+> 📖 **Deep dive:** See `[docs/architecture.md](docs/architecture.md)` for full technical details on each branch.
 
 ---
 
@@ -335,16 +335,16 @@ The frontend auto-deploys via Vercel's GitHub integration. Connect your repo in 
 
 | Document | Description |
 |----------|-------------|
-| [Architecture](docs/architecture.md) | Full system architecture, engine details, and infrastructure |
-| [API Reference](docs/api_reference.md) | Complete REST API endpoint documentation |
-| [Text Engine](docs/text_engine_architecture.md) | Deep-dive into the text detection pipeline |
-| [Contributing](CONTRIBUTING.md) | Development setup and contribution guidelines |
+| `[Architecture](docs/architecture.md)` | Full system architecture, engine details, and infrastructure |
+| `[API Reference](docs/api_reference.md)` | Complete REST API endpoint documentation |
+| `[Text Engine](docs/text_engine_architecture.md)` | Deep-dive into the text detection pipeline |
+| `[Contributing](CONTRIBUTING.md)` | Development setup and contribution guidelines |
 
 ---
 
 ## 📄 License
 
-This project is licensed under **All Rights Reserved** — see the [LICENSE](LICENSE) file for details. You may view this code for educational purposes, but copying, deploying, or modifying it is strictly prohibited.
+This project is licensed under **All Rights Reserved** — see the `[LICENSE](LICENSE)` file for details. You may view this code for educational purposes, but copying, deploying, or modifying it is strictly prohibited.
 
 related:
   - methods/最强去AI味铁律.md

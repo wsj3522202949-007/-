@@ -454,8 +454,8 @@ python -c "import config; print('llm config ok')"
 
 ## 贡献 / Contributing
 
-欢迎提交 Issue 和 PR，详见 [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)。  
-Issues and pull requests are welcome. See [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) for details.
+欢迎提交 Issue 和 PR，详见 `[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)`。  
+Issues and pull requests are welcome. See `[docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)` for details.
 
 ---
 
@@ -470,4 +470,4 @@ related:
 
 ## 许可证 / License
 
-[MIT License](LICENSE)
+`[MIT License](LICENSE)`

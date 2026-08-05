@@ -41,7 +41,7 @@ related:
 
 <div align="center">
 
-![DramaBench Cover](assets/DramaBench_cover.png)
+!`[DramaBench Cover](assets/DramaBench_cover.png)`
 
 **A Six-Dimensional Evaluation Framework for Drama Script Continuation**
 
@@ -437,7 +437,7 @@ DramaBench uses a **hybrid evaluation system**:
 | 7 | **Gemini 3 Pro** | Google DeepMind | 0.843 |
 | 8 | **Kimi K2 Thinking** | Moonshot AI | 0.815 |
 
-**Note:** Rankings may vary by dimension. See [web demo](web/leaderboard.html) for detailed per-dimension scores.
+**Note:** Rankings may vary by dimension. See `[web demo](web/leaderboard.html)` for detailed per-dimension scores.
 
 ---
 
@@ -540,7 +540,7 @@ If you use DramaBench in your research, please cite our paper:
 <a id="license"></a>
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 ---
 

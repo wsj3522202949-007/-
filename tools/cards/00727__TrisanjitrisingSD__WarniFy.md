@@ -42,7 +42,7 @@ related:
 Welcome to **WarniFy**, an intelligent, multi-functional AI platform built using **React (Vite)**, **Tailwind CSS**, and powered by cutting-edge AI APIs like **Gemini** and **Clipdrop**. With seamless authentication via **Clerk**, secure image handling through **Cloudinary**, and a robust backend with **Express** and **NeonDB**, Quick.ai delivers writing, image, and career tools in one powerful, responsive dashboard — fast, smart, and delightful to use.
 
 
-<!-- ![Quick.ai Screenshot](client/public/favicon.svg) -->
+<!-- !`[Quick.ai Screenshot](client/public/favicon.svg)` -->
 
 <!-- Replace with actual screenshot or logo path -->
 <img src="client/public/favicon.svg" width="100" height="90" alt="WarniFy logo" />
@@ -143,4 +143,4 @@ related:
 
 This project is licensed under the **MIT License**.
 
-See the full license details in the [`LICENSE`](./LICENSE) file.
+See the full license details in the `[`LICENSE`](./LICENSE)` file.

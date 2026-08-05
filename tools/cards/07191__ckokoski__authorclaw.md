@@ -117,7 +117,7 @@ npm start
 
 > **First run:** AuthorAgent generates a vault encryption key and stores it **outside the repo** (`%LOCALAPPDATA%\AuthorClaw\vault.key` on Windows, `~/.authorclaw/vault.key` elsewhere) so your encrypted API keys never sync to cloud drives. The Getting Started checklist on the home screen walks you through the rest.
 
-See [QUICKSTART.md](QUICKSTART.md) for the full guide.
+See `[QUICKSTART.md](QUICKSTART.md)` for the full guide.
 
 ## AI Providers — bring your own model
 
@@ -154,7 +154,7 @@ Six panels, no clutter:
 - **Localhost only**: binds to 127.0.0.1 — nothing exposed
 - **Skill/write protections**: confirmation gates on external actions
 
-For VM/VPS/Docker deployment (recommended for always-on Telegram use), see [SECURITY.md](SECURITY.md) and the `docker/` directory.
+For VM/VPS/Docker deployment (recommended for always-on Telegram use), see `[SECURITY.md](SECURITY.md)` and the `docker/` directory.
 
 ## Development
 
@@ -175,6 +175,6 @@ Provided "as is," use at your own risk. AI output should always be reviewed by a
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.
 
 Built by an author, for authors — on the belief that AI should amplify creativity, not replace it, and that your agent should work for your book, not for a subscription.

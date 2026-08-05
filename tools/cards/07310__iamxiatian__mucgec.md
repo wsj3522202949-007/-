@@ -39,7 +39,7 @@ related:
 # MuCGEC: A Multi-Reference Multi-Source Evaluation Dataset for Chinese Grammatical Error Correction & SOTA Models
 
 
-[English](README.en.md) | 简体中文
+`[English](README.en.md)` | 简体中文
 
 ## 引用
 如果您认为我们的工作对您的工作有帮助，请引用我们的论文：
@@ -147,7 +147,7 @@ chmod +x download.sh
 
 针对[NLPCC18官方数据集](http://tcci.ccf.org.cn/conference/2018/taskdata.php)，可使用我们的基准模型预测后，通过NLPCC18的官方工具[M2Scorer](https://github.com/nusnlp/m2scorer)进行计算指标。需要注意的是预测结果必须使用PKUNLP工具分词。
 
-针对MuCGEC数据集的相关指标，可以采用我们提供的[ChERRANT](./scorers/ChERRANT)工具进行指标计算。
+针对MuCGEC数据集的相关指标，可以采用我们提供的`[ChERRANT](./scorers/ChERRANT)`工具进行指标计算。
 ChERRANT的相关使用可参考`./scorers/ChERRANT/demo.sh`。对于字级别指标，我们部分参考了[ERRANT_zh](https://github.com/cehinson/ERRANT_ZH)仓库，词级别指标及错误类型划分我们则参考了[原始ERRANT](https://github.com/chrisjbryant/errant)。
 
 **错误类型**
@@ -160,7 +160,7 @@ ChERRANT的相关使用可参考`./scorers/ChERRANT/demo.sh`。对于字级别�
 + 语言学级别（仅词粒度）：
   + 我们设计了14种主要的语言学错误类型（基本上是根据词性），除拼写错误(SPELL)和词序错误(W)外，还可以根据替换/删除/冗余操作进一步划分，如`形容词冗余错误`可以表示为：R:ADJ
   
-    ![error types](./pics/errors.PNG)
+    !`[error types](./pics/errors.PNG)`
   
 
 ## 相关工作

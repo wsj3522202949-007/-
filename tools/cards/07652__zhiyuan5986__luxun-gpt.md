@@ -176,4 +176,4 @@ ChatGLM和ChatGPT很容易将鲁迅风格的语言理解为文言文，经过训
 
 ## 许可证
 
-该项目基于 MIT 许可证发布 - 有关详情，请参见 [LICENSE](LICENSE) 文件。
+该项目基于 MIT 许可证发布 - 有关详情，请参见 `[LICENSE](LICENSE)` 文件。

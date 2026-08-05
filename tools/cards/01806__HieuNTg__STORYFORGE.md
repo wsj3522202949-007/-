@@ -110,7 +110,7 @@ Then open **http://localhost:3001/forge/** → **Settings → API Keys** (add pr
 - **Continuation tools** — multi-path preview, outline editor, collaborative polish, consistency checker, mid-story insertion, retroactive fixes
 - **Local-library-first flows** — Reader, Branching, Simulation, and Characters start from stories already saved in the local library; no fake `demo` sessions or pasted orphan text.
 - **Branch reader** — LLM-generated CYOA, SVG tree + minimap, undo/redo, bookmarks, WebSocket multi-user, EPUB tree export
-- **Character-consistent images** — the same face carries across every chapter (reference-image / IP-Adapter consistency) plus cinematic scene backgrounds. Free local generation via HuggingFace FLUX or the [FlowKit provider](docs/flowkit-integration.md) (Imagen 3, local-only — account-ban risk, use a secondary Google account); paid via DALL·E / Seedream. See [Sample output](#sample-output) and the [setup table below](#image-generation).
+- **Character-consistent images** — the same face carries across every chapter (reference-image / IP-Adapter consistency) plus cinematic scene backgrounds. Free local generation via HuggingFace FLUX or the `[FlowKit provider](docs/flowkit-integration.md)` (Imagen 3, local-only — account-ban risk, use a secondary Google account); paid via DALL·E / Seedream. See [Sample output](#sample-output) and the [setup table below](#image-generation).
 - **Provider profiles + model dropdowns** — Settings has quick-add cards for Gemini, Anthropic, OpenAI, OpenRouter Free, Z.AI, and Kyma. Model choice is a select list (including Gemini/Gemma, OpenRouter free text models, OpenAI/Anthropic, GLM/Qwen/DeepSeek fallbacks), and L1/L2/cheap-model routing chooses from configured provider profiles instead of raw text fields.
 - **Any OpenAI-compatible LLM** — OpenAI, Gemini, Anthropic, OpenRouter, Z.AI, Kyma, Ollama, custom; preemptive rate-limit switching, latency-aware routing, smart cheap/premium routing, SQLite cache
 - **Security** — CSRF double-submit, 10 MB body cap, prompt-injection middleware, encrypted secrets at rest
@@ -145,7 +145,7 @@ Images are **off by default** (`image_provider = none` → text-only). Pick a pr
 | `huggingface` | Set `hf_token` | **Free tier** | `FLUX.1-schnell` via HF Inference API — easiest free path. |
 | `dalle` | Set `image_api_key` (+ optional `image_api_url`) | Paid | OpenAI / Azure-compatible image endpoint. |
 | `seedream` | Set `seedream_api_key` + `seedream_api_url` | Paid | ByteDance Seedream; also the default character-consistency engine. |
-| `flowkit` | Chrome extension + Google Labs login | **Free\*** | Local-only proxy to Imagen 3. **\*Account-ban risk — use a secondary Google account.** Full walkthrough: [FlowKit guide](docs/flowkit-integration.md). |
+| `flowkit` | Chrome extension + Google Labs login | **Free\*** | Local-only proxy to Imagen 3. **\*Account-ban risk — use a secondary Google account.** Full walkthrough: `[FlowKit guide](docs/flowkit-integration.md)`. |
 
 **Character consistency** — set `enable_character_consistency = true` to reuse a character's first portrait as a reference image, so the same face carries across every chapter (`character_consistency_provider`: `seedream` or `replicate`). Visual style is set by `image_prompt_style` (default `cinematic`) and portraits default to `9:16`. The [sample portraits above](#sample-output) were produced this way.
 
@@ -184,15 +184,15 @@ flowchart LR
 
 L1→L2 signals: `conflict_web` + `foreshadowing_plan` feed the simulator; `arc_waypoints` + `threads` feed the analyzer/enhancer; `voice_fingerprints` preserve speaker voice through L2 rewrites.
 
-See [`docs/system-architecture.md`](docs/system-architecture.md) for the full flow.
+See `[`docs/system-architecture.md`](docs/system-architecture.md)` for the full flow.
 
 ---
 
 ## Documentation
 
-- [`docs/`](docs/README.md) — full index (architecture, code standards, deployment)
-- [`docs/adr/`](docs/adr/) — architecture decision records
-- [CONTRIBUTING.md](CONTRIBUTING.md) — dev setup, code style, PR process
+- `[`docs/`](docs/README.md)` — full index (architecture, code standards, deployment)
+- `[`docs/adr/`](docs/adr/)` — architecture decision records
+- `[CONTRIBUTING.md](CONTRIBUTING.md)` — dev setup, code style, PR process
 
 related:
   - methods/网文写作最强SOP.md
@@ -201,4 +201,4 @@ related:
 
 ## License
 
-[MIT](LICENSE) — Copyright 2026 StoryForge Contributors
+`[MIT](LICENSE)` — Copyright 2026 StoryForge Contributors

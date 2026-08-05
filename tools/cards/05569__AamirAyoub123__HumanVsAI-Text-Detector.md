@@ -248,7 +248,7 @@ related:
 
 🎓 **Master Big Data & IoT**  
 📍 *ENSAM Casablanca*  
-📧 [aamir.ayoub@ensam-casa.ma](mailto:aamir.ayoub@ensam-casa.ma)
+📧 `[aamir.ayoub@ensam-casa.ma](mailto:aamir.ayoub@ensam-casa.ma)`
 
 🔗 **Connect with me:**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayoub-aamir)  

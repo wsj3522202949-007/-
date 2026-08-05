@@ -90,7 +90,7 @@ Optional inputs:
 
 Actual comment posted on a PR the model judges as slop (from the smoke-test repo):
 
-![Example slop comment as posted on a smoke-test PR](docs/images/slop_comment.png)
+!`[Example slop comment as posted on a smoke-test PR](docs/images/slop_comment.png)`
 
 Re-running the Action edits the same comment in place via a hidden HTML marker — it never stacks duplicate comments.
 
@@ -241,8 +241,8 @@ pytest --cov=src/ai_slop_detector --cov-report=term-missing
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for local setup, how to run the eval, how to propose a new golden-set fixture, and the conventional-commit style this repo uses.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for local setup, how to run the eval, how to propose a new golden-set fixture, and the conventional-commit style this repo uses.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.

@@ -139,7 +139,7 @@ skysplitter-desktop/
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see `[LICENSE](LICENSE)` file for details.
 
 ## Version History
 

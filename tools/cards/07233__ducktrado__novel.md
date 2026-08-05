@@ -56,7 +56,7 @@ related:
 [![LoRA](https://img.shields.io/badge/Hugging%20Face-LoRA-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/yuxinlu1)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e)](./LICENSE)
 
-[简体中文](./README.md) · [English](./README_EN.md) · [GitHub](https://github.com/DuckTraDo/Novel) · [LoRA 权重](https://huggingface.co/yuxinlu1)
+`[简体中文](./README.md)` · `[English](./README_EN.md)` · [GitHub](https://github.com/DuckTraDo/Novel) · [LoRA 权重](https://huggingface.co/yuxinlu1)
 
 </div>
 
@@ -245,7 +245,7 @@ python scripts/reset_chapter.py --chapter ch001
 - ❌ 不提交私稿 `chapters/`、生成产物 `outputs/`、本地设置 `.ui-settings.json`
 - ❌ 不提交训练数据原文或未授权文本
 
-详见 [`SECURITY_CHECKLIST.md`](./SECURITY_CHECKLIST.md)。
+详见 `[`SECURITY_CHECKLIST.md`](./SECURITY_CHECKLIST.md)`。
 
 ---
 
@@ -273,7 +273,7 @@ related:
 
 LoRA 文风权重:<https://huggingface.co/yuxinlu1>
 
-License:[MIT](./LICENSE) © 2026 DuckTraDo。
+License:`[MIT](./LICENSE)` © 2026 DuckTraDo。
 
 <div align="center">
 

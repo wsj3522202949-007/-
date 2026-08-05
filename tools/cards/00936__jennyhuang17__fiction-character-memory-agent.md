@@ -193,8 +193,8 @@ The `check` command retrieves relevant facts and asks the LLM to explain whether
 
 ## Demo and Report
 
-- Demo video: [demo.mp4](demo.mp4)
-- Short report: [report.pdf](report.pdf)
+- Demo video: `[demo.mp4](demo.mp4)`
+- Short report: `[report.pdf](report.pdf)`
 
 ## Project Structure
 

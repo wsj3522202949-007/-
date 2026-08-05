@@ -42,7 +42,7 @@ related:
 
 **StorySpark** is an AI-powered children's book creation platform that guides you through a complete multi-step story generation process, from concept to illustrated pages. Create personalized, printable children's books with custom characters, settings, and AI-generated illustrations.
 
-![StorySpark Logo](docs/1-login.png)
+!`[StorySpark Logo](docs/1-login.png)`
 
 ## What is StorySpark?
 
@@ -59,19 +59,19 @@ Whether you're a parent creating a bedtime story for your child, an educator dev
 StorySpark guides you through a comprehensive story creation workflow designed to produce high-quality, coherent children's books:
 
 1. **Story Details & Concept** - Define the basic premise, title, and story parameters
-   ![Story Details](docs/3-story-details.png)
+   !`[Story Details](docs/3-story-details.png)`
 
 2. **Setting Expansion** - AI helps you develop rich, detailed story settings
-   ![Expand Setting](docs/4-expand-setting.png)
+   !`[Expand Setting](docs/4-expand-setting.png)`
 
 3. **Character Definition** - Create and refine character profiles with detailed descriptions
-   ![Define Characters](docs/5-define-characters.png)
+   !`[Define Characters](docs/5-define-characters.png)`
 
 4. **Story Review & Core Imagery** - Review the complete narrative and generate core visual concepts before page-by-page imagery
-   ![Review Story](docs/6-review-story.png)
+   !`[Review Story](docs/6-review-story.png)`
 
 5. **Image Generation** - Transform your story into illustrated pages with AI-generated artwork
-   ![Generate Images](docs/7-generate-images.png)
+   !`[Generate Images](docs/7-generate-images.png)`
 
 ### 📚 Story Library & Management
 
@@ -80,7 +80,7 @@ StorySpark guides you through a comprehensive story creation workflow designed t
 - Quick access to edit, continue, or read any story
 - Delete stories you no longer need
 
-![Library View](docs/2-library.png)
+!`[Library View](docs/2-library.png)`
 
 ### 🎨 Advanced Image Generation
 
@@ -92,7 +92,7 @@ StorySpark supports **Bring Your Own Key** functionality, allowing you to use yo
 
 This means you control your costs and aren't dependent on third-party credits or subscriptions.
 
-![Profile Settings](docs/14-profile.png)
+!`[Profile Settings](docs/14-profile.png)`
 
 #### Flexible Image Model Selection
 
@@ -104,7 +104,7 @@ Choose from multiple image generation providers and models:
   - Specialized art styles
   - Custom fine-tuned models
 
-![Replicate Configuration](docs/15-profile-replicate.png)
+!`[Replicate Configuration](docs/15-profile-replicate.png)`
 
 #### Replicate Model Configuration
 
@@ -114,19 +114,19 @@ Advanced users can add and configure custom Replicate models:
 - Configure model-specific settings (style presets, aspect ratios, etc.)
 - Save model templates for reuse
 
-![Add Model](docs/16-add-model.png)
-![Analyze Model](docs/17-analyze-model.png)
-![Model Configuration](docs/18-model-configuration.png)
+!`[Add Model](docs/16-add-model.png)`
+!`[Analyze Model](docs/17-analyze-model.png)`
+!`[Model Configuration](docs/18-model-configuration.png)`
 
 ### 🔄 Image Regeneration
 
 Don't like a generated image? Regenerate it with a single click:
 
 - **Core Image Regeneration** - Regenerate the thematic core imagery that guides all page illustrations
-  ![Regenerate Core Image](docs/8-regenerate-core-image.png)
+  !`[Regenerate Core Image](docs/8-regenerate-core-image.png)`
 
 - **Individual Page Regeneration** - Regenerate specific page images without affecting the rest of your story
-  ![Regenerate Page Image](docs/9-regenerate-page-image.png)
+  !`[Regenerate Page Image](docs/9-regenerate-page-image.png)`
 
 ### 📖 Read Mode & Story Viewing
 
@@ -136,8 +136,8 @@ Experience your completed story in a beautiful, distraction-free reading interfa
 - View illustrations alongside text
 - Perfect for sharing with children
 
-![Read Mode](docs/11-read-mode.png)
-![View Image](docs/12-view-image.png)
+!`[Read Mode](docs/11-read-mode.png)`
+!`[View Image](docs/12-view-image.png)`
 
 ### 🖨️ Export to Printable PDF
 
@@ -147,8 +147,8 @@ Transform your digital story into a physical book:
 - Ready for printing or digital distribution
 - Perfect for creating personalized gifts
 
-![Finished Story](docs/10-story-finished.png)
-![Exported PDF](docs/13-exported-pdf.png)
+!`[Finished Story](docs/10-story-finished.png)`
+!`[Exported PDF](docs/13-exported-pdf.png)`
 
 ---
 

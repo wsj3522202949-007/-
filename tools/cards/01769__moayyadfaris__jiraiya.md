@@ -54,16 +54,16 @@ related:
 - ✅ **Observability:** Structured JSON logging with correlation IDs
 - ✅ **Resilience:** Retry logic for AI service calls
 
-**See:** [Enterprise Review](./docs/ENTERPRISE_REVIEW.md) for detailed assessment
+**See:** `[Enterprise Review](./docs/ENTERPRISE_REVIEW.md)` for detailed assessment
 
 ---
 
 ## 🎯 Quick Links
 
-- **📋 [Quick Reference](./docs/QUICK_REFERENCE.md)** - Fast overview and priority fixes
-- **📊 [Enterprise Review](./docs/ENTERPRISE_REVIEW.md)** - Detailed code review and gap analysis
-- **🚀 [Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md)** - Step-by-step guide with code examples
-- **📈 [Enterprise Progress](./docs/ENTERPRISE_PROGRESS.md)** - Full enhancement tracking
+- **📋 `[Quick Reference](./docs/QUICK_REFERENCE.md)`** - Fast overview and priority fixes
+- **📊 `[Enterprise Review](./docs/ENTERPRISE_REVIEW.md)`** - Detailed code review and gap analysis
+- **🚀 `[Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md)`** - Step-by-step guide with code examples
+- **📈 `[Enterprise Progress](./docs/ENTERPRISE_PROGRESS.md)`** - Full enhancement tracking
 
 ---
 
@@ -145,16 +145,16 @@ The Core Phase is complete. Upcoming enhancements:
 
 **Total Estimated Effort:** ~20 hours remaining
 
-See [Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md) for detailed step-by-step guide.
+See `[Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md)` for detailed step-by-step guide.
 
 ---
 
 ## 📚 Documentation
 
-- **[Enterprise Review](./docs/ENTERPRISE_REVIEW.md)** - Comprehensive code review and recommendations
-- **[Enterprise Progress](./docs/ENTERPRISE_PROGRESS.md)** - Phased enhancement roadmap
-- **[Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md)** - Step-by-step implementation guide
-- **[Quick Reference](./docs/QUICK_REFERENCE.md)** - Quick start and priority overview
+- **`[Enterprise Review](./docs/ENTERPRISE_REVIEW.md)`** - Comprehensive code review and recommendations
+- **`[Enterprise Progress](./docs/ENTERPRISE_PROGRESS.md)`** - Phased enhancement roadmap
+- **`[Implementation Roadmap](./docs/IMPLEMENTATION_ROADMAP.md)`** - Step-by-step implementation guide
+- **`[Quick Reference](./docs/QUICK_REFERENCE.md)`** - Quick start and priority overview
 
 ---
 

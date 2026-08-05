@@ -76,4 +76,4 @@ Plain HTML, CSS, and vanilla JavaScript. No dependencies except Google Fonts for
 
 Built by [Md. Muntaha Islam](https://www.linkedin.com/in/muntaha-islam0019/).
 
-The detection rules are adapted from the stop-slop skill, used under the MIT License. See [LICENSE](LICENSE).
+The detection rules are adapted from the stop-slop skill, used under the MIT License. See `[LICENSE](LICENSE)`.

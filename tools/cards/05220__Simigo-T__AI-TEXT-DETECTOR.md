@@ -112,4 +112,4 @@ AI-generated Text And Investigation of Its Robustness
 To Paraphrasing"**
 
 
-[📄 Read the full paper](research_paper.pdf)
+`[📄 Read the full paper](research_paper.pdf)`

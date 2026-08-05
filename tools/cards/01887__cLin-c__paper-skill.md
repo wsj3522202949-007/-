@@ -81,7 +81,7 @@ related:
 
 它不是“帮我写得更像论文”的提示词合集。它把论文视为一套可追踪的主张、证据、引用、图表和投稿要求，并明确拒绝编造数据、实验、DOI、政策与修改位置。
 
-[English README](README_EN.md) · [安装说明](docs/installation.md) · [公开 benchmark](benchmarks/README.md) · [完整示例](examples/README.md)
+`[English README](README_EN.md)` · `[安装说明](docs/installation.md)` · `[公开 benchmark](benchmarks/README.md)` · `[完整示例](examples/README.md)`
 
 ## 30 秒开始
 
@@ -115,14 +115,14 @@ Claude Code 等 slash-command 平台可使用 `/paper-skill`。安装器只写�
 | `review` | 投稿前审查、引用核验、图表核对 | 致命问题、证据缺口、引用风险、就绪状态 |
 | `submit` | Rebuttal、R&R、Cover Letter、投稿包 | 逐点回复矩阵、精确修改位置、声明、最终门控 |
 
-窄任务也可以直接调用 `literature`、`figures`、`citations`、`journal`、`reporting` 或 `full-verify`。主 [SKILL.md](SKILL.md) 仅负责路由，详细规则按需加载，避免一次塞入全部上下文。
+窄任务也可以直接调用 `literature`、`figures`、`citations`、`journal`、`reporting` 或 `full-verify`。主 `[SKILL.md](SKILL.md)` 仅负责路由，详细规则按需加载，避免一次塞入全部上下文。
 
 ### 中文粗稿到 T-RO 的首次运行顺序
 
 1. 上传权威版本的稿件、图表、参考文献/BibTeX、结果表和补充材料；说明版本优先级。
 2. `write`：建立研究问题、中央主张、claim–evidence map 和章节修改计划。
 3. `review`：核对数字、图表、引用、过度主张和匿名化风险。
-4. `journal`：按 [T-RO 官方来源快照](references/venues/ieee-tro.md) 重新访问官方页面并生成带访问日期的要求表。
+4. `journal`：按 `[T-RO 官方来源快照](references/venues/ieee-tro.md)` 重新访问官方页面并生成带访问日期的要求表。
 5. `submit`：生成 Cover Letter、声明、投稿清单；只有关键证据全部解决后才能输出 `READY`。
 
 理想输入还包括作者顺序、单位、ORCID、基金、伦理审批、COI、数据/代码可用性、相关预印本和截止日期。分享材料前请移除不必要的个人、患者、审稿或机构敏感信息。
@@ -152,11 +152,11 @@ python -m unittest discover -s tests
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [paper_skill_gate.py](tools/paper_skill_gate.py) | 身份、来源、主张证据、引用、报告规范、投稿包、未决输入七项门控 |
-| [scholarly_verify.py](tools/scholarly_verify.py) | 使用 Crossref/OpenAlex 核验 DOI、标题和年份 |
-| [journal_policy_verify.py](tools/journal_policy_verify.py) | 保存官方政策 URL、时间、证据片段和内容哈希 |
-| [revision_trace.py](tools/revision_trace.py) | 核对审稿回复中的修改位置和修订文本 |
-| [run_full_workflow.py](tools/run_full_workflow.py) | 串联投稿门控、引用、政策和修订一致性检查 |
+| `[paper_skill_gate.py](tools/paper_skill_gate.py)` | 身份、来源、主张证据、引用、报告规范、投稿包、未决输入七项门控 |
+| `[scholarly_verify.py](tools/scholarly_verify.py)` | 使用 Crossref/OpenAlex 核验 DOI、标题和年份 |
+| `[journal_policy_verify.py](tools/journal_policy_verify.py)` | 保存官方政策 URL、时间、证据片段和内容哈希 |
+| `[revision_trace.py](tools/revision_trace.py)` | 核对审稿回复中的修改位置和修订文本 |
+| `[run_full_workflow.py](tools/run_full_workflow.py)` | 串联投稿门控、引用、政策和修订一致性检查 |
 
 ### 图 1：引用侦探——从主张追到真实来源
 
@@ -196,7 +196,7 @@ python tools/run_benchmark.py
 
 当前确定性安全门控 benchmark：**8/8 分类正确**。
 
-覆盖：完整投稿包、身份信息缺失、无证据主张、断裂证据链接、可疑 DOI、伪 `VERIFIED` 引用、未解决作者输入、报告规范缺口。所有用例位于 [benchmarks/gate-cases.json](benchmarks/gate-cases.json)，CI 会在 Windows 和 Linux 上重复运行。
+覆盖：完整投稿包、身份信息缺失、无证据主张、断裂证据链接、可疑 DOI、伪 `VERIFIED` 引用、未解决作者输入、报告规范缺口。所有用例位于 `[benchmarks/gate-cases.json](benchmarks/gate-cases.json)`，CI 会在 Windows 和 Linux 上重复运行。
 
 这个结果只衡量结构化投稿包的风险分类，不代表语言质量、科学创新性或录用概率。项目不会用内部评分预测论文录用。
 
@@ -246,10 +246,10 @@ SKILL.md                         concise router
 - [提交真实工作流需求](https://github.com/cLin-c/paper-skill/issues/new?template=example-request.yml)
 - [报告问题](https://github.com/cLin-c/paper-skill/issues/new?template=bug-report.yml)
 - [提出功能建议](https://github.com/cLin-c/paper-skill/issues/new?template=feature-request.yml)
-- [路线图](ROADMAP.md)
+- `[路线图](ROADMAP.md)`
 
 项目优先接受可复现的真实科研场景、失败案例、匿名化 before/after 和 benchmark 用例，而不是继续堆叠泛化提示词。
 
 ## License
 
-MIT。写作工作流的外部灵感与授权信息见 [ATTRIBUTIONS.md](ATTRIBUTIONS.md)。
+MIT。写作工作流的外部灵感与授权信息见 `[ATTRIBUTIONS.md](ATTRIBUTIONS.md)`。

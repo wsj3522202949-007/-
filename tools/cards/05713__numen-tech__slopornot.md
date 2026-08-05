@@ -260,7 +260,7 @@ Text Cleanup, cleanup stats, or the `slop-check` skill.
    ```
 
 4. Optionally register `slop mcp` with your AI client. See
-   [`skills/agentic-humanizer/references/slop-mcp-setup.md`](skills/agentic-humanizer/references/slop-mcp-setup.md)
+   `[`skills/agentic-humanizer/references/slop-mcp-setup.md`](skills/agentic-humanizer/references/slop-mcp-setup.md)`
    for per-harness configuration snippets.
 
 Verify:
@@ -416,12 +416,12 @@ The supplemental AI-tell checks are SlopOrNot-authored and inspired by
 [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing),
 a broad field-guide supplement to the pattern catalogue.
 
-SlopOrNot is licensed under the [MIT License](LICENSE).
+SlopOrNot is licensed under the `[MIT License](LICENSE)`.
 
 Slop or Not is a separate Mac app from Numen Technologies. See
 <https://slopornot.ai>.
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md). New harness routing files are
+See `[`CONTRIBUTING.md`](CONTRIBUTING.md)`. New harness routing files are
 welcome.

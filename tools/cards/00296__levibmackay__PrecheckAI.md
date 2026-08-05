@@ -49,7 +49,7 @@ No backend. No build step. No dependencies to install. One HTML file, running en
 ![Zero dependencies](https://img.shields.io/badge/dependencies-zero%20install-e0a458?style=flat-square)
 ![Single file](https://img.shields.io/badge/footprint-1%20file-6b7480?style=flat-square)
 
-![PreCheck unlocked, showing the generated prompt and session history](docs/screenshot-unlocked.png)
+!`[PreCheck unlocked, showing the generated prompt and session history](docs/screenshot-unlocked.png)`
 
 ## Key features
 
@@ -79,7 +79,7 @@ Four conditions have to be met before the **Unlock AI Prompt** button will do an
 
 Every condition is checked live, with a running `[x]` / `[ ]` readout so it's always obvious what's still blocking you — never a silently disabled button.
 
-![The gate showing its live validation checklist before all conditions are met](docs/screenshot-gate.png)
+!`[The gate showing its live validation checklist before all conditions are met](docs/screenshot-gate.png)`
 
 Once all four pass, the gate flips from **LOCKED** to **UNLOCKED**, the form locks against further edits, and PreCheck assembles your problem, attempt, and hypothesis into a prompt that explicitly asks for a **hint or review — not a solution**:
 
@@ -178,7 +178,7 @@ PrecheckAI/
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.
 
 _Last reviewed: 2026-07-20 19:33 MDT_
 

@@ -68,7 +68,7 @@ Chrome extension ──(your access token)──▶ your backend ──(your API
   git-tracked file baked into the Docker image, so on a PaaS deploy,
   editing it means commit + redeploy like any code change (VPS with a live
   checkout can just edit + rebuild locally). See
-  [docs/PROMPT.md](docs/PROMPT.md#persona).
+  `[docs/PROMPT.md](docs/PROMPT.md#persona)`.
 - **Extension popup (Tone):** default tone, generation defaults (maximum
   length, draft count, emoji, image reading), standing instruction, and
   blocked terms.
@@ -128,12 +128,12 @@ mounted at `/data` (SQLite lives there). Per-platform walkthroughs:
 
 | Platform | Build method | Persistent storage |
 | --- | --- | --- |
-| [Railway](docs/deploy-railway.md) | Dockerfile | Railway Volume mounted to `/data` |
-| [Render](docs/deploy-render.md) | Dockerfile | Persistent Disk mounted to `/data` |
-| [Fly.io](docs/deploy-fly.md) | Dockerfile | Fly Volume mounted to `/data` |
-| [Northflank](docs/deploy-northflank.md) | Dockerfile | Volume mounted to `/data` |
-| [Zeabur](docs/deploy-zeabur.md) | Dockerfile | Volume mounted to `/data` |
-| [VPS](docs/deploy-vps.md) | Docker Compose | Docker named volume mounted to `/data` |
+| `[Railway](docs/deploy-railway.md)` | Dockerfile | Railway Volume mounted to `/data` |
+| `[Render](docs/deploy-render.md)` | Dockerfile | Persistent Disk mounted to `/data` |
+| `[Fly.io](docs/deploy-fly.md)` | Dockerfile | Fly Volume mounted to `/data` |
+| `[Northflank](docs/deploy-northflank.md)` | Dockerfile | Volume mounted to `/data` |
+| `[Zeabur](docs/deploy-zeabur.md)` | Dockerfile | Volume mounted to `/data` |
+| `[VPS](docs/deploy-vps.md)` | Docker Compose | Docker named volume mounted to `/data` |
 
 Without persistent storage mounted at `/data`, the SQLite database (issued
 tokens, usage counters) is lost on every redeploy or restart.
@@ -152,7 +152,7 @@ related:
 | `OPENAI_API_KEY` | yes* | API key when `AI_DEFAULT_PROVIDER=openai`. |
 | `AI_DEFAULT_PROVIDER` | no | `openrouter` (default) or `openai`. |
 | `AI_DEFAULT_MODEL` | no | e.g. `openrouter/auto`, `anthropic/claude-haiku-4.5`. |
-| `AI_ALLOWED_MODELS` | no | Comma-separated model IDs offered in the popup's model dropdown. Empty = a small built-in starter list. See [API.md](docs/API.md). |
+| `AI_ALLOWED_MODELS` | no | Comma-separated model IDs offered in the popup's model dropdown. Empty = a small built-in starter list. See `[API.md](docs/API.md)`. |
 | `AI_ALLOW_CUSTOM_MODEL` | no | Default `true`. Set `false` to stop the popup's custom model field from being honored — relevant if you're sharing your server and don't want a token holder picking an expensive model. |
 | `AUTH_TOKENS` | yes | Comma-separated `token:plan` pairs. Invent a long random token and paste the same value into the extension popup. Plans `free`/`pro`/`power` only differ in rate limits — it's your own API key/bill either way, not a paid tier. Running this solo? Use `power` and forget about it; the tiers matter if you share your server/key with others and want to cap how much any one of them can spend. |
 | `ADMIN_SECRET` | no | Enables `/v1/admin/tokens` for issuing extra tokens stored in SQLite (for sharing your server). Off when empty. |
@@ -388,9 +388,9 @@ Node `http` server; SQLite via `node:sqlite`).
 
 ## Privacy
 
-[Privacy policy](docs/privacy-policy.md) — short version: nothing leaves
+`[Privacy policy](docs/privacy-policy.md)` — short version: nothing leaves
 your device except to the backend URL you configure yourself.
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`

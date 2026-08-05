@@ -259,7 +259,7 @@ You can explore examples of generated stories (using the cloud version) in the *
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the `[MIT License](LICENSE)`.
 
 related:
   - methods/网文写作最强SOP.md

@@ -87,7 +87,7 @@ npm start
 ```
 A Link will pop up, Click that for using.
 
-[Click me to see the app!]( https://ai-fake-news-detector-r6eo.onrender.com)
+`[Click me to see the app!]( https://ai-fake-news-detector-r6eo.onrender.com)`
 
 #### Screenshot
 
@@ -103,5 +103,5 @@ A Link will pop up, Click that for using.
 
 ## Questions?
 
-- [Email](aaravraj619.ar@gmail.com)
+- `[Email](aaravraj619.ar@gmail.com)`
 - [Github Profile](https://github.com/Aarav619)

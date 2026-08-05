@@ -51,5 +51,5 @@ The Scary Story Generator is a full-stack web application that allows users to s
 
 ## Component Documentation
 
-- [Backend README](./backend/README.md): Detailed guide to the backend API, architecture, and setup.
-- [Frontend README](./client/README.md): Instructions for the frontend interface, features, and development.
+- `[Backend README](./backend/README.md)`: Detailed guide to the backend API, architecture, and setup.
+- `[Frontend README](./client/README.md)`: Instructions for the frontend interface, features, and development.

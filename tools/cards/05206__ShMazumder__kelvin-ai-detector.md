@@ -164,7 +164,7 @@ The detection engine uses a hybrid architecture blending heuristic scoring with 
    - A binary label column (`1` for AI-generated, `0` for human-written).
 
 3. **Train model:**
-   Run [export_model.py](file:///Applications/XAMPP/xamppfiles/htdocs/kelvin-ai-detector/api/export_model.py):
+   Run `[export_model.py](file:///Applications/XAMPP/xamppfiles/htdocs/kelvin-ai-detector/api/export_model.py)`:
    - **For Production (real data):**
      ```bash
      python api/export_model.py /path/to/dataset.csv text generated

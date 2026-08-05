@@ -284,7 +284,7 @@ bun run dev
 
 ## 📄 License
 
-[MIT](./LICENSE)
+`[MIT](./LICENSE)`
 
 related:
   - methods/QUICK_START.md

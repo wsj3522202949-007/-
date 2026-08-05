@@ -50,7 +50,7 @@ related:
 
 ## ⬇️ Download the desktop app (model built in)
 
-**[➡️ Download the portable build from Releases](../../releases/latest)** → unzip it anywhere → run **`AI Cliche Detection Suite.exe`**. That's it. The local model is **bundled inside**, so even the deep "Binoculars" perplexity signals work out of the box — **no Python, no GPU, no internet** required.
+**`[➡️ Download the portable build from Releases](../../releases/latest)`** → unzip it anywhere → run **`AI Cliche Detection Suite.exe`**. That's it. The local model is **bundled inside**, so even the deep "Binoculars" perplexity signals work out of the box — **no Python, no GPU, no internet** required.
 
 > It's a *portable* build (a folder you unzip and run), not an installer — so there's nothing to install or uninstall, just unzip and double-click.
 

@@ -50,7 +50,7 @@ This project is a writing assistance tool that leverages OpenAI's API to enhance
 
 # Demo
 
-[![Project Demo](tool_img.png)](https://youtu.be/VAXOima-HVA)
+`[![Project Demo](tool_img.png)`](https://youtu.be/VAXOima-HVA)
 
 ## Key Skills Learned:
 1. React: Built the user interface using React, creating components for the writing area, action buttons, and dynamic content updates.

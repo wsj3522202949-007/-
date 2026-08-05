@@ -142,13 +142,13 @@ related:
 
 更多项目封面图见：
 
-- [docs/previews.md](./docs/previews.md)
+- `[docs/previews.md](./docs/previews.md)`
 
 ## 候选项目审计
 
 候选仓库的筛选记录见：
 
-- [docs/user-candidates-audit-2026-03-06.md](./docs/user-candidates-audit-2026-03-06.md)
+- `[docs/user-candidates-audit-2026-03-06.md](./docs/user-candidates-audit-2026-03-06.md)`
 
 ## 贡献方式
 
@@ -165,9 +165,9 @@ related:
 建议格式：
 
 ```md
-- [项目名](仓库链接) - 一句话说明。`技术栈` `Stars` `创建日期` `最近更新`
+- `[项目名](仓库链接)` - 一句话说明。`技术栈` `Stars` `创建日期` `最近更新`
 ```
 
 ## License
 
-MIT，详见 [LICENSE](LICENSE)。
+MIT，详见 `[LICENSE](LICENSE)`。

@@ -101,7 +101,7 @@ The project is built on the .NET platform, embracing a modern, cloud-native arch
 
 ## Architecture
 
-For a detailed explanation of the project's architecture, design philosophy, and technical decisions, please see [ARCHITECTURE.md](ARCHITECTURE.md).
+For a detailed explanation of the project's architecture, design philosophy, and technical decisions, please see `[ARCHITECTURE.md](ARCHITECTURE.md)`.
 
 ## Support Us
 

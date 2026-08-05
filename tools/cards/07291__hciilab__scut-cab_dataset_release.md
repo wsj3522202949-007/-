@@ -43,7 +43,7 @@ The SCUT-CAB dataset for the research of document layout analysis in Chinese anc
 - [Baidu Cloud](https://pan.baidu.com/s/17N3wx34hWVKLBjVnlp5_lg)(Password: dlvc,  Size=6.84G)
 - [OneDrive](https://1drv.ms/u/s!AuZg70Qbn4fEiRdqGfRSMKn5FTuY?e=6sixhW) 
 
-Note: The SCUT-CAB dataset can only be used for non-commercial research purposes. For scholars or organizations who want to use the SCUT-CAB database, please first fill in this [Application Form](Application_Form/Application-Form-for-Using-SCUT-CAB.docx) and send it via email to us ([eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn), or [lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)). When submitting the application form to us, please list or attach 1-2 of your publications in recent 6 years to indicate that you (or your team) do research in the related research fields of OCR, handwriting analysis and recognition, document image processing, or visual information extraction. At present, this dataset is only freely available to scholars in the above-mentioned fields. We will give you the decompression password after your letter has been received and approved.
+Note: The SCUT-CAB dataset can only be used for non-commercial research purposes. For scholars or organizations who want to use the SCUT-CAB database, please first fill in this `[Application Form](Application_Form/Application-Form-for-Using-SCUT-CAB.docx)` and send it via email to us (`[eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn)`, or `[lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)`). When submitting the application form to us, please list or attach 1-2 of your publications in recent 6 years to indicate that you (or your team) do research in the related research fields of OCR, handwriting analysis and recognition, document image processing, or visual information extraction. At present, this dataset is only freely available to scholars in the above-mentioned fields. We will give you the decompression password after your letter has been received and approved.
 
 To ensure your application is processed as quickly as possible, we recommend that you pay attention to the following points when sending your email, as this can help increase the success rate of your application:
 1. **Application Information**: Ensure it is complete, accurate, and meets all requirements.
@@ -106,7 +106,7 @@ Table 2. Statistics of training and testing sets in SCUT-CAB-Logical.
 ![](img/cab_statistic_logical.png)
 
 ### Annotation guideline
-We provide a detailed annotation [guideline_ancient](guideline/guideline_ancient.pdf)  and some typical annotation examples.
+We provide a detailed annotation `[guideline_ancient](guideline/guideline_ancient.pdf)`  and some typical annotation examples.
 
 ## Directory Format
 The dataset is organized in the following directory format:
@@ -149,6 +149,6 @@ Please consider to cite our paper when you use our dataset:
 }
 ```
 
-While this work primarily focuses on modern documents, we are also conducting research on the layout analysis of Complex modern documents. Please refer to the [GitHub link]([https://github.com/HCIILAB/SCUT-CAB_Dataset_Release](https://github.com/HCIILAB/M6Doc)) for more details.
+While this work primarily focuses on modern documents, we are also conducting research on the layout analysis of Complex modern documents. Please refer to the `[GitHub link]([https://github.com/HCIILAB/SCUT-CAB_Dataset_Release](https://github.com/HCIILAB/M6Doc)`) for more details.
 
-For any questions about the dataset, please contact the authors by sending an email to Prof. Jin([eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn), or [lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)). 
+For any questions about the dataset, please contact the authors by sending an email to Prof. Jin(`[eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn)`, or `[lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)`). 

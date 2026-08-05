@@ -358,7 +358,7 @@ railway up
 - `STORYBOOK_PROXY_ENABLED` — Enable Storybook proxy mode for live demos
 - `STORYBOOK_PROXY_PORT` — Internal Storybook port (default: 6006)
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed instructions and troubleshooting.
+See `[DEPLOYMENT.md](DEPLOYMENT.md)` for detailed instructions and troubleshooting.
 
 ---
 
@@ -488,7 +488,7 @@ All endpoints are also available under the `/story-ui/` prefix.
 
 ## Contributing
 
-We welcome contributions! See our [Contributing Guide](CONTRIBUTING.md).
+We welcome contributions! See our `[Contributing Guide](CONTRIBUTING.md)`.
 
 ### Development Setup
 
@@ -507,7 +507,7 @@ PORT=4001 node /path/to/story-ui/dist/mcp-server/index.js
 
 ## License
 
-MIT - [Story UI Contributors](LICENSE)
+MIT - `[Story UI Contributors](LICENSE)`
 
 related:
   - methods/网文写作最强SOP.md
@@ -521,6 +521,6 @@ related:
 
 - [GitHub Repository](https://github.com/southleft/story-ui)
 - [NPM Package](https://www.npmjs.com/package/@tpitre/story-ui)
-- [Deployment Guide](DEPLOYMENT.md)
-- [MCP Integration Guide](docs/MCP_INTEGRATION.md)
+- `[Deployment Guide](DEPLOYMENT.md)`
+- `[MCP Integration Guide](docs/MCP_INTEGRATION.md)`
 - [Issues & Support](https://github.com/southleft/story-ui/issues)

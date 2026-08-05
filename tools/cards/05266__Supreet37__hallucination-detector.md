@@ -124,4 +124,4 @@ Uses `cross-encoder/nli-MiniLM2-L6-H768` from HuggingFace — a Natural Language
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
 ---|
-| ![Safe](demo1) | ![Suspicious](demo2) |
+| !`[Safe](demo1)` | !`[Suspicious](demo2)` |

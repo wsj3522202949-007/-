@@ -181,13 +181,13 @@ ai-novel-generator/
 
 | 文档 | 说明 |
 |------|------|
-| [更新日志](docs/CHANGELOG.md) | 版本更新记录 |
-| [用户手册](docs/USER_MANUAL.md) | 完整使用指南 |
-| [API 参考](docs/API_REFERENCE.md) | 后端 API 文档 |
-| [依赖说明](docs/DEPENDENCIES.md) | 项目依赖清单 |
-| [提示词优化指南](docs/PROMPT_OPTIMIZATION_GUIDE.md) | 提示词调优方法 |
-| [优化速查](docs/OPTIMIZATION_QUICKSTART.md) | 常用优化配置 |
-| [完整提示词参考](docs/COMPLETE_PROMPT_REFERENCE.md) | 所有内置提示词模板 |
+| `[更新日志](docs/CHANGELOG.md)` | 版本更新记录 |
+| `[用户手册](docs/USER_MANUAL.md)` | 完整使用指南 |
+| `[API 参考](docs/API_REFERENCE.md)` | 后端 API 文档 |
+| `[依赖说明](docs/DEPENDENCIES.md)` | 项目依赖清单 |
+| `[提示词优化指南](docs/PROMPT_OPTIMIZATION_GUIDE.md)` | 提示词调优方法 |
+| `[优化速查](docs/OPTIMIZATION_QUICKSTART.md)` | 常用优化配置 |
+| `[完整提示词参考](docs/COMPLETE_PROMPT_REFERENCE.md)` | 所有内置提示词模板 |
 
 ---
 
@@ -211,4 +211,4 @@ related:
 
 ## 许可证
 
-MIT License，详见 [LICENSE](LICENSE)。
+MIT License，详见 `[LICENSE](LICENSE)`。

@@ -39,7 +39,7 @@ related:
 
 # AI Storyboard Generator
 
-[English](README.md) | [繁體中文](README.zh-TW.md)
+`[English](README.md)` | `[繁體中文](README.zh-TW.md)`
 
 A powerful AI-powered storyboard generation tool that creates visual storyboards with images and videos from text descriptions. Built with React, Gemini API, and ComfyUI integration.
 

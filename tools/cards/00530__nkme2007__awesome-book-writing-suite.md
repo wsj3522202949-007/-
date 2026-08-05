@@ -40,7 +40,7 @@ related:
 
 A complete Claude-powered Book Writing Studio — 12 skills orchestrated by a single project prompt that takes an author from raw idea to published book to ongoing content engine.
 
-![Pipeline](examples/pipeline.svg)
+!`[Pipeline](examples/pipeline.svg)`
 
 ---
 
@@ -60,8 +60,8 @@ The 12 skill files are the instruments. The project instructions are the score.
 
 1. Go to [claude.ai](https://claude.ai) → **Projects → New Project**
 2. Name it `Book Writing Studio`
-3. Open **Project Instructions** and paste the contents of [`PROJECT_INSTRUCTIONS.md`](PROJECT_INSTRUCTIONS.md)
-4. Upload all 12 `.skill` files from the [Releases](../../releases) page into the project
+3. Open **Project Instructions** and paste the contents of `[`PROJECT_INSTRUCTIONS.md`](PROJECT_INSTRUCTIONS.md)`
+4. Upload all 12 `.skill` files from the `[Releases](../../releases)` page into the project
 5. Start a conversation — the studio will open with a first session intake
 
 > The studio remembers your book, your voice, your chapter status, and your pipeline stage across every session.
@@ -234,8 +234,8 @@ related:
 
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! See `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see `[LICENSE](LICENSE)` for details.

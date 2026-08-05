@@ -226,7 +226,7 @@ Dashboard 是个只读面板，能看项目状态、实体关系图、章节内�
 | 言情类 | 古言、宫斗宅斗、青春甜宠、豪门总裁、狗血言情、替身文、种田 |
 | 特殊题材 | 规则怪谈、悬疑脑洞、悬疑灵异、历史古代、抗战谍战、知乎短篇、克苏鲁 |
 
-完整列表见 [题材模板文档](docs/guides/genres.md)。
+完整列表见 `[题材模板文档](docs/guides/genres.md)`。
 
 ## 命令速查
 
@@ -268,19 +268,19 @@ python -X utf8 "<CLAUDE_PLUGIN_ROOT>/scripts/webnovel.py" --project-root "<PROJE
 | `rag` | 管理向量索引和检索状态 |
 | `status` | 输出项目健康报告 |
 
-更多命令见 [命令详解](docs/guides/commands.md)。
+更多命令见 `[命令详解](docs/guides/commands.md)`。
 
 ## 文档导航
 
 | 文档 | 内容 |
 |------|------|
-| [文档中心](docs/README.md) | 所有文档索引和推荐阅读顺序 |
-| [系统架构与模块](docs/architecture/overview.md) | 核心理念、Agent 分工、Story System 设计 |
-| [命令详解](docs/guides/commands.md) | Skill 命令和 CLI 子命令速查 |
-| [RAG 与配置](docs/guides/rag-and-config.md) | 检索流程、环境变量、默认模型 |
-| [题材模板](docs/guides/genres.md) | 37 个题材模板和复合题材规则 |
-| [项目结构与运维](docs/operations/operations.md) | 目录层级、健康检查、备份恢复 |
-| [插件发版](docs/operations/plugin-release.md) | Marketplace 发版和版本同步流程 |
+| `[文档中心](docs/README.md)` | 所有文档索引和推荐阅读顺序 |
+| `[系统架构与模块](docs/architecture/overview.md)` | 核心理念、Agent 分工、Story System 设计 |
+| `[命令详解](docs/guides/commands.md)` | Skill 命令和 CLI 子命令速查 |
+| `[RAG 与配置](docs/guides/rag-and-config.md)` | 检索流程、环境变量、默认模型 |
+| `[题材模板](docs/guides/genres.md)` | 37 个题材模板和复合题材规则 |
+| `[项目结构与运维](docs/operations/operations.md)` | 目录层级、健康检查、备份恢复 |
+| `[插件发版](docs/operations/plugin-release.md)` | Marketplace 发版和版本同步流程 |
 
 ## 开发与测试
 
@@ -321,7 +321,7 @@ python -X utf8 "<CLAUDE_PLUGIN_ROOT>/scripts/webnovel.py" --project-root "<PROJE
 - `index.db`、`summaries/`、`memory_scratchpad.json` 是否正常生成
 - RAG API Key 是否已写入书项目根目录的 `.env`
 
-更多运维说明见 [项目结构与运维](docs/operations/operations.md)。
+更多运维说明见 `[项目结构与运维](docs/operations/operations.md)`。
 
 ## 贡献
 
@@ -372,7 +372,7 @@ Webnovel Writer 用业余时间维护。如果它帮你省下了梳理设定、�
 
 ## 开源协议
 
-本项目使用 [GPL v3](LICENSE) 协议。
+本项目使用 `[GPL v3](LICENSE)` 协议。
 
 ## Star 历史
 

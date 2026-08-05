@@ -150,7 +150,7 @@ Click toggles the detector. Hidden when the active editor is a different languag
 In `markdown` files, the scanner skips content where slop rules would only produce noise:
 
 - Fenced code blocks (` ``` ` and `~~~`) and inline code spans (`` `foo` ``)
-- Markdown link URLs (`[text](url)` -- the URL part) and autolinks (`<https://...>`)
+- Markdown link URLs (``[text](url)`` -- the URL part) and autolinks (`<https://...>`)
 - YAML frontmatter at the top of the file (`---` ... `---` or `related:
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
@@ -251,7 +251,7 @@ Enable one or more in your settings:
 "llmSlopDetector.enabledPacks": ["academic", "structural"]
 ```
 
-Attribution and license texts for each pack's source are in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+Attribution and license texts for each pack's source are in `[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)`.
 
 ### Tuning a pack
 

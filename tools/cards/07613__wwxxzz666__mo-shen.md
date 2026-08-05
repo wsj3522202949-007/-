@@ -239,7 +239,7 @@ Mo-Shen/
 
 ## 🗺️ 路线图
 
-项目正在**持续迭代**，以下为近期规划（详见 [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md)）：
+项目正在**持续迭代**，以下为近期规划（详见 `[PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md)`）：
 
 - ✅ **三档工作流模式**（quick / standard / deep）
 - ✅ **故事持久化**（编辑回写、续写合并、历史记录）
@@ -270,6 +270,6 @@ related:
 
 ## 📄 License
 
-[MIT License](LICENSE) © 2026 wwxxzz666
+`[MIT License](LICENSE)` © 2026 wwxxzz666
 
 本项目基于 [LangGraph](https://github.com/langchain-ai/langgraph) 与 [LangChain](https://github.com/langchain-ai/langchain) 构建。

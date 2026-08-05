@@ -254,17 +254,17 @@ bumping `SCHEMA_VERSION` and regenerating with `--regen-golden`.
 
 ## Roadmap
 
-See [ROADMAP.md](ROADMAP.md) for planned hardening, deployment, and product work.
+See `[ROADMAP.md](ROADMAP.md)` for planned hardening, deployment, and product work.
 
 ## Learning
 
 New to ML? Two resources, both written for a TypeScript developer:
 
-- **🕹️ Interactive course** — [`learn-site/index.html`](learn-site/index.html):
+- **🕹️ Interactive course** — `[`learn-site/index.html`](learn-site/index.html)`:
   a retro-80s arcade that teaches the concepts behind this project (tokens,
   perplexity, Binoculars, classifiers, calibration, evaluation) with hands-on
   demos, quizzes, XP/levels, and a final exam. Just open the file in a browser
   — no build step. (Or `python3 -m http.server --directory learn-site`.)
-- **📖 Deep dive** — [LEARN.md](LEARN.md): the same concepts in prose, from
+- **📖 Deep dive** — `[LEARN.md](LEARN.md)`: the same concepts in prose, from
   "what is a token" to a stage-by-stage track for rebuilding the detector
   yourself.

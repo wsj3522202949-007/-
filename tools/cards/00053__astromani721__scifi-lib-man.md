@@ -71,7 +71,7 @@ flowchart TD
   API --> OL
 ```
 
-Design docs: [docs/ai-similarity.md](docs/ai-similarity.md)
+Design docs: `[docs/ai-similarity.md](docs/ai-similarity.md)`
 
 ## Features
 - CLI scaffold (Typer)

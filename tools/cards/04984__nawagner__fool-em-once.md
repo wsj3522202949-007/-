@@ -52,8 +52,8 @@ humanizers and detectors changes from version to version.
 
 | # | Study | Date | Detector | Humanizer | Essay generators | Clean bypass* |
 |---|-------|------|----------|-----------|------------------|---------------|
-| 1 | [**fool-em-once**](studies/01-original/) | Jan 2026 | Pangram 3.0 (3‑way: AI / AI‑assisted / human) | WriteHuman.ai | Gemini 3 Flash, GPT‑5.2 | **89%** |
-| 2 | [**fool-em-twice**](studies/02-sequel/) | Jul 2026 | **Pangram 3.3.2** (3‑way, improved recall on humanized text) | **Walter Writes** | **Claude (Claude Code), GPT‑5.5 (Codex)** | **40%** |
+| 1 | `[**fool-em-once**](studies/01-original/)` | Jan 2026 | Pangram 3.0 (3‑way: AI / AI‑assisted / human) | WriteHuman.ai | Gemini 3 Flash, GPT‑5.2 | **89%** |
+| 2 | `[**fool-em-twice**](studies/02-sequel/)` | Jul 2026 | **Pangram 3.3.2** (3‑way, improved recall on humanized text) | **Walter Writes** | **Claude (Claude Code), GPT‑5.5 (Codex)** | **40%** |
 
 \* *Clean bypass = share of AI essays that came back labeled fully **Human** after humanization
 (baseline detection was ~100% in both studies). See the note on methodology below — the two
@@ -119,7 +119,7 @@ fool-em-once/
 ```
 
 Each study folder is **self-contained and documents its own methodology**, so the two experiments
-stay independently reproducible. The top-level [`index.html`](index.html) links out to both.
+stay independently reproducible. The top-level `[`index.html`](index.html)` links out to both.
 
 ## A note on methodology & comparability
 

@@ -146,7 +146,7 @@ sf config init
 
 Config file location (first found wins): `$STORYFORGE_CONFIG` → `~/.config/storyforge/storyforge.ini` → `~/.storyforge.ini` → `./storyforge.ini`
 
-See [**docs/CONFIGURATION.md**](docs/CONFIGURATION.md) for the full reference of all options, defaults, and examples.
+See `[**docs/CONFIGURATION.md**](docs/CONFIGURATION.md)` for the full reference of all options, defaults, and examples.
 
 ## World Definitions
 
@@ -178,7 +178,7 @@ Always wears purple rain boots, even on sunny days.
 
 When you extend stories multiple times, StoryForge tracks the full chain. During extension, the chain lineage is displayed. Use `sf export-chain` to combine all parts into a single file.
 
-See [**docs/STORY_CHAIN_TRACKING.md**](docs/STORY_CHAIN_TRACKING.md) for details.
+See `[**docs/STORY_CHAIN_TRACKING.md**](docs/STORY_CHAIN_TRACKING.md)` for details.
 
 ## Output
 
@@ -192,8 +192,8 @@ Stories are saved to timestamped directories containing `story.txt` and `*.png` 
 
 ## Development
 
-See [**DEV.md**](DEV.md) for setup, testing, and contributing.
+See `[**DEV.md**](DEV.md)` for setup, testing, and contributing.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.

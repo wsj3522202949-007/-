@@ -98,7 +98,7 @@ app/
 
 ## Local Setup
 
-See [SETUP.md](./SETUP.md) for full instructions.
+See `[SETUP.md](./SETUP.md)` for full instructions.
 
 related:
   - methods/最强去AI味铁律.md

@@ -246,7 +246,7 @@ Classical-Chinese-Text-Dataset/
 
 ## 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。您可以自由使用、修改和分发数据集，但请注明出处。
+本项目采用 `[MIT 许可证](LICENSE)`。您可以自由使用、修改和分发数据集，但请注明出处。
 
 ---
 

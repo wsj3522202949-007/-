@@ -99,7 +99,7 @@ Unlike cloud-based tools like World Anvil, Notion, or Campfire, Chronicler runs 
 | **File Format** | Plain-text Markdown (`.md`) |
 | **Obsidian Compatible** | Yes, open Obsidian vaults directly |
 | **Built With** | Rust + Tauri (lightweight, instant performance) |
-| **License** | Source-available ([PolyForm Shield 1.0.0](LICENSE)) |
+| **License** | Source-available (`[PolyForm Shield 1.0.0](LICENSE)`) |
 
 
 ---
@@ -211,7 +211,7 @@ Chronicler is built on three principles:
 
 2. **Create a Vault**: Pick a folder on your computer where Chronicler will store your notes.
 
-3. **📘 [Read the Help Guide](HELP.md)**: Learn Markdown, wikilinks, infoboxes, and organization.
+3. **📘 `[Read the Help Guide](HELP.md)`**: Learn Markdown, wikilinks, infoboxes, and organization.
 
 4. **Start Writing!**
 
@@ -237,7 +237,7 @@ Chronicler is built on three principles:
 ## 📫 Get in Touch
 
 - Bugs & Feature Requests: [Discord](https://discord.gg/cXJwcbe2b7)
-- Email: [mak.kirkland@proton.me](mailto:mak.kirkland@proton.me)
+- Email: `[mak.kirkland@proton.me](mailto:mak.kirkland@proton.me)`
 - Discord: [Join here!](https://discord.gg/cXJwcbe2b7)
 - YouTube: [@chroniclerpro](https://www.youtube.com/@chroniclerpro)
 - Instagram: [@chronicler.pro](https://www.instagram.com/chronicler.pro/)

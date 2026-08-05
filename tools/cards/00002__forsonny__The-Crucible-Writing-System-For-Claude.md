@@ -226,26 +226,26 @@ As you progress through phases, additional directories are created:
 
 ### Learn the Crucible Structure
 
-The **[The-Crucible-Structure/](The-Crucible-Structure/)** folder contains comprehensive documentation for learning the framework -- whether you use the plugin or write by hand:
+The **`[The-Crucible-Structure/](The-Crucible-Structure/)`** folder contains comprehensive documentation for learning the framework -- whether you use the plugin or write by hand:
 
 | Document | Description |
 |----------|-------------|
-| [Introduction](The-Crucible-Structure/00-introduction.md) | Overview and philosophy |
-| [Quick Start](The-Crucible-Structure/01-quick-start.md) | Five-minute overview |
-| [Tutorial Walkthrough](The-Crucible-Structure/13-tutorial-walkthrough.md) | Step-by-step planning guide |
-| [Visual Diagrams](The-Crucible-Structure/15-visual-diagrams.md) | ASCII diagrams of the structure |
-| [FAQ & Troubleshooting](The-Crucible-Structure/14-faq-and-troubleshooting.md) | Common questions and solutions |
+| `[Introduction](The-Crucible-Structure/00-introduction.md)` | Overview and philosophy |
+| `[Quick Start](The-Crucible-Structure/01-quick-start.md)` | Five-minute overview |
+| `[Tutorial Walkthrough](The-Crucible-Structure/13-tutorial-walkthrough.md)` | Step-by-step planning guide |
+| `[Visual Diagrams](The-Crucible-Structure/15-visual-diagrams.md)` | ASCII diagrams of the structure |
+| `[FAQ & Troubleshooting](The-Crucible-Structure/14-faq-and-troubleshooting.md)` | Common questions and solutions |
 
 **Core Concepts:**
-- [The Three Strands](The-Crucible-Structure/02-the-three-strands.md) - Quest, Fire, Constellation
-- [The 36 Beats](The-Crucible-Structure/03-the-36-beats.md) - Complete beat breakdown
-- [Forge Points](The-Crucible-Structure/05-forge-points.md) - The five crisis moments
-- [The Mercy Engine](The-Crucible-Structure/06-the-mercy-engine.md) - Compassion that pays off
-- [The Dark Mirror](The-Crucible-Structure/07-the-dark-mirror.md) - Antagonist design
+- `[The Three Strands](The-Crucible-Structure/02-the-three-strands.md)` - Quest, Fire, Constellation
+- `[The 36 Beats](The-Crucible-Structure/03-the-36-beats.md)` - Complete beat breakdown
+- `[Forge Points](The-Crucible-Structure/05-forge-points.md)` - The five crisis moments
+- `[The Mercy Engine](The-Crucible-Structure/06-the-mercy-engine.md)` - Compassion that pays off
+- `[The Dark Mirror](The-Crucible-Structure/07-the-dark-mirror.md)` - Antagonist design
 
-**Worksheets:** Printable planning templates in [worksheets/](The-Crucible-Structure/worksheets/)
+**Worksheets:** Printable planning templates in `[worksheets/](The-Crucible-Structure/worksheets/)`
 
-**Examples:** Completed worksheets based on a sample story in [worksheets/examples/](The-Crucible-Structure/worksheets/examples/)
+**Examples:** Completed worksheets based on a sample story in `[worksheets/examples/](The-Crucible-Structure/worksheets/examples/)`
 
 ### Plugin Reference
 
@@ -309,13 +309,13 @@ python scripts/detect_project.py
 
 ## License
 
-MIT License - See [LICENSE](LICENSE) for details.
+MIT License - See `[LICENSE](LICENSE)` for details.
 
 ## Support
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/issues)
 - **Documentation**: Reference files in `skills/*/references/` directories
-- **Changelog**: See [CHANGELOG.md](CHANGELOG.md) for version history
+- **Changelog**: See `[CHANGELOG.md](CHANGELOG.md)` for version history
 
 related:
   - methods/网文写作最强SOP.md
@@ -325,4 +325,4 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
-*Version 1.0.18 -- [Changelog](CHANGELOG.md) -- [License](LICENSE)*
+*Version 1.0.18 -- `[Changelog](CHANGELOG.md)` -- `[License](LICENSE)`*

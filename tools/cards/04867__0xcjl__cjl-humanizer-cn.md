@@ -41,7 +41,7 @@ related:
 
 > Remove AI writing traces from Chinese text, making it sound natural and human-written.
 
-**Language:** [English](README.md) · [中文](README_zh.md)
+**Language:** `[English](README.md)` · `[中文](README_zh.md)`
 
 ---
 

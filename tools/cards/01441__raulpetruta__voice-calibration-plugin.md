@@ -107,4 +107,4 @@ The skill inside this plugin follows the open [Agent Skills specification](https
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see `[LICENSE](LICENSE)` for details.

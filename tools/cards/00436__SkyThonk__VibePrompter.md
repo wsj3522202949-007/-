@@ -159,20 +159,20 @@ related:
 
 ## Contributing
 
-Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a pull request.
+Contributions are welcome! Please read `[CONTRIBUTING.md](CONTRIBUTING.md)` before submitting a pull request.
 
-To report a bug, open an issue using the [bug report template](.github/ISSUE_TEMPLATE/bug_report.md).
+To report a bug, open an issue using the `[bug report template](.github/ISSUE_TEMPLATE/bug_report.md)`.
 
-By participating you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
+By participating you agree to abide by the `[Code of Conduct](CODE_OF_CONDUCT.md)`.
 
 ## Security
 
-To report a security vulnerability, please follow the [Security Policy](SECURITY.md) — **do not open a public issue**.
+To report a security vulnerability, please follow the `[Security Policy](SECURITY.md)` — **do not open a public issue**.
 
 ## Privacy
 
-VibePrompter is fully local. No telemetry, no accounts, no data leaves your machine except the text you send to whichever AI provider you configured. See [PRIVACY.md](PRIVACY.md) for full details.
+VibePrompter is fully local. No telemetry, no accounts, no data leaves your machine except the text you send to whichever AI provider you configured. See `[PRIVACY.md](PRIVACY.md)` for full details.
 
 ## License
 
-GPL v3 — see [LICENSE](LICENSE) for details.
+GPL v3 — see `[LICENSE](LICENSE)` for details.

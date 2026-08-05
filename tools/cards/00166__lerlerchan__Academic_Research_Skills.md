@@ -170,7 +170,7 @@ To add a new skill:
 
 ## Design Documentation
 
-See [DESIGN.md](DESIGN.md) for:
+See `[DESIGN.md](DESIGN.md)` for:
 - Complete architecture overview
 - Design decisions and trade-offs
 - Search implementation details

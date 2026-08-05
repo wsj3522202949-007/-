@@ -132,9 +132,9 @@ Most settings are in `json/config.json` (auto-generated) and fully editable via 
 Customize AI prompts in `preprompts.json` and `builder-prompts.json`.
 
 See also:  
-- [STRUCTURE.md](STRUCTURE.md)  
-- [PHP_BACKEND.md](PHP_BACKEND.md)  
-- [CHANGELOG.md](CHANGELOG.md)
+- `[STRUCTURE.md](STRUCTURE.md)`  
+- `[PHP_BACKEND.md](PHP_BACKEND.md)`  
+- `[CHANGELOG.md](CHANGELOG.md)`
 
 ## License
 

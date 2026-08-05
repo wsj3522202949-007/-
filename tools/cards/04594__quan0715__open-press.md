@@ -45,7 +45,7 @@ related:
 [![Landing](https://img.shields.io/badge/site-open--press.dev-black)](https://open-press.dev)
 [![License](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 
-![OpenPress workbench showing a fixed-layout document page with outline navigation](docs/assets/openpress-readme-hero-screenshot-wide.png)
+!`[OpenPress workbench showing a fixed-layout document page with outline navigation](docs/assets/openpress-readme-hero-screenshot-wide.png)`
 
 OpenPress is for artifacts where **content keeps changing but the output format must stay stable**: proposals, whitepapers, reports, course notes, books, social cards, and slide decks.
 
@@ -84,7 +84,7 @@ Creation is split by artifact type:
 - `openpress` owns CLI lifecycle, validation, rendering, export, and routing.
 - `openpress-upgrade` owns package upgrades and workspace migration QA.
 
-For Copilot Chat or other tools that do not auto-discover `SKILL.md`, see [manual agent setup](docs/skills.md#manual-agent-setup).
+For Copilot Chat or other tools that do not auto-discover `SKILL.md`, see `[manual agent setup](docs/skills.md#manual-agent-setup)`.
 
 ### Skills
 
@@ -150,14 +150,14 @@ pnpm run openpress:word # export Word DOCX
 | --- | related:
   - methods/QUICK_START.md
 --- |
-| CLI commands | [docs/cli.md](docs/cli.md) |
-| Press Tree model | [docs/press-tree.md](docs/press-tree.md) |
-| Workbench UI | [docs/workbench.md](docs/workbench.md) |
-| Skills and routing | [docs/skills.md](docs/skills.md) |
-| Release / deploy | [docs/release-and-deploy.md](docs/release-and-deploy.md) |
-| Contribute | [CONTRIBUTING.md](CONTRIBUTING.md) and [AGENTS.md](AGENTS.md) |
-| Changelog | [CHANGELOG.md](CHANGELOG.md) |
+| CLI commands | `[docs/cli.md](docs/cli.md)` |
+| Press Tree model | `[docs/press-tree.md](docs/press-tree.md)` |
+| Workbench UI | `[docs/workbench.md](docs/workbench.md)` |
+| Skills and routing | `[docs/skills.md](docs/skills.md)` |
+| Release / deploy | `[docs/release-and-deploy.md](docs/release-and-deploy.md)` |
+| Contribute | `[CONTRIBUTING.md](CONTRIBUTING.md)` and `[AGENTS.md](AGENTS.md)` |
+| Changelog | `[CHANGELOG.md](CHANGELOG.md)` |
 
 ## License
 
-MIT - see [LICENSE](LICENSE).
+MIT - see `[LICENSE](LICENSE)`.

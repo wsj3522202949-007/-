@@ -41,7 +41,7 @@ related:
 
 A production SaaS backend for AI-powered novel/document translation — multi-engine orchestration, RAG translation memory, Stripe subscription management, team collaboration, and multi-tenant data isolation.
 
-> [中文版](README.zh.md)
+> `[中文版](README.zh.md)`
 
 [![CI](https://github.com/YuBing-link/noveltrans/actions/workflows/ci.yml/badge.svg)](https://github.com/YuBing-link/noveltrans/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk)](https://openjdk.org/)
@@ -72,7 +72,7 @@ Three client channels share the same backend:
 
 ## Architecture
 
-![Architecture Diagram](docs/architecture.svg)
+!`[Architecture Diagram](docs/architecture.svg)`
 
 ## Tech Stack
 
@@ -151,7 +151,7 @@ docker compose up -d
 
 Initial startup may take 5-10 minutes. Open [http://localhost:7341](http://localhost:7341).
 
-For detailed setup instructions, see [`SETUP.md`](docs/SETUP.md).
+For detailed setup instructions, see `[`SETUP.md`](docs/SETUP.md)`.
 
 ## Project Structure
 
@@ -204,7 +204,7 @@ Live reports hosted on GitHub Pages:
 | [JaCoCo Coverage](https://YuBing-link.github.io/noveltrans/coverage/) | 80.5% instruction coverage, 115 test files |
 | [k6 Load Test](https://YuBing-link.github.io/noveltrans/load-test/report.html) | 200 VU stress test with latency/RPS metrics |
 
-> Also available locally: [`docs/openapi.json`](docs/openapi.json) for import into [Swagger Editor](https://editor.swagger.io/) or Postman.
+> Also available locally: `[`docs/openapi.json`](docs/openapi.json)` for import into [Swagger Editor](https://editor.swagger.io/) or Postman.
 
 ## Documentation
 
@@ -216,13 +216,13 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [`ARCHITECTURE.md`](docs/ARCHITECTURE.md) | System architecture, component responsibilities, data flow, cache hierarchy |
-| [`API_DOCUMENTATION.md`](docs/API_DOCUMENTATION.md) | Full REST API reference with request/response examples |
-| [`SETUP.md`](docs/SETUP.md) | Deployment & local development guide |
-| [`ADR.md`](docs/ADR.md) | Architecture decision records |
-| [`CONTRIBUTING.md`](docs/CONTRIBUTING.md) | Contribution guidelines |
-| [`Coverage Summary`](docs/coverage-report-summary.md) | Markdown coverage summary with top uncovered classes |
+| `[`ARCHITECTURE.md`](docs/ARCHITECTURE.md)` | System architecture, component responsibilities, data flow, cache hierarchy |
+| `[`API_DOCUMENTATION.md`](docs/API_DOCUMENTATION.md)` | Full REST API reference with request/response examples |
+| `[`SETUP.md`](docs/SETUP.md)` | Deployment & local development guide |
+| `[`ADR.md`](docs/ADR.md)` | Architecture decision records |
+| `[`CONTRIBUTING.md`](docs/CONTRIBUTING.md)` | Contribution guidelines |
+| `[`Coverage Summary`](docs/coverage-report-summary.md)` | Markdown coverage summary with top uncovered classes |
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`

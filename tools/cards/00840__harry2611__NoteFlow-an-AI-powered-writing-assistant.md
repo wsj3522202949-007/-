@@ -74,7 +74,7 @@ docker compose up --build
 
 The repo includes a production Docker Compose setup for a single VPS or Docker host. It builds the React app into static files, serves it with Nginx, runs FastAPI without reload, and keeps PostgreSQL + pgvector in a persistent Docker volume.
 
-For the simplest hosted deployment, use Render. See [DEPLOYMENT.md](DEPLOYMENT.md) for step-by-step Render instructions.
+For the simplest hosted deployment, use Render. See `[DEPLOYMENT.md](DEPLOYMENT.md)` for step-by-step Render instructions.
 
 1. Copy the production environment file:
 
@@ -124,18 +124,18 @@ For a custom domain, point DNS at the server and put a TLS proxy such as Caddy, 
 
 ### AI copilot in the light editor
 
-![NoteFlow AI copilot in light mode](docs/screenshots/ai-copilot-light.png)
+!`[NoteFlow AI copilot in light mode](docs/screenshots/ai-copilot-light.png)`
 
 This screenshot shows the upgraded baby-pink light UI, the block-based editor, document sidebar, live collaboration status, formatting toolbar, and the interactive NoteFlow AI panel. The AI panel supports context-aware actions such as Smart edit, Continue, Rewrite warmer, Make concise, Summarize, Fix grammar, Brainstorm, custom prompts, regeneration, inserting below, and replacing selected text.
 
 ### Dark mode AI writing assistant
 
-![NoteFlow AI popup in dark mode](docs/screenshots/ai-popup-dark.png)
+!`[NoteFlow AI popup in dark mode](docs/screenshots/ai-popup-dark.png)`
 
 This screenshot captures the earlier dark-mode editor experience with a floating AI writing popup. It highlights the document sidebar, daily-task document, live user presence, formatting toolbar, and the AI suggestion flow for selected writing.
 
 ### Clean light-mode editor workspace
 
-![NoteFlow light editor workspace](docs/screenshots/editor-light.png)
+!`[NoteFlow light editor workspace](docs/screenshots/editor-light.png)`
 
 This screenshot shows the clean light-mode writing workspace with the pink-accent sidebar, document statistics, recent/all document lists, document title metrics, formatting controls, live collaboration indicator, save state, and a focused block editor canvas.

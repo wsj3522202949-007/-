@@ -51,42 +51,42 @@ A skill is a markdown file (`SKILL.md`) — plus optional scripts and reference 
 
 ## Skills in this repo
 
-### [`watch`](./watch/) — Watch a video
+### `[`watch`](./watch/)` — Watch a video
 
 Give Claude a YouTube URL or local video file and ask questions about it. The skill downloads the video with `yt-dlp`, extracts auto-scaled frames with `ffmpeg`, pulls a transcript (native captions or Whisper API fallback), and hands frame paths to Claude so it can answer using both visual and spoken content.
 
 - **Triggers:** "/watch \<url\>", pasting a video link with a question, asking Claude to summarize or analyze a video
 - **Requirements:** `ffmpeg`, `yt-dlp`, optional Groq or OpenAI API key for Whisper fallback
-- **More info:** [`watch/README.md`](./watch/README.md)
+- **More info:** `[`watch/README.md`](./watch/README.md)`
 
-### [`ai-text-detector`](./ai-text-detector/) — Screen prose for AI-generation signals
+### `[`ai-text-detector`](./ai-text-detector/)` — Screen prose for AI-generation signals
 
 For instructors grading written work. Reads student prose submissions (essays, reflections, READMEs, discussion posts) and produces a per-submission markdown review report estimating the likelihood of AI generation. Cites specific passages and frames findings as "signals to investigate," never as verdicts — false positives on ESL students and technical writers are a known failure mode of every heuristic detector, and this skill is built around that humility.
 
 - **Triggers:** "check this for AI", "screen these essays", "is this AI-written", grading folders with student prose
 - **Skips:** code-only submissions, anything under ~150 words (signals too sparse)
 
-### [`humanizer`](./humanizer/) — Strip AI-writing tells from text
+### `[`humanizer`](./humanizer/)` — Strip AI-writing tells from text
 
 Edits text to remove patterns that mark it as AI-generated: inflated symbolism, em dash overuse, rule-of-three abuse, AI vocabulary words, "it's not X, it's Y" negation, throat-clearing openers, and ~25 other documented tells. Based on Wikipedia's [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide. Includes a "VOICE PROFILE" section you can customize so the humanized output sounds like *you*, not like generic clean prose.
 
 - **Triggers:** "humanize this", "make this sound less like AI", "remove AI tells from this draft"
 
-### [`seo-audit`](./seo-audit/) — Comprehensive SEO site audit
+### `[`seo-audit`](./seo-audit/)` — Comprehensive SEO site audit
 
 Runs a structured SEO audit across six categories: indexing (robots.txt, sitemap, canonicals), on-page (titles, meta, headings, alt text), technical (Core Web Vitals, HTTPS, redirects), schema/structured data, content quality, and security headers. Each category gets a /10 score and a prioritized list of fixes. Output is a markdown report saved to `_claude-output/seo-audit-[domain]-[date].md`.
 
 - **Triggers:** "seo audit", "seo review", "check seo", "site audit", "search optimization"
 - **Beyond auditing:** also handles keyword research guidance, on-page optimization, internal linking strategy, meta tag rewrites, and content gap analysis
 
-### [`roast`](./roast/) — Pressure-test an idea before you build it
+### `[`roast`](./roast/)` — Pressure-test an idea before you build it
 
 Claude's default is to agree with you; /roast is the opposite. It convenes a council of five adversarial persona agents (run in parallel) who tear an idea apart and rebuild it from every angle — market, money, execution, and more — then a Judge agent synthesizes everything into one honest verdict. Use it before you sink time and money into building the wrong thing.
 
 - **Triggers:** "/roast \<idea\>", "roast this idea", "pressure-test this", "convene the council", "validate this business idea"
 - **Requirements:** none — self-contained, uses only built-in Claude Code agents
 
-### [`storm-research`](./storm-research/) — Multi-perspective, citation-verified research briefings
+### `[`storm-research`](./storm-research/)` — Multi-perspective, citation-verified research briefings
 
 Turns one topic into a verified HTML briefing using a STORM-style pipeline: five expert lenses research the topic in parallel, contradictions between them get mapped, everything is synthesized into a single self-contained HTML report, then the output is adversarially peer-reviewed and every citation is verified against its primary source before delivery. Heavier than a quick lookup — that's the point.
 
@@ -134,4 +134,4 @@ If you build something useful on top of one of these, I'd love to see it.
 
 ## License
 
-[MIT](./LICENSE) — copy, modify, redistribute. Attribution appreciated but not required.
+`[MIT](./LICENSE)` — copy, modify, redistribute. Attribution appreciated but not required.

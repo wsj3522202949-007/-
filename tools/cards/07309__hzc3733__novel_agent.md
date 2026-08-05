@@ -59,8 +59,8 @@ related:
 
 备用入口：
 
-- [仓库内 HTML 技术档案](docs/technical-dossier.html)
-- [Markdown 技术档案](docs/TECHNICAL_DOSSIER.md)
-- [完整部署说明](docs/DEPLOYMENT.md)
+- `[仓库内 HTML 技术档案](docs/technical-dossier.html)`
+- `[Markdown 技术档案](docs/TECHNICAL_DOSSIER.md)`
+- `[完整部署说明](docs/DEPLOYMENT.md)`
 
-![Novel Agent 工作台](docs/assets/screenshots/02-workbench-main.jpg)
+!`[Novel Agent 工作台](docs/assets/screenshots/02-workbench-main.jpg)`

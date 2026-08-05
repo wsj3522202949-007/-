@@ -73,12 +73,12 @@ After analyzing 1,000+ prompts from the AI community, we identified patterns tha
 Production-ready prompts for developers, DevOps, and technical teams.
 
 ### Quick Links
-- [Python Debugging](coding/python-debugging.md) - Debug Python code with root cause analysis
-- [API Documentation](coding/api-documentation.md) - Generate comprehensive API docs
-- [Code Review](coding/code-review.md) - Systematic code review with security focus
-- [Unit Test Generation](coding/unit-tests.md) - Create comprehensive test suites
-- [Refactoring Guide](coding/refactoring.md) - Refactor code with explanations
-- [SQL Query Optimization](coding/sql-optimization.md) - Optimize database queries
+- `[Python Debugging](coding/python-debugging.md)` - Debug Python code with root cause analysis
+- `[API Documentation](coding/api-documentation.md)` - Generate comprehensive API docs
+- `[Code Review](coding/code-review.md)` - Systematic code review with security focus
+- `[Unit Test Generation](coding/unit-tests.md)` - Create comprehensive test suites
+- `[Refactoring Guide](coding/refactoring.md)` - Refactor code with explanations
+- `[SQL Query Optimization](coding/sql-optimization.md)` - Optimize database queries
 
 **Use these for:** Code reviews, debugging, documentation, test generation, refactoring
 
@@ -89,12 +89,12 @@ Production-ready prompts for developers, DevOps, and technical teams.
 High-performing prompts for content creators, marketers, and technical writers.
 
 ### Quick Links
-- [Blog Post Writing](writing/blog-posts.md) - SEO-optimized blog posts with structure
-- [Technical Documentation](writing/technical-docs.md) - Clear, comprehensive technical docs
-- [Content Rewriting](writing/content-rewriting.md) - Transform content for engagement
-- [Social Media Posts](writing/social-media.md) - Platform-specific social content
-- [Email Copywriting](writing/email-copy.md) - High-converting email copy
-- [Product Descriptions](writing/product-descriptions.md) - Compelling e-commerce copy
+- `[Blog Post Writing](writing/blog-posts.md)` - SEO-optimized blog posts with structure
+- `[Technical Documentation](writing/technical-docs.md)` - Clear, comprehensive technical docs
+- `[Content Rewriting](writing/content-rewriting.md)` - Transform content for engagement
+- `[Social Media Posts](writing/social-media.md)` - Platform-specific social content
+- `[Email Copywriting](writing/email-copy.md)` - High-converting email copy
+- `[Product Descriptions](writing/product-descriptions.md)` - Compelling e-commerce copy
 
 **Use these for:** Blogging, documentation, marketing, social media, email campaigns
 
@@ -105,12 +105,12 @@ High-performing prompts for content creators, marketers, and technical writers.
 Essential prompts for business professionals, managers, and strategists.
 
 ### Quick Links
-- [Email Templates](business/email-templates.md) - Professional email responses
-- [Meeting Notes to Actions](business/meeting-notes.md) - Extract action items from meetings
-- [Presentation Outlines](business/presentations.md) - Structured presentation frameworks
-- [Business Analysis](business/business-analysis.md) - Data-driven business insights
-- [Project Planning](business/project-planning.md) - Comprehensive project plans
-- [Competitive Analysis](business/competitive-analysis.md) - Market and competitor research
+- `[Email Templates](business/email-templates.md)` - Professional email responses
+- `[Meeting Notes to Actions](business/meeting-notes.md)` - Extract action items from meetings
+- `[Presentation Outlines](business/presentations.md)` - Structured presentation frameworks
+- `[Business Analysis](business/business-analysis.md)` - Data-driven business insights
+- `[Project Planning](business/project-planning.md)` - Comprehensive project plans
+- `[Competitive Analysis](business/competitive-analysis.md)` - Market and competitor research
 
 **Use these for:** Communication, meetings, presentations, strategy, planning
 
@@ -121,12 +121,12 @@ Essential prompts for business professionals, managers, and strategists.
 Powerful prompts for researchers, analysts, and data professionals.
 
 ### Quick Links
-- [Literature Review](research/literature-review.md) - Synthesize research across sources
-- [Data Analysis](research/data-analysis.md) - Extract actionable insights from data
-- [Survey Design](research/survey-design.md) - Create effective surveys
-- [Statistical Analysis](research/statistical-analysis.md) - Interpret statistical data
-- [Research Synthesis](research/research-synthesis.md) - Connect findings across studies
-- [Hypothesis Generation](research/hypothesis-generation.md) - Generate testable hypotheses
+- `[Literature Review](research/literature-review.md)` - Synthesize research across sources
+- `[Data Analysis](research/data-analysis.md)` - Extract actionable insights from data
+- `[Survey Design](research/survey-design.md)` - Create effective surveys
+- `[Statistical Analysis](research/statistical-analysis.md)` - Interpret statistical data
+- `[Research Synthesis](research/research-synthesis.md)` - Connect findings across studies
+- `[Hypothesis Generation](research/hypothesis-generation.md)` - Generate testable hypotheses
 
 **Use these for:** Academic research, data analysis, market research, statistical analysis
 
@@ -137,12 +137,12 @@ Powerful prompts for researchers, analysts, and data professionals.
 Innovative prompts for creatives, designers, and ideators.
 
 ### Quick Links
-- [Creative Brainstorming](creative/brainstorming.md) - Generate novel ideas using "bad ideas first" method
-- [Story Development](creative/story-development.md) - Develop compelling narratives
-- [Brand Naming](creative/brand-naming.md) - Create memorable brand names
-- [Marketing Campaigns](creative/marketing-campaigns.md) - Design creative campaigns
-- [Product Ideas](creative/product-ideas.md) - Innovative product concepts
-- [Visual Design Concepts](creative/design-concepts.md) - Generate design directions
+- `[Creative Brainstorming](creative/brainstorming.md)` - Generate novel ideas using "bad ideas first" method
+- `[Story Development](creative/story-development.md)` - Develop compelling narratives
+- `[Brand Naming](creative/brand-naming.md)` - Create memorable brand names
+- `[Marketing Campaigns](creative/marketing-campaigns.md)` - Design creative campaigns
+- `[Product Ideas](creative/product-ideas.md)` - Innovative product concepts
+- `[Visual Design Concepts](creative/design-concepts.md)` - Generate design directions
 
 **Use these for:** Ideation, creative projects, marketing, branding, product development
 
@@ -225,14 +225,14 @@ We welcome contributions! Here's how to add your battle-tested prompts:
 
 1. **Fork this repository**
 2. **Add your prompt** to the appropriate category folder
-3. **Follow the template format** (see [CONTRIBUTING.md](CONTRIBUTING.md))
+3. **Follow the template format** (see `[CONTRIBUTING.md](CONTRIBUTING.md)`)
 4. **Submit a pull request** with:
    - Prompt template
    - Use case description
    - Real-world example
    - Expected results
 
-See our [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
+See our `[Contribution Guidelines](CONTRIBUTING.md)` for detailed instructions.
 
 ---
 
@@ -254,7 +254,7 @@ See our [Contribution Guidelines](CONTRIBUTING.md) for detailed instructions.
 
 ## License
 
-[MIT License](LICENSE) - Free to use for personal and commercial projects.
+`[MIT License](LICENSE)` - Free to use for personal and commercial projects.
 
 ---
 

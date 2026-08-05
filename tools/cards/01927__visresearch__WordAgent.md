@@ -177,7 +177,7 @@ uv run python main.py
 
 ### Use LangSmith Tracing
 
-This project also supports LangSmith for tracing and analyzing agent behavior. For configuration, see the instructions in the [backend README](backend/README.md).
+This project also supports LangSmith for tracing and analyzing agent behavior. For configuration, see the instructions in the `[backend README](backend/README.md)`.
 
 ![](./web/docs/public/Langsmith.png)
 
@@ -241,7 +241,7 @@ This project has tested some LLM APIs and will continue testing and adapting mor
 - [x] MiMo-V2.5 runs stably
 - [ ] Gemini 3.1 Pro
 
-> GPT series models are recommended for the best results, followed by Qwen series models. See the [evaluation document](./backend/evaluation/README.md) for details.
+> GPT series models are recommended for the best results, followed by Qwen series models. See the `[evaluation document](./backend/evaluation/README.md)` for details.
 
 Note: this project used some free quotas from [Alibaba Cloud Bailian](https://bailian.console.aliyun.com/) and [OpenRouter](https://openrouter.ai/models?q=free) during development.
 

@@ -335,7 +335,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
 
 ### Docker Local Development
 
-For running tests in Docker, you'll need to have Docker installed and running on your system. The Docker environment is automatically handled by `run_tests.sh` - see the [test README](tests/README.md) for more details.
+For running tests in Docker, you'll need to have Docker installed and running on your system. The Docker environment is automatically handled by `run_tests.sh` - see the `[test README](tests/README.md)` for more details.
 
 If you need to run Docker commands manually:
 

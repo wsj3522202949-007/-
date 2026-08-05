@@ -107,7 +107,7 @@ cp configs/.env.example .env
 # 5. Results in output/session_YYYY-MM-DDTHH-MM-SS/dataset.jsonl
 ```
 
-See [GETTING_STARTED.md](GETTING_STARTED.md) for step-by-step tutorial.
+See `[GETTING_STARTED.md](GETTING_STARTED.md)` for step-by-step tutorial.
 
 ## Configuration
 
@@ -139,7 +139,7 @@ chosen_generation = "Write a compelling story (400-600 words): {{.Prompt}}"
 rejected_generation = "Write a simple story (200-300 words): {{.Prompt}}"
 ```
 
-Complete configuration reference in [configs/config.example.toml](configs/config.example.toml).
+Complete configuration reference in `[configs/config.example.toml](configs/config.example.toml)`.
 
 ## Dataset Modes
 
@@ -197,7 +197,7 @@ Complete configuration reference in [configs/config.example.toml](configs/config
 }
 ```
 
-See [DATASET_MODES.md](DATASET_MODES.md) for detailed format specifications and configuration examples.
+See `[DATASET_MODES.md](DATASET_MODES.md)` for detailed format specifications and configuration examples.
 
 ## Optional Judge Filtering
 
@@ -267,7 +267,7 @@ nvidia = 30
 provider_burst_percent = 10  # Lower burst for fewer 429 errors
 ```
 
-See [BENCHMARK_README.md](BENCHMARK_README.md) for benchmarking guide using our easy to use benchmark scripts.
+See `[BENCHMARK_README.md](BENCHMARK_README.md)` for benchmarking guide using our easy to use benchmark scripts.
 
 ## Checkpoint & Resume
 
@@ -481,15 +481,15 @@ max_retries = 8              # More retries for long requests (default: 3)
 max_backoff_seconds = 300    # Longer backoff cap (default: 120)
 ```
 
-See [GETTING_STARTED.md](GETTING_STARTED.md) for more troubleshooting.
+See `[GETTING_STARTED.md](GETTING_STARTED.md)` for more troubleshooting.
 
 ## Documentation
 
-- [GETTING_STARTED.md](GETTING_STARTED.md) - Step-by-step tutorial
-- [DATASET_MODES.md](DATASET_MODES.md) - Detailed format specifications
-- [BENCHMARK_README.md](BENCHMARK_README.md) - Performance benchmarking guide
-- [CHANGELOG.md](CHANGELOG.md) - Version history
-- [configs/config.example.toml](configs/config.example.toml) - Complete configuration reference
+- `[GETTING_STARTED.md](GETTING_STARTED.md)` - Step-by-step tutorial
+- `[DATASET_MODES.md](DATASET_MODES.md)` - Detailed format specifications
+- `[BENCHMARK_README.md](BENCHMARK_README.md)` - Performance benchmarking guide
+- `[CHANGELOG.md](CHANGELOG.md)` - Version history
+- `[configs/config.example.toml](configs/config.example.toml)` - Complete configuration reference
 
 ## System Requirements
 
@@ -510,7 +510,7 @@ Contributions welcome:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file.
+MIT License - see `[LICENSE](LICENSE)` file.
 
 ## Citation
 

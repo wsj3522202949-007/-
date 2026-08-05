@@ -71,11 +71,11 @@ related:
 
 无需安装 Python 环境，直接下载运行：
 
-- **Linux**: [下载 AppImage](../../releases/latest) - 适用于大多数 Linux 发行版
-- **Windows**: [下载 ZIP](../../releases/latest) - 解压即用
-- **macOS**: [下载 ZIP](../../releases/latest) - 适用于 macOS 10.15+
+- **Linux**: `[下载 AppImage](../../releases/latest)` - 适用于大多数 Linux 发行版
+- **Windows**: `[下载 ZIP](../../releases/latest)` - 解压即用
+- **macOS**: `[下载 ZIP](../../releases/latest)` - 适用于 macOS 10.15+
 
-详见 [发布页面](../../releases/latest) 获取所有版本。
+详见 `[发布页面](../../releases/latest)` 获取所有版本。
 
 ## 从源码安装
 
@@ -392,7 +392,7 @@ Novel Reader 采用模块化的 v2 架构：
 - **模型管理** - 支持多个 Piper 模型，支持中英文自动切换
 - **音频清理** - 自动清理旧的音频文件，节省存储空间
 
-详细架构文档请参考 [ARCHITECTURE.md](ARCHITECTURE.md)。
+详细架构文档请参考 `[ARCHITECTURE.md](ARCHITECTURE.md)`。
 
 ## 音频清理
 
@@ -534,7 +534,7 @@ sudo apt install mpv
 
 ### 更多信息
 
-详细的打包指南请参考 [docs/BUILD.md](docs/BUILD.md)。
+详细的打包指南请参考 `[docs/BUILD.md](docs/BUILD.md)`。
 
 ## 开发
 

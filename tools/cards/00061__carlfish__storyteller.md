@@ -98,7 +98,7 @@ use it at your own risk.
 
 ## Documentation
 
-- [CLI Chatbot](docs/chatbot.md) - Main interactive CLI interface
-- [Quickrun Tool](docs/quickrun.md) - Utility for quick prompts and chat sessions
-- [Web Service](docs/webservice.md) - HTTP API for story creation and management
-- [Discord Bot](docs/discordbot.md) - Discord bot version with multi-channel support
+- `[CLI Chatbot](docs/chatbot.md)` - Main interactive CLI interface
+- `[Quickrun Tool](docs/quickrun.md)` - Utility for quick prompts and chat sessions
+- `[Web Service](docs/webservice.md)` - HTTP API for story creation and management
+- `[Discord Bot](docs/discordbot.md)` - Discord bot version with multi-channel support

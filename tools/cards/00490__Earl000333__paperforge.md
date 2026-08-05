@@ -39,9 +39,9 @@ related:
 
 # PaperForge
 
-![PaperForge](assets/banner.png)
+!`[PaperForge](assets/banner.png)`
 
-**English** | [简体中文](README.zh-CN.md)
+**English** | `[简体中文](README.zh-CN.md)`
 
 PaperForge is a bilingual repository for AI research writing, reusable agent-native prompt workflows, and paper-to-patent drafting. The project organizes prompt templates, `SKILL.md` packs, writing guides, and visual assets into a structure designed for browsing, reuse, and extension.
 
@@ -55,7 +55,7 @@ PaperForge is a bilingual repository for AI research writing, reusable agent-nat
 
 ## Repository Structure
 
-![Knowledge Map](assets/prompt-map.svg)
+!`[Knowledge Map](assets/prompt-map.svg)`
 
 ```text
 PaperForge
@@ -78,7 +78,7 @@ PaperForge
 
 ### Prompt Library
 
-[prompts/README.md](prompts/README.md)
+`[prompts/README.md](prompts/README.md)`
 
 - translation between Chinese and English
 - academic rewriting and polishing
@@ -89,7 +89,7 @@ PaperForge
 
 ### Skill Packs
 
-[skills/README.md](skills/README.md)
+`[skills/README.md](skills/README.md)`
 
 | Tool | Directory |
 | --- | --- |
@@ -99,55 +99,55 @@ PaperForge
 
 ### Documentation
 
-1. [docs/knowledge-base.md](docs/knowledge-base.md)
-2. [docs/skill-adoption.md](docs/skill-adoption.md)
-3. [docs/paper-to-patent-guide.md](docs/paper-to-patent-guide.md)
-4. [docs/structure-tree.md](docs/structure-tree.md)
+1. `[docs/knowledge-base.md](docs/knowledge-base.md)`
+2. `[docs/skill-adoption.md](docs/skill-adoption.md)`
+3. `[docs/paper-to-patent-guide.md](docs/paper-to-patent-guide.md)`
+4. `[docs/structure-tree.md](docs/structure-tree.md)`
 
 ## Prompt Index
 
 | Category | Module | File |
 | --- | --- | --- |
-| Translation | Chinese to English | [prompts/01-translation/zh-to-en.md](prompts/01-translation/zh-to-en.md) |
-| Translation | English to Chinese | [prompts/01-translation/en-to-zh.md](prompts/01-translation/en-to-zh.md) |
-| Translation | Chinese to academic Chinese | [prompts/02-revision/zh-to-zh-academic-rewrite.md](prompts/02-revision/zh-to-zh-academic-rewrite.md) |
-| Revision | Shorten | [prompts/02-revision/shorten.md](prompts/02-revision/shorten.md) |
-| Revision | Expand | [prompts/02-revision/expand.md](prompts/02-revision/expand.md) |
-| Revision | English polish | [prompts/02-revision/english-polish.md](prompts/02-revision/english-polish.md) |
-| Revision | Chinese polish | [prompts/02-revision/chinese-polish.md](prompts/02-revision/chinese-polish.md) |
-| Revision | Logic check | [prompts/02-revision/logic-check.md](prompts/02-revision/logic-check.md) |
-| Revision | De-AI (LaTeX English) | [prompts/02-revision/de-ai-latex.md](prompts/02-revision/de-ai-latex.md) |
-| Revision | De-AI (Word Chinese) | [prompts/02-revision/de-ai-word.md](prompts/02-revision/de-ai-word.md) |
-| Analysis | Experiment analysis | [prompts/03-analysis/experiment-analysis.md](prompts/03-analysis/experiment-analysis.md) |
-| Analysis | Reviewer audit | [prompts/03-analysis/reviewer-audit.md](prompts/03-analysis/reviewer-audit.md) |
-| Visuals | Paper architecture diagram | [prompts/04-visuals/paper-architecture-diagram.md](prompts/04-visuals/paper-architecture-diagram.md) |
-| Visuals | Figure recommendation | [prompts/04-visuals/experiment-figure-recommendation.md](prompts/04-visuals/experiment-figure-recommendation.md) |
-| Visuals | Figure caption | [prompts/04-visuals/figure-caption.md](prompts/04-visuals/figure-caption.md) |
-| Visuals | Table caption | [prompts/04-visuals/table-caption.md](prompts/04-visuals/table-caption.md) |
-| Strategy | Model selection | [prompts/05-strategy/model-selection.md](prompts/05-strategy/model-selection.md) |
-| Patent | Paper to patent | [prompts/06-patent/paper-to-patent.md](prompts/06-patent/paper-to-patent.md) |
+| Translation | Chinese to English | `[prompts/01-translation/zh-to-en.md](prompts/01-translation/zh-to-en.md)` |
+| Translation | English to Chinese | `[prompts/01-translation/en-to-zh.md](prompts/01-translation/en-to-zh.md)` |
+| Translation | Chinese to academic Chinese | `[prompts/02-revision/zh-to-zh-academic-rewrite.md](prompts/02-revision/zh-to-zh-academic-rewrite.md)` |
+| Revision | Shorten | `[prompts/02-revision/shorten.md](prompts/02-revision/shorten.md)` |
+| Revision | Expand | `[prompts/02-revision/expand.md](prompts/02-revision/expand.md)` |
+| Revision | English polish | `[prompts/02-revision/english-polish.md](prompts/02-revision/english-polish.md)` |
+| Revision | Chinese polish | `[prompts/02-revision/chinese-polish.md](prompts/02-revision/chinese-polish.md)` |
+| Revision | Logic check | `[prompts/02-revision/logic-check.md](prompts/02-revision/logic-check.md)` |
+| Revision | De-AI (LaTeX English) | `[prompts/02-revision/de-ai-latex.md](prompts/02-revision/de-ai-latex.md)` |
+| Revision | De-AI (Word Chinese) | `[prompts/02-revision/de-ai-word.md](prompts/02-revision/de-ai-word.md)` |
+| Analysis | Experiment analysis | `[prompts/03-analysis/experiment-analysis.md](prompts/03-analysis/experiment-analysis.md)` |
+| Analysis | Reviewer audit | `[prompts/03-analysis/reviewer-audit.md](prompts/03-analysis/reviewer-audit.md)` |
+| Visuals | Paper architecture diagram | `[prompts/04-visuals/paper-architecture-diagram.md](prompts/04-visuals/paper-architecture-diagram.md)` |
+| Visuals | Figure recommendation | `[prompts/04-visuals/experiment-figure-recommendation.md](prompts/04-visuals/experiment-figure-recommendation.md)` |
+| Visuals | Figure caption | `[prompts/04-visuals/figure-caption.md](prompts/04-visuals/figure-caption.md)` |
+| Visuals | Table caption | `[prompts/04-visuals/table-caption.md](prompts/04-visuals/table-caption.md)` |
+| Strategy | Model selection | `[prompts/05-strategy/model-selection.md](prompts/05-strategy/model-selection.md)` |
+| Patent | Paper to patent | `[prompts/06-patent/paper-to-patent.md](prompts/06-patent/paper-to-patent.md)` |
 
 ## Skill Index
 
 | Skill | Purpose | File |
 | --- | --- | --- |
-| `paper-zh-to-en` | Convert Chinese research drafts into English LaTeX | [skills/paper-zh-to-en/SKILL.md](skills/paper-zh-to-en/SKILL.md) |
-| `paper-en-to-zh` | Directly translate English paper text into Chinese | [skills/paper-en-to-zh/SKILL.md](skills/paper-en-to-zh/SKILL.md) |
-| `paper-zh-rewrite` | Rewrite rough Chinese notes into academic Chinese prose | [skills/paper-zh-rewrite/SKILL.md](skills/paper-zh-rewrite/SKILL.md) |
-| `paper-shorten` | Compress English paper text with minimal semantic loss | [skills/paper-shorten/SKILL.md](skills/paper-shorten/SKILL.md) |
-| `paper-expand` | Expand sparse English academic text with stronger logic | [skills/paper-expand/SKILL.md](skills/paper-expand/SKILL.md) |
-| `paper-polish-en` | Deep polish for English paper writing | [skills/paper-polish-en/SKILL.md](skills/paper-polish-en/SKILL.md) |
-| `paper-polish-zh` | Formal polish for Chinese paper writing | [skills/paper-polish-zh/SKILL.md](skills/paper-polish-zh/SKILL.md) |
-| `paper-logic-check` | Audit logical gaps and evidence chains | [skills/paper-logic-check/SKILL.md](skills/paper-logic-check/SKILL.md) |
-| `paper-humanize-latex` | Remove obvious AI traces from English LaTeX | [skills/paper-humanize-latex/SKILL.md](skills/paper-humanize-latex/SKILL.md) |
-| `paper-humanize-word` | Remove obvious AI traces from Chinese Word prose | [skills/paper-humanize-word/SKILL.md](skills/paper-humanize-word/SKILL.md) |
-| `paper-experiment-analysis` | Turn result tables into paper-ready analysis text | [skills/paper-experiment-analysis/SKILL.md](skills/paper-experiment-analysis/SKILL.md) |
-| `paper-reviewer-audit` | Review a paper like a conference reviewer | [skills/paper-reviewer-audit/SKILL.md](skills/paper-reviewer-audit/SKILL.md) |
-| `paper-to-patent` | Turn paper content into patent-oriented technical writing | [skills/paper-to-patent/SKILL.md](skills/paper-to-patent/SKILL.md) |
+| `paper-zh-to-en` | Convert Chinese research drafts into English LaTeX | `[skills/paper-zh-to-en/SKILL.md](skills/paper-zh-to-en/SKILL.md)` |
+| `paper-en-to-zh` | Directly translate English paper text into Chinese | `[skills/paper-en-to-zh/SKILL.md](skills/paper-en-to-zh/SKILL.md)` |
+| `paper-zh-rewrite` | Rewrite rough Chinese notes into academic Chinese prose | `[skills/paper-zh-rewrite/SKILL.md](skills/paper-zh-rewrite/SKILL.md)` |
+| `paper-shorten` | Compress English paper text with minimal semantic loss | `[skills/paper-shorten/SKILL.md](skills/paper-shorten/SKILL.md)` |
+| `paper-expand` | Expand sparse English academic text with stronger logic | `[skills/paper-expand/SKILL.md](skills/paper-expand/SKILL.md)` |
+| `paper-polish-en` | Deep polish for English paper writing | `[skills/paper-polish-en/SKILL.md](skills/paper-polish-en/SKILL.md)` |
+| `paper-polish-zh` | Formal polish for Chinese paper writing | `[skills/paper-polish-zh/SKILL.md](skills/paper-polish-zh/SKILL.md)` |
+| `paper-logic-check` | Audit logical gaps and evidence chains | `[skills/paper-logic-check/SKILL.md](skills/paper-logic-check/SKILL.md)` |
+| `paper-humanize-latex` | Remove obvious AI traces from English LaTeX | `[skills/paper-humanize-latex/SKILL.md](skills/paper-humanize-latex/SKILL.md)` |
+| `paper-humanize-word` | Remove obvious AI traces from Chinese Word prose | `[skills/paper-humanize-word/SKILL.md](skills/paper-humanize-word/SKILL.md)` |
+| `paper-experiment-analysis` | Turn result tables into paper-ready analysis text | `[skills/paper-experiment-analysis/SKILL.md](skills/paper-experiment-analysis/SKILL.md)` |
+| `paper-reviewer-audit` | Review a paper like a conference reviewer | `[skills/paper-reviewer-audit/SKILL.md](skills/paper-reviewer-audit/SKILL.md)` |
+| `paper-to-patent` | Turn paper content into patent-oriented technical writing | `[skills/paper-to-patent/SKILL.md](skills/paper-to-patent/SKILL.md)` |
 
 ## Paper-to-Patent Module
 
-![Paper to Patent Flow](assets/patent-flow.svg)
+!`[Paper to Patent Flow](assets/patent-flow.svg)`
 
 | In a Paper | In Patent-Oriented Writing |
 | --- | related:
@@ -164,6 +164,6 @@ related:
 | Experimental outcome | Technical effect |
 | Comparative analysis | Support for scope and utility |
 
-Direct prompt entry: [prompts/06-patent/paper-to-patent.md](prompts/06-patent/paper-to-patent.md)
+Direct prompt entry: `[prompts/06-patent/paper-to-patent.md](prompts/06-patent/paper-to-patent.md)`
 
-Reusable skill entry: [skills/paper-to-patent/SKILL.md](skills/paper-to-patent/SKILL.md)
+Reusable skill entry: `[skills/paper-to-patent/SKILL.md](skills/paper-to-patent/SKILL.md)`

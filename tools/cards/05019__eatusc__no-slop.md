@@ -50,7 +50,7 @@ families, a command-line tool, and a native Model Context Protocol (MCP) server.
 A Django REST Framework port provides the same core response contract for a
 Python backend.
 
-![No Slop cleaning a sample of AI text: the Slopometer scores it 100/100 and the diff view shows 16 fixes](docs/media/hero.png)
+!`[No Slop cleaning a sample of AI text: the Slopometer scores it 100/100 and the diff view shows 16 fixes](docs/media/hero.png)`
 
 ## Why it is useful
 
@@ -61,7 +61,7 @@ Python backend.
   pretending every rewrite can be safely automated.
 - **Agent integration:** expose `deslop` and `slop_score` as native MCP tools.
 - **Multiple interfaces, one engine:** browser, REST-style API, CLI, and MCP all
-  call [`src/deslop.js`](src/deslop.js).
+  call `[`src/deslop.js`](src/deslop.js)`.
 - **Local by default:** the server binds to `127.0.0.1`; the deterministic engine
   does not require a hosted service or API key.
 
@@ -147,7 +147,7 @@ curl -s -X POST "http://localhost:4242/api/deslop?clean=1" \
 
 The application also has local routes for AI-assisted rewrites, learned style
 examples, rule consolidation, the example corpus, and editable documentation.
-See the complete route and security reference in [`API.md`](API.md).
+See the complete route and security reference in `[`API.md`](API.md)`.
 
 ## Native MCP server
 
@@ -187,7 +187,7 @@ Test the full MCP client/server exchange:
 npm run test:mcp
 ```
 
-See [`mcp/README.md`](mcp/README.md) for details.
+See `[`mcp/README.md`](mcp/README.md)` for details.
 
 ## CLI
 
@@ -228,7 +228,7 @@ CLI. How the pipeline works:
   `POST /api/consolidate` sends the whole before/after corpus back through the
   Claude CLI and asks it to distill 8-15 concrete imperative rules from your
   actual editing patterns. The result is written into a marker-bounded section
-  of [`voice.md`](voice.md) (`<!-- LEARNED:START -->` to
+  of `[`voice.md`](voice.md)` (`<!-- LEARNED:START -->` to
   `<!-- LEARNED:END -->`) with an atomic tmp-file rename, so repeated
   consolidations replace only that section and the hand-written voice guide
   around it is never touched.
@@ -251,7 +251,7 @@ tools do not.
 
 ## Django REST Framework implementation
 
-[`django_api/`](django_api/) ports the engine and API contract to Python,
+`[`django_api/`](django_api/)` ports the engine and API contract to Python,
 Django, and Django REST Framework. It includes:
 
 - JSON and `text/plain` request parsing
@@ -270,9 +270,9 @@ python manage.py runserver 127.0.0.1:8420
 ```
 
 Parity between the JavaScript and Python engines is enforced in CI:
-[`scripts/parity-check.mjs`](scripts/parity-check.mjs) runs both engines over
+`[`scripts/parity-check.mjs`](scripts/parity-check.mjs)` runs both engines over
 shared fixtures plus the full example corpus and fails on any output
-difference. See [`django_api/README.md`](django_api/README.md) for
+difference. See `[`django_api/README.md`](django_api/README.md)` for
 implementation notes.
 
 ## Development and validation
@@ -295,10 +295,10 @@ so it intentionally binds only to loopback. API requests with a non-localhost
 browser `Origin` are rejected. Do not reverse-proxy or expose port 4242 to a
 network without adding authentication and authorization.
 
-See [`SECURITY.md`](SECURITY.md) for reporting and deployment guidance.
+See `[`SECURITY.md`](SECURITY.md)` for reporting and deployment guidance.
 
 ## License
 
-Code is available under the [MIT License](LICENSE). Example captions are sample
+Code is available under the `[MIT License](LICENSE)`. Example captions are sample
 content. Third-party essay text is not included; the long-form writing rules are
 general writing guidance.

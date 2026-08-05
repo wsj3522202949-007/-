@@ -40,7 +40,7 @@ related:
   - methods/改稿润色指令库.md
 ---
 
-![AI Slop detector](assets/readme-banner.webp)
+!`[AI Slop detector](assets/readme-banner.webp)`
 
 # AI Slop Detector
 

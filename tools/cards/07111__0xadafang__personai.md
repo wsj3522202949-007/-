@@ -105,13 +105,13 @@ PersonAi is a modern, high-performance desktop application built with Tauri, Typ
 ## 🖼️ Screenshots
 
 ### 🌞 **Light Theme – Dashboard**
-![Dashboard Light](./images/1.JPG)
+!`[Dashboard Light](./images/1.JPG)`
 
 ### 🧙 **Manage Characters – Character & Persona Management**
-![Manage Characters](./images/2.JPG)
+!`[Manage Characters](./images/2.JPG)`
 
 ### 💬 **Chat Interface – Talk with your custom AI**
-![Chat Page](./images/3.JPG)
+!`[Chat Page](./images/3.JPG)`
 
 ---
 
@@ -207,7 +207,7 @@ related:
 ## 👨‍💻 Author
 
 **0xAdafang - Terence**  
-📫 [adafang@proton.me](mailto:adafang@proton.me)  
+📫 `[adafang@proton.me](mailto:adafang@proton.me)`  
 🌐 [github.com/0xAdafang](https://github.com/0xAdafang)
 
 🇨🇦 **Project developed in Montréal, Quebec** as part of ongoing exploration in AI-assisted character interaction and cross-platform desktop development.

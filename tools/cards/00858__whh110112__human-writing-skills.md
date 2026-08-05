@@ -45,7 +45,7 @@ related:
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](pyproject.toml)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg)](pyproject.toml)
 
-[中文说明](README.zh-CN.md) | English
+`[中文说明](README.zh-CN.md)` | English
 
 Human Writing Skills is an open-source skill pack and lightweight prompt compiler for AI-assisted writing.
 
@@ -164,7 +164,7 @@ human-writing-skills audit `
 The compiler extracts point of view, rhythm, register, imagery, description,
 dialogue cadence, emotion handling, and transitions. Plot facts still come from
 `--context`; names, events, and distinctive phrases must not be copied from the
-reference. See [docs/reference-style.md](docs/reference-style.md).
+reference. See `[docs/reference-style.md](docs/reference-style.md)`.
 
 ## Long-Form Continuity
 
@@ -181,15 +181,15 @@ The ledger tracks:
 - beat bridge: previous residue, entry pressure, micro-turn, and exit hook
 - change log: what became newly true in the latest output
 
-See [examples/story-ledger.md](examples/story-ledger.md) for a fiction example.
+See `[examples/story-ledger.md](examples/story-ledger.md)` for a fiction example.
 
 ## Chatbox
 
 Yes, this project works in Chatbox because it outputs plain text prompt packs. For long writing sessions, use the continuity ledger as the source of truth and paste the compiled prompt pack into Chatbox's system prompt or first message.
 
-- English guide: [docs/chatbox.md](docs/chatbox.md)
-- Chinese guide: [docs/chatbox.zh-CN.md](docs/chatbox.zh-CN.md)
-- Ledger template: [examples/chatbox-ledger-template.md](examples/chatbox-ledger-template.md)
+- English guide: `[docs/chatbox.md](docs/chatbox.md)`
+- Chinese guide: `[docs/chatbox.zh-CN.md](docs/chatbox.zh-CN.md)`
+- Ledger template: `[examples/chatbox-ledger-template.md](examples/chatbox-ledger-template.md)`
 
 ## Physical Continuity
 
@@ -204,11 +204,11 @@ python -m humanwriting.cli build `
   --task "Continue the car argument. Every seat change must have an on-page transition. Keep clothing and props consistent."
 ```
 
-- Guide: [docs/physical-continuity.md](docs/physical-continuity.md)
-- Vehicle ledger example: [examples/vehicle-scene-ledger.md](examples/vehicle-scene-ledger.md)
-- Capacity ledger template: [examples/capacity-ledger-template.md](examples/capacity-ledger-template.md)
-- Capacity conflict example: [examples/capacity-conflict-draft.zh-CN.md](examples/capacity-conflict-draft.zh-CN.md)
-- Draft audit example: [examples/problem-car-scene-draft.md](examples/problem-car-scene-draft.md)
+- Guide: `[docs/physical-continuity.md](docs/physical-continuity.md)`
+- Vehicle ledger example: `[examples/vehicle-scene-ledger.md](examples/vehicle-scene-ledger.md)`
+- Capacity ledger template: `[examples/capacity-ledger-template.md](examples/capacity-ledger-template.md)`
+- Capacity conflict example: `[examples/capacity-conflict-draft.zh-CN.md](examples/capacity-conflict-draft.zh-CN.md)`
+- Draft audit example: `[examples/problem-car-scene-draft.md](examples/problem-car-scene-draft.md)`
 
 ## Relationship Stance Continuity
 
@@ -218,8 +218,8 @@ It extracts each dialogue line as `speaker -> listener/audience -> referenced pa
 and checks whether praise, criticism, comparison, naming, secrecy, and rank fit
 the established relationship graph.
 
-- Guide: [docs/relationship-stance-continuity.md](docs/relationship-stance-continuity.md)
-- Ledger template: [examples/relationship-stance-ledger.zh-CN.md](examples/relationship-stance-ledger.zh-CN.md)
+- Guide: `[docs/relationship-stance-continuity.md](docs/relationship-stance-continuity.md)`
+- Ledger template: `[examples/relationship-stance-ledger.zh-CN.md](examples/relationship-stance-ledger.zh-CN.md)`
 
 If the draft already exists, use `audit`:
 
@@ -299,7 +299,7 @@ human-writing-skills pipeline `
 
 Run every stage in a fresh model conversation or independent API request. Automatic mode keeps logic, AI-trace, and proofreading stages, then adds character, relationship, physical, number, voice, serial, momentum, and texture stages only when matching cues exist. `serial` additionally requires supplied context; `momentum` requires multi-chapter structure. The manifest explains every selection and skip.
 
-- Guide: [docs/audit-pipeline.md](docs/audit-pipeline.md)
+- Guide: `[docs/audit-pipeline.md](docs/audit-pipeline.md)`
 
 ### Deterministic Safeguards
 
@@ -317,8 +317,8 @@ human-writing-skills lint --draft my-chapter.md --style fiction
 human-writing-skills verify --source original.md --candidate revised.md --protect-term "Project Atlas"
 ```
 
-- Pattern lint: [docs/pattern-linter.md](docs/pattern-linter.md)
-- Protected content: [docs/protected-content.md](docs/protected-content.md)
+- Pattern lint: `[docs/pattern-linter.md](docs/pattern-linter.md)`
+- Protected content: `[docs/protected-content.md](docs/protected-content.md)`
 
 ### Number Sense
 
@@ -330,14 +330,14 @@ python -m humanwriting.cli audit `
   --profile numbers
 ```
 
-- Guide: [docs/number-sense.md](docs/number-sense.md)
-- Example: [examples/false-precision-draft.zh-CN.md](examples/false-precision-draft.zh-CN.md)
+- Guide: `[docs/number-sense.md](docs/number-sense.md)`
+- Example: `[examples/false-precision-draft.zh-CN.md](examples/false-precision-draft.zh-CN.md)`
 
 ### Common Writing Problems
 
 The project converts recurring long-form writing problems into executable checks: stock phrasing, plastic prose, triplet structures, over-smooth transitions, static paragraphs, hollow emotion, cultural vacuum, and long-form drift.
 
-- Rule map: [docs/forum-complaint-research.md](docs/forum-complaint-research.md)
+- Rule map: `[docs/forum-complaint-research.md](docs/forum-complaint-research.md)`
 
 List styles:
 
@@ -418,4 +418,4 @@ Please keep each skill practical. A good rule should tell the model what to do, 
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.

@@ -199,7 +199,7 @@ related:
 | Users | `GET /users/` | Admin |
 | Health | `GET /health`, `/metrics` | Public |
 
-Full API documentation is available in [news-copilot-backend/README.md](news-copilot-backend/README.md).
+Full API documentation is available in `[news-copilot-backend/README.md](news-copilot-backend/README.md)`.
 
 ## License
 

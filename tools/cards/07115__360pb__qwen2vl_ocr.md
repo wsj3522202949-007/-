@@ -123,7 +123,7 @@ TEXTQwen2VL_OCR/
 
 ## 许可证
 
-本项目基于 Apache 2.0 许可证开源。详情请参阅 [LICENSE](LICENSE)。
+本项目基于 Apache 2.0 许可证开源。详情请参阅 `[LICENSE](LICENSE)`。
 
 ---related:
   - methods/QUICK_START.md

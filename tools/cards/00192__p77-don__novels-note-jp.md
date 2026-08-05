@@ -57,7 +57,7 @@ mode: novel
 
 > **Note:** Novel Mode detection is based on YAML frontmatter, which Obsidian only parses for `.md` files. Frontmatter in `.txt` files is **not** recognized by Obsidian, so `mode: novel` has no effect there—novel mode features (fonts, term/bracket highlighting, ruby rendering, word count, etc.) will not activate on `.txt` files even if the frontmatter is present. `.txt` support (see below) covers opening/editing the file and using Vertical Writing Preview only. To use novel mode features, use a `.md` file.
 
-![editor](docs/editor.png)
+!`[editor](docs/editor.png)`
 
 ### Japanese Writing Environment
 - **Optimized monospace font** (BIZ UDGothic, Noto Sans Mono CJK JP, etc.) with adjustable **font size** and **line height**
@@ -128,12 +128,12 @@ Preview the current note in vertical writing (`tate-gumi`) layout. Features:
 - Configurable cursor-line highlight (color and on/off toggle)
 - Export button in the toolbar
 
-![verticalPreview](docs/verticalPreview.png)
+!`[verticalPreview](docs/verticalPreview.png)`
 
 ### Novel Reading View
 A clean reading view that strips WikiLinks, tags, and non-manuscript content. Displays a notice for non-novel-mode files. Includes an export button alongside the standard edit button.
 
-![novelReadingView](docs/novelReadingView.png)
+!`[novelReadingView](docs/novelReadingView.png)`
 
 ### Export
 Export the current note as clean manuscript text via a dedicated export dialog:
@@ -145,7 +145,7 @@ Export the current note as clean manuscript text via a dedicated export dialog:
 - Always available via the command palette
 - Original files are never modified
 
-![export-document](docs/export-document.png)
+!`[export-document](docs/export-document.png)`
 
 ### Writing Stats
 Open a manuscript overview in the main pane, aggregating every `mode: novel` note in the vault into one place.
@@ -159,7 +159,7 @@ Open a manuscript overview in the main pane, aggregating every `mode: novel` not
 - A **再集計** (recalculate) button refreshes the list on demand
 - Folders can be excluded from the scan via a dedicated exclude-folder list in Settings, independent of the term index's exclude list
 
-![writingStats](docs/writingStats.png)
+!`[writingStats](docs/writingStats.png)`
 
 ---
 
@@ -261,7 +261,7 @@ Copy `main.js`, `manifest.json`, and `styles.css` to your vault's plugin folder 
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`
 
 ---
 
@@ -286,7 +286,7 @@ mode: novel
 
 > **注意：** ノベルモードの判定は YAML フロントマターに基づいていますが、Obsidian はフロントマターを **`.md` ファイルに対してのみ**解析します。`.txt` ファイルではフロントマターがそもそも認識されないため、`mode: novel` を記載していてもノベルモードは有効になりません（フォント・用語ハイライト・括弧ハイライト・ルビ表示・文字数カウントなどの機能は一切動作しません）。後述する「`.txt` ファイル対応」は、あくまでファイルの開閉・編集と縦書きプレビューのみを対象としています。ノベルモードの機能を利用したい場合は `.md` ファイルを使用してください。
 
-![editor](docs/editor.png)
+!`[editor](docs/editor.png)`
 
 ### 日本語執筆環境
 - **日本語向けに最適化された等幅フォント**（BIZ UDゴシック、Noto Sans Mono CJK JP など）。フォントサイズ・行間は設定で調整可能
@@ -357,12 +357,12 @@ aliases: （別名を登録）
 - カーソル行ハイライト（色とオン/オフを設定可能）
 - ツールバーにエクスポートボタン配置
 
-![verticalPreview](docs/verticalPreview.png)
+!`[verticalPreview](docs/verticalPreview.png)`
 
 ### 小説閲覧ビュー
 WikiLink・タグ・本文以外のコンテンツを除去したクリーンな閲覧ビューです。ノベルモードでないファイルにはポップアップで通知します。編集ボタンの隣にエクスポートボタンも配置されています。
 
-![novelReadingView](docs/novelReadingView.png)
+!`[novelReadingView](docs/novelReadingView.png)`
 
 ### エクスポート
 専用のエクスポートダイアログから、現在のノートをクリーンな原稿テキストとして出力します。
@@ -374,7 +374,7 @@ WikiLink・タグ・本文以外のコンテンツを除去したクリーンな
 - コマンドパレットから常に実行可能
 - **元のファイルは一切変更されません**
 
-![export-document](docs/export-document.png)
+!`[export-document](docs/export-document.png)`
 
 ### 執筆情報一覧
 Vault 全体の `mode: novel` ノートを集計し、メインペインに一覧表示します。
@@ -388,7 +388,7 @@ Vault 全体の `mode: novel` ノートを集計し、メインペインに一�
 - **再集計** ボタンでいつでも最新の状態に更新できます
 - 設定にて、集計対象から除外するフォルダを指定可能（用語インデックスの除外フォルダとは別に管理されます）
 
-![writingStats](docs/writingStats.png)
+!`[writingStats](docs/writingStats.png)`
 
 ---
 

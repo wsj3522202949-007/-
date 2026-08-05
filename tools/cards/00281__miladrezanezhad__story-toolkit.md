@@ -71,7 +71,7 @@ This README is also available in:
 
 | Language | File |
 |----------|------|
-| 🇮🇷 **Persian (فارسی)** | [README_FA.md](README_FA.md) |
+| 🇮🇷 **Persian (فارسی)** | `[README_FA.md](README_FA.md)` |
 
 ---
 
@@ -353,8 +353,8 @@ Full documentation is available in two languages:
 
 | Language | Link |
 |----------|------|
-| 🇬🇧 English | [docs/eng/index.html](docs/eng/index.html) |
-| 🇮🇷 فارسی | [docs/fa-ir/index.html](docs/fa-ir/index.html) |
+| 🇬🇧 English | `[docs/eng/index.html](docs/eng/index.html)` |
+| 🇮🇷 فارسی | `[docs/fa-ir/index.html](docs/fa-ir/index.html)` |
 
 ### Documentation Pages
 
@@ -499,13 +499,13 @@ for rec in report['recommendations']:
 
 Please report security vulnerabilities to: **miladvf2014@gmail.com**
 
-For more details, see [SECURITY.md](SECURITY.md).
+For more details, see `[SECURITY.md](SECURITY.md)`.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 ---
 
@@ -557,5 +557,5 @@ related:
 | 💻 **Command Injection** | No shell=True |
 | 🔐 **Security Module** | `story_toolkit.security` |
 | 🧪 **Security Tests** | Run with `python tests/run_security_tests.py` |
-| 📄 **Security Docs** | [SECURITY.md](SECURITY.md) |
+| 📄 **Security Docs** | `[SECURITY.md](SECURITY.md)` |
 

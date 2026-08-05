@@ -39,7 +39,7 @@ related:
 
 # TYPERFECT: Your Private, Offline Grammar and Style Checker
 
-![TYPERFECT Logo](static/logo.svg) <!-- Placeholder for the new logo -->
+!`[TYPERFECT Logo](static/logo.svg)` <!-- Placeholder for the new logo -->
 
 **TYPERFECT is a free, open-source, and completely offline writing assistant that helps you craft clear, error-free text with absolute confidence in your privacy.**
 

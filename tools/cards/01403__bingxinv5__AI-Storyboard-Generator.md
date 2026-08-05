@@ -41,7 +41,7 @@ related:
 
 基于 Gemini 多模态AI，智能反推图片场景，生成专业分镜提示词，支持AI文生图和视频生成。
 
-![界面预览](docs/preview.png)
+!`[界面预览](docs/preview.png)`
 
 ## ✨ 核心功能
 

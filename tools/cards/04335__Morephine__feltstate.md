@@ -49,7 +49,7 @@ related:
 [![CI](https://github.com/Morephine/feltstate/actions/workflows/ci.yml/badge.svg)](https://github.com/Morephine/feltstate/actions/workflows/ci.yml)
 &nbsp;![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 &nbsp;![License: MIT](https://img.shields.io/badge/license-MIT-green)
-&nbsp;[English](README.md) | [中文](README.zh.md)
+&nbsp;`[English](README.md)` | `[中文](README.zh.md)`
 
 feltstate is a **character engine for AI agents** — a small, opinionated
 reference library that gives a long-running agent a persistent, *tunable*
@@ -187,7 +187,7 @@ python examples/quickstart.py     # pure stdlib, no install needed
 ```
 
 Want the full desktop-companion assembly — face, voice, heartbeat, memory
-tools? Start at [docs/INTEGRATION.md](docs/INTEGRATION.md).
+tools? Start at `[docs/INTEGRATION.md](docs/INTEGRATION.md)`.
 
 ---
 
@@ -322,7 +322,7 @@ it's tired enough — then recombines stored, affect-tagged fragments into a sho
 illogical dream that leaves a faint mood residue whose causal thread is not
 surfaced to the reply model as an explicit cause, which decays over the next
 hours like any feeling. See §5 of
-[PHILOSOPHY.md](PHILOSOPHY.md).
+`[PHILOSOPHY.md](PHILOSOPHY.md)`.
 
 ---
 
@@ -377,21 +377,21 @@ runnable examples.
 
 | chapter | what it covers |
 |---|---|
-| [INTEGRATION](docs/INTEGRATION.md) | the assembly manual: wiring diagram, prompt partition and its cache economics, heartbeat duties, the proactive path, adapter swaps, the shell / bridge / soul layering, the privacy boundary |
-| [PROMPT_STACK](docs/PROMPT_STACK.md) | the static/dynamic partition, sandwich ordering, and the forget probe — persona upkeep that costs nothing until it's needed |
-| [PROMPT_SHAPES](docs/PROMPT_SHAPES.md) | one neutral persona, three prepared moments as full message arrays; the variant master table from state bands to phrases |
-| [STYLE_SPECTRUM](docs/STYLE_SPECTRUM.md) | optional delivery notes — how a feeling holds a pen: form, never content |
-| [OUTPUT_CHAIN](docs/OUTPUT_CHAIN.md) | reply → face and voice: two signal channels, first-sentence TTS streaming, renderer portability down to a hotkey bridge |
-| [AGENT_WORK_UX](docs/AGENT_WORK_UX.md) | narrating long agent work without breaking character: canned voicebanks, the narration throttle, cross-turn work |
-| [FAILURE_IN_CHARACTER](docs/FAILURE_IN_CHARACTER.md) | two audiences, two truths: felt failure kinds, the watchdog case, recovery etiquette |
-| [BRIDGE_ETIQUETTE](docs/BRIDGE_ETIQUETTE.md) | being a person over a chat platform: receipts, typing, attachments, and the emergency command lane |
-| [INTERRUPTION](docs/INTERRUPTION.md) | being cut off gracefully: no-headphone barge-in, the stop chain, the recovery posture |
-| [PERCEPTION](docs/PERCEPTION.md) | images and screens as input: persist → perceive → reply, and the pull eye |
-| [INNER_LIFE](docs/INNER_LIFE.md) | the silent thinking channel, the face that moves between turns, and the self-correction round |
-| [MULTI_PERSON](docs/MULTI_PERSON.md) | one soul, many people: per-speaker relationship keying and the zero-pollution rule |
-| [GAME_SHELL](docs/GAME_SHELL.md) | the game as a third surface: minute-scale director intents vs second-scale engines, the sight gate, and driving It Takes Two |
-| [MEMORY_TOOLS](docs/MEMORY_TOOLS.md) | Canon as five function-calling tools, with a real bi-temporal trace |
-| [PHILOSOPHY](PHILOSOPHY.md) | why persisted state is described to the model and never commanded |
+| `[INTEGRATION](docs/INTEGRATION.md)` | the assembly manual: wiring diagram, prompt partition and its cache economics, heartbeat duties, the proactive path, adapter swaps, the shell / bridge / soul layering, the privacy boundary |
+| `[PROMPT_STACK](docs/PROMPT_STACK.md)` | the static/dynamic partition, sandwich ordering, and the forget probe — persona upkeep that costs nothing until it's needed |
+| `[PROMPT_SHAPES](docs/PROMPT_SHAPES.md)` | one neutral persona, three prepared moments as full message arrays; the variant master table from state bands to phrases |
+| `[STYLE_SPECTRUM](docs/STYLE_SPECTRUM.md)` | optional delivery notes — how a feeling holds a pen: form, never content |
+| `[OUTPUT_CHAIN](docs/OUTPUT_CHAIN.md)` | reply → face and voice: two signal channels, first-sentence TTS streaming, renderer portability down to a hotkey bridge |
+| `[AGENT_WORK_UX](docs/AGENT_WORK_UX.md)` | narrating long agent work without breaking character: canned voicebanks, the narration throttle, cross-turn work |
+| `[FAILURE_IN_CHARACTER](docs/FAILURE_IN_CHARACTER.md)` | two audiences, two truths: felt failure kinds, the watchdog case, recovery etiquette |
+| `[BRIDGE_ETIQUETTE](docs/BRIDGE_ETIQUETTE.md)` | being a person over a chat platform: receipts, typing, attachments, and the emergency command lane |
+| `[INTERRUPTION](docs/INTERRUPTION.md)` | being cut off gracefully: no-headphone barge-in, the stop chain, the recovery posture |
+| `[PERCEPTION](docs/PERCEPTION.md)` | images and screens as input: persist → perceive → reply, and the pull eye |
+| `[INNER_LIFE](docs/INNER_LIFE.md)` | the silent thinking channel, the face that moves between turns, and the self-correction round |
+| `[MULTI_PERSON](docs/MULTI_PERSON.md)` | one soul, many people: per-speaker relationship keying and the zero-pollution rule |
+| `[GAME_SHELL](docs/GAME_SHELL.md)` | the game as a third surface: minute-scale director intents vs second-scale engines, the sight gate, and driving It Takes Two |
+| `[MEMORY_TOOLS](docs/MEMORY_TOOLS.md)` | Canon as five function-calling tools, with a real bi-temporal trace |
+| `[PHILOSOPHY](PHILOSOPHY.md)` | why persisted state is described to the model and never commanded |
 
 The matching runnable examples, all deterministic or offline:
 
@@ -451,8 +451,8 @@ pytest -q             # tests
 ```
 
 All four run in CI (`.github/workflows/ci.yml`) on Python 3.10–3.13. See
-[CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+`[CONTRIBUTING.md](CONTRIBUTING.md)` before opening a pull request.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.

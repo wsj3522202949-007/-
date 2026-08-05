@@ -42,29 +42,29 @@ Build a multi-agent, memory-driven AI system capable of planning and writing ful
 
 ## Table of Contents
 
-[Project overview](project-overview.md)
+`[Project overview](project-overview.md)`
 
-[Multi Agent Architecture Overview](multi-agent-architecture.md)
+`[Multi Agent Architecture Overview](multi-agent-architecture.md)`
 
-[Interaction Diagram](sequence-diagram.md)
+`[Interaction Diagram](sequence-diagram.md)`
 
-[System FlowChart](system-flowchart.md)
+`[System FlowChart](system-flowchart.md)`
 
-[Getting Started Guide](getting-started.md)
+`[Getting Started Guide](getting-started.md)`
 <br>
 <br>
 
 ### Agent Definitions
-[Ideation Agent](ideation-agent.md)
+`[Ideation Agent](ideation-agent.md)`
 
-[Planner Agent](planner-agent.md)
+`[Planner Agent](planner-agent.md)`
 
-[Writer Agent](writer-agent.md)
+`[Writer Agent](writer-agent.md)`
 
-[Summarizer Agent](summarizer-agent.md)
+`[Summarizer Agent](summarizer-agent.md)`
 
-[Editor / Continuity Agent](editor-agent.md)
+`[Editor / Continuity Agent](editor-agent.md)`
 
-[Codex Manager Agent](codex-manager-agent.md)
+`[Codex Manager Agent](codex-manager-agent.md)`
 
-[Orchestrator Agent](orchestrator-agent.md)
+`[Orchestrator Agent](orchestrator-agent.md)`

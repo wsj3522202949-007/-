@@ -48,7 +48,7 @@ related:
 
 A modern, fast, and sleek Flask web application that uses Google's Gemini AI to generate incredibly creative stories based on user prompts. Completely overhauled with a premium Dark Mode aesthetic, real-time streaming, and AI cover image generation.
 
-![alt text](image.png)
+!`[alt text](image.png)`
 
 ## New Features & Upgrades
 

@@ -44,11 +44,11 @@ related:
 
 # Arabic AI-Text Humanizer
 
-> 🇸🇦 [اقرأ بِالعَرَبية](README.ar.md) — Arabic README in native MSA phrasing, not literal translation.
+> 🇸🇦 `[اقرأ بِالعَرَبية](README.ar.md)` — Arabic README in native MSA phrasing, not literal translation.
 
 A **bilingual** AI-text humanizer that reduces AI fingerprints in **Arabic** (16 dimensions: cognitive structure, rhetorical figures, reader-respect, typography hygiene, connector-entropy) and **English** (5-axis Directness/Rhythm/Trust/Authenticity/Density rubric; deterministic lex pass; pattern catalogue adapted from [`hardikpandya/stop-slop`](https://github.com/hardikpandya/stop-slop) MIT). Built as an [Agent Skills](https://agentskills.io) skill — drop into Claude Code, Codex, Kimi, MiniMax, Gemini, or any compatible host.
 
-The full specification, transformation protocol, dimension definitions, anti-patterns, and worked examples all live in **[`SKILL.md`](SKILL.md)**. This README is a one-screen overview.
+The full specification, transformation protocol, dimension definitions, anti-patterns, and worked examples all live in **`[`SKILL.md`](SKILL.md)`**. This README is a one-screen overview.
 
 ## Status: **v2.16.0 — stable**
 
@@ -74,7 +74,7 @@ Acting on a multi-agent native-MSA-tier linguistic review (Arabic linguistics + 
 
 ### New: `scripts/sacred_text_guard.py`
 
-Detects Quranic verses (U+06D6–U+06ED tajweed-mark clustering), citation framing (`قال تعالى:`), hadith chains (`قال رسول الله ﷺ`, `روى البخاري عن`, `حدثنا X عن Y عن Z`), and the basmala. Returns `(start, end, reason)` spans that downstream transformations MUST preserve verbatim. Conservative by design — high precision, low recall. Exposes `mask_sacred_spans()` / `restore_sacred_spans()` helpers mirroring the code-block protection pattern. v2.6.0 ships the module; v2.6.1 wires it into `humanize_v2.py` automatically. Full reference in [`references/18-sacred-text-guard.md`](references/18-sacred-text-guard.md).
+Detects Quranic verses (U+06D6–U+06ED tajweed-mark clustering), citation framing (`قال تعالى:`), hadith chains (`قال رسول الله ﷺ`, `روى البخاري عن`, `حدثنا X عن Y عن Z`), and the basmala. Returns `(start, end, reason)` spans that downstream transformations MUST preserve verbatim. Conservative by design — high precision, low recall. Exposes `mask_sacred_spans()` / `restore_sacred_spans()` helpers mirroring the code-block protection pattern. v2.6.0 ships the module; v2.6.1 wires it into `humanize_v2.py` automatically. Full reference in `[`references/18-sacred-text-guard.md`](references/18-sacred-text-guard.md)`.
 
 ### Verification
 
@@ -311,7 +311,7 @@ Examples of what it catches:
 | think tank | `خزان تفكير` *(literal)* | `مركز أبحاث` |
 | machine learning | `تعلم المكينة` | `تعلم الآلة` |
 
-Dictionary covers 9 domains: tech-software, tech-ai-ml, tech-data, tech-security, tech-infra, tech-consumer, business, news-journalism, politics. Each entry tagged with confidence (high if ≥5 corpus hits, medium otherwise). Source-of-truth in [`corpus/calque-dictionary.json`](corpus/calque-dictionary.json) — auditable JSON, no hidden tables in code.
+Dictionary covers 9 domains: tech-software, tech-ai-ml, tech-data, tech-security, tech-infra, tech-consumer, business, news-journalism, politics. Each entry tagged with confidence (high if ≥5 corpus hits, medium otherwise). Source-of-truth in `[`corpus/calque-dictionary.json`](corpus/calque-dictionary.json)` — auditable JSON, no hidden tables in code.
 
 Fragility suite now **31/31** (added T12–T14 for dictionary-load, multi-domain catches, register-gating).
 
@@ -382,8 +382,8 @@ Four register policies (`classical / news / opinion / technical`) gate *which* t
 
 | Your environment | How to install |
 |---|---|
-| **Claude Code, Codex CLI, MiniMax CLI, or any agent CLI that imports `.skill` ZIPs** | Download the matching `.skill` bundle from [Releases](../../releases) and unpack into your CLI's skills directory. Provider-tuned variants are available for Moonshot/Kimi, MiniMax, and Anthropic Claude (via OpenAI-compatible proxy). |
-| **Kimi CLI** (does not import `.skill` archives) | Use **[`INSTALL-FOR-KIMI.md`](INSTALL-FOR-KIMI.md)** — a self-contained markdown installer. Hand the file to Kimi and ask it to recreate the skill tree. 30 file blocks embedded; 100% lossless round-trip verified. |
+| **Claude Code, Codex CLI, MiniMax CLI, or any agent CLI that imports `.skill` ZIPs** | Download the matching `.skill` bundle from `[Releases](../../releases)` and unpack into your CLI's skills directory. Provider-tuned variants are available for Moonshot/Kimi, MiniMax, and Anthropic Claude (via OpenAI-compatible proxy). |
+| **Kimi CLI** (does not import `.skill` archives) | Use **`[`INSTALL-FOR-KIMI.md`](INSTALL-FOR-KIMI.md)`** — a self-contained markdown installer. Hand the file to Kimi and ask it to recreate the skill tree. 30 file blocks embedded; 100% lossless round-trip verified. |
 | **Manual install / forking** | `git clone` this repo and drop the directory wherever your CLI expects skills. The repo content IS the skill. |
 
 ## Quickstart
@@ -484,11 +484,11 @@ This is the v2.4.5 snapshot. Effort spans the lineage below: cognitive-framework
 | v2.1.0 | Provider-agnostic refactor — `BACKENDS` collapsed to `api`/`local`, universal `LLM_*` env vars. INSTALL-FOR-KIMI.md markdown installer added. |
 | v2.0.0 | Initial public release — 16-dimension framework, 6 modes, 4 register policies, cross-LLM-critique-informed lexical layer. |
 
-Full release notes per tag: [GitHub Releases](../../releases).
+Full release notes per tag: `[GitHub Releases](../../releases)`.
 
 ## License
 
-[MIT](LICENSE). Copyright © 2026.
+`[MIT](LICENSE)`. Copyright © 2026.
 
 ## Contributing
 

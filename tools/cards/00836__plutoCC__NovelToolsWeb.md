@@ -49,7 +49,7 @@ related:
 
 ## License
 
-本项目基于 [MIT License](LICENSE) 开源。
+本项目基于 `[MIT License](LICENSE)` 开源。
 
 ## 功能概览
 
@@ -58,7 +58,7 @@ related:
 - 事件页：时间排序、父子事件树、分支事件
 - 总览页：全书大纲、章节拆分、章节时间线
 - 设置页：项目切换、背景图库、风格预设、导入导出
-- 导出格式文档：见 [docs/export-format.md](docs/export-format.md)
+- 导出格式文档：见 `[docs/export-format.md](docs/export-format.md)`
 
 ## 技术栈
 
@@ -94,12 +94,12 @@ python -m venv .venv
 
 先执行一次：
 
-- [Setup-Novel-Tools.cmd](Setup-Novel-Tools.cmd)
+- `[Setup-Novel-Tools.cmd](Setup-Novel-Tools.cmd)`
 
 之后双击以下任一文件即可启动：
 
-- [Launch-Novel-Tools.vbs](Launch-Novel-Tools.vbs)
-- [Launch-Novel-Tools.cmd](Launch-Novel-Tools.cmd)
+- `[Launch-Novel-Tools.vbs](Launch-Novel-Tools.vbs)`
+- `[Launch-Novel-Tools.cmd](Launch-Novel-Tools.cmd)`
 
 ### 方式二：命令行启动
 

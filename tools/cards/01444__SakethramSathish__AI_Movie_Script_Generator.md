@@ -332,7 +332,7 @@ AI Movie Script Generator/
 
 ### API Configuration
 
-The application uses Google's Gemini 2.5 Flash model by default, configured in [config/settings.py](config/settings.py).
+The application uses Google's Gemini 2.5 Flash model by default, configured in `[config/settings.py](config/settings.py)`.
 
 
 

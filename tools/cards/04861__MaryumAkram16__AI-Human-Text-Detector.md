@@ -75,10 +75,10 @@ Before building any features, EDA checked whether AI and human text actually dif
 | Lexical diversity | Weak but real difference — kept as a minor feature. |
 | Punctuation density | Mild difference — kept as a minor feature. |
 
-![Class Balance](chart_class_balance.png)
-![Word Count Distribution](chart_length_distribution.png)
-![Sentence Length Stats](chart_sentence_stats.png)
-![Lexical Diversity](chart_lexical_diversity.png)
+!`[Class Balance](chart_class_balance.png)`
+!`[Word Count Distribution](chart_length_distribution.png)`
+!`[Sentence Length Stats](chart_sentence_stats.png)`
+!`[Lexical Diversity](chart_lexical_diversity.png)`
 
 ## Feature Engineering
 
@@ -101,20 +101,20 @@ Before building any features, EDA checked whether AI and human text actually dif
 | Random Forest | Tree ensemble | TF-IDF + stylometric | 99.15% | 99.15% |
 | Naive Bayes | Probabilistic | TF-IDF only | 95.47% | 95.45% |
 
-Full comparison: [`table_model_comparison.csv`](table_model_comparison.csv)
+Full comparison: `[`table_model_comparison.csv`](table_model_comparison.csv)`
 
 **Why Naive Bayes only gets TF-IDF**: Multinomial Naive Bayes assumes non-negative, count-like input. The scaled, centered stylometric features (some negative after standardization) don't fit that assumption, so Naive Bayes trains on word content alone while Logistic Regression and Random Forest use the combined feature set.
 
-![Model Comparison](chart_model_comparison.png)
-![Confusion Matrix](chart_confusion_matrix.png)
+!`[Model Comparison](chart_model_comparison.png)`
+!`[Confusion Matrix](chart_confusion_matrix.png)`
 
 625 errors out of 97,447 test rows, roughly balanced in both directions.
 
 ## Feature Importance
 
-![Feature Importance](chart_feature_importance.png)
+!`[Feature Importance](chart_feature_importance.png)`
 
-Full breakdown: [`table_style_feature_importance.csv`](table_style_feature_importance.csv)
+Full breakdown: `[`table_style_feature_importance.csv`](table_style_feature_importance.csv)`
 
 `sentence_len_std` ranks highest — confirming the EDA finding before any model was trained. `word_count` ranks second, which is the honest caveat: part of what the model learned is genuinely about sentence rhythm, and part of it is this dataset's AI outputs tending to run shorter — a dataset-specific shortcut rather than pure style detection.
 

@@ -78,7 +78,7 @@ For single-file tools (Claude Code, Codex CLI, Gemini CLI, Antigravity, GitHub C
 
 ## How to use
 
-1. Copy the entire contents of [PM-Project-Brain-Prompt.md](PM-Project-Brain-Prompt.md?plain=1)
+1. Copy the entire contents of `[PM-Project-Brain-Prompt.md](PM-Project-Brain-Prompt.md?plain=1)`
 2. Paste it into your AI assistant and follow the interactive interview
 3. Review the generated files and commit them to your project repo
 
@@ -93,4 +93,4 @@ The AI will ask which tool you're using and create files in the right format and
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the `[MIT License](LICENSE)`.

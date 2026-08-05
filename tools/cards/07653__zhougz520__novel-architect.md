@@ -38,7 +38,7 @@ related:
 
 <div align="center">
 
-![Novel Architect](./docs/assets/novel-architect-hero.png)
+!`[Novel Architect](./docs/assets/novel-architect-hero.png)`
 
 # Novel Architect
 
@@ -51,7 +51,7 @@ related:
 [![Signals](https://img.shields.io/badge/quality--signals-12-EC4899?style=flat-square)](./docs/reference/signals-and-gates.md)
 [![Workflow](https://img.shields.io/badge/workflow-PREPARE%E2%86%92WRITE%E2%86%92REVIEW%E2%86%92COMMIT-14B8A6?style=flat-square)](./docs/guides/chapter-workflow.md)
 
-English | [简体中文](./README.zh-CN.md)
+English | `[简体中文](./README.zh-CN.md)`
 
 </div>
 
@@ -109,7 +109,7 @@ Novel Architect was developed and hardened through real long-form production, no
 - That run covered a 140-chapter local creative artifact set and informed the workflow hardening that became v3.0.0.
 - v3.0.0 is now being used for a second production project, `全城短剧成真，我专改必死剧本`.
 
-See [Production Validation](./docs/case-studies/production-validation.md) for the public case-study notes.
+See `[Production Validation](./docs/case-studies/production-validation.md)` for the public case-study notes.
 
 No manuscript text, private project files, platform backend data, income information, contract details, or unpublished second-project content is included in this repository.
 
@@ -183,19 +183,19 @@ Use the novel-architect skill to continue the next chapter.
 Inspect the project state yourself, run prepare, perform beat competition, read the writing task, draft the chapter, review it, save required model signals, repair from gate/repair output until gate.passed=true, then commit.
 ```
 
-More examples: [Prompt Recipes](./docs/guides/prompt-recipes.md).
+More examples: `[Prompt Recipes](./docs/guides/prompt-recipes.md)`.
 
 ## 🧭 Typical Workflows
 
 | Scenario | Start here | Main docs |
 |---|---|---|
-| First-time setup | Install the skill and create a test project | [Getting Started](./docs/guides/getting-started.md) |
-| New book | Market pack, character voices, first-ten retention, first-three trial production | [New Book Workflow](./docs/guides/new-book-workflow.md) |
-| Continue writing | prepare -> beat -> write -> review -> repair -> commit | [Chapter Workflow](./docs/guides/chapter-workflow.md) |
-| First three chapters fail | first3 review, review hash, score requirements, entry rewrite | [First 3 and First 10](./docs/guides/first3-first10.md) |
-| Chapter gate fails | Read gate/repair output, revise, rerun signals | [Repair and Feedback](./docs/guides/repair-feedback.md) |
-| Migrate old projects | Move from `volumes.json + gen-prompt` to the agent workflow | [Migration Guide](./docs/guides/migration-from-gen-prompt.md) |
-| Contribute | Environment, tests, release, documentation sync | [Development Guide](./docs/development/README.md) |
+| First-time setup | Install the skill and create a test project | `[Getting Started](./docs/guides/getting-started.md)` |
+| New book | Market pack, character voices, first-ten retention, first-three trial production | `[New Book Workflow](./docs/guides/new-book-workflow.md)` |
+| Continue writing | prepare -> beat -> write -> review -> repair -> commit | `[Chapter Workflow](./docs/guides/chapter-workflow.md)` |
+| First three chapters fail | first3 review, review hash, score requirements, entry rewrite | `[First 3 and First 10](./docs/guides/first3-first10.md)` |
+| Chapter gate fails | Read gate/repair output, revise, rerun signals | `[Repair and Feedback](./docs/guides/repair-feedback.md)` |
+| Migrate old projects | Move from `volumes.json + gen-prompt` to the agent workflow | `[Migration Guide](./docs/guides/migration-from-gen-prompt.md)` |
+| Contribute | Environment, tests, release, documentation sync | `[Development Guide](./docs/development/README.md)` |
 
 ## 🔍 Quality Signals
 
@@ -216,7 +216,7 @@ More examples: [Prompt Recipes](./docs/guides/prompt-recipes.md).
 | `novelty` | Repeated recent structures, routines, and ending hooks | Market |
 | `continuity` | Foreshadowing, costs, enemy threads, reader promises | Market |
 
-See [Signals and Gates](./docs/reference/signals-and-gates.md).
+See `[Signals and Gates](./docs/reference/signals-and-gates.md)`.
 
 ## 📁 Project Structure
 
@@ -255,18 +255,18 @@ It is not for:
 
 ## 📚 Documentation
 
-Documentation index: [docs/README.md](./docs/README.md).
+Documentation index: `[docs/README.md](./docs/README.md)`.
 
-- Users: start with [Getting Started](./docs/guides/getting-started.md).
-- Existing projects: see [Migration from gen-prompt](./docs/guides/migration-from-gen-prompt.md).
-- Contributors: see [Development Guide](./docs/development/README.md), [CONTRIBUTING.md](./CONTRIBUTING.md), and [AGENTS.md](./AGENTS.md).
-- Architecture: see [System Architecture](./docs/architecture/README.md).
-- CLI/files/signals: see [Reference](./docs/reference/cli.md).
-- Marketplace listing draft: see [Skill Listing](./docs/marketplace/skill-listing.md).
+- Users: start with `[Getting Started](./docs/guides/getting-started.md)`.
+- Existing projects: see `[Migration from gen-prompt](./docs/guides/migration-from-gen-prompt.md)`.
+- Contributors: see `[Development Guide](./docs/development/README.md)`, `[CONTRIBUTING.md](./CONTRIBUTING.md)`, and `[AGENTS.md](./AGENTS.md)`.
+- Architecture: see `[System Architecture](./docs/architecture/README.md)`.
+- CLI/files/signals: see `[Reference](./docs/reference/cli.md)`.
+- Marketplace listing draft: see `[Skill Listing](./docs/marketplace/skill-listing.md)`.
 
 ## 🤝 Contributing
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening an issue or pull request.
+Read `[CONTRIBUTING.md](./CONTRIBUTING.md)` before opening an issue or pull request.
 
 Minimum local checks:
 
@@ -281,7 +281,7 @@ When changing runtime workflows, signals, gates, project files, or reader-promis
 
 ## 📄 License
 
-Novel Architect is licensed under the [Apache License 2.0](./LICENSE).
+Novel Architect is licensed under the `[Apache License 2.0](./LICENSE)`.
 
 ## ❗ Disclaimer
 

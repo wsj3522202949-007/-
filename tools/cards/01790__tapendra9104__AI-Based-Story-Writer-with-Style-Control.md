@@ -219,4 +219,4 @@ AI-powered story writing platform with controllable genre, tone, and narrative s
 
 ## Report Resources
 
-For a project-report-ready summary, see [docs/PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md).
+For a project-report-ready summary, see `[docs/PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md)`.

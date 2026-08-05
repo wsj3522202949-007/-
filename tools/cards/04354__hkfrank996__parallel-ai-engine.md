@@ -47,7 +47,7 @@ related:
 
 Parallel is an AI narrative world engine for murder mysteries, investigative roleplay, and multi-character scenes that keep evolving after every turn.
 
-[Chinese docs](README_ZH.md)
+`[Chinese docs](README_ZH.md)`
 
 ## What it is
 
@@ -78,7 +78,7 @@ The result is closer to an AI-driven murder mystery engine than a chat UI.
 4. Characters reply in sequence with their own memory and emotional context.
 5. Post-turn analysis updates facts, memories, relationships, clues, and optional world events.
 
-Architecture details live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Architecture details live in `[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)`.
 
 ## Streaming
 
@@ -95,7 +95,7 @@ Architecture details live in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 Token-level streaming currently works with **Anthropic-compatible providers only**. Other providers (OpenAI, Ollama, Mock) fall back to phase-level streaming (narration → full character messages).
 
-API details in [docs/API.md](docs/API.md).
+API details in `[docs/API.md](docs/API.md)`.
 
 ## Quick start
 
@@ -132,7 +132,7 @@ OPENAI_BASE_URL=https://api.openai.com/v1
 OPENAI_MODEL=gpt-4o-mini
 ```
 
-More configuration examples are in [docs/CONFIG.md](docs/CONFIG.md).
+More configuration examples are in `[docs/CONFIG.md](docs/CONFIG.md)`.
 
 ### Settings modal — browser-local configuration
 
@@ -186,11 +186,11 @@ The project also includes:
 
 ## Docs
 
-- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
-- [docs/API.md](docs/API.md)
-- [docs/CONFIG.md](docs/CONFIG.md)
-- [docs/WORLD_FORMAT.md](docs/WORLD_FORMAT.md)
-- [docs/ROADMAP.md](docs/ROADMAP.md)
+- `[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)`
+- `[docs/API.md](docs/API.md)`
+- `[docs/CONFIG.md](docs/CONFIG.md)`
+- `[docs/WORLD_FORMAT.md](docs/WORLD_FORMAT.md)`
+- `[docs/ROADMAP.md](docs/ROADMAP.md)`
 
 ## License
 

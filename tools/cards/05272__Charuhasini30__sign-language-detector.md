@@ -113,32 +113,32 @@ Camera Input → Image Preprocessing → CNN Model → Gesture Classification �
 ## 📊 Dataset & Model Visualizations
 
 ### 📌 Class Distribution
-![Class Distribution](Class%20distribution.png)
+!`[Class Distribution](Class%20distribution.png)`
 
 ---
 
 ### 📌 Label Samples
-![Label Samples](label.png)
+!`[Label Samples](label.png)`
 
 ---
 
 ### 📌 Model Accuracy
-![Model Accuracy](model%20accuracy.png)
+!`[Model Accuracy](model%20accuracy.png)`
 
 ---
 
 ### 📌 Model Loss
-![Model Loss](model%20loss.png)
+!`[Model Loss](model%20loss.png)`
 
 ---
 
 ### 📌 Training Accuracy Curve
-![Accuracy Curve](accuracy.png)
+!`[Accuracy Curve](accuracy.png)`
 
 ---
 
 ### 📌 Confusion Matrix / Heatmap
-![Heatmap](heatmap.png)
+!`[Heatmap](heatmap.png)`
 
 ---
 
@@ -154,17 +154,17 @@ Camera Input → Image Preprocessing → CNN Model → Gesture Classification �
 ## 🖐️ Project Outputs
 
 ### 🏠 Home Page
-![Home Page](home%20page.png)
+!`[Home Page](home%20page.png)`
 
 ---
 
 ### 🤖 Output Prediction Page
-![Output Page](output%20page.png)
+!`[Output Page](output%20page.png)`
 
 ---
 
 ### 🔄 System Flowchart
-![Flowchart](Flowchart.png)
+!`[Flowchart](Flowchart.png)`
 
 ---
 

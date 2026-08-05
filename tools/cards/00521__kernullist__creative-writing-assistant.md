@@ -40,7 +40,7 @@ related:
 
 # Creative Writing Assistant
 
-![Screenshot](docs/screenshot.png)
+!`[Screenshot](docs/screenshot.png)`
 
 A comprehensive tool for analyzing and enhancing creative writing with AI-powered insights.
 

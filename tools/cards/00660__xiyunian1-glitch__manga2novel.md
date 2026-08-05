@@ -285,7 +285,7 @@ npm run build
 
 仓库已包含 GitHub Pages 工作流：
 
-- [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)
+- `[`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml)`
 
 推荐部署方式：
 

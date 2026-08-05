@@ -42,7 +42,7 @@ A Thunderbird extension that helps improve your email writing using various AI m
 
 ## ✨ Features
 
-![Usage](./demo.gif)
+!`[Usage](./demo.gif)`
 
 ### Multiple AI Models Support
 
@@ -119,10 +119,10 @@ Settings can be accessed from the Thunderbird add-ons list.
 
 ## 🤝 Contributing
 
-We welcome bug reports and pull requests! See our [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+We welcome bug reports and pull requests! See our `[CONTRIBUTING.md](CONTRIBUTING.md)` for more details.
 
 ## License
 
-This project is licensed under the [Apache License 2.0](LICENSE) - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the `[Apache License 2.0](LICENSE)` - see the `[LICENSE](LICENSE)` file for details.
 
 Icons adapted from [pepicons](https://github.com/CyCraft/pepicons/) (CC BY 4.0).

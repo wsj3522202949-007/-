@@ -51,10 +51,10 @@ rendered from.
 > *A deliverable is a query over an evolving canon, rendered into a medium, held to craft and to human
 > taste.*
 
-- **The spec:** [`SPEC.md`](./SPEC.md) — the cartridge architecture (six layers, primitives, invariants).
-- **The architecture:** [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) — how the layers fit, what the
+- **The spec:** `[`SPEC.md`](./SPEC.md)` — the cartridge architecture (six layers, primitives, invariants).
+- **The architecture:** `[`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md)` — how the layers fit, what the
   linter checks, and why the runtime is Managed Agents. Diagrams included, all machine-emitted.
-- **The engine spec:** [`BRAND-OS-SPEC.md`](./BRAND-OS-SPEC.md) — the Agentic Brand OS (the console/runtime that loads a cartridge and generates on-brand deliverables). **v0.1, early draft.**
+- **The engine spec:** `[`BRAND-OS-SPEC.md`](./BRAND-OS-SPEC.md)` — the Agentic Brand OS (the console/runtime that loads a cartridge and generates on-brand deliverables). **v0.1, early draft.**
 - **Home / docs:** `agenticbranduniverse.com` (the canonical home of the standard).
 - **Reference implementations:** the Nation of Fire universe (~15 illustrated books over one shared
   canon), and [`hyperagentic-age`](https://github.com/garysheng/hyperagentic-age), a public universe
@@ -70,13 +70,13 @@ rendered from.
 6. **Quality** — taste gates × craft-canon × provenance, wired as steps, not memory.
 
 Layers 3 and 4 arrived in v0.6 and are what let the standard express a flyer, a diagram, or a
-thank-you card rather than only a story. See [ARCHITECTURE.md](./docs/ARCHITECTURE.md).
+thank-you card rather than only a story. See `[ARCHITECTURE.md](./docs/ARCHITECTURE.md)`.
 
 ## Status
 
-- **Spec v0.6** ([`SPEC.md`](./SPEC.md)) — the projection release. Backtested against the 24-property
+- **Spec v0.6** (`[`SPEC.md`](./SPEC.md)`) — the projection release. Backtested against the 24-property
   roster, then re-proven against eight deliberately unlike deliverables.
-- **Engine v0** ([`engine/`](./engine/)) — RUNNING: typed canon store + model validation + the
+- **Engine v0** (`[`engine/`](./engine/)`) — RUNNING: typed canon store + model validation + the
   load-bearing reference gate, stdlib only, 34 tests green (against a self-contained fixture, no
   content-repo dependency).
 - **Tests: 165 green** across the engine and seven skill suites. `./run-tests.sh` needs no API key,
@@ -98,4 +98,4 @@ Next: `new-story` scaffolders, graduated craft-canon checks, migrate the standal
 
 ## License
 
-MIT — see [`LICENSE`](./LICENSE). The Agentic Brand Universe is an open standard: fork it, build on it, run your own Brand OS.
+MIT — see `[`LICENSE`](./LICENSE)`. The Agentic Brand Universe is an open standard: fork it, build on it, run your own Brand OS.

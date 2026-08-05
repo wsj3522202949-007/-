@@ -426,10 +426,10 @@ Great novels are not written — they are **engineered**. Professional authors u
 
 | Document | What's inside |
 |---|---|
-| [AGENTS.md](AGENTS.md) | Full system prompts and OUTPUT CONTRACT for each of 5 agents |
-| [SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md) | Architecture deep-dive and design rationale |
-| [docs/WORKFLOWS.md](docs/WORKFLOWS.md) | Step-by-step writing workflows |
-| [docs/API.md](docs/API.md) | Programmatic API for custom integrations |
+| `[AGENTS.md](AGENTS.md)` | Full system prompts and OUTPUT CONTRACT for each of 5 agents |
+| `[SYSTEM_OVERVIEW.md](SYSTEM_OVERVIEW.md)` | Architecture deep-dive and design rationale |
+| `[docs/WORKFLOWS.md](docs/WORKFLOWS.md)` | Step-by-step writing workflows |
+| `[docs/API.md](docs/API.md)` | Programmatic API for custom integrations |
 
 related:
   - methods/QUICK_START.md

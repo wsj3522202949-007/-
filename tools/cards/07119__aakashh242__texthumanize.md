@@ -1971,14 +1971,14 @@ Try the [Live Demo](https://texthumanize.link/). For local use, the REST API + S
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, testing, and PR guidelines.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for development setup, testing, and PR guidelines.
 
 **Areas for contribution:** New language packs · Improved synonym dictionaries · Better grammar rules · Performance optimizations · Additional integrations
 
 Starter tasks with acceptance criteria are listed in the
 [Good First Issues guide](https://ksanyok.github.io/TextHumanize/contributing/good-first-issues/).
 
-See [CONTRIBUTORS.md](CONTRIBUTORS.md) for the full list of contributors.
+See `[CONTRIBUTORS.md](CONTRIBUTORS.md)` for the full list of contributors.
 
 ```bash
 git clone https://github.com/ksanyok/TextHumanize.git
@@ -2038,11 +2038,11 @@ TextHumanize uses a **dual license model**:
 | Commercial — 1 dev, 1 project | Indie | **$29/mo** |
 | Commercial — up to 5 devs | Startup | **$79/mo** |
 | Commercial — up to 20 devs | Business | **$199/mo** |
-| Enterprise / On-prem / SLA / White-label | Enterprise | [Contact us](mailto:ksanyok@me.com) |
+| Enterprise / On-prem / SLA / White-label | Enterprise | `[Contact us](mailto:ksanyok@me.com)` |
 
 All commercial licenses include full source code, all updates, priority email support, and access to PHANTOM™ + ASH™ proprietary technologies. **100% offline — no data leaves your server, no per-request fees, no cloud lock-in.** Monthly billing, cancel any time.
 
-**[Full licensing details →](COMMERCIAL.md)** · See [LICENSE](LICENSE) for legal text · **Contact:** [ksanyok@me.com](mailto:ksanyok@me.com)
+**`[Full licensing details →](COMMERCIAL.md)`** · See `[LICENSE](LICENSE)` for legal text · **Contact:** `[ksanyok@me.com](mailto:ksanyok@me.com)`
 
 related:
   - methods/QUICK_START.md

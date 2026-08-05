@@ -313,7 +313,7 @@ Training data reflects specific demographics and domains. Model may perform wors
 | RoBERTa | 93.7% | 93.7% | 98.5% | Transformer | Optimized pre-training |
 | **BERT** | **93.9%** | **94.0%** | **98.7%** | **Transformer** | **Best overall performance** |
 
-![Transformer Confusion Matrices](results/transformer_confusion_matrices.png)
+!`[Transformer Confusion Matrices](results/transformer_confusion_matrices.png)`
 
 ### Key Findings
 

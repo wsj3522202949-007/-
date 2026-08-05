@@ -125,7 +125,7 @@ Use OpenCLI directly when you want a reliable command instead of a live browser 
 
 ## Extending OpenCLI
 
-If you want to add your own commands, start with the [Extending OpenCLI guide](./docs/guide/extending-opencli.md). README keeps this short; the guide covers the directory layout, source-control model, and install commands.
+If you want to add your own commands, start with the `[Extending OpenCLI guide](./docs/guide/extending-opencli.md)`. README keeps this short; the guide covers the directory layout, source-control model, and install commands.
 
 | Need | Recommended path |
 |------|------------------|
@@ -180,12 +180,12 @@ Once `opencli-browser` is installed, your AI agent can:
 The agent handles all the `opencli browser` commands internally — you just describe what you want done in natural language.
 
 **Skill references:**
-- [`skills/opencli-browser/SKILL.md`](./skills/opencli-browser/SKILL.md) — drive Chrome ad-hoc (navigate, fill forms, click, extract)
-- [`skills/opencli-browser-sitemap/SKILL.md`](./skills/opencli-browser-sitemap/SKILL.md) — use sitemap context while driving a browser task
-- [`skills/opencli-sitemap-author/SKILL.md`](./skills/opencli-sitemap-author/SKILL.md) — create or update site sitemap knowledge
-- [`skills/opencli-adapter-author/SKILL.md`](./skills/opencli-adapter-author/SKILL.md) — write a new adapter end-to-end
-- [`skills/opencli-autofix/SKILL.md`](./skills/opencli-autofix/SKILL.md) — repair broken adapters
-- [`skills/opencli-usage/SKILL.md`](./skills/opencli-usage/SKILL.md) — command and site reference
+- `[`skills/opencli-browser/SKILL.md`](./skills/opencli-browser/SKILL.md)` — drive Chrome ad-hoc (navigate, fill forms, click, extract)
+- `[`skills/opencli-browser-sitemap/SKILL.md`](./skills/opencli-browser-sitemap/SKILL.md)` — use sitemap context while driving a browser task
+- `[`skills/opencli-sitemap-author/SKILL.md`](./skills/opencli-sitemap-author/SKILL.md)` — create or update site sitemap knowledge
+- `[`skills/opencli-adapter-author/SKILL.md`](./skills/opencli-adapter-author/SKILL.md)` — write a new adapter end-to-end
+- `[`skills/opencli-autofix/SKILL.md`](./skills/opencli-autofix/SKILL.md)` — repair broken adapters
+- `[`skills/opencli-usage/SKILL.md`](./skills/opencli-usage/SKILL.md)` — command and site reference
 
 Available browser commands include `open`, `state`, `click`, `type`, `fill`, `select`, `keys`, `wait`, `get`, `find`, `extract`, `frames`, `screenshot`, `scroll`, `back`, `eval`, `network`, `tab list`, `tab new`, `tab select`, `tab close`, `init`, `verify`, and `close`.
 
@@ -238,7 +238,7 @@ When the site you need is not yet covered, use the `opencli-adapter-author` skil
 | **slock** | `message-send` `message-read` `message-search` `channel-list` `channel-info` `channel-create` `channel-members` `channel-join` `task-list` `task-create` `task-claim` `task-status` `task-convert` `task-delete` `thread-list` `thread-follow` `attachment-upload` `attachment-download` `bookmark-add` `inbox` `dm-list` `server-list` `server-use` `whoami` |
 | **huodongxing** | `events` |
 
-Curated highlights — **[→ see all 100+ supported sites & commands](./docs/adapters/index.md)** (douyin / weibo / spotify / 1688 / quark / nowcoder / google-scholar / hupu / xianyu / weread / weread-official / xiaoyuzhou / Chess.com / and more).
+Curated highlights — **`[→ see all 100+ supported sites & commands](./docs/adapters/index.md)`** (douyin / weibo / spotify / 1688 / quark / nowcoder / google-scholar / hupu / xianyu / weread / weread-official / xiaoyuzhou / Chess.com / and more).
 
 ## CLI Hub
 
@@ -248,7 +248,7 @@ Unified passthrough for your existing command-line tools. Run `opencli <tool> ..
 
 Register your own with `opencli external register <name>`; list everything with `opencli external list`.
 
-**Desktop app adapters** (Electron, via CDP): Cursor / Trae CN / Codex / Antigravity / ChatGPT App / ChatWise / Qoder / Discord / Doubao / Trae SOLO — see [`docs/adapters/desktop/`](./docs/adapters/desktop/).
+**Desktop app adapters** (Electron, via CDP): Cursor / Trae CN / Codex / Antigravity / ChatGPT App / ChatWise / Qoder / Discord / Doubao / Trae SOLO — see `[`docs/adapters/desktop/`](./docs/adapters/desktop/)`.
 
 ## Download Support
 
@@ -294,7 +294,7 @@ opencli bilibili hot -v         # Verbose: show pipeline debug steps
 
 ## Exit Codes
 
-opencli follows Unix `sysexits.h` so CI / scripts can branch on failure mode: `0` success, `66` empty result, `69` Browser Bridge down, `75` timeout, `77` auth required, `78` config error, `130` Ctrl-C. Full reference: [docs/guide/exit-codes.md](./docs/guide/exit-codes.md).
+opencli follows Unix `sysexits.h` so CI / scripts can branch on failure mode: `0` success, `66` empty result, `69` Browser Bridge down, `75` timeout, `77` auth required, `78` config error, `130` Ctrl-C. Full reference: `[docs/guide/exit-codes.md](./docs/guide/exit-codes.md)`.
 
 ## Plugins
 
@@ -316,11 +316,11 @@ opencli plugin uninstall my-tool
 | [opencli-plugin-juejin](https://github.com/Astro-Han/opencli-plugin-juejin) | JS | 稀土掘金 (Juejin) hot articles |
 | [opencli-plugin-vk](https://github.com/flobo3/opencli-plugin-vk) | JS | VK (VKontakte) wall, feed, and search |
 
-See [Plugins Guide](./docs/guide/plugins.md) for creating your own plugin.
+See `[Plugins Guide](./docs/guide/plugins.md)` for creating your own plugin.
 
 ## Testing
 
-See **[TESTING.md](./TESTING.md)** for how to run and write tests.
+See **`[TESTING.md](./TESTING.md)`** for how to run and write tests.
 
 ## Troubleshooting
 
@@ -336,4 +336,4 @@ See **[TESTING.md](./TESTING.md)** for how to run and write tests.
 
 ## License
 
-[Apache-2.0](./LICENSE)
+`[Apache-2.0](./LICENSE)`

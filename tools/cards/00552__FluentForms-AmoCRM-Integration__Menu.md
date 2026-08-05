@@ -85,7 +85,7 @@ Connect Fluent Forms with AmoCRM to capture website leads and send them directly
 ### 🖼 Preview
 
 Fluent Forms webhook settings connected to AmoCRM  
-![Screenshot](PLACE_YOUR_IMAGE_LINK_HERE)  
+!`[Screenshot](PLACE_YOUR_IMAGE_LINK_HERE)`  
 *Convert form entries into clients — automatically*
 
 ---

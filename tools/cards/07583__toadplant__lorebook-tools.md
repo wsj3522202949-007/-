@@ -40,14 +40,14 @@ related:
 
 # Lorebook Playground and Interactive guide
 
-[![Lorebook Tools](media/open.png)](https://toadplant.github.io/lorebook-tools/)
+`[![Lorebook Tools](media/open.png)`](https://toadplant.github.io/lorebook-tools/)
 
-[![Website](media/w_site.png)](https://toadplant.github.io/lorebook-tools/) 
-[![Discord](media/w_discord.png)](https://discord.gg/mdrRcyQuQH) 
-[![Reddit](media/w_reddit.png)](https://www.reddit.com/r/WyvernChat/)
+`[![Website](media/w_site.png)`](https://toadplant.github.io/lorebook-tools/) 
+`[![Discord](media/w_discord.png)`](https://discord.gg/mdrRcyQuQH) 
+`[![Reddit](media/w_reddit.png)`](https://www.reddit.com/r/WyvernChat/)
 
-[![My Wyvern](media/my_wyvern.png)](https://app.wyvern.chat/profiles/GV48cZZcDmNMT1tJJJu8Ampin4u1) 
-[![My Discord](media/my_discord.png)](https://discord.gg/YUXTPAuJxc)
+`[![My Wyvern](media/my_wyvern.png)`](https://app.wyvern.chat/profiles/GV48cZZcDmNMT1tJJJu8Ampin4u1) 
+`[![My Discord](media/my_discord.png)`](https://discord.gg/YUXTPAuJxc)
 
 # 🧩 Basics
 
@@ -83,7 +83,7 @@ When you chat with an AI bot, the chat interface merges your last message with a
     
 The closer a piece of information is to the bottom of this structure, the more impact it has.
 
-[![context](media/contetext_window.png)]()
+`[![context](media/contetext_window.png)`]()
 
 # ✍ What can you put in entries? Examples & recommended settings
 

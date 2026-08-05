@@ -96,12 +96,12 @@ Most people use one sentence. These prompts use all five.
 
 | Category | Prompts | Works with |
 |---|---|---|
-| [AI Image Prompts](ai-image-prompts/) | 50 prompts | Midjourney, DALL-E 3, Adobe Firefly, Gemini, ChatGPT |
-| [Video Prompts](video-prompts/) | 50 prompts | ChatGPT, Claude, Gemini, Runway, Sora, Pika |
-| [Resume Writing Prompts](resume-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
-| [Job Search Prompts](job-search-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
-| [Salary Negotiation Prompts](salary-negotiation-prompts/) | 50 prompts | ChatGPT, Claude |
-| [SEO Prompts](seo-prompts/) | 13 prompts | ChatGPT, Claude |
+| `[AI Image Prompts](ai-image-prompts/)` | 50 prompts | Midjourney, DALL-E 3, Adobe Firefly, Gemini, ChatGPT |
+| `[Video Prompts](video-prompts/)` | 50 prompts | ChatGPT, Claude, Gemini, Runway, Sora, Pika |
+| `[Resume Writing Prompts](resume-prompts/)` | 50 prompts | ChatGPT, Claude, Gemini |
+| `[Job Search Prompts](job-search-prompts/)` | 50 prompts | ChatGPT, Claude, Gemini |
+| `[Salary Negotiation Prompts](salary-negotiation-prompts/)` | 50 prompts | ChatGPT, Claude |
+| `[SEO Prompts](seo-prompts/)` | 13 prompts | ChatGPT, Claude |
 
 More categories added regularly. Star the repo to get notified.
 

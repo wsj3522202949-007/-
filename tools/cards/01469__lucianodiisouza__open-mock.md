@@ -100,11 +100,11 @@ npm start
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a new platform generator.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for how to add a new platform generator.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.
 
 ## Disclaimer
 

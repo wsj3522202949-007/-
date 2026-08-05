@@ -102,7 +102,7 @@ npx supabase db push
 npx supabase db seed
 ```
 
-**Note:** For production deployment with Supabase Cloud, configure authentication settings via the Supabase Dashboard. See [Self-Hosting Guide](docs/SELF_HOSTING.md).
+**Note:** For production deployment with Supabase Cloud, configure authentication settings via the Supabase Dashboard. See `[Self-Hosting Guide](docs/SELF_HOSTING.md)`.
 
 5. Run the development server:
 ```bash
@@ -142,29 +142,29 @@ PromptManager supports multiple authentication methods:
 
 For self-hosted deployments, OAuth providers need to be configured in your Supabase instance. The application automatically detects OAuth availability and shows/hides OAuth buttons accordingly.
 
-See the [Authentication Guide](docs/features/auth/README.md) for detailed authentication setup instructions.
+See the `[Authentication Guide](docs/features/auth/README.md)` for detailed authentication setup instructions.
 
 ## Self-Hosting
 
-PromptManager is designed to be self-hostable. For detailed self-hosting instructions, including OAuth configuration, see the [Self-Hosting Guide](docs/SELF_HOSTING.md).
+PromptManager is designed to be self-hostable. For detailed self-hosting instructions, including OAuth configuration, see the `[Self-Hosting Guide](docs/SELF_HOSTING.md)`.
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 
 ## Documentation
 
-- [Architecture Documentation](docs/ARCHITECTURE.md)
-- [Self-Hosting Guide](docs/SELF_HOSTING.md)
+- `[Architecture Documentation](docs/ARCHITECTURE.md)`
+- `[Self-Hosting Guide](docs/SELF_HOSTING.md)`
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Supabase Documentation](https://supabase.com/docs)
 - Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details
 
 ## Contributing
 
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) to get started.
+Contributions are welcome! Please read our `[Contributing Guidelines](CONTRIBUTING.md)` to get started.
 
 ## License
 
-PromptManager is open-source software licensed under the [MIT License](LICENSE).
+PromptManager is open-source software licensed under the `[MIT License](LICENSE)`.
 
 > If this project saves you time or helps your workflow, consider **starring** it so others can find it too.

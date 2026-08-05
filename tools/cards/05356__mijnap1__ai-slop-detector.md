@@ -186,8 +186,8 @@ This repo is configured for Railway with `gunicorn`.
 
 Files added for deployment:
 
-- [railway.toml](./railway.toml)
-- `gunicorn` in [requirements.txt](./requirements.txt)
+- `[railway.toml](./railway.toml)`
+- `gunicorn` in `[requirements.txt](./requirements.txt)`
 
 Railway start command:
 
@@ -214,13 +214,13 @@ The recommended production split for this project is:
 
 This repo is prepared for that setup:
 
-- root [index.html](./index.html) and [info/index.html](./info/index.html) can be served statically by GitHub Pages
+- root `[index.html](./index.html)` and `[info/index.html](./info/index.html)` can be served statically by GitHub Pages
 - Flask also serves those same files locally
 - the backend includes CORS for local dev, GitHub Pages, and `jamieryu.com`
 
 ### One required step
 
-Set the Railway backend URL in the `<meta name="api-base-url">` tag inside [index.html](./index.html).
+Set the Railway backend URL in the `<meta name="api-base-url">` tag inside `[index.html](./index.html)`.
 
 Example:
 
@@ -249,4 +249,4 @@ If the GitHub repository name is `ai-slop-detector`, the project site path will 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License. See the `[LICENSE](./LICENSE)` file for details.

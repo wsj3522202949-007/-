@@ -41,7 +41,7 @@ related:
 
 > Just say **"Create a code review system"**, and AI will design a custom agent team through conversation.
 
-[🇰🇷 한국어 버전 README문서 (Korean Version)](./README(kor).md)
+`[🇰🇷 한국어 버전 README문서 (Korean Version)](./README(kor)`.md)
 
 ## Who is this for?
 
@@ -186,7 +186,7 @@ Create a new `.md` file in the `.agents/` folder
 Create `.agents/skills/{skill-name}/SKILL.md` file
 
 ### Modify Workflow
-Edit [skillful-orchestrator.md](.agents/skillful-orchestrator.md)
+Edit `[skillful-orchestrator.md](.agents/skillful-orchestrator.md)`
 
 ---
 
@@ -202,14 +202,14 @@ Edit [skillful-orchestrator.md](.agents/skillful-orchestrator.md)
 
 ## Resources
 
-- [Anthropic Skills Guide](./context/anthropic-skills-guide.md)
-- [Anthropic Subagents Guide](./context/anthropic-subagents-guide.md)
+- `[Anthropic Skills Guide](./context/anthropic-skills-guide.md)`
+- `[Anthropic Subagents Guide](./context/anthropic-subagents-guide.md)`
 
 ---
 
 **Version**: 1.1 | **Created**: 2026-01-28 | **Status**: ✅ Production Ready
 
-**Author**: [Yz](mailto:houarnu166@gmail.com)
+**Author**: `[Yz](mailto:houarnu166@gmail.com)`
 
 ## Changelog
 

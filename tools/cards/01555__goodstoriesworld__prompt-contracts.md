@@ -73,13 +73,13 @@ This starter pack includes 3 production-ready contracts:
 
 | Contract | Use Case |
 |---|---|
-| [Code Generation](contracts/code-generation.md) | Generate functions, modules, or scripts with predictable structure and error handling |
-| [Content Writing](contracts/content-writing.md) | Produce blog posts, landing pages, or marketing copy that hits your brand voice |
-| [Data Analysis](contracts/data-analysis.md) | Analyze datasets and produce structured insights with statistical backing |
+| `[Code Generation](contracts/code-generation.md)` | Generate functions, modules, or scripts with predictable structure and error handling |
+| `[Content Writing](contracts/content-writing.md)` | Produce blog posts, landing pages, or marketing copy that hits your brand voice |
+| `[Data Analysis](contracts/data-analysis.md)` | Analyze datasets and produce structured insights with statistical backing |
 
 Each contract has bracketed `[VARIABLES]` — fill them in for your specific task and paste the whole thing as your prompt.
 
-Read the [methodology](methodology.md) to understand why this approach works.
+Read the `[methodology](methodology.md)` to understand why this approach works.
 
 ## Quick Start
 
@@ -112,7 +112,7 @@ The starter pack covers 3 common workflows. The **full Prompt Contracts Library*
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See `[LICENSE](LICENSE)` for details.
 
 related:
   - methods/网文写作最强SOP.md

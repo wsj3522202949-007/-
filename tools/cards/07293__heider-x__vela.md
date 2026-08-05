@@ -247,7 +247,7 @@ Vela 开源版由独立开发者利用业余时间热情驱动。如果这个工
 
 ## 📄 开源协议 / License
 
-本项目采用 [GPL-3.0 License](LICENSE) 开源。您可以自由地运行、研究、分享和修改代码，但基于此修改分发的新软件**必须同样遵循 GPL-3.0 协议开源**。
+本项目采用 `[GPL-3.0 License](LICENSE)` 开源。您可以自由地运行、研究、分享和修改代码，但基于此修改分发的新软件**必须同样遵循 GPL-3.0 协议开源**。
 
 如需闭源商用授权，请通过微信或邮件联系作者。
 
@@ -257,7 +257,7 @@ related:
 
 <div align="center">
 
-**Crafted with 💡 by [heider-x]([https://github.com/heider](https://github.com/heider-x))**
+**Crafted with 💡 by `[heider-x]([https://github.com/heider](https://github.com/heider-x)`)**
 
 *Vela — Your AI-powered novel writing companion. Write smarter, not harder.*
 

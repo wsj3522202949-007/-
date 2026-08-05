@@ -136,7 +136,7 @@ O prompt foi criado com regras para:
 - não inventar dados, datas, nomes, políticas, benefícios ou decisões;
 - gerar uma comunicação pronta para revisão.
 
-O prompt completo está disponível em [`prompts/prompt-copiloto-comunicacao.md`](prompts/prompt-copiloto-comunicacao.md).
+O prompt completo está disponível em `[`prompts/prompt-copiloto-comunicacao.md`](prompts/prompt-copiloto-comunicacao.md)`.
 
 ## Demonstração e links do protótipo
 
@@ -148,8 +148,8 @@ O prompt completo está disponível em [`prompts/prompt-copiloto-comunicacao.md`
 
 Os exemplos simulados estão em:
 
-- [`examples/exemplo-entrada.md`](examples/exemplo-entrada.md)
-- [`examples/exemplo-saida.md`](examples/exemplo-saida.md)
+- `[`examples/exemplo-entrada.md`](examples/exemplo-entrada.md)`
+- `[`examples/exemplo-saida.md`](examples/exemplo-saida.md)`
 
 ## Estrutura do repositório
 

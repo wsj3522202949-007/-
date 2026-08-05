@@ -41,7 +41,7 @@ related:
 
 By [@code20](https://github.com/code20)
 
-[License](LICENSE)
+`[License](LICENSE)`
 
 A detailed LLM prompt that rewrites any text to sound authentically human, from a specific persona's perspective. It strips away AI clichés, marketing fluff, and formulaic structures to produce prose that feels like a real person wrote it.
 
@@ -139,9 +139,9 @@ Every rule in the prompt targets a specific failure pattern common in AI-generat
 | `LICENSE`                     | MIT               |
 
 
-## 📝 [License](LICENSE)
+## 📝 `[License](LICENSE)`
 
 ```
-MIT — use it, modify it, share it. See [LICENSE](LICENSE) for details
+MIT — use it, modify it, share it. See `[LICENSE](LICENSE)` for details
 ```
 

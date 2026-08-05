@@ -84,7 +84,7 @@ Whatever the harness, the skill is the same three Markdown files; `AGENTS.md` at
 
 ## The pattern catalog
 
-36 patterns, each documented with a full before/after pair in [references/patterns.md](references/patterns.md). The one-line versions:
+36 patterns, each documented with a full before/after pair in `[references/patterns.md](references/patterns.md)`. The one-line versions:
 
 | # | Pattern | Before | After |
 |---|---------|--------|----related:
@@ -128,7 +128,7 @@ Whatever the harness, the skill is the same three Markdown files; `AGENTS.md` at
 | P35 | AI vocabulary | We leverage cutting-edge, seamless technology. | We use current browser APIs; pages load in under a second. |
 | P36 | Stock idioms | In today's fast-paced world, at the end of the day... | (cut — they carry no information) |
 
-The full banned-word list with plain replacements is in [references/vocabulary.md](references/vocabulary.md).
+The full banned-word list with plain replacements is in `[references/vocabulary.md](references/vocabulary.md)`.
 
 ## A complete example
 
@@ -191,7 +191,7 @@ Cleaned text is neutral text, and neutral is nobody's voice. Give the skill 2–
 
 > Here are two emails I sent last week. Match my voice from now on: [samples]
 
-The profile is saved to `voice-profile.md` in your project, so it persists across sessions; any future session that finds the file applies it automatically. Details in [references/voice.md](references/voice.md).
+The profile is saved to `voice-profile.md` in your project, so it persists across sessions; any future session that finds the file applies it automatically. Details in `[references/voice.md](references/voice.md)`.
 
 ## False positives
 

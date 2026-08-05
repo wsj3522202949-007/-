@@ -69,7 +69,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](聊天图片.png)
+!`[Project Image](聊天图片.png)`
 
 
 
@@ -85,7 +85,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](朋友圈1.png)
+!`[Project Image](朋友圈1.png)`
 
 
 
@@ -93,7 +93,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](朋友圈2.png)
+!`[Project Image](朋友圈2.png)`
 
 
 
@@ -101,7 +101,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](日记图片.png)
+!`[Project Image](日记图片.png)`
 
 
 

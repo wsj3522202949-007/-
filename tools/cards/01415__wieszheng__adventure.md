@@ -97,11 +97,11 @@ adventure/
 
 ## 项目预览
 
-![故事主题页面](docs/story-generator-preview.png)
-![故事生成页面](docs/story-loading-preview.png)
-![故事详情页面](docs/story-detail-preview.png)
-![故事详情页面](docs/success.png)
-![故事详情页面](docs/fail.png)
+!`[故事主题页面](docs/story-generator-preview.png)`
+!`[故事生成页面](docs/story-loading-preview.png)`
+!`[故事详情页面](docs/story-detail-preview.png)`
+!`[故事详情页面](docs/success.png)`
+!`[故事详情页面](docs/fail.png)`
 
 
 ## 快速开始

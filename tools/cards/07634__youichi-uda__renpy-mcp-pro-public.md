@@ -49,12 +49,12 @@ MCP server and visual development tools for [Ren'Py](https://www.renpy.org/) vis
 ### Story Map
 Interactive graph of all labels, jumps, and menus. Click a node to warp the running game there.
 
-![Story Map](docs/img/story-map.png)
+!`[Story Map](docs/img/story-map.png)`
 
 ### Dev Dashboard
 Live preview, variable inspector with tree view, quick actions — all while the game runs.
 
-![Dashboard](docs/img/dashboard.png)
+!`[Dashboard](docs/img/dashboard.png)`
 
 ### Warp-on-Click Demo
 

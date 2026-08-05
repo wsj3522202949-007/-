@@ -42,7 +42,7 @@ related:
 
 # The Endless Tale - An Interactive Story Adventure
 
-![The Endless Tale Banner](docs/image/Banner.png)
+!`[The Endless Tale Banner](docs/image/Banner.png)`
 
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -55,7 +55,7 @@ An AI-powered interactive fiction and storytelling engine that brings characters
 
 ## Screenshot
 
-![The Endless Tale Screenshot](docs/image/Screenshot.png)
+!`[The Endless Tale Screenshot](docs/image/Screenshot.png)`
 
 ## Features
 
@@ -148,4 +148,4 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the `[MIT License](LICENSE)`.

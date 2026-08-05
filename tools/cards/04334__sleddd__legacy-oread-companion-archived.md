@@ -54,7 +54,7 @@ on top of the same backend and the same saved worlds, characters, and sessions.
 
 Note: The Oread CLI is being revised to have better roleplay and storytelling. It currently is missing the standard "you are" prompt which helps it maintain character. Unfortunately, I am limited on time, so I can only update this occasionally.
 
-![Oread Companion](screenshots/screenshot-1.png)
+!`[Oread Companion](screenshots/screenshot-1.png)`
 
 ## What is Oread Companion?
 
@@ -92,16 +92,16 @@ no subscriptions, no cloud dependency required (cloud model providers are opt-in
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot-1.png)
-![Screenshot 2](screenshots/screenshot-2.png)
-![Screenshot 3](screenshots/screenshot-3.png)
-![Screenshot 4](screenshots/screenshot-4.png)
+!`[Screenshot 1](screenshots/screenshot-1.png)`
+!`[Screenshot 2](screenshots/screenshot-2.png)`
+!`[Screenshot 3](screenshots/screenshot-3.png)`
+!`[Screenshot 4](screenshots/screenshot-4.png)`
 
 ## Getting started
 
 ### Prerequisites
 - **Node.js** v18+
-- **[oread-cli](../oread-cli)** checked out alongside this repo (the backend)
+- **`[oread-cli](../oread-cli)`** checked out alongside this repo (the backend)
 - **Ollama** running ([download](https://ollama.ai)) with at least one model pulled, **or** a cloud
   provider key configured in oread-cli
 
@@ -188,7 +188,7 @@ Then open **http://localhost:5173**. The Vite dev server proxies `/api/*` to the
   reply, and persists everything.
 
 For backend internals (prompt building, memory tiers, world JSON schema, providers, DB schema), see
-[`../oread-cli/README.md`](../oread-cli/README.md) and `../oread-cli/CLAUDE.md`.
+`[`../oread-cli/README.md`](../oread-cli/README.md)` and `../oread-cli/CLAUDE.md`.
 
 ## Troubleshooting
 
@@ -215,6 +215,6 @@ consent from the developer.
 
 ## Acknowledgments
 
-- Backend by [oread-cli](../oread-cli)
+- Backend by `[oread-cli](../oread-cli)`
 - Local inference via [Ollama](https://ollama.ai)
 - Built with [React](https://react.dev) and [Vite](https://vitejs.dev)

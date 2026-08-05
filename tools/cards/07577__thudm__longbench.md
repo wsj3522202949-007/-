@@ -47,7 +47,7 @@ related:
     📖 <a href="https://arxiv.org/abs/2308.14508" target="_blank">LongBench Paper</a> • 🤗 <a href="https://huggingface.co/datasets/THUDM/LongBench" target="_blank">LongBench Dataset</a>
 </p>
 
-**📢 The original LongBench v1 related files are moved under `LongBench/`, read its README [here](LongBench/README.md)**.
+**📢 The original LongBench v1 related files are moved under `LongBench/`, read its README `[here](LongBench/README.md)`**.
 
 LongBench v2 is designed to assess the ability of LLMs to handle long-context problems requiring **deep understanding and reasoning** across real-world multitasks. LongBench v2 has the following features: (1) **Length**: Context length ranging from 8k to 2M words, with the majority under 128k. (2) **Difficulty**: Challenging enough that even human experts, using search tools within the document, cannot answer correctly in a short time. (3) **Coverage**: Cover various realistic scenarios. (4) **Reliability**: All in a multiple-choice question format for reliable evaluation.
 

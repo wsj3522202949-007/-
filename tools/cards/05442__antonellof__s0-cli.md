@@ -44,7 +44,7 @@ An LLM-driven command-line agent for finding security vulnerabilities and "vibe-
 
 s0-cli runs a hybrid of classic static scanners (`semgrep`, `bandit`, `ruff`, `gitleaks`, `trivy`) and LLM detectors, then uses a multi-turn agent to triage, deduplicate, recalibrate severity, and explain each finding. The whole scanning agent is itself optimizable: `s0 optimize` runs a [Meta-Harness](https://yoonholee.com/meta-harness/) outer loop that mutates the agent against a labeled benchmark with a held-out test set.
 
-![s0-cli demo](docs/img/demo.gif)
+!`[s0-cli demo](docs/img/demo.gif)`
 
 ## Install
 
@@ -322,11 +322,11 @@ jobs:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
 ```
 
-Inputs are documented in `[action.yml](action.yml)`. The reusable example in `[.github/workflows/example-pr-scan.yml](.github/workflows/example-pr-scan.yml)` is what we use to dogfood it on this repo.
+Inputs are documented in ``[action.yml](action.yml)``. The reusable example in ``[.github/workflows/example-pr-scan.yml](.github/workflows/example-pr-scan.yml)`` is what we use to dogfood it on this repo.
 
 ### Docker
 
-Multi-arch image with every scanner pre-installed (semgrep, bandit, ruff, gitleaks, trivy, ripgrep). Reproducible — versions are pinned in the `[Dockerfile](Dockerfile)`.
+Multi-arch image with every scanner pre-installed (semgrep, bandit, ruff, gitleaks, trivy, ripgrep). Reproducible — versions are pinned in the ``[Dockerfile](Dockerfile)``.
 
 ```bash
 docker run --rm -v "$PWD:/work" -w /work \
@@ -338,7 +338,7 @@ The published `:latest` tag tracks `main`; pin to a `vX.Y.Z` tag or a short SHA 
 
 ### pre-commit hook
 
-Two hooks ship in `[.pre-commit-hooks.yaml](.pre-commit-hooks.yaml)`. The fast one runs the deterministic scanners on staged files (no LLM, no API key); the slower one runs the full LLM agent on the diff at push time.
+Two hooks ship in ``[.pre-commit-hooks.yaml](.pre-commit-hooks.yaml)``. The fast one runs the deterministic scanners on staged files (no LLM, no API key); the slower one runs the full LLM agent on the diff at push time.
 
 ```yaml
 # .pre-commit-config.yaml
@@ -390,13 +390,13 @@ Then just ask:
 > *"Scan the diff in this PR"*
 > *"Check if there are any hardcoded secrets in this repo"*
 
-→ Full step-by-step setup for every supported client lives in `**[docs/integrations/INSTALL.md](docs/integrations/INSTALL.md)`**.
+→ Full step-by-step setup for every supported client lives in `**`[docs/integrations/INSTALL.md](docs/integrations/INSTALL.md)``**.
 
 ## Why not just run `semgrep` directly?
 
 Running a single static scanner gives you a wall of JSON; you still have to read every alert, decide which are real, and hunt down the data flow by hand. s0-cli runs the scanners *plus* an LLM agent that does that triage for you — and writes down every step it took so you can audit the result.
 
-![Traditional SAST workflow vs s0-cli workflow](docs/img/vs-traditional.png)
+!`[Traditional SAST workflow vs s0-cli workflow](docs/img/vs-traditional.png)`
 
 
 |                 | Traditional SAST                   | s0-cli                                                         |
@@ -410,7 +410,7 @@ Running a single static scanner gives you a wall of JSON; you still have to read
 
 ## How it works
 
-![s0-cli architecture](docs/img/architecture.png)
+!`[s0-cli architecture](docs/img/architecture.png)`
 
 `s0 scan` runs every installed scanner on the target in parallel, deduplicates findings across them by `(path, line, rule_id)`, and hands the result to the inner harness — a multi-turn LLM agent with a tightly scoped tool surface. The agent reads source, greps for taint, blames git history, re-runs scanners with tighter rules, then either accepts each finding (assigning a severity and a `fix_hint`) or marks it as a false positive. Everything it does — the prompt, every tool call, every LLM response — is recorded under `runs/<timestamp>__<harness>__<id>/` so any scan is reproducible and auditable.
 
@@ -471,7 +471,7 @@ Pattern-matching SAST is bounded by what the rule authors thought of. To go beyo
 
 ## Configuration
 
-All settings live in `.env` (see `[.env.example](.env.example)`). The most useful knobs:
+All settings live in `.env` (see ``[.env.example](.env.example)``). The most useful knobs:
 
 
 | Variable              | Default                       | Purpose                             |
@@ -511,14 +511,14 @@ The `--no-llm` mode is a useful free anchor: you keep 100% recall and pay zero L
 
 ### Real-world run on an external repo
 
-For an end-to-end demonstration on a real codebase (OWASP **PyGoat**, ~50 modules of deliberate Django vulnerabilities) and a from-scratch optimize loop, see `[docs/results/REAL_WORLD_RESULTS.md](docs/results/REAL_WORLD_RESULTS.md)`. Headline numbers from that run:
+For an end-to-end demonstration on a real codebase (OWASP **PyGoat**, ~50 modules of deliberate Django vulnerabilities) and a from-scratch optimize loop, see ``[docs/results/REAL_WORLD_RESULTS.md](docs/results/REAL_WORLD_RESULTS.md)``. Headline numbers from that run:
 
 - **252 raw scanner findings → 14 kept** by the LLM agent (94% noise reduction). Every kept finding is a genuine OWASP-Top-10-class issue (pickle RCE, hallucinated imports, hardcoded credentials, Docker-as-root, command injection, broken auth, …) with a `why_real` and `fix_hint`.
 - A 2-iteration `s0 optimize -n 2 -k 2` session (~$0.12, 174s wall-clock) produced a winning harness that **lifted held-out test F1 from 0.59 → 0.67** (+18% relative). All four candidate harnesses (winners and broken alike), the Pareto frontier, and per-task traces are committed under `docs/results/` so the run is reproducible.
 
 ## Benchmark layout
 
-The bench is split into a **train** set (visible to the optimizer) and a **held-out test** set (only scored at the end of an optimize session). See `[bench/README.md](bench/README.md)` for the full task list and how to add new ones.
+The bench is split into a **train** set (visible to the optimizer) and a **held-out test** set (only scored at the end of an optimize session). See ``[bench/README.md](bench/README.md)`` for the full task list and how to add new ones.
 
 ```bash
 # Score the default harness on the training tasks
@@ -537,9 +537,9 @@ uv run s0 eval --no-llm
 
 The scanning agent is a single Python file. Most security tools encode their heuristics either in scattered config (`.semgrepignore`, custom rule files, hand-tuned LLM prompts) or in undocumented engineer intuition. s0-cli encodes them in a versioned harness file that gets *automatically rewritten* by an outer optimization loop, based on real evaluation data — this is the [Meta-Harness](https://yoonholee.com/meta-harness/) approach (Lee et al., 2026).
 
-![s0 optimize outer loop](docs/img/optimize-loop.png)
+!`[s0 optimize outer loop](docs/img/optimize-loop.png)`
 
-`s0 optimize` runs the loop: a coding-agent proposer reads `runs/` (every prior agent, every score, every tool trace), forms a hypothesis about the worst current failure mode, writes a new harness file under `src/s0_cli/harnesses/`, and the runner validates and re-scores it on `bench/tasks_train/`. After all training iterations finish, the best-train-F1 candidate is scored once on the disjoint `bench/tasks_test/` to measure generalization. The proposer's contract is in `[SKILL.md](SKILL.md)`.
+`s0 optimize` runs the loop: a coding-agent proposer reads `runs/` (every prior agent, every score, every tool trace), forms a hypothesis about the worst current failure mode, writes a new harness file under `src/s0_cli/harnesses/`, and the runner validates and re-scores it on `bench/tasks_train/`. After all training iterations finish, the best-train-F1 candidate is scored once on the disjoint `bench/tasks_test/` to measure generalization. The proposer's contract is in ``[SKILL.md](SKILL.md)``.
 
 ### Why this is different from "just iterating on the prompt"
 
@@ -571,7 +571,7 @@ Pass `-k N` (or `--candidates N`) to fan out **N parallel proposals per iteratio
 uv run s0 optimize -n 5 -k 2 --run-name exp_multicand --fresh
 ```
 
-Cost scales linearly with `k`, but wall-clock cost stays roughly constant (the proposers run concurrently). The strategy ladder lives in `[src/s0_cli/optimizer/strategies.py](src/s0_cli/optimizer/strategies.py)` and is deterministic — `k=2` always means slot 0 (greedy, exploit) plus slot 1 (warmer, "shrink token cost"), so reruns hit the same regions of design space.
+Cost scales linearly with `k`, but wall-clock cost stays roughly constant (the proposers run concurrently). The strategy ladder lives in ``[src/s0_cli/optimizer/strategies.py](src/s0_cli/optimizer/strategies.py)`` and is deterministic — `k=2` always means slot 0 (greedy, exploit) plus slot 1 (warmer, "shrink token cost"), so reruns hit the same regions of design space.
 
 ```bash
 uv run s0 optimize -n 3                            # 3 iterations on train, then held-out test pass
@@ -635,7 +635,7 @@ uv run s0 optimize -n 5
 uv run s0 scan ./your-repo --fail-on high
 ```
 
-The matcher is forgiving: a prediction matches a label if `path` is identical and `|line - gt.line| <= 5`, so you don't have to be exact on line numbers. Severity isn't matched on; it's scored separately. The full task format (multi-file targets, optional task README, etc.) is documented in `[bench/README.md](bench/README.md)`.
+The matcher is forgiving: a prediction matches a label if `path` is identical and `|line - gt.line| <= 5`, so you don't have to be exact on line numbers. Severity isn't matched on; it's scored separately. The full task format (multi-file targets, optional task README, etc.) is documented in ``[bench/README.md](bench/README.md)``.
 
 ### Continuous-improvement loop
 
@@ -724,4 +724,4 @@ SKILL.md              proposer contract (read by the outer loop)
 
 ## License
 
-Apache-2.0. See [LICENSE](LICENSE).
+Apache-2.0. See `[LICENSE](LICENSE)`.

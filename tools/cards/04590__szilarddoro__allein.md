@@ -155,4 +155,4 @@ Every bit of support, whether it's code, coffee, or kind words, genuinely makes 
 
 ## License
 
-AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
+AGPL-3.0 License - see the `[LICENSE](LICENSE)` file for details.

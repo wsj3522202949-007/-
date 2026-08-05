@@ -37,7 +37,7 @@ related:
 
 ---
 
-![Humanizer Pro Banner](banner.png)
+!`[Humanizer Pro Banner](banner.png)`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Stars](https://img.shields.io/github/stars/mrshibly/humanizer.svg?style=social)](https://github.com/mrshibly/humanizer)
@@ -79,7 +79,7 @@ git clone https://github.com/mrshibly/humanizer.git ~/.config/opencode/skills/hu
 ```
 
 ### For Manual Use
-Simply copy the contents of [SKILL.md](SKILL.md) into your system prompt or custom instructions.
+Simply copy the contents of `[SKILL.md](SKILL.md)` into your system prompt or custom instructions.
 
 ---
 
@@ -118,7 +118,7 @@ We are building the definitive library for human-AI collaboration. If you find a
 
 ## 📜 License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See `[LICENSE](LICENSE)` for details.
 
 related:
   - methods/最强去AI味铁律.md

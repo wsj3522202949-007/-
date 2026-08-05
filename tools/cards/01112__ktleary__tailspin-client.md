@@ -49,7 +49,7 @@ related:
 
 Tailspin is an interactive web application designed to unleash your creativity in storytelling. Leveraging the power of AI, Tailspin enables users to generate unique story outlines that can be further developed into full-fledged narratives.
 
-![Tailspin Screenshot](tailspin-screen.png)
+!`[Tailspin Screenshot](tailspin-screen.png)`
 
 ```markdown
 The midwestern sun blazed down on the small cabin where Alexander, Ivy,

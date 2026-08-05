@@ -44,7 +44,7 @@ related:
 ---
 
 # Cykofa Narration CLI
-The Cykofa Narration CLI (Command Line Interface) App is a tool for writing collectively authored fiction and poetry. The Cykofa Narration CLI is used as a teaching tool at [Seeda School](https://www.seedaschool.com/). If you would like to invite Seeda School to facilitate a Cykofa Narration Workshop please reach out via [email](mailto:info@seedaschool.com).
+The Cykofa Narration CLI (Command Line Interface) App is a tool for writing collectively authored fiction and poetry. The Cykofa Narration CLI is used as a teaching tool at [Seeda School](https://www.seedaschool.com/). If you would like to invite Seeda School to facilitate a Cykofa Narration Workshop please reach out via `[email](mailto:info@seedaschool.com)`.
 
 ## How To Get Started 
 1. Fork and clone this project.

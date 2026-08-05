@@ -125,7 +125,7 @@ In the process of refining our machine learning model, we conducted a feature re
 - **Description:**
   - We visualized the correlation coefficients of each feature relative to the target variable "generated" to understand their impact on the model's performance.
   
-![Correlation of Features](images/correlation_plot.png)
+!`[Correlation of Features](images/correlation_plot.png)`
 
 ## Advanced Text Features and Dimensionality Reduction
 
@@ -155,13 +155,13 @@ These enhancements represent an iterative refinement process, aimed at optimizin
 
 - **Confusion Matrix:**
   - A Confusion Matrix is a tabular representation of actual vs predicted class labels. It provides insights into our model’s performance by breaking down the predictions into true positives, false positives, true negatives, and false negatives. In our model's case, there were 2010 true positives to 257 false positives and 3282 true negatives to 280 false negatives. This means that our model was able to correctly predict if the text was written by human or AI 90.7% of the time.
-  ![Confusion Matrix](images/confusion_matrix.png)
+  !`[Confusion Matrix](images/confusion_matrix.png)`
 
 - **Precision-Recall Curve:**
   - A Precision-Recall curve demonstrates how our model’s precision and recall change with different threshold values. Precision measures how often our model correctly identifies AI-generated texts, while recall measures how many of the actual AI-generated texts our model successfully detects. Our diagram shows that the area under our Precision-Recall curve is 0.93, which demonstrates that our model maintains high precision (the ability to detect human vs AI written text) while also maintaining a high recall (the ability to detect most AI generated text).
-  ![Precision-Recall Curve](images/precision_recall_curve.png)
+  !`[Precision-Recall Curve](images/precision_recall_curve.png)`
 
 - **ROC Curve:**
   - The Receiver Operating Characteristic (ROC) curve demonstrates how well our model distinguishes between human and AI written text by plotting the true positive rate against the false positive rate at different thresholds. Our diagram shows that the area under the ROC curve is 0.96, which indicates that when our model classifies a text as AI-generated, it is correct 96% of the time.
-  ![ROC Curve](images/roc_curve.png)
+  !`[ROC Curve](images/roc_curve.png)`
 

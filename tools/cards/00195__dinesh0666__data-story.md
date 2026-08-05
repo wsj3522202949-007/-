@@ -46,7 +46,7 @@ A Claude Skill + React Artifact built with the Claude-in-Claude pattern using th
 
 ![DataStory](https://img.shields.io/badge/Claude-Skill-blueviolet) ![License](https://img.shields.io/badge/license-MIT-green)
 
-![DataStory Demo](demo.gif)
+!`[DataStory Demo](demo.gif)`
 
 ---
 

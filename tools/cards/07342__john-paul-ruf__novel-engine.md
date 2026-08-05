@@ -61,7 +61,7 @@ Novel Engine is a desktop app that pairs you with a full editorial team — a st
 
 I asked Claude and ChatGPT to audit ten books made in the MVP and this product with extended thinking on - [here are the results](https://john-paul-ruf.github.io/novel-engine/evaluation.html)
 
-![Your manuscript, front and center](screenshots/Screenshot%202026-07-08%20at%203.21.28%E2%80%AFAM.png)
+!`[Your manuscript, front and center](screenshots/Screenshot%202026-07-08%20at%203.21.28%E2%80%AFAM.png)`
 *The Manuscript view — your chapters on the left, your prose on the page. Read it like a book, or open the editor and write in it yourself.*
 
 - **Pitch to Published** — A 15-step pipeline takes your idea from a rough pitch to an export-ready manuscript (DOCX/EPUB) you can upload to KDP or send to an editor — then research agents and publishers, generate personalized query letters, and track submissions.
@@ -104,7 +104,7 @@ Novel Engine doesn't ship with an AI inside — it drives one you connect. You n
 | **Ollama** *(free, 100% local & private)* | Free | Install [Ollama](https://ollama.com/download) (normal app installer), then in Terminal: `ollama pull` a model of your choice |
 | **Codex CLI** | OpenAI account | If it's installed, Novel Engine finds it automatically |
 
-That Terminal step is the most technical thing you'll ever have to do — the app handles everything else. (More backends — llama-server and any OpenAI-compatible endpoint — are covered in the [technical guide](./TECHNICAL.md).)
+That Terminal step is the most technical thing you'll ever have to do — the app handles everything else. (More backends — llama-server and any OpenAI-compatible endpoint — are covered in the `[technical guide](./TECHNICAL.md)`.)
 
 ### 3. First launch
 
@@ -132,7 +132,7 @@ npm run download-pandoc   # optional — enables DOCX/EPUB export
 npm start
 ```
 
-You'll need [Node.js](https://nodejs.org) 18+ installed first. Full build and packaging instructions are in the [technical guide](./TECHNICAL.md).
+You'll need [Node.js](https://nodejs.org) 18+ installed first. Full build and packaging instructions are in the `[technical guide](./TECHNICAL.md)`.
 
 ---
 
@@ -178,7 +178,7 @@ Your book moves through **15 phases**, each with a clear deliverable. Nothing ad
 - **Command palette** — press **⌘K** (Ctrl+K) and jump to any chapter, phase, or action
 - **Works offline-ish** — with Ollama, the entire pipeline runs on your machine with no internet at all
 
-*(The full feature reference, with all the machinery underneath, lives in the [technical guide](./TECHNICAL.md).)*
+*(The full feature reference, with all the machinery underneath, lives in the `[technical guide](./TECHNICAL.md)`.)*
 
 ---
 
@@ -186,11 +186,11 @@ Your book moves through **15 phases**, each with a clear deliverable. Nothing ad
 
 | | |
 |---|---|
-| ![Library](screenshots/Screenshot%202026-07-08%20at%203.20.46%E2%80%AFAM.png) | ![The Workspace](screenshots/Screenshot%202026-07-08%20at%203.20.55%E2%80%AFAM.png) |
+| !`[Library](screenshots/Screenshot%202026-07-08%20at%203.20.46%E2%80%AFAM.png)` | !`[The Workspace](screenshots/Screenshot%202026-07-08%20at%203.20.55%E2%80%AFAM.png)` |
 | *Library — your bookshelf, with progress per book* | *Workspace — the pipeline on the left, your editor in chat* |
-| ![Manuscript Editor](screenshots/Screenshot%202026-07-08%20at%203.21.31%E2%80%AFAM.png) | ![Command Palette](screenshots/Screenshot%202026-07-08%20at%203.21.12%E2%80%AFAM.png) |
+| !`[Manuscript Editor](screenshots/Screenshot%202026-07-08%20at%203.21.31%E2%80%AFAM.png)` | !`[Command Palette](screenshots/Screenshot%202026-07-08%20at%203.21.12%E2%80%AFAM.png)` |
 | *Editing Verity's draft yourself — every change tracked* | *Command palette — jump anywhere with ⌘K* |
-| ![Providers](screenshots/Screenshot%202026-07-08%20at%203.21.58%E2%80%AFAM.png) | ![Model Selection](screenshots/Screenshot%202026-07-08%20at%203.22.03%E2%80%AFAM.png) |
+| !`[Providers](screenshots/Screenshot%202026-07-08%20at%203.21.58%E2%80%AFAM.png)` | !`[Model Selection](screenshots/Screenshot%202026-07-08%20at%203.22.03%E2%80%AFAM.png)` |
 | *Connect Claude, Codex, or Ollama* | *Pick any model from any connected AI* |
 
 ---
@@ -210,11 +210,11 @@ Novel Engine has no cloud, no accounts, and no telemetry. Your text is sent only
 No. See [Your Words Are Yours](#your-words-are-yours) above — the open-source license covers the app's code, not your writing.
 
 **Something broke / I'm confused.**
-Click the **Help** bubble in the app, open an [issue](https://github.com/john-paul-ruf/novel-engine/issues), or email [john.paul.ruf@gmail.com](mailto:john.paul.ruf@gmail.com?subject=Novel%20Engine).
+Click the **Help** bubble in the app, open an [issue](https://github.com/john-paul-ruf/novel-engine/issues), or email `[john.paul.ruf@gmail.com](mailto:john.paul.ruf@gmail.com?subject=Novel%20Engine)`.
 
 > ### 🧪 Testers Needed!
 >
-> The installers are early builds and **have not been tested on all platforms** — I develop on macOS, so the Windows and Linux installers especially need eyes on them. If you try one, **please report what happens** — perfect, crash, or anything in between: [issues](https://github.com/john-paul-ruf/novel-engine/issues) or [john.paul.ruf@gmail.com](mailto:john.paul.ruf@gmail.com?subject=Novel%20Engine%20Installer%20Testing).
+> The installers are early builds and **have not been tested on all platforms** — I develop on macOS, so the Windows and Linux installers especially need eyes on them. If you try one, **please report what happens** — perfect, crash, or anything in between: [issues](https://github.com/john-paul-ruf/novel-engine/issues) or `[john.paul.ruf@gmail.com](mailto:john.paul.ruf@gmail.com?subject=Novel%20Engine%20Installer%20Testing)`.
 
 ---
 
@@ -222,17 +222,17 @@ Click the **Help** bubble in the app, open an [issue](https://github.com/john-pa
 
 All the engineering detail lives out of the way:
 
-- **[TECHNICAL.md](./TECHNICAL.md)** — architecture, tech stack, project structure, AI backend internals, database schema, building installers
-- **[docs/architecture/](./docs/architecture/ARCHITECTURE.md)** — layer-by-layer architecture documentation
-- **[CHANGELOG.md](./CHANGELOG.md)** and **[RELEASE_NOTES.md](./RELEASE_NOTES.md)** — what's changed
+- **`[TECHNICAL.md](./TECHNICAL.md)`** — architecture, tech stack, project structure, AI backend internals, database schema, building installers
+- **`[docs/architecture/](./docs/architecture/ARCHITECTURE.md)`** — layer-by-layer architecture documentation
+- **`[CHANGELOG.md](./CHANGELOG.md)`** and **`[RELEASE_NOTES.md](./RELEASE_NOTES.md)`** — what's changed
 
-Novel Engine is built with Electron, React, and TypeScript in a clean five-layer architecture, and it's open source under [AGPL-3.0](LICENSE) — contributions and bug reports welcome.
+Novel Engine is built with Electron, React, and TypeScript in a clean five-layer architecture, and it's open source under `[AGPL-3.0](LICENSE)` — contributions and bug reports welcome.
 
 ---
 
 ## License
 
-The application code is licensed under [AGPL-3.0-only](LICENSE).
+The application code is licensed under `[AGPL-3.0-only](LICENSE)`.
 
 > **Reminder:** the license covers the app's source code. **Everything you write with the app is yours alone** — manuscripts, outlines, exports, all of it. See [Your Words Are Yours](#your-words-are-yours).
 

@@ -106,7 +106,7 @@ Sayori "That's so sweet!"
 Narrator "You made a friend today."
 ```
 
-See [docs/](docs/) for full language documentation.
+See `[docs/](docs/)` for full language documentation.
 
 ## Features
 
@@ -163,14 +163,14 @@ InkyPlayer (React UI)
 
 ## Documentation
 
-- [Getting Started](docs/Getting-Started.md)
-- [Language Reference](docs/InkyScript-Language-Reference.md)
-- [Quick Reference](docs/Quick-Reference.md)
-- [Examples](docs/Examples.md)
+- `[Getting Started](docs/Getting-Started.md)`
+- `[Language Reference](docs/InkyScript-Language-Reference.md)`
+- `[Quick Reference](docs/Quick-Reference.md)`
+- `[Examples](docs/Examples.md)`
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT — see `[LICENSE](LICENSE)`
 
 related:
   - methods/QUICK_START.md

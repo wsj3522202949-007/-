@@ -130,7 +130,7 @@ npx skills add worldwonderer/oh-story-claudecode -y
 <details>
 <summary>封面生成示例</summary>
 
-![封面示例 — 剑道独尊](demo/封面-剑道独尊.png)
+!`[封面示例 — 剑道独尊](demo/封面-剑道独尊.png)`
 
 </details>
 
@@ -243,7 +243,7 @@ Agent 按需加载 `references/` 中的写作理论（角色设计、对话技�
 
 ## 贡献
 
-欢迎贡献新 skill、补充知识库、更新市场数据。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎贡献新 skill、补充知识库、更新市场数据。详见 `[CONTRIBUTING.md](CONTRIBUTING.md)`。
 
 ## 致谢
 

@@ -141,4 +141,4 @@ assert isinstance(adapter, IStyleAdapter)  # True via @runtime_checkable
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+See `[CHANGELOG.md](CHANGELOG.md)`.

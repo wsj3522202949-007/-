@@ -85,10 +85,10 @@ Catches what a normal linter passes over: empty functions with real-looking bodi
 [CI/CD](#cicd-integration) •
 [Config](#configuration) •
 [VS Code](#vs-code-extension) •
-[Roadmap](ROADMAP.md) •
-[Changelog](CHANGELOG.md) •
-[Release Notes](docs/RELEASE_NOTES.md) •
-[Schema Validation](docs/SCHEMA_VALIDATION.md)
+`[Roadmap](ROADMAP.md)` •
+`[Changelog](CHANGELOG.md)` •
+`[Release Notes](docs/RELEASE_NOTES.md)` •
+`[Schema Validation](docs/SCHEMA_VALIDATION.md)`
 
 ---
 
@@ -248,7 +248,7 @@ Governance verification is a separate enforcement gate:
 slop-detector verify-governance ./.cr-ep
 ```
 
-See [docs/GOVERNANCE.md](docs/GOVERNANCE.md) for the artifact contract and
+See `[docs/GOVERNANCE.md](docs/GOVERNANCE.md)` for the artifact contract and
 policy checks.
 
 Operational review commands live on the same CLI entry point:
@@ -332,8 +332,8 @@ down regardless of other dimensions. Every scan is recorded to history (per proj
 10 multi-run files milestone the calibrator fires — weights apply only when >= 5 improvement
 events and >= 5 fp_candidate events per class have accumulated.
 
-Full specification: [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md) · [docs/MATH_MODELS.md](docs/MATH_MODELS.md)
-Agent usage: [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md)
+Full specification: `[docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)` · `[docs/MATH_MODELS.md](docs/MATH_MODELS.md)`
+Agent usage: `[docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md)`
 
 ---
 
@@ -342,36 +342,36 @@ Agent usage: [docs/AGENT_WORKFLOW.md](docs/AGENT_WORKFLOW.md)
 Use the docs by task, not by chronology:
 
 **Core behavior**
-- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
-- [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)
-- [docs/MATH_MODELS.md](docs/MATH_MODELS.md)
-- [docs/PATTERNS.md](docs/PATTERNS.md)
+- `[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)`
+- `[docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)`
+- `[docs/MATH_MODELS.md](docs/MATH_MODELS.md)`
+- `[docs/PATTERNS.md](docs/PATTERNS.md)`
 
 **Verification and operations**
-- [docs/CI_CD.md](docs/CI_CD.md)
-- [docs/VALIDATION.md](docs/VALIDATION.md)
-- [docs/SCHEMA_VALIDATION.md](docs/SCHEMA_VALIDATION.md)
-- [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)
-- [ROADMAP.md](ROADMAP.md)
+- `[docs/CI_CD.md](docs/CI_CD.md)`
+- `[docs/VALIDATION.md](docs/VALIDATION.md)`
+- `[docs/SCHEMA_VALIDATION.md](docs/SCHEMA_VALIDATION.md)`
+- `[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)`
+- `[ROADMAP.md](ROADMAP.md)`
 
 **Calibration and history**
-- [docs/SELF_CALIBRATION.md](docs/SELF_CALIBRATION.md)
-- [docs/LEDA_CALIBRATION.md](docs/LEDA_CALIBRATION.md)
-- [docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md](docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md)
-- [docs/HISTORY_TRACKING.md](docs/HISTORY_TRACKING.md)
-- [docs/GOVERNANCE.md](docs/GOVERNANCE.md)
+- `[docs/SELF_CALIBRATION.md](docs/SELF_CALIBRATION.md)`
+- `[docs/LEDA_CALIBRATION.md](docs/LEDA_CALIBRATION.md)`
+- `[docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md](docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md)`
+- `[docs/HISTORY_TRACKING.md](docs/HISTORY_TRACKING.md)`
+- `[docs/GOVERNANCE.md](docs/GOVERNANCE.md)`
 
 **Interfaces**
-- [docs/CLI_USAGE.md](docs/CLI_USAGE.md)
-- [docs/CONFIGURATION.md](docs/CONFIGURATION.md)
-- [docs/CONFIG_EXAMPLES.md](docs/CONFIG_EXAMPLES.md)
-- [docs/CLAUDE_CODE_SKILL.md](docs/CLAUDE_CODE_SKILL.md)
+- `[docs/CLI_USAGE.md](docs/CLI_USAGE.md)`
+- `[docs/CONFIGURATION.md](docs/CONFIGURATION.md)`
+- `[docs/CONFIG_EXAMPLES.md](docs/CONFIG_EXAMPLES.md)`
+- `[docs/CLAUDE_CODE_SKILL.md](docs/CLAUDE_CODE_SKILL.md)`
 
 ---
 
 ## What It Detects
 
-**27 patterns across 5 categories.** Full catalog: [docs/PATTERNS.md](docs/PATTERNS.md)
+**27 patterns across 5 categories.** Full catalog: `[docs/PATTERNS.md](docs/PATTERNS.md)`
 
 | Category | Patterns | Signal |
 |---|---|---|
@@ -412,7 +412,7 @@ deficit_score = 100 × (1 − quality) + pattern_penalty
 Default weights: `ldr=0.40 · inflation=0.30 · ddc=0.20 · purity=0.10` — sum is 1.00; GQG divides by `total_w` so exact normalization is not required (all four calibrated via `--self-calibrate` in v3.2.0+)
 Project aggregation uses SR9 conservative weighting: `0.6 × min + 0.4 × mean`
 
-Full specification: [docs/MATH_MODELS.md](docs/MATH_MODELS.md)
+Full specification: `[docs/MATH_MODELS.md](docs/MATH_MODELS.md)`
 
 ### Readable, actionable output
 
@@ -533,7 +533,7 @@ independent external validation of the score or a governance control by itself.
 - Only applies when confidence gap between top two candidates exceeds 0.10
 - Milestone is triggered by files re-scanned (not raw record count), avoiding false triggers on first-time project scans
 
-[docs/SELF_CALIBRATION.md →](docs/SELF_CALIBRATION.md) · [Validation boundary →](docs/VALIDATION.md)
+`[docs/SELF_CALIBRATION.md →](docs/SELF_CALIBRATION.md)` · `[Validation boundary →](docs/VALIDATION.md)`
 
 ---
 
@@ -545,7 +545,7 @@ slop-detector --export-history data.jsonl
 ```
 Every run auto-recorded to `~/.slop-detector/history.db`. The history database is
 the repository-local signal source for operational calibration and trend review.
-[docs/HISTORY_TRACKING.md →](docs/HISTORY_TRACKING.md)
+`[docs/HISTORY_TRACKING.md →](docs/HISTORY_TRACKING.md)`
 
 ---
 
@@ -575,7 +575,7 @@ Recommended use:
 - re-run after each patch instead of assuming the first diagnosis still holds
 - escalate to a human with evidence, not just a score
 
-[Skill source →](claude-skills/slop-detector/SKILL.md) · [Full docs →](docs/CLAUDE_CODE_SKILL.md)
+`[Skill source →](claude-skills/slop-detector/SKILL.md)` · `[Full docs →](docs/CLAUDE_CODE_SKILL.md)`
 
 ---
 
@@ -607,10 +607,10 @@ flowchart TD
 4. **Global Synthesis** — `global_injector.py` harvests signals across all dogfooding repos, synthesizes a vote-weighted optimal profile, and injects it into `DOMAIN_PROFILES["general"]`.
 
 Use this as an internal calibration aid, not as proof that the score measures a
-single externally validated latent condition. See [docs/VALIDATION.md](docs/VALIDATION.md)
+single externally validated latent condition. See `[docs/VALIDATION.md](docs/VALIDATION.md)`
 for the current validation boundary.
 
-[LEDA Calibration Docs →](docs/LEDA_CALIBRATION.md) · [Turbo Protocol →](docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md)
+`[LEDA Calibration Docs →](docs/LEDA_CALIBRATION.md)` · `[Turbo Protocol →](docs/LEDA_TURBO_PROTOCOL_DOGFOODING.md)`
 
 ---
 
@@ -654,7 +654,7 @@ Experimental. Use for longitudinal comparison within a project, not as an
 absolute gate. Exact MST topology is used up to
 `advanced.exact_topology_ceiling` (default `300` files); above that the engine
 switches to a deterministic approximation and reports
-`coherence_level = "vr_structural_approx"`. [docs/ARCHITECTURE.md →](docs/ARCHITECTURE.md)
+`coherence_level = "vr_structural_approx"`. `[docs/ARCHITECTURE.md →](docs/ARCHITECTURE.md)`
 
 ---
 
@@ -688,7 +688,7 @@ repos:
 --ci-mode quarantine  # escalates repeat offenders after 3 violations
 ```
 
-[Full CI/CD Integration Guide →](docs/CI_CD.md)
+`[Full CI/CD Integration Guide →](docs/CI_CD.md)`
 
 ---
 
@@ -732,7 +732,7 @@ architecture:
   layers: []
 ```
 
-[Full Configuration Guide →](docs/CONFIGURATION.md) · [Config Examples →](docs/CONFIG_EXAMPLES.md)
+`[Full Configuration Guide →](docs/CONFIGURATION.md)` · `[Config Examples →](docs/CONFIG_EXAMPLES.md)`
 
 ---
 
@@ -890,7 +890,7 @@ code --install-extension vscode-slop-detector-3.7.3.vsix
 | **v2.9.3** | Self-calibration engine; weight grid-search from usage history |
 | **v2.9.0** | `phantom_import` CRITICAL detection; history auto-tracking |
 
-[Full Release Notes →](docs/RELEASE_NOTES.md) · [Changelog →](CHANGELOG.md)
+`[Full Release Notes →](docs/RELEASE_NOTES.md)` · `[Changelog →](CHANGELOG.md)`
 
 ---
 
@@ -905,7 +905,7 @@ black src/ tests/
 ruff check src/ tests/
 ```
 
-[Development Guide →](docs/DEVELOPMENT.md)
+`[Development Guide →](docs/DEVELOPMENT.md)`
 
 ---
 
@@ -925,13 +925,13 @@ ruff check src/ tests/
   </a>
 </p>
 
-*Chart updated weekly via [GitHub Actions](.github/workflows/download-chart.yml). Monthly installs: [pypistats.org](https://pypistats.org/packages/ai-slop-detector) (mirrors excluded). Total: [pepy.tech](https://pepy.tech/project/ai-slop-detector) (incl. mirrors)*
+*Chart updated weekly via `[GitHub Actions](.github/workflows/download-chart.yml)`. Monthly installs: [pypistats.org](https://pypistats.org/packages/ai-slop-detector) (mirrors excluded). Total: [pepy.tech](https://pepy.tech/project/ai-slop-detector) (incl. mirrors)*
 
 ---
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see `[LICENSE](LICENSE)`.
 
 related:
   - methods/最强去AI味铁律.md

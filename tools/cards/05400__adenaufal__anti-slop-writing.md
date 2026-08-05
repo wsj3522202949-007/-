@@ -40,7 +40,7 @@ related:
 
 **v3.0** — 6 Juli 2026
 
-Bahasa Indonesia (default) | [English](README.en.md)
+Bahasa Indonesia (default) | `[English](README.en.md)`
 
 Skill universal biar output AI gak terdengar kayak AI. Lebih manusia, lebih spesifik, gak kaku.
 

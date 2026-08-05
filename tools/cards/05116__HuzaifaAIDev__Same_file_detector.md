@@ -38,7 +38,7 @@ related:
 
 # 🔍 Same File Detector
 
-![Same File Detector Banner](assets/banner.png)
+!`[Same File Detector Banner](assets/banner.png)`
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
@@ -148,19 +148,19 @@ Admin users can:
 
 ### Sign In
 
-![Sign In](assets/sign_in.jpg)
+!`[Sign In](assets/sign_in.jpg)`
 
 ### Create Account
 
-![Create Account](assets/create_account.jpg)
+!`[Create Account](assets/create_account.jpg)`
 
 ### Email OTP Verification
 
-![Verify Email](assets/verify_email.jpg)
+!`[Verify Email](assets/verify_email.jpg)`
 
 ### Password Reset
 
-![Reset Password](assets/reset_password.jpg)
+!`[Reset Password](assets/reset_password.jpg)`
 
 ---
 
@@ -168,15 +168,15 @@ Admin users can:
 
 ### User Dashboard
 
-![User Dashboard](assets/user_dashboard_empty.jpg)
+!`[User Dashboard](assets/user_dashboard_empty.jpg)`
 
 ### Select Files For Comparison
 
-![Selected Files](assets/user_files_selected.jpg)
+!`[Selected Files](assets/user_files_selected.jpg)`
 
 ### Comparison Results
 
-![Comparison Results](assets/comparison_results.jpg)
+!`[Comparison Results](assets/comparison_results.jpg)`
 
 ---
 
@@ -184,15 +184,15 @@ Admin users can:
 
 ### Admin Dashboard
 
-![Admin Dashboard](assets/admin_dashboard.jpg)
+!`[Admin Dashboard](assets/admin_dashboard.jpg)`
 
 ### User Management Light Theme
 
-![Light Theme](assets/admin_user_management_light.jpg)
+!`[Light Theme](assets/admin_user_management_light.jpg)`
 
 ### User Management Dark Theme
 
-![Dark Theme](assets/admin_user_management_dark.jpg)
+!`[Dark Theme](assets/admin_user_management_dark.jpg)`
 
 ---
 
@@ -202,21 +202,21 @@ Built with FastAPI Swagger documentation.
 
 ### Swagger Overview
 
-![Swagger Overview](assets/api_docs_overview.jpg)
+!`[Swagger Overview](assets/api_docs_overview.jpg)`
 
 ### Authentication, Admin & Compare APIs
 
-![Auth Admin Compare](assets/api_docs_auth_admin_compare.jpg)
+!`[Auth Admin Compare](assets/api_docs_auth_admin_compare.jpg)`
 
 ### Compare API Interface
 
-![Compare API](assets/api_docs_admin_compare_ui.jpg)
+!`[Compare API](assets/api_docs_admin_compare_ui.jpg)`
 
 ### API Schemas
 
-![Schemas](assets/api_docs_schemas.jpg)
+!`[Schemas](assets/api_docs_schemas.jpg)`
 
-![Extended Schemas](assets/api_docs_schemas_extended.jpg)
+!`[Extended Schemas](assets/api_docs_schemas_extended.jpg)`
 
 ---
 

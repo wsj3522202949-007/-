@@ -96,9 +96,9 @@ python3 src/demo.py
 *Watch as the Researcher and Writer agents collaborate to generate a blog post about AI trends for 2026!*
 
 
-![c1](c1.png)
-![c2](c2.png)
-![c3](c3.png)
+!`[c1](c1.png)`
+!`[c2](c2.png)`
+!`[c3](c3.png)`
 
 
 ---
@@ -194,4 +194,4 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 ## 📜 **License**
-This project is open-source under the [MIT License](LICENSE).
+This project is open-source under the `[MIT License](LICENSE)`.

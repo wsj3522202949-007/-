@@ -38,7 +38,7 @@ related:
 
 # OCNovel - AI小说生成系统
 
-[English](README_en.md) | 简体中文
+`[English](README_en.md)` | 简体中文
 
 一个基于 Python 的 AI 小说自动生成系统，支持东方玄幻、仙侠、武侠等多种类型的小说创作。系统采用模块化设计，集成多种 AI 模型接口，提供从大纲生成到章节内容创作的全流程自动化。同时提供 PySide6 可视化界面，降低使用门槛。
 
@@ -218,7 +218,7 @@ FALLBACK_MODEL_ID=Qwen/Qwen2.5-7B-Instruct
 FALLBACK_API_MODE=auto
 ```
 
-完整环境变量模板见 [`.env.example`](.env.example)。
+完整环境变量模板见 `[`.env.example`](.env.example)`。
 
 ### 3. 启动
 
@@ -326,7 +326,7 @@ pyinstaller ocnovel_win.spec --clean
 # 输出 dist/OCNovel/OCNovel.exe
 ```
 
-> 注：PyInstaller 不支持交叉编译，macOS 打包须在 macOS 上执行，Windows 打包须在 Windows 上执行。详见 [构建指南](BUILD.md)。
+> 注：PyInstaller 不支持交叉编译，macOS 打包须在 macOS 上执行，Windows 打包须在 Windows 上执行。详见 `[构建指南](BUILD.md)`。
 
 ## 核心架构
 
@@ -349,7 +349,7 @@ pyinstaller ocnovel_win.spec --clean
 - **优势**: 强大的推理能力，200K tokens 长上下文，适合复杂创作
 - **推荐模型**: `claude-3-5-sonnet-20241022`
 - **注意**: 不支持嵌入功能，需配合 OpenAI 兼容的嵌入模型使用
-- **详细文档**: [Claude 集成指南](docs/claude_integration.md)
+- **详细文档**: `[Claude 集成指南](docs/claude_integration.md)`
 
 ### Gemini (Google)
 
@@ -408,7 +408,7 @@ python -m pytest tests/test_outline_generator.py::TestSpecificCase -v
 ruff check src/ --select E,F,W --ignore E501
 ```
 
-测试约定与 fixture 说明详见 [`tests/README.md`](tests/README.md)。
+测试约定与 fixture 说明详见 `[`tests/README.md`](tests/README.md)`。
 
 > 推送到 GitHub 后由 GitHub Actions 自动跑 lint + 测试；CI 为减体积不安装 PySide6，依赖它的 GUI 测试会自动跳过（见 `tests/conftest.py`）。
 

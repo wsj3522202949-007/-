@@ -145,7 +145,7 @@ Examples:
     let g:llama_config.keymap_inst_cancel   = "<Esc>"
     ```
 
-Please refer to `:help llama_config` or the [source](./autoload/llama.vim)
+Please refer to `:help llama_config` or the `[source](./autoload/llama.vim)`
 for the full list of options.
 
 ### llama.cpp setup

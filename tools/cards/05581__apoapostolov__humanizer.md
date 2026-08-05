@@ -192,8 +192,8 @@ audience, desired tone, and any phrases or facts that must remain unchanged.
 
 Current version: `1.2.0`
 
-See [CHANGELOG.md](CHANGELOG.md) for release notes.
+See `[CHANGELOG.md](CHANGELOG.md)` for release notes.
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.

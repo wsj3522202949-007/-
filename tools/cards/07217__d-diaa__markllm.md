@@ -50,7 +50,7 @@ This repository provides the implementation of our research work: **"Optimizing 
 
 
 
-![teaser](images/shresults.png)
+!`[teaser](images/shresults.png)`
 
 
 
@@ -284,27 +284,27 @@ Our adaptive attacks outperform non-adaptive baselines in both evasion rates and
 
 - The evasion rate versus text quality trade-off of all surveyed attacks when the provider uses a Llama3-70b model and the Exp (Aaronson & Kirchner, 2023) watermark.
 
-  ![Exp-70B](images/qe_exp_70B-1.png)
+  !`[Exp-70B](images/qe_exp_70B-1.png)`
 
   
 
 - The evasion rate versus text quality trade-off of all surveyed attacks when the provider uses a Llama2-13b model and the Dist-Shift/KGW (Kirchenbauer et. al, 2023) watermark.
 
-  ![Exp-13B](images/qe_ds-1.png)
+  !`[Exp-13B](images/qe_ds-1.png)`
 
   
 
 - The evasion rates against a watermarked Llama2-13b model. We compare non-adaptive attacks, including ChatGPT3.5, versus our adaptively fine-tuned Llama2-7b paraphraser model.
 
-  ![ds_exp_bar](images/detect_pvalue_good-1.png)
+  !`[ds_exp_bar](images/detect_pvalue_good-1.png)`
 
 
 
 - The evasion rates (Up) and text quality measured with LLM-Judge (Down). The attacker uses a matching Llama2-7b surrogate and paraphraser model versus the provider’s Llama2-13b. We evaluate both the adaptive (diagonals) and the non-adaptive case (values not on the diagonal). For example, we obtain the bottom left value by training against Dist-Shift and testing on Inverse.
 
-  ![Evasion Rate](images/conf_mat_detect-1.png)
+  !`[Evasion Rate](images/conf_mat_detect-1.png)`
 
-  ![Paraphrase Quality](images/conf_mat_attkq-1.png)
+  !`[Paraphrase Quality](images/conf_mat_attkq-1.png)`
 
 
 

@@ -217,6 +217,6 @@ related:
 ---
 
 ## ⚖️ License
-Released under the [Apache-2.0 License](LICENSE).
+Released under the `[Apache-2.0 License](LICENSE)`.
 Codebase designed with high structural discipline. Happy Forging!
 #   p r o m p t - c a s t e r

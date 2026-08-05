@@ -54,7 +54,7 @@ ai-text-detector/
 - 样式通过 Tailwind CSS CDN 加载，字体使用 Google Fonts；⚠️ 需联网才能加载上述 CDN 资源。
 - 零依赖、无需打包，适合快速体验与二次开发。
 
-详细用法见 [web/README.md](web/README.md)。
+详细用法见 `[web/README.md](web/README.md)`。
 
 ## 🟢 微信小程序版（miniprogram/）
 
@@ -64,7 +64,7 @@ ai-text-detector/
 - 算法：基于 n-gram 词频统计 + 黄金数据集比对（`utils/` 下）。
 - 使用：用微信开发者工具打开 `miniprogram/` 目录即可预览与编译。
 
-详细用法见 [miniprogram/README.md](miniprogram/README.md)。
+详细用法见 `[miniprogram/README.md](miniprogram/README.md)`。
 
 ## 🤝 开源协议
 

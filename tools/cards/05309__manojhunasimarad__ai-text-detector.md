@@ -173,8 +173,8 @@ Navigate to `src/notebooks/` and run:
 
 ## Documentation
 
-- **Report**: [docs/report/main.tex](docs/report/main.tex) - Comprehensive technical report
-- **Presentation**: [docs/presentation/results_overview_presentation.tex](docs/presentation/results_overview_presentation.tex) - Beamer slides
+- **Report**: `[docs/report/main.tex](docs/report/main.tex)` - Comprehensive technical report
+- **Presentation**: `[docs/presentation/results_overview_presentation.tex](docs/presentation/results_overview_presentation.tex)` - Beamer slides
 - **API Guide**: See Streamlit app interface
 
 ## Key Findings
@@ -193,7 +193,7 @@ Navigate to `src/notebooks/` and run:
 
 ## Requirements
 
-See [requirements.txt](requirements.txt) for full dependency list. Key packages:
+See `[requirements.txt](requirements.txt)` for full dependency list. Key packages:
 - streamlit
 - transformers
 - torch

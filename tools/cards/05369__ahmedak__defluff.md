@@ -192,7 +192,7 @@ defluff lint post.md --pack marketing-growth,ai-llm   # stack several
 | `ai-llm` | LLM tells | `wellness-selfhelp` | influencer-speak |
 | `social-media` | X/Twitter engagement-bait | | |
 
-List them with `defluff packs`. High-false-positive terms (e.g. `pivot`, `detox`) ship commented-out so they're inert until you opt in. See the [packs README](src/defluff/data/packs/README.md).
+List them with `defluff packs`. High-false-positive terms (e.g. `pivot`, `detox`) ship commented-out so they're inert until you opt in. See the `[packs README](src/defluff/data/packs/README.md)`.
 
 ### Batteries-included defaults
 
@@ -275,7 +275,7 @@ git add .defluff/ignore.json && git commit -m "allow 'leverage' in finance conte
 
 Writes are atomic and cross-process locked; a corrupt overlay is warned and skipped — `detect()` never crashes.
 
-Every resolved lexicon (bundled + overlays + packs) carries a short content hash, printed on every run (`lexicon: 2cc05ba84457`) and exposed as `SlopReport.lexicon_version`. Pass `lexicon=defluff.load_lexicon()` once and every call scores against the same ruler — pinnable for CI baselines and RL rewards, and auditable since the hash changes if and only if the resolved entry set changes. Each release ships a dated lexicon with a changelog ([`CHANGELOG.md`](CHANGELOG.md)); `ai-vocab` is expected to turn over release to release, `cliche`/`hedge`/`corporate`/`transition` are near-stable.
+Every resolved lexicon (bundled + overlays + packs) carries a short content hash, printed on every run (`lexicon: 2cc05ba84457`) and exposed as `SlopReport.lexicon_version`. Pass `lexicon=defluff.load_lexicon()` once and every call scores against the same ruler — pinnable for CI baselines and RL rewards, and auditable since the hash changes if and only if the resolved entry set changes. Each release ships a dated lexicon with a changelog (`[`CHANGELOG.md`](CHANGELOG.md)`); `ai-vocab` is expected to turn over release to release, `cliche`/`hedge`/`corporate`/`transition` are near-stable.
 
 ---
 
@@ -371,7 +371,7 @@ Exit codes for `defluff lint`: `0` = clean · `1` = slop · `2` = bad input.
 
 ## Accuracy
 
-defluff is a deterministic matcher, not a trained classifier, so the metric that matters is **precision** — when it flags something, is it actually removable filler? On a 50-example hand-labeled set ([`eval/validation.jsonl`](eval/validation.jsonl)) spanning clear slop, clean prose, and *jargon-as-content traps* (e.g. "the **robust** standard errors", "**pivotal** trials"), at the default threshold:
+defluff is a deterministic matcher, not a trained classifier, so the metric that matters is **precision** — when it flags something, is it actually removable filler? On a 50-example hand-labeled set (`[`eval/validation.jsonl`](eval/validation.jsonl)`) spanning clear slop, clean prose, and *jargon-as-content traps* (e.g. "the **robust** standard errors", "**pivotal** trials"), at the default threshold:
 
 | Metric | Score | Reading |
 |--------|------:|---------|
@@ -405,7 +405,7 @@ The easiest contribution is adding a missed filler phrase:
 2. `pytest` — smoke tests catch boundary errors
 3. PR with one or two examples of the phrase in the wild
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for code setup and guidelines.
+See `[CONTRIBUTING.md](CONTRIBUTING.md)` for code setup and guidelines.
 
 related:
   - methods/最强去AI味铁律.md

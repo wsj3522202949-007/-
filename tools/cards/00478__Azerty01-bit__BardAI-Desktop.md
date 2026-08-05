@@ -141,6 +141,6 @@ related:
 
 Thank you for choosing BardAI-Desktop as your creative writing companion. Let your imagination soar and your words flow with the power of AI at your fingertips! 🚀📝
 
-For support or inquiries, please contact us at [bardai.support@example.com](mailto:bardai.support@example.com).
+For support or inquiries, please contact us at `[bardai.support@example.com](mailto:bardai.support@example.com)`.
 
 [Visit our website](https://www.bardai-desktop.com) for more information and updates.

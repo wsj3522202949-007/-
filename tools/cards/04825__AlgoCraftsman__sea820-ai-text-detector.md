@@ -157,7 +157,7 @@ truncation only on training/validation data, tokenizes with DistilBERT without s
 padding, and saves the prepared DatasetDict under ignored `data/processed/`. The test split
 is reserved for the final model comparison, and its membership is frozen in the compressed
 `results/transformer_split_manifest.csv.gz` file. See
-[`reports/transformer_data_preparation.md`](reports/transformer_data_preparation.md) for the
+`[`reports/transformer_data_preparation.md`](reports/transformer_data_preparation.md)` for the
 full policy and smoke-test command.
 
 Run the first validation-only training smoke test with:
@@ -180,7 +180,7 @@ dynamic padding, selects checkpoints by F1 for label 1 (AI-generated), and appen
 metadata to `results/transformer_experiments.csv`. Checkpoints and raw Trainer output stay
 under ignored `checkpoints/`. An unbounded all-row run additionally requires
 `--confirm-full-run`; review the smoke-run duration estimate before using it. See
-[`reports/transformer_training.md`](reports/transformer_training.md) for the policy and
+`[`reports/transformer_training.md`](reports/transformer_training.md)` for the policy and
 configuration details.
 
 Full execution takes about 5 to 8 minutes on Colab or a typical laptop. The TF-IDF step over
@@ -198,7 +198,7 @@ The one-epoch checkpoint was frozen as the final Transformer model. A second epo
 run because validation F1 was already near ceiling, remaining upside was very small, and a
 naive resume would alter the completed one-epoch learning-rate schedule. No further tuning
 occurred after the final test evaluation. See
-[`reports/transformer_training.md`](reports/transformer_training.md) and
+`[`reports/transformer_training.md`](reports/transformer_training.md)` and
 `results/transformer_experiments.csv` for the complete settings and caveats.
 
 ### Frozen final comparison
@@ -224,7 +224,7 @@ That single command reconstructs classic-model rows by the manifest's original
 frozen training rows, and scores Logistic Regression, Linear SVM, and the frozen one-epoch
 DistilBERT checkpoint on the same frozen test membership. It writes reusable metrics,
 per-row predictions/scores, and an audit record under `results/` and refuses to overwrite
-them. See [`reports/frozen_test_comparison.md`](reports/frozen_test_comparison.md).
+them. See `[`reports/frozen_test_comparison.md`](reports/frozen_test_comparison.md)`.
 
 The confirmed frozen-test run is complete. Linear SVM was strongest with F1 `0.999471`,
 followed by DistilBERT at `0.998610` and Logistic Regression at `0.994726`. These scores use
@@ -240,7 +240,7 @@ python -m src.analyze_frozen_errors --overwrite
 This verifies the frozen predictions, aligns prepared rows by source ID, measures true
 untruncated token lengths, and saves confusion, model-overlap, length, truncation,
 opening-style, confidence, and compact qualitative-example artifacts. It does not retrain or
-tune any model. See [`reports/error_analysis.md`](reports/error_analysis.md).
+tune any model. See `[`reports/error_analysis.md`](reports/error_analysis.md)`.
 
 ## Current results (Week 1 baseline)
 

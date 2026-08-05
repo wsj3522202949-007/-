@@ -43,7 +43,7 @@ A canon-driven, multi-agent Claude Code workflow for long-form fiction writing �
 
 Built and used by a Japanese light novel author (15+ traditionally published fantasy books, 1M+ views on a previous AI-assisted novel). This repo is the publishable snapshot of the workflow that produced **137,806 characters across 20 chapters in a single 96-minute Claude Code run** — at the author's own writing quality.
 
-![claude-novel-workflow repository overview](docs/assets/repository-overview.png)
+!`[claude-novel-workflow repository overview](docs/assets/repository-overview.png)`
 
 ---
 
@@ -98,7 +98,7 @@ The bottleneck is not the prompt, the model, or the chat history. The bottleneck
 
 Build these well, and a competent AI agent can draft 20 chapters in your voice. Skip them, and you get the generic AI prose everyone complains about.
 
-See [`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md) for the full argument.
+See `[`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md)` for the full argument.
 
 ---
 
@@ -112,7 +112,7 @@ JET was originally optimized for the Japanese web-fiction market (Kakuyomu, Naro
 
 **Crucially: JET is operational.** Every variable in the model can be scored on a chapter by an AI agent (or a human reviewer). This is what makes it usable as a quality-evaluation tool inside the multi-agent pipeline — when an AI judges whether a draft is "good," it needs an explicit framework to judge against. JET is that framework in this project.
 
-See [`docs/JET_OS_PRIMER.md`](docs/JET_OS_PRIMER.md) for the full primer — variables, rules, OS classes, and how to use the framework as both an authoring tool and an AI-evaluation scaffold.
+See `[`docs/JET_OS_PRIMER.md`](docs/JET_OS_PRIMER.md)` for the full primer — variables, rules, OS classes, and how to use the framework as both an authoring tool and an AI-evaluation scaffold.
 
 ---
 
@@ -182,12 +182,12 @@ claude-novel-workflow/
 
 Read in this order:
 
-1. [`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md) — Why the approach works.
-2. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — How the folders are organized and why.
-3. [`docs/JET_OS_PRIMER.md`](docs/JET_OS_PRIMER.md) — The story-design framework the pipeline targets.
-4. [`example_project/README.md`](example_project/README.md) — Tour of the working project.
-5. [`docs/THREE_LAYER_REVIEW.md`](docs/THREE_LAYER_REVIEW.md) — How chapter review actually works.
-6. [`docs/CASE_STUDY.md`](docs/CASE_STUDY.md) — Real numbers from real sprints.
+1. `[`docs/PHILOSOPHY.md`](docs/PHILOSOPHY.md)` — Why the approach works.
+2. `[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)` — How the folders are organized and why.
+3. `[`docs/JET_OS_PRIMER.md`](docs/JET_OS_PRIMER.md)` — The story-design framework the pipeline targets.
+4. `[`example_project/README.md`](example_project/README.md)` — Tour of the working project.
+5. `[`docs/THREE_LAYER_REVIEW.md`](docs/THREE_LAYER_REVIEW.md)` — How chapter review actually works.
+6. `[`docs/CASE_STUDY.md`](docs/CASE_STUDY.md)` — Real numbers from real sprints.
 
 ### If you want to start your own project
 
@@ -197,8 +197,8 @@ This repo supports **two starting paths**, depending on what you bring:
 
 You're starting a novel from zero. No manuscript, no notes, just an idea.
 
-1. [`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md) — Step-by-step from empty folder to first drafted chapter.
-2. [`docs/HOW_TO_ADAPT.md`](docs/HOW_TO_ADAPT.md) — What to copy from the example, what to throw away, what to adapt.
+1. `[`docs/GETTING_STARTED.md`](docs/GETTING_STARTED.md)` — Step-by-step from empty folder to first drafted chapter.
+2. `[`docs/HOW_TO_ADAPT.md`](docs/HOW_TO_ADAPT.md)` — What to copy from the example, what to throw away, what to adapt.
 
 Typical sequence:
 
@@ -215,8 +215,8 @@ Typical sequence:
 
 You have a partial or complete manuscript, plus scattered notes — and you want to organize it into a canon-driven project.
 
-1. [`docs/EXISTING_PROJECT_IMPORT.md`](docs/EXISTING_PROJECT_IMPORT.md) — Bootstrap process for importing existing work.
-2. [`docs/HOW_TO_ADAPT.md`](docs/HOW_TO_ADAPT.md) — Same adaptation guide as Path A.
+1. `[`docs/EXISTING_PROJECT_IMPORT.md`](docs/EXISTING_PROJECT_IMPORT.md)` — Bootstrap process for importing existing work.
+2. `[`docs/HOW_TO_ADAPT.md`](docs/HOW_TO_ADAPT.md)` — Same adaptation guide as Path A.
 
 Typical sequence:
 
@@ -268,7 +268,7 @@ The 1M-view proof point matters because it demonstrates that **AI-assisted ficti
 
 ## License
 
-- **The pipeline structure, templates, and documentation** are licensed under [CC BY 4.0](LICENSE) — adapt and build on it, with attribution.
+- **The pipeline structure, templates, and documentation** are licensed under `[CC BY 4.0](LICENSE)` — adapt and build on it, with attribution.
 - **The prose content** in `example_project/07_draft/episodes/` plus the story-specific contents of `example_project/90_canon/` remain the original author's copyrighted work and are not licensed for reuse, derivative works, or republication.
 
 In short: **steal the architecture, don't steal the story.**
@@ -297,7 +297,7 @@ The author shares this in the spirit of "here's what's working for me right now,
 
 ### Use freely
 
-The pipeline structure, templates, documentation, and workflow patterns in this repo are released under [CC BY 4.0](LICENSE). That means:
+The pipeline structure, templates, documentation, and workflow patterns in this repo are released under `[CC BY 4.0](LICENSE)`. That means:
 
 - **Personal use** — yes, freely.
 - **Commercial use** — yes, freely. Use this in your indie author business, your studio, your publishing house. Build paid products on top of it. Sell novels you wrote with it.
@@ -305,7 +305,7 @@ The pipeline structure, templates, documentation, and workflow patterns in this 
 - **Modification** — yes, freely. Adapt, extend, restructure, rename, gut whatever doesn't serve you.
 - **Redistribution** — yes, freely, with attribution to the original (link this repo).
 
-The only thing you can't do under this license is reuse the **prose content** in `example_project/07_draft/episodes/` and `episodes_polished/`, and the story-specific contents of `example_project/90_canon/` — those remain the original author's copyrighted creative work. See [LICENSE](LICENSE) for full terms.
+The only thing you can't do under this license is reuse the **prose content** in `example_project/07_draft/episodes/` and `episodes_polished/`, and the story-specific contents of `example_project/90_canon/` — those remain the original author's copyrighted creative work. See `[LICENSE](LICENSE)` for full terms.
 
 In short: **the architecture is yours to take. The story isn't.**
 

@@ -44,7 +44,7 @@ related:
 
 # betterwords
 
-![betterwords 2.0.0 overview](.github/assets/betterwords-2.0.0.png)
+!`[betterwords 2.0.0 overview](.github/assets/betterwords-2.0.0.png)`
 
 Source-respecting rules for drafting, rewriting, copyediting, and auditing durable text.
 
@@ -79,10 +79,10 @@ You can also install `betterwords` from Plugins in the ChatGPT desktop app after
 
 ## Other hosts
 
-- Claude supports the same skill and a namespaced Claude Code plugin. See [Claude setup](.github/platforms/claude.md).
-- Gemini CLI supports extension and standalone-skill installation; Antigravity supports the plugin folder. See [Gemini and Antigravity setup](.github/platforms/gemini.md).
-- GitHub Copilot can use repository instructions. See [GitHub Copilot setup](.github/platforms/github-copilot.md).
-- Hosts without skill support can use `betterwords.md` with the [short instruction adapter](.github/platforms/common-instructions.md). See [ChatGPT setup](.github/platforms/chatgpt.md) for custom GPT and Project use.
+- Claude supports the same skill and a namespaced Claude Code plugin. See `[Claude setup](.github/platforms/claude.md)`.
+- Gemini CLI supports extension and standalone-skill installation; Antigravity supports the plugin folder. See `[Gemini and Antigravity setup](.github/platforms/gemini.md)`.
+- GitHub Copilot can use repository instructions. See `[GitHub Copilot setup](.github/platforms/github-copilot.md)`.
+- Hosts without skill support can use `betterwords.md` with the `[short instruction adapter](.github/platforms/common-instructions.md)`. See `[ChatGPT setup](.github/platforms/chatgpt.md)` for custom GPT and Project use.
 
 ## Use
 

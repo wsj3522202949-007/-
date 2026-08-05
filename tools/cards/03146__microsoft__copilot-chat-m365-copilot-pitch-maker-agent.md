@@ -171,7 +171,7 @@ The final recommendation clearly explains why an upgrade is required now, what r
 
 The image below shows an example of the generated pitch output from the Agent (BETA).
 
-![Example output from the Copilot Chat to M365 Copilot Pitch Maker Agent (BETA)](./Media/Output.png)
+!`[Example output from the Copilot Chat to M365 Copilot Pitch Maker Agent (BETA)](./Media/Output.png)`
 
 ***
 
@@ -195,4 +195,4 @@ This Agent (BETA) helps partners identify opportunity, structure high-quality co
 
 **From AI experimentation to governed, organization-wide transformation.**
 
-For setup, deployment, and execution details, see the [run guide](RUN.MD).
+For setup, deployment, and execution details, see the `[run guide](RUN.MD)`.

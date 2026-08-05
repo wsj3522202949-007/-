@@ -35,7 +35,7 @@ related:
 
 ---
 
-![Chatterbox Multilingual Image](./Chatterbox-Multilingual.png)
+!`[Chatterbox Multilingual Image](./Chatterbox-Multilingual.png)`
 
 
 # Chatterbox TTS

@@ -47,7 +47,7 @@ An advanced web application powered by a Deep Learning Artificial Neural Network
 
 ## 🖥️ User Interface
 
-![AI Fake News Detector UI](UI.png)
+!`[AI Fake News Detector UI](UI.png)`
 
 ## ✨ Features
 

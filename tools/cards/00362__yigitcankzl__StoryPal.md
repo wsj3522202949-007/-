@@ -60,10 +60,10 @@ An AI-powered web app that generates personalized, illustrated educational story
 
 ## Demo
 
-![StoryPal Demo](assets/demo.gif)
+!`[StoryPal Demo](assets/demo.gif)`
 
-![StoryPal Screenshot 1](assets/1.png)
-![StoryPal Screenshot 2](assets/2.png)
+!`[StoryPal Screenshot 1](assets/1.png)`
+!`[StoryPal Screenshot 2](assets/2.png)`
 
 ## The Problem
 
@@ -285,7 +285,7 @@ StoryPal is designed with children and accessibility in mind:
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the `[LICENSE](LICENSE)` file for details.
 
 related:
   - methods/网文写作最强SOP.md

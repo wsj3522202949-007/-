@@ -40,7 +40,7 @@ related:
 
 # 📖 SuperNovel
 
-[中文文档](./README_zh-CN.md) | English | [日本語](./README_ja.md) | [Français](./README_fr-FR.md)
+`[中文文档](./README_zh-CN.md)` | English | `[日本語](./README_ja.md)` | `[Français](./README_fr-FR.md)`
 <div align="center">
 
 ✨ **Core Features** ✨
@@ -292,7 +292,7 @@ related:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see `[CONTRIBUTING.md](./.github/CONTRIBUTING.md)` for guidelines.
 
 ## 📄 License
 

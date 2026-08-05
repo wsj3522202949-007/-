@@ -44,7 +44,7 @@ related:
 
 Book Recommender is a Streamlit web application that helps users find the best book in a specific genre based on their query. The application fetches books from the Google Books API, narrows down the top 10 books by ratings and reviews, and uses a Hugging Face transformer model to find the best match book.
 
-![Book Image](book.jpg)
+!`[Book Image](book.jpg)`
 
 ## Setup
 

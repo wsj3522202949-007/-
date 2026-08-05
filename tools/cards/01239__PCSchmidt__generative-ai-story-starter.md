@@ -285,8 +285,8 @@ We welcome contributions! Here's how to get started:
 
 ### AI/ML Concepts
 - [LangChain Documentation](https://python.langchain.com/)
-- [Vector Databases Guide](../docs/vector-databases.md)
-- [RAG Implementation Tutorial](link-to-tutorial)
+- `[Vector Databases Guide](../docs/vector-databases.md)`
+- `[RAG Implementation Tutorial](link-to-tutorial)`
 
 ### Development Resources
 - [React Native Docs](https://reactnative.dev/)
@@ -306,7 +306,7 @@ We welcome contributions! Here's how to get started:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 ## 🙏 Acknowledgments
 

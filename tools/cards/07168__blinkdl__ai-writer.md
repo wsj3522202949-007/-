@@ -64,7 +64,7 @@ Python版安装方法：
 
 Python版网页界面：执行 python server.py（或双击server.bat）然后打开 web-client 中的 index.html（推荐用Chrome）。
 
-![Screenshot](server.jpg)
+!`[Screenshot](server.jpg)`
 
 注意：模型的训练数据全部来自网文，缺乏生活常识。***生成的文字仅供娱乐。请遵守法律法规。***
 
@@ -113,11 +113,11 @@ https://zhuanlan.zhihu.com/p/435972716
 
 新玄幻模型效果：
 
-![Screenshot](AI-Writer.jpg)
+!`[Screenshot](AI-Writer.jpg)`
 
 言情模型效果【黄字是用户输入的开头，后面是模型续写】：
 
-![Screenshot](AI-writer-yq.png)
+!`[Screenshot](AI-writer-yq.png)`
 
 ```
   当霏微萧瑟与车水马龙相遇，烟雨朦胧，如雾如尘，古巷的一切热闹都被包裹在这片忽然而至的雨色夜空中。淅淅沥沥的雨声没能完全掩盖烟火 燃放的砰响，一切显得真切而又隐约。烟雨如墨，月光铺在地上，将沙发、沙发、小沙发都点染成一片银色，触目惊心。
@@ -152,7 +152,7 @@ https://zhuanlan.zhihu.com/p/435972716
 
 旧模型效果：
 
-![Screenshot](AI-Writer.gif)
+!`[Screenshot](AI-Writer.gif)`
 
 # 模型原理（简化版）
 

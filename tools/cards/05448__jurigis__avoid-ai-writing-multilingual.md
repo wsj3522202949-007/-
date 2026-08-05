@@ -49,11 +49,11 @@ Each `SKILL-XX.md` file is grounded in **statistically documented, language-nati
 
 | File | Language | Version | Status | Key context |
 |---|---|---|---|---|
-| [SKILL-DE.md](SKILL-DE.md) | German (Deutsch) | 2.1.0 | ✅ Ready | LinkedIn / New Work / corporate comms |
-| [SKILL-RO.md](SKILL-RO.md) | Romanian (Română) | 1.0.0 | ✅ Ready | NGO / EU-funded project communication |
-| [SKILL-IT.md](SKILL-IT.md) | Italian (Italiano) | 1.0.0 | ✅ Ready | Cultural institution communication / startup press releases |
-| [SKILL-FR.md](SKILL-FR.md) | French (Français) | 1.0.0 | ✅ Ready | Management memos / Grandes Écoles / LinkedIn |
-| [SKILL-SV.md](SKILL-SV.md) | Swedish (Svenska) | 1.0.0 | ✅ Ready | LinkedIn brag-posts / business comms / job applications |
+| `[SKILL-DE.md](SKILL-DE.md)` | German (Deutsch) | 2.1.0 | ✅ Ready | LinkedIn / New Work / corporate comms |
+| `[SKILL-RO.md](SKILL-RO.md)` | Romanian (Română) | 1.0.0 | ✅ Ready | NGO / EU-funded project communication |
+| `[SKILL-IT.md](SKILL-IT.md)` | Italian (Italiano) | 1.0.0 | ✅ Ready | Cultural institution communication / startup press releases |
+| `[SKILL-FR.md](SKILL-FR.md)` | French (Français) | 1.0.0 | ✅ Ready | Management memos / Grandes Écoles / LinkedIn |
+| `[SKILL-SV.md](SKILL-SV.md)` | Swedish (Svenska) | 1.0.0 | ✅ Ready | LinkedIn brag-posts / business comms / job applications |
 
 Planned: Spanish (`SKILL-ES.md`) — PRs welcome.
 
@@ -268,7 +268,7 @@ Replace `ES` / `Spanish` with your target language and ISO 639-1 code.
 
 ### What the process produces
 
-The process defined in [CLAUDE.md](CLAUDE.md) requires:
+The process defined in `[CLAUDE.md](CLAUDE.md)` requires:
 
 1. **Web research in the target language** — at least 3 independent source types:
    - Wikipedia community page for the target language

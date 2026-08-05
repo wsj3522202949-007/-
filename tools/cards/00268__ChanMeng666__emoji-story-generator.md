@@ -52,7 +52,7 @@ short_description: AI-powered emoji story generator with voting system
 
 <div align="center"><a name="readme-top"></a>
 
-[![Project Banner](./public/emoji-story-generator-logo.svg)](#)
+`[![Project Banner](./public/emoji-story-generator-logo.svg)`](#)
 
 # 🚀 Emoji Story Generator<br/><h3>AI-Powered Creative Storytelling Platform</h3>
 
@@ -844,7 +844,7 @@ def generate_story_with_ai(emojis: list[str]) -> str | None:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 **Open Source Benefits:**
 - ✅ Commercial use allowed
@@ -880,7 +880,7 @@ While not required, attribution is appreciated when using this project as a base
 **Chan Meng** - Full-Stack Developer & AI Enthusiast
 - <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="16" height="16"> LinkedIn: [chanmeng666](https://www.linkedin.com/in/chanmeng666/)
 - <img src="https://cdn.simpleicons.org/github/181717" width="16" height="16"> GitHub: [ChanMeng666](https://github.com/ChanMeng666)
-- <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16"> Email: [chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)
+- <img src="https://cdn.simpleicons.org/gmail/EA4335" width="16" height="16"> Email: `[chanmeng.dev@gmail.com](mailto:chanmeng.dev@gmail.com)`
 - <img src="https://cdn.simpleicons.org/internetexplorer/0078D4" width="16" height="16"> Website: [chanmeng.org](https://chanmeng.org/)
 
 **Specializations:**

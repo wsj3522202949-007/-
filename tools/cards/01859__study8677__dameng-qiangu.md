@@ -40,7 +40,7 @@ related:
 
 # Dameng Qiangu
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+`[English](README.md)` | `[简体中文](README.zh-CN.md)`
 
 [![Deploy GitHub Pages](https://github.com/study8677/dameng-qiangu/actions/workflows/deploy.yml/badge.svg)](https://github.com/study8677/dameng-qiangu/actions/workflows/deploy.yml)
 [![CI](https://github.com/study8677/dameng-qiangu/actions/workflows/ci.yml/badge.svg)](https://github.com/study8677/dameng-qiangu/actions/workflows/ci.yml)
@@ -51,9 +51,9 @@ related:
 
 **AI-native historical interactive fiction.** Enter the dreams of great pre-Qing historical figures, make hard choices at the turning points of their lives, and create your own shareable dream levels with AI. Creators can start from the official cast or define a custom pre-Qing historical figure.
 
-[Play the live demo](https://study8677.github.io/dameng-qiangu/) · [Read the architecture](docs/ARCHITECTURE.md) · [View the roadmap](docs/ROADMAP.md)
+[Play the live demo](https://study8677.github.io/dameng-qiangu/) · `[Read the architecture](docs/ARCHITECTURE.md)` · `[View the roadmap](docs/ROADMAP.md)`
 
-![Dameng Qiangu preview](docs/assets/social-preview.svg)
+!`[Dameng Qiangu preview](docs/assets/social-preview.svg)`
 
 ## Why It Is Different
 
@@ -173,16 +173,16 @@ Good first contributions:
 - Expand Playwright coverage for sharing and creation flows.
 - Improve English translations for the official dreams.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+Read `[CONTRIBUTING.md](CONTRIBUTING.md)` before opening a pull request.
 
 ## Community
 
-- [Roadmap](docs/ROADMAP.md)
-- [Architecture](docs/ARCHITECTURE.md)
-- [Changelog](CHANGELOG.md)
-- [Security](SECURITY.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
+- `[Roadmap](docs/ROADMAP.md)`
+- `[Architecture](docs/ARCHITECTURE.md)`
+- `[Changelog](CHANGELOG.md)`
+- `[Security](SECURITY.md)`
+- `[Code of Conduct](CODE_OF_CONDUCT.md)`
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.

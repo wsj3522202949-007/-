@@ -86,7 +86,7 @@ Alongside the catalogue, a **density rail** in the article's left
 gutter shows per-paragraph scores along four axes (information,
 argument, impact, specificity) as wavy silhouettes - convex
 bumps where the paragraph is above the internet-average baseline,
-concave dents where it's below. See [docs/density-rail.md](docs/density-rail.md).
+concave dents where it's below. See `[docs/density-rail.md](docs/density-rail.md)`.
 
 ## How a session runs
 
@@ -111,8 +111,8 @@ scarce resource, so the agent batches its questions and the author
 batches their directives.
 
 The full agent protocol lives at
-[`.claude/skills/slopmop/SKILL.md`](.claude/skills/slopmop/SKILL.md);
-the framework definition lives at [`CLAUDE.md`](CLAUDE.md).
+`[`.claude/skills/slopmop/SKILL.md`](.claude/skills/slopmop/SKILL.md)`;
+the framework definition lives at `[`CLAUDE.md`](CLAUDE.md)`.
 
 ## Architecture
 
@@ -170,7 +170,7 @@ bun run build:cli   # produces dist/slopmop
 ## Deployment
 
 DigitalOcean App Platform spec lives at
-[`.do/app.yaml`](.do/app.yaml). The deployed instance persists session
+`[`.do/app.yaml`](.do/app.yaml)`. The deployed instance persists session
 state to DigitalOcean Spaces (S3-compatible) under a 72-hour lifecycle
 rule - active sessions keep resetting the timer because every mutation
 re-PUTs the whole `DocState` blob. The App Platform filesystem is

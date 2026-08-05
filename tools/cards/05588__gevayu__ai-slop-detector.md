@@ -48,7 +48,7 @@ The slop comes from **mode collapse** and **distributional convergence**: when g
 
 ## What's in here
 
-- **[SKILL.md](SKILL.md)** — the full skill: workflow, domain-specific guides (writing, visual, design, web, social), red-flag vocabulary list, pre-delivery checklist, and reusable prompt templates (English + Hebrew).
+- **`[SKILL.md](SKILL.md)`** — the full skill: workflow, domain-specific guides (writing, visual, design, web, social), red-flag vocabulary list, pre-delivery checklist, and reusable prompt templates (English + Hebrew).
 
 ## How to use
 
@@ -58,11 +58,11 @@ Drop the contents of `SKILL.md` into your system prompt, custom instructions, or
 
 ### As a prompt template
 
-Skip to [Reusable Anti-Slop Prompt Template](SKILL.md#reusable-anti-slop-prompt-template). Paste the compact version before any content request.
+Skip to `[Reusable Anti-Slop Prompt Template](SKILL.md#reusable-anti-slop-prompt-template)`. Paste the compact version before any content request.
 
 ### As a checklist
 
-Use [Pre-delivery Checklist](SKILL.md#pre-delivery-checklist) as a manual review pass on AI-generated content before you publish.
+Use `[Pre-delivery Checklist](SKILL.md#pre-delivery-checklist)` as a manual review pass on AI-generated content before you publish.
 
 ## Coverage
 

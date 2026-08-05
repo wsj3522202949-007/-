@@ -251,9 +251,9 @@ make dev     # 开发模式（热重载）
 
 ## License
 
-本仓库源代码以 [AGPL v3](LICENSE) 授权。官方二进制发行版以 [软件许可协议](EULA.md) 发布，免费用于个人及商业用途。
+本仓库源代码以 `[AGPL v3](LICENSE)` 授权。官方二进制发行版以 `[软件许可协议](EULA.md)` 发布，免费用于个人及商业用途。
 
-Goink is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See [LICENSE](LICENSE) for the full text and [NOTICE](NOTICE) for additional terms under AGPLv3 Section 7.
+Goink is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See `[LICENSE](LICENSE)` for the full text and `[NOTICE](NOTICE)` for additional terms under AGPLv3 Section 7.
 
 ## Star History
 

@@ -45,13 +45,13 @@ related:
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)
 ![Hugging Face](https://img.shields.io/badge/HuggingFace-Model-yellow.svg)
 
-**Language / 语言**: [English](README_EN.md) | [中文](README_ZH.md)
+**Language / 语言**: `[English](README_EN.md)` | `[中文](README_ZH.md)`
 
 </div>
 
 **Open Detector** is a BERT binary classification model for identifying whether academic papers are closer to **human writing** or **AI writing style**. It serves as an **open alternative** to expensive commercial detectors like Turnitin, suitable for students, individual researchers, and local deployment users.
 
-![Demo](images/demo.png)
+!`[Demo](images/demo.png)`
 
 > 🌐 **Try Online**: [https://www.xyzscience.com/](https://www.xyzscience.com/)
 

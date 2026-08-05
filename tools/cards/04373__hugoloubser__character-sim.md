@@ -231,12 +231,12 @@ python -m character_creator.demos.live_dialogue
   - methods/人物思维蒸馏法.md
   - methods/模板库.md
 ---|
-| [INSTALLATION_SETUP.md](INSTALLATION_SETUP.md) | Everyone | Prerequisites, environment setup, troubleshooting |
-| [QUICKSTART.md](QUICKSTART.md) | Everyone | 5-minute start guide |
-| [USER_GUIDE.md](USER_GUIDE.md) | End users | Streamlit UI walkthrough |
-| [API_DOCUMENTATION.md](API_DOCUMENTATION.md) | Integrators | REST API reference with examples |
-| [DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md) | Contributors | Architecture patterns, extension points, testing |
-| [ARCHITECTURE.md](ARCHITECTURE.md) | Contributors | System design and design decisions |
+| `[INSTALLATION_SETUP.md](INSTALLATION_SETUP.md)` | Everyone | Prerequisites, environment setup, troubleshooting |
+| `[QUICKSTART.md](QUICKSTART.md)` | Everyone | 5-minute start guide |
+| `[USER_GUIDE.md](USER_GUIDE.md)` | End users | Streamlit UI walkthrough |
+| `[API_DOCUMENTATION.md](API_DOCUMENTATION.md)` | Integrators | REST API reference with examples |
+| `[DEVELOPER_GUIDE.md](DEVELOPER_GUIDE.md)` | Contributors | Architecture patterns, extension points, testing |
+| `[ARCHITECTURE.md](ARCHITECTURE.md)` | Contributors | System design and design decisions |
 
 ## Code Quality
 

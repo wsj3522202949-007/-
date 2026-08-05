@@ -215,7 +215,7 @@ This tool is a heuristic analyzer, not a definitive classifier. You should know:
 
 ## Contributing
 
-Pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Pull requests are welcome. See `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines.
 
 When adding a new detection signal:
 1. Add the logic to the appropriate `src/` module
@@ -259,4 +259,4 @@ If you find this tool useful and want to build on it, I'd recommend using Claude
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See `[LICENSE](LICENSE)` for details.

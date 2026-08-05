@@ -63,7 +63,7 @@ logged, stored, or sent over the network. The only persisted data is the enabled
 setting and hostnames the user explicitly disables, stored with
 `chrome.storage.local` so they are not synced to a Google account.
 
-See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md) for the complete
+See `[PRIVACY.md](PRIVACY.md)` and `[SECURITY.md](SECURITY.md)` for the complete
 permission rationale and security model.
 
 ## How it behaves

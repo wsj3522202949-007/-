@@ -68,7 +68,7 @@ A complete weekly planning and review system.
 - **Friday:** Claude reviews completions, carries forward blockers, drafts weekly summary
 - Notion databases: `Tasks`, `Weekly Reviews`, `Projects`
 
-→ [See workflow](./weekly-os/)
+→ `[See workflow](./weekly-os/)`
 
 ---
 
@@ -78,7 +78,7 @@ How I write, edit, and publish essays across Substack and GitHub with zero frict
 - Draft in Notion → Review with Claude → Publish to Substack → Auto-sync to GitHub
 - Claude role: structural feedback, headline variants, SEO optimization
 
-→ [See workflow](./writing-pipeline/)
+→ `[See workflow](./writing-pipeline/)`
 
 ---
 
@@ -88,7 +88,7 @@ Never lose institutional memory. Every significant decision logged with context,
 - Claude helps fill in the "alternatives considered" section
 - Searchable retrospective library
 
-→ [See workflow](./decision-log/)
+→ `[See workflow](./decision-log/)`
 
 ---
 
@@ -99,7 +99,7 @@ From meeting notes to action items to follow-up drafts — without leaving Notio
 - Auto-populates Tasks database
 - Drafts follow-up emails per attendee
 
-→ [See workflow](./meeting-intelligence/)
+→ `[See workflow](./meeting-intelligence/)`
 
 ---
 

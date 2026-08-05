@@ -59,7 +59,7 @@ All prompts follow a consistent format with **Objective**, **Prompt**, and **Exa
 
 **Scenario**: You need to classify customer support tickets
 
-1. Go to [Customer Support → Ticket Classification](./customer-support/ticket-classification)
+1. Go to `[Customer Support → Ticket Classification](./customer-support/ticket-classification)`
 2. Copy the prompt from `prompt-v1.md`
 3. Replace the example ticket with your actual ticket text
 4. Run it through ChatGPT/Claude/etc.
@@ -79,12 +79,12 @@ Ticket:
 
 ## Structure
 
-- **[Content Generation](./content-generation)** - Creative and informational text generation
-- **[Data Analysis](./data-analysis)** - Data-focused prompts for classification, transformation, extraction, question answering, sentiment analysis, SQL generation, and summarization
-- **[Coding](./coding)** - Programming and software development prompts for code generation, explanation, and debugging
-- **[Customer Support](./customer-support)** - Ticket classification and empathetic response generation
-- **[Education](./education)** - Lesson planning and quiz generation
-- **[Professional Writing](./professional-writing)** - Emails and structured reports
+- **`[Content Generation](./content-generation)`** - Creative and informational text generation
+- **`[Data Analysis](./data-analysis)`** - Data-focused prompts for classification, transformation, extraction, question answering, sentiment analysis, SQL generation, and summarization
+- **`[Coding](./coding)`** - Programming and software development prompts for code generation, explanation, and debugging
+- **`[Customer Support](./customer-support)`** - Ticket classification and empathetic response generation
+- **`[Education](./education)`** - Lesson planning and quiz generation
+- **`[Professional Writing](./professional-writing)`** - Emails and structured reports
 
 ## Prompt Format
 

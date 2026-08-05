@@ -48,7 +48,7 @@ related:
 
 | Skill | Thinking style |
 |---|---|
-| [`andrej-karpathy/`](./andrej-karpathy/SKILL.md) | First-principles, code-forward, intuition-before-formalism — explore topics the way Andrej Karpathy writes about neural networks, training, and ML systems. |
+| `[`andrej-karpathy/`](./andrej-karpathy/SKILL.md)` | First-principles, code-forward, intuition-before-formalism — explore topics the way Andrej Karpathy writes about neural networks, training, and ML systems. |
 
 *More skills are being added. Contributions welcome — see below.*
 
@@ -113,7 +113,7 @@ No. These are independent, community-authored interpretations of publicly availa
 
 ## License & ethics
 
-Licensed under the [MIT License](./LICENSE) — free to use, modify, and share.
+Licensed under the `[MIT License](./LICENSE)` — free to use, modify, and share.
 
 **Ethical note:** Use these skills to learn, explore, and improve your own writing. **Do not publish content as if it were authored by the person the skill is modeled on.** Always disclose AI assistance per the norms of your publication venue.
 

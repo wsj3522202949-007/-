@@ -54,7 +54,7 @@ related:
 
 [功能概览](#功能概览) · [界面预览](#界面预览) · [快速开始](#快速开始) · [配置说明](#配置说明) · [开发指南](#开发指南)
 
-🌐 Language: [English](README.en.md)
+🌐 Language: `[English](README.en.md)`
 
 </div>
 
@@ -458,4 +458,4 @@ CORS_ORIGINS=http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174
 
 ## 许可证
 
-本项目基于 [GNU General Public License v3.0](LICENSE) 开源。
+本项目基于 `[GNU General Public License v3.0](LICENSE)` 开源。

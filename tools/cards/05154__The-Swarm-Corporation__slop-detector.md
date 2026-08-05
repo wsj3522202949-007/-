@@ -46,11 +46,11 @@ related:
   <a href="https://swarms.ai"><img src="https://img.shields.io/badge/Website-swarms.ai-6C63FF?style=for-the-badge&logo=firefox-browser&logoColor=white&labelColor=1a1a2e" alt="Website"/></a>
 </p>
 
-![slop detector](logo.png)
+!`[slop detector](logo.png)`
 
 **AI-powered code quality enforcement for GitHub — identify slop, block it from reaching production, and get actionable feedback on every commit.**
 
-> **Full documentation:** [DOCS.md](./DOCS.md) — covers architecture, local testing, threshold tuning, troubleshooting, security considerations, and complete configuration reference.
+> **Full documentation:** `[DOCS.md](./DOCS.md)` — covers architecture, local testing, threshold tuning, troubleshooting, security considerations, and complete configuration reference.
 
 ---
 
@@ -125,7 +125,7 @@ curl -o .github/workflows/slop-detector.yml \
   https://raw.githubusercontent.com/The-Swarm-Corporation/slop-detector/main/example-workflow.yml
 ```
 
-Alternatively, copy [`example-workflow.yml`](./example-workflow.yml) manually.
+Alternatively, copy `[`example-workflow.yml`](./example-workflow.yml)` manually.
 
 ### 3. Update the `uses:` reference
 
@@ -350,4 +350,4 @@ related:
 
 ## Further Reading
 
-See [DOCS.md](./DOCS.md) for the complete documentation including architecture deep dive, local testing instructions, threshold tuning guide, troubleshooting, and security considerations.
+See `[DOCS.md](./DOCS.md)` for the complete documentation including architecture deep dive, local testing instructions, threshold tuning guide, troubleshooting, and security considerations.

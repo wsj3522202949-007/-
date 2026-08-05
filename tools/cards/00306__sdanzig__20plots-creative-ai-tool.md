@@ -48,7 +48,7 @@ related:
 ## Overview
 **20plots** is an open-source web application designed to help users generate and manage creative writing plots based on personal elements. It combines artificial intelligence with user input to inspire and assist in the creative process. The application is built using a Java backend with Spring Boot and a React frontend, deployed on AWS with infrastructure managed via Terraform.
 
-![20plots screenshot](docs/walkthrough-images/plots.png)  
+!`[20plots screenshot](docs/walkthrough-images/plots.png)`  
 
 ### Project Status
 **20plots** is provided as-is, primarily for reference and inspiration. It was successfully deployed and operational at the time of its creation but is no longer under active development or maintenance.  
@@ -68,7 +68,7 @@ This project is not supported, and no guarantees are made about its functionalit
 ## Walkthrough
 
 Explore a detailed walkthrough of 20plots, complete with screenshots, features, and functionality:
-➡️ **[20plots Walkthrough](docs/walkthrough.md)**
+➡️ **`[20plots Walkthrough](docs/walkthrough.md)`**
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)

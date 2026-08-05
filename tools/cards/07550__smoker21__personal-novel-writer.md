@@ -132,11 +132,11 @@ pnpm --filter @novel-writer/e2e test
 
 ## 📖 文件
 
-- [安裝指南](docs/user-guide/installation.md)
-- [第一本小說](docs/user-guide/first-novel.md)
-- [AI 設定](docs/user-guide/ai-setup.md)
-- [git 版控](docs/user-guide/git-version-control.md)
-- [常見問題](docs/user-guide/troubleshooting.md)
+- `[安裝指南](docs/user-guide/installation.md)`
+- `[第一本小說](docs/user-guide/first-novel.md)`
+- `[AI 設定](docs/user-guide/ai-setup.md)`
+- `[git 版控](docs/user-guide/git-version-control.md)`
+- `[常見問題](docs/user-guide/troubleshooting.md)`
 
 ## 📄 授權
 

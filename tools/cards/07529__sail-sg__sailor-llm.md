@@ -61,7 +61,7 @@ To learn more details, please access the [technical report](https://arxiv.org/pd
 
 ## Models
 
-You can find all the Sailor models in our Huggingface home page [here]([https://huggingface.co/sail](https://huggingface.co/collections/sail/sailor-language-models-65e19a749f978976f1959825)):
+You can find all the Sailor models in our Huggingface home page `[here]([https://huggingface.co/sail](https://huggingface.co/collections/sail/sailor-language-models-65e19a749f978976f1959825)`):
 - [Sailor-0.5B](https://huggingface.co/sail/Sailor-0.5B)
 - [Sailor-1.8B](https://huggingface.co/sail/Sailor-1.8B)
 - [Sailor-4B](https://huggingface.co/sail/Sailor-4B)
@@ -75,7 +75,7 @@ You can find all the Sailor models in our Huggingface home page [here]([https://
 
 ## Evaluation
 
-Here are the results of the evaluation of the models on question answering tasks. The evaluation results are presented in the form of tables, where the first column is the model name, and the reset columns are the performance on Thai (th), Indonesian (id), and Vietnamese (vi) languages, respectively. The results of Sailor models are highlighted in bold. You can find the full evaluation results on the different tasks and our evaluation code to reproduce the results in the [eval](eval) directory.
+Here are the results of the evaluation of the models on question answering tasks. The evaluation results are presented in the form of tables, where the first column is the model name, and the reset columns are the performance on Thai (th), Indonesian (id), and Vietnamese (vi) languages, respectively. The results of Sailor models are highlighted in bold. You can find the full evaluation results on the different tasks and our evaluation code to reproduce the results in the `[eval](eval)` directory.
 
 ### Question Answering
 

@@ -133,8 +133,8 @@ Works with any agent that supports the [Agent Skills](https://agentskills.io) fo
 
 ## Contributing
 
-Found a pattern that should be banned? A context that needs its own rules? Open an issue or PR. See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines and issue templates.
+Found a pattern that should be banned? A context that needs its own rules? Open an issue or PR. See `[CONTRIBUTING.md](CONTRIBUTING.md)` for guidelines and issue templates.
 
 ## License
 
-Apache-2.0. See [LICENSE](LICENSE) for details.
+Apache-2.0. See `[LICENSE](LICENSE)` for details.

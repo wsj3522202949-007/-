@@ -174,4 +174,4 @@ The pattern catalog and methodology draw on:
 
 ## License
 
-[MIT](LICENSE)
+`[MIT](LICENSE)`

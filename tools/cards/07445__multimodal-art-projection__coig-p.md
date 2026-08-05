@@ -103,7 +103,7 @@ print(dataset['train'][0])
 If you want to train DPO using our COIG-P dataset, we provide the script.
 Specifically, the DPO experiments is realized by using the [Llama-Factory](https://github.com/hiyouga/LLaMA-Factory).
 
-Please create envirinment for Llama_factory following [Llama_factory_Readme](./LLaMA-Factory/README.md)
+Please create envirinment for Llama_factory following `[Llama_factory_Readme](./LLaMA-Factory/README.md)`
 
 You can run the following script to train [BAAI/Infinity-Instruct-3M-0625-Qwen2-7B](https://huggingface.co/BAAI/Infinity-Instruct-3M-0625-Qwen2-7B) on our COIG-P dataset.
 
@@ -114,15 +114,15 @@ bash Train.sh
 ## Evaluating on AlignBench
 
 Most of our results are evaluated on [AlignBench](https://github.com/THUDM/AlignBench). Since AlignBench does not support multiprocessing, we use [KOR-Bench](https://kor-bench.github.io/) for multi-process inference.
-Then we use [AlignBench_folder](./AlignBench/) to evaluate the reuslts of LLMs.
-Please install environment for KOR-Bench following [KOR-Bench_Readme](./KOR-Bench/README.md) and environment for AlignBench following [AlignBench_Readme](./AlignBnech/README.md).
+Then we use `[AlignBench_folder](./AlignBench/)` to evaluate the reuslts of LLMs.
+Please install environment for KOR-Bench following `[KOR-Bench_Readme](./KOR-Bench/README.md)` and environment for AlignBench following `[AlignBench_Readme](./AlignBnech/README.md)`.
 
-In [KOR-Bench_folder](./KOR-Bench/), we have provided the dataset of AlignBench.
-If you want to evaluate your fine-tund LLMs, you can register your model in the [KOR-Bench_model_init_file](./KOR-Bench/infer/models/__init__.py).
+In `[KOR-Bench_folder](./KOR-Bench/)`, we have provided the dataset of AlignBench.
+If you want to evaluate your fine-tund LLMs, you can register your model in the `[KOR-Bench_model_init_file](./KOR-Bench/infer/models/__init__.py)`.
 
-**If you want to evaluate some api models, you need to provide the api in the [KOR-Bench_model_init_file](./KOR-Bench/infer/models/__init__.py)**
+**If you want to evaluate some api models, you need to provide the api in the `[KOR-Bench_model_init_file](./KOR-Bench/infer/models/__init__.py)`**
 
-The result of our paper is evaluated by using GPT-4o as jude model, so **you need to provide you OpenAI api in [AlignBench_config_file](./AlignBench/config/multi-dimension.json).**
+The result of our paper is evaluated by using GPT-4o as jude model, so **you need to provide you OpenAI api in `[AlignBench_config_file](./AlignBench/config/multi-dimension.json)`.**
 
 Here is a example to infer and evaluate Qwen2.5-7B-Instruct:
 ```python

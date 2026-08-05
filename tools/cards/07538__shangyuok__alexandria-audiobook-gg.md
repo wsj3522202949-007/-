@@ -41,7 +41,7 @@ related:
 
 # Alexandria Audiobook Generator
 
-English | [中文](README_CN.md)
+English | `[中文](README_CN.md)`
 
 > **A note to new users:** Alexandria has recently seen a sudden surge of attention and new users. As a small project, I may not be able to respond to every issue promptly. Before opening an issue, please read this README and the [Wiki](https://github.com/Finrandojin/alexandria-audiobook/wiki) thoroughly — most common questions are already answered there. Thank you for your patience!
 

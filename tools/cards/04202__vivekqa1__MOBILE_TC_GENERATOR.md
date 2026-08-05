@@ -302,10 +302,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📚 Documentation
 
-- [Architecture Guide](ARCHITECTURE_MAP.md)
-- [Deployment Guide](DEPLOYMENT_GUIDE.md)
-- [Setup Instructions](MOBILE_TC_GENERATOR_SETUP.md)
-- [Presentation Guide](PRESENTATION_GUIDE.md)
+- `[Architecture Guide](ARCHITECTURE_MAP.md)`
+- `[Deployment Guide](DEPLOYMENT_GUIDE.md)`
+- `[Setup Instructions](MOBILE_TC_GENERATOR_SETUP.md)`
+- `[Presentation Guide](PRESENTATION_GUIDE.md)`
 
 ## 🎯 Roadmap
 

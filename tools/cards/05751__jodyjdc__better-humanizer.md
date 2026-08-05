@@ -118,7 +118,7 @@ python3 eval/benchmark.py --check    # regression gate: exit 1 if pro stops winn
 > explicit non-goal below). The numbers are reproducible; **business** is the one
 > register where pro is not always closest (three short emails where the AI text already
 > sat near the band). The semantic half — does it keep meaning and read human? — is the
-> blind judge panel in [`eval/judge_blind.md`](eval/judge_blind.md).
+> blind judge panel in `[`eval/judge_blind.md`](eval/judge_blind.md)`.
 
 ## Use it in CI — the `humanize-check` GitHub Action
 
@@ -216,7 +216,7 @@ contraction ceiling alone runs from 0.00 (scientific — zero contractions is hu
 to 5.78 (business email), and the em-dash ceiling from 0.00 to 1.71. Same machinery,
 recalibrated per register — and the [Proof](#proof-reproducible-deterministic) table
 above shows it lands closest to the human band on 96% of 25 samples across all seven.
-Full numbers in [`eval/REPORT.md`](eval/REPORT.md).
+Full numbers in `[`eval/REPORT.md`](eval/REPORT.md)`.
 
 ## Explicit non-goal
 
@@ -228,7 +228,7 @@ good, register-faithful writing, not deception.
 
 ## Design
 
-Full spec: [`docs/superpowers/specs/2026-06-12-humanizer-pro-design.md`](docs/superpowers/specs/2026-06-12-humanizer-pro-design.md).
-Build plan: [`docs/superpowers/plans/2026-06-12-humanizer-pro.md`](docs/superpowers/plans/2026-06-12-humanizer-pro.md).
+Full spec: `[`docs/superpowers/specs/2026-06-12-humanizer-pro-design.md`](docs/superpowers/specs/2026-06-12-humanizer-pro-design.md)`.
+Build plan: `[`docs/superpowers/plans/2026-06-12-humanizer-pro.md`](docs/superpowers/plans/2026-06-12-humanizer-pro.md)`.
 
 Tell catalog adapted from [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing).

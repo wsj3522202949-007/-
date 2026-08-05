@@ -45,6 +45,6 @@ related:
 # Capper-prompt-hub
 
 ## Featured Prompt
-- [AI4S Paper Reading Prompt](prompts/research/ai4s-paper-reading.md): 面向 AI 初学者的论文精读模板，按照 `Why / Where / How / What` 拆解文章。
+- `[AI4S Paper Reading Prompt](prompts/research/ai4s-paper-reading.md)`: 面向 AI 初学者的论文精读模板，按照 `Why / Where / How / What` 拆解文章。
 
 This is Capper's prompt repository, a curated and continuously updated collection of prompts for large language models. It covers a wide range of use cases, including coding, academic research, writing, and productivity, aiming to improve efficiency and output quality in AI-assisted workflows.

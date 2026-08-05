@@ -39,7 +39,7 @@ related:
 
 # 轻小说创作台 · Light Novel Studio
 
-[English](README.en.md) | **简体中文**
+`[English](README.en.md)` | **简体中文**
 
 > 一句话概念，AI 帮你写出整部轻小说：世界观 → 角色 → 章节大纲 → 逐章正文。
 > 支持中文与日文，覆盖日式轻小说题材，多 AI 提供商可选，纯前端、数据留本机。
@@ -52,13 +52,13 @@ An AI-powered light-novel writing studio. From a one-line concept, it generates 
 
 | 创作引导 | 写作台 |
 |---|---|
-| ![创作引导](screenshots/panel-workshop.png) | ![写作台](screenshots/panel-write.png) |
+| !`[创作引导](screenshots/panel-workshop.png)` | !`[写作台](screenshots/panel-write.png)` |
 
 | 世界观 | 角色 |
 |---|---|
-| ![世界观](screenshots/panel-world.png) | ![角色](screenshots/panel-characters.png) |
+| !`[世界观](screenshots/panel-world.png)` | !`[角色](screenshots/panel-characters.png)` |
 
-![书架](screenshots/shelf.png)
+!`[书架](screenshots/shelf.png)`
 
 ---
 
@@ -120,4 +120,4 @@ src/
 
 ## 许可证 · License
 
-[GPL-3.0](LICENSE)
+`[GPL-3.0](LICENSE)`

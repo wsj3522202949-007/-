@@ -325,7 +325,7 @@ Contributions are welcome! This project is licensed under AGPL-3.0, so any modif
 
 ## 📄 License
 
-This project is licensed under the **GNU Affero General Public License v3.0** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0** — see the `[LICENSE](LICENSE)` file for details.
 
 ---
 
@@ -594,7 +594,7 @@ LorebookGeneratorFromChat/
 
 ## 📄 Лицензия
 
-Проект лицензирован под **GNU Affero General Public License v3.0** — подробности в файле [LICENSE](LICENSE).
+Проект лицензирован под **GNU Affero General Public License v3.0** — подробности в файле `[LICENSE](LICENSE)`.
 
 related:
   - methods/人物思维蒸馏法.md

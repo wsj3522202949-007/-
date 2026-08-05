@@ -250,7 +250,7 @@ WordWise demonstrates:
 ## 14. Author & Contact
 
 **Name**: Mohid Umer  
-**Email**: [mohidumer112@gmail.com](mailto:mohidumer112@gmail.com)
+**Email**: `[mohidumer112@gmail.com](mailto:mohidumer112@gmail.com)`
 
 ---
 
@@ -259,7 +259,7 @@ WordWise demonstrates:
 * Educational and personal use only
 * Proper attribution required
 * Not permitted for academic plagiarism
-* See repository [LICENSE](LICENSE) for details
+* See repository `[LICENSE](LICENSE)` for details
 
 ---
 

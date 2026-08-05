@@ -335,13 +335,13 @@ Trained on **25+ diverse datasets** (~687K samples across 118K test, 95K validat
 
 **Data quality caveat:** Model performance depends on dataset label accuracy. We assume training data labels are correct (human text is genuinely human-written, AI text is genuinely AI-generated), but mislabelled examples may exist.
 
-See [`notebooks/dataset_curation.ipynb`](notebooks/dataset_curation.ipynb) for details.
+See `[`notebooks/dataset_curation.ipynb`](notebooks/dataset_curation.ipynb)` for details.
 
-![Embedding visualization](./plots/embedding_visualization.png)
+!`[Embedding visualization](./plots/embedding_visualization.png)`
 
 ### Training Pipeline
 
-See [`notebooks/train.ipynb`](notebooks/train.ipynb) for the complete training pipeline.
+See `[`notebooks/train.ipynb`](notebooks/train.ipynb)` for the complete training pipeline.
 
 ### Model Architecture
 
@@ -377,13 +377,13 @@ Not embedded but also available in `model_artifacts/`:
 
 ### `slop-classifier.onnx`
 
-![Training pipeline visualization](./plots/slop-classifier.onnx.svg)
+!`[Training pipeline visualization](./plots/slop-classifier.onnx.svg)`
 
 The diagram shows the full ONNX graph: input → 5 parallel classifiers → probability calibration → meta-learner → final prediction.
 
 ### **Additional visualizations:**
 
->See [`plots/`](./plots/) for embedding visualizations, feature distributions, and model analysis.
+>See `[`plots/`](./plots/)` for embedding visualizations, feature distributions, and model analysis.
 >
 
 ## Development
@@ -404,4 +404,4 @@ just model-pipeline
 
 ## License
 
-[MIT](./LICENSE)
+`[MIT](./LICENSE)`

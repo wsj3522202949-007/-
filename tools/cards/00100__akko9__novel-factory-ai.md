@@ -129,7 +129,7 @@ src/
 
 ## 📄 许可证 (License)
 
-本项目基于 [MIT License](./LICENSE) 开源。
+本项目基于 `[MIT License](./LICENSE)` 开源。
 
 related:
   - methods/网文写作最强SOP.md

@@ -160,7 +160,7 @@ vim ~/.ppt-anything/providers/google.toml
 /ppt-anything 做一套 PPT 讲 strong-rl 怎么从 0 到峡谷段位
 ```
 
-**其他 CLI**：见 [`AGENT.md`](AGENT.md)，里面写了 Claude / Gemini CLI / Codex CLI / Cursor 怎么各自接入这个项目。
+**其他 CLI**：见 `[`AGENT.md`](AGENT.md)`，里面写了 Claude / Gemini CLI / Codex CLI / Cursor 怎么各自接入这个项目。
 
 ---
 
@@ -179,7 +179,7 @@ vim ~/.ppt-anything/providers/google.toml
 **默认值**：启动 skill 时会告诉你"这次默认用 [橙橙 + 蓝蓝 搭子双核] 角色 + [萌系日漫] 风格 + [google] provider，要换吗？"。
 **自动扩展**：你说"用某某动漫角色"或"用某某风格"，AI 没有的话会去网上搜，下载、写 profile、塞进库，下次直接用。
 
-详见 [`docs/library-management.md`](docs/library-management.md)。
+详见 `[`docs/library-management.md`](docs/library-management.md)`。
 
 ---
 

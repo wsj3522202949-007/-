@@ -873,7 +873,7 @@ sylphx-flow "process GitHub issues" --loop 600 --max-runs 100
 - **[Technical Architecture](https://github.com/SylphxAI/flow/wiki/Technical-Architecture)** - Deep dive into Flow's internals
 - **[CLI Commands](https://github.com/SylphxAI/flow/wiki/CLI-Commands)** - Full command reference
 - **[Agent Framework](https://github.com/SylphxAI/flow/wiki/Agent-Framework)** - How agents work
-- **[Loop Mode Guide](./packages/flow/LOOP_MODE.md)** - Autonomous execution mastery
+- **`[Loop Mode Guide](./packages/flow/LOOP_MODE.md)`** - Autonomous execution mastery
 
 ---
 
@@ -941,13 +941,13 @@ Flow stands on the shoulders of giants:
 
 | Package | Version | Description |
 |---------|---------|-------------|
-| [@sylphx/flow](./packages/flow) | [![npm](https://img.shields.io/npm/v/@sylphx/flow)](https://www.npmjs.com/package/@sylphx/flow) | Core CLI - unified orchestration for all AI development tools |
+| `[@sylphx/flow](./packages/flow)` | [![npm](https://img.shields.io/npm/v/@sylphx/flow)](https://www.npmjs.com/package/@sylphx/flow) | Core CLI - unified orchestration for all AI development tools |
 
 ---
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see `[LICENSE](LICENSE)` file for details.
 
 ---
 

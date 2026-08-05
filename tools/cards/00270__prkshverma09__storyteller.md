@@ -336,7 +336,7 @@ Loads configuration from environment variables and `.env` file.
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our `[Contributing Guidelines](CONTRIBUTING.md)` for details.
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -346,7 +346,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 ## 🙏 Acknowledgments
 
@@ -356,10 +356,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](docs/)
+- 📖 `[Documentation](docs/)`
 - 🐛 [Report Issues](https://github.com/yourusername/storyteller/issues)
 - 💬 [Discussions](https://github.com/yourusername/storyteller/discussions)
-- 📧 [Contact](mailto:your.email@example.com)
+- 📧 `[Contact](mailto:your.email@example.com)`
 
 ## 🌟 Star History
 

@@ -183,13 +183,13 @@ semctl doctor
 
 ### Per-tool hook mapping
 
-See [adapters/README.md](adapters/README.md) and the per-tool docs:
+See `[adapters/README.md](adapters/README.md)` and the per-tool docs:
 
-- [Cursor](adapters/cursor/README.md)
-- [Claude Code](adapters/claude-code/README.md)
-- [Codex CLI](adapters/codex/README.md): `PreToolUse` / `PostToolUse` mainly fire for **Bash** today; red light for file edits is limited
-- [Gemini CLI](adapters/gemini-cli/README.md)
-- [Copilot CLI](adapters/copilot-cli/README.md): hook surface varies by Copilot CLI version
+- `[Cursor](adapters/cursor/README.md)`
+- `[Claude Code](adapters/claude-code/README.md)`
+- `[Codex CLI](adapters/codex/README.md)`: `PreToolUse` / `PostToolUse` mainly fire for **Bash** today; red light for file edits is limited
+- `[Gemini CLI](adapters/gemini-cli/README.md)`
+- `[Copilot CLI](adapters/copilot-cli/README.md)`: hook surface varies by Copilot CLI version
 
 The installer merges hook entries into your existing config using a `_semaphore` marker. It never overwrites unrelated hooks.
 
@@ -450,7 +450,7 @@ Each theme is a JSON file with housing, lens, and glow colors. Select in Setting
 - **English** (`en`), default
 - **Portuguese (Brazil)** (`pt-BR`), auto-detected from `LC_ALL` / `LANG`
 
-To add a language, see [locales/CONTRIBUTING-i18n.md](locales/CONTRIBUTING-i18n.md).
+To add a language, see `[locales/CONTRIBUTING-i18n.md](locales/CONTRIBUTING-i18n.md)`.
 
 ---
 
@@ -622,7 +622,7 @@ Set the same variable for both the Semaphore app and `semctl`.
 
 ### Translations
 
-See [locales/CONTRIBUTING-i18n.md](locales/CONTRIBUTING-i18n.md).
+See `[locales/CONTRIBUTING-i18n.md](locales/CONTRIBUTING-i18n.md)`.
 
 ### CI
 
@@ -638,4 +638,4 @@ related:
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See `[LICENSE](LICENSE)`.

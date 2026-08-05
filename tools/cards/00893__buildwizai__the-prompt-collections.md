@@ -116,12 +116,12 @@ We are grateful to the creators of these prompts for their inspiration and origi
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the prompts as needed.
+This project is licensed under the `[MIT License](LICENSE)`. Feel free to use, modify, and distribute the prompts as needed.
 
 ---
 
 ## Contact
-For questions, suggestions, or collaboration opportunities, please open an issue on the [GitHub repository](https://github.com/buildwizai/prompt-collection) or contact us at [buildwizai@gmail.com](mailto:buildwizai@gmail.com).
+For questions, suggestions, or collaboration opportunities, please open an issue on the [GitHub repository](https://github.com/buildwizai/prompt-collection) or contact us at `[buildwizai@gmail.com](mailto:buildwizai@gmail.com)`.
 
 related:
   - methods/网文写作最强SOP.md

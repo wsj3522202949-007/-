@@ -104,7 +104,7 @@ Take a look at the [Issues](https://github.com/BDadmehr0/ai-tales/issues) tab fo
 
 ## 📜 **License**
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the `[LICENSE](LICENSE)` file for details.
 
 related:
   - methods/网文写作最强SOP.md

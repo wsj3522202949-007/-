@@ -41,7 +41,7 @@ related:
 
 **CoDi** adopts a director–actor paradigm to generate stories from user input through the collaboration of planner, character, director, and editor agents. The framework focused on empowering the control capabilities of the director agent. Our paper has been accepted by AIIDE 2025.
 
-![CoDi Architecture](./images/CoDi_Method_Figure.png)
+!`[CoDi Architecture](./images/CoDi_Method_Figure.png)`
 
 ---
 

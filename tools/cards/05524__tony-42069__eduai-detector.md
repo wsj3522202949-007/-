@@ -172,4 +172,4 @@ eduai-detector/
 
 
 
-[MIT License](LICENSE)
+`[MIT License](LICENSE)`

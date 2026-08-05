@@ -64,7 +64,7 @@ Each factor is scored from 0 to 2, producing a total score out of 20 and a Low, 
 
 ## Quick Start
 
-Download [`ai-slop-detector.md`](ai-slop-detector.md), paste the file into Claude Cowork, Codex, ChatGPT, or your favorite chatbot, then either a) save it as a skill or b) insert the output you want reviewed under `Text To Review`.
+Download `[`ai-slop-detector.md`](ai-slop-detector.md)`, paste the file into Claude Cowork, Codex, ChatGPT, or your favorite chatbot, then either a) save it as a skill or b) insert the output you want reviewed under `Text To Review`.
 
 The detector asks the model to return:
 
@@ -99,8 +99,8 @@ This prompt is a review layer. It is meant to help humans catch blandness, vague
 
 ## Files
 
-- [`ai-slop-detector.md`](ai-slop-detector.md): the reusable prompt
-- [`LICENSE`](LICENSE): MIT license
+- `[`ai-slop-detector.md`](ai-slop-detector.md)`: the reusable prompt
+- `[`LICENSE`](LICENSE)`: MIT license
 
 ## Attribution
 

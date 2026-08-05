@@ -158,7 +158,7 @@ To run the AI Story Generator locally, follow these steps:
 
 The generate chapter function is probably the most complex function of the project, it involves multiple components and API calls. Here's a breakdown of the process:
 
-![AI Story Creator Chapter Flow](static/README/AI-story-creator-chapter-flow.png)
+!`[AI Story Creator Chapter Flow](static/README/AI-story-creator-chapter-flow.png)`
 _[Check excalidraw](https://link.excalidraw.com/readonly/L1Ih2IWGkyTAdx28vbsg)_
 
 This diagram illustrates the interactions between the user, client-side application, server, and various APIs involved in generating a single chapter of the story.

@@ -388,7 +388,7 @@ mutant run "Refund Request" "Customer bought a laptop and wants a refund." --cou
 
 ## Development & Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on setting up the environment, writing new dimensions, and submitting PRs.
+Contributions are welcome! Please see `[CONTRIBUTING.md](CONTRIBUTING.md)` for details on setting up the environment, writing new dimensions, and submitting PRs.
 
 ```bash
 git clone https://github.com/ankitgmishra/mutant

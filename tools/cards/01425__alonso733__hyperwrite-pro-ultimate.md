@@ -160,7 +160,7 @@ Throughout this readme, we’ve naturally incorporated terms like “writing int
 
 You are free to fork, modify, and redistribute HyperWrite under the terms of the MIT license. We believe that writing tools should be auditable, extensible, and community‑owned.
 
-The full license is available at [LICENSE](LICENSE). In summary: you can use it for commercial projects, modify it, distribute copies, and sublicense—as long as the original copyright notice appears in all copies.
+The full license is available at `[LICENSE](LICENSE)`. In summary: you can use it for commercial projects, modify it, distribute copies, and sublicense—as long as the original copyright notice appears in all copies.
 
 ## Disclaimer
 

@@ -40,7 +40,7 @@ related:
 
 > Korean AI output has a recognizable tell. This removes it.
 
-[한국어](README.ko.md) · [中文](README.zh-CN.md)
+`[한국어](README.ko.md)` · `[中文](README.zh-CN.md)`
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-v1.0.1-brightgreen.svg)](CHANGELOG.md)
@@ -89,7 +89,7 @@ git clone https://github.com/dotoricode/korean-humanizer.git ~/.claude/skills/ko
 
 Then ask naturally — `이거 AI 티 빼줘:` followed by your Korean text.
 
-**Other LLMs:** paste [`PROMPT.short.md`](PROMPT.short.md) as a system prompt, or use the full [`PROMPT.md`](PROMPT.md).
+**Other LLMs:** paste `[`PROMPT.short.md`](PROMPT.short.md)` as a system prompt, or use the full `[`PROMPT.md`](PROMPT.md)`.
 
 ---
 
@@ -110,7 +110,7 @@ Then ask naturally — `이거 AI 티 빼줘:` followed by your Korean text.
 | 11 | Excessive hedging | `~라고 할 수 있습니다`, `~인 것 같습니다` |
 | 12 | Korean LLM vocabulary tells | `활용`, `극대화`, `시사한다`, `도모` |
 
-Full catalog: [`references/ko-ai-signals.md`](references/ko-ai-signals.md) · Quick reference: [`CHEATSHEET.md`](CHEATSHEET.md)
+Full catalog: `[`references/ko-ai-signals.md`](references/ko-ai-signals.md)` · Quick reference: `[`CHEATSHEET.md`](CHEATSHEET.md)`
 
 ---
 
@@ -123,7 +123,7 @@ Ban words, set preferences, or define a brand voice — all applied before the c
 [Korean text]
 ```
 
-For a persistent tone profile, see [`examples/brand-voice-template.md`](examples/brand-voice-template.md).
+For a persistent tone profile, see `[`examples/brand-voice-template.md`](examples/brand-voice-template.md)`.
 
 related:
   - methods/最强去AI味铁律.md
@@ -132,7 +132,7 @@ related:
 
 ## Contributing · License · Services
 
-Contributions welcome — [`CONTRIBUTING.md`](CONTRIBUTING.md) · [Pattern addition](.github/ISSUE_TEMPLATE/pattern_addition.md) · [Bug report](.github/ISSUE_TEMPLATE/bug_report.md)
+Contributions welcome — `[`CONTRIBUTING.md`](CONTRIBUTING.md)` · `[Pattern addition](.github/ISSUE_TEMPLATE/pattern_addition.md)` · `[Bug report](.github/ISSUE_TEMPLATE/bug_report.md)`
 
 MIT. Use it, fork it, adapt it.
 

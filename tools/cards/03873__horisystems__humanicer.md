@@ -83,11 +83,11 @@ Humanicer beats standard AI text rewriters by keeping your SEO strategy intact w
 
 ### Support
 
-Reach our support team via **[tech@horisystems.com](mailto:tech@humanicer.com)** if you experience any issues.
+Reach our support team via **`[tech@horisystems.com](mailto:tech@humanicer.com)`** if you experience any issues.
 
 ### License
 
-This project is licensed under the [BSD 3-Clause License](LICENSE) - see the file for details.
+This project is licensed under the `[BSD 3-Clause License](LICENSE)` - see the file for details.
 
 ### Copyright
 

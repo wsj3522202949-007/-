@@ -53,11 +53,11 @@ PadBen (Paraphrase Attack Detection Benchmark) is a comprehensive benchmark desi
 
 The Springer proceedings version (main paper, ≤12 pages) and supplementary appendix are published separately:
 
-- **Camera-ready paper (PDF):** [`docs/padben_icann.pdf`](docs/padben_icann.pdf)
-- **Supplementary appendix (PDF):** [`docs/padben_icann_appendix.pdf`](docs/padben_icann_appendix.pdf)
-- **LaTeX source:** [`docs/latex/`](docs/latex/)
+- **Camera-ready paper (PDF):** `[`docs/padben_icann.pdf`](docs/padben_icann.pdf)`
+- **Supplementary appendix (PDF):** `[`docs/padben_icann_appendix.pdf`](docs/padben_icann_appendix.pdf)`
+- **LaTeX source:** `[`docs/latex/`](docs/latex/)`
 
-See [`docs/README.md`](docs/README.md) for the appendix structure and rebuild instructions.
+See `[`docs/README.md`](docs/README.md)` for the appendix structure and rebuild instructions.
 
 ## 🏗️ Project Structure
 
@@ -300,25 +300,25 @@ Utilities for preparing and formatting data for different task types.
 
 ### Module Documentation
 
-- **[Data Generation Pipeline](data_generation/README.md)**: Complete guide to LLM-based text generation (Type 2, 4, 5)
-- **[Data Processing Module](data_processing/README.md)**: Multi-dataset processing and standardization
-- **[Quality Assurance Tools](data_quality_assurance/README.md)**: Quality metrics, similarity analysis, and RAID comparison
-- **[Task Preparation](task_preparation/README.md)**: Task preparation and data formatting utilities
+- **`[Data Generation Pipeline](data_generation/README.md)`**: Complete guide to LLM-based text generation (Type 2, 4, 5)
+- **`[Data Processing Module](data_processing/README.md)`**: Multi-dataset processing and standardization
+- **`[Quality Assurance Tools](data_quality_assurance/README.md)`**: Quality metrics, similarity analysis, and RAID comparison
+- **`[Task Preparation](task_preparation/README.md)`**: Task preparation and data formatting utilities
 
 ### Intrinsic Mechanism Experiments
 
-- **[Experiment 1](intrinsic_mechanism/experiment1/README.md)**: Semantic vs Paraphrase Analysis using BGE-m3 embeddings
-- **[Experiment 2](intrinsic_mechanism/experiment2/README.md)**: Iterative Paraphrasing Semantic Drift Analysis
+- **`[Experiment 1](intrinsic_mechanism/experiment1/README.md)`**: Semantic vs Paraphrase Analysis using BGE-m3 embeddings
+- **`[Experiment 2](intrinsic_mechanism/experiment2/README.md)`**: Iterative Paraphrasing Semantic Drift Analysis
 
 ### Data Documentation
 
-- **[Data Documentation](data/README.md)**: Generated benchmark data and task-specific datasets
+- **`[Data Documentation](data/README.md)`**: Generated benchmark data and task-specific datasets
 - 
 ## 📝 Citation
 If you find our work useful, please cite [PADBen].
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the `[LICENSE](LICENSE)` file for details.
 
 **Note**: This benchmark is designed for research purposes. Ensure compliance with model usage policies and data licensing requirements.

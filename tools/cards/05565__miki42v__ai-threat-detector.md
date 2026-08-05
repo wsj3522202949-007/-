@@ -44,7 +44,7 @@ A full-stack web application that leverages NVIDIA's advanced AI model (Llama 3.
 
 ### 🔗 **[Click Here for the Live Demo](https://ai-threat-detector-three.vercel.app/)**
 
-> **Note:** Live demo may take 30 seconds to wake up on first request (Render free tier limitation). For deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
+> **Note:** Live demo may take 30 seconds to wake up on first request (Render free tier limitation). For deployment instructions, see `[DEPLOYMENT.md](DEPLOYMENT.md)`.
 
 ![Screenshot of the AI Threat Detector Application](https://user-images.githubusercontent.com/10284367/223212870-272a11b6-7d1c-43f0-8e7c-501f6f874d1a.png)
 *(**Note:** To replace this placeholder image, simply take a screenshot of your app, upload the image file to your GitHub repository, and replace the link above with the new image's URL.)*
@@ -165,7 +165,7 @@ This project is a full-stack application with a clear separation of concerns bet
 
 ## 🌐 Deployment
 
-For detailed deployment instructions to production (Vercel + Render), see [DEPLOYMENT.md](DEPLOYMENT.md).
+For detailed deployment instructions to production (Vercel + Render), see `[DEPLOYMENT.md](DEPLOYMENT.md)`.
 
 **Quick Summary:**
 - **Backend**: Deploy to Render with `NVIDIA_API_KEY` environment variable
