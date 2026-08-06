@@ -1,7 +1,7 @@
 # 02_网文写作工程化方法论（oh-story_原始流程摘要）
 
 > 用途：把 `oh-story-claudecode` 里最值得网文工程复用的部分抽出来，作为原始对照；不替代《网文写作最强SOP.md》，只负责保留上游 schema、触发条件、停靠点和字段约束。
-> 来源说明：本地仓库路径为 `E:\小说\小说sill\oh-story-claudecode-main`；网络复核时上游 `story-long-write` 可访问，标题结构与本地一致。
+> 来源说明：本地仓库路径为 `E:\小说\小说sill\oh-story-claudecode-main`（`[历史路径]`）；网络复核时上游 `story-long-write` 可访问，标题结构与本地一致。
 
 ## 一、上游 skill 的核心骨架
 

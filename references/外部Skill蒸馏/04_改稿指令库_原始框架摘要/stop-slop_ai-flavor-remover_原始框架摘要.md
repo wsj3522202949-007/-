@@ -1,7 +1,7 @@
 # 04_改稿指令库（stop-slop + ai-flavor-remover 原始框架摘要）
 
 > 用途：保留 stop-slop 和 ai-flavor-remover 的原始改稿框架，作为《改稿润色指令库.md》的 upstream 对照；以后新增规则、补充示例、回查来源都先看这里。
-> 来源说明：本地仓库路径分别为 `E:\小说\小说sill\stop-slop-main` 与 `E:\小说\小说sill\ai-flavor-remover-main`；网络复核时上游文件均已成功访问。
+> 来源说明：本地仓库路径分别为 `E:\小说\小说sill\stop-slop-main`（`[历史路径]`） 与 `E:\小说\小说sill\ai-flavor-remover-main`；网络复核时上游文件均已成功访问。
 
 ## 一、stop-slop 原始核心框架
 

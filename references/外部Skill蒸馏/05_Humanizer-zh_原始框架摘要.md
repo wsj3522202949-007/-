@@ -1,7 +1,7 @@
 # 05_Humanizer-zh 原始框架摘要
 
 > 用途：保留 Humanizer-zh 的中文 AI 味识别规则与改法，作为《最强去AI味铁律.md》的上游对照；以后新增禁用词库、场景示例、质量评分标准，都先回查这里。
-> 来源说明：本地仓库路径为 `E:\小说\小说sill\Humanizer-zh-main\Humanizer-zh-main`；README 中标注核心内容翻译自 `blader/humanizer`，并已做中文场景适配。
+> 来源说明：本地仓库路径为 `E:\小说\小说sill\Humanizer-zh-main\Humanizer-zh-main`（`[历史路径]`）；README 中标注核心内容翻译自 `blader/humanizer`，并已做中文场景适配。
 
 ## 一、这个 skill 的最强点
 

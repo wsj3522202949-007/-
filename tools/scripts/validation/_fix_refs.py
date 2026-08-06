@@ -1,5 +1,5 @@
 """
-OBSOLETE: 此脚本仅适用于旧目录结构（E:\小说\通用小说创作流程/）。
+OBSOLETE: 此脚本仅适用于旧目录结构（E:\小说（`[历史路径]`）\通用小说创作流程/）。
 当前知识库已迁移至 e:\个人知识库，原路径与文件均已不存在。
 保留仅作历史参考，勿再执行。
 """
@@ -27,7 +27,7 @@ for f in gcf_files:
     new = new.replace('online_research/', rel)
     new = new.replace('online_research\\', rel)
     # 绝对路径那一行（最强写作方法论）
-    new = new.replace(r'E:\小说\通用小说创作流程\online_research\\',
+    new = new.replace(r'E:\小说（`[历史路径]`）\通用小说创作流程\online_research\\',
                       'E:/个人知识库/小说/archive/原始调研_online_research/')
     if new != t:
         open(p, 'w', encoding='utf-8').write(new)

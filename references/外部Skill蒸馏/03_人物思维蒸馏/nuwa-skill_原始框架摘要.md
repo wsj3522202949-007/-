@@ -1,7 +1,7 @@
 # 03_人物思维蒸馏\nuwa-skill_原始框架摘要.md
 
 > 用途：把 `nuwa-skill` 的人物蒸馏框架保留成原始对照层；不直接当小说设定表，而是作为《人物思维蒸馏法.md》的 upstream schema 来源。
-> 来源说明：本地仓库路径为 `E:\小说\小说sill\nuwa-skill-main`；网络复核时上游 `nuwa-skill` 可访问，文件体量与本地一致。
+> 来源说明：本地仓库路径为 `E:\小说\小说sill\nuwa-skill-main`（`[历史路径]`）；网络复核时上游 `nuwa-skill` 可访问，文件体量与本地一致。
 
 ## 一、上游 skill 的核心判断
 

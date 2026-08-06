@@ -73,7 +73,7 @@ related:
 
 - [库·落地建议](落地建议.md) —— 按约束挑工具 + 给你的推荐组合
 - [库·维护说明](维护说明.md) —— 数据流水线 / 标签体系 / 加卡 / 刷新
-- [Obsidian 使用指南](Obsidian使用指南.md) —— 用 Obsidian 打开 `E:\小说` 即自动加载本 vault
+- [Obsidian 使用指南](Obsidian使用指南.md) —— 用 Obsidian 打开 `e:\个人知识库` 即自动加载本 vault
 
 ## 维护红线
 

@@ -1,7 +1,7 @@
 # 06_shuorenhua 原始框架摘要
 
 > 用途：把 shuorenhua 的改写哲学、场景分级、误杀防护、回读两步法保留成原始对照；不直接当模板，而是作为《最强去AI味铁律.md》《改稿润色指令库.md》的上游依据。
-> 来源说明：本地仓库路径为 `E:\小说\小说sill\shuorenhua-main\shuorenhua-main`；README 标注该项目为中文第一人称改写 skill，支持 Codex / Claude Code / Cursor / ChatGPT。
+> 来源说明：本地仓库路径为 `E:\小说\小说sill\shuorenhua-main\shuorenhua-main`（`[历史路径]`）；README 标注该项目为中文第一人称改写 skill，支持 Codex / Claude Code / Cursor / ChatGPT。
 
 ## 一、这个 skill 的核心哲学
 

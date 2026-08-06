@@ -1,7 +1,7 @@
 # 07_chatgpt-comparison-detection 可吸收摘要
 
 > 用途：把 ChatGPT 对比检测项目的可迁移知识点提炼出来，作为“AI 味自查维度”的补充参考；不直接当正文标准，而是提醒网文作者哪些写法容易被 AI 识别。
-> 来源说明：本地仓库路径为 `E:\小说\小说sill\chatgpt-comparison-detection-main`；项目官网提供了 HC3 语料和三类检测器。
+> 来源说明：本地仓库路径为 `E:\小说\小说sill\chatgpt-comparison-detection-main`（`[历史路径]`）；项目官网提供了 HC3 语料和三类检测器。
 
 ## 一、这个项目是什么
 
