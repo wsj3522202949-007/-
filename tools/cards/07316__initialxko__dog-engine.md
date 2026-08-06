@@ -1831,7 +1831,7 @@ SOFTWARE.
 ## 📞 联系方式
 
 - **GitHub Issues**: [提交Issue](https://github.com/your-username/dog-writing-engine/issues)
-- **qq**: [参与讨论](https://github.com/initialxko/dog-engine/blob/main/%E7%82%B9%E5%87%BB%E9%93%BE%E6%8E%A5%E5%8A%A0%E5%85%A5%E7%BE%A4%E8%81%8A%E3%80%90%E5%BC%80%E6%BA%90%E7%8B%97%E7%8B%97%E7%A0%81%E5%AD%97%E9%A1%B9%E7%9B%AE%E3%80%91%EF%BC%9Ahttps://qun.qq.com/universal-share/share?ac=1&authKey=8UGSD089UNOpMasstObtoNIehS8FQ10xBgpCJQ7tDcS8OU0YxMfvZi3aajlPS%2BpA&busi_data=eyJncm91cENvZGUiOiIxMDMzNzI1NzcyIiwidG9rZW4iOiJaVFhYS0JJZGJJbS9JQ1d5alNQZEVSS1oyS05pYXJ4Ky9La1lILzkyZHduN1hhUzBISnAraUNxLzRPTVY0eHQ3IiwidWluIjoiMzUyNzIyODgxOSJ9&data=d1f6kgQIHnEM8aPynSOSyz_Yptt661InyHuv-6L8MsgJnntWQ7bsWhwdMIp4krBMfc8s7CJdVVGYy2TtoQvyVQ&svctype=4&tempid=h5_group_info)
+- **qq**: [参与讨论](https://github.com/initialxko/dog-engine/tree/main/%E7%82%B9%E5%87%BB%E9%93%BE%E6%8E%A5%E5%8A%A0%E5%85%A5%E7%BE%A4%E8%81%8A%E3%80%90%E5%BC%80%E6%BA%90%E7%8B%97%E7%8B%97%E7%A0%81%E5%AD%97%E9%A1%B9%E7%9B%AE%E3%80%91%EF%BC%9Ahttps://qun.qq.com/universal-share/share?ac=1&authKey=8UGSD089UNOpMasstObtoNIehS8FQ10xBgpCJQ7tDcS8OU0YxMfvZi3aajlPS%2BpA&busi_data=eyJncm91cENvZGUiOiIxMDMzNzI1NzcyIiwidG9rZW4iOiJaVFhYS0JJZGJJbS9JQ1d5alNQZEVSS1oyS05pYXJ4Ky9La1lILzkyZHduN1hhUzBISnAraUNxLzRPTVY0eHQ3IiwidWluIjoiMzUyNzIyODgxOSJ9&data=d1f6kgQIHnEM8aPynSOSyz_Yptt661InyHuv-6L8MsgJnntWQ7bsWhwdMIp4krBMfc8s7CJdVVGYy2TtoQvyVQ&svctype=4&tempid=h5_group_info)
 - **Email**: 3527228819@qq.com
 
 ---

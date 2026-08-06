@@ -109,17 +109,17 @@ related:
 
 ## 数据集
 
-- [唐诗宋诗](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%85%A8%E5%94%90%E8%AF%97)
-- [全宋词](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%AE%8B%E8%AF%8D)
-- [五代·花间集](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/huajianji)
-- [五代·南唐二主词](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/nantang)
-- [论语](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AE%BA%E8%AF%AD)
-- [诗经](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%AF%97%E7%BB%8F)
-- [幽梦影](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%B9%BD%E6%A2%A6%E5%BD%B1)
-- [四书五经](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%9B%9B%E4%B9%A6%E4%BA%94%E7%BB%8F)
-- [蒙学](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E8%92%99%E5%AD%A6)
-- [纳兰性德诗集](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E7%BA%B3%E5%85%B0%E6%80%A7%E5%BE%B7)
-- [御定全唐詩](https://github.com/chinese-poetry/chinese-poetry/blob/master/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9)
+- [唐诗宋诗](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E5%85%A8%E5%94%90%E8%AF%97)
+- [全宋词](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E5%AE%8B%E8%AF%8D)
+- [五代·花间集](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/huajianji)
+- [五代·南唐二主词](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/nantang)
+- [论语](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E8%AE%BA%E8%AF%AD)
+- [诗经](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E8%AF%97%E7%BB%8F)
+- [幽梦影](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E5%B9%BD%E6%A2%A6%E5%BD%B1)
+- [四书五经](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E5%9B%9B%E4%B9%A6%E4%BA%94%E7%BB%8F)
+- [蒙学](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E8%92%99%E5%AD%A6)
+- [纳兰性德诗集](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E7%BA%B3%E5%85%B0%E6%80%A7%E5%BE%B7)
+- [御定全唐詩](https://github.com/chinese-poetry/chinese-poetry/tree/master/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9)
 
 
 ## 贡献

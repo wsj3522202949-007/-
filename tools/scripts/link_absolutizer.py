@@ -153,9 +153,11 @@ BRANCH_MAP_FILE = SCRIPT_DIR / '_branch_map.json'
 # 从卡片中提取 repo 的正则
 REPO_FM_RE = re.compile(r'^repo:\s*(.+)$', re.MULTILINE)
 
-# GitHub 链接正则
+# GitHub 链接正则（支持路径中带括号的 URL，如 demo%20(1).png）
+# 路径由非特殊字符（不含 (）和平衡括号对 (...) 交替组成，并且 (...) 内部不匹配 )
+# 以确保不吞掉 markdown 链接的闭合 )
 GITHUB_BLOB_RE = re.compile(
-    r'https://github\.com/([^/]+/[^/]+)/(blob|tree)/(main|master)/([^\s)"\']+)'
+    r'https://github\.com/([^/]+/[^/]+)/(blob|tree)/(main|master)/((?:[^\s)"\'\(]|\([^\s)"\']*\))+)'
 )
 GITHUB_RAW_RE = re.compile(
     r'https://raw\.githubusercontent\.com/([^/]+/[^/]+)/([^/]+)/([^\s)"\']+)'
@@ -182,6 +184,19 @@ INLINE_CODE_RE = re.compile(r'`[^`\n]*`')
 # 工具函数
 # ---------------------------------------------------------------------------
 
+def is_valid_path(path: str) -> bool:
+    """检查路径是否看起来像有效的文件/目录路径（而非 JavaScript 代码或其他非路径内容）。"""
+    # 包含 { 或 } 的路径通常是 JavaScript 代码或模板语法，不是真实文件路径
+    if '{' in path or '}' in path:
+        return False
+    # 包含 JavaScript 关键字作为路径段的，不是真实文件路径
+    js_keywords = {'function', 'var', 'let', 'const', 'if', 'else', 'for', 'while', 'return', 'try', 'catch', 'throw', 'new', 'typeof', 'instanceof'}
+    for segment in path.rstrip('/').split('/'):
+        if segment in js_keywords:
+            return False
+    return True
+
+
 def is_file_path(path: str) -> bool:
     """判断路径是否指向文件（基于扩展名和路径模式）。"""
     # 去掉锚点
@@ -204,6 +219,11 @@ def is_file_path(path: str) -> bool:
     # 包含 . 但不是已知扩展名（如 README） → 可能是文件
     if '.' in last_segment:
         return True
+
+    # 包含 URL 编码（%XX）→ 非英文路径，无扩展名则默认为目录
+    # 通常文件会有扩展名，目录则没有
+    if '%' in path:
+        return False
 
     # 无法确定 → 返回 None（需要外部判断）
     return None
@@ -293,8 +313,15 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
         if r.lower() != repo.lower():
             return m.group(0)
 
+        # 跳过无效路径（JavaScript 代码等误匹配）
+        if not is_valid_path(path):
+            return m.group(0)
+
         # 修正分支
         correct_branch = get_default_branch(repo, branch_map)
+
+        # 规范化路径：去除开头的 /
+        path = path.lstrip('/')
 
         # 判断路径类型
         path_type = is_file_path(path)
@@ -331,6 +358,10 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
         if re.fullmatch(r'[\u4e00-\u9fff]+', url):
             return m.group(0)
 
+        # 跳过无效路径（JavaScript 代码等误匹配）
+        if not is_valid_path(url):
+            return m.group(0)
+
         # 图片 → raw.githubusercontent.com
         if is_image and is_image_path(url):
             base_url = f'https://raw.githubusercontent.com/{repo}/{default_branch}/{url}'
@@ -341,7 +372,7 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
             elif path_type is False:
                 link_type = 'tree'
             else:
-                link_type = 'blob'  # 默认 blob
+                link_type = 'tree'  # 无法确定时默认为 tree（目录更安全，GitHub 会重定向）
             base_url = f'https://github.com/{repo}/{link_type}/{default_branch}/{url}'
 
         if is_image:
