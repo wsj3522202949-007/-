@@ -83,7 +83,7 @@ JP→CN 翻译表覆盖角色、学校、社团、剧情标题、地名、术语
 
 从剧情语料自动分析角色说话方式、口癖、关系动态，生成 AI roleplay 人设档案，支持导出 SillyTavern 酒馆卡。
 
-详见 [`.claude/skills/character-ai-profile/`](https://github.com/HePudding/ba-storybook/blob/main/.claude/skills/character-ai-profile/)
+详见 [`.claude/skills/character-ai-profile/`](https://github.com/HePudding/ba-storybook/tree/main/.claude/skills/character-ai-profile/)
 
 ## 快速开始
 

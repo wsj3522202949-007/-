@@ -55,11 +55,11 @@ If you like this, consider supporting further development!
 
 This project is a pnpm monorepo with three packages:
 
-- [`packages/shared/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/shared/) -- Shared TypeScript types, utilities, and action system
-- [`packages/editor/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/editor/) -- Web-based story creation tool (React Flow graph editor)
-- [`packages/viewer/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/viewer/) -- Web-based story player (Markdown rendering, save/load progress)
-- [`stories/`](https://github.com/Echsecutor/story_adventure/blob/main/stories/) -- Example stories and story collection
-- [`scripts/`](https://github.com/Echsecutor/story_adventure/blob/main/scripts/) -- Build scripts for bundle generation
+- [`packages/shared/`](https://github.com/Echsecutor/story_adventure/tree/main/packages/shared/) -- Shared TypeScript types, utilities, and action system
+- [`packages/editor/`](https://github.com/Echsecutor/story_adventure/tree/main/packages/editor/) -- Web-based story creation tool (React Flow graph editor)
+- [`packages/viewer/`](https://github.com/Echsecutor/story_adventure/tree/main/packages/viewer/) -- Web-based story player (Markdown rendering, save/load progress)
+- [`stories/`](https://github.com/Echsecutor/story_adventure/tree/main/stories/) -- Example stories and story collection
+- [`scripts/`](https://github.com/Echsecutor/story_adventure/tree/main/scripts/) -- Build scripts for bundle generation
 
 ## Technology Stack
 

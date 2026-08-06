@@ -60,7 +60,7 @@ related:
 
 ## 🧭 当前进度 (Current Focus)
 
-> 已发布下一代协议 **v10.0 Tempered-Voice**（针对新一代 LLM 的语言习惯重做协议语言层）；工程化载体为独立姊妹项目 **[Prism Vesicle](https://github.com/3aKHP/prism-vesicle)**。**[`shared/prism-driver/`](https://github.com/3akhp/neural-narratology/blob/main/shared/prism-driver/)** 提供 Prism HAL，隔离七引擎协议与宿主工具实现；**[`shared/rule-assets/`](https://github.com/3akhp/neural-narratology/blob/main/shared/rule-assets/)** 编译 Vesicle Harness Pack，首个模块 **[`shared/anti-ai-flavor/`](https://github.com/3akhp/neural-narratology/blob/main/shared/anti-ai-flavor/)** 提供 Guidance、Detector 与 Judge rubric。v9.x 及更早协议与宿主实现作为历史演进档案保留。
+> 已发布下一代协议 **v10.0 Tempered-Voice**（针对新一代 LLM 的语言习惯重做协议语言层）；工程化载体为独立姊妹项目 **[Prism Vesicle](https://github.com/3aKHP/prism-vesicle)**。**[`shared/prism-driver/`](https://github.com/3akhp/neural-narratology/tree/main/shared/prism-driver/)** 提供 Prism HAL，隔离七引擎协议与宿主工具实现；**[`shared/rule-assets/`](https://github.com/3akhp/neural-narratology/tree/main/shared/rule-assets/)** 编译 Vesicle Harness Pack，首个模块 **[`shared/anti-ai-flavor/`](https://github.com/3akhp/neural-narratology/tree/main/shared/anti-ai-flavor/)** 提供 Guidance、Detector 与 Judge rubric。v9.x 及更早协议与宿主实现作为历史演进档案保留。
 
 ---
 
@@ -68,7 +68,7 @@ related:
 
 本研究共分为三个递进阶段，分别对应了从"破解"到"构建"再到"自动化"的技术演进：
 
-### [🌒 Phase I: Echo (回响)](https://github.com/3akhp/neural-narratology/blob/main/01_Echo/)
+### [🌒 Phase I: Echo (回响)](https://github.com/3akhp/neural-narratology/tree/main/01_Echo/)
 > **"Listen to the Ghost in the Machine."**
 
 *   **核心任务**：商业平台黑箱逆向工程。
@@ -76,9 +76,9 @@ related:
     *   揭示了 **"Single World-Simulator"** (单一世界模拟器) 架构。
     *   解构了 **Dynamic Persona Injection** (动态人设注入) 与轻量级 RAG 机制。
     *   提取了高级用户的"三层指令系统" (Jailbreak/Constitution/Knowledge)。
-*   **📄 [阅读研究报告](https://github.com/3akhp/neural-narratology/blob/main/01_Echo/"%E5%9B%9E%E5%93%8D"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)**
+*   **📄 [阅读研究报告](https://github.com/3akhp/neural-narratology/tree/main/01_Echo/"%E5%9B%9E%E5%93%8D"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)**
 
-### [🌓 Phase II: Resonance (共鸣)](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/)
+### [🌓 Phase II: Resonance (共鸣)](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/)
 > **"Construct the Soul with Logic."**
 
 *   **核心任务**：标准化 AI 角色创作路径。
@@ -89,9 +89,9 @@ related:
     *   发布了 **Protocol v7.0 (Neuro-Weave)**：基于 Bio-XML 理念和认知公理的神经编织引擎，实现从"结构化数据容器"到"活体认知系统"的范式转变。
     *   发布了 **Protocol v8.0 (Compact-State Update)**：作为 FurryBar Engine 的 v8 主题更新，通过 YAML+Markdown 轻骨架压缩格式性文本开销，保护正文空间与注意力密度。
     *   发布 **Compact-State Lite**：面向单一 System Prompt 聊天宿主的角色主提示词生产层协议。
-*   **📄 [阅读研究报告](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/"%E5%85%B1%E9%B8%A3"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)**
+*   **📄 [阅读研究报告](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/"%E5%85%B1%E9%B8%A3"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)**
 
-### [🌔 Phase III: Modulation (调制)](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/)
+### [🌔 Phase III: Modulation (调制)](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/)
 > **"Control the Signal via Agents."**
 
 *   **核心任务**：基于 IDE 原生环境的智能体辅助生产 (VibeCoding)。
@@ -103,10 +103,10 @@ related:
     *   完整实现 v7.0 Neuro-Weave 理论框架（Prism-Engine-V7.x）。
     *   完整实现 v8.0 Compact-State 协议（Prism-Engine-V8.x），从 Bio-XML 转向 **YAML+Markdown 轻骨架**架构，新增 **Story Bible 世界状态层**、**结构化 Outline** 与 **Lite Persona Prompt** 输出。
     *   发布 **Prism Engine v8.1**：新增 **Weaver-Orch** 第六引擎（基于 Orchestrator 的长篇编排器）。
-    *   **多宿主适配**：早期六引擎矩阵曾扩展至 RooCode、Codex CLI 和 Claude Code CLI 三个宿主环境；**自 v10.0 起以七引擎矩阵收窄为 Prism Vesicle 单一目标平台**（见 [`Prism-Engine-V10.x`](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V10.x/)），Codex/Claude-Code 适配作为历史归档冻结于 v9.0。
-*   **🛠️ [获取工具链](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/)**
+    *   **多宿主适配**：早期六引擎矩阵曾扩展至 RooCode、Codex CLI 和 Claude Code CLI 三个宿主环境；**自 v10.0 起以七引擎矩阵收窄为 Prism Vesicle 单一目标平台**（见 [`Prism-Engine-V10.x`](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V10.x/)），Codex/Claude-Code 适配作为历史归档冻结于 v9.0。
+*   **🛠️ [获取工具链](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/)**
 
-### [🌕 Phase IV: Projection (投射)](https://github.com/3akhp/neural-narratology/blob/main/04_Projection/)
+### [🌕 Phase IV: Projection (投射)](https://github.com/3akhp/neural-narratology/tree/main/04_Projection/)
 > **"Project the Character Across Platforms."**
 
 *   **核心任务**：将 Prism 角色资产投射到多形态消费环境。
@@ -114,7 +114,7 @@ related:
 *   **关键成果（规划中）**：
     *   **Core Profile**：平台无关角色描述规范，作为跨平台投射的统一内核。
     *   **消费环境解耦**：将 Core Profile 编译到无状态消费前端——SillyTavern（CCv3 Lorebook Decorators）与 RikkaHub（思维链自维护 HUD）。
-*   **📄 [阅读设计文档](https://github.com/3akhp/neural-narratology/blob/main/04_Projection/)**
+*   **📄 [阅读设计文档](https://github.com/3akhp/neural-narratology/tree/main/04_Projection/)**
 
 ---
 
@@ -277,7 +277,7 @@ graph LR
     若不使用安装器，可按 [`03_Modulation/README.md`](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/README.md) 手动加载引擎 preset 文件。
 
 4.  **开始创作**：
-    - 以安装生成的 `Prism-Engine-Universe-V8.0-Template`（或 V7.0）初始化项目，或直接打开 [`03_Modulation/Prism-Engine-V8.x/`](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V8.x/) 作为工作区
+    - 以安装生成的 `Prism-Engine-Universe-V8.0-Template`（或 V7.0）初始化项目，或直接打开 [`03_Modulation/Prism-Engine-V8.x/`](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V8.x/) 作为工作区
     - 切换到 `Prism ETL Engine` 模式
     - 若原始素材是 `.docx`，可先运行：
       - `powershell -NoProfile -ExecutionPolicy Bypass -File .\03_Modulation\Prism-Engine-V8.x\source_materials\ConvertDocxToMdAndArchive.ps1`
@@ -290,11 +290,11 @@ graph LR
 如果您希望深入理解理论或进行自定义开发：
 
 1.  **选择协议版本**：
-    - 新手推荐：[v5.0 Legacy](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v5_Legacy/)
-    - 深度博弈：[v6.0 Omni-Foundry](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v6_Omni_Foundry/)
-    - 心理真实感：[v7.0 Neuro-Weave](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v7_Neuro_Weave/)
-    - 轻结构工业化：[v8.0 Compact-State](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v8_Compact-State/) ⭐
-    - 单提示词聊天宿主：[v8.0 Compact-State Lite](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v8_Compact-State_Lite/)
+    - 新手推荐：[v5.0 Legacy](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v5_Legacy/)
+    - 深度博弈：[v6.0 Omni-Foundry](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v6_Omni_Foundry/)
+    - 心理真实感：[v7.0 Neuro-Weave](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v7_Neuro_Weave/)
+    - 轻结构工业化：[v8.0 Compact-State](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v8_Compact-State/) ⭐
+    - 单提示词聊天宿主：[v8.0 Compact-State Lite](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v8_Compact-State_Lite/)
 
 2.  **阅读协议文档**：
     - 每个版本目录下都有完整的 README 和 Step-by-Step 指南
@@ -306,20 +306,20 @@ graph LR
 ## 📚 学习路径 (Learning Path)
 
 ### 🎓 初学者路径
-1. 阅读 [Phase I 研究报告](https://github.com/3akhp/neural-narratology/blob/main/01_Echo/"%E5%9B%9E%E5%93%8D"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf) 了解背景
-2. 使用 [Phase III 工具链](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/) 快速上手
-3. 体验 [v5.0 Legacy](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v5_Legacy/) 理解基础概念
+1. 阅读 [Phase I 研究报告](https://github.com/3akhp/neural-narratology/tree/main/01_Echo/"%E5%9B%9E%E5%93%8D"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf) 了解背景
+2. 使用 [Phase III 工具链](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/) 快速上手
+3. 体验 [v5.0 Legacy](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v5_Legacy/) 理解基础概念
 
 ### 🔬 研究者路径
-1. 深入研究 [Phase II 报告](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/"%E5%85%B1%E9%B8%A3"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)
-2. 对比 [v5.0](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v5_Legacy/) / [v6.0](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v6_Omni_Foundry/) / [v7.0](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v7_Neuro_Weave/) / [v8.0](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v8_Compact-State/) 的设计差异
-3. 阅读 [v8.0 Compact-State Lite](https://github.com/3akhp/neural-narratology/blob/main/02_Resonance/v8_Compact-State_Lite/) 理解单提示词人格压缩路径
-4. 分析 [Phase III 源码](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V8.x/.roo/) 的工程实现
+1. 深入研究 [Phase II 报告](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/"%E5%85%B1%E9%B8%A3"%E9%A1%B9%E7%9B%AE%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A-Repo-Git.pdf)
+2. 对比 [v5.0](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v5_Legacy/) / [v6.0](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v6_Omni_Foundry/) / [v7.0](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v7_Neuro_Weave/) / [v8.0](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v8_Compact-State/) 的设计差异
+3. 阅读 [v8.0 Compact-State Lite](https://github.com/3akhp/neural-narratology/tree/main/02_Resonance/v8_Compact-State_Lite/) 理解单提示词人格压缩路径
+4. 分析 [Phase III 源码](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V8.x/.roo/) 的工程实现
 
 ### 🛠️ 开发者路径
 1. Fork 本仓库
-2. 基于 [V8.x Schema](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V8.x/specs/) 或 [V7.x Schema](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V7.x/specs/) 自定义扩展
-3. 修改 [System Prompts](https://github.com/3akhp/neural-narratology/blob/main/03_Modulation/Prism-Engine-V8.x/.roo/) 适配特定模型
+2. 基于 [V8.x Schema](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V8.x/specs/) 或 [V7.x Schema](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V7.x/specs/) 自定义扩展
+3. 修改 [System Prompts](https://github.com/3akhp/neural-narratology/tree/main/03_Modulation/Prism-Engine-V8.x/.roo/) 适配特定模型
 
 ## 🔬 技术亮点 (Technical Highlights)
 

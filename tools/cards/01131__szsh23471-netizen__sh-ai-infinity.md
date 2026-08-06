@@ -62,6 +62,6 @@ View your app in AI Studio: https://ai.studio/apps/drive/17JRZCh5scgYTMZJ83TSwyo
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/szsh23471-netizen/sh-ai-infinity/blob/main/.env.local) to your Gemini API key
+2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/szsh23471-netizen/sh-ai-infinity/tree/main/.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`

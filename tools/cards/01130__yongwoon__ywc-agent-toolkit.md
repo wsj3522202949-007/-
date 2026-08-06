@@ -123,7 +123,7 @@ Restart Claude Code afterward for the skills to appear.
 
 ### Via Codex CLI plugin directory
 
-This repository follows the same multi-harness packaging pattern used by projects such as Superpowers: Claude Code metadata lives under [`.claude-plugin/`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/.claude-plugin/), while Codex metadata lives under [`.codex-plugin/`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/.codex-plugin/). The Codex source of truth is [codex/skills](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/codex/skills). The repo-scoped Codex marketplace catalog at [`.agents/plugins/marketplace.json`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/.agents/plugins/marketplace.json) exposes a generated plugin package at `plugins/ywc-agent-toolkit`, whose `skills/` directory is produced from `codex/skills` by `bash scripts/sync-codex-plugin.sh` and checked by `bash scripts/validate.sh`.
+This repository follows the same multi-harness packaging pattern used by projects such as Superpowers: Claude Code metadata lives under [`.claude-plugin/`](https://github.com/yongwoon/ywc-agent-toolkit/tree/main/.claude-plugin/), while Codex metadata lives under [`.codex-plugin/`](https://github.com/yongwoon/ywc-agent-toolkit/tree/main/.codex-plugin/). The Codex source of truth is [codex/skills](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/codex/skills). The repo-scoped Codex marketplace catalog at [`.agents/plugins/marketplace.json`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/.agents/plugins/marketplace.json) exposes a generated plugin package at `plugins/ywc-agent-toolkit`, whose `skills/` directory is produced from `codex/skills` by `bash scripts/sync-codex-plugin.sh` and checked by `bash scripts/validate.sh`.
 
 This makes `ywc-agent-toolkit` installable from Codex after adding this repository as a plugin marketplace source, but does not mean it is listed in the official OpenAI-curated marketplace.
 
@@ -388,7 +388,7 @@ Seven read-only specialist agents complement the `ywc-*` skills. They are instal
 | [`ywc-python-reviewer`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/claude-code/agents/ywc-python-reviewer.md) | Python language-specific review | `read-only` |
 | [`ywc-go-reviewer`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/claude-code/agents/ywc-go-reviewer.md) | Go language-specific review | `read-only` |
 
-All Codex agents are read-only; they return a standardized `Status: DONE | DONE_WITH_CONCERNS | BLOCKED | NEEDS_CONTEXT`, a compact verdict or finding set, and a `Next action:` when the caller should apply or inspect something. They never edit files. Source TOML lives under [`codex/agents/`](https://github.com/yongwoon/ywc-agent-toolkit/blob/main/codex/agents/).
+All Codex agents are read-only; they return a standardized `Status: DONE | DONE_WITH_CONCERNS | BLOCKED | NEEDS_CONTEXT`, a compact verdict or finding set, and a `Next action:` when the caller should apply or inspect something. They never edit files. Source TOML lives under [`codex/agents/`](https://github.com/yongwoon/ywc-agent-toolkit/tree/main/codex/agents/).
 
 ---
 

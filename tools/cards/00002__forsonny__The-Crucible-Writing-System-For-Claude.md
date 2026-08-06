@@ -226,7 +226,7 @@ As you progress through phases, additional directories are created:
 
 ### Learn the Crucible Structure
 
-The **[The-Crucible-Structure/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/blob/main/The-Crucible-Structure/)** folder contains comprehensive documentation for learning the framework -- whether you use the plugin or write by hand:
+The **[The-Crucible-Structure/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/tree/main/The-Crucible-Structure/)** folder contains comprehensive documentation for learning the framework -- whether you use the plugin or write by hand:
 
 | Document | Description |
 |----------|-------------|
@@ -243,9 +243,9 @@ The **[The-Crucible-Structure/](https://github.com/forsonny/The-Crucible-Writing
 - [The Mercy Engine](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/blob/main/The-Crucible-Structure/06-the-mercy-engine.md) - Compassion that pays off
 - [The Dark Mirror](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/blob/main/The-Crucible-Structure/07-the-dark-mirror.md) - Antagonist design
 
-**Worksheets:** Printable planning templates in [worksheets/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/blob/main/The-Crucible-Structure/worksheets/)
+**Worksheets:** Printable planning templates in [worksheets/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/tree/main/The-Crucible-Structure/worksheets/)
 
-**Examples:** Completed worksheets based on a sample story in [worksheets/examples/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/blob/main/The-Crucible-Structure/worksheets/examples/)
+**Examples:** Completed worksheets based on a sample story in [worksheets/examples/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/tree/main/The-Crucible-Structure/worksheets/examples/)
 
 ### Plugin Reference
 

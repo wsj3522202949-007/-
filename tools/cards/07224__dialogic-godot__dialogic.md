@@ -195,5 +195,5 @@ This project is licensed under the terms of the [MIT license](https://github.com
 
 
 
-Dialogic may use the [Roboto font](https://fonts.google.com/specimen/Roboto), licensed under [Apache license, Version 2.0](https://github.com/dialogic-godot/dialogic/tree/main/addons/dialogic/Example%20Assets/Fonts/LICENSE.txt).
+Dialogic may use the [Roboto font](https://fonts.google.com/specimen/Roboto), licensed under [Apache license, Version 2.0](https://github.com/dialogic-godot/dialogic/blob/main/addons/dialogic/Example%20Assets/Fonts/LICENSE.txt).
 

@@ -64,7 +64,7 @@ If you have any comments, suggestions, complaints, or contributions, you're welc
 
 **For demo mods and asset packs, see [fse-extras.](https://github.com/GiovanH/fse-extras)**
 
-**For documentation, browse the guides in [the `docs/` folder.](https://github.com/GiovanH/fansim-engine/blob/main/doc/)**
+**For documentation, browse the guides in [the `docs/` folder.](https://github.com/GiovanH/fansim-engine/tree/main/doc/)**
 
 <!-- MarkdownTOC -->
 
@@ -123,7 +123,7 @@ a partial list
 
 ## Documentation
 
-See the guides in [the `docs/` folder](https://github.com/GiovanH/fansim-engine/blob/main/doc/) for detailed documentation.
+See the guides in [the `docs/` folder](https://github.com/GiovanH/fansim-engine/tree/main/doc/) for detailed documentation.
 
 
 
@@ -185,7 +185,7 @@ Recommended use is to execute the scripts from console while in the `src` folder
 
 **Q:** Is there any more documentation, besides the online ren'py documentation?
 
-**A:** Browse [the `docs/` folder](https://github.com/GiovanH/fansim-engine/blob/main/doc/) to see supplemental documentation and tutorials as they're added.
+**A:** Browse [the `docs/` folder](https://github.com/GiovanH/fansim-engine/tree/main/doc/) to see supplemental documentation and tutorials as they're added.
 
 If your question isn't answered here, skim this document and the resources in the `docs/` folder, and if you still have questions, just let me know.
 

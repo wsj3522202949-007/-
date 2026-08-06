@@ -146,7 +146,7 @@ See the [Maintainer Guide](https://github.com/wolffcatskyy/ai-ready-issues/blob/
 
 ### For Maintainers
 
-1. Copy the [issue templates](https://github.com/wolffcatskyy/ai-ready-issues/blob/main/.github/ISSUE_TEMPLATE/) into your repo
+1. Copy the [issue templates](https://github.com/wolffcatskyy/ai-ready-issues/tree/main/.github/ISSUE_TEMPLATE/) into your repo
 2. Adapt the [CONTRIBUTING.md template](https://github.com/wolffcatskyy/ai-ready-issues/blob/main/templates/CONTRIBUTING.md) for your project
 3. Write issues using the AI-Ready format
 4. Label them `ai-ready` so contributors can find them

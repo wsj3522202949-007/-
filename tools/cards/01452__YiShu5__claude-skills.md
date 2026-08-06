@@ -68,7 +68,7 @@ related:
 
 | 分类入口 | 包含 Skill | 用途 | 状态 |
 |---|---|---|---|
-| HTML 首页 / 演示 | [`HTMLHero.skill`](https://github.com/YiShu5/claude-skills/blob/main/skills/HTMLHero.skill)<br>[`HTMLPPT.skill`](https://github.com/YiShu5/claude-skills/blob/main/skills/HTMLPPT.skill) | 生成第一页 Hero，并扩展成一套 HTML/PPT 演示文稿 | ✅ |
+| HTML 首页 / 演示 | [`HTMLHero.skill`](https://github.com/YiShu5/claude-skills/tree/main/skills/HTMLHero.skill)<br>[`HTMLPPT.skill`](https://github.com/YiShu5/claude-skills/tree/main/skills/HTMLPPT.skill) | 生成第一页 Hero，并扩展成一套 HTML/PPT 演示文稿 | ✅ |
 | Clawd 动画 | [`clawd-animation`](https://github.com/YiShu5/claude-skills/blob/main/skills/clawd-animation)<br>[`clawd-animation-lite`](https://github.com/YiShu5/claude-skills/blob/main/skills/clawd-animation-lite) | 像素风动画生成器，包含完整版和轻量版 | ✅ |
 | 经验记忆 | [`self-improving-agent`](https://github.com/YiShu5/claude-skills/blob/main/skills/self-improving-agent) | 会话结束时提取经验教训到 `.learnings/` 暂存区，人工审核后才入长期记忆 | ✅ |
 | Vibe 创作 | [`vibe-coding-prd`](https://github.com/YiShu5/claude-skills/blob/main/skills/vibe-coding-prd)<br>[`vibe-writing`](https://github.com/YiShu5/claude-skills/blob/main/skills/vibe-writing) | 整理可执行 PRD，并创建、改写或审校保留作者声音的中文内容 | ✅ |

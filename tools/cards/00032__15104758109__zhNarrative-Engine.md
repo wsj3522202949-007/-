@@ -145,7 +145,7 @@ related:
 | 文档 | 适合 |
 |---|---|
 | [`doc/requirements.md`](https://github.com/15104758109/zhNarrative-Engine/blob/main/docs/Update%20zongheng_narrative_engine_RPD_v3_1.md) | 想读完整的产品需求规格（PRD） |
-| [`specs/`](https://github.com/15104758109/zhNarrative-Engine/blob/main/specs/) | 想看按阶段拆分的功能规格（001-004） |
+| [`specs/`](https://github.com/15104758109/zhNarrative-Engine/tree/main/specs/) | 想看按阶段拆分的功能规格（001-004） |
 
 ---
 📝开发状态

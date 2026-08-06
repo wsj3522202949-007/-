@@ -383,7 +383,7 @@ The diagram shows the full ONNX graph: input → 5 parallel classifiers → prob
 
 ### **Additional visualizations:**
 
->See [`plots/`](https://github.com/sambroomy/is-it-slop/blob/main/plots/) for embedding visualizations, feature distributions, and model analysis.
+>See [`plots/`](https://github.com/sambroomy/is-it-slop/tree/main/plots/) for embedding visualizations, feature distributions, and model analysis.
 >
 
 ## Development

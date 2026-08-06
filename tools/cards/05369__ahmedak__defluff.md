@@ -371,7 +371,7 @@ Exit codes for `defluff lint`: `0` = clean · `1` = slop · `2` = bad input.
 
 ## Accuracy
 
-defluff is a deterministic matcher, not a trained classifier, so the metric that matters is **precision** — when it flags something, is it actually removable filler? On a 50-example hand-labeled set ([`eval/validation.jsonl`](https://github.com/ahmedak/defluff/blob/main/eval/validation.jsonl)) spanning clear slop, clean prose, and *jargon-as-content traps* (e.g. "the **robust** standard errors", "**pivotal** trials"), at the default threshold:
+defluff is a deterministic matcher, not a trained classifier, so the metric that matters is **precision** — when it flags something, is it actually removable filler? On a 50-example hand-labeled set ([`eval/validation.jsonl`](https://github.com/ahmedak/defluff/tree/main/eval/validation.jsonl)) spanning clear slop, clean prose, and *jargon-as-content traps* (e.g. "the **robust** standard errors", "**pivotal** trials"), at the default threshold:
 
 | Metric | Score | Reading |
 |--------|------:|---------|

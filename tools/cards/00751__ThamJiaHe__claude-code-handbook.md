@@ -214,7 +214,7 @@ cd claudeforge && npm install && npm run dev
 4. **Want skills?** Browse the [Skills Catalog](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/skills-catalog.md) (100+ curated)
 5. **Building with API?** Read the [API Guide](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/api-guide.md)
 6. **Deep diving?** Explore the [Deep Research Index](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/deep-research-index.md) (13 community repos analyzed)
-7. **Need a template?** Pick from [Templates](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/templates/)
+7. **Need a template?** Pick from [Templates](https://github.com/ThamJiaHe/claude-code-handbook/tree/main/templates/)
 
 ---
 
@@ -321,7 +321,7 @@ cd claude-kopitiam && bash INSTALL.sh
 
 ### Skills Collection (31 example skills)
 
-Browse [skills/examples/](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/skills/examples/) for production-ready skills:
+Browse [skills/examples/](https://github.com/ThamJiaHe/claude-code-handbook/tree/main/skills/examples/) for production-ready skills:
 
 **Development:** Next.js App Router, Tailwind Design System, API Development, Prisma ORM, TypeScript Standards
 **Testing:** Vitest Unit Testing, Playwright E2E, TDD Workflow, Code Review

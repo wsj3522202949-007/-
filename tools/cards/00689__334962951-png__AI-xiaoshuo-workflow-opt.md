@@ -71,7 +71,7 @@ Core capabilities:
   Computer Use / TuriX fallback bridge when the main Playwright path cannot complete.
 - [project_config.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/project_config.json)
   Project-level configuration for labels, story structure, prompt defaults, and file routing.
-- [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/templates)
+- [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/tree/main//D:/AI-xiaoshuo-workflow-opt/templates)
   Reusable writing templates for worldbuilding, character setup, arcs, constraints, and status scaffolds.
 - [state/review_policy.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/state/review_policy.json)
   Review gate policy used by the workflow.
@@ -82,7 +82,7 @@ Core capabilities:
 2. Install dependencies.
 3. Copy `.env.example` to `.env`.
 4. Update [project_config.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/project_config.json).
-5. Copy the files in [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/templates) into a private, ignored project directory.
+5. Copy the files in [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/tree/main//D:/AI-xiaoshuo-workflow-opt/templates) into a private, ignored project directory.
 6. Point `project_config.json > files` to those private project files.
 7. Run `python pipeline.py doctor`.
 

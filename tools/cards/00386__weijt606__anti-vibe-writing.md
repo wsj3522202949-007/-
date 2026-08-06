@@ -90,7 +90,7 @@ git clone https://github.com/weijt606/anti-vibe-writing.git
 
 ## 快速示例
 
-外部读者扫一眼就能看到的前后对照在 [examples/](https://github.com/weijt606/anti-vibe-writing/blob/main/examples/) 目录下。完整的回归基准仍放在 `references/` 里。
+外部读者扫一眼就能看到的前后对照在 [examples/](https://github.com/weijt606/anti-vibe-writing/tree/main/examples/) 目录下。完整的回归基准仍放在 `references/` 里。
 
 ## 三种声音模式
 

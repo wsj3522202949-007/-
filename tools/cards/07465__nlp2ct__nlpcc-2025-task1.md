@@ -95,7 +95,7 @@ The distribution of the test data is completely out of the training data's domai
 
 For all three scenarios, the evaluation metric is **macro F1 score**, and the final score for each team is the average performance across the three scenarios.
 
-We have released [test_with_label.json](https://github.com/NLP2CT/NLPCC-2025-Task1/tree/main/data/test_with_label.json) to allow participating teams to conduct in-depth analyses and provide more valuable insights.
+We have released [test_with_label.json](https://github.com/NLP2CT/NLPCC-2025-Task1/blob/main/data/test_with_label.json) to allow participating teams to conduct in-depth analyses and provide more valuable insights.
 
 
 ## Data Download

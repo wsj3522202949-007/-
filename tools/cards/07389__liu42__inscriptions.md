@@ -52,7 +52,7 @@ related:
 
 ## 截图展示
 
-![效果展示](https://github.com/liu42/inscriptions/blob/main/assets/screenshot.jpg%20"%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA")
+![效果展示](https://github.com/liu42/inscriptions/tree/main/assets/screenshot.jpg%20"%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA")
 
 ## 性能评估
 

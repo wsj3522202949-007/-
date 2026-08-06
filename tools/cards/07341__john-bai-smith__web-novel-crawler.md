@@ -69,7 +69,7 @@ related:
 
 - 清除文本中的垃圾词组
 
-![erase_word_demo.jpg](https://github.com/john-bai-smith/web-novel-crawler/blob/main/figures/erase_word_demo.jpg%20"Demonstration%20for%20erase_word.py")
+![erase_word_demo.jpg](https://github.com/john-bai-smith/web-novel-crawler/tree/main/figures/erase_word_demo.jpg%20"Demonstration%20for%20erase_word.py")
 
 
 # 更新日志

@@ -62,6 +62,6 @@ View your app in AI Studio: https://ai.studio/apps/b49f019f-8e89-40a5-ab46-96858
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/kulkarnineha2518-del/Game-Console-AI-Game-Story-Generator/blob/main/.env.local) to your Gemini API key
+2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/kulkarnineha2518-del/Game-Console-AI-Game-Story-Generator/tree/main/.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`

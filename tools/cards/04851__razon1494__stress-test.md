@@ -59,7 +59,7 @@ per-domain calibration analysis estimates thresholds from the same clean domain
 slices used for evaluation. These limitations are stated here because they affect
 how the numbers should be interpreted.
 
-[Paper draft](https://github.com/razon1494/stress-test/blob/main/paper/main.tex) · [Generated results](https://github.com/razon1494/stress-test/blob/main/results/) ·
+[Paper draft](https://github.com/razon1494/stress-test/tree/main/paper/main.tex) · [Generated results](https://github.com/razon1494/stress-test/tree/main/results/) ·
 [Reproducibility guide](https://github.com/razon1494/stress-test/blob/main/docs/reproducibility.md) ·
 [Result provenance](https://github.com/razon1494/stress-test/blob/main/docs/result_provenance.md)
 
@@ -160,12 +160,12 @@ attempting a full run.
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
 ---|
-| [`src/stress_test/`](https://github.com/razon1494/stress-test/blob/main/src/stress_test/) | Transformations, detectors, metrics, statistics, data utilities, and report generation |
-| [`scripts/`](https://github.com/razon1494/stress-test/blob/main/scripts/) | Numbered experiment and analysis stages |
-| [`tests/`](https://github.com/razon1494/stress-test/blob/main/tests/) | Unit tests for core research logic |
-| [`results/`](https://github.com/razon1494/stress-test/blob/main/results/) | Committed generated summaries and structured outputs |
-| [`paper/`](https://github.com/razon1494/stress-test/blob/main/paper/) | LaTeX manuscript draft and generated figure |
-| [`docs/`](https://github.com/razon1494/stress-test/blob/main/docs/) | Reproduction instructions, annotation protocol, and related-work notes |
+| [`src/stress_test/`](https://github.com/razon1494/stress-test/tree/main/src/stress_test/) | Transformations, detectors, metrics, statistics, data utilities, and report generation |
+| [`scripts/`](https://github.com/razon1494/stress-test/tree/main/scripts/) | Numbered experiment and analysis stages |
+| [`tests/`](https://github.com/razon1494/stress-test/tree/main/tests/) | Unit tests for core research logic |
+| [`results/`](https://github.com/razon1494/stress-test/tree/main/results/) | Committed generated summaries and structured outputs |
+| [`paper/`](https://github.com/razon1494/stress-test/tree/main/paper/) | LaTeX manuscript draft and generated figure |
+| [`docs/`](https://github.com/razon1494/stress-test/tree/main/docs/) | Reproduction instructions, annotation protocol, and related-work notes |
 
 ## Current limitations
 

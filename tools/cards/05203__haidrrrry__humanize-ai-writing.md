@@ -105,7 +105,7 @@ cat draft.md | node bin/humanize-check.mjs
 npx -y github:haidrrrry/humanize-ai-writing your-draft.md
 ```
 Exit code is non-zero when tells are found. Wire it into CI or a pre-commit hook
-with the ready-made [templates](https://github.com/haidrrrry/humanize-ai-writing/blob/main/templates/) (GitHub Action + git hook). See
+with the ready-made [templates](https://github.com/haidrrrry/humanize-ai-writing/tree/main/templates/) (GitHub Action + git hook). See
 [EXAMPLES.md](https://github.com/haidrrrry/humanize-ai-writing/blob/main/EXAMPLES.md) for before/after rewrites.
 
 ## 🔍 Why this one

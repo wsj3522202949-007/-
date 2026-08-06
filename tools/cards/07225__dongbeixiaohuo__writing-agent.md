@@ -90,7 +90,7 @@ related:
 
 如果你只想先判断这个仓库值不值得收藏，不要先看安装，先看这个真实样本：
 
-[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
 
 这不是只放一篇成品，而是把整条写作链路都放出来了，包括：
 
@@ -126,7 +126,7 @@ related:
 
 下面不是虚构示例，是这个仓库里一篇真实跑完的文章项目。
 
-- Demo 目录：[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+- Demo 目录：[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
 - 文章标题：`工资的一半，是你受的气折算的`
 - 主题：`工资的一半是“技术溢价”，一半是“情绪折价”`
 - 核心判断：`你的工资不是你值多少，而是市场价减去组织税之后剩下的数`
@@ -329,7 +329,7 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 2. clone 本仓库并执行 `npm ci`
 3. 配好你要用的模型 API 或 Claude 账号
 4. 一定在项目根目录启动 `claude`
-5. 先用 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/) 理解流程，再开始正式写作
+5. 先用 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/) 理解流程，再开始正式写作
 
 如果你已经准备直接跑完整版，继续看：
 
@@ -826,7 +826,7 @@ npm run check
 
 ### 路线 A：先看 Demo，再安装
 
-1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
 2. 看明白 `01_theme.md -> draft_v1_humanized_clean.txt` 这条链路
 3. 再决定你要走哪家模型和哪种费用方案
 4. 最后开始安装和配置
@@ -952,7 +952,7 @@ see_also:
 
 ## 如果你只想记住最重要的 4 句话
 
-1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)，比先看安装说明更容易看懂项目价值。
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)，比先看安装说明更容易看懂项目价值。
 2. `DeepSeek-V3.2` 是默认推荐，不是因为它压过另外两家，而是因为它最适合低成本先把整套流程跑通。
 3. 完整版一定要在项目根目录启动 Claude Code，最后默认交付的是 `_clean.txt`，并可按需额外导出公众号排版 `.html`。
 4. 新版会在调研阶段生成 `02_evidence_ledger.json`，最终交付前生成 `fact_claims.json` 和 `fact_check_report.md`，用来拦截错误事实和失效引用。

@@ -60,7 +60,7 @@ related:
 
 [![Watch the ScamRadar demo video](https://github.com/chartmann1590/ScamRadar/blob/main/docs/assets/promo_poster.png)](https://chartmann1590.github.io/ScamRadar/#watch)
 
-> [Watch the video on the website](https://chartmann1590.github.io/ScamRadar/#watch) · [Download the MP4](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/video/scamradar_promo.mp4) · [Captions (.srt)](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/video/scamradar_promo.srt)
+> [Watch the video on the website](https://chartmann1590.github.io/ScamRadar/#watch) · [Download the MP4](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/video/scamradar_promo.mp4) · [Captions (.srt)](https://github.com/chartmann1590/ScamRadar/tree/main/play-store/video/scamradar_promo.srt)
 
 </div>
 
@@ -295,7 +295,7 @@ Captured live on a Pixel 8 Pro running the actual app.
 
 </div>
 
-> Want the unframed device captures? See [`play-store/screenshots/raw/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/raw/). Tablet sizes for the Play Store live alongside in [`tablet-7in/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/tablet-7in/) and [`tablet-10in/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/tablet-10in/).
+> Want the unframed device captures? See [`play-store/screenshots/raw/`](https://github.com/chartmann1590/ScamRadar/tree/main/play-store/screenshots/raw/). Tablet sizes for the Play Store live alongside in [`tablet-7in/`](https://github.com/chartmann1590/ScamRadar/tree/main/play-store/screenshots/tablet-7in/) and [`tablet-10in/`](https://github.com/chartmann1590/ScamRadar/tree/main/play-store/screenshots/tablet-10in/).
 
 ---
 

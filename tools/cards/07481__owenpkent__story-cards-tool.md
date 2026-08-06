@@ -206,7 +206,7 @@ Cloud save is now available! See [docs/CLOUD_STATUS.md](https://github.com/owenp
 
 ## Documentation
 
-All technical documentation is in the [`docs/`](https://github.com/owenpkent/story-cards-tool/blob/main/docs/) folder:
+All technical documentation is in the [`docs/`](https://github.com/owenpkent/story-cards-tool/tree/main/docs/) folder:
 
 | Document | Description |
 |----------|----------related:

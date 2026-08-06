@@ -247,7 +247,7 @@ If Taste Skill helps you, consider sponsoring:
 
 ## Research
 
-Background writing that shaped these skills lives in [`research/`](https://github.com/leonxlnx/taste-skill/blob/main/research/).
+Background writing that shaped these skills lives in [`research/`](https://github.com/leonxlnx/taste-skill/tree/main/research/).
 
 ## Common Questions
 

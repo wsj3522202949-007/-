@@ -68,11 +68,11 @@ A collection of carefully crafted prompts for various AI tasks. Every prompt inc
 
 | Category | Prompts | Description |
 |----------|---------|-------------|
-| [Coding](https://github.com/soufianeoi/ai-prompts/blob/main/coding/) | 7 | Code generation, debugging, refactoring, architecture, testing |
-| [Writing](https://github.com/soufianeoi/ai-prompts/blob/main/writing/) | 6 | Articles, emails, docs, commit messages, product copy, press releases |
-| [Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/) | 6 | Sentiment, research, decisions, SWOT, data extraction, competitive analysis |
-| [Creative](https://github.com/soufianeoi/ai-prompts/blob/main/creative/) | 6 | Characters, worlds, game mechanics, brainstorming, dialogue, poetry |
-| [Reasoning](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/) | 6 | Chain-of-thought, logic puzzles, debate, first principles, ethics, decision trees |
+| [Coding](https://github.com/soufianeoi/ai-prompts/tree/main/coding/) | 7 | Code generation, debugging, refactoring, architecture, testing |
+| [Writing](https://github.com/soufianeoi/ai-prompts/tree/main/writing/) | 6 | Articles, emails, docs, commit messages, product copy, press releases |
+| [Analysis](https://github.com/soufianeoi/ai-prompts/tree/main/analysis/) | 6 | Sentiment, research, decisions, SWOT, data extraction, competitive analysis |
+| [Creative](https://github.com/soufianeoi/ai-prompts/tree/main/creative/) | 6 | Characters, worlds, game mechanics, brainstorming, dialogue, poetry |
+| [Reasoning](https://github.com/soufianeoi/ai-prompts/tree/main/reasoning/) | 6 | Chain-of-thought, logic puzzles, debate, first principles, ethics, decision trees |
 
 ## Prompt Index
 

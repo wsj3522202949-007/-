@@ -72,7 +72,7 @@ Original notebook [![Open In Colab][colab-badge]][colab-notebook]
 [colab-badge]: <https://colab.research.google.com/assets/colab-badge.svg>
 
 
-[HTML file]: <https://github.com/apurvamulay/CuseHacks-21/blob/main/test.html> 
+[HTML file]: <https://github.com/apurvamulay/CuseHacks-21/tree/main/test.html> 
 NOTE: Download the HTML file ([HTML file]) on your machine to see the exact output.
 
 

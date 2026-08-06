@@ -73,7 +73,7 @@ Input (EN) → Chinese (LLM) → Japanese (LLM) → Finnish (Google) → English
 
 LLM steps use **DeepSeek** (default) or **[OpenRouter](https://openrouter.ai)** — any OpenAI-compatible chat API. Configure via `[llm]` in `config.toml`. See [Configuration Guide](https://github.com/lynote-ai/humanize-text/blob/main/docs/configuration.md).
 
-**See [`examples/showcase/`](https://github.com/lynote-ai/humanize-text/blob/main/examples/showcase/) for 5 real samples with full intermediate-step outputs and AI-detection verdicts.**
+**See [`examples/showcase/`](https://github.com/lynote-ai/humanize-text/tree/main/examples/showcase/) for 5 real samples with full intermediate-step outputs and AI-detection verdicts.**
 
 **Characteristics:**
 - Best original style preservation among all approaches
@@ -214,7 +214,7 @@ We ran the pipeline end-to-end on 5 real input texts and saved every intermediat
 | [04](https://github.com/lynote-ai/humanize-text/blob/main/examples/showcase/example_04.md) | Financial Literacy | `human` | 0.9924 |
 | [05](https://github.com/lynote-ai/humanize-text/blob/main/examples/showcase/example_05.md) | Peer Review in Science | `human` | 0.7218 |
 
-Each example shows: original input → Step 1 (中文改写) → Step 2 (日语改写) → Step 3 (一轮翻译) → Step 4 (二轮翻译, final). See [`examples/showcase/`](https://github.com/lynote-ai/humanize-text/blob/main/examples/showcase/) for full traces.
+Each example shows: original input → Step 1 (中文改写) → Step 2 (日语改写) → Step 3 (一轮翻译) → Step 4 (二轮翻译, final). See [`examples/showcase/`](https://github.com/lynote-ai/humanize-text/tree/main/examples/showcase/) for full traces.
 
 ---
 

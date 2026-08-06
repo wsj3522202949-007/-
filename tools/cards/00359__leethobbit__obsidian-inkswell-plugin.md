@@ -131,7 +131,7 @@ Open Inkswell from the pen-tip ribbon icon or the *"Open Inkswell"* command.
 
 ## Try it: the sample vault
 
-[`examples/sample-vault/`](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/examples/) is a complete, openable vault containing a mid-draft novel — *The Lamplighter's Archive* — wired up to exercise every Inkswell surface: beats, scenes, Codex, a populated Track dashboard, the revision audit, a compile recipe, and the self-publishing planner. Run `npm run build:sample`, then *Open folder as vault* on `examples/sample-vault`. See [examples/README.md](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/examples/README.md) for details.
+[`examples/sample-vault/`](https://github.com/leethobbit/obsidian-inkswell-plugin/tree/main/examples/) is a complete, openable vault containing a mid-draft novel — *The Lamplighter's Archive* — wired up to exercise every Inkswell surface: beats, scenes, Codex, a populated Track dashboard, the revision audit, a compile recipe, and the self-publishing planner. Run `npm run build:sample`, then *Open folder as vault* on `examples/sample-vault`. See [examples/README.md](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/examples/README.md) for details.
 
 ## Development
 

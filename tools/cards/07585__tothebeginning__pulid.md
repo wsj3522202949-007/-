@@ -46,21 +46,21 @@ related:
 🔥🔥 We are excited to share [DreamO](https://github.com/bytedance/DreamO), a unified image customization framework that supports ID, IP, Try-On, and style tasks. Check it out and see what it can do! 🔥🔥
 
 ### :triangular_flag_on_post: Updates
-* **2024.10.31**: 🔥 We are happy to release our latest [models](https://huggingface.co/guozinan/PuLID), **PuLID-v1.1** and **PuLID-FLUX-v0.9.1**. See more in [Model Zoo](#european_castle-model-zoo) and [pulid v1.1 model](https://github.com/tothebeginning/pulid/blob/main/docs/pulid_v1.1.md). We also update a new revision for the [arXiv paper](https://arxiv.org/abs/2404.16022), which includes more results, details, and analysis, please check it out.
+* **2024.10.31**: 🔥 We are happy to release our latest [models](https://huggingface.co/guozinan/PuLID), **PuLID-v1.1** and **PuLID-FLUX-v0.9.1**. See more in [Model Zoo](#european_castle-model-zoo) and [pulid v1.1 model](https://github.com/tothebeginning/pulid/blob/master/docs/pulid_v1.1.md). We also update a new revision for the [arXiv paper](https://arxiv.org/abs/2404.16022), which includes more results, details, and analysis, please check it out.
 * **2024.09.26**: 🎉 PuLID accepted by NeurIPS 2024
-* **2024.09.12**: We're thrilled to announce the release of the **PuLID-FLUX-v0.9.0 model**. Enjoy exploring its capabilities! 😊 [Learn more about this model](https://github.com/tothebeginning/pulid/blob/main/docs/pulid_for_flux.md)
-* **2024.05.23**: share the [preview of our upcoming v1.1 model](https://github.com/tothebeginning/pulid/blob/main/docs/v1.1_preview.md), please stay tuned
+* **2024.09.12**: We're thrilled to announce the release of the **PuLID-FLUX-v0.9.0 model**. Enjoy exploring its capabilities! 😊 [Learn more about this model](https://github.com/tothebeginning/pulid/blob/master/docs/pulid_for_flux.md)
+* **2024.05.23**: share the [preview of our upcoming v1.1 model](https://github.com/tothebeginning/pulid/blob/master/docs/v1.1_preview.md), please stay tuned
 * **2024.05.01**: release v1 codes&models, also the [🤗HuggingFace Demo](https://huggingface.co/spaces/yanze/PuLID)
 * **2024.04.25**: release arXiv paper.
 
 
 ## PuLID for FLUX
-Please check the doc and demo of PuLID-FLUX [here](https://github.com/tothebeginning/pulid/blob/main/docs/pulid_for_flux.md).
+Please check the doc and demo of PuLID-FLUX [here](https://github.com/tothebeginning/pulid/blob/master/docs/pulid_for_flux.md).
 
 ### updates
 - [x] Local gradio demo is ready now
 - [x] Online HuggingFace demo is ready now [![flux](https://img.shields.io/badge/🤗-PuLID_FLUX_demo-orange)](https://huggingface.co/spaces/yanze/PuLID-FLUX)
-- [x] We have optimized the codes to support consumer-grade GPUS, and now **PuLID-FLUX can run on a 16GB graphic card**. Check the details [here](https://github.com/ToTheBeginning/PuLID/blob/main/docs/pulid_for_flux.md#local-gradio-demo)
+- [x] We have optimized the codes to support consumer-grade GPUS, and now **PuLID-FLUX can run on a 16GB graphic card**. Check the details [here](https://github.com/ToTheBeginning/PuLID/blob/master/docs/pulid_for_flux.md#local-gradio-demo)
 - [x] (Community Implementation) Online Replicate demo is ready now [![Replicate](https://replicate.com/zsxkib/flux-pulid/badge)](https://replicate.com/zsxkib/flux-pulid)
 - [x] Local gradio demo supports 12GB graphic card now
 - [x] v0.9.1 is ready now

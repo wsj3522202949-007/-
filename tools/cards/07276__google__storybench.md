@@ -48,9 +48,9 @@ Leaderboards are available on [Papers With Code](https://paperswithcode.com/data
 
 ## Data
 
-[`data/`](https://github.com/google/storybench/blob/main/data/) contains the evaluation data for StoryBench.
-- [`data/llm_outputs/`](https://github.com/google/storybench/blob/main/data/llm_outputs/) contains the captions split by our instruction-tuned LLM
-- [`data/tasks/`](https://github.com/google/storybench/blob/main/data/tasks/) contains the evaluation data formatted for the StoryBench tasks of `action_exe`, `story_cont` and `story_gen`
+[`data/`](https://github.com/google/storybench/tree/main/data/) contains the evaluation data for StoryBench.
+- [`data/llm_outputs/`](https://github.com/google/storybench/tree/main/data/llm_outputs/) contains the captions split by our instruction-tuned LLM
+- [`data/tasks/`](https://github.com/google/storybench/tree/main/data/tasks/) contains the evaluation data formatted for the StoryBench tasks of `action_exe`, `story_cont` and `story_gen`
 
 Training data can be dowloaded from the following links:
 - [didemo-train](https://storage.googleapis.com/storybench/didemo-train.json): original DiDeMo data
@@ -61,13 +61,13 @@ Training data can be dowloaded from the following links:
 - [uvo_sparse-train_pipeline](https://storage.googleapis.com/storybench/uvo_sparse-train_pipeline.json): original VidLN caption as well as algorithmically generated stories
 - [uvo_sparse-train_pipeline+traces](https://storage.googleapis.com/storybench/uvo_sparse-train_pipeline+traces.json): same as above plus mouse traces from VidLN
 
-While human-annotated evaluation files are recommended (see ['metrics/data/'](https://github.com/google/storybench/blob/main/metrics/data/)), we also share our automatically generated Oops validation data, which we used to assess the robustness of our data transformation pipeline:
+While human-annotated evaluation files are recommended (see ['metrics/data/'](https://github.com/google/storybench/tree/main/metrics/data/)), we also share our automatically generated Oops validation data, which we used to assess the robustness of our data transformation pipeline:
 - [oops-valid_pipeline](https://storage.googleapis.com/storybench/oops-valid_pipeline.json): original VidLN caption as well as algorithmically generated stories
 - [oops-valid_pipeline+traces](https://storage.googleapis.com/storybench/oops-valid_pipeline+traces.json): same as above plus mouse traces from VidLN
 
 
 ## Metrics
-[`metrics/`](https://github.com/google/storybench/blob/main/metrics/) contains the source code to perform automatic evaluation of generated videos.
+[`metrics/`](https://github.com/google/storybench/tree/main/metrics/) contains the source code to perform automatic evaluation of generated videos.
 
 To set up your Python virtual environment, run:
 ```bash
@@ -146,7 +146,7 @@ outputs/
 ```
 
 Note that:
-- checkpoints can be downloaded from the corresponding repositories (see [`metrics/third_party/`](https://github.com/google/storybench/blob/main/metrics/third_party/)):
+- checkpoints can be downloaded from the corresponding repositories (see [`metrics/third_party/`](https://github.com/google/storybench/tree/main/metrics/third_party/)):
     - [DOVER](https://github.com/VQAssessment/DOVER)
     - [InternVideo](https://github.com/OpenGVLab/InternVideo)
     - [pytorch-fid](https://github.com/mseitzer/pytorch-fid)

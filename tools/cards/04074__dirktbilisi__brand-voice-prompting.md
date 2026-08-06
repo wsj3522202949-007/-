@@ -72,7 +72,7 @@ There's a better pattern: **structured pre-flight blocks**.
 
 - **[The Pattern](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/pattern.md)** — the core idea: a structured pre-flight block that goes before every voice-sensitive prompt
 - **[Brand Voice Template](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/brand-voice-template.md)** — a fillable template for capturing your own brand voice in a model-readable format
-- **[Examples](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/examples/)** — anonymized before/after prompts showing the pattern in action
+- **[Examples](https://github.com/dirktbilisi/brand-voice-prompting/tree/main/examples/)** — anonymized before/after prompts showing the pattern in action
 - **[Anti-patterns](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/anti-patterns.md)** — what doesn't work and why
 
 ## Who this is for

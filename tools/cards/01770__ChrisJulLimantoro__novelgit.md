@@ -101,7 +101,7 @@ On **reindex**, each chapter can be **distilled** (summary, entities, tags) via 
 
 ### How retrieval works in chat
 
-[`app/api/ai/[novelId]/chat/route.ts`](app/api/ai/[novelId]/chat/route.ts) loads the Global Bible (if present), then lore context, then manuscript context. The model sees all sections together.
+[`app/api/ai/[novelId]/chat/route.ts`](https://github.com/ChrisJulLimantoro/novelgit/blob/main/app/api/ai/[novelId]/chat/route.ts) loads the Global Bible (if present), then lore context, then manuscript context. The model sees all sections together.
 
 ### Citation behaviour
 

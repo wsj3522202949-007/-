@@ -48,7 +48,7 @@ This dataset contains six million ratings for ten thousand most popular (with mo
 
 ## Access
 
-Some of these files are quite large, so GitHub won't show their contents online. See [samples/](https://github.com/zygmuntz/goodbooks-10k/blob/main/samples/) for smaller CSV snippets.
+Some of these files are quite large, so GitHub won't show their contents online. See [samples/](https://github.com/zygmuntz/goodbooks-10k/tree/main/samples/) for smaller CSV snippets.
 
 Open the [notebook](https://github.com/zygmuntz/goodbooks-10k/blob/main/quick_look.ipynb) for a quick look at the data. Download individual zipped files from [releases](https://github.com/zygmuntz/goodbooks-10k/releases).
 

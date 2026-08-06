@@ -44,7 +44,7 @@ Click-to-scan Chrome extension that flags AI-generated **images** and **text** o
 - Documentation hub: `site/docs/index.html`
 - Architecture overview: `site/docs/architecture.html`
 
-> **Status:** v1 rebuild in progress. The previous v0.1 (in [/archive/](https://github.com/rithwikgokhale/image-ai-detector/blob/main/archive/)) used a hash-based placeholder for "ML" — it was not a real detector. v1 is a ground-up rewrite with actual ML running locally in the browser.
+> **Status:** v1 rebuild in progress. The previous v0.1 (in [/archive/](https://github.com/rithwikgokhale/image-ai-detector/tree/main/archive/)) used a hash-based placeholder for "ML" — it was not a real detector. v1 is a ground-up rewrite with actual ML running locally in the browser.
 
 ## What it does (v1, in progress)
 

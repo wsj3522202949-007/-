@@ -330,7 +330,7 @@ What you install is one Markdown file ([`skills/humanizer/SKILL.md`](https://git
 
 - Skill source and full pattern catalog: [`skills/humanizer/SKILL.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md)
 - Pattern deep dives, triggers, and examples: [`references/patterns.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/references/patterns.md)
-- A full docs site (Docusaurus, ready to deploy) lives in [`docs-site/`](https://github.com/aboudjem/humanizer-skill/blob/main/docs-site/): `npm --prefix docs-site install && npm --prefix docs-site run build`
+- A full docs site (Docusaurus, ready to deploy) lives in [`docs-site/`](https://github.com/aboudjem/humanizer-skill/tree/main/docs-site/): `npm --prefix docs-site install && npm --prefix docs-site run build`
 
 ## Contributing
 

@@ -64,7 +64,7 @@ Novel Local AI 是面向 macOS 的本地优先 AI 小说写作工作台。它把
 
 ![Novel Local AI Run 详情](https://github.com/ccBilly-aipm/novel-local-ai-open-source/blob/main/docs/design_shots/08_run_detail.png)
 
-更多页面截图位于 [`docs/design_shots/`](https://github.com/ccBilly-aipm/novel-local-ai-open-source/blob/main/docs/design_shots/)。
+更多页面截图位于 [`docs/design_shots/`](https://github.com/ccBilly-aipm/novel-local-ai-open-source/tree/main/docs/design_shots/)。
 
 ## 核心能力
 

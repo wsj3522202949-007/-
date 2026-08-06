@@ -175,7 +175,7 @@ just test
 
 - **[OpenCode Guide](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/OPENCODE_GUIDE.md)** - Complete AI agent configuration guide
 - **[Task-Driven Workflows](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/workflows/task-driven-workflow-order.md)** - Automation workflow guide
-- **[Architecture](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/architecture/)** - System architecture documentation
+- **[Architecture](https://github.com/pwarnock/liaison-toolkit/tree/main/docs/architecture/)** - System architecture documentation
 
 ## 🛠️ Development Workflow
 

@@ -252,7 +252,7 @@ npx expo run:android --variant release
 
 The signed APK will appear in `android/app/build/outputs/apk/release/`.
 
-> A pre-built APK for v0.1 is available in [release/tiny-tales_v0.1.apk](https://github.com/rahrajlat/tiny-tales-ai/blob/main/release/tiny-tales_v0.1.apk).
+> A pre-built APK for v0.1 is available in [release/tiny-tales_v0.1.apk](https://github.com/rahrajlat/tiny-tales-ai/tree/main/release/tiny-tales_v0.1.apk).
 
 ---
 

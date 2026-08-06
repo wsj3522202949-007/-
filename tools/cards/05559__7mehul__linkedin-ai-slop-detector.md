@@ -45,7 +45,7 @@ offenders, complete with a snarky verdict stamp.**
 
 > CERTIFIED SLOP · SLOP SCORE 84/100 · TIER: INDUSTRIAL-GRADE
 
-*(screenshots live in [store/screenshots](https://github.com/7mehul/linkedin-ai-slop-detector/blob/main/store/screenshots))*
+*(screenshots live in [store/screenshots](https://github.com/7mehul/linkedin-ai-slop-detector/tree/main/store/screenshots))*
 
 ## What this is (and isn't)
 

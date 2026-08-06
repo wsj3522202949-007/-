@@ -148,7 +148,7 @@ If you want a chat-based ghostwriter, a cloud collaboration suite, or a screenpl
 - **v0.4–0.7 — The Agent engine, Levels 1 & 2.** A modular AI engine where the model only *proposes* and the app *applies* on your Accept: L1 capture/summary/continuity tools and L2 selection edits, surfaced as accept/reject cards in the Agent panel, with style/continuity-aware context and local guardrails.
 - **v0.8–1.0 — Level 3 AI, Snapshots, and reasoning controls.** Inline co-writer beat generation, automatic snapshot intervals, dynamic word counts, and per-action reasoning policies. Levels 4–5 are designed and scaffolded.
 
-Design and decision logs live under [`works/`](https://github.com/giapnguyen74/xnovelist/blob/main/works) (the `NN-action.md` slices) and [`docs/`](https://github.com/giapnguyen74/xnovelist/blob/main/docs).
+Design and decision logs live under [`works/`](https://github.com/giapnguyen74/xnovelist/blob/main/works) (the `NN-action.md` slices) and [`docs/`](https://github.com/giapnguyen74/xnovelist/tree/main/docs).
 
 ---
 
@@ -324,7 +324,7 @@ Nếu bạn muốn một "người viết thuê" dạng chat, một bộ cộng 
 - **v0.4–0.7 — Engine Agent, Cấp 1 & 2.** Một engine AI mô-đun hóa, nơi mô hình chỉ *đề xuất* còn ứng dụng *áp dụng* khi bạn Chấp nhận: các công cụ Cấp 1 (thu thập/tóm tắt/kiểm tra mạch liên tục) và chỉnh sửa đoạn chọn ở Cấp 2, hiện ra dưới dạng thẻ chấp nhận/từ chối trong Bảng Agent, với ngữ cảnh nhận biết phong cách/mạch liên tục và các kiểm tra cục bộ.
 - **v0.8–1.0 — AI Cấp 3, Ảnh chụp nhanh và điều khiển lập luận.** Tạo văn xuôi theo beat tại chỗ, cấu hình chu kỳ chụp nhanh tự động, hiển thị số từ trực tiếp, và quy tắc lập luận AI theo hành động. Cấp 4–5 đã được thiết kế và dựng khung.
 
-Nhật ký thiết kế và quyết định nằm trong [`works/`](https://github.com/giapnguyen74/xnovelist/blob/main/works) (các lát cắt `NN-action.md`) và [`docs/`](https://github.com/giapnguyen74/xnovelist/blob/main/docs).
+Nhật ký thiết kế và quyết định nằm trong [`works/`](https://github.com/giapnguyen74/xnovelist/blob/main/works) (các lát cắt `NN-action.md`) và [`docs/`](https://github.com/giapnguyen74/xnovelist/tree/main/docs).
 
 ---
 

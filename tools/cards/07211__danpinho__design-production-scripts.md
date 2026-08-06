@@ -87,8 +87,8 @@ Built for InDesign, Illustrator, and macOS.
 
 | Script | Description |
 |--------|-------------|
-| [`macos/create-project-folder.applescript`](https://github.com/danpinho/design-production-scripts/blob/main/macos/create-project-folder.applescript) | Creates an Adobe production project folder with `Links/`, `PDFs/`, `Versionen/`, `Zuarbeit/` subfolders — prompts for a client number and project number and names the folder by numbers only, `CCCC-YYPPP` (e.g. `0001-26001`: 4-digit client, 2-digit year auto-prefixed, 3-digit project; next free number per client + year pre-filled) |
-| [`macos/rename-images.scpt`](https://github.com/danpinho/design-production-scripts/blob/main/macos/rename-images.scpt) | Batch-renames image files in a folder using a `{project-id}_{location}_{sequence}.ext` convention — prompts for project ID, location, and start number, then sorts by modification date (oldest first) |
+| [`macos/create-project-folder.applescript`](https://github.com/danpinho/design-production-scripts/tree/main/macos/create-project-folder.applescript) | Creates an Adobe production project folder with `Links/`, `PDFs/`, `Versionen/`, `Zuarbeit/` subfolders — prompts for a client number and project number and names the folder by numbers only, `CCCC-YYPPP` (e.g. `0001-26001`: 4-digit client, 2-digit year auto-prefixed, 3-digit project; next free number per client + year pre-filled) |
+| [`macos/rename-images.scpt`](https://github.com/danpinho/design-production-scripts/tree/main/macos/rename-images.scpt) | Batch-renames image files in a folder using a `{project-id}_{location}_{sequence}.ext` convention — prompts for project ID, location, and start number, then sorts by modification date (oldest first) |
 
 ### General
 
@@ -101,4 +101,4 @@ Built for InDesign, Illustrator, and macOS.
 | [`general/csv-to-xml.py`](https://github.com/danpinho/design-production-scripts/blob/main/general/csv-to-xml.py) | Converts a CSV file to XML — each row becomes a `<Row>` element with child elements per column, UTF-8 encoded |
 | [`general/excel-titlecase.py`](https://github.com/danpinho/design-production-scripts/blob/main/general/excel-titlecase.py) | Converts a specified column in an Excel file to title case and saves the result as a new file |
 | [`general/image-exif-description.py`](https://github.com/danpinho/design-production-scripts/blob/main/general/image-exif-description.py) | Reads a CSV with `filename` and `description` columns and writes the description into the EXIF metadata of each image |
-| [`general/csv-to-chart/`](https://github.com/danpinho/design-production-scripts/blob/main/general/csv-to-chart/) | Renders CSV data (`category`, `value` columns) as SVG bar charts using Observable Plot — single file (`chart.js`) or batch mode for all CSVs in a folder (`batch.js`) |
+| [`general/csv-to-chart/`](https://github.com/danpinho/design-production-scripts/tree/main/general/csv-to-chart/) | Renders CSV data (`category`, `value` columns) as SVG bar charts using Observable Plot — single file (`chart.js`) or batch mode for all CSVs in a folder (`batch.js`) |

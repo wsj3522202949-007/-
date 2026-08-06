@@ -99,7 +99,7 @@ related:
 | README / release note / forum / issue reply | 按发布目的收束，不把文档改成广告或客服话术 | README 先说是什么、给谁用 |
 | 中文长文 scope | 默认 `bounded`；句内清理，整句空话进待确认清单 | 不并句、不重排、不误删节奏 |
 
-详细边界见 [references/](https://github.com/MrGeDiao/shuorenhua/blob/main/references/)、[场景规则](https://github.com/MrGeDiao/shuorenhua/blob/main/references/scene-packs.md) 和 [评测集](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark.md)。
+详细边界见 [references/](https://github.com/MrGeDiao/shuorenhua/tree/main/references/)、[场景规则](https://github.com/MrGeDiao/shuorenhua/blob/main/references/scene-packs.md) 和 [评测集](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark.md)。
 
 英文去 AI 味已经有 [stop-slop](https://github.com/hardikpandya/stop-slop) 和 [humanizer](https://github.com/blader/humanizer)。`说人话` 补的是中文这一层：这些腔调在中文里长什么样、按发布场景分档处理、改写前先锁住事实。
 
@@ -279,7 +279,7 @@ see_also:
 
 ## English
 
-**shuorenhua (说人话)** is a Chinese-first AI writing humanizer for Codex, Claude Code, Cursor, and ChatGPT. It removes AI-flavored patterns in Chinese text — sycophantic openers, performative engineer-speak, translationese, unsourced authority claims — while preserving facts, numbers, commands, terminology, and attribution. It ships with an 82-case benchmark including false-positive guards, and a long-form mode that cleans up the text without shrinking it. Claude Code users can install it in two commands: `/plugin marketplace add MrGeDiao/shuorenhua`, then `/plugin install shuorenhua@shuorenhua`. Other agents can use `npx skills add MrGeDiao/shuorenhua`. Other install guides: [install/](https://github.com/MrGeDiao/shuorenhua/blob/main/install/). Everything else in this repo is written in Chinese.
+**shuorenhua (说人话)** is a Chinese-first AI writing humanizer for Codex, Claude Code, Cursor, and ChatGPT. It removes AI-flavored patterns in Chinese text — sycophantic openers, performative engineer-speak, translationese, unsourced authority claims — while preserving facts, numbers, commands, terminology, and attribution. It ships with an 82-case benchmark including false-positive guards, and a long-form mode that cleans up the text without shrinking it. Claude Code users can install it in two commands: `/plugin marketplace add MrGeDiao/shuorenhua`, then `/plugin install shuorenhua@shuorenhua`. Other agents can use `npx skills add MrGeDiao/shuorenhua`. Other install guides: [install/](https://github.com/MrGeDiao/shuorenhua/tree/main/install/). Everything else in this repo is written in Chinese.
 
 ## 常见问题
 

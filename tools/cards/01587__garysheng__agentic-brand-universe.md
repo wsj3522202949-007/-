@@ -76,7 +76,7 @@ thank-you card rather than only a story. See [ARCHITECTURE.md](https://github.co
 
 - **Spec v0.6** ([`SPEC.md`](https://github.com/garysheng/agentic-brand-universe/blob/main/SPEC.md)) — the projection release. Backtested against the 24-property
   roster, then re-proven against eight deliberately unlike deliverables.
-- **Engine v0** ([`engine/`](https://github.com/garysheng/agentic-brand-universe/blob/main/engine/)) — RUNNING: typed canon store + model validation + the
+- **Engine v0** ([`engine/`](https://github.com/garysheng/agentic-brand-universe/tree/main/engine/)) — RUNNING: typed canon store + model validation + the
   load-bearing reference gate, stdlib only, 34 tests green (against a self-contained fixture, no
   content-repo dependency).
 - **Tests: 165 green** across the engine and seven skill suites. `./run-tests.sh` needs no API key,

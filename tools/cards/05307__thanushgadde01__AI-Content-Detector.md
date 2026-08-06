@@ -58,6 +58,6 @@ View your app in AI Studio: https://ai.studio/apps/c6203bf7-e611-4c1e-97b3-8a9d5
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/thanushgadde01/AI-Content-Detector/blob/main/.env.local) to your Gemini API key
+2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/thanushgadde01/AI-Content-Detector/tree/main/.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`

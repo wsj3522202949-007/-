@@ -94,12 +94,12 @@ python -m venv .venv
 
 先执行一次：
 
-- [Setup-Novel-Tools.cmd](https://github.com/plutoCC/NovelToolsWeb/blob/main/Setup-Novel-Tools.cmd)
+- [Setup-Novel-Tools.cmd](https://github.com/plutoCC/NovelToolsWeb/tree/main/Setup-Novel-Tools.cmd)
 
 之后双击以下任一文件即可启动：
 
-- [Launch-Novel-Tools.vbs](https://github.com/plutoCC/NovelToolsWeb/blob/main/Launch-Novel-Tools.vbs)
-- [Launch-Novel-Tools.cmd](https://github.com/plutoCC/NovelToolsWeb/blob/main/Launch-Novel-Tools.cmd)
+- [Launch-Novel-Tools.vbs](https://github.com/plutoCC/NovelToolsWeb/tree/main/Launch-Novel-Tools.vbs)
+- [Launch-Novel-Tools.cmd](https://github.com/plutoCC/NovelToolsWeb/tree/main/Launch-Novel-Tools.cmd)
 
 ### 方式二：命令行启动
 

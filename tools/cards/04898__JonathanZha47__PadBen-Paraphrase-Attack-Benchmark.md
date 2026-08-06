@@ -55,7 +55,7 @@ The Springer proceedings version (main paper, ≤12 pages) and supplementary app
 
 - **Camera-ready paper (PDF):** [`docs/padben_icann.pdf`](https://github.com/JonathanZha47/PadBen-Paraphrase-Attack-Benchmark/blob/main/docs/padben_icann.pdf)
 - **Supplementary appendix (PDF):** [`docs/padben_icann_appendix.pdf`](https://github.com/JonathanZha47/PadBen-Paraphrase-Attack-Benchmark/blob/main/docs/padben_icann_appendix.pdf)
-- **LaTeX source:** [`docs/latex/`](https://github.com/JonathanZha47/PadBen-Paraphrase-Attack-Benchmark/blob/main/docs/latex/)
+- **LaTeX source:** [`docs/latex/`](https://github.com/JonathanZha47/PadBen-Paraphrase-Attack-Benchmark/tree/main/docs/latex/)
 
 See [`docs/README.md`](https://github.com/JonathanZha47/PadBen-Paraphrase-Attack-Benchmark/blob/main/docs/README.md) for the appendix structure and rebuild instructions.
 

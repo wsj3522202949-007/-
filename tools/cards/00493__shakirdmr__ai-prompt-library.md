@@ -96,12 +96,12 @@ Most people use one sentence. These prompts use all five.
 
 | Category | Prompts | Works with |
 |---|---|---|
-| [AI Image Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/ai-image-prompts/) | 50 prompts | Midjourney, DALL-E 3, Adobe Firefly, Gemini, ChatGPT |
-| [Video Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/video-prompts/) | 50 prompts | ChatGPT, Claude, Gemini, Runway, Sora, Pika |
-| [Resume Writing Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/resume-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
-| [Job Search Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/job-search-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
-| [Salary Negotiation Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/salary-negotiation-prompts/) | 50 prompts | ChatGPT, Claude |
-| [SEO Prompts](https://github.com/shakirdmr/ai-prompt-library/blob/main/seo-prompts/) | 13 prompts | ChatGPT, Claude |
+| [AI Image Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/ai-image-prompts/) | 50 prompts | Midjourney, DALL-E 3, Adobe Firefly, Gemini, ChatGPT |
+| [Video Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/video-prompts/) | 50 prompts | ChatGPT, Claude, Gemini, Runway, Sora, Pika |
+| [Resume Writing Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/resume-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
+| [Job Search Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/job-search-prompts/) | 50 prompts | ChatGPT, Claude, Gemini |
+| [Salary Negotiation Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/salary-negotiation-prompts/) | 50 prompts | ChatGPT, Claude |
+| [SEO Prompts](https://github.com/shakirdmr/ai-prompt-library/tree/main/seo-prompts/) | 13 prompts | ChatGPT, Claude |
 
 More categories added regularly. Star the repo to get notified.
 

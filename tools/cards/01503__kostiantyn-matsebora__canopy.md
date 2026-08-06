@@ -186,7 +186,7 @@ Want a working project to copy from instead? **[canopy-examples](https://github.
 - **[Concepts](https://github.com/kostiantyn-matsebora/canopy/blob/main/CONCEPTS.md)** — how Canopy thinks about skills: tree, ops, subagents, execution model, the runtime/authoring split.
 - **[Terminology](https://github.com/kostiantyn-matsebora/canopy/blob/main/TERMINOLOGY.md)** — glossary of Canopy terms with one-sentence definitions and links to the relevant deep-dive.
 - **[Cheatsheet](https://github.com/kostiantyn-matsebora/canopy/blob/main/CHEATSHEET.md)** — one-page reference: skill anatomy, primitives, op syntax, category dirs.
-- **[Reference](https://github.com/kostiantyn-matsebora/canopy/blob/main/reference/)** — formal spec: framework grammar, primitives (auto-mirrored from canopy-runtime), per-platform runtime rules.
+- **[Reference](https://github.com/kostiantyn-matsebora/canopy/tree/main/reference/)** — formal spec: framework grammar, primitives (auto-mirrored from canopy-runtime), per-platform runtime rules.
 - **[VS Code Extension](https://github.com/kostiantyn-matsebora/canopy/blob/main/VSCODE.md)** — IntelliSense, semantic diagnostics, hover docs, and go-to-definition for canopy skills.
 - **[Examples](https://github.com/kostiantyn-matsebora/canopy-examples)** — a working project to learn from.
 

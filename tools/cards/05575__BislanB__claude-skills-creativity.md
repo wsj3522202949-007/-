@@ -56,8 +56,8 @@ By default an LLM gives you the **statistical average of its training data** —
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
 ---|
-| 🖋 **[humanizer-ru](https://github.com/BislanB/claude-skills-creativity/blob/main/skills/humanizer-ru/)** | Turns robotic AI text into natural, living Russian: strips bureaucratese, fixes rhythm, adds an authorial voice. Good writing passes AI-detectors as a side effect, not as the goal. | copywriters, marketers, writers — anyone producing Russian text with AI |
-| 💡 **[creativity](https://github.com/BislanB/claude-skills-creativity/blob/main/skills/creativity/)** | Forces Claude to find the non-obvious solution: bans the default, finds the contradiction (TRIZ), reframes the problem, collides distant domains. One best solution instead of "here are 5 options." | developers, PMs — anyone stuck on the "obvious" answer |
+| 🖋 **[humanizer-ru](https://github.com/BislanB/claude-skills-creativity/tree/main/skills/humanizer-ru/)** | Turns robotic AI text into natural, living Russian: strips bureaucratese, fixes rhythm, adds an authorial voice. Good writing passes AI-detectors as a side effect, not as the goal. | copywriters, marketers, writers — anyone producing Russian text with AI |
+| 💡 **[creativity](https://github.com/BislanB/claude-skills-creativity/tree/main/skills/creativity/)** | Forces Claude to find the non-obvious solution: bans the default, finds the contradiction (TRIZ), reframes the problem, collides distant domains. One best solution instead of "here are 5 options." | developers, PMs — anyone stuck on the "obvious" answer |
 
 > **Note:** `humanizer-ru` works on **Russian-language** text and its internal instructions are written in Russian by design. `creativity` is language-agnostic.
 

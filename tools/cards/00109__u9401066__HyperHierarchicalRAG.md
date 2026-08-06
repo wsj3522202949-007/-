@@ -324,7 +324,7 @@ HyperHierarchicalRAG/
 - [CHANGELOG.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/CHANGELOG.md) - 版本變更記錄
 - [ROADMAP.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/ROADMAP.md) - 開發路線圖
 - [CONSTITUTION.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/CONSTITUTION.md) - 專案最高原則
-- [docs/architecture/](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/docs/architecture/) - 架構設計文檔
+- [docs/architecture/](https://github.com/u9401066/HyperHierarchicalRAG/tree/main/docs/architecture/) - 架構設計文檔
 
 ## 🤝 Contributing
 

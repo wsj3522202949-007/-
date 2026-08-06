@@ -147,7 +147,7 @@ This README follows its own rules. If it reads fine, that's the pitch.
 
 Found a tell it misses? Open an issue or a PR with a real before-and-after pair. Concrete examples are worth more than new abstract rules.
 
-Edit the root [`ALCHEMY.md`](https://github.com/fernforge/alchemy/blob/main/ALCHEMY.md) only. The copies under `python/` and `mcp/` are generated from it by `node scripts/sync-rules.mjs`, and CI fails if they drift. The npm, PyPI, and MCP packages publish from GitHub Releases (see [`.github/workflows`](https://github.com/fernforge/alchemy/blob/main/.github/workflows)).
+Edit the root [`ALCHEMY.md`](https://github.com/fernforge/alchemy/blob/main/ALCHEMY.md) only. The copies under `python/` and `mcp/` are generated from it by `node scripts/sync-rules.mjs`, and CI fails if they drift. The npm, PyPI, and MCP packages publish from GitHub Releases (see [`.github/workflows`](https://github.com/fernforge/alchemy/tree/main/.github/workflows)).
 
 ## License
 

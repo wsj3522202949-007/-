@@ -145,12 +145,12 @@ Examples:
     let g:llama_config.keymap_inst_cancel   = "<Esc>"
     ```
 
-Please refer to `:help llama_config` or the [source](https://github.com/ggml-org/llama.vim/blob/main/autoload/llama.vim)
+Please refer to `:help llama_config` or the [source](https://github.com/ggml-org/llama.vim/tree/master/autoload/llama.vim)
 for the full list of options.
 
 ### llama.cpp setup
 
-The plugin requires a [llama.cpp](https://github.com/ggml-org/llama.cpp) server instance to be running at [`g:llama_config.endpoint_fim`](https://github.com/ggml-org/llama.vim/blob/master/autoload/llama.vim#L18) and/or [`g:llama_config.endpoint_inst`](https://github.com/ggml-org/llama.vim/blob/master/autoload/llama.vim#L19).
+The plugin requires a [llama.cpp](https://github.com/ggml-org/llama.cpp) server instance to be running at [`g:llama_config.endpoint_fim`](https://github.com/ggml-org/llama.vim/tree/master/autoload/llama.vim#L18) and/or [`g:llama_config.endpoint_inst`](https://github.com/ggml-org/llama.vim/tree/master/autoload/llama.vim#L19).
 
 #### Mac OS
 

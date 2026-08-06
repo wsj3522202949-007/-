@@ -54,11 +54,11 @@ related:
 
 Unleash your storytelling genius: GPTAuthor is an easy to use command-line tool for writing long form, multi-chapter stories given a story prompt.
 
-![A GPT human cybord writing a manuscript](https://github.com/dylanhogg/gptauthor/blob/main/docs/img/header.jpg?raw=true)
+![A GPT human cybord writing a manuscript](https://github.com/dylanhogg/gptauthor/blob/master/docs/img/header.jpg?raw=true)
 
 ## How It Works
 
-1. **Human written story description:** You describe your story outline, writing style, characters etc in a story prompt ([see an example](https://github.com/dylanhogg/gptauthor/blob/main/gptauthor/prompts-openai-drama.yaml)).
+1. **Human written story description:** You describe your story outline, writing style, characters etc in a story prompt ([see an example](https://github.com/dylanhogg/gptauthor/blob/master/gptauthor/prompts-openai-drama.yaml)).
 1. **Run GPTAuthor:** As described below, choosing model, temperature, and number of chapters to write.
 1. **AI generated synopsis:** Given the story prompt, GPTAuthor uses ChatGPT to automatically turn this into a synopsis that has chapter summaries for the number of chapters you specify.
 1. **Human review of synopsis:** You are given a chance to review the synopsis and (optionally) make changes, only proceeding to the next step if/when you are happy with it. If it isn't what you want, you can generate another before proceeding.
@@ -67,10 +67,10 @@ Unleash your storytelling genius: GPTAuthor is an easy to use command-line tool 
 
 ## Example GPTAuthor Story Outputs
 
-[The Nov 2023 OpenAI leadership crisis](https://github.com/dylanhogg/gptauthor/blob/main/samples/openai-drama-20240131-224810-v0.5.0-gpt-4-0125-preview.md) -
-"In the heart of San Francisco, nestled among the city's tech giants and start-up hopefuls, stood the OpenAI office. A hive of activity, it buzzed with the sound of keyboards clacking, coffee machines hissing, and the occasional drone of a philosophical debate about whether AI could develop a taste for late-night taco runs. It was a typical day, or so everyone thought. Sam Altman, the CEO of OpenAI, was in his office, a space that looked more like a teenager's bedroom than the office of a tech mogul, with posters of space exploration and vintage computers adorning the walls. He was in the middle of explaining to a rubber duck on his desk the intricacies of AI alignment, a method he found surprisingly effective, when his phone buzzed with an email notification." [continue reading...](https://github.com/dylanhogg/gptauthor/blob/main/samples/openai-drama-20240131-224810-v0.5.0-gpt-4-0125-preview.md)
+[The Nov 2023 OpenAI leadership crisis](https://github.com/dylanhogg/gptauthor/blob/master/samples/openai-drama-20240131-224810-v0.5.0-gpt-4-0125-preview.md) -
+"In the heart of San Francisco, nestled among the city's tech giants and start-up hopefuls, stood the OpenAI office. A hive of activity, it buzzed with the sound of keyboards clacking, coffee machines hissing, and the occasional drone of a philosophical debate about whether AI could develop a taste for late-night taco runs. It was a typical day, or so everyone thought. Sam Altman, the CEO of OpenAI, was in his office, a space that looked more like a teenager's bedroom than the office of a tech mogul, with posters of space exploration and vintage computers adorning the walls. He was in the middle of explaining to a rubber duck on his desk the intricacies of AI alignment, a method he found surprisingly effective, when his phone buzzed with an email notification." [continue reading...](https://github.com/dylanhogg/gptauthor/blob/master/samples/openai-drama-20240131-224810-v0.5.0-gpt-4-0125-preview.md)
 
-[Echoes of Atlantis](https://github.com/dylanhogg/gptauthor/blob/main/samples/echoes-of-atlantis--v1.0.0-gpt-4-0125-preview.md) (based on a [blogpost](https://medium.com/@chiaracoetzee/generating-a-full-length-work-of-fiction-with-gpt-4-4052cfeddef3)) - "In the dimly lit halls of the British Museum, Aria Seaborne's heart raced with anticipation. Her fingers, delicate yet steady, brushed against the surface of an ancient artifact that had long eluded understanding. It was a curious object, seemingly part of a larger mechanism, its origins shrouded in mystery and its purpose lost to time. Aria, with her keen eye for the arcane, noticed an almost imperceptible seam along its side. With a gentle nudge, the artifact sprang open, revealing a compartment that housed a parchment, brittle with age." [continue reading...](https://github.com/dylanhogg/gptauthor/blob/main/samples/echoes-of-atlantis--v1.0.0-gpt-4-0125-preview.md)
+[Echoes of Atlantis](https://github.com/dylanhogg/gptauthor/blob/master/samples/echoes-of-atlantis--v1.0.0-gpt-4-0125-preview.md) (based on a [blogpost](https://medium.com/@chiaracoetzee/generating-a-full-length-work-of-fiction-with-gpt-4-4052cfeddef3)) - "In the dimly lit halls of the British Museum, Aria Seaborne's heart raced with anticipation. Her fingers, delicate yet steady, brushed against the surface of an ancient artifact that had long eluded understanding. It was a curious object, seemingly part of a larger mechanism, its origins shrouded in mystery and its purpose lost to time. Aria, with her keen eye for the arcane, noticed an almost imperceptible seam along its side. With a gentle nudge, the artifact sprang open, revealing a compartment that housed a parchment, brittle with age." [continue reading...](https://github.com/dylanhogg/gptauthor/blob/master/samples/echoes-of-atlantis--v1.0.0-gpt-4-0125-preview.md)
 
 ## Installation
 
@@ -80,7 +80,7 @@ You can install [gptauthor](https://pypi.org/project/gptauthor/) using pip, idea
 pip install gptauthor
 ```
 
-Alternatively, checkout [an example notebook](https://github.com/dylanhogg/gptauthor/blob/main/notebooks/gptauthor_colab_custom_story.ipynb) that uses gptauthor and you can run directly in Google Colab.
+Alternatively, checkout [an example notebook](https://github.com/dylanhogg/gptauthor/blob/master/notebooks/gptauthor_colab_custom_story.ipynb) that uses gptauthor and you can run directly in Google Colab.
 
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dylanhogg/gptauthor/blob/master/notebooks/gptauthor_colab_custom_story.ipynb)
 
@@ -88,7 +88,7 @@ Alternatively, checkout [an example notebook](https://github.com/dylanhogg/gptau
 
 ### Example Usage and API Key
 
-This example reads the story prompt from the example [prompts-openai-drama.yaml](https://github.com/dylanhogg/gptauthor/blob/main/gptauthor/prompts-openai-drama.yaml) file and writes 3 chapters using the `gpt-5.4-mini` model with a temperature of `0.1`. Note that you will need to locally set your [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key) environment variable.
+This example reads the story prompt from the example [prompts-openai-drama.yaml](https://github.com/dylanhogg/gptauthor/blob/master/gptauthor/prompts-openai-drama.yaml) file and writes 3 chapters using the `gpt-5.4-mini` model with a temperature of `0.1`. Note that you will need to locally set your [OpenAI API Key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-api-key) environment variable.
 
 It's recommended to experiment using the default `gpt-5.4-mini` model as generating a few chapters will only cost a couple cents (as of Jan 2024). Once you are happy with the results you can try one of the more expensive `gpt-4` models which will produce better quality results, be slower, and cost more to run. See the [OpenAI pricing page](https://openai.com/pricing#language-models) for more details.
 
@@ -135,7 +135,7 @@ There are several files, the main output being a Markdown version of the whole b
 
 ## Creating Your Own Story Prompts
 
-The prompts for creating your own story are defined in a yaml file, for example see: [prompts-openai-drama.yaml](https://github.com/dylanhogg/gptauthor/blob/main/gptauthor/prompts-openai-drama.yaml).
+The prompts for creating your own story are defined in a yaml file, for example see: [prompts-openai-drama.yaml](https://github.com/dylanhogg/gptauthor/blob/master/gptauthor/prompts-openai-drama.yaml).
 
 Make a copy, fill in your story details and describe the writing style (while retaining the same structure), and run the app in the same folder as your new yaml file.
 
@@ -171,4 +171,4 @@ I'm sure there are bugs, please report them on the [Github issues page](https://
 
 Have fun! And please share your results with me if you can (perhaps as a Github [documentation issue](https://github.com/dylanhogg/gptauthor/labels/documentation)), I'd love to see them.
 
-This project is [MIT](https://github.com/dylanhogg/gptauthor/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/dylanhogg/gptauthor/blob/master/LICENSE) licensed.

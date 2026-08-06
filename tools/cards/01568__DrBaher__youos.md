@@ -185,7 +185,7 @@ The web wizard walks you through everything:
 5. **Secure it** — optional API token for the browser extension
 6. **Keep it running** — install the background service
 
-Then **draft** in the web UI (`/feedback`) or via the [Gmail extension](https://github.com/DrBaher/youos/blob/main/extension/).
+Then **draft** in the web UI (`/feedback`) or via the [Gmail extension](https://github.com/DrBaher/youos/tree/main/extension/).
 
 <details>
 <summary>Prefer the terminal? / Manual install</summary>

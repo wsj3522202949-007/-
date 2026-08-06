@@ -251,7 +251,7 @@ tools do not.
 
 ## Django REST Framework implementation
 
-[`django_api/`](https://github.com/eatusc/no-slop/blob/main/django_api/) ports the engine and API contract to Python,
+[`django_api/`](https://github.com/eatusc/no-slop/tree/main/django_api/) ports the engine and API contract to Python,
 Django, and Django REST Framework. It includes:
 
 - JSON and `text/plain` request parsing
@@ -270,7 +270,7 @@ python manage.py runserver 127.0.0.1:8420
 ```
 
 Parity between the JavaScript and Python engines is enforced in CI:
-[`scripts/parity-check.mjs`](https://github.com/eatusc/no-slop/blob/main/scripts/parity-check.mjs) runs both engines over
+[`scripts/parity-check.mjs`](https://github.com/eatusc/no-slop/tree/main/scripts/parity-check.mjs) runs both engines over
 shared fixtures plus the full example corpus and fails on any output
 difference. See [`django_api/README.md`](https://github.com/eatusc/no-slop/blob/main/django_api/README.md) for
 implementation notes.

@@ -18,12 +18,12 @@ chapter_selfcheck.py — 网文单章自检工具（世界级知识库配套）
 
 现口径：**正文去除空白字符后的字符数（含标点）**，即
   整份文件 → 去 frontmatter → 去元信息块 → 去所有空白
-达标区间 2600–3400；宽松 2600–4000。同时附报纯中文字数供参照。
+达标区间由 chapter_policy 配置控制（默认 2600–3400；宽松 ≤4000）。同时附报纯中文字数供参照。
 
 AI 味与钩子扫描同样只在正文上进行，不再被 frontmatter / 元信息块干扰。
 
 指标：
-  1. 字数（正文字符，含标点、不含空白）达标 2600–3400；宽松 2600–4000。
+  1. 字数（正文字符，含标点、不含空白）达标区间由 chapter_policy 控制（默认 2600–3400；宽松 ≤4000）。
   2. AI 味：按类别扫描黑名单词/句式，给出 轻度/中度/重度 判定。
   3. 章末钩子：扫描末段是否命中五类强钩子之一，并标记禁用空钩子。
 
@@ -39,6 +39,13 @@ import sys
 import re
 import json
 import argparse
+
+# 统一篇幅政策（单一来源）：字数标准全部来自 chapter_policy，
+# 禁止在此硬编码 2600/3400/4000，以免与 创作闭环助手.py 口径分裂。
+_THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+if _THIS_DIR not in sys.path:
+    sys.path.insert(0, _THIS_DIR)
+from chapter_policy import load_policy, char_verdict
 
 # 终端编码安全：Windows GBK 控制台遇 emoji 会抛 UnicodeEncodeError，
 # 重新配置为 UTF-8（errors=replace）保证不崩溃，无需 PYTHONUTF8=1。
@@ -117,10 +124,8 @@ HOOK_KEYWORDS = {
 # 章末禁用空钩子（来源：章法与钩子学.md §3.4 / §5.1）
 BANNED_TAIL = ["下回分解", "且看下回", "欲知", "下章", "且听下回", "未完待续"]
 
-# 字数口径
-CHAR_MIN = 2600
-CHAR_MAX = 3400
-CHAR_LOOSE_MAX = 4000
+# 字数口径：标准统一来自 chapter_policy（见文件顶部 import）。
+# 不再在此硬编码 2600/3400/4000，避免与 创作闭环助手.py 口径分裂。
 
 
 # frontmatter：文件开头的 --- ... --- 块
@@ -214,7 +219,8 @@ def verdict_ai(per_cat, total, severe, wa_per_1k):
     return "干净"
 
 
-def check_chapter(path, include_raw=False):
+def check_chapter(path, include_raw=False, policy=None):
+    policy = policy or load_policy(path)
     raw = read_text(path)
     body = extract_body(raw)          # 剥离 frontmatter / 元信息块 / 行内标记 + CRLF 归一
     n = count_chars(body)             # 正文去空白字符数（含标点）—— 字数判定唯一口径
@@ -226,13 +232,8 @@ def check_chapter(path, include_raw=False):
     tail_hits, full_hits, banned = scan_hooks(body)
     ai_v = verdict_ai(per_cat, total, severe, wa_per_1k)
 
-    # 字数判定（正文去空白口径）
-    if n < CHAR_MIN:
-        char_v = f"不足({n}<{CHAR_MIN})"
-    elif n > CHAR_MAX:
-        char_v = f"超标({n}>{CHAR_MAX})" if n <= CHAR_LOOSE_MAX else f"严重超标({n}>{CHAR_LOOSE_MAX})"
-    else:
-        char_v = f"达标({n})"
+    # 字数判定（正文去空白口径，标准来自 chapter_policy）
+    char_v = char_verdict(n, policy)
 
     # 钩子判定
     if banned:
@@ -263,9 +264,12 @@ def check_chapter(path, include_raw=False):
     return r
 
 
-def print_report(results, show_raw=False):
+def print_report(results, show_raw=False, policy=None):
+    p = policy or load_policy()
     print("=" * 72)
-    print("网文单章自检报告  |  字数口径: 正文去空白字符(含标点) 达标 2600–3400 (宽松≤4000)")
+    print(f"网文单章自检报告  |  字数口径: 正文去空白字符(含标点) "
+          f"达标 {p['min_chars']}–{p['max_chars']} (宽松≤{p['hard_max_chars']})"
+          f"  | 平台: {p['platform']}")
     print("=" * 72)
     for r in results:
         print(f"\n📄 {r['file']}")
@@ -303,8 +307,12 @@ def main():
     for p in args.paths:
         if os.path.isdir(p):
             for fn in sorted(os.listdir(p)):
-                if fn.lower().endswith(".md"):
-                    files.append(os.path.join(p, fn))
+                if not fn.lower().endswith(".md"):
+                    continue
+                # 过滤非正文文件：chapters/README.md 是索引，不是章节正文
+                if fn == "README.md":
+                    continue
+                files.append(os.path.join(p, fn))
         else:
             files.append(p)
 
@@ -312,8 +320,10 @@ def main():
         print("未找到 .md 文件", file=sys.stderr)
         sys.exit(1)
 
-    results = [check_chapter(f, include_raw=args.raw) for f in files]
-    print_report(results, show_raw=args.raw)
+    # 统一篇幅政策：以首个路径为锚向上查找 chapter_policy 配置
+    policy = load_policy(args.paths[0])
+    results = [check_chapter(f, include_raw=args.raw, policy=policy) for f in files]
+    print_report(results, show_raw=args.raw, policy=policy)
 
     if args.json:
         with open(args.json, "w", encoding="utf-8") as f:

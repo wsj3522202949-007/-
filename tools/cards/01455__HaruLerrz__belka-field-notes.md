@@ -69,16 +69,16 @@ related:
 
 ## Repository Map
 
-* [Case Notes](https://github.com/HaruLerrz/belka-field-notes/blob/main/case-notes/)  
+* [Case Notes](https://github.com/HaruLerrz/belka-field-notes/tree/main/case-notes/)  
   依問題、流程與結果整理的工作案例，涵蓋影音、社群、公共議題、網站建置與數位原型。
 
-* [Web / AI System Projects](https://github.com/HaruLerrz/belka-field-notes/blob/main/projects/)  
+* [Web / AI System Projects](https://github.com/HaruLerrz/belka-field-notes/tree/main/projects/)  
   整理 AI 互動敘事網站、公共議題查證原型、Node.js 後端、prompt packaging、來源流程、狀態管理與部署紀錄。
 
-* [Prompting / Structured Writing](https://github.com/HaruLerrz/belka-field-notes/blob/main/prompting/)  
+* [Prompting / Structured Writing](https://github.com/HaruLerrz/belka-field-notes/tree/main/prompting/)  
   工作型 prompt、語氣辨識、AI 歌曲創作工作流、模組化指令與結構化寫作流程。
 
-* [Tools](https://github.com/HaruLerrz/belka-field-notes/blob/main/tools/)  
+* [Tools](https://github.com/HaruLerrz/belka-field-notes/tree/main/tools/)  
   由我依實際需求規劃，並使用 AI 協助撰寫、測試與修正的小型工具、workflow scripts 與操作輔助程式。
 
 ## Reuse

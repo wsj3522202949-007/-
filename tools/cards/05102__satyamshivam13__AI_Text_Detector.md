@@ -98,7 +98,7 @@ text by the ratio of an observer model's log-perplexity to the observer/performe
 cross-perplexity, which cancels the prompt/topic bias that makes single-model
 perplexity brittle. **On real human-vs-ChatGPT text (HC3) it scores accuracy
 1.000 with FPR 0.000**, with its decision boundary fitted on a held-out split.
-See [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/blob/main/docs/benchmarks/).
+See [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/tree/main/docs/benchmarks/).
 
 It is available standalone, via the benchmark CLI (`--analyzer binoculars`), and
 **drives the default ensemble verdict** (`weight_binoculars=1.0`; GPT-2/NLTK run
@@ -180,7 +180,7 @@ python -m src.evaluation.benchmark --analyzer binoculars \
 
 **Use Binoculars.** GPT-2 alone flags *half of real human text as AI* — single-model
 perplexity is as brittle as the literature says. Full report, plots, and the
-held-out calibration procedure: [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/blob/main/docs/benchmarks/).
+held-out calibration procedure: [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/tree/main/docs/benchmarks/).
 
 ### ⚠️ Fairness — false-positive rate by population (human-only)
 
@@ -233,5 +233,5 @@ confidence intervals: [docs/benchmarks/FAIRNESS.md](https://github.com/satyamshi
 ## Documentation
 
 - API reference: [docs/API.md](https://github.com/satyamshivam13/AI_Text_Detector/blob/main/docs/API.md)
-- Benchmarks: [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/blob/main/docs/benchmarks/)
+- Benchmarks: [docs/benchmarks/](https://github.com/satyamshivam13/AI_Text_Detector/tree/main/docs/benchmarks/)
 - Deployment guide: [docs/DEPLOYMENT.md](https://github.com/satyamshivam13/AI_Text_Detector/blob/main/docs/DEPLOYMENT.md)

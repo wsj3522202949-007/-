@@ -173,8 +173,8 @@ Navigate to `src/notebooks/` and run:
 
 ## Documentation
 
-- **Report**: [docs/report/main.tex](https://github.com/manojhunasimarad/ai-text-detector/blob/main/docs/report/main.tex) - Comprehensive technical report
-- **Presentation**: [docs/presentation/results_overview_presentation.tex](https://github.com/manojhunasimarad/ai-text-detector/blob/main/docs/presentation/results_overview_presentation.tex) - Beamer slides
+- **Report**: [docs/report/main.tex](https://github.com/manojhunasimarad/ai-text-detector/tree/main/docs/report/main.tex) - Comprehensive technical report
+- **Presentation**: [docs/presentation/results_overview_presentation.tex](https://github.com/manojhunasimarad/ai-text-detector/tree/main/docs/presentation/results_overview_presentation.tex) - Beamer slides
 - **API Guide**: See Streamlit app interface
 
 ## Key Findings

@@ -69,11 +69,11 @@ This repository is the **full authoring and integration workspace** behind MedPa
 | **mdpaper**                                                        | Core MCP Server        | 118 (full) / 22 (compact default) | Dual workflow server for manuscript and library-wiki paths, plus 3 MCP prompts and 3 MCP resources                                    |
 | **[pubmed-search](https://github.com/u9401066/pubmed-search-mcp)** | MCP Server (submodule) | 46                                | PubMed/Europe PMC/CORE search, PICO, citation metrics, session mgmt                                                                   |
 | **[CGU](https://github.com/u9401066/creativity-generation-unit)**  | MCP Server (submodule) | 24                                | Creative generation: brainstorm, deep think, spark collision                                                                          |
-| **[VS Code Extension](https://github.com/u9401066/med-paper-assistant/blob/main/vscode-extension/)**                         | Extension              | 11 cmds + 10 chat                 | MCP auto-registration, compact-first packaged surface, workspace setup, LLM wiki guide, Foam graph views, `@mdpaper` chat participant |
-| **[Dashboard](https://github.com/u9401066/med-paper-assistant/blob/main/dashboard/)**                                        | Next.js Web App        | —                                 | Project management UI, diagram editor                                                                                                 |
+| **[VS Code Extension](https://github.com/u9401066/med-paper-assistant/tree/main/vscode-extension/)**                         | Extension              | 11 cmds + 10 chat                 | MCP auto-registration, compact-first packaged surface, workspace setup, LLM wiki guide, Foam graph views, `@mdpaper` chat participant |
+| **[Dashboard](https://github.com/u9401066/med-paper-assistant/tree/main/dashboard/)**                                        | Next.js Web App        | —                                 | Project management UI, diagram editor                                                                                                 |
 | **[Foam](https://foambubble.github.io/foam/)**                     | VS Code Extension      | —                                 | `[[wikilink]]` citation linking, hover preview, graph view                                                                            |
-| **[Skills](https://github.com/u9401066/med-paper-assistant/blob/main/.claude/skills/)**                                      | Agent Workflows        | 38                                | Guided multi-tool workflows plus a shared Claude Code / Codex / OpenClaw academic-writing contract                                    |
-| **[Prompts](https://github.com/u9401066/med-paper-assistant/blob/main/.github/prompts/)**                                    | Prompt Files           | 15                                | `/mdpaper.search`, `/mdpaper.draft`, etc.                                                                                             |
+| **[Skills](https://github.com/u9401066/med-paper-assistant/tree/main/.claude/skills/)**                                      | Agent Workflows        | 38                                | Guided multi-tool workflows plus a shared Claude Code / Codex / OpenClaw academic-writing contract                                    |
+| **[Prompts](https://github.com/u9401066/med-paper-assistant/tree/main/.github/prompts/)**                                    | Prompt Files           | 15                                | `/mdpaper.search`, `/mdpaper.draft`, etc.                                                                                             |
 
 **External MCP Servers** (optional, installed via uvx):
 
@@ -104,9 +104,9 @@ The same evidence and quality gates are available across agent runtimes:
 
 | Runtime     | Project instructions                                  | Academic-writing skill                                                                 |
 | ----------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Claude Code | [`CLAUDE.md`](https://github.com/u9401066/med-paper-assistant/blob/main/CLAUDE.md) and [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) | [`.claude/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.claude/skills/academic-writing-harness/) |
-| Codex       | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md)                              | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.agents/skills/academic-writing-harness/) |
-| OpenClaw    | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) plus workspace policy        | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.agents/skills/academic-writing-harness/) |
+| Claude Code | [`CLAUDE.md`](https://github.com/u9401066/med-paper-assistant/blob/main/CLAUDE.md) and [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) | [`.claude/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/tree/main/.claude/skills/academic-writing-harness/) |
+| Codex       | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md)                              | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/tree/main/.agents/skills/academic-writing-harness/) |
+| OpenClaw    | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) plus workspace policy        | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/tree/main/.agents/skills/academic-writing-harness/) |
 
 The platform-neutral [academic-writing workflow](https://github.com/u9401066/med-paper-assistant/blob/main/docs/harness/academic-writing-workflow.md) covers manuscripts, proposals, project closeout reports, student papers, preprints, audit gates, and safe exemplar use.
 
@@ -702,7 +702,7 @@ If you use Medical Paper Assistant in your research, please cite our paper:
 }
 ```
 
-> **Note:** This paper was produced entirely by the MedPaper Assistant's autonomous pipeline as a self-referential demonstration. The manuscript, audit trail, and all quality metrics are available in [`projects/self-evolving-ai-paper-writing-framework/`](https://github.com/u9401066/med-paper-assistant/blob/main/projects/self-evolving-ai-paper-writing-framework/). The preprint is being submitted to [medRxiv](https://submit.medrxiv.org/) — this section will be updated with the DOI once available.
+> **Note:** This paper was produced entirely by the MedPaper Assistant's autonomous pipeline as a self-referential demonstration. The manuscript, audit trail, and all quality metrics are available in [`projects/self-evolving-ai-paper-writing-framework/`](https://github.com/u9401066/med-paper-assistant/tree/main/projects/self-evolving-ai-paper-writing-framework/). The preprint is being submitted to [medRxiv](https://submit.medrxiv.org/) — this section will be updated with the DOI once available.
 
 related:
   - methods/网文写作最强SOP.md

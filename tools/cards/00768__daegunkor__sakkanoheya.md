@@ -66,15 +66,15 @@ related:
 
 <span class='subject'>担当</span><br>
 <span class='sub-subject'>1. 背景設定部分の人物相関図（ D3.js )</span><br>
-<a href='https://github.com/daegunkor/sakkanoheya/blob/master/app/Http/Controllers/RelationController.php'>CONTROLLER : app/Http/Controllers/RelationController.php</a><br>
+<a href='https://github.com/daegunkor/sakkanoheya/tree/master/app/Http/Controllers/RelationController.php'>CONTROLLER : app/Http/Controllers/RelationController.php</a><br>
 <a href='https://github.com/daegunkor/sakkanoheya/tree/master/resources/views/background/relationship'>VIEW : resources/views/background/relationship</a>
 
 <span class='sub-subject'>2. 地図作成ツール（ D3.js )</span><br>
-<a href='https://github.com/daegunkor/sakkanoheya/blob/master/app/Http/Controllers/MapController.php'>CONTROLLER : app/Http/Controllers/MapController.php</a><br>
+<a href='https://github.com/daegunkor/sakkanoheya/tree/master/app/Http/Controllers/MapController.php'>CONTROLLER : app/Http/Controllers/MapController.php</a><br>
 <a href='https://github.com/daegunkor/sakkanoheya/tree/master/resources/views/background/map'>VIEW : resources/views/background/map</a>
 
 <span class='sub-subject'>3. 執筆部分のエディター  ( jQuery )</span><br>
-<a href='https://github.com/daegunkor/sakkanoheya/blob/master/app/Http/Controllers/writeNovelController.php'>CONTROLLER : app/Http/Controllers/writeNovelController.php</a><br>
+<a href='https://github.com/daegunkor/sakkanoheya/tree/master/app/Http/Controllers/writeNovelController.php'>CONTROLLER : app/Http/Controllers/writeNovelController.php</a><br>
 <a href='https://github.com/daegunkor/sakkanoheya/tree/master/resources/views/write_novel'>VIEW : resources/views/write_novel</a>
 
 

@@ -8564,7 +8564,7 @@ At its core, it does five things:
 
 5. **Embed** — distributes the agent as an `<agent-3d>` web component that anyone can drop into a page, or as one of five purpose-built widget types (turntable, animation gallery, talking agent, passport card, hotspot tour) with Open Graph and oEmbed support built in.
 
-The backend is a set of serverless-style handlers (in `api/`) served in production by a single Google Cloud Run container ([server/index.mjs](https://github.com/nirholas/three.ws/blob/main/server/index.mjs)), backed by Neon Postgres for metadata, Cloudflare R2 for model storage, and Upstash Redis for rate limiting. It exposes a full OAuth 2.1 authorization server and an MCP (Model Context Protocol) endpoint so external AI systems can drive avatars programmatically.
+The backend is a set of serverless-style handlers (in `api/`) served in production by a single Google Cloud Run container ([server/index.mjs](https://github.com/nirholas/three.ws/tree/main/server/index.mjs)), backed by Neon Postgres for metadata, Cloudflare R2 for model storage, and Upstash Redis for rate limiting. It exposes a full OAuth 2.1 authorization server and an MCP (Model Context Protocol) endpoint so external AI systems can drive avatars programmatically.
 
 three.ws is production-ready and serves [three.ws](https://three.ws) live on Google Cloud Run. The entire stack — viewer, agent runtime, contracts, backend, and web component — is open source under Apache 2.0.
 
@@ -8938,11 +8938,11 @@ three.ws is an **IBM Business Partner**, and the agent runtime runs on **IBM Gra
 | `granite-embedding-278m-multilingual` | **Semantic** agent map + `/api/watsonx/embed` |
 | `granite-vision-3-2-2b` | **Vision** — reads an avatar into a full agent identity |
 
-Six showcase surfaces put it on screen, cross-linked by an in-page suite switcher: the [Agent Galaxy](https://three.ws/ibm/galaxy) (semantic 3D star-map), the [Granite Oracle](https://three.ws/ibm/oracle) (narrated forecast), the [Digital Twin](https://three.ws/ibm/twin) (back-test + what-if), the [Trust Layer](https://three.ws/ibm/trust-layer) (Guardian + hash-chained audit ledger), [Granite Proof](https://three.ws/ibm/proof) (a Guardian-governed forecast notarized on Solana), and [Granite Vision](https://three.ws/ibm/vision). The standalone connector [`@three-ws/ibm-watsonx-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/ibm-watsonx-mcp/) exposes watsonx.ai to any MCP host — it is community-built and not an IBM product; the hosted platform integration is what runs on IBM watsonx.ai.
+Six showcase surfaces put it on screen, cross-linked by an in-page suite switcher: the [Agent Galaxy](https://three.ws/ibm/galaxy) (semantic 3D star-map), the [Granite Oracle](https://three.ws/ibm/oracle) (narrated forecast), the [Digital Twin](https://three.ws/ibm/twin) (back-test + what-if), the [Trust Layer](https://three.ws/ibm/trust-layer) (Guardian + hash-chained audit ledger), [Granite Proof](https://three.ws/ibm/proof) (a Guardian-governed forecast notarized on Solana), and [Granite Vision](https://three.ws/ibm/vision). The standalone connector [`@three-ws/ibm-watsonx-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/ibm-watsonx-mcp/) exposes watsonx.ai to any MCP host — it is community-built and not an IBM product; the hosted platform integration is what runs on IBM watsonx.ai.
 
 ### Pay-per-call Granite over MCP (x402)
 
-The world's first **x402-enabled MCP server on IBM Cloud**: [`@three-ws/ibm-x402-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/ibm-x402-mcp/) turns IBM Granite into a metered utility any AI agent can call. The operator holds the IBM credentials and funds inference; the caller pays **a few cents of USDC per call** — no IBM Cloud account, no subscription, no API-key signup. Full guide: **[docs/ibm-x402-mcp.md](https://github.com/nirholas/three.ws/blob/main/docs/ibm-x402-mcp.md)**.
+The world's first **x402-enabled MCP server on IBM Cloud**: [`@three-ws/ibm-x402-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/ibm-x402-mcp/) turns IBM Granite into a metered utility any AI agent can call. The operator holds the IBM credentials and funds inference; the caller pays **a few cents of USDC per call** — no IBM Cloud account, no subscription, no API-key signup. Full guide: **[docs/ibm-x402-mcp.md](https://github.com/nirholas/three.ws/blob/main/docs/ibm-x402-mcp.md)**.
 
 | Tool | What it does | Price |
 | ---- | ------------ | ----- |
@@ -9022,7 +9022,7 @@ The architecture above is the bird's-eye view; each load-bearing surface has a d
 | [specs/VALIDATORS.md](https://github.com/nirholas/three.ws/blob/main/specs/VALIDATORS.md)                   | Validator attestation rules — what gets signed, who can sign, how to read attestations.                          |
 | [specs/SECURITY.md](https://github.com/nirholas/three.ws/blob/main/specs/SECURITY.md)                       | Threat model, trust boundaries, and the hardening checklist for production deployments.                          |
 
-Longer-form architecture and how-to documentation lives under [docs/](https://github.com/nirholas/three.ws/blob/main/docs/): [docs/architecture.md](https://github.com/nirholas/three.ws/blob/main/docs/architecture.md), [docs/agent-system.md](https://github.com/nirholas/three.ws/blob/main/docs/agent-system.md), [docs/3d-asset-pipeline.md](https://github.com/nirholas/three.ws/blob/main/docs/3d-asset-pipeline.md), [docs/animations.md](https://github.com/nirholas/three.ws/blob/main/docs/animations.md), [docs/web-component.md](https://github.com/nirholas/three.ws/blob/main/docs/web-component.md), [docs/api-reference.md](https://github.com/nirholas/three.ws/blob/main/docs/api-reference.md), [docs/mcp.md](https://github.com/nirholas/three.ws/blob/main/docs/mcp.md), [docs/permissions.md](https://github.com/nirholas/three.ws/blob/main/docs/permissions.md), [docs/security.md](https://github.com/nirholas/three.ws/blob/main/docs/security.md), [docs/smart-contracts.md](https://github.com/nirholas/three.ws/blob/main/docs/smart-contracts.md), and more.
+Longer-form architecture and how-to documentation lives under [docs/](https://github.com/nirholas/three.ws/tree/main/docs/): [docs/architecture.md](https://github.com/nirholas/three.ws/blob/main/docs/architecture.md), [docs/agent-system.md](https://github.com/nirholas/three.ws/blob/main/docs/agent-system.md), [docs/3d-asset-pipeline.md](https://github.com/nirholas/three.ws/blob/main/docs/3d-asset-pipeline.md), [docs/animations.md](https://github.com/nirholas/three.ws/blob/main/docs/animations.md), [docs/web-component.md](https://github.com/nirholas/three.ws/blob/main/docs/web-component.md), [docs/api-reference.md](https://github.com/nirholas/three.ws/blob/main/docs/api-reference.md), [docs/mcp.md](https://github.com/nirholas/three.ws/blob/main/docs/mcp.md), [docs/permissions.md](https://github.com/nirholas/three.ws/blob/main/docs/permissions.md), [docs/security.md](https://github.com/nirholas/three.ws/blob/main/docs/security.md), [docs/smart-contracts.md](https://github.com/nirholas/three.ws/blob/main/docs/smart-contracts.md), and more.
 
 ### 3D asset pipeline — FBX, GLB, JSON
 
@@ -9040,7 +9040,7 @@ Every avatar the site renders is a **GLB** (binary glTF 2.0 — the body, rig, a
 
 **Backend (Google Cloud Run)**
 
-- **Runtime**: Node.js — serverless-style handlers in `api/` served by one Express container ([server/index.mjs](https://github.com/nirholas/three.ws/blob/main/server/index.mjs)) on Cloud Run (`three-ws-api`, `us-central1`).
+- **Runtime**: Node.js — serverless-style handlers in `api/` served by one Express container ([server/index.mjs](https://github.com/nirholas/three.ws/tree/main/server/index.mjs)) on Cloud Run (`three-ws-api`, `us-central1`).
 - **Database**: Neon Postgres (serverless)
 - **Storage**: Cloudflare R2 for model and avatar storage.
 - **Rate Limiting**: Upstash Redis.
@@ -9067,7 +9067,7 @@ The viewer targets every browser that ships WebGL 2.0 on a desktop or modern mob
 **Capabilities and graceful degradation**
 
 - **WebGL 2.0** is required; the viewer refuses to boot without it and shows a fallback message.
-- **WebAssembly** is required for the Draco / KTX2 / Meshopt decoders that ship under [`public/three/draco/`](https://github.com/nirholas/three.ws/blob/main/public/three/draco/), [`public/three/basis/`](https://github.com/nirholas/three.ws/blob/main/public/three/basis/), and `node_modules/three/examples/jsm/libs/`.
+- **WebAssembly** is required for the Draco / KTX2 / Meshopt decoders that ship under [`public/three/draco/`](https://github.com/nirholas/three.ws/tree/main/public/three/draco/), [`public/three/basis/`](https://github.com/nirholas/three.ws/tree/main/public/three/basis/), and `node_modules/three/examples/jsm/libs/`.
 - **`getUserMedia` (microphone)** requires HTTPS — see [Common gotchas](#common-gotchas). Without it the agent falls back to text input.
 - **`speechSynthesis`** is detected at runtime; agents fall back to silent text replies when TTS is unavailable.
 - **WebGPU** is not required and is not used yet — Phase 4 reserves it for client-side inference experiments.
@@ -9347,7 +9347,7 @@ The loader ([public/artifact.js](https://github.com/nirholas/three.ws/blob/main/
 
 ## Tutorials
 
-Step-by-step guides in [`docs/tutorials/`](https://github.com/nirholas/three.ws/blob/main/docs/tutorials/):
+Step-by-step guides in [`docs/tutorials/`](https://github.com/nirholas/three.ws/tree/main/docs/tutorials/):
 
 | Tutorial                                                       | What you'll build                                                    | Time    |
 | -------------------------------------------------------------- | -------------------------------------------------------------------- | ------- |
@@ -9384,7 +9384,7 @@ For sandboxed iframes use the widget embed path instead — it runs in its own b
 ## Project Structure
 
 - `src/`: The core frontend JavaScript for the main application, including the 3D viewer, agent protocol, custom element, and feature modules (`club-*.js`, `walk*.js`, `pose-*.js`, `voice/`, `selfie-*.js`). Social/gameplay surfaces live in `game/` (Coin Communities: `coincommunities*`, `spin-wheel-ui`, `cosmetics-visual`, `avatar-rig`), `city/` (the `/city` world), `social/` (sentiment, X-post impact), `community/` (coin lobby/town), plus `friends.js`, `communities.js`, `marketplace*.js`, and `token-pay.js`.
-- `api/`: Serverless-style handlers that form the backend API, served in production by the Cloud Run container ([server/index.mjs](https://github.com/nirholas/three.ws/blob/main/server/index.mjs)) with `vercel.json`-parity routing. Subdirectories include `x402/`, `a2a/`, `club/`, `pump/`, `persona/`, `news/`, `admin/`, `agents/`, `auth/`, `oauth/`, `cron/`, plus the social/game surfaces `play/`, `token/`, `three-token/`, `friends/`, `social/`, `community/`, `marketplace/`, and `mocap/`.
+- `api/`: Serverless-style handlers that form the backend API, served in production by the Cloud Run container ([server/index.mjs](https://github.com/nirholas/three.ws/tree/main/server/index.mjs)) with `vercel.json`-parity routing. Subdirectories include `x402/`, `a2a/`, `club/`, `pump/`, `persona/`, `news/`, `admin/`, `agents/`, `auth/`, `oauth/`, `cron/`, plus the social/game surfaces `play/`, `token/`, `three-token/`, `friends/`, `social/`, `community/`, `marketplace/`, and `mocap/`.
 - `public/`: Static assets and various sub-applications (`club/`, `seeker/`, `news/`, `persona/`, `vanity-wallet.html`, `pumpfun.html`).
 - `chat/`: A standalone Svelte application for the chat interface.
 - `character-studio/`: A sub-project for in-browser character creation; also serves the rebranded **Avatar Studio** marketplace.
@@ -9396,7 +9396,7 @@ For sandboxed iframes use the widget embed path instead — it runs in its own b
 - `solana-agent-sdk/`: SDK for Solana blockchain interactions (Metaplex Core mints, SIWS, attestations).
 - `pump-fun-skills/`: Skills related to the pump.fun integration.
 - `scripts/`: Node.js scripts for development, build, deployment, and pump.fun launch automation.
-- `workers/`: Code for background workers — includes the Cloudflare Worker mirror of the pump.fun MCP read API in [`workers/pump-fun-mcp/`](https://github.com/nirholas/three.ws/blob/main/workers/pump-fun-mcp/).
+- `workers/`: Code for background workers — includes the Cloudflare Worker mirror of the pump.fun MCP read API in [`workers/pump-fun-mcp/`](https://github.com/nirholas/three.ws/tree/main/workers/pump-fun-mcp/).
 - `docs/`: Public-facing developer docs.
 - `docs/internal/`: Working docs (PLAN, STATUS, TODO, NEXT, PROGRESS, RELEASE_CHECKLIST, club venue notes) — not part of the published docs surface.
 - `tests/`: Vitest unit tests (`tests/api/`, `tests/src/`, `tests/workers/`) and Playwright end-to-end smokes (`tests/e2e/`).
@@ -9814,7 +9814,7 @@ Launchpad templates are JSON-configured and can embed any combination of `<agent
 
 `/walk` is an authoritative multiplayer walk scene. Players join a shared 3D space, see each other's avatars in real time, and emit gestures over a WebSocket connection.
 
-The serverless-style request/response layer can't hold long-lived WebSockets, so the multiplayer server lives in its own workspace at [`multiplayer/`](https://github.com/nirholas/three.ws/blob/main/multiplayer/) — a [Colyseus](https://colyseus.io) server packaged with a Fly.io `fly.toml` and Dockerfile. The Vite client at `/walk` autodiscovers the server (`ws://localhost:2567` in dev, your deployed host in prod).
+The serverless-style request/response layer can't hold long-lived WebSockets, so the multiplayer server lives in its own workspace at [`multiplayer/`](https://github.com/nirholas/three.ws/tree/main/multiplayer/) — a [Colyseus](https://colyseus.io) server packaged with a Fly.io `fly.toml` and Dockerfile. The Vite client at `/walk` autodiscovers the server (`ws://localhost:2567` in dev, your deployed host in prod).
 
 ```bash
 # Run both servers together
@@ -10030,7 +10030,7 @@ On **Seeker / Saga** hardware the app prefers seed-vault-backed signing — priv
 
 **Release pipeline**
 
-- dApp Store listing copy and release config live under [`solana-mobile/publish/`](https://github.com/nirholas/three.ws/blob/main/solana-mobile/publish/)
+- dApp Store listing copy and release config live under [`solana-mobile/publish/`](https://github.com/nirholas/three.ws/tree/main/solana-mobile/publish/)
 - Release pipeline scripts handle build → sign → APK submission for dApp Store updates
 - The listing targets Seeker-first and is compatible with Saga Gen 1 and Gen 2
 
@@ -10149,38 +10149,38 @@ Fifteen packages ship from this repo, all published to npm under the **`@three-w
 
 | Package | Install | What it does |
 | --- | --- | --- |
-| [`@three-ws/avatar`](https://github.com/nirholas/three.ws/blob/main/avatar-sdk/) | `npm i @three-ws/avatar` | 3D avatar viewer, creator iframe, AR/VR runtime + React bindings (`/react`) |
-| [`@three-ws/agent-ui`](https://github.com/nirholas/three.ws/blob/main/agent-ui-sdk/) | `npm i @three-ws/agent-ui` | Drop a 3D avatar overlay into any UI; it reacts to buttons, inputs, and navigation |
-| [`@three-ws/avatar-schema`](https://github.com/nirholas/three.ws/blob/main/packages/avatar-schema/) | `npm i @three-ws/avatar-schema` | JSON Schema + validator for on-chain avatar manifests |
-| [`@three-ws/viewer-presets`](https://github.com/nirholas/three.ws/blob/main/packages/viewer-presets/) | `npm i @three-ws/viewer-presets` | Tuned light-rig, floor-reflection, and bloom presets for avatar viewers |
-| [`@three-ws/avatar-cli`](https://github.com/nirholas/three.ws/blob/main/packages/avatar-cli/) | `npm i -g @three-ws/avatar-cli` | Scaffold, validate, hash, and preview avatar manifests from your shell or CI |
+| [`@three-ws/avatar`](https://github.com/nirholas/three.ws/tree/main/avatar-sdk/) | `npm i @three-ws/avatar` | 3D avatar viewer, creator iframe, AR/VR runtime + React bindings (`/react`) |
+| [`@three-ws/agent-ui`](https://github.com/nirholas/three.ws/tree/main/agent-ui-sdk/) | `npm i @three-ws/agent-ui` | Drop a 3D avatar overlay into any UI; it reacts to buttons, inputs, and navigation |
+| [`@three-ws/avatar-schema`](https://github.com/nirholas/three.ws/tree/main/packages/avatar-schema/) | `npm i @three-ws/avatar-schema` | JSON Schema + validator for on-chain avatar manifests |
+| [`@three-ws/viewer-presets`](https://github.com/nirholas/three.ws/tree/main/packages/viewer-presets/) | `npm i @three-ws/viewer-presets` | Tuned light-rig, floor-reflection, and bloom presets for avatar viewers |
+| [`@three-ws/avatar-cli`](https://github.com/nirholas/three.ws/tree/main/packages/avatar-cli/) | `npm i -g @three-ws/avatar-cli` | Scaffold, validate, hash, and preview avatar manifests from your shell or CI |
 
 **Agents & payments**
 
 | Package | Install | What it does |
 | --- | --- | --- |
-| [`@three-ws/sdk`](https://github.com/nirholas/three.ws/blob/main/sdk/) | `npm i @three-ws/sdk` | Ship an ERC-8004 agent: chat panel, voice I/O, on-chain registration, `.well-known` manifests |
-| [`@three-ws/solana-agent`](https://github.com/nirholas/three.ws/blob/main/solana-agent-sdk/) | `npm i @three-ws/solana-agent` | Solana agent ops — keypair + browser wallet, transfers, swaps, x402 exact-scheme payments |
-| [`@three-ws/agent-payments`](https://github.com/nirholas/three.ws/blob/main/agent-payments-sdk/) | `npm i @three-ws/agent-payments` | Agent-token payments — USDC/Token-2022, v2 trades, plus EVM / x402 / a2a / cross-chain |
+| [`@three-ws/sdk`](https://github.com/nirholas/three.ws/tree/main/sdk/) | `npm i @three-ws/sdk` | Ship an ERC-8004 agent: chat panel, voice I/O, on-chain registration, `.well-known` manifests |
+| [`@three-ws/solana-agent`](https://github.com/nirholas/three.ws/tree/main/solana-agent-sdk/) | `npm i @three-ws/solana-agent` | Solana agent ops — keypair + browser wallet, transfers, swaps, x402 exact-scheme payments |
+| [`@three-ws/agent-payments`](https://github.com/nirholas/three.ws/tree/main/agent-payments-sdk/) | `npm i @three-ws/agent-payments` | Agent-token payments — USDC/Token-2022, v2 trades, plus EVM / x402 / a2a / cross-chain |
 
 **MCP servers** (run over stdio with one command — also in the [official MCP registry](https://registry.modelcontextprotocol.io/?q=io.github.nirholas))
 
 | Package | Run | What it does |
 | --- | --- | --- |
-| [`@three-ws/mcp-server`](https://github.com/nirholas/three.ws/blob/main/mcp-server/) | `npx -y @three-ws/mcp-server` | 16 tools: free text→3D (`forge_free`) + 15 paid x402 — text/image→3D, rigging, pose, pump.fun, ERC-8004, vanity, AgenC, aixbt |
-| [`@three-ws/avatar-agent`](https://github.com/nirholas/three.ws/blob/main/packages/avatar-agent-mcp/) | `npx -y @three-ws/avatar-agent` | Spawn a textured GLB avatar with a Solana wallet, a voice, and pump.fun launch powers |
-| [`@three-ws/avatar-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/threews-avatar-mcp/) | `npx -y @three-ws/avatar-mcp` | Render a live, rotatable on-chain avatar inline + a paste-anywhere embed (free) |
-| [`@three-ws/pumpfun-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/pumpfun-mcp/) | `npx -y @three-ws/pumpfun-mcp` | 23 free, read-only pump.fun + Solana tools — no API key |
-| [`@three-ws/three-token-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/three-token-mcp/) | `npx -y @three-ws/three-token-mcp` | Price, hold, and burn **$THREE** on Solana — deflation as an agent primitive |
-| [`@three-ws/ibm-watsonx-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/ibm-watsonx-mcp/) | `npx -y @three-ws/ibm-watsonx-mcp` | IBM watsonx.ai Granite (chat, generate, embed, forecast) with your own IBM key |
-| [`@three-ws/ibm-x402-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/ibm-x402-mcp/) | `npx -y @three-ws/ibm-x402-mcp` | Pay-per-use IBM Granite — USDC on Solana, no IBM account required |
-| [`@three-ws/mcp-bridge`](https://github.com/nirholas/three.ws/blob/main/mcp-bridge/) | `npx -y @three-ws/mcp-bridge` | x402 universal payer — auto-pay any x402 endpoint on the open web, with Bazaar discovery + spend caps |
-| [`@three-ws/x402-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/x402-mcp/) | `npx -y @three-ws/x402-mcp` | Self-custodial x402 wallet — discover, inspect, and pay any x402 service in USDC |
-| [`@three-ws/scene-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/scene-mcp/) | `npx -y @three-ws/scene-mcp` | Compose a placed 3D diorama from one sentence, then browse the saved scene gallery |
-| [`@three-ws/intel-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/intel-mcp/) | `npx -y @three-ws/intel-mcp` | Coin smart-money scores, wallet reputation, signal feeds, and KOL leaderboards |
-| [`@three-ws/vanity-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/vanity-mcp/) | `npx -y @three-ws/vanity-mcp` | Solana vanity-address bounty market — quote difficulty + USDC price, browse the board |
-| [`@three-ws/marketplace-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/marketplace-mcp/) | `npx -y @three-ws/marketplace-mcp` | Browse the public three.ws agent marketplace + skills catalog (read-only) |
-| [`@three-ws/naming-mcp`](https://github.com/nirholas/three.ws/blob/main/packages/naming-mcp/) | `npx -y @three-ws/naming-mcp` | On-chain identity for agents — resolve .sol names, reverse-lookup wallets, check handles |
+| [`@three-ws/mcp-server`](https://github.com/nirholas/three.ws/tree/main/mcp-server/) | `npx -y @three-ws/mcp-server` | 16 tools: free text→3D (`forge_free`) + 15 paid x402 — text/image→3D, rigging, pose, pump.fun, ERC-8004, vanity, AgenC, aixbt |
+| [`@three-ws/avatar-agent`](https://github.com/nirholas/three.ws/tree/main/packages/avatar-agent-mcp/) | `npx -y @three-ws/avatar-agent` | Spawn a textured GLB avatar with a Solana wallet, a voice, and pump.fun launch powers |
+| [`@three-ws/avatar-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/threews-avatar-mcp/) | `npx -y @three-ws/avatar-mcp` | Render a live, rotatable on-chain avatar inline + a paste-anywhere embed (free) |
+| [`@three-ws/pumpfun-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/pumpfun-mcp/) | `npx -y @three-ws/pumpfun-mcp` | 23 free, read-only pump.fun + Solana tools — no API key |
+| [`@three-ws/three-token-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/three-token-mcp/) | `npx -y @three-ws/three-token-mcp` | Price, hold, and burn **$THREE** on Solana — deflation as an agent primitive |
+| [`@three-ws/ibm-watsonx-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/ibm-watsonx-mcp/) | `npx -y @three-ws/ibm-watsonx-mcp` | IBM watsonx.ai Granite (chat, generate, embed, forecast) with your own IBM key |
+| [`@three-ws/ibm-x402-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/ibm-x402-mcp/) | `npx -y @three-ws/ibm-x402-mcp` | Pay-per-use IBM Granite — USDC on Solana, no IBM account required |
+| [`@three-ws/mcp-bridge`](https://github.com/nirholas/three.ws/tree/main/mcp-bridge/) | `npx -y @three-ws/mcp-bridge` | x402 universal payer — auto-pay any x402 endpoint on the open web, with Bazaar discovery + spend caps |
+| [`@three-ws/x402-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/x402-mcp/) | `npx -y @three-ws/x402-mcp` | Self-custodial x402 wallet — discover, inspect, and pay any x402 service in USDC |
+| [`@three-ws/scene-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/scene-mcp/) | `npx -y @three-ws/scene-mcp` | Compose a placed 3D diorama from one sentence, then browse the saved scene gallery |
+| [`@three-ws/intel-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/intel-mcp/) | `npx -y @three-ws/intel-mcp` | Coin smart-money scores, wallet reputation, signal feeds, and KOL leaderboards |
+| [`@three-ws/vanity-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/vanity-mcp/) | `npx -y @three-ws/vanity-mcp` | Solana vanity-address bounty market — quote difficulty + USDC price, browse the board |
+| [`@three-ws/marketplace-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/marketplace-mcp/) | `npx -y @three-ws/marketplace-mcp` | Browse the public three.ws agent marketplace + skills catalog (read-only) |
+| [`@three-ws/naming-mcp`](https://github.com/nirholas/three.ws/tree/main/packages/naming-mcp/) | `npx -y @three-ws/naming-mcp` | On-chain identity for agents — resolve .sol names, reverse-lookup wallets, check handles |
 
 Per-server deep dives (every tool, argument, env var, and example): [Scenes](https://three.ws/docs/mcp-scenes) · [x402 Wallet](https://three.ws/docs/mcp-x402) · [Intel](https://three.ws/docs/mcp-intel) · [Vanity](https://three.ws/docs/mcp-vanity) · [Naming](https://three.ws/docs/mcp-naming) · [Marketplace](https://three.ws/docs/mcp-marketplace). Full catalog: [docs/mcp.md](https://github.com/nirholas/three.ws/blob/main/docs/mcp.md).
 
@@ -10257,13 +10257,13 @@ This repo ships three Claude Code slash commands that work in any project refere
 | `/scaffold-agent`        | Scaffolds a new three.ws agent in your project: installs dependencies, creates `agent.js` with MCP client wiring, and adds `.env.example` |
 | `/use-tools [tool_name]` | Produces a complete, runnable Node.js script for calling a specific paid MCP tool with automatic x402 payment handling                    |
 
-Commands live in [`marketplace/plugins/three-ws-developer/commands/`](https://github.com/nirholas/three.ws/blob/main/marketplace/plugins/three-ws-developer/commands/) and ship with the `three-ws-developer` plugin, so Claude Code picks them up once that plugin is installed.
+Commands live in [`marketplace/plugins/three-ws-developer/commands/`](https://github.com/nirholas/three.ws/tree/main/marketplace/plugins/three-ws-developer/commands/) and ship with the `three-ws-developer` plugin, so Claude Code picks them up once that plugin is installed.
 
 ---
 
 ## Demos Hub
 
-`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in [`public/demos/`](https://github.com/nirholas/three.ws/blob/main/public/demos/) — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
+`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in [`public/demos/`](https://github.com/nirholas/three.ws/tree/main/public/demos/) — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
 
 | Demo                                | Path                             | What it shows                                            |
 | ----------------------------------- | -------------------------------- | -------------------------------------------------------- |
@@ -10483,7 +10483,7 @@ The full OpenAPI 3.1 spec is available at `/openapi.json`. The key API surface i
 
 Cron schedules are declared in `vercel.json` (still the live cron/route config the server reads) and executed in production by **Google Cloud Scheduler**, which calls each endpoint on its schedule. All cron endpoints are fail-closed — a missing auth token aborts with an error rather than silently skipping (see [Security Hardening](#security-hardening)).
 
-The ~80 crons in `vercel.json` are routed through a single dynamic handler at [`api/cron/[name].js`](api/cron/[name].js); the `name` segment selects the handler function. Scheduler jobs are provisioned from the `vercel.json` cron list via [scripts/create-gcp-scheduler.mjs](https://github.com/nirholas/three.ws/blob/main/scripts/create-gcp-scheduler.mjs); the schedules below match `vercel.json` verbatim.
+The ~80 crons in `vercel.json` are routed through a single dynamic handler at [`api/cron/[name].js`](https://github.com/nirholas/three.ws/blob/main/api/cron/[name].js); the `name` segment selects the handler function. Scheduler jobs are provisioned from the `vercel.json` cron list via [scripts/create-gcp-scheduler.mjs](https://github.com/nirholas/three.ws/tree/main/scripts/create-gcp-scheduler.mjs); the schedules below match `vercel.json` verbatim.
 
 | Schedule             | Endpoint                                | Purpose                                                                                                                      |
 | -------------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -10564,7 +10564,7 @@ Access tokens are short-lived JWTs (1 hour). Refresh tokens are opaque strings s
 
 ## MCP Server
 
-[`api/mcp.js`](https://github.com/nirholas/three.ws/blob/main/api/mcp.js) is a thin HTTP entrypoint (POST / GET-SSE / DELETE) that implements the [Model Context Protocol](https://modelcontextprotocol.io) 2025-06-18 specification over JSON-RPC 2.0. The protocol logic is split across [`api/_mcp/`](https://github.com/nirholas/three.ws/blob/main/api/_mcp/) — `auth.js` (Bearer/OAuth + x402 paywall), `dispatch.js` (JSON-RPC routing), `catalog.js` (dynamic tool catalog), `payments.js` (x402 paid-tool settlement), `render.js`, and `embed-policy.js`. Tools are registered per category under [`api/_mcp/tools/`](https://github.com/nirholas/three.ws/blob/main/api/_mcp/tools/) (`avatars.js`, `models.js`, `solana.js`, `pumpfun.js`). External AI systems (including Claude Desktop, other agents, or custom integrations) can drive avatars programmatically through this surface.
+[`api/mcp.js`](https://github.com/nirholas/three.ws/blob/main/api/mcp.js) is a thin HTTP entrypoint (POST / GET-SSE / DELETE) that implements the [Model Context Protocol](https://modelcontextprotocol.io) 2025-06-18 specification over JSON-RPC 2.0. The protocol logic is split across [`api/_mcp/`](https://github.com/nirholas/three.ws/tree/main/api/_mcp/) — `auth.js` (Bearer/OAuth + x402 paywall), `dispatch.js` (JSON-RPC routing), `catalog.js` (dynamic tool catalog), `payments.js` (x402 paid-tool settlement), `render.js`, and `embed-policy.js`. Tools are registered per category under [`api/_mcp/tools/`](https://github.com/nirholas/three.ws/tree/main/api/_mcp/tools/) (`avatars.js`, `models.js`, `solana.js`, `pumpfun.js`). External AI systems (including Claude Desktop, other agents, or custom integrations) can drive avatars programmatically through this surface.
 
 **Endpoint:** `POST /api/mcp` (tools), `GET /api/mcp` (SSE), `DELETE /api/mcp` (session terminate)
 **Auth:** OAuth 2.1 Bearer token with `mcp` scope; some tools additionally require x402 USDC payment
@@ -10755,7 +10755,7 @@ Beyond the Solana reputation signals described above, the platform also ships co
 
 - **Token Launcher** — UI for creating and launching new tokens, at [public/pumpfun.html](https://github.com/nirholas/three.ws/blob/main/public/pumpfun.html).
 - **Live Dashboard** — real-time tracker for new tokens, at [pages/pump-live.html](https://github.com/nirholas/three.ws/blob/main/pages/pump-live.html).
-- **Skills** — the [pump-fun-skills/](https://github.com/nirholas/three.ws/blob/main/pump-fun-skills/) directory contains agent skills for reading and acting on pump.fun.
+- **Skills** — the [pump-fun-skills/](https://github.com/nirholas/three.ws/tree/main/pump-fun-skills/) directory contains agent skills for reading and acting on pump.fun.
 
 ### Token launcher (USDC v2)
 
@@ -10774,7 +10774,7 @@ The launcher uses pump.fun's v2 USDC quote payload and supports a creator-signer
 
 ### Pump-swap buyback
 
-A buyback flow lets an agent route revenue from x402 paid endpoints into pump-swap purchases of its own token — closing the loop between paid usage and tokenholder value. See [scripts/pump-launch-usdc.mjs](https://github.com/nirholas/three.ws/blob/main/scripts/pump-launch-usdc.mjs) and the inaugural-launch self-contained prompts in [docs/internal/](https://github.com/nirholas/three.ws/blob/main/docs/internal/).
+A buyback flow lets an agent route revenue from x402 paid endpoints into pump-swap purchases of its own token — closing the loop between paid usage and tokenholder value. See [scripts/pump-launch-usdc.mjs](https://github.com/nirholas/three.ws/tree/main/scripts/pump-launch-usdc.mjs) and the inaugural-launch self-contained prompts in [docs/internal/](https://github.com/nirholas/three.ws/tree/main/docs/internal/).
 
 ### Pump visualizer
 
@@ -10790,7 +10790,7 @@ The visualizer supports search, sort, live pulses, and auto-refresh. Backed by t
 
 ### Pump.fun MCP edge worker
 
-For external agents that need pump.fun data with strict latency, a Cloudflare Worker mirror of the read API lives in [workers/pump-fun-mcp/](https://github.com/nirholas/three.ws/blob/main/workers/pump-fun-mcp/). Deploy with `wrangler deploy` — the worker proxies the upstream `pumpfun-claims-bot` and answers MCP `tools/call` requests at the edge.
+For external agents that need pump.fun data with strict latency, a Cloudflare Worker mirror of the read API lives in [workers/pump-fun-mcp/](https://github.com/nirholas/three.ws/tree/main/workers/pump-fun-mcp/). Deploy with `wrangler deploy` — the worker proxies the upstream `pumpfun-claims-bot` and answers MCP `tools/call` requests at the edge.
 
 ### Channel & Telegram bridge
 
@@ -10809,7 +10809,7 @@ The platform's pump.fun launches pre-grind vanity mint addresses with the WASM g
 
 ## Database Schema
 
-The Postgres schema ([`api/_lib/schema.sql`](https://github.com/nirholas/three.ws/blob/main/api/_lib/schema.sql)) is fully idempotent — every `CREATE TABLE` uses `IF NOT EXISTS`, so the file is safe to re-run on any environment. Per-feature migrations live under [`api/_lib/migrations/`](https://github.com/nirholas/three.ws/blob/main/api/_lib/migrations/) and are applied with `npm run db:migrate`.
+The Postgres schema ([`api/_lib/schema.sql`](https://github.com/nirholas/three.ws/blob/main/api/_lib/schema.sql)) is fully idempotent — every `CREATE TABLE` uses `IF NOT EXISTS`, so the file is safe to re-run on any environment. Per-feature migrations live under [`api/_lib/migrations/`](https://github.com/nirholas/three.ws/tree/main/api/_lib/migrations/) and are applied with `npm run db:migrate`.
 
 The schema currently defines ~53 tables grouped below. Columns shown are the most commonly queried ones; the source file is authoritative.
 
@@ -10976,14 +10976,14 @@ npm run claude -- <command>
 
 ### Production Deployment (Google Cloud Run)
 
-Production runs on **Google Cloud Run** (`three-ws-api`, region `us-central1`): one Express container ([server/index.mjs](https://github.com/nirholas/three.ws/blob/main/server/index.mjs)) serves the static frontend, the `vercel.json` route table, and every `api/**` handler, fronted by a global HTTPS load balancer + Cloud CDN. Deployment is two steps — build the frontend, then submit the container build:
+Production runs on **Google Cloud Run** (`three-ws-api`, region `us-central1`): one Express container ([server/index.mjs](https://github.com/nirholas/three.ws/tree/main/server/index.mjs)) serves the static frontend, the `vercel.json` route table, and every `api/**` handler, fronted by a global HTTPS load balancer + Cloud CDN. Deployment is two steps — build the frontend, then submit the container build:
 
 ```bash
 npm run build       # frontend build to dist/ (only when frontend changed)
 npm run deploy:gcp  # check:dist + db:check, gcloud builds submit, purge CDN
 ```
 
-`npm run deploy:gcp` runs `gcloud builds submit --config server/cloudbuild.yaml`. Routing, cache headers, and cron schedules are defined in `vercel.json`, which the server reads at runtime. The ~80 scheduled jobs run on **Cloud Scheduler** (provisioned by [scripts/create-gcp-scheduler.mjs](https://github.com/nirholas/three.ws/blob/main/scripts/create-gcp-scheduler.mjs)); the GPU inference workers run as their own Cloud Run services. Full ops runbook (load balancer, DNS/TLS, env, rollback, recovery): **[docs/ops/gcp-production.md](https://github.com/nirholas/three.ws/blob/main/docs/ops/gcp-production.md)**.
+`npm run deploy:gcp` runs `gcloud builds submit --config server/cloudbuild.yaml`. Routing, cache headers, and cron schedules are defined in `vercel.json`, which the server reads at runtime. The ~80 scheduled jobs run on **Cloud Scheduler** (provisioned by [scripts/create-gcp-scheduler.mjs](https://github.com/nirholas/three.ws/tree/main/scripts/create-gcp-scheduler.mjs)); the GPU inference workers run as their own Cloud Run services. Full ops runbook (load balancer, DNS/TLS, env, rollback, recovery): **[docs/ops/gcp-production.md](https://github.com/nirholas/three.ws/blob/main/docs/ops/gcp-production.md)**.
 
 **Environment variables** live on the Cloud Run service, not in `.env` files — inspect or update them with `gcloud run services describe/update three-ws-api --region us-central1`. See [Environment Variables](#environment-variables) for the full list.
 
@@ -10993,7 +10993,7 @@ For a traditional server deployment:
 
 1. Build: `npm run build` → `dist/`
 2. Serve `dist/` as static files (nginx, Caddy, Express)
-3. Run `api/` endpoints via Node.js (serve them with the Express container in [server/index.mjs](https://github.com/nirholas/three.ws/blob/main/server/index.mjs), same as production)
+3. Run `api/` endpoints via Node.js (serve them with the Express container in [server/index.mjs](https://github.com/nirholas/three.ws/tree/main/server/index.mjs), same as production)
 4. Connect to Postgres (Neon or self-hosted)
 5. Connect to S3-compatible storage (R2, MinIO, AWS S3)
 6. Schedule cron jobs with node-cron or systemd timers
@@ -11136,7 +11136,7 @@ npm run test:e2e                        # Playwright only
 npm run verify                          # Prettier check + Vite build
 ```
 
-**Representative Vitest coverage** (full inventory under [tests/](https://github.com/nirholas/three.ws/blob/main/tests/)):
+**Representative Vitest coverage** (full inventory under [tests/](https://github.com/nirholas/three.ws/tree/main/tests/)):
 
 | Area                         | File                                                                                                                                                                                                                                                                                                                                                                         |
 | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -11174,7 +11174,7 @@ npm run verify                          # Prettier check + Vite build
 
 ### Playwright end-to-end smokes
 
-Browser-driven smokes live in [tests/e2e/](https://github.com/nirholas/three.ws/blob/main/tests/e2e/) and run against the local dev stack (Vite + the `api/` handlers). They cover user-visible flows that don't fit in Vitest.
+Browser-driven smokes live in [tests/e2e/](https://github.com/nirholas/three.ws/tree/main/tests/e2e/) and run against the local dev stack (Vite + the `api/` handlers). They cover user-visible flows that don't fit in Vitest.
 
 | Smoke                                            | What it exercises                                                        |
 | ------------------------------------------------ | ------------------------------------------------------------------------ |

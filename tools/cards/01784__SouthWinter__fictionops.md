@@ -166,7 +166,7 @@ Contributions, bug reports, documentation fixes, and workflow feedback are welco
 
 ## Citation
 
-If FictionOps helps your writing workflow, research, article, or agent experiment, cite it using [CITATION.cff](https://github.com/SouthWinter/fictionops/blob/main/CITATION.cff).
+If FictionOps helps your writing workflow, research, article, or agent experiment, cite it using [CITATION.cff](https://github.com/SouthWinter/fictionops/tree/main/CITATION.cff).
 
 ## License
 

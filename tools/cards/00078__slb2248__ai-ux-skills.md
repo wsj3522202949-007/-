@@ -46,12 +46,12 @@ Curated AI coding skills for UX and product designers. Install once, and your AI
 
 | Skill | Description | Best For |
 |-------|-------------|----------|
-| [Accessibility Expert](https://github.com/slb2248/ai-ux-skills/blob/main/skills/accessibility-expert/) | Build inclusive interfaces with WCAG compliance, screen reader support, and keyboard navigation | UX, UI, Product, Frontend |
-| [UX Writing](https://github.com/slb2248/ai-ux-skills/blob/main/skills/ux-writing/) | Write effective microcopy: button labels, error messages, empty states, onboarding, and tooltips | UX Writers, Content, Product |
-| [Design Critique](https://github.com/slb2248/ai-ux-skills/blob/main/skills/design-critique/) | Structured framework for giving and receiving design feedback | Product, UX, UI, Visual |
-| [Data Visualization](https://github.com/slb2248/ai-ux-skills/blob/main/skills/d3-visualization/) | Design effective data visualizations: charts, graphs, dashboards, and infographics | Visual, Data, Product |
-| [Design Workshop Facilitation](https://github.com/slb2248/ai-ux-skills/blob/main/skills/design-workshop-facilitation/) | Facilitate effective design workshops for problem-solving, ideation, customer journey mapping, design sprints, and team alignment | Product, UX, Design Leads |
-| [AI Native Product Designer](https://github.com/slb2248/ai-ux-skills/blob/main/skills/ai-native-product-designer/) | LLM-first workflow, AI code prototyping, Figma as polish, self-serve research, outcome ownership; rubrics for leveling and AI readiness | Product, UX, UI, Design Systems, Research, Frontend |
+| [Accessibility Expert](https://github.com/slb2248/ai-ux-skills/tree/main/skills/accessibility-expert/) | Build inclusive interfaces with WCAG compliance, screen reader support, and keyboard navigation | UX, UI, Product, Frontend |
+| [UX Writing](https://github.com/slb2248/ai-ux-skills/tree/main/skills/ux-writing/) | Write effective microcopy: button labels, error messages, empty states, onboarding, and tooltips | UX Writers, Content, Product |
+| [Design Critique](https://github.com/slb2248/ai-ux-skills/tree/main/skills/design-critique/) | Structured framework for giving and receiving design feedback | Product, UX, UI, Visual |
+| [Data Visualization](https://github.com/slb2248/ai-ux-skills/tree/main/skills/d3-visualization/) | Design effective data visualizations: charts, graphs, dashboards, and infographics | Visual, Data, Product |
+| [Design Workshop Facilitation](https://github.com/slb2248/ai-ux-skills/tree/main/skills/design-workshop-facilitation/) | Facilitate effective design workshops for problem-solving, ideation, customer journey mapping, design sprints, and team alignment | Product, UX, Design Leads |
+| [AI Native Product Designer](https://github.com/slb2248/ai-ux-skills/tree/main/skills/ai-native-product-designer/) | LLM-first workflow, AI code prototyping, Figma as polish, self-serve research, outcome ownership; rubrics for leveling and AI readiness | Product, UX, UI, Design Systems, Research, Frontend |
 
 ## Installation
 

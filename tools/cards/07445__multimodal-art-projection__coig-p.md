@@ -114,10 +114,10 @@ bash Train.sh
 ## Evaluating on AlignBench
 
 Most of our results are evaluated on [AlignBench](https://github.com/THUDM/AlignBench). Since AlignBench does not support multiprocessing, we use [KOR-Bench](https://kor-bench.github.io/) for multi-process inference.
-Then we use [AlignBench_folder](https://github.com/multimodal-art-projection/coig-p/blob/main/AlignBench/) to evaluate the reuslts of LLMs.
+Then we use [AlignBench_folder](https://github.com/multimodal-art-projection/coig-p/tree/main/AlignBench/) to evaluate the reuslts of LLMs.
 Please install environment for KOR-Bench following [KOR-Bench_Readme](https://github.com/multimodal-art-projection/coig-p/blob/main/KOR-Bench/README.md) and environment for AlignBench following [AlignBench_Readme](https://github.com/multimodal-art-projection/coig-p/blob/main/AlignBnech/README.md).
 
-In [KOR-Bench_folder](https://github.com/multimodal-art-projection/coig-p/blob/main/KOR-Bench/), we have provided the dataset of AlignBench.
+In [KOR-Bench_folder](https://github.com/multimodal-art-projection/coig-p/tree/main/KOR-Bench/), we have provided the dataset of AlignBench.
 If you want to evaluate your fine-tund LLMs, you can register your model in the [KOR-Bench_model_init_file](https://github.com/multimodal-art-projection/coig-p/blob/main/KOR-Bench/infer/models/__init__.py).
 
 **If you want to evaluate some api models, you need to provide the api in the [KOR-Bench_model_init_file](https://github.com/multimodal-art-projection/coig-p/blob/main/KOR-Bench/infer/models/__init__.py)**

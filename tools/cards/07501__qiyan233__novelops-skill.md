@@ -125,7 +125,7 @@ README 负责介绍项目，`SKILL.md` 才更接近“这个 skill 真正怎么�
 
 ### 再看一个完整例子
 
-- [`examples/demo-novel/`](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/)
+- [`examples/demo-novel/`](https://github.com/qiyan233/novelops-skill/tree/main/examples/demo-novel/)
 
 如果你想最快看懂 `write-next / revise / state-update` 是怎么串起来的，先看 demo，比先读很多实现细节更直观。
 

@@ -85,13 +85,13 @@ When you add a skill to your project's `.opencode/skill/` directory, OpenCode au
 
 | Skill | Description | API Required |
 |-------|-------------|--------------|
-| [n8n-mcp-tools-expert](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-mcp-tools-expert/) | Expert guide for using n8n-mcp MCP tools effectively | None |
-| [n8n-validation-expert](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-validation-expert/) | Interpret validation errors and guide fixing them | None |
-| [n8n-expression-syntax](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-expression-syntax/) | Validate n8n expression syntax and fix common errors | None |
-| [n8n-code-python](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-code-python/) | Write Python code in n8n Code nodes | None |
-| [n8n-workflow-patterns](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-workflow-patterns/) | Proven workflow architectural patterns from real n8n workflows | None |
-| [n8n-code-javascript](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-code-javascript/) | Write JavaScript code in n8n Code nodes | None |
-| [n8n-node-configuration](https://github.com/viliamvolosv/n8n-opencode-skill/blob/main/skill/n8n-node-configuration/) | Operation-aware node configuration guidance | None |
+| [n8n-mcp-tools-expert](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-mcp-tools-expert/) | Expert guide for using n8n-mcp MCP tools effectively | None |
+| [n8n-validation-expert](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-validation-expert/) | Interpret validation errors and guide fixing them | None |
+| [n8n-expression-syntax](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-expression-syntax/) | Validate n8n expression syntax and fix common errors | None |
+| [n8n-code-python](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-code-python/) | Write Python code in n8n Code nodes | None |
+| [n8n-workflow-patterns](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-workflow-patterns/) | Proven workflow architectural patterns from real n8n workflows | None |
+| [n8n-code-javascript](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-code-javascript/) | Write JavaScript code in n8n Code nodes | None |
+| [n8n-node-configuration](https://github.com/viliamvolosv/n8n-opencode-skill/tree/main/skill/n8n-node-configuration/) | Operation-aware node configuration guidance | None |
 
 ## Quick Start
 

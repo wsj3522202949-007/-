@@ -404,7 +404,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## 🔗 Links
 
 - [Live Demo](https://ai-content-detector.workers.dev)
-- [Documentation](https://github.com/ckorhonen/ai-content-detector/blob/main/docs/)
+- [Documentation](https://github.com/ckorhonen/ai-content-detector/tree/main/docs/)
 - [API Reference](#-api-documentation)
 - [Contributing Guide](https://github.com/ckorhonen/ai-content-detector/blob/main/CONTRIBUTING.md)
 

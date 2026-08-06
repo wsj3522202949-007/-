@@ -243,7 +243,7 @@ StoryForge 按“底层能力向上支撑用户价值”的方向分为六层。
 
 [![StoryForge 从存储到用户价值的六层架构](https://github.com/yuanbw2025/storyforge/blob/main/docs/assets/architecture/storyforge-architecture-overview.png)](./docs/assets/architecture/storyforge-architecture-overview.png)
 
-图中同时展示 `PROJECT_TABLES` 的代码映射、统一 AI 读写主路径和 42 张表的领域分布。对应实现见 [`src/lib/registry`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/registry)、[`src/lib/db/schema.ts`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/db/schema.ts) 与 [`scripts/check-architecture.mjs`](https://github.com/yuanbw2025/storyforge/blob/main/scripts/check-architecture.mjs)。
+图中同时展示 `PROJECT_TABLES` 的代码映射、统一 AI 读写主路径和 42 张表的领域分布。对应实现见 [`src/lib/registry`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/registry)、[`src/lib/db/schema.ts`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/db/schema.ts) 与 [`scripts/check-architecture.mjs`](https://github.com/yuanbw2025/storyforge/tree/main/scripts/check-architecture.mjs)。
 
 ### 三个注册表
 

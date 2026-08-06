@@ -356,7 +356,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ## 📞 Support
 
-- 📖 [Documentation](https://github.com/prkshverma09/storyteller/blob/main/docs/)
+- 📖 [Documentation](https://github.com/prkshverma09/storyteller/tree/main/docs/)
 - 🐛 [Report Issues](https://github.com/yourusername/storyteller/issues)
 - 💬 [Discussions](https://github.com/yourusername/storyteller/discussions)
 - 📧 [Contact](mailto:your.email@example.com)

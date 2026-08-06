@@ -191,7 +191,7 @@ See [`docs/system-architecture.md`](https://github.com/HieuNTg/STORYFORGE/blob/m
 ## Documentation
 
 - [`docs/`](https://github.com/HieuNTg/STORYFORGE/blob/main/docs/README.md) — full index (architecture, code standards, deployment)
-- [`docs/adr/`](https://github.com/HieuNTg/STORYFORGE/blob/main/docs/adr/) — architecture decision records
+- [`docs/adr/`](https://github.com/HieuNTg/STORYFORGE/tree/main/docs/adr/) — architecture decision records
 - [CONTRIBUTING.md](https://github.com/HieuNTg/STORYFORGE/blob/main/CONTRIBUTING.md) — dev setup, code style, PR process
 
 related:

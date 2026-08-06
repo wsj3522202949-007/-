@@ -62,7 +62,7 @@ it's *why* the detector works, when it doesn't, and the evidence for both.
 
 <sub>Source: [`results/full_test_headlines.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/full_test_headlines.csv) — recomputed
 deterministically from the saved weights (Notebook 4 §4b); per-epoch training logs in
-[`results/`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/).</sub>
+[`results/`](https://github.com/lilhuang15/ai-generated-text-detector/tree/main/results/).</sub>
 
 **Controlled 5-model comparison** (balanced 200-sample subset — the affordable way to put a
 paid LLM on identical footing):

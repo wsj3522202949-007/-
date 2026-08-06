@@ -225,7 +225,7 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Hunter Dermott - [@your_twitter](https://twitter.com/your_username) - [Email](https://github.com/hbdermott/ai-tale/blob/main/hbdermott@gmail.com)
+Hunter Dermott - [@your_twitter](https://twitter.com/your_username) - [Email](https://github.com/hbdermott/ai-tale/tree/main/hbdermott@gmail.com)
 
 Links: [ai-tale](https://sierra.cool) - [hbdermott/ai-tale](https://github.com/hbdermott/ai-tale)
 

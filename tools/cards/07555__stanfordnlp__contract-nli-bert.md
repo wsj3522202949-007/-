@@ -88,7 +88,7 @@ We have tagged the implementations that we used for the experiments in our paper
 Please note that we have changed NLI label name since the experiments.
 You may need to alter "Entailment" to "true", "Contradiction" to "false" and "NotMentioned" to "na" in the dataset JSON files, or apply commit `b0c4987` as a patch.
 
-We carried out the experiments on [ABCI](https://github.com/stanfordnlp/contract-nli-bert/blob/main/abci.ai), a GPU cluster with a PBS-like job queue.
+We carried out the experiments on [ABCI](https://github.com/stanfordnlp/contract-nli-bert/tree/main/abci.ai), a GPU cluster with a PBS-like job queue.
 While it would not run in most users' environment, we provide our experiment procedure so that users can implement a similar procedure for their clusters.
 
 ```bash

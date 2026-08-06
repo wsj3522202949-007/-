@@ -91,4 +91,4 @@ This repo is built spec-by-spec, CEO-instructs-developer style. See:
 - [`CURRENTSTATE.md`](https://github.com/abhaydv77/Voicebox/blob/main/CURRENTSTATE.md) — what's actually built right now
 - [`TODO.md`](https://github.com/abhaydv77/Voicebox/blob/main/TODO.md) — what's next
 - [`.voicebox/README.md`](https://github.com/abhaydv77/Voicebox/blob/main/.voicebox/README.md) — how specs work
-- [`.voicebox/specs/`](https://github.com/abhaydv77/Voicebox/blob/main/.voicebox/specs/) — the actual instruction history
+- [`.voicebox/specs/`](https://github.com/abhaydv77/Voicebox/tree/main/.voicebox/specs/) — the actual instruction history

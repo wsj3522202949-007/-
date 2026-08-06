@@ -50,6 +50,6 @@ This contains everything you need to run your app locally.
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/swapagrawal14/ai-webapp-prompting-generator/blob/main/.env.local) to your Gemini API key
+2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/swapagrawal14/ai-webapp-prompting-generator/tree/main/.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`

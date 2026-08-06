@@ -235,7 +235,7 @@ Full protocol and all 23 surfaces: [`SKILL.md`](https://github.com/aycanozarpaci
 | Platform              | File                                                                                       |
 |-----------------------|--------------------------------------------------------------------------------------------|
 | Claude Code           | [`platforms/claude-code/seo-pro-max/SKILL.md`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/claude-code/seo-pro-max/SKILL.md) |
-| Cursor                | [`platforms/cursor/seo-pro-max.mdc`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/cursor/seo-pro-max.mdc)                     |
+| Cursor                | [`platforms/cursor/seo-pro-max.mdc`](https://github.com/aycanozarpaci/seo-pro-max-skill/tree/main/platforms/cursor/seo-pro-max.mdc)                     |
 | Windsurf              | [`platforms/windsurf/.windsurfrules`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/windsurf/.windsurfrules) (short form)      |
 | Cline                 | [`platforms/cline/.clinerules`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/cline/.clinerules)                               |
 | Roo Code              | [`platforms/roo/.roo/rules/seo-pro-max.md`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/roo/.roo/rules/seo-pro-max.md)       |
@@ -245,7 +245,7 @@ Full protocol and all 23 surfaces: [`SKILL.md`](https://github.com/aycanozarpaci
 | Zed AI                | [`platforms/zed/settings-snippet.json`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/zed/settings-snippet.json)               |
 | Plain LLM / Custom GPT| [`platforms/plain-llm/system-prompt.md`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/platforms/plain-llm/system-prompt.md)             |
 
-All platform files are auto-generated from [`SKILL.md`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/SKILL.md) by [`scripts/build-platforms.mjs`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/scripts/build-platforms.mjs). Edit `SKILL.md` only.
+All platform files are auto-generated from [`SKILL.md`](https://github.com/aycanozarpaci/seo-pro-max-skill/blob/main/SKILL.md) by [`scripts/build-platforms.mjs`](https://github.com/aycanozarpaci/seo-pro-max-skill/tree/main/scripts/build-platforms.mjs). Edit `SKILL.md` only.
 
 ## How it compares
 

@@ -37,6 +37,13 @@ from datetime import datetime
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 
+# 统一篇幅政策 + 字数口径（与 chapter_selfcheck / shared_wordcount 一致，禁止各自硬编码魔数）
+WRITING_DIR = os.path.join(SCRIPT_DIR, "writing")
+if WRITING_DIR not in sys.path:
+    sys.path.insert(0, WRITING_DIR)
+from chapter_policy import load_policy
+from shared_wordcount import extract_body, count_chars
+
 # 项目目录
 PROJECTS_DIR = os.path.join(ROOT_DIR, "projects")
 
@@ -101,6 +108,7 @@ def get_next_chapter_outline():
 def generate_chapter_template(chapter_num):
     """生成章节模板"""
     project_dir = get_project_dir()
+    policy = load_policy(project_dir)
     outline = get_next_chapter_outline()
     
     if not outline:
@@ -158,7 +166,7 @@ volume: 1
 
 ## 自检清单
 
-- [ ] 字数达标（2000-4000字）
+- [ ] 字数达标（{policy['min_chars']}-{policy['max_chars']}字，含标点）
 - [ ] 章首有钩子
 - [ ] 章末有钩子
 - [ ] 爽点密度达标（每800字一个小高潮）
@@ -175,7 +183,7 @@ volume: 1
 
 
 def self_check(file_path):
-    """正文自检（按写作硬约束：字数 2300-2700、章末钩子、AI 味）"""
+    """正文自检（字数标准来自 chapter_policy，与 chapter_selfcheck / STATUS 统一）"""
     if not os.path.exists(file_path):
         print(f"错误：文件不存在 {file_path}")
         return False
@@ -194,21 +202,22 @@ def self_check(file_path):
             if re.search(rf'^{field}\s*:', content[:600], re.MULTILINE) is None:
                 issues.append(f"❌ 缺少字段：{field}")
     
-    # 正文（去 frontmatter）
-    body = content
-    fm = re.match(r'^---\n.*?\n---\n', body, re.DOTALL)
-    if fm:
-        body = body[fm.end():]
+    # 正文：统一口径（去 frontmatter / 元信息块 / 空白，含标点），与 shared_wordcount 一致
+    body = extract_body(content)
+    word_count = count_chars(body)
     
-    # 字数：汉字+字母+数字，不含标点与空白（写作硬约束 §1.2）
-    chars = re.findall(r'[\u4e00-\u9fffA-Za-z0-9]', body)
-    word_count = len(chars)
-    if word_count < 2300:
-        issues.append(f"❌ 字数不足：{word_count}字（硬约束 2300-2700）")
-    elif word_count > 2700:
-        issues.append(f"⚠️ 字数过多：{word_count}字（硬约束 2300-2700）")
+    # 字数标准统一读取 chapter_policy，不再硬编码 2300/2700
+    policy = load_policy(get_project_dir())
+    plat = policy["platform"]
+    lo, hi, hard = policy["min_chars"], policy["max_chars"], policy["hard_max_chars"]
+    if word_count < lo:
+        issues.append(f"❌ 字数不足：{word_count}字（{plat}标准 ≥{lo}）")
+    elif word_count > hard:
+        issues.append(f"❌ 字数严重超标：{word_count}字（{plat}标准 ≤{hard}）")
+    elif word_count > hi:
+        issues.append(f"⚠️ 字数偏多：{word_count}字（{plat}严格达标 ≤{hi}，宽松 ≤{hard}）")
     else:
-        print(f"✅ 字数达标：{word_count}字")
+        print(f"✅ 字数达标：{word_count}字（{plat}标准 {lo}-{hi}）")
     
     # 章末钩子：末 400 字含强钩子特征词
     tail = body[-400:]

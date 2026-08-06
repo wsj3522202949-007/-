@@ -172,7 +172,7 @@ For development tools such as `pytest`, `black`, and `ruff`, install the optiona
 pip install -e .[dev]
 ```
 
-Create `.env` from [`.env.example`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/.env.example):
+Create `.env` from [`.env.example`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/tree/main/.env.example):
 
 ```bash
 cp .env.example .env

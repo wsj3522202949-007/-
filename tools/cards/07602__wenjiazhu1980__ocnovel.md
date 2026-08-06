@@ -218,7 +218,7 @@ FALLBACK_MODEL_ID=Qwen/Qwen2.5-7B-Instruct
 FALLBACK_API_MODE=auto
 ```
 
-完整环境变量模板见 [`.env.example`](https://github.com/wenjiazhu1980/ocnovel/blob/main/.env.example)。
+完整环境变量模板见 [`.env.example`](https://github.com/wenjiazhu1980/ocnovel/tree/main/.env.example)。
 
 ### 3. 启动
 

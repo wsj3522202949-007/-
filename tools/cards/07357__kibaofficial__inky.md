@@ -106,7 +106,7 @@ Sayori "That's so sweet!"
 Narrator "You made a friend today."
 ```
 
-See [docs/](https://github.com/kibaofficial/inky/blob/main/docs/) for full language documentation.
+See [docs/](https://github.com/kibaofficial/inky/tree/main/docs/) for full language documentation.
 
 ## Features
 

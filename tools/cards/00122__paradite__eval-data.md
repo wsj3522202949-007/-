@@ -53,55 +53,55 @@ Built by [16x Prompt](https://prompt.16x.engineer/) and [16x Eval](https://eval.
 
 ### Next.js
 
-[emoji-todo](https://github.com/paradite/eval-data/blob/main//projects/emoji-todo/) - A simple Next.js TODO app with emojis.
+[emoji-todo](https://github.com/paradite/eval-data/tree/main//projects/emoji-todo/) - A simple Next.js TODO app with emojis.
 
 ### SQL
 
-[sql](https://github.com/paradite/eval-data/blob/main//projects/sql/) - SQL code snippets.
+[sql](https://github.com/paradite/eval-data/tree/main//projects/sql/) - SQL code snippets.
 
 ### Python
 
-[python-script](https://github.com/paradite/eval-data/blob/main//projects/python-script/) - Python script code snippets.
+[python-script](https://github.com/paradite/eval-data/tree/main//projects/python-script/) - Python script code snippets.
 
 ### Benchmark Visualization
 
-[visualization](https://github.com/paradite/eval-data/blob/main//projects/visualization/) - Coding a visualization of benchmark results.
+[visualization](https://github.com/paradite/eval-data/tree/main//projects/visualization/) - Coding a visualization of benchmark results.
 
 ### TypeScript Narrowing
 
-[typescript-narrowing](https://github.com/paradite/eval-data/blob/main//projects/typescript-narrowing/) - Coding TypeScript narrowing tests.
+[typescript-narrowing](https://github.com/paradite/eval-data/tree/main//projects/typescript-narrowing/) - Coding TypeScript narrowing tests.
 
 ### Clean Markdown
 
-[clean-markdown](https://github.com/paradite/eval-data/blob/main//projects/clean-markdown/) - Clean markdown into plain text.
+[clean-markdown](https://github.com/paradite/eval-data/tree/main//projects/clean-markdown/) - Clean markdown into plain text.
 
 ### Clean MDX
 
-[clean-mdx](https://github.com/paradite/eval-data/blob/main//projects/clean-mdx/) - Clean MDX into plain text.
+[clean-mdx](https://github.com/paradite/eval-data/tree/main//projects/clean-mdx/) - Clean MDX into plain text.
 
 ### Tailwind CSS Z-Index
 
-[tailwindcss-v3-z-index](https://github.com/paradite/eval-data/blob/main//projects/tailwindcss-v3-z-index/) - Fix invalid z-index classes in Tailwind CSS v3.
+[tailwindcss-v3-z-index](https://github.com/paradite/eval-data/tree/main//projects/tailwindcss-v3-z-index/) - Fix invalid z-index classes in Tailwind CSS v3.
 
 ## Writing Projects
 
 ### AI Timeline
 
-[ai-timeline](https://github.com/paradite/eval-data/blob/main//projects/ai-timeline/) - Writing an AI Timeline.
+[ai-timeline](https://github.com/paradite/eval-data/tree/main//projects/ai-timeline/) - Writing an AI Timeline.
 
 ## Image Analysis Projects
 
 ### Kanji
 
-[kanji](https://github.com/paradite/eval-data/blob/main//projects/kanji/) - Image analysis and explanation related to kanji and Chinese characters.
+[kanji](https://github.com/paradite/eval-data/tree/main//projects/kanji/) - Image analysis and explanation related to kanji and Chinese characters.
 
 ### Water bottle
 
-[water-bottle](https://github.com/paradite/eval-data/blob/main//projects/water-bottle/) - Image analysis and explanation related to water bottle and physics.
+[water-bottle](https://github.com/paradite/eval-data/tree/main//projects/water-bottle/) - Image analysis and explanation related to water bottle and physics.
 
 ## Model Evaluation Results
 
-[model-eval-results](https://github.com/paradite/eval-data/blob/main//model-eval-results/) - Raw results exported from [16x Eval](https://eval.16x.engineer/) for models evaluations.
+[model-eval-results](https://github.com/paradite/eval-data/tree/main//model-eval-results/) - Raw results exported from [16x Eval](https://eval.16x.engineer/) for models evaluations.
 
 ## 16x Eval
 

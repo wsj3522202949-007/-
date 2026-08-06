@@ -126,7 +126,7 @@ npm test
 This repository is usually used as a skill package inside an agent runtime.
 
 - Claude Code: copy `SKILL.md`, `references/`, and `policy/` into `.claude/skills/humanize-text-skill/`
-- Cursor: use [`cursor-rules/humanize-text-skill.mdc`](https://github.com/fendouai/humanize-text-skill/blob/main/cursor-rules/humanize-text-skill.mdc)
+- Cursor: use [`cursor-rules/humanize-text-skill.mdc`](https://github.com/fendouai/humanize-text-skill/tree/main/cursor-rules/humanize-text-skill.mdc)
 - Codex / OpenClaw / Hermes: point the tool at the repo root
 
 ### ClawHub publish readiness
@@ -281,10 +281,10 @@ See [references/skill-architecture.md](https://github.com/fendouai/humanize-text
 ## Repository Map
 
 - [SKILL.md](https://github.com/fendouai/humanize-text-skill/blob/main/SKILL.md): top-level skill contract
-- [detector/](https://github.com/fendouai/humanize-text-skill/blob/main/detector/): executable detector and voice engine
-- [references/](https://github.com/fendouai/humanize-text-skill/blob/main/references/): human-readable rules, scene packs, examples, checklists
-- [policy/](https://github.com/fendouai/humanize-text-skill/blob/main/policy/): auditable scene/tier/voice policy in TOML
-- [evals/](https://github.com/fendouai/humanize-text-skill/blob/main/evals/): benchmark cases, fixtures, voice samples
+- [detector/](https://github.com/fendouai/humanize-text-skill/tree/main/detector/): executable detector and voice engine
+- [references/](https://github.com/fendouai/humanize-text-skill/tree/main/references/): human-readable rules, scene packs, examples, checklists
+- [policy/](https://github.com/fendouai/humanize-text-skill/tree/main/policy/): auditable scene/tier/voice policy in TOML
+- [evals/](https://github.com/fendouai/humanize-text-skill/tree/main/evals/): benchmark cases, fixtures, voice samples
 
 Good entry points:
 

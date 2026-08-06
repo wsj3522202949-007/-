@@ -6,7 +6,7 @@ status: active
 tags: [Claude Skill, MIT, 英文文档, 提示词]
 title: content-research-writer
 summary: 研究+写作一体化 Skill，自动调研、引用、优化钩子、分段反馈
-source: https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer
+source: https://github.com/ComposioHQ/awesome-claude-skills/tree/main/content-research-writer
 created: 2026-07-31
 updated: 2026-07-31
 no: 9584
@@ -27,7 +27,7 @@ related:
 # ComposioHQ/awesome-claude-skills — content-research-writer
 
 - **分类**：一、网文 / Claude Skill 生态 写作辅助
-- **链接**：https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer
+- **链接**：https://github.com/ComposioHQ/awesome-claude-skills/tree/main/content-research-writer
 - **Stars**：~7,000（整个 awesome-claude-skills 仓库）
 - **语言**：Markdown（Skill 文件）
 - **License**：Apache-2.0

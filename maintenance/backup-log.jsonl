@@ -1,0 +1,1 @@
+{"date": "2026-08-06 21:10:00", "action": "quarterly recovery drill", "status": "success", "clone_seconds": 3000, "gate_seconds": 2, "total_seconds": 3739, "basic_errors": 0, "link_errors": 0, "scanned_files": 412, "note": "真实执行：4944文件/55.5MB克隆，门禁overall_pass=true；备份缺口：4未跟踪+201已修改未推送"}

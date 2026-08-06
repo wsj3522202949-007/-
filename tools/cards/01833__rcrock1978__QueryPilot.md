@@ -436,12 +436,12 @@ A: In v1 the only supported vector store is **pgvector** on the same Postgres cl
 
 | If you are a… | Read this next |
 |---|---|
-| 👩‍💼 Business user | [`docs/user-guide/`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/user-guide/) — "How to ask your first question" |
-| 🧑‍⚖️ Data steward | [`docs/user-guide/`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/user-guide/) — "Authoring policies" |
-| ⚙️ Platform engineer | [`docs/operator-runbook/`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/operator-runbook/) — "Deploying QueryPilot" |
+| 👩‍💼 Business user | [`docs/user-guide/`](https://github.com/rcrock1978/QueryPilot/tree/main/docs/user-guide/) — "How to ask your first question" |
+| 🧑‍⚖️ Data steward | [`docs/user-guide/`](https://github.com/rcrock1978/QueryPilot/tree/main/docs/user-guide/) — "Authoring policies" |
+| ⚙️ Platform engineer | [`docs/operator-runbook/`](https://github.com/rcrock1978/QueryPilot/tree/main/docs/operator-runbook/) — "Deploying QueryPilot" |
 | 🔍 Evaluator / procurement | [`specs/001-nl2sql-copilot/spec.md`](https://github.com/rcrock1978/QueryPilot/blob/main/specs/001-nl2sql-copilot/spec.md) + [`data-model.md`](https://github.com/rcrock1978/QueryPilot/blob/main/specs/001-nl2sql-copilot/data-model.md) |
 | 🔒 Security reviewer | [`docs/security/threat-model.md`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/security/threat-model.md) |
-| 👩‍💻 Developer | [`docs/dev-onboarding/`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/dev-onboarding/) + [`quickstart.md`](https://github.com/rcrock1978/QueryPilot/blob/main/specs/001-nl2sql-copilot/quickstart.md) |
+| 👩‍💻 Developer | [`docs/dev-onboarding/`](https://github.com/rcrock1978/QueryPilot/tree/main/docs/dev-onboarding/) + [`quickstart.md`](https://github.com/rcrock1978/QueryPilot/blob/main/specs/001-nl2sql-copilot/quickstart.md) |
 | 🌐 LinkedIn / pitch | [`docs/linkedin-pitch.md`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/linkedin-pitch.md) |
 | 📊 Client presentation | [`docs/presentation.md`](https://github.com/rcrock1978/QueryPilot/blob/main/docs/presentation.md) |
 

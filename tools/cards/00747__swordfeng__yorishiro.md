@@ -240,7 +240,7 @@ python -m yorishiro status --project projects/CPK
 
 | Example | Description |
 |---------|-------------|
-| [BambooCutter](https://github.com/swordfeng/yorishiro/blob/main/examples/BambooCutter/) | 竹取物语 (Tale of the Bamboo Cutter) example project |
+| [BambooCutter](https://github.com/swordfeng/yorishiro/tree/main/examples/BambooCutter/) | 竹取物语 (Tale of the Bamboo Cutter) example project |
 
 ---
 

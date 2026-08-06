@@ -107,7 +107,7 @@ Use
 docker pull ghcr.io/qurator-spk/eynollah:latest
 ```
 
-When using Eynollah with Docker, see [`docker.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/docker.md).
+When using Eynollah with Docker, see [`docker.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/docker.md).
 
 ## Models
 
@@ -118,11 +118,11 @@ For fast runtime inference, download the ONNX models distributed as `models_infe
 For finetuning training, download the original (Tensorflow / Torch) models distributed as `models_training...zip`
 (and install the `[training]` extra).
 
-For model documentation and model cards, see [`models.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/models.md).
+For model documentation and model cards, see [`models.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/models.md).
 
 ## Training
 
-To train your own model with Eynollah, see [`train.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/train.md) and use the tools in the [`train`](https://github.com/qurator-spk/eynollah/tree/main/train) folder.
+To train your own model with Eynollah, see [`train.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/train.md) and use the tools in the [`train`](https://github.com/qurator-spk/eynollah/tree/main/train) folder.
 
 ## Usage
 
@@ -133,7 +133,7 @@ Eynollah supports five use cases:
 4. [text recognition (OCR)](#ocr), and 
 5. [reading order detection](#reading-order-detection).
 
-Some example outputs can be found in [`examples.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/examples.md).
+Some example outputs can be found in [`examples.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/examples.md).
 
 The **generic options** shared by all subcommands are:
 ```sh
@@ -192,7 +192,7 @@ The best output quality is achieved when RGB images are used as input
 rather than greyscale or binarized images.
 
 Additional documentation can be found in
-[`usage.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/usage.md).
+[`usage.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/usage.md).
 
 ### Binarization
 
@@ -269,7 +269,7 @@ eynollah [GENERIC_OPTIONS] machine-based-reading-order \
 
 ## Use as OCR-D processor
 
-See [`ocrd.md`](https://github.com/qurator-spk/eynollah/tree/main/docs/ocrd.md).
+See [`ocrd.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/ocrd.md).
 
 ## How to cite
 

@@ -46,7 +46,7 @@ related:
 
 # Code a Story
 
-![Code a Story App Interface](https://github.com/jovanyoshioka/Code-a-Story/blob/main/assets/thumbnail.PNG)
+![Code a Story App Interface](https://github.com/jovanyoshioka/Code-a-Story/blob/master/assets/thumbnail.PNG)
 
 ## University of Tennessee Knoxville / Research SP2021 - SP2022, SP2023
 ### Dr. Amir Sadovnik, Jovan Yoshioka

@@ -93,7 +93,7 @@ The framework isn't photography-specific. The same 8-dimension structure applies
 
 To build your own:
 
-1. Pick an intake from [`templates/intake/`](https://github.com/TrentM6/runtime-classifier/blob/main/templates/intake/) — `photography`, `art`, `graphic-design`, `writing`, or `music`. Answer the 7 questions.
+1. Pick an intake from [`templates/intake/`](https://github.com/TrentM6/runtime-classifier/tree/main/templates/intake/) — `photography`, `art`, `graphic-design`, `writing`, or `music`. Answer the 7 questions.
 2. Analyze ~100 portfolio items ([docs/05-PORTFOLIO-ANALYSIS.md](https://github.com/TrentM6/runtime-classifier/blob/main/docs/05-PORTFOLIO-ANALYSIS.md)).
 3. Author your `[your-domain].md` using [`templates/domain-md-template.md`](https://github.com/TrentM6/runtime-classifier/blob/main/templates/domain-md-template.md). Format reference: [docs/06-CLASSIFIER-FORMAT.md](https://github.com/TrentM6/runtime-classifier/blob/main/docs/06-CLASSIFIER-FORMAT.md).
 4. For non-image domains, write a thin worker that reads your `.md` and calls a domain-appropriate generator (the photography worker is a ~540-line reference: [scripts/photography_agent.py](https://github.com/TrentM6/runtime-classifier/blob/main/scripts/photography_agent.py)).

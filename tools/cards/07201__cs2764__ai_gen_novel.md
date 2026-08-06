@@ -469,7 +469,7 @@ TEMPERATURE_SETTINGS = {
 - 💾 [数据管理](https://github.com/cs2764/ai_gen_novel/blob/main/LOCAL_DATA_MANAGEMENT.md) - 本地数据管理
 - 🏗️ [架构文档](https://github.com/cs2764/ai_gen_novel/blob/main/ARCHITECTURE.md) - 系统架构设计
 - 📦 [代码重构指南](https://github.com/cs2764/ai_gen_novel/blob/main/docs/CODE_RESTRUCTURING.md) - v5.2.0模块化架构重构说明
-- 🚀 [优化策略探索](https://github.com/cs2764/ai_gen_novel/blob/main/docs/optimization_strategies/) - 下一步功能优化计划和可行性分析
+- 🚀 [优化策略探索](https://github.com/cs2764/ai_gen_novel/tree/main/docs/optimization_strategies/) - 下一步功能优化计划和可行性分析
 
 ## ❓ 常见问题
 

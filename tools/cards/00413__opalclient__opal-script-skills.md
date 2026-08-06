@@ -50,7 +50,7 @@ canvas, the `palette` command-palette views, dynamic islands, and the
 default-deny sandbox model) so it stops inventing methods and writes scripts
 that run.
 
-The single **source of truth** is [`skills/opal-scripting/`](https://github.com/opalclient/opal-script-skills/blob/main/skills/opal-scripting/):
+The single **source of truth** is [`skills/opal-scripting/`](https://github.com/opalclient/opal-script-skills/tree/main/skills/opal-scripting/):
 
 - [`SKILL.md`](https://github.com/opalclient/opal-script-skills/blob/main/skills/opal-scripting/SKILL.md): the skill (structure, settings,
   events, renderer + color rule, palette views, islands, the sandbox, common
@@ -128,9 +128,9 @@ the directory (`.claude/`, `AGENTS.md`, `GEMINI.md`, `.github/`, `.cursor/`,
 ## Manual adapters
 
 Don't want to run the installer? Copy a ready-made surface from
-[`adapters/`](https://github.com/opalclient/opal-script-skills/blob/main/adapters/):
+[`adapters/`](https://github.com/opalclient/opal-script-skills/tree/main/adapters/):
 
-- [`adapters/claude-code/`](https://github.com/opalclient/opal-script-skills/blob/main/adapters/claude-code/): Claude Code **plugin** form
+- [`adapters/claude-code/`](https://github.com/opalclient/opal-script-skills/tree/main/adapters/claude-code/): Claude Code **plugin** form
   (`.claude-plugin/plugin.json` + `skills/opal-scripting/` + a
   `/new-opal-script` command that scaffolds a new script file).
 - [`adapters/codex/AGENTS.md`](https://github.com/opalclient/opal-script-skills/blob/main/adapters/codex/AGENTS.md)
@@ -157,7 +157,7 @@ If you are an AI assistant working in this repo:
 
 - [`CLAUDE.md`](https://github.com/opalclient/opal-script-skills/blob/main/CLAUDE.md): the mental model for this repo and how to change it.
 - [`llms.txt`](https://github.com/opalclient/opal-script-skills/blob/main/llms.txt): a compact, link-first map of everything here.
-- [`skills/opal-scripting/`](https://github.com/opalclient/opal-script-skills/blob/main/skills/opal-scripting/): the source of truth for
+- [`skills/opal-scripting/`](https://github.com/opalclient/opal-script-skills/tree/main/skills/opal-scripting/): the source of truth for
   the Opal scripting API. **Use only the API documented there**; do not invent
   methods.
 

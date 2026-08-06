@@ -48,25 +48,25 @@ These tools were born from real documentation work — managing DITA XML content
 
 ## Tools
 
-### [Slack Intake Processor](https://github.com/henrytamm/tech-writing-tools/blob/main/slack-intake-processor/)
+### [Slack Intake Processor](https://github.com/henrytamm/tech-writing-tools/tree/main/slack-intake-processor/)
 
 An AI agent that monitors a Slack channel for documentation requests on a daily schedule. It validates completeness, asks follow-up questions when info is missing, creates work items, routes to the right writer, and sends a daily summary.
 
 **Impact:** Eliminated 30-60 minutes of daily manual triage. Requests are acknowledged in minutes instead of hours.
 
-### [Doc Request Skill](https://github.com/henrytamm/tech-writing-tools/blob/main/doc-request-skill/)
+### [Doc Request Skill](https://github.com/henrytamm/tech-writing-tools/tree/main/doc-request-skill/)
 
 An AI-powered slash command that lets anyone submit documentation requests through natural language. It classifies complexity (typo fix vs. new feature), only asks for what's actually needed, and creates the work item + Slack post in one step.
 
 **Impact:** Reduced request submission from a 15-field form to a single sentence. Incomplete requests are caught immediately instead of discovered days later.
 
-### [P4 Changelist Automation](https://github.com/henrytamm/tech-writing-tools/blob/main/p4-changelist-automation/)
+### [P4 Changelist Automation](https://github.com/henrytamm/tech-writing-tools/tree/main/p4-changelist-automation/)
 
 A shell script that automates Perforce changelist creation for documentation workflows. Opens files, creates a properly-formatted changelist, and moves everything into it — one command instead of 5-10 manual steps.
 
 **Impact:** Changelist creation went from 5-10 minutes of error-prone typing to a single command.
 
-### [Release Note Drafter](https://github.com/henrytamm/tech-writing-tools/blob/main/release-note-drafter/)
+### [Release Note Drafter](https://github.com/henrytamm/tech-writing-tools/tree/main/release-note-drafter/)
 
 Two AI-powered skills that automate release note creation end-to-end:
 - **`/rn-drafter`** — Full scaffolding: creates DITA XML topic, updates ditamap, reltable, and parent topic, creates a version control changelist. One command produces 4 file edits.
@@ -74,7 +74,7 @@ Two AI-powered skills that automate release note creation end-to-end:
 
 **Impact:** Release note creation went from 30-45 minutes of manual file editing to ~2 minutes of answering prompts.
 
-### [MCP Auth Utilities](https://github.com/henrytamm/tech-writing-tools/blob/main/mcp-auth-utilities/)
+### [MCP Auth Utilities](https://github.com/henrytamm/tech-writing-tools/tree/main/mcp-auth-utilities/)
 
 Slash commands for managing MCP (Model Context Protocol) server authentication and profiles:
 - Browser-based OAuth flow
@@ -83,7 +83,7 @@ Slash commands for managing MCP (Model Context Protocol) server authentication a
 
 **Impact:** Auth management becomes a one-liner instead of hunting for binaries and environment variables.
 
-### [Resume PDF Generator](https://github.com/henrytamm/tech-writing-tools/blob/main/resume-pdf-generator/)
+### [Resume PDF Generator](https://github.com/henrytamm/tech-writing-tools/tree/main/resume-pdf-generator/)
 
 A Python script that generates a clean, single-page resume PDF from structured data. No LaTeX, no Word — version-controlled and reproducible.
 

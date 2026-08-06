@@ -94,7 +94,7 @@ ___
 2. **Grok:** Go to [console.x.ai](https://console.x.ai/) to generate a Grok API key.
 
 #### Install the App
-1. Go to the [Actions tab](https://github.com/nim444/Typer-AI-Mac/blob/main/../../actions) on GitHub.
+1. Go to the [Actions tab](https://github.com/nim444/Typer-AI-Mac/tree/main/../../actions) on GitHub.
 2. Open the latest successful **Build macOS App** run.
 3. Download the `Typer-Mac` artifact and unzip it.
 4. Move `Typer.app` to your `/Applications` folder.

@@ -143,7 +143,7 @@ Both audiences use the same underlying content. The static Word documents and th
 If you don't use Claude Code, Cursor, or any other AI coding agent, this is the fastest path:
 
 1. Click the green **"Code"** button at the top of this repo and choose **"Download ZIP"**
-2. Open the [`downloads/`](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/downloads) folder
+2. Open the [`downloads/`](https://github.com/abexiong/govafy-unsolicited-proposal-kit/tree/main/downloads) folder
 3. Open the master guide (`Govafy Guide to Writing Unsolicited Proposals.docx`) in Microsoft Word, Google Docs, or Apple Pages — read it cover to cover
 4. Open the sample closest to your situation (e.g., `Specific Sample 1 - SentinelMind (DCSA).docx`) — use it as a template, replace every fictional detail with your own real company name, personnel, numbers, and patent information
 5. Have a federal contracts or procurement attorney review the final document before submitting

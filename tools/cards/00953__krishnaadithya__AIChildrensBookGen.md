@@ -89,7 +89,7 @@ Given the same initial image but different opening texts, SEED-Story can generat
 
 ### Dependencies
 - Python >= 3.8 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
-- [PyTorch >=2.0.1](https://github.com/krishnaadithya/AIChildrensBookGen/blob/main/Recommend%20to%20use%20torch==2.1.2+cu121)(https://pytorch.org/) / (AMD GPU: Recomended torch=2.4.1:rocm6.1)  
+- [PyTorch >=2.0.1](https://github.com/krishnaadithya/AIChildrensBookGen/tree/main/Recommend%20to%20use%20torch==2.1.2+cu121)(https://pytorch.org/) / (AMD GPU: Recomended torch=2.4.1:rocm6.1)  
 - GPU Vram > 40 GB
 
 ### Installation

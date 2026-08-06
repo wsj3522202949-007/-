@@ -155,7 +155,7 @@ llmstrip --report --fail --min-severity high release-notes.md
 
 **Structural (Rules 25-34):** compound clause addiction, mini-essay paragraphs, sentence-initial transition saturation, paired construction overuse, noun phrase bloat, self-congratulation framing, abstraction level monotony, missing contractions, forward projection cliche, resume verbs.
 
-Full list: [`rules/`](https://github.com/hugolopes45/llmstrip/blob/main/rules/)
+Full list: [`rules/`](https://github.com/hugolopes45/llmstrip/tree/main/rules/)
 
 ## Research
 

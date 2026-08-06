@@ -867,7 +867,7 @@ npm run build
 - [backend/docker-entrypoint.sh](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/backend/docker-entrypoint.sh)：自动处理 Prisma 初始化
 - [frontend/Dockerfile](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/Dockerfile)：Vite 构建 + Nginx 静态托管
 - [frontend/nginx.conf](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/nginx.conf)：SPA 回退、/api 反代、Socket.io 反代
-- [scripts/docker-up.ps1](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/scripts/docker-up.ps1) / [scripts/docker-up.cmd](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/scripts/docker-up.cmd)：Windows 一键启动脚本
+- [scripts/docker-up.ps1](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/scripts/docker-up.ps1) / [scripts/docker-up.cmd](https://github.com/anonkuki/AI-Copilot-Writing-Platform/tree/main/scripts/docker-up.cmd)：Windows 一键启动脚本
 
 #### 后端 Dockerfile
 

@@ -307,7 +307,7 @@ sloptotal-pr-creator      # Git workflow and PR creation
 sloptotal-contribute      # Master orchestrator for end-to-end workflows
 ```
 
-See [docs/ai-agents/](https://github.com/pablocaeg/sloptotal/blob/main/docs/ai-agents/) for full documentation, workflow pipelines, and usage examples.
+See [docs/ai-agents/](https://github.com/pablocaeg/sloptotal/tree/main/docs/ai-agents/) for full documentation, workflow pipelines, and usage examples.
 
 ## Contributing
 

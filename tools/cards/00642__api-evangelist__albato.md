@@ -166,7 +166,7 @@ Machine-readable API specifications organized by format.
 
 ### JSON-LD
 
-- [albato-albato-context.jsonld](https://github.com/api-evangelist/albato/blob/main/json-ld/albato-albato-context.jsonld)
+- [albato-albato-context.jsonld](https://github.com/api-evangelist/albato/tree/main/json-ld/albato-albato-context.jsonld)
 
 ### Examples
 
