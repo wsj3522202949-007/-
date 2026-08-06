@@ -63,7 +63,11 @@ see_also:
 `historical_files`。判定以 frontmatter 为准，**优先于目录排除与文本标记**
 （如 `[历史路径]`）——历史文档可放在任何目录而不会被门禁误报。
 
-- 适用对象：一次性报告（`maintenance/reports/`）、归档记录（`archive/`）等不再维护的文件。
+- 适用对象：**已冻结、不再维护的归档记录**（如 `archive/`）；`historical: true`
+  必须与文件实际状态一致——一旦标记即退出全部内容检查。
+- **不适用：`maintenance/reports/`**。该目录是防回归测试钉死的严格区活文档
+  （周报/月报持续生成），必须保持门禁完整守护，禁止标记 `historical`，
+  以免检查范围被悄悄缩小（与「假绿灯」同款隐蔽回归）。
 - 不适用：现行参考文档（如 `references/` 摘要、排错手册）——它们仍须遵守全部规范。
 - 注意：声明 `historical: true` 的前提是文件**有 frontmatter**；无 frontmatter 的文件
   无法声明，仍按原规则处理（严格区缺 frontmatter = ERROR）。

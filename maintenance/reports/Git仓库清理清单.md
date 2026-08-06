@@ -3,7 +3,6 @@ id: auto-Git仓库清理清单
 type: report
 area: 管理
 status: archived
-historical: true
 tags: [auto-generated, 历史记录]
 title: Git仓库清理清单
 summary: 自动生成报告，记录 Git 仓库清理计划和执行清单。

@@ -3,7 +3,6 @@ id: auto-quarterly-cleanup-2026-Q3
 type: report
 area: 管理
 status: archived
-historical: true
 tags: [auto-generated]
 title: quarterly-cleanup-2026-Q3
 summary: 自动生成报告，无需人工维护。
