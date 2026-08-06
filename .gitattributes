@@ -1,0 +1,43 @@
+# 统一换行符规范
+# 本文件由 git 自动生效，新建/修改后需执行 git add --renormalize .
+# 参考：https://git-scm.com/docs/gitattributes
+
+* text=auto
+
+# 知识库核心内容 — LF（跨平台一致）
+*.md     text eol=lf
+*.py     text eol=lf
+*.json   text eol=lf
+*.yaml   text eol=lf
+*.yml    text eol=lf
+*.toml   text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+*.js     text eol=lf
+*.ts     text eol=lf
+*.sh     text eol=lf
+
+# Windows 脚本 — CRLF（原生换行）
+*.ps1    text eol=crlf
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+
+# 二进制文件 — 不转换
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.ico    binary
+*.pdf    binary
+*.docx   binary
+*.pptx   binary
+*.xlsx   binary
+*.zip    binary
+*.7z     binary
+*.tar    binary
+*.gz     binary
+*.ttf    binary
+*.otf    binary
+*.woff   binary
+*.woff2  binary
