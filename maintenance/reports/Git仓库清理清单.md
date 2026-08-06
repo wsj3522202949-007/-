@@ -1,3 +1,16 @@
+---
+id: auto-Git仓库清理清单
+type: report
+area: 管理
+status: archived
+tags: [auto-generated, 历史记录]
+title: Git仓库清理清单
+summary: 自动生成报告，记录 Git 仓库清理计划和执行清单。
+source: 自动生成
+created: 2026-08-05
+updated: 2026-08-05
+---
+
 # Git仓库清理清单
 
 ## 清理原则

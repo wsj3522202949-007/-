@@ -111,7 +111,6 @@ EXCLUDE_PREFIXES = (
     "archive/",
     "references/原始来源包/",
     "tools/cards/",
-    "maintenance/reports/",
     "maintenance/reports/history/",
     "drafts/",
 )
