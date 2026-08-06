@@ -173,9 +173,9 @@ just test
 
 ## 📚 Documentation
 
-- **[OpenCode Guide](./docs/OPENCODE_GUIDE.md)** - Complete AI agent configuration guide
-- **[Task-Driven Workflows](./docs/workflows/task-driven-workflow-order.md)** - Automation workflow guide
-- **[Architecture](./docs/architecture/)** - System architecture documentation
+- **[OpenCode Guide](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/OPENCODE_GUIDE.md)** - Complete AI agent configuration guide
+- **[Task-Driven Workflows](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/workflows/task-driven-workflow-order.md)** - Automation workflow guide
+- **[Architecture](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/architecture/)** - System architecture documentation
 
 ## 🛠️ Development Workflow
 
@@ -491,7 +491,7 @@ uv run python scripts/install-cody-integration.py
 uv run python scripts/validate-cody-integration.py
 ```
 
-📖 **See [docs/CODY_INTEGRATION.md](docs/CODY_INTEGRATION.md) for complete documentation**
+📖 **See [docs/CODY_INTEGRATION.md](https://github.com/pwarnock/liaison-toolkit/blob/main/docs/CODY_INTEGRATION.md) for complete documentation**
 
 ## Architecture
 

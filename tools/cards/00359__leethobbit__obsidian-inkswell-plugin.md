@@ -40,7 +40,7 @@ related:
 
 **A local-first writer's suite for longform fiction in [Obsidian](https://obsidian.md).** Plan, draft, track, revise, and prepare to publish with Inkswell. My goal is to build the best end-to-end plugin toolkit for writers, especially those working on large series longform projects.
 
-![Inkswell — Plan · Write · Track · Revise · Publish, all inside Obsidian](assets/hero.gif)
+![Inkswell — Plan · Write · Track · Revise · Publish, all inside Obsidian](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/hero.gif)
 
 ## Why Inkswell
 
@@ -73,19 +73,19 @@ related:
 
 Projects and a nestable scene tree, an ideas inbox with quick capture, and series grouping for multi-book worlds, all behind a global project switcher. Select a project to open a **hero card** — attach cover art and see the logline, theme, and a progress bar tracking words toward the target. A story can hold **multiple drafts** (a first draft, an editor pass…), switchable from the header, each a full independent copy of the manuscript and its planning.
 
-![Home: project list, nestable scene tree, and project switcher](assets/home.png)
+![Home: project list, nestable scene tree, and project switcher](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/home.png)
 
 ### Plan — structure before you draft
 
 A three-step flow: *Overview* (novel-level fields and long-form prose), *Beats* (7 outline templates incl. Save the Cat!, with scene scaffolding), and *Structure* — the same scenes seen three ways behind a **Tree | Board | Grid** switcher: the authoritative Act › Chapter › Scene outline tree, a Kanban board (by status / act / chapter / POV), and a plotline × chapter plot grid.
 
-![Plan: Kanban board with colored scene cards grouped by status](assets/plan.png)
+![Plan: Kanban board with colored scene cards grouped by status](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/plan.png)
 
 ### Write — draft fast, fix later
 
 A distraction-light, Live-Preview manuscript editor with writing prompts and timed **sprints**. Five fast-drafting **inline markers** — for to-dos, research questions, dialogue gaps, missing scenes, and notes — highlight as you type (e.g. `[RESEARCH: what did 1920s lamplighters earn?]`), so you can mark a gap and keep moving forward. Find them all later in Revise → To-dos.
 
-![Write: Live-Preview editor with highlighted draft markers and a running sprint timer](assets/write.png)
+![Write: Live-Preview editor with highlighted draft markers and a running sprint timer](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/write.png)
 
 ### Revise — from draft to book
 
@@ -93,25 +93,25 @@ A distraction-light, Live-Preview manuscript editor with writing prompts and tim
 - **To-dos** — everything left to fix in one scene-grouped worklist: every draft marker left in the prose (to-dos, research questions, …), plus your **invisible-revision decisions** — capture *"from now on, assume X"* rulings (e.g. "the inn is now called the Gilded Wren") as typed, prioritized entries and **keep drafting forward** instead of breaking flow to backfill earlier chapters.
 - **Analysis** — readability, overused words, echoes, and composition mix.
 
-![Revise: the Audit toolkit — character-arc grid and revision checklists](assets/revise.png)
+![Revise: the Audit toolkit — character-arc grid and revision checklists](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/revise.png)
 
 ### Publish — manuscript to market
 
 A configurable **compile/export** pipeline (Markdown & HTML built in; `.docx` / `.pdf` / `.epub` via pandoc when installed) with a step editor, chapter grouping, and a pre-export check. Plus a self-publishing **Checklist** (master checklist + book-metadata worksheet) and a **Launch** planner — pre-order timeline, budget, cover, marketing, and ARC trackers.
 
-![Publish: compile step editor and the self-publishing launch planner](assets/publish.png)
+![Publish: compile step editor and the self-publishing launch planner](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/publish.png)
 
 ### Codex — your story bible
 
 Characters, locations, worlds, factions, items, events, and concepts, each with its own profile. Every entry automatically lists the scenes that mention it — by name or alias, for any category — so your canon stays consistent as the manuscript grows. Can be scoped for single writing projects, or shared across a series.
 
-![Codex: a character profile in the story bible with linked scenes](assets/codex.png)
+![Codex: a character profile in the story bible with linked scenes](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/codex.png)
 
 ### Track — view stats, keep pace, achieve goals
 
 Daily / weekly / monthly word goals, habit streaks, a GitHub-style heatmap, lifetime records, a writing-history chart, sprint stats, a **deadline pace calculator** (required daily words, ahead / on-track / behind), draft-milestone zones, and an optional daily mood.
 
-![Track: heatmap, streak, progress rings, and writing-history chart](assets/track.png)
+![Track: heatmap, streak, progress rings, and writing-history chart](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/assets/track.png)
 
 ## Privacy & dependencies
 
@@ -131,7 +131,7 @@ Open Inkswell from the pen-tip ribbon icon or the *"Open Inkswell"* command.
 
 ## Try it: the sample vault
 
-[`examples/sample-vault/`](examples/) is a complete, openable vault containing a mid-draft novel — *The Lamplighter's Archive* — wired up to exercise every Inkswell surface: beats, scenes, Codex, a populated Track dashboard, the revision audit, a compile recipe, and the self-publishing planner. Run `npm run build:sample`, then *Open folder as vault* on `examples/sample-vault`. See [examples/README.md](examples/README.md) for details.
+[`examples/sample-vault/`](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/examples/) is a complete, openable vault containing a mid-draft novel — *The Lamplighter's Archive* — wired up to exercise every Inkswell surface: beats, scenes, Codex, a populated Track dashboard, the revision audit, a compile recipe, and the self-publishing planner. Run `npm run build:sample`, then *Open folder as vault* on `examples/sample-vault`. See [examples/README.md](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/examples/README.md) for details.
 
 ## Development
 
@@ -142,7 +142,7 @@ npm run build    # typecheck + production bundle
 npm test         # unit tests (vitest)
 ```
 
-Copy `main.js`, `manifest.json`, and `styles.css` into `<vault>/.obsidian/plugins/inkswell/` to test in a real vault. Architecture, conventions, and the compile/version workflows are documented in [AGENTS.md](AGENTS.md).
+Copy `main.js`, `manifest.json`, and `styles.css` into `<vault>/.obsidian/plugins/inkswell/` to test in a real vault. Architecture, conventions, and the compile/version workflows are documented in [AGENTS.md](https://github.com/leethobbit/obsidian-inkswell-plugin/blob/main/AGENTS.md).
 
 ## AI disclosure
 

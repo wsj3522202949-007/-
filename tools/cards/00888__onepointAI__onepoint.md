@@ -220,4 +220,4 @@ Currently, there is a character limit of 4000 for web page crawling (excluding l
 
 ## License
 
-[MIT License](./LICENSE)
+[MIT License](https://github.com/onepointAI/onepoint/blob/main/LICENSE)

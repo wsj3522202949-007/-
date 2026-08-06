@@ -58,9 +58,9 @@ Anthropic's official skills + docs, Superpowers, Spec Kit, the Karpathy CLAUDE.m
 
 - **🔎 [Searchable web app](https://jstahl666.github.io/prompting-glossary/)** — search all 122
   terms by keyword *or* by what you're trying to do, from any browser. No install, no login.
-- **[cheatsheet.md](./cheatsheet.md)** — one-liner per term, grouped by purpose. Start here
+- **[cheatsheet.md](https://github.com/jstahl666/prompting-glossary/blob/main/cheatsheet.md)** — one-liner per term, grouped by purpose. Start here
   when you just need to jog your memory or scan for the right word.
-- **[glossary.md](./glossary.md)** — the full reference. Each of the 122 terms has a
+- **[glossary.md](https://github.com/jstahl666/prompting-glossary/blob/main/glossary.md)** — the full reference. Each of the 122 terms has a
   definition, when-to-use, pitfalls, a concrete example you could type, and a citation.
 
 ## How to use it

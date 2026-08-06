@@ -39,7 +39,7 @@ related:
 
 <div align="center"><a name="readme-top"></a>
 
-[![Project Banner](./public/interactive-story-generator-logo.svg)](#)
+[![Project Banner](https://github.com/ChanMeng666/interactive-story-generator/blob/main/public/interactive-story-generator-logo.svg)](#)
 
 # 🎭 Interactive Story Generator<br/><h3>AI-Powered Collaborative Storytelling Platform</h3>
 
@@ -585,7 +585,7 @@ We welcome contributions! Here's how you can help improve the Interactive Story 
 
 ## 📄 License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/ChanMeng666/interactive-story-generator/blob/main/LICENSE) file for details.
 
 **License Benefits:**
 - ✅ Commercial use allowed

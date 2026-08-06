@@ -87,8 +87,8 @@ Visit `http://localhost:3000/voicebox`.
 
 This repo is built spec-by-spec, CEO-instructs-developer style. See:
 
-- [`VISION.md`](./VISION.md) — what we're building and why
-- [`CURRENTSTATE.md`](./CURRENTSTATE.md) — what's actually built right now
-- [`TODO.md`](./TODO.md) — what's next
-- [`.voicebox/README.md`](./.voicebox/README.md) — how specs work
-- [`.voicebox/specs/`](./.voicebox/specs/) — the actual instruction history
+- [`VISION.md`](https://github.com/abhaydv77/Voicebox/blob/main/VISION.md) — what we're building and why
+- [`CURRENTSTATE.md`](https://github.com/abhaydv77/Voicebox/blob/main/CURRENTSTATE.md) — what's actually built right now
+- [`TODO.md`](https://github.com/abhaydv77/Voicebox/blob/main/TODO.md) — what's next
+- [`.voicebox/README.md`](https://github.com/abhaydv77/Voicebox/blob/main/.voicebox/README.md) — how specs work
+- [`.voicebox/specs/`](https://github.com/abhaydv77/Voicebox/blob/main/.voicebox/specs/) — the actual instruction history

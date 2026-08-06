@@ -251,7 +251,7 @@ Every text gets a score from 0 to 100 before and after rewriting. The algorithm 
 | 56-75 | **Likely AI** | Clear AI signatures throughout the text |
 | 76-100 | **AI slop** | Unmistakably machine-generated content |
 
-Paragraph-level scoring shows which sections are AI-written vs human-written — useful for detecting mixed-authorship documents. See [PATTERNS.md](PATTERNS.md) for pattern details and SKILL.md for the full scoring algorithm with a worked example.
+Paragraph-level scoring shows which sections are AI-written vs human-written — useful for detecting mixed-authorship documents. See [PATTERNS.md](https://github.com/sirambrosio/humanink/blob/main/PATTERNS.md) for pattern details and SKILL.md for the full scoring algorithm with a worked example.
 
 <br/>
 
@@ -447,7 +447,7 @@ The most comprehensive open-source catalog of AI writing tells. Each pattern inc
 
 <br/>
 
-> Full pattern documentation with detection triggers, before/after examples, cross-language equivalents, and scoring weights: **[PATTERNS.md](PATTERNS.md)**
+> Full pattern documentation with detection triggers, before/after examples, cross-language equivalents, and scoring weights: **[PATTERNS.md](https://github.com/sirambrosio/humanink/blob/main/PATTERNS.md)**
 
 <br/>
 
@@ -479,7 +479,7 @@ Feed HumanInk samples of your own writing. It analyzes your sentence length, voc
 ╚══════════════════════════════════════╝
 ```
 
-> Full voice analysis framework: **[STYLEGUIDE.md](STYLEGUIDE.md)**
+> Full voice analysis framework: **[STYLEGUIDE.md](https://github.com/sirambrosio/humanink/blob/main/STYLEGUIDE.md)**
 
 <br/>
 
@@ -560,7 +560,7 @@ Works as a Claude Code skill or Claude.ai Project skill.
 <summary><b>Does HumanInk work with ChatGPT or other LLMs?</b></summary>
 <br/>
 
-HumanInk is designed as a skill for **Claude Code** and **Claude.ai**. It doesn't work with ChatGPT directly. However, the pattern catalog in [PATTERNS.md](PATTERNS.md) is model-agnostic — you can use it as a reference to manually identify AI patterns in any text.
+HumanInk is designed as a skill for **Claude Code** and **Claude.ai**. It doesn't work with ChatGPT directly. However, the pattern catalog in [PATTERNS.md](https://github.com/sirambrosio/humanink/blob/main/PATTERNS.md) is model-agnostic — you can use it as a reference to manually identify AI patterns in any text.
 
 </details>
 
@@ -612,11 +612,11 @@ Yes. HumanInk supports 7 languages: English, Portuguese, Spanish, French, German
 Contributions are welcome. Here's how you can help:
 
 - **Report a new AI pattern** — found a pattern not in the list? Open an issue with examples
-- **Add language support** — extend cross-language equivalents in [PATTERNS.md](PATTERNS.md)
+- **Add language support** — extend cross-language equivalents in [PATTERNS.md](https://github.com/sirambrosio/humanink/blob/main/PATTERNS.md)
 - **Improve detection** — suggest better triggers or before/after examples
 - **Fix bugs** — found a scoring edge case? Submit a PR
 
-See [WARP.md](WARP.md) for the full guide on adding patterns and editing files.
+See [WARP.md](https://github.com/sirambrosio/humanink/blob/main/WARP.md) for the full guide on adding patterns and editing files.
 
 <br/>
 

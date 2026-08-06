@@ -289,7 +289,7 @@ related:
 
 ## License
 
-Released under the [MIT License](LICENSE).
+Released under the [MIT License](https://github.com/karan2003/STORYFORGE-AI-STORY-GENERATOR/blob/main/LICENSE).
 
 ***
 

@@ -105,23 +105,23 @@ Funziona direttamente nel browser e anche offline, così puoi lavorare ovunque e
 
 - Dashboard
   
-  ![Dashboard](./docs/screenshots/dashboard.png)
+  ![Dashboard](https://github.com/Pioshin/writers-nexus/blob/main/docs/screenshots/dashboard.png)
 
 - Ideazione
   
-  ![Ideazione](./docs/screenshots/ideation.png)
+  ![Ideazione](https://github.com/Pioshin/writers-nexus/blob/main/docs/screenshots/ideation.png)
 
 - Struttura (con "Scene non assegnate")
   
-  ![Struttura](./docs/screenshots/structure.png)
+  ![Struttura](https://github.com/Pioshin/writers-nexus/blob/main/docs/screenshots/structure.png)
 
 - Suggerimenti IA (modale)
   
-  ![Suggerimenti IA](./docs/screenshots/hero-suggestions.png)
+  ![Suggerimenti IA](https://github.com/Pioshin/writers-nexus/blob/main/docs/screenshots/hero-suggestions.png)
 
 - Scrittura
   
-  ![Scrittura](./docs/screenshots/writing.png)
+  ![Scrittura](https://github.com/Pioshin/writers-nexus/blob/main/docs/screenshots/writing.png)
 
 ## Configurazioni opzionali
 

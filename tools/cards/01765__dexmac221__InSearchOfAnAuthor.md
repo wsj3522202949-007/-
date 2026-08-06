@@ -593,7 +593,7 @@ partnership. "Whatever you're looking for, find it fast."
 
 ## 🤝 Contributing
 
-Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+Contributions welcome! Please read [CONTRIBUTING.md](https://github.com/dexmac221/InSearchOfAnAuthor/blob/main/CONTRIBUTING.md) first.
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -605,7 +605,7 @@ Contributions welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
 ## 📜 License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/dexmac221/InSearchOfAnAuthor/blob/main/LICENSE) for details.
 
 ---
 

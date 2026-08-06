@@ -42,7 +42,7 @@ related:
 
 支持主流 AI 编辑器：Antigravity / Trae / Claude Code / Cursor。
 
-![ai_novel](assets/ai_novel.png)
+![ai_novel](https://github.com/ai-practical-lab/novel-writer/blob/main/assets/ai_novel.png)
 
 ***
 
@@ -279,4 +279,4 @@ git pull
 ## 打赏支持
 
 如果这个项目对你有帮助，欢迎打赏支持。你的支持会直接转化为继续开发和维护的动力。
-![good](assets/good.jpg)
+![good](https://github.com/ai-practical-lab/novel-writer/blob/main/assets/good.jpg)

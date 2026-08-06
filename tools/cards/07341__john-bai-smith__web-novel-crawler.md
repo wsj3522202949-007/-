@@ -69,7 +69,7 @@ related:
 
 - 清除文本中的垃圾词组
 
-![erase_word_demo.jpg](./figures/erase_word_demo.jpg "Demonstration for erase_word.py")
+![erase_word_demo.jpg](https://github.com/john-bai-smith/web-novel-crawler/blob/main/figures/erase_word_demo.jpg%20"Demonstration%20for%20erase_word.py")
 
 
 # 更新日志
@@ -108,7 +108,7 @@ Quicker动作库链接如下：
 
 ## 2024/05/29 更新
 
-新增电子书[修订记录](ebook/README.md)线上同步
+新增电子书[修订记录](https://github.com/john-bai-smith/web-novel-crawler/blob/main/ebook/README.md)线上同步
 
 ## 2024/05/30 更新
 

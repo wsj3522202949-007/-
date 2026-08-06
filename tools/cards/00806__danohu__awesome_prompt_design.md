@@ -47,8 +47,8 @@ related:
 Curated list of resources about writing prompts for AI: Stable Diffusion, ChatGPT, etc
 
 To keep the main list on-topic, I've shuffled some resources onto separate pages:
-- [Slightly less awesome items](semi-awesomeness.md)
-- [General AI Awesomeness](general-ai-awesomeness.md)
+- [Slightly less awesome items](https://github.com/danohu/awesome_prompt_design/blob/main/semi-awesomeness.md)
+- [General AI Awesomeness](https://github.com/danohu/awesome_prompt_design/blob/main/general-ai-awesomeness.md)
 
 
 ## Images
@@ -95,7 +95,7 @@ To keep the main list on-topic, I've shuffled some resources onto separate pages
 
 ### Libraries
 
-see also [General AI Awesomeness](general-ai-awesomeness.md) for more tools
+see also [General AI Awesomeness](https://github.com/danohu/awesome_prompt_design/blob/main/general-ai-awesomeness.md) for more tools
 
 - [Langchain](https://langchain.readthedocs.io/en/latest/index.html) -- python library to manage the plumbing work around LLMs. For instance, use it to summarize documents you have and include them within your prompt
 - [Microsoft Semantic Kernel](https://github.com/microsoft/semantic-kernel/tree/python-preview) - "a lightweight SDK enabling integration of AI Large Language Models (LLMs) with conventional programming languages"

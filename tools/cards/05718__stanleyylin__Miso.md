@@ -36,7 +36,7 @@ related:
 
 ---
 
-![image](/demos/header.png)
+![image](https://github.com/stanleyylin/Miso/blob/main//demos/header.png)
 Miso is an AI bot that detects ***misogynistic and harmful*** comments made on messaging platforms!
 
 In professional communication spaces–especially Discord for new startups, Miso ensures that HR is informed of misogynistic and toxic behaviour from employees.

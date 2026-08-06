@@ -78,7 +78,7 @@ pip install tkinterdnd2
 
 ### Running as `.exe`
 
-No Python required. Download the prebuilt `.exe` from [Releases](../../releases).
+No Python required. Download the prebuilt `.exe` from [Releases](https://github.com/DivanDoge/NPS-Translation-Tool/blob/main/../../releases).
 
 ---
 

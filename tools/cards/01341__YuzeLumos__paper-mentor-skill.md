@@ -93,7 +93,7 @@ related:
 
 ## Copy-Paste Prompts
 
-See [PROMPTS.md](PROMPTS.md) for a ready-to-use prompt pack.
+See [PROMPTS.md](https://github.com/YuzeLumos/paper-mentor-skill/blob/main/PROMPTS.md) for a ready-to-use prompt pack.
 
 Popular starters:
 

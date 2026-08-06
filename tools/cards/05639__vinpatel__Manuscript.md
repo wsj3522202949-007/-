@@ -415,7 +415,7 @@ We love contributions! Here's how to get involved:
 1. **Star this repo** ⭐ — It helps more than you think!
 2. **Report bugs** — [Open an issue](https://github.com/vinpatel/manuscript/issues/new?template=bug_report.md)
 3. **Suggest features** — [Start a discussion](https://github.com/vinpatel/manuscript/discussions/new?category=ideas)
-4. **Submit PRs** — See [CONTRIBUTING.md](CONTRIBUTING.md)
+4. **Submit PRs** — See [CONTRIBUTING.md](https://github.com/vinpatel/Manuscript/blob/main/CONTRIBUTING.md)
 
 ### Good First Issues
 
@@ -438,7 +438,7 @@ Found a false positive or false negative? [Submit a sample](https://github.com/v
 
 ## 📜 License
 
-MIT License — use it however you want. See [LICENSE](LICENSE) for details.
+MIT License — use it however you want. See [LICENSE](https://github.com/vinpatel/Manuscript/blob/main/LICENSE) for details.
 
 ---
 

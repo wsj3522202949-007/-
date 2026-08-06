@@ -336,7 +336,7 @@ docker run --rm -it provenance provenance tui                    # the interacti
 ```
 
 > 💡 Drag a folder of files onto the drop zone to run the hero batch scan. For free
-> cloud hosting of this exact image, see [`DEPLOY.md`](DEPLOY.md) (Hugging Face Spaces).
+> cloud hosting of this exact image, see [`DEPLOY.md`](https://github.com/GauravS13/PROVENANCE/blob/main/DEPLOY.md) (Hugging Face Spaces).
 
 ---
 
@@ -402,11 +402,11 @@ pip install -e ".[dev]"
 ruff check src tests   &&   black --check src tests   &&   mypy src   &&   pytest
 ```
 
-New detection signals, input loaders, and track adapters are especially welcome — keep them **deterministic and LLM-free**. See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+New detection signals, input loaders, and track adapters are especially welcome — keep them **deterministic and LLM-free**. See [`CONTRIBUTING.md`](https://github.com/GauravS13/PROVENANCE/blob/main/CONTRIBUTING.md).
 
 ## 📄 License & Disclosure
 
-**MIT** — see [`LICENSE`](LICENSE). AI tools used during the build are disclosed in [`DISCLOSURE.md`](DISCLOSURE.md).
+**MIT** — see [`LICENSE`](https://github.com/GauravS13/PROVENANCE/blob/main/LICENSE). AI tools used during the build are disclosed in [`DISCLOSURE.md`](https://github.com/GauravS13/PROVENANCE/blob/main/DISCLOSURE.md).
 
 <div align="center">
 

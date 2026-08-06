@@ -609,7 +609,7 @@ volumes:
 
 ## 许可证
 
-MIT License - 详见 [LICENSE](LICENSE) 文件
+MIT License - 详见 [LICENSE](https://github.com/ChaoticArray516/AI-Fanfiction-Generator/blob/main/LICENSE) 文件
 
 related:
   - methods/网文写作最强SOP.md

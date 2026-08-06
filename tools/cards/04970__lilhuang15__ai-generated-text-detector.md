@@ -60,9 +60,9 @@ it's *why* the detector works, when it doesn't, and the evidence for both.
 | **BERT full fine-tune** *(deployed)* | 110M | **0.9935** |
 | BERT + LoRA | **296K (0.27%)** | 0.9877 |
 
-<sub>Source: [`results/full_test_headlines.csv`](results/full_test_headlines.csv) — recomputed
+<sub>Source: [`results/full_test_headlines.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/full_test_headlines.csv) — recomputed
 deterministically from the saved weights (Notebook 4 §4b); per-epoch training logs in
-[`results/`](results/).</sub>
+[`results/`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/).</sub>
 
 **Controlled 5-model comparison** (balanced 200-sample subset — the affordable way to put a
 paid LLM on identical footing):
@@ -75,14 +75,14 @@ paid LLM on identical footing):
 | BERT + LoRA | 0.995 | 0.99 | 1.00 | ~18 ms | $0 |
 | Claude Haiku 4.5 zero-shot | 0.914 | **1.00** | **0.85** | ~760 ms | $0.25 |
 
-<sub>Source: [`results/model_comparison.csv`](results/model_comparison.csv).</sub>
+<sub>Source: [`results/model_comparison.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/model_comparison.csv).</sub>
 
 > On n=200, one flipped sample ≈ 0.5 pp — subset rankings among the local models are noise
 > (the full-test table above is the reliable ranking). The subset's job is the **Claude
 > comparison**: the zero-shot LLM catches every AI text (recall 1.00) but false-flags humans
 > (precision 0.85), and loses to a $0-marginal fine-tune by ~8 pp.
 
-![Latency vs macro-F1: the four local models cluster at 0.97–0.995 F1 within ~21 ms; zero-shot Claude sits at 0.914 F1 and 761 ms](results/figs/latency_f1_frontier.png)
+![Latency vs macro-F1: the four local models cluster at 0.97–0.995 F1 within ~21 ms; zero-shot Claude sits at 0.914 F1 and 761 ms](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/figs/latency_f1_frontier.png)
 
 **Three findings:**
 1. **Fine-tuning still wins in-domain (2026):** a 110M BERT at ~21 ms/$0 beats zero-shot
@@ -162,7 +162,7 @@ minority (AI) class, best checkpoint restored.
 | finance | cross-domain | 0.9812 | −1.2 pp |
 | medicine | cross-domain | 0.9821 | −1.1 pp |
 
-<sub>Source: [`results/cross_domain_results.csv`](results/cross_domain_results.csv).</sub>
+<sub>Source: [`results/cross_domain_results.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/cross_domain_results.csv).</sub>
 
 I expected the standard detector story — a 10–25 pp collapse out of domain. It didn't happen,
 and the error analysis explains why: the model keys on the **generator's house style**
@@ -188,10 +188,10 @@ model makes on the full 10,200-sample test**:
 - **Implications:** trivial evasion — ask the AI to answer briefly; asymmetric harm — the most
   articulate humans are the most likely to be falsely accused. Both are disclosed in the demo.
 
-<sub>Source: [`results/bert_vs_claude_disagreements.csv`](results/bert_vs_claude_disagreements.csv)
-and [`results/bert_full_test_errors.csv`](results/bert_full_test_errors.csv).</sub>
+<sub>Source: [`results/bert_vs_claude_disagreements.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/bert_vs_claude_disagreements.csv)
+and [`results/bert_full_test_errors.csv`](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/bert_full_test_errors.csv).</sub>
 
-![Training length distributions for human and AI answers, with the 3 missed AI texts marked in the far-left tail of the AI distribution and the falsely-flagged-human median line sitting at the AI median](results/figs/length_prior.png)
+![Training length distributions for human and AI answers, with the 3 missed AI texts marked in the far-left tail of the AI distribution and the falsely-flagged-human median line sitting at the AI median](https://github.com/lilhuang15/ai-generated-text-detector/blob/main/results/figs/length_prior.png)
 
 ## Limitations
 

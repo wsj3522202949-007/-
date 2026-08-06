@@ -35,7 +35,7 @@ related:
 
 ---
 
-![Chatterbox Multilingual Image](./Chatterbox-Multilingual.png)
+![Chatterbox Multilingual Image](https://github.com/resemble-ai/chatterbox/blob/main/Chatterbox-Multilingual.png)
 
 
 # Chatterbox TTS

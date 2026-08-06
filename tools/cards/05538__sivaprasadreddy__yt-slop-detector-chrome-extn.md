@@ -43,7 +43,7 @@ A Chrome extension that automatically detects AI-related videos on YouTube and m
 
 Matching videos keep their original title, but get an **AI Slop:** prefix, the matched keyword inside the title is highlighted, and the thumbnail is covered with a custom warning image.
 
-![yt-ai-slop-detector-screenshot.png](yt-ai-slop-detector-screenshot.png)
+![yt-ai-slop-detector-screenshot.png](https://github.com/sivaprasadreddy/yt-slop-detector-chrome-extn/blob/main/yt-ai-slop-detector-screenshot.png)
 
 ---
 

@@ -55,11 +55,11 @@ related:
 
 工作台可创建故事并启动章节生成，实时展示 Agent 工作流节点、运行事件和生成状态。
 
-![FlashNovel Web 工作台运行事件](docs/images/flashnovel-run-events.png)
+![FlashNovel Web 工作台运行事件](https://github.com/cuso41108/flashnovel/blob/main/docs/images/flashnovel-run-events.png)
 
 章节提交后，可在工作台中查看生成正文、Artifact 以及结构化记忆视图。
 
-![FlashNovel Web 工作台记忆视图](docs/images/flashnovel-memory-view.png)
+![FlashNovel Web 工作台记忆视图](https://github.com/cuso41108/flashnovel/blob/main/docs/images/flashnovel-memory-view.png)
 
 ## 本地运行
 

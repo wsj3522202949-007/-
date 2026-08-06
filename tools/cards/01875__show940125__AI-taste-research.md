@@ -57,26 +57,26 @@ related:
 
 - 第一輪比較仍然有效，因為 prompt 條件、題組、評分欄位都固定。
 - 第一輪結果是基於「subagent writer backend」(使用GPT-5.4 mini 模型)下的正式比較結果。
-- 目前已完成一個正式子集：8 題、24 份正式輸出、24 份盲評版；範圍見 [第一輪正式結果說明.md](03-題組與評估/第一輪正式結果說明.md)。
+- 目前已完成一個正式子集：8 題、24 份正式輸出、24 份盲評版；範圍見 [第一輪正式結果說明.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E6%AD%A3%E5%BC%8F%E7%B5%90%E6%9E%9C%E8%AA%AA%E6%98%8E.md)。
 
 ## 先看哪裡
 
-- 主報告：[01-報告/AI模板味研究總報告.md](01-報告/AI模板味研究總報告.md)
-- 特徵表：[02-框架/AI味特徵表.md](02-框架/AI味特徵表.md)
-- Prompt 模型：[02-框架/anti-AI-prompt模型規格.md](02-框架/anti-AI-prompt模型規格.md)
-- 正式 prompt 入口：[02-框架/正式anti-AI味prompt模板.md](02-框架/正式anti-AI味prompt模板.md)
-- 融合穩健版模板：[02-框架/融合穩健版anti-AI味prompt模板.md](02-框架/融合穩健版anti-AI味prompt模板.md)
-- 強力 pivot 版模板：[02-框架/強力pivot版anti-AI味prompt模板.md](02-框架/強力pivot版anti-AI味prompt模板.md)
-- 第一輪模板包：[02-框架/第一輪Prompt模板包.md](02-框架/第一輪Prompt模板包.md)
-- 題組與評估：[03-題組與評估/題組與評估框架.md](03-題組與評估/題組與評估框架.md)
-- 第一輪題組：[03-題組與評估/第一輪探索題組.md](03-題組與評估/第一輪探索題組.md)
-- 第一輪 runbook：[03-題組與評估/第一輪執行runbook.md](03-題組與評估/第一輪執行runbook.md)
-- 第一輪 manifest：[03-題組與評估/第一輪最小矩陣_manifest.csv](03-題組與評估/第一輪最小矩陣_manifest.csv)
-- 第一輪正式結果說明：[03-題組與評估/第一輪正式結果說明.md](03-題組與評估/第一輪正式結果說明.md)
-- 第一輪正式結果 manifest：[03-題組與評估/第一輪正式結果_manifest.csv](03-題組與評估/第一輪正式結果_manifest.csv)
-- 第一輪結果初步分析：[03-題組與評估/第一輪結果初步分析.md](03-題組與評估/第一輪結果初步分析.md)
-- 評分模板：[03-題組與評估/評分記錄模板.csv](03-題組與評估/評分記錄模板.csv)
-- Heuristics 附錄：[04-附錄/humanizer與維基heuristics附錄.md](04-附錄/humanizer與維基heuristics附錄.md)
+- 主報告：[01-報告/AI模板味研究總報告.md](https://github.com/show940125/AI-taste-research/blob/main/01-%E5%A0%B1%E5%91%8A/AI%E6%A8%A1%E6%9D%BF%E5%91%B3%E7%A0%94%E7%A9%B6%E7%B8%BD%E5%A0%B1%E5%91%8A.md)
+- 特徵表：[02-框架/AI味特徵表.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/AI%E5%91%B3%E7%89%B9%E5%BE%B5%E8%A1%A8.md)
+- Prompt 模型：[02-框架/anti-AI-prompt模型規格.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/anti-AI-prompt%E6%A8%A1%E5%9E%8B%E8%A6%8F%E6%A0%BC.md)
+- 正式 prompt 入口：[02-框架/正式anti-AI味prompt模板.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/%E6%AD%A3%E5%BC%8Fanti-AI%E5%91%B3prompt%E6%A8%A1%E6%9D%BF.md)
+- 融合穩健版模板：[02-框架/融合穩健版anti-AI味prompt模板.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/%E8%9E%8D%E5%90%88%E7%A9%A9%E5%81%A5%E7%89%88anti-AI%E5%91%B3prompt%E6%A8%A1%E6%9D%BF.md)
+- 強力 pivot 版模板：[02-框架/強力pivot版anti-AI味prompt模板.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/%E5%BC%B7%E5%8A%9Bpivot%E7%89%88anti-AI%E5%91%B3prompt%E6%A8%A1%E6%9D%BF.md)
+- 第一輪模板包：[02-框架/第一輪Prompt模板包.md](https://github.com/show940125/AI-taste-research/blob/main/02-%E6%A1%86%E6%9E%B6/%E7%AC%AC%E4%B8%80%E8%BC%AAPrompt%E6%A8%A1%E6%9D%BF%E5%8C%85.md)
+- 題組與評估：[03-題組與評估/題組與評估框架.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0%E6%A1%86%E6%9E%B6.md)
+- 第一輪題組：[03-題組與評估/第一輪探索題組.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E6%8E%A2%E7%B4%A2%E9%A1%8C%E7%B5%84.md)
+- 第一輪 runbook：[03-題組與評估/第一輪執行runbook.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E5%9F%B7%E8%A1%8Crunbook.md)
+- 第一輪 manifest：[03-題組與評估/第一輪最小矩陣_manifest.csv](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E6%9C%80%E5%B0%8F%E7%9F%A9%E9%99%A3_manifest.csv)
+- 第一輪正式結果說明：[03-題組與評估/第一輪正式結果說明.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E6%AD%A3%E5%BC%8F%E7%B5%90%E6%9E%9C%E8%AA%AA%E6%98%8E.md)
+- 第一輪正式結果 manifest：[03-題組與評估/第一輪正式結果_manifest.csv](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E6%AD%A3%E5%BC%8F%E7%B5%90%E6%9E%9C_manifest.csv)
+- 第一輪結果初步分析：[03-題組與評估/第一輪結果初步分析.md](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E7%AC%AC%E4%B8%80%E8%BC%AA%E7%B5%90%E6%9E%9C%E5%88%9D%E6%AD%A5%E5%88%86%E6%9E%90.md)
+- 評分模板：[03-題組與評估/評分記錄模板.csv](https://github.com/show940125/AI-taste-research/blob/main/03-%E9%A1%8C%E7%B5%84%E8%88%87%E8%A9%95%E4%BC%B0/%E8%A9%95%E5%88%86%E8%A8%98%E9%8C%84%E6%A8%A1%E6%9D%BF.csv)
+- Heuristics 附錄：[04-附錄/humanizer與維基heuristics附錄.md](https://github.com/show940125/AI-taste-research/blob/main/04-%E9%99%84%E9%8C%84/humanizer%E8%88%87%E7%B6%AD%E5%9F%BAheuristics%E9%99%84%E9%8C%84.md)
 
 ## 建議使用順序
 
@@ -107,5 +107,5 @@ related:
 
 ## 原始材料
 
-- [賈寶適翻譯.txt](賈寶適翻譯.txt)
-- [翻译理论要点及提示词优化指南.md](翻译理论要点及提示词优化指南.md)
+- [賈寶適翻譯.txt](https://github.com/show940125/AI-taste-research/blob/main/%E8%B3%88%E5%AF%B6%E9%81%A9%E7%BF%BB%E8%AD%AF.txt)
+- [翻译理论要点及提示词优化指南.md](https://github.com/show940125/AI-taste-research/blob/main/%E7%BF%BB%E8%AF%91%E7%90%86%E8%AE%BA%E8%A6%81%E7%82%B9%E5%8F%8A%E6%8F%90%E7%A4%BA%E8%AF%8D%E4%BC%98%E5%8C%96%E6%8C%87%E5%8D%97.md)

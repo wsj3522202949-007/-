@@ -100,11 +100,11 @@ containers, separate processes) without duplicating business logic.
 
 | Dashboard | Editor | Inspector |
 | --- | --- | --- |
-| ![dashboard](docs/screenshots/dashboard.png) | ![editor](docs/screenshots/editor.png) | ![inspector](docs/screenshots/inspector.png) |
+| ![dashboard](https://github.com/murilofarias/flowforge/blob/main/docs/screenshots/dashboard.png) | ![editor](https://github.com/murilofarias/flowforge/blob/main/docs/screenshots/editor.png) | ![inspector](https://github.com/murilofarias/flowforge/blob/main/docs/screenshots/inspector.png) |
 
 | Run detail | Palette |
 | --- | --- |
-| ![run-detail](docs/screenshots/run-detail.png) | ![palette](docs/screenshots/palette.png) |
+| ![run-detail](https://github.com/murilofarias/flowforge/blob/main/docs/screenshots/run-detail.png) | ![palette](https://github.com/murilofarias/flowforge/blob/main/docs/screenshots/palette.png) |
 
 ## Local setup
 

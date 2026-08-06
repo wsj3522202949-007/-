@@ -40,27 +40,27 @@ related:
 
 # ParaWrite
 
-[English](README.md) | [中文](README.zh-CN.md)
+[English](https://github.com/a5677746shdh/ParaWrite/blob/main/README.md) | [中文](https://github.com/a5677746shdh/ParaWrite/blob/main/README.zh-CN.md)
 
 ParaWrite is an open-source writing assistant inspired by DeepL's "Alternatives" feature. Translate text with streaming LLM output, then refine the result with context-aware synonyms, dictionary lookups, and sentence rephrasing.
 
-**Version 1.1.2** — see [CHANGELOG.md](CHANGELOG.md) · [中文更新日志](CHANGELOG.zh-CN.md).
+**Version 1.1.2** — see [CHANGELOG.md](https://github.com/a5677746shdh/ParaWrite/blob/main/CHANGELOG.md) · [中文更新日志](https://github.com/a5677746shdh/ParaWrite/blob/main/CHANGELOG.zh-CN.md).
 
 ## Screenshots
 
 | Desktop (three-column) | Tablet (two-column) |
 |:---:|:---:|
-| ![Desktop layout](docs/snapshots/desktop-layout.jpg) | ![Tablet layout](docs/snapshots/tablet-layout.jpg) |
+| ![Desktop layout](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/desktop-layout.jpg) | ![Tablet layout](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/tablet-layout.jpg) |
 
 | Mobile (stacked) | Synonyms & alternatives |
 |:---:|:---:|
-| ![Mobile layout](docs/snapshots/mobile-layout.jpg) | ![Synonyms panel](docs/snapshots/synonyms-panel.jpg) |
+| ![Mobile layout](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/mobile-layout.jpg) | ![Synonyms panel](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/synonyms-panel.jpg) |
 
 | Main interface | Login dialog |
 |:---:|:---:|
-| ![Main interface](docs/snapshots/main-interface.jpg) | ![Login dialog](docs/snapshots/login-dialog.jpg) |
+| ![Main interface](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/main-interface.jpg) | ![Login dialog](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/snapshots/login-dialog.jpg) |
 
-More UI details: [docs/UI-DESIGN.md](docs/UI-DESIGN.md).
+More UI details: [docs/UI-DESIGN.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/UI-DESIGN.md).
 
 ## Features
 
@@ -96,7 +96,7 @@ pnpm build
 pnpm start    # serves API + built frontend on :8787
 ```
 
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for Docker and beta packaging.
+See [docs/DEPLOYMENT.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/DEPLOYMENT.md) for Docker and beta packaging.
 
 ## Architecture
 
@@ -121,14 +121,14 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [docs/README.md](docs/README.md) | Documentation index |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | System design and request flow |
-| [docs/CONFIGURATION.md](docs/CONFIGURATION.md) | YAML configuration reference |
-| [docs/API.md](docs/API.md) | HTTP API and SSE protocol |
-| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Docker, beta package, environment variables |
-| [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) | Local development and build scripts |
-| [docs/UI-DESIGN.md](docs/UI-DESIGN.md) | UI tokens, layout, and screenshots |
+| [docs/README.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/README.md) | Documentation index |
+| [docs/ARCHITECTURE.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/ARCHITECTURE.md) | System design and request flow |
+| [docs/CONFIGURATION.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/CONFIGURATION.md) | YAML configuration reference |
+| [docs/API.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/API.md) | HTTP API and SSE protocol |
+| [docs/DEPLOYMENT.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/DEPLOYMENT.md) | Docker, beta package, environment variables |
+| [docs/DEVELOPMENT.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/DEVELOPMENT.md) | Local development and build scripts |
+| [docs/UI-DESIGN.md](https://github.com/a5677746shdh/ParaWrite/blob/main/docs/UI-DESIGN.md) | UI tokens, layout, and screenshots |
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/a5677746shdh/ParaWrite/blob/main/LICENSE).

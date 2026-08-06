@@ -59,15 +59,15 @@ PaperSmith 是课题组内部 beta 版论文写作工作流包。你可以把它
 
 第一次使用请先看：
 
-[学生一页版使用指南](docs/STUDENT_ONE_PAGE_GUIDE.md)
+[学生一页版使用指南](https://github.com/magicJ1995/PaperSmith/blob/main/docs/STUDENT_ONE_PAGE_GUIDE.md)
 
 需要完整步骤说明时看：
 
-[完整用户手册](docs/COMPLETE_USER_MANUAL.md)
+[完整用户手册](https://github.com/magicJ1995/PaperSmith/blob/main/docs/COMPLETE_USER_MANUAL.md)
 
 想复制常用 prompt 时看：
 
-[Prompt Cookbook](docs/PROMPT_COOKBOOK.md)
+[Prompt Cookbook](https://github.com/magicJ1995/PaperSmith/blob/main/docs/PROMPT_COOKBOOK.md)
 
 ### 重要规则
 

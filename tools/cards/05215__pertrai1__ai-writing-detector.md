@@ -42,7 +42,7 @@ related:
 
 # AI Writing Detector
 
-![CLI Screenshot](screenshot.png)
+![CLI Screenshot](https://github.com/pertrai1/ai-writing-detector/blob/main/screenshot.png)
 
 `ai-writing-detector` is a TypeScript/Node.js CLI for analyzing prose with a
 rule-based AI-writing heuristic. It looks for vocabulary, structural patterns,
@@ -70,20 +70,20 @@ The repository currently includes:
   - `Possibly AI-Generated`
   - `Likely AI-Generated`
 
-See [ROADMAP.md](ROADMAP.md) for implementation status and
-[REQUIREMENTS.md](REQUIREMENTS.md) for the original challenge brief.
+See [ROADMAP.md](https://github.com/pertrai1/ai-writing-detector/blob/main/ROADMAP.md) for implementation status and
+[REQUIREMENTS.md](https://github.com/pertrai1/ai-writing-detector/blob/main/REQUIREMENTS.md) for the original challenge brief.
 
 ## How It Was Developed
 
 This repository was built with a custom agent loop documented in
-[LOOP.md](LOOP.md).
+[LOOP.md](https://github.com/pertrai1/ai-writing-detector/blob/main/LOOP.md).
 
-![Agent Loop Diagram](agent-loop-diagram.png)
+![Agent Loop Diagram](https://github.com/pertrai1/ai-writing-detector/blob/main/agent-loop-diagram.png)
 
 The important part is that the loop is agent-driven, not a static shell script:
 
 - An LLM agent running in OpenCode executes `/opsx-loop`
-- The loop works phase-by-phase from [ROADMAP.md](ROADMAP.md)
+- The loop works phase-by-phase from [ROADMAP.md](https://github.com/pertrai1/ai-writing-detector/blob/main/ROADMAP.md)
 - For each phase, the agent creates or updates openspec artifacts, writes tests,
   implements code, runs quality checks, updates docs, and archives the phase
 - Progress is resumable, so re-running the loop continues from the next
@@ -170,8 +170,8 @@ the supplied text:
 - character count
 - word count
 
-This behavior comes from [src/cli.ts](src/cli.ts) and
-[src/output/display.ts](src/output/display.ts).
+This behavior comes from [src/cli.ts](https://github.com/pertrai1/ai-writing-detector/blob/main/src/cli.ts) and
+[src/output/display.ts](https://github.com/pertrai1/ai-writing-detector/blob/main/src/output/display.ts).
 
 The repository also contains the full scoring and report-generation pipeline in
 `src/scoring/` and `src/report/`, including classification and formatted report

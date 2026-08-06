@@ -64,7 +64,7 @@ related:
   <a href="#从源码开发">从源码开发</a>
 </p>
 
-> 当前版本：`26.7.23`。完整变更记录见 [CHANGELOG.md](CHANGELOG.md)。
+> 当前版本：`26.7.23`。完整变更记录见 [CHANGELOG.md](https://github.com/ezdemo/agent4j/blob/main/CHANGELOG.md)。
 
 ## 概览
 
@@ -318,4 +318,4 @@ related:
 
 ## 许可证
 
-[MIT License](LICENSE) © 2026 Sorghum
+[MIT License](https://github.com/ezdemo/agent4j/blob/main/LICENSE) © 2026 Sorghum

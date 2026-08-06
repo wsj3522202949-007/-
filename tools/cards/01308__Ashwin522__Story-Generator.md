@@ -71,7 +71,7 @@ The system uses a multi-agent approach with four specialized components:
 3. **Judge**: Evaluates quality on 5 criteria and provides actionable feedback
 4. **Refiner**: Converts judge feedback into improvement instructions
 
-See [system_diagram.md](system_diagram.md) for detailed architecture and flow diagrams.
+See [system_diagram.md](https://github.com/Ashwin522/Story-Generator/blob/main/system_diagram.md) for detailed architecture and flow diagrams.
 
 ## 📋 Requirements
 

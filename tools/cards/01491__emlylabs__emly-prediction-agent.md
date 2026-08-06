@@ -287,7 +287,7 @@ Access at **http://localhost:8080**
 
 For detailed instructions on uploading data, training models, building dashboards, and more, see:
 
-**[USER_GUIDE.md](USER_GUIDE.md)**
+**[USER_GUIDE.md](https://github.com/emlylabs/emly-prediction-agent/blob/main/USER_GUIDE.md)**
 
 ## Tech Stack
 

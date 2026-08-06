@@ -154,7 +154,7 @@ for signal in result.strongest_signals():
 cp -R ai-detector-skill "$CODEX_HOME/skills/"
 ```
 
-Use the root [SKILL.md](./SKILL.md) as the portable skill definition, and keep [AGENTS.md](./AGENTS.md) at the repo root for repo-aware agents.
+Use the root [SKILL.md](https://github.com/lynote-ai/ai-text-detector/blob/main/SKILL.md) as the portable skill definition, and keep [AGENTS.md](https://github.com/lynote-ai/ai-text-detector/blob/main/AGENTS.md) at the repo root for repo-aware agents.
 
 ## Evaluation
 
@@ -176,7 +176,7 @@ What that means in practice:
 - the current thresholds are conservative, which keeps false confidence down but also lowers recall
 - this tool works better as **triage + explanation** than as a stand-alone classifier
 
-See the full report in [docs/HC3_EVALUATION.md](./docs/HC3_EVALUATION.md).
+See the full report in [docs/HC3_EVALUATION.md](https://github.com/lynote-ai/ai-text-detector/blob/main/docs/HC3_EVALUATION.md).
 
 Reproduce it with:
 
@@ -274,7 +274,7 @@ GitHub Actions automatically runs:
 
 ## Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md).
+See [CONTRIBUTING.md](https://github.com/lynote-ai/ai-text-detector/blob/main/CONTRIBUTING.md).
 
 Good contributions usually improve one of these:
 

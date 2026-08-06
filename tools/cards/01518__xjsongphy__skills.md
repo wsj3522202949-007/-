@@ -39,7 +39,7 @@ related:
 
 # Claude Code Skills
 
-[中文版 README](README_zh.md)
+[中文版 README](https://github.com/xjsongphy/skills/blob/main/README_zh.md)
 
 A collection of specialized skills for Claude Code to enhance AI performance on specific tasks.
 

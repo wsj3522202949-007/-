@@ -46,7 +46,7 @@ related:
 **在线阅读（自有域名 · 备用/国内更快）**: [https://shiji.memify.wiki/](https://shiji.memify.wiki/) | **Wiki**: [https://shiji.memify.wiki/wiki](https://shiji.memify.wiki/wiki)
 
 **报告问题**: [提交Issue](https://github.com/baojie/shiji-kb/issues/new) （推荐截屏+paste）
-**许可证**: [CC BY-NC-SA 4.0](LICENSE)
+**许可证**: [CC BY-NC-SA 4.0](https://github.com/baojie/shiji-kb/blob/main/LICENSE)
 
 学术文献请引用：鲍捷，史记知识库，2026，在线发布于https://github.com/baojie/shiji-kb
 
@@ -103,7 +103,7 @@ related:
 - **语法高亮开关**：右上角齿轮按钮，可关闭高亮专注阅读（持久化保存偏好）
 - **知识索引跳转**：**14,065 个实体词条**（126,441 次标注），别名 3,489 条（variants），章内消歧 11,514 处
 - **Purple Numbers段落编号**：每个段落可精确引用和分享（致敬Doug Engelbart）
-- **史记地铁图**：130条线路×3,197站点，支持缩放/拖拽/搜索/时间线 ([app/metro](app/metro))
+- **史记地铁图**：130条线路×3,197站点，支持缩放/拖拽/搜索/时间线 ([app/metro](https://github.com/baojie/shiji-kb/blob/main/app/metro))
 
 ### 阅读器演进五层次
 
@@ -111,7 +111,7 @@ related:
 
 **原文 → 专名标注 → 语法高亮 → 语义排版 → 关系连线**
 
-[查看完整演进过程](resources/publications/notes/史记语法高亮创造过程.md) | [语义排版技术细节](resources/publications/draft/2026-03-16_史记阅读器重构与语义排版/史记阅读器重构与语义排版.md)
+[查看完整演进过程](https://github.com/baojie/shiji-kb/blob/main/resources/publications/notes/%E5%8F%B2%E8%AE%B0%E8%AF%AD%E6%B3%95%E9%AB%98%E4%BA%AE%E5%88%9B%E9%80%A0%E8%BF%87%E7%A8%8B.md) | [语义排版技术细节](https://github.com/baojie/shiji-kb/blob/main/resources/publications/draft/2026-03-16_%E5%8F%B2%E8%AE%B0%E9%98%85%E8%AF%BB%E5%99%A8%E9%87%8D%E6%9E%84%E4%B8%8E%E8%AF%AD%E4%B9%89%E6%8E%92%E7%89%88/%E5%8F%B2%E8%AE%B0%E9%98%85%E8%AF%BB%E5%99%A8%E9%87%8D%E6%9E%84%E4%B8%8E%E8%AF%AD%E4%B9%89%E6%8E%92%E7%89%88.md)
 
 ---
 
@@ -129,26 +129,26 @@ related:
 
 **核心转变**：2001年的难点是"设计本体"，2026年的难点是"反思/进化AI提取的本体"。本体不再是专家预先设计的蓝图，而是从数据中生长出来、由人类修剪和校准的有机结构。
 
-> 详见方法论对标文档：[Agentic Ontology 101](resources/publications/draft/2026-03-20_agentic_ontology_101/agentic_ontology_101.md)（英文，对标Noy & McGuinness 2001经典）
+> 详见方法论对标文档：[Agentic Ontology 101](https://github.com/baojie/shiji-kb/blob/main/resources/publications/draft/2026-03-20_agentic_ontology_101/agentic_ontology_101.md)（英文，对标Noy & McGuinness 2001经典）
 
 ### 📚 可复用方法论：从一部书到整个文库
 
 **总控SKILL** - 完整管线操作指南
 - 九步管线的执行顺序、依赖关系、质量检查点
-- → **[SKILL_00_管线总览](skills/SKILL_00_管线总览.md)** | **[完整SKILL索引](skills/INDEX.md)** | **[📊 管线大图 pipeline.svg](skills/pipeline.svg)**
+- → **[SKILL_00_管线总览](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_00_%E7%AE%A1%E7%BA%BF%E6%80%BB%E8%A7%88.md)** | **[完整SKILL索引](https://github.com/baojie/shiji-kb/blob/main/skills/INDEX.md)** | **[📊 管线大图 pipeline.svg](https://github.com/baojie/shiji-kb/blob/main/skills/pipeline.svg)**
 
 **14个元技能（Meta-Skills）** - 通用知识工程方法论
 - OTF+JIT+Bootstrap、反思循环、冷启动、柳叶刀方法、质量控制、SKILL优化与演化……
-- → **[下载PDF合集](resources/publications/meta-skill-book/大规模知识库构造元技能方法论.pdf)**（发布日期：2026-03-18，425页，2.35MB，包含14个元技能）
+- → **[下载PDF合集](https://github.com/baojie/shiji-kb/blob/main/resources/publications/meta-skill-book/%E5%A4%A7%E8%A7%84%E6%A8%A1%E7%9F%A5%E8%AF%86%E5%BA%93%E6%9E%84%E9%80%A0%E5%85%83%E6%8A%80%E8%83%BD%E6%96%B9%E6%B3%95%E8%AE%BA.pdf)**（发布日期：2026-03-18，425页，2.35MB，包含14个元技能）
 
 **89个管线技能（Pipeline Skills）** - 古籍处理完整技术栈
 - 校勘→结构分析→实体构建→事件构建→关系构建→本体构建→逻辑推理→知识库管驭→应用→项目管理
-- → **[下载PDF合集](resources/publications/pipeline-skills-book/史记知识库构造管线技能手册.pdf)**（发布日期：2026-03-19，438页，3.01MB，包含40个管线SKILL）
+- → **[下载PDF合集](https://github.com/baojie/shiji-kb/blob/main/resources/publications/pipeline-skills-book/%E5%8F%B2%E8%AE%B0%E7%9F%A5%E8%AF%86%E5%BA%93%E6%9E%84%E9%80%A0%E7%AE%A1%E7%BA%BF%E6%8A%80%E8%83%BD%E6%89%8B%E5%86%8C.pdf)**（发布日期：2026-03-19，438页，3.01MB，包含40个管线SKILL）
 - 注：当前SKILL体系已扩展至103个（14元技能 + 89管线技能），PDF为2026-03-19版本快照
 
 **技术文章** - 方法论实战解读
 - 《从历史书中探索知识图谱》（2026-03-19）：项目缘起、核心成果、技术架构、元技能体系的完整呈现
-- → **[下载PDF（14页，1.5MB）](resources/draft/2026-03-19_从历史书中探索知识图谱/从历史书中探索知识图谱.pdf)**
+- → **[下载PDF（14页，1.5MB）](https://github.com/baojie/shiji-kb/blob/main/resources/draft/2026-03-19_%E4%BB%8E%E5%8E%86%E5%8F%B2%E4%B9%A6%E4%B8%AD%E6%8E%A2%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/%E4%BB%8E%E5%8E%86%E5%8F%B2%E4%B9%A6%E4%B8%AD%E6%8E%A2%E7%B4%A2%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1.pdf)**
 
 **为什么是SKILL而非代码？**
 
@@ -168,13 +168,13 @@ related:
 
 语法高亮是认知辅助的第一步。更深层的突破是：**当实体、事件、关系被结构化后，机器能发现人力不可能完成的模式——跨130篇的矛盾检测、跨越2600年的规律归纳、从57万字中自动推断治乱兴衰的深层逻辑。**
 
-知识图谱在构建过程中发现了20+个跨章洞见（详见 [eureka.md](kg/ontology/ontology-v1/eureka.md)）：
+知识图谱在构建过程中发现了20+个跨章洞见（详见 [eureka.md](https://github.com/baojie/shiji-kb/blob/main/kg/ontology/ontology-v1/eureka.md)）：
 
 - **征服-治理倒转**：打天下的手段恰恰是治天下的障碍
 - **边缘优势**：成功王朝一致从边缘地区起源
 - **宽恕悖论**：对下属的宽恕创造忠诚，对敌国的宽恕制造灾难
-- **冯谖烧券买义的经济学**：首次用现代财政分析解读战国债务免除——年利率推算、债务规模估算、免除成本效益分析，揭示孟尝君如何通过3000金换取薛地民心，开创战国贵族财政史研究（详见[案例12](labs/source-inference/source_inference_案例12_冯谖烧券买义.md)）
-- **沙丘之谋的四层传播链**：追溯"赵高-李斯-胡亥密谋"故事从前210年到司马迁时代的百年传播路径，揭示官方史料、野史传说、儒家叙事如何层层叠加，最终形成《史记》版本（详见[案例04](labs/source-inference/source_inference_案例04_沙丘之谋.md)）
+- **冯谖烧券买义的经济学**：首次用现代财政分析解读战国债务免除——年利率推算、债务规模估算、免除成本效益分析，揭示孟尝君如何通过3000金换取薛地民心，开创战国贵族财政史研究（详见[案例12](https://github.com/baojie/shiji-kb/blob/main/labs/source-inference/source_inference_%E6%A1%88%E4%BE%8B12_%E5%86%AF%E8%B0%96%E7%83%A7%E5%88%B8%E4%B9%B0%E4%B9%89.md)）
+- **沙丘之谋的四层传播链**：追溯"赵高-李斯-胡亥密谋"故事从前210年到司马迁时代的百年传播路径，揭示官方史料、野史传说、儒家叙事如何层层叠加，最终形成《史记》版本（详见[案例04](https://github.com/baojie/shiji-kb/blob/main/labs/source-inference/source_inference_%E6%A1%88%E4%BE%8B04_%E6%B2%99%E4%B8%98%E4%B9%8B%E8%B0%8B.md)）
 
 这证明：**当知识被充分结构化后，机器辅助的推理能发现人类难以通过线性阅读察觉的深层模式**。
 
@@ -186,19 +186,19 @@ related:
 
 最新好玩的实验（都是刚刚开始的在进行中的半成品）：
 
-- **[太史公曰](labs/sima-qian-style/)** - AI学太史公写作：三层SKILL架构，把乔布斯、葛底斯堡演说改写成《史记》文风
-- **[太史公怎么知道](labs/source-inference/)** ✨NEW - 史源溯源与历史推理：整合李开元30+种方法 + 《安史之乱》8种新方法，**12个深度案例（107,000字）**
+- **[太史公曰](https://github.com/baojie/shiji-kb/blob/main/labs/sima-qian-style/)** - AI学太史公写作：三层SKILL架构，把乔布斯、葛底斯堡演说改写成《史记》文风
+- **[太史公怎么知道](https://github.com/baojie/shiji-kb/blob/main/labs/source-inference/)** ✨NEW - 史源溯源与历史推理：整合李开元30+种方法 + 《安史之乱》8种新方法，**12个深度案例（107,000字）**
   - 案例11：长平之战财政计算，揭示赵王换将真因
   - 案例12：冯谖烧券买义经济学分析，开创战国贵族财政史研究
-- **[矛盾分析](labs/contradiction-analysis/)** - 130篇里谁说了假话：AI跨篇章矛盾检测，基于**史记常识库**发现10个反常案例
-- **[史记常识库](kg/common-sense/)** - 10大类普适性规律知识（108+条目），支持反常检测与真实性推理，**首轮反思迭代提取8个高质量常识**
-- **[语义排版](labs/prototypes/)** - 文本也能像代码一样高亮：句间关系可视化
+- **[矛盾分析](https://github.com/baojie/shiji-kb/blob/main/labs/contradiction-analysis/)** - 130篇里谁说了假话：AI跨篇章矛盾检测，基于**史记常识库**发现10个反常案例
+- **[史记常识库](https://github.com/baojie/shiji-kb/blob/main/kg/common-sense/)** - 10大类普适性规律知识（108+条目），支持反常检测与真实性推理，**首轮反思迭代提取8个高质量常识**
+- **[语义排版](https://github.com/baojie/shiji-kb/blob/main/labs/prototypes/)** - 文本也能像代码一样高亮：句间关系可视化
 
-→ 更多实验见 [`labs/`](labs/) 目录
+→ 更多实验见 [`labs/`](https://github.com/baojie/shiji-kb/blob/main/labs/) 目录
 
 ### 应用场景
 
-详见：[史记阅读器重构与语义排版](resources/publications/draft/2026-03-16_史记阅读器重构与语义排版/史记阅读器重构与语义排版.md)
+详见：[史记阅读器重构与语义排版](https://github.com/baojie/shiji-kb/blob/main/resources/publications/draft/2026-03-16_%E5%8F%B2%E8%AE%B0%E9%98%85%E8%AF%BB%E5%99%A8%E9%87%8D%E6%9E%84%E4%B8%8E%E8%AF%AD%E4%B9%89%E6%8E%92%E7%89%88/%E5%8F%B2%E8%AE%B0%E9%98%85%E8%AF%BB%E5%99%A8%E9%87%8D%E6%9E%84%E4%B8%8E%E8%AF%AD%E4%B9%89%E6%8E%92%E7%89%88.md)
 
 - **文艺二次创造**：历史小说/电影/短剧素材引擎，快速检索人物关系、事件脉络、场景细节
   - 播客案例：[EP02 AI侦探：荆轲死了，秦始皇不说，那谁说的](https://www.xiaoyuzhoufm.com/episode/69c40294852cf1b8bbe08cf7) - 从知识图谱到音频叙事的创作实践
@@ -251,7 +251,7 @@ agent 配备三层反思机制：
 | W9 图式反思 | 每完成 6 页（3 精品+3 stub） | 发现页面结构模式，建立类型模板 |
 | W11 类型审计 | 每 10 轮 | 扫描错误分类，追踪知识量分布 |
 
-详见：[wiki/doc/butler-reflections.md](wiki/doc/butler-reflections.md) — 所有反思记录总览
+详见：[wiki/doc/butler-reflections.md](https://github.com/baojie/shiji-kb/blob/main/wiki/doc/butler-reflections.md) — 所有反思记录总览
 
 ### 本地运行
 
@@ -294,7 +294,7 @@ python3 wiki/server/serve.py wiki/public 8000
 **其他质量保障**：
 - ✅ CSS渲染升级v5.4：身份标注符号语义修复（8,774处）
 - ✅ 文本完整性验证：原文与标注文件逐字相同，100%通过
-- 📊 详见 [doc/events/](doc/events/) | [doc/entities/](doc/entities/) | [CSS版本历史](doc/spec/RENDER_CSS历史v5.4.md)
+- 📊 详见 [doc/events/](https://github.com/baojie/shiji-kb/blob/main/doc/events/) | [doc/entities/](https://github.com/baojie/shiji-kb/blob/main/doc/entities/) | [CSS版本历史](https://github.com/baojie/shiji-kb/blob/main/doc/spec/RENDER_CSS%E5%8E%86%E5%8F%B2v5.4.md)
 
 ---
 
@@ -320,7 +320,7 @@ python3 wiki/server/serve.py wiki/public 8000
 4. **应用语义**（第4层）：历史真相是什么？有哪些矛盾？能发现什么规律？
    - 矛盾检测、规律归纳、交互式探索、洞见挖掘
 
-详见：[研究方法总则](doc/methodology/研究方法总则.md) | [项目初衷、愿景与未来方向](resources/publications/notes/项目初衷、愿景与未来方向.md)
+详见：[研究方法总则](https://github.com/baojie/shiji-kb/blob/main/doc/methodology/%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95%E6%80%BB%E5%88%99.md) | [项目初衷、愿景与未来方向](https://github.com/baojie/shiji-kb/blob/main/resources/publications/notes/%E9%A1%B9%E7%9B%AE%E5%88%9D%E8%A1%B7%E3%80%81%E6%84%BF%E6%99%AF%E4%B8%8E%E6%9C%AA%E6%9D%A5%E6%96%B9%E5%90%91.md)
 
 ### 九步管线（Agent驱动，可并行）
 
@@ -330,17 +330,17 @@ python3 wiki/server/serve.py wiki/public 8000
   → 07 逻辑推理 → 08 SKU构造 → 09 应用构造
 ```
 
-- **校勘**：多版本比对，生成定本 ([SKILL 01](skills/SKILL_01_古籍校勘.md))
-- **结构分析**：章节切分、Purple Numbers编号、句间语义关系、三家注对齐 ([SKILL 02](skills/SKILL_02_结构分析.md))
-- **实体构建**：18类NER标注、别名消歧、多轮反思审查 ([SKILL 03](skills/SKILL_03_实体构建.md))
-- **事件构建**：结构化事件提取、公元纪年推断、十轮反思校正 ([SKILL 04](skills/SKILL_04_事件构建.md))
-- **关系构建**：9种关系类型、SPO三元组、事件链路 ([SKILL 05](skills/SKILL_05_关系构建.md))
-- **本体构建**：实体词表→分类树→OWL/RDF ([SKILL 06](skills/SKILL_06_本体构建.md))
-- **逻辑推理**：矛盾检测、生卒年推断、姓氏推理 ([SKILL 07](skills/SKILL_07_逻辑推理.md))
-- **SKU构造**：知识单元化（Factual/Procedural/Relational） ([SKILL 08](skills/SKILL_08_SKU构造.md))
-- **应用构造**：阅读器、地铁图、游戏化、问答 ([SKILL 09](skills/SKILL_09_应用构造.md))
+- **校勘**：多版本比对，生成定本 ([SKILL 01](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_01_%E5%8F%A4%E7%B1%8D%E6%A0%A1%E5%8B%98.md))
+- **结构分析**：章节切分、Purple Numbers编号、句间语义关系、三家注对齐 ([SKILL 02](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_02_%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90.md))
+- **实体构建**：18类NER标注、别名消歧、多轮反思审查 ([SKILL 03](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_03_%E5%AE%9E%E4%BD%93%E6%9E%84%E5%BB%BA.md))
+- **事件构建**：结构化事件提取、公元纪年推断、十轮反思校正 ([SKILL 04](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_04_%E4%BA%8B%E4%BB%B6%E6%9E%84%E5%BB%BA.md))
+- **关系构建**：9种关系类型、SPO三元组、事件链路 ([SKILL 05](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_05_%E5%85%B3%E7%B3%BB%E6%9E%84%E5%BB%BA.md))
+- **本体构建**：实体词表→分类树→OWL/RDF ([SKILL 06](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_06_%E6%9C%AC%E4%BD%93%E6%9E%84%E5%BB%BA.md))
+- **逻辑推理**：矛盾检测、生卒年推断、姓氏推理 ([SKILL 07](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_07_%E9%80%BB%E8%BE%91%E6%8E%A8%E7%90%86.md))
+- **SKU构造**：知识单元化（Factual/Procedural/Relational） ([SKILL 08](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_08_SKU%E6%9E%84%E9%80%A0.md))
+- **应用构造**：阅读器、地铁图、游戏化、问答 ([SKILL 09](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_09_%E5%BA%94%E7%94%A8%E6%9E%84%E9%80%A0.md))
 
-详见：[管线总览](skills/SKILL_00_管线总览.md) | [完整SKILL索引](skills/INDEX.md) | [📊 管线调用大图 pipeline.svg](skills/pipeline.svg)
+详见：[管线总览](https://github.com/baojie/shiji-kb/blob/main/skills/SKILL_00_%E7%AE%A1%E7%BA%BF%E6%80%BB%E8%A7%88.md) | [完整SKILL索引](https://github.com/baojie/shiji-kb/blob/main/skills/INDEX.md) | [📊 管线调用大图 pipeline.svg](https://github.com/baojie/shiji-kb/blob/main/skills/pipeline.svg)
 
 ---
 
@@ -491,7 +491,7 @@ python3 wiki/server/serve.py wiki/public 8000
 - 可视化设计（阅读器UI改进、数据可视化）
 - Bug报告和功能建议
 
-**参与指南**: [resources/help/CONTRIBUTING.md](resources/help/CONTRIBUTING.md) - 详细的贡献流程和规范
+**参与指南**: [resources/help/CONTRIBUTING.md](https://github.com/baojie/shiji-kb/blob/main/resources/help/CONTRIBUTING.md) - 详细的贡献流程和规范
 
 **GitHub Issues**: <https://github.com/baojie/shiji-kb/issues>
 
@@ -508,7 +508,7 @@ python3 wiki/server/serve.py wiki/public 8000
 5. 📋 **官制词典** - 辅助理解复杂官制体系 ([#89](https://github.com/baojie/shiji-kb/issues/89))
 6. 📋 **问题驱动数据库** - 史料溯源、作者意图分析 ([#60](https://github.com/baojie/shiji-kb/issues/60))
 
-**详细反馈**: [resources/community/2026-03-30_北大考古学生反馈_issue85.md](resources/community/2026-03-30_北大考古学生反馈_issue85.md)
+**详细反馈**: [resources/community/2026-03-30_北大考古学生反馈_issue85.md](https://github.com/baojie/shiji-kb/blob/main/resources/community/2026-03-30_%E5%8C%97%E5%A4%A7%E8%80%83%E5%8F%A4%E5%AD%A6%E7%94%9F%E5%8F%8D%E9%A6%88_issue85.md)
 
 这些来自历史学、考古学专业视角的建议，为项目的学术化方向提供了重要指引。
 
@@ -533,7 +533,7 @@ python generate_all_chapters.py
 # 本地：打开 docs/chapters/ 下的HTML文件
 ```
 
-**目录结构**: [PROJECT_STRUCTURE.md](resources/help/PROJECT_STRUCTURE.md)
+**目录结构**: [PROJECT_STRUCTURE.md](https://github.com/baojie/shiji-kb/blob/main/resources/help/PROJECT_STRUCTURE.md)
 
 ---
 
@@ -561,7 +561,7 @@ python generate_all_chapters.py
 
 ### 许可证
 
-- **标注数据**：[CC BY-NC-SA 4.0](LICENSE) - 署名-非商业性使用-相同方式共享（可自由用于学术研究和非商业项目，需注明出处，衍生作品需使用相同许可；商业使用请联系作者获取授权）
+- **标注数据**：[CC BY-NC-SA 4.0](https://github.com/baojie/shiji-kb/blob/main/LICENSE) - 署名-非商业性使用-相同方式共享（可自由用于学术研究和非商业项目，需注明出处，衍生作品需使用相同许可；商业使用请联系作者获取授权）
 - **分析脚本**：MIT License - 自由使用、修改、分发
 - **《史记》原文**：公有领域作品
 

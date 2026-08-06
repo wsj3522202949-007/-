@@ -53,7 +53,7 @@ rephrase/ contains the paraphrasing attacks.<br/>
 impossibilty/ contains codes for visualizing our theoretical results.<br/>
 pair-distribution/ contains codes for spoofing atttacks.<br/>
 
-![](title.png)
+![](https://github.com/vinusankars/Reliability-of-AI-text-detectors/blob/main/title.png)
 
 <p/>
 ====================================================================

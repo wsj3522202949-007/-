@@ -416,15 +416,15 @@ Works without Neo4j -- relationships live in the Holographic Memory System and a
 
 ## Guides
 
-- **[Getting Started](./docs/getting-started.md)** -- Installation, configuration, your first session
-- **[MCP Client Setup](./docs/CLIENT_SETUP.md)** -- Copy-paste config for Claude Desktop, Claude Code, Cursor, and VS Code
-- **[Writing with AI](./docs/writing-with-ai.md)** -- Analysis workflows, enhancement strategies, memory management
-- **[Troubleshooting](./docs/troubleshooting.md)** -- Common issues and fixes
-- **[Token Optimization](./docs/token-optimization.md)** -- How the server minimizes context window usage
-- **[Architecture](./docs/architecture.md)** -- How the server works, module structure, data flow
-- **[Scrivener Compatibility](./docs/SCRIVENER_COMPATIBILITY.md)** -- Supported Scrivener versions, platforms, and format coverage
-- **[Scrivener File Format](./docs/scrivener-format.md)** -- The reverse-engineered `.scriv` format, what we read vs. infer, and safe-modification guidance
-- **[Contributing](./docs/contributing.md)** -- Development setup, code conventions, adding new tools
+- **[Getting Started](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/getting-started.md)** -- Installation, configuration, your first session
+- **[MCP Client Setup](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/CLIENT_SETUP.md)** -- Copy-paste config for Claude Desktop, Claude Code, Cursor, and VS Code
+- **[Writing with AI](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/writing-with-ai.md)** -- Analysis workflows, enhancement strategies, memory management
+- **[Troubleshooting](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/troubleshooting.md)** -- Common issues and fixes
+- **[Token Optimization](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/token-optimization.md)** -- How the server minimizes context window usage
+- **[Architecture](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/architecture.md)** -- How the server works, module structure, data flow
+- **[Scrivener Compatibility](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/SCRIVENER_COMPATIBILITY.md)** -- Supported Scrivener versions, platforms, and format coverage
+- **[Scrivener File Format](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/scrivener-format.md)** -- The reverse-engineered `.scriv` format, what we read vs. infer, and safe-modification guidance
+- **[Contributing](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/contributing.md)** -- Development setup, code conventions, adding new tools
 
 ## Requirements
 
@@ -482,7 +482,7 @@ related:
 
 ## Contributing
 
-We welcome contributions of all sizes. Check the [issue tracker](https://github.com/writerslogic/scrivener-mcp/issues) for `good first issue` labels, or see the [contributing guide](./docs/contributing.md) for development setup.
+We welcome contributions of all sizes. Check the [issue tracker](https://github.com/writerslogic/scrivener-mcp/issues) for `good first issue` labels, or see the [contributing guide](https://github.com/writerslogic/scrivener-mcp/blob/main/docs/contributing.md) for development setup.
 
 **Areas where help is especially welcome:**
 - Test coverage ([#18](https://github.com/writerslogic/scrivener-mcp/issues/18))
@@ -492,13 +492,13 @@ We welcome contributions of all sizes. Check the [issue tracker](https://github.
 
 ## Security
 
-Found a vulnerability? Please report it privately — see [SECURITY.md](./SECURITY.md).
+Found a vulnerability? Please report it privately — see [SECURITY.md](https://github.com/writerslogic/scrivener-mcp/blob/main/SECURITY.md).
 
 ## License
 
 AGPL-3.0 &copy; [WritersLogic, Inc.](https://github.com/writerslogic)
 
-Free for personal use and open-source projects. Commercial license available for proprietary integration. See [COMMERCIAL_LICENSE.md](./COMMERCIAL_LICENSE.md) for details.
+Free for personal use and open-source projects. Commercial license available for proprietary integration. See [COMMERCIAL_LICENSE.md](https://github.com/writerslogic/scrivener-mcp/blob/main/COMMERCIAL_LICENSE.md) for details.
 
 <p align="center">
   <a href="https://glama.ai/mcp/servers/writerslogic/scrivener-mcp">

@@ -45,7 +45,7 @@ offenders, complete with a snarky verdict stamp.**
 
 > CERTIFIED SLOP · SLOP SCORE 84/100 · TIER: INDUSTRIAL-GRADE
 
-*(screenshots live in [store/screenshots](store/screenshots))*
+*(screenshots live in [store/screenshots](https://github.com/7mehul/linkedin-ai-slop-detector/blob/main/store/screenshots))*
 
 ## What this is (and isn't)
 
@@ -80,7 +80,7 @@ that were already open.
 ## How it works
 
 Everything runs locally in the content script. **Zero network calls, zero analytics,
-zero data collection. Nothing leaves your browser.** See [PRIVACY.md](PRIVACY.md).
+zero data collection. Nothing leaves your browser.** See [PRIVACY.md](https://github.com/7mehul/linkedin-ai-slop-detector/blob/main/PRIVACY.md).
 
 Each post is scored 0 to 100 by 12 weighted signals:
 
@@ -156,7 +156,7 @@ Open `test/harness.html` from any static server for a mock feed with the real
 pipeline running; no LinkedIn login needed. Add `?clean` to hide the dev controls.
 
 LinkedIn's DOM rots. Every selector lives in one block (`SS.SELECTORS` in
-[content/wordlists.js](content/wordlists.js)); when the feed changes, fix it there
+[content/wordlists.js](https://github.com/7mehul/linkedin-ai-slop-detector/blob/main/content/wordlists.js)); when the feed changes, fix it there
 and nowhere else. `SlopShield.extractor.debugScan()` in the DevTools console prints
 what the extractor currently sees.
 
@@ -168,4 +168,4 @@ humans of anything. Roast posts, not people.
 SlopShield is an independent project. It is not affiliated with, endorsed by, or
 sponsored by LinkedIn Corporation.
 
-MIT, see [LICENSE](LICENSE).
+MIT, see [LICENSE](https://github.com/7mehul/linkedin-ai-slop-detector/blob/main/LICENSE).

@@ -80,19 +80,19 @@ This project generates optimized, ready-to-use prompts based on user input, help
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home](./public/screenshots/home.png)
+![Home](https://github.com/neeraja00/AI-prompt-generator/blob/main/public/screenshots/home.png)
 
 ### ✍️ Prompt Generator
-![Generator](./public/screenshots/Generator.png)
+![Generator](https://github.com/neeraja00/AI-prompt-generator/blob/main/public/screenshots/Generator.png)
 
 ### 📞 Contact Page
-![Contact](./public/screenshots/Contact.png)
+![Contact](https://github.com/neeraja00/AI-prompt-generator/blob/main/public/screenshots/Contact.png)
 
 ### ℹ️ About Page
-![About](./public/screenshots/About.png)
+![About](https://github.com/neeraja00/AI-prompt-generator/blob/main/public/screenshots/About.png)
 
 ### 🔻 Footer Section
-![Footer](./public/screenshots/Footer.png)
+![Footer](https://github.com/neeraja00/AI-prompt-generator/blob/main/public/screenshots/Footer.png)
 ---
 
 ## 📂 Project Structure

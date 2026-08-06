@@ -43,7 +43,7 @@ related:
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Compatibility](https://img.shields.io/badge/compatibility-any%20LLM-purple)]()
 
-\[ **English** | [Русский](README.ru.md) \]
+\[ **English** | [Русский](https://github.com/MADEVAL/HumanAI/blob/main/README.ru.md) \]
 
 > **If the reader forgets a machine was involved, you won.**
 

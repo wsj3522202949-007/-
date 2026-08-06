@@ -339,7 +339,7 @@ pip install -r requirements-dev.txt  # If it exists
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/naakaarafr/Storybook-Generator/blob/main/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 

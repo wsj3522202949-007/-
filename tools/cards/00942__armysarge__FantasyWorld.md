@@ -55,7 +55,7 @@ related:
 
 An AI-powered fantasy world event generator that creates dynamic, evolving stories with **multi-AI provider support** (Google Gemini, OpenAI, GitHub Copilot, or any OpenAI-compatible endpoint) and optional Telegram integration.
 
-![Fantasy World Generator](image.webp)
+![Fantasy World Generator](https://github.com/armysarge/FantasyWorld/blob/main/image.webp)
 
 
 ## Features
@@ -238,10 +238,10 @@ Open `http://localhost:5000` in your browser (or press **`N`** in the interactiv
 - `requirements.txt` - Required Python dependencies
 
 ## Console Example
-![Fantasy World Generator](example1.webp)
+![Fantasy World Generator](https://github.com/armysarge/FantasyWorld/blob/main/example1.webp)
 
 ## Telegram Example
-![Fantasy World Generator](example2.webp)
+![Fantasy World Generator](https://github.com/armysarge/FantasyWorld/blob/main/example2.webp)
 
 ## Contributing
 

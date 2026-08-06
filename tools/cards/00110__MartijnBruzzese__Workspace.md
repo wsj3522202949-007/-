@@ -61,8 +61,8 @@ Not polished products — active work.
 ### 🍸 Hospitality
 Professional profile and experience.
 
-- 🇳🇱 [Hospitality Profile (NL)](hospitality_nl.md)
-- 🇬🇧 [Hospitality Profile (EN)](hospitality_en.md)
+- 🇳🇱 [Hospitality Profile (NL)](https://github.com/MartijnBruzzese/Workspace/blob/main/hospitality_nl.md)
+- 🇬🇧 [Hospitality Profile (EN)](https://github.com/MartijnBruzzese/Workspace/blob/main/hospitality_en.md)
 
 ### ✍️ Writing
 Creative writing and personal reflections (work in progress).

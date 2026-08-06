@@ -295,8 +295,8 @@ pnpm build
 ## 🤝 社区与支持
 
 ### 📞 联系方式
-- 🐛 **Bug反馈**: [GitHub Issues](../../issues)
-- 💡 **功能建议**: [GitHub Discussions](../../discussions)
+- 🐛 **Bug反馈**: [GitHub Issues](https://github.com/mochendong/91writing/blob/main/../../issues)
+- 💡 **功能建议**: [GitHub Discussions](https://github.com/mochendong/91writing/blob/main/../../discussions)
 - 📧 **邮箱支持**: 1090879115@qq.com
 - 🐧 **QQ交流群**: 
 
@@ -494,7 +494,7 @@ pnpm build
 
 ## 📄 开源协议
 
-本项目基于 **MIT License** 开源协议发布。详见 [LICENSE](LICENSE) 文件。
+本项目基于 **MIT License** 开源协议发布。详见 [LICENSE](https://github.com/mochendong/91writing/blob/main/LICENSE) 文件。
 
 ## 🙏 致谢
 

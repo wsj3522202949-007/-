@@ -278,7 +278,7 @@ Please ensure no API keys or secrets are committed. See `.env.example` for the c
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/nihaaarika/AI-story-generator/blob/main/LICENSE) file for details.
 
 ---
 

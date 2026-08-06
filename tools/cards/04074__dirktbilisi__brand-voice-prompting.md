@@ -70,10 +70,10 @@ There's a better pattern: **structured pre-flight blocks**.
 
 ## What's in this repo
 
-- **[The Pattern](./pattern.md)** — the core idea: a structured pre-flight block that goes before every voice-sensitive prompt
-- **[Brand Voice Template](./brand-voice-template.md)** — a fillable template for capturing your own brand voice in a model-readable format
-- **[Examples](./examples/)** — anonymized before/after prompts showing the pattern in action
-- **[Anti-patterns](./anti-patterns.md)** — what doesn't work and why
+- **[The Pattern](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/pattern.md)** — the core idea: a structured pre-flight block that goes before every voice-sensitive prompt
+- **[Brand Voice Template](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/brand-voice-template.md)** — a fillable template for capturing your own brand voice in a model-readable format
+- **[Examples](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/examples/)** — anonymized before/after prompts showing the pattern in action
+- **[Anti-patterns](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/anti-patterns.md)** — what doesn't work and why
 
 ## Who this is for
 
@@ -95,7 +95,7 @@ The pattern in this repo is built on this asymmetry: most brand voice work is **
 
 ## License
 
-[CC BY 4.0](./LICENSE) — use, adapt, remix freely with attribution.
+[CC BY 4.0](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/LICENSE) — use, adapt, remix freely with attribution.
 
 ## Roadmap
 
@@ -104,11 +104,11 @@ The pattern in this repo is built on this asymmetry: most brand voice work is **
 - [ ] Translation: German version (`pattern-de.md`)
 - [ ] Companion tool: a small CLI that validates your generated text against your pre-flight block
 
-Issues and pull requests welcome — see [Contributing](./CONTRIBUTING.md).
+Issues and pull requests welcome — see [Contributing](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/CONTRIBUTING.md).
 
 ## Contributing
 
-Real before/after examples from your own brand voice work are the most valuable contribution. See [CONTRIBUTING.md](./CONTRIBUTING.md) for what we're looking for.
+Real before/after examples from your own brand voice work are the most valuable contribution. See [CONTRIBUTING.md](https://github.com/dirktbilisi/brand-voice-prompting/blob/main/CONTRIBUTING.md) for what we're looking for.
 
 ## Maintainer
 

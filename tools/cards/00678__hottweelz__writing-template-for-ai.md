@@ -83,11 +83,11 @@ A "terminal-style AI agent" is just a chat assistant that can also read and writ
 
 ## How to start
 
-**Step 1 — Open [START_HERE.md](START_HERE.md) and answer the questions.**
+**Step 1 — Open [START_HERE.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/START_HERE.md) and answer the questions.**
 This is the only thing you do by hand. Rough answers are fine — it takes about 10–30 minutes, and you can refine later.
 
 **Step 2 — (Optional) add content guidance for mature/dark material.**
-If your book deals with difficult subject matter, open [.ai/rules/editorial-content-guidance.md](.ai/rules/editorial-content-guidance.md) and fill in the short context block. This tells the AI what kind of work it's doing so it handles hard material honestly. Skip it for lighter books.
+If your book deals with difficult subject matter, open [.ai/rules/editorial-content-guidance.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/.ai/rules/editorial-content-guidance.md) and fill in the short context block. This tells the AI what kind of work it's doing so it handles hard material honestly. Skip it for lighter books.
 
 **Step 3 — Tell your AI to build the plan:**
 > "Read AGENTS.md, START_HERE.md, and book_project_data.md, then generate BOOK_BLUEPRINT.md using the book_generator_prompt.md template."
@@ -101,7 +101,7 @@ Read it. Change anything that feels wrong. When you're happy, tell your AI:
 **Step 5 — The AI drafts the book, chapter by chapter.**
 One chapter per session, one file per chapter. The AI runs an editorial pass and writes a handoff note at the end of each session, so any AI tool can pick up exactly where the last one stopped — you don't have to.
 
-Want to see what the output looks like first? Check [examples/](examples/) for a sample blueprint and chapter.
+Want to see what the output looks like first? Check [examples/](https://github.com/hottweelz/writing-template-for-ai/blob/main/examples/) for a sample blueprint and chapter.
 
 ---
 
@@ -124,7 +124,7 @@ When chapters are drafted, turn them into an actual EPUB and PDF:
 bash scripts/build.sh
 ```
 
-This reads [manuscript/manifest.md](manuscript/manifest.md) for the chapter order, assembles everything into `build/manuscript.full.md`, and (if [pandoc](https://pandoc.org/installing.html) is installed) exports `build/book.epub` and `build/book.pdf` using the metadata in [manuscript/metadata.yaml](manuscript/metadata.yaml).
+This reads [manuscript/manifest.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/manuscript/manifest.md) for the chapter order, assembles everything into `build/manuscript.full.md`, and (if [pandoc](https://pandoc.org/installing.html) is installed) exports `build/book.epub` and `build/book.pdf` using the metadata in [manuscript/metadata.yaml](https://github.com/hottweelz/writing-template-for-ai/blob/main/manuscript/metadata.yaml).
 
 - **Just want the assembled manuscript, no export?** `bash scripts/build.sh --md-only`
 - **No pandoc / not technical?** Ask your AI: *"Concatenate the files listed in manuscript/manifest.md, in order, into one document."* Then export from your editor (or paste into Word / Google Docs and "Save as / Download as EPUB or PDF").
@@ -170,23 +170,23 @@ In short: every tool gets the personas; Claude Code *additionally* gets first-cl
 
 ## The editorial pass
 
-Every chapter goes through an editorial pass before the handoff is recorded. This is mandatory, not optional. It catches structural problems, continuity errors, and prose-quality issues before they compound. The rules live in [.ai/rules/editorial-pass.md](.ai/rules/editorial-pass.md), and a separate [canon-mutation-control](.ai/rules/canon-mutation-control.md) rule stops the AI from quietly changing your story while "improving" it.
+Every chapter goes through an editorial pass before the handoff is recorded. This is mandatory, not optional. It catches structural problems, continuity errors, and prose-quality issues before they compound. The rules live in [.ai/rules/editorial-pass.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/.ai/rules/editorial-pass.md), and a separate [canon-mutation-control](https://github.com/hottweelz/writing-template-for-ai/blob/main/.ai/rules/canon-mutation-control.md) rule stops the AI from quietly changing your story while "improving" it.
 
 ## Final cold-read review
 
-After your manuscript is complete, run [review/Full-Cold-Review-Prompt.md](review/Full-Cold-Review-Prompt.md) in a fresh AI chat or chatbot session with the finished manuscript pasted in. Use a new session with no memory of the drafting process so the review functions as a true cold read. The prompt asks the AI to evaluate the manuscript like a skeptical acquisitions editor and return a publication-grade critique. This is a recommended final checkpoint before you revise further, query agents for fixes, or prepare the manuscript for submission.
+After your manuscript is complete, run [review/Full-Cold-Review-Prompt.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/review/Full-Cold-Review-Prompt.md) in a fresh AI chat or chatbot session with the finished manuscript pasted in. Use a new session with no memory of the drafting process so the review functions as a true cold read. The prompt asks the AI to evaluate the manuscript like a skeptical acquisitions editor and return a publication-grade critique. This is a recommended final checkpoint before you revise further, query agents for fixes, or prepare the manuscript for submission.
 
 ---
 
 ## Will this work for my genre?
 
-The craft DNA is built for dramatic, character-driven fiction and memoir, where it's genuinely excellent. It adapts outward — but some protocols don't apply to every category (a how-to book has no "scenes," romance needs its beats and its happy ending, fantasy needs a world bible). Before Stage 1, read **[docs/genre-routing.md](docs/genre-routing.md)** — one table tells you which agents and protocols to use and which to skip for your genre.
+The craft DNA is built for dramatic, character-driven fiction and memoir, where it's genuinely excellent. It adapts outward — but some protocols don't apply to every category (a how-to book has no "scenes," romance needs its beats and its happy ending, fantasy needs a world bible). Before Stage 1, read **[docs/genre-routing.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/docs/genre-routing.md)** — one table tells you which agents and protocols to use and which to skip for your genre.
 
 ---
 
 ## Content guidance & responsible use
 
-This template supports serious creative writing, including dark and mature themes handled honestly. The approach is to give the AI clear *editorial context* about your project (see [editorial-content-guidance.md](.ai/rules/editorial-content-guidance.md)) — not to evade safety.
+This template supports serious creative writing, including dark and mature themes handled honestly. The approach is to give the AI clear *editorial context* about your project (see [editorial-content-guidance.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/.ai/rules/editorial-content-guidance.md)) — not to evade safety.
 
 Some boundaries are fixed for every project regardless of genre — most importantly, **no sexual content involving minors, ever.** You are responsible for what you choose to write and publish.
 
@@ -254,6 +254,6 @@ related:
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Use it, fork it, build on it. (MIT covers the template and tooling; anything *you* write with it is yours.)
+MIT — see [LICENSE](https://github.com/hottweelz/writing-template-for-ai/blob/main/LICENSE). Use it, fork it, build on it. (MIT covers the template and tooling; anything *you* write with it is yours.)
 
-Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the public-repo workflow and template boundaries.
+Contributions are welcome. See [CONTRIBUTING.md](https://github.com/hottweelz/writing-template-for-ai/blob/main/CONTRIBUTING.md) for the public-repo workflow and template boundaries.

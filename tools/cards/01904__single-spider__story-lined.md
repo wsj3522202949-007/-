@@ -81,7 +81,7 @@ StoryLined is a visual tool designed for writers, game designers, and storytelle
 
 ## Usage
 
-![Alt text](images/Demo.png)
+![Alt text](https://github.com/single-spider/story-lined/blob/main/images/Demo.png)
 
 ### Basic Navigation
 

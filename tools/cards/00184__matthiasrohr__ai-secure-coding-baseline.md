@@ -69,13 +69,13 @@ This is a compact guardrail, not a complete standard or compliance checklist. It
 
 ## The rules
 
-The full text is in [ai-secure-coding-baseline.md](ai-secure-coding-baseline.md): a preamble that classifies the work, then thirteen rules ordered by risk—the first four non-negotiable—and a closing review-and-report step. The rules span access control, untrusted input, secrets and default credentials, preserving controls, secure defaults, authentication abuse resistance, privilege separation, proven mechanisms, dependencies, errors and logging, resource limits, dev-vs-production, and abuse tests.
+The full text is in [ai-secure-coding-baseline.md](https://github.com/matthiasrohr/ai-secure-coding-baseline/blob/main/ai-secure-coding-baseline.md): a preamble that classifies the work, then thirteen rules ordered by risk—the first four non-negotiable—and a closing review-and-report step. The rules span access control, untrusted input, secrets and default credentials, preserving controls, secure defaults, authentication abuse resistance, privilege separation, proven mechanisms, dependencies, errors and logging, resource limits, dev-vs-production, and abuse tests.
 
 Before completion, the assistant reviews its diff and reports concrete findings—including fixed issues—plus affected controls, test results, and unresolved risks or gaps.
 
 ## Optional AI application add-on
 
-For a project that builds LLM-powered features, also load [ai-secure-coding-llm-add-on.md](ai-secure-coding-llm-add-on.md). It covers AI-specific risks such as prompt injection, tool authorization, action limits, memory isolation, and the OWASP LLM and Agentic Top 10 reviews. Do not load it for ordinary projects that only use an AI assistant to write code.
+For a project that builds LLM-powered features, also load [ai-secure-coding-llm-add-on.md](https://github.com/matthiasrohr/ai-secure-coding-baseline/blob/main/ai-secure-coding-llm-add-on.md). It covers AI-specific risks such as prompt injection, tool authorization, action limits, memory isolation, and the OWASP LLM and Agentic Top 10 reviews. Do not load it for ordinary projects that only use an AI assistant to write code.
 
 ## Using it
 
@@ -171,4 +171,4 @@ Keep `ai-secure-coding-baseline.md` as the source of truth and generate copied i
 
 ## License
 
-Licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to use, share, and adapt this material for any purpose, including commercially, provided you give appropriate credit. See [LICENSE](LICENSE) for the full terms.
+Licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). You are free to use, share, and adapt this material for any purpose, including commercially, provided you give appropriate credit. See [LICENSE](https://github.com/matthiasrohr/ai-secure-coding-baseline/blob/main/LICENSE) for the full terms.

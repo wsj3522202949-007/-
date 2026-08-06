@@ -302,10 +302,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📚 Documentation
 
-- [Architecture Guide](ARCHITECTURE_MAP.md)
-- [Deployment Guide](DEPLOYMENT_GUIDE.md)
-- [Setup Instructions](MOBILE_TC_GENERATOR_SETUP.md)
-- [Presentation Guide](PRESENTATION_GUIDE.md)
+- [Architecture Guide](https://github.com/vivekqa1/MOBILE_TC_GENERATOR/blob/main/ARCHITECTURE_MAP.md)
+- [Deployment Guide](https://github.com/vivekqa1/MOBILE_TC_GENERATOR/blob/main/DEPLOYMENT_GUIDE.md)
+- [Setup Instructions](https://github.com/vivekqa1/MOBILE_TC_GENERATOR/blob/main/MOBILE_TC_GENERATOR_SETUP.md)
+- [Presentation Guide](https://github.com/vivekqa1/MOBILE_TC_GENERATOR/blob/main/PRESENTATION_GUIDE.md)
 
 ## 🎯 Roadmap
 

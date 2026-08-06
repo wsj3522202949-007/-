@@ -45,7 +45,7 @@ related:
 
 # tofukyung-plugins
 
-![tofukyung-plugins hero](assets/hero.png)
+![tofukyung-plugins hero](https://github.com/treylom/tofukyung-plugins/blob/main/assets/hero.png)
 
 **AI를 업무에 녹이고 싶은 사람들을 위한 Claude Code · Codex 플러그인 모음입니다.**
 
@@ -199,7 +199,7 @@ Claude Code를 배우는 단계에서 실제 운영 단계까지 올라가고 �
 ## Contributing
 
 새 플러그인을 추가하거나 기존 설명을 다듬고 싶다면 PR로 제안해 주세요.
-저장소 구조와 메타데이터 형식은 [`docs/plugin-standard.md`](docs/plugin-standard.md)를 기준으로 맞추면 됩니다.
+저장소 구조와 메타데이터 형식은 [`docs/plugin-standard.md`](https://github.com/treylom/tofukyung-plugins/blob/main/docs/plugin-standard.md)를 기준으로 맞추면 됩니다.
 
 ## License
 

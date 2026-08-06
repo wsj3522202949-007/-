@@ -46,7 +46,7 @@ related:
 
 ## 🌐 Language Switch / 语言切换
 
-- [English](README.md) | [中文](README.zh-CN.md)
+- [English](https://github.com/dechecker-ai/ai-checker/blob/main/README.md) | [中文](https://github.com/dechecker-ai/ai-checker/blob/main/README.zh-CN.md)
 
 ---
 

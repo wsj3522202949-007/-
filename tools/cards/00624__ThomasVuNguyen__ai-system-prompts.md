@@ -52,16 +52,16 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| 📘 | [00-how-to-write-system-prompts.md](00-how-to-write-system-prompts.md) | **Writing Guide** | Original analysis | — |
-| 1 | [01-openai-codex-cli.md](01-openai-codex-cli.md) | **OpenAI Codex CLI** | [Official repo](https://github.com/openai/codex) | 12KB |
-| 2 | [02-opencode.md](02-opencode.md) | **OpenCode** | [Official repo](https://github.com/anomalyco/opencode) | 13KB |
-| 3 | [03-hermes-agent.md](03-hermes-agent.md) | **Hermes Agent** | [Official repo](https://github.com/NousResearch/hermes-agent) | 23KB |
-| 4 | [04-openclaw.md](04-openclaw.md) | **OpenClaw** | [Official repo](https://github.com/openclaw/openclaw) | 31KB |
-| 5 | [05-aider.md](05-aider.md) | **Aider** | [Official repo](https://github.com/Aider-AI/aider) | 27KB |
-| 6 | [06-swe-agent.md](06-swe-agent.md) | **SWE-agent** | [Official repo](https://github.com/SWE-agent/SWE-agent) | 43KB |
-| 7 | [07-claude-code.md](07-claude-code.md) | **Claude Code** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 23KB |
-| 8 | [08-cursor.md](08-cursor.md) | **Cursor** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 15KB |
-| 9 | [09-windsurf.md](09-windsurf.md) | **Windsurf** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 18KB |
+| 📘 | [00-how-to-write-system-prompts.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/00-how-to-write-system-prompts.md) | **Writing Guide** | Original analysis | — |
+| 1 | [01-openai-codex-cli.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/01-openai-codex-cli.md) | **OpenAI Codex CLI** | [Official repo](https://github.com/openai/codex) | 12KB |
+| 2 | [02-opencode.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/02-opencode.md) | **OpenCode** | [Official repo](https://github.com/anomalyco/opencode) | 13KB |
+| 3 | [03-hermes-agent.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/03-hermes-agent.md) | **Hermes Agent** | [Official repo](https://github.com/NousResearch/hermes-agent) | 23KB |
+| 4 | [04-openclaw.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/04-openclaw.md) | **OpenClaw** | [Official repo](https://github.com/openclaw/openclaw) | 31KB |
+| 5 | [05-aider.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/05-aider.md) | **Aider** | [Official repo](https://github.com/Aider-AI/aider) | 27KB |
+| 6 | [06-swe-agent.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/06-swe-agent.md) | **SWE-agent** | [Official repo](https://github.com/SWE-agent/SWE-agent) | 43KB |
+| 7 | [07-claude-code.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/07-claude-code.md) | **Claude Code** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 23KB |
+| 8 | [08-cursor.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/08-cursor.md) | **Cursor** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 15KB |
+| 9 | [09-windsurf.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/09-windsurf.md) | **Windsurf** | [Community extracted](https://github.com/dontriskit/awesome-ai-system-prompts) | 18KB |
 
 **Total: ~205KB of real-world production prompts**
 
@@ -83,7 +83,7 @@ related:
 
 ## Start Here
 
-👉 Read **[00-how-to-write-system-prompts.md](00-how-to-write-system-prompts.md)** — a 12-principle guide distilled from analyzing all 9 prompts.
+👉 Read **[00-how-to-write-system-prompts.md](https://github.com/ThomasVuNguyen/ai-system-prompts/blob/main/00-how-to-write-system-prompts.md)** — a 12-principle guide distilled from analyzing all 9 prompts.
 
 ## License
 

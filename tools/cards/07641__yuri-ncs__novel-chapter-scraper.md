@@ -129,4 +129,4 @@ Contributions are welcome! If you'd like to add a new feature, fix a bug, or imp
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/yuri-ncs/novel-chapter-scraper/blob/main/LICENSE) file for more details.

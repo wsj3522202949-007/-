@@ -59,8 +59,8 @@ related:
 ## 📖 Project Overview
 The **AI Story Generator** is a powerful tool that leverages OpenAI's GPT-4 and DALL-E 3 to create immersive, illustrated stories. It generates dynamic story chapters with AI-crafted content and images, compiling them into a professional-quality PDF.
 ## 📚 Checkout the samples it generated
-- [Peeking Into Future](outputs/peeking_into_future.pdf)
-- [Time Travel Adventure](outputs/time_travel_adventure.pdf)
+- [Peeking Into Future](https://github.com/GanapathySubramaniam/AI-Story-Generator/blob/main/outputs/peeking_into_future.pdf)
+- [Time Travel Adventure](https://github.com/GanapathySubramaniam/AI-Story-Generator/blob/main/outputs/time_travel_adventure.pdf)
 
 ## 🚀 Features
 - **Story Generation:** Uses GPT-4 to generate engaging story chapters.

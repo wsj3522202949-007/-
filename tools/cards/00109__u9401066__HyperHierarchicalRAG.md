@@ -48,7 +48,7 @@ related:
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io/)
 [![Version](https://img.shields.io/badge/version-0.7.1-brightgreen.svg)](CHANGELOG.md)
 
-🌐 [繁體中文](README.zh-TW.md)
+🌐 [繁體中文](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/README.zh-TW.md)
 
 ## 🎯 專案目標
 
@@ -321,18 +321,18 @@ HyperHierarchicalRAG/
 
 ## 📋 開發文檔
 
-- [CHANGELOG.md](CHANGELOG.md) - 版本變更記錄
-- [ROADMAP.md](ROADMAP.md) - 開發路線圖
-- [CONSTITUTION.md](CONSTITUTION.md) - 專案最高原則
-- [docs/architecture/](docs/architecture/) - 架構設計文檔
+- [CHANGELOG.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/CHANGELOG.md) - 版本變更記錄
+- [ROADMAP.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/ROADMAP.md) - 開發路線圖
+- [CONSTITUTION.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/CONSTITUTION.md) - 專案最高原則
+- [docs/architecture/](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/docs/architecture/) - 架構設計文檔
 
 ## 🤝 Contributing
 
-歡迎貢獻！請參閱 [CONTRIBUTING.md](CONTRIBUTING.md) 了解詳情。
+歡迎貢獻！請參閱 [CONTRIBUTING.md](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/CONTRIBUTING.md) 了解詳情。
 
 ## 📄 License
 
-Apache License 2.0 - 詳見 [LICENSE](LICENSE)
+Apache License 2.0 - 詳見 [LICENSE](https://github.com/u9401066/HyperHierarchicalRAG/blob/main/LICENSE)
 
 related:
   - methods/网文写作最强SOP.md

@@ -50,9 +50,9 @@ related:
 > validate it dimension by dimension before anything counts as written.
 
 **Status:** pre-1.0, actively developed. Public-domain demo dataset works
-end-to-end; APIs may still shift. Read [`CHANGELOG.md`](CHANGELOG.md).
+end-to-end; APIs may still shift. Read [`CHANGELOG.md`](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/CHANGELOG.md).
 
-[English](README.md) · [Español](README_ES.md)
+[English](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/README.md) · [Español](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/README_ES.md)
 
 ---
 
@@ -62,11 +62,11 @@ end-to-end; APIs may still shift. Read [`CHANGELOG.md`](CHANGELOG.md).
 
 | Workspace | Acid test failed → regenerate |
 |---|---|
-| ![Obra workspace](docs/images/01-workspace.png) | ![Acid failed](docs/images/02-acid-failed.png) |
+| ![Obra workspace](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/docs/images/01-workspace.png) | ![Acid failed](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/docs/images/02-acid-failed.png) |
 
 | Per-user LLM config | Beat reorder |
 |---|---|
-| ![Configuracion](docs/images/03-configuracion.png) | ![Beat reorder](docs/images/04-beat-reorder.png) |
+| ![Configuracion](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/docs/images/03-configuracion.png) | ![Beat reorder](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/docs/images/04-beat-reorder.png) |
 
 ## What problem this solves
 
@@ -128,7 +128,7 @@ local runs with Llama/Gemma/Mistral).
 
 For a deeper walkthrough — sequence diagrams of every flow, the acid
 test rubric, the compendio cache, multi-tenancy, and how to swap or
-translate the prompts — read [`docs/architecture.md`](docs/architecture.md).
+translate the prompts — read [`docs/architecture.md`](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/docs/architecture.md).
 
 ## Quick start
 
@@ -181,11 +181,11 @@ CI runs the same on every push and PR. Tests use SQLite in-memory and a
 
 ## Contributing
 
-PRs welcome. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for project layout,
+PRs welcome. See [`CONTRIBUTING.md`](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/CONTRIBUTING.md) for project layout,
 how to run things locally, and the PR checklist. By participating you
-agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+agree to follow the [Code of Conduct](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/CODE_OF_CONDUCT.md).
 
-Security issues: please follow [`SECURITY.md`](SECURITY.md) — do **not**
+Security issues: please follow [`SECURITY.md`](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/SECURITY.md) — do **not**
 open public GitHub issues for vulnerabilities.
 
 ## Roadmap
@@ -198,4 +198,4 @@ open public GitHub issues for vulnerabilities.
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE).
+MIT — see [`LICENSE`](https://github.com/CenitLabs-mx/CenitStoryTeller/blob/main/LICENSE).

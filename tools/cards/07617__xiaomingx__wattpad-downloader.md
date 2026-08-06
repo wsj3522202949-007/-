@@ -185,7 +185,7 @@ DEBUG=false
 
 ## 优化记录
 
-详细的优化记录和测试结果请查看 [OPTIMIZATION_LOG.md](OPTIMIZATION_LOG.md)
+详细的优化记录和测试结果请查看 [OPTIMIZATION_LOG.md](https://github.com/xiaomingx/wattpad-downloader/blob/main/OPTIMIZATION_LOG.md)
 
 ## 许可证
 

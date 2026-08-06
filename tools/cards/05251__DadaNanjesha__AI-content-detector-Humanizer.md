@@ -694,7 +694,7 @@ humanized_text = minimal_rewriting(text, p_syn=0.2, p_trans=0.2)
 
 
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guidelines](https://github.com/DadaNanjesha/AI-content-detector-Humanizer/blob/main/CONTRIBUTING.md) for details.
 
 
 

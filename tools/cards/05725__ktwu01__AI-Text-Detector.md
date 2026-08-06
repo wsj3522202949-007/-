@@ -114,9 +114,9 @@ To use these tools:
    - For Python integration: Import SimpleAIWordHighlighter in your code -->
 
 ## Preview
-![assets/preview.png](assets/preview.png)
+![assets/preview.png](https://github.com/ktwu01/AI-Text-Detector/blob/main/assets/preview.png)
 
 Example result:
 
-![assets/result1.png](assets/result1.png)
-![assets/result2.png](assets/result2.png)
+![assets/result1.png](https://github.com/ktwu01/AI-Text-Detector/blob/main/assets/result1.png)
+![assets/result2.png](https://github.com/ktwu01/AI-Text-Detector/blob/main/assets/result2.png)

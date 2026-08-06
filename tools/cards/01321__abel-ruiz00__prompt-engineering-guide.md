@@ -48,10 +48,10 @@ I spent way too long going through GitHub repos, Reddit threads, research papers
 
 | Category | Prompts | Description |
 |----------|---------|-------------|
-| [Cybersecurity](prompts/cybersecurity-threat-analysis.md) | 2 | Threat analysis, vulnerability assessment, incident response |
-| [Image Generation](prompts/image-photorealistic.md) | 2 | Photorealistic scenes, product photography, editorial |
-| [Coding & Development](prompts/coding-debug-refactor.md) | 2 | Debugging, refactoring, architecture review |
-| [Writing & Analysis](prompts/writing-report-summary.md) | 2 | Reports, data analysis, executive summaries |
+| [Cybersecurity](https://github.com/abel-ruiz00/prompt-engineering-guide/blob/main/prompts/cybersecurity-threat-analysis.md) | 2 | Threat analysis, vulnerability assessment, incident response |
+| [Image Generation](https://github.com/abel-ruiz00/prompt-engineering-guide/blob/main/prompts/image-photorealistic.md) | 2 | Photorealistic scenes, product photography, editorial |
+| [Coding & Development](https://github.com/abel-ruiz00/prompt-engineering-guide/blob/main/prompts/coding-debug-refactor.md) | 2 | Debugging, refactoring, architecture review |
+| [Writing & Analysis](https://github.com/abel-ruiz00/prompt-engineering-guide/blob/main/prompts/writing-report-summary.md) | 2 | Reports, data analysis, executive summaries |
 
 ## How to use
 

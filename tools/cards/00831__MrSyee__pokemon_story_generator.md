@@ -82,14 +82,14 @@ Character Story Generator with SeqGAN
 
 ## Model Architecture
 ### SeqGAN  
-![](./img/SeqGAN_00.png)
-![](./img/SeqGAN_1.png)
-![](./img/SeqGAN_2.png)
+![](https://github.com/MrSyee/pokemon_story_generator/blob/main/img/SeqGAN_00.png)
+![](https://github.com/MrSyee/pokemon_story_generator/blob/main/img/SeqGAN_1.png)
+![](https://github.com/MrSyee/pokemon_story_generator/blob/main/img/SeqGAN_2.png)
 ### SeqGAN with condtion
-![](./img/SeqGAN_with_condition.png)
+![](https://github.com/MrSyee/pokemon_story_generator/blob/main/img/SeqGAN_with_condition.png)
 
 ## 결과
-![](./img/result.PNG)
+![](https://github.com/MrSyee/pokemon_story_generator/blob/main/img/result.PNG)
 
 ## Prerequisites
 - python 3.6

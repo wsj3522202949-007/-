@@ -39,9 +39,9 @@ related:
 
 # Balanced Employee IP Agreement (BEIPA)
 
-[BEIPA](Balanced_Employee_IP_Agreement.md) takes a balanced approach to assigning control of intellectual property (IP) created by an employee. The company gets exclusive control of IP created in the scope of an employee's job. The employee maintains exclusive control of IP created outside of their job and not related to the company's business. For IP created outside of an employee's job but related to the company's business, the employee maintains ownership and the company gets a non-exclusive and unlimited license. A company using BEIPA doesn't try to claim control of an employee's free time knowledge production, nor does it try to extend company control past the period of employment. Think of BEIPA as a commitment to employee autonomy and "work-life balance" – for the mind.
+[BEIPA](https://github.com/github/balanced-employee-ip-agreement/blob/main/Balanced_Employee_IP_Agreement.md) takes a balanced approach to assigning control of intellectual property (IP) created by an employee. The company gets exclusive control of IP created in the scope of an employee's job. The employee maintains exclusive control of IP created outside of their job and not related to the company's business. For IP created outside of an employee's job but related to the company's business, the employee maintains ownership and the company gets a non-exclusive and unlimited license. A company using BEIPA doesn't try to claim control of an employee's free time knowledge production, nor does it try to extend company control past the period of employment. Think of BEIPA as a commitment to employee autonomy and "work-life balance" – for the mind.
 
-BEIPA was started as a reusable version of GitHub's employee IP agreement. Your company can use BEIPA too, and modify it as needed. If you'd like to help improve BEIPA for everyone, file an issue or make a pull request. While aiming to maintain the same "balanced" policy, we're keen to see feedback and suggestions for improving BEIPA and associated documentation. Please read our [contributing guidelines and instructions](CONTRIBUTING.md).
+BEIPA was started as a reusable version of GitHub's employee IP agreement. Your company can use BEIPA too, and modify it as needed. If you'd like to help improve BEIPA for everyone, file an issue or make a pull request. While aiming to maintain the same "balanced" policy, we're keen to see feedback and suggestions for improving BEIPA and associated documentation. Please read our [contributing guidelines and instructions](https://github.com/github/balanced-employee-ip-agreement/blob/main/CONTRIBUTING.md).
 
 Contributors to this project are not your lawyers and nothing in this repository is legal advice. See extended [disclaimer](#disclaimer) below.
 
@@ -96,11 +96,11 @@ If employer and employee have particular patent objectives, they could be spelle
 
 ### In what jurisdictions is BEIPA applicable?
 
-BEIPA was initially written for the United States. Version 2.0 also incorporates language necessary for use in Germany. Feedback on making it more useful in any jurisdiction is most [welcome](CONTRIBUTING.md).
+BEIPA was initially written for the United States. Version 2.0 also incorporates language necessary for use in Germany. Feedback on making it more useful in any jurisdiction is most [welcome](https://github.com/github/balanced-employee-ip-agreement/blob/main/CONTRIBUTING.md).
 
 Even within the United States, limits on employer ability to claim *all* employee-created IP vary. In [California](https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&chapter=2.&lawCode=LAB&article=3.5.) the main difference made by BEIPA is that IP developed with company equipment or relating to the company's business, but in an employee's free time and which the employee is not involved in as an employee, is not owned by the company (but the company does get a non-exclusive and unlimited license if the IP relates to the company's business). This recognizes that from the employee perspective, segregating one's life activities based on ownership of devices at hand or relatedness to an employer's potentially vast range of business that an individual employee is not involved with as an employee imposes significant cognitive overhead and often doesn't happen in practice, whatever agreements state. It also recognizes from the employer's perspective that the employer has a real interest in being able to use any IP created during an employee's term of employment that is related to their business (note this expands and makes explicit the traditional "shop right" to use in lieu of demanding exclusive control). In some states with less employee-friendly law, BEIPA makes a bigger difference relative to the maximum employer control allowable by law often baked into employee IP agreements.
 
-See [Laws Concerning Employment Agreements and Intellectual Property Assignment](Employee_IP_Laws.md) for a collection of some laws regulating employee IP agreements. Some of these may be helpful information for or even required notifications to covered employees. Currently only U.S. state laws are included. Contributions to coverage of other jurisdictions are welcome.
+See [Laws Concerning Employment Agreements and Intellectual Property Assignment](https://github.com/github/balanced-employee-ip-agreement/blob/main/Employee_IP_Laws.md) for a collection of some laws regulating employee IP agreements. Some of these may be helpful information for or even required notifications to covered employees. Currently only U.S. state laws are included. Contributions to coverage of other jurisdictions are welcome.
 
 ### Can I use BEIPA?
 
@@ -136,7 +136,7 @@ GitHub, Inc. is not a law firm and does not offer legal advice. GitHub, Inc. and
 
 ## License
 
-Dedicated to the public domain under [CC0-1.0](LICENSE.md) by GitHub, Inc. and contributors.
+Dedicated to the public domain under [CC0-1.0](https://github.com/github/balanced-employee-ip-agreement/blob/main/LICENSE.md) by GitHub, Inc. and contributors.
 
 Note that CC0-1.0 does not grant any trademark permissions.
 

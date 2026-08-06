@@ -57,6 +57,6 @@ The following shows what is included in the prompt (outlined in green) that is u
 * The summary of the scene immediately prior to the current one is not included, instead the complete text of the previous scene is included.
 * Finally, the summary of the current scene is used to tell the LLM what it is supposed to write about in the current scene.
 
-![](Images/Outline.png)
+![](https://github.com/FaceDeer/storyteller/blob/main/Images/Outline.png)
 
 Since the complete text of the previous scene is included in the prompt for the next scene, it's important to proofread and edit each secene in the story after it's generated before going ahead and generating the next one. This ensures that mistakes the LLM makes aren't propagated forward.

@@ -61,13 +61,13 @@ An AI-powered web application that detects fraudulent job postings from **text i
 
 ## Screenshot
 1.simple user interface
-![App Screenshot](img/base.png)
+![App Screenshot](https://github.com/karangobade/smart-job-scam-detector/blob/main/img/base.png)
 
 2.enter job description(text or img )
-![App Screenshot](img/des.png)
+![App Screenshot](https://github.com/karangobade/smart-job-scam-detector/blob/main/img/des.png)
 
 3.predict the result
-![App Screenshot](img/det.png)
+![App Screenshot](https://github.com/karangobade/smart-job-scam-detector/blob/main/img/det.png)
 
 ## How It Works
 

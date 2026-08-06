@@ -163,7 +163,7 @@ You are free to use, modify, and distribute this software for personal, academic
 * You do **not** redistribute the unmodified source as your own work.
 * You do **not** resell the source code or UI components as standalone products or templates.
 
-See the full license details in the [`LICENSE`](./LICENSE) file.
+See the full license details in the [`LICENSE`](https://github.com/alireza-jahandoost/AIprep/blob/main/LICENSE) file.
 
 related:
   - methods/网文写作最强SOP.md

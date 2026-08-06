@@ -44,7 +44,7 @@ related:
 
 A Chrome extension that highlights LLM-isms on any webpage. Vibes-based, not ML.
 
-![screenshot placeholder](screenshot.png)
+![screenshot placeholder](https://github.com/milettegillow/slop-detector/blob/main/screenshot.png)
 
 ## The story
 

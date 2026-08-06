@@ -91,10 +91,10 @@ An AI-powered tabletop RPG assistant that helps Game Masters create immersive St
 ## 📖 Documentation
 
 Comprehensive documentation is available in the `/docs` directory:
-- [Project Overview](docs/PROJECT_STATUS_OVERVIEW.md)
-- [Backend Architecture](docs/BACKEND_ARCHITECTURE.md)
-- [Database Schemas](docs/schemas/)
-- [Setup Guides](docs/)
+- [Project Overview](https://github.com/magicat777/swrpg-gen/blob/main/docs/PROJECT_STATUS_OVERVIEW.md)
+- [Backend Architecture](https://github.com/magicat777/swrpg-gen/blob/main/docs/BACKEND_ARCHITECTURE.md)
+- [Database Schemas](https://github.com/magicat777/swrpg-gen/blob/main/docs/schemas/)
+- [Setup Guides](https://github.com/magicat777/swrpg-gen/blob/main/docs/)
 
 ## 🏗️ Project Status
 

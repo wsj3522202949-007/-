@@ -84,14 +84,14 @@ every call in a resilience layer (timeout + retry + graceful degradation), then
 collapses the replies with a **strict-agreement** consensus rule before building
 the response.
 
-![High-level design — security edge feeds an async orchestration core that fans out to a parallel model panel and collapses the results under a strict-consensus rule](backend/docs/HLD.svg)
+![High-level design — security edge feeds an async orchestration core that fans out to a parallel model panel and collapses the results under a strict-consensus rule](https://github.com/faizitguy/ai-text-detector/blob/main/backend/docs/HLD.svg)
 
 > Request flow, left to right: **edge** (authentication, rate limiting, ≤5,000-char
 > validation) → **orchestration** (prompt assembly, parallel fan-out under a time
 > budget) → **model panel** (each provider wrapped by the resilience layer) →
 > **consensus** (agree ⇒ that verdict · disagree ⇒ ambiguous · one survivor ⇒
 > degraded · all fail ⇒ 503) → **response**. The full write-up lives in
-> [backend/docs/LLD.md](backend/docs/LLD.md).
+> [backend/docs/LLD.md](https://github.com/faizitguy/ai-text-detector/blob/main/backend/docs/LLD.md).
 
 ---
 
@@ -149,8 +149,8 @@ cd ../backend && source .venv/bin/activate && uvicorn app.main:app
 ```
 
 For hosting the frontend separately (Vercel/Netlify) against a deployed API, see
-[frontend/README.md](frontend/README.md). For the API contract, deployment, and
-design rationale, see [backend/README.md](backend/README.md).
+[frontend/README.md](https://github.com/faizitguy/ai-text-detector/blob/main/frontend/README.md). For the API contract, deployment, and
+design rationale, see [backend/README.md](https://github.com/faizitguy/ai-text-detector/blob/main/backend/README.md).
 
 related:
   - methods/最强去AI味铁律.md

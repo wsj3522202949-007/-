@@ -52,11 +52,11 @@ related:
 
 3 MCP Servers · 188+ Tools · 38 Skills · 15 Prompt Workflows — a cross-agent authoring surface plus the packaged VSIX experience
 
-> 📖 [繁體中文版](README.zh-TW.md)
-> 🤖 **[Auto-Paper: Fully Autonomous Paper Writing Guide](docs/auto-paper-guide.md)** — 13 main gate checkpoints + Phase 2.1 sub-gate, 79 Quality Hooks, Structured Review Loop
+> 📖 [繁體中文版](https://github.com/u9401066/med-paper-assistant/blob/main/README.zh-TW.md)
+> 🤖 **[Auto-Paper: Fully Autonomous Paper Writing Guide](https://github.com/u9401066/med-paper-assistant/blob/main/docs/auto-paper-guide.md)** — 13 main gate checkpoints + Phase 2.1 sub-gate, 79 Quality Hooks, Structured Review Loop
 > 🧭 **[GitHub Pages Wiki](https://u9401066.github.io/med-paper-assistant/)** — 32 topic pages with Mermaid workflows, SVG architecture maps, full-text search, and dark mode
 
-![MedPaper Assistant overview](docs/assets/medpaper-intro.svg)
+![MedPaper Assistant overview](https://github.com/u9401066/med-paper-assistant/blob/main/docs/assets/medpaper-intro.svg)
 
 ---
 
@@ -69,11 +69,11 @@ This repository is the **full authoring and integration workspace** behind MedPa
 | **mdpaper**                                                        | Core MCP Server        | 118 (full) / 22 (compact default) | Dual workflow server for manuscript and library-wiki paths, plus 3 MCP prompts and 3 MCP resources                                    |
 | **[pubmed-search](https://github.com/u9401066/pubmed-search-mcp)** | MCP Server (submodule) | 46                                | PubMed/Europe PMC/CORE search, PICO, citation metrics, session mgmt                                                                   |
 | **[CGU](https://github.com/u9401066/creativity-generation-unit)**  | MCP Server (submodule) | 24                                | Creative generation: brainstorm, deep think, spark collision                                                                          |
-| **[VS Code Extension](vscode-extension/)**                         | Extension              | 11 cmds + 10 chat                 | MCP auto-registration, compact-first packaged surface, workspace setup, LLM wiki guide, Foam graph views, `@mdpaper` chat participant |
-| **[Dashboard](dashboard/)**                                        | Next.js Web App        | —                                 | Project management UI, diagram editor                                                                                                 |
+| **[VS Code Extension](https://github.com/u9401066/med-paper-assistant/blob/main/vscode-extension/)**                         | Extension              | 11 cmds + 10 chat                 | MCP auto-registration, compact-first packaged surface, workspace setup, LLM wiki guide, Foam graph views, `@mdpaper` chat participant |
+| **[Dashboard](https://github.com/u9401066/med-paper-assistant/blob/main/dashboard/)**                                        | Next.js Web App        | —                                 | Project management UI, diagram editor                                                                                                 |
 | **[Foam](https://foambubble.github.io/foam/)**                     | VS Code Extension      | —                                 | `[[wikilink]]` citation linking, hover preview, graph view                                                                            |
-| **[Skills](.claude/skills/)**                                      | Agent Workflows        | 38                                | Guided multi-tool workflows plus a shared Claude Code / Codex / OpenClaw academic-writing contract                                    |
-| **[Prompts](.github/prompts/)**                                    | Prompt Files           | 15                                | `/mdpaper.search`, `/mdpaper.draft`, etc.                                                                                             |
+| **[Skills](https://github.com/u9401066/med-paper-assistant/blob/main/.claude/skills/)**                                      | Agent Workflows        | 38                                | Guided multi-tool workflows plus a shared Claude Code / Codex / OpenClaw academic-writing contract                                    |
+| **[Prompts](https://github.com/u9401066/med-paper-assistant/blob/main/.github/prompts/)**                                    | Prompt Files           | 15                                | `/mdpaper.search`, `/mdpaper.draft`, etc.                                                                                             |
 
 **External MCP Servers** (optional, installed via uvx):
 
@@ -96,7 +96,7 @@ The repository is the broader engineering surface. The VSIX is the curated end-u
 
 ### How the Pieces Fit Together
 
-![MedPaper Assistant architecture](docs/assets/medpaper-architecture.svg)
+![MedPaper Assistant architecture](https://github.com/u9401066/med-paper-assistant/blob/main/docs/assets/medpaper-architecture.svg)
 
 ### Claude Code, Codex, and OpenClaw
 
@@ -104,11 +104,11 @@ The same evidence and quality gates are available across agent runtimes:
 
 | Runtime     | Project instructions                                  | Academic-writing skill                                                                 |
 | ----------- | ----------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| Claude Code | [`CLAUDE.md`](CLAUDE.md) and [`AGENTS.md`](AGENTS.md) | [`.claude/skills/academic-writing-harness/`](.claude/skills/academic-writing-harness/) |
-| Codex       | [`AGENTS.md`](AGENTS.md)                              | [`.agents/skills/academic-writing-harness/`](.agents/skills/academic-writing-harness/) |
-| OpenClaw    | [`AGENTS.md`](AGENTS.md) plus workspace policy        | [`.agents/skills/academic-writing-harness/`](.agents/skills/academic-writing-harness/) |
+| Claude Code | [`CLAUDE.md`](https://github.com/u9401066/med-paper-assistant/blob/main/CLAUDE.md) and [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) | [`.claude/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.claude/skills/academic-writing-harness/) |
+| Codex       | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md)                              | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.agents/skills/academic-writing-harness/) |
+| OpenClaw    | [`AGENTS.md`](https://github.com/u9401066/med-paper-assistant/blob/main/AGENTS.md) plus workspace policy        | [`.agents/skills/academic-writing-harness/`](https://github.com/u9401066/med-paper-assistant/blob/main/.agents/skills/academic-writing-harness/) |
 
-The platform-neutral [academic-writing workflow](docs/harness/academic-writing-workflow.md) covers manuscripts, proposals, project closeout reports, student papers, preprints, audit gates, and safe exemplar use.
+The platform-neutral [academic-writing workflow](https://github.com/u9401066/med-paper-assistant/blob/main/docs/harness/academic-writing-workflow.md) covers manuscripts, proposals, project closeout reports, student papers, preprints, audit gates, and safe exemplar use.
 
 ---
 
@@ -234,11 +234,11 @@ The current Foam/Copilot layer now includes orphan / placeholder repair loops, t
 Docs and tutorials:
 
 - [GitHub Pages Wiki](https://u9401066.github.io/med-paper-assistant/)
-- [Formal academic output profiles](docs/harness/output-profiles.md)
-- [Production academic-writing architecture](docs/design/production-academic-writing-harness.md)
-- [Using the MedPaper LLM Wiki](docs/how-to/llm-wiki.md)
-- [Foam Dependency Reference](docs/reference/foam.md)
-- [Graph-view example for ICU sedation / delirium review](docs/how-to/llm-wiki.md)
+- [Formal academic output profiles](https://github.com/u9401066/med-paper-assistant/blob/main/docs/harness/output-profiles.md)
+- [Production academic-writing architecture](https://github.com/u9401066/med-paper-assistant/blob/main/docs/design/production-academic-writing-harness.md)
+- [Using the MedPaper LLM Wiki](https://github.com/u9401066/med-paper-assistant/blob/main/docs/how-to/llm-wiki.md)
+- [Foam Dependency Reference](https://github.com/u9401066/med-paper-assistant/blob/main/docs/reference/foam.md)
+- [Graph-view example for ICU sedation / delirium review](https://github.com/u9401066/med-paper-assistant/blob/main/docs/how-to/llm-wiki.md)
 
 ---
 
@@ -671,7 +671,7 @@ med-paper-assistant/
 | 📋     | **AI Writing Intelligence** | Citation intelligence, coherence engine                                      |
 | 📋     | **REST API Mode**           | Expose tools as REST API                                                     |
 
-**Architecture Direction**: [Direction C — Full VSX + Foam + Pandoc](ROADMAP.md)
+**Architecture Direction**: [Direction C — Full VSX + Foam + Pandoc](https://github.com/u9401066/med-paper-assistant/blob/main/ROADMAP.md)
 
 **Legend:** ✅ Complete | 🔜 In Progress | 📋 Planned
 
@@ -679,7 +679,7 @@ med-paper-assistant/
 
 ## 🤝 Contributing
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+We welcome contributions! See [CONTRIBUTING.md](https://github.com/u9401066/med-paper-assistant/blob/main/CONTRIBUTING.md) for guidelines.
 
 - 🐛 **Report bugs** — Open an issue
 - 💡 **Suggest features** — Share your ideas
@@ -702,7 +702,7 @@ If you use Medical Paper Assistant in your research, please cite our paper:
 }
 ```
 
-> **Note:** This paper was produced entirely by the MedPaper Assistant's autonomous pipeline as a self-referential demonstration. The manuscript, audit trail, and all quality metrics are available in [`projects/self-evolving-ai-paper-writing-framework/`](projects/self-evolving-ai-paper-writing-framework/). The preprint is being submitted to [medRxiv](https://submit.medrxiv.org/) — this section will be updated with the DOI once available.
+> **Note:** This paper was produced entirely by the MedPaper Assistant's autonomous pipeline as a self-referential demonstration. The manuscript, audit trail, and all quality metrics are available in [`projects/self-evolving-ai-paper-writing-framework/`](https://github.com/u9401066/med-paper-assistant/blob/main/projects/self-evolving-ai-paper-writing-framework/). The preprint is being submitted to [medRxiv](https://submit.medrxiv.org/) — this section will be updated with the DOI once available.
 
 related:
   - methods/网文写作最强SOP.md
@@ -714,4 +714,4 @@ related:
 
 ## 📄 License
 
-Apache License 2.0 — See [LICENSE](LICENSE)
+Apache License 2.0 — See [LICENSE](https://github.com/u9401066/med-paper-assistant/blob/main/LICENSE)

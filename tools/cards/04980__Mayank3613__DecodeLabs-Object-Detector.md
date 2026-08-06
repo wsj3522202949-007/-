@@ -309,13 +309,13 @@ A histogram-based method that automatically determines the optimal threshold val
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) for details on the process for submitting pull requests.
+Contributions are welcome! Please read the [Contributing Guide](https://github.com/Mayank3613/DecodeLabs-Object-Detector/blob/main/CONTRIBUTING.md) for details on the process for submitting pull requests.
 
 ---
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/Mayank3613/DecodeLabs-Object-Detector/blob/main/LICENSE) file for details.
 
 related:
   - methods/最强去AI味铁律.md

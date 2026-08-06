@@ -172,4 +172,4 @@ eduai-detector/
 
 
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/tony-42069/eduai-detector/blob/main/LICENSE)

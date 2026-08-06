@@ -180,4 +180,4 @@ src/
 
 ## 许可证
 
-[Apache License 2.0](LICENSE)
+[Apache License 2.0](https://github.com/tangqi001/novel_by_you/blob/main/LICENSE)

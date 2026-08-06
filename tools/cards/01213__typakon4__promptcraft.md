@@ -134,7 +134,7 @@ Optional AI and production settings:
 | `APP_ORIGIN` | No | Public app origin used as request referer for AI providers |
 | `ADMIN_IDS` | No | Comma-separated Telegram user IDs for admin commands |
 
-See [.env.example](./.env.example) for the full template.
+See [.env.example](https://github.com/typakon4/promptcraft/blob/main/.env.example) for the full template.
 
 ## BotFather Checklist
 
@@ -218,7 +218,7 @@ WEBHOOK_URL=https://your-domain.com
 
 ### Vercel
 
-The repo includes [vercel.json](./vercel.json) and a serverless entry point in [src/vercel.js](./src/vercel.js).
+The repo includes [vercel.json](https://github.com/typakon4/promptcraft/blob/main/vercel.json) and a serverless entry point in [src/vercel.js](https://github.com/typakon4/promptcraft/blob/main/src/vercel.js).
 
 ```bash
 vercel deploy

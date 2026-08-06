@@ -55,17 +55,17 @@ related:
 
 比如： 很可能你心目中的小龙女可能是这样的（左图），但电视剧中的小龙女却是这样的（右图）
 
-![示例1](./materials/images/case1.png)
+![示例1](https://github.com/hysunny/NovelDrawing/blob/main/materials/images/case1.png)
 
 很可能你心目中的慕言可能是这样的（左图），但电视剧中的慕言却是这样的（右图）
 
-![示例2](./materials/images/case2.png)
+![示例2](https://github.com/hysunny/NovelDrawing/blob/main/materials/images/case2.png)
 
 因此，我们从自身出发，站在大众需求的角度，想做出一款服务于大众的产品，即给大家提供一个能“画”出“它”们的平台，用“傻瓜式“的操作，简单容易的就能”画“出心中所想。经过对以上问题的思考、细化和扩展，我们设计了这款**以绘制角色为主线，功能多样化的“画小说”移动应用软件**。
 
 ### 2. 产品的初步功能设计如下图:
 
-![产品功能](./materials/images/function.png)
+![产品功能](https://github.com/hysunny/NovelDrawing/blob/main/materials/images/function.png)
 
 主要功能有:
 

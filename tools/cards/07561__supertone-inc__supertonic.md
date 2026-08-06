@@ -188,28 +188,28 @@ This generates `outputs/output.wav` using the default preset voice.
 <details>
 <summary><b>Run Supertonic in other languages and platforms</b></summary>
 
-**Node.js Example** ([Details](nodejs/))
+**Node.js Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/nodejs/))
 ```bash
 cd nodejs
 npm install
 npm start
 ```
 
-**Browser Example** ([Details](web/))
+**Browser Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/web/))
 ```bash
 cd web
 npm install
 npm run dev
 ```
 
-**Java Example** ([Details](java/))
+**Java Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/java/))
 ```bash
 cd java
 mvn clean install
 mvn exec:java
 ```
 
-**C++ Example** ([Details](cpp/))
+**C++ Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/cpp/))
 ```bash
 cd cpp
 mkdir build && cd build
@@ -217,35 +217,35 @@ cmake .. && cmake --build . --config Release
 ./example_onnx
 ```
 
-**C# Example** ([Details](csharp/))
+**C# Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/csharp/))
 ```bash
 cd csharp
 dotnet restore
 dotnet run
 ```
 
-**Go Example** ([Details](go/))
+**Go Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/go/))
 ```bash
 cd go
 go mod download
 go run example_onnx.go helper.go
 ```
 
-**Swift Example** ([Details](swift/))
+**Swift Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/swift/))
 ```bash
 cd swift
 swift build -c release
 .build/release/example_onnx
 ```
 
-**Rust Example** ([Details](rust/))
+**Rust Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/rust/))
 ```bash
 cd rust
 cargo build --release
 ./target/release/example_onnx
 ```
 
-**iOS Example** ([Details](ios/))
+**iOS Example** ([Details](https://github.com/supertone-inc/supertonic/blob/main/ios/))
 ```bash
 cd ios/ExampleiOSApp
 xcodegen generate
@@ -368,17 +368,17 @@ We provide ready-to-use TTS inference examples across multiple ecosystems:
 
 | Language/Platform | Path | Description |
 |-------------------|------|-------------|
-| [**Python**](py/) | `py/` | ONNX Runtime inference |
-| [**Node.js**](nodejs/) | `nodejs/` | Server-side JavaScript |
-| [**Browser**](web/) | `web/` | WebGPU/WASM inference |
-| [**Java**](java/) | `java/` | Cross-platform JVM |
-| [**C++**](cpp/) | `cpp/` | High-performance C++ |
-| [**C#**](csharp/) | `csharp/` | .NET ecosystem |
-| [**Go**](go/) | `go/` | Go implementation |
-| [**Swift**](swift/) | `swift/` | macOS applications |
-| [**iOS**](ios/) | `ios/` | Native iOS apps |
-| [**Rust**](rust/) | `rust/` | Memory-safe systems |
-| [**Flutter**](flutter/) | `flutter/` | Cross-platform apps |
+| [**Python**](https://github.com/supertone-inc/supertonic/blob/main/py/) | `py/` | ONNX Runtime inference |
+| [**Node.js**](https://github.com/supertone-inc/supertonic/blob/main/nodejs/) | `nodejs/` | Server-side JavaScript |
+| [**Browser**](https://github.com/supertone-inc/supertonic/blob/main/web/) | `web/` | WebGPU/WASM inference |
+| [**Java**](https://github.com/supertone-inc/supertonic/blob/main/java/) | `java/` | Cross-platform JVM |
+| [**C++**](https://github.com/supertone-inc/supertonic/blob/main/cpp/) | `cpp/` | High-performance C++ |
+| [**C#**](https://github.com/supertone-inc/supertonic/blob/main/csharp/) | `csharp/` | .NET ecosystem |
+| [**Go**](https://github.com/supertone-inc/supertonic/blob/main/go/) | `go/` | Go implementation |
+| [**Swift**](https://github.com/supertone-inc/supertonic/blob/main/swift/) | `swift/` | macOS applications |
+| [**iOS**](https://github.com/supertone-inc/supertonic/blob/main/ios/) | `ios/` | Native iOS apps |
+| [**Rust**](https://github.com/supertone-inc/supertonic/blob/main/rust/) | `rust/` | Memory-safe systems |
+| [**Flutter**](https://github.com/supertone-inc/supertonic/blob/main/flutter/) | `flutter/` | Cross-platform apps |
 
 > For detailed usage instructions, please refer to the README.md in each language directory.
 

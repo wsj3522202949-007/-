@@ -195,8 +195,8 @@ Allux allows adding specific functionalities using the skill system. Each skill 
 ---
 
 ## 📄 Additional Documentation
-- **[Architecture Docs](docs/architecture/overview.md)**: Detailed technical design.
-- **[Guides](docs/guides/index.md)**: How to use and configure Allux.
+- **[Architecture Docs](https://github.com/MarvinQuevedo/allux-agent/blob/main/docs/architecture/overview.md)**: Detailed technical design.
+- **[Guides](https://github.com/MarvinQuevedo/allux-agent/blob/main/docs/guides/index.md)**: How to use and configure Allux.
 
 related:
   - methods/网文写作最强SOP.md
@@ -207,4 +207,4 @@ related:
 ---
 
 ## 📋 Licenses
-This project is licensed under the [GPL-3.0-or-later](LICENSE).
+This project is licensed under the [GPL-3.0-or-later](https://github.com/MarvinQuevedo/allux-agent/blob/main/LICENSE).

@@ -61,8 +61,8 @@ Also includes special rules for LinkedIn posts and a 14-point quality checklist 
 
 The entire system is two markdown files. You can use them right now:
 
-1. **[SKILL.md](skills/humanize-writing/SKILL.md)** — The main instructions (the 3-pass process, LinkedIn rules, quality checklist)
-2. **[ai-patterns-dictionary.md](skills/humanize-writing/references/ai-patterns-dictionary.md)** — The reference dictionary (36+ banned words, 10 structural patterns, tone tells)
+1. **[SKILL.md](https://github.com/lguz/humanize-writing-skill/blob/main/skills/humanize-writing/SKILL.md)** — The main instructions (the 3-pass process, LinkedIn rules, quality checklist)
+2. **[ai-patterns-dictionary.md](https://github.com/lguz/humanize-writing-skill/blob/main/skills/humanize-writing/references/ai-patterns-dictionary.md)** — The reference dictionary (36+ banned words, 10 structural patterns, tone tells)
 
 Copy the contents of both files into your LLM's system prompt or custom instructions, then paste any text you want humanized.
 
@@ -91,8 +91,8 @@ curl -o ~/.claude/skills/humanize-writing/references/ai-patterns-dictionary.md h
 ### ChatGPT / Custom GPT
 
 1. Go to **ChatGPT** → create a new GPT (or use "Custom Instructions" in settings)
-2. Paste the contents of [SKILL.md](skills/humanize-writing/SKILL.md) into the system prompt / instructions field
-3. Paste the contents of [ai-patterns-dictionary.md](skills/humanize-writing/references/ai-patterns-dictionary.md) below it (or upload it as a knowledge file)
+2. Paste the contents of [SKILL.md](https://github.com/lguz/humanize-writing-skill/blob/main/skills/humanize-writing/SKILL.md) into the system prompt / instructions field
+3. Paste the contents of [ai-patterns-dictionary.md](https://github.com/lguz/humanize-writing-skill/blob/main/skills/humanize-writing/references/ai-patterns-dictionary.md) below it (or upload it as a knowledge file)
 4. Start a conversation and paste any text you want humanized
 
 ### Cursor / Windsurf

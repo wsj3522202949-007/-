@@ -148,7 +148,7 @@ curl -o .cursor/rules/anti-ai-writing-humanizer.mdc \
   https://raw.githubusercontent.com/daniel-bogale/anti-ai-writing-humanizer/main/cursor-rules/anti-ai-writing-humanizer.mdc
 ```
 
-See [`cursor-rules/README.md`](cursor-rules/README.md). The Cursor port carries the same core rules
+See [`cursor-rules/README.md`](https://github.com/daniel-bogale/anti-ai-writing-humanizer/blob/main/cursor-rules/README.md). The Cursor port carries the same core rules
 in one self-contained file.
 
 ## Use it
@@ -176,8 +176,8 @@ Built from:
   (v3.9.0, MIT) — vendored unmodified at `references/avoid-ai-writing.md` as the deep detection layer.
 
 Those sources are synthesized into `references/write-human.md` (the prescriptive ruleset) and a
-default `references/house-rules.md`. Full attribution in [NOTICE](NOTICE).
+default `references/house-rules.md`. Full attribution in [NOTICE](https://github.com/daniel-bogale/anti-ai-writing-humanizer/blob/main/NOTICE).
 
 ## License
 
-[MIT](LICENSE). The vendored engine is MIT © Conor Bronsdon; see [NOTICE](NOTICE) for third-party terms.
+[MIT](https://github.com/daniel-bogale/anti-ai-writing-humanizer/blob/main/LICENSE). The vendored engine is MIT © Conor Bronsdon; see [NOTICE](https://github.com/daniel-bogale/anti-ai-writing-humanizer/blob/main/NOTICE) for third-party terms.

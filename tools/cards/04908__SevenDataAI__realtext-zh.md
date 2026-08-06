@@ -191,7 +191,7 @@ print(result.rewritten_text)
 
 ## Rules
 
-规则文件在 [`rules/default_rules.yaml`](./rules/default_rules.yaml)。
+规则文件在 [`rules/default_rules.yaml`](https://github.com/SevenDataAI/realtext-zh/blob/main/rules/default_rules.yaml)。
 
 你可以加自己的行业词库，例如：
 

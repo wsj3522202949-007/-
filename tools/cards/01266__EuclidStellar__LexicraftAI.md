@@ -54,24 +54,24 @@ This application is structured as a suite of specialized tools, each targeting a
 
 ### Core Writing Suite
 
--   **✍️ Enhanced Paraphraser** ([`EnhancedParaphraser.js`](src/components/EnhancedParaphraser.js)): Transform your text with various literary modes and styles. Whether you need a formal tone, a creative flourish, or a specific author's voice, this tool provides sophisticated rewriting capabilities.
--   **🔍 Advanced Grammar & Style Checker** ([`GrammarChecker.js`](src/components/GrammarChecker.js)): Get in-depth analysis of your text, identifying issues from critical grammar errors to subtle style inconsistencies. It provides an overall score, detailed issue breakdowns, and actionable suggestions.
--   **📊 Readability Optimizer** ([`ReadabilityOptimizer.js`](src/components/ReadabilityOptimizer.js)): Tailor your writing to your intended audience. This tool analyzes readability scores, sentence complexity, and vocabulary, providing an optimized version of your text to ensure it resonates perfectly with readers.
--   **🎭 Tone Analyzer** ([`ToneAnalyzer.js`](src/components/ToneAnalyzer.js)): Understand the emotional undercurrent of your writing. It detects the primary tone, sentiment, and confidence level, offering suggestions to align the tone with your creative vision.
--   **📄 Smart Summarizer** ([`Summarizer.js`](src/components/Summarizer.js)): Quickly condense long passages of text into short, medium, or detailed summaries, complete with compression statistics.
+-   **✍️ Enhanced Paraphraser** ([`EnhancedParaphraser.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/EnhancedParaphraser.js)): Transform your text with various literary modes and styles. Whether you need a formal tone, a creative flourish, or a specific author's voice, this tool provides sophisticated rewriting capabilities.
+-   **🔍 Advanced Grammar & Style Checker** ([`GrammarChecker.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/GrammarChecker.js)): Get in-depth analysis of your text, identifying issues from critical grammar errors to subtle style inconsistencies. It provides an overall score, detailed issue breakdowns, and actionable suggestions.
+-   **📊 Readability Optimizer** ([`ReadabilityOptimizer.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/ReadabilityOptimizer.js)): Tailor your writing to your intended audience. This tool analyzes readability scores, sentence complexity, and vocabulary, providing an optimized version of your text to ensure it resonates perfectly with readers.
+-   **🎭 Tone Analyzer** ([`ToneAnalyzer.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/ToneAnalyzer.js)): Understand the emotional undercurrent of your writing. It detects the primary tone, sentiment, and confidence level, offering suggestions to align the tone with your creative vision.
+-   **📄 Smart Summarizer** ([`Summarizer.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/Summarizer.js)): Quickly condense long passages of text into short, medium, or detailed summaries, complete with compression statistics.
 
 ### Creative Writing Toolkit for Novelists & Screenwriters
 
--   **📖 Manuscript Manager** ([`ManuscriptManager.js`](src/components/ManuscriptManager.js)): Organize your novel or screenplay chapter by chapter. This feature allows you to write, edit, and reorder chapters while providing high-level analytics on your entire manuscript, including word counts, pacing analysis, and consistency checks.
--   **🎪 Interactive Scene Builder** ([`SceneBuilder.js`](src/components/SceneBuilder.js)): Craft and analyze individual scenes with precision. Write your scene and get instant feedback on conflict levels, tension, pacing, and dialogue quality. It provides actionable suggestions to make every scene impactful.
--   **📊 Plot Structure Analyzer** ([`PlotAnalyzer.js`](src/components/PlotAnalyzer.js)): Deconstruct your narrative against proven storytelling frameworks like the **Three-Act Structure**, **Hero's Journey**, and **Seven-Point Story Structure**. It visualizes your plot's progression and provides insights to strengthen its foundation.
--   **👥 Character Development Assistant** ([`CharacterAssistant.js`](src/components/CharacterAssistant.js)): Breathe life into your characters. Analyze their voice, traits, and emotional range. The assistant checks for consistency across your manuscript and generates creative suggestions for dialogue, backstory, and development.
+-   **📖 Manuscript Manager** ([`ManuscriptManager.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/ManuscriptManager.js)): Organize your novel or screenplay chapter by chapter. This feature allows you to write, edit, and reorder chapters while providing high-level analytics on your entire manuscript, including word counts, pacing analysis, and consistency checks.
+-   **🎪 Interactive Scene Builder** ([`SceneBuilder.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/SceneBuilder.js)): Craft and analyze individual scenes with precision. Write your scene and get instant feedback on conflict levels, tension, pacing, and dialogue quality. It provides actionable suggestions to make every scene impactful.
+-   **📊 Plot Structure Analyzer** ([`PlotAnalyzer.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/PlotAnalyzer.js)): Deconstruct your narrative against proven storytelling frameworks like the **Three-Act Structure**, **Hero's Journey**, and **Seven-Point Story Structure**. It visualizes your plot's progression and provides insights to strengthen its foundation.
+-   **👥 Character Development Assistant** ([`CharacterAssistant.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/components/CharacterAssistant.js)): Breathe life into your characters. Analyze their voice, traits, and emotional range. The assistant checks for consistency across your manuscript and generates creative suggestions for dialogue, backstory, and development.
 
 ## 🛠️ Technology Stack
 
 -   **Frontend**: React, React Router
--   **AI Integration**: Google Gemini API via [`geminiAPI.js`](src/services/geminiAPI.js)
--   **Styling**: Plain CSS with a responsive, modern design in [`main.css`](src/styles/main.css)
+-   **AI Integration**: Google Gemini API via [`geminiAPI.js`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/services/geminiAPI.js)
+-   **Styling**: Plain CSS with a responsive, modern design in [`main.css`](https://github.com/EuclidStellar/LexicraftAI/blob/main/src/styles/main.css)
 
 ## 🚀 Getting Started
 

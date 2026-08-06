@@ -277,7 +277,7 @@ Generic rules like "follow best practices" and "write clean code" are useless �
 
 onerules generates rules that target **specific AI failure modes**: the `AbstractFactoryProviderManager` class nobody asked for, the `useMemo` on a function that runs once, the `try/catch` around `a + b`.
 
-See the [full before vs after comparison](./docs/before-after.md) for side-by-side examples across Next.js, React, FastAPI, and testing.
+See the [full before vs after comparison](https://github.com/Rahulseh1998/onerules/blob/main/docs/before-after.md) for side-by-side examples across Next.js, React, FastAPI, and testing.
 
 ## FAQ
 
@@ -305,7 +305,7 @@ We welcome contributions! The easiest ways:
 3. **Add a library** — add rules in `src/templates/libraries/index.ts`
 4. **Add a tool** — create a generator in `src/generate/`
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for the full guide.
+See [CONTRIBUTING.md](https://github.com/Rahulseh1998/onerules/blob/main/CONTRIBUTING.md) for the full guide.
 
 ## License
 

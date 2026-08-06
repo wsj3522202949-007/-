@@ -116,7 +116,7 @@ We are grateful to the creators of these prompts for their inspiration and origi
 ---
 
 ## License
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the prompts as needed.
+This project is licensed under the [MIT License](https://github.com/buildwizai/the-prompt-collections/blob/main/LICENSE). Feel free to use, modify, and distribute the prompts as needed.
 
 ---
 

@@ -111,7 +111,7 @@ If you manage to do all that, congratulations! You just made your first game and
 ## Documentation
 You can read the documentation at [monogatari.io/v2](https://monogatari.io/v2).
 
-The documentation source lives in the [`docs/`](docs/) folder of this repository.
+The documentation source lives in the [`docs/`](https://github.com/monogatari/monogatari/blob/main/docs/) folder of this repository.
 
 ## Monogatari as a Module
 Monogatari's core is published to npm as [`@monogatari/core`](https://www.npmjs.com/package/@monogatari/core). It ships both a self-contained browser bundle and an ES module, along with TypeScript type definitions, so you can drop it into a page as a global library or import it from the bundler of your choice.

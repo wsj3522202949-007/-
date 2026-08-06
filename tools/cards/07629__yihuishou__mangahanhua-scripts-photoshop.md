@@ -59,8 +59,8 @@ related:
 * 3.样式匹配脚本(配合PDF注释生成脚本)
 * 4.放置图像
 * 5.导出脚本：1400分辨率（印刷tif图），268分辨率png（B6开本的web图源），前x页彩页分辨率600的RGB
-    ![alt text](img/样式匹配脚本.png)
-    ![alt text](img/导入时对象样式匹配.png)
+    ![alt text](https://github.com/yihuishou/mangahanhua-scripts-photoshop/blob/main/img/%E6%A0%B7%E5%BC%8F%E5%8C%B9%E9%85%8D%E8%84%9A%E6%9C%AC.png)
+    ![alt text](https://github.com/yihuishou/mangahanhua-scripts-photoshop/blob/main/img/%E5%AF%BC%E5%85%A5%E6%97%B6%E5%AF%B9%E8%B1%A1%E6%A0%B7%E5%BC%8F%E5%8C%B9%E9%85%8D.png)
 * 6.导出脚本：ID2LPtxt
 * 7.结巴断句脚本
 
@@ -157,7 +157,7 @@ related:
 
 **垂直堆叠**：字符竖向排列（每字一行）
 
-![文字特效示例](样式修改-文本特效/Text%20Design%20Examples.png)
+![文字特效示例](https://github.com/yihuishou/mangahanhua-scripts-photoshop/blob/main/%E6%A0%B7%E5%BC%8F%E4%BF%AE%E6%94%B9-%E6%96%87%E6%9C%AC%E7%89%B9%E6%95%88/Text%20Design%20Examples.png)
 
 ## 其他工具
 

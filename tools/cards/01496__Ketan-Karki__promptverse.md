@@ -45,7 +45,7 @@ related:
 ---
 
 # PromptVerse Website Repository
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/Ketan-Karki/promptverse/blob/main/screenshot.png)
 
 Welcome to the PromptVerse website repository! This repository contains the source code and assets for the PromptVerse website.
 [https://promptverse-nextjs.netlify.app/](https://promptverse-nextjs.netlify.app/)

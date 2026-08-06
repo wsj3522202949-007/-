@@ -70,7 +70,7 @@ AI Story Teller is a full-stack application that leverages AWS AI services to tr
 
 ## Technical Architecture
 
-![AI Story Teller Architecture](arch.png)
+![AI Story Teller Architecture](https://github.com/RAJ0026/Ai_Story_Generator_Visual_Audio/blob/main/arch.png)
 
 The application consists of two main components:
 

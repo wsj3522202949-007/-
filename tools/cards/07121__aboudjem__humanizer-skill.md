@@ -231,7 +231,7 @@ Same idea for other editors, just change the folder: `.cursor/skills/`, `.github
 | P31-P43 | Emerging | Elegant variation, placeholder text, chatbot markup leaks, treadmill effect, infomercial hooks |
 | P44-P53 | Craft & Forensic | False agency, diff-anchored writing, aphorism formulas, reasoning-chain artifacts, unicode obfuscation |
 
-Every pattern has a full write-up, its triggers, and a before/after example in [`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md) and [`references/patterns.md`](skills/humanizer/references/patterns.md).
+Every pattern has a full write-up, its triggers, and a before/after example in [`skills/humanizer/SKILL.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md) and [`references/patterns.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/references/patterns.md).
 
 The core catalog (P1-P30) draws on [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (CC BY-SA), the cited reference list most of those entries come from.
 
@@ -283,7 +283,7 @@ Drop it into a pipeline with the bundled Action:
     fail-above: '40'
 ```
 
-No API keys, no network, no third-party packages. It's a deterministic stand-in for the skill's holistic score. Details in [`cli/README.md`](cli/README.md).
+No API keys, no network, no third-party packages. It's a deterministic stand-in for the skill's holistic score. Details in [`cli/README.md`](https://github.com/aboudjem/humanizer-skill/blob/main/cli/README.md).
 
 </details>
 
@@ -320,7 +320,7 @@ The skill is a Markdown prompt, so it runs on whatever model your editor points 
 
 No telemetry. No data collection. No API calls. Nothing leaves your machine.
 
-What you install is one Markdown file ([`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md)) that your editor reads locally. No JavaScript, no binaries, no network. The optional metrics CLI in [`cli/`](cli/README.md) is a separate layer: still plain Node, still zero dependencies, still fully offline, and the skill never calls it.
+What you install is one Markdown file ([`skills/humanizer/SKILL.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md)) that your editor reads locally. No JavaScript, no binaries, no network. The optional metrics CLI in [`cli/`](https://github.com/aboudjem/humanizer-skill/blob/main/cli/README.md) is a separate layer: still plain Node, still zero dependencies, still fully offline, and the skill never calls it.
 
 </details>
 
@@ -328,13 +328,13 @@ What you install is one Markdown file ([`skills/humanizer/SKILL.md`](skills/huma
 
 ## Documentation
 
-- Skill source and full pattern catalog: [`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md)
-- Pattern deep dives, triggers, and examples: [`references/patterns.md`](skills/humanizer/references/patterns.md)
-- A full docs site (Docusaurus, ready to deploy) lives in [`docs-site/`](docs-site/): `npm --prefix docs-site install && npm --prefix docs-site run build`
+- Skill source and full pattern catalog: [`skills/humanizer/SKILL.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/SKILL.md)
+- Pattern deep dives, triggers, and examples: [`references/patterns.md`](https://github.com/aboudjem/humanizer-skill/blob/main/skills/humanizer/references/patterns.md)
+- A full docs site (Docusaurus, ready to deploy) lives in [`docs-site/`](https://github.com/aboudjem/humanizer-skill/blob/main/docs-site/): `npm --prefix docs-site install && npm --prefix docs-site run build`
 
 ## Contributing
 
-Found a new AI pattern, or a cleaner fix? PRs welcome. Add a short entry to `SKILL.md`, put the deep dive and a before/after example in `references/patterns.md`, and keep the badge count, CI threshold, and CHANGELOG in sync. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a new AI pattern, or a cleaner fix? PRs welcome. Add a short entry to `SKILL.md`, put the deep dive and a before/after example in `references/patterns.md`, and keep the badge count, CI threshold, and CHANGELOG in sync. See [CONTRIBUTING.md](https://github.com/aboudjem/humanizer-skill/blob/main/CONTRIBUTING.md).
 
 related:
   - methods/QUICK_START.md

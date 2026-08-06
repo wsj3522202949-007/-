@@ -283,10 +283,10 @@ The `.claude/scripts/setup-symlinks.sh` script wires everything up after clone. 
 
 | Doc | Contents |
 |-----|----------|
-| [docs/agents.md](docs/agents.md) | Usage guide for all 26 agents with real-world examples |
-| [docs/commands.md](docs/commands.md) | Reference for all 12 slash commands with scenarios |
-| [docs/orchestrators.md](docs/orchestrators.md) | Multi-agent workflow guide with end-to-end examples |
-| [INSTRUCTIONS.MD](INSTRUCTIONS.MD) | Installation, setup, and configuration guide |
+| [docs/agents.md](https://github.com/cs-doug/claude-plugins/blob/main/docs/agents.md) | Usage guide for all 26 agents with real-world examples |
+| [docs/commands.md](https://github.com/cs-doug/claude-plugins/blob/main/docs/commands.md) | Reference for all 12 slash commands with scenarios |
+| [docs/orchestrators.md](https://github.com/cs-doug/claude-plugins/blob/main/docs/orchestrators.md) | Multi-agent workflow guide with end-to-end examples |
+| [INSTRUCTIONS.MD](https://github.com/cs-doug/claude-plugins/blob/main/INSTRUCTIONS.MD) | Installation, setup, and configuration guide |
 
 related:
   - methods/网文写作最强SOP.md

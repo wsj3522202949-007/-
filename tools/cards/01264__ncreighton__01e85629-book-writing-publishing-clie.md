@@ -77,13 +77,13 @@ Upgrade to the Pro version for **$39.99** and unlock all premium features.
 
 ## Installation
 
-1. Download the latest release from the [Releases page](../../releases)
+1. Download the latest release from the [Releases page](https://github.com/ncreighton/01e85629-book-writing-publishing-clie/blob/main/../../releases)
 2. Extract and follow the setup instructions in the included documentation
 3. For Pro features, enter your license key after purchase
 
 ## Support
 
-- Open an [issue](../../issues) for bug reports
+- Open an [issue](https://github.com/ncreighton/01e85629-book-writing-publishing-clie/blob/main/../../issues) for bug reports
 
 ## License
 

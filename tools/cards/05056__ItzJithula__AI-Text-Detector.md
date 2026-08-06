@@ -132,7 +132,7 @@ The API returns a detailed analysis including human percentage, AI word count, a
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://github.com/ItzJithula/AI-Text-Detector/blob/main/LICENSE).
 
 related:
   - methods/最强去AI味铁律.md

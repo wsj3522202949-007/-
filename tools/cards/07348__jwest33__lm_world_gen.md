@@ -102,4 +102,4 @@ The config is required - generation will fail without it.
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/jwest33/lm_world_gen/blob/main/LICENSE)

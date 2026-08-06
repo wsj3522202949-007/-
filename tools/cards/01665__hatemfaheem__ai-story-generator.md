@@ -72,7 +72,7 @@ A sample story can be found under _stories dir. The sample contains raw content 
 
 ## High Level Diagram
 
-![Alt text](docs/high-level-diagram.png?raw=true "Title")
+![Alt text](https://github.com/hatemfaheem/ai-story-generator/blob/main/docs/high-level-diagram.png?raw=true%20"Title")
 
 ## Prerequisites
 

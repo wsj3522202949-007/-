@@ -142,7 +142,7 @@ We’d love your help improving FrameWeaver! Here’s the easiest way to get sta
 ---
 
 ## 📄 License
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License**. See [LICENSE](https://github.com/FinalYear-Team14/frameweaver-storyboard/blob/main/LICENSE) for details.
 
 related:
   - methods/网文写作最强SOP.md

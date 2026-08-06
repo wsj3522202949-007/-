@@ -52,7 +52,7 @@ short_description: AI-powered emoji story generator with voting system
 
 <div align="center"><a name="readme-top"></a>
 
-[![Project Banner](./public/emoji-story-generator-logo.svg)](#)
+[![Project Banner](https://github.com/ChanMeng666/emoji-story-generator/blob/main/public/emoji-story-generator-logo.svg)](#)
 
 # 🚀 Emoji Story Generator<br/><h3>AI-Powered Creative Storytelling Platform</h3>
 
@@ -844,7 +844,7 @@ def generate_story_with_ai(emojis: list[str]) -> str | None:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ChanMeng666/emoji-story-generator/blob/main/LICENSE) file for details.
 
 **Open Source Benefits:**
 - ✅ Commercial use allowed

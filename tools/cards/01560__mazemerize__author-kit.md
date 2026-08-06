@@ -37,7 +37,7 @@ related:
 
 ---
 
-﻿![Author Kit Logo](./media/logo.png)
+﻿![Author Kit Logo](https://github.com/mazemerize/author-kit/blob/main/media/logo.png)
 
 **Write books with structured AI assistance. Chapter by chapter. Draft by draft. Together.**
 
@@ -361,7 +361,7 @@ authorkit autopilot chapters --range 1-8 \
 - **Escalations.** When a decision is the author's to make, the loop writes an `OPEN` record to `book/escalations/` and halts. Resolve it with `/authorkit.discuss` (or `/authorkit.write N revise:` / `/authorkit.research`), which closes the record; the next run resumes. The loop never resolves its own escalations.
 - **Audit & control:** every tick is logged to `book/runs/autopilot.jsonl`; drop a `book/runs/STOP` file to halt after the current tick.
 
-See [docs/autopilot.md](docs/autopilot.md) for the full design and [docs/autopilot-implementation.md](docs/autopilot-implementation.md) for the build plan.
+See [docs/autopilot.md](https://github.com/mazemerize/author-kit/blob/main/docs/autopilot.md) for the full design and [docs/autopilot-implementation.md](https://github.com/mazemerize/author-kit/blob/main/docs/autopilot-implementation.md) for the build plan.
 
 ---
 
@@ -597,7 +597,7 @@ Audio narration instructions:
 `authorkit autopilot` model/effort per operation (`[autopilot.*]` in `book.toml`):
 - Point each of AutoPilot's three jobs at a different model — `planner` (decides what to do next each tick), `review` (runs `/authorkit.review`), `writer` (runs `/authorkit.write` and `/authorkit.research`) — e.g. a cheap model for planning and your strongest model for drafting.
 - Uncomment and fill in whichever `[autopilot.*]` blocks you want in `book.toml`; leave the rest as-is. There's no built-in default and no CLI flag, so anything you don't set just uses your agent CLI's normal default.
-- `model` takes whatever your AI flavor accepts (e.g. `haiku`/`sonnet`/`opus` for Claude); `effort` takes a reasoning-depth level such as `low`/`medium`/`high` (exact accepted values vary by flavor — see [docs/autopilot.md](docs/autopilot.md) for the per-flavor flag details).
+- `model` takes whatever your AI flavor accepts (e.g. `haiku`/`sonnet`/`opus` for Claude); `effort` takes a reasoning-depth level such as `low`/`medium`/`high` (exact accepted values vary by flavor — see [docs/autopilot.md](https://github.com/mazemerize/author-kit/blob/main/docs/autopilot.md) for the per-flavor flag details).
 
 ---
 

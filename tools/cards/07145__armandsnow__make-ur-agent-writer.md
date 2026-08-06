@@ -41,7 +41,7 @@ related:
 
 读入一部已出版的小说，抽出里面的设定和人物，然后用一组 LLM agent 接着往下写。续写、规划、审稿分别交给不同的模型，整条流水线在本地跑。
 
-中文 · [English](README_EN.md)
+中文 · [English](https://github.com/armandsnow/make-ur-agent-writer/blob/main/README_EN.md)
 
 原作语料不进仓库。`小说txt/`、`data/`、`outputs/`、`logs/` 都在 `.gitignore` 里，这里只有引擎。
 
@@ -193,7 +193,7 @@ workspaces/<book>/
 | `web --port 8765` | 本地 WebUI：书架 / 四阶段工作台 / 章节 / 评审 / 任务（iter 025 起；工作台 iter 048；全程可编辑 iter 050） |
 | `preflight` / `status` / `estimate-cost` | 守门 / 状态 / 成本汇总 |
 
-[README_EN.md](README_EN.md) 里有架构图、3-tier 执行说明和全部迭代日志索引。
+[README_EN.md](https://github.com/armandsnow/make-ur-agent-writer/blob/main/README_EN.md) 里有架构图、3-tier 执行说明和全部迭代日志索引。
 
 ## 项目状态
 
@@ -212,7 +212,7 @@ workspaces/<book>/
 | 阶段 10（iter 053-056）| **续写机制保证 + 驱动器加固 + 风格卡**：iter053 中间产物起点校验 + 写手 canon 锚定（longzu 复仇局剥四层毒源、ch1-5 全 5/5 Approve）；iter054 深起点续写底座 start-aware 重建 + 泄露硬过滤；iter055 真模型驱动器加固（per-call 超时 + transient 分类重试 + 批处理非流式拿回超时）；iter056 作家风格卡（预置库 + 上传样本提取，仅 premise；搭车了结 iter054 欠账 **V5 续写 ch1-3 完整 Approve**、panel 7.82/7.36/7.52、¥7.54）| 完成 |
 | 阶段 11（iter 057）| **长程续写 capstone 前置：5 个结构性 bug 全修复**（双 subagent 对抗审查 + 源码核验后实施，每 bug 独立 commit）：P0-A plan_fingerprint 收窄全局上下文（replan append 不再卡死已写章 + 幂等迁移脚本）/ P0-B write `stream:false` 拿回 litellm 超时 / HIGH-2 rolling `compressed_older` 确定性压缩写盘止早期失忆 / BLOCKER-1 plan_target 默认覆盖全程 / P1-C outline 语义漂移命中率探针；HIGH-2·P1-C 完整版 + P0-B 方案B 留后续真模型验证。canonical **1097** tests OK | 完成 |
 
-阶段小结：[stage_01](docs/stage_01_summary.md) · [stage_02](docs/stage_02_summary.md) · [stage_03](docs/stage_03_summary.md)。会话延续锚点：[docs/AGENT_HANDOFF.md](docs/AGENT_HANDOFF.md)。
+阶段小结：[stage_01](https://github.com/armandsnow/make-ur-agent-writer/blob/main/docs/stage_01_summary.md) · [stage_02](https://github.com/armandsnow/make-ur-agent-writer/blob/main/docs/stage_02_summary.md) · [stage_03](https://github.com/armandsnow/make-ur-agent-writer/blob/main/docs/stage_03_summary.md)。会话延续锚点：[docs/AGENT_HANDOFF.md](https://github.com/armandsnow/make-ur-agent-writer/blob/main/docs/AGENT_HANDOFF.md)。
 
 ## 流水线 SOP（实时状态）
 

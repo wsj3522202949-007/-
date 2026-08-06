@@ -69,7 +69,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](聊天图片.png)
+![Project Image](https://github.com/zzzlip/langraph-AI-Accompany-Agent/blob/main/%E8%81%8A%E5%A4%A9%E5%9B%BE%E7%89%87.png)
 
 
 
@@ -85,7 +85,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](朋友圈1.png)
+![Project Image](https://github.com/zzzlip/langraph-AI-Accompany-Agent/blob/main/%E6%9C%8B%E5%8F%8B%E5%9C%881.png)
 
 
 
@@ -93,7 +93,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](朋友圈2.png)
+![Project Image](https://github.com/zzzlip/langraph-AI-Accompany-Agent/blob/main/%E6%9C%8B%E5%8F%8B%E5%9C%882.png)
 
 
 
@@ -101,7 +101,7 @@ This is a Flask-based AI role-playing agent developed using the langgraph agent 
 
 
 
-![Project Image](日记图片.png)
+![Project Image](https://github.com/zzzlip/langraph-AI-Accompany-Agent/blob/main/%E6%97%A5%E8%AE%B0%E5%9B%BE%E7%89%87.png)
 
 
 

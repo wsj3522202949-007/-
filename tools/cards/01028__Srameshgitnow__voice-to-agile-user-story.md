@@ -62,7 +62,7 @@ Powered by:
 4. Prints the parsed Python `dict`.
 
 ## 🧱 Project layout
-![alt text](image-1.png)
+![alt text](https://github.com/Srameshgitnow/voice-to-agile-user-story/blob/main/image-1.png)
 
 
 ---

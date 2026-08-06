@@ -116,7 +116,7 @@ An AI-powered agent for collaborative novel writing with long-term memory, built
      LOCAL_LLM_MAX_TOKENS=2000
      LOCAL_LLM_TEMPERATURE=0.7
      ```
-   - No API keys needed! See [Local LLM Guide](docs/LOCAL_LLM_GUIDE.md) for details
+   - No API keys needed! See [Local LLM Guide](https://github.com/llm-believer/wriagent/blob/main/docs/LOCAL_LLM_GUIDE.md) for details
 
 ## Quick Start / 快速开始
 

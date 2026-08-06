@@ -110,9 +110,9 @@ Here are some examples of how to use verbalized sampling for generating more div
 
 | Notebook                           | Description                                                                                                                                  | Code                                             | Run it Yourself!                                                                                                                                                                      |
 | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Direct vs. Verbalized Sampling** | Head-to-head comparison demonstrating VS effectiveness: 2-3x diversity improvement in creative tasks while maintaining quality               | [View on GitHub](notebooks/vs_base.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UDk4W5w6gF0dQ9Tpu0sPQethEht51GXL#offline=true&sandboxMode=true) |
-| **Image Generation with VS**       | Visual comparison of Direct Prompting vs. Verbalized Sampling for text-to-image generation, showcasing creative diversity in artistic styles | [View on GitHub](notebooks/vs_with_image.ipynb)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1J18VJRnrCjIb6sTivY-znb8C3JsLQCIz#offline=true&sandboxMode=true) |
-| **Complete Framework Tutorial**    | Step-by-step guide to using verbalized sampling: API basics, transforms, selection methods, recipes, and advanced features                   | [View on GitHub](notebooks/framework_demo.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eC0nIUVC1kyANxxzhNib44qmPphdWy9o#offline=true&sandboxMode=true) |
+| **Direct vs. Verbalized Sampling** | Head-to-head comparison demonstrating VS effectiveness: 2-3x diversity improvement in creative tasks while maintaining quality               | [View on GitHub](https://github.com/CHATS-lab/verbalized-sampling/blob/main/notebooks/vs_base.ipynb)        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1UDk4W5w6gF0dQ9Tpu0sPQethEht51GXL#offline=true&sandboxMode=true) |
+| **Image Generation with VS**       | Visual comparison of Direct Prompting vs. Verbalized Sampling for text-to-image generation, showcasing creative diversity in artistic styles | [View on GitHub](https://github.com/CHATS-lab/verbalized-sampling/blob/main/notebooks/vs_with_image.ipynb)  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1J18VJRnrCjIb6sTivY-znb8C3JsLQCIz#offline=true&sandboxMode=true) |
+| **Complete Framework Tutorial**    | Step-by-step guide to using verbalized sampling: API basics, transforms, selection methods, recipes, and advanced features                   | [View on GitHub](https://github.com/CHATS-lab/verbalized-sampling/blob/main/notebooks/framework_demo.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1eC0nIUVC1kyANxxzhNib44qmPphdWy9o#offline=true&sandboxMode=true) |
 
 ## Reproducing Paper Results
 
@@ -129,7 +129,7 @@ python scripts/tasks/run_state_name.py --model anthropic/claude-sonnet-4 --metho
 python scripts/tasks/run_story.py --model gpt-4.1 --methods direct vs_standard vs_cot --metrics diversity ngram
 ```
 
-For complete experiment instructions with exact commands, parameter settings, and expected outputs, see **[EXPERIMENTS.md](scripts/EXPERIMENTS.md)** which provides 1-to-1 mapping between paper sections and experiment scripts.
+For complete experiment instructions with exact commands, parameter settings, and expected outputs, see **[EXPERIMENTS.md](https://github.com/CHATS-lab/verbalized-sampling/blob/main/scripts/EXPERIMENTS.md)** which provides 1-to-1 mapping between paper sections and experiment scripts.
 
 ### HF Datasets
 We also released the generated datasets in our lab's HF Space. Please check the corresponding README for the exact schema.
@@ -167,4 +167,4 @@ If you use Verbalized Sampling in your research, please cite our paper:
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](https://github.com/CHATS-lab/verbalized-sampling/blob/main/LICENSE) file for details.

@@ -168,7 +168,7 @@ Every coffee keeps the code flowing! ☕✨
 
 ## License
 
-This extension is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+This extension is released under the MIT License. See the [LICENSE](https://github.com/EinsPhoenix/comment-remover/blob/main/LICENSE) file for details.
 
 related:
   - methods/最强去AI味铁律.md

@@ -41,7 +41,7 @@ related:
 
 # jaychouya/anti-ai-detector-skill
 
-[English](README.en.md) | [ZH](README.zh-CN.md)
+[English](https://github.com/jaychouya/anti-ai-detector/blob/main/README.en.md) | [ZH](https://github.com/jaychouya/anti-ai-detector/blob/main/README.zh-CN.md)
 
 `anti-ai-detector` is an open-source skill designed specifically to lower AI-detection risk in academic writing.
 It rewrites text to sound more like human expert writing while preserving technical meaning.

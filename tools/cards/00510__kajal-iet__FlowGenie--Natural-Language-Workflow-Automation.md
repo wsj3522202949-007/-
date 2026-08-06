@@ -109,7 +109,7 @@ Chat Agent + Memory (SQLite) → natural conversation
 | Gmail | Send email |
 | Google Calendar | Create event |
 
-> Full configuration instructions are in [`SETUP.md`](./SETUP.md)
+> Full configuration instructions are in [`SETUP.md`](https://github.com/kajal-iet/FlowGenie--Natural-Language-Workflow-Automation/blob/main/SETUP.md)
 
 related:
   - methods/网文写作最强SOP.md

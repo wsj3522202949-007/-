@@ -51,7 +51,7 @@ Claude Code 插件 · 也可用于 ChatGPT / DeepSeek / Gemini / Kimi 等任意�
 [![Models](https://img.shields.io/badge/AI-Claude·ChatGPT·DeepSeek·Gemini·Kimi-orange)](#-支持哪些-ai不止-claude)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-success)](#-参与贡献)
 
-**简体中文** | [English](README.en.md)
+**简体中文** | [English](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/README.en.md)
 
 </div>
 
@@ -81,9 +81,9 @@ Claude Code 插件 · 也可用于 ChatGPT / DeepSeek / Gemini / Kimi 等任意�
 - **数据化思维**：钩子/爽点/修饰词可视化标注、追读诊断、平台趋势——帮作者看见数据，不只是码字。
 - **新手友好**：内置可选的写作教学陪练，想学就开，专心写就关。
 - **中英双语文档**：英文不好的看中文，海外用户看英文。
-- **不止 Claude**：一套方法论，可用于 ChatGPT / DeepSeek / Gemini / Kimi / 豆包 / 通义 / 智谱 / 文心 等任意大模型，见 [exports/SETUP.md](exports/SETUP.md)。
+- **不止 Claude**：一套方法论，可用于 ChatGPT / DeepSeek / Gemini / Kimi / 豆包 / 通义 / 智谱 / 文心 等任意大模型，见 [exports/SETUP.md](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/exports/SETUP.md)。
 - **不止中文**：内置英文出海模块（Wattpad / Royal Road / Webnovel），写得像本地作者不像翻译腔 → `english` 技能。
-- **不止插件**：可独立**终端运行**（不会写代码、没用过 Claude 也能跑）——Windows 双击 `cli/启动.bat`、Mac 跑 `cli/start.sh`，接你自己的任意 API（DeepSeek / Kimi / 硅基 / OpenRouter / 本地 Ollama）。零基础部署四步走见 **[cli/README.md](cli/README.md)**。
+- **不止插件**：可独立**终端运行**（不会写代码、没用过 Claude 也能跑）——Windows 双击 `cli/启动.bat`、Mac 跑 `cli/start.sh`，接你自己的任意 API（DeepSeek / Kimi / 硅基 / OpenRouter / 本地 Ollama）。零基础部署四步走见 **[cli/README.md](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/cli/README.md)**。
 
 > 适合：海外华人网文作者、国内出海作者、用 Claude Code / VSCode 码字的写手、想学写网文的新人。
 
@@ -103,7 +103,7 @@ python webnovel.py          # Windows 也可直接双击 cli/启动.bat
 /save 第1章     存稿（默认 .txt，存完显示路径）
 /help          看所有命令
 ```
-> 零基础四步部署（装 Python→下载→双击→接 AI）见 [cli/README.md](cli/README.md)。
+> 零基础四步部署（装 Python→下载→双击→接 AI）见 [cli/README.md](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/cli/README.md)。
 
 **B. Claude Code 插件版**
 ```text
@@ -141,7 +141,7 @@ python webnovel.py          # Windows 也可直接双击 cli/启动.bat
 | **ChatGPT** | Custom GPT（粘指令+传知识库文件）| 习惯 ChatGPT 的 |
 | **豆包/通义/智谱/文心** | 各家"创建智能体"，指令+知识库 | 国内日常、免梯子 |
 
-详细分步（每家怎么配）见 **[exports/SETUP.md](exports/SETUP.md)**。
+详细分步（每家怎么配）见 **[exports/SETUP.md](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/exports/SETUP.md)**。
 > 海外用 Claude/ChatGPT/Gemini，国内用 DeepSeek/Kimi/豆包——**一套方法论，哪个顺手用哪个**。加了新技能后跑 `python tools/build_exports.py` 重新生成导出即可同步。
 
 ## 📖 33 个技能
@@ -312,7 +312,7 @@ chinese-webnovel-skills/
 
 ## 📝 更新日志
 
-完整记录见 [CHANGELOG.md](CHANGELOG.md)。
+完整记录见 [CHANGELOG.md](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/CHANGELOG.md)。
 
 - **v0.29.0** — 模式化入口(start)：把 33 技能收进4个门(新建/继续/优化/投稿)，自动走流程调技能，不用记命令；终端版加 `/mode /new /continue /optimize /submit` + 开场菜单
 - **v0.28.0** — 共写模式(cowrite)：人机一起写，三档 Auto自动/Assist我写一点AI补一点/Director我定方向AI出多版，多版本"推荐★+评分+备选"格式专治"下一句写啥"；终端版加 `/co` `/director` `/write` 命令；主页加"3分钟跑起来"最短路径入口
@@ -359,7 +359,7 @@ chinese-webnovel-skills/
 
 ## 📜 许可证
 
-[MIT](LICENSE) © 2026 tance-mang。技能内的写作方法论可自由使用、修改、二次分发。
+[MIT](https://github.com/tance-mang/chinese-webnovel-skills/blob/main/LICENSE) © 2026 tance-mang。技能内的写作方法论可自由使用、修改、二次分发。
 
 <div align="center">
 

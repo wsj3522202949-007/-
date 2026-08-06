@@ -185,7 +185,7 @@ On CPU you might want to tune parameters in `core/config.py`:
 ***
 
 
-![Streamlit home](img/streamlit_home.png)
+![Streamlit home](https://github.com/tommasofacchin/christmas-story-generator/blob/main/img/streamlit_home.png)
 
 ## How it works (high level)
 

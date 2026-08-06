@@ -54,7 +54,7 @@ related:
 
 <div align="center">
 
-![Word Cloud](img/output_1.png)
+![Word Cloud](https://github.com/lothronx/cm2015-ao3-data-analysis/blob/main/img/output_1.png)
 
 </div>
 

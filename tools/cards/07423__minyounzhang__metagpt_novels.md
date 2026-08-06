@@ -65,4 +65,4 @@ llm:
 python ./metagpt/test_novel.py
 ```
 
-![示例图片](imgs/author.jpg)
+![示例图片](https://github.com/minyounzhang/metagpt_novels/blob/main/imgs/author.jpg)

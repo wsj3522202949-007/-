@@ -170,7 +170,7 @@ You can start the UI interface by running `python webui.py --device 0`, which al
 
 | **Voice Cloning** | **Voice Creation** |
 |:-------------------:|:-------------------:|
-| ![Image 1](src/figures/gradio_TTS.png) | ![Image 2](src/figures/gradio_control.png) |
+| ![Image 1](https://github.com/sparkaudio/spark-tts/blob/main/src/figures/gradio_TTS.png) | ![Image 2](https://github.com/sparkaudio/spark-tts/blob/main/src/figures/gradio_control.png) |
 
 
 **Optional Methods**
@@ -193,7 +193,7 @@ We now provide a reference for deploying Spark-TTS with Nvidia Triton and Tensor
 | Spark-TTS-0.5B | [Code Commit](https://github.com/SparkAudio/Spark-TTS/tree/4d769ff782a868524f29e0be851ca64f8b22ebf1/runtime/triton_trtllm) | 4                   | 1611.51 ms | 0.0704|
 
 
-Please see the detailed instructions in [runtime/triton_trtllm/README.md](runtime/triton_trtllm/README.md ) for more information.
+Please see the detailed instructions in [runtime/triton_trtllm/README.md](https://github.com/sparkaudio/spark-tts/blob/main/runtime/triton_trtllm/README.md) for more information.
 
 
 ## **Demos**

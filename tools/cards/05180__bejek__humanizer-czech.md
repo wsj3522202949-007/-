@@ -41,7 +41,7 @@ related:
 ![Version](https://img.shields.io/badge/version-2.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-![Czech Humanizer - Proven results](assets/czech-humanizer.png)
+![Czech Humanizer - Proven results](https://github.com/bejek/humanizer-czech/blob/main/assets/czech-humanizer.png)
 
 
 ## Přepiš český text tak, jako by ho psal člověk.
@@ -138,13 +138,13 @@ Pak v Claude Code použij `/humanizer-czech` následovaný textem k humanizaci.
 
 ### Claude.ai (Projects)
 
-1. Stáhni [SKILL.md](SKILL.md) (nebo celý ZIP přes zelené tlačítko "Code")
+1. Stáhni [SKILL.md](https://github.com/bejek/humanizer-czech/blob/main/SKILL.md) (nebo celý ZIP přes zelené tlačítko "Code")
 2. V claude.ai otevři Settings → Customize → Skills
 3. Nahraj SKILL.md jako nový skill
 
 ### ChatGPT, Gemini, Copilot, Mistral a další LLM
 
-1. Otevři [PROMPT.md](PROMPT.md)
+1. Otevři [PROMPT.md](https://github.com/bejek/humanizer-czech/blob/main/PROMPT.md)
 2. Zkopíruj celý obsah
 3. Vlož jako systémový prompt (system instructions) nebo na začátek konverzace
 4. Pošli text k humanizaci
@@ -163,7 +163,7 @@ Vzorce 17-27 identifikovány cross-referencí výstupů z Claude, ChatGPT a Gemi
 
 ## Licence
 
-[MIT](LICENSE) - používej jak chceš, komerčně i nekomerčně.
+[MIT](https://github.com/bejek/humanizer-czech/blob/main/LICENSE) - používej jak chceš, komerčně i nekomerčně.
 
 related:
   - methods/最强去AI味铁律.md

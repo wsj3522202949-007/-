@@ -42,7 +42,7 @@ related:
 
 <br/>
 
-![LaughHub  Logo](chatbot/public/2.jpg)
+![LaughHub  Logo](https://github.com/TechNodes2-0/Laughhub/blob/main/chatbot/public/2.jpg)
 
 ## Table of Contents
 

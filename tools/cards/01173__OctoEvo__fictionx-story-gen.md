@@ -322,7 +322,7 @@ Upon execution, an `output/` directory is created in the current directory, stor
 Currently, story generation only supports English. Future plans include multi-language support through additional language instructions at the initial prompt input stage. However, the character chat feature already supports interaction in any language.
 
 - **Are there any content examples?**  
-Yes, you can view generated story samples in the [story_samples](./story_samples/) directory.
+Yes, you can view generated story samples in the [story_samples](https://github.com/OctoEvo/fictionx-story-gen/blob/main/story_samples/) directory.
 
 ## Contact
 

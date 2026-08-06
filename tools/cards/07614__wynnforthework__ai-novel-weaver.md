@@ -574,7 +574,7 @@ A: 提供更详细的上下文信息，使用质量控制功能，适当调整�
 
 ## 📄 许可证
 
-本项目采用 MIT 许可证。详情请参阅 [LICENSE](LICENSE) 文件。
+本项目采用 MIT 许可证。详情请参阅 [LICENSE](https://github.com/wynnforthework/ai-novel-weaver/blob/main/LICENSE) 文件。
 
 ## 🙏 致谢
 

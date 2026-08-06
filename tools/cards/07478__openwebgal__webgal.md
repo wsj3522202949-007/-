@@ -39,7 +39,7 @@ related:
 
 ![WebGAL Slogan](https://github.com/OpenWebGAL/WebGAL/assets/30483415/ede38a39-d054-4fee-a3e9-fc5e764f358d)
 
-### **[English Version](/README_EN.md)** | **[日本語版](/README_JP.md)** | **[한국어](/README_KO.md)** | **[Français](/README_FR.md)**
+### **[English Version](https://github.com/openwebgal/webgal/blob/main//README_EN.md)** | **[日本語版](https://github.com/openwebgal/webgal/blob/main//README_JP.md)** | **[한국어](https://github.com/openwebgal/webgal/blob/main//README_KO.md)** | **[Français](https://github.com/openwebgal/webgal/blob/main//README_FR.md)**
 
 **[Help us with translation | 协助翻译 | 翻訳のお手伝い | 번역을 도와주세요](https://github.com/OpenWebGAL/WebGAL/tree/dev/packages/webgal/src/translations)**
 

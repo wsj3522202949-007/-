@@ -185,7 +185,7 @@ AI-CONTENT-DETECTOR/
    ```
 
 4. **Firebase Configuration**:
-   - Follow the [Firebase Setup Guide](FIREBASE_SETUP.md)
+   - Follow the [Firebase Setup Guide](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/FIREBASE_SETUP.md)
    - Configure authentication and Firestore
    - Set up security rules
 
@@ -225,7 +225,7 @@ AI-CONTENT-DETECTOR/
 
 ## 🧪 Testing
 
-For a comprehensive overview of our testing strategy, see the **[Testing Plan](TESTING_PLAN.md)** which includes:
+For a comprehensive overview of our testing strategy, see the **[Testing Plan](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/TESTING_PLAN.md)** which includes:
 - Summary testing plan table with all four testing levels
 - Detailed mapping of current tests to testing categories
 - Test execution matrix and quality metrics
@@ -263,10 +263,10 @@ python backend/test_frontend_api.py    # Frontend-backend integration
 ## 🚀 Deployment
 
 Comprehensive deployment guides are available:
-- [Deployment Guide](DEPLOYMENT_GUIDE.md) - Complete deployment instructions
-- [Firebase Setup](FIREBASE_SETUP.md) - Authentication and database setup
-- [Analytics Setup](ANALYTICS_SETUP.md) - Usage tracking configuration
-- [Security Rules](SECURITY_RULES_SETUP.md) - Firestore security configuration
+- [Deployment Guide](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/DEPLOYMENT_GUIDE.md) - Complete deployment instructions
+- [Firebase Setup](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/FIREBASE_SETUP.md) - Authentication and database setup
+- [Analytics Setup](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/ANALYTICS_SETUP.md) - Usage tracking configuration
+- [Security Rules](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/SECURITY_RULES_SETUP.md) - Firestore security configuration
 
 ## 📊 API Documentation
 
@@ -296,19 +296,19 @@ GET /api/analytics/usage
 Authorization: Bearer <token>
 ```
 
-For complete API documentation, see the [API Reference](backend/README.md).
+For complete API documentation, see the [API Reference](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/backend/README.md).
 
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/LICENSE) file for details.
 
 ## 🆘 Support
 
 - **Documentation**: Check our comprehensive guides in the `/docs` folder
 - **Issues**: Report bugs and feature requests on GitHub Issues
-- **Troubleshooting**: See [TROUBLESHOOTING.md](TROUBLESHOOTING.md)
-- **User Manual**: Detailed usage instructions in [USER_MANUAL.md](USER_MANUAL.md)
+- **Troubleshooting**: See [TROUBLESHOOTING.md](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/TROUBLESHOOTING.md)
+- **User Manual**: Detailed usage instructions in [USER_MANUAL.md](https://github.com/IviweBooi/AI-CONTENT-DETECTOR/blob/main/USER_MANUAL.md)
 
 ## 🏆 Acknowledgments
 

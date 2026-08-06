@@ -50,9 +50,9 @@ Writer's Agent Editor 是一个支持 AI 辅助的富文本编辑器，专为创
 
 ## 📖 文档
 
-- **[需求文档](./REQUIREMENTS.md)** - 产品需求和功能规划
-- **[架构设计](./ARCHITECTURE.md)** - 系统整体架构
-- **[前端开发规范](./frontend/FRONTEND_ARCHITECTURE.md)** ⭐ - 前端代码组织和设计规范（**必读**）
+- **[需求文档](https://github.com/dry-bread/Writer-s-Agent-Editor/blob/main/REQUIREMENTS.md)** - 产品需求和功能规划
+- **[架构设计](https://github.com/dry-bread/Writer-s-Agent-Editor/blob/main/ARCHITECTURE.md)** - 系统整体架构
+- **[前端开发规范](https://github.com/dry-bread/Writer-s-Agent-Editor/blob/main/frontend/FRONTEND_ARCHITECTURE.md)** ⭐ - 前端代码组织和设计规范（**必读**）
 
 ## 🏗️ 前端架构
 
@@ -80,7 +80,7 @@ frontend/src/
 - **ViewModel** - RxJS 响应式状态管理
 - **Services** - API 调用和业务逻辑
 
-详细规范请查看 [前端开发规范](./frontend/FRONTEND_ARCHITECTURE.md)。
+详细规范请查看 [前端开发规范](https://github.com/dry-bread/Writer-s-Agent-Editor/blob/main/frontend/FRONTEND_ARCHITECTURE.md)。
 
 ## 🚀 快速开始
 

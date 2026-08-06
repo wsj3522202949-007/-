@@ -124,4 +124,4 @@ related:
 
 ## 📄 License
 
-Apache 2.0 — see [LICENSE](LICENSE) for details.
+Apache 2.0 — see [LICENSE](https://github.com/massgen/skills/blob/main/LICENSE) for details.

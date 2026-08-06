@@ -219,4 +219,4 @@ npm test
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/shumatsumonobu/github-agentic-workflows-demo/blob/main/LICENSE)

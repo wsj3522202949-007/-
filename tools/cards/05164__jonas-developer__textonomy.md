@@ -284,4 +284,4 @@ If you encounter a bug or have a feature request, please open an issue.
 
 © 2025 L.J. Bergman. All rights reserved.
 
-Licensed under the [MIT License](LICENSE).
+Licensed under the [MIT License](https://github.com/jonas-developer/textonomy/blob/main/LICENSE).

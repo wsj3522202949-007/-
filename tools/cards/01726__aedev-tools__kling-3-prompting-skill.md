@@ -110,4 +110,4 @@ Found a bug? Have a feature request or idea?
 
 ## License
 
-Apache 2.0 — see [LICENSE](LICENSE) for details.
+Apache 2.0 — see [LICENSE](https://github.com/aedev-tools/kling-3-prompting-skill/blob/main/LICENSE) for details.

@@ -66,7 +66,7 @@ This tool contains two parts, the server and the front end. The core of this too
 
 + Download pre-trained checkpoint from [here](https://github.com/AlbertShenC/AcademicWritingAssistant/releases) and save it at `./model/ckpt/`:
   
-  ![](assets/checkpoint.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/checkpoint.png)
   
   You can download `decoder.onnx` `encoder.onnx` `init-decoder.onnx` for original setting, or `decoder-quantized.onnx` `encoder-quantized.onnx` `init-decoder-quantized.onnx` setting, or all the checkpoint as your own will. The original one is bigger, slower but performance better.
 
@@ -90,7 +90,7 @@ This tool contains two parts, the server and the front end. The core of this too
 
 If all things go right, you will see `Model not loaded` or `Origin model loaded` or `Quantized model loaded`  on the suspended window in the lower right corner depending on your server state. I provide two kinds of model for you, the `Origin` one and the `Quantized` one. The `Origin` model will give a little bit better suggestion while run slower. You can switch it as your own will.
 
-![](assets/init_image.png)
+![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/init_image.png)
 
 ### Example
 
@@ -102,23 +102,23 @@ This is a paper called [PIMNet](https://arxiv.org/abs/2109.04145), which is not 
 
 + The original words are `development of deep learning`
   
-  ![](assets/first.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/first.png)
 
 + The original words are `a good balance`
   
-  ![](assets/second.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/second.png)
 
 + The original words are `Different from`
   
-  ![](assets/third.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/third.png)
 
 + The original words are `Extensive experiments`
   
-  ![](assets/fourth.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/fourth.png)
 
 + The original words are `divided into`
   
-  ![](assets/fifth.png)
+  ![](https://github.com/AlbertShenC/AcademicWritingAssistant/blob/main/assets/fifth.png)
 
 ### What can the model do?
 

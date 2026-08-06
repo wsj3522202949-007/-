@@ -123,4 +123,4 @@ python app.py
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](https://github.com/abhadre66/AI-text-Detector/blob/main/LICENSE) for details.

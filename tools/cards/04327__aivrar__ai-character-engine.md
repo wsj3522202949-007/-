@@ -62,7 +62,7 @@ cd ai-character-engine
 chmod +x setup.sh && ./setup.sh
 ```
 
-> **Game developer?** Start with [QUICKSTART.md](QUICKSTART.md) — add AI NPCs to your game in 15 minutes.
+> **Game developer?** Start with [QUICKSTART.md](https://github.com/aivrar/ai-character-engine/blob/main/QUICKSTART.md) — add AI NPCs to your game in 15 minutes.
 
 ## Features
 
@@ -218,7 +218,7 @@ The engine supports 6 LLM providers. Local providers are strongly recommended �
 
 **Cost warning:** Cloud providers (OpenRouter, OpenAI, Anthropic) will incur significant costs because the engine makes continuous LLM calls for every active character.
 
-See [docs/provider-setup.md](docs/provider-setup.md) for detailed setup instructions for each provider.
+See [docs/provider-setup.md](https://github.com/aivrar/ai-character-engine/blob/main/docs/provider-setup.md) for detailed setup instructions for each provider.
 
 ### Minimal Config Examples
 
@@ -399,7 +399,7 @@ await engine.loadPlugin(myPlugin);
 engine.start();
 ```
 
-See [docs/game-plugin-guide.md](docs/game-plugin-guide.md) for the complete interface reference with all 25+ methods.
+See [docs/game-plugin-guide.md](https://github.com/aivrar/ai-character-engine/blob/main/docs/game-plugin-guide.md) for the complete interface reference with all 25+ methods.
 
 ## Configuration Reference
 
@@ -560,26 +560,26 @@ The `better-sqlite3` package requires native compilation. If `npm install` fails
 
 ### Windows-specific issues
 
-- **vLLM on Windows**: No official pip wheel — use the [pre-built Windows environment](https://github.com/aivrar/vllm-windows-build) or see [docs/vllm-windows.md](docs/vllm-windows.md)
+- **vLLM on Windows**: No official pip wheel — use the [pre-built Windows environment](https://github.com/aivrar/vllm-windows-build) or see [docs/vllm-windows.md](https://github.com/aivrar/ai-character-engine/blob/main/docs/vllm-windows.md)
 - **vLLM requires `--enforce-eager`** — CUDA graphs (Triton) don't work on Windows
 - **GPU memory**: max `gpu-memory-utilization` is ~0.92 (display driver reserves ~80MB)
 - **Don't use `CUDA_DEVICE_ORDER=PCI_BUS_ID`** — it can flip GPU indices on some systems
 
 ## Documentation
 
-- [Quick Start Guide](QUICKSTART.md) — Add AI NPCs to your game in 15 minutes
-- [Architecture](docs/architecture.md) — System design, subsystem graph, tick lifecycle, data flow
-- [Game Plugin Guide](docs/game-plugin-guide.md) — Complete plugin interface reference and tutorial
-- [Provider Setup](docs/provider-setup.md) — Detailed setup for all 6 providers + embeddings
-- [Memory System](docs/memory-system.md) — 3-tier memory, fading, retrieval, consolidation
-- [Proximity System](docs/proximity-system.md) — Closeness, activity tiers, capability unlocks
-- [vLLM on Windows](docs/vllm-windows.md) — Building and running vLLM on Windows with CUDA
-- [API Reference](docs/api-reference.md) — All 30 HTTP API endpoints with schemas and examples
-- [Contributing](CONTRIBUTING.md) — Development setup, code style, PR guidelines
+- [Quick Start Guide](https://github.com/aivrar/ai-character-engine/blob/main/QUICKSTART.md) — Add AI NPCs to your game in 15 minutes
+- [Architecture](https://github.com/aivrar/ai-character-engine/blob/main/docs/architecture.md) — System design, subsystem graph, tick lifecycle, data flow
+- [Game Plugin Guide](https://github.com/aivrar/ai-character-engine/blob/main/docs/game-plugin-guide.md) — Complete plugin interface reference and tutorial
+- [Provider Setup](https://github.com/aivrar/ai-character-engine/blob/main/docs/provider-setup.md) — Detailed setup for all 6 providers + embeddings
+- [Memory System](https://github.com/aivrar/ai-character-engine/blob/main/docs/memory-system.md) — 3-tier memory, fading, retrieval, consolidation
+- [Proximity System](https://github.com/aivrar/ai-character-engine/blob/main/docs/proximity-system.md) — Closeness, activity tiers, capability unlocks
+- [vLLM on Windows](https://github.com/aivrar/ai-character-engine/blob/main/docs/vllm-windows.md) — Building and running vLLM on Windows with CUDA
+- [API Reference](https://github.com/aivrar/ai-character-engine/blob/main/docs/api-reference.md) — All 30 HTTP API endpoints with schemas and examples
+- [Contributing](https://github.com/aivrar/ai-character-engine/blob/main/CONTRIBUTING.md) — Development setup, code style, PR guidelines
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, project structure, code style, and how to add new subsystems or providers.
+See [CONTRIBUTING.md](https://github.com/aivrar/ai-character-engine/blob/main/CONTRIBUTING.md) for development setup, project structure, code style, and how to add new subsystems or providers.
 
 ```bash
 # Development workflow
@@ -592,4 +592,4 @@ npm run lint        # Type-check without emitting
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/aivrar/ai-character-engine/blob/main/LICENSE)

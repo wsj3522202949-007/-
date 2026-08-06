@@ -38,7 +38,7 @@ related:
 
 <div align="center">
 
-[中文文档](./README_CN.md)
+[中文文档](https://github.com/Calix-L/awesome-latex-skills/blob/main/README_CN.md)
 
 <img src="./assets/banner.svg" alt="awesome-latex-skills" width="100%">
 

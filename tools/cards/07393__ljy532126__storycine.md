@@ -85,7 +85,7 @@ StoryCine 是一款端到端的 AI 短剧创作工具。从灵感到成片，覆
 
 | 官网首页 | 故事板 | 角色管理 | 导演台
 |:---:|:---:|:---:|:---:|
-| ![首页](docs/images/landing.png) | ![故事板](docs/images/storyboard.png) | ![角色](docs/images/assets.png) | ![导演台](docs/images/dashboard.png) |
+| ![首页](https://github.com/ljy532126/storycine/blob/main/docs/images/landing.png) | ![故事板](https://github.com/ljy532126/storycine/blob/main/docs/images/storyboard.png) | ![角色](https://github.com/ljy532126/storycine/blob/main/docs/images/assets.png) | ![导演台](https://github.com/ljy532126/storycine/blob/main/docs/images/dashboard.png) |
 
 
 </details>
@@ -356,7 +356,7 @@ cd /path/to/storycine && git pull && docker compose up -d --build
 
 ## 📄 许可证
 
-MIT License — 详见 [LICENSE](LICENSE)
+MIT License — 详见 [LICENSE](https://github.com/ljy532126/storycine/blob/main/LICENSE)
 
 ## 🙏 致谢
 

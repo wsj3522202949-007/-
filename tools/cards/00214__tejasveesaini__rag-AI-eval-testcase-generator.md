@@ -49,19 +49,19 @@ related:
 
 #### Story loading and context collection
 
-![Story loading and context collection](docs/images/story-context.png)
+![Story loading and context collection](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/docs/images/story-context.png)
 
 #### Generated test cases
 
-![Generated test cases](docs/images/generated-tests.png)
+![Generated test cases](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/docs/images/generated-tests.png)
 
 #### AI Evaluation
 
-![Evaluation results](docs/images/evaluation-results.png)
+![Evaluation results](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/docs/images/evaluation-results.png)
 
 #### Tests pushed to JIRA
 
-![Jira push confirmation](docs/images/image.png)
+![Jira push confirmation](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/docs/images/image.png)
 
 ## Workflow
 
@@ -112,16 +112,16 @@ This is the current end-to-end workflow and the tool used at each stage.
 
 | Tool / Library | Used For | Where |
 | --- | --- | --- |
-| `FastAPI` | API app and story retrieval endpoint | [`src/api/app.py`](src/api/app.py), [`src/api/routes.py`](src/api/routes.py) |
-| `uvicorn` | Local ASGI server | [`main.py`](main.py) |
-| `httpx` | Jira GET/POST calls | [`src/jira/client.py`](src/jira/client.py), [`src/context/collector.py`](src/context/collector.py) |
-| `pydantic` | Story, context, and generated-suite contracts | [`src/models/schemas.py`](src/models/schemas.py) |
-| `pydantic-settings` | `.env`-backed configuration | [`src/config.py`](src/config.py) |
-| Jira REST API v3 | Story retrieval, context retrieval, and issue creation | [`src/jira/client.py`](src/jira/client.py), [`scripts/push_tests.py`](scripts/push_tests.py), [`scripts/push_bugs.py`](scripts/push_bugs.py) |
-| Atlassian Document Format | Jira description parsing and write-back rendering | [`src/jira/ingestor.py`](src/jira/ingestor.py), [`scripts/push_tests.py`](scripts/push_tests.py), [`scripts/push_bugs.py`](scripts/push_bugs.py) |
-| `google-genai` / Gemini | Test-case generation | [`src/generation/generator.py`](src/generation/generator.py), [`src/generation/prompt.py`](src/generation/prompt.py) |
-| `pytest` | API and unit tests | [`tests/api/test_health.py`](tests/api/test_health.py), [`tests/api/test_stories.py`](tests/api/test_stories.py), [`tests/jira/test_ingestor.py`](tests/jira/test_ingestor.py), [`tests/evaluation/test_gate.py`](tests/evaluation/test_gate.py) |
-| `deepeval` | Planned deeper offline evaluation | [`src/evaluation/pipeline.py`](src/evaluation/pipeline.py), [`scripts/run_eval.py`](scripts/run_eval.py), [`conftest.py`](conftest.py) |
+| `FastAPI` | API app and story retrieval endpoint | [`src/api/app.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/api/app.py), [`src/api/routes.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/api/routes.py) |
+| `uvicorn` | Local ASGI server | [`main.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/main.py) |
+| `httpx` | Jira GET/POST calls | [`src/jira/client.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/jira/client.py), [`src/context/collector.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/context/collector.py) |
+| `pydantic` | Story, context, and generated-suite contracts | [`src/models/schemas.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/models/schemas.py) |
+| `pydantic-settings` | `.env`-backed configuration | [`src/config.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/config.py) |
+| Jira REST API v3 | Story retrieval, context retrieval, and issue creation | [`src/jira/client.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/jira/client.py), [`scripts/push_tests.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/scripts/push_tests.py), [`scripts/push_bugs.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/scripts/push_bugs.py) |
+| Atlassian Document Format | Jira description parsing and write-back rendering | [`src/jira/ingestor.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/jira/ingestor.py), [`scripts/push_tests.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/scripts/push_tests.py), [`scripts/push_bugs.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/scripts/push_bugs.py) |
+| `google-genai` / Gemini | Test-case generation | [`src/generation/generator.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/generation/generator.py), [`src/generation/prompt.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/generation/prompt.py) |
+| `pytest` | API and unit tests | [`tests/api/test_health.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/tests/api/test_health.py), [`tests/api/test_stories.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/tests/api/test_stories.py), [`tests/jira/test_ingestor.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/tests/jira/test_ingestor.py), [`tests/evaluation/test_gate.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/tests/evaluation/test_gate.py) |
+| `deepeval` | Planned deeper offline evaluation | [`src/evaluation/pipeline.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/src/evaluation/pipeline.py), [`scripts/run_eval.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/scripts/run_eval.py), [`conftest.py`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/conftest.py) |
 
 ## Repository Layout
 
@@ -156,7 +156,7 @@ This is the current end-to-end workflow and the tool used at each stage.
 
 ## Setup
 
-This project includes a checked-in [`pyproject.toml`](pyproject.toml) with the main runtime dependencies. Use Python 3.11+ and install the project into a virtual environment before running the UI or scripts.
+This project includes a checked-in [`pyproject.toml`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/pyproject.toml) with the main runtime dependencies. Use Python 3.11+ and install the project into a virtual environment before running the UI or scripts.
 
 Create and activate a virtual environment, then install the project:
 
@@ -172,7 +172,7 @@ For development tools such as `pytest`, `black`, and `ruff`, install the optiona
 pip install -e .[dev]
 ```
 
-Create `.env` from [`.env.example`](.env.example):
+Create `.env` from [`.env.example`](https://github.com/tejasveesaini/rag-AI-eval-testcase-generator/blob/main/.env.example):
 
 ```bash
 cp .env.example .env

@@ -632,7 +632,7 @@ docker run -it --rm \
 
 ## 📄 License
 
-This workflow is open source and available under the [MIT License](LICENSE).
+This workflow is open source and available under the [MIT License](https://github.com/REDOANUZZAMAN/LinkedIn-Post-Creator---AI-Powered-Content-Automation/blob/main/LICENSE).
 
 ## 🤝 Contributing
 

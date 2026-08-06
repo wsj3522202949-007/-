@@ -173,8 +173,8 @@ ai-slop-detector-model/
 
 ## Phase plan
 
-See [plan/phase_1.md](plan/phase_1.md) for the execution plan.
-See [claude/claude.md](claude/claude.md) for the contributor guide.
+See [plan/phase_1.md](https://github.com/sanketmuchhala/ai-slop-detector-model/blob/main/plan/phase_1.md) for the execution plan.
+See [claude/claude.md](https://github.com/sanketmuchhala/ai-slop-detector-model/blob/main/claude/claude.md) for the contributor guide.
 
 ## References
 

@@ -119,8 +119,8 @@ Long-Novel-GPT是一个基于GPT等大语言模型的长篇小说生成器。它
 |--------|---related:
   - methods/QUICK_START.md
 ---|
-| [天蚕土豆风格](custom/根据提纲创作正文/天蚕土豆风格.txt) | 用于根据提纲创作正文，模仿天蚕土豆的写作风格 |
-| [对草稿进行润色](custom/根据提纲创作正文/对草稿进行润色.txt) | 对你写的网文初稿进行润色和改进 |
+| [天蚕土豆风格](https://github.com/lewis1996/long-novel-gpt/blob/main/custom/%E6%A0%B9%E6%8D%AE%E6%8F%90%E7%BA%B2%E5%88%9B%E4%BD%9C%E6%AD%A3%E6%96%87/%E5%A4%A9%E8%9A%95%E5%9C%9F%E8%B1%86%E9%A3%8E%E6%A0%BC.txt) | 用于根据提纲创作正文，模仿天蚕土豆的写作风格 |
+| [对草稿进行润色](https://github.com/lewis1996/long-novel-gpt/blob/main/custom/%E6%A0%B9%E6%8D%AE%E6%8F%90%E7%BA%B2%E5%88%9B%E4%BD%9C%E6%AD%A3%E6%96%87/%E5%AF%B9%E8%8D%89%E7%A8%BF%E8%BF%9B%E8%A1%8C%E6%B6%A6%E8%89%B2.txt) | 对你写的网文初稿进行润色和改进 |
 
 [📝 提交你的 Prompt](https://github.com/MaoXiaoYuZ/Long-Novel-GPT/issues/new?assignees=&labels=prompt&template=custom_prompt.md&title=新的Prompt)
 
@@ -144,7 +144,7 @@ Long-Novel-GPT是一个基于GPT等大语言模型的长篇小说生成器。它
 docker pull maoxiaoyuz/long-novel-gpt:latest
 ```
 
-下载或复制[.env.example](.env.example)文件，将其放在你的任意一个目录下，将其改名为 **.env**, 并根据文件中提示填写API设置。
+下载或复制[.env.example](https://github.com/lewis1996/long-novel-gpt/blob/main/.env.example)文件，将其放在你的任意一个目录下，将其改名为 **.env**, 并根据文件中提示填写API设置。
 
 填写完成后在该 **.env**文件目录下，运行以下命令：
 ```bash
@@ -167,7 +167,7 @@ docker run -p 80:80 --env-file .env -d maoxiaoyuz/long-novel-gpt:latest
 docker run -p 80:80 --env-file .env -d --add-host=host.docker.internal:host-gateway maoxiaoyuz/long-novel-gpt:latest
 ```
 
-第二，将本地的大模型服务暴露为OpenAI格式接口，在[.env.example](.env.example)文件中进行配置，同时GPT_BASE_URL中localhost或127.0.0.1需要替换为：**host.docker.internal**
+第二，将本地的大模型服务暴露为OpenAI格式接口，在[.env.example](https://github.com/lewis1996/long-novel-gpt/blob/main/.env.example)文件中进行配置，同时GPT_BASE_URL中localhost或127.0.0.1需要替换为：**host.docker.internal**
 例如
 ```
 # 这里GPT_BASE_URL格式只提供参考，主要是替换localhost或127.0.0.1
@@ -186,7 +186,7 @@ Long-Novel-GPT-2.1版本完全支持生成百万级别小说的版本，而且�
 
 而且，Long-Novel-GPT-2.1会自动管理上下文，在控制API调用费用的同时确保了生成剧情的连续。
 
-在2.1版本中，你需要部署在本地并采用自己的API-Key，在[.env.example](.env.example)文件中配置生成时采用的最大线程数。
+在2.1版本中，你需要部署在本地并采用自己的API-Key，在[.env.example](https://github.com/lewis1996/long-novel-gpt/blob/main/.env.example)文件中配置生成时采用的最大线程数。
 ```
 # Thread Configuration - 线程配置
 # 生成时采用的最大线程数

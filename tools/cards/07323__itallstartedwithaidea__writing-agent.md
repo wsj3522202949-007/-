@@ -38,7 +38,7 @@ related:
 
 # ✍️ Writing Agent
 
-[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [中文](README.zh.md) | [Nederlands](README.nl.md) | [Русский](README.ru.md) | [한국어](README.ko.md)
+[English](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.md) | [Français](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.fr.md) | [Español](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.es.md) | [中文](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.zh.md) | [Nederlands](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.nl.md) | [Русский](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.ru.md) | [한국어](https://github.com/itallstartedwithaidea/writing-agent/blob/main/README.ko.md)
 
 **Undetectable AI Writing Agent — CLI Tool & Multi-Agent Framework**
 *Powered by the Ghost Protocol methodology*
@@ -668,16 +668,16 @@ The full wiki is in `docs/wiki/`:
 
 | Page | Contents |
 |------|----------|
-| [01 - Getting Started](docs/wiki/01-getting-started.md) | Installation, first run, basic configuration |
-| [02 - Architecture Deep Dive](docs/wiki/02-architecture-deep-dive.md) | 5-stage pipeline, agent roles, data flow |
-| [03 - The 40 Checks Explained](docs/wiki/03-the-40-checks-explained.md) | Every check with detection vector, counter-move, and code |
-| [04 - Content Type Playbooks](docs/wiki/04-content-type-playbooks.md) | Per-type voice, structure, and calibration targets |
-| [05 - Voice Profiles](docs/wiki/05-voice-profiles.md) | Creating, importing, and tuning voice profiles |
-| [06 - Platform Adapters](docs/wiki/06-platform-adapters.md) | Google Docs, Word, social platform integration |
-| [07 - Integration Guide](docs/wiki/07-integration-guide.md) | Connecting to advertising-hub, ContextOS, MCP servers |
-| [08 - Examples & Outputs](docs/wiki/08-examples-and-outputs.md) | Before/after for every content type with detector scores |
-| [09 - Research & Citations](docs/wiki/09-research-and-citations.md) | All 50+ sources with full academic citations |
-| [10 - Troubleshooting](docs/wiki/10-troubleshooting.md) | Common issues, detector updates, calibration |
+| [01 - Getting Started](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/01-getting-started.md) | Installation, first run, basic configuration |
+| [02 - Architecture Deep Dive](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/02-architecture-deep-dive.md) | 5-stage pipeline, agent roles, data flow |
+| [03 - The 40 Checks Explained](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/03-the-40-checks-explained.md) | Every check with detection vector, counter-move, and code |
+| [04 - Content Type Playbooks](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/04-content-type-playbooks.md) | Per-type voice, structure, and calibration targets |
+| [05 - Voice Profiles](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/05-voice-profiles.md) | Creating, importing, and tuning voice profiles |
+| [06 - Platform Adapters](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/06-platform-adapters.md) | Google Docs, Word, social platform integration |
+| [07 - Integration Guide](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/07-integration-guide.md) | Connecting to advertising-hub, ContextOS, MCP servers |
+| [08 - Examples & Outputs](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/08-examples-and-outputs.md) | Before/after for every content type with detector scores |
+| [09 - Research & Citations](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/09-research-and-citations.md) | All 50+ sources with full academic citations |
+| [10 - Troubleshooting](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/10-troubleshooting.md) | Common issues, detector updates, calibration |
 
 ### Example Outputs
 
@@ -778,7 +778,7 @@ Ghost Protocol is built on research from 50+ sources plus the v2 journalism corp
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Key areas where contributions are welcome:
+See [CONTRIBUTING.md](https://github.com/itallstartedwithaidea/writing-agent/blob/main/CONTRIBUTING.md) for guidelines. Key areas where contributions are welcome:
 
 - **New platform adapters** (TikTok, Discord, Slack, etc.)
 - **Voice profile templates** for different industries
@@ -791,7 +791,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines. Key areas where contribut
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See [LICENSE](https://github.com/itallstartedwithaidea/writing-agent/blob/main/LICENSE) for details.
 
 ---
 

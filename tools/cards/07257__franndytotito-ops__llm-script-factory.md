@@ -220,7 +220,7 @@ models:
 
 ## 📄 许可证
 
-本项目采用 [MIT License](LICENSE) 开源。
+本项目采用 [MIT License](https://github.com/franndytotito-ops/llm-script-factory/blob/main/LICENSE) 开源。
 
 related:
   - methods/QUICK_START.md

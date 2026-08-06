@@ -58,21 +58,21 @@ Major features include:
 
 - A dedicated sidebar that collects your projects from across your vault;
 
-- A [reorderable, nestable list](./docs/MULTIPLE_SCENE_PROJECTS.md) of scenes;
+- A [reorderable, nestable list](https://github.com/kevboh/longform/blob/main/docs/MULTIPLE_SCENE_PROJECTS.md) of scenes;
 
-- Scene/draft/project [word counts](./docs/WORD_COUNTS.md#word-counts-for-projects-drafts-and-scenes);
+- Scene/draft/project [word counts](https://github.com/kevboh/longform/blob/main/docs/WORD_COUNTS.md#word-counts-for-projects-drafts-and-scenes);
 
-- Daily [writing session goals](./docs/WORD_COUNTS.md#writing-sessions-and-word-count-goals) with lots of options to help fit your writing style;
+- Daily [writing session goals](https://github.com/kevboh/longform/blob/main/docs/WORD_COUNTS.md#writing-sessions-and-word-count-goals) with lots of options to help fit your writing style;
 
-- A [workflow-based compilation tool](./docs/COMPILE.md) that can create manuscripts from your projects;
+- A [workflow-based compilation tool](https://github.com/kevboh/longform/blob/main/docs/COMPILE.md) that can create manuscripts from your projects;
 
-- Support for [single-scene projects](/docs/SINGLE_SCENE_PROJECTS.md) so that your shorter works can use the same workflows and tooling as your longer ones;
+- Support for [single-scene projects](https://github.com/kevboh/longform/blob/main//docs/SINGLE_SCENE_PROJECTS.md) so that your shorter works can use the same workflows and tooling as your longer ones;
 
 - Plus lots of commands, modals, and menu items to help you manage your work.
 
 
 
-A Getting Started guide follows; there is also reasonably-complete [documentation](./docs/).
+A Getting Started guide follows; there is also reasonably-complete [documentation](https://github.com/kevboh/longform/blob/main/docs/).
 
 
 
@@ -100,7 +100,7 @@ Longform works by searching your vault for any note that contains a frontmatter 
 
 
 
-![Create Longform Project menu item](./docs/res/walkthrough-create-longform-project.png)
+![Create Longform Project menu item](https://github.com/kevboh/longform/blob/main/docs/res/walkthrough-create-longform-project.png)
 
 
 
@@ -112,7 +112,7 @@ Longform works by searching your vault for any note that contains a frontmatter 
 
 
 
-![A filled-out create multi-scene project modal](./docs/res/walkthrough-create-multi.png)
+![A filled-out create multi-scene project modal](https://github.com/kevboh/longform/blob/main/docs/res/walkthrough-create-multi.png)
 
 
 
@@ -124,11 +124,11 @@ Longform works by searching your vault for any note that contains a frontmatter 
 
 
 
-4. Click `Create`. Longform has created the promised file. If we switch to the [Longform pane](./docs/THE_LONGFORM_PANE.md) in the sidebar the project is already selected. You should see three tabs: Scenes, Project, and Compile, and Scenes should be selected.
+4. Click `Create`. Longform has created the promised file. If we switch to the [Longform pane](https://github.com/kevboh/longform/blob/main/docs/THE_LONGFORM_PANE.md) in the sidebar the project is already selected. You should see three tabs: Scenes, Project, and Compile, and Scenes should be selected.
 
 
 
-![The newly-created project in the Longform pane](./docs/res/walkthrough-multi-fresh-pane.png)
+![The newly-created project in the Longform pane](https://github.com/kevboh/longform/blob/main/docs/res/walkthrough-multi-fresh-pane.png)
 
 
 
@@ -136,7 +136,7 @@ Longform works by searching your vault for any note that contains a frontmatter 
 
 
 
-![the "My Great Novel" novel with a freshly-created scene](./docs/res/multi-walkthrough-2.png)
+![the "My Great Novel" novel with a freshly-created scene](https://github.com/kevboh/longform/blob/main/docs/res/multi-walkthrough-2.png)
 
 
 
@@ -166,11 +166,11 @@ This is how Longform tracks your work.
 
 
 
-7. You’re now ready to write your novel. Keep adding scenes as needed. If you’d like to add structure to your novel you can drag scenes left or right (or use the indent/Unindent commands) to create folders of scenes with parent scenes. [The full documentation for multiple-scene projects](./docs/MULTIPLE_SCENE_PROJECTS.md) might be useful.
+7. You’re now ready to write your novel. Keep adding scenes as needed. If you’d like to add structure to your novel you can drag scenes left or right (or use the indent/Unindent commands) to create folders of scenes with parent scenes. [The full documentation for multiple-scene projects](https://github.com/kevboh/longform/blob/main/docs/MULTIPLE_SCENE_PROJECTS.md) might be useful.
 
 
 
-8. When you’re ready to generate a single manuscript for your readers, use the [Compile](./docs/COMPILE.md) feature. Congratulations! You’ve written a novel.
+8. When you’re ready to generate a single manuscript for your readers, use the [Compile](https://github.com/kevboh/longform/blob/main/docs/COMPILE.md) feature. Congratulations! You’ve written a novel.
 
 
 
@@ -178,7 +178,7 @@ This is how Longform tracks your work.
 
 
 
-Longform also supports [single-scene projects](./docs/SINGLE_SCENE_PROJECTS.md) that live as a single note in your vault. Let’s create one.
+Longform also supports [single-scene projects](https://github.com/kevboh/longform/blob/main/docs/SINGLE_SCENE_PROJECTS.md) that live as a single note in your vault. Let’s create one.
 
 
 
@@ -190,7 +190,7 @@ Longform also supports [single-scene projects](./docs/SINGLE_SCENE_PROJECTS.md) 
 
 
 
-![Creating a single-scene Longform project in the Create Project modal](./docs/res/walkthrough-create-single.png)
+![Creating a single-scene Longform project in the Create Project modal](https://github.com/kevboh/longform/blob/main/docs/res/walkthrough-create-single.png)
 
 
 
@@ -342,5 +342,5 @@ Any [sponsorship](https://github.com/sponsors/kevboh) is deeply appreciated, alt
 
 
 
-See [LICENSE.md](./LICENSE.md). You can view the license’s history [here](https://git.sr.ht/~boringcactus/fafol/tree/master/LICENSE.md).
+See [LICENSE.md](https://github.com/kevboh/longform/blob/main/LICENSE.md). You can view the license’s history [here](https://git.sr.ht/~boringcactus/fafol/tree/master/LICENSE.md).
 

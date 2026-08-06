@@ -166,7 +166,7 @@ For greater control over your imports, use the Articy Importer Menu. It can be a
 ![](https://www.articy.com/articy-importer/unreal/articywindow.png)
 
 **Unreal Engine 5**
-![](docs/ImporterButtonUE5.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/ImporterButtonUE5.png)
 
 ### Importer Modes
 
@@ -309,7 +309,7 @@ It's possible to add new script methods into articy:draft's Expresso scripting l
 
 Getting started with custom script methods is easy. Simply start using new methods in articy:draft as if they already exist (as pictured below) and import your project into Unreal.
 
-![](docs/custom-method-node.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/custom-method-node.png)
 
 The importer will detect these methods, infer their parameter types and return signatures (in the example above, one integer and one string), and generate an Interface you can implement in Blueprint or C++ with their implementations.
 
@@ -323,15 +323,15 @@ Each flow player can only use one of the above methods (you can't mix and match)
 
 Choose one and create or open the corresponding Blueprint (whether it's the actor, the component, or the custom `UObject`). Go to `Class Settings` and add the interface generated from your Articy project to the Interfaces list.
 
-![](docs/interface-class-settings.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/interface-class-settings.png)
 
 Now, you can start implementing your custom methods. To do this, find the method in the `Interfaces` list under `My Blueprint` (bottom left), right-click it, and select `Implement event`.
 
-![](docs/implement-custom-function.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/implement-custom-function.png)
 
 This will create a new event node in your Blueprint graph with all the appropriate parameters.
 
-![](docs/custom-function-node.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/custom-function-node.png)
 
 You'll notice the types of each parameter are automatically deduced based on how you used the function in Articy. Now, attach some nodes (if you just want to test it, try a Debug Print to start) and test it out.
 
@@ -341,15 +341,15 @@ You'll notice the types of each parameter are automatically deduced based on how
 
 You can also define custom Expresso script methods that have return values.
 
-![](docs/articy-return-custom-method.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/articy-return-custom-method.png)
 
 To create implementations for these in Blueprint, use the Override function method in the Blueprint editor on the object that implements your interface.
 
-![](docs/implement-custom-return-function.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/implement-custom-return-function.png)
 
 Then, you'll get a custom function in Blueprint that can return a value.
 
-![](docs/custom-function-return-blueprint.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/custom-function-return-blueprint.png)
 
 
 ### Shadowing
@@ -368,7 +368,7 @@ You need to handle this yourself.
 
 Thankfully, this is easy to handle with the `Is in shadow state?` Blueprint node available on the Articy Database. Gate any side effects your function has behind this method returning `False` to ensure they're only run when the node is actually being executed.
 
-![](docs/check-shadow-state.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/check-shadow-state.png)
 
 If your custom function has a return value, however, you still want to make sure it runs as normally. Remember: shadowing is how articy decides what branches are valid or not. If you return a different value while shadowing than you would otherwise, articy won't be able to figure out the proper list of branches to return. Only use `Is in shadow state?` to gate side-effects.
 
@@ -380,11 +380,11 @@ This is supported via the `Override GV` property of the `ArticyFlowPlayer` compo
 
 To create a new, independent set of global variables, right-click in your Content window and find `Alternative Articy Global Variables`. 
 
-![](docs/create-alternative-globals.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/create-alternative-globals.png)
 
 Now, you can simply set the `Override GV` property on your flow player to this asset. Any two flow players with the same setting will share variables, and any flow players with this property unset will share the default global variables.
 
-![](docs/assign-alternative-globals.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/assign-alternative-globals.png)
 
 Similar to the default global variables set, these new sets respect the `Keep global variables between worlds` setting of your project. If it's turned on, changes to these global variables will persist across level boundaries. If it is turned off, each will reset to their default values anytime the level changes.
 
@@ -392,7 +392,7 @@ Similar to the default global variables set, these new sets respect the `Keep gl
 
 If you want to access the values in these sets in Blueprint or C++, you need to use the `Get Runtime GVs` method/node on the Articy Database. The `Alternative Articy Global Variables` asset is just a dummy placeholder, so it has no data itself. You need to use this method to access the runtime data.
 
-![](docs/get-vars-bp.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/get-vars-bp.png)
 
 Pass the asset reference into the `Get Runtime GVs` method and it will return the active runtime clone for that set.
 
@@ -402,7 +402,7 @@ If you're writing a handler for a [custom script method](#custom-script-methods)
 
 When an expresso script is running, the `Get GVs` method/Blueprint node on the Articy Database will return the *active global variables instance* that the flow player is using.
 
-![](docs/get-script-gvs-bp.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/get-script-gvs-bp.png)
 
 ## Articy Global Variables Debugger
 The Global Variables debugger can be accessed in the toolbar at the top of the level editor (UE4) or the Settings menu on the right hand side of the level editor (UE5). It shows all global variables while the game is running and lets you search by namespace or variable name which makes it easy to follow what is happening inside the game and to debug problems in relation to global variables.
@@ -419,17 +419,17 @@ If your articy:draft project has been exported using either the Unity Rich Text 
 
 First, make sure you select one of these two settings in the `Export options` dialog in articy:draft
 
-![](docs/2021-10-31-10-31-19.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-31-19.png)
 
 Then, you'll need to enable a setting in Unreal to convert Unity rich text formatting to Unreal's format. **NOTE: Make sure you click `Import Changes` anytime you change this setting. You can find it in the [Articy Import Window](#import-into-unreal).**
 
-![](docs/2021-10-31-10-36-25.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-36-25.png)
 
 ### Configuring Styles
 
 Next, you have to configure your styles by creating a style data table in Unreal. This asset tells the rich text widget what fonts, colors, and other styling effects to apply to each kind of text. Create this asset by creating a new `Data Table` in your Content window (under `Miscellaneous`) and for the row structure, pick `RichTextStyleRow`.
 
-![](docs/2021-10-31-10-48-28.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-48-28.png)
 
 Next, open the new data table and create your styles. You'll need to import a few fonts into your project to do this. On Windows, you can find the fonts installed under `C:\Windows\Fonts`. Drag one into your Unreal project to import it.
 
@@ -441,13 +441,13 @@ To support combinations (such as bold **and** italic), you need to create combin
 
 **Example:**
 
-![](docs/2021-10-31-10-49-09.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-49-09.png)
 
 ### Configuring your Rich Text Control
 
 Once these are all set, you can configure your rich text control. Create a Rich Text block in the UI editor and set it's Text Style Set to your new data table.
 
-![](docs/2021-10-31-10-50-17.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-50-17.png)
 
 Now, you'll be able to see your styling in articy appear in Unreal! Try setting the text to the text of a formatted node in articy to test.
 
@@ -457,7 +457,7 @@ Now, you'll be able to see your styling in articy appear in Unreal! Try setting 
 
 To support additional styling like custom colors, you need to add the `ArticyRichTextDecorator` to the list of `Decorator classes` on the rich text block.
 
-![](docs/2021-10-31-10-50-31.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/2021-10-31-10-50-31.png)
 
 ### Hyperlinks
 
@@ -524,7 +524,7 @@ The Articy Generated assets like the Database and Packages are probably not maki
 
 Make sure the `ArticyContent` folder is listed under `Additional Asset Directories to Cook` in your project's `Packaging` settings.
 
-![](docs/CookSettings.png)
+![](https://github.com/jeremyabel/articyimporterforunreal/blob/main/docs/CookSettings.png)
 
 To verify the Articy assets are actually making it into the package, you can use the UnrealPak utility included with Unreal to unzip the packaged build and check the bundled assets.
 

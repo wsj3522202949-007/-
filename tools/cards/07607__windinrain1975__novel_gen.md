@@ -42,7 +42,7 @@ Novel Gen 是一个基于大型语言模型 (LLM) 的自动化小说生成工具
 
 此外，项目内置了多轮审核机制，能够在各个生成阶段（架构、全局大纲、子故事、章节大纲）对内容的逻辑性、一致性和吸引力进行自动评估和优化，力求达到商业化出版标准。
 
-[English Version](README_EN.md) | [🚀 快速开始](QUICKSTART.md) | [配置文档](docs/CONFIG.md) | [使用指南](docs/USAGE.md)
+[English Version](https://github.com/windinrain1975/novel_gen/blob/main/README_EN.md) | [🚀 快速开始](https://github.com/windinrain1975/novel_gen/blob/main/QUICKSTART.md) | [配置文档](https://github.com/windinrain1975/novel_gen/blob/main/docs/CONFIG.md) | [使用指南](https://github.com/windinrain1975/novel_gen/blob/main/docs/USAGE.md)
 
 ## ✨ 主要特点
 
@@ -117,10 +117,10 @@ python main.py my_novel.txt l --check_and_repair
 
 ## 📖 详细文档
 
-- [📋 配置文档](docs/CONFIG.md) - 详细的配置选项说明
-- [📚 使用指南](docs/USAGE.md) - 完整的使用教程
-- [🏗️ 架构说明](docs/ARCHITECTURE.md) - 项目架构和设计理念
-- [🔧 开发指南](docs/DEVELOPMENT.md) - 开发和贡献指南
+- [📋 配置文档](https://github.com/windinrain1975/novel_gen/blob/main/docs/CONFIG.md) - 详细的配置选项说明
+- [📚 使用指南](https://github.com/windinrain1975/novel_gen/blob/main/docs/USAGE.md) - 完整的使用教程
+- [🏗️ 架构说明](https://github.com/windinrain1975/novel_gen/blob/main/docs/ARCHITECTURE.md) - 项目架构和设计理念
+- [🔧 开发指南](https://github.com/windinrain1975/novel_gen/blob/main/docs/DEVELOPMENT.md) - 开发和贡献指南
 
 ## 📁 项目结构
 
@@ -182,7 +182,7 @@ novel_gen/
 - **节奏控制**：调整爽文节奏分配比例
 - **输出设置**：自定义文件保存格式
 
-详细配置说明请参考 [配置文档](docs/CONFIG.md)。
+详细配置说明请参考 [配置文档](https://github.com/windinrain1975/novel_gen/blob/main/docs/CONFIG.md)。
 
 ## 🎯 使用场景
 
@@ -203,7 +203,7 @@ novel_gen/
 
 ## 📄 许可证
 
-本项目采用 MIT 许可证。详情请见 [LICENSE](LICENSE) 文件。
+本项目采用 MIT 许可证。详情请见 [LICENSE](https://github.com/windinrain1975/novel_gen/blob/main/LICENSE) 文件。
 
 版权所有 (c) 2024 windinrain1975
 

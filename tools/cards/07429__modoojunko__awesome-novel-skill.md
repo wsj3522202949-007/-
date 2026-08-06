@@ -303,7 +303,7 @@ novel-agent 只负责调度和验证，不直接写内容。子 agent 各司其�
 
 ## 贡献
 
-欢迎参与贡献！详情请查看 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+欢迎参与贡献！详情请查看 [CONTRIBUTING.md](https://github.com/modoojunko/awesome-novel-skill/blob/main/CONTRIBUTING.md)。
 
 | 方式 | 说明 |
 |------|------|
@@ -346,7 +346,7 @@ novel-agent 只负责调度和验证，不直接写内容。子 agent 各司其�
 2. 在 `knowledge/anti-ai/` 下新建或编辑题材文件
 3. 提交 PR，标题格式：`反AI: 添加{题材名}正反例`
 
-见 [knowledge/anti-ai/README.md](./knowledge/anti-ai/README.md)。
+见 [knowledge/anti-ai/README.md](https://github.com/modoojunko/awesome-novel-skill/blob/main/knowledge/anti-ai/README.md)。
 
 ### 代码贡献（程序员）
 

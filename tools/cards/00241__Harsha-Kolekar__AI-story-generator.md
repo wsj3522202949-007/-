@@ -339,7 +339,7 @@ Need inspiration? Try these prompts:
 
 
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://github.com/Harsha-Kolekar/AI-story-generator/blob/main/LICENSE).
 
 
 

@@ -77,7 +77,7 @@ Our system aligns with the NIH's dimensional approach to OCD assessment[³], ana
 ## Methodology
 
 Our OCD detection system employs sophisticated algorithms and statistical methods to analyze behavioral patterns. 
-See [Research](RESEARCH.md) for more details.
+See [Research](https://github.com/skytells-research/ocd-detector/blob/main/RESEARCH.md) for more details.
 
 The core methodology includes:
 
@@ -114,7 +114,7 @@ $$
 where $\sigma_m^2$ represents model variance and $n_{valid}$ represents the number of valid data points.
 
 ### Research Used
-This project is based on published scientific research papers, please refer to the [Research](RESEARCH.md) for more details.
+This project is based on published scientific research papers, please refer to the [Research](https://github.com/skytells-research/ocd-detector/blob/main/RESEARCH.md) for more details.
 
 ## Features
 
@@ -170,16 +170,16 @@ pip install -r requirements.txt
 python run.py
 ```
 
-For detailed installation instructions, see [Installation Guide](installation.md).
+For detailed installation instructions, see [Installation Guide](https://github.com/skytells-research/ocd-detector/blob/main/installation.md).
 
 ## Documentation
 
-- [Installation Guide](installation.md)
-- [Training Guide](training.md)
-- [API Reference](docs/api.md)
-- [Model Architecture](docs/architecture.md)
-- [Contributing Guidelines](contribution.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Installation Guide](https://github.com/skytells-research/ocd-detector/blob/main/installation.md)
+- [Training Guide](https://github.com/skytells-research/ocd-detector/blob/main/training.md)
+- [API Reference](https://github.com/skytells-research/ocd-detector/blob/main/docs/api.md)
+- [Model Architecture](https://github.com/skytells-research/ocd-detector/blob/main/docs/architecture.md)
+- [Contributing Guidelines](https://github.com/skytells-research/ocd-detector/blob/main/contribution.md)
+- [Code of Conduct](https://github.com/skytells-research/ocd-detector/blob/main/CODE_OF_CONDUCT.md)
 
 ## Use Cases
 
@@ -211,7 +211,7 @@ For detailed installation instructions, see [Installation Guide](installation.md
 
 ## Contributing
 
-We welcome contributions from the community! Please read our [Contributing Guidelines](contribution.md) before submitting pull requests.
+We welcome contributions from the community! Please read our [Contributing Guidelines](https://github.com/skytells-research/ocd-detector/blob/main/contribution.md) before submitting pull requests.
 
 ### Development Setup
 ```bash
@@ -235,7 +235,7 @@ To start the frontend application on port 8502:
 streamlit run frontend/app.py --server.port 8502
 ```
 ### Running the Backend
-Please refer to the [Running the Backend](backend/API.md) for detailed instructions.
+Please refer to the [Running the Backend](https://github.com/skytells-research/ocd-detector/blob/main/backend/API.md) for detailed instructions.
 
 
 ## Citation
@@ -255,8 +255,8 @@ If you use this project in your research, please cite:
 
 - 📫 [Report Issues](https://github.com/skytells-research/ocd-detector/issues)
 - 💬 [Community Discussions](https://github.com/skytells-research/ocd-detector/discussions)
-- 📖 [Documentation](docs/README.md)
-- 🤝 [Contributing](CONTRIBUTING.md)
+- 📖 [Documentation](https://github.com/skytells-research/ocd-detector/blob/main/docs/README.md)
+- 🤝 [Contributing](https://github.com/skytells-research/ocd-detector/blob/main/CONTRIBUTING.md)
 
 ## Contributors
 
@@ -289,6 +289,6 @@ If you find this project useful, consider sponsoring us on GitHub to support ong
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/skytells-research/ocd-detector/blob/main/LICENSE) file for details.
 
 For more info, Please contact Skytells Research on our [website](https://skytells.io)

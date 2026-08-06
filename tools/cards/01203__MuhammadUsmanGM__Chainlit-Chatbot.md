@@ -107,8 +107,8 @@ For questions, reach out via GitHub Issues or [muhammadusman5965etc@gmail.com](m
 
 ## 🚆Interface Preview
 
-![Interface](/images/Interface.png)
+![Interface](https://github.com/MuhammadUsmanGM/Chainlit-Chatbot/blob/main//images/Interface.png)
 
 ## 📤Sample Output
 
-![Output](/images/Output.png)
+![Output](https://github.com/MuhammadUsmanGM/Chainlit-Chatbot/blob/main//images/Output.png)

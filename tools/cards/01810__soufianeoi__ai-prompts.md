@@ -68,11 +68,11 @@ A collection of carefully crafted prompts for various AI tasks. Every prompt inc
 
 | Category | Prompts | Description |
 |----------|---------|-------------|
-| [Coding](coding/) | 7 | Code generation, debugging, refactoring, architecture, testing |
-| [Writing](writing/) | 6 | Articles, emails, docs, commit messages, product copy, press releases |
-| [Analysis](analysis/) | 6 | Sentiment, research, decisions, SWOT, data extraction, competitive analysis |
-| [Creative](creative/) | 6 | Characters, worlds, game mechanics, brainstorming, dialogue, poetry |
-| [Reasoning](reasoning/) | 6 | Chain-of-thought, logic puzzles, debate, first principles, ethics, decision trees |
+| [Coding](https://github.com/soufianeoi/ai-prompts/blob/main/coding/) | 7 | Code generation, debugging, refactoring, architecture, testing |
+| [Writing](https://github.com/soufianeoi/ai-prompts/blob/main/writing/) | 6 | Articles, emails, docs, commit messages, product copy, press releases |
+| [Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/) | 6 | Sentiment, research, decisions, SWOT, data extraction, competitive analysis |
+| [Creative](https://github.com/soufianeoi/ai-prompts/blob/main/creative/) | 6 | Characters, worlds, game mechanics, brainstorming, dialogue, poetry |
+| [Reasoning](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/) | 6 | Chain-of-thought, logic puzzles, debate, first principles, ethics, decision trees |
 
 ## Prompt Index
 
@@ -80,57 +80,57 @@ A collection of carefully crafted prompts for various AI tasks. Every prompt inc
 
 | Prompt | Best For |
 |--------|----------|
-| [Debug an Error](coding/debug-error.md) | Finding root causes from stack traces |
-| [Code Review](coding/code-review.md) | Getting senior-engineer-level PR feedback |
-| [Refactor Legacy Code](coding/refactor-legacy-code.md) | Modernizing old code safely |
-| [Write Unit Tests](coding/write-unit-tests.md) | Comprehensive test coverage |
-| [Design a REST API](coding/design-api.md) | Complete API specs with schemas |
-| [Explain Code](coding/explain-code.md) | Understanding unfamiliar code |
-| [Optimize a Database Query](coding/optimize-query.md) | Fixing slow queries with indexing |
+| [Debug an Error](https://github.com/soufianeoi/ai-prompts/blob/main/coding/debug-error.md) | Finding root causes from stack traces |
+| [Code Review](https://github.com/soufianeoi/ai-prompts/blob/main/coding/code-review.md) | Getting senior-engineer-level PR feedback |
+| [Refactor Legacy Code](https://github.com/soufianeoi/ai-prompts/blob/main/coding/refactor-legacy-code.md) | Modernizing old code safely |
+| [Write Unit Tests](https://github.com/soufianeoi/ai-prompts/blob/main/coding/write-unit-tests.md) | Comprehensive test coverage |
+| [Design a REST API](https://github.com/soufianeoi/ai-prompts/blob/main/coding/design-api.md) | Complete API specs with schemas |
+| [Explain Code](https://github.com/soufianeoi/ai-prompts/blob/main/coding/explain-code.md) | Understanding unfamiliar code |
+| [Optimize a Database Query](https://github.com/soufianeoi/ai-prompts/blob/main/coding/optimize-query.md) | Fixing slow queries with indexing |
 
 ### Writing
 
 | Prompt | Best For |
 |--------|----------|
-| [Write a Technical Article](writing/technical-article.md) | Blog posts and tutorials |
-| [Write a Cold Email](writing/cold-email.md) | Outreach that gets replies |
-| [Write API Documentation](writing/api-docs.md) | Developer-friendly API docs |
-| [Write a Git Commit Message](writing/commit-message.md) | Conventional commits done right |
-| [Write a Product Description](writing/product-description.md) | Converting product copy |
-| [Write a Press Release](writing/press-release.md) | Professional announcements |
+| [Write a Technical Article](https://github.com/soufianeoi/ai-prompts/blob/main/writing/technical-article.md) | Blog posts and tutorials |
+| [Write a Cold Email](https://github.com/soufianeoi/ai-prompts/blob/main/writing/cold-email.md) | Outreach that gets replies |
+| [Write API Documentation](https://github.com/soufianeoi/ai-prompts/blob/main/writing/api-docs.md) | Developer-friendly API docs |
+| [Write a Git Commit Message](https://github.com/soufianeoi/ai-prompts/blob/main/writing/commit-message.md) | Conventional commits done right |
+| [Write a Product Description](https://github.com/soufianeoi/ai-prompts/blob/main/writing/product-description.md) | Converting product copy |
+| [Write a Press Release](https://github.com/soufianeoi/ai-prompts/blob/main/writing/press-release.md) | Professional announcements |
 
 ### Analysis
 
 | Prompt | Best For |
 |--------|----------|
-| [Sentiment Analysis](analysis/sentiment-analysis.md) | Tone and emotion detection |
-| [Research Summary](analysis/research-summary.md) | Distilling papers and articles |
-| [Decision Matrix](analysis/decision-matrix.md) | Weighted option comparison |
-| [SWOT Analysis](analysis/swot-analysis.md) | Strategic positioning |
-| [Data Extraction](analysis/data-extraction.md) | Structured data from text |
-| [Competitive Analysis](analysis/competitive-analysis.md) | Market gap identification |
+| [Sentiment Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/sentiment-analysis.md) | Tone and emotion detection |
+| [Research Summary](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/research-summary.md) | Distilling papers and articles |
+| [Decision Matrix](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/decision-matrix.md) | Weighted option comparison |
+| [SWOT Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/swot-analysis.md) | Strategic positioning |
+| [Data Extraction](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/data-extraction.md) | Structured data from text |
+| [Competitive Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/analysis/competitive-analysis.md) | Market gap identification |
 
 ### Creative
 
 | Prompt | Best For |
 |--------|----------|
-| [Character Design](creative/character-design.md) | Memorable story/game characters |
-| [World Building](creative/world-building.md) | Immersive fictional settings |
-| [Game Mechanic Design](creative/game-mechanic.md) | Balanced, fun game systems |
-| [Brainstorming Session](creative/brainstorming.md) | Diverse idea generation |
-| [Dialogue Writing](creative/dialogue-writing.md) | Natural character conversations |
-| [Poetry Generation](creative/poetry.md) | Form-conscious verse |
+| [Character Design](https://github.com/soufianeoi/ai-prompts/blob/main/creative/character-design.md) | Memorable story/game characters |
+| [World Building](https://github.com/soufianeoi/ai-prompts/blob/main/creative/world-building.md) | Immersive fictional settings |
+| [Game Mechanic Design](https://github.com/soufianeoi/ai-prompts/blob/main/creative/game-mechanic.md) | Balanced, fun game systems |
+| [Brainstorming Session](https://github.com/soufianeoi/ai-prompts/blob/main/creative/brainstorming.md) | Diverse idea generation |
+| [Dialogue Writing](https://github.com/soufianeoi/ai-prompts/blob/main/creative/dialogue-writing.md) | Natural character conversations |
+| [Poetry Generation](https://github.com/soufianeoi/ai-prompts/blob/main/creative/poetry.md) | Form-conscious verse |
 
 ### Reasoning
 
 | Prompt | Best For |
 |--------|----------|
-| [Chain of Thought](reasoning/chain-of-thought.md) | Step-by-step problem solving |
-| [Logic Puzzle Solver](reasoning/logic-puzzle.md) | Grid puzzles and deduction |
-| [Debate Analysis](reasoning/debate-analysis.md) | Balanced multi-perspective analysis |
-| [First Principles](reasoning/first-principles.md) | Breaking down assumptions |
-| [Ethical Dilemma](reasoning/ethical-dilemma.md) | Multi-framework ethics |
-| [Decision Tree](reasoning/decision-tree.md) | Risk-aware choice mapping |
+| [Chain of Thought](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/chain-of-thought.md) | Step-by-step problem solving |
+| [Logic Puzzle Solver](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/logic-puzzle.md) | Grid puzzles and deduction |
+| [Debate Analysis](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/debate-analysis.md) | Balanced multi-perspective analysis |
+| [First Principles](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/first-principles.md) | Breaking down assumptions |
+| [Ethical Dilemma](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/ethical-dilemma.md) | Multi-framework ethics |
+| [Decision Tree](https://github.com/soufianeoi/ai-prompts/blob/main/reasoning/decision-tree.md) | Risk-aware choice mapping |
 
 ## Prompt Format
 
@@ -174,7 +174,7 @@ What you should expect from a good response.
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new prompts.
+See [CONTRIBUTING.md](https://github.com/soufianeoi/ai-prompts/blob/main/CONTRIBUTING.md) for guidelines on adding new prompts.
 
 ## License
 

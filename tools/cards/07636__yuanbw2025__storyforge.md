@@ -77,7 +77,7 @@ npm run dev      # http://localhost:1111/storyforge/
 npm run ci       # schema checks + AI manual check + architecture check + typecheck + coverage + build
 ```
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing.
+Read [CONTRIBUTING.md](https://github.com/yuanbw2025/storyforge/blob/main/CONTRIBUTING.md) before contributing.
 
 ---
 
@@ -174,7 +174,7 @@ StoryForge 不是“一键生成完本小说”的黑箱工具，而是给作者
 | 提示词库 | 模板、题材包、参数、示例/反例、工作流 |
 | 设置区 | 版本历史、文档解析、数据管理、消耗统计、设置 |
 
-更细的用户版图文说明书见 [docs/FEATURE-GUIDE.md](./docs/FEATURE-GUIDE.md)。该文档会按页面和二级页签展开，并配套截图。
+更细的用户版图文说明书见 [docs/FEATURE-GUIDE.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/FEATURE-GUIDE.md)。该文档会按页面和二级页签展开，并配套截图。
 
 ---
 
@@ -241,9 +241,9 @@ StoryForge 是纯前端项目，没有自建应用后端。
 
 StoryForge 按“底层能力向上支撑用户价值”的方向分为六层。UI 只表达用户意图和确认；AI 读、AI 写与表生命周期分别收口到三个注册表，不允许面板各自形成平行管线。
 
-[![StoryForge 从存储到用户价值的六层架构](./docs/assets/architecture/storyforge-architecture-overview.png)](./docs/assets/architecture/storyforge-architecture-overview.png)
+[![StoryForge 从存储到用户价值的六层架构](https://github.com/yuanbw2025/storyforge/blob/main/docs/assets/architecture/storyforge-architecture-overview.png)](./docs/assets/architecture/storyforge-architecture-overview.png)
 
-图中同时展示 `PROJECT_TABLES` 的代码映射、统一 AI 读写主路径和 42 张表的领域分布。对应实现见 [`src/lib/registry`](./src/lib/registry)、[`src/lib/db/schema.ts`](./src/lib/db/schema.ts) 与 [`scripts/check-architecture.mjs`](./scripts/check-architecture.mjs)。
+图中同时展示 `PROJECT_TABLES` 的代码映射、统一 AI 读写主路径和 42 张表的领域分布。对应实现见 [`src/lib/registry`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/registry)、[`src/lib/db/schema.ts`](https://github.com/yuanbw2025/storyforge/blob/main/src/lib/db/schema.ts) 与 [`scripts/check-architecture.mjs`](https://github.com/yuanbw2025/storyforge/blob/main/scripts/check-architecture.mjs)。
 
 ### 三个注册表
 
@@ -255,7 +255,7 @@ StoryForge 按“底层能力向上支撑用户价值”的方向分为六层。
 | `FIELD_REGISTRY` + `ADOPTION_SCHEMAS` | AI 写什么，采纳时如何校验与去重 |
 | `PROJECT_TABLES` | 表生命周期，导出/导入/删除/迁移如何覆盖 |
 
-详见 [CLAUDE.md](./CLAUDE.md) 与 [docs/MASTER-BLUEPRINT.md](./docs/MASTER-BLUEPRINT.md)。
+详见 [CLAUDE.md](https://github.com/yuanbw2025/storyforge/blob/main/CLAUDE.md) 与 [docs/MASTER-BLUEPRINT.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/MASTER-BLUEPRINT.md)。
 
 ---
 
@@ -287,7 +287,7 @@ StoryForge 不再提供 `.bat`、`.exe` 或 Windows Portable 启动器。Windows
 5. 执行 `npm install` 和 `npm run dev`。
 6. 浏览器打开 `http://localhost:1111/storyforge/`。
 
-详细图文步骤见 [使用npm指令启动项目.md](./使用npm指令启动项目.md)。
+详细图文步骤见 [使用npm指令启动项目.md](https://github.com/yuanbw2025/storyforge/blob/main/%E4%BD%BF%E7%94%A8npm%E6%8C%87%E4%BB%A4%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE.md)。
 
 ---
 
@@ -312,7 +312,7 @@ npm run ci
 npm run ci
 ```
 
-如果只改文档，可按变更范围选择更轻的验证；涉及数据表、AI 读写、导出导入、删除、迁移时必须跑完整验证，并遵守 [CLAUDE.md](./CLAUDE.md) 的三注册表规则。
+如果只改文档，可按变更范围选择更轻的验证；涉及数据表、AI 读写、导出导入、删除、迁移时必须跑完整验证，并遵守 [CLAUDE.md](https://github.com/yuanbw2025/storyforge/blob/main/CLAUDE.md) 的三注册表规则。
 
 ---
 
@@ -332,28 +332,28 @@ npm run ci
 
 | 文档 | 用途 |
 |---|---|
-| [docs/FEATURE-GUIDE.md](./docs/FEATURE-GUIDE.md) | 面向用户的完整功能说明书 |
-| [CONTRIBUTING.md](./CONTRIBUTING.md) | 贡献指南 |
-| [CHANGELOG.md](./CHANGELOG.md) | 版本变更记录 |
-| [CLAUDE.md](./CLAUDE.md) | AI/开发者接手项目必须遵守的规则 |
-| [docs/MASTER-BLUEPRINT.md](./docs/MASTER-BLUEPRINT.md) | 重构施工蓝图与架构权威 |
-| [docs/roadmap/README.md](./docs/roadmap/README.md) | 当前功能体系、待开发组合与施工顺序 |
-| [docs/roadmap/CAPABILITY-BASELINE.md](./docs/roadmap/CAPABILITY-BASELINE.md) | 当前已有能力与禁止重复建设边界 |
-| [docs/roadmap/COMPLETED.md](./docs/roadmap/COMPLETED.md) | 已完成开发单位与历史证据入口 |
-| [docs/AI-FUNCTIONS-MANUAL.generated.md](./docs/AI-FUNCTIONS-MANUAL.generated.md) | 由代码生成的 AI 功能清单 |
-| [SECURITY.md](./SECURITY.md) | 漏洞报告、响应流程与支持版本政策 |
+| [docs/FEATURE-GUIDE.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/FEATURE-GUIDE.md) | 面向用户的完整功能说明书 |
+| [CONTRIBUTING.md](https://github.com/yuanbw2025/storyforge/blob/main/CONTRIBUTING.md) | 贡献指南 |
+| [CHANGELOG.md](https://github.com/yuanbw2025/storyforge/blob/main/CHANGELOG.md) | 版本变更记录 |
+| [CLAUDE.md](https://github.com/yuanbw2025/storyforge/blob/main/CLAUDE.md) | AI/开发者接手项目必须遵守的规则 |
+| [docs/MASTER-BLUEPRINT.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/MASTER-BLUEPRINT.md) | 重构施工蓝图与架构权威 |
+| [docs/roadmap/README.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/roadmap/README.md) | 当前功能体系、待开发组合与施工顺序 |
+| [docs/roadmap/CAPABILITY-BASELINE.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/roadmap/CAPABILITY-BASELINE.md) | 当前已有能力与禁止重复建设边界 |
+| [docs/roadmap/COMPLETED.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/roadmap/COMPLETED.md) | 已完成开发单位与历史证据入口 |
+| [docs/AI-FUNCTIONS-MANUAL.generated.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/AI-FUNCTIONS-MANUAL.generated.md) | 由代码生成的 AI 功能清单 |
+| [SECURITY.md](https://github.com/yuanbw2025/storyforge/blob/main/SECURITY.md) | 漏洞报告、响应流程与支持版本政策 |
 
 ---
 
 ## License
 
-StoryForge 使用 [MIT License](./LICENSE) 开源。你可以自由使用、复制、修改、分发和商用本项目代码；请保留原始版权与许可声明。
+StoryForge 使用 [MIT License](https://github.com/yuanbw2025/storyforge/blob/main/LICENSE) 开源。你可以自由使用、复制、修改、分发和商用本项目代码；请保留原始版权与许可声明。
 
 ---
 
 ## Star History
 
-[![StoryForge Star History](./docs/assets/architecture/storyforge-star-history.svg)](https://star-history.com/#yuanbw2025/storyforge&Date)
+[![StoryForge Star History](https://github.com/yuanbw2025/storyforge/blob/main/docs/assets/architecture/storyforge-star-history.svg)](https://star-history.com/#yuanbw2025/storyforge&Date)
 
 折线图由 GitHub 官方 stargazer 时间数据生成；更新命令：`node scripts/generate-star-history.mjs`。
 
@@ -363,4 +363,4 @@ related:
 
 ## 功能全景指南
 
-完整图文版功能说明书见 [docs/FEATURE-GUIDE.md](./docs/FEATURE-GUIDE.md)。文档按页面和二级页签展开，包含功能说明、项目逻辑说明和配套截图。
+完整图文版功能说明书见 [docs/FEATURE-GUIDE.md](https://github.com/yuanbw2025/storyforge/blob/main/docs/FEATURE-GUIDE.md)。文档按页面和二级页签展开，包含功能说明、项目逻辑说明和配套截图。

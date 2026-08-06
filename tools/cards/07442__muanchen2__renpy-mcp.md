@@ -107,7 +107,7 @@ Add to `~/.workbuddy/mcp.json`:
 
 ### License
 
-MIT — see [LICENSE](LICENSE)
+MIT — see [LICENSE](https://github.com/muanchen2/renpy-mcp/blob/main/LICENSE)
 
 ---
 
@@ -135,7 +135,7 @@ Ren'Py 没有内置编辑器，开发者需要手动编写 `.rpy` 文本文件�
 | `copy_asset` | 拷贝图片/字体/音频到项目（自动补 game/ 前缀） |
 | `get_image_size` | 获取图片尺寸，用于立绘位置计算 |
 
-> ⚠️ **AI Agent 使用前请先阅读 [AI_GUIDE.md](AI_GUIDE.md)** —— 包含完整工作流、常见坑和 9 大禁止事项。
+> ⚠️ **AI Agent 使用前请先阅读 [AI_GUIDE.md](https://github.com/muanchen2/renpy-mcp/blob/main/AI_GUIDE.md)** —— 包含完整工作流、常见坑和 9 大禁止事项。
 
 ### 快速开始
 

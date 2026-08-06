@@ -41,7 +41,7 @@ related:
 
 **Ink Explorer** is a tool for visualizing and debugging [Ink](https://github.com/inkle/ink) stories. It allows you to explore the structure of your Ink code, play through it interactively, and inspect the state of your variables and visit counts in real-time.
 
-![Ink Explorer Overview](doc/App.png)
+![Ink Explorer Overview](https://github.com/wildwinter/ink-explorer/blob/main/doc/App.png)
 
 ## Features
 
@@ -64,7 +64,7 @@ Play through your story interactively within the tool. You can start your playth
 
 If you have **Follow** ticked, the graph will automatically centre and follow the node your story is currently on.
 
-![Live Ink](doc/App.png)
+![Live Ink](https://github.com/wildwinter/ink-explorer/blob/main/doc/App.png)
 
 ### Code View
 
@@ -75,7 +75,7 @@ You can toggle the code view off and on in the View menu.
 - **Context Aware**: Click a node in the graph to see its source ink.
 - **Follow Mode**: Automatically show the code for the current active node during playback.
 
-![Code View](doc/CodeView.png)
+![Code View](https://github.com/wildwinter/ink-explorer/blob/main/doc/CodeView.png)
 
 ### Variable Inspection
 
@@ -87,7 +87,7 @@ Inspect and edit global variables in real-time.
 
 You need to have started a test for the variables to appear.
 
-![Variables](doc/Variables.png)
+![Variables](https://github.com/wildwinter/ink-explorer/blob/main/doc/Variables.png)
 
 ### Visit Tracking
 
@@ -95,7 +95,7 @@ Track exactly how many times each knot and stitch has been visited.
 
 - **Real-time Updates**: Counts update as you play.
 
-![Visits](doc/Visits.png)
+![Visits](https://github.com/wildwinter/ink-explorer/blob/main/doc/Visits.png)
 
 ### States Management
 
@@ -106,7 +106,7 @@ This is useful to take snapshots of a state to easily restore it, for testing.
 - **Snapshots**: Capture the current story state (variables, path, visit counts).
 - **Auto-Load**: Configure a state to automatically load when starting a test, effectively setting a "save point" for debugging.
 
-![States](doc/States.png)
+![States](https://github.com/wildwinter/ink-explorer/blob/main/doc/States.png)
 
 ## Releases
 

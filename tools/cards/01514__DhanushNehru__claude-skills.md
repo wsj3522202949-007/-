@@ -115,52 +115,52 @@ message = client.messages.create(
 ### 🛠️ Developer Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [Code Reviewer](skills/developer/code-reviewer.md) | Production-grade code review with security, performance & maintainability analysis | ⭐⭐ |
-| [Git Commit Crafter](skills/developer/git-commit-crafter.md) | Generate perfect conventional commits from diffs | ⭐ |
-| [Bug Hunter](skills/developer/bug-hunter.md) | Systematic debugging agent that traces root causes | ⭐⭐⭐ |
-| [API Designer](skills/developer/api-designer.md) | Design RESTful APIs following OpenAPI best practices | ⭐⭐ |
-| [Regex Wizard](skills/developer/regex-wizard.md) | Build, explain, and test regular expressions in any flavor | ⭐ |
+| [Code Reviewer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/developer/code-reviewer.md) | Production-grade code review with security, performance & maintainability analysis | ⭐⭐ |
+| [Git Commit Crafter](https://github.com/DhanushNehru/claude-skills/blob/main/skills/developer/git-commit-crafter.md) | Generate perfect conventional commits from diffs | ⭐ |
+| [Bug Hunter](https://github.com/DhanushNehru/claude-skills/blob/main/skills/developer/bug-hunter.md) | Systematic debugging agent that traces root causes | ⭐⭐⭐ |
+| [API Designer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/developer/api-designer.md) | Design RESTful APIs following OpenAPI best practices | ⭐⭐ |
+| [Regex Wizard](https://github.com/DhanushNehru/claude-skills/blob/main/skills/developer/regex-wizard.md) | Build, explain, and test regular expressions in any flavor | ⭐ |
 
 ### 🔒 Security Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [Threat Modeler](skills/security/threat-modeler.md) | STRIDE-based threat modeling for any system architecture | ⭐⭐⭐ |
-| [Dependency Auditor](skills/security/dependency-auditor.md) | Deep-dive analysis of package vulnerabilities and supply chain risks | ⭐⭐ |
-| [Security Headers Checker](skills/security/security-headers-checker.md) | Analyze and fix HTTP security headers for web applications | ⭐ |
+| [Threat Modeler](https://github.com/DhanushNehru/claude-skills/blob/main/skills/security/threat-modeler.md) | STRIDE-based threat modeling for any system architecture | ⭐⭐⭐ |
+| [Dependency Auditor](https://github.com/DhanushNehru/claude-skills/blob/main/skills/security/dependency-auditor.md) | Deep-dive analysis of package vulnerabilities and supply chain risks | ⭐⭐ |
+| [Security Headers Checker](https://github.com/DhanushNehru/claude-skills/blob/main/skills/security/security-headers-checker.md) | Analyze and fix HTTP security headers for web applications | ⭐ |
 
 ### 📊 Data & Analysis Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [SQL Query Optimizer](skills/data/sql-query-optimizer.md) | Analyze and optimize slow SQL queries with execution plan analysis | ⭐⭐ |
-| [Data Storyteller](skills/data/data-storyteller.md) | Transform raw datasets into compelling narratives with visualizations | ⭐⭐ |
-| [CSV Detective](skills/data/csv-detective.md) | Profile, clean, and analyze messy CSV/JSON datasets | ⭐ |
+| [SQL Query Optimizer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/data/sql-query-optimizer.md) | Analyze and optimize slow SQL queries with execution plan analysis | ⭐⭐ |
+| [Data Storyteller](https://github.com/DhanushNehru/claude-skills/blob/main/skills/data/data-storyteller.md) | Transform raw datasets into compelling narratives with visualizations | ⭐⭐ |
+| [CSV Detective](https://github.com/DhanushNehru/claude-skills/blob/main/skills/data/csv-detective.md) | Profile, clean, and analyze messy CSV/JSON datasets | ⭐ |
 
 ### ✍️ Writing & Content Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [Technical Writer](skills/writing/technical-writer.md) | Write clear, structured technical documentation and ADRs | ⭐⭐ |
-| [README Generator](skills/writing/readme-generator.md) | Generate stunning, complete README files from codebases | ⭐ |
-| [Changelog Author](skills/writing/changelog-author.md) | Generate human-readable changelogs from git history | ⭐ |
+| [Technical Writer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/writing/technical-writer.md) | Write clear, structured technical documentation and ADRs | ⭐⭐ |
+| [README Generator](https://github.com/DhanushNehru/claude-skills/blob/main/skills/writing/readme-generator.md) | Generate stunning, complete README files from codebases | ⭐ |
+| [Changelog Author](https://github.com/DhanushNehru/claude-skills/blob/main/skills/writing/changelog-author.md) | Generate human-readable changelogs from git history | ⭐ |
 
 ### 🏗️ Architecture & DevOps Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [System Design Coach](skills/architecture/system-design-coach.md) | Interactive system design interview prep and architecture review | ⭐⭐⭐ |
-| [Dockerfile Optimizer](skills/devops/dockerfile-optimizer.md) | Analyze and optimize Dockerfiles for size, security, and build speed | ⭐⭐ |
-| [CI/CD Pipeline Builder](skills/devops/cicd-pipeline-builder.md) | Generate production-ready GitHub Actions / GitLab CI pipelines | ⭐⭐ |
+| [System Design Coach](https://github.com/DhanushNehru/claude-skills/blob/main/skills/architecture/system-design-coach.md) | Interactive system design interview prep and architecture review | ⭐⭐⭐ |
+| [Dockerfile Optimizer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/devops/dockerfile-optimizer.md) | Analyze and optimize Dockerfiles for size, security, and build speed | ⭐⭐ |
+| [CI/CD Pipeline Builder](https://github.com/DhanushNehru/claude-skills/blob/main/skills/devops/cicd-pipeline-builder.md) | Generate production-ready GitHub Actions / GitLab CI pipelines | ⭐⭐ |
 
 ### 🧩 Productivity Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [Meeting Summarizer](skills/productivity/meeting-summarizer.md) | Extract action items, decisions, and key points from meeting transcripts | ⭐ |
-| [Email Diplomat](skills/productivity/email-diplomat.md) | Craft professional emails for sensitive situations | ⭐ |
-| [Learning Path Generator](skills/productivity/learning-path-generator.md) | Create personalized, structured learning roadmaps for any topic | ⭐⭐ |
+| [Meeting Summarizer](https://github.com/DhanushNehru/claude-skills/blob/main/skills/productivity/meeting-summarizer.md) | Extract action items, decisions, and key points from meeting transcripts | ⭐ |
+| [Email Diplomat](https://github.com/DhanushNehru/claude-skills/blob/main/skills/productivity/email-diplomat.md) | Craft professional emails for sensitive situations | ⭐ |
+| [Learning Path Generator](https://github.com/DhanushNehru/claude-skills/blob/main/skills/productivity/learning-path-generator.md) | Create personalized, structured learning roadmaps for any topic | ⭐⭐ |
 
 ### 🎨 Creative Skills
 | Skill | Description | Difficulty |
 |-------|-------------|:----------:|
-| [Color Palette Generator](skills/creative/color-palette-generator.md) | Generate accessible, harmonious color palettes from any inspiration | ⭐ |
-| [Naming Consultant](skills/creative/naming-consultant.md) | Generate memorable names for projects, products, and companies | ⭐ |
+| [Color Palette Generator](https://github.com/DhanushNehru/claude-skills/blob/main/skills/creative/color-palette-generator.md) | Generate accessible, harmonious color palettes from any inspiration | ⭐ |
+| [Naming Consultant](https://github.com/DhanushNehru/claude-skills/blob/main/skills/creative/naming-consultant.md) | Generate memorable names for projects, products, and companies | ⭐ |
 
 ---
 
@@ -205,7 +205,7 @@ Each skill file contains:
 
 ## 🔨 Create Your Own
 
-Use our [Skill Template](SKILL_TEMPLATE.md) to create your own skill:
+Use our [Skill Template](https://github.com/DhanushNehru/claude-skills/blob/main/SKILL_TEMPLATE.md) to create your own skill:
 
 1. Fork this repo
 2. Copy `SKILL_TEMPLATE.md` into the appropriate `skills/<category>/` folder
@@ -225,7 +225,7 @@ Use our [Skill Template](SKILL_TEMPLATE.md) to create your own skill:
 
 We love contributions! Whether it's a new skill, an improvement to an existing one, or fixing a typo — every PR is welcome.
 
-Please read our [Contributing Guide](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before submitting.
+Please read our [Contributing Guide](https://github.com/DhanushNehru/claude-skills/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/DhanushNehru/claude-skills/blob/main/CODE_OF_CONDUCT.md) before submitting.
 
 ### What makes a great skill?
 - ✅ Solves a **real problem** people encounter regularly
@@ -246,7 +246,7 @@ If this repo helped you, please consider giving it a ⭐ — it helps others dis
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/DhanushNehru/claude-skills/blob/main/LICENSE) file for details.
 
 related:
   - methods/网文写作最强SOP.md

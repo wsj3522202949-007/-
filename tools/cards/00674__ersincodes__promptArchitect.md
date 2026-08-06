@@ -64,7 +64,7 @@ After you finish the wizard, you choose **how** generations run: **OpenAI**, **A
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **LLM access**: Vite dev **API routes** under `api/` call provider REST APIs (OpenAI, Anthropic, Gemini `generateContent`, or local OpenAI-compatible chat completions). Default models are defined in [`api/lib/completeText.ts`](api/lib/completeText.ts).
+- **LLM access**: Vite dev **API routes** under `api/` call provider REST APIs (OpenAI, Anthropic, Gemini `generateContent`, or local OpenAI-compatible chat completions). Default models are defined in [`api/lib/completeText.ts`](https://github.com/ersincodes/promptArchitect/blob/main/api/lib/completeText.ts).
 
 ## 🚀 Getting Started
 
@@ -94,7 +94,7 @@ Follow these instructions to get the project up and running on your local machin
 
 3. **Environment variables (optional)**
 
-   The dev server loads variables from `.env` in the project root (see [`vite.config.ts`](vite.config.ts)). You can set a **default Gemini key** for the server so that choosing **Google Gemini** with an **empty** API key in the UI still works (useful for local development):
+   The dev server loads variables from `.env` in the project root (see [`vite.config.ts`](https://github.com/ersincodes/promptArchitect/blob/main/vite.config.ts)). You can set a **default Gemini key** for the server so that choosing **Google Gemini** with an **empty** API key in the UI still works (useful for local development):
 
    ```env
    GEMINI_API_KEY=your_google_gemini_api_key_here

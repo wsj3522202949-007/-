@@ -78,18 +78,18 @@ immediately — no API keys, no terminal, no programming knowledge required.
 
 | Category | Prompts | Best for |
 |----------|---------|----------|
-| [Research & Synthesis](prompts/research.md) | 3 prompts | Literature review, fact-checking, summarizing |
-| [Writing & Editing](prompts/writing.md) | 3 prompts | Drafts, feedback, tone adjustment |
-| [Learning & Explanation](prompts/learning.md) | 3 prompts | Understanding complex topics |
-| [Work Productivity](prompts/work-productivity.md) | 3 prompts | Emails, meetings, planning |
-| [Decision Making](prompts/decision-making.md) | 3 prompts | Comparing options, risk thinking |
+| [Research & Synthesis](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/prompts/research.md) | 3 prompts | Literature review, fact-checking, summarizing |
+| [Writing & Editing](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/prompts/writing.md) | 3 prompts | Drafts, feedback, tone adjustment |
+| [Learning & Explanation](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/prompts/learning.md) | 3 prompts | Understanding complex topics |
+| [Work Productivity](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/prompts/work-productivity.md) | 3 prompts | Emails, meetings, planning |
+| [Decision Making](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/prompts/decision-making.md) | 3 prompts | Comparing options, risk thinking |
 
 ---
 
 ## Guides
 
-- [Getting Started with Claude (No Tech Background)](guides/getting-started.md)
-- [Building Your First AI Workflow](guides/building-your-first-workflow.md)
+- [Getting Started with Claude (No Tech Background)](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/guides/getting-started.md)
+- [Building Your First AI Workflow](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/guides/building-your-first-workflow.md)
 
 ---
 
@@ -108,7 +108,7 @@ That's it. No setup. No accounts beyond Claude itself.
 ## Contributing
 
 Found a prompt that changed how you work? Added something useful? 
-See [CONTRIBUTING.md](CONTRIBUTING.md) — contributions from non-technical 
+See [CONTRIBUTING.md](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/CONTRIBUTING.md) — contributions from non-technical 
 users are especially welcome.
 
 ---

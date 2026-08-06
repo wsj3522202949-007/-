@@ -313,7 +313,7 @@ SlopScan 的所有检测、评分、净化逻辑 **100% 在浏览器客户端完
 
 ## 📄 开源协议
 
-本项目基于 [MIT License](LICENSE) 开源。
+本项目基于 [MIT License](https://github.com/gitstq/SlopScan/blob/main/LICENSE) 开源。
 
 ```
 MIT License
@@ -615,7 +615,7 @@ SlopScan 的所有偵測、評分、淨化邏輯 **100% 在瀏覽器客戶端完
 
 ## 📄 開源協議
 
-本專案基於 [MIT License](LICENSE) 開源。
+本專案基於 [MIT License](https://github.com/gitstq/SlopScan/blob/main/LICENSE) 開源。
 
 ```
 MIT License
@@ -917,7 +917,7 @@ We welcome and appreciate contributions of all kinds!
 
 ## 📄 License
 
-This project is released under the [MIT License](LICENSE).
+This project is released under the [MIT License](https://github.com/gitstq/SlopScan/blob/main/LICENSE).
 
 ```
 MIT License

@@ -1296,7 +1296,7 @@ python3 -m unittest discover tests/ -v
 python3 -m unittest discover tests/<skill-name>/ -v
 ```
 
-Stdlib only. See [`.agents/rules/skill-authoring.md`](./.agents/rules/skill-authoring.md) for the testing requirement.
+Stdlib only. See [`.agents/rules/skill-authoring.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-authoring.md) for the testing requirement.
 
 ---
 
@@ -1310,16 +1310,16 @@ Every push and PR scans the `skills/` tree with [`cisco-ai-defense/skill-scanner
 
 This repo follows the [agentskills.io](https://agentskills.io) open standard. Each skill uses the canonical frontmatter fields (`name`, `description`, `license`, `metadata`) plus `compatibility` on harness-coupled skills (two-tier scope) and Claude Code extensions (`when_to_use`, `argument-hint`, `disable-model-invocation`, `allowed-tools`, `paths`) where applicable. No `model:` or `effort:` pins — skills inherit the session.
 
-Repo guidance is cross-agent: [`AGENTS.md`](./AGENTS.md) is the agent-facing index (Codex and every `AGENTS.md`-reading harness), [`CLAUDE.md`](./CLAUDE.md) imports it for Claude Code. Authoring conventions live in [`.agents/rules/`](./.agents/rules/):
+Repo guidance is cross-agent: [`AGENTS.md`](https://github.com/coroboros/agent-skills/blob/main/AGENTS.md) is the agent-facing index (Codex and every `AGENTS.md`-reading harness), [`CLAUDE.md`](https://github.com/coroboros/agent-skills/blob/main/CLAUDE.md) imports it for Claude Code. Authoring conventions live in [`.agents/rules/`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/):
 
-- [`agentskills-spec.md`](./.agents/rules/agentskills-spec.md) — canonical frontmatter, folder anatomy, size budget
-- [`claude-code-skills.md`](./.agents/rules/claude-code-skills.md) — Claude Code extensions and string substitutions
-- [`skill-authoring.md`](./.agents/rules/skill-authoring.md) — mandatory use of Anthropic's official `skill-creator`, and the testing requirement that ships with any script change
-- [`repo-conventions.md`](./.agents/rules/repo-conventions.md) — flag model, output paths, install, plugin marketplace, test placement
-- [`skill-prose-rules.md`](./.agents/rules/skill-prose-rules.md) — canonical writing-rules block embedded in every prose-emitting skill
-- [`skill-label-hygiene-rules.md`](./.agents/rules/skill-label-hygiene-rules.md) — canonical label-hygiene block embedded in skills that ship code, commits, PR bodies, and review prose
-- [`skill-execution-discipline-rules.md`](./.agents/rules/skill-execution-discipline-rules.md) — canonical execution-discipline block embedded in code-producing skills
-- [`skill-adversarial-verification-rules.md`](./.agents/rules/skill-adversarial-verification-rules.md) — canonical adversarial-verification block embedded in skills whose output is a finding or decision
+- [`agentskills-spec.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/agentskills-spec.md) — canonical frontmatter, folder anatomy, size budget
+- [`claude-code-skills.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/claude-code-skills.md) — Claude Code extensions and string substitutions
+- [`skill-authoring.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-authoring.md) — mandatory use of Anthropic's official `skill-creator`, and the testing requirement that ships with any script change
+- [`repo-conventions.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/repo-conventions.md) — flag model, output paths, install, plugin marketplace, test placement
+- [`skill-prose-rules.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-prose-rules.md) — canonical writing-rules block embedded in every prose-emitting skill
+- [`skill-label-hygiene-rules.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-label-hygiene-rules.md) — canonical label-hygiene block embedded in skills that ship code, commits, PR bodies, and review prose
+- [`skill-execution-discipline-rules.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-execution-discipline-rules.md) — canonical execution-discipline block embedded in code-producing skills
+- [`skill-adversarial-verification-rules.md`](https://github.com/coroboros/agent-skills/blob/main/.agents/rules/skill-adversarial-verification-rules.md) — canonical adversarial-verification block embedded in skills whose output is a finding or decision
 
 ### Canonical blocks
 
@@ -1335,4 +1335,4 @@ related:
 
 ## License
 
-[MIT](LICENSE.md)
+[MIT](https://github.com/coroboros/agent-skills/blob/main/LICENSE.md)

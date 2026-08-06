@@ -82,7 +82,7 @@ Estragon is an initial implementation of the MCP protocol for Godot 4, enabling 
 **🕷️ Web Research Complete** - May 27, 2025
 - 🔍 **Collision Shape Assignment:** Research validated Godot 4 patterns for programmatic shape creation
 - 🗑️ **Node Deletion System:** Discovered performance optimizations and safety patterns
-- 📋 **Implementation Ready:** Production-grade solutions documented in [TODO_ENHANCEMENTS.md](docs/TODO_ENHANCEMENTS.md)
+- 📋 **Implementation Ready:** Production-grade solutions documented in [TODO_ENHANCEMENTS.md](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md)
 
 ## 🎯 Next Priority Features
 
@@ -93,10 +93,10 @@ Estragon is an initial implementation of the MCP protocol for Godot 4, enabling 
 ## 🛠️ Setup
 
 For detailed setup instructions, check out:
-- [Godot Setup](docs/GODOT_SETUP.md)
-- [Client Setup](docs/CLIENT_SETUP.md) - Setup instructions for popular clients (Claude Desktop, MUSHclient, TinyFugue, zMUD, and web clients)
-- [Claude Setup](docs/SETUP_CLAUDE.md)
-- [Graceful Shutdown](GRACEFUL_SHUTDOWN.md) - **NEW**: Signal-based cascade shutdown system
+- [Godot Setup](https://github.com/cms-pm/estragon/blob/main/docs/GODOT_SETUP.md)
+- [Client Setup](https://github.com/cms-pm/estragon/blob/main/docs/CLIENT_SETUP.md) - Setup instructions for popular clients (Claude Desktop, MUSHclient, TinyFugue, zMUD, and web clients)
+- [Claude Setup](https://github.com/cms-pm/estragon/blob/main/docs/SETUP_CLAUDE.md)
+- [Graceful Shutdown](https://github.com/cms-pm/estragon/blob/main/GRACEFUL_SHUTDOWN.md) - **NEW**: Signal-based cascade shutdown system
 
 ## 🤝 Contributing
 
@@ -108,22 +108,22 @@ MIT License - feel free to use this project however you like!
 ## 📚 Documentation
 
 ### Setup Guides
-- [Godot Setup](docs/GODOT_SETUP.md) - Plugin installation and configuration
-- [Client Setup](docs/CLIENT_SETUP.md) - Setup for Claude Desktop and other MCP clients  
-- [Claude Setup](docs/SETUP_CLAUDE.md) - Claude Desktop configuration
+- [Godot Setup](https://github.com/cms-pm/estragon/blob/main/docs/GODOT_SETUP.md) - Plugin installation and configuration
+- [Client Setup](https://github.com/cms-pm/estragon/blob/main/docs/CLIENT_SETUP.md) - Setup for Claude Desktop and other MCP clients  
+- [Claude Setup](https://github.com/cms-pm/estragon/blob/main/docs/SETUP_CLAUDE.md) - Claude Desktop configuration
 
 ### Architecture & Development
-- [Multi-Client Design](docs/MULTICLIENT_DESIGN.md) - WebSocket architecture for multiple connections
-- [QA Worklog](docs/QA_WORKLOG_FINAL.md) - Comprehensive testing and validation results
-- [Enhancement TODO](docs/TODO_ENHANCEMENTS.md) - **NEW**: Research-validated feature roadmap
+- [Multi-Client Design](https://github.com/cms-pm/estragon/blob/main/docs/MULTICLIENT_DESIGN.md) - WebSocket architecture for multiple connections
+- [QA Worklog](https://github.com/cms-pm/estragon/blob/main/docs/QA_WORKLOG_FINAL.md) - Comprehensive testing and validation results
+- [Enhancement TODO](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md) - **NEW**: Research-validated feature roadmap
 
 ### System Documentation  
-- [Graceful Shutdown](GRACEFUL_SHUTDOWN.md) - Multi-method process lifecycle management
-- [Final Worklog](docs/FINAL_WORKLOG_COMPLETE.md) - Complete development history and achievements
+- [Graceful Shutdown](https://github.com/cms-pm/estragon/blob/main/GRACEFUL_SHUTDOWN.md) - Multi-method process lifecycle management
+- [Final Worklog](https://github.com/cms-pm/estragon/blob/main/docs/FINAL_WORKLOG_COMPLETE.md) - Complete development history and achievements
 
 ## 🤝 Contributing
 
-We welcome contributions! Check out [TODO_ENHANCEMENTS.md](docs/TODO_ENHANCEMENTS.md) for research-validated enhancement opportunities.
+We welcome contributions! Check out [TODO_ENHANCEMENTS.md](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md) for research-validated enhancement opportunities.
 
 ## 📜 License
 

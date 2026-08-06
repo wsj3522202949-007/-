@@ -38,7 +38,7 @@ related:
 
 # AI Research Writing Skills Hub
 
-[简体中文](README.md) | [English](README_EN.md) | [在线双语目录](https://zejun-w.github.io/AI-Research-Writing-Skills-Hub/)
+[简体中文](https://github.com/Zejun-W/AI-Research-Writing-Skills-Hub/blob/main/README.md) | [English](https://github.com/Zejun-W/AI-Research-Writing-Skills-Hub/blob/main/README_EN.md) | [在线双语目录](https://zejun-w.github.io/AI-Research-Writing-Skills-Hub/)
 
 > 一个面向科研人员的双语开源导航与实践仓库：系统总结 AI 论文写作 Prompt、Agent Skill、科研方法论与自动科研系统，并提供可直接安装和改造的原创统一 Skills。
 
@@ -143,8 +143,8 @@ Windows 用户可双击 `deploy.bat`，或在 PowerShell 中执行：
 
 ## 许可证与上游项目
 
-本仓库的原创总结、网站、脚本和 Skills 使用 MIT License。上游仓库的代码和文本仍受各自许可证约束。本项目默认只链接和总结上游内容，不重新分发其源代码。详见 [NOTICE.md](NOTICE.md)。
+本仓库的原创总结、网站、脚本和 Skills 使用 MIT License。上游仓库的代码和文本仍受各自许可证约束。本项目默认只链接和总结上游内容，不重新分发其源代码。详见 [NOTICE.md](https://github.com/Zejun-W/AI-Research-Writing-Skills-Hub/blob/main/NOTICE.md)。
 
 ## 贡献
 
-欢迎通过 Issue 或 Pull Request 新增仓库、修正总结、补充中英文内容。请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎通过 Issue 或 Pull Request 新增仓库、修正总结、补充中英文内容。请阅读 [CONTRIBUTING.md](https://github.com/Zejun-W/AI-Research-Writing-Skills-Hub/blob/main/CONTRIBUTING.md)。

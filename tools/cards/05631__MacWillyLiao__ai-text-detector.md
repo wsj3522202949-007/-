@@ -56,7 +56,7 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 
 <img src="images/fig1.png" alt="示意圖" width="600">
 
-【註】範例請見 [sample1.csv](/data/sample1.csv)
+【註】範例請見 [sample1.csv](https://github.com/MacWillyLiao/ai-text-detector/blob/main//data/sample1.csv)
 
 **最終資料量**：
 
@@ -91,7 +91,7 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 
 ## 模型訓練
 
-在 Google Colab 端運行。程式碼：[model.ipynb](/src/model.ipynb)。 
+在 Google Colab 端運行。程式碼：[model.ipynb](https://github.com/MacWillyLiao/ai-text-detector/blob/main//src/model.ipynb)。 
 
  `model.ipynb` 內容：
 - 將預處理 (Data Preprocessing) 好的資料切分訓練集和測試集。
@@ -101,7 +101,7 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 
 ## 前端介面
 
-在本地端運行。程式碼：[frontend.html](/src/frontend.html)。 
+在本地端運行。程式碼：[frontend.html](https://github.com/MacWillyLiao/ai-text-detector/blob/main//src/frontend.html)。 
 
 `frontend.html` 內容：
 - 將使用者貼上的文本以句號做切分，一句一句的丟入後端處理。
@@ -113,7 +113,7 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 
 ## 後端部署
 
-在 Google Colab 端運行。程式碼：[backend.ipynb](/src/backend.ipynb)。 
+在 Google Colab 端運行。程式碼：[backend.ipynb](https://github.com/MacWillyLiao/ai-text-detector/blob/main//src/backend.ipynb)。 
 
 `backend.ipynb` 內容：
 - 使用 Python Flask。
@@ -122,4 +122,4 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 - 回傳預測結果 (0 or 1)、此句為 ai 生成的機率、此句的所有詞元對被判別為 1 (ai) 的貢獻度。
 
 ## 結果
-詳細書面報告在 [report.pdf](/deliverables/report.pdf) 中。
+詳細書面報告在 [report.pdf](https://github.com/MacWillyLiao/ai-text-detector/blob/main//deliverables/report.pdf) 中。

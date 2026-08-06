@@ -49,7 +49,7 @@ HDM is a series of models that trained diffusion models (flow matching) from scr
 HDM project targeting providing a small but usable base model that can be used for various tasks or perform as an experiment platform or even in practical applications.
 
 
-![](images/thumbnail.webp)
+![](https://github.com/kohakublueleaf/hdm/blob/main/images/thumbnail.webp)
 
 ## Usage
 

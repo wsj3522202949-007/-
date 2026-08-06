@@ -44,7 +44,7 @@ related:
 
 A Chrome extension that detects AI-generated text with a Google Translate-style interface. Simply highlight text on any webpage, and get an AI detection score from 1-10. Setup requires users to have an anthropic API key
 
-![AI Slop Detector Demo](assets/ai-detector-poc-gif.gif)
+![AI Slop Detector Demo](https://github.com/ch-b0t/AI-slop-detector/blob/main/assets/ai-detector-poc-gif.gif)
 
 ## Features
 

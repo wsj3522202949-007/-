@@ -72,7 +72,7 @@ We provide two ways to convert these datasets into atomic files:
 - [Amazon_M2](https://www.aicrowd.com/challenges/amazon-kdd-cup-23-multilingual-recommendation-challenge):
 This dataset is a collection of anonymized customer sessions containing products from six different locales: English, German, Japanese, French, Italian, and Spanish.
 - [Alibaba-iFashion](https://github.com/wenyuer/POG):
-  This dataset is a fashion outfit dataset collected from [Alibaba]([https://www.alibaba.com/) online shopping systems in the paper [POG](https://dl.acm.org/doi/10.1145/3292500.3330652). The items from each outfit are viewed as the items being recommended to users, where each item consists of attributes such as category and title.
+  This dataset is a fashion outfit dataset collected from [Alibaba](https://github.com/rucaibox/recsysdatasets/blob/main/[https://www.alibaba.com/) online shopping systems in the paper [POG](https://dl.acm.org/doi/10.1145/3292500.3330652). The items from each outfit are viewed as the items being recommended to users, where each item consists of attributes such as category and title.
 - [Epinions](https://cseweb.ucsd.edu/~jmcauley/datasets.html#social_data):
   This dataset was collected from Epinions.com, a popular online consumer review website. It contains trust relationships amongst users and spans more than a decade, from January 2001 to November 2013.
 - [Yelp](https://www.yelp.com/dataset):

@@ -238,16 +238,16 @@ No server-side environment variables required. All data is stored locally in the
 
 For more detailed information, see:
 
-- [Node Reference](docs/nodes.md) - Detailed node specifications
-- [AI Provider Setup](docs/ai-providers.md) - Guide to configuring LLM providers
-- [Workflow Templates](docs/templates.md) - Overview of built-in templates
-- [Keyboard Shortcuts](docs/shortcuts.md) - Productivity tips
+- [Node Reference](https://github.com/Trishix/vflow/blob/main/docs/nodes.md) - Detailed node specifications
+- [AI Provider Setup](https://github.com/Trishix/vflow/blob/main/docs/ai-providers.md) - Guide to configuring LLM providers
+- [Workflow Templates](https://github.com/Trishix/vflow/blob/main/docs/templates.md) - Overview of built-in templates
+- [Keyboard Shortcuts](https://github.com/Trishix/vflow/blob/main/docs/shortcuts.md) - Productivity tips
 
 *Note: Documentation files are placeholders - contribute to help build them!*
 
 ## 🤝 Contributing
 
-We welcome contributions to make VFLOW better! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+We welcome contributions to make VFLOW better! Please read our [Contributing Guidelines](https://github.com/Trishix/vflow/blob/main/CONTRIBUTING.md) for details on:
 
 - Reporting bugs
 - Suggesting features
@@ -273,7 +273,7 @@ We welcome contributions to make VFLOW better! Please read our [Contributing Gui
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Trishix/vflow/blob/main/LICENSE) file for details.
 
 ## 👏 Acknowledgments
 

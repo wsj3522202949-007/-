@@ -105,7 +105,7 @@ The visual editor allows you to create graphics or kinetic novels without any pr
 
 这款可视化编辑器让你无需任何编程知识就能创作图像小说或动态小说。如有必要，还可以使用 JavaScript 和 CSS 来扩展其基本功能。
 
-![Tuesday JS script structure](screenshots/script_structure.jpg)
+![Tuesday JS script structure](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/script_structure.jpg)
 
 
 Scene editor / シーンエディター
@@ -122,7 +122,7 @@ In the scene layout you can use standard HTML units in percentage pixels or cent
 场景编辑器可以将所有元素放置在合适的位置。它还能展示该场景在不同屏幕上会如何变化。
 在场景布局中，你可以使用以百分比、像素或厘米为单位的标准 HTML 度量单位，以便让场景更好地适配不同的屏幕。
 
-![Tuesday JS scene editor](screenshots/scene_editor.jpg)
+![Tuesday JS scene editor](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/scene_editor.jpg)
 
 
 Translate tool / 内蔵翻訳支援ツール
@@ -135,7 +135,7 @@ Tuesday JSが内蔵する翻訳支援ツールなら、他の言語版用の翻�
 
 内置的翻译编辑工具使你无需离开编辑器，就能快速添加新的翻译内容，并编辑项目中的所有文本。此外，它还会显示每种语言已完成的翻译数量。
 
-![Tuesday JS preview](screenshots/translate_tool.jpg)
+![Tuesday JS preview](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/translate_tool.jpg)
 
 
 Preview / プレビュー
@@ -148,7 +148,7 @@ Preview allows you to start a project from a certain point in the script with th
 
 预览功能可让你从脚本中的某个特定点开始，并以所选的本地化设置来启动项目。 
 
-![Tuesday JS preview](screenshots/preview.jpg)
+![Tuesday JS preview](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/preview.jpg)
 
 
 JSON
@@ -165,7 +165,7 @@ JSONを編集するツールを内蔵していおり、スクリプト全体をJ
 一个故事脚本的所有元素都存储在一个JSON结构中。几乎任何编程语言都可以处理这种格式。这使得你能够将脚本移植到另一个引擎或平台上。
 该编辑器有一个内置的用于处理JSON的工具。这能让你编辑脚本的全部内容，或者仅仅编辑所选的元素。 
 
-![Tuesday JS json edit](screenshots/json_edit.jpg)
+![Tuesday JS json edit](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/json_edit.jpg)
 
 
 ASCII art / アスキーアート (AA)
@@ -178,7 +178,7 @@ Tuesday JSエンジンはアスキーアート(AA)を適切に表示できます
 
 该引擎适用于使用ASCII图形。借助它，你可以用由文本字符组成的图像和图案来丰富文本内容。 
 
-![Tuesday JS preview](screenshots/ascii_art.jpg)
+![Tuesday JS preview](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/ascii_art.jpg)
 
 
 Localization / ローカリゼーション
@@ -201,7 +201,7 @@ Tuesday JS也具备丰富的用于制作翻译版本的功能。
 可以为构成游戏的文本、图形等每一个元素设置翻译版本的文件，并且能够通过预览功能来确认所准备的翻译版本的运行情况。
 由于可以输出为CSV格式的表格数据，所以也能够在其他文本编辑器中编辑或添加翻译文本。 
 
-![Tuesday JS localization](screenshots/localization.jpg)
+![Tuesday JS localization](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/localization.jpg)
 
 
 
@@ -215,11 +215,11 @@ related:
 ---
 If you have problems with files on Android 10 and higher, then you need to specify 'Allow access to manage all files' in the application settings in 'Permissions' section.
 
-![Tuesday JS error access files on Android](tutorial_img/android_settings.png)
+![Tuesday JS error access files on Android](https://github.com/Kirilllive/tuesday-js/blob/main/tutorial_img/android_settings.png)
 
 
 
-![Tuesday JS visual novels engine Akihabara 秋葉原](screenshots/20201202_122259.jpg)
+![Tuesday JS visual novels engine Akihabara 秋葉原](https://github.com/Kirilllive/tuesday-js/blob/main/screenshots/20201202_122259.jpg)
 
 The goal of Tuesday JS is to make project development no more difficult than working in an office program to make presentations, and does not require special skills from the user.
 

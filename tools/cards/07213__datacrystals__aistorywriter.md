@@ -76,7 +76,7 @@ That's it! The system will automatically download any required models and start 
 
 ## 💻 Hardware Recommendations
 
-Not sure which models to use with your GPU? Check out our [Model Recommendations](Docs/Models.md) page for suggestions based on different GPU capabilities. We provide a quick reference table to help you choose the right models for your hardware, ensuring optimal performance and quality for your story generation projects.
+Not sure which models to use with your GPU? Check out our [Model Recommendations](https://github.com/datacrystals/aistorywriter/blob/main/Docs/Models.md) page for suggestions based on different GPU capabilities. We provide a quick reference table to help you choose the right models for your hardware, ensuring optimal performance and quality for your story generation projects.
 
 ## 🛠️ Usage
 
@@ -124,7 +124,7 @@ CHAPTER_WRITER_MODEL = "google://gemini-1.5-flash"
 
 ## 🧰 Architecture Overview
 
-![Block Diagram](Docs/BlockDiagram.drawio.svg)
+![Block Diagram](https://github.com/datacrystals/aistorywriter/blob/main/Docs/BlockDiagram.drawio.svg)
 
 ## 🛠️ Customization
 
@@ -162,7 +162,7 @@ Don't hesitate to reach out – your input is valuable, and we're here to help!
 
 ## 📄 License
 
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This means that if you modify the code and use it to provide a service over a network, you must make your modified source code available to the users of that service. For more details, see the [LICENSE](LICENSE) file in the repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This means that if you modify the code and use it to provide a service over a network, you must make your modified source code available to the users of that service. For more details, see the [LICENSE](https://github.com/datacrystals/aistorywriter/blob/main/LICENSE) file in the repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
 
 related:
   - methods/QUICK_START.md

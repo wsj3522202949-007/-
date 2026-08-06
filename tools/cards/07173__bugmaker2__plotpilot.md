@@ -91,7 +91,7 @@ related:
 ## 桌面安装版（Windows · Tauri）
 
 - **下载**：[GitHub Releases](https://github.com/shenminglinyi/PlotPilot/releases)（当前线：`PlotPilot_*_x64-setup.exe`，NSIS）
-- **说明**：安装包内含冻结后端，无需单独装 Python；详细构建说明见 `[docs/BUILD_INSTALLER.md](docs/BUILD_INSTALLER.md)`。
+- **说明**：安装包内含冻结后端，无需单独装 Python；详细构建说明见 `[docs/BUILD_INSTALLER.md](https://github.com/bugmaker2/plotpilot/blob/main/docs/BUILD_INSTALLER.md)`。
 
 ---
 
@@ -184,4 +184,4 @@ related:
 
 本项目采用 **Apache License 2.0**，并附加 **Commons Clause** 条件限制。
 
-允许学习、修改与非商业内部部署；**严禁**将本项目（含修改版）用于任何营利行为，包括封装收费 SaaS、打包售卖源码或作为收费产品的增值服务。详见 [LICENSE](LICENSE)。
+允许学习、修改与非商业内部部署；**严禁**将本项目（含修改版）用于任何营利行为，包括封装收费 SaaS、打包售卖源码或作为收费产品的增值服务。详见 [LICENSE](https://github.com/bugmaker2/plotpilot/blob/main/LICENSE)。

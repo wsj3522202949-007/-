@@ -58,7 +58,7 @@ results as an interactive dashboard.
 4. **Visualizes** it in a self-contained interactive dashboard.
 
 > **Note on data:** the price series is synthetically generated (see
-> [`data/generate_data.py`](data/generate_data.py)) using a geometric
+> [`data/generate_data.py`](https://github.com/techwdkrupa/Market-Pulse-Stock-Market-Analytics-Pipeline/blob/main/data/generate_data.py)) using a geometric
 > Brownian motion model with per-ticker drift/volatility and injected
 > earnings-style shocks, so the project runs fully offline and reproducibly.
 > Swapping in a real feed (e.g. `yfinance`, Alpha Vantage) only requires
@@ -72,7 +72,7 @@ server or build step required.
 
 | Cumulative returns | Risk vs. return |
 |---|---|
-| ![Cumulative returns](outputs/charts/cumulative_returns.png) | ![Risk vs return](outputs/charts/risk_return.png) |
+| ![Cumulative returns](https://github.com/techwdkrupa/Market-Pulse-Stock-Market-Analytics-Pipeline/blob/main/outputs/charts/cumulative_returns.png) | ![Risk vs return](https://github.com/techwdkrupa/Market-Pulse-Stock-Market-Analytics-Pipeline/blob/main/outputs/charts/risk_return.png) |
 
 ## Project structure
 

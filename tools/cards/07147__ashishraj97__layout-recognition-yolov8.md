@@ -180,7 +180,7 @@ related:
 ---
 
 ### 📜 License  
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
+This project is licensed under the **MIT License**. See the [LICENSE](https://github.com/ashishraj97/layout-recognition-yolov8/blob/main/LICENSE) file for details.  
 
 ### 👨‍💻 Author  
 📌 **Ashish Raj**  

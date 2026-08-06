@@ -410,4 +410,4 @@ related:
 Without the context packer, your agent retrieves 50 documents and hopes for the best. With it, the agent receives a surgically precise, prioritized briefing.
 
 ## License
-[MIT License](LICENSE) — use it, fork it, extend it.
+[MIT License](https://github.com/joaocarlos/writing-context-rtfm/blob/main/LICENSE) — use it, fork it, extend it.

@@ -65,19 +65,19 @@ Unlike traditional fact-checkers that classify an entire article and return a si
 
 ### Landing Page
 
-![Landing](./public/screenshots/landing.png)
+![Landing](https://github.com/MallikarjunaJ15/Veridex/blob/main/public/screenshots/landing.png)
 
 ### Analyze Page
 
-![Analyze](./public/screenshots/analyze.png)
+![Analyze](https://github.com/MallikarjunaJ15/Veridex/blob/main/public/screenshots/analyze.png)
 
 ### Analysis Report
 
-![Report](./public/screenshots/output.png)
+![Report](https://github.com/MallikarjunaJ15/Veridex/blob/main/public/screenshots/output.png)
 
 ### Dashboard
 
-![Dashboard](./public/screenshots/dashboard.png)
+![Dashboard](https://github.com/MallikarjunaJ15/Veridex/blob/main/public/screenshots/dashboard.png)
 
 ---
 

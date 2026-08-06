@@ -542,7 +542,7 @@ monitoring_system = {
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details
+MIT License - See [LICENSE](https://github.com/playerlt/ai-paraphrasing/blob/main/LICENSE) file for details
 
 related:
   - methods/最强去AI味铁律.md

@@ -56,11 +56,11 @@ related:
 
 ### 首页
 
-![Homepage screenshot](./docs/images/homepage.png)
+![Homepage screenshot](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/images/homepage.png)
 
 ### 建书向导
 
-![Wizard screenshot](./docs/images/wizard.png)
+![Wizard screenshot](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/images/wizard.png)
 
 ## 核心能力
 
@@ -214,10 +214,10 @@ xiaoshuo-studio
 
 ## 文档
 
-- 详细工作流：[docs/local-codex-studio.md](./docs/local-codex-studio.md)
-- skill 地图：[docs/skills-map.md](./docs/skills-map.md)
-- 中文教程：[docs/tutorial-zh.md](./docs/tutorial-zh.md)
-- 风格分析契约：[docs/style-analysis-contract.md](./docs/style-analysis-contract.md)
+- 详细工作流：[docs/local-codex-studio.md](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/local-codex-studio.md)
+- skill 地图：[docs/skills-map.md](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/skills-map.md)
+- 中文教程：[docs/tutorial-zh.md](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/tutorial-zh.md)
+- 风格分析契约：[docs/style-analysis-contract.md](https://github.com/zhao73/xiaoshuo-studio/blob/main/docs/style-analysis-contract.md)
 
 ## Codex 要求
 

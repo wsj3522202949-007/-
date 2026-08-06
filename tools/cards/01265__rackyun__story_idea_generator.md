@@ -200,15 +200,15 @@ story_idea_generator/
 
 ## 开发与贡献
 
-- 架构与数据库说明见 [CLAUDE.md](CLAUDE.md)。
-- 参与方式与约定见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+- 架构与数据库说明见 [CLAUDE.md](https://github.com/rackyun/story_idea_generator/blob/main/CLAUDE.md)。
+- 参与方式与约定见 [CONTRIBUTING.md](https://github.com/rackyun/story_idea_generator/blob/main/CONTRIBUTING.md)。
 - 欢迎提 Issue 与 Pull Request。
 
 ---
 
 ## 许可证
 
-本项目采用 [MIT License](LICENSE)，可自由使用、修改与分发。详见仓库内 `LICENSE` 文件。
+本项目采用 [MIT License](https://github.com/rackyun/story_idea_generator/blob/main/LICENSE)，可自由使用、修改与分发。详见仓库内 `LICENSE` 文件。
 
 related:
   - methods/网文写作最强SOP.md

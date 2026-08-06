@@ -46,7 +46,7 @@ related:
 
 # Horst.ai
 
-![Project Logo](./frontend/static/logo64.png)
+![Project Logo](https://github.com/ai-khwarizmi/horst.ai/blob/main/frontend/static/logo64.png)
 
 > This project is in its early stages and is evolving fast. Expect frequent breaking changes.
 
@@ -114,7 +114,7 @@ npm run preview
 
 ## License
 
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the [LICENSE](./LICENSE) file for more details.
+This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). See the [LICENSE](https://github.com/ai-khwarizmi/horst.ai/blob/main/LICENSE) file for more details.
 
 The AGPL-3.0 is a copyleft license that requires anyone who distributes your code or a derivative work to make the source available under the same terms. It also requires that if you run a modified program on a server and let other users communicate with it there, your server must also allow them to download the source code corresponding to the modified version running there.
 

@@ -111,9 +111,9 @@ uv run streamlit run app.py
 
 ## 生成结果示例
 UI
-![UI](images/screenshot1.png)
+![UI](https://github.com/jeayea/moviescriptagent/blob/main/images/screenshot1.png)
 结果示例（节选）
-![结果示例](images/screenshot2.png)
+![结果示例](https://github.com/jeayea/moviescriptagent/blob/main/images/screenshot2.png)
 
 ## ⚠️ 常见问题
 

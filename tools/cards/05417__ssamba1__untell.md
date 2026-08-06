@@ -136,8 +136,8 @@ untell ceiling --rewriter surgical --tier full       # measure free evasion of t
 > **How far does free actually go?** We measured it. The training-free, no-key loop drops the local
 > open-detector ensemble from ~90% flagged to ~60% (mean max P(AI) 0.87 → 0.68) — and is
 > **powerless against content-locked detectors**, which no meaning-preserving rewrite can move. The
-> full numbers, method, and honest limits are in [`docs/free-ceiling-measured.md`](docs/free-ceiling-measured.md)
-> (the report: [`docs/free-ceiling-report.md`](docs/free-ceiling-report.md)).
+> full numbers, method, and honest limits are in [`docs/free-ceiling-measured.md`](https://github.com/ssamba1/untell/blob/main/docs/free-ceiling-measured.md)
+> (the report: [`docs/free-ceiling-report.md`](https://github.com/ssamba1/untell/blob/main/docs/free-ceiling-report.md)).
 
 <details>
 <summary>Manual / MCP install</summary>
@@ -187,8 +187,8 @@ Three design choices make it work where blind paraphrasers fail:
 real ceiling of a free, training-free loop and published the numbers, the method, and the limits.
 The published state of the art (92–97.6% attack success) **needs GPU fine-tuning**; the literature had
 **no data point** for the inference-only regime this tool runs in. With a working local detector stack we
-produced it — see **[`docs/free-ceiling-measured.md`](docs/free-ceiling-measured.md)** (research:
-**[`docs/free-ceiling-report.md`](docs/free-ceiling-report.md)**).
+produced it — see **[`docs/free-ceiling-measured.md`](https://github.com/ssamba1/untell/blob/main/docs/free-ceiling-measured.md)** (research:
+**[`docs/free-ceiling-report.md`](https://github.com/ssamba1/untell/blob/main/docs/free-ceiling-report.md)**).
 
 Reproduce it yourself, no API key, on CPU:
 
@@ -221,7 +221,7 @@ GPTZero / Originality / Turnitin (which need their API in the loop — paid). Th
 ## 🏆 Why this is the best open-source AI humanizer
 
 We surveyed **~110 open-source humanizer repos** (GitHub topics, papers-with-code, the research SOTA) as part
-of building this project. That deep-research survey ([`humanizer-research-report.md`](humanizer-research-report.md)) concluded, verbatim:
+of building this project. That deep-research survey ([`humanizer-research-report.md`](https://github.com/ssamba1/untell/blob/main/humanizer-research-report.md)) concluded, verbatim:
 
 > *"There is **no** open-source repo that combines (a) a real evasion approach validated against multiple
 > live detectors, (b) a quality/meaning-preservation verifier, (c) an iterative detector-feedback loop at
@@ -245,15 +245,15 @@ of building this project. That deep-research survey ([`humanizer-research-report
 **Stars are not capability.** lynote (1.4k★) is an unvalidated translation chain with no loop or verifier;
 the highest-starred repos win on SEO, not architecture. The full, evidenced breakdown — including the *one*
 place we're honestly **not** #1 (StealthRL's GPU-trained RL policy is a stronger raw *attack model*, though
-it's a training framework, not a usable tool) — is in **[docs/why-best-open-repo.md](docs/why-best-open-repo.md)**
-and the ~110-repo capability audit in **[docs/competitive-gap-plan.md](docs/competitive-gap-plan.md)**.
+it's a training framework, not a usable tool) — is in **[docs/why-best-open-repo.md](https://github.com/ssamba1/untell/blob/main/docs/why-best-open-repo.md)**
+and the ~110-repo capability audit in **[docs/competitive-gap-plan.md](https://github.com/ssamba1/untell/blob/main/docs/competitive-gap-plan.md)**.
 
 **vs the *free SaaS* humanizers** (Undetectable, QuillBot, HIX Bypass, Humanize AI Pro, …): they all
 reduce to 3–4 mechanisms we already implement, so we benchmark them apples-to-apples and measure that
 our loop is the **only** technique that drives the AI-tells rate to **zero while preserving meaning**.
 Their "99% bypass" claims don't survive independent testing (Originality flags the top "free" tool at
 **100% AI**). The reproducible head-to-head, the catalog, and the honest verdict:
-**[docs/humanizer-comparison.md](docs/humanizer-comparison.md)**.
+**[docs/humanizer-comparison.md](https://github.com/ssamba1/untell/blob/main/docs/humanizer-comparison.md)**.
 
 ---
 
@@ -317,9 +317,9 @@ above reproducible. (In Claude Code, `/untell` uses Claude itself as the rewrite
 
 The `--browser` path drives a real headless browser through a free web checker and reads the % score.
 **ZeroGPT ships built-in** (confirmed working live). Most other free detectors are now bot-gated
-(reCAPTCHA / login-redirect / iframe widgets) — see [docs/free-detector-probes.md](docs/free-detector-probes.md).
+(reCAPTCHA / login-redirect / iframe widgets) — see [docs/free-detector-probes.md](https://github.com/ssamba1/untell/blob/main/docs/free-detector-probes.md).
 Add your own site with **zero code** — it's just CSS selectors in a JSON file
-([examples/browser_sites.example.json](examples/browser_sites.example.json)).
+([examples/browser_sites.example.json](https://github.com/ssamba1/untell/blob/main/examples/browser_sites.example.json)).
 
 > ⚠️ Browser checking is **slow, fragile, and ToS-caveated** — for occasional checks on your own text, not
 > the hot loop. The reliable multi-detector path is the key-gated commercial tier.
@@ -427,8 +427,8 @@ pytest -q
 
 CI runs a **lite** matrix (ruff + pytest, no downloads) across Python 3.9/3.11/3.12 **and** a **full-tier**
 job (Ubuntu, CPU torch + `.[full,eval]`) that loads the real RoBERTa / Fast-DetectGPT / GPT-2 detectors and
-runs the torch-gated tests. See **[CONTRIBUTING.md](CONTRIBUTING.md)** to get involved and
-**[ROADMAP.md](ROADMAP.md)** for what's next (the GPU RL-against-ensemble moat).
+runs the torch-gated tests. See **[CONTRIBUTING.md](https://github.com/ssamba1/untell/blob/main/CONTRIBUTING.md)** to get involved and
+**[ROADMAP.md](https://github.com/ssamba1/untell/blob/main/ROADMAP.md)** for what's next (the GPU RL-against-ensemble moat).
 
 related:
   - methods/最强去AI味铁律.md
@@ -477,12 +477,12 @@ loop — `untell-loop` loads the models once — over many one-off score calls. 
 ## Contributing
 
 PRs, detector adapters, and new free-checker selectors are welcome — see
-**[CONTRIBUTING.md](CONTRIBUTING.md)**, the **[good first issues](https://github.com/ssamba1/untell/issues)**,
-and our **[Code of Conduct](CODE_OF_CONDUCT.md)**. Found a security issue? See **[SECURITY.md](SECURITY.md)**.
+**[CONTRIBUTING.md](https://github.com/ssamba1/untell/blob/main/CONTRIBUTING.md)**, the **[good first issues](https://github.com/ssamba1/untell/issues)**,
+and our **[Code of Conduct](https://github.com/ssamba1/untell/blob/main/CODE_OF_CONDUCT.md)**. Found a security issue? See **[SECURITY.md](https://github.com/ssamba1/untell/blob/main/SECURITY.md)**.
 
 If this saved you from a false AI flag — or you just think it's the most honest humanizer on GitHub —
 a ⭐ helps others find it.
 
 ## License
 
-[MIT](LICENSE). Free to use, modify, and distribute.
+[MIT](https://github.com/ssamba1/untell/blob/main/LICENSE). Free to use, modify, and distribute.

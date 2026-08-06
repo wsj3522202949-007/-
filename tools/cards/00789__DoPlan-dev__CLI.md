@@ -393,7 +393,7 @@ my-project/
 
 ## 📑 Docs, Changelog & Wiki
 
-- `CHANGELOG.md` follows Keep a Changelog + SemVer. Check the **[latest entry](CHANGELOG.md)** (v1.3.0) for performance optimizations and new features.
+- `CHANGELOG.md` follows Keep a Changelog + SemVer. Check the **[latest entry](https://github.com/DoPlan-dev/CLI/blob/main/CHANGELOG.md)** (v1.3.0) for performance optimizations and new features.
 - The `Docs/` tree mirrors what every generated project should publish (foundation, features, release, history). Use it as the canonical structure reference.
 - The **[Complete Wiki](https://github.com/DoPlan-dev/CLI/tree/main/wiki)** is now organized in the repository with 9 sections and 52 files covering all features. The [GitHub Wiki](https://github.com/DoPlan-dev/CLI/wiki) serves as a gateway to the complete documentation.
 - Automation helpers such as `/state`, `/sys performance`, and `/github info` keep each of those artifacts aligned (KPI block, scan diffs, state history, and performance metrics).
@@ -597,7 +597,7 @@ See our [Contributing Guide](https://github.com/DoPlan-dev/CLI/blob/main/wiki/08
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/DoPlan-dev/CLI/blob/main/LICENSE) file for details.
 
 ---
 

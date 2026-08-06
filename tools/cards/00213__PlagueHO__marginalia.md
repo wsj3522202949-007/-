@@ -74,7 +74,7 @@ Marginalia is an AI-powered editorial assistant for long-form writers. Upload a 
 
 
 
-![Marginalia — analyzing a manuscript with suggestions](docs/public/images/academic-analysis.png)
+![Marginalia — analyzing a manuscript with suggestions](https://github.com/PlagueHO/marginalia/blob/main/docs/public/images/academic-analysis.png)
 
 
 
@@ -82,7 +82,7 @@ Marginalia is an AI-powered editorial assistant for long-form writers. Upload a 
 
 
 
-![How It Works — Upload, Analyze, Review, Export](docs/public/images/how-it-works.svg)
+![How It Works — Upload, Analyze, Review, Export](https://github.com/PlagueHO/marginalia/blob/main/docs/public/images/how-it-works.svg)
 
 
 
@@ -100,7 +100,7 @@ Marginalia is an AI-powered editorial assistant for long-form writers. Upload a 
 
 
 
-For full setup instructions, see [docs/QUICKSTART-LOCAL.md](docs/QUICKSTART-LOCAL.md). To deploy to Azure, see [docs/QUICKSTART-AZURE.md](docs/QUICKSTART-AZURE.md).
+For full setup instructions, see [docs/QUICKSTART-LOCAL.md](https://github.com/PlagueHO/marginalia/blob/main/docs/QUICKSTART-LOCAL.md). To deploy to Azure, see [docs/QUICKSTART-AZURE.md](https://github.com/PlagueHO/marginalia/blob/main/docs/QUICKSTART-AZURE.md).
 
 
 
@@ -140,7 +140,7 @@ Aspire provisions a local Cosmos DB emulator and connects to your AI Foundry end
 
 
 
-For troubleshooting, credential configuration, and model overrides, see [Local Development](docs/QUICKSTART-LOCAL.md).
+For troubleshooting, credential configuration, and model overrides, see [Local Development](https://github.com/PlagueHO/marginalia/blob/main/docs/QUICKSTART-LOCAL.md).
 
 
 
@@ -152,17 +152,17 @@ For troubleshooting, credential configuration, and model overrides, see [Local D
 
 | --- | --- |
 
-| [User Guide](docs/USER-GUIDE.md) | Step-by-step walkthrough with screenshots |
+| [User Guide](https://github.com/PlagueHO/marginalia/blob/main/docs/USER-GUIDE.md) | Step-by-step walkthrough with screenshots |
 
-| [Local Development](docs/QUICKSTART-LOCAL.md) | Local dev setup, Azure credentials, first-run walkthrough, and troubleshooting |
+| [Local Development](https://github.com/PlagueHO/marginalia/blob/main/docs/QUICKSTART-LOCAL.md) | Local dev setup, Azure credentials, first-run walkthrough, and troubleshooting |
 
-| [Deploy to Azure](docs/QUICKSTART-AZURE.md) | Azure Developer CLI deployment and infrastructure provisioning |
+| [Deploy to Azure](https://github.com/PlagueHO/marginalia/blob/main/docs/QUICKSTART-AZURE.md) | Azure Developer CLI deployment and infrastructure provisioning |
 
-| [Testing Guide](docs/design/testing.md) | Automated testing strategy for unit, integration, smoke, and evaluation tests |
+| [Testing Guide](https://github.com/PlagueHO/marginalia/blob/main/docs/design/testing.md) | Automated testing strategy for unit, integration, smoke, and evaluation tests |
 
-| [AI Evaluation Suite](docs/design/ai-evaluation.md) | Run AI-powered quality evaluations for suggestions locally or in CI/CD |
+| [AI Evaluation Suite](https://github.com/PlagueHO/marginalia/blob/main/docs/design/ai-evaluation.md) | Run AI-powered quality evaluations for suggestions locally or in CI/CD |
 
-| [Product Requirements](docs/design/PRD.md) | Original product requirements document |
+| [Product Requirements](https://github.com/PlagueHO/marginalia/blob/main/docs/design/PRD.md) | Original product requirements document |
 
 
 

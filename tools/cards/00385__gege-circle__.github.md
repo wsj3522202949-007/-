@@ -44,7 +44,7 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
-_Language:_ **中文** | [English](https://github.com/gege-circle) | [日本語](./profile/README_JA.md)
+_Language:_ **中文** | [English](https://github.com/gege-circle) | [日本語](https://github.com/gege-circle/.github/blob/main/profile/README_JA.md)
 
 ## 欢迎来到戈戈圈！
 当你点开这个存储库的时候，你会看到<b>戈戈圈的图标</b>↓

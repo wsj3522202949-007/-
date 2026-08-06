@@ -80,4 +80,4 @@ $ pip install -r requirements.txt
 
 ## Contact
 
-For any feedback or queries, please reach out to me at [suwaidaslam@gmail.com](suwaidaslam@gmail.com) or My Linkedin @suwaidaslam.
+For any feedback or queries, please reach out to me at [suwaidaslam@gmail.com](https://github.com/SuwaidAslam/AI_Generated_Text_Checker_App/blob/main/suwaidaslam@gmail.com) or My Linkedin @suwaidaslam.

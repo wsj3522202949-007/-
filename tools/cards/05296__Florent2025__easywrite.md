@@ -118,9 +118,9 @@ git clone https://github.com/Florent2025/easywrite.git ~/.claude/skills/easywrit
 # Codex:  ~/.codex/skills/easywrite    Cursor: .cursor/skills/easywrite    OpenCode: ~/.config/opencode/skills/easywrite
 ```
 
-**Option D — No automation:** paste [`SKILL.md`](SKILL.md) into the conversation. It runs standalone; full power is `SKILL.md` + `references/`.
+**Option D — No automation:** paste [`SKILL.md`](https://github.com/Florent2025/easywrite/blob/main/SKILL.md) into the conversation. It runs standalone; full power is `SKILL.md` + `references/`.
 
-See [`install/`](install/) for per-tool notes.
+See [`install/`](https://github.com/Florent2025/easywrite/blob/main/install/) for per-tool notes.
 
 ## Repository layout
 
@@ -169,7 +169,7 @@ you can then feed to Easywrite's voice-match step) and [taste-skill](https://git
 
 ## License
 
-[MIT](LICENSE). If you build on Easywrite, keep the attribution chain intact — credit the five sources above, as this repo does.
+[MIT](https://github.com/Florent2025/easywrite/blob/main/LICENSE). If you build on Easywrite, keep the attribution chain intact — credit the five sources above, as this repo does.
 
 ## Contributing
 

@@ -42,9 +42,9 @@ This project adapts the [Binoculars](https://github.com/ahans30/Binoculars) code
 
 See the online demo : [here 🚀](https://huggingface.co/spaces/ben-weber/Binoculars-CPU) and go to the app url (you might need to wait for the app to restart after a long period of nonactivity). Note that, short-length content may require similar processing time as long-length content because only the latter benefits from parallelization.
 
-![Demo Interface](assets/gradio-interface.png)
+![Demo Interface](https://github.com/weberben/binoculars-cpu/blob/main/assets/gradio-interface.png)
 
-![Demo API](assets/api_docs_interface.png)
+![Demo API](https://github.com/weberben/binoculars-cpu/blob/main/assets/api_docs_interface.png)
 
 ---
 

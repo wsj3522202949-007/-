@@ -194,11 +194,11 @@ No pip install needed. Pure Python 3 stdlib.
 
 If you've spotted an AI pattern the detector misses, or found a banned word that should be on the list, PRs are welcome.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the process.
+See [CONTRIBUTING.md](https://github.com/199-biotechnologies/humanise-text-skill/blob/main/CONTRIBUTING.md) for the process.
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/199-biotechnologies/humanise-text-skill/blob/main/LICENSE)
 
 related:
   - methods/QUICK_START.md

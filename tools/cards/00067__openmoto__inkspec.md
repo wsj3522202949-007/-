@@ -141,9 +141,9 @@ inkspec/
 
 ## Documentation
 
-- **[SDS Protocol](00_spec_driven_storytelling_protocol.md)** - The complete methodology
-- **[OpenSpec Guide](openspec/AGENTS.md)** - Change management workflow
-- **[Claude Instructions](CLAUDE.md)** - AI assistant configuration
+- **[SDS Protocol](https://github.com/openmoto/inkspec/blob/main/00_spec_driven_storytelling_protocol.md)** - The complete methodology
+- **[OpenSpec Guide](https://github.com/openmoto/inkspec/blob/main/openspec/AGENTS.md)** - Change management workflow
+- **[Claude Instructions](https://github.com/openmoto/inkspec/blob/main/CLAUDE.md)** - AI assistant configuration
 
 ## Story Spec Conventions
 
@@ -190,7 +190,7 @@ Inspiration doesn't wait for you to be at your desk. The **Inkspec Inbox** lets 
 
 No formatting needed - just capture! Claude will help you convert raw ideas into proper specifications later.
 
-See [inbox/README.md](inbox/README.md) for the complete workflow.
+See [inbox/README.md](https://github.com/openmoto/inkspec/blob/main/inbox/README.md) for the complete workflow.
 
 ## When to Create OpenSpec Proposals
 

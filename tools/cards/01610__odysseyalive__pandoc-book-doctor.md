@@ -118,7 +118,7 @@ to include with your project should be copied here. The standard markdown refere
 placed in this directory would be as follows:
 
 ```
-![](images/crow.jpg)
+![](https://github.com/odysseyalive/pandoc-book-doctor/blob/main/images/crow.jpg)
 ```
 You may want to refer to `markdown_guide.md` for creating MD files. More information about syntax
 can be found in the [Markdown syntax guide](https://www.markdownguide.org/basic-syntax).

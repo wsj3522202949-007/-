@@ -862,16 +862,16 @@ npm run build
 
 仓库当前已经内置完整的 Docker 部署资产：
 
-- [docker-compose.yml](docker-compose.yml)：前端 + 后端 + Redis
-- [backend/Dockerfile](backend/Dockerfile)：NestJS + Prisma 生产镜像
-- [backend/docker-entrypoint.sh](backend/docker-entrypoint.sh)：自动处理 Prisma 初始化
-- [frontend/Dockerfile](frontend/Dockerfile)：Vite 构建 + Nginx 静态托管
-- [frontend/nginx.conf](frontend/nginx.conf)：SPA 回退、/api 反代、Socket.io 反代
-- [scripts/docker-up.ps1](scripts/docker-up.ps1) / [scripts/docker-up.cmd](scripts/docker-up.cmd)：Windows 一键启动脚本
+- [docker-compose.yml](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/docker-compose.yml)：前端 + 后端 + Redis
+- [backend/Dockerfile](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/backend/Dockerfile)：NestJS + Prisma 生产镜像
+- [backend/docker-entrypoint.sh](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/backend/docker-entrypoint.sh)：自动处理 Prisma 初始化
+- [frontend/Dockerfile](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/Dockerfile)：Vite 构建 + Nginx 静态托管
+- [frontend/nginx.conf](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/nginx.conf)：SPA 回退、/api 反代、Socket.io 反代
+- [scripts/docker-up.ps1](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/scripts/docker-up.ps1) / [scripts/docker-up.cmd](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/scripts/docker-up.cmd)：Windows 一键启动脚本
 
 #### 后端 Dockerfile
 
-仓库已内置 [backend/Dockerfile](backend/Dockerfile)。核心逻辑如下：
+仓库已内置 [backend/Dockerfile](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/backend/Dockerfile)。核心逻辑如下：
 
 ```dockerfile
 # backend/Dockerfile
@@ -900,7 +900,7 @@ CMD ["/app/docker-entrypoint.sh"]
 
 #### 前端 Dockerfile
 
-仓库已内置 [frontend/Dockerfile](frontend/Dockerfile) 与 [frontend/nginx.conf](frontend/nginx.conf)。
+仓库已内置 [frontend/Dockerfile](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/Dockerfile) 与 [frontend/nginx.conf](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/frontend/nginx.conf)。
 
 ```dockerfile
 # frontend/Dockerfile
@@ -923,7 +923,7 @@ EXPOSE 80
 
 #### docker-compose.yml
 
-仓库根目录已内置 [docker-compose.yml](docker-compose.yml)，可直接使用：
+仓库根目录已内置 [docker-compose.yml](https://github.com/anonkuki/AI-Copilot-Writing-Platform/blob/main/docker-compose.yml)，可直接使用：
 
 ```yaml
 services:

@@ -783,4 +783,4 @@ related:
 
 ## License
 
-Licensed under the [GNU Affero General Public License v3.0](LICENSE).
+Licensed under the [GNU Affero General Public License v3.0](https://github.com/senjinthedragon/Smart-Memory/blob/main/LICENSE).

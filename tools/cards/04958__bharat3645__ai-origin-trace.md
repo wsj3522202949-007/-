@@ -217,4 +217,4 @@ and the aggregator's direction-labeling logic is tested directly.
 
 ## License
 
-MIT. See [LICENSE](LICENSE). Copyright (c) 2026 Bharat Singh Parihar.
+MIT. See [LICENSE](https://github.com/bharat3645/ai-origin-trace/blob/main/LICENSE). Copyright (c) 2026 Bharat Singh Parihar.

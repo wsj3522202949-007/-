@@ -346,7 +346,7 @@ related:
 
 
 
-このリポジトリの内容は以下を除き [MIT License](./LICENSE.txt) です。
+このリポジトリの内容は以下を除き [MIT License](https://github.com/moc67331/easynovelassistant/blob/main/LICENSE.txt) です。
 
 
 

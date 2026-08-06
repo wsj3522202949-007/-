@@ -41,7 +41,7 @@ related:
 
 > 拆解98部全球经典动画短片，提炼15条创作规律，用AI帮你从零写出一个能在北美流媒体平台传播的2分钟动画剧本。
 
-**[👉 在线体验（GitHub Pages）](https://sherldawn.github.io/animation-script-engine/)** · **[项目介绍](docs/项目介绍.md)**
+**[👉 在线体验（GitHub Pages）](https://sherldawn.github.io/animation-script-engine/)** · **[项目介绍](https://github.com/sherldawn/animation-script-engine/blob/main/docs/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D.md)**
 
 ---
 

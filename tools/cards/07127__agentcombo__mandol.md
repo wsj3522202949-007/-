@@ -48,12 +48,12 @@ related:
 [![Docs](https://img.shields.io/badge/Docs-agentcombo.github.io%2FMandol%2Fdocs-green)](https://agentcombo.github.io/Mandol/docs)
 [![Paper](https://img.shields.io/badge/Paper-arXiv:2606.29778-red.svg)](https://arxiv.org/abs/2606.29778)
 
-[English](README.md) | [中文](README_CN.md)
+[English](https://github.com/agentcombo/mandol/blob/main/README.md) | [中文](https://github.com/agentcombo/mandol/blob/main/README_CN.md)
 
 > [!IMPORTANT]
 > The `main` branch is under active refactoring and may differ from the released artifact. For exact paper reproduction, use the [`paper-repro`](https://github.com/AgentCombo/Mandol/tree/paper-repro) branch. The current public PyPI package [`mandol==0.1.0a1`](https://pypi.org/project/mandol/0.1.0a1/) and the GitHub release are built from, and aligned with, `paper-repro`.
 
-![Mandol Overview](README.assets/Mandol-overview-v2.png)
+![Mandol Overview](https://github.com/agentcombo/mandol/blob/main/README.assets/Mandol-overview-v2.png)
 
 ---
 
@@ -216,19 +216,19 @@ Memory is organized into a basic memory layer and a high-level abstract memory l
 The basic layer represents raw memory through memory units, spaces, and explicit/implicit relationships.
 The abstract layer automatically derives episodic memory (event chains), semantic memory (entity graphs), and emotional memory (user preferences) from basic memories, with traceable links that ensure evidence grounding while supporting abstract reasoning.
 
-![Layered Memory Model](README.assets/memory-model.svg)
+![Layered Memory Model](https://github.com/agentcombo/mandol/blob/main/README.assets/memory-model.svg)
 
 ### (II) In-Memory Semantic Data Structures
 
 *SemanticMap* and *SemanticGraph* form a unified in-memory data structure that natively fuses key-value storage, vector indexes, and graph representations, eliminating multi-database fragmentation. Hybrid retrieval operators combine vector matching and graph traversal through a single API surface, removing the I/O latency inherent in heterogeneous storage architectures. The data structures also connect to an underlying persistent database for cold storage and long-term retention.
 
-![Unified Storage Architecture](README.assets/Data-structure.svg)
+![Unified Storage Architecture](https://github.com/agentcombo/mandol/blob/main/README.assets/Data-structure.svg)
 
 ### (III) Smart Quantitative Retrieval Mechanism
 
 The RAG-style recall-then-rank paradigm is replaced with a proactive pipeline of Query-Adaptive Routing, two-stage denoising and conflict resolution, and token-constrained context generation. Query-Adaptive Routing dynamically selects and queries the most relevant memory sources based on query intent. Two-stage quantitative denoising and conflict resolution then remove noise and contradictory information across sources. Finally, a compact high-quality context is assembled under token constraints by jointly optimizing relevance and diversity — all without LLM involvement in retrieval.
 
-![Quantitative Retrieval Pipeline](README.assets/Retrieval.svg)
+![Quantitative Retrieval Pipeline](https://github.com/agentcombo/mandol/blob/main/README.assets/Retrieval.svg)
 
 ---
 
@@ -438,7 +438,7 @@ cd docs && make html
 
 ### Contributing
 
-We welcome community contributions! Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a PR to learn about development environment setup, code standards (Ruff, 100-char line length), testing requirements, and the PR process.
+We welcome community contributions! Please read [CONTRIBUTING.md](https://github.com/agentcombo/mandol/blob/main/CONTRIBUTING.md) before submitting a PR to learn about development environment setup, code standards (Ruff, 100-char line length), testing requirements, and the PR process.
 
 ### Feedback & Discussion
 
@@ -472,4 +472,4 @@ related:
 
 ## 📄 License
 
-Apache License 2.0 — See [LICENSE](LICENSE)
+Apache License 2.0 — See [LICENSE](https://github.com/agentcombo/mandol/blob/main/LICENSE)

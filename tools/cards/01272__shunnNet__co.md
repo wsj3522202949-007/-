@@ -296,15 +296,15 @@ Also support `.md` file. In markdown file, the following types of comments can b
 ```
 
 ## Markdown
-Generation can be done through Markdown files(`.md`), where link references between comments will be generated. Currently, only one reference format is supported: `[text](link)`.
+Generation can be done through Markdown files(`.md`), where link references between comments will be generated. Currently, only one reference format is supported: `[text](https://github.com/shunnNet/co/blob/main/link)`.
 
 ```md
 <!-- README.md -->
 Here is the directory structure of our project:
 
 <!-- @co: -->
-`[index.js](./index.js)`: Starts an Express server and listens on port 3000.
-`[handler.js](./handler.js)`: Contains all request handlers under the `/api` route. It is imported by `index.js` and mounted onto Express.
+`[index.js](https://github.com/shunnNet/co/blob/main/index.js)`: Starts an Express server and listens on port 3000.
+`[handler.js](https://github.com/shunnNet/co/blob/main/handler.js)`: Contains all request handlers under the `/api` route. It is imported by `index.js` and mounted onto Express.
 <!-- @co-end -->
 ```
 
@@ -509,4 +509,4 @@ Will generate something like:
 ```
 
 ## License
-[MIT](./LICENSE)
+[MIT](https://github.com/shunnNet/co/blob/main/LICENSE)

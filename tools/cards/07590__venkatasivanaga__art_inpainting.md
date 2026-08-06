@@ -215,13 +215,13 @@ Right: “Show results” for paired demo or wire to the API.
 ## 🖼️ Sample Outputs (UI)
 
 **Stage 1 — Home page UI**  
-![UI — empty state](Results/Interface.jpg)
+![UI — empty state](https://github.com/venkatasivanaga/art_inpainting/blob/main/Results/Interface.jpg)
 
 **Result 1**  
-![UI — Output1](Results/Output1.jpg)
+![UI — Output1](https://github.com/venkatasivanaga/art_inpainting/blob/main/Results/Output1.jpg)
 
 **Result 2**  
-![UI — Output2](Results/Output2.jpg)
+![UI — Output2](https://github.com/venkatasivanaga/art_inpainting/blob/main/Results/Output2.jpg)
 
 --- 
 

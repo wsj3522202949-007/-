@@ -73,7 +73,7 @@ uv run python scripts/demo.py     # guided 60-second tour of every result below
 | Unit economics | ₹200–400 per return vs ₹300–600 AOV — one return erases 3–5 orders' margin | ~25–35% of item value |
 | Incumbent tooling | none at maturity | Amazon Fit Insights (2024) |
 
-Full sourced analysis and the audit of the original project plan: [PROJECT_PLAN.md](PROJECT_PLAN.md).
+Full sourced analysis and the audit of the original project plan: [PROJECT_PLAN.md](https://github.com/addy9051/True-texture-detector-AI-system/blob/main/PROJECT_PLAN.md).
 
 ## Pipeline
 

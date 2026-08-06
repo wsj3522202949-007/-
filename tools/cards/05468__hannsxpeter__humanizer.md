@@ -165,4 +165,4 @@ evals/evals.json                verification cases (not part of the runtime skil
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/hannsxpeter/humanizer/blob/main/LICENSE).

@@ -171,4 +171,4 @@ related:
 
 ## License
 
-GNU GPL v3.0 - see [LICENSE](LICENSE) for details.
+GNU GPL v3.0 - see [LICENSE](https://github.com/jason-hilluxh1528/paperforge-2026-paper-workflow/blob/main/LICENSE) for details.

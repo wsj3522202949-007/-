@@ -259,7 +259,7 @@ WordWise demonstrates:
 * Educational and personal use only
 * Proper attribution required
 * Not permitted for academic plagiarism
-* See repository [LICENSE](LICENSE) for details
+* See repository [LICENSE](https://github.com/MohidUmer/WordWise/blob/main/LICENSE) for details
 
 ---
 

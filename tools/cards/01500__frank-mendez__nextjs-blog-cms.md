@@ -388,15 +388,15 @@ This project is designed to work seamlessly with Claude Code:
 
 **Public Blog — SEO-friendly article listing**
 
-![Public Blog](public/screenshots/public-blog.png)
+![Public Blog](https://github.com/frank-mendez/nextjs-blog-cms/blob/main/public/screenshots/public-blog.png)
 
 **AI Assistant — Chat with books and generate blog posts**
 
-![AI Assistant](public/screenshots/ai-assistant.png)
+![AI Assistant](https://github.com/frank-mendez/nextjs-blog-cms/blob/main/public/screenshots/ai-assistant.png)
 
 **Developer Settings — API Key Management and LLM Providers**
 
-![Developer Settings](public/screenshots/developer-settings.png)
+![Developer Settings](https://github.com/frank-mendez/nextjs-blog-cms/blob/main/public/screenshots/developer-settings.png)
 
 ---
 
@@ -436,7 +436,7 @@ This project follows the [Contributor Covenant Code of Conduct](https://www.cont
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/frank-mendez/nextjs-blog-cms/blob/main/LICENSE)
 
 related:
   - methods/网文写作最强SOP.md

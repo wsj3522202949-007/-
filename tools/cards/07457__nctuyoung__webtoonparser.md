@@ -210,4 +210,4 @@ V2版本經過了全面的測試和驗證，確保所有功能穩定可靠：
 
 ## 📄 許可協議
 
-本項目基於 MIT 許可協議發布 - 詳情請參見 [LICENSE](LICENSE) 文件。
+本項目基於 MIT 許可協議發布 - 詳情請參見 [LICENSE](https://github.com/nctuyoung/webtoonparser/blob/main/LICENSE) 文件。

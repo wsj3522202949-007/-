@@ -36,13 +36,13 @@ related:
 
 ---
 
-# ![Logo](/Stuff/Logo%20(64).png?raw=true) [fiction-dl](https://github.com/DreamCobbler/fiction-dl) (*1.8.3*)
+# ![Logo](https://github.com/dreamcobbler/fiction-dl/blob/main//Stuff/Logo%20(64).png?raw=true) [fiction-dl](https://github.com/DreamCobbler/fiction-dl) (*1.8.3*)
 
 
 
-![Screenshot (Windows 10)](/Stuff/Screenshot%20(Windows%2010).png?raw=true)
+![Screenshot (Windows 10)](https://github.com/dreamcobbler/fiction-dl/blob/main//Stuff/Screenshot%20(Windows%2010).png?raw=true)
 
-![Screenshot (Linux Mint 20)](/Stuff/Screenshot%20(Linux%20Mint%2020).png?raw=true)
+![Screenshot (Linux Mint 20)](https://github.com/dreamcobbler/fiction-dl/blob/main//Stuff/Screenshot%20(Linux%20Mint%2020).png?raw=true)
 
 
 

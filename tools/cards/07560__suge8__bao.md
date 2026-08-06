@@ -323,13 +323,13 @@ uv sync --extra desktop
 uv run python app/main.py
 ```
 
-首次启动自动创建配置与 workspace。详见 [`app/README.md`](app/README.md) 和 [`app/DESKTOP_PACKAGING.md`](app/DESKTOP_PACKAGING.md)。
+首次启动自动创建配置与 workspace。详见 [`app/README.md`](https://github.com/suge8/bao/blob/main/app/README.md) 和 [`app/DESKTOP_PACKAGING.md`](https://github.com/suge8/bao/blob/main/app/DESKTOP_PACKAGING.md)。
 
 ## 🔒 安全
 
 内置多层安全机制：工作区沙箱、渠道白名单、危险命令拦截、SecretStr 凭据保护。
 
-完整安全配置见 [`SECURITY.md`](SECURITY.md)。
+完整安全配置见 [`SECURITY.md`](https://github.com/suge8/bao/blob/main/SECURITY.md)。
 
 ## 📁 项目结构
 
@@ -350,7 +350,7 @@ bao/
 
 ## 📝 Changelog
 
-最新发布版本与变更记录详见 [`CHANGELOG.md`](CHANGELOG.md)。
+最新发布版本与变更记录详见 [`CHANGELOG.md`](https://github.com/suge8/bao/blob/main/CHANGELOG.md)。
 
 <br>
 
@@ -505,7 +505,7 @@ First run auto-generates `~/.bao/config.jsonc`. Minimal config:
 
 ### 📝 Changelog
 
-See [`CHANGELOG.md`](CHANGELOG.md) for the latest release and change history.
+See [`CHANGELOG.md`](https://github.com/suge8/bao/blob/main/CHANGELOG.md) for the latest release and change history.
 
 ### 💬 9 Chat Platforms
 
@@ -632,13 +632,13 @@ uv sync --extra desktop
 uv run python app/main.py
 ```
 
-First launch auto-creates config and workspace. See [`app/README.md`](app/README.md) and [`app/DESKTOP_PACKAGING.md`](app/DESKTOP_PACKAGING.md).
+First launch auto-creates config and workspace. See [`app/README.md`](https://github.com/suge8/bao/blob/main/app/README.md) and [`app/DESKTOP_PACKAGING.md`](https://github.com/suge8/bao/blob/main/app/DESKTOP_PACKAGING.md).
 
 ### 🔒 Security
 
 Built-in multi-layer security: workspace sandboxing, channel allowlists, dangerous command interception, SecretStr credential protection.
 
-Full security config: [`SECURITY.md`](SECURITY.md).
+Full security config: [`SECURITY.md`](https://github.com/suge8/bao/blob/main/SECURITY.md).
 
 ### 📁 Project Structure
 

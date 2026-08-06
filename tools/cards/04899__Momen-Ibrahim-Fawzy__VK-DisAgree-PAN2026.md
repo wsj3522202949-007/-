@@ -180,7 +180,7 @@ python predict.py data/test.jsonl output/
 
 ## Supplementary Training Data
 
-Optional extra data collection scripts are in `extra_data/`. See [`extra_data/README.md`](extra_data/README.md).
+Optional extra data collection scripts are in `extra_data/`. See [`extra_data/README.md`](https://github.com/Momen-Ibrahim-Fawzy/VK-DisAgree-PAN2026/blob/main/extra_data/README.md).
 
 ## Docker (TIRA)
 
@@ -196,7 +196,7 @@ Note: The TIRA build uses `--from=torch_pkg` to inject a pre-built PyTorch wheel
 
 ## Key Hyperparameters
 
-All hyperparameters are in [`src/config.py`](src/config.py):
+All hyperparameters are in [`src/config.py`](https://github.com/Momen-Ibrahim-Fawzy/VK-DisAgree-PAN2026/blob/main/src/config.py):
 
 | Parameter | Value | Notes |
 |-----------|-------|----related:

@@ -56,8 +56,8 @@ By default an LLM gives you the **statistical average of its training data** —
   - methods/最强去AI味铁律.md
   - methods/改稿润色指令库.md
 ---|
-| 🖋 **[humanizer-ru](skills/humanizer-ru/)** | Turns robotic AI text into natural, living Russian: strips bureaucratese, fixes rhythm, adds an authorial voice. Good writing passes AI-detectors as a side effect, not as the goal. | copywriters, marketers, writers — anyone producing Russian text with AI |
-| 💡 **[creativity](skills/creativity/)** | Forces Claude to find the non-obvious solution: bans the default, finds the contradiction (TRIZ), reframes the problem, collides distant domains. One best solution instead of "here are 5 options." | developers, PMs — anyone stuck on the "obvious" answer |
+| 🖋 **[humanizer-ru](https://github.com/BislanB/claude-skills-creativity/blob/main/skills/humanizer-ru/)** | Turns robotic AI text into natural, living Russian: strips bureaucratese, fixes rhythm, adds an authorial voice. Good writing passes AI-detectors as a side effect, not as the goal. | copywriters, marketers, writers — anyone producing Russian text with AI |
+| 💡 **[creativity](https://github.com/BislanB/claude-skills-creativity/blob/main/skills/creativity/)** | Forces Claude to find the non-obvious solution: bans the default, finds the contradiction (TRIZ), reframes the problem, collides distant domains. One best solution instead of "here are 5 options." | developers, PMs — anyone stuck on the "obvious" answer |
 
 > **Note:** `humanizer-ru` works on **Russian-language** text and its internal instructions are written in Russian by design. `creativity` is language-agnostic.
 
@@ -113,7 +113,7 @@ Three modes (`--mode` flag):
 
 Plus tones (`--tone деловой|дружеский|экспертный|разговорный`) and formats (`--format статья|пост|письмо|лендинг`).
 
-**Under the hood:** the principles of Nora Gal (*"The Word Living and Dead"*) and Maxim Ilyahov (*"Write, Cut"*) — two classics of Russian editorial style — combined with an understanding of the metrics AI-detectors actually use (perplexity, burstiness). Details in [references/detection-science.md](skills/humanizer-ru/references/detection-science.md).
+**Under the hood:** the principles of Nora Gal (*"The Word Living and Dead"*) and Maxim Ilyahov (*"Write, Cut"*) — two classics of Russian editorial style — combined with an understanding of the metrics AI-detectors actually use (perplexity, burstiness). Details in [references/detection-science.md](https://github.com/BislanB/claude-skills-creativity/blob/main/skills/humanizer-ru/references/detection-science.md).
 
 ### 💡 creativity
 
@@ -134,8 +134,8 @@ A star is free and tells me this is worth maintaining. Thanks 🙌
 
 ## Contributing
 
-Found a bug, have an idea for a pattern, or want to add your own skill? Welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a bug, have an idea for a pattern, or want to add your own skill? Welcome. See [CONTRIBUTING.md](https://github.com/BislanB/claude-skills-creativity/blob/main/CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE) — take it, use it, modify it. Attribution is appreciated but not required.
+[MIT](https://github.com/BislanB/claude-skills-creativity/blob/main/LICENSE) — take it, use it, modify it. Attribution is appreciated but not required.

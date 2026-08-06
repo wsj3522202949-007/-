@@ -48,7 +48,7 @@ related:
 
 Ship Any AI SaaS Startups in hours.
 
-![preview](preview.png)
+![preview](https://github.com/wang1309/aistory/blob/main/preview.png)
 
 ## Quick Start
 
@@ -130,4 +130,4 @@ npm run cf:deploy
 
 ## License
 
-- [ShipAny AI SaaS Boilerplate License Agreement](LICENSE)
+- [ShipAny AI SaaS Boilerplate License Agreement](https://github.com/wang1309/aistory/blob/main/LICENSE)

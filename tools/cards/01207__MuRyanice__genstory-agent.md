@@ -47,7 +47,7 @@ related:
 
 # genstory-agent
 
-English | [中文](./README.zh.md)
+English | [中文](https://github.com/MuRyanice/genstory-agent/blob/main/README.zh.md)
 
 Genstory public skill repository.
 

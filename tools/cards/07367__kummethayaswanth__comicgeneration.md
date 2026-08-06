@@ -89,8 +89,8 @@ python comic_generator.py hogwarts_sorting.json default_character.png my_comic
 
 ## 📖 Documentation
 
-- **[Comic Generation Guide](Comic_Generation_README.md)**: Comprehensive usage instructions
-- **[T-Pose Workflow Guide](T-Pose_Generation_Workflow_Documentation.md)**: Understanding the T-pose generation system
+- **[Comic Generation Guide](https://github.com/kummethayaswanth/comicgeneration/blob/main/Comic_Generation_README.md)**: Comprehensive usage instructions
+- **[T-Pose Workflow Guide](https://github.com/kummethayaswanth/comicgeneration/blob/main/T-Pose_Generation_Workflow_Documentation.md)**: Understanding the T-pose generation system
 
 ## 🛠️ Technical Requirements
 

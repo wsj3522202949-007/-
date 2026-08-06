@@ -58,7 +58,7 @@ Season-wise performance dashboards built using **MySQL + Python + Streamlit**.
 
 
 
-![F1 Analytics Dashboard](assests/dashboard.jpeg)
+![F1 Analytics Dashboard](https://github.com/ANU5565/F1-analytics/blob/main/assests/dashboard.jpeg)
 
 
 

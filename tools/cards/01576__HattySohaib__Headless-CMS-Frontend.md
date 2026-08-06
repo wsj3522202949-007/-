@@ -53,7 +53,7 @@ This application is designed to communicate with the central [Irada Backend API]
 
 ---
 >**Dashboard:**
-![Dashboard Screenshot](src/assets/dashboard-dark.png)
+![Dashboard Screenshot](https://github.com/HattySohaib/Headless-CMS-Frontend/blob/main/src/assets/dashboard-dark.png)
 ---
 
 ## ✨ Key Features

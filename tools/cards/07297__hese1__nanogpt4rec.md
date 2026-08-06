@@ -38,7 +38,7 @@ related:
 ---
 
 # NanoGPT4Rec: Sequential Recommendations
-![](assets/nanogpt4rec.jpg)
+![](https://github.com/hese1/nanogpt4rec/blob/main/assets/nanogpt4rec.jpg)
 
 This repository extends [Andrej Karpathy's nanoGPT](https://github.com/karpathy/nanoGPT) implementation to create a transformer-based recommendation system.
 

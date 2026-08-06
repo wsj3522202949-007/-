@@ -54,13 +54,13 @@ This project is **open-source** under the MIT license and welcomes contributions
 | Productivity      | Coding            | Learning          | Writing           | Marketing         | Business          | Research          | JSON Prompting    |
 |:-----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|:----------------:|
 | <div align="center"><a href="prompts/productivity.md"><img src="images/productivity.png" width="40"/></a></div> | <div align="center"><a href="prompts/coding.md"><img src="images/coding.png" width="40"/></a></div> | <div align="center"><a href="prompts/learning.md"><img src="images/learning.png" width="40"/></a></div> | <div align="center"><a href="prompts/writing.md"><img src="images/writing.png" width="40"/></a></div> | <div align="center"><a href="prompts/marketing.md"><img src="images/marketing.png" width="40"/></a></div> | <div align="center"><a href="prompts/business.md"><img src="images/business.png" width="40"/></a></div> | <div align="center"><a href="prompts/research.md"><img src="images/research.png" width="40"/></a></div> | <div align="center"><a href="prompts/json.md"><img src="images/json.png" width="40"/></a></div> |
-| [Productivity](prompts/productivity.md) | [Coding](prompts/coding.md) | [Learning](prompts/learning.md) | [Writing](prompts/writing.md) | [Marketing](prompts/marketing.md) | [Business](prompts/business.md) | [Research](prompts/research.md) | [JSON Prompting](prompts/json.md) |
+| [Productivity](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/productivity.md) | [Coding](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/coding.md) | [Learning](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/learning.md) | [Writing](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/writing.md) | [Marketing](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/marketing.md) | [Business](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/business.md) | [Research](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/research.md) | [JSON Prompting](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/prompts/json.md) |
 
 ---
 
 ## 🤖 AI Tools
 
-Check out **[AI-TOOLS.md](AI-TOOLS.md)** for a list of free and paid AI tools that work well with these prompts.
+Check out **[AI-TOOLS.md](https://github.com/amer-5/Awesome-AI-Prompts/blob/main/AI-TOOLS.md)** for a list of free and paid AI tools that work well with these prompts.
 
 ---
 

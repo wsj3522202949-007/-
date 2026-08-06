@@ -52,7 +52,7 @@ Interactive stories are complex by nature and require powerful narrative design 
 
 The Unreal Engine importer allows integrating articy:draft X content into Unreal projects and provides a simple C++ and blueprint interface to work with the data. We release this importer as a GitHub open source project that will provide a substantial head start into incorporating articy:draft X data into Unreal projects while still allowing enough flexibility to adjust the importer to personal needs. 
 
-While full support is not guaranteed for this product, we're constantly working on improvements and would love to hear your suggestions. Feel free to forward us your ideas or even better directly [contribute](CONTRIBUTING.md) to the development of the importer.
+While full support is not guaranteed for this product, we're constantly working on improvements and would love to hear your suggestions. Feel free to forward us your ideas or even better directly [contribute](https://github.com/articysoftware/articyximporterforunreal/blob/main/CONTRIBUTING.md) to the development of the importer.
 
 # Features
 
@@ -111,7 +111,7 @@ Check out the [project documentation](https://articysoftware.github.io/ArticyXIm
 
 # Contributing
 
-We are very grateful for any kind of contribution that you bring to the ArticyXImporter, no matter if it is reporting any issues, or by actively adding new features, or fixing existing issues. If you want to know more about how to contribute please check our [Contribution](CONTRIBUTING.md) article.
+We are very grateful for any kind of contribution that you bring to the ArticyXImporter, no matter if it is reporting any issues, or by actively adding new features, or fixing existing issues. If you want to know more about how to contribute please check our [Contribution](https://github.com/articysoftware/articyximporterforunreal/blob/main/CONTRIBUTING.md) article.
 
 # Related resources
 

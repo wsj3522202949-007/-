@@ -355,6 +355,6 @@ related:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/dadadadas111/novel-studio/blob/main/LICENSE).
 
 Copyright (c) 2026 Nguyen Thanh Long

@@ -173,7 +173,7 @@ If ZeroOffice saves you time:
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT — see [LICENSE](https://github.com/DarkenAmber/ZeroOffice/blob/main/LICENSE)
 
 related:
   - methods/网文写作最强SOP.md

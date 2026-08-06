@@ -37,7 +37,7 @@ related:
 
 ---
 
-[English](README_EN.md) | [中文](README.md)
+[English](https://github.com/mengjiaowang/learning-assistant/blob/main/README_EN.md) | [中文](https://github.com/mengjiaowang/learning-assistant/blob/main/README.md)
 
 # 学习助手平台 (Learning Assistant Platform)
 

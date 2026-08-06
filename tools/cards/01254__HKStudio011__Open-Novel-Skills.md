@@ -41,7 +41,7 @@ related:
 
 AI-assisted novel/story writing framework.
 
-[:vietnam: Tiếng Việt](README.vi.md)
+[:vietnam: Tiếng Việt](https://github.com/HKStudio011/Open-Novel-Skills/blob/main/README.vi.md)
 
 Combines a **CLI tool** + **7 agent skills** for AI coding assistants (Claude Code, OpenCode, Codex) — from project scaffolding, story bible, plot outline, chapter writing, review, continuity tracking, to final export.
 

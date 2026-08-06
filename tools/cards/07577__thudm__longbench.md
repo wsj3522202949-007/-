@@ -38,7 +38,7 @@ related:
   - methods/QUICK_START.md
 ---
 
-![](LongBench/misc/logo.gif)
+![](https://github.com/thudm/longbench/blob/main/LongBench/misc/logo.gif)
 # 📚 LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks
 <p align="center">
     🌐 <a href="https://longbench2.github.io" target="_blank">Project Page</a> • 📚 <a href="https://arxiv.org/abs/2412.15204" target="_blank">LongBench v2 Paper</a> • 📊 <a href="https://huggingface.co/datasets/THUDM/LongBench-v2" target="_blank">LongBench v2 Dataset</a> • 𝕏 <a href="https://x.com/realYushiBai/status/1869946577349132766" target="_blank">Thread</a>
@@ -47,7 +47,7 @@ related:
     📖 <a href="https://arxiv.org/abs/2308.14508" target="_blank">LongBench Paper</a> • 🤗 <a href="https://huggingface.co/datasets/THUDM/LongBench" target="_blank">LongBench Dataset</a>
 </p>
 
-**📢 The original LongBench v1 related files are moved under `LongBench/`, read its README [here](LongBench/README.md)**.
+**📢 The original LongBench v1 related files are moved under `LongBench/`, read its README [here](https://github.com/thudm/longbench/blob/main/LongBench/README.md)**.
 
 LongBench v2 is designed to assess the ability of LLMs to handle long-context problems requiring **deep understanding and reasoning** across real-world multitasks. LongBench v2 has the following features: (1) **Length**: Context length ranging from 8k to 2M words, with the majority under 128k. (2) **Difficulty**: Challenging enough that even human experts, using search tools within the document, cannot answer correctly in a short time. (3) **Coverage**: Cover various realistic scenarios. (4) **Reliability**: All in a multiple-choice question format for reliable evaluation.
 

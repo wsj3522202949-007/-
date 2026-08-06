@@ -125,9 +125,9 @@ Then open Telegram and find your bot. Example interactions:
 
 ## Screenshots / Demo
 
-![Telegram chat example](docs/chat_screenshot.png)
+![Telegram chat example](https://github.com/sophie1719/ml2-writing-assistant-bot/blob/main/docs/chat_screenshot.png)
 
-![Terminal logs](docs/terminal_logs_screenshot.png)
+![Terminal logs](https://github.com/sophie1719/ml2-writing-assistant-bot/blob/main/docs/terminal_logs_screenshot.png)
 
 ## Technical Decisions
 

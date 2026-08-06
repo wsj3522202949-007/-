@@ -49,9 +49,9 @@ related:
 
 Smart Scribe is a full-stack web application that helps you write better and faster using AI. The application features a rich-text editor with a minimalist design, a collapsible sidebar for AI-powered actions, and robust document management tools.
 
-![smart-scribe Preview 1](./client/public/pic1.png)
+![smart-scribe Preview 1](https://github.com/HarshitRai121/smart-scribe/blob/main/client/public/pic1.png)
 
-![smart-scribe Preview 2](./client/public/pic2.png)
+![smart-scribe Preview 2](https://github.com/HarshitRai121/smart-scribe/blob/main/client/public/pic2.png)
 
 
 ## Features

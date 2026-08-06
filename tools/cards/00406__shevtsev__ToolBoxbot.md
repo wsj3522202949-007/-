@@ -42,7 +42,7 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
-![ToolBox Logo](logo.jpeg)
+![ToolBox Logo](https://github.com/shevtsev/ToolBoxbot/blob/main/logo.jpeg)
 
 # 🤖 ToolBox - Умный AI-ассистент для бизнеса
 
@@ -128,7 +128,7 @@ docker-compose up -d
 
 ## 📝 Лицензия
 
-Этот проект распространяется под лицензией MIT - см. файл [LICENSE](LICENSE) для подробностей.
+Этот проект распространяется под лицензией MIT - см. файл [LICENSE](https://github.com/shevtsev/ToolBoxbot/blob/main/LICENSE) для подробностей.
 
 ## 👥 Авторы
 

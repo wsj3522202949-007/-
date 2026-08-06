@@ -109,12 +109,12 @@ pwsh de-AI-writing/tools/style-lint.ps1 -Path "你的文件.md"
 
 |                                            案例一：good-writing 模式                                              |
 | :----------------------------------------------------------------------------------------------------: |
-| ![](example/01.png) |
+| ![](https://github.com/oubigfa/de-ai-prompt-enhancer-writer-booster-skill/blob/main/example/01.png) |
 
 
 |                                            案例二：de-ai-writing 模式                                              |
 | :----------------------------------------------------------------------------------------------------: |
-| ![](example/02.png) |
+| ![](https://github.com/oubigfa/de-ai-prompt-enhancer-writer-booster-skill/blob/main/example/02.png) |
 
 
 

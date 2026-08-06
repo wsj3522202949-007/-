@@ -215,7 +215,7 @@ _The application will be available at http://localhost:5173._
 > **Contributing Workflow**: If you are contributing specifically to the Web frontend, ensure the **Backend API** is running so the dashboard can fetch state.
 
 > [!NOTE]
-> For detailed architecture, sidecar management, and GSSoC'26 guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md) and [SECURITY.md](SECURITY.md).
+> For detailed architecture, sidecar management, and GSSoC'26 guidelines, see [CONTRIBUTING.md](https://github.com/Sappymukherjee214/AI-Humanizer/blob/main/CONTRIBUTING.md) and [SECURITY.md](https://github.com/Sappymukherjee214/AI-Humanizer/blob/main/SECURITY.md).
 
 ---
 
@@ -286,7 +286,7 @@ cd backend && npm test
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md).
+We welcome contributions! Please see our [Contributing Guide](https://github.com/Sappymukherjee214/AI-Humanizer/blob/main/CONTRIBUTING.md).
 
 ### Development Workflow
 
@@ -326,7 +326,7 @@ Database backups are available via standard `pg_dump` or Prisma CLI export strat
 
 ## 🛡️ License
 
-This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **ISC License** - see the [LICENSE](https://github.com/Sappymukherjee214/AI-Humanizer/blob/main/LICENSE) file for details.
 
 ---
 

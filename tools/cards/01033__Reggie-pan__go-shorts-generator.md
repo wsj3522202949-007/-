@@ -41,11 +41,11 @@ related:
 
 <div align="center">
 
-#### 中文 | [English](README_EN.md)
+#### 中文 | [English](https://github.com/Reggie-pan/go-shorts-generator/blob/main/README_EN.md)
 
 </div>
 
-![Brand Banner](assets/images/banner.jpg)
+![Brand Banner](https://github.com/Reggie-pan/go-shorts-generator/blob/main/assets/images/banner.jpg)
 
 <div align="center">
 
@@ -186,4 +186,4 @@ related:
 
 ## 授權條款 📝
 
-本專案採用 [MIT License](LICENSE) 授權。
+本專案採用 [MIT License](https://github.com/Reggie-pan/go-shorts-generator/blob/main/LICENSE) 授權。

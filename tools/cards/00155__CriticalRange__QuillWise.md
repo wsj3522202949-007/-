@@ -42,7 +42,7 @@ related:
 
 <div align="center">
 
-![QuillWise Logo](src/assets/icon.png)
+![QuillWise Logo](https://github.com/CriticalRange/QuillWise/blob/main/src/assets/icon.png)
 
 **Intelligent writing assistance with AI-powered translation, summarization, and text enhancement**
 
@@ -360,7 +360,7 @@ interface SettingsStore {
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guidelines](https://github.com/CriticalRange/QuillWise/blob/main/CONTRIBUTING.md) for details.
 
 ### Development Guidelines
 1. **Code Style**: Follow TypeScript and React best practices
@@ -395,7 +395,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/CriticalRange/QuillWise/blob/main/LICENSE) file for details.
 
 ## 🆘 Support
 

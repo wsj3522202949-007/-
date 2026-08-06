@@ -251,7 +251,7 @@ Alternatively, you can also [submit a pull request](https://github.com/webs7er/S
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/Slop-Detector/Slopdetector/blob/main/LICENSE).
 
 ## Disclaimer
 

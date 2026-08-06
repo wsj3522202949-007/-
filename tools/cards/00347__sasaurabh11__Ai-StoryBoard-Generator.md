@@ -46,28 +46,28 @@ The project combines a FastAPI backend that orchestrates Google Gemini for shot 
 
 ## 📤 Output Samples
 - **Face preservation:**  
-  ![Model Output](./assets/example1.png)
+  ![Model Output](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example1.png)
 
 - **UI Preview:**  
-  ![Storyboard Walkthrough](./assets/example2.jpg)  
-  ![Storyboard Walkthrough](./assets/example3.jpg)
+  ![Storyboard Walkthrough](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example2.jpg)  
+  ![Storyboard Walkthrough](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example3.jpg)
 
 ---
 
 ## 📊 System Data Flow
 Below is the complete data flow diagram showing how the storyboard system processes input from script → to shots → to final storyboard:
 
-![Data Flow Diagram](./assets/solution_architecture.jpeg)
+![Data Flow Diagram](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/solution_architecture.jpeg)
 
 > **Full PDF version:**  
-> 👉 [Download data_flow_1.pdf](./assets/data_flow_1.pdf)
+> 👉 [Download data_flow_1.pdf](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/data_flow_1.pdf)
 
 ---
 
 ## ⚙️ CI/CD Pipeline
 
 > **Full PDF version:**  
-> 👉 [Download CI_CD_2_pipeline.pdf](./assets/CI_CD_2_pipeline.pdf)
+> 👉 [Download CI_CD_2_pipeline.pdf](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/CI_CD_2_pipeline.pdf)
 
 ---
 

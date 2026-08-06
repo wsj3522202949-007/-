@@ -70,8 +70,8 @@ It maintains consistency with actively developed projects and governs all presen
 
 The complete license agreement consists of the following two documents:
 
-- **[`LICENSE.md`](LICENSE.md)** — The primary copyright license under the [MIT License](https://opensource.org/licenses/MIT).  
-- **[`PATENT_LICENSE_ADDENDUM.md`](PATENT_LICENSE_ADDENDUM.md)** — An integrated addendum granting a license to contributors’ essential patent claims.
+- **[`LICENSE.md`](https://github.com/torisan-unya/AI-Novel-Prompt-Hybrid/blob/main/LICENSE.md)** — The primary copyright license under the [MIT License](https://opensource.org/licenses/MIT).  
+- **[`PATENT_LICENSE_ADDENDUM.md`](https://github.com/torisan-unya/AI-Novel-Prompt-Hybrid/blob/main/PATENT_LICENSE_ADDENDUM.md)** — An integrated addendum granting a license to contributors’ essential patent claims.
 
 ---
 
@@ -95,6 +95,6 @@ Thank you for your contributions!
 Please note that by submitting any "Contribution" (e.g., a pull request or patch),  
 you **explicitly agree** to the terms of both license documents listed above,  
 including the **patent grant and defensive termination clause** in  
-[`PATENT_LICENSE_ADDENDUM.md`](PATENT_LICENSE_ADDENDUM.md).
+[`PATENT_LICENSE_ADDENDUM.md`](https://github.com/torisan-unya/AI-Novel-Prompt-Hybrid/blob/main/PATENT_LICENSE_ADDENDUM.md).
 
 This ensures the continued protection and sustainability of the project and its community.

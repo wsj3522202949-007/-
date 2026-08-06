@@ -23,20 +23,20 @@ related:
   - methods/QUICK_START.md
 ---
 
-# | [wailers9/bragi](https:
+# | [wailers9/bragi](https://github.com/| [wailers9/bragi](https:/blob/main/https:
 
-- **分类**：画龙补充 / 扩容入库 — 补充源
-- **链接**：https://github.com/| [wailers9/bragi](https:
-- **Stars**：None
-- **语言**：None
-- **License**：None
-- **Topics**：—
-- **GitHub 描述**：—
-- **本地描述**：bragi](https:
-- **拉取时间**：2026-07-25 19:19:10
+-%20**%E5%88%86%E7%B1%BB**%EF%BC%9A%E7%94%BB%E9%BE%99%E8%A1%A5%E5%85%85%20/%20%E6%89%A9%E5%AE%B9%E5%85%A5%E5%BA%93%20%E2%80%94%20%E8%A1%A5%E5%85%85%E6%BA%90
+-%20**%E9%93%BE%E6%8E%A5**%EF%BC%9Ahttps://github.com/|%20[wailers9/bragi](https:
+-%20**Stars**%EF%BC%9ANone
+-%20**%E8%AF%AD%E8%A8%80**%EF%BC%9ANone
+-%20**License**%EF%BC%9ANone
+-%20**Topics**%EF%BC%9A%E2%80%94
+-%20**GitHub%20%E6%8F%8F%E8%BF%B0**%EF%BC%9A%E2%80%94
+-%20**%E6%9C%AC%E5%9C%B0%E6%8F%8F%E8%BF%B0**%EF%BC%9Abragi](https:
+-%20**%E6%8B%89%E5%8F%96%E6%97%B6%E9%97%B4**%EF%BC%9A2026-07-25%2019:19:10
 
 related:
-  - methods/QUICK_START.md
+%20%20-%20methods/QUICK_START.md
 ---
 
-_README 获取失败 (HTTP -1)_
+_README%20%E8%8E%B7%E5%8F%96%E5%A4%B1%E8%B4%A5%20(HTTP%20-1)_

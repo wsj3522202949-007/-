@@ -185,7 +185,7 @@ related:
             <details>
             <summary>书影</summary>
             
-            ![./img.png](./img.png)
+            ![./img.png](https://github.com/alephpi/24histories/blob/main/img.png)
             
             </details>
             

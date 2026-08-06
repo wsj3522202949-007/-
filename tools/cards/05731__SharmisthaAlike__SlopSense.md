@@ -587,7 +587,7 @@ print(response.json())
 
 ## License
 
-This software codebase is licensed under the [MIT License](file:///Users/sharmisthaa/Documents/GitHub/SlopSense/LICENSE).
+This software codebase is licensed under the [MIT License](https://github.com/SharmisthaAlike/SlopSense/blob/main/file:///Users/sharmisthaa/Documents/GitHub/SlopSense/LICENSE).
 
 ### Gemma Model License & Attribution
 This project utilizes the `distil-labs/distil-ai-slop-detector-gemma` model, which is a derivative of Google's **Gemma** open weights model. By using this software or the underlying model, you agree to comply with:

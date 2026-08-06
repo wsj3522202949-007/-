@@ -77,4 +77,4 @@ If you would like to contribute to this project, please follow these steps:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/adnaan-tariq/Writing-Assistant/blob/main/LICENSE) file for more information.

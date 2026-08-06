@@ -1971,14 +1971,14 @@ Try the [Live Demo](https://texthumanize.link/). For local use, the REST API + S
 
 ## 🤝 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, testing, and PR guidelines.
+See [CONTRIBUTING.md](https://github.com/aakashh242/texthumanize/blob/main/CONTRIBUTING.md) for development setup, testing, and PR guidelines.
 
 **Areas for contribution:** New language packs · Improved synonym dictionaries · Better grammar rules · Performance optimizations · Additional integrations
 
 Starter tasks with acceptance criteria are listed in the
 [Good First Issues guide](https://ksanyok.github.io/TextHumanize/contributing/good-first-issues/).
 
-See [CONTRIBUTORS.md](CONTRIBUTORS.md) for the full list of contributors.
+See [CONTRIBUTORS.md](https://github.com/aakashh242/texthumanize/blob/main/CONTRIBUTORS.md) for the full list of contributors.
 
 ```bash
 git clone https://github.com/ksanyok/TextHumanize.git
@@ -2042,7 +2042,7 @@ TextHumanize uses a **dual license model**:
 
 All commercial licenses include full source code, all updates, priority email support, and access to PHANTOM™ + ASH™ proprietary technologies. **100% offline — no data leaves your server, no per-request fees, no cloud lock-in.** Monthly billing, cancel any time.
 
-**[Full licensing details →](COMMERCIAL.md)** · See [LICENSE](LICENSE) for legal text · **Contact:** [ksanyok@me.com](mailto:ksanyok@me.com)
+**[Full licensing details →](https://github.com/aakashh242/texthumanize/blob/main/COMMERCIAL.md)** · See [LICENSE](https://github.com/aakashh242/texthumanize/blob/main/LICENSE) for legal text · **Contact:** [ksanyok@me.com](mailto:ksanyok@me.com)
 
 related:
   - methods/QUICK_START.md

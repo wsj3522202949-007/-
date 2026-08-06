@@ -422,7 +422,7 @@ CharacterArc/
 
 ## 📄 License
 
-[MIT](./LICENSE) © zhouyeshan
+[MIT](https://github.com/uu201/character-arc/blob/main/LICENSE) © zhouyeshan
 
 <div align="center">
 

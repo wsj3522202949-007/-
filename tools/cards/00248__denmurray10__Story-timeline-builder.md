@@ -40,7 +40,7 @@ related:
 
 # 📖 Story Timeline Builder
 
-![Story Timeline Builder Logo](static/img/logo.png)
+![Story Timeline Builder Logo](https://github.com/denmurray10/Story-timeline-builder/blob/main/static/img/logo.png)
 
 **Live Application:** [https://story-timeline-builder-237864658489.herokuapp.com/](https://story-timeline-builder-237864658489.herokuapp.com/)  
 **Repository:** [https://github.com/denmurray10/Story-timeline-builder](https://github.com/denmurray10/Story-timeline-builder)

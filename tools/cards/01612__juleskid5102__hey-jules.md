@@ -45,7 +45,7 @@ related:
 
 **Highlight any text. Pick a tone. Let Jules rewrite it instantly.**
 
-[Install on Chrome](https://chrome.google.com/webstore/detail/hey-jules) · [Report Bug](../../issues) · [Request Feature](../../issues)
+[Install on Chrome](https://chrome.google.com/webstore/detail/hey-jules) · [Report Bug](https://github.com/juleskid5102/hey-jules/blob/main/../../issues) · [Request Feature](https://github.com/juleskid5102/hey-jules/blob/main/../../issues)
 
 ---
 
@@ -158,7 +158,7 @@ Contributions are welcome! Whether it's:
 - 🌍 New tone ideas
 - 🔧 Pull requests
 
-Feel free to [open an issue](../../issues) or submit a PR.
+Feel free to [open an issue](https://github.com/juleskid5102/hey-jules/blob/main/../../issues) or submit a PR.
 
 ## 📊 Comparison
 

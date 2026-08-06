@@ -117,4 +117,4 @@ Než odpovíš, odstraň cokoliv, co by mohl napsat kdokoliv pro jakoukoliv firm
 
 ## Licence
 
-MIT. Viz [LICENSE](LICENSE).
+MIT. Viz [LICENSE](https://github.com/nowork-ai/anti-ai-slop-cz/blob/main/LICENSE).

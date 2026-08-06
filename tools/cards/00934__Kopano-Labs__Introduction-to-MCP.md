@@ -39,7 +39,7 @@ related:
 ---
 
 
-![Kopano Context Banner](README-bannner.jpg)
+![Kopano Context Banner](https://github.com/Kopano-Labs/Introduction-to-MCP/blob/main/README-bannner.jpg)
 
    ![KPGS](https://img.shields.io/badge/KPGS-ALP%23168-7b61ff) ![POC](https://img.shields.io/badge/POC-VALIDATED-00E676) ![Deploy](https://github.com/Kopano-Labs/Introduction-to-MCP/actions/workflows/deploy-web.yml/badge.svg?branch=codex/kc-sovereign-gui-full-dev)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
@@ -80,7 +80,7 @@ related:
 - ✅ Listed in the SafeSkill registry
 - ✅ Safe to use in production
 
-![Kopano SafeSkill Verified 100/100](README-safeskill-verified.png)
+![Kopano SafeSkill Verified 100/100](https://github.com/Kopano-Labs/Introduction-to-MCP/blob/main/README-safeskill-verified.png)
 
 ---
 

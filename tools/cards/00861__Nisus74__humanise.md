@@ -225,4 +225,4 @@ key. The AI host you use still has its own data policy, so review that separatel
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/Nisus74/humanise/blob/main/LICENSE)

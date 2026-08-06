@@ -48,8 +48,8 @@ related:
 # INQUEST - Virtual Research Assistant
 ### *Aid to Women Researchers around the 🌎*
 
-![image](inquest.jpeg)
-![image](inquest1.jpeg)
+![image](https://github.com/shriya02-coder/Inquest/blob/main/inquest.jpeg)
+![image](https://github.com/shriya02-coder/Inquest/blob/main/inquest1.jpeg)
 
 ## Table of Contents
 1. [Introduction](#introduction)

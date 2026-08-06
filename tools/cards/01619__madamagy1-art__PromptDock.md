@@ -45,7 +45,7 @@ related:
 
 # PromptDock
 
-**Language:** English | [中文](README.zh-CN.md)
+**Language:** English | [中文](https://github.com/madamagy1-art/PromptDock/blob/main/README.zh-CN.md)
 
 PromptDock is a lightweight Windows desktop companion for writing, organizing, and improving AI prompts. It stays out of the way until you summon it, then gives you a focused workspace for drafting prompts, reusing templates, searching prompt history, and improving prompts with any OpenAI-compatible API.
 

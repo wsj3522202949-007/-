@@ -869,7 +869,7 @@ things started happening..."
 
 ## 📄 License
 
-This workflow is open source and available under the [MIT License](LICENSE).
+This workflow is open source and available under the [MIT License](https://github.com/REDOANUZZAMAN/Revenge-Story-Video-Generator---Automated-YouTube-Content-Pipeline/blob/main/LICENSE).
 
 ## 🤝 Contributing
 

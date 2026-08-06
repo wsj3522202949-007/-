@@ -46,7 +46,7 @@ A web app that generates imaginative, unique stories based on your selected genr
 ## 🚀 Demo
 - 🌐 Live App: [Click here to try it out!](https://ai-story-generator-webapp.streamlit.app/)
 - 📽️ Video Walkthrough: [LinkedIn Demo]()
-  ![Screenshot](Screenshot.png)
+  ![Screenshot](https://github.com/UzmaKhatun/AI_Story_Generator/blob/main/Screenshot.png)
 
 ----
 

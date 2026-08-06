@@ -53,7 +53,7 @@ lives in the backend; the clients only render UI and call the API.
 - **Backend API:** hosted on Render (`https://chat-with-ai-x.onrender.com`), backed by
   Neon Postgres, using OpenRouter for inference. API-key protected.
 - **Android app:** download the latest `.apk` from the repo's
-  [Releases](../../releases) page and install it on your phone.
+  [Releases](https://github.com/shahriar-ahmed-seam/Character-Chat-AI/blob/main/../../releases) page and install it on your phone.
 - **Web app:** deployed on Vercel.
 
 ### Telegram bot commands

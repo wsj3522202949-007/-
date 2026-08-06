@@ -48,7 +48,7 @@ At Chili Piper I own Chat AI and Concierge (our website conversion products). I 
 
 ### Frameworks
 
-Thinking tools I apply to product decisions. Each one credits its original source. [Browse all 21 in `frameworks/`](frameworks/).
+Thinking tools I apply to product decisions. Each one credits its original source. [Browse all 21 in `frameworks/`](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/frameworks/).
 
 ### Skills
 
@@ -56,19 +56,19 @@ Claude Code skills that automate PM workflows. These are sanitised versions of w
 
 | Skill | What it does |
 |---|---|
-| [Spec / PRD](skills/spec-prd/) | Researches customer evidence, drafts a full product spec using a structured template, runs competitive analysis, tests the draft with a fresh sub-agent for ambiguity, and publishes to a wiki. |
-| [GTM Plan](skills/gtm-plan/) | Creates Go-To-Market plans through a guided section-by-section workflow. Pulls customer quotes from feedback tools, proposes tier classification, and hands off cleanly to product marketing. |
-| [Release Notes](skills/release-notes/) | Generates Slack release announcements from video transcripts. Analyses the walkthrough, structures the announcement, and outputs formatted HTML for rich-text pasting. |
-| [Support Article](skills/support-article/) | Generates help centre articles from video transcripts and demos. Includes a full style guide, screenshot workflow, and zip handoff for the support team. |
-| [Morning Review](skills/morning-review/) | Morning startup: closes yesterday's daily note, triages Slack saved items and channel threads interactively, extracts meeting follow-ups, reshuffles the task list, and generates today's daily note with priorities mapped to goals. |
-| [Weekly Review](skills/weekly-review/) | Monday checkpoint between daily and monthly review. Backlog hygiene, roadmap delta vs last week, signal carryover from the daily review, stale-tasks-per-project, a long-context blind-spots prompt, and support-ticket clusters by team. Proposal-only – never edits live files. |
-| [Framing Doc](skills/framing-doc/) | Turns conversation transcripts into a framing document -- captures the problem worth solving, surveys options with an explore-exploit lens, and argues for the priority. Forked from Ryan Singer's shaping-skills. |
-| [Kickoff Doc](skills/post-kickoff-doc/) | Turns a shaped project kickoff transcript into a builder-facing reference document. Organises by territory (areas of the system), not timeline. |
-| [Review PR](skills/review-pr/) | PM-perspective GitHub PR review. Translates engineer questions into product scenarios, plays out user flows, and drafts a review comment with product direction -- no code feedback. |
-| [Presentation](skills/presentation/) | Builds reveal.js slide decks with professional techniques: fragment reveals, auto-animate bar charts, timelines, quote slides, and more. One HTML file, no build step. |
-| [Shaping](skills/shaping/) | Collaborative solution shaping – iterating on problem definition and solution options. From [rjs/shaping-skills](https://github.com/rjs/shaping-skills). |
-| [Breadboarding](skills/breadboarding/) | Transforms workflow descriptions into affordance tables showing UI and code boundaries. From [rjs/shaping-skills](https://github.com/rjs/shaping-skills). |
-| [Ingest](skills/ingest/) | Transcribe a YouTube video, podcast, HLS stream, or local audio/video file locally with mlx-whisper, then extract claims, frameworks, and action items into a markdown note. Nothing leaves the machine. |
+| [Spec / PRD](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/spec-prd/) | Researches customer evidence, drafts a full product spec using a structured template, runs competitive analysis, tests the draft with a fresh sub-agent for ambiguity, and publishes to a wiki. |
+| [GTM Plan](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/gtm-plan/) | Creates Go-To-Market plans through a guided section-by-section workflow. Pulls customer quotes from feedback tools, proposes tier classification, and hands off cleanly to product marketing. |
+| [Release Notes](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/release-notes/) | Generates Slack release announcements from video transcripts. Analyses the walkthrough, structures the announcement, and outputs formatted HTML for rich-text pasting. |
+| [Support Article](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/support-article/) | Generates help centre articles from video transcripts and demos. Includes a full style guide, screenshot workflow, and zip handoff for the support team. |
+| [Morning Review](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/morning-review/) | Morning startup: closes yesterday's daily note, triages Slack saved items and channel threads interactively, extracts meeting follow-ups, reshuffles the task list, and generates today's daily note with priorities mapped to goals. |
+| [Weekly Review](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/weekly-review/) | Monday checkpoint between daily and monthly review. Backlog hygiene, roadmap delta vs last week, signal carryover from the daily review, stale-tasks-per-project, a long-context blind-spots prompt, and support-ticket clusters by team. Proposal-only – never edits live files. |
+| [Framing Doc](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/framing-doc/) | Turns conversation transcripts into a framing document -- captures the problem worth solving, surveys options with an explore-exploit lens, and argues for the priority. Forked from Ryan Singer's shaping-skills. |
+| [Kickoff Doc](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/post-kickoff-doc/) | Turns a shaped project kickoff transcript into a builder-facing reference document. Organises by territory (areas of the system), not timeline. |
+| [Review PR](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/review-pr/) | PM-perspective GitHub PR review. Translates engineer questions into product scenarios, plays out user flows, and drafts a review comment with product direction -- no code feedback. |
+| [Presentation](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/presentation/) | Builds reveal.js slide decks with professional techniques: fragment reveals, auto-animate bar charts, timelines, quote slides, and more. One HTML file, no build step. |
+| [Shaping](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/shaping/) | Collaborative solution shaping – iterating on problem definition and solution options. From [rjs/shaping-skills](https://github.com/rjs/shaping-skills). |
+| [Breadboarding](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/breadboarding/) | Transforms workflow descriptions into affordance tables showing UI and code boundaries. From [rjs/shaping-skills](https://github.com/rjs/shaping-skills). |
+| [Ingest](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/skills/ingest/) | Transcribe a YouTube video, podcast, HLS stream, or local audio/video file locally with mlx-whisper, then extract claims, frameworks, and action items into a markdown note. Nothing leaves the machine. |
 
 ### Examples
 
@@ -88,12 +88,12 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [Claude Code for PMs](guides/claude-code-for-pms.md) | Setup, skills, MCP servers, daily workflow, and patterns for using Claude Code as a PM co-pilot. |
-| [Atlassian CLI](guides/atlassian-cli.md) | Practical reference for `acli` (Jira) and REST API (Confluence). Covers ADF formatting, auth, common pitfalls, and when to use which tool. |
-| [Semantic Search (QMD)](guides/qmd-semantic-search.md) | Local semantic search over PM docs and external knowledge bases like podcast transcripts. Multi-collection indexing, MCP integration, cross-referencing patterns. |
-| [Terminal Notifications](guides/terminal-notifications.md) | Sound effects and tab title indicators for multi-session Claude Code. Hooks, TTY escape sequences, and the "show status while working" pattern. |
-| [Ingest Video Knowledge](guides/ingest-video-knowledge.md) | Pattern behind the `/ingest` skill. Downloads audio from YouTube or HLS streams, transcribes locally on Apple Silicon, extracts structured knowledge into your vault. |
-| [Auto-Ingest YouTube Channel](guides/auto-ingest-youtube-channel.md) | Auto-transcribe every new episode of a podcast or YouTube channel locally, building a searchable knowledge base of content you'd otherwise never get to. |
+| [Claude Code for PMs](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/claude-code-for-pms.md) | Setup, skills, MCP servers, daily workflow, and patterns for using Claude Code as a PM co-pilot. |
+| [Atlassian CLI](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/atlassian-cli.md) | Practical reference for `acli` (Jira) and REST API (Confluence). Covers ADF formatting, auth, common pitfalls, and when to use which tool. |
+| [Semantic Search (QMD)](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/qmd-semantic-search.md) | Local semantic search over PM docs and external knowledge bases like podcast transcripts. Multi-collection indexing, MCP integration, cross-referencing patterns. |
+| [Terminal Notifications](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/terminal-notifications.md) | Sound effects and tab title indicators for multi-session Claude Code. Hooks, TTY escape sequences, and the "show status while working" pattern. |
+| [Ingest Video Knowledge](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/ingest-video-knowledge.md) | Pattern behind the `/ingest` skill. Downloads audio from YouTube or HLS streams, transcribes locally on Apple Silicon, extracts structured knowledge into your vault. |
+| [Auto-Ingest YouTube Channel](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/guides/auto-ingest-youtube-channel.md) | Auto-transcribe every new episode of a podcast or YouTube channel locally, building a searchable knowledge base of content you'd otherwise never get to. |
 
 ## How I use this
 
@@ -125,4 +125,4 @@ Several skills use **subagents** – separate Claude instances spawned via the A
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/jonathangittins/pm-ai-toolkit/blob/main/LICENSE)

@@ -221,8 +221,8 @@ uv run python tests/test_basic.py
 
 ## 📚 详细文档
 
-- [使用说明](USAGE.md) - 详细的使用指南
-- [架构文档](arch.md) - 系统架构设计
+- [使用说明](https://github.com/cynthiax6/ai_story_generator/blob/main/USAGE.md) - 详细的使用指南
+- [架构文档](https://github.com/cynthiax6/ai_story_generator/blob/main/arch.md) - 系统架构设计
 
 ## 🤝 贡献
 

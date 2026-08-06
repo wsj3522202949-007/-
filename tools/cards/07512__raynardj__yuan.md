@@ -123,7 +123,7 @@ sentence
 ### 现代文到文言文翻译器
 * 可以去[🤗 模型主页](https://huggingface.co/raynardj/wenyanwen-chinese-translate-to-ancient)体验或下载这个模型。
 * 使用了这个[翻译句对的数据集](https://github.com/BangBOOM/Classical-Chinese)
-* 感兴趣的可以参考[训练的笔记](nbs/zh2cc_translate.ipynb)
+* 感兴趣的可以参考[训练的笔记](https://github.com/raynardj/yuan/blob/main/nbs/zh2cc_translate.ipynb)
 
 在python中推荐使用以下的代码进行inference：
 ```python
@@ -182,7 +182,7 @@ def inference(text):
 
 * 欢迎前往[🤗 文言文（古文）到现代文的翻译器模型主页](https://huggingface.co/raynardj/wenyanwen-ancient-translate-to-modern)
 * 训练语料是就是九十多万句句对， [数据集链接📚](https://github.com/BangBOOM/Classical-Chinese)。 训练时source序列（古文序列）， 按照50%的概率整句去除所有标点符号。
-* 感兴趣的可以参考[训练的笔记](nbs/cc2zh_translate.ipynb),其中可改进处颇多。
+* 感兴趣的可以参考[训练的笔记](https://github.com/raynardj/yuan/blob/main/nbs/cc2zh_translate.ipynb),其中可改进处颇多。
 
 #### 推荐的inference 通道
 **注意**

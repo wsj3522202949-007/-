@@ -365,7 +365,7 @@ done
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Contributions are welcome! Please see [CONTRIBUTING.md](https://github.com/ckorhonen/ai-content-detector/blob/main/CONTRIBUTING.md) for details.
 
 ### Development Workflow
 
@@ -379,7 +379,7 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for det
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ckorhonen/ai-content-detector/blob/main/LICENSE) file for details.
 
 ## 👤 Author
 
@@ -404,9 +404,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Links
 
 - [Live Demo](https://ai-content-detector.workers.dev)
-- [Documentation](docs/)
+- [Documentation](https://github.com/ckorhonen/ai-content-detector/blob/main/docs/)
 - [API Reference](#-api-documentation)
-- [Contributing Guide](CONTRIBUTING.md)
+- [Contributing Guide](https://github.com/ckorhonen/ai-content-detector/blob/main/CONTRIBUTING.md)
 
 related:
   - methods/最强去AI味铁律.md

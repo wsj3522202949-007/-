@@ -82,7 +82,7 @@ LLM calls this run:
 ```
 
 It has three tools — Hacker News via the Algolia API, a curated list of RSS
-feeds in [`feeds.yaml`](feeds.yaml), and full-text extraction of any single URL
+feeds in [`feeds.yaml`](https://github.com/lepablito/ai-blog-copilot/blob/main/feeds.yaml), and full-text extraction of any single URL
 — and it decides for itself which to call and in what order.
 
 ### The loop

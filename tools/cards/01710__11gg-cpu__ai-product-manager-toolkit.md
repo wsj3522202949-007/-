@@ -79,8 +79,8 @@ related:
   <img src="screenshots/prd-workspace.svg" alt="AI product case study workspace preview" width="100%" />
 </p>
 
-- Example case study: [`examples/ai-product-case-study.md`](examples/ai-product-case-study.md)
-- MVP prioritization: [`docs/mvp-prioritization.md`](docs/mvp-prioritization.md)
+- Example case study: [`examples/ai-product-case-study.md`](https://github.com/11gg-cpu/ai-product-manager-toolkit/blob/main/examples/ai-product-case-study.md)
+- MVP prioritization: [`docs/mvp-prioritization.md`](https://github.com/11gg-cpu/ai-product-manager-toolkit/blob/main/docs/mvp-prioritization.md)
 
 ## Project Background
 

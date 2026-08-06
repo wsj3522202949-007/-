@@ -39,13 +39,13 @@ related:
 
 # Show Me The Story — AI 小说生成器
 
-> English documentation: [README.en.md](README.en.md)
+> English documentation: [README.en.md](https://github.com/Nigh/show-me-the-story/blob/main/README.en.md)
 
 一个开箱即用的长篇小说 AI 创作工具。单个可执行文件，内置完整 Web 界面，连接任意 OpenAI 兼容 API（OpenAI、DeepSeek、本地 Ollama / LM Studio 等）即可自动生成大纲并逐章创作长篇小说。
 
 程序本身不包含任何小说内容——故事类型、世界观、角色、写作风格全部由你配置，或交给 AI 自动生成。
 
-![主界面：配置页与 AI 助理](screenshot.png)
+![主界面：配置页与 AI 助理](https://github.com/Nigh/show-me-the-story/blob/main/screenshot.png)
 
 ## 功能亮点
 
@@ -341,7 +341,7 @@ task dev:frontend   # 启动 Vite dev server（:5173，热重载，代理 /api �
 
 后端按依赖层次拆分为 `internal/` 下的 Go 包：`httpapi`（路由与 handler）、`agent`（助理 Agent Loop）、`story`（大纲/写作/伏笔/卷/导入等领域逻辑）、`llm`（OpenAI 兼容客户端）、`config`（配置与提示词模板）、`sse`（事件广播）、`i18n`（双语文案）、`prose` / `fsutil`（基础工具）。前端页面在 `frontend/src/pages/`。
 
-完整的架构说明、API 端点一览、SSE 事件类型、设计模式与开发约束请见 [AGENTS.md](AGENTS.md)。
+完整的架构说明、API 端点一览、SSE 事件类型、设计模式与开发约束请见 [AGENTS.md](https://github.com/Nigh/show-me-the-story/blob/main/AGENTS.md)。
 
 ## Star History
 

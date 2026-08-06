@@ -44,7 +44,7 @@ related:
 ## Insallation
 
 
-Environment should have with torch>=1.7 ([yolov8](yolov8/README.md)) for example:
+Environment should have with torch>=1.7 ([yolov8](https://github.com/strakaj/yolov8-for-document-understanding/blob/main/yolov8/README.md)) for example:
 ```bash
 pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 ```

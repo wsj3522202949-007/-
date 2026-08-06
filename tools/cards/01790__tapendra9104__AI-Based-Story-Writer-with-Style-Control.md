@@ -219,4 +219,4 @@ AI-powered story writing platform with controllable genre, tone, and narrative s
 
 ## Report Resources
 
-For a project-report-ready summary, see [docs/PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md).
+For a project-report-ready summary, see [docs/PROJECT_SUMMARY.md](https://github.com/tapendra9104/AI-Based-Story-Writer-with-Style-Control/blob/main/docs/PROJECT_SUMMARY.md).

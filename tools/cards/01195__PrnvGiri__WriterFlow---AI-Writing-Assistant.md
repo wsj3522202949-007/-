@@ -239,7 +239,7 @@ Feel free to fork and improve! Some ideas:
 
 ## License
 
-This project is open source under the [MIT License](LICENSE).
+This project is open source under the [MIT License](https://github.com/PrnvGiri/WriterFlow---AI-Writing-Assistant/blob/main/LICENSE).
 
 related:
   - methods/网文写作最强SOP.md

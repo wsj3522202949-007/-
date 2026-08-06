@@ -122,4 +122,4 @@ Multiple specialized AI agents work together to help authors:
 
 ## Next Steps
 
-See [ROADMAP.md](./ROADMAP.md) for development phases and [SCHEMA.md](./SCHEMA.md) for database design.
+See [ROADMAP.md](https://github.com/maxjeffwell/ai-writing-studio/blob/main/ROADMAP.md) for development phases and [SCHEMA.md](https://github.com/maxjeffwell/ai-writing-studio/blob/main/SCHEMA.md) for database design.

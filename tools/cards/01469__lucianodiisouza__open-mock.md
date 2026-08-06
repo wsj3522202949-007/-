@@ -100,11 +100,11 @@ npm start
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a new platform generator.
+See [CONTRIBUTING.md](https://github.com/lucianodiisouza/open-mock/blob/main/CONTRIBUTING.md) for how to add a new platform generator.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](https://github.com/lucianodiisouza/open-mock/blob/main/LICENSE).
 
 ## Disclaimer
 

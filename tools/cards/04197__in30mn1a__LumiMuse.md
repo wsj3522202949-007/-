@@ -57,7 +57,7 @@ related:
 
 <br/>
 
-[English](README.en.md) · **中文**
+[English](https://github.com/in30mn1a/LumiMuse/blob/main/README.en.md) · **中文**
 
 <br/>
 
@@ -717,6 +717,6 @@ related:
 
 <br/>
 
-[MIT](LICENSE) © 2026 [in30mn1a](https://github.com/in30mn1a)
+[MIT](https://github.com/in30mn1a/LumiMuse/blob/main/LICENSE) © 2026 [in30mn1a](https://github.com/in30mn1a)
 
 </div>

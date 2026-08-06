@@ -48,7 +48,7 @@ related:
 
 A structured AI prompt template for conducting in-depth personal experience reviews through a two-phase interview and writing process.
 
-[中文文档](README.zh-CN.md)
+[中文文档](https://github.com/zenia-liu/personal-review-prompt/blob/main/README.zh-CN.md)
 
 ## What Is This?
 
@@ -82,7 +82,7 @@ After the full interview, the AI produces a complete review document with the th
 
 ## Quick Start
 
-1. Go to [`prompt/en.md`](prompt/en.md) (or [`prompt/zh-CN.md`](prompt/zh-CN.md) for Chinese)
+1. Go to [`prompt/en.md`](https://github.com/zenia-liu/personal-review-prompt/blob/main/prompt/en.md) (or [`prompt/zh-CN.md`](https://github.com/zenia-liu/personal-review-prompt/blob/main/prompt/zh-CN.md) for Chinese)
 2. Copy the **System Instructions** block
 3. Paste it at the beginning of a new AI conversation
 4. Follow it with your own opening narrative, e.g.:
@@ -126,4 +126,4 @@ This template works with any AI model that supports system instructions or long-
 
 ## License
 
-[MIT](LICENSE) — Feel free to use, modify, and distribute.
+[MIT](https://github.com/zenia-liu/personal-review-prompt/blob/main/LICENSE) — Feel free to use, modify, and distribute.

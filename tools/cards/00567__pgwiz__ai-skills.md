@@ -89,7 +89,7 @@ Finally, install the skill:
 gh skills install pgwiz/ai-skills agent-memory
 ```
 
-Or see [install/INSTALL.md](install/INSTALL.md) for curl/PowerShell/manual options.
+Or see [install/INSTALL.md](https://github.com/pgwiz/ai-skills/blob/main/install/INSTALL.md) for curl/PowerShell/manual options.
 
 ## Compatibility
 

@@ -58,4 +58,4 @@ paper-slop-remover/
 
 ## License
 
-[CC BY 4.0](LICENSE) — use it however you want, just credit [Madhava Gaikwad](https://github.com/write-with-ai).
+[CC BY 4.0](https://github.com/write-with-ai/slop-remover/blob/main/LICENSE) — use it however you want, just credit [Madhava Gaikwad](https://github.com/write-with-ai).

@@ -50,7 +50,7 @@ MD仕様をもとにした、Web/PWA/アプリ化前提のVue版スターター�
 
 ## 仕様メモ
 
-- [小説書き出しアプリ_仕様まとめ.md](docs/小説書き出しアプリ_仕様まとめ.md)
+- [小説書き出しアプリ_仕様まとめ.md](https://github.com/siev0000/novel-writing-tool-starter/blob/main/docs/%E5%B0%8F%E8%AA%AC%E6%9B%B8%E3%81%8D%E5%87%BA%E3%81%97%E3%82%A2%E3%83%97%E3%83%AA_%E4%BB%95%E6%A7%98%E3%81%BE%E3%81%A8%E3%82%81.md)
 
 ## 方針
 

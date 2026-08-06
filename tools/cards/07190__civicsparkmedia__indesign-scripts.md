@@ -144,7 +144,7 @@ If the script cannot retrieve stories or if the result count is 0, it will displ
 
 ## License
 
-For license information, see [LICENSE](LICENSE.md).
+For license information, see [LICENSE](https://github.com/civicsparkmedia/indesign-scripts/blob/main/LICENSE.md).
 
 ## Author
 

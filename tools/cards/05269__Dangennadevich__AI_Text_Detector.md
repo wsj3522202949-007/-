@@ -231,18 +231,18 @@ CPU_SERVER_IP=
 
 <code>curl -X POST "http://IP_CPU_SERVER:8000/predict" -H "Content-Type: application/json" -d '{"text": "Привет как дела?"}'</code> 
 
-![Alt text](screenshots/postman-post.png)
+![Alt text](https://github.com/Dangennadevich/AI_Text_Detector/blob/main/screenshots/postman-post.png)
 
 <code>curl -X GET "http://IP_CPU_SERVER:8000/status/7a1c9d34-8cba-4d76-9f07-d1993e0c0d18"</code> 
 
-![Alt text](screenshots/postman-get.png)
+![Alt text](https://github.com/Dangennadevich/AI_Text_Detector/blob/main/screenshots/postman-get.png)
 
 Запрос доступен в Flower
 
-![Alt text](screenshots/flower.png)
+![Alt text](https://github.com/Dangennadevich/AI_Text_Detector/blob/main/screenshots/flower.png)
 
 <h4 align="center">6. Тест нагрузки</h4>
 
 В примере сервис поднят при помощи minicube на одном узле cpu.
 
-![Alt text](screenshots/Service-test.png)
+![Alt text](https://github.com/Dangennadevich/AI_Text_Detector/blob/main/screenshots/Service-test.png)

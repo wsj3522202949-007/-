@@ -80,30 +80,30 @@ related:
 ## 功能速览
 思维导图.png
 
-![主页面预览](jpg/思维导图.png)
+![主页面预览](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.png)
 *可拖拽的思维导图*
 
 
-![主页面预览](jpg/AI迭代2.png)
+![主页面预览](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/AI%E8%BF%AD%E4%BB%A32.png)
 *智能按照句子、段落、字符数智能切割 和预览*
 
-![主页面预览](jpg/ai迭代1.png)
+![主页面预览](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/ai%E8%BF%AD%E4%BB%A31.png)
 *设定好分数和迭代次数*
 
-![主页面预览](jpg/主界面.png)
+![主页面预览](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/%E4%B8%BB%E7%95%8C%E9%9D%A2.png)
 *完整功能界面，支持多种智能写作辅助功能*
 
-![右键预览](jpg/右键功能.png)
+![右键预览](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/%E5%8F%B3%E9%94%AE%E5%8A%9F%E8%83%BD.png)
 *智能右键润色功能*
 
 
-![最终提示词](jpg/提示词最终预览修改.png)
+![最终提示词](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%9C%80%E7%BB%88%E9%A2%84%E8%A7%88%E4%BF%AE%E6%94%B9.png)
 *智能AI右键润色功能*
 
-![智能书名生成](jpg/ai生成书名.png)
+![智能书名生成](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/ai%E7%94%9F%E6%88%90%E4%B9%A6%E5%90%8D.png)
 *AI智能书名生成功能展示*
 
-![智能简介生成](jpg/ai生成简介.png)
+![智能简介生成](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/ai%E7%94%9F%E6%88%90%E7%AE%80%E4%BB%8B.png)
 *AI智能简介生成功能展示*
 
 
@@ -315,7 +315,7 @@ MIT License
 
 ## 问题反馈
 
-![图片](jpg/二维码.png)
+![图片](https://github.com/wangabraham/ai-automatically-generates-novels/blob/main/jpg/%E4%BA%8C%E7%BB%B4%E7%A0%81.png)
 
 - 项目主页：[GitHub](https://github.com/wfcz10086/AI-automatically-generates-novels)
 - 问题反馈：[Issues](https://github.com/wfcz10086/AI-automatically-generates-novels/issues)

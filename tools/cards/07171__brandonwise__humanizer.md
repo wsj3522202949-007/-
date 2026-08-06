@@ -472,4 +472,4 @@ humanizer/
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/brandonwise/humanizer/blob/main/LICENSE)

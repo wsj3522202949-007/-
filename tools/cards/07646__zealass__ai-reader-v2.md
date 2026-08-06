@@ -49,7 +49,7 @@ related:
 [![Ollama](https://img.shields.io/badge/ollama-supported-FF6B35)](https://ollama.com/)
 [![Tauri](https://img.shields.io/badge/tauri-2-FFC131?logo=tauri&logoColor=white)](https://v2.tauri.app/)
 
-> **[English Version](./README_EN.md)**
+> **[English Version](https://github.com/zealass/ai-reader-v2/blob/main/README_EN.md)**
 
 **开源 AI 小说分析工具** — 上传任意 TXT/Markdown 小说，AI 自动提取人物关系、地点层级、事件时间线，生成交互式知识图谱、世界地图、时间线等多维可视化。支持本地 Ollama 和云端 LLM，数据 100% 本地存储，无需联网。
 
@@ -204,15 +204,15 @@ cd frontend && npm install && npm run dev
 
 ## 文档
 
-- 📋 [贡献指南](./CONTRIBUTING.md) — 开发环境搭建、代码规范、PR 流程
-- 🏗️ [技术架构](./CLAUDE.md) — 完整架构设计、代码约定、数据模型
-- 💼 [商业许可](./LICENSE-COMMERCIAL.md) — 商业使用条款
+- 📋 [贡献指南](https://github.com/zealass/ai-reader-v2/blob/main/CONTRIBUTING.md) — 开发环境搭建、代码规范、PR 流程
+- 🏗️ [技术架构](https://github.com/zealass/ai-reader-v2/blob/main/CLAUDE.md) — 完整架构设计、代码约定、数据模型
+- 💼 [商业许可](https://github.com/zealass/ai-reader-v2/blob/main/LICENSE-COMMERCIAL.md) — 商业使用条款
 
 ## License
 
-[GNU Affero General Public License v3.0](./LICENSE) (AGPL-3.0)
+[GNU Affero General Public License v3.0](https://github.com/zealass/ai-reader-v2/blob/main/LICENSE) (AGPL-3.0)
 
-个人、教育和研究用途免费。商业闭源部署请参阅 [商业许可](./LICENSE-COMMERCIAL.md)。
+个人、教育和研究用途免费。商业闭源部署请参阅 [商业许可](https://github.com/zealass/ai-reader-v2/blob/main/LICENSE-COMMERCIAL.md)。
 
 related:
   - methods/QUICK_START.md

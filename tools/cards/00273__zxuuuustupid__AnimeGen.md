@@ -175,4 +175,4 @@ related:
 
 ## 📄 License
 
-[MIT](LICENSE)
+[MIT](https://github.com/zxuuuustupid/AnimeGen/blob/main/LICENSE)

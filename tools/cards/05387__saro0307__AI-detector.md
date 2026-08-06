@@ -98,4 +98,4 @@ else:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/saro0307/AI-detector/blob/main/LICENSE) file for details.

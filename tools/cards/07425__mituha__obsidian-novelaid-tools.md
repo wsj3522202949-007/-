@@ -113,4 +113,4 @@ related:
 
 ## 📝 ライセンス
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/mituha/obsidian-novelaid-tools/blob/main/LICENSE)

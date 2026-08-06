@@ -67,4 +67,4 @@ streamlit run main.py
 
 ## Example
 
-![Example Story](the_rock_president.jpeg)
+![Example Story](https://github.com/AskEdith/Once-Upon-AI-Time/blob/main/the_rock_president.jpeg)

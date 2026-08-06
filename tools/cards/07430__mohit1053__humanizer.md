@@ -161,7 +161,7 @@ After humanizing your text, test it at:
 - [GPTZero](https://gptzero.me/) - Goal: <10% AI detection
 - [ZeroGPT](https://zerogpt.com/) - Goal: <10% AI detection
 
-See [TEST_SAMPLES_READY.md](TEST_SAMPLES_READY.md) for pre-generated samples ready for testing.
+See [TEST_SAMPLES_READY.md](https://github.com/mohit1053/humanizer/blob/main/TEST_SAMPLES_READY.md) for pre-generated samples ready for testing.
 
 ## 🎯 How It Works
 
@@ -234,7 +234,7 @@ Contributions are welcome! Feel free to:
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on:
+We welcome contributions! Please see our [Contributing Guidelines](https://github.com/mohit1053/humanizer/blob/main/CONTRIBUTING.md) for details on:
 - How to fork and set up the project
 - Code style guidelines
 - Commit message format
@@ -242,11 +242,11 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📝 Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
+See [CHANGELOG.md](https://github.com/mohit1053/humanizer/blob/main/CHANGELOG.md) for a detailed history of changes.
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/mohit1053/humanizer/blob/main/LICENSE) file for details.
 
 ## ⚠️ Disclaimer
 

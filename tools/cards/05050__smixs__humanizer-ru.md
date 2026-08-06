@@ -36,7 +36,7 @@ related:
 
 ---
 
-![Humanizer RU](banner.webp)
+![Humanizer RU](https://github.com/smixs/humanizer-ru/blob/main/banner.webp)
 
 # Humanizer RU
 
@@ -53,7 +53,7 @@ related:
 - **[19.07.2026] v1.4** 🔍 Линтер `scripts/lint.py`: жёсткие запреты ловится скриптом, а не глюками. Паттерны 33-34 - повтор глаголов и стопка абзацев, по ним живые читатели чаще всего опознают AI
 - **[14.07.2026] v1.2** 📚 11 новых паттернов из вики-эссе о признаках сгенерированного текста, правила из «Пиши, сокращай»
 
-Полная история - в [CHANGELOG.md](CHANGELOG.md).
+Полная история - в [CHANGELOG.md](https://github.com/smixs/humanizer-ru/blob/main/CHANGELOG.md).
 
 ## Установка
 
@@ -103,7 +103,7 @@ see_also:
 | Внимание - валюта XXI века. | Люди платят временем только за то, что им интересно. |
 | Подводя итог, можно сказать, что переход включает миграцию данных и обучение команды. | Миграцию заканчиваем в марте. |
 
-Все 37 паттернов с примерами - в [references/patterns.md](references/patterns.md).
+Все 37 паттернов с примерами - в [references/patterns.md](https://github.com/smixs/humanizer-ru/blob/main/references/patterns.md).
 
 ## Как это проверяется
 

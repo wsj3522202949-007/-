@@ -46,7 +46,7 @@ A professional WYSIWYG ebook editor for Windows designed to streamline the novel
 ![License](https://img.shields.io/badge/license-Proprietary-red)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2B-blue)
 
-> **Beta Release** — All features are available to all users during the beta. See [TIERS.md](TIERS.md) for the Free / Pro-Donation / Commercial licensing model.
+> **Beta Release** — All features are available to all users during the beta. See [TIERS.md](https://github.com/William10025/PortoWrite/blob/main/TIERS.md) for the Free / Pro-Donation / Commercial licensing model.
 
 ## Features
 
@@ -233,7 +233,7 @@ Current version: **0.1.0 (Alpha)** | Next: **0.2.0 (Phase 1+2)**
 - 📋 Find & Replace — global search across all chapters with regex support
 - 📋 Track Changes — change tracking and review mode
 
-See [EPICS.md](EPICS.md) for detailed feature breakdown and [agent.md](agent.md) for development guidelines.
+See [EPICS.md](https://github.com/William10025/PortoWrite/blob/main/EPICS.md) for detailed feature breakdown and [agent.md](https://github.com/William10025/PortoWrite/blob/main/agent.md) for development guidelines.
 
 ## Testing
 
@@ -251,7 +251,7 @@ Current test status: **11/11 core tests passing**
 
 ## Building for Distribution
 
-See [BUILD_EXE.md](BUILD_EXE.md) for detailed build instructions.
+See [BUILD_EXE.md](https://github.com/William10025/PortoWrite/blob/main/BUILD_EXE.md) for detailed build instructions.
 
 Quick build:
 ```bash
@@ -260,7 +260,7 @@ pyinstaller portowrite.spec
 # Executable in dist/PortoWrite.exe
 ```
 
-Distribution strategy in [DISTRIBUTION.md](DISTRIBUTION.md)
+Distribution strategy in [DISTRIBUTION.md](https://github.com/William10025/PortoWrite/blob/main/DISTRIBUTION.md)
 
 ## Keyboard Shortcuts
 
@@ -331,7 +331,7 @@ pip install -r requirements.txt
 ## Support
 
 ### Getting Help
-- **Docs:** [README.md](README.md) and [BUILD_EXE.md](BUILD_EXE.md)
+- **Docs:** [README.md](https://github.com/William10025/PortoWrite/blob/main/README.md) and [BUILD_EXE.md](https://github.com/William10025/PortoWrite/blob/main/BUILD_EXE.md)
 - **Issues:** [GitHub Issues](https://github.com/yourusername/portowrite/issues)
 - **Email:** support@portowrite.com (if applicable)
 
@@ -356,11 +356,11 @@ Contributions welcome! Please:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-See [agent.md](agent.md) for development guidelines.
+See [agent.md](https://github.com/William10025/PortoWrite/blob/main/agent.md) for development guidelines.
 
 ## License
 
-PortoWrite is released under the MIT License. See [LICENSE](LICENSE) for details.
+PortoWrite is released under the MIT License. See [LICENSE](https://github.com/William10025/PortoWrite/blob/main/LICENSE) for details.
 
 You are free to:
 - ✅ Use for any purpose (personal, commercial)
@@ -378,7 +378,7 @@ Built with:
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for version history and release notes.
+See [CHANGELOG.md](https://github.com/William10025/PortoWrite/blob/main/CHANGELOG.md) for version history and release notes.
 
 ## Project Vision
 

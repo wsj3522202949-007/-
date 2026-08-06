@@ -43,7 +43,7 @@ related:
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
-![](client/public/favicon.png) 
+![](https://github.com/rgwch/novelist/blob/main/client/public/favicon.png) 
 
 # Novelist 
 
@@ -99,7 +99,7 @@ You can have a 'production.json' with values to override the default values in p
 
 ## Storage
 
-Novel files are stored either in the local filesystem (of the server), or in any S3-compatible database. Prominent example of S3 Storage is [Amazon's AWS](https://aws.amazon.com/s3/), but there are others. If you want to create an S3 Storage on your own system, you might give [Minio](https://min.io/) a try. This is quite easy to set up via [Docker](https://hub.docker.com/r/minio/minio) (see [docker-compose.yaml](docker-compose.yaml) for an example).
+Novel files are stored either in the local filesystem (of the server), or in any S3-compatible database. Prominent example of S3 Storage is [Amazon's AWS](https://aws.amazon.com/s3/), but there are others. If you want to create an S3 Storage on your own system, you might give [Minio](https://min.io/) a try. This is quite easy to set up via [Docker](https://hub.docker.com/r/minio/minio) (see [docker-compose.yaml](https://github.com/rgwch/novelist/blob/main/docker-compose.yaml) for an example).
 
 ### Storage specific settings
 

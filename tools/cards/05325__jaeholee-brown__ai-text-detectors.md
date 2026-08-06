@@ -69,7 +69,7 @@ count as non-detections (and as false positives on human text).
 | AI, style imitation (FNR) | **10% (30/297)** | **11% (32/297)** | **18% (53/297)** |
 
 Style-imitated **scientific** writing is the weakest spot for all three detectors
-(24–29% missed). Full per-genre and per-model breakdowns: [`results/SUMMARY.md`](results/SUMMARY.md).
+(24–29% missed). Full per-genre and per-model breakdowns: [`results/SUMMARY.md`](https://github.com/jaeholee-brown/ai-text-detectors/blob/main/results/SUMMARY.md).
 
 ## Repository layout
 
@@ -108,7 +108,7 @@ Genres: `blog` (blogs/newsletters), `scientific` (arXiv papers), `fiction`
   Wayback `id_` snapshots for blog/fiction; ar5iv/arXiv for science) and separately
   re-fetched and checked by **8-gram shingle coverage** (≥0.90 = verbatim; the 0.80–0.90
   band passed only where the entire gap is stripped citation/markup) plus a strict date
-  proof. The full record is in [`audit_verbatim.md`](audit_verbatim.md); per-snippet
+  proof. The full record is in [`audit_verbatim.md`](https://github.com/jaeholee-brown/ai-text-detectors/blob/main/audit_verbatim.md); per-snippet
   provenance (title, URL, archived source, date proof, coverage) is in each author
   folder’s `sources.md`.
 
@@ -120,7 +120,7 @@ prompt matching that piece’s topic and had the **same** model write the **basi
 piece — so the two conditions pair 1:1 on topic and model. All generations were then
 normalized for length/format parity with the human corpus (no titles/headers, ~500 words,
 uniform final-sentence trim); every transform is recorded in each piece’s `.json` sidecar.
-See [PIPELINE.md](PIPELINE.md) and [`postprocess/`](postprocess/README.md).
+See [PIPELINE.md](https://github.com/jaeholee-brown/ai-text-detectors/blob/main/PIPELINE.md) and [`postprocess/`](https://github.com/jaeholee-brown/ai-text-detectors/blob/main/postprocess/README.md).
 
 ## Reproducing
 

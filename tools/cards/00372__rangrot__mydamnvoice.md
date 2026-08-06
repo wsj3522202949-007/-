@@ -129,10 +129,10 @@ Every voice profile is grounded in computational stylometry, a field with 60+ ye
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding platform adapters, improving the interview flow, or submitting bug fixes.
+See [CONTRIBUTING.md](https://github.com/rangrot/mydamnvoice/blob/main/CONTRIBUTING.md) for guidelines on adding platform adapters, improving the interview flow, or submitting bug fixes.
 
 For deeper analysis with 14 quantitative metrics, visit [mydamnvoice.com](https://mydamnvoice.com)
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/rangrot/mydamnvoice/blob/main/LICENSE)

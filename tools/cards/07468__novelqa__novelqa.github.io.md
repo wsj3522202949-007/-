@@ -130,7 +130,7 @@ Warning: The input data are only for internal evaluation use. Please do not publ
 
 # 📜 License
 
-This dataset is released under the [Apache-2.0 License](LICENSE).
+This dataset is released under the [Apache-2.0 License](https://github.com/novelqa/novelqa.github.io/blob/main/LICENSE).
 
 # 📚 Citation
 

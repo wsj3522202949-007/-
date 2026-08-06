@@ -98,7 +98,7 @@ use it at your own risk.
 
 ## Documentation
 
-- [CLI Chatbot](docs/chatbot.md) - Main interactive CLI interface
-- [Quickrun Tool](docs/quickrun.md) - Utility for quick prompts and chat sessions
-- [Web Service](docs/webservice.md) - HTTP API for story creation and management
-- [Discord Bot](docs/discordbot.md) - Discord bot version with multi-channel support
+- [CLI Chatbot](https://github.com/carlfish/storyteller/blob/main/docs/chatbot.md) - Main interactive CLI interface
+- [Quickrun Tool](https://github.com/carlfish/storyteller/blob/main/docs/quickrun.md) - Utility for quick prompts and chat sessions
+- [Web Service](https://github.com/carlfish/storyteller/blob/main/docs/webservice.md) - HTTP API for story creation and management
+- [Discord Bot](https://github.com/carlfish/storyteller/blob/main/docs/discordbot.md) - Discord bot version with multi-channel support

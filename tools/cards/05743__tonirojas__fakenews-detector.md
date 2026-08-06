@@ -38,7 +38,7 @@ related:
 
 ---
 
-![Fake News Detector — browser extension banner](FakeNewsDetectorCover.jpg)
+![Fake News Detector — browser extension banner](https://github.com/tonirojas/fakenews-detector/blob/main/FakeNewsDetectorCover.jpg)
 
 > AI-powered claim fact-checker for Chrome, Edge, and Firefox — detect misinformation as you browse.
 
@@ -584,7 +584,7 @@ related:
 
 ## Publishing
 
-See [`STORE_LISTING.md`](STORE_LISTING.md) for the full submission kit: store descriptions (ES + EN), per-permission justifications, data-usage disclosure answers, and a screenshot guide.
+See [`STORE_LISTING.md`](https://github.com/tonirojas/fakenews-detector/blob/main/STORE_LISTING.md) for the full submission kit: store descriptions (ES + EN), per-permission justifications, data-usage disclosure answers, and a screenshot guide.
 
 **Privacy policy:** https://tonirojas.github.io/fakenews-detector/privacy.html  
 (Source: `docs/privacy.html` — hosted via GitHub Pages from the `docs/` folder.)

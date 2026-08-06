@@ -174,4 +174,4 @@ The pattern catalog and methodology draw on:
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/idcesares/remove-ai-writing-signs/blob/main/LICENSE)

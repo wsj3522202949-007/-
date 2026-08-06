@@ -497,7 +497,7 @@ novel-helper/
 ```
 
 ### 图片路径处理
-Markdown 中的相对图片 `![](images/a.png)` 会自动转换为绝对 `file://` URI，Hover/渲染更稳定。
+Markdown 中的相对图片 `![](https://github.com/AndreaFrederica/andrea-novel-helper/blob/main/images/a.png)` 会自动转换为绝对 `file://` URI，Hover/渲染更稳定。
 
 ### 颜色字段解析
 支持：HEX (#RGB/#RRGGBB/#RRGGBBAA/#RGBA)、rgb()/rgba()、hsl()/hsla()、hsv()/hsva()；混入文字仍可提取 (`#ff1e40 (主色)`)。

@@ -196,7 +196,7 @@ When ready to publish:
 4. Push to GitHub: `git push origin main --tags`
 5. GitHub Actions automatically publishes to marketplace
 
-For detailed publishing instructions, see [Publishing Plugins](../docs/publishing.md).
+For detailed publishing instructions, see [Publishing Plugins](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../docs/publishing.md).
 
 ## Troubleshooting
 
@@ -228,7 +228,7 @@ deno task validate
 
 ## Best Practices
 
-See [Best Practices](../docs/best-practices.md) for complete guidelines:
+See [Best Practices](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../docs/best-practices.md) for complete guidelines:
 
 ✅ **Do:**
 
@@ -249,16 +249,16 @@ See [Best Practices](../docs/best-practices.md) for complete guidelines:
 
 ## License
 
-MIT — See [LICENSE](./LICENSE) file
+MIT — See [LICENSE](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/LICENSE) file
 
 ## Contributing
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for development standards.
+See [CONTRIBUTING.md](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../CONTRIBUTING.md) for development standards.
 
 ## Support
 
-- 📖 [Developing Plugins](../docs/developing.md)
-- 📖 [Plugin Best Practices](../docs/best-practices.md)
-- 📖 [Manifest Reference](../docs/manifest-reference.md)
+- 📖 [Developing Plugins](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../docs/developing.md)
+- 📖 [Plugin Best Practices](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../docs/best-practices.md)
+- 📖 [Manifest Reference](https://github.com/CortexPrism/cortex-plugin-clickhouse/blob/main/../docs/manifest-reference.md)
 - 💬 [Discord Community](https://discord.gg/y7DkaEbPQC)
 - 🐛 [Report Issues](https://github.com/CortexPrism/cortex/issues)

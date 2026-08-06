@@ -61,7 +61,7 @@ NarratoAI 是一款自动化影视解说工具，基于 LLM 实现文案撰写�
 
 ### 界面预览
 
-![](docs/index-zh.png)
+![](https://github.com/linyqh/narratoai/blob/main/docs/index-zh.png)
 
 </div>
 
@@ -243,7 +243,7 @@ uv run streamlit run webui.py --server.maxUploadSize=2048
 
 ## 许可证 📝
 
-点击查看 [`LICENSE`](LICENSE) 文件
+点击查看 [`LICENSE`](https://github.com/linyqh/narratoai/blob/main/LICENSE) 文件
 
 ## Star History
 

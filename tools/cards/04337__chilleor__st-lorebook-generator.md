@@ -205,4 +205,4 @@ related:
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/chilleor/st-lorebook-generator/blob/main/LICENSE)

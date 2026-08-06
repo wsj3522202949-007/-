@@ -181,4 +181,4 @@ related:
 
 ## License
 
-MIT — free to use, modify, and distribute. See [LICENSE](LICENSE).
+MIT — free to use, modify, and distribute. See [LICENSE](https://github.com/lala-guantou/tvc-storyboard/blob/main/LICENSE).

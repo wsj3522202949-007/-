@@ -38,13 +38,13 @@ related:
   - methods/QUICK_START.md
 ---
 
-![](resources/icon-small.jpg)
+![](https://github.com/inkle/inky/blob/main/resources/icon-small.jpg)
 
 # Inky
 
 **Inky** is an editor for [ink](http://www.inklestudios.com/ink), inkle's markup language for writing interactive narrative in games, as used in [80 Days](http://www.inklestudios.com/80days). It's an IDE (integrated development environment), because it gives you a single app that lets you play in the editor as you write, and fix any bugs in your code.
 
-![](resources/screenshot.gif)
+![](https://github.com/inkle/inky/blob/main/resources/screenshot.gif)
 
 ## Features
 
@@ -61,7 +61,7 @@ related:
 
 Inky has been used extensively on multiple projects by different developers. Nevertheless, it isn't as robust or feature complete as many other text editors you may have used, since it's specialist software made by game developers in their spare time.
 
-The informal [TODO.md](TODO.md) lists some missing features and known issues. If you want to discuss one, or request a new fix or feature, please [create a github issue](http://www.github.com/inkle/inky/issues).
+The informal [TODO.md](https://github.com/inkle/inky/blob/main/TODO.md) lists some missing features and known issues. If you want to discuss one, or request a new fix or feature, please [create a github issue](http://www.github.com/inkle/inky/issues).
 
 To keep up to date with the latest news about ink [sign up for the mailing list](http://www.inklestudios.com/ink#signup).
 

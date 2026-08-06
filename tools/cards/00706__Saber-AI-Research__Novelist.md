@@ -53,8 +53,8 @@ related:
 
   [Download / 下载](#download--下载) ·
   [Features / 特性](#features--特性) ·
-  [Plugins / 插件](docs/references/creating-plugins.md) ·
-  [Docs / 文档](docs/development.md) ·
+  [Plugins / 插件](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/references/creating-plugins.md) ·
+  [Docs / 文档](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/development.md) ·
   [Website](https://novelist.dev)
 
 </div>
@@ -156,7 +156,7 @@ pnpm tauri dev      # dev with hot reload
 pnpm tauri build    # production build
 ```
 
-See [Development Guide / 开发指南](docs/development.md) for prerequisites and details.
+See [Development Guide / 开发指南](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/development.md) for prerequisites and details.
 
 ## Command-Line Usage / 命令行用法
 
@@ -191,15 +191,15 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 ---|
-| [Docs Index](docs/index.md) | Map of documentation structure |
-| [Development Guide / 开发指南](docs/development.md) | Prerequisites, commands, project structure |
-| [Keyboard Shortcuts / 快捷键](docs/references/keyboard-shortcuts.md) | All keyboard shortcuts |
-| [Creating Themes / 创建主题](docs/references/creating-themes.md) | How to add custom themes |
-| [Creating Plugins / 创建插件](docs/references/creating-plugins.md) | Plugin system guide |
-| [Architecture](ARCHITECTURE.md) | Current system map and project status |
-| [Reliability](docs/RELIABILITY.md) | Development and test harness |
-| [Design Overview / 设计概览](docs/design-docs/design-overview.md) | Architecture & design decisions |
-| [AGENTS.md](AGENTS.md) | Instructions for AI coding assistants |
+| [Docs Index](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/index.md) | Map of documentation structure |
+| [Development Guide / 开发指南](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/development.md) | Prerequisites, commands, project structure |
+| [Keyboard Shortcuts / 快捷键](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/references/keyboard-shortcuts.md) | All keyboard shortcuts |
+| [Creating Themes / 创建主题](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/references/creating-themes.md) | How to add custom themes |
+| [Creating Plugins / 创建插件](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/references/creating-plugins.md) | Plugin system guide |
+| [Architecture](https://github.com/Saber-AI-Research/Novelist/blob/main/ARCHITECTURE.md) | Current system map and project status |
+| [Reliability](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/RELIABILITY.md) | Development and test harness |
+| [Design Overview / 设计概览](https://github.com/Saber-AI-Research/Novelist/blob/main/docs/design-docs/design-overview.md) | Architecture & design decisions |
+| [AGENTS.md](https://github.com/Saber-AI-Research/Novelist/blob/main/AGENTS.md) | Instructions for AI coding assistants |
 
 ## Design Philosophy / 设计理念
 
@@ -209,9 +209,9 @@ related:
 
 ## Contributing / 贡献
 
-Issues, plugins, themes, and translations are all welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Issues, plugins, themes, and translations are all welcome. See [CONTRIBUTING.md](https://github.com/Saber-AI-Research/Novelist/blob/main/CONTRIBUTING.md).
 
-欢迎 issue、插件、主题与翻译贡献。详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎 issue、插件、主题与翻译贡献。详见 [CONTRIBUTING.md](https://github.com/Saber-AI-Research/Novelist/blob/main/CONTRIBUTING.md)。
 
 ## Acknowledgements / 致谢
 
@@ -220,14 +220,14 @@ Novelist's two AI panels (AI Talk and AI Agent) were inspired by
 [obsidian-yolo](https://github.com/Lapis0x0/obsidian-yolo) — thanks to
 their authors for showing how an embedded AI agent can fit naturally
 inside a writing tool. A full list of design references and bundled
-third-party software is in [CREDITS.md](CREDITS.md).
+third-party software is in [CREDITS.md](https://github.com/Saber-AI-Research/Novelist/blob/main/CREDITS.md).
 
 Novelist 的两个 AI 面板受
 [claudian](https://github.com/YishenTu/claudian) 与
 [obsidian-yolo](https://github.com/Lapis0x0/obsidian-yolo)
 启发,感谢这些项目的作者。完整的设计参考与第三方依赖清单见
-[CREDITS.md](CREDITS.md)。
+[CREDITS.md](https://github.com/Saber-AI-Research/Novelist/blob/main/CREDITS.md)。
 
 ## License / 许可
 
-[MIT](LICENSE) — Copyright © 2026 Chivier · Saber AI Research
+[MIT](https://github.com/Saber-AI-Research/Novelist/blob/main/LICENSE) — Copyright © 2026 Chivier · Saber AI Research

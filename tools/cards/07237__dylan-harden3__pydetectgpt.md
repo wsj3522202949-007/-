@@ -91,7 +91,7 @@ pydetectgpt "Your text here" -q
 ```
 > 0 or 1
 
-For a full list of args see [cli.py](pydetectgpt/cli.py)
+For a full list of args see [cli.py](https://github.com/dylan-harden3/pydetectgpt/blob/main/pydetectgpt/cli.py)
 
 ## Methods
 

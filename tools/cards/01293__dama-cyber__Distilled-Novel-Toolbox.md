@@ -41,7 +41,7 @@ related:
 
 一套面向网络小说作者的**全链路创作知识库**。覆盖从构思、写作、润色到发布的全流程，每个模块包含核心方法论（SKILL.md）和深度参考文档（references/）。
 
-> **v2.0** — `novel-anti-detection` 与 `novel-polishing` 已升级为可执行级去AI腔操作体系。详见 [CHANGELOG](./CHANGELOG.md)。
+> **v2.0** — `novel-anti-detection` 与 `novel-polishing` 已升级为可执行级去AI腔操作体系。详见 [CHANGELOG](https://github.com/dama-cyber/Distilled-Novel-Toolbox/blob/main/CHANGELOG.md)。
 
 ---
 

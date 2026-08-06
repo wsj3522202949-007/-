@@ -264,4 +264,4 @@ Typical evidence includes:
 
 ## License
 
-MIT License. See [LICENSE](./LICENSE).
+MIT License. See [LICENSE](https://github.com/quentinzh/agentic-consult-workbench/blob/main/LICENSE).

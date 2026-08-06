@@ -103,7 +103,7 @@ Although the code works as far as I know there a a lot of small bugs that I have
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/mrhacker/webnovel2ebook/blob/main/LICENSE.md) file for details
 
 ## Acknowledgments
 

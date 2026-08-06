@@ -59,11 +59,11 @@ An AI-powered system that converts film scripts into visual storyboards using NL
 
 The repository now includes a sample input script and a generated storyboard example.
 
-![Sample storyboard frame](examples/scene_001.png)
+![Sample storyboard frame](https://github.com/tuskilicious/Script2Storyboard/blob/main/examples/scene_001.png)
 
-- Sample input script: [examples/sample_script.txt](examples/sample_script.txt)
-- Generated storyboard PDF: [examples/storyboard-example.pdf](examples/storyboard-example.pdf)
-- Additional storyboard frames: [examples/scene_001.png](examples/scene_001.png) to [examples/scene_006.png](examples/scene_006.png)
+- Sample input script: [examples/sample_script.txt](https://github.com/tuskilicious/Script2Storyboard/blob/main/examples/sample_script.txt)
+- Generated storyboard PDF: [examples/storyboard-example.pdf](https://github.com/tuskilicious/Script2Storyboard/blob/main/examples/storyboard-example.pdf)
+- Additional storyboard frames: [examples/scene_001.png](https://github.com/tuskilicious/Script2Storyboard/blob/main/examples/scene_001.png) to [examples/scene_006.png](https://github.com/tuskilicious/Script2Storyboard/blob/main/examples/scene_006.png)
 
 ## Project Structure
 

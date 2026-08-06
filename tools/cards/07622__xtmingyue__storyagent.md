@@ -248,4 +248,4 @@ iconv -f GBK -t UTF-8 小说名字.txt > 小说名字-utf8.txt
 
 ## License
 
-[GPL-3.0](LICENSE)
+[GPL-3.0](https://github.com/xtmingyue/storyagent/blob/main/LICENSE)

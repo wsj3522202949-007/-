@@ -122,7 +122,7 @@ The prompts used for generating and verifying content are defined in `prompts.py
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/engineerdogita/fantasybookmakerlangchain/blob/main/LICENSE) file for details.
 
 ## LLMs to Pull from Ollama
 

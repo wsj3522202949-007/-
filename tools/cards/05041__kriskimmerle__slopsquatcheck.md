@@ -255,4 +255,4 @@ Use slopsquatcheck **alongside** these tools for comprehensive supply chain secu
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see [LICENSE](https://github.com/kriskimmerle/slopsquatcheck/blob/main/LICENSE) for details.

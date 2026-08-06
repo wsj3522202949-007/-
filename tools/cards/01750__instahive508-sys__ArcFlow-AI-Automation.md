@@ -135,7 +135,7 @@ ArcFlow/
 
 ## 🌍 Deployment
 
-Ready to go live? Check out our comprehensive **[Deployment Guide](DEPLOY.md)** for instructions on hosting ArcFlow on Ubuntu with Nginx.
+Ready to go live? Check out our comprehensive **[Deployment Guide](https://github.com/instahive508-sys/ArcFlow-AI-Automation/blob/main/DEPLOY.md)** for instructions on hosting ArcFlow on Ubuntu with Nginx.
 
 ## 🙏 Acknowledgments
 

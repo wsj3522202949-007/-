@@ -52,16 +52,16 @@ It started as a fake-news detector and has evolved into a production-style inves
 These screenshots are captured from the current FakeShield UI.
 
 ### Dashboard
-![FakeShield dashboard](docs/screenshots/dashboard-dark.png)
+![FakeShield dashboard](https://github.com/Rahul-AlPHA1/FakeShield-All-in-One-Fake-News-Deepfake-Detector/blob/main/docs/screenshots/dashboard-dark.png)
 
 ### Analysis Workspace
-![FakeShield analysis workspace](docs/screenshots/analysis-dark.png)
+![FakeShield analysis workspace](https://github.com/Rahul-AlPHA1/FakeShield-All-in-One-Fake-News-Deepfake-Detector/blob/main/docs/screenshots/analysis-dark.png)
 
 ### Global Watchlist
-![FakeShield global watchlist](docs/screenshots/watchlist-dark.png)
+![FakeShield global watchlist](https://github.com/Rahul-AlPHA1/FakeShield-All-in-One-Fake-News-Deepfake-Detector/blob/main/docs/screenshots/watchlist-dark.png)
 
 ### Light Theme
-![FakeShield light theme](docs/screenshots/analysis-light.png)
+![FakeShield light theme](https://github.com/Rahul-AlPHA1/FakeShield-All-in-One-Fake-News-Deepfake-Detector/blob/main/docs/screenshots/analysis-light.png)
 
 ## Core Capabilities
 

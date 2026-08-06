@@ -267,7 +267,7 @@ audify list-tasks
 audify validate-prompt my-prompt.txt
 ```
 
-See [Tasks Guide](docs/tasks.md) for details on creating custom prompts.
+See [Tasks Guide](https://github.com/garciadias/audify/blob/main/docs/tasks.md) for details on creating custom prompts.
 
 ### Using Commercial APIs (DeepSeek, Claude, GPT-4, Gemini)
 
@@ -287,7 +287,7 @@ task audiobook "book.epub" -m "api:openai/gpt-4-turbo-preview"
 task audiobook "book.epub" -m "api:gemini/gemini-1.5-pro"
 ```
 
-**Setup Required**: Create a `.keys` file with your API keys for the provider(s) you intend to use. See [Commercial APIs Guide](docs/commercial-apis.md) for detailed instructions.
+**Setup Required**: Create a `.keys` file with your API keys for the provider(s) you intend to use. See [Commercial APIs Guide](https://github.com/garciadias/audify/blob/main/docs/commercial-apis.md) for detailed instructions.
 
 ```bash
 # Copy example file and add your keys
@@ -756,7 +756,7 @@ Check the `examples/` directory for sample usage patterns and configuration file
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](docs/contributing.md) for details.
+We welcome contributions! Please see our [Contributing Guide](https://github.com/garciadias/audify/blob/main/docs/contributing.md) for details.
 
 ### Development Workflow
 
@@ -768,7 +768,7 @@ We welcome contributions! Please see our [Contributing Guide](docs/contributing.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/garciadias/audify/blob/main/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 

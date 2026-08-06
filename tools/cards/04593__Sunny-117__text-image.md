@@ -40,9 +40,9 @@ related:
 
 # text-image
 
-![](./logo.png)
+![](https://github.com/Sunny-117/text-image/blob/main/logo.png)
 
-English|[简体中文](./README-zh.md)
+English|[简体中文](https://github.com/Sunny-117/text-image/blob/main/README-zh.md)
 
 🐛🐛🐛 `text-image` can "textify" text, images, and videos, and can be used with simple configuration
 

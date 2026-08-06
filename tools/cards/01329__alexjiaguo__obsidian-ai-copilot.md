@@ -245,4 +245,4 @@ related:
 
 ## 📄 License
 
-[MIT](LICENSE)
+[MIT](https://github.com/alexjiaguo/obsidian-ai-copilot/blob/main/LICENSE)

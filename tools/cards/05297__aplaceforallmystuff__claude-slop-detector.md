@@ -82,7 +82,7 @@ git clone https://github.com/aplaceforallmystuff/claude-slop-detector.git ~/.cla
 ### Option 4: Manual installation
 
 1. Create the directory: `mkdir -p ~/.claude/skills/slop-detector`
-2. Download [SKILL.md](skills/slop-detector/SKILL.md) to that directory
+2. Download [SKILL.md](https://github.com/aplaceforallmystuff/claude-slop-detector/blob/main/skills/slop-detector/SKILL.md) to that directory
 
 ## Usage
 
@@ -173,7 +173,7 @@ If yes, it's slop. Specificity separates genuine insight from generic templates.
 
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+MIT License - see [LICENSE](https://github.com/aplaceforallmystuff/claude-slop-detector/blob/main/LICENSE)
 
 ## Acknowledgments
 

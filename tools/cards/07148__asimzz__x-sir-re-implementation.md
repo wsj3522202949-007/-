@@ -89,7 +89,7 @@ Tested on the following environment, but it should work on other versions.
   * `baichuan-inc/Baichuan-7B`
   * `mistralai/Mistral-7B-v0.1`
 * Supported languages: English (En), German (De), French (Fr), Chinese (Zh), Japanese (Ja)
-* You can learn how to extend model and language in [from-scratch.md](from-scratch.md).
+* You can learn how to extend model and language in [from-scratch.md](https://github.com/asimzz/x-sir-re-implementation/blob/main/from-scratch.md).
 
 
 

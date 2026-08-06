@@ -57,7 +57,7 @@ related:
   </p>
 </div>
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+[English](https://github.com/ximu3/vnite/blob/main/README.md) | [简体中文](https://github.com/ximu3/vnite/blob/main/README.zh-CN.md)
 
 Vnite is a versatile game management software designed to provide a unified interface for recording, managing, and synchronizing your gaming journey.
 

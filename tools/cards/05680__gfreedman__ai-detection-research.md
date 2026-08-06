@@ -65,7 +65,7 @@ This project systematically tests whether prompt engineering alone — without p
 | Top 3 + meta | + "night before it's due" | 2.0% | **100%** |
 | All 5 winners | + obscure source reference | 1.2% | **100%** |
 
-See [`prompts/winning_prompts.md`](prompts/winning_prompts.md) for the exact prompt text, and [`notebooks/analysis.ipynb`](notebooks/analysis.ipynb) for the full statistical analysis with visualizations.
+See [`prompts/winning_prompts.md`](https://github.com/gfreedman/ai-detection-research/blob/main/prompts/winning_prompts.md) for the exact prompt text, and [`notebooks/analysis.ipynb`](https://github.com/gfreedman/ai-detection-research/blob/main/notebooks/analysis.ipynb) for the full statistical analysis with visualizations.
 
 ## Hypothesis
 
@@ -79,7 +79,7 @@ AI text detectors primarily rely on **perplexity** (word predictability) and **b
 
 Prompts are organized into 6 tiers, each tested independently via ablation.
 
-**Variant ID scheme:** IDs follow the pattern `PxY` where `x` is the tier number (1-6) and `Y` is the variant letter. Variant `a` is always the baseline (no modification). For example, `P3b` = Tier 3 (Texture), variant b (varied sentence length). See [`prompts/taxonomy.yaml`](prompts/taxonomy.yaml) for the full definition of every variant.
+**Variant ID scheme:** IDs follow the pattern `PxY` where `x` is the tier number (1-6) and `Y` is the variant letter. Variant `a` is always the baseline (no modification). For example, `P3b` = Tier 3 (Texture), variant b (varied sentence length). See [`prompts/taxonomy.yaml`](https://github.com/gfreedman/ai-detection-research/blob/main/prompts/taxonomy.yaml) for the full definition of every variant.
 
 | Tier | Dimension | Variants | What it tests |
 |------|-----------|----------|------------related:
@@ -208,7 +208,7 @@ ai-detection-research/
 └── tests/                     # 79 unit tests (fully mocked)
 ```
 
-For the full experimental design rationale, hypothesis development, and implementation plan, see [`CLAUDE.md`](CLAUDE.md).
+For the full experimental design rationale, hypothesis development, and implementation plan, see [`CLAUDE.md`](https://github.com/gfreedman/ai-detection-research/blob/main/CLAUDE.md).
 
 ## Limitations
 

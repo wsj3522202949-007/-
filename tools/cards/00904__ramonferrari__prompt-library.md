@@ -60,7 +60,7 @@ Feel free to suggest improvements or report issues. This is a living collection 
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](https://github.com/ramonferrari/prompt-library/blob/main/LICENSE) file for details.
 
 ## 📬 Contact
 

@@ -251,7 +251,7 @@ python scripts/benchmark_examples.py
 
 ## Deployment
 
-The app is deployed on **Fly.io** (see [`fly.toml`](fly.toml)). Any ASGI host works:
+The app is deployed on **Fly.io** (see [`fly.toml`](https://github.com/meetp2022/ai-text-detector/blob/main/fly.toml)). Any ASGI host works:
 
 ```bash
 # Render / Railway — connect GitHub repo and set start command:
@@ -275,4 +275,4 @@ related:
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+MIT — see [LICENSE](https://github.com/meetp2022/ai-text-detector/blob/main/LICENSE) for details.

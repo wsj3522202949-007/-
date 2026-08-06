@@ -62,6 +62,6 @@ View your app in AI Studio: https://ai.studio/apps/drive/1B4dHFch3u5B3yCjo3WMmC7
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+2. Set the `GEMINI_API_KEY` in [.env.local](https://github.com/Amrindersingh1/AI-Storyboard-Generator/blob/main/.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`

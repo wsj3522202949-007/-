@@ -155,11 +155,11 @@ RAW-AI/
 
 We adhere to strict professional and legal standards to maintain the highest quality of service and open-source collaboration.
 
-- **[LICENSE](LICENSE)**: Distributed under the **MIT License**.
-- **[ROADMAP](ROADMAP.md)**: Explore our vision for Q2-Q4 2026.
-- **[SECURITY](SECURITY.md)**: Responsible disclosure policy and vulnerability reporting.
-- **[CODE OF CONDUCT](CODE_OF_CONDUCT.md)**: Our commitment to inclusive and professional participation.
-- **[CONTRIBUTING](CONTRIBUTING.md)**: Guidelines for code, documentation, and feature contributions.
+- **[LICENSE](https://github.com/ArshVermaGit/RAW.AI/blob/main/LICENSE)**: Distributed under the **MIT License**.
+- **[ROADMAP](https://github.com/ArshVermaGit/RAW.AI/blob/main/ROADMAP.md)**: Explore our vision for Q2-Q4 2026.
+- **[SECURITY](https://github.com/ArshVermaGit/RAW.AI/blob/main/SECURITY.md)**: Responsible disclosure policy and vulnerability reporting.
+- **[CODE OF CONDUCT](https://github.com/ArshVermaGit/RAW.AI/blob/main/CODE_OF_CONDUCT.md)**: Our commitment to inclusive and professional participation.
+- **[CONTRIBUTING](https://github.com/ArshVermaGit/RAW.AI/blob/main/CONTRIBUTING.md)**: Guidelines for code, documentation, and feature contributions.
 
 ---
 

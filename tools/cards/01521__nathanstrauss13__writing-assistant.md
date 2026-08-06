@@ -165,7 +165,7 @@ Then update the format dropdown in `templates/index.html` to include the new opt
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/nathanstrauss13/writing-assistant/blob/main/LICENSE)
 
 ## Acknowledgements
 

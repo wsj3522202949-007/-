@@ -269,7 +269,7 @@ src/humanizer/
 
 The engine depends on `BaseDetector`, `BaseTransformer`, and `AIScorer`, not their implementations. Adding a new detector or transformer backend requires no engine changes.
 
-Full architecture notes: [docs/architecture.md](docs/architecture.md)
+Full architecture notes: [docs/architecture.md](https://github.com/puneethkotha/humanizer-workbench/blob/main/docs/architecture.md)
 
 ---
 
@@ -301,7 +301,7 @@ Full architecture notes: [docs/architecture.md](docs/architecture.md)
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup and guidelines.
+See [CONTRIBUTING.md](https://github.com/puneethkotha/humanizer-workbench/blob/main/CONTRIBUTING.md) for setup and guidelines.
 
 ```bash
 pip install -e ".[dev]"
@@ -324,4 +324,4 @@ related:
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/puneethkotha/humanizer-workbench/blob/main/LICENSE).

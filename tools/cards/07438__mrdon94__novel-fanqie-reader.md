@@ -51,14 +51,14 @@ related:
 - ✅ **移除 JWT 认证**：可作为内部服务使用，无需登录
 - ✅ **跨用户任务管理**：支持查看和操作所有用户的任务
 - ✅ **简化部署**：前端无需登录即可访问所有功能
-- 📚 详见：[CHANGELOG_INTERNAL_MODE.md](CHANGELOG_INTERNAL_MODE.md)、[INTERNAL_API_SETUP.md](INTERNAL_API_SETUP.md)
+- 📚 详见：[CHANGELOG_INTERNAL_MODE.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/CHANGELOG_INTERNAL_MODE.md)、[INTERNAL_API_SETUP.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/INTERNAL_API_SETUP.md)
 
 ### 2️⃣ API 功能大幅增强
 - 🔍 **搜索接口增强**：返回封面、简介、分类、评分等完整信息
 - 📊 **多维度筛选**：支持标题搜索、标签筛选、状态筛选
 - 🔢 **灵活排序**：支持按更新时间、创建时间、章节数、标题排序
 - 🎯 **组合查询**：支持多条件组合查询，提升 API 易用性
-- 📚 详见：[API_ENHANCEMENTS_SUMMARY.md](API_ENHANCEMENTS_SUMMARY.md)、[API_DOCUMENTATION.md](API_DOCUMENTATION.md)
+- 📚 详见：[API_ENHANCEMENTS_SUMMARY.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/API_ENHANCEMENTS_SUMMARY.md)、[API_DOCUMENTATION.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/API_DOCUMENTATION.md)
 
 ### 3️⃣ 前端搜索页面美化
 - 🎨 **卡片式布局**：从表格布局升级为现代化卡片网格布局
@@ -66,64 +66,64 @@ related:
 - ⭐ **评分标签**：直观显示小说评分
 - 📝 **简介预览**：显示小说简介（最多 3 行）
 - 📱 **响应式设计**：完美适配移动端和桌面端
-- 📚 详见：[FRONTEND_SEARCH_ENHANCEMENT.md](FRONTEND_SEARCH_ENHANCEMENT.md)
+- 📚 详见：[FRONTEND_SEARCH_ENHANCEMENT.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/FRONTEND_SEARCH_ENHANCEMENT.md)
 
 ### 4️⃣ 章节限制下载（预览模式）
 - ⚡ **快速预览**：支持仅下载前 N 章（默认 10 章）
 - 💾 **节省资源**：预览模式节省 90% 的下载时间和存储空间
 - 🎯 **双按钮设计**：「下载全本」和「前十章预览」独立操作
-- 📚 详见：[FEATURE_MAX_CHAPTERS.md](FEATURE_MAX_CHAPTERS.md)、[UPDATE_SUMMARY.md](UPDATE_SUMMARY.md)
+- 📚 详见：[FEATURE_MAX_CHAPTERS.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/FEATURE_MAX_CHAPTERS.md)、[UPDATE_SUMMARY.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/UPDATE_SUMMARY.md)
 
 ### 5️⃣ 下载稳定性优化
 - 🔧 **批次大小优化**：从 10 章/批降至 5 章/批，提高成功率
 - ⏱️ **等待时间调整**：增加请求间隔，降低 API 限流风险
 - 🔄 **重试机制完善**：内置指数退避重试策略
 - 🌐 **代理绕过支持**：避免本地代理导致的 SSL 握手错误
-- 📚 详见：[BATCH_DOWNLOAD_OPTIMIZATION.md](BATCH_DOWNLOAD_OPTIMIZATION.md)、[TROUBLESHOOTING_JSONDecodeError.md](TROUBLESHOOTING_JSONDecodeError.md)
+- 📚 详见：[BATCH_DOWNLOAD_OPTIMIZATION.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BATCH_DOWNLOAD_OPTIMIZATION.md)、[TROUBLESHOOTING_JSONDecodeError.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/TROUBLESHOOTING_JSONDecodeError.md)
 
 ### 6️⃣ 配置和部署优化
 - 🐛 **修复 .env 解析错误**：规范配置文件格式
 - 📝 **配置模板文件**：提供 `.env.example` 模板
 - 🔧 **环境变量增强**：支持更多下载参数配置
-- 📚 详见：[BUGFIX_ENV_CONFIG.md](BUGFIX_ENV_CONFIG.md)
+- 📚 详见：[BUGFIX_ENV_CONFIG.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BUGFIX_ENV_CONFIG.md)
 
 ---
 
 ## 📋 完整文档索引
 
 ### 核心功能文档
-- 📘 [API 完整文档](API_DOCUMENTATION.md) - 所有 API 接口说明
-- 📗 [API 增强总结](API_ENHANCEMENTS_SUMMARY.md) - 搜索、筛选、排序功能详解
-- 📙 [API 使用示例](API_NOVELS_LIST_EXAMPLES.md) - 实际使用案例
-- 📕 [内部 API 快速入门](INTERNAL_API_QUICK_START.md) - 快速上手指南
+- 📘 [API 完整文档](https://github.com/mrdon94/novel-fanqie-reader/blob/main/API_DOCUMENTATION.md) - 所有 API 接口说明
+- 📗 [API 增强总结](https://github.com/mrdon94/novel-fanqie-reader/blob/main/API_ENHANCEMENTS_SUMMARY.md) - 搜索、筛选、排序功能详解
+- 📙 [API 使用示例](https://github.com/mrdon94/novel-fanqie-reader/blob/main/API_NOVELS_LIST_EXAMPLES.md) - 实际使用案例
+- 📕 [内部 API 快速入门](https://github.com/mrdon94/novel-fanqie-reader/blob/main/INTERNAL_API_QUICK_START.md) - 快速上手指南
 
 ### 架构和部署
-- 🏗️ [系统架构分析](ARCHITECTURE_ANALYSIS.md) - 系统架构详解
-- 🔧 [内部 API 配置](INTERNAL_API_SETUP.md) - 4 种鉴权方案说明
-- 🔐 [移除用户过滤指南](REMOVE_USER_FILTER_GUIDE.md) - 用户过滤相关
+- 🏗️ [系统架构分析](https://github.com/mrdon94/novel-fanqie-reader/blob/main/ARCHITECTURE_ANALYSIS.md) - 系统架构详解
+- 🔧 [内部 API 配置](https://github.com/mrdon94/novel-fanqie-reader/blob/main/INTERNAL_API_SETUP.md) - 4 种鉴权方案说明
+- 🔐 [移除用户过滤指南](https://github.com/mrdon94/novel-fanqie-reader/blob/main/REMOVE_USER_FILTER_GUIDE.md) - 用户过滤相关
 
 ### 功能优化
-- ⚡ [章节限制功能](FEATURE_MAX_CHAPTERS.md) - 预览模式说明
-- 🎨 [前端搜索增强](FRONTEND_SEARCH_ENHANCEMENT.md) - UI 美化详解
-- 🎯 [UI 改进总结](UI_IMPROVEMENTS.md) - 用户体验提升
-- 📦 [批量下载优化](BATCH_DOWNLOAD_OPTIMIZATION.md) - 下载稳定性提升
+- ⚡ [章节限制功能](https://github.com/mrdon94/novel-fanqie-reader/blob/main/FEATURE_MAX_CHAPTERS.md) - 预览模式说明
+- 🎨 [前端搜索增强](https://github.com/mrdon94/novel-fanqie-reader/blob/main/FRONTEND_SEARCH_ENHANCEMENT.md) - UI 美化详解
+- 🎯 [UI 改进总结](https://github.com/mrdon94/novel-fanqie-reader/blob/main/UI_IMPROVEMENTS.md) - 用户体验提升
+- 📦 [批量下载优化](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BATCH_DOWNLOAD_OPTIMIZATION.md) - 下载稳定性提升
 
 ### 问题修复和故障排查
-- 🐛 [配置文件 Bug 修复](BUGFIX_ENV_CONFIG.md) - .env 解析错误修复
-- 🔍 [JSONDecodeError 排查](TROUBLESHOOTING_JSONDecodeError.md) - 下载错误解决方案
-- 🖼️ [搜索封面增强](SEARCH_COVER_ENHANCEMENT.md) - 封面显示优化
-- 🚀 [搜索封面预加载](SEARCH_COVER_PRELOAD.md) - 性能优化
-- ⚠️ [搜索评分问题](SEARCH_SCORE_ISSUE.md) - 评分字段修复
+- 🐛 [配置文件 Bug 修复](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BUGFIX_ENV_CONFIG.md) - .env 解析错误修复
+- 🔍 [JSONDecodeError 排查](https://github.com/mrdon94/novel-fanqie-reader/blob/main/TROUBLESHOOTING_JSONDecodeError.md) - 下载错误解决方案
+- 🖼️ [搜索封面增强](https://github.com/mrdon94/novel-fanqie-reader/blob/main/SEARCH_COVER_ENHANCEMENT.md) - 封面显示优化
+- 🚀 [搜索封面预加载](https://github.com/mrdon94/novel-fanqie-reader/blob/main/SEARCH_COVER_PRELOAD.md) - 性能优化
+- ⚠️ [搜索评分问题](https://github.com/mrdon94/novel-fanqie-reader/blob/main/SEARCH_SCORE_ISSUE.md) - 评分字段修复
 
 ### 变更日志
-- 📝 [内部模式变更日志](CHANGELOG_INTERNAL_MODE.md) - 内部 API 模式完整记录
-- 📊 [更新总结](UPDATE_SUMMARY.md) - v1.1.0 更新内容
+- 📝 [内部模式变更日志](https://github.com/mrdon94/novel-fanqie-reader/blob/main/CHANGELOG_INTERNAL_MODE.md) - 内部 API 模式完整记录
+- 📊 [更新总结](https://github.com/mrdon94/novel-fanqie-reader/blob/main/UPDATE_SUMMARY.md) - v1.1.0 更新内容
 
 ### 测试脚本
-- 🧪 [API 功能测试](test_api_features.ps1) - PowerShell 测试脚本
-- 🗑️ [删除任务测试](test_delete_task.ps1) - 任务删除测试
-- 🐍 [预览下载测试](test_preview_download.py) - Python 测试脚本
-- 🌐 [代理 API 测试](test_proxy_api.ps1) - 代理模式测试
+- 🧪 [API 功能测试](https://github.com/mrdon94/novel-fanqie-reader/blob/main/test_api_features.ps1) - PowerShell 测试脚本
+- 🗑️ [删除任务测试](https://github.com/mrdon94/novel-fanqie-reader/blob/main/test_delete_task.ps1) - 任务删除测试
+- 🐍 [预览下载测试](https://github.com/mrdon94/novel-fanqie-reader/blob/main/test_preview_download.py) - Python 测试脚本
+- 🌐 [代理 API 测试](https://github.com/mrdon94/novel-fanqie-reader/blob/main/test_proxy_api.ps1) - 代理模式测试
 
 ---
 
@@ -330,28 +330,28 @@ curl "http://localhost:5000/api/tasks/list"
 ## 功能展示与截图
 
 - **用户认证:** 注册新用户，登录系统（内部 API 模式下可跳过）。  
-  ![用户登录/注册界面](img/1.png)
+  ![用户登录/注册界面](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/1.png)
 
 - **小说搜索:** 输入关键词搜索小说，美化的卡片式布局展示。  
-  ![小说搜索结果页](img/2.png)
+  ![小说搜索结果页](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/2.png)
 
 - **任务管理:** 查看下载任务列表、进度、状态。  
-  ![下载任务管理界面](img/3.png)
+  ![下载任务管理界面](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/3.png)
 
 - **小说书架:** 展示成功下载的小说。  
-  ![已下载小说列表/书架](img/4.png)
+  ![已下载小说列表/书架](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/4.png)
 
 - **小说详情:** 查看作者、简介、标签、章节等。  
-  ![小说详细信息页面](img/5.png)
+  ![小说详细信息页面](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/5.png)
 
 - **在线阅读:** 查看已下载章节的内容。  
-  ![章节内容阅读器界面](img/6.png)
+  ![章节内容阅读器界面](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/6.png)
 
 - **统计数据:** 展示上传、分类统计图表。  
-  ![统计数据仪表盘](img/7.png)
+  ![统计数据仪表盘](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/7.png)
 
 - **词云图:** 后台生成小说词频图。  
-  ![生成的词云图示例](img/8.png)
+  ![生成的词云图示例](https://github.com/mrdon94/novel-fanqie-reader/blob/main/img/8.png)
 
 ---
 
@@ -438,7 +438,7 @@ cp -r backend/data/novel_downloads/ backup/
 ### 1. JSONDecodeError 错误
 
 **原因:** API 返回空响应或限流  
-**解决:** 参考 [TROUBLESHOOTING_JSONDecodeError.md](TROUBLESHOOTING_JSONDecodeError.md)
+**解决:** 参考 [TROUBLESHOOTING_JSONDecodeError.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/TROUBLESHOOTING_JSONDecodeError.md)
 
 - 已优化批次大小为 5 章/批
 - 已增加请求等待时间
@@ -447,7 +447,7 @@ cp -r backend/data/novel_downloads/ backup/
 ### 2. .env 配置解析错误
 
 **原因:** 配置文件格式不规范  
-**解决:** 参考 [BUGFIX_ENV_CONFIG.md](BUGFIX_ENV_CONFIG.md)
+**解决:** 参考 [BUGFIX_ENV_CONFIG.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BUGFIX_ENV_CONFIG.md)
 
 - 不要在配置值后直接添加注释
 - 参考 `.env.example` 模板
@@ -456,7 +456,7 @@ cp -r backend/data/novel_downloads/ backup/
 ### 3. 搜索结果没有封面
 
 **原因:** 封面字段未返回或加载失败  
-**解决:** 参考 [SEARCH_COVER_ENHANCEMENT.md](SEARCH_COVER_ENHANCEMENT.md)
+**解决:** 参考 [SEARCH_COVER_ENHANCEMENT.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/SEARCH_COVER_ENHANCEMENT.md)
 
 - 已优化封面显示逻辑
 - 支持懒加载和错误占位符
@@ -464,7 +464,7 @@ cp -r backend/data/novel_downloads/ backup/
 ### 4. 下载速度慢
 
 **原因:** 批次大小、等待时间设置不当  
-**解决:** 参考 [BATCH_DOWNLOAD_OPTIMIZATION.md](BATCH_DOWNLOAD_OPTIMIZATION.md)
+**解决:** 参考 [BATCH_DOWNLOAD_OPTIMIZATION.md](https://github.com/mrdon94/novel-fanqie-reader/blob/main/BATCH_DOWNLOAD_OPTIMIZATION.md)
 
 - 调整 `NOVEL_MAX_WORKERS` 参数
 - 调整 `NOVEL_MIN_WAIT_TIME` 和 `NOVEL_MAX_WAIT_TIME`
@@ -541,7 +541,7 @@ celery -A tasks worker --loglevel=info
 
 ## 许可证
 
-本项目采用 Apache-2.0 许可证，详见 [LICENSE](LICENSE) 文件。
+本项目采用 Apache-2.0 许可证，详见 [LICENSE](https://github.com/mrdon94/novel-fanqie-reader/blob/main/LICENSE) 文件。
 
 ---
 

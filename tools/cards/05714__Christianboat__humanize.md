@@ -173,7 +173,7 @@ Contributions, issues, and feature requests are welcome. New pattern categories 
 
 ## 📄 License
 
-[MIT](./LICENSE). Use it, fork it, ship it.
+[MIT](https://github.com/Christianboat/humanize/blob/main/LICENSE). Use it, fork it, ship it.
 
 related:
   - methods/最强去AI味铁律.md

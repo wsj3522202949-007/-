@@ -220,7 +220,7 @@ Contributions are welcome! Here's how:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](https://github.com/AvinashWalton/AuthorPro/blob/main/LICENSE) file for details.
 
 You are free to use, modify, and distribute this project for personal or commercial purposes with attribution.
 

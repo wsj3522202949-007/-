@@ -38,7 +38,7 @@ related:
   - methods/QUICK_START.md
 ---
 
-![](assets/banner.png)
+![](https://github.com/k15z/ao3-disco-ai/blob/main/assets/banner.png)
 
 This repository contains the modeling code for [AO3 Disco](https://ao3-disco.app/), a fanfiction
 recommendation engine which is available for web, iOS, and Android.

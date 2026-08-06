@@ -55,11 +55,11 @@ If you like this, consider supporting further development!
 
 This project is a pnpm monorepo with three packages:
 
-- [`packages/shared/`](./packages/shared/) -- Shared TypeScript types, utilities, and action system
-- [`packages/editor/`](./packages/editor/) -- Web-based story creation tool (React Flow graph editor)
-- [`packages/viewer/`](./packages/viewer/) -- Web-based story player (Markdown rendering, save/load progress)
-- [`stories/`](./stories/) -- Example stories and story collection
-- [`scripts/`](./scripts/) -- Build scripts for bundle generation
+- [`packages/shared/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/shared/) -- Shared TypeScript types, utilities, and action system
+- [`packages/editor/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/editor/) -- Web-based story creation tool (React Flow graph editor)
+- [`packages/viewer/`](https://github.com/Echsecutor/story_adventure/blob/main/packages/viewer/) -- Web-based story player (Markdown rendering, save/load progress)
+- [`stories/`](https://github.com/Echsecutor/story_adventure/blob/main/stories/) -- Example stories and story collection
+- [`scripts/`](https://github.com/Echsecutor/story_adventure/blob/main/scripts/) -- Build scripts for bundle generation
 
 ## Technology Stack
 
@@ -129,7 +129,7 @@ pnpm build:viewer-for-bundle
 
 ## Story Format
 
-Stories are JSON files. See the [example story](stories/example_story.json) for the format and the [stories README](./stories/README.md) for a list of available stories.
+Stories are JSON files. See the [example story](https://github.com/Echsecutor/story_adventure/blob/main/stories/example_story.json) for the format and the [stories README](https://github.com/Echsecutor/story_adventure/blob/main/stories/README.md) for a list of available stories.
 
 A story consists of:
 - **Sections** -- Story content linked via choices in the `.next` array. Sections without choices are terminal.
@@ -182,6 +182,6 @@ Copyright 2024-2025 Sebastian Schmittner
 <img alt="AGPLV3" style="border-width:0" src="https://www.gnu.org/graphics/agplv3-with-text-162x68.png" /><br />
 </a>
 
-All code published in this repository is free software: it can be redistributed and/or modified under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. See [LICENSE](./LICENSE) for details.
+All code published in this repository is free software: it can be redistributed and/or modified under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. See [LICENSE](https://github.com/Echsecutor/story_adventure/blob/main/LICENSE) for details.
 
 For included open source dependencies, different licenses may apply. See the respective project pages listed above.

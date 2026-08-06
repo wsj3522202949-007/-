@@ -63,17 +63,17 @@ Core capabilities:
 
 ## Repository Layout
 
-- [pipeline.py](/D:/AI-xiaoshuo-workflow-opt/pipeline.py)
+- [pipeline.py](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/pipeline.py)
   Main workflow entrypoint for planning, generation, review, revision, status tracking, and publish orchestration.
-- [fanqie_upload.py](/D:/AI-xiaoshuo-workflow-opt/fanqie_upload.py)
+- [fanqie_upload.py](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/fanqie_upload.py)
   Fanqie upload automation script.
-- [cua_upload_bridge.py](/D:/AI-xiaoshuo-workflow-opt/cua_upload_bridge.py)
+- [cua_upload_bridge.py](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/cua_upload_bridge.py)
   Computer Use / TuriX fallback bridge when the main Playwright path cannot complete.
-- [project_config.json](/D:/AI-xiaoshuo-workflow-opt/project_config.json)
+- [project_config.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/project_config.json)
   Project-level configuration for labels, story structure, prompt defaults, and file routing.
-- [templates](/D:/AI-xiaoshuo-workflow-opt/templates)
+- [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/templates)
   Reusable writing templates for worldbuilding, character setup, arcs, constraints, and status scaffolds.
-- [state/review_policy.json](/D:/AI-xiaoshuo-workflow-opt/state/review_policy.json)
+- [state/review_policy.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/state/review_policy.json)
   Review gate policy used by the workflow.
 
 ## Getting Started
@@ -81,12 +81,12 @@ Core capabilities:
 1. Clone the repository.
 2. Install dependencies.
 3. Copy `.env.example` to `.env`.
-4. Update [project_config.json](/D:/AI-xiaoshuo-workflow-opt/project_config.json).
-5. Copy the files in [templates](/D:/AI-xiaoshuo-workflow-opt/templates) into a private, ignored project directory.
+4. Update [project_config.json](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/project_config.json).
+5. Copy the files in [templates](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/templates) into a private, ignored project directory.
 6. Point `project_config.json > files` to those private project files.
 7. Run `python pipeline.py doctor`.
 
-Quick start details are available in [QUICKSTART_INTERNAL.md](/D:/AI-xiaoshuo-workflow-opt/QUICKSTART_INTERNAL.md).
+Quick start details are available in [QUICKSTART_INTERNAL.md](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/QUICKSTART_INTERNAL.md).
 
 ## Recommended Project Pattern
 
@@ -98,7 +98,7 @@ Suggested ignored directories:
 - `story_private/`
 - `project_local/`
 
-These are already included in [.gitignore](/D:/AI-xiaoshuo-workflow-opt/.gitignore).
+These are already included in [.gitignore](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/.gitignore).
 
 Typical private content includes:
 
@@ -145,4 +145,4 @@ Do not commit:
 
 ## License
 
-See [LICENSE](/D:/AI-xiaoshuo-workflow-opt/LICENSE).
+See [LICENSE](https://github.com/334962951-png/AI-xiaoshuo-workflow-opt/blob/main//D:/AI-xiaoshuo-workflow-opt/LICENSE).

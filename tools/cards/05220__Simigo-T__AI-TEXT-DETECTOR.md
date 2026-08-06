@@ -112,4 +112,4 @@ AI-generated Text And Investigation of Its Robustness
 To Paraphrasing"**
 
 
-[📄 Read the full paper](research_paper.pdf)
+[📄 Read the full paper](https://github.com/Simigo-T/AI-TEXT-DETECTOR/blob/main/research_paper.pdf)

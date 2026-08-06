@@ -42,7 +42,7 @@ related:
 
 <div align="center">
 
-[🇷🇺 Русская версия README](README_RU.md)
+[🇷🇺 Русская версия README](https://github.com/HontoUKI/M.A.R.I.A./blob/main/README_RU.md)
 
 ![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)
 ![Architecture](https://img.shields.io/badge/architecture-author--driven-blue?style=for-the-badge)
@@ -59,7 +59,7 @@ related:
 > (You could, of course, craft your own "Maria" if you wanted — but authoring a personality is a
 > labor-intensive process.)
 >
-> 👉 **See her in motion:** [a sanitized glimpse of one clean run](public/showrun) — conversation, diary and reflection.
+> 👉 **See her in motion:** [a sanitized glimpse of one clean run](https://github.com/HontoUKI/M.A.R.I.A./blob/main/public/showrun) — conversation, diary and reflection.
 
 ---
 
@@ -100,17 +100,17 @@ Repositories using the `M.A.R.I.A.` naming but not listed here are not considere
 This repository is not a runtime repository.  
 It is the philosophical, ecosystem and documentation entry point of M.A.R.I.A.
 
-**Start here:** [`docs/INDEX_EN.md`](docs/INDEX_EN.md) — the navigation hub with reading paths, document map, FAQ and concept arcs.
+**Start here:** [`docs/INDEX_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/INDEX_EN.md) — the navigation hub with reading paths, document map, FAQ and concept arcs.
 
 Recommended reading paths:
 
 1. `README.md`
-2. [`docs/INDEX_EN.md`](docs/INDEX_EN.md) — navigation hub
-3. [`docs/FAQ_EN.md`](docs/FAQ_EN.md) — frequently asked questions
-4. [`docs/PROJECT_PHILOSOPHY_EN.md`](docs/PROJECT_PHILOSOPHY_EN.md) — full philosophy
-5. [`docs/CONCEPTS_EN.md`](docs/CONCEPTS_EN.md) — 5 concepts traced from philosophy → architecture → example
-6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md`](docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md) — the Rebirth 1.1 foundation narrative (the project has since advanced through many further Rebirth lines — see *Project status*)
-7. [`docs/MARIA_DEVLOG_EN.md`](docs/MARIA_DEVLOG_EN.md) — author devlog
+2. [`docs/INDEX_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/INDEX_EN.md) — navigation hub
+3. [`docs/FAQ_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/FAQ_EN.md) — frequently asked questions
+4. [`docs/PROJECT_PHILOSOPHY_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/PROJECT_PHILOSOPHY_EN.md) — full philosophy
+5. [`docs/CONCEPTS_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/CONCEPTS_EN.md) — 5 concepts traced from philosophy → architecture → example
+6. [`docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/REBIRTH_1_1_NEW_FOUNDATION_EN.md) — the Rebirth 1.1 foundation narrative (the project has since advanced through many further Rebirth lines — see *Project status*)
+7. [`docs/MARIA_DEVLOG_EN.md`](https://github.com/HontoUKI/M.A.R.I.A./blob/main/docs/MARIA_DEVLOG_EN.md) — author devlog
 
 ---
 
@@ -239,6 +239,6 @@ related:
 
 > M.A.R.I.A. in an early debug view — a live conversation and the idle state.
 
-![M.A.R.I.A. — live conversation](public/screens/maria-live-conversation.png)
+![M.A.R.I.A. — live conversation](https://github.com/HontoUKI/M.A.R.I.A./blob/main/public/screens/maria-live-conversation.png)
 
-![M.A.R.I.A. — empty state](public/screens/maria-empty-backend-off.png)
+![M.A.R.I.A. — empty state](https://github.com/HontoUKI/M.A.R.I.A./blob/main/public/screens/maria-empty-backend-off.png)

@@ -142,4 +142,4 @@ skills/
 
 ## License
 
-[MIT](LICENSE) © Ananas Agency
+[MIT](https://github.com/ananas-agency/ai-pattern-detector/blob/main/LICENSE) © Ananas Agency

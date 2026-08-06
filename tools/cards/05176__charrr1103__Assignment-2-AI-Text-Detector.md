@@ -49,12 +49,12 @@ related:
 3\. Michelle Koh Mei Xian (2103784) <br>
 4\. Seow Yi Xuan (2105524)
 
-<b> Project Title: </b> [Fine-Tuning a Transformer for Detecting AI-Generated Text](Assignment2_Group6_Charmaine Hooi Wai Yee.pdf)
+<b> Project Title: </b> [Fine-Tuning a Transformer for Detecting AI-Generated Text](https://github.com/charrr1103/Assignment-2-AI-Text-Detector/blob/main/Assignment2_Group6_Charmaine%20Hooi%20Wai%20Yee.pdf)
 
 This is an application-based project for a course assignment. It uses deep learning techniques to identify human-generated text and AI-generated text.
 
 **System Design Diagram**
-![System Design Diagram](AI_Text_Detector_System_Design_Diagram.jpg)
+![System Design Diagram](https://github.com/charrr1103/Assignment-2-AI-Text-Detector/blob/main/AI_Text_Detector_System_Design_Diagram.jpg)
 
 ## Setup & Installation
 ### Source Code
@@ -69,7 +69,7 @@ This is an application-based project for a course assignment. It uses deep learn
 
 <u> Note: </u>
 
-1. [Dataset]([https://www.kaggle.com/datasets/tristanzhang32/ai-generated-images-vs-real-images](https://huggingface.co/datasets/andythetechnerd03/AI-human-text))
+1. [Dataset](https://github.com/charrr1103/Assignment-2-AI-Text-Detector/blob/main/[https://www.kaggle.com/datasets/tristanzhang32/ai-generated-images-vs-real-images](https://huggingface.co/datasets/andythetechnerd03/AI-human-text))
 
 2. Generate a User Access Token in Hugging Face.
 

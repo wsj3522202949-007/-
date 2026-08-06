@@ -346,7 +346,7 @@ ClipSlop is built with these open-source libraries:
 
 ## License
 
-MIT License — see [LICENSE](LICENSE).
+MIT License — see [LICENSE](https://github.com/mekedron/ClipSlop/blob/main/LICENSE).
 
 ## Support
 

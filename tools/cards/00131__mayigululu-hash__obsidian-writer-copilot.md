@@ -45,7 +45,7 @@ related:
 
 # Writer Copilot
 
-[简体中文](./README.zh-CN.md)
+[简体中文](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/README.zh-CN.md)
 
 **Write with your knowledge.**
 
@@ -113,7 +113,7 @@ Local OpenAI-compatible services such as Ollama or LM Studio can be configured w
 - Writer Copilot does not start or connect to OpenCode.
 - Inline output filters common reasoning containers and rejects unsafe or invalid write-back results.
 
-See [Privacy and security](./docs/PRIVACY.md) for the complete boundary.
+See [Privacy and security](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/PRIVACY.md) for the complete boundary.
 
 ## Current limitations
 
@@ -142,14 +142,14 @@ The production build writes `main.js` at the repository root. Release tags must 
 
 ## Documentation
 
-- [Product definition](./docs/PRODUCT.md)
-- [Architecture](./docs/ARCHITECTURE.md)
-- [Privacy and security](./docs/PRIVACY.md)
-- [Roadmap](./docs/ROADMAP.md)
-- [Release process](./docs/RELEASE.md)
-- [Contributing](./CONTRIBUTING.md)
-- [Security policy](./SECURITY.md)
+- [Product definition](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/PRODUCT.md)
+- [Architecture](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/ARCHITECTURE.md)
+- [Privacy and security](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/PRIVACY.md)
+- [Roadmap](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/ROADMAP.md)
+- [Release process](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/docs/RELEASE.md)
+- [Contributing](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/CONTRIBUTING.md)
+- [Security policy](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/SECURITY.md)
 
 ## License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/mayigululu-hash/obsidian-writer-copilot/blob/main/LICENSE)

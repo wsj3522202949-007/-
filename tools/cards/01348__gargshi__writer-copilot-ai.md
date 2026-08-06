@@ -334,7 +334,7 @@ Planned future improvements include:
 - additional model/provider flexibility
 - stronger production readiness
 
-See [ROADMAP.md](ROADMAP.md) for longer-term direction.
+See [ROADMAP.md](https://github.com/gargshi/writer-copilot-ai/blob/main/ROADMAP.md) for longer-term direction.
 
 ---
 

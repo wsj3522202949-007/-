@@ -234,7 +234,7 @@ If you're a journalist writing about generative-AI detection, deepfakes, or medi
 
 ## 📜 License
 
-[MIT](LICENSE) — use it, fork it, ship it. Just keep the copyright line.
+[MIT](https://github.com/mrtomdev/truthlens/blob/main/LICENSE) — use it, fork it, ship it. Just keep the copyright line.
 
 related:
   - methods/最强去AI味铁律.md

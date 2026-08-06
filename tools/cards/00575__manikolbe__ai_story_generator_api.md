@@ -157,7 +157,7 @@ terraform destroy -var-file=variables.tfvars -auto-approve
 
 ## License
 
-This project is licensed under the terms of the [LICENSE](./LICENSE) file.
+This project is licensed under the terms of the [LICENSE](https://github.com/manikolbe/ai_story_generator_api/blob/main/LICENSE) file.
 
 related:
   - methods/网文写作最强SOP.md

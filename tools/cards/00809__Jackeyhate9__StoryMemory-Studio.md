@@ -102,7 +102,7 @@ If StoryMemory Studio saves you time on long-form writing, memory management, or
 
 | 赞赏支持 / Support | 交流反馈 / Community |
 | --- | --- |
-| ![微信赞赏二维码](app/ui/assets/wechat_reward_qr.jpg) | ![微信交流二维码](app/ui/assets/wechat_contact_qr.jpg) |
+| ![微信赞赏二维码](https://github.com/Jackeyhate9/StoryMemory-Studio/blob/main/app/ui/assets/wechat_reward_qr.jpg) | ![微信交流二维码](https://github.com/Jackeyhate9/StoryMemory-Studio/blob/main/app/ui/assets/wechat_contact_qr.jpg) |
 | 推荐使用微信支付。支持会用于继续维护本地创作工具、长上下文记忆优化和 Windows 发布包。 | 扫码添加作者微信，建议备注：`StoryMemory`。 |
 
 ---
@@ -111,11 +111,11 @@ If StoryMemory Studio saves you time on long-form writing, memory management, or
 
 > The screenshots below are UI previews generated from the current Streamlit layout. Actual project data depends on your local database.
 
-![StoryMemory Studio Dashboard](docs/screenshots/dashboard.png)
+![StoryMemory Studio Dashboard](https://github.com/Jackeyhate9/StoryMemory-Studio/blob/main/docs/screenshots/dashboard.png)
 
-![Context Builder for Long Context](docs/screenshots/context-builder.png)
+![Context Builder for Long Context](https://github.com/Jackeyhate9/StoryMemory-Studio/blob/main/docs/screenshots/context-builder.png)
 
-![AI Tone Detector and Novelization Tools](docs/screenshots/ai-tone-detector.png)
+![AI Tone Detector and Novelization Tools](https://github.com/Jackeyhate9/StoryMemory-Studio/blob/main/docs/screenshots/ai-tone-detector.png)
 
 ---
 

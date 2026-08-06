@@ -141,7 +141,7 @@ If you depend on the exact behavior of v1 and want to pin to it explicitly:
 npx skills add https://github.com/Leonxlnx/taste-skill --skill "design-taste-frontend-v1"
 ```
 
-See [CHANGELOG.md](CHANGELOG.md) for the full v1 to v2 diff and the rationale.
+See [CHANGELOG.md](https://github.com/leonxlnx/taste-skill/blob/main/CHANGELOG.md) for the full v1 to v2 diff and the rationale.
 
 ## Skills
 
@@ -176,7 +176,7 @@ These produce design images only (no code). Use with ChatGPT Images, Codex image
 
 ### Which one should I use?
 
-- Start with **taste-skill** for the safest general default. (Now v2 experimental - see what changed in the [CHANGELOG](CHANGELOG.md).)
+- Start with **taste-skill** for the safest general default. (Now v2 experimental - see what changed in the [CHANGELOG](https://github.com/leonxlnx/taste-skill/blob/main/CHANGELOG.md).)
 - If you depend on the exact behavior of the original taste-skill, install **taste-skill-v1** instead. 
 - Use **gpt-taste** when you want the stricter GPT/Codex-oriented rules and motion/layout enforcement. 
 - Use **image-to-code-skill** for image → analyze → code website workflows. 
@@ -247,7 +247,7 @@ If Taste Skill helps you, consider sponsoring:
 
 ## Research
 
-Background writing that shaped these skills lives in [`research/`](research/).
+Background writing that shaped these skills lives in [`research/`](https://github.com/leonxlnx/taste-skill/blob/main/research/).
 
 ## Common Questions
 
@@ -265,4 +265,4 @@ Yes. They live under `skills/` alongside the code skills so the same CLI discove
 
 ## License
 
-[MIT License](LICENSE) · Copyright (c) 2026 Leonxlnx
+[MIT License](https://github.com/leonxlnx/taste-skill/blob/main/LICENSE) · Copyright (c) 2026 Leonxlnx

@@ -129,7 +129,7 @@ This humanizer is in machine-readable format (Markdown), making it:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details
+MIT License - see [LICENSE](https://github.com/Hessevalentino/humanizer-AI-writing/blob/main/LICENSE) file for details
 
 ## Contributing
 

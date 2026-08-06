@@ -48,7 +48,7 @@ A collection of AI prompts designed for creating technical educational content, 
 
 This repository contains specialized prompts for generating high-quality technical content:
 
-### 📝 [Senior Technical Writer Prompt](./senior-technical-writer-prompt.md)
+### 📝 [Senior Technical Writer Prompt](https://github.com/jonathanbossenger/technical-writing-ai-prompts/blob/main/senior-technical-writer-prompt.md)
 A comprehensive prompt for generating developer-focused blog posts and written tutorials. Features:
 - Step-by-step technical workflows
 - Multi-platform instructions (macOS, Linux, Windows)
@@ -56,7 +56,7 @@ A comprehensive prompt for generating developer-focused blog posts and written t
 - Contextual explanations and best practices
 - Security considerations and troubleshooting guidance
 
-### 🎥 [Developer Educator Prompt](./developer-educator-prompt.md)
+### 🎥 [Developer Educator Prompt](https://github.com/jonathanbossenger/technical-writing-ai-prompts/blob/main/developer-educator-prompt.md)
 A specialized prompt for creating video tutorial scripts. Includes:
 - Structured video script format
 - Learning objectives and engagement strategies

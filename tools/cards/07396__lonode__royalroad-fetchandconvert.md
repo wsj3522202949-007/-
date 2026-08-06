@@ -41,7 +41,7 @@ related:
 # royalroad-fetchAndConvert
 Automatically download a royalroad story, optionally convert it to kindle format and push it to the device.
 
-![GUI Homepage](homepage.png)
+![GUI Homepage](https://github.com/lonode/royalroad-fetchandconvert/blob/main/homepage.png)
 
 
 # Features

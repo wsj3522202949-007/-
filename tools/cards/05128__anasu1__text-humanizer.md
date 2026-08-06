@@ -172,7 +172,7 @@ see_also:
 
 # License
 
-[MIT](LICENSE) License.
+[MIT](https://github.com/anasu1/text-humanizer/blob/main/LICENSE) License.
 
 
 

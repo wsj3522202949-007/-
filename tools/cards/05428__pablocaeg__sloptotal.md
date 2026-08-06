@@ -257,7 +257,7 @@ curl -s http://localhost:8000/health | python3 -m json.tool
 
 ## Roadmap
 
-See [TODO.md](TODO.md) for planned engines — including **Qwen** and **Gemma** classifiers and perplexity models optimized for high-RAM CPU servers.
+See [TODO.md](https://github.com/pablocaeg/sloptotal/blob/main/TODO.md) for planned engines — including **Qwen** and **Gemma** classifiers and perplexity models optimized for high-RAM CPU servers.
 
 ## Related Projects & Reading
 
@@ -307,11 +307,11 @@ sloptotal-pr-creator      # Git workflow and PR creation
 sloptotal-contribute      # Master orchestrator for end-to-end workflows
 ```
 
-See [docs/ai-agents/](docs/ai-agents/) for full documentation, workflow pipelines, and usage examples.
+See [docs/ai-agents/](https://github.com/pablocaeg/sloptotal/blob/main/docs/ai-agents/) for full documentation, workflow pipelines, and usage examples.
 
 ## Contributing
 
-Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, code style, and how to add new detection engines.
+Contributions are welcome! See [CONTRIBUTING.md](https://github.com/pablocaeg/sloptotal/blob/main/CONTRIBUTING.md) for development setup, code style, and how to add new detection engines.
 
 - [Bug Report](https://github.com/pablocaeg/sloptotal/issues/new?template=bug_report.yml)
 - [Feature Request](https://github.com/pablocaeg/sloptotal/issues/new?template=feature_request.yml)

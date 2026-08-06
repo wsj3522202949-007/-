@@ -40,7 +40,7 @@ related:
 
 # nflow
 
-**[English](README.md) | [简体中文](README.zh-CN.md)**
+**[English](https://github.com/makur6371/nflow/blob/main/README.md) | [简体中文](https://github.com/makur6371/nflow/blob/main/README.zh-CN.md)**
 
 <div align="center">
 
@@ -995,4 +995,4 @@ related:
 
 ## Other Languages
 
-- [简体中文](README.zh-CN.md) (Chinese Simplified)
+- [简体中文](https://github.com/makur6371/nflow/blob/main/README.zh-CN.md) (Chinese Simplified)

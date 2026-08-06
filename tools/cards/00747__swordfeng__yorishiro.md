@@ -232,15 +232,15 @@ python -m yorishiro status --project projects/CPK
 
 | Document | Description |
 |----------|-------------|
-| [docs/REQUIREMENTS.md](./docs/REQUIREMENTS.md) | Product goals, SOUL.md format spec, roadmap (Chinese) |
-| [docs/DESIGN.md](./docs/DESIGN.md) | Technical design: pipeline architecture, tool choices, schemas, prompt templates (Chinese) |
-| [docs/PLAN.md](./docs/PLAN.md) | Implementation status, next tasks, open questions |
+| [docs/REQUIREMENTS.md](https://github.com/swordfeng/yorishiro/blob/main/docs/REQUIREMENTS.md) | Product goals, SOUL.md format spec, roadmap (Chinese) |
+| [docs/DESIGN.md](https://github.com/swordfeng/yorishiro/blob/main/docs/DESIGN.md) | Technical design: pipeline architecture, tool choices, schemas, prompt templates (Chinese) |
+| [docs/PLAN.md](https://github.com/swordfeng/yorishiro/blob/main/docs/PLAN.md) | Implementation status, next tasks, open questions |
 
 ## Examples | 示例
 
 | Example | Description |
 |---------|-------------|
-| [BambooCutter](./examples/BambooCutter/) | 竹取物语 (Tale of the Bamboo Cutter) example project |
+| [BambooCutter](https://github.com/swordfeng/yorishiro/blob/main/examples/BambooCutter/) | 竹取物语 (Tale of the Bamboo Cutter) example project |
 
 ---
 

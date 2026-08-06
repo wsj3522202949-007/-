@@ -79,7 +79,7 @@ Prompts optimized for engagement on platforms like Facebook, LinkedIn, etc.
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).  
+This project is licensed under the [MIT License](https://github.com/elmehdi-boulmarouf/Prompt-Library/blob/main/LICENSE).  
 Feel free to use, remix, and share with attribution.
 
 ---

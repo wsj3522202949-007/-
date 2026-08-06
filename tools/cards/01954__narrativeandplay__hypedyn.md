@@ -30,4 +30,4 @@ HypeDyn is a procedural hypertext fiction authoring tool for people who want to 
 
 ## License
 
-See the [LICENSE](LICENSE.txt) file for license rights and limitations (GPL v2).
+See the [LICENSE](https://github.com/narrativeandplay/hypedyn/blob/main/LICENSE.txt) file for license rights and limitations (GPL v2).

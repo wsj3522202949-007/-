@@ -44,7 +44,7 @@ Strip AI patterns from text and code. Prompt + linter.
 
 > 25× excess frequency of `delve` post-ChatGPT. 280+ excess words identified. 34 structural rules. Grounded in peer-reviewed data.
 
-![demo](assets/demo.gif)
+![demo](https://github.com/hugolopes45/llmstrip/blob/main/assets/demo.gif)
 
 ## Two ways to use it
 
@@ -155,7 +155,7 @@ llmstrip --report --fail --min-severity high release-notes.md
 
 **Structural (Rules 25-34):** compound clause addiction, mini-essay paragraphs, sentence-initial transition saturation, paired construction overuse, noun phrase bloat, self-congratulation framing, abstraction level monotony, missing contractions, forward projection cliche, resume verbs.
 
-Full list: [`rules/`](rules/)
+Full list: [`rules/`](https://github.com/hugolopes45/llmstrip/blob/main/rules/)
 
 ## Research
 
@@ -167,7 +167,7 @@ Rules are grounded in peer-reviewed corpus studies:
 
 ## Contribute a pattern
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Open an issue with the pattern, a before/after, and a corpus source if you have one. Label it `new-rule`.
+See [CONTRIBUTING.md](https://github.com/hugolopes45/llmstrip/blob/main/CONTRIBUTING.md). Open an issue with the pattern, a before/after, and a corpus source if you have one. Label it `new-rule`.
 
 ## License
 

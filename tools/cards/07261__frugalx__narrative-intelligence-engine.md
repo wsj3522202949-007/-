@@ -42,29 +42,29 @@ Build a multi-agent, memory-driven AI system capable of planning and writing ful
 
 ## Table of Contents
 
-[Project overview](project-overview.md)
+[Project overview](https://github.com/frugalx/narrative-intelligence-engine/blob/main/project-overview.md)
 
-[Multi Agent Architecture Overview](multi-agent-architecture.md)
+[Multi Agent Architecture Overview](https://github.com/frugalx/narrative-intelligence-engine/blob/main/multi-agent-architecture.md)
 
-[Interaction Diagram](sequence-diagram.md)
+[Interaction Diagram](https://github.com/frugalx/narrative-intelligence-engine/blob/main/sequence-diagram.md)
 
-[System FlowChart](system-flowchart.md)
+[System FlowChart](https://github.com/frugalx/narrative-intelligence-engine/blob/main/system-flowchart.md)
 
-[Getting Started Guide](getting-started.md)
+[Getting Started Guide](https://github.com/frugalx/narrative-intelligence-engine/blob/main/getting-started.md)
 <br>
 <br>
 
 ### Agent Definitions
-[Ideation Agent](ideation-agent.md)
+[Ideation Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/ideation-agent.md)
 
-[Planner Agent](planner-agent.md)
+[Planner Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/planner-agent.md)
 
-[Writer Agent](writer-agent.md)
+[Writer Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/writer-agent.md)
 
-[Summarizer Agent](summarizer-agent.md)
+[Summarizer Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/summarizer-agent.md)
 
-[Editor / Continuity Agent](editor-agent.md)
+[Editor / Continuity Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/editor-agent.md)
 
-[Codex Manager Agent](codex-manager-agent.md)
+[Codex Manager Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/codex-manager-agent.md)
 
-[Orchestrator Agent](orchestrator-agent.md)
+[Orchestrator Agent](https://github.com/frugalx/narrative-intelligence-engine/blob/main/orchestrator-agent.md)

@@ -56,7 +56,7 @@ related:
 
 <br>
 
-![Narratium.ai](/public/banner.png)
+![Narratium.ai](https://github.com/narratium/narratium.ai/blob/main//public/banner.png)
 
 <p align="center">
   <em>An open-source AI character platform to build, customize, and chat with virtual personas</em>

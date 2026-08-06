@@ -49,7 +49,7 @@ related:
 
 AI content workspace for Chinese creators: desktop writing, research, prompt management, knowledge base, and multi-model workflows.
 
-**简体中文** · [English](./README.en.md) · [文档](./docs/README.md) · [发布记录](./RELEASE_NOTES.md) · [问题反馈](https://github.com/limecloud/lime/issues)
+**简体中文** · [English](https://github.com/limecloud/lime/blob/main/README.en.md) · [文档](https://github.com/limecloud/lime/blob/main/docs/README.md) · [发布记录](https://github.com/limecloud/lime/blob/main/RELEASE_NOTES.md) · [问题反馈](https://github.com/limecloud/lime/issues)
 
 <p>
   <a href="https://github.com/limecloud/lime/releases"><img src="https://img.shields.io/github/v/release/limecloud/lime?label=release" alt="Lime GitHub Release" /></a>

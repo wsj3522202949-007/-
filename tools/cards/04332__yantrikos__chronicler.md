@@ -77,7 +77,7 @@ docker compose up -d
 | `ghcr.io/yantrikos/chronicler:latest` | Web + API proxy | ~270 MB |
 | `ghcr.io/yantrikos/chronicler-yantrikdb:latest` | YantrikDB MCP server + CPU-only torch | ~1.9 GB |
 
-Both are multi-platform (linux/amd64 + linux/arm64) and rebuilt on every push to `main` via [`.github/workflows/docker-images.yml`](.github/workflows/docker-images.yml). Semver tags (`v0.1.0`, etc.) publish stable versions as they're cut.
+Both are multi-platform (linux/amd64 + linux/arm64) and rebuilt on every push to `main` via [`.github/workflows/docker-images.yml`](https://github.com/yantrikos/chronicler/blob/main/.github/workflows/docker-images.yml). Semver tags (`v0.1.0`, etc.) publish stable versions as they're cut.
 
 ## First-run in the app
 
@@ -107,12 +107,12 @@ First-run flow:
 - **Session replay harness.** Every tier transition logs a structured entry; the auto-promotion threshold can be retuned and replayed against prior sessions to see exactly which promotions would have fired. The "sink-risk" of the whole system is visible and tunable.
 - **Anti-confabulation clause.** Prepended to every system prompt: "treat only the facts in `<canon>` and `<scene>` as real, do not reference prior events not in those sections." Combined with the visibility ACL, the model cannot invent memory it wasn't given.
 - **"Previously on..." recap at session start.** Pulled from consolidated canon, not raw chat history. Strict anti-confab prompting on the recap itself after we caught (and fixed) a real-world confabulation where the recap misattributed facts.
-- **Verified character learning.** Patterns the model shows repeatedly across sessions (deflection styles, conduct rules, decision rituals, lessons from past failures) get distilled into typed `skill_substrate` entries — but only after an LLM verifier passes on each candidate, biased toward rejection. Skills surface back into future prompts when relevant, score `+1` / `−1` from user reactions (regenerate / edit / delete vs accept and move on), and transition through `candidate → active → suppressed → archived` based on accumulated outcomes. There's a "Character development" tab next to "Memory" with approve / disable / archive controls; the local override always wins over the derived state. See [docs/LCDB-v0.md](docs/LCDB-v0.md) for the ablation harness that proves the contract holds.
-- **Crystallizing character identity** (Phase 11). Skills that hold up over weeks of sessions promote past `active` into a 5th state, `core_trait` — always-on identity facets like *"Adira is fundamentally guarded with strangers"* that inject into every system prompt unconditionally. Combined with a periodically-generated first-person self-model (*"I am Adira. I'm a wandering musician…"*), the substrate carries the character across LLMs. We measured it: same Adira through `qwen2.5:7b` and `qwen3.5:9b`, **σ=0.087** cross-provider on mean overall scores (moderate model-independence). The Identity inspector shows the crystallized traits + self-model + benchmark verdict. See [docs/CHARACTER-EMERGENCE.md](docs/CHARACTER-EMERGENCE.md) for the thesis and [docs/CHARACTER-EMERGENCE-RESULTS.md](docs/CHARACTER-EMERGENCE-RESULTS.md) for the run.
+- **Verified character learning.** Patterns the model shows repeatedly across sessions (deflection styles, conduct rules, decision rituals, lessons from past failures) get distilled into typed `skill_substrate` entries — but only after an LLM verifier passes on each candidate, biased toward rejection. Skills surface back into future prompts when relevant, score `+1` / `−1` from user reactions (regenerate / edit / delete vs accept and move on), and transition through `candidate → active → suppressed → archived` based on accumulated outcomes. There's a "Character development" tab next to "Memory" with approve / disable / archive controls; the local override always wins over the derived state. See [docs/LCDB-v0.md](https://github.com/yantrikos/chronicler/blob/main/docs/LCDB-v0.md) for the ablation harness that proves the contract holds.
+- **Crystallizing character identity** (Phase 11). Skills that hold up over weeks of sessions promote past `active` into a 5th state, `core_trait` — always-on identity facets like *"Adira is fundamentally guarded with strangers"* that inject into every system prompt unconditionally. Combined with a periodically-generated first-person self-model (*"I am Adira. I'm a wandering musician…"*), the substrate carries the character across LLMs. We measured it: same Adira through `qwen2.5:7b` and `qwen3.5:9b`, **σ=0.087** cross-provider on mean overall scores (moderate model-independence). The Identity inspector shows the crystallized traits + self-model + benchmark verdict. See [docs/CHARACTER-EMERGENCE.md](https://github.com/yantrikos/chronicler/blob/main/docs/CHARACTER-EMERGENCE.md) for the thesis and [docs/CHARACTER-EMERGENCE-RESULTS.md](https://github.com/yantrikos/chronicler/blob/main/docs/CHARACTER-EMERGENCE-RESULTS.md) for the run.
 
 All of the above is verified by automated tests: `three-day-continuity`, `auto-promote`, `secret-stays-private`, `session-replay`, `lorebook`, `extract`, `skill-former`, `skill-outcomes`, `lcdb-v0`, `mcp-connectivity`, `core-trait-promoter`, `self-model-generator`, `identity-aggregator`, `cross-model-benchmark`. Everything green.
 
-For a head-to-head comparison against SillyTavern, RisuAI, and AgnAistic, see [docs/COMPARISON.md](docs/COMPARISON.md). Headline:
+For a head-to-head comparison against SillyTavern, RisuAI, and AgnAistic, see [docs/COMPARISON.md](https://github.com/yantrikos/chronicler/blob/main/docs/COMPARISON.md). Headline:
 
 | | Chronicler | SillyTavern | RisuAI | AgnAistic |
 |---|---|---|---|---|
@@ -164,7 +164,7 @@ Pulls the latest published images and restarts. Your memory DB persists in the n
 - **Memory:** [YantrikDB](https://github.com/yantrikos/yantrikdb) — local semantic memory with knowledge graph, conflict detection, consolidation, temporal triggers, personality inference, procedural memory
 - **LLM:** Ollama native (`/api/chat` with `think: false` support) + OpenAI-compatible + Anthropic native; streaming on all three
 
-See [docs/ADR-001-stack.md](docs/ADR-001-stack.md) for why web+Docker over native (yes, we pivoted from Tauri).
+See [docs/ADR-001-stack.md](https://github.com/yantrikos/chronicler/blob/main/docs/ADR-001-stack.md) for why web+Docker over native (yes, we pivoted from Tauri).
 
 ## Architecture
 
@@ -233,10 +233,10 @@ chronicler/
 
 ## Reporting bugs / getting involved
 
-- **Bugs and usage questions** → [SUPPORT.md](SUPPORT.md). GitHub Issues is intentionally disabled because session content is often sensitive; structural bugs route to Discussions, content-bearing reports route to private email.
-- **Contributing code** → [CONTRIBUTING.md](CONTRIBUTING.md). Scope is narrow and deliberate; discussion-first for new feature areas.
-- **Security** → [SECURITY.md](SECURITY.md). Private email, coordinated disclosure.
-- **Code of Conduct** → [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Contributor Covenant 2.1 + project-specific notes.
+- **Bugs and usage questions** → [SUPPORT.md](https://github.com/yantrikos/chronicler/blob/main/SUPPORT.md). GitHub Issues is intentionally disabled because session content is often sensitive; structural bugs route to Discussions, content-bearing reports route to private email.
+- **Contributing code** → [CONTRIBUTING.md](https://github.com/yantrikos/chronicler/blob/main/CONTRIBUTING.md). Scope is narrow and deliberate; discussion-first for new feature areas.
+- **Security** → [SECURITY.md](https://github.com/yantrikos/chronicler/blob/main/SECURITY.md). Private email, coordinated disclosure.
+- **Code of Conduct** → [CODE_OF_CONDUCT.md](https://github.com/yantrikos/chronicler/blob/main/CODE_OF_CONDUCT.md). Contributor Covenant 2.1 + project-specific notes.
 
 ## Develop
 
@@ -278,4 +278,4 @@ related:
 
 Built by [@spranab](https://github.com/spranab). Powered by [YantrikDB](https://github.com/yantrikos/yantrikdb).
 
-Companion read: [docs/PATTERN.md](docs/PATTERN.md) — a standalone write-up of the memory architecture, useful if you're building anything that needs a trustworthy memory layer on top of a language model.
+Companion read: [docs/PATTERN.md](https://github.com/yantrikos/chronicler/blob/main/docs/PATTERN.md) — a standalone write-up of the memory architecture, useful if you're building anything that needs a trustworthy memory layer on top of a language model.

@@ -76,7 +76,7 @@ related:
 
 
 
-🥳 We release **PhotoMaker V2**. Please refer to [comparisons](./README_pmv2.md) between PhotoMaker V1, PhotoMaker V2, IP-Adapter-FaceID-plus-V2, and InstantID. Please watch [this video](https://photo-maker.github.io/assets/demo_pm_v2_full.mp4) for how to use our demo. For PhotoMaker V2 ComfyUI nodes, please refer to the [Related Resources](https://github.com/TencentARC/PhotoMaker?tab=readme-ov-file#related-resources) 
+🥳 We release **PhotoMaker V2**. Please refer to [comparisons](https://github.com/tencentarc/photomaker/blob/main/README_pmv2.md) between PhotoMaker V1, PhotoMaker V2, IP-Adapter-FaceID-plus-V2, and InstantID. Please watch [this video](https://photo-maker.github.io/assets/demo_pm_v2_full.mp4) for how to use our demo. For PhotoMaker V2 ComfyUI nodes, please refer to the [Related Resources](https://github.com/TencentARC/PhotoMaker?tab=readme-ov-file#related-resources) 
 
 </div>
 
@@ -126,7 +126,7 @@ Now we know the implementation of **Replicate**, **Windows**, **ComfyUI**, and *
 
 ## 🚩 **New Features/Updates**
 
-- ✅ July 22, 2024. 💥 We release PhotoMaker V2 with **improved ID fidelity**. At the same time, it still maintains the generation quality, editability, and compatibility with any plugins that PhotoMaker V1 offers. We have also provided scripts for integration with [ControlNet](./inference_scripts/inference_pmv2_contronet.py), [T2I-Adapter](./inference_scripts/inference_pmv2_t2i_adapter.py), and [IP-Adapter](./inference_scripts/inference_pmv2_ip_adapter.py) to offer excellent control capabilities. Users can further customize scripts for upgrades, such as combining with LCM for acceleration or integrating with IP-Adapter-FaceID or InstantID to further improve ID fidelity. We will release technical report of PhotoMaker V2 soon. Please refer to [this doc](./README_pmv2.md) for a quick preview. 
+- ✅ July 22, 2024. 💥 We release PhotoMaker V2 with **improved ID fidelity**. At the same time, it still maintains the generation quality, editability, and compatibility with any plugins that PhotoMaker V1 offers. We have also provided scripts for integration with [ControlNet](https://github.com/tencentarc/photomaker/blob/main/inference_scripts/inference_pmv2_contronet.py), [T2I-Adapter](https://github.com/tencentarc/photomaker/blob/main/inference_scripts/inference_pmv2_t2i_adapter.py), and [IP-Adapter](https://github.com/tencentarc/photomaker/blob/main/inference_scripts/inference_pmv2_ip_adapter.py) to offer excellent control capabilities. Users can further customize scripts for upgrades, such as combining with LCM for acceleration or integrating with IP-Adapter-FaceID or InstantID to further improve ID fidelity. We will release technical report of PhotoMaker V2 soon. Please refer to [this doc](https://github.com/tencentarc/photomaker/blob/main/README_pmv2.md) for a quick preview. 
 
 - ✅ January 20, 2024. An **important** note: For those GPUs that do not support bfloat16, please change [this line](https://github.com/TencentARC/PhotoMaker/blob/6ec44fc13909d64a65c635b9e3b6f238eb1de9fe/gradio_demo/app.py#L39) to `torch_dtype = torch.float16`, the speed will be **greatly improved** (1min/img (before) vs. 14s/img (after) on V100). The minimum GPU memory requirement for PhotoMaker is **11G** (Please refer to [this link](https://github.com/TencentARC/PhotoMaker/discussions/114) for saving GPU memory).
 
@@ -152,7 +152,7 @@ related:
 
 - [![Huggingface PhotoMaker](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker)
 
-- [**PhotoMaker notebook demo**](photomaker_demo.ipynb)
+- [**PhotoMaker notebook demo**](https://github.com/tencentarc/photomaker/blob/main/photomaker_demo.ipynb)
 
 
 
@@ -182,7 +182,7 @@ Note: only change the base model and add the LoRA modules for better stylization
 
 - [![Huggingface PhotoMaker-Style](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style)
 
-- [**PhotoMaker-Style notebook demo**](photomaker_style_demo.ipynb) 
+- [**PhotoMaker-Style notebook demo**](https://github.com/tencentarc/photomaker/blob/main/photomaker_style_demo.ipynb) 
 
 
 
@@ -434,11 +434,11 @@ python gradio_demo/app.py
 
 
 
-You could customize this script in [this file](gradio_demo/app.py).
+You could customize this script in [this file](https://github.com/tencentarc/photomaker/blob/main/gradio_demo/app.py).
 
 
 
-If you want to run it on MAC, you should follow [this Instruction](MacGPUEnv.md) and then run the app.py.
+If you want to run it on MAC, you should follow [this Instruction](https://github.com/tencentarc/photomaker/blob/main/MacGPUEnv.md) and then run the app.py.
 
 
 

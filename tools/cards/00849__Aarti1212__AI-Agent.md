@@ -94,7 +94,7 @@ The script will guide you through the process of choosing a story category or wr
 ## How It Works: The Agent System
 The core of this project is a sophisticated multi-agent system that works collaboratively to generate and refine a story. The process is broken down into several key components, as illustrated in the block diagram below.
 
-![Block diagram of the story generation system](BlockDiagram.png)
+![Block diagram of the story generation system](https://github.com/Aarti1212/AI-Agent/blob/main/BlockDiagram.png)
 
 **1. Input Prompt**
 

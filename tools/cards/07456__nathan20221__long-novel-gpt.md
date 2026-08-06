@@ -83,14 +83,14 @@ Long-Novel-GPT是一个基于GPT等大语言模型的长篇小说生成器。它
 - 通过一个创意直接一键生成完整长篇小说（未开始）
 
 ### 📜 之前版本
-Long-Novel-GPT 1.5及之前版本提供了一个完整的长篇小说生成APP，但是在操作体验上并不完善。从1.6版本起，将更加注重用户体验，重写了一个新的界面，并将项目文件搬到了[core](core/frontend.py)目录下。之前的[demo](demo/app.py)已经不支持了，如果想要体验，可以选择之前的commit进行下载。
+Long-Novel-GPT 1.5及之前版本提供了一个完整的长篇小说生成APP，但是在操作体验上并不完善。从1.6版本起，将更加注重用户体验，重写了一个新的界面，并将项目文件搬到了[core](https://github.com/nathan20221/long-novel-gpt/blob/main/core/frontend.py)目录下。之前的[demo](https://github.com/nathan20221/long-novel-gpt/blob/main/demo/app.py)已经不支持了，如果想要体验，可以选择之前的commit进行下载。
 
 <h2 id="小说生成prompt">📚 小说生成 Prompt</h2>
 
 | Prompt | 描述 |
 |--------|------|
-| [天蚕土豆风格](custom/根据提纲创作正文/天蚕土豆风格.txt) | 用于根据提纲创作正文，模仿天蚕土豆的写作风格 |
-| [对草稿进行润色](custom/根据提纲创作正文/对草稿进行润色.txt) | 对你写的网文初稿进行润色和改进 |
+| [天蚕土豆风格](https://github.com/nathan20221/long-novel-gpt/blob/main/custom/%E6%A0%B9%E6%8D%AE%E6%8F%90%E7%BA%B2%E5%88%9B%E4%BD%9C%E6%AD%A3%E6%96%87/%E5%A4%A9%E8%9A%95%E5%9C%9F%E8%B1%86%E9%A3%8E%E6%A0%BC.txt) | 用于根据提纲创作正文，模仿天蚕土豆的写作风格 |
+| [对草稿进行润色](https://github.com/nathan20221/long-novel-gpt/blob/main/custom/%E6%A0%B9%E6%8D%AE%E6%8F%90%E7%BA%B2%E5%88%9B%E4%BD%9C%E6%AD%A3%E6%96%87/%E5%AF%B9%E8%8D%89%E7%A8%BF%E8%BF%9B%E8%A1%8C%E6%B6%A6%E8%89%B2.txt) | 对你写的网文初稿进行润色和改进 |
 
 [📝 提交你的 Prompt](https://github.com/MaoXiaoYuZ/Long-Novel-GPT/issues/new?assignees=&labels=prompt&template=custom_prompt.md&title=新的Prompt)
 

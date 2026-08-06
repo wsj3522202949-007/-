@@ -45,7 +45,7 @@ related:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Runtime](https://img.shields.io/badge/Runtime-Claude%20Code%20%7C%20Codex%20%7C%20Cursor-blue)](#安装)
 
-English: [README.en.md](README.en.md)
+English: [README.en.md](https://github.com/ShawnSiao/siao-skills/blob/main/README.en.md)
 
 ## 当前 Skills
 

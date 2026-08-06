@@ -38,7 +38,7 @@ related:
 
 # SLOP Detector
 
-![SLOP Detector](assets/header.png)
+![SLOP Detector](https://github.com/CyranoB/slop-detector/blob/main/assets/header.png)
 
 > “The SLOP Meter doesn’t measure truth or beauty. It measures how loudly your sentences clap for themselves. When the needle bursts through the dial and a small goblin emerges to applaud, you are probably no longer writing—you are performing.”
 
@@ -151,7 +151,7 @@ Interpretation: Likely AI-generated with some editing
 
 ## How It Works
 
-See **[docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md)** for:
+See **[docs/IMPLEMENTATION.md](https://github.com/CyranoB/slop-detector/blob/main/docs/IMPLEMENTATION.md)** for:
 - Detailed algorithm explanation
 - Project structure
 - How to add custom patterns

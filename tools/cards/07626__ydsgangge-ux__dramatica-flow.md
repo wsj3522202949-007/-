@@ -364,7 +364,7 @@ LLM_PROVIDER=ollama
 OLLAMA_MODEL=qwen2.5
 ```
 
-> 详细配置请参考 [Ollama 使用指南](docs/OLLAMA_GUIDE.md)
+> 详细配置请参考 [Ollama 使用指南](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/docs/OLLAMA_GUIDE.md)
 
 ### 启动
 
@@ -382,7 +382,7 @@ python -m uvicorn core.server:app --reload --port 8766
 
 如果你已有完成的小说（如 10 万字），可以通过外部大模型提取世界观后导入：
 
-1. 打开 [提取提示词模板](templates/novel_extract_prompt.md)，复制提示词和 JSON 格式说明
+1. 打开 [提取提示词模板](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/templates/novel_extract_prompt.md)，复制提示词和 JSON 格式说明
 2. 将提示词 + 小说全文发送给外部大模型（如 [DeepSeek 网页版](https://chat.deepseek.com)，免费、支持超长文本）
 3. 复制大模型输出的 JSON
 4. 在 Web UI 的 **Step 3 世界观配置** 中点击 **"导入 JSON"**，粘贴即可
@@ -539,10 +539,10 @@ python -m pytest tests/ -v
 
 ## 相关文档
 
-- [快速上手指南](docs/QUICKSTART.md) — 5 分钟完成第一次创作
-- [Ollama 配置指南](docs/OLLAMA_GUIDE.md) — 本地模型详细配置
-- [更新日志](docs/CHANGELOG.md) — 版本功能变更
-- [项目状态](docs/PROJECT_STATUS.md) — 开发进度与路线图
+- [快速上手指南](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/docs/QUICKSTART.md) — 5 分钟完成第一次创作
+- [Ollama 配置指南](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/docs/OLLAMA_GUIDE.md) — 本地模型详细配置
+- [更新日志](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/docs/CHANGELOG.md) — 版本功能变更
+- [项目状态](https://github.com/ydsgangge-ux/dramatica-flow/blob/main/docs/PROJECT_STATUS.md) — 开发进度与路线图
 
 ---
 

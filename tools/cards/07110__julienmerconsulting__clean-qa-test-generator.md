@@ -222,7 +222,7 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 
 ## 📄 License
 
-MIT License - voir [LICENSE](LICENSE) pour plus de détails.
+MIT License - voir [LICENSE](https://github.com/julienmerconsulting/clean-qa-test-generator/blob/main/LICENSE) pour plus de détails.
 
 ---
 

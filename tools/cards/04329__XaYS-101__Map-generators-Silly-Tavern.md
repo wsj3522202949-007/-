@@ -40,7 +40,7 @@ related:
   - methods/模板库.md
 ---
 
-[English](README.md) | [Русский](README_ru.md)
+[English](https://github.com/XaYS-101/Map-generators-Silly-Tavern/blob/main/README.md) | [Русский](https://github.com/XaYS-101/Map-generators-Silly-Tavern/blob/main/README_ru.md)
 
 # Map Generators — SillyTavern extension
 

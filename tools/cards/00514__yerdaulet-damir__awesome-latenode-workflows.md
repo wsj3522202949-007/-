@@ -41,7 +41,7 @@ related:
 > **Launch powerful automations in 5 minutes — no code required.**
 
 [![Stars](https://img.shields.io/github/stars/latenode/awesome-latenode-workflows?style=social)](...)  
-[![Star History](./star-history.svg)](#)
+[![Star History](https://github.com/yerdaulet-damir/awesome-latenode-workflows/blob/main/star-history.svg)](#)
 
 ---
 
@@ -65,8 +65,8 @@ related:
 
 | Folder | Description | Demo |
 |--------|-------------|------|
-| [`crm-lead-scoring`](templates/crm-lead-scoring) | Score leads as HOT / WARM / COLD using AI and enrich them in your CRM | ![flow](templates/crm-lead-scoring/flow.gif) |
-| [`github-to-notion-sync`](templates/github-to-notion-sync) | Automatically sync GitHub issues or PRs into a Notion database | — |
+| [`crm-lead-scoring`](https://github.com/yerdaulet-damir/awesome-latenode-workflows/blob/main/templates/crm-lead-scoring) | Score leads as HOT / WARM / COLD using AI and enrich them in your CRM | ![flow](https://github.com/yerdaulet-damir/awesome-latenode-workflows/blob/main/templates/crm-lead-scoring/flow.gif) |
+| [`github-to-notion-sync`](https://github.com/yerdaulet-damir/awesome-latenode-workflows/blob/main/templates/github-to-notion-sync) | Automatically sync GitHub issues or PRs into a Notion database | — |
 
 ---
 

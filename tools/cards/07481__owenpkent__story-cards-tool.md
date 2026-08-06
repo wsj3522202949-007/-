@@ -195,7 +195,7 @@ This keeps your storyboard file small and Git-friendly.
 
 ## Cloud Features
 
-Cloud save is now available! See [docs/CLOUD_STATUS.md](docs/CLOUD_STATUS.md) for details.
+Cloud save is now available! See [docs/CLOUD_STATUS.md](https://github.com/owenpkent/story-cards-tool/blob/main/docs/CLOUD_STATUS.md) for details.
 
 - ✅ User accounts (Email/Password)
 - ✅ Cloud save/sync via Firestore
@@ -206,13 +206,13 @@ Cloud save is now available! See [docs/CLOUD_STATUS.md](docs/CLOUD_STATUS.md) fo
 
 ## Documentation
 
-All technical documentation is in the [`docs/`](docs/) folder:
+All technical documentation is in the [`docs/`](https://github.com/owenpkent/story-cards-tool/blob/main/docs/) folder:
 
 | Document | Description |
 |----------|----------related:
   - methods/QUICK_START.md
 ---|
-| [Progress & Status](docs/PROGRESS.md) | Current status & roadmap |
-| [Cloud Implementation](docs/CLOUD_STATUS.md) | Firebase setup & deployment |
-| [Accessibility](docs/ACCESSIBILITY.md) | WCAG 2.1 AA compliance |
-| [MCP Server](docs/MCP_SERVER_DESIGN.md) | AI integration |
+| [Progress & Status](https://github.com/owenpkent/story-cards-tool/blob/main/docs/PROGRESS.md) | Current status & roadmap |
+| [Cloud Implementation](https://github.com/owenpkent/story-cards-tool/blob/main/docs/CLOUD_STATUS.md) | Firebase setup & deployment |
+| [Accessibility](https://github.com/owenpkent/story-cards-tool/blob/main/docs/ACCESSIBILITY.md) | WCAG 2.1 AA compliance |
+| [MCP Server](https://github.com/owenpkent/story-cards-tool/blob/main/docs/MCP_SERVER_DESIGN.md) | AI integration |

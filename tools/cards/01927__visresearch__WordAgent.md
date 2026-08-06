@@ -41,7 +41,7 @@ related:
 
 ﻿# Word Agent
 
-![](./web/docs/public/banner.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/banner.png)
 
 <p align="center">
   <a href="backend/pyproject.toml"><img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python" /></a>
@@ -57,7 +57,7 @@ related:
   English | <a href="README.zh-CN.md">中文文档</a>
 </p>
 
-![](./web/docs/public/show.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/show.png)
 
 ## 1. Project Overview
 
@@ -76,19 +76,19 @@ Compared with existing AI writing assistants on the market, WenCe AI provides:
 
 | WPS Add-in UI | Backend QT UI |
 | -- | -- |
-| ![](./web/docs/public/wps_addon.png) | ![](./web/docs/public/QtGUI.png) |
+| ![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/wps_addon.png) | ![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/QtGUI.png) |
 
 For example, in WPS **Single Agent** mode, a user can enter: "Expand my internship objective into five points." The agent completes the task through the "**locate -> read -> understand -> edit**" workflow: it first calls `search_document` to locate the target paragraph, then calls `read_document` to read the paragraph content. After analysis and understanding, it calls `delete_document` to remove the original content, and finally calls `generate_document` to generate the expanded result. The frontend add-in renders the before/after content with different colored annotations, making changes easy to review.
 
-![](./web/docs/public/preview2.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/preview2.png)
 
 > Note: the generated result includes not only text content, but also matching style information such as heading/body style, bold text, font, indentation, and line spacing. The frontend add-in renders the final result according to these styles so that it matches the Word document structure and format.
 
 As another example, in **Multi Agent** mode, the user can ask the system to write a long novel and create illustrations. Different expert agents work in sequence: the `planner agent` orchestrates the agent workflow, the `research agent` searches online novels and calls text-to-image tools, the `outline agent` describes the novel outline, the `writer agent` outputs the article, and finally the `reviewer agent` reviews the paragraphs and provides revision suggestions.
 
-![](./web/docs/public/preview3.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/preview3.png)
 
-![](./web/docs/public/preview4.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/preview4.png)
 
 > Note: Multi Agent mode is better at generating long-form content while staying on topic and maintaining coherence, but its tool-calling capability is slightly weaker than Single Agent mode.
 
@@ -96,11 +96,11 @@ In addition, this project supports two types of pluggable extensions for custom 
 
 1) **MCP Server example (third-party API/service integration)**: users can configure MCP servers so that agents can call third-party APIs like built-in tools. For example, with **Amap MCP** and a **visualization chart MCP Server**, when a user enters "Query Changsha's weather for the next five days, draw a temperature line chart, and write a weather forecast article," the agent first calls Amap MCP to obtain five-day temperature data, then calls the visualization chart MCP Server to generate a line-chart image URL and render the image in the add-in interface.
 
-![](./web/docs/public/mcp_example.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/mcp_example.png)
 
 2) **Skill example (capability packaging and reuse)**: Skill is like packaging a reusable capability and workflow, such as prompt templates, tool-call orchestration, or domain-specific writing/processing logic, into a "skill package." After loading, the agent can select and execute the corresponding Skill according to the task requirements, completing specific task types through a more stable path.
 
-![](./web/docs/public/skill-example.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/skill-example.png)
 
 ## 3. Development Plan
 
@@ -126,7 +126,7 @@ To better meet user needs and ensure the stability and depth of generated articl
 
 #### Overall Architecture Diagram
 
-![](./web/docs/public/single_agent_loop.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/single_agent_loop.png)
 
 The frontend WPS add-in converts the user's question and the currently selected document paragraphs into a specific JSON format and sends it to the backend.
 
@@ -141,7 +141,7 @@ In the backend Single Agent architecture, the system uses a standard ReAct agent
 
 #### Overall Architecture Diagram
 
-![](./web/docs/public/multi_agent.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/multi_agent.png)
 
 The frontend part is the same as the Single Agent architecture. In the backend multi-agent collaboration framework, a **planner agent** is designed to orchestrate and schedule the workflow of multiple expert agents.
 
@@ -177,9 +177,9 @@ uv run python main.py
 
 ### Use LangSmith Tracing
 
-This project also supports LangSmith for tracing and analyzing agent behavior. For configuration, see the instructions in the [backend README](backend/README.md).
+This project also supports LangSmith for tracing and analyzing agent behavior. For configuration, see the instructions in the [backend README](https://github.com/visresearch/WordAgent/blob/main/backend/README.md).
 
-![](./web/docs/public/Langsmith.png)
+![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/Langsmith.png)
 
 ### Package the Software
 
@@ -241,7 +241,7 @@ This project has tested some LLM APIs and will continue testing and adapting mor
 - [x] MiMo-V2.5 runs stably
 - [ ] Gemini 3.1 Pro
 
-> GPT series models are recommended for the best results, followed by Qwen series models. See the [evaluation document](./backend/evaluation/README.md) for details.
+> GPT series models are recommended for the best results, followed by Qwen series models. See the [evaluation document](https://github.com/visresearch/WordAgent/blob/main/backend/evaluation/README.md) for details.
 
 Note: this project used some free quotas from [Alibaba Cloud Bailian](https://bailian.console.aliyun.com/) and [OpenRouter](https://openrouter.ai/models?q=free) during development.
 

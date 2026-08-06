@@ -64,7 +64,7 @@ related:
 - 📋 **Uniform 段落完整表格**：CV < 0.30 的段落全部以表格列出，不再限制 20 条
 - ⏰ **真实生成时间**：报告末尾显示实际生成时间（YYYY-MM-DD HH:MM:SS）
 
-> 历史版本（1.4 / 1.3 / 1.2）特性已归档至 [`FEATURE.md`](FEATURE.md)。
+> 历史版本（1.4 / 1.3 / 1.2）特性已归档至 [`FEATURE.md`](https://github.com/stephenlzc/humanize-mba-text-skill/blob/main/FEATURE.md)。
 
 ### 核心功能
 

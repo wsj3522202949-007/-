@@ -251,7 +251,7 @@ ai-story-generator-transformers-diffusers/
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/skkuhg/AI-Story-Generator-Transformers-Diffusers/blob/main/LICENSE) file for details.
 
 ## 🤝 Contributing
 

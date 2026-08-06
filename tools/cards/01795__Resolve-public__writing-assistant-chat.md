@@ -189,7 +189,7 @@ You can also find these links in **Settings > Writing Assistant Chat > General**
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, project structure, coding standards, and the development workflow.
+See [CONTRIBUTING.md](https://github.com/Resolve-public/writing-assistant-chat/blob/main/CONTRIBUTING.md) for setup instructions, project structure, coding standards, and the development workflow.
 
 related:
   - methods/网文写作最强SOP.md
@@ -198,9 +198,9 @@ related:
 
 ## License
 
-MIT, see [LICENSE](LICENSE) for details.
+MIT, see [LICENSE](https://github.com/Resolve-public/writing-assistant-chat/blob/main/LICENSE) for details.
 
 The distributed build bundles third-party components under their own licenses,
 including one proprietary Anthropic component that is not covered by this
-plugin's MIT license. See [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) for
+plugin's MIT license. See [THIRD-PARTY-NOTICES.md](https://github.com/Resolve-public/writing-assistant-chat/blob/main/THIRD-PARTY-NOTICES.md) for
 the full list and terms.

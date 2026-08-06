@@ -122,7 +122,7 @@ python run_zero_shot_master_table.py \
   --output_path results/full_standard.csv
 ```
 
-`--compute_token_metrics` adds KL and Jensen-Shannon divergence per token; `merge_results.py` aggregates multiple runs into a single Markdown report. See [EXPERIMENTS.md](EXPERIMENTS.md) for all scenarios, flags, and output formats.
+`--compute_token_metrics` adds KL and Jensen-Shannon divergence per token; `merge_results.py` aggregates multiple runs into a single Markdown report. See [EXPERIMENTS.md](https://github.com/abhi25072002/NLP-Project/blob/main/EXPERIMENTS.md) for all scenarios, flags, and output formats.
 
 ## Rebuilding the dataset (GPU)
 
@@ -194,4 +194,4 @@ Full generated artifacts (variant datasets, checkpoints) live on Drive: [dataset
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/abhi25072002/NLP-Project/blob/main/LICENSE)

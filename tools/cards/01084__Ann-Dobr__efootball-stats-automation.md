@@ -78,4 +78,4 @@ The system automatically:
 - Safety guard: stops execution if tour number cannot be determined (prevents data corruption)
 
 ## 📁 Files
-- [`workflow.json`](workflow.json) — n8n workflow export (import directly into your n8n instance)
+- [`workflow.json`](https://github.com/Ann-Dobr/efootball-stats-automation/blob/main/workflow.json) — n8n workflow export (import directly into your n8n instance)

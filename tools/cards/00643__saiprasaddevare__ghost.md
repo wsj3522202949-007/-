@@ -358,9 +358,9 @@ mypy backend/ client/
 
 ## 📚 Documentation
 
-- [Product Requirements Document](docs/01-prd/prd.md)
-- [Implementation Plan](docs/02-architecture/implementation-plan.md)
-- [User Stories](docs/06-user-stories/user-stories-v1.md)
+- [Product Requirements Document](https://github.com/saiprasaddevare/ghost/blob/main/docs/01-prd/prd.md)
+- [Implementation Plan](https://github.com/saiprasaddevare/ghost/blob/main/docs/02-architecture/implementation-plan.md)
+- [User Stories](https://github.com/saiprasaddevare/ghost/blob/main/docs/06-user-stories/user-stories-v1.md)
 
 ## 🗺️ Roadmap
 
@@ -370,11 +370,11 @@ mypy backend/ client/
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/saiprasaddevare/ghost/blob/main/LICENSE) for details.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](https://github.com/saiprasaddevare/ghost/blob/main/CONTRIBUTING.md) for guidelines.
 
 ## 💬 Support
 

@@ -96,13 +96,13 @@ Proposal Display + Download (Frontend)
 ## 📸 Screenshots (UI Preview)
 
 ### 🏠 Home Page  
-![Home Page](screenshots/home_page.png)
+![Home Page](https://github.com/Ujjwal-Ruhal/grantai-copilot/blob/main/screenshots/home_page.png)
 
 ### 🔎 Grant Search Results  
-![Grant Search Results](screenshots/search_results.png)
+![Grant Search Results](https://github.com/Ujjwal-Ruhal/grantai-copilot/blob/main/screenshots/search_results.png)
 
 ### ✍️ Proposal Generator  
-![Proposal Page](screenshots/proposal_page.png)
+![Proposal Page](https://github.com/Ujjwal-Ruhal/grantai-copilot/blob/main/screenshots/proposal_page.png)
 
 > 📌 Place actual screenshots in a folder named:
 

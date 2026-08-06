@@ -102,7 +102,7 @@ It explores the creative potential of combining AI-generated text, images, and s
 
 ## Preview
 
-![AI Story Generator Preview](preview.gif)
+![AI Story Generator Preview](https://github.com/tksari/ai-story-generator/blob/main/preview.gif)
 
 ## Tech Stack
 

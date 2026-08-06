@@ -83,19 +83,19 @@ Word Weave is a modern blogging platform designed to provide a seamless writing 
 ## Screenshots
 
 ### Home Page
-![Home Page](screenshots/1.png)
+![Home Page](https://github.com/RahulRmCoder/Word-Weave-Blogging-Website/blob/main/screenshots/1.png)
 
 ### Post Creation
-![Post Creation](screenshots/3.png)
+![Post Creation](https://github.com/RahulRmCoder/Word-Weave-Blogging-Website/blob/main/screenshots/3.png)
 
 ### Post with Comments
-![Post with Comments](screenshots/2.png)
+![Post with Comments](https://github.com/RahulRmCoder/Word-Weave-Blogging-Website/blob/main/screenshots/2.png)
 
 ### User Profile Dashboard
-![Profile Dashboard](screenshots/4.png)
+![Profile Dashboard](https://github.com/RahulRmCoder/Word-Weave-Blogging-Website/blob/main/screenshots/4.png)
 
 ### Analytics Charts
-![Analytics Charts](screenshots/5.png)
+![Analytics Charts](https://github.com/RahulRmCoder/Word-Weave-Blogging-Website/blob/main/screenshots/5.png)
 
 ## Tech Stack
 

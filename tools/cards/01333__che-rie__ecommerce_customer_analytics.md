@@ -88,15 +88,15 @@ This project analyzes customer behavior, segmentation, and revenue patterns usin
 ## 📸 Dashboard Preview
 
 ### Overview
-![Overview](overview.png)
+![Overview](https://github.com/che-rie/ecommerce_customer_analytics/blob/main/overview.png)
 
 ### Customers
-![Customers](customers.png)
+![Customers](https://github.com/che-rie/ecommerce_customer_analytics/blob/main/customers.png)
 
 ## 📄 Full Project Report
 For detailed analysis, insights, and recommendations, see the full report below:
 
-[Download Project Report](project_report.pdf)
+[Download Project Report](https://github.com/che-rie/ecommerce_customer_analytics/blob/main/project_report.pdf)
 
 ### Revenue
-![Revenue](revenue.png)
+![Revenue](https://github.com/che-rie/ecommerce_customer_analytics/blob/main/revenue.png)

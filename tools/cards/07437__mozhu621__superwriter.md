@@ -43,7 +43,7 @@ related:
 
 # 📚 SuperWriter: Reflection-Driven Long-Form Generation with Large Language Models
 
-### Language/语言: [English](./README.md) | [中文](./README_zh.md)
+### Language/语言: [English](https://github.com/mozhu621/superwriter/blob/main/README.md) | [中文](https://github.com/mozhu621/superwriter/blob/main/README_zh.md)
 
 <p align="center">
   📄 <a href="https://arxiv.org/abs/2506.04180">Paper</a> • 🤗 <a href="https://huggingface.co/mozhu/SuperWriter-Qwen2.5-7B/tree/main">Model&nbsp;(coming&nbsp;soon)</a>

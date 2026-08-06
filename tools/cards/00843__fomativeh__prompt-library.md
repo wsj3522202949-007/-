@@ -59,7 +59,7 @@ All prompts follow a consistent format with **Objective**, **Prompt**, and **Exa
 
 **Scenario**: You need to classify customer support tickets
 
-1. Go to [Customer Support → Ticket Classification](./customer-support/ticket-classification)
+1. Go to [Customer Support → Ticket Classification](https://github.com/fomativeh/prompt-library/blob/main/customer-support/ticket-classification)
 2. Copy the prompt from `prompt-v1.md`
 3. Replace the example ticket with your actual ticket text
 4. Run it through ChatGPT/Claude/etc.
@@ -79,12 +79,12 @@ Ticket:
 
 ## Structure
 
-- **[Content Generation](./content-generation)** - Creative and informational text generation
-- **[Data Analysis](./data-analysis)** - Data-focused prompts for classification, transformation, extraction, question answering, sentiment analysis, SQL generation, and summarization
-- **[Coding](./coding)** - Programming and software development prompts for code generation, explanation, and debugging
-- **[Customer Support](./customer-support)** - Ticket classification and empathetic response generation
-- **[Education](./education)** - Lesson planning and quiz generation
-- **[Professional Writing](./professional-writing)** - Emails and structured reports
+- **[Content Generation](https://github.com/fomativeh/prompt-library/blob/main/content-generation)** - Creative and informational text generation
+- **[Data Analysis](https://github.com/fomativeh/prompt-library/blob/main/data-analysis)** - Data-focused prompts for classification, transformation, extraction, question answering, sentiment analysis, SQL generation, and summarization
+- **[Coding](https://github.com/fomativeh/prompt-library/blob/main/coding)** - Programming and software development prompts for code generation, explanation, and debugging
+- **[Customer Support](https://github.com/fomativeh/prompt-library/blob/main/customer-support)** - Ticket classification and empathetic response generation
+- **[Education](https://github.com/fomativeh/prompt-library/blob/main/education)** - Lesson planning and quiz generation
+- **[Professional Writing](https://github.com/fomativeh/prompt-library/blob/main/professional-writing)** - Emails and structured reports
 
 ## Prompt Format
 

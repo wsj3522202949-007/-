@@ -517,7 +517,7 @@ IsItAI is a research-grade tool. Be aware of its constraints before using it in 
 
 ## License
 
-MIT — free to use, modify, and distribute for any purpose. See [LICENSE](LICENSE).
+MIT — free to use, modify, and distribute for any purpose. See [LICENSE](https://github.com/Croups/is-it-ai/blob/main/LICENSE).
 
 ---
 

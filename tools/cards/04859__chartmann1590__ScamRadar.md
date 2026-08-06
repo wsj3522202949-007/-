@@ -54,13 +54,13 @@ related:
 
 [Download APK](https://github.com/chartmann1590/ScamRadar/releases/latest) · [Download AAB](https://github.com/chartmann1590/ScamRadar/releases/latest) · Google Play coming soon
 
-![ScamRadar feature graphic](play-store/feature-graphic/feature_graphic_1024x500.png)
+![ScamRadar feature graphic](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/feature-graphic/feature_graphic_1024x500.png)
 
 ### Watch the 40-second demo
 
-[![Watch the ScamRadar demo video](docs/assets/promo_poster.png)](https://chartmann1590.github.io/ScamRadar/#watch)
+[![Watch the ScamRadar demo video](https://github.com/chartmann1590/ScamRadar/blob/main/docs/assets/promo_poster.png)](https://chartmann1590.github.io/ScamRadar/#watch)
 
-> [Watch the video on the website](https://chartmann1590.github.io/ScamRadar/#watch) · [Download the MP4](play-store/video/scamradar_promo.mp4) · [Captions (.srt)](play-store/video/scamradar_promo.srt)
+> [Watch the video on the website](https://chartmann1590.github.io/ScamRadar/#watch) · [Download the MP4](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/video/scamradar_promo.mp4) · [Captions (.srt)](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/video/scamradar_promo.srt)
 
 </div>
 
@@ -287,15 +287,15 @@ Captured live on a Pixel 8 Pro running the actual app.
 
 | Paste it. Check it. | On-device. Private. | Clear verdict. | What to do next. |
 |---------------------|---------------------|----------------|------------------|
-| ![Home](play-store/screenshots/phone/phone_01.png) | ![Scanning](play-store/screenshots/phone/phone_02.png) | ![Suspicious](play-store/screenshots/phone/phone_03.png) | ![Detail](play-store/screenshots/phone/phone_04.png) |
+| ![Home](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_01.png) | ![Scanning](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_02.png) | ![Suspicious](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_03.png) | ![Detail](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_04.png) |
 
 | Peace of mind. | Learn the patterns. | Track your scans. | Free. Offline. |
 |----------------|---------------------|-------------------|----------------|
-| ![Looks Safe](play-store/screenshots/phone/phone_05.png) | ![Library](play-store/screenshots/phone/phone_06.png) | ![History](play-store/screenshots/phone/phone_07.png) | ![Settings](play-store/screenshots/phone/phone_08.png) |
+| ![Looks Safe](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_05.png) | ![Library](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_06.png) | ![History](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_07.png) | ![Settings](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/phone/phone_08.png) |
 
 </div>
 
-> Want the unframed device captures? See [`play-store/screenshots/raw/`](play-store/screenshots/raw/). Tablet sizes for the Play Store live alongside in [`tablet-7in/`](play-store/screenshots/tablet-7in/) and [`tablet-10in/`](play-store/screenshots/tablet-10in/).
+> Want the unframed device captures? See [`play-store/screenshots/raw/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/raw/). Tablet sizes for the Play Store live alongside in [`tablet-7in/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/tablet-7in/) and [`tablet-10in/`](https://github.com/chartmann1590/ScamRadar/blob/main/play-store/screenshots/tablet-10in/).
 
 ---
 
@@ -312,7 +312,7 @@ ScamRadar is built with privacy as a core principle:
 - **Family data stays minimal** — pods store only your account id, a member label, and redacted verdict summaries
 - **Camera for QR only** — used solely for scanning family QR codes; no photos or video stored
 
-See our full [Privacy Policy](PRIVACY_POLICY.md).
+See our full [Privacy Policy](https://github.com/chartmann1590/ScamRadar/blob/main/PRIVACY_POLICY.md).
 
 ---
 
@@ -402,7 +402,7 @@ If ScamRadar has helped you or someone you care about, consider buying me a coff
 
 ## License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the [LICENSE](https://github.com/chartmann1590/ScamRadar/blob/main/LICENSE) file for details.
 
 related:
   - methods/最强去AI味铁律.md

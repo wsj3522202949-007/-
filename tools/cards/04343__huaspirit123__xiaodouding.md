@@ -39,14 +39,14 @@ related:
 
 # 小豆丁 · xiaodouding
 
-**English** · [中文](README.zh-CN.md) · ▶ [**Try it live in your browser**](https://huaspirit123.github.io/xiaodouding/)
+**English** · [中文](https://github.com/huaspirit123/xiaodouding/blob/main/README.zh-CN.md) · ▶ [**Try it live in your browser**](https://huaspirit123.github.io/xiaodouding/)
 
 **An LLM-powered pixel pet for the M5Stack Cardputer.** It chats with you (with persistent
 memory), talks back with voice, and lives an autonomous little life — roaming a holographic
 "pixel workstation" across 10 day/night scenes, showing the real time, real weather, and WiFi
 signal, and reacting to your messages with moods.
 
-[![demo — Pixel Buddy across the 10 scenes](docs/demo.gif)](https://huaspirit123.github.io/xiaodouding/)
+[![demo — Pixel Buddy across the 10 scenes](https://github.com/huaspirit123/xiaodouding/blob/main/docs/demo.gif)](https://huaspirit123.github.io/xiaodouding/)
 
 > ▶ **[Play with it live, in your browser →](https://huaspirit123.github.io/xiaodouding/)** — the pet roams, real clock & weather, no install. (Chat needs the local backend.)
 
@@ -205,12 +205,12 @@ live on the SD card in this mode (the firmware auto-migrates them on first boot)
 
 ## 🤝 Contributing
 
-PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Good first issues: more scenes, nicer
+PRs welcome — see [CONTRIBUTING.md](https://github.com/huaspirit123/xiaodouding/blob/main/CONTRIBUTING.md). Good first issues: more scenes, nicer
 mascot art, additional LLM/voice backends, English/i18n of the on-device strings.
 
 ## 📜 License
 
-[Apache-2.0](LICENSE). The bundled **Pixel Buddy** mascot art is original and also Apache-2.0.
+[Apache-2.0](https://github.com/huaspirit123/xiaodouding/blob/main/LICENSE). The bundled **Pixel Buddy** mascot art is original and also Apache-2.0.
 
 ## 🙏 Credits & notes
 

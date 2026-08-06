@@ -164,7 +164,7 @@ sync engine has no native vector index).
 ## Install (Windows)
 
 Grab the latest `Vessel Setup *.exe` from the
-[Releases](../../releases) page and run it (one-click, per-user install).
+[Releases](https://github.com/PratikKothari34/Vessel/blob/main/../../releases) page and run it (one-click, per-user install).
 You still need **Ollama + the three models** (see Prerequisites) on the machine.
 Your data lives in `%APPDATA%/Vessel/data/` and survives updates.
 
@@ -214,5 +214,5 @@ related:
 
 ## License
 
-[GPL-3.0](LICENSE) — free to use, modify, and redistribute; derivatives must
+[GPL-3.0](https://github.com/PratikKothari34/Vessel/blob/main/LICENSE) — free to use, modify, and redistribute; derivatives must
 stay under the same license.

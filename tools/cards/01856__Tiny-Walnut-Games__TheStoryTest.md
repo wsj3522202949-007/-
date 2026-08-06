@@ -81,12 +81,12 @@ Tiny Walnut Games > The Story Test > Run Story Test and Export Report
 
 ## 📚 Documentation
 
--   **[Getting Started](docs/getting-started.md)** - Installation and first validation
--   **[The 11 Acts](docs/acts.md)** - Complete validation rules reference
--   **[Configuration](docs/configuration.md)** - Settings and customization
--   **[CI/CD Integration](docs/ci-cd.md)** - GitHub Actions and automation
--   **[Python Validator](docs/python-validator.md)** - Standalone validation
--   **[Changelog](CHANGELOG.md)** - Version history and changes
+-   **[Getting Started](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/getting-started.md)** - Installation and first validation
+-   **[The 11 Acts](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/acts.md)** - Complete validation rules reference
+-   **[Configuration](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/configuration.md)** - Settings and customization
+-   **[CI/CD Integration](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/ci-cd.md)** - GitHub Actions and automation
+-   **[Python Validator](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/python-validator.md)** - Standalone validation
+-   **[Changelog](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/CHANGELOG.md)** - Version history and changes
 
 ## ✨ Features
 
@@ -130,13 +130,13 @@ Packages/com.tinywalnutgames.storytest/
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/LICENSE) for details.
 
 ## 📋 Operations & Maintenance
 
 ### Release & Branch Management
 
--   **[Workflows & Release Strategy](./WORKFLOWS.md)** - Three-branch workflow, branch protection, dependency management
+-   **[Workflows & Release Strategy](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/WORKFLOWS.md)** - Three-branch workflow, branch protection, dependency management
     -   Daily development workflow
     -   Release process automation
     -   Branch protection configuration
@@ -144,20 +144,20 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ### Historical Reference
 
--   **[Workflow Fixes & Changelog](./FIXES_CHANGELOG.md)** - Historical issues and resolutions
+-   **[Workflow Fixes & Changelog](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/FIXES_CHANGELOG.md)** - Historical issues and resolutions
     -   Version tag migration (December 2024)
     -   Linter error fixes (October 2024)
     -   Platform identifier fixes (October 2024)
 
 ### For Maintainers
 
--   **[Release Process](docs/RELEASE_PROCESS.md)** - Automated releases and versioning
+-   **[Release Process](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/docs/RELEASE_PROCESS.md)** - Automated releases and versioning
 -   Releases are automated via GitHub Actions when version tags are pushed
 -   Use `./scripts/release.sh` for easy version bumping
 
 ### For AI Assistants
 
--   **[AI Guidelines](./../.zencoder/rules/ai-guidelines.md)** - Reality-first instructions for AI helpers
+-   **[AI Guidelines](https://github.com/Tiny-Walnut-Games/TheStoryTest/blob/main/../.zencoder/rules/ai-guidelines.md)** - Reality-first instructions for AI helpers
     -   Reality anchor protocol
     -   Developer communication preferences
     -   Verification requirements

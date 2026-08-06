@@ -44,7 +44,7 @@ related:
 
 **An open-source tool for detecting AI-generated Arabic text**
 
-[Live Demo](https://farras.app) &nbsp;|&nbsp; [Model on HuggingFace](https://huggingface.co/Rashidbm/farras-xlmr-arabic-ai-detector) &nbsp;|&nbsp; [Research Report (v1)](v1-hybrid/Arabic_AI_Text_Detection_Report.pdf)
+[Live Demo](https://farras.app) &nbsp;|&nbsp; [Model on HuggingFace](https://huggingface.co/Rashidbm/farras-xlmr-arabic-ai-detector) &nbsp;|&nbsp; [Research Report (v1)](https://github.com/Rashidbm/farras/blob/main/v1-hybrid/Arabic_AI_Text_Detection_Report.pdf)
 
 </div>
 
@@ -71,7 +71,7 @@ The first version explored whether stylistic and structural cues could outperfor
 - **AraBERTv2** fine-tuning (85.2%)
 - **Hybrid ensemble** combining N-grams + linguistic features (93.2%)
 
-Key finding: the hybrid model that combined surface-level patterns with linguistic features outperformed the deep transformer. The full analysis is in the [research report](v1-hybrid/Arabic_AI_Text_Detection_Report.pdf).
+Key finding: the hybrid model that combined surface-level patterns with linguistic features outperformed the deep transformer. The full analysis is in the [research report](https://github.com/Rashidbm/farras/blob/main/v1-hybrid/Arabic_AI_Text_Detection_Report.pdf).
 
 **Limitations identified:**
 - Dataset was Gemini-only — the model had never seen GPT-4, Llama, or Jais outputs

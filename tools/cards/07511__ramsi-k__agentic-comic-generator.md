@@ -148,7 +148,7 @@ I still care about multi-agent memory and orchestration, but I’ll explore it d
 
 ## 🎬 **Demo & Documentation**
 
-- **Architecture Deep Dive**: [Memory Handling Guide](./memory_handling.md)
+- **Architecture Deep Dive**: [Memory Handling Guide](https://github.com/ramsi-k/agentic-comic-generator/blob/main/memory_handling.md)
 - **Test Suite**: Comprehensive tests in `tests/` directory
 - **Modal Functions**: Production-ready SDXL and code execution in `tools/`
 

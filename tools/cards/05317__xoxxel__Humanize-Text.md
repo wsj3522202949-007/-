@@ -39,7 +39,7 @@ related:
 
 # 🔤 Humanize Text
 
-![Cover](public/cover.png)
+![Cover](https://github.com/xoxxel/Humanize-Text/blob/main/public/cover.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/🇺🇸_English-en-blue?style=for-the-badge" alt="English">
@@ -93,7 +93,7 @@ Use our community-updated dictionary. Default language: **English** 🇺🇸
 
 1. Open your Google Doc
 2. Go to **Extensions → Apps Script**
-3. Copy the entire content from **[`add-on/api-method.js`](add-on/api-method.js)**
+3. Copy the entire content from **[`add-on/api-method.js`](https://github.com/xoxxel/Humanize-Text/blob/main/add-on/api-method.js)**
 4. Paste into the editor and save
 5. Reload your Google Doc
 6. Open the **🔤 Humanize Text** menu - it's ready to use!
@@ -137,7 +137,7 @@ Create a Google Sheet with this exact structure:
 
 1. Open your Google Doc
 2. Go to **Extensions → Apps Script**
-3. Copy the entire content from **[`add-on/local-setup.js`](add-on/local-setup.js)**
+3. Copy the entire content from **[`add-on/local-setup.js`](https://github.com/xoxxel/Humanize-Text/blob/main/add-on/local-setup.js)**
 4. Paste and save
 5. ⚠️ **ONLY change this line (line 2):** Replace with your Google Sheet ID:
    ```javascript

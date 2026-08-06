@@ -51,7 +51,7 @@ related:
 
 Alchemy is a drop-in ruleset that stops your AI coding agent from writing like an LLM: no em-dash pile-ups, no "not just X, it's Y", no stray *delve*. You add it once, your agent reads it before it writes, and the READMEs, commits, and docs it produces start sounding like a person wrote them.
 
-Turn lead into gold. It's one file, about 1000 tokens, that lives next to your agent's other instructions: [`ALCHEMY.md`](./ALCHEMY.md). Everything else here just gets it into your project.
+Turn lead into gold. It's one file, about 1000 tokens, that lives next to your agent's other instructions: [`ALCHEMY.md`](https://github.com/fernforge/alchemy/blob/main/ALCHEMY.md). Everything else here just gets it into your project.
 
 ## How do I stop my AI from writing like an LLM?
 
@@ -72,7 +72,7 @@ alchemy init
 npx @fernforge/alchemy print   # or: alchemy print
 ```
 
-Prefer to do it by hand? Copy [`ALCHEMY.md`](./ALCHEMY.md) into your repo and reference it from your agent's instruction file. That's the whole mechanism. No service, no API, no account.
+Prefer to do it by hand? Copy [`ALCHEMY.md`](https://github.com/fernforge/alchemy/blob/main/ALCHEMY.md) into your repo and reference it from your agent's instruction file. That's the whole mechanism. No service, no API, no account.
 
 ## Before and after
 
@@ -127,7 +127,7 @@ To serve the rules on demand across every project instead of committing a file t
 }
 ```
 
-It exposes a `get_writing_rules` tool and an `alchemy://rules` resource, so any MCP-aware agent can pull the ruleset when it's about to write prose. See [`mcp/`](./mcp) for details.
+It exposes a `get_writing_rules` tool and an `alchemy://rules` resource, so any MCP-aware agent can pull the ruleset when it's about to write prose. See [`mcp/`](https://github.com/fernforge/alchemy/blob/main/mcp) for details.
 
 ## Three ways to install, one ruleset
 
@@ -147,7 +147,7 @@ This README follows its own rules. If it reads fine, that's the pitch.
 
 Found a tell it misses? Open an issue or a PR with a real before-and-after pair. Concrete examples are worth more than new abstract rules.
 
-Edit the root [`ALCHEMY.md`](./ALCHEMY.md) only. The copies under `python/` and `mcp/` are generated from it by `node scripts/sync-rules.mjs`, and CI fails if they drift. The npm, PyPI, and MCP packages publish from GitHub Releases (see [`.github/workflows`](./.github/workflows)).
+Edit the root [`ALCHEMY.md`](https://github.com/fernforge/alchemy/blob/main/ALCHEMY.md) only. The copies under `python/` and `mcp/` are generated from it by `node scripts/sync-rules.mjs`, and CI fails if they drift. The npm, PyPI, and MCP packages publish from GitHub Releases (see [`.github/workflows`](https://github.com/fernforge/alchemy/blob/main/.github/workflows)).
 
 ## License
 

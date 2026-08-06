@@ -100,7 +100,7 @@ A short list of the most common AI patterns the skill recognizes, with what a hu
 | "On one hand, on the other hand" | Has an opinion, or admits real uncertainty. |
 | "In a world where..." | Starts with the thing itself. |
 
-The full catalog (with more patterns, more examples, and the principles underneath them) lives in [SKILL.md](SKILL.md).
+The full catalog (with more patterns, more examples, and the principles underneath them) lives in [SKILL.md](https://github.com/spuvr/humanizer/blob/main/SKILL.md).
 
 
 ## Before and after, so you can feel the gap
@@ -146,7 +146,7 @@ The baseline writes "marking a pivotal moment in human history" before it has ev
 
 I didn't want to just say this skill is good, I wanted to actually test it. So I spawned two Claude agents in parallel in separate terminal windows. One had the humanizer skill loaded, the other didn't. Both got the same four subjects with the same factual references. The only thing that changed was the skill.
 
-The agents wrote their output directly to their own files. I didn't paste anything, edit anything, or pick the good parts. Their raw output is in the [BENCHMARK](BENCHMARK) folder, baseline.md next to humanizer.md, side by side. Compare them and judge for yourself.
+The agents wrote their output directly to their own files. I didn't paste anything, edit anything, or pick the good parts. Their raw output is in the [BENCHMARK](https://github.com/spuvr/humanizer/blob/main/BENCHMARK) folder, baseline.md next to humanizer.md, side by side. Compare them and judge for yourself.
 
 
 ## What reading AI feels like versus what reading human writing feels like

@@ -97,7 +97,7 @@ related:
 
 ### Option 1: .skill 파일 (가장 간단)
 
-[Releases](../../releases) 에서 `ai-writers-room.skill` 다운로드 후:
+[Releases](https://github.com/jackpopup/ai-writers-room/blob/main/../../releases) 에서 `ai-writers-room.skill` 다운로드 후:
 
 ```bash
 claude install-skill ai-writers-room.skill

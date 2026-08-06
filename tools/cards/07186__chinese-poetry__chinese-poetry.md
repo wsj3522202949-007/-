@@ -109,17 +109,17 @@ related:
 
 ## 数据集
 
-- [唐诗宋诗](./全唐诗)
-- [全宋词](./宋词)
-- [五代·花间集](./五代诗词/huajianji)
-- [五代·南唐二主词](./五代诗词/nantang)
-- [论语](./论语)
-- [诗经](./诗经)
-- [幽梦影](./幽梦影)
-- [四书五经](./四书五经)
-- [蒙学](./蒙学)
-- [纳兰性德诗集](./纳兰性德)
-- [御定全唐詩](./御定全唐詩)
+- [唐诗宋诗](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E5%85%A8%E5%94%90%E8%AF%97)
+- [全宋词](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E5%AE%8B%E8%AF%8D)
+- [五代·花间集](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/huajianji)
+- [五代·南唐二主词](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E4%BA%94%E4%BB%A3%E8%AF%97%E8%AF%8D/nantang)
+- [论语](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E8%AE%BA%E8%AF%AD)
+- [诗经](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E8%AF%97%E7%BB%8F)
+- [幽梦影](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E5%B9%BD%E6%A2%A6%E5%BD%B1)
+- [四书五经](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E5%9B%9B%E4%B9%A6%E4%BA%94%E7%BB%8F)
+- [蒙学](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E8%92%99%E5%AD%A6)
+- [纳兰性德诗集](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E7%BA%B3%E5%85%B0%E6%80%A7%E5%BE%B7)
+- [御定全唐詩](https://github.com/chinese-poetry/chinese-poetry/blob/main/%E5%BE%A1%E5%AE%9A%E5%85%A8%E5%94%90%E8%A9%A9)
 
 
 ## 贡献

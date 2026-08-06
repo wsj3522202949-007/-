@@ -226,4 +226,4 @@ GNU General Public License v3.0
 
 ## Screenshot
 
-![Screenshot](screenshot.jpg)
+![Screenshot](https://github.com/evbkv/a4editor/blob/main/screenshot.jpg)

@@ -64,11 +64,11 @@ The Next Word Predictor leverages natural language processing (NLP) techniques t
 3. **Prediction:** Once trained, the model takes a text input and predicts the most likely next word based on the patterns it has learned.
 4. **Fine-Tuning (Optional):** The model can be fine-tuned to improve accuracy on specific types of text or applications.
 
-`![#1](1.png)
+`![#1](https://github.com/meghanshgarjala/NEXT-WORD-PREDICTOR/blob/main/1.png)
 
-`![#2](2.png)
+`![#2](https://github.com/meghanshgarjala/NEXT-WORD-PREDICTOR/blob/main/2.png)
 
-`![#3](3.png)
+`![#3](https://github.com/meghanshgarjala/NEXT-WORD-PREDICTOR/blob/main/3.png)
 
 ## Prerequisites
 

@@ -195,7 +195,7 @@ Skill staví na výzkumu českých a slovenských univerzit:
 | Šigut | 2023 | Diplomová práce — detekce AI v češtině | Masarykova univerzita |
 | Macko et al. | 2023 | MULTITuDE — multilingvální detekce (vč. češtiny) | KInIT / EMNLP 2023 |
 
-Kompletní seznam referencí včetně odkazů najdete v souboru [SKILL.md](SKILL.md#reference).
+Kompletní seznam referencí včetně odkazů najdete v souboru [SKILL.md](https://github.com/mirecekd/humanizer-cz/blob/main/SKILL.md#reference).
 
 ## Jak to funguje?
 
@@ -222,7 +222,7 @@ humanizer-cz/
 
 ## Licence
 
-MIT — viz [LICENSE](LICENSE)
+MIT — viz [LICENSE](https://github.com/mirecekd/humanizer-cz/blob/main/LICENSE)
 
 ## Podpořte projekt
 

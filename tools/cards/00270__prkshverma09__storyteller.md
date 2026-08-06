@@ -336,7 +336,7 @@ Loads configuration from environment variables and `.env` file.
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guidelines](https://github.com/prkshverma09/storyteller/blob/main/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -346,7 +346,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/prkshverma09/storyteller/blob/main/LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -356,7 +356,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 📖 [Documentation](docs/)
+- 📖 [Documentation](https://github.com/prkshverma09/storyteller/blob/main/docs/)
 - 🐛 [Report Issues](https://github.com/yourusername/storyteller/issues)
 - 💬 [Discussions](https://github.com/yourusername/storyteller/discussions)
 - 📧 [Contact](mailto:your.email@example.com)

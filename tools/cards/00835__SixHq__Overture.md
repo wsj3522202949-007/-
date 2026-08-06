@@ -752,7 +752,7 @@ Overture is open source and we welcome contributions!
 - 🐛 **Report bugs** at [GitHub Issues](https://github.com/SixHq/Overture/issues)
 - 💡 **Suggest features** at [GitHub Discussions](https://github.com/SixHq/Overture/discussions)
 - 📖 **Improve docs** — PRs welcome
-- 🔧 **Contribute code** — see [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🔧 **Contribute code** — see [CONTRIBUTING.md](https://github.com/SixHq/Overture/blob/main/CONTRIBUTING.md)
 
 All contributions are appreciated, no matter how small.
 
@@ -760,7 +760,7 @@ All contributions are appreciated, no matter how small.
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/SixHq/Overture/blob/main/LICENSE) for details.
 
 related:
   - methods/网文写作最强SOP.md

@@ -105,12 +105,12 @@ init -> write-next -> draft -> revise -> extract-state -> state-update
 这里不展开写很多指令细节，因为这个仓库本身是 skill。  
 真正给智能体看的使用方式，应该优先看：
 
-- [`SKILL.md`](SKILL.md)
+- [`SKILL.md`](https://github.com/qiyan233/novelops-skill/blob/main/SKILL.md)
 
 如果你是人在看仓库、想快速理解这个 skill 怎么用，建议看：
 
-- [`examples/demo-novel/README.md`](examples/demo-novel/README.md)
-- [`docs/cli.md`](docs/cli.md)
+- [`examples/demo-novel/README.md`](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/README.md)
+- [`docs/cli.md`](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
 
 ---
 
@@ -118,22 +118,22 @@ init -> write-next -> draft -> revise -> extract-state -> state-update
 
 ### 先看定位
 
-- [`SKILL.md`](SKILL.md)
+- [`SKILL.md`](https://github.com/qiyan233/novelops-skill/blob/main/SKILL.md)
 
 这是这个仓库最核心的文件。  
 README 负责介绍项目，`SKILL.md` 才更接近“这个 skill 真正怎么工作”。
 
 ### 再看一个完整例子
 
-- [`examples/demo-novel/`](examples/demo-novel/)
+- [`examples/demo-novel/`](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/)
 
 如果你想最快看懂 `write-next / revise / state-update` 是怎么串起来的，先看 demo，比先读很多实现细节更直观。
 
 ### 最后按需看文档
 
-- [`docs/cli.md`](docs/cli.md)
-- [`docs/getting-started.md`](docs/getting-started.md)
-- [`docs/project-template.md`](docs/project-template.md)
+- [`docs/cli.md`](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
+- [`docs/getting-started.md`](https://github.com/qiyan233/novelops-skill/blob/main/docs/getting-started.md)
+- [`docs/project-template.md`](https://github.com/qiyan233/novelops-skill/blob/main/docs/project-template.md)
 
 ---
 
@@ -179,12 +179,12 @@ README 负责介绍项目，`SKILL.md` 才更接近“这个 skill 真正怎么�
 
 ## 更多内容
 
-- [CHANGELOG.md](CHANGELOG.md)
-- [docs/cli.md](docs/cli.md)
-- [docs/getting-started.md](docs/getting-started.md)
-- [docs/project-template.md](docs/project-template.md)
-- [references/json-schemas.md](references/json-schemas.md)
-- [references/workflow-playbooks.md](references/workflow-playbooks.md)
+- [CHANGELOG.md](https://github.com/qiyan233/novelops-skill/blob/main/CHANGELOG.md)
+- [docs/cli.md](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
+- [docs/getting-started.md](https://github.com/qiyan233/novelops-skill/blob/main/docs/getting-started.md)
+- [docs/project-template.md](https://github.com/qiyan233/novelops-skill/blob/main/docs/project-template.md)
+- [references/json-schemas.md](https://github.com/qiyan233/novelops-skill/blob/main/references/json-schemas.md)
+- [references/workflow-playbooks.md](https://github.com/qiyan233/novelops-skill/blob/main/references/workflow-playbooks.md)
 
 related:
   - methods/QUICK_START.md
@@ -205,9 +205,9 @@ init -> write-next -> draft -> revise -> extract-state -> state-update
 
 If you are new here, start with:
 
-1. [SKILL.md](SKILL.md)
-2. [examples/demo-novel/README.md](examples/demo-novel/README.md)
-3. [docs/cli.md](docs/cli.md)
+1. [SKILL.md](https://github.com/qiyan233/novelops-skill/blob/main/SKILL.md)
+2. [examples/demo-novel/README.md](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/README.md)
+3. [docs/cli.md](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
 
 For humans, this README is intentionally lightweight.  
 The real operating behavior of the skill lives in `SKILL.md`.

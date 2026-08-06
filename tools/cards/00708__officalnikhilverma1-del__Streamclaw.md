@@ -50,7 +50,7 @@ This document outlines the technical architecture for the "Agentic Storytelling 
 ## 📂 Scripts
 
 ### Episode 01 — "Meri Gaon Ki Chudail — Sachi Ghatna"
-- **Visual Script V2:** [`scripts/episode-01/visual-script-v2.md`](scripts/episode-01/visual-script-v2.md)
+- **Visual Script V2:** [`scripts/episode-01/visual-script-v2.md`](https://github.com/officalnikhilverma1-del/Streamclaw/blob/main/scripts/episode-01/visual-script-v2.md)
   - 54 clips across 8 scenes
   - ~12:00–12:30 estimated runtime
   - Includes: Image prompts, Veo animation prompts, extend prompts, narrator dialogue

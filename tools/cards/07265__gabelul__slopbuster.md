@@ -122,7 +122,7 @@ cp -r slopbuster /path/to/agent/skills/
 — a rule set your agent reads and applies, running on the model you're already
 paying for. There's no separate service to sign up for and no runtime.
 
-Want your agent to follow slopbuster's rules on *everything* it writes, not just when you invoke the skill? See the **[setup guide](docs/setup-guide.md)** for CLAUDE.md, Cursor, Codex, Windsurf, and other agent configs.
+Want your agent to follow slopbuster's rules on *everything* it writes, not just when you invoke the skill? See the **[setup guide](https://github.com/gabelul/slopbuster/blob/main/docs/setup-guide.md)** for CLAUDE.md, Cursor, Codex, Windsurf, and other agent configs.
 
 ---
 
@@ -258,7 +258,7 @@ What differs is how it gets triggered.
 | Claude Code | `npx skills add` | `/slopbuster` | Primary target — developed and tested here |
 | Codex CLI | `npx skills add` | `/slopbuster` | Reads the same `SKILL.md` |
 | OpenClaw | manual | skill trigger | Uses `SKILL-OC.md`, a token-optimized variant |
-| Cursor · Windsurf · Cline · Copilot | `npx skills add` | rules file | No slash commands — see the [setup guide](docs/setup-guide.md) to apply the rules to everything the agent writes |
+| Cursor · Windsurf · Cline · Copilot | `npx skills add` | rules file | No slash commands — see the [setup guide](https://github.com/gabelul/slopbuster/blob/main/docs/setup-guide.md) to apply the rules to everything the agent writes |
 | Gemini CLI · Kiro · Pi | `npx skills add` | varies | Installs cleanly; trigger mechanism depends on the host |
 
 Anything the [Skills CLI](https://github.com/vercel-labs/skills) supports
@@ -279,11 +279,11 @@ Built from analyzing 1,000+ AI vs human content samples, cross-referenced agains
 
 ## Contributing
 
-Found a new AI pattern? Have a rule that catches something we miss? See [CONTRIBUTING.md](CONTRIBUTING.md).
+Found a new AI pattern? Have a rule that catches something we miss? See [CONTRIBUTING.md](https://github.com/gabelul/slopbuster/blob/main/CONTRIBUTING.md).
 
 ## License
 
-MIT — use freely. See [LICENSE](LICENSE).
+MIT — use freely. See [LICENSE](https://github.com/gabelul/slopbuster/blob/main/LICENSE).
 
 related:
   - methods/QUICK_START.md

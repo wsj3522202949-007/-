@@ -312,7 +312,7 @@ ruff check src/ tests/
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See [LICENSE](https://github.com/organvm-ii-poiesis/art-from--narratological-algorithmic-lenses/blob/main/LICENSE) for details.
 
 Copyright (c) 2026 organvm-ii-poiesis
 

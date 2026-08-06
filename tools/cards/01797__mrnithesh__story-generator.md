@@ -45,7 +45,7 @@ related:
 
 An interactive web application that generates customized stories using Google's Gemini AI. Create engaging stories tailored to specific age groups, themes, and creative elements.
 
-![AI Story Generator Screenshot](screenshot.png)
+![AI Story Generator Screenshot](https://github.com/mrnithesh/story-generator/blob/main/screenshot.png)
 
 ## ✨ Features
 

@@ -444,4 +444,4 @@ python3 tools/eval/evaluate.py                  # precision/recall on the corpus
 
 ## License
 
-[MIT](LICENSE) © Саша · <a href="README.ru.md">Русский</a> · <a href="README.zh-CN.md">中文</a>
+[MIT](https://github.com/meloch287/data-shield-ai/blob/main/LICENSE) © Саша · <a href="README.ru.md">Русский</a> · <a href="README.zh-CN.md">中文</a>

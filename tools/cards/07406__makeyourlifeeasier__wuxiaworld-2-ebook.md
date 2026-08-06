@@ -111,7 +111,7 @@ Here are some related projects you can check out if you experience problems or d
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/makeyourlifeeasier/wuxiaworld-2-ebook/blob/main/LICENSE.md) file for details
 
 ## Acknowledgments
 

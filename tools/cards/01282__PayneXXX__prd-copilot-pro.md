@@ -95,7 +95,7 @@ related:
 | Generator | Draft or revise PRD Markdown from Planner output and feedback | `Pro/zai-org/GLM-5.1` |
 | Evaluator | Score the PRD with Planner's evaluation rule | `Pro/moonshotai/Kimi-K2.6` |
 
-Model routing is centralized in [`src/config/models.ts`](src/config/models.ts).
+Model routing is centralized in [`src/config/models.ts`](https://github.com/PayneXXX/prd-copilot-pro/blob/main/src/config/models.ts).
 
 ## Getting Started
 

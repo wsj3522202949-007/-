@@ -64,12 +64,12 @@ LettuceAI is fully free and open source with no paywalls or locked features. You
 
 | Chat | Character Editor |
 | --- | --- |
-| ![Chat screen](docs/readme/chat.png) | ![Character editor](docs/readme/character_editor.png) |
+| ![Chat screen](https://github.com/LettuceAI/app/blob/main/docs/readme/chat.png) | ![Character editor](https://github.com/LettuceAI/app/blob/main/docs/readme/character_editor.png) |
 | Live roleplay chat with character-aware UI. | Build and refine character identity, definition, and avatar. |
 
 | Memory | Image Generation |
 | --- | --- |
-| ![Memory screen](docs/readme/memory.png) | ![Image prompt and result](docs/readme/image_prompt.png) |
+| ![Memory screen](https://github.com/LettuceAI/app/blob/main/docs/readme/memory.png) | ![Image prompt and result](https://github.com/LettuceAI/app/blob/main/docs/readme/image_prompt.png) |
 | Review context summaries and manage saved memories. | Generate character visuals directly from prompts. |
 
 ### Advanced Controls
@@ -82,7 +82,7 @@ related:
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 --- |
-| ![Models screen](docs/readme/models.png) | ![System prompt editor](docs/readme/system_prompt_editor.png) |
+| ![Models screen](https://github.com/LettuceAI/app/blob/main/docs/readme/models.png) | ![System prompt editor](https://github.com/LettuceAI/app/blob/main/docs/readme/system_prompt_editor.png) |
 | Configure local or remote model backends. | Edit structured prompt templates and variables. |
 
 Screenshots feature “King Cassian” by [jawawgf](https://character-tavern.com/character/jawawgf/king_cassian), used for demonstration.

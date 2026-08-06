@@ -45,7 +45,7 @@ related:
 # Muti-modal-Creative-Story-Generation-from-Images-using-captioning
 In this project the stories are generated using a two part framework as descriptive image captioning using smaller NLP models and then using a large language model for generating creative stories using those. The aim of the work is to generate stories which are coherent with the images and can incorporate the theme and context presented. At the end of the project the results look like the follwing: For pairs of three images, one creative story is generated using first the Image Captioning model which takes images as the input and then the Story Generation model which takes the captions as the input. 
 
-![Image Captioning Model](images/story.png?raw=true)
+![Image Captioning Model](https://github.com/kashishgoel9/Muti-modal-Creative-Story-Generation-from-Images-using-captioning/blob/main/images/story.png?raw=true)
 
 ## 1. Dataset 
 

@@ -164,7 +164,7 @@ We welcome contributions to the **Kids Story Generator**! If you have ideas for 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/SijanJ/Kids_story_generator/blob/main/LICENSE) file for details.
 
 ---
 

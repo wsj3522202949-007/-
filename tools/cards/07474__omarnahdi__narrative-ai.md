@@ -317,7 +317,7 @@ This project is licensed under the PolyForm Noncommercial License 1.0.0.
 **Commercial Licensing:**
 For commercial licensing inquiries, please contact: **omarnahdi.ai@gmail.com**
 
-For full license terms, see the [LICENSE](LICENSE) file.
+For full license terms, see the [LICENSE](https://github.com/omarnahdi/narrative-ai/blob/main/LICENSE) file.
 
 related:
   - methods/QUICK_START.md

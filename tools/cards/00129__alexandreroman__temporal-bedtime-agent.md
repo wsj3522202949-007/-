@@ -43,9 +43,9 @@ An interactive bedtime story creation agent powered by [Temporal](https://tempor
 
 The agent guides you through a conversation to collaboratively create a personalized bedtime story, complete with AI-generated illustrations.
 
-![Story creation](story.png)
+![Story creation](https://github.com/alexandreroman/temporal-bedtime-agent/blob/main/story.png)
 
-![Temporal dashboard](temporal.png)
+![Temporal dashboard](https://github.com/alexandreroman/temporal-bedtime-agent/blob/main/temporal.png)
 
 ## Features
 
@@ -280,4 +280,4 @@ related:
 
 ## License
 
-[Apache License 2.0](LICENSE)
+[Apache License 2.0](https://github.com/alexandreroman/temporal-bedtime-agent/blob/main/LICENSE)

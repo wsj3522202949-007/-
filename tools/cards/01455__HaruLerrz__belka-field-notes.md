@@ -63,22 +63,22 @@ related:
 
 ## Start Here
 
-* [Resume Lite](profile/resume-lite.md)：學經歷、工作範圍、工具與資格摘要。
-* [Selected Works](profile/works.md)：分類作品、外部連結與案例摘要。
+* [Resume Lite](https://github.com/HaruLerrz/belka-field-notes/blob/main/profile/resume-lite.md)：學經歷、工作範圍、工具與資格摘要。
+* [Selected Works](https://github.com/HaruLerrz/belka-field-notes/blob/main/profile/works.md)：分類作品、外部連結與案例摘要。
 * [完整影音作品集](https://linktr.ee/jacksunexe)：V新聞、長片新聞、生活消費與醫療內容。
 
 ## Repository Map
 
-* [Case Notes](case-notes/)  
+* [Case Notes](https://github.com/HaruLerrz/belka-field-notes/blob/main/case-notes/)  
   依問題、流程與結果整理的工作案例，涵蓋影音、社群、公共議題、網站建置與數位原型。
 
-* [Web / AI System Projects](projects/)  
+* [Web / AI System Projects](https://github.com/HaruLerrz/belka-field-notes/blob/main/projects/)  
   整理 AI 互動敘事網站、公共議題查證原型、Node.js 後端、prompt packaging、來源流程、狀態管理與部署紀錄。
 
-* [Prompting / Structured Writing](prompting/)  
+* [Prompting / Structured Writing](https://github.com/HaruLerrz/belka-field-notes/blob/main/prompting/)  
   工作型 prompt、語氣辨識、AI 歌曲創作工作流、模組化指令與結構化寫作流程。
 
-* [Tools](tools/)  
+* [Tools](https://github.com/HaruLerrz/belka-field-notes/blob/main/tools/)  
   由我依實際需求規劃，並使用 AI 協助撰寫、測試與修正的小型工具、workflow scripts 與操作輔助程式。
 
 ## Reuse

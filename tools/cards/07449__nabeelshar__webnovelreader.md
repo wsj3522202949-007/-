@@ -46,12 +46,12 @@ Search from a large catalog of content, open your pick and just enjoy.
 > **Note**: This is an actively maintained fork by [@Nabeelshar](https://github.com/Nabeelshar). The [original repository](https://github.com/nanihadesuka/NovelDokusha) is no longer actively maintained.
 
 # License
-Copyright © 2023, [nani](https://github.com/nanihadesuka), Released under [GPL-3](LICENSE) FOSS
+Copyright © 2023, [nani](https://github.com/nanihadesuka), Released under [GPL-3](https://github.com/nabeelshar/webnovelreader/blob/main/LICENSE) FOSS
 
 ## Features
   - **Live translation** - Google Translate with optional Gemini AI
   - **Auto-detect source language** when translating chapters
-  - **Bring your own Google Translate key** (free; see [docs/GOOGLE_TRANSLATE_API_KEY.md](docs/GOOGLE_TRANSLATE_API_KEY.md))
+  - **Bring your own Google Translate key** (free; see [docs/GOOGLE_TRANSLATE_API_KEY.md](https://github.com/nabeelshar/webnovelreader/blob/main/docs/GOOGLE_TRANSLATE_API_KEY.md))
   - **Multiple sources** from where to read novels:
     - **Chinese Sources** (with GBK encoding support):
       - 69书吧 (69shuba.com) - With automatic Cloudflare bypass
@@ -82,13 +82,13 @@ Copyright © 2023, [nani](https://github.com/nanihadesuka), Released under [GPL-
 |:----------------------------------:|:---------------------------------related:
   - methods/QUICK_START.md
 ---:|
-|    ![](screenshots/library.png)    |     ![](screenshots/finder.png)      |
+|    ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/library.png)    |     ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/finder.png)      |
 |             Book info              |            Book chapters             |
-|   ![](screenshots/book_info.png)   |  ![](screenshots/book_chapers.png)   |
+|   ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/book_info.png)   |  ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/book_chapers.png)   |
 |               Reader               |           Database search            |
-|    ![](screenshots/reader.png)     | ![](screenshots/database_search.png) |
+|    ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/reader.png)     | ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/database_search.png) |
 |           Global search            |                                      |
-| ![](screenshots/global_search.png) |                                      |
+| ![](https://github.com/nabeelshar/webnovelreader/blob/main/screenshots/global_search.png) |                                      |
 
 ## Tech stack
   - Kotlin

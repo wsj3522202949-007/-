@@ -284,7 +284,7 @@ export HUMANIZE_LLM_REASONING_EFFORT=none
 export HUMANIZE_SCORER_DEVICE=cpu
 ```
 
-更完整的开源模型和依赖说明见 [OPEN_SOURCE.md](./OPEN_SOURCE.md)。
+更完整的开源模型和依赖说明见 [OPEN_SOURCE.md](https://github.com/tianyidatascience/humanize/blob/main/OPEN_SOURCE.md)。
 
 ### Best-so-far 迭代
 

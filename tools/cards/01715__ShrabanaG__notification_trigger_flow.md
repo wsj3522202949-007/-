@@ -58,12 +58,12 @@ that sends actual emails and Slack messages.
 ### Login
 Secure email/password authentication — every user gets their own private workspace.
 
-![FlowForge login page](docs/screenshots/login-page.png)
+![FlowForge login page](https://github.com/ShrabanaG/notification_trigger_flow/blob/main/docs/screenshots/login-page.png)
 
 ### Home
 A polished landing/dashboard with the value proposition and quick access to the builder.
 
-![FlowForge home page](docs/screenshots/home-page.png)
+![FlowForge home page](https://github.com/ShrabanaG/notification_trigger_flow/blob/main/docs/screenshots/home-page.png)
 
 
 
@@ -149,7 +149,7 @@ saved per-user with Row-Level Security, so each account only sees its own data.
 
 ### 2. Create the database table
 - In your project, open **SQL Editor → New query**
-- Paste the contents of [`supabase/schema.sql`](supabase/schema.sql) and click **Run**
+- Paste the contents of [`supabase/schema.sql`](https://github.com/ShrabanaG/notification_trigger_flow/blob/main/supabase/schema.sql) and click **Run**
 - This creates the `workflows` table, an `updated_at` trigger, and RLS policies
 
 ### 3. Add your credentials

@@ -51,7 +51,7 @@ It does this by running a small language model as a persistent character with a 
 
 This is not a production tool. The psychological model is naive, the state extraction is imperfect, and the whole thing runs on consumer hardware with small models. It is a sketch, not a claim. But it produces something that is at minimum interesting to observe: a character whose mood is genuinely downstream of what is happening in the world, in more or less real time.
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/darxkies/anima/blob/main/screenshot.png)
 
 ## Features
 

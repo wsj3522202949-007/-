@@ -293,4 +293,4 @@ related:
 
 ## License
 
-MIT. See [LICENSE](./LICENSE).
+MIT. See [LICENSE](https://github.com/BurtonLeonard/ai_promptrule/blob/main/LICENSE).

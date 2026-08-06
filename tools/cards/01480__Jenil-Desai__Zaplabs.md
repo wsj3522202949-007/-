@@ -155,13 +155,13 @@ Make sure you have **Node.js**, **PostgreSQL**, and **Kafka** installed locally.
 
 | Screen Name           | Screenshot                                                |
 |-----------------------|-----------------------------------------------------------|
-| **Create Zap Screen** | ![Create Zap Screen](./Screenshots/create-zap-screen.png) |
-| **Your Zaps Screen**  | ![Your Zaps Screen](./Screenshots/your-zaps-screen.png)   |
-| **Zaplabs in Action** | ![Zaplabs in Action](./Screenshots/zaplabs-in-action.png) |
-| **Automate Workflow** | ![Automate Workflow](./Screenshots/automate-workflow.png) |
-| **User Profile**      | ![User Profile](./Screenshots/user-profile.png)           |
-| **Dashboard**         | ![Dashboard](./Screenshots/dashboard.png)                 |
-| **Pricing Plans**     | ![Pricing Plans](./Screenshots/pricing-plans.png)         |
+| **Create Zap Screen** | ![Create Zap Screen](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/create-zap-screen.png) |
+| **Your Zaps Screen**  | ![Your Zaps Screen](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/your-zaps-screen.png)   |
+| **Zaplabs in Action** | ![Zaplabs in Action](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/zaplabs-in-action.png) |
+| **Automate Workflow** | ![Automate Workflow](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/automate-workflow.png) |
+| **User Profile**      | ![User Profile](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/user-profile.png)           |
+| **Dashboard**         | ![Dashboard](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/dashboard.png)                 |
+| **Pricing Plans**     | ![Pricing Plans](https://github.com/Jenil-Desai/Zaplabs/blob/main/Screenshots/pricing-plans.png)         |
 
 ---
 

@@ -59,8 +59,8 @@ KathaSangam is an AI-powered story generator designed to create captivating stor
 
 ## Architecture
 
-![KathaSangam Architecture](Archi.png)
-![KathaSangam WorkFlow](Flow.jpg)
+![KathaSangam Architecture](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/Archi.png)
+![KathaSangam WorkFlow](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/Flow.jpg)
 
 ## Getting Started
 
@@ -88,10 +88,10 @@ To use KathaSangam, follow these steps:
 
 ## Screenshots Of the UI
 
-![Screenshot 1](S1.png)
-![Screenshot 2](S2.png)
-![Screenshot 3](S3.png)
-![Screenshot 3](S4.png)
+![Screenshot 1](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/S1.png)
+![Screenshot 2](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/S2.png)
+![Screenshot 3](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/S3.png)
+![Screenshot 3](https://github.com/SubhangiSati/KathaSangam-AI-Story-Generator/blob/main/S4.png)
 
 ## Contributors
 - Subhangi Sati (subhangi.sati270@gmail.com)

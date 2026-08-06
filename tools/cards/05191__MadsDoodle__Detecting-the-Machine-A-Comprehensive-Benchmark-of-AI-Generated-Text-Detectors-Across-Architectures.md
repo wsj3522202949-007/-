@@ -211,7 +211,7 @@ export $(cat .env | xargs)
 
 ### 5. Download the Datasets
 
-See [`data/README.md`](data/README.md) for detailed instructions. In brief:
+See [`data/README.md`](https://github.com/MadsDoodle/Detecting-the-Machine-A-Comprehensive-Benchmark-of-AI-Generated-Text-Detectors-Across-Architectures/blob/main/data/README.md) for detailed instructions. In brief:
 
 **HC3:**
 ```bash
@@ -600,7 +600,7 @@ If you use this codebase or findings in your research, please cite:
 
 ## 📜 License
 
-This project is licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+This project is licensed under the **MIT License** — see [`LICENSE`](https://github.com/MadsDoodle/Detecting-the-Machine-A-Comprehensive-Benchmark-of-AI-Generated-Text-Detectors-Across-Architectures/blob/main/LICENSE) for details.
 
 The HC3 dataset is released under its original license by [Hello-SimpleAI](https://huggingface.co/Hello-SimpleAI/HC3). The ELI5 dataset is released by [Fan et al. (2019)](https://aclanthology.org/P19-1346/). All pre-trained base models are subject to their respective licenses on HuggingFace Hub.
 

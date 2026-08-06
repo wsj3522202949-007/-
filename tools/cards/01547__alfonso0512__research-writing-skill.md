@@ -331,7 +331,7 @@ git push origin feature/your-feature
 
 ## 📄 许可证
 
-本项目采用 [MIT 许可证](LICENSE)。你可以：
+本项目采用 [MIT 许可证](https://github.com/alfonso0512/research-writing-skill/blob/main/LICENSE)。你可以：
 - ✅ 自由使用、修改、分发
 - ✅ 用于商业目的
 - ✅ 用于学术研究
@@ -351,7 +351,7 @@ git push origin feature/your-feature
 
 扫码关注，获取更多 **AI 使用技巧、科研经验与能源资讯**：
 
-![公众号二维码](assets/qrcode.jpg)
+![公众号二维码](https://github.com/alfonso0512/research-writing-skill/blob/main/assets/qrcode.jpg)
 
 related:
   - methods/网文写作最强SOP.md

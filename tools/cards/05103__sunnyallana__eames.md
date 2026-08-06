@@ -286,4 +286,4 @@ related:
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](https://github.com/sunnyallana/eames/blob/main/LICENSE).

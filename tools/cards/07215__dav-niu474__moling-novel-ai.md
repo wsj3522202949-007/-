@@ -284,7 +284,7 @@ bun run dev
 
 ## 📄 License
 
-[MIT](./LICENSE)
+[MIT](https://github.com/dav-niu474/moling-novel-ai/blob/main/LICENSE)
 
 related:
   - methods/QUICK_START.md

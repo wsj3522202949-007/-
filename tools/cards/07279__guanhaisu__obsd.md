@@ -63,7 +63,7 @@ OBSD (Oracle Bone Script Decipher) explores diffusion models for decoding oracle
 - 🎮 Demo: [OBSD Online](http://vlrlabmonkey.xyz:8225/)
 - 🗂️ Dataset: [Character Evolution Dataset](https://github.com/RomanticGodVAN/character-Evolution-Dataset)
 - 🖼️ Modern character images: `data/modern_kanji.zip`
-- 🛠️ Data processing helper: [`data/process.py`](./data/process.py)
+- 🛠️ Data processing helper: [`data/process.py`](https://github.com/guanhaisu/obsd/blob/main/data/process.py)
 
 ## Data Preparation
 Arrange your dataset so that oracle bone images (OBS) and their corresponding modern Chinese characters share the same filenames.

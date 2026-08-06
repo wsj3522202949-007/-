@@ -168,7 +168,7 @@ Navigate to `http://localhost:3000` and start generating!
 
 ## 🧠 Recommended Models
 
-![alt text](image.png)
+![alt text](https://github.com/dhruvinsomani0609/GUIDE-AI-Powered-UI-Generator/blob/main/image.png)
 
 ### Model Configuration
 
@@ -201,7 +201,7 @@ MODEL_NAME = "codellama:instruct"  # Change this line
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/dhruvinsomani0609/GUIDE-AI-Powered-UI-Generator/blob/main/LICENSE) file for details.
 
 ---
 

@@ -131,13 +131,13 @@ The whole point of the repo is that it can be mounted into an MCP client cleanly
 
 Start here:
 
-- [Install in Codex and other MCP clients](docs/installing-in-clients.md)
+- [Install in Codex and other MCP clients](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/installing-in-clients.md)
 
 Included examples:
 
-- [`examples/clients/codex.config.toml`](examples/clients/codex.config.toml)
-- [`examples/clients/vscode.mcp.json`](examples/clients/vscode.mcp.json)
-- [`examples/clients/cursor.mcp.json`](examples/clients/cursor.mcp.json)
+- [`examples/clients/codex.config.toml`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/codex.config.toml)
+- [`examples/clients/vscode.mcp.json`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/vscode.mcp.json)
+- [`examples/clients/cursor.mcp.json`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/cursor.mcp.json)
 
 ## Architecture
 
@@ -263,13 +263,13 @@ This repo is intentionally strict about what it does **not** claim:
 
 ## Documentation
 
-- [docs/medium-editor-research.md](docs/medium-editor-research.md)
-- [docs/content-workflows.md](docs/content-workflows.md)
-- [docs/installing-in-clients.md](docs/installing-in-clients.md)
-- [docs/repo-scope.md](docs/repo-scope.md)
-- [docs/CHANGELOG.md](docs/CHANGELOG.md)
-- [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md)
-- [.github/SECURITY.md](.github/SECURITY.md)
+- [docs/medium-editor-research.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/medium-editor-research.md)
+- [docs/content-workflows.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/content-workflows.md)
+- [docs/installing-in-clients.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/installing-in-clients.md)
+- [docs/repo-scope.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/repo-scope.md)
+- [docs/CHANGELOG.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/docs/CHANGELOG.md)
+- [.github/CONTRIBUTING.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/.github/CONTRIBUTING.md)
+- [.github/SECURITY.md](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/.github/SECURITY.md)
 
 ## Sources
 

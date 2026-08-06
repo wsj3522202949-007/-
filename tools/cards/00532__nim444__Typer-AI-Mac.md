@@ -47,7 +47,7 @@ ____
 <br>
 
 
-![Banner](assets/banner2.png)
+![Banner](https://github.com/nim444/Typer-AI-Mac/blob/main/assets/banner2.png)
 
 
 
@@ -57,7 +57,7 @@ An AI-powered macOS writing copilot that fixes grammar and adjusts tone — acce
 You're in any app, you have a messy draft. Click the **Typer** icon in your menu bar, paste or type your text, and get a clean rewrite — then tap **Copy & Close** to paste it wherever you were. No switching apps. Just a floating popup over your current screen.
 
 
-![Demo](assets/demo.png)
+![Demo](https://github.com/nim444/Typer-AI-Mac/blob/main/assets/demo.png)
 
 ---
 
@@ -67,7 +67,7 @@ You're in any app, you have a messy draft. Click the **Typer** icon in your menu
 
 This software is licensed for non-commercial use only. You may use this project for personal, academic, and non-profit purposes. **Commercial use, including but not limited to selling this software or using it as part of a paid service, is strictly prohibited.**
 
-See the [LICENSE](LICENSE) file for the full legal text.
+See the [LICENSE](https://github.com/nim444/Typer-AI-Mac/blob/main/LICENSE) file for the full legal text.
 
 ___
 
@@ -94,7 +94,7 @@ ___
 2. **Grok:** Go to [console.x.ai](https://console.x.ai/) to generate a Grok API key.
 
 #### Install the App
-1. Go to the [Actions tab](../../actions) on GitHub.
+1. Go to the [Actions tab](https://github.com/nim444/Typer-AI-Mac/blob/main/../../actions) on GitHub.
 2. Open the latest successful **Build macOS App** run.
 3. Download the `Typer-Mac` artifact and unzip it.
 4. Move `Typer.app` to your `/Applications` folder.

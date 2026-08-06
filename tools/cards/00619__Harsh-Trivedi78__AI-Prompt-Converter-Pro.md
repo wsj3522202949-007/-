@@ -67,4 +67,4 @@ related:
 6. **Review prompt examples** by clicking the "Show Examples" button.
 
 
-![Screenshot Description](images/your-screenshot.png)
+![Screenshot Description](https://github.com/Harsh-Trivedi78/AI-Prompt-Converter-Pro/blob/main/images/your-screenshot.png)

@@ -76,7 +76,7 @@ Gmail (sent mail)          Your feedback
 
 **Privacy:** Everything stays local. Your corpus, model, and drafts never leave your Mac.
 
-![YouOS demo](screenshots/demo.gif)
+![YouOS demo](https://github.com/DrBaher/youos/blob/main/screenshots/demo.gif)
 
 > 🌐 [youos.drbaher.com](https://youos.drbaher.com/)
 
@@ -131,7 +131,7 @@ youos serve     # then visit /triage
 
 Features: **standing instructions** threaded into every draft prompt, **cold-outreach detection** with an automatic decline-nudge, **prior-history boost** that prioritises senders you've actually corresponded with, **audit log** of every sweep visible in the `/triage` Recent activity panel, and three safety guardrails — per-sender skip list, daily draft cap, and strict-local mode (refuses cloud fallback during background sweeps). Manual one-shot: `youos triage --window 3d --limit 8 [--dry-run]`.
 
-**Remote access**: `/triage` is reachable from your phone via Tailscale + PIN auth — see [`docs/REMOTE_ACCESS.md`](docs/REMOTE_ACCESS.md). The agent runs autonomously on your Mac and pushes drafts to Gmail Drafts, which you can finish-and-send from any device without YouOS exposed at all.
+**Remote access**: `/triage` is reachable from your phone via Tailscale + PIN auth — see [`docs/REMOTE_ACCESS.md`](https://github.com/DrBaher/youos/blob/main/docs/REMOTE_ACCESS.md). The agent runs autonomously on your Mac and pushes drafts to Gmail Drafts, which you can finish-and-send from any device without YouOS exposed at all.
 
 ## Does it actually sound like you? (measured)
 
@@ -185,7 +185,7 @@ The web wizard walks you through everything:
 5. **Secure it** — optional API token for the browser extension
 6. **Keep it running** — install the background service
 
-Then **draft** in the web UI (`/feedback`) or via the [Gmail extension](extension/).
+Then **draft** in the web UI (`/feedback`) or via the [Gmail extension](https://github.com/DrBaher/youos/blob/main/extension/).
 
 <details>
 <summary>Prefer the terminal? / Manual install</summary>
@@ -335,7 +335,7 @@ The web UI provides:
 - **Review Queue**: Emails appear instantly, drafts stream in one by one as they generate. Automated senders filtered by address and content. Configurable batch size (5/10/20) and draft model (`claude`/`local`/`auto`). Keyboard shortcuts: `j` submit, `k` skip, `e` edit, `1-5` rate, `?` help.
 - **History**: Past drafts with intent badges, confidence badges, and edit-distance indicators
 - **Stats Dashboard**: Corpus health, model status, pipeline status (with skipped steps), style drift indicator, benchmark trends, edit distance trend chart, per-sender-type accuracy breakdown, and **System Health card** (corpus size, last ingestion, embedding coverage, adapter status)
-- **Gmail browser extension** (recommended): A Chrome/Edge/Brave (Manifest V3) extension injects a side panel directly into Gmail — auto-detects sender/subject/body, add an optional instruction or tone, generate a draft, and click "Insert into Gmail" without leaving your inbox. Submit feedback with a star rating from the panel. Works with PIN-protected instances via `youos token-create`. See [extension/README.md](extension/README.md). (A legacy `/bookmarklet` page also exists, but the extension is more robust.)
+- **Gmail browser extension** (recommended): A Chrome/Edge/Brave (Manifest V3) extension injects a side panel directly into Gmail — auto-detects sender/subject/body, add an optional instruction or tone, generate a draft, and click "Insert into Gmail" without leaving your inbox. Submit feedback with a star rating from the panel. Works with PIN-protected instances via `youos token-create`. See [extension/README.md](https://github.com/DrBaher/youos/blob/main/extension/README.md). (A legacy `/bookmarklet` page also exists, but the extension is more robust.)
 
 ## Architecture
 
@@ -358,7 +358,7 @@ templates/             # Web UI (feedback, stats, bookmarklet)
 
 ## Privacy
 
-All data stays on your machine. No email content is ever sent to a cloud service unless you explicitly use an external LLM for draft generation (configurable). See [PRIVACY.md](PRIVACY.md).
+All data stays on your machine. No email content is ever sent to a cloud service unless you explicitly use an external LLM for draft generation (configurable). See [PRIVACY.md](https://github.com/DrBaher/youos/blob/main/PRIVACY.md).
 
 ## Configuration
 

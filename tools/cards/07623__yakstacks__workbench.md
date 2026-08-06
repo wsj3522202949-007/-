@@ -56,8 +56,8 @@ Workbench V2.0 is a major upgrade focused on **Trust, Safety, and User Experienc
 - **🎯 Natural Language Tool Dispatch**: AI-powered tool selection from plain English
 - **🌍 Environment Detection**: Clear messaging for supported/unsupported platforms
 
-📚 **[Read the V2.0 Features Guide →](./V2_FEATURES_GUIDE.md)**  
-⚡ **[Quick Reference →](./V2_QUICK_REFERENCE.md)**
+📚 **[Read the V2.0 Features Guide →](https://github.com/yakstacks/workbench/blob/main/V2_FEATURES_GUIDE.md)**  
+⚡ **[Quick Reference →](https://github.com/yakstacks/workbench/blob/main/V2_QUICK_REFERENCE.md)**
 
 ---
 
@@ -163,7 +163,7 @@ module.exports.register = (api) => {
 
 Restart Workbench or click **Refresh Plugins**. Your tool appears in the Tools tab.
 
-See [PLUGIN_API.md](PLUGIN_API.md) for the full guide.
+See [PLUGIN_API.md](https://github.com/yakstacks/workbench/blob/main/PLUGIN_API.md) for the full guide.
 
 ## API Providers
 
@@ -226,7 +226,7 @@ Workbench/
 
 ## Known Issues
 
-**MCP servers don't connect** - Electron has stdio pipe issues on Windows. Use PipeWrench standalone (`pipewrench proxy`) as a workaround, or wait for v0.2 which will include proper MCP support. See [MCP_KNOWN_ISSUES.md](MCP_KNOWN_ISSUES.md).
+**MCP servers don't connect** - Electron has stdio pipe issues on Windows. Use PipeWrench standalone (`pipewrench proxy`) as a workaround, or wait for v0.2 which will include proper MCP support. See [MCP_KNOWN_ISSUES.md](https://github.com/yakstacks/workbench/blob/main/MCP_KNOWN_ISSUES.md).
 
 ## License
 

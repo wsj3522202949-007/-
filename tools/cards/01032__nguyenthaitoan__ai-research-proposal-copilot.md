@@ -114,7 +114,7 @@ Each `skills/*/SKILL.md` file is a self-contained prompt. Use them as system ins
 3. After completing Stage 1, start a new conversation with Stage 2's SKILL.md
 4. Continue stage by stage
 
-See [docs/adapting-for-other-tools.md](docs/adapting-for-other-tools.md) for detailed instructions.
+See [docs/adapting-for-other-tools.md](https://github.com/nguyenthaitoan/ai-research-proposal-copilot/blob/main/docs/adapting-for-other-tools.md) for detailed instructions.
 
 ### Option C: Read and Adapt
 
@@ -157,7 +157,7 @@ The skill files are written in a mix of English and Vietnamese, reflecting their
 
 ## License
 
-This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE).
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://github.com/nguyenthaitoan/ai-research-proposal-copilot/blob/main/LICENSE).
 
 You are free to share and adapt this material for any purpose, including commercial use, as long as you give appropriate credit.
 
@@ -188,4 +188,4 @@ Bộ công cụ này hỗ trợ NCS kinh tế viết đề cương nghiên cứu
 
 Triết lý cốt lõi: **NCS làm chủ công cụ AI, không phải AI làm thay.**
 
-Xem hướng dẫn đầy đủ bằng tiếng Việt: [README.vi.md](README.vi.md)
+Xem hướng dẫn đầy đủ bằng tiếng Việt: [README.vi.md](https://github.com/nguyenthaitoan/ai-research-proposal-copilot/blob/main/README.vi.md)

@@ -122,7 +122,7 @@ Contributions welcome! Feel free to open issues or pull requests.
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](https://github.com/ayyushnegii/ai-writing-assistant/blob/main/LICENSE) file for details.
 
 related:
   - methods/网文写作最强SOP.md

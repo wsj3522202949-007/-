@@ -38,7 +38,7 @@ related:
 
 ## GLM-OCR
 
-[中文阅读](README_zh.md)
+[中文阅读](https://github.com/zai-org/glm-ocr/blob/main/README_zh.md)
 
 <div align="center">
 <img src=resources/logo.svg width="40%"/>
@@ -67,9 +67,9 @@ GLM-OCR is a multimodal OCR model for complex document understanding, built on t
 
 ### News & Updates
 
-- **[2026.3.12]** GLM-OCR SDK now supports agent-friendly Skill mode — just `pip install glmocr` + set API key, ready to use via CLI or Python with no GPU or YAML config needed. See: [GLM-OCR Skill](skills/glmocr/SKILL.md)
+- **[2026.3.12]** GLM-OCR SDK now supports agent-friendly Skill mode — just `pip install glmocr` + set API key, ready to use via CLI or Python with no GPU or YAML config needed. See: [GLM-OCR Skill](https://github.com/zai-org/glm-ocr/blob/main/skills/glmocr/SKILL.md)
 - **[2026.3.12]** GLM-OCR Technical Report is now available. See: [GLM-OCR Technical Report](https://arxiv.org/abs/2603.10910)
-- **[2026.2.12]** Fine-tuning tutorial based on LLaMA-Factory is now available. See: [GLM-OCR Fine-tuning Guide](examples/finetune/README.md)
+- **[2026.2.12]** Fine-tuning tutorial based on LLaMA-Factory is now available. See: [GLM-OCR Fine-tuning Guide](https://github.com/zai-org/glm-ocr/blob/main/examples/finetune/README.md)
 
 ### Download Model
 
@@ -199,8 +199,8 @@ SGLANG_ENABLE_SPEC_V2=1 sglang serve --model-path zai-org/GLM-OCR --port 8080 --
 
 For specialized deployment scenarios, see the detailed guides:
 
-- **[Apple Silicon with mlx-vlm](examples/mlx-deploy/README.md)** - Optimized for Apple Silicon Macs
-- **[Ollama Deployment](examples/ollama-deploy/README.md)** - Simple local deployment with Ollama
+- **[Apple Silicon with mlx-vlm](https://github.com/zai-org/glm-ocr/blob/main/examples/mlx-deploy/README.md)** - Optimized for Apple Silicon Macs
+- **[Ollama Deployment](https://github.com/zai-org/glm-ocr/blob/main/examples/ollama-deploy/README.md)** - Simple local deployment with Ollama
 
 #### Option 4: SDK Server + Client (GPU-less Client)
 
@@ -216,7 +216,7 @@ pipeline:
     verify_ssl: false
 ```
 
-See the full guide: **[Self-hosted SDK Server + Client](examples/self-host/README.md)**
+See the full guide: **[Self-hosted SDK Server + Client](https://github.com/zai-org/glm-ocr/blob/main/examples/self-host/README.md)**
 
 #### Update Configuration
 

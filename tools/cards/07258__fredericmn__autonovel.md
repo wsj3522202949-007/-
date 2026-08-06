@@ -40,7 +40,7 @@ related:
 
 <div align="center">
 
-![AutoNovel Logo](assets/icons/app.ico)
+![AutoNovel Logo](https://github.com/fredericmn/autonovel/blob/main/assets/icons/app.ico)
 
 **基于大语言模型的全流程小说创作平台**
 
@@ -79,7 +79,7 @@ related:
 
 <div align="center">
 
-![AutoNovel 主界面](assets/screenshots/mainscreenshot.png)
+![AutoNovel 主界面](https://github.com/fredericmn/autonovel/blob/main/assets/screenshots/mainscreenshot.png)
 
 *AutoNovel 主界面 - 简约美观的全流程创作工作台*
 
@@ -118,7 +118,7 @@ related:
   - [剧情要点管理](#剧情要点管理)
   - [提示词管理系统](#提示词管理系统)
   - [增强向量检索](#增强向量检索)
-- [📊 生成流程图](小说生成流程图.md) - 详细的技术流程文档
+- [📊 生成流程图](https://github.com/fredericmn/autonovel/blob/main/%E5%B0%8F%E8%AF%B4%E7%94%9F%E6%88%90%E6%B5%81%E7%A8%8B%E5%9B%BE.md) - 详细的技术流程文档
 - [配置指南](#配置指南)
 - [使用教程](#使用教程)
 - [开发指南](#开发指南)

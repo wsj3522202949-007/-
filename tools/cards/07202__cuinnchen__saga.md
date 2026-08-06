@@ -71,11 +71,11 @@ SAGA currently has known critical issues and is **not production-ready**.
 
 Progress window (Rich CLI):
 
-![SAGA Progress Window](SAGA.png)
+![SAGA Progress Window](https://github.com/cuinnchen/saga/blob/main/SAGA.png)
 
 Example KG snapshot (5 chapters):
 
-![SAGA KG Visualization](SAGA-KG-Ch5.png)
+![SAGA KG Visualization](https://github.com/cuinnchen/saga/blob/main/SAGA-KG-Ch5.png)
 
 ## Developer quickstart
 

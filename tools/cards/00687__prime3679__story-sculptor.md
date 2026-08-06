@@ -160,7 +160,7 @@ This creates all necessary tables:
    - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 4. Deploy!
 
-📖 See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment guides (Vercel, Netlify, Lovable, Railway)
+📖 See [DEPLOYMENT.md](https://github.com/prime3679/story-sculptor/blob/main/DEPLOYMENT.md) for detailed deployment guides (Vercel, Netlify, Lovable, Railway)
 
 ## Project Structure
 
