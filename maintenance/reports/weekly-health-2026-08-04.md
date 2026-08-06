@@ -3,6 +3,7 @@ id: auto-weekly-health-2026-08-04
 type: report
 area: 管理
 status: archived
+historical: true
 tags: [auto-generated]
 title: weekly-health-2026-08-04
 summary: 自动生成报告，无需人工维护。

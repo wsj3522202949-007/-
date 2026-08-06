@@ -97,6 +97,29 @@ DOTPATH_RE = re.compile(r'^(\.\.?/?)+$')
 RECOGNIZED = ("placeholder", "directory", "obsidian", "example", "external", "anchor")
 
 
+# ---------------------------------------------------------------------------
+# 历史记录识别（frontmatter historical: true）
+#    与 run_all.py 语义一致：历史文件豁免断链扫描，仅统计计数。
+# ---------------------------------------------------------------------------
+HISTORICAL_TRUE = {"true", "yes", "1", "y"}
+
+
+def _is_historical(text):
+    """极简 frontmatter 解析：是否声明 historical: true（历史记录豁免断链扫描）。"""
+    if not text.startswith("---"):
+        return False
+    lines = text.split("\n")
+    if lines[0].strip() != "---":
+        return False
+    for line in lines[1:]:
+        if line.strip() == "---":
+            break
+        m = re.match(r'^historical\s*:\s*(.+)$', line)
+        if m:
+            return m.group(1).strip().lower() in HISTORICAL_TRUE
+    return False
+
+
 def classify_link(target):
     """分类链接类型；返回 'real' 时才需要解析文件存在性。"""
     t = (target or "").strip()
@@ -189,6 +212,7 @@ def run_link_check(root):
     scanned = 0
     strict_files = 0
     external_files = 0
+    historical_files = 0
 
     for p, rel, zone in scope.iter_md_files(root):
         dp = os.path.dirname(p)
@@ -196,6 +220,10 @@ def run_link_check(root):
             with open(p, encoding="utf-8", errors="replace") as fh:
                 text = fh.read()
         except OSError:
+            continue
+        # 历史记录豁免：frontmatter 声明 historical: true 的文件跳过断链扫描
+        if _is_historical(text):
+            historical_files += 1
             continue
         scanned += 1
         text = strip_code(text)
@@ -235,6 +263,7 @@ def run_link_check(root):
         "scanned": scanned,
         "strict_files": strict_files,
         "external_files": external_files,
+        "historical_files": historical_files,
     }
 
 
@@ -258,12 +287,14 @@ def main():
     external_warnings = res["external_warnings"]
     recognized = res["recognized"]
     scanned = res["scanned"]
+    historical_files = res.get("historical_files", 0)
 
     result = {
         "timestamp": datetime.now().isoformat(),
         "root": root,
         "summary": {
             "scanned_files": scanned,
+            "historical_files": historical_files,
             "core_errors": len(core_errors),
             "external_warnings": len(external_warnings),
             "core_pass": len(core_errors) == 0,
@@ -290,7 +321,7 @@ def main():
             print("=" * 60)
             print(f"链接检查器-修复版 · 根: {root}")
             print("=" * 60)
-            print(f"扫描文件数: {scanned}")
+            print(f"扫描文件数: {scanned}（历史豁免 {historical_files} 篇）")
             print(f"单独识别 → 占位符:{recognized['placeholder']}  目录:{recognized['directory']}  "
                   f"Obsidian动作:{recognized['obsidian']}  示例:{recognized['example']}  "
                   f"外部:{recognized['external']}  锚点:{recognized['anchor']}")

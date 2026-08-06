@@ -50,9 +50,23 @@ see_also:
 | `updated` | date | ✅ | 更新日期 `YYYY-MM-DD` | `2026-07-30` |
 | `related` | string[] | ❌ | 结构性关联文件（vault 根相对路径，知识图谱边） | `[craft/结构学.md, craft/大纲工程.md]` |
 | `see_also` | string[] | ❌ | 扩展阅读推荐（vault 根相对路径，弱关联） | `[craft/卡文急救.md]` |
+| `historical` | bool | ❌ | 历史记录标记：`true` 时校验器豁免内容级检查（旧路径/断链/重复ID/编码等），仅统计计数 | `true` |
 
 > `source` 非必填——原创内容可不填；外部资料必填。
 > `related`/`see_also` 路径为 **vault 根相对路径**（含 `.md`），区别于 markdown 链接的文件相对路径。详见 [链接规范.md](链接规范.md) §四。
+
+### 2.1 `historical` 字段语义
+
+`historical: true` 用于**历史报告 / 归档记录**：声明该文件为历史记录后，统一门禁
+（`run_all.py` 与 `链接检查器-修复版.py`）不再对其内容做质量检查（frontmatter
+严格字段、旧路径残留、重复 ID、编码、断链均豁免），只在报告中单独统计
+`historical_files`。判定以 frontmatter 为准，**优先于目录排除与文本标记**
+（如 `[历史路径]`）——历史文档可放在任何目录而不会被门禁误报。
+
+- 适用对象：一次性报告（`maintenance/reports/`）、归档记录（`archive/`）等不再维护的文件。
+- 不适用：现行参考文档（如 `references/` 摘要、排错手册）——它们仍须遵守全部规范。
+- 注意：声明 `historical: true` 的前提是文件**有 frontmatter**；无 frontmatter 的文件
+  无法声明，仍按原规则处理（严格区缺 frontmatter = ERROR）。
 
 ---
 

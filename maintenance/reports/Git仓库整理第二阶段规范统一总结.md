@@ -3,6 +3,7 @@ id: auto-Git仓库整理第二阶段规范统一总结
 type: report
 area: 管理
 status: archived
+historical: true
 tags: [auto-generated]
 title: Git仓库整理第二阶段规范统一总结
 summary: 自动生成报告，无需人工维护。

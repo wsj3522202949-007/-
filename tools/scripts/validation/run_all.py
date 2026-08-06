@@ -16,6 +16,13 @@ r"""
   7. 同目录重名检查    —— 同目录同名且内容不同的真实重复文件
   8. 健康报告生成      —— 汇总为统一 JSON
 
+历史记录识别（frontmatter `historical: true`）
+-----------------------------------------------
+frontmatter 显式声明 `historical: true` 的文件视为历史记录，由校验器识别并
+豁免内容级检查（frontmatter 严格字段 / 旧路径 / 重复ID / 编码 / 断链），
+在报告中单独统计 `historical_files`。语义优先于目录排除与文本标记
+（如 `[历史路径]`），历史文档可放在任何目录而不会被门禁误报。
+
 验收标准
 --------
   · 基础校验 0 ERROR   （frontmatter / 结构 / 旧路径 / 重复ID / 编码 / 同目录重名）
@@ -153,6 +160,22 @@ def parse_frontmatter(text):
     return fm
 
 
+# ---------------------------------------------------------------------------
+# 历史记录识别（frontmatter historical: true）
+#    历史文件由 frontmatter 显式声明（而非目录排除/文本标记），校验器据此
+#    豁免其内容级检查（frontmatter 严格字段 / 旧路径 / 重复ID / 编码 / 断链），
+#    仅在报告中单独统计 historical_files，保证范围透明。
+# ---------------------------------------------------------------------------
+HISTORICAL_TRUE = {"true", "yes", "1", "y"}
+
+
+def is_historical(fm):
+    """frontmatter 是否声明 historical: true。fm 为 None 时返回 False。"""
+    if not fm:
+        return False
+    return str(fm.get("historical", "")).strip().lower() in HISTORICAL_TRUE
+
+
 def strip_code(text):
     """去除 fenced / inline 代码块，避免把代码里的字面 [[...]]/(...) 当成链接。"""
     text = re.sub(r'```.*?```', '', text, flags=re.DOTALL)
@@ -191,6 +214,9 @@ def check_frontmatter(root):
         fm = parse_frontmatter(text)
         if fm is None:
             errors.append(f"[frontmatter] 缺 frontmatter（严格区必须有）: {rel}")
+            continue
+        # 历史记录豁免：frontmatter 显式声明 historical: true 的文件不参与内容检查
+        if is_historical(fm):
             continue
         # 关键必填字段
         for k in CRITICAL_FIELDS:
@@ -294,6 +320,9 @@ def check_old_paths(root):
                 text = fh.read()
         except OSError:
             continue
+        # 历史记录豁免：其内容中的旧路径/来源说明不再视为残留
+        if is_historical(parse_frontmatter(text)):
+            continue
         body = strip_code(text)
         for m in OLD_PATH_RE.finditer(body):
             seg = m.group(0)
@@ -318,6 +347,8 @@ def check_duplicate_ids(root):
             continue
         if fm is None:
             continue
+        if is_historical(fm):
+            continue
         vid = (fm.get("id") or "").strip()
         if not vid:
             continue
@@ -338,10 +369,15 @@ def check_encoding(root):
     for path, rel, _zone in scope.iter_md_files(root, include_external=False):
         try:
             with open(path, "rb") as fb:
-                fb.read().decode("utf-8")
+                raw = fb.read()
+            text = raw.decode("utf-8")
         except UnicodeDecodeError:
             errors.append(f"[encoding] 非 UTF-8 编码（含乱码）: {rel}")
+            continue
         except OSError:
+            continue
+        # 历史记录豁免：历史报告可能含旧编码/乱码残留，不再阻断
+        if is_historical(parse_frontmatter(text)):
             continue
     return errors, warns
 
@@ -431,9 +467,19 @@ def main():
 
         # 范围透明度：报告必须自证「到底查了哪些文件」，
         # 否则无法判断一个 PASS 是真通过还是范围太小造成的假绿灯。
+        historical_files = 0
+        for _p, _rel, _z in scope.iter_md_files(root):
+            try:
+                with open(_p, encoding="utf-8", errors="replace") as _fh:
+                    if is_historical(parse_frontmatter(_fh.read())):
+                        historical_files += 1
+            except OSError:
+                continue
+
         scope_counts = {
             "strict_files": lc.get("strict_files", 0),
             "external_files": lc.get("external_files", 0),
+            "historical_files": historical_files,
             "scanned_files": lc.get("scanned", 0),
         }
 
@@ -480,6 +526,7 @@ def main():
             print("=" * 64)
             print(f"严格区文件: {scope_counts['strict_files']} 篇"
                   f" | 外部区: {scope_counts['external_files']} 篇"
+                  f" | 历史豁免: {scope_counts['historical_files']} 篇"
                   f" | 合计扫描: {scope_counts['scanned_files']} 篇")
             print("严格区 = README/CLAUDE · ai · schema · methods(除模板/示范)"
                   " · knowledge · projects · goals · maintenance · tools导航/推荐/检索层")
