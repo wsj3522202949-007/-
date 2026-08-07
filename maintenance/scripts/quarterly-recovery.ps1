@@ -14,10 +14,11 @@ if (-not $Script:Git -or -not $Script:Python) {
     exit 1
 }
 
-# 季度月份保护：仅 3/6/9/12 月执行
+# 季度保护：仅 3/6/9/12 月 1 日执行（Daily 触发器 + 脚本 guard）
 $currentMonth = (Get-Date).Month
-if ($currentMonth -notin @(3, 6, 9, 12)) {
-    Write-Host "⏭️ 当前月份 ($currentMonth) 不是季度末（3/6/9/12），跳过本次恢复演练" -ForegroundColor Yellow
+$currentDay = (Get-Date).Day
+if ($currentMonth -notin @(3, 6, 9, 12) -or $currentDay -ne 1) {
+    Write-Host "⏭️ 当前日期 ($currentMonth 月 $currentDay 日) 不是季度首日（3/6/9/12 月 1 日），跳过本次恢复演练" -ForegroundColor Yellow
     exit 0
 }
 

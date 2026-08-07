@@ -377,8 +377,8 @@ Next.js 15 (App Router + Pages Router混合)
 #### 1️⃣ 克隆项目
 
 ```bash
-git clone https://github.com/your-username/dog-writing-engine.git
-cd dog-writing-engine
+git clone https://github.com/initialxko/dog-engine.git
+cd dog-engine
 ```
 
 #### 2️⃣ 安装依赖
@@ -461,7 +461,7 @@ DOUBAO_MODEL_ID=your_model_id
 2. 创建豆包AI应用
 3. 复制相关凭证
 
-详见：docs/ai-image-setup.md（<!-- 文档已不存在，返回 404 -->）
+详见：docs/frontend-ai-guide.md（原 ai-image-setup.md 已删除，功能已合并至前端AI开发指南）
 
 #### 🌐 配置代理（可选）
 
@@ -719,10 +719,9 @@ dog-writing-engine/
 │       └── community-prompts.json
 │
 ├── docs/                            # 文档
-│   ├── ai-image-setup.md           # AI图片配置指南
+│   ├── frontend-ai-guide.md        # 前端AI指南（含AI图片配置）
 │   ├── proxy-setup.md              # 代理配置
-│   ├── frontend-ai-guide.md        # 前端AI指南
-│   ├── legado-book-source-compatibility.md  # 书源兼容性
+│   ├── frontend-migration-summary.md # 前端迁移摘要
 │   └── blueprint.md                # 项目蓝图
 │
 ├── book_sources.json                # 书源配置
@@ -1384,10 +1383,10 @@ function extractNavigation(html: string): Navigation {
 
 | 文档 | 说明 |
 |-----|------|
-| [AI图片配置指南](https://github.com/initialxko/dog-engine/blob/main/docs/ai-image-setup.md) | 豆包AI图片生成完整配置教程 |
+| [AI图片配置指南](https://github.com/initialxko/dog-engine/blob/main/docs/frontend-ai-guide.md) | AI图片生成配置（原 ai-image-setup.md 已删除，功能已合并至前端AI开发指南） |
 | [代理设置指南](https://github.com/initialxko/dog-engine/blob/main/docs/proxy-setup.md) | 国内服务器访问Google服务的代理配置 |
 | [前端AI开发指南](https://github.com/initialxko/dog-engine/blob/main/docs/frontend-ai-guide.md) | 前端直调Gemini API的最佳实践 |
-| [书源兼容性说明](https://github.com/initialxko/dog-engine/blob/main/docs/legado-book-source-compatibility.md) | 阅读APP书源格式兼容性文档 |
+| 书源兼容性说明 | 阅读APP书源格式兼容性文档（legado-book-source-compatibility.md 已从仓库删除，暂无替代文档） |
 | [项目蓝图](https://github.com/initialxko/dog-engine/blob/main/docs/blueprint.md) | 项目整体架构和未来规划 |
 
 ---
@@ -1478,7 +1477,7 @@ function extractNavigation(html: string): Navigation {
 }
 ```
 
-详见：[docs/legado-book-source-compatibility.md](https://github.com/initialxko/dog-engine/blob/main/docs/legado-book-source-compatibility.md)
+详见：原 docs/legado-book-source-compatibility.md 已从仓库删除，暂无替代文档。
 
 ### Q7: 如何贡献代码？
 
@@ -1830,15 +1829,15 @@ SOFTWARE.
 
 ## 📞 联系方式
 
-- **GitHub Issues**: [提交Issue](https://github.com/your-username/dog-writing-engine/issues)
-- **qq**: [参与讨论](点击链接加入群聊【开源狗狗码字项目】：https://qun.qq.com/universal-share/share?ac=1&authKey=8UGSD089UNOpMasstObtoNIehS8FQ10xBgpCJQ7tDcS8OU0YxMfvZi3aajlPS+pA&busi_data=eyJncm91cENvZGUiOiIxMDMzNzI1NzcyIiwidG9rZW4iOiJaVFhYS0JJZGJJbS9JQ1d5alNQZEVSS1oyS05pYXJ4Ky9La1lILzkyZHduN1hhUzBISnAraUNxLzRPTVY0eHQ3IiwidWluIjoiMzUyNzIyODgxOSJ9&data=d1f6kgQIHnEM8aPynSOSyz_Yptt661InyHuv-6L8MsgJnntWQ7bsWhwdMIp4krBMfc8s7CJdVVGYy2TtoQvyVQ&svctype=4&tempid=h5_group_info)
+- **GitHub Issues**: [提交Issue](https://github.com/initialxko/dog-engine/issues)
+- **QQ群**: [点击加入群聊【开源狗狗码字项目】](https://qun.qq.com/universal-share/share?ac=1&authKey=8UGSD089UNOpMasstObtoNIehS8FQ10xBgpCJQ7tDcS8OU0YxMfvZi3aajlPS+pA&busi_data=eyJncm91cENvZGUiOiIxMDMzNzI1NzcyIiwidG9rZW4iOiJaVFhYS0JJZGJJbS9JQ1d5alNQZEVSS1oyS05pYXJ4Ky9La1lILzkyZHduN1hhUzBISnAraUNxLzRPTVY0eHQ3IiwidWluIjoiMzUyNzIyODgxOSJ9&data=d1f6kgQIHnEM8aPynSOSyz_Yptt661InyHuv-6L8MsgJnntWQ7bsWhwdMIp4krBMfc8s7CJdVVGYy2TtoQvyVQ&svctype=4&tempid=h5_group_info)
 - **Email**: 3527228819@qq.com
 
 ---
 
 ## ⭐ Star历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=your-username/dog-writing-engine&type=Date)](https://star-history.com/#your-username/dog-writing-engine&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=initialxko/dog-engine&type=Date)](https://star-history.com/#initialxko/dog-engine&Date)
 
 ---
 

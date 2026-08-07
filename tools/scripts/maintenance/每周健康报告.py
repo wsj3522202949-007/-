@@ -175,7 +175,7 @@ def generate_report():
     report_content = f"""# 每周健康报告
 
 > 生成时间：{report_date}
-> 根目录：{ROOT_DIR}
+> 根目录：知识库根目录
 
 ---
 

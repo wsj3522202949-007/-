@@ -41,7 +41,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 WRITING_DIR = os.path.join(SCRIPT_DIR, "writing")
 if WRITING_DIR not in sys.path:
     sys.path.insert(0, WRITING_DIR)
-from chapter_policy import load_policy
+from chapter_policy import load_policy, char_status
 from shared_wordcount import extract_body, count_chars
 
 # 项目目录
@@ -166,7 +166,7 @@ volume: 1
 
 ## 自检清单
 
-- [ ] 字数达标（{policy['min_chars']}-{policy['max_chars']}字，含标点）
+- [ ] 字数达标（软目标 {policy['soft_min']}-{policy['soft_max']}字，硬下限 ≥{policy['hard_min']}，硬上限 ≤{policy['hard_max']}）
 - [ ] 章首有钩子
 - [ ] 章末有钩子
 - [ ] 爽点密度达标（每800字一个小高潮）
@@ -206,18 +206,22 @@ def self_check(file_path):
     body = extract_body(content)
     word_count = count_chars(body)
     
-    # 字数标准统一读取 chapter_policy，不再硬编码 2300/2700
+    # 字数标准统一读取 chapter_policy，两级判级（软警告 / 硬阻断）
     policy = load_policy(get_project_dir())
     plat = policy["platform"]
-    lo, hi, hard = policy["min_chars"], policy["max_chars"], policy["hard_max_chars"]
-    if word_count < lo:
-        issues.append(f"❌ 字数不足：{word_count}字（{plat}标准 ≥{lo}）")
-    elif word_count > hard:
-        issues.append(f"❌ 字数严重超标：{word_count}字（{plat}标准 ≤{hard}）")
-    elif word_count > hi:
-        issues.append(f"⚠️ 字数偏多：{word_count}字（{plat}严格达标 ≤{hi}，宽松 ≤{hard}）")
-    else:
-        print(f"✅ 字数达标：{word_count}字（{plat}标准 {lo}-{hi}）")
+    cs = char_status(word_count, policy)
+    verdict = {
+        "hard_short": f"❌ 严重不足：{word_count}字 < 硬下限{policy['hard_min']}（{plat}，硬阻断）",
+        "hard_long":  f"❌ 严重超标：{word_count}字 > 硬上限{policy['hard_max']}（{plat}，硬阻断）",
+        "soft_short": f"⚠️ 字数偏短：{word_count}字 < 软下限{policy['soft_min']}（{plat}，警告不阻断）",
+        "soft_long":  f"⚠️ 字数偏长：{word_count}字 > 软上限{policy['soft_max']}（{plat}，警告不阻断）",
+        "ok":         f"✅ 字数达标：{word_count}字（{plat}标准 {policy['soft_min']}-{policy['soft_max']}）",
+    }
+    print(verdict.get(cs, verdict["ok"]))
+    if cs in ("hard_short", "hard_long"):
+        issues.append(verdict[cs])
+    elif cs in ("soft_short", "soft_long"):
+        issues.append(verdict[cs])
     
     # 章末钩子：末 400 字含强钩子特征词
     tail = body[-400:]
@@ -236,14 +240,15 @@ def self_check(file_path):
         if w in body:
             issues.append(f"⚠️ 可能包含 AI 味表达：{w}")
     
+    has_hard = any("硬阻断" in iss for iss in issues)
     if issues:
         print("自检结果：发现问题")
         for issue in issues:
             print(f"  {issue}")
-        return False
+        return 2 if has_hard else 1
     else:
         print("自检结果：✅ 通过")
-        return True
+        return 0
 
 
 def remove_ai(file_path):
@@ -308,9 +313,28 @@ def move_chapter(chapter_num):
 
     draft_path = candidates[0]
 
-    # 从草稿 frontmatter 取标题，决定正式文件名
+    # ---- 硬性字数校验：hard_short / hard_long 时拒绝移动 ----
     with open(draft_path, 'r', encoding='utf-8') as f:
         draft_text = f.read()
+    body = extract_body(draft_text)
+    wc = count_chars(body)
+    policy = load_policy(get_project_dir())
+    cs = char_status(wc, policy)
+    if cs == "hard_short":
+        print(f"硬性阻断：正文字数 {wc} < 硬下限 {policy['hard_min']}，禁止移入正式章节")
+        print(f"  请扩充内容至 ≥{policy['soft_min']} 字后重试")
+        return False
+    if cs == "hard_long":
+        print(f"硬性阻断：正文字数 {wc} > 硬上限 {policy['hard_max']}，禁止移入正式章节")
+        print(f"  请精简内容至 ≤{policy['soft_max']} 字后重试")
+        return False
+    if cs in ("soft_short", "soft_long"):
+        print(f"软警告：{wc} 字（{'偏短' if cs == 'soft_short' else '偏长'}），允许移入但建议优化")
+    else:
+        print(f"字数校验通过：{wc} 字 ✅")
+    # ---------------------------------------------------------
+
+    # 从草稿 frontmatter 取标题，决定正式文件名
     title = None
     m = re.search(r'^title:\s*第\d+章[：:]\s*(.+)$', draft_text, re.MULTILINE)
     if m:
@@ -527,7 +551,7 @@ def main():
         idx = args.index("--self-check")
         if idx + 1 < len(args):
             file_path = args[idx + 1]
-            self_check(file_path)
+            return self_check(file_path)
         else:
             print("错误：请指定文件路径")
     
@@ -543,7 +567,8 @@ def main():
         idx = args.index("--move-chapter")
         if idx + 1 < len(args):
             chapter_num = int(args[idx + 1])
-            move_chapter(chapter_num)
+            ok = move_chapter(chapter_num)
+            return 0 if ok else 1
         else:
             print("错误：请指定章节号")
     

@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 r"""
-GitHub 链接绝对化转换器（可重复执行版）
-========================================
+GitHub 链接绝对化转换器（可重复执行版）—— 第一道门禁
+====================================================
 
 将工具卡中的 GitHub 相对链接转换为绝对 URL，并修复已存在的 blob/tree 误用。
+
+职责边界（重要）
+--------------
+本工具只做**语法/文本层**转换，不做 HTTP 可达性校验。
+第二道门禁（HTTP 校验）已拆分到：
+  python tools/scripts/quality/http_link_validator.py --tiers S,A
+
+两门禁模型：
+  门禁1 (link_absolutizer)     → 全量卡片，语法层：URL 格式/路径正确性
+  门禁2 (http_link_validator)   → S/A 级卡片，HTTP 层：真实 200/404
 
 处理规则
 --------
@@ -25,7 +35,6 @@ GitHub 链接绝对化转换器（可重复执行版）
     python tools/scripts/link_absolutizer.py --dir tools/cards  # 指定目录
     python tools/scripts/link_absolutizer.py --json             # 机器可读
     python tools/scripts/link_absolutizer.py --resolve-branches # 检测默认分支
-    python tools/scripts/link_absolutizer.py --validate S,A     # HTTP 校验
     python tools/scripts/link_absolutizer.py --fix --to-permalink # 转永久链接
 
 可重复性保证
@@ -407,75 +416,6 @@ def resolve_default_branches(repos: list, branch_map: dict) -> dict:
     return branch_map
 
 
-def validate_url_http(url: str, timeout: int = 5) -> tuple:
-    """通过 HTTP HEAD 请求验证 URL 是否可达。返回 (status, error_msg)。"""
-    try:
-        req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'link-absolutizer/1.0'})
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return (resp.status, None)
-    except urllib.error.HTTPError as e:
-        return (e.code, str(e))
-    except Exception as e:
-        return (None, str(e))
-
-
-def validate_card_links(cards_dir: str, tier_filter: set = None) -> list:
-    """对工具卡中的外部链接做 HTTP 校验，返回 404 等异常链接列表。"""
-    import time
-    from pathlib import Path
-
-    # 从卡片中提取 tier 的正则
-    TIER_FM_RE = re.compile(r'^tier:\s*"([^"]+)"', re.MULTILINE)
-
-    results = []
-    card_files = sorted([
-        f for f in os.listdir(cards_dir)
-        if f.endswith('.md') and not f.startswith('_')
-    ])
-    total_cards = len(card_files)
-    validated_count = 0
-
-    for fname in card_files:
-        validated_count += 1
-        fp = os.path.join(cards_dir, fname)
-        with open(fp, 'r', encoding='utf-8') as fh:
-            content = fh.read()
-
-        # 提取 tier
-        tm = TIER_FM_RE.search(content)
-        card_tier = tm.group(1).upper() if tm else ''
-        if tier_filter and card_tier not in tier_filter:
-            continue
-
-        print(f'[{validated_count}/{total_cards}] 校验 {fname}...', flush=True)
-
-        # 提取所有 GitHub URL（去重）
-        urls = set()
-        for m in GITHUB_BLOB_RE.finditer(content):
-            urls.add(m.group(0))
-        for m in GITHUB_RAW_RE.finditer(content):
-            urls.add(m.group(0))
-        for m in MD_LINK_RE.finditer(content):
-            u = m.group(2)
-            if 'github.com' in u or 'raw.githubusercontent.com' in u:
-                urls.add(u)  # set 自动去重
-
-        for url in sorted(urls):
-            status, err = validate_url_http(url)
-            if status == 404 or (status is None and err):
-                results.append({
-                    'file': fname,
-                    'tier': card_tier,
-                    'url': url,
-                    'status': status,
-                    'error': err,
-                })
-                print(f'  ✗ [{card_tier}] {fname}: {status or "ERROR"} {url[:80]}', flush=True)
-            time.sleep(0.1)  # 避免触发限流
-
-    return results
-
-
 def get_commit_sha_for_path(repo: str, path: str, branch: str = 'main') -> str:
     """通过 GitHub API 获取指定路径文件的最新 commit SHA。"""
     api_url = f'https://api.github.com/repos/{repo}/commits?path={path}&sha={branch}&per_page=1'
@@ -731,7 +671,8 @@ def main():
     parser.add_argument('--resolve-branches', action='store_true',
                         help='通过 GitHub API 查询默认分支，更新分支映射（建议周期性运行）')
     parser.add_argument('--validate', nargs='?', const='S,A', default=None,
-                        help='HTTP 校验指定等级工具卡的链接，耗时较长；默认 S/A 级（如 --validate S,A）')
+                        help='[已弃用] HTTP 校验已拆分至 http_link_validator.py。'
+                             '请使用: python tools/scripts/quality/http_link_validator.py --tiers S,A')
     parser.add_argument('--to-permalink', action='store_true',
                         help='将 blob/branch 链接转为 commit SHA 永久链接（需 GitHub API 调用）')
     args = parser.parse_args()
@@ -775,16 +716,11 @@ def main():
         return
 
     if args.validate is not None:
-        tier_filter = set(t.strip().upper() for t in args.validate.split(','))
-        print(f'HTTP 校验 {",".join(sorted(tier_filter))} 级工具卡链接...', flush=True)
-        results = validate_card_links(str(cards_dir), tier_filter)
-        if not results:
-            print('所有链接均正常，无 404。')
-            return 0
-        print(f'\n发现 {len(results)} 个异常链接:')
-        for r in results:
-            print(f'  [{r["tier"]}] {r["file"]}: {r["status"]} {r["url"]}')
-        return 1 if results else 0
+        print("=" * 60, file=sys.stderr)
+        print("--validate 已弃用。HTTP 校验已拆分为独立工具。", file=sys.stderr)
+        print("请使用: python tools/scripts/quality/http_link_validator.py --tiers S,A", file=sys.stderr)
+        print("=" * 60, file=sys.stderr)
+        return 0
 
     # 扫描卡片
     card_files = sorted([

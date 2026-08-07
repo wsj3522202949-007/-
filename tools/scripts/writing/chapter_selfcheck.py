@@ -267,9 +267,10 @@ def check_chapter(path, include_raw=False, policy=None):
 def print_report(results, show_raw=False, policy=None):
     p = policy or load_policy()
     print("=" * 72)
-    print(f"网文单章自检报告  |  字数口径: 正文去空白字符(含标点) "
-          f"达标 {p['min_chars']}–{p['max_chars']} (宽松≤{p['hard_max_chars']})"
-          f"  | 平台: {p['platform']}")
+    print(f"网文单章自检报告  |  字数口径: 正文去空白字符(含标点)  "
+          f"| 平台: {p['platform']}  |  政策: {p.get('policy_version', 'v1')}")
+    print(f"   目标区间 {p['soft_min']}–{p['soft_max']} (警告,不阻断)  "
+          f"硬性区间 {p['hard_min']}–{p['hard_max']} (阻断)")
     print("=" * 72)
     for r in results:
         print(f"\n📄 {r['file']}")
@@ -329,6 +330,14 @@ def main():
         with open(args.json, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
         print(f"\nJSON 报告已写入: {args.json}")
+
+    # 硬性区间阻断：发现 hard_short/hard_long 时返回非零退出码
+    hard_block = [r for r in results
+                  if "严重不足" in r["char_verdict"] or "严重超标" in r["char_verdict"]]
+    if hard_block:
+        names = ", ".join(r["file"] for r in hard_block)
+        print(f"\n硬性阻断：以下章节未通过硬性字数校验：{names}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

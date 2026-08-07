@@ -1,1 +1,4 @@
 {"date": "2026-08-06 21:10:00", "action": "quarterly recovery drill", "status": "success", "clone_seconds": 3000, "gate_seconds": 2, "total_seconds": 3739, "basic_errors": 0, "link_errors": 0, "scanned_files": 412, "note": "真实执行：4944文件/55.5MB克隆，门禁overall_pass=true；备份缺口：4未跟踪+201已修改未推送"}
+{"basic_errors":0,"status":"success","scanned_files":306,"date":"2026-08-07 08:43:05","action":"daily backup","link_errors":0}
+{"status":"success","action":"weekly health report","date":"2026-08-07 08:43:20"}
+{"status":"success","basic_errors":0,"date":"2026-08-07 20:05:25","scanned_files":308,"action":"daily backup","link_errors":0}

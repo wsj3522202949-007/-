@@ -8,7 +8,7 @@
 #   2. KnowledgeBase_WeeklyHealth  → 每周日 21:00
 #   3. KnowledgeBase_QuarterlyRecovery → 季度（3/6/9/12月 1日 22:00）
 #
-# 需要管理员权限（以管理员身份运行 PowerShell）
+# 无需管理员权限（Register-ScheduledTask 对当前用户注册任务不需要提权）
 
 $ErrorActionPreference = "Stop"
 
@@ -28,16 +28,6 @@ if (-not (Test-Path $pwshPath)) {
     Write-Warning "pwsh.exe 未找到，回退到 Windows PowerShell: $pwshPath"
 }
 Write-Host "[setup] PowerShell: $pwshPath" -ForegroundColor DarkGray
-
-# 检查管理员权限
-$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
-if (-not $isAdmin) {
-    Write-Host "⚠️  当前不是以管理员身份运行。" -ForegroundColor Yellow
-    Write-Host "   请以管理员身份重新运行此脚本。" -ForegroundColor Yellow
-    Write-Host "   右键 PowerShell → 以管理员身份运行 → 再执行此脚本" -ForegroundColor Yellow
-    Write-Host ""
-    exit 1
-}
 
 # 检查 ScheduledTasks 模块
 if (-not (Get-Module -ListAvailable -Name ScheduledTasks)) {
@@ -66,8 +56,9 @@ $TASKS = @(
         Name = "KnowledgeBase_QuarterlyRecovery"
         Description = "知识库季度恢复演练：克隆→门禁→报告（脚本含季度月份保护）"
         ScriptPath = "$SCRIPT_DIR\quarterly-recovery.ps1"
-        # 注册为每月 1 日 22:00，脚本内 guard 仅在 3/6/9/12 月真正执行
-        Trigger = { New-ScheduledTaskTrigger -Monthly -DaysOfMonth 1 -At 22:00 }
+        # 每日 22:00 触发，脚本内 guard 仅在 3/6/9/12 月 1 日真正执行
+        # （New-ScheduledTaskTrigger 不支持 -Monthly，改用 Daily + 脚本 guard）
+        Trigger = { New-ScheduledTaskTrigger -Daily -At 22:00 }
     }
 )
 
@@ -102,7 +93,7 @@ foreach ($task in $TASKS) {
     $trigger = & $task.Trigger
     $action = New-ScheduledTaskAction -Execute $pwshPath -Argument "-ExecutionPolicy Bypass -File `"$($task.ScriptPath)`""
     $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Hours 2)
-    $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -RunLevel Highest -LogonType S4U
+    $principal = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive
 
     try {
         # 先删除旧任务（如果存在）
@@ -136,8 +127,7 @@ if ($tasks) {
     Write-Host "已注册的 KnowledgeBase 任务:" -ForegroundColor Green
     $tasks | Format-Table TaskName, State, @{Name="NextRunTime";Expression={$_.NextRunTime}}, Description -AutoSize
 } else {
-    Write-Host "⚠️  未找到 KnowledgeBase 任务（可能因权限不足）" -ForegroundColor Yellow
-    Write-Host "   请以管理员身份重新运行此脚本" -ForegroundColor Yellow
+    Write-Host "⚠️  未找到 KnowledgeBase 任务" -ForegroundColor Yellow
 }
 
 Write-Host ""

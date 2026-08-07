@@ -206,4 +206,4 @@ MIT License
 - Issue: [GitHub Issues](https://github.com/leew666/ainovel/issues)
 - 文档: [详细文档](https://github.com/leew666/ainovel/tree/main/docs/)
 - 启动与使用指南: [startup_usage_guide.md](https://github.com/leew666/ainovel/blob/main/docs/startup_usage_guide.md)
-- 规划: [实施方案](https://github.com/leew666/ainovel/blob/main//.claude/plans/inherited-twirling-sutton.md)
+- 规划: [项目方案](https://github.com/leew666/ainovel/tree/main/.claude)（原 .claude/plans/inherited-twirling-sutton.md 已删除）

@@ -33,14 +33,24 @@ import re
 
 DEFAULT_POLICY = {
     "platform": "番茄",
-    "min_chars": 2600,
-    "target_chars": 3000,
-    "max_chars": 3400,
-    "hard_max_chars": 4000,
+    "policy_version": "v2",
+    "soft_min": 2600,
+    "soft_max": 3400,
+    "hard_min": 2200,
+    "hard_max": 4000,
+    "target": 3000,
 }
 
-_POLICY_KEYS = ("platform", "min_chars", "target_chars", "max_chars", "hard_max_chars")
+_POLICY_KEYS = ("platform", "policy_version", "soft_min", "soft_max", "hard_min", "hard_max", "target")
 _CONFIG_NAMES = ("chapter_policy.yaml", "chapter_policy.yml", "chapter_policy.json")
+
+# 旧版键名 → 新版键名映射（兼容 v1 配置）
+_LEGACY_KEY_MAP = {
+    "min_chars": "soft_min",
+    "target_chars": "target",
+    "max_chars": "soft_max",
+    "hard_max_chars": "hard_max",
+}
 
 
 def _coerce(v: str):
@@ -117,41 +127,67 @@ def find_policy_file(start_dir: str) -> str | None:
 
 
 def load_policy(start_dir: str | None = None, explicit_path: str | None = None) -> dict:
-    """返回合并后的政策 dict（DEFAULT_POLICY 打底，配置文件覆盖）。"""
+    """返回合并后的政策 dict（DEFAULT_POLICY 打底，配置文件覆盖）。
+
+    兼容旧版 v1 配置：自动将 min_chars → soft_min, max_chars → soft_max 等映射。
+    """
     policy = dict(DEFAULT_POLICY)
     path = explicit_path or (find_policy_file(start_dir) if start_dir else None)
     if path and os.path.exists(path):
         try:
             data = _parse_yaml(path) if path.endswith((".yaml", ".yml")) else _parse_json(path)
             node = data.get("chapter_policy", data) if isinstance(data, dict) else data
+            # 先读新版键
             for k in _POLICY_KEYS:
                 if k in node and node[k] is not None:
                     policy[k] = node[k]
+            # 再读旧版键（以旧版为准，覆盖新版默认值）
+            for old_k, new_k in _LEGACY_KEY_MAP.items():
+                if old_k in node and node[old_k] is not None:
+                    policy[new_k] = node[old_k]
         except Exception:
             pass  # 解析失败则回退默认，保证脚本不崩溃
     return policy
 
 
-def char_verdict(n: int, policy: dict | None = None) -> str:
-    """统一字数裁决，返回如「达标(3000)」「不足(1500<2600)」「超标(3500>3400)」「严重超标(4500>4000)」。"""
+def char_verdict(n: int, policy: dict | None = None, detailed: bool = False) -> str:
+    """统一字数裁决（两级判级）。
+
+    两级判级体系：
+      - 硬性区间 [hard_min, hard_max] → 超出则阻断（严重不足/严重超标）
+      - 目标区间 [soft_min, soft_max] → 未达到仅警告（偏短/偏长）
+      - 目标区间内 → 达标
+
+    返回如「达标(3000)」「偏短(1500<2600) 但未低于硬性下限2200」
+    「严重不足(1500<2200)」「偏长(3800>3400) 但未超过硬性上限4000」
+    「严重超标(4500>4000)」。
+
+    当 detailed=True 时返回带完整判级信息的字符串。
+    """
     p = policy or DEFAULT_POLICY
-    lo, hi, hard = p["min_chars"], p["max_chars"], p["hard_max_chars"]
-    if n < lo:
-        return f"不足({n}<{lo})"
-    if n > hard:
-        return f"严重超标({n}>{hard})"
-    if n > hi:
-        return f"超标({n}>{hi})"
+    soft_lo, soft_hi = p["soft_min"], p["soft_max"]
+    hard_lo, hard_hi = p["hard_min"], p["hard_max"]
+
+    if n < hard_lo:
+        return f"严重不足({n}<{hard_lo})"
+    if n > hard_hi:
+        return f"严重超标({n}>{hard_hi})"
+    if n < soft_lo:
+        return f"偏短({n}<{soft_lo})"
+    if n > soft_hi:
+        return f"偏长({n}>{soft_hi})"
     return f"达标({n})"
 
 
 def char_status(n: int, policy: dict | None = None) -> str:
-    """返回判级状态：short / ok / loose / over_hard。"""
+    """返回判级状态（两级）：hard_short / soft_short / ok / soft_long / hard_long。"""
     p = policy or DEFAULT_POLICY
-    if n < p["min_chars"]:
-        return "short"
-    if n > p["hard_max_chars"]:
-        return "over_hard"
-    if n > p["max_chars"]:
-        return "loose"
+    if n < p["hard_min"]:
+        return "hard_short"
+    if n > p["hard_max"]:
+        return "hard_long"
+    if n < p["soft_min"]:
+        return "soft_short"
+    if n > p["soft_max"]:
+        return "soft_long"
     return "ok"

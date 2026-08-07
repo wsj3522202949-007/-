@@ -40,7 +40,21 @@ if (-not $overallPass) {
 Write-Host "✅ 校验通过（基本: $basicErrors ERROR | 断链: $linkErrors ERROR）" -ForegroundColor Green
 Write-Host ""
 
-# 2. Git 提交
+# 2. 先写日志（纳入 commit，避免 push 后工作区变脏）
+$logEntry = @{
+    date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    action = "daily backup"
+    status = "success"
+    basic_errors = $basicErrors
+    link_errors = $linkErrors
+    scanned_files = $checkResult.scope_counts.strict_files
+} | ConvertTo-Json -Compress
+
+Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+Write-Host "📝 备份日志已记录" -ForegroundColor Green
+Write-Host ""
+
+# 3. Git 提交
 Write-Host "📦 Git 提交..." -ForegroundColor Yellow
 & $Script:Git add -A
 $commitMessage = "auto: daily backup $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
@@ -53,7 +67,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 Write-Host ""
 
-# 3. Git 推送
+# 4. Git 推送
 Write-Host "🚀 Git 推送..." -ForegroundColor Yellow
 & $Script:Git push 2>&1 | Out-Null
 
@@ -63,21 +77,6 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "✅ 推送成功" -ForegroundColor Green
-Write-Host ""
-
-# 4. 记录备份日志
-$logEntry = @{
-    date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    action = "daily backup"
-    status = "success"
-    basic_errors = $basicErrors
-    link_errors = $linkErrors
-    scanned_files = $checkResult.scope_counts.strict_files
-} | ConvertTo-Json -Compress
-
-Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
-
-Write-Host "📝 备份日志已记录" -ForegroundColor Green
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  备份完成" -ForegroundColor Cyan
