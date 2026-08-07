@@ -90,19 +90,19 @@ related:
 
 如果你只想先判断这个仓库值不值得收藏，不要先看安装，先看这个真实样本：
 
-[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 
 这不是只放一篇成品，而是把整条写作链路都放出来了，包括：
 
-- 选题和约束：[01_theme.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/01_theme.md)
-- 观点定牙齿：[01b_position.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/01b_position.md)
-- 伤疤和证据：[02_scar_tissue.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/02_scar_tissue.md)、[02_evidence_ledger.json](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/02_evidence_ledger.json)
-- 结构和开头：[03_outline.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/03_outline.md)、[05c_opening_hook.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/05c_opening_hook.md)
-- 草稿和去 AI 味：[draft_v1.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/draft_v1.md)、[draft_v1_humanized.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/draft_v1_humanized.md)
-- 审稿和传播测试：[pre_publish_review.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/pre_publish_review.md)、[wechat_reader_test.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/wechat_reader_test.md)
-- 事实核查：[fact_claims.json](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/fact_claims.json)、[fact_check_report.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/fact_check_report.md)
-- 纯文本候选稿：[draft_v1_humanized_clean.txt](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/draft_v1_humanized_clean.txt)
-- 运行态记录：[run_manifest.json](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/run_manifest.json)
+- 选题和约束：[01_theme.md](demo/工资的一半，是你受的气折算的/01_theme.md)
+- 观点定牙齿：[01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)
+- 伤疤和证据：[02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)、[02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)
+- 结构和开头：[03_outline.md](demo/工资的一半，是你受的气折算的/03_outline.md)、[05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)
+- 草稿和去 AI 味：[draft_v1.md](demo/工资的一半，是你受的气折算的/draft_v1.md)、[draft_v1_humanized.md](demo/工资的一半，是你受的气折算的/draft_v1_humanized.md)
+- 审稿和传播测试：[pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)、[wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)
+- 事实核查：[fact_claims.json](demo/工资的一半，是你受的气折算的/fact_claims.json)、[fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)
+- 纯文本候选稿：[draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)
+- 运行态记录：[run_manifest.json](demo/工资的一半，是你受的气折算的/run_manifest.json)
 
 建议浏览顺序：
 
@@ -126,7 +126,7 @@ related:
 
 下面不是虚构示例，是这个仓库里一篇真实跑完的文章项目。
 
-- Demo 目录：[`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+- Demo 目录：[`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 - 文章标题：`工资的一半，是你受的气折算的`
 - 主题：`工资的一半是“技术溢价”，一半是“情绪折价”`
 - 核心判断：`你的工资不是你值多少，而是市场价减去组织税之后剩下的数`
@@ -142,15 +142,15 @@ related:
 
 最关键的几个文件：
 
-- [01b_position.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/01b_position.md)：先把文章的“牙齿”定下来，避免后面越写越软
-- [02_scar_tissue.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/02_scar_tissue.md)：不是堆资料，而是打捞致命场景、隐秘代价、荒诞细节
-- [02_evidence_ledger.json](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/02_evidence_ledger.json)：给数字、引文和历史材料建立可追踪的证据账本
-- [04_share_map.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/04_share_map.md)：不是只做共情，而是设计读者为什么愿意转发
-- [05c_opening_hook.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/05c_opening_hook.md)：先赛马开头，再锁定起手式
-- [pre_publish_review.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/pre_publish_review.md)：发布前追问和红队挑刺
-- [wechat_reader_test.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/wechat_reader_test.md)：模拟朋友圈、同行群、家族群的真实反应
-- [fact_check_report.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/fact_check_report.md)：把通过项、黄色建议和红色问题分级留痕
-- [draft_v1_humanized_clean.txt](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/draft_v1_humanized_clean.txt)：去 AI 味后的纯文本候选稿
+- [01b_position.md](demo/工资的一半，是你受的气折算的/01b_position.md)：先把文章的“牙齿”定下来，避免后面越写越软
+- [02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)：不是堆资料，而是打捞致命场景、隐秘代价、荒诞细节
+- [02_evidence_ledger.json](demo/工资的一半，是你受的气折算的/02_evidence_ledger.json)：给数字、引文和历史材料建立可追踪的证据账本
+- [04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)：不是只做共情，而是设计读者为什么愿意转发
+- [05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)：先赛马开头，再锁定起手式
+- [pre_publish_review.md](demo/工资的一半，是你受的气折算的/pre_publish_review.md)：发布前追问和红队挑刺
+- [wechat_reader_test.md](demo/工资的一半，是你受的气折算的/wechat_reader_test.md)：模拟朋友圈、同行群、家族群的真实反应
+- [fact_check_report.md](demo/工资的一半，是你受的气折算的/fact_check_report.md)：把通过项、黄色建议和红色问题分级留痕
+- [draft_v1_humanized_clean.txt](demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt)：去 AI 味后的纯文本候选稿
 
 如果你只看最终效果，这篇 Demo 的发布出口就是：
 
@@ -236,9 +236,9 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 
 ### v0.7.6 深化生产骨架
 
-- `research-expert` 从泛泛调研改成“伤疤打捞”，核心产物是 [02_scar_tissue.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/02_scar_tissue.md)
-- `empathy-designer` 从共情点设计升级成“社交转发动机”，核心产物是 [04_share_map.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/04_share_map.md)
-- 新增 `opening-tournament`，在正式写稿前先赛马开头，核心产物是 [05c_opening_hook.md](https://github.com/dongbeixiaohuo/writing-agent/blob/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/05c_opening_hook.md)
+- `research-expert` 从泛泛调研改成“伤疤打捞”，核心产物是 [02_scar_tissue.md](demo/工资的一半，是你受的气折算的/02_scar_tissue.md)
+- `empathy-designer` 从共情点设计升级成“社交转发动机”，核心产物是 [04_share_map.md](demo/工资的一半，是你受的气折算的/04_share_map.md)
+- 新增 `opening-tournament`，在正式写稿前先赛马开头，核心产物是 [05c_opening_hook.md](demo/工资的一半，是你受的气折算的/05c_opening_hook.md)
 
 如果你只想知道仓库现在值不值得拉下来试，先看 `v0.9.0` 这几条就够了。更老的版本记录去 [CHANGELOG](https://github.com/dongbeixiaohuo/writing-agent/blob/main/CHANGELOG.md) 或 Releases 看，不应该堵在首页前面。
 
@@ -329,7 +329,7 @@ demo/工资的一半，是你受的气折算的/draft_v1_humanized_clean.txt
 2. clone 本仓库并执行 `npm ci`
 3. 配好你要用的模型 API 或 Claude 账号
 4. 一定在项目根目录启动 `claude`
-5. 先用 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/) 理解流程，再开始正式写作
+5. 先用 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/) 理解流程，再开始正式写作
 
 如果你已经准备直接跑完整版，继续看：
 
@@ -826,7 +826,7 @@ npm run check
 
 ### 路线 A：先看 Demo，再安装
 
-1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)
 2. 看明白 `01_theme.md -> draft_v1_humanized_clean.txt` 这条链路
 3. 再决定你要走哪家模型和哪种费用方案
 4. 最后开始安装和配置
@@ -952,7 +952,7 @@ see_also:
 
 ## 如果你只想记住最重要的 4 句话
 
-1. 先看 [`demo/工资的一半，是你受的气折算的/`](https://github.com/dongbeixiaohuo/writing-agent/tree/main/demo/%E5%B7%A5%E8%B5%84%E7%9A%84%E4%B8%80%E5%8D%8A%EF%BC%8C%E6%98%AF%E4%BD%A0%E5%8F%97%E7%9A%84%E6%B0%94%E6%8A%98%E7%AE%97%E7%9A%84/)，比先看安装说明更容易看懂项目价值。
+1. 先看 [`demo/工资的一半，是你受的气折算的/`](demo/工资的一半，是你受的气折算的/)，比先看安装说明更容易看懂项目价值。
 2. `DeepSeek-V3.2` 是默认推荐，不是因为它压过另外两家，而是因为它最适合低成本先把整套流程跑通。
 3. 完整版一定要在项目根目录启动 Claude Code，最后默认交付的是 `_clean.txt`，并可按需额外导出公众号排版 `.html`。
 4. 新版会在调研阶段生成 `02_evidence_ledger.json`，最终交付前生成 `fact_claims.json` 和 `fact_check_report.md`，用来拦截错误事实和失效引用。

@@ -72,7 +72,7 @@ consistently produced the best hand-drawn SVG results for this project.
 
 ## See it in action
 
-![Generate an episode](https://github.com/kerenoded/linions/blob/main/docs/examples/generate-episode.gif)
+![Generate an episode](docs/examples/generate-episode.gif)
 
 *From prompt to playable episode -- the local creator studio drives the full generation pipeline.*
 

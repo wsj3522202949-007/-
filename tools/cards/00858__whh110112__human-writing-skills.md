@@ -181,7 +181,7 @@ The ledger tracks:
 - beat bridge: previous residue, entry pressure, micro-turn, and exit hook
 - change log: what became newly true in the latest output
 
-See [examples/story-ledger.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/story-ledger.md) for a fiction example.
+See [examples/story-ledger.md](examples/story-ledger.md) for a fiction example.
 
 ## Chatbox
 
@@ -189,7 +189,7 @@ Yes, this project works in Chatbox because it outputs plain text prompt packs. F
 
 - English guide: [docs/chatbox.md](https://github.com/whh110112/human-writing-skills/blob/main/docs/chatbox.md)
 - Chinese guide: [docs/chatbox.zh-CN.md](https://github.com/whh110112/human-writing-skills/blob/main/docs/chatbox.zh-CN.md)
-- Ledger template: [examples/chatbox-ledger-template.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/chatbox-ledger-template.md)
+- Ledger template: [examples/chatbox-ledger-template.md](examples/chatbox-ledger-template.md)
 
 ## Physical Continuity
 
@@ -205,10 +205,10 @@ python -m humanwriting.cli build `
 ```
 
 - Guide: [docs/physical-continuity.md](https://github.com/whh110112/human-writing-skills/blob/main/docs/physical-continuity.md)
-- Vehicle ledger example: [examples/vehicle-scene-ledger.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/vehicle-scene-ledger.md)
-- Capacity ledger template: [examples/capacity-ledger-template.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/capacity-ledger-template.md)
-- Capacity conflict example: [examples/capacity-conflict-draft.zh-CN.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/capacity-conflict-draft.zh-CN.md)
-- Draft audit example: [examples/problem-car-scene-draft.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/problem-car-scene-draft.md)
+- Vehicle ledger example: [examples/vehicle-scene-ledger.md](examples/vehicle-scene-ledger.md)
+- Capacity ledger template: [examples/capacity-ledger-template.md](examples/capacity-ledger-template.md)
+- Capacity conflict example: [examples/capacity-conflict-draft.zh-CN.md](examples/capacity-conflict-draft.zh-CN.md)
+- Draft audit example: [examples/problem-car-scene-draft.md](examples/problem-car-scene-draft.md)
 
 ## Relationship Stance Continuity
 
@@ -219,7 +219,7 @@ and checks whether praise, criticism, comparison, naming, secrecy, and rank fit
 the established relationship graph.
 
 - Guide: [docs/relationship-stance-continuity.md](https://github.com/whh110112/human-writing-skills/blob/main/docs/relationship-stance-continuity.md)
-- Ledger template: [examples/relationship-stance-ledger.zh-CN.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/relationship-stance-ledger.zh-CN.md)
+- Ledger template: [examples/relationship-stance-ledger.zh-CN.md](examples/relationship-stance-ledger.zh-CN.md)
 
 If the draft already exists, use `audit`:
 
@@ -331,7 +331,7 @@ python -m humanwriting.cli audit `
 ```
 
 - Guide: [docs/number-sense.md](https://github.com/whh110112/human-writing-skills/blob/main/docs/number-sense.md)
-- Example: [examples/false-precision-draft.zh-CN.md](https://github.com/whh110112/human-writing-skills/blob/main/examples/false-precision-draft.zh-CN.md)
+- Example: [examples/false-precision-draft.zh-CN.md](examples/false-precision-draft.zh-CN.md)
 
 ### Common Writing Problems
 

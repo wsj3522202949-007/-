@@ -108,7 +108,7 @@ uv pip install -e .
 
 ### OpenAI
 
-The complete runnable version is [`examples/demo_openai.py`](https://github.com/OSU-NLP-Group/HippoRAG/blob/main/examples/demo_openai.py). A minimal workflow is:
+The complete runnable version is [`examples/demo_openai.py`](examples/demo_openai.py). A minimal workflow is:
 
 Set `OPENAI_API_KEY` before using OpenAI models:
 

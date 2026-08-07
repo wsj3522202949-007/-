@@ -90,7 +90,7 @@ git clone https://github.com/weijt606/anti-vibe-writing.git
 
 ## 快速示例
 
-外部读者扫一眼就能看到的前后对照在 [examples/](https://github.com/weijt606/anti-vibe-writing/tree/main/examples/) 目录下。完整的回归基准仍放在 `references/` 里。
+外部读者扫一眼就能看到的前后对照在 [examples/](examples/) 目录下。完整的回归基准仍放在 `references/` 里。
 
 ## 三种声音模式
 
@@ -112,7 +112,7 @@ related:
 
 ## 适用场景
 
-**最典型的一个场景：中文推特（X）。** 中文里的 AI 味在 X 上最容易露馅："赋能、打通""首先其次"、三连排比、机翻句式，一眼就能看出是 AI 写的。这个 skill 就是专门冲着这种"明显是机器写的"中文短贴去的，把它改回像真人随手发的那种。前后对照见 [`examples/07-tweet-zh.md`](https://github.com/weijt606/anti-vibe-writing/blob/main/examples/07-tweet-zh.md) 和 [`examples/08-translationese-zh.md`](https://github.com/weijt606/anti-vibe-writing/blob/main/examples/08-translationese-zh.md)。
+**最典型的一个场景：中文推特（X）。** 中文里的 AI 味在 X 上最容易露馅："赋能、打通""首先其次"、三连排比、机翻句式，一眼就能看出是 AI 写的。这个 skill 就是专门冲着这种"明显是机器写的"中文短贴去的，把它改回像真人随手发的那种。前后对照见 [`examples/07-tweet-zh.md`](examples/07-tweet-zh.md) 和 [`examples/08-translationese-zh.md`](examples/08-translationese-zh.md)。
 
 其他常见场景:
 

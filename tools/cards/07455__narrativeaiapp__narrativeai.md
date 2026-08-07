@@ -289,7 +289,7 @@ Generated outputs will be saved under `output/` (e.g., `premise.json`, `outline.
   English for generation. Multilingual character chats supported.
 
 - **Where are examples?**  
-  See [story_samples](https://github.com/narrativeaiapp/narrativeai/tree/main/story_samples/).
+  See [story_samples](story_samples/).
 
 ---
 

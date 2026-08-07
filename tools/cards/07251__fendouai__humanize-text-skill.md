@@ -289,7 +289,7 @@ See [references/skill-architecture.md](https://github.com/fendouai/humanize-text
 Good entry points:
 
 - [references/scene-packs.md](https://github.com/fendouai/humanize-text-skill/blob/main/references/scene-packs.md)
-- [references/examples.md](https://github.com/fendouai/humanize-text-skill/blob/main/references/examples.md)
+- [references/examples.md](references/examples.md)
 - [references/quick-checklist.md](https://github.com/fendouai/humanize-text-skill/blob/main/references/quick-checklist.md)
 - [references/voice-contract.md](https://github.com/fendouai/humanize-text-skill/blob/main/references/voice-contract.md)
 

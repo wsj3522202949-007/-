@@ -46,7 +46,7 @@ memory), talks back with voice, and lives an autonomous little life — roaming 
 "pixel workstation" across 10 day/night scenes, showing the real time, real weather, and WiFi
 signal, and reacting to your messages with moods.
 
-[![demo — Pixel Buddy across the 10 scenes](https://github.com/huaspirit123/xiaodouding/blob/main/docs/demo.gif)](https://huaspirit123.github.io/xiaodouding/)
+[![demo — Pixel Buddy across the 10 scenes](docs/demo.gif)](https://huaspirit123.github.io/xiaodouding/)
 
 > ▶ **[Play with it live, in your browser →](https://huaspirit123.github.io/xiaodouding/)** — the pet roams, real clock & weather, no install. (Chat needs the local backend.)
 

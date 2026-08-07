@@ -81,7 +81,7 @@ related:
   * 双击搜索框清空搜索内容
   * 点击链接跳转至对应的词典网站
 
-![demo](https://github.com/ks233/ja-learner/blob/main/README/demo.gif)
+![demo](README/demo.gif)
 
 ### 窗口吸附
 

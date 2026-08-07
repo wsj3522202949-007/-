@@ -46,9 +46,9 @@ A Laravel + Inertia application that generates personalized stories for kids, co
 
 ## Demo
 
-![Demo](https://github.com/zenstacker/nativephp-ai-story-generator/blob/main//docs/demo.gif)
+![Demo](/docs/demo.gif)
 
-[View full demo video (With Audio)](https://github.com/zenstacker/nativephp-ai-story-generator/blob/main/docs/demo.mp4)
+[View full demo video (With Audio)](docs/demo.mp4)
 
 ## Features
 

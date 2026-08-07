@@ -55,7 +55,7 @@ An AI-powered Android typing assistant that fixes grammar and adjusts tone — a
 You're in any app, you have a messy draft. Swipe down, tap the **Typer** tile, type or speak your text, pick a tone, and get a clean rewrite — then tap **Copy & Close** to paste it wherever you were. No overlay permissions needed. No switching apps. Just a floating popup over your current screen.
 
 
-![Demo](https://github.com/nim444/Typer-AI-Android/blob/main/assets/demo.png)
+![Demo](assets/demo.png)
 
 
 ---

@@ -82,7 +82,7 @@ Estragon is an initial implementation of the MCP protocol for Godot 4, enabling 
 **🕷️ Web Research Complete** - May 27, 2025
 - 🔍 **Collision Shape Assignment:** Research validated Godot 4 patterns for programmatic shape creation
 - 🗑️ **Node Deletion System:** Discovered performance optimizations and safety patterns
-- 📋 **Implementation Ready:** Production-grade solutions documented in [TODO_ENHANCEMENTS.md](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md)
+- 📋 **Implementation Ready:** Production-grade solutions documented in [TODO_ENHANCEMENTS.md](docs/TODO_ENHANCEMENTS.md)
 
 ## 🎯 Next Priority Features
 
@@ -115,7 +115,7 @@ MIT License - feel free to use this project however you like!
 ### Architecture & Development
 - [Multi-Client Design](https://github.com/cms-pm/estragon/blob/main/docs/MULTICLIENT_DESIGN.md) - WebSocket architecture for multiple connections
 - [QA Worklog](https://github.com/cms-pm/estragon/blob/main/docs/QA_WORKLOG_FINAL.md) - Comprehensive testing and validation results
-- [Enhancement TODO](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md) - **NEW**: Research-validated feature roadmap
+- [Enhancement TODO](docs/TODO_ENHANCEMENTS.md) - **NEW**: Research-validated feature roadmap
 
 ### System Documentation  
 - [Graceful Shutdown](https://github.com/cms-pm/estragon/blob/main/GRACEFUL_SHUTDOWN.md) - Multi-method process lifecycle management
@@ -123,7 +123,7 @@ MIT License - feel free to use this project however you like!
 
 ## 🤝 Contributing
 
-We welcome contributions! Check out [TODO_ENHANCEMENTS.md](https://github.com/cms-pm/estragon/blob/main/docs/TODO_ENHANCEMENTS.md) for research-validated enhancement opportunities.
+We welcome contributions! Check out [TODO_ENHANCEMENTS.md](docs/TODO_ENHANCEMENTS.md) for research-validated enhancement opportunities.
 
 ## 📜 License
 

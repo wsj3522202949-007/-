@@ -46,11 +46,11 @@ The project combines a FastAPI backend that orchestrates Google Gemini for shot 
 
 ## 📤 Output Samples
 - **Face preservation:**  
-  ![Model Output](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example1.png)
+  ![Model Output](assets/example1.png)
 
 - **UI Preview:**  
-  ![Storyboard Walkthrough](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example2.jpg)  
-  ![Storyboard Walkthrough](https://github.com/sasaurabh11/Ai-StoryBoard-Generator/blob/main/assets/example3.jpg)
+  ![Storyboard Walkthrough](assets/example2.jpg)  
+  ![Storyboard Walkthrough](assets/example3.jpg)
 
 ---
 

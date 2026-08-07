@@ -139,7 +139,7 @@ AXI AI can export any response as a polished, multi-page **PDF report**. Below i
 > - **barchart** — 7 performance metric records; EMP-0001 stands out with a value of 47 vs. a baseline of 1 across others.
 > - Includes **5 auto-generated charts** visualising the key findings across all datasets.
 
-*The full exported report (4 pages, with charts) is included in this repo as [`analytics-example.pdf`](https://github.com/smooth-glitch/AGILE-LABS-AXI-AI-DEMO/blob/main/analytics-example.pdf).*
+*The full exported report (4 pages, with charts) is included in this repo as [`analytics-example.pdf`](analytics-example.pdf).*
 
 ---
 

@@ -40,7 +40,7 @@ related:
 
 A complete Claude-powered Book Writing Studio — 12 skills orchestrated by a single project prompt that takes an author from raw idea to published book to ongoing content engine.
 
-![Pipeline](https://github.com/nkme2007/awesome-book-writing-suite/blob/main/examples/pipeline.svg)
+![Pipeline](examples/pipeline.svg)
 
 ---
 

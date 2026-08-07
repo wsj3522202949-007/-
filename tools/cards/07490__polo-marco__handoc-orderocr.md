@@ -53,18 +53,18 @@ This project offers an advanced Optical Character Recognition (OCR) solution spe
 To see the system in action, check out the [demo video](https://www.youtube.com/watch?v=RWgGDymY2Bc) and screenshot below!
 
 
-![sys_demo](https://github.com/polo-marco/handoc-orderocr/blob/main/assets/system_demo.png)
+![sys_demo](assets/system_demo.png)
 
 
 ## 🖼️ Sample Output
 
 Input image:
 
-![input](https://github.com/polo-marco/handoc-orderocr/blob/main/assets/example_1.jpg)
+![input](assets/example_1.jpg)
 
 Output with detected text, recognition results, and reading order:
 
-![output](https://github.com/polo-marco/handoc-orderocr/blob/main/assets/example_1_result.png)
+![output](assets/example_1_result.png)
 ---
 
 ## 🏆 Key Features

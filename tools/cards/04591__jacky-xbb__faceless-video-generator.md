@@ -60,7 +60,7 @@ Faceless Video Generator is a comprehensive multimedia content creation tool tha
 
 ## Demo
 
-![Demo](https://github.com/jacky-xbb/faceless-video-generator/blob/main/demo/demo.gif)
+![Demo](demo/demo.gif)
 
 ## Key Features
 

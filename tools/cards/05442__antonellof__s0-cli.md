@@ -44,7 +44,7 @@ An LLM-driven command-line agent for finding security vulnerabilities and "vibe-
 
 s0-cli runs a hybrid of classic static scanners (`semgrep`, `bandit`, `ruff`, `gitleaks`, `trivy`) and LLM detectors, then uses a multi-turn agent to triage, deduplicate, recalibrate severity, and explain each finding. The whole scanning agent is itself optimizable: `s0 optimize` runs a [Meta-Harness](https://yoonholee.com/meta-harness/) outer loop that mutates the agent against a labeled benchmark with a held-out test set.
 
-![s0-cli demo](https://github.com/antonellof/s0-cli/blob/main/docs/img/demo.gif)
+![s0-cli demo](docs/img/demo.gif)
 
 ## Install
 

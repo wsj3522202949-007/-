@@ -323,20 +323,20 @@ Every time you invoke the kit through an AI agent, the agent greets you and asks
 
 | Template | When to use | Fictional example |
 |---|---|---|
-| [Innovation / R&D](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/general-samples/01-innovation-rd.md) | Novel technology, patent, or research effort aimed at a research-oriented agency | *Nova Materials* → ONR |
-| [Mission-Solution](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/general-samples/02-mission-solution.md) | Services or operational solution to a known mission need, innovative *approach* — **most broadly applicable** | *Meridian Workforce* → VA |
-| [Crisis / Rapid-Response](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/general-samples/03-crisis-rapid-response.md) | Turnkey capability for an urgent or emerging need | *RapidResponse Water* → EPA |
+| [Innovation / R&D](references/general-samples/01-innovation-rd.md) | Novel technology, patent, or research effort aimed at a research-oriented agency | *Nova Materials* → ONR |
+| [Mission-Solution](references/general-samples/02-mission-solution.md) | Services or operational solution to a known mission need, innovative *approach* — **most broadly applicable** | *Meridian Workforce* → VA |
+| [Crisis / Rapid-Response](references/general-samples/03-crisis-rapid-response.md) | Turnkey capability for an urgent or emerging need | *RapidResponse Water* → EPA |
 
 ### Agency-specific samples (use when your target agency matches, or when the teaching situation matches)
 
 | Sample | Teaching moment | Target agency |
 |---|---|---|
-| [SentinelMind](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/01-sentinelmind-dcsa.md) | Protecting proprietary data in a security/intelligence context | DCSA |
-| [NeuroEdge](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/02-neuroedge-ussocom.md) | Positioning a commercial dual-use technology for SOF mission use | USSOCOM |
-| [ForgeForward](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/03-forgeforward-mcsc.md) | **How to propose a next-generation innovation when the agency already has something similar** | MCSC |
-| [FedFacility IQ](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/04-fedfacility-iq-gsa-pbs.md) | Pitching operational/IT to a civilian real-property agency | GSA PBS |
-| [LeadFed](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/05-leadfed-opm.md) | Targeting a successor office when the obvious program has been dismantled | OPM |
-| [ReadyRelief](https://github.com/abexiong/govafy-unsolicited-proposal-kit/blob/main/references/specific-samples/06-readyrelief-fema.md) | Crisis/rapid-response template applied to a real disaster-response agency | FEMA |
+| [SentinelMind](references/specific-samples/01-sentinelmind-dcsa.md) | Protecting proprietary data in a security/intelligence context | DCSA |
+| [NeuroEdge](references/specific-samples/02-neuroedge-ussocom.md) | Positioning a commercial dual-use technology for SOF mission use | USSOCOM |
+| [ForgeForward](references/specific-samples/03-forgeforward-mcsc.md) | **How to propose a next-generation innovation when the agency already has something similar** | MCSC |
+| [FedFacility IQ](references/specific-samples/04-fedfacility-iq-gsa-pbs.md) | Pitching operational/IT to a civilian real-property agency | GSA PBS |
+| [LeadFed](references/specific-samples/05-leadfed-opm.md) | Targeting a successor office when the obvious program has been dismantled | OPM |
+| [ReadyRelief](references/specific-samples/06-readyrelief-fema.md) | Crisis/rapid-response template applied to a real disaster-response agency | FEMA |
 
 **All samples are explicitly fictional.** Company names, personnel, patent numbers, pilot data, prices, and email addresses are invented. Agencies, regulations, program names, and mission language are real. Never let a fictional detail from a sample leak into a real submission.
 

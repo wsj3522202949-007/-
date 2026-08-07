@@ -76,7 +76,7 @@ related:
 - [**Summarize Meeting Notes**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/summarize-meeting-notes.md) — turn raw notes into a clean summary with decisions and action items
 - [**Close Out the Week and Plan Monday**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/close-out-week-plan-monday.md) — wrap up the week and walk into Monday with a focused plan
 - [**Prioritize Your Task List**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/prioritize-task-list.md) — rank your to-dos by importance, effort, and deadline so you know what to do first
-- [**Tame Your Inbox**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/tame-your-inbox.md) — triage a pile of emails into reply-now, delegate, wait, or archive (with draft replies)
+- [**Tame Your Inbox**](prompts/tame-your-inbox.md) — triage a pile of emails into reply-now, delegate, wait, or archive (with draft replies)
 - [**Plan a Project or Initiative**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/plan-a-project.md) — turn a goal into phases, milestones, owners, and a realistic timeline
 - [**Run a Better Meeting**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/run-a-better-meeting.md) — build a tight, timeboxed agenda with clear objectives and outcomes
 - [**Build a Time-Blocked Daily Plan**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/build-time-blocked-day.md) — turn your priorities and meetings into a realistic hour-by-hour day with protected focus time
@@ -98,7 +98,7 @@ related:
 - [**Compare Options in a Decision Table**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/compare-options-decision-table.md) — weigh choices side by side with a clear recommendation
 - [**Evaluate the Success of a GTM Program**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/evaluate-gtm-program.md) — assess program performance against goals and decide what's next
 - [**Analyze a Dataset for Insights**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/analyze-dataset-for-insights.md) — pull trends, outliers, and takeaways out of your data in plain language
-- [**Find the Story in Your Numbers**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/find-the-story-in-your-numbers.md) — turn raw metrics into a clear, memorable narrative
+- [**Find the Story in Your Numbers**](prompts/find-the-story-in-your-numbers.md) — turn raw metrics into a clear, memorable narrative
 - [**Summarize a Long Document or Report**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/summarize-long-document.md) — distill a dense doc into key points, takeaways, and actions
 - [**Research a Topic Quickly**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/research-a-topic-quickly.md) — get a structured briefing with key facts, players, and smart questions
 - [**Pressure-Test an Idea (Red Team)**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/pressure-test-an-idea.md) — stress-test a plan to find assumptions, risks, and objections before others do
@@ -107,7 +107,7 @@ related:
 ### 🌱 Career & Leadership
 *Coaching, feedback, growth, and reflection.*
 - [**Prepare for a Coaching Conversation**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/prepare-coaching-conversation.md) — build supportive, specific talking points for a 1:1
-- [**Create an Impact Map (Visual Career Map)**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/impact-map.md) — generate a whiteboard-style one-page map of your impact, values, and growth path, with your headshot blended in ([see a real example](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/examples/impact-map-example.png))
+- [**Create an Impact Map (Visual Career Map)**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/impact-map.md) — generate a whiteboard-style one-page map of your impact, values, and growth path, with your headshot blended in ([see a real example](prompts/examples/impact-map-example.png))
 - [**Improve Cross-Functional Collaboration**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/improve-cross-functional-collaboration.md) — diagnose friction and build a plan for teams to work better together
 - [**Prepare for Your Manager 1:1 (Weekly)**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/prepare-manager-1-1.md) — turn your week into a focused, high-impact 1:1 agenda
 - [**Write Your Self-Reflection or Year-End Review**](https://github.com/jacqle331/copilot-prompts/blob/main/prompts/write-self-reflection-review.md) — turn your wins and growth into a confident, evidence-based self-review

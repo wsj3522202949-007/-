@@ -4,7 +4,14 @@
 
 $ErrorActionPreference = "Stop"
 
-Set-Location "e:\个人知识库"
+# 加载运行时解析器
+. "$PSScriptRoot\_runtime.ps1"
+if (-not $Script:Python) {
+    Write-Host "❌ 运行时环境不完整，请检查 _runtime.ps1 的路径配置" -ForegroundColor Red
+    exit 1
+}
+
+Set-Location $Script:Root
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  每月清理检查" -ForegroundColor Cyan
@@ -12,7 +19,7 @@ Write-Host "  时间: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColo
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-python tools/scripts/maintenance/每月清理检查.py --json | Out-File -FilePath "reports\monthly-cleanup.json" -Encoding UTF8
+& $Script:Python tools/scripts/maintenance/每月清理检查.py --json | Out-File -FilePath "$Script:Root\reports\monthly-cleanup.json" -Encoding UTF8
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Cyan

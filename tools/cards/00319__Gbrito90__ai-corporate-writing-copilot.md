@@ -148,8 +148,8 @@ O prompt completo está disponível em [`prompts/prompt-copiloto-comunicacao.md`
 
 Os exemplos simulados estão em:
 
-- [`examples/exemplo-entrada.md`](https://github.com/Gbrito90/ai-corporate-writing-copilot/blob/main/examples/exemplo-entrada.md)
-- [`examples/exemplo-saida.md`](https://github.com/Gbrito90/ai-corporate-writing-copilot/blob/main/examples/exemplo-saida.md)
+- [`examples/exemplo-entrada.md`](examples/exemplo-entrada.md)
+- [`examples/exemplo-saida.md`](examples/exemplo-saida.md)
 
 ## Estrutura do repositório
 

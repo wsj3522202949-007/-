@@ -81,7 +81,7 @@ related:
 
 它不是“帮我写得更像论文”的提示词合集。它把论文视为一套可追踪的主张、证据、引用、图表和投稿要求，并明确拒绝编造数据、实验、DOI、政策与修改位置。
 
-[English README](https://github.com/cLin-c/paper-skill/blob/main/README_EN.md) · [安装说明](https://github.com/cLin-c/paper-skill/blob/main/docs/installation.md) · [公开 benchmark](https://github.com/cLin-c/paper-skill/blob/main/benchmarks/README.md) · [完整示例](https://github.com/cLin-c/paper-skill/blob/main/examples/README.md)
+[English README](https://github.com/cLin-c/paper-skill/blob/main/README_EN.md) · [安装说明](https://github.com/cLin-c/paper-skill/blob/main/docs/installation.md) · [公开 benchmark](https://github.com/cLin-c/paper-skill/blob/main/benchmarks/README.md) · [完整示例](examples/README.md)
 
 ## 30 秒开始
 

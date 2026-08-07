@@ -675,7 +675,7 @@ The full wiki is in `docs/wiki/`:
 | [05 - Voice Profiles](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/05-voice-profiles.md) | Creating, importing, and tuning voice profiles |
 | [06 - Platform Adapters](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/06-platform-adapters.md) | Google Docs, Word, social platform integration |
 | [07 - Integration Guide](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/07-integration-guide.md) | Connecting to advertising-hub, ContextOS, MCP servers |
-| [08 - Examples & Outputs](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/08-examples-and-outputs.md) | Before/after for every content type with detector scores |
+| [08 - Examples & Outputs](docs/wiki/08-examples-and-outputs.md) | Before/after for every content type with detector scores |
 | [09 - Research & Citations](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/09-research-and-citations.md) | All 50+ sources with full academic citations |
 | [10 - Troubleshooting](https://github.com/itallstartedwithaidea/writing-agent/blob/main/docs/wiki/10-troubleshooting.md) | Common issues, detector updates, calibration |
 

@@ -101,7 +101,7 @@ Read it. Change anything that feels wrong. When you're happy, tell your AI:
 **Step 5 — The AI drafts the book, chapter by chapter.**
 One chapter per session, one file per chapter. The AI runs an editorial pass and writes a handoff note at the end of each session, so any AI tool can pick up exactly where the last one stopped — you don't have to.
 
-Want to see what the output looks like first? Check [examples/](https://github.com/hottweelz/writing-template-for-ai/tree/main/examples/) for a sample blueprint and chapter.
+Want to see what the output looks like first? Check [examples/](examples/) for a sample blueprint and chapter.
 
 ---
 

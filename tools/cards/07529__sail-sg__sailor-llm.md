@@ -210,7 +210,7 @@ You can also modify the script to evaluate other models like Qwen1.5, Llama, Mis
 ## Demo
 
 We provide a simple [demo](https://huggingface.co/spaces/sail/Sailor-14B-Chat) to chat with [Sailor-14B-Chat](https://huggingface.co/sail/Sailor-14B-Chat) . 
-You can also develop it using the provided [demo code](https://github.com/sail-sg/sailor-llm/tree/main/demo).
+You can also develop it using the provided [demo code](demo).
 
 ## Citing this work
 

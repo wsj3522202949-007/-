@@ -238,10 +238,10 @@ Open `http://localhost:5000` in your browser (or press **`N`** in the interactiv
 - `requirements.txt` - Required Python dependencies
 
 ## Console Example
-![Fantasy World Generator](https://github.com/armysarge/FantasyWorld/blob/main/example1.webp)
+![Fantasy World Generator](example1.webp)
 
 ## Telegram Example
-![Fantasy World Generator](https://github.com/armysarge/FantasyWorld/blob/main/example2.webp)
+![Fantasy World Generator](example2.webp)
 
 ## Contributing
 

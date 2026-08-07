@@ -170,13 +170,13 @@ Machine-readable API specifications organized by format.
 
 ### Examples
 
-- [albato-albato-automations-automation-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-automations-automation-example.json)
-- [albato-albato-automations-automation-step-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-automations-automation-step-example.json)
-- [albato-albato-automations-execution-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-automations-execution-example.json)
-- [albato-albato-embedded-team-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-embedded-team-example.json)
-- [albato-albato-embedded-user-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-embedded-user-example.json)
-- [albato-albato-embedded-connector-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-embedded-connector-example.json)
-- [albato-albato-embedded-template-example.json](https://github.com/api-evangelist/albato/blob/main/examples/albato-albato-embedded-template-example.json)
+- [albato-albato-automations-automation-example.json](examples/albato-albato-automations-automation-example.json)
+- [albato-albato-automations-automation-step-example.json](examples/albato-albato-automations-automation-step-example.json)
+- [albato-albato-automations-execution-example.json](examples/albato-albato-automations-execution-example.json)
+- [albato-albato-embedded-team-example.json](examples/albato-albato-embedded-team-example.json)
+- [albato-albato-embedded-user-example.json](examples/albato-albato-embedded-user-example.json)
+- [albato-albato-embedded-connector-example.json](examples/albato-albato-embedded-connector-example.json)
+- [albato-albato-embedded-template-example.json](examples/albato-albato-embedded-template-example.json)
 
 ## Capabilities
 

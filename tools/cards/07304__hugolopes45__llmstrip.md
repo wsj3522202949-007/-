@@ -44,7 +44,7 @@ Strip AI patterns from text and code. Prompt + linter.
 
 > 25× excess frequency of `delve` post-ChatGPT. 280+ excess words identified. 34 structural rules. Grounded in peer-reviewed data.
 
-![demo](https://github.com/hugolopes45/llmstrip/blob/main/assets/demo.gif)
+![demo](assets/demo.gif)
 
 ## Two ways to use it
 

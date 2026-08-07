@@ -106,7 +106,7 @@ It consists of:
 ![Web App Screenshot](https://github.com/sarkar24/Toxic-Comment-Detector-Updated/blob/main/images/web-ui.jpg)
 
 ### 🧩 Chrome Extension in Action
-![Web App Screenshot](https://github.com/sarkar24/Toxic-Comment-Detector-Updated/blob/main/images/extension-demo.jpg)
+![Web App Screenshot](images/extension-demo.jpg)
 
 ---
 

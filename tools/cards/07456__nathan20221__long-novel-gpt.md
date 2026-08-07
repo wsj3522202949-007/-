@@ -83,7 +83,7 @@ Long-Novel-GPT是一个基于GPT等大语言模型的长篇小说生成器。它
 - 通过一个创意直接一键生成完整长篇小说（未开始）
 
 ### 📜 之前版本
-Long-Novel-GPT 1.5及之前版本提供了一个完整的长篇小说生成APP，但是在操作体验上并不完善。从1.6版本起，将更加注重用户体验，重写了一个新的界面，并将项目文件搬到了[core](https://github.com/nathan20221/long-novel-gpt/blob/main/core/frontend.py)目录下。之前的[demo](https://github.com/nathan20221/long-novel-gpt/blob/main/demo/app.py)已经不支持了，如果想要体验，可以选择之前的commit进行下载。
+Long-Novel-GPT 1.5及之前版本提供了一个完整的长篇小说生成APP，但是在操作体验上并不完善。从1.6版本起，将更加注重用户体验，重写了一个新的界面，并将项目文件搬到了[core](https://github.com/nathan20221/long-novel-gpt/blob/main/core/frontend.py)目录下。之前的[demo](demo/app.py)已经不支持了，如果想要体验，可以选择之前的commit进行下载。
 
 <h2 id="小说生成prompt">📚 小说生成 Prompt</h2>
 

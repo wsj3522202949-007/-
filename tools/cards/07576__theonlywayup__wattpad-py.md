@@ -65,7 +65,7 @@ related:
 The `wattpad` package is an asynchronous wrapper around the Wattpad User API.
 
 
-![GIF showcasing Wattpad Python usage](https://github.com/theonlywayup/wattpad-py/blob/main/demo.gif)
+![GIF showcasing Wattpad Python usage](demo.gif)
 
 > _Note that the only language server that is known to support this form of autocompletion is Pylance / Pyright._
 

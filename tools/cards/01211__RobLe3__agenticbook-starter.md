@@ -87,8 +87,8 @@ Not sure which flavor fits? [`quickstart/00_before_you_begin.md`](https://github
 ### Worked Examples
 
 - Short example world model: [`docs/`](https://github.com/RobLe3/agenticbook-starter/blob/main/docs/00_index.md)
-- Topic example world model: [`topic-example/`](https://github.com/RobLe3/agenticbook-starter/blob/main/topic-example/00_index.md)
-- Novel example world model: [`novel-example/`](https://github.com/RobLe3/agenticbook-starter/blob/main/novel-example/00_index.md)
+- Topic example world model: [`topic-example/`](topic-example/00_index.md)
+- Novel example world model: [`novel-example/`](novel-example/00_index.md)
 
 ### Blank Templates
 

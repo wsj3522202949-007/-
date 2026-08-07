@@ -96,11 +96,11 @@ In addition, this project supports two types of pluggable extensions for custom 
 
 1) **MCP Server example (third-party API/service integration)**: users can configure MCP servers so that agents can call third-party APIs like built-in tools. For example, with **Amap MCP** and a **visualization chart MCP Server**, when a user enters "Query Changsha's weather for the next five days, draw a temperature line chart, and write a weather forecast article," the agent first calls Amap MCP to obtain five-day temperature data, then calls the visualization chart MCP Server to generate a line-chart image URL and render the image in the add-in interface.
 
-![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/mcp_example.png)
+![](web/docs/public/mcp_example.png)
 
 2) **Skill example (capability packaging and reuse)**: Skill is like packaging a reusable capability and workflow, such as prompt templates, tool-call orchestration, or domain-specific writing/processing logic, into a "skill package." After loading, the agent can select and execute the corresponding Skill according to the task requirements, completing specific task types through a more stable path.
 
-![](https://github.com/visresearch/WordAgent/blob/main/web/docs/public/skill-example.png)
+![](web/docs/public/skill-example.png)
 
 ## 3. Development Plan
 

@@ -231,7 +231,7 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ### 🧠 Memory System (Soul)
 
-![Shikigami Protocol Memory System: fact extraction, vector retrieval, and weight decay](https://github.com/Shikigami-Lab/Shikigami-Protocol/blob/main/assets/readme/memory-demo.png)
+![Shikigami Protocol Memory System: fact extraction, vector retrieval, and weight decay](assets/readme/memory-demo.png)
 
 - **Long-term Facts**: Periodic LLM extraction into persistent JSON with Jaccard deduplication.
 - **Vector Retrieval**: Hybrid ChromaDB search for precise recall of details, even months later.
@@ -252,7 +252,7 @@ Edit `.env` with at least one LLM key, e.g. `GEMINI_API_KEY`. Match preset names
 
 ### 💭 Autonomous Drive (Will)
 
-![Shikigami Protocol Autonomous Drive: inner reflection state and proactive message](https://github.com/Shikigami-Lab/Shikigami-Protocol/blob/main/assets/readme/autonomous-demo.png)
+![Shikigami Protocol Autonomous Drive: inner reflection state and proactive message](assets/readme/autonomous-demo.png)
 
 - **Background Reflection**:
   - **Inner Monologue**: AI thinks and daydreams while you are quiet.

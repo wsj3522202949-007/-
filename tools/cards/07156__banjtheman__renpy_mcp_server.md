@@ -210,7 +210,7 @@ export RENPY_SDK_PATH="/path/to/renpy-8.4.1-sdk"
 
 ## 📚 Documentation
 
-- **[Examples](https://github.com/banjtheman/renpy_mcp_server/blob/main/examples/README.md)** - Claude Agent SDK and Strands integration examples
+- **[Examples](examples/README.md)** - Claude Agent SDK and Strands integration examples
 
 ## 🤝 Contributing
 

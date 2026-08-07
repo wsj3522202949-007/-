@@ -298,7 +298,7 @@ lighting-lora :[ightx2v/Qwen-Image-Lightning](https://huggingface.co/lightx2v/Qw
 * img2img 图生图示例
  <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/images/storytxt2imgv1orv2.png" width="50%">
 * lora   
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main//example_workflows/example0815s.png" width="50%">
+ <img src="/example_workflows/example0815s.png" width="50%">
  
 **4.2 ms-diffusion**   
 * txt2img 文生图  双角色同框 
@@ -306,7 +306,7 @@ lighting-lora :[ightx2v/Qwen-Image-Lightning](https://huggingface.co/lightx2v/Qw
  * img2img 图生图  双角色同框
  <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/images/msdiffusion_img2img_2role1img.png" width="50%">
  * lora
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/example_workflows/example0815ms.png" width="50%">
+ <img src="example_workflows/example0815ms.png" width="50%">
  
 **4.3 story-maker or story-and-maker**   
 * story-and-maker 
@@ -315,8 +315,8 @@ lighting-lora :[ightx2v/Qwen-Image-Lightning](https://huggingface.co/lightx2v/Qw
 * story-maker 
  <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/images/maker_image2image.png" width="50%">
 * lora
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/example_workflows/example0815story_and_maker.png" width="50%">
-  <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/example_workflows/example0815.png" width="50%">
+ <img src="example_workflows/example0815story_and_maker.png" width="50%">
+  <img src="example_workflows/example0815.png" width="50%">
 
 **4.4 consistory**
 * only one role 只支持单角色 use example.json
@@ -340,7 +340,7 @@ lighting-lora :[ightx2v/Qwen-Image-Lightning](https://huggingface.co/lightx2v/Qw
 **4.8 UNO**  
  <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/images/UNO_N.png" width="50%">
  * dual 双角色同框示例
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/images/example_uno_dual1.png" width="50%">
+ <img src="images/example_uno_dual1.png" width="50%">
 
 
 **4.9 RealCustom**    
@@ -373,9 +373,9 @@ lighting-lora :[ightx2v/Qwen-Image-Lightning](https://huggingface.co/lightx2v/Qw
 
 **4.13 Qwen-Image & Eidt**   
  * Qwen-Image  
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/example_workflows/qwen-image.png" width="50%">
+ <img src="example_workflows/qwen-image.png" width="50%">
   * Qwen-Image-Edit  
- <img src="https://github.com/smthemex/ComfyUI_StoryDiffusion/blob/main/example_workflows/edit.png" width="50%">
+ <img src="example_workflows/edit.png" width="50%">
 
 
 **4.15 comfyUI classic（comfyUI经典模式，可以接任意适配CF的流程，主要是方便使用多角色的clip）**  

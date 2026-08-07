@@ -313,15 +313,15 @@ cd claude-kopitiam && bash INSTALL.sh
 |----------|-------------|
 | [Minimal Template](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/templates/minimal-prompt-template.md) | Quick, lightweight prompt template |
 | [Comprehensive Template](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/templates/comprehensive-prompt-template.md) | Full 10-component template |
-| [Self-Evolving CLAUDE.md](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/templates/example-clauderules.md) | Auto-learning configuration pattern |
-| [Coding Tasks](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/examples/coding-tasks.md) | Code review and development prompts |
-| [Research Tasks](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/examples/research-tasks.md) | Research and information gathering |
-| [Business Analysis](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/examples/business-analysis.md) | Business and financial analysis |
-| [Document Creation](https://github.com/ThamJiaHe/claude-code-handbook/blob/main/docs/examples/document-creation.md) | Documentation and writing tasks |
+| [Self-Evolving CLAUDE.md](templates/example-clauderules.md) | Auto-learning configuration pattern |
+| [Coding Tasks](docs/examples/coding-tasks.md) | Code review and development prompts |
+| [Research Tasks](docs/examples/research-tasks.md) | Research and information gathering |
+| [Business Analysis](docs/examples/business-analysis.md) | Business and financial analysis |
+| [Document Creation](docs/examples/document-creation.md) | Documentation and writing tasks |
 
 ### Skills Collection (31 example skills)
 
-Browse [skills/examples/](https://github.com/ThamJiaHe/claude-code-handbook/tree/main/skills/examples/) for production-ready skills:
+Browse [skills/examples/](skills/examples/) for production-ready skills:
 
 **Development:** Next.js App Router, Tailwind Design System, API Development, Prisma ORM, TypeScript Standards
 **Testing:** Vitest Unit Testing, Playwright E2E, TDD Workflow, Code Review

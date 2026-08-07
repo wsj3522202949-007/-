@@ -66,15 +66,15 @@ A common trap in NLP is reaching for heavy, slow transformers right away. During
 
 ### 1. Flagging Clickbait Disinformation
 The pipeline successfully leverages negative word weights to flag sensational language frames with absolute certainty:
-![Likely Fake State](https://github.com/sub703/AI_Fake_News_Detector/blob/main/Screenshots/fake_demo.png)
+![Likely Fake State](Screenshots/fake_demo.png)
 
 ### 2. Verifying Formal Journalistic Structure
 The model isolates semantic layouts and structural phrasing to pass our strict 57% safety boundary cutoff floor:
-![Likely Real State](https://github.com/sub703/AI_Fake_News_Detector/blob/main/Screenshots/real_demo.png)
+![Likely Real State](Screenshots/real_demo.png)
 
 ### 3. Activating the Uncertainty Fallback Banners
 When incoming language signals are mixed or too ambiguous to clear precision constraints, the UI declines to force a blind guess:
-![Uncertain Safety Floor State](https://github.com/sub703/AI_Fake_News_Detector/blob/main/Screenshots/uncertain_demo.png)
+![Uncertain Safety Floor State](Screenshots/uncertain_demo.png)
 
 ---
 

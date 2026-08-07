@@ -129,7 +129,7 @@ pnpm build:viewer-for-bundle
 
 ## Story Format
 
-Stories are JSON files. See the [example story](https://github.com/Echsecutor/story_adventure/blob/main/stories/example_story.json) for the format and the [stories README](https://github.com/Echsecutor/story_adventure/blob/main/stories/README.md) for a list of available stories.
+Stories are JSON files. See the [example story](stories/example_story.json) for the format and the [stories README](https://github.com/Echsecutor/story_adventure/blob/main/stories/README.md) for a list of available stories.
 
 A story consists of:
 - **Sections** -- Story content linked via choices in the `.next` array. Sections without choices are terminal.

@@ -319,7 +319,7 @@ The `--browser` path drives a real headless browser through a free web checker a
 **ZeroGPT ships built-in** (confirmed working live). Most other free detectors are now bot-gated
 (reCAPTCHA / login-redirect / iframe widgets) — see [docs/free-detector-probes.md](https://github.com/ssamba1/untell/blob/main/docs/free-detector-probes.md).
 Add your own site with **zero code** — it's just CSS selectors in a JSON file
-([examples/browser_sites.example.json](https://github.com/ssamba1/untell/blob/main/examples/browser_sites.example.json)).
+([examples/browser_sites.example.json](examples/browser_sites.example.json)).
 
 > ⚠️ Browser checking is **slow, fragile, and ToS-caveated** — for occasional checks on your own text, not
 > the hot loop. The reliable multi-detector path is the key-gated commercial tier.

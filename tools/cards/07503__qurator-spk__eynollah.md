@@ -133,7 +133,7 @@ Eynollah supports five use cases:
 4. [text recognition (OCR)](#ocr), and 
 5. [reading order detection](#reading-order-detection).
 
-Some example outputs can be found in [`examples.md`](https://github.com/qurator-spk/eynollah/blob/main/docs/examples.md).
+Some example outputs can be found in [`examples.md`](docs/examples.md).
 
 The **generic options** shared by all subcommands are:
 ```sh

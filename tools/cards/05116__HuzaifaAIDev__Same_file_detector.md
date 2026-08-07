@@ -160,7 +160,7 @@ Admin users can:
 
 ### Password Reset
 
-![Reset Password](https://github.com/HuzaifaAIDev/Same_file_detector/blob/main/assets/reset_password.jpg)
+![Reset Password](assets/reset_password.jpg)
 
 ---
 

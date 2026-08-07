@@ -189,7 +189,7 @@ The app will be available at `http://localhost:5173`
 
 ### 📹 Demo: Keploy Recording and Replay
 
-![Keploy Recording and Test Replay Demo](https://github.com/Nsanjayboruds/AI-StoryForge-Multimodal-Story-Generator/blob/main/backend/keploy-demo.gif)
+![Keploy Recording and Test Replay Demo](backend/keploy-demo.gif)
 
 *The GIF above shows Keploy in action - automatically recording API traffic and replaying it as tests.*
 

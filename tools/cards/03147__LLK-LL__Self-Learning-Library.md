@@ -295,10 +295,10 @@ Before writing into the document, show me the proposed replacement text in chat.
 
 ## Examples
 
-- [Build a domain-specific vault](https://github.com/LLK-LL/Self-Learning-Library/blob/main/examples/domain-vault-adaptation.md)
-- [Use lightweight retrieval before a task](https://github.com/LLK-LL/Self-Learning-Library/blob/main/examples/lightweight-rag.md)
-- [Run a full rule iteration](https://github.com/LLK-LL/Self-Learning-Library/blob/main/examples/full-iteration.md)
-- [No-regression guard pattern](https://github.com/LLK-LL/Self-Learning-Library/blob/main/examples/no-regression-guard.md)
+- [Build a domain-specific vault](examples/domain-vault-adaptation.md)
+- [Use lightweight retrieval before a task](examples/lightweight-rag.md)
+- [Run a full rule iteration](examples/full-iteration.md)
+- [No-regression guard pattern](examples/no-regression-guard.md)
 
 ## Repository Layout
 

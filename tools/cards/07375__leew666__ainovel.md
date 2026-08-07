@@ -203,7 +203,7 @@ MIT License
 
 ## 📞 联系方式
 
-- Issue: [GitHub Issues](https://github.com/leew666/ainovel/tree/main/%E9%A1%B9%E7%9B%AEIssue%E5%9C%B0%E5%9D%80)
+- Issue: [GitHub Issues](https://github.com/leew666/ainovel/issues)
 - 文档: [详细文档](https://github.com/leew666/ainovel/tree/main/docs/)
 - 启动与使用指南: [startup_usage_guide.md](https://github.com/leew666/ainovel/blob/main/docs/startup_usage_guide.md)
 - 规划: [实施方案](https://github.com/leew666/ainovel/blob/main//.claude/plans/inherited-twirling-sutton.md)

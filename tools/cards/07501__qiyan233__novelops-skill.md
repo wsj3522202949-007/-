@@ -109,7 +109,7 @@ init -> write-next -> draft -> revise -> extract-state -> state-update
 
 如果你是人在看仓库、想快速理解这个 skill 怎么用，建议看：
 
-- [`examples/demo-novel/README.md`](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/README.md)
+- [`examples/demo-novel/README.md`](examples/demo-novel/README.md)
 - [`docs/cli.md`](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
 
 ---
@@ -125,7 +125,7 @@ README 负责介绍项目，`SKILL.md` 才更接近“这个 skill 真正怎么�
 
 ### 再看一个完整例子
 
-- [`examples/demo-novel/`](https://github.com/qiyan233/novelops-skill/tree/main/examples/demo-novel/)
+- [`examples/demo-novel/`](examples/demo-novel/)
 
 如果你想最快看懂 `write-next / revise / state-update` 是怎么串起来的，先看 demo，比先读很多实现细节更直观。
 
@@ -206,7 +206,7 @@ init -> write-next -> draft -> revise -> extract-state -> state-update
 If you are new here, start with:
 
 1. [SKILL.md](https://github.com/qiyan233/novelops-skill/blob/main/SKILL.md)
-2. [examples/demo-novel/README.md](https://github.com/qiyan233/novelops-skill/blob/main/examples/demo-novel/README.md)
+2. [examples/demo-novel/README.md](examples/demo-novel/README.md)
 3. [docs/cli.md](https://github.com/qiyan233/novelops-skill/blob/main/docs/cli.md)
 
 For humans, this README is intentionally lightweight.  

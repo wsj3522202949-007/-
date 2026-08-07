@@ -123,9 +123,9 @@ The same runner can be used with Qwen/DashScope, Kimi/Moonshot, GLM/Zhipu, Douba
 - [CLI guide](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/cli.md)
 - [Agent integration guide](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-integration.md)
 - [Agent evaluation protocol](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-evaluation.md)
-- [Agent evaluation demo report](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-evaluation-demo-report.md)
+- [Agent evaluation demo report](fictionops/docs/agent-evaluation-demo-report.md)
 - [Model providers](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/model-providers.md)
-- [Demo tutorial](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/tutorial-demo.md)
+- [Demo tutorial](fictionops/docs/tutorial-demo.md)
 - [Migration guide](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/migration.md)
 - [Roadmap](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/roadmap.md)
 - [0.1.1 release candidate plan](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/release-candidate-0.1.1.md)
@@ -158,7 +158,7 @@ See the full [roadmap](https://github.com/SouthWinter/fictionops/blob/main/ficti
 
 ## Research Framing
 
-FictionOps can also be treated as a local-first evaluation harness for long-horizon writing agents: persistent workspace state, scoped context construction, staged model outputs, human review gates, continuity audits, and controller-loop traces. `fictionops eval-agent` can generate a no-network smoke report for that harness on a temporary fixture copy. See the [agent evaluation protocol](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-evaluation.md) for baseline conditions, benchmark tasks, and metrics, and the [demo report](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-evaluation-demo-report.md) for a first reproducible evidence record.
+FictionOps can also be treated as a local-first evaluation harness for long-horizon writing agents: persistent workspace state, scoped context construction, staged model outputs, human review gates, continuity audits, and controller-loop traces. `fictionops eval-agent` can generate a no-network smoke report for that harness on a temporary fixture copy. See the [agent evaluation protocol](https://github.com/SouthWinter/fictionops/blob/main/fictionops/docs/agent-evaluation.md) for baseline conditions, benchmark tasks, and metrics, and the [demo report](fictionops/docs/agent-evaluation-demo-report.md) for a first reproducible evidence record.
 
 ## Contributing
 

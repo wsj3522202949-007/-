@@ -268,7 +268,7 @@ The **Reliability and false positives** section now includes neurodivergent, tra
 
 ## Full Example
 
-The complete draft-audit-final example lives in [`references/examples.md`](https://github.com/Dex719/humanizer-extended/blob/main/references/examples.md#full-example). Its rewrite keeps every substantive input claim, labels unsupported assertions instead of replacing them with plausible inventions, and adds no person, experience, number, study, quotation, or source.
+The complete draft-audit-final example lives in [`references/examples.md`](references/examples.md#full-example). Its rewrite keeps every substantive input claim, labels unsupported assertions instead of replacing them with plausible inventions, and adds no person, experience, number, study, quotation, or source.
 
 ## References
 

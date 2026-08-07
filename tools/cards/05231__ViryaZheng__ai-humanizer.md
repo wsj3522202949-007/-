@@ -100,10 +100,10 @@ The skill will:
 
 ## Examples
 
-Real before/after runs are in [`examples/`](https://github.com/ViryaZheng/ai-humanizer/tree/main/examples/):
+Real before/after runs are in [`examples/`](examples/):
 
-- [Nursing essay](https://github.com/ViryaZheng/ai-humanizer/blob/main/examples/01-nursing-essay.md) — normal academic domain, **100% → 11.1%** in one round, 7/7 terms kept.
-- [Clinical meta-analysis](https://github.com/ViryaZheng/ai-humanizer/blob/main/examples/02-clinical-saturated-domain.md) — a detector-*saturated* domain. Two independent rewrites scored **0%** and **26.5%** under identical rules (14/14 terms kept) — the clearest illustration of why best-of-N matters and why the skill won't over-promise.
+- [Nursing essay](examples/01-nursing-essay.md) — normal academic domain, **100% → 11.1%** in one round, 7/7 terms kept.
+- [Clinical meta-analysis](examples/02-clinical-saturated-domain.md) — a detector-*saturated* domain. Two independent rewrites scored **0%** and **26.5%** under identical rules (14/14 terms kept) — the clearest illustration of why best-of-N matters and why the skill won't over-promise.
 
 ## Why these rules (the short version)
 

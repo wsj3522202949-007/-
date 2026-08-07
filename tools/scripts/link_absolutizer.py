@@ -12,8 +12,10 @@ GitHub 链接绝对化转换器（可重复执行版）
 2. 目录路径 → tree/<default_branch>/
 3. 图片（![]()）→ raw.githubusercontent.com/<repo>/<default_branch>/path
 4. 锚点 → 保留 #anchor
-5. 未知目标 → 保留原文，不强制转换
+5. 未知目标 → 保留原文，不强制转换（修复了旧版默认 tree 的假修复问题）
 6. 已存在的 blob/tree 链接 → 自动修正误用（目录误用 blob 等）
+7. 占位内容 → 自动识别并反向还原（"此处"、"项目Issue地址"、"your-username" 等）
+8. 已损坏的伪 GitHub URL → 还原为原始占位文字
 
 用法
 ----
@@ -22,12 +24,16 @@ GitHub 链接绝对化转换器（可重复执行版）
     python tools/scripts/link_absolutizer.py --dry-run          # 同上
     python tools/scripts/link_absolutizer.py --dir tools/cards  # 指定目录
     python tools/scripts/link_absolutizer.py --json             # 机器可读
+    python tools/scripts/link_absolutizer.py --resolve-branches # 检测默认分支
+    python tools/scripts/link_absolutizer.py --validate S,A     # HTTP 校验
+    python tools/scripts/link_absolutizer.py --fix --to-permalink # 转永久链接
 
 可重复性保证
 ------------
 - 幂等：多次运行 --fix 结果不变（已绝对的 URL 不会重复转换）
 - 无副作用：dry-run 不修改任何文件
 - 可配置分支映射：tools/scripts/_branch_map.json（自动生成或手动维护）
+- 实时检测：--resolve-branches 通过 GitHub API 查询默认分支
 """
 
 import os
@@ -35,6 +41,9 @@ import re
 import sys
 import json
 import argparse
+import urllib.parse
+import urllib.request
+import urllib.error
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -147,6 +156,37 @@ KNOWN_MASTER_REPOS = {
     'vladmandic/automatic',
 }
 
+# 占位内容关键词（用于检测非真实路径的占位符）
+# 注意：单个中文字符也可能出现在真实路径中，但组合模式则高度疑似占位
+PLACEHOLDER_KEYWORDS = {
+    '此处', '请替换', '插入', '下载',
+    'your-username', 'your-repo', 'your-token', 'your-api-key',
+    'your-key', 'your_secret', 'your_password', 'your-org', 'your-name',
+    'placeholder', 'example', 'sample', 'demo',
+    'TODO', 'FIXME', 'XXX',
+    'username', 'password', 'api_key', 'secret_key',
+}
+
+# 占位内容关键词组合（两两出现在同一文本中则判定为占位）
+# 例如 "项目" + "地址" 组合出现在同一文本中
+PLACEHOLDER_KEYWORD_PAIRS = [
+    ('项目', '地址'),
+    ('项目', '名称'),
+    ('项目', '链接'),
+    ('此处', '图片'),
+    ('此处', '链接'),
+    ('此处', '二维码'),
+    ('请替换', '图片'),
+    ('请替换', '链接'),
+    ('点击', '链接'),
+    ('你的', '项目'),
+    ('你的', '仓库'),
+    ('你的', '用户名'),
+    ('your', 'project'),
+    ('your', 'repo'),
+    ('your', 'name'),
+]
+
 # 分支映射缓存文件
 BRANCH_MAP_FILE = SCRIPT_DIR / '_branch_map.json'
 
@@ -183,6 +223,51 @@ INLINE_CODE_RE = re.compile(r'`[^`\n]*`')
 # ---------------------------------------------------------------------------
 # 工具函数
 # ---------------------------------------------------------------------------
+
+def is_placeholder_text(text: str) -> bool:
+    """检测文本是否为占位内容（而非真实路径）。
+
+    支持 URL 编码和非编码的文本。检测策略：
+    1. 包含占位关键词
+    2. 关键词组合出现在同一文本中
+    3. 纯中文文本（无扩展名）→ 大概率是占位
+    4. 中文 + 英文 + 中文混合模式（如"项目Issue地址"）
+    5. "your-" 前缀模式
+    """
+    # 先 URL 解码
+    decoded = urllib.parse.unquote(text)
+
+    # 策略 1: 检查是否包含占位关键词
+    for kw in PLACEHOLDER_KEYWORDS:
+        if kw in decoded:
+            return True
+
+    # 策略 2: 检查关键词组合
+    for kw1, kw2 in PLACEHOLDER_KEYWORD_PAIRS:
+        if kw1 in decoded and kw2 in decoded:
+            return True
+
+    # 策略 3: 纯中文文本（无常见文件扩展名）→ 通常为占位
+    # 排除带扩展名的中文文件名（如 帮助文档.md）
+    no_ext = os.path.splitext(decoded)[0]
+    if no_ext and '.' not in decoded:
+        # 去掉常见标点和空格
+        cleaned = re.sub(r'[\s\u3000\u3001\u3002\uff0c\uff0e\uff1a\uff1b]', '', no_ext)
+        if cleaned and re.fullmatch(r'[\u4e00-\u9fff]+', cleaned):
+            return True
+
+    # 策略 4: 中文 + 英文 + 中文混合模式（如"项目Issue地址"）
+    # 排除带扩展名的路径
+    if '.' not in decoded and '/' not in decoded:
+        if re.search(r'[\u4e00-\u9fff]+[A-Za-z0-9]+[\u4e00-\u9fff]+', decoded):
+            return True
+
+    # 策略 5: "your-xxx" 模式
+    if re.search(r'(?i)\byour[-_][a-z]', decoded):
+        return True
+
+    return False
+
 
 def is_valid_path(path: str) -> bool:
     """检查路径是否看起来像有效的文件/目录路径（而非 JavaScript 代码或其他非路径内容）。"""
@@ -252,7 +337,13 @@ def save_branch_map(branch_map: dict):
 
 
 def get_default_branch(repo: str, branch_map: dict) -> str:
-    """获取仓库的默认分支。"""
+    """获取仓库的默认分支。
+
+    优先级：
+    1. _branch_map.json 缓存
+    2. KNOWN_MASTER_REPOS 硬编码列表
+    3. 默认 main（如不准确，请运行 --resolve-branches 更新）
+    """
     # 先查缓存
     if repo in branch_map:
         return branch_map[repo]
@@ -260,7 +351,7 @@ def get_default_branch(repo: str, branch_map: dict) -> str:
     if repo in KNOWN_MASTER_REPOS:
         branch_map[repo] = 'master'
         return 'master'
-    # 默认 main
+    # 默认 main（建议运行 --resolve-branches 确认）
     branch_map[repo] = 'main'
     return 'main'
 
@@ -286,6 +377,168 @@ def update_branch_map_from_cards(cards_dir: str, branch_map: dict) -> dict:
                 branch_map[repo] = 'master'
 
     return branch_map
+
+
+# ---------------------------------------------------------------------------
+# GitHub API 交互
+# ---------------------------------------------------------------------------
+
+def resolve_default_branches(repos: list, branch_map: dict) -> dict:
+    """通过 GitHub API 查询仓库的默认分支，更新分支映射。"""
+    import time
+
+    for repo in repos:
+        if repo in branch_map:
+            continue  # 已有映射，跳过
+        url = f'https://api.github.com/repos/{repo}'
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'link-absolutizer/1.0'})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                if resp.status == 200:
+                    data = json.loads(resp.read().decode('utf-8'))
+                    default_branch = data.get('default_branch', 'main')
+                    branch_map[repo] = default_branch
+                    print(f'  ✓ {repo} → {default_branch}', flush=True)
+        except Exception as e:
+            print(f'  ✗ {repo}: {e}', flush=True)
+        # 避免触发 GitHub API 限流
+        time.sleep(0.5)
+
+    return branch_map
+
+
+def validate_url_http(url: str, timeout: int = 5) -> tuple:
+    """通过 HTTP HEAD 请求验证 URL 是否可达。返回 (status, error_msg)。"""
+    try:
+        req = urllib.request.Request(url, method='HEAD', headers={'User-Agent': 'link-absolutizer/1.0'})
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return (resp.status, None)
+    except urllib.error.HTTPError as e:
+        return (e.code, str(e))
+    except Exception as e:
+        return (None, str(e))
+
+
+def validate_card_links(cards_dir: str, tier_filter: set = None) -> list:
+    """对工具卡中的外部链接做 HTTP 校验，返回 404 等异常链接列表。"""
+    import time
+    from pathlib import Path
+
+    # 从卡片中提取 tier 的正则
+    TIER_FM_RE = re.compile(r'^tier:\s*"([^"]+)"', re.MULTILINE)
+
+    results = []
+    card_files = sorted([
+        f for f in os.listdir(cards_dir)
+        if f.endswith('.md') and not f.startswith('_')
+    ])
+    total_cards = len(card_files)
+    validated_count = 0
+
+    for fname in card_files:
+        validated_count += 1
+        fp = os.path.join(cards_dir, fname)
+        with open(fp, 'r', encoding='utf-8') as fh:
+            content = fh.read()
+
+        # 提取 tier
+        tm = TIER_FM_RE.search(content)
+        card_tier = tm.group(1).upper() if tm else ''
+        if tier_filter and card_tier not in tier_filter:
+            continue
+
+        print(f'[{validated_count}/{total_cards}] 校验 {fname}...', flush=True)
+
+        # 提取所有 GitHub URL（去重）
+        urls = set()
+        for m in GITHUB_BLOB_RE.finditer(content):
+            urls.add(m.group(0))
+        for m in GITHUB_RAW_RE.finditer(content):
+            urls.add(m.group(0))
+        for m in MD_LINK_RE.finditer(content):
+            u = m.group(2)
+            if 'github.com' in u or 'raw.githubusercontent.com' in u:
+                urls.add(u)  # set 自动去重
+
+        for url in sorted(urls):
+            status, err = validate_url_http(url)
+            if status == 404 or (status is None and err):
+                results.append({
+                    'file': fname,
+                    'tier': card_tier,
+                    'url': url,
+                    'status': status,
+                    'error': err,
+                })
+                print(f'  ✗ [{card_tier}] {fname}: {status or "ERROR"} {url[:80]}', flush=True)
+            time.sleep(0.1)  # 避免触发限流
+
+    return results
+
+
+def get_commit_sha_for_path(repo: str, path: str, branch: str = 'main') -> str:
+    """通过 GitHub API 获取指定路径文件的最新 commit SHA。"""
+    api_url = f'https://api.github.com/repos/{repo}/commits?path={path}&sha={branch}&per_page=1'
+    try:
+        req = urllib.request.Request(api_url, headers={'User-Agent': 'link-absolutizer/1.0'})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            if resp.status == 200:
+                data = json.loads(resp.read().decode('utf-8'))
+                if data and 'sha' in data[0]:
+                    return data[0]['sha']
+    except Exception:
+        pass
+    return None
+
+
+def convert_to_permalinks(content: str, repo: str, branch_map: dict, sha_cache: dict) -> str:
+    """将 blob/branch 链接转为 commit SHA 永久链接。
+
+    转换规则：
+    https://github.com/{repo}/blob/{branch}/{path} → https://github.com/{repo}/blob/{sha}/{path}
+    """
+    import time
+
+    def permalink_convert(m):
+        r = m.group(1)
+        link_type = m.group(2)
+        branch = m.group(3)
+        path = m.group(4)
+
+        # 跳过非本卡 repo 的链接
+        if r.lower() != repo.lower():
+            return m.group(0)
+
+        # 跳过 tree 链接（目录没有永久链接）
+        if link_type != 'blob':
+            return m.group(0)
+
+        # 跳过无效路径
+        if not is_valid_path(path):
+            return m.group(0)
+
+        # 跳过占位内容
+        decoded_path = urllib.parse.unquote(path)
+        if is_placeholder_text(decoded_path):
+            return m.group(0)
+
+        path = path.lstrip('/')
+        cache_key = f'{repo}:{path}'
+
+        # 查询缓存
+        if cache_key in sha_cache:
+            sha = sha_cache[cache_key]
+        else:
+            correct_branch = get_default_branch(repo, branch_map)
+            sha = get_commit_sha_for_path(repo, path, correct_branch)
+            sha_cache[cache_key] = sha
+            time.sleep(0.3)  # 限流保护
+
+        if sha:
+            return f'https://github.com/{r}/blob/{sha}/{path}'
+        return m.group(0)  # 查询失败则保留原链接
+
+    return GITHUB_BLOB_RE.sub(permalink_convert, content)
 
 
 # ---------------------------------------------------------------------------
@@ -316,6 +569,13 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
         # 跳过无效路径（JavaScript 代码等误匹配）
         if not is_valid_path(path):
             return m.group(0)
+
+        # URL 解码路径，检测占位内容
+        decoded_path = urllib.parse.unquote(path)
+        if is_placeholder_text(decoded_path):
+            # 反向还原：将伪 GitHub URL 恢复为占位原文
+            # 例如 [text](https://github.com/.../项目Issue地址) → [text](项目Issue地址)
+            return decoded_path
 
         # 修正分支
         correct_branch = get_default_branch(repo, branch_map)
@@ -354,8 +614,8 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
         if url.startswith(('http://', 'https://', 'mailto:', 'ftp://')):
             return m.group(0)
 
-        # 跳过占位符
-        if re.fullmatch(r'[\u4e00-\u9fff]+', url):
+        # 跳过占位内容
+        if is_placeholder_text(url):
             return m.group(0)
 
         # 跳过无效路径（JavaScript 代码等误匹配）
@@ -372,7 +632,8 @@ def absolutize_links(content: str, repo: str, branch_map: dict) -> str:
             elif path_type is False:
                 link_type = 'tree'
             else:
-                link_type = 'tree'  # 无法确定时默认为 tree（目录更安全，GitHub 会重定向）
+                # 无法确定文件/目录时保留原文，不强制转换
+                return m.group(0)
             base_url = f'https://github.com/{repo}/{link_type}/{default_branch}/{url}'
 
         if is_image:
@@ -467,6 +728,12 @@ def main():
     parser.add_argument('--json', action='store_true', help='输出 JSON 格式')
     parser.add_argument('--update-branch-map', action='store_true',
                         help='从工具卡中更新分支映射缓存')
+    parser.add_argument('--resolve-branches', action='store_true',
+                        help='通过 GitHub API 查询默认分支，更新分支映射（建议周期性运行）')
+    parser.add_argument('--validate', nargs='?', const='S,A', default=None,
+                        help='HTTP 校验指定等级工具卡的链接，耗时较长；默认 S/A 级（如 --validate S,A）')
+    parser.add_argument('--to-permalink', action='store_true',
+                        help='将 blob/branch 链接转为 commit SHA 永久链接（需 GitHub API 调用）')
     args = parser.parse_args()
 
     fix = args.fix
@@ -489,6 +756,36 @@ def main():
             print(json.dumps({'branch_map': branch_map}, ensure_ascii=False, indent=2))
         return
 
+    if args.resolve_branches:
+        print(f'通过 GitHub API 查询默认分支...', flush=True)
+        # 收集所有卡片的 repo
+        repos = set()
+        for f in sorted(os.listdir(str(cards_dir))):
+            if not f.endswith('.md'):
+                continue
+            fp = os.path.join(str(cards_dir), f)
+            with open(fp, 'r', encoding='utf-8') as fh:
+                content = fh.read()
+            m = REPO_FM_RE.search(content)
+            if m:
+                repos.add(m.group(1).strip().strip('"').strip("'"))
+        resolve_default_branches(list(repos), branch_map)
+        save_branch_map(branch_map)
+        print(f'分支映射已保存: {BRANCH_MAP_FILE} ({len(branch_map)} 条)')
+        return
+
+    if args.validate is not None:
+        tier_filter = set(t.strip().upper() for t in args.validate.split(','))
+        print(f'HTTP 校验 {",".join(sorted(tier_filter))} 级工具卡链接...', flush=True)
+        results = validate_card_links(str(cards_dir), tier_filter)
+        if not results:
+            print('所有链接均正常，无 404。')
+            return 0
+        print(f'\n发现 {len(results)} 个异常链接:')
+        for r in results:
+            print(f'  [{r["tier"]}] {r["file"]}: {r["status"]} {r["url"]}')
+        return 1 if results else 0
+
     # 扫描卡片
     card_files = sorted([
         f for f in os.listdir(str(cards_dir))
@@ -500,10 +797,31 @@ def main():
     fixed_count = 0
     unchanged_count = 0
     skipped_count = 0
+    sha_cache = {}  # 缓存 commit SHA 查询结果
 
     for fname in card_files:
         fp = os.path.join(str(cards_dir), fname)
         result = process_card(fp, fix, branch_map)
+
+        # 额外处理：转换为永久链接
+        if fix and args.to_permalink and result['status'] in ('fixed', 'unchanged'):
+            with open(fp, 'r', encoding='utf-8') as fh:
+                content = fh.read()
+            m = REPO_FM_RE.search(content)
+            if m:
+                repo = m.group(1).strip().strip('"').strip("'")
+                new_content = convert_to_permalinks(content, repo, branch_map, sha_cache)
+                if new_content != content:
+                    with open(fp, 'w', encoding='utf-8') as fh:
+                        fh.write(new_content)
+                    # 重新统计变化
+                    permalink_changes = 0
+                    for line_orig, line_new in zip(content.split('\n'), new_content.split('\n')):
+                        if line_orig != line_new:
+                            permalink_changes += 1
+                    result['changes'] += permalink_changes
+                    total_changes += permalink_changes
+                    result['permalink_changes'] = permalink_changes
 
         if result['status'] == 'skipped':
             skipped_count += 1

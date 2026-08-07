@@ -99,7 +99,7 @@ Please see our official Google Research release here: https://github.com/google-
 
 **Verify DIPPER is working**
 
-Please run the script [`dipper_paraphrases/paraphrase_minimal.py`](https://github.com/martiansideofthemoon/ai-detection-paraphrases/blob/master/dipper_paraphrases/paraphrase_minimal.py) and compare the outputs with [`sample_outputs.md`](https://github.com/martiansideofthemoon/ai-detection-paraphrases/blob/master/sample_outputs.md). The greedy decoded outputs should exactly match, while the top_p samples will have some differences from the sample outputs but have higher diversity.
+Please run the script [`dipper_paraphrases/paraphrase_minimal.py`](https://github.com/martiansideofthemoon/ai-detection-paraphrases/blob/master/dipper_paraphrases/paraphrase_minimal.py) and compare the outputs with [`sample_outputs.md`](sample_outputs.md). The greedy decoded outputs should exactly match, while the top_p samples will have some differences from the sample outputs but have higher diversity.
 
 **(IMPORTANT) paraphraser differences from paper**
 

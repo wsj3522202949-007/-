@@ -130,7 +130,7 @@ npx skills add worldwonderer/oh-story-claudecode -y
 <details>
 <summary>封面生成示例</summary>
 
-![封面示例 — 剑道独尊](https://github.com/gangz1o/oh-story-claudecode/blob/main/demo/%E5%B0%81%E9%9D%A2-%E5%89%91%E9%81%93%E7%8B%AC%E5%B0%8A.png)
+![封面示例 — 剑道独尊](demo/封面-剑道独尊.png)
 
 </details>
 

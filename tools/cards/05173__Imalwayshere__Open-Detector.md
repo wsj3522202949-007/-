@@ -51,7 +51,7 @@ related:
 
 **Open Detector** is a BERT binary classification model for identifying whether academic papers are closer to **human writing** or **AI writing style**. It serves as an **open alternative** to expensive commercial detectors like Turnitin, suitable for students, individual researchers, and local deployment users.
 
-![Demo](https://github.com/Imalwayshere/Open-Detector/blob/main/images/demo.png)
+![Demo](images/demo.png)
 
 > 🌐 **Try Online**: [https://www.xyzscience.com/](https://www.xyzscience.com/)
 

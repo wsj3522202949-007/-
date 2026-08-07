@@ -1,20 +1,30 @@
 #!/usr/bin/env pwsh
 # 季度恢复演练脚本
-# 时间：每季度（3/6/9/12月 第一个周日 22:00）
+# 时间：每季度 22:00（3/6/9/12月 1日，由定时任务触发）
+# 依赖：run_all.py（统一门禁）、Git
 #
-# 步骤：
-#   1. 克隆到独立临时目录
-#   2. 运行统一门禁（run_all.py）
-#   3. 生成恢复演练报告
-#   4. 清理临时目录
+# 季度月份保护：仅 3/6/9/12 月真正执行，其余月份静默退出
 
 $ErrorActionPreference = "Stop"
-$GIT = "C:\Users\wsj\.workbuddy\vendor\PortableGit\cmd\git.exe"
-$ROOT = "e:\个人知识库"
-$TEMP_DIR = "C:\tmp\recovery-test-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
-$REPORT_DIR = "maintenance\reports"
 
-Set-Location $ROOT
+# 加载运行时解析器
+. "$PSScriptRoot\_runtime.ps1"
+if (-not $Script:Git -or -not $Script:Python) {
+    Write-Host "❌ 运行时环境不完整，请检查 _runtime.ps1 的路径配置" -ForegroundColor Red
+    exit 1
+}
+
+# 季度月份保护：仅 3/6/9/12 月执行
+$currentMonth = (Get-Date).Month
+if ($currentMonth -notin @(3, 6, 9, 12)) {
+    Write-Host "⏭️ 当前月份 ($currentMonth) 不是季度末（3/6/9/12），跳过本次恢复演练" -ForegroundColor Yellow
+    exit 0
+}
+
+$TEMP_DIR = "C:\tmp\recovery-test-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+$REPORT_DIR = "$Script:Root\maintenance\reports"
+
+Set-Location $Script:Root
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  季度恢复演练" -ForegroundColor Cyan
@@ -32,7 +42,7 @@ Write-Host ""
 # 2. 从 GitHub 克隆
 Write-Host "🔄 克隆远程仓库..." -ForegroundColor Yellow
 $cloneStart = Get-Date
-$cloneOutput = & $GIT clone git@github.com:wsj3522202949-007/-.git "$TEMP_DIR\recovered" 2>&1
+$cloneOutput = & $Script:Git clone git@github.com:wsj3522202949-007/-.git "$TEMP_DIR\recovered" 2>&1
 $cloneEnd = Get-Date
 $cloneDuration = ($cloneEnd - $cloneStart).TotalSeconds
 
@@ -51,7 +61,7 @@ Set-Location "$TEMP_DIR\recovered"
 # 4. 运行统一门禁
 Write-Host "🔍 运行统一门禁校验..." -ForegroundColor Yellow
 $gateStart = Get-Date
-$jsonOutput = & python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+$jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
 $gateEnd = Get-Date
 $gateDuration = ($gateEnd - $gateStart).TotalSeconds
 
@@ -66,7 +76,7 @@ Write-Host "  耗时: $([math]::Round($gateDuration))秒" -ForegroundColor Yello
 Write-Host ""
 
 # 5. 回到知识库根目录准备写报告
-Set-Location $ROOT
+Set-Location $Script:Root
 
 # 6. 生成恢复演练报告
 $endTime = Get-Date
@@ -152,7 +162,7 @@ $logEntry = @{
     scanned_files = $scannedFiles
 } | ConvertTo-Json -Compress
 
-Add-Content -Path "maintenance\backup-log.jsonl" -Value $logEntry -Encoding UTF8
+Add-Content -Path "$Script:Root\maintenance\backup-log.jsonl" -Value $logEntry -Encoding UTF8
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  恢复演练完成" -ForegroundColor Cyan

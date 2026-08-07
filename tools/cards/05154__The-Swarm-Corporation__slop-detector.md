@@ -125,7 +125,7 @@ curl -o .github/workflows/slop-detector.yml \
   https://raw.githubusercontent.com/The-Swarm-Corporation/slop-detector/main/example-workflow.yml
 ```
 
-Alternatively, copy [`example-workflow.yml`](https://github.com/The-Swarm-Corporation/slop-detector/blob/main/example-workflow.yml) manually.
+Alternatively, copy [`example-workflow.yml`](example-workflow.yml) manually.
 
 ### 3. Update the `uses:` reference
 

@@ -193,7 +193,7 @@ The `check` command retrieves relevant facts and asks the LLM to explain whether
 
 ## Demo and Report
 
-- Demo video: [demo.mp4](https://github.com/jennyhuang17/fiction-character-memory-agent/blob/main/demo.mp4)
+- Demo video: [demo.mp4](demo.mp4)
 - Short report: [report.pdf](https://github.com/jennyhuang17/fiction-character-memory-agent/blob/main/report.pdf)
 
 ## Project Structure

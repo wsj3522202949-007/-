@@ -58,14 +58,14 @@ CharMem is an intelligent chat application that helps readers keep track of char
 
 ## 🎬 Demo
 
-<!-- ![CharMem Demo](https://github.com/edwarddavis1/CharMem-LLM/blob/main/demo/CharMem_demo.gif) -->
+<!-- ![CharMem Demo](demo/CharMem_demo.gif) -->
 
 <!-- _See CharMem in action: Upload a PDF, ask about characters, and get instant insights with page references!_ -->
 
-![CharMem Split View](https://github.com/edwarddavis1/CharMem-LLM/blob/main/demo/CharMem_split_view.png)
+![CharMem Split View](demo/CharMem_split_view.png)
 _CharMem answers questions about book based on where you're up to in the book - including the page numbers for reference!_
 
-![CharMem Anti-spoiler](https://github.com/edwarddavis1/CharMem-LLM/blob/main/demo/CharMem_anti_spoiler_demo.png)
+![CharMem Anti-spoiler](demo/CharMem_anti_spoiler_demo.png)
 _CharMem will never reveal spoilers that you haven't read yet!_
 
 ## 🚀 Quick Start

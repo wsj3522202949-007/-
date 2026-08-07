@@ -123,7 +123,7 @@ Ban words, set preferences, or define a brand voice — all applied before the c
 [Korean text]
 ```
 
-For a persistent tone profile, see [`examples/brand-voice-template.md`](https://github.com/dotoricode/korean-humanizer/blob/main/examples/brand-voice-template.md).
+For a persistent tone profile, see [`examples/brand-voice-template.md`](examples/brand-voice-template.md).
 
 related:
   - methods/最强去AI味铁律.md

@@ -46,19 +46,19 @@ related:
 ## Demo
 
 ### Input Interface
-![Input Interface](https://github.com/agstyn/mental-health-signal-detector/blob/main/demo%20(1).png)
+![Input Interface](demo (1).png)
 
 ### Emotion Detection — Seeking Support
-![Seeking Support](https://github.com/agstyn/mental-health-signal-detector/blob/main/demo%20(2).png)
+![Seeking Support](demo (2).png)
 
 ### Full Result View
-![Full Result](https://github.com/agstyn/mental-health-signal-detector/blob/main/demo%20(3).png)
+![Full Result](demo (3).png)
 
 ### Emotion Detection — Positive / Recovery
-![Positive Recovery](https://github.com/agstyn/mental-health-signal-detector/blob/main/demo%20(4).png)
+![Positive Recovery](demo (4).png)
 
 ### Therapist Insight
-![Therapist Insight](https://github.com/agstyn/mental-health-signal-detector/blob/main/demo%20(5).png)
+![Therapist Insight](demo (5).png)
 
 ---
 

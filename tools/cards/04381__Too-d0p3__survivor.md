@@ -51,7 +51,7 @@ AI Survivor je experimentalni textova hra inspirovana konceptem Survivor, kde hr
 
 Ukazka generovani vlastnosti na zaklade textoveho popisu hrace.
 
-![Ukazka aplikace](https://github.com/Too-d0p3/survivor/blob/main/Survivor-example.gif)
+![Ukazka aplikace](Survivor-example.gif)
 
 
 

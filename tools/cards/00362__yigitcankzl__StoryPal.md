@@ -60,7 +60,7 @@ An AI-powered web app that generates personalized, illustrated educational story
 
 ## Demo
 
-![StoryPal Demo](https://github.com/yigitcankzl/StoryPal/blob/main/assets/demo.gif)
+![StoryPal Demo](assets/demo.gif)
 
 ![StoryPal Screenshot 1](https://github.com/yigitcankzl/StoryPal/blob/main/assets/1.png)
 ![StoryPal Screenshot 2](https://github.com/yigitcankzl/StoryPal/blob/main/assets/2.png)

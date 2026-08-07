@@ -237,5 +237,5 @@ rasa run --enable-api --cors "*"
 
 
 
-![alt-text](https://github.com/BocchiTheProg/InteractiveStoryGeneratingChatBot/blob/main/screenshots/demo-photo.png)
+![alt-text](screenshots/demo-photo.png)
 

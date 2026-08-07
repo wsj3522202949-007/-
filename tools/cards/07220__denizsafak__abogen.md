@@ -56,7 +56,7 @@ Abogen is a powerful text-to-speech conversion tool that makes it easy to turn e
 
 https://github.com/user-attachments/assets/094ba3df-7d66-494a-bc31-0e4b41d0b865
 
-> This demo was generated in just 5 seconds, producing ∼1 minute of audio with perfectly synced subtitles. To create a similar video, see [the demo guide](https://github.com/denizsafak/abogen/tree/main/demo).
+> This demo was generated in just 5 seconds, producing ∼1 minute of audio with perfectly synced subtitles. To create a similar video, see [the demo guide](demo).
 
 ## `How to install?` <a href="https://pypi.org/project/abogen/" target="_blank"><img src="https://img.shields.io/pypi/pyversions/abogen" alt="Abogen Compatible PyPi Python Versions" align="right" style="margin-top:6px;"></a>
 

@@ -82,8 +82,8 @@ text_encoder/vae :[ltx2 text encoder vae audio vae...](https://huggingface.co/sm
 
 4 Example
 ----
-![](https://github.com/smthemex/ComfyUI_JoyAI_Echo/blob/main/example_workflows/i2v.png)
-![](https://github.com/smthemex/ComfyUI_JoyAI_Echo/blob/main/example_workflows/example.png)
+![](example_workflows/i2v.png)
+![](example_workflows/example.png)
 
 5 Citation
 -related:

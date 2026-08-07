@@ -52,7 +52,7 @@ an inline tag protocol, ElevenLabs v3 emotional speech, generated video scenes,
 live body swapping, mocap animation, a continuously simmering mood system, and
 typed persistent memory with reflection.
 
-![Lyra — live demo](https://github.com/Freespirits/lyra-ai-companion/blob/main/docs/media/demo.gif)
+![Lyra — live demo](docs/media/demo.gif)
 
 *She picks up, lip-syncs the reply, and changes her world mid-sentence — one skill, not half an hour of tools.*
 

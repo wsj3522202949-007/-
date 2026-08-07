@@ -76,7 +76,7 @@ Gmail (sent mail)          Your feedback
 
 **Privacy:** Everything stays local. Your corpus, model, and drafts never leave your Mac.
 
-![YouOS demo](https://github.com/DrBaher/youos/blob/main/screenshots/demo.gif)
+![YouOS demo](screenshots/demo.gif)
 
 > 🌐 [youos.drbaher.com](https://youos.drbaher.com/)
 

@@ -57,7 +57,7 @@ An AI-powered macOS writing copilot that fixes grammar and adjusts tone — acce
 You're in any app, you have a messy draft. Click the **Typer** icon in your menu bar, paste or type your text, and get a clean rewrite — then tap **Copy & Close** to paste it wherever you were. No switching apps. Just a floating popup over your current screen.
 
 
-![Demo](https://github.com/nim444/Typer-AI-Mac/blob/main/assets/demo.png)
+![Demo](assets/demo.png)
 
 ---
 

@@ -76,7 +76,7 @@ AI slop is insidious because it *looks* finished — consistent naming, passing 
 ## See it work
 
 <!-- Render the GIF once with `vhs docs/demo.tape`, then embed it here: -->
-<!-- ![slopscore scanning a sloppy file](https://github.com/Vinay-O/slopscore/blob/main/docs/demo.gif) -->
+<!-- ![slopscore scanning a sloppy file](docs/demo.gif) -->
 
 ```text
 $ npx slopscore examples/slop.tsx

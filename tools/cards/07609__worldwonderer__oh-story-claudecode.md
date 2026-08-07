@@ -185,7 +185,7 @@ npx skills add worldwonderer/oh-story-claudecode -y -g
 <details>
 <summary>封面生成示例</summary>
 
-![封面示例 — 剑道独尊](https://github.com/worldwonderer/oh-story-claudecode/blob/main/demo/%E5%B0%81%E9%9D%A2-%E5%89%91%E9%81%93%E7%8B%AC%E5%B0%8A.png)
+![封面示例 — 剑道独尊](demo/封面-剑道独尊.png)
 
 </details>
 
@@ -397,7 +397,7 @@ see_also:
 
 **短篇** 知乎盐言故事 · 番茄短篇 · 七猫短篇
 
-真实产出样例见 [demo/](https://github.com/worldwonderer/oh-story-claudecode/tree/main/demo/)：短篇拆文《曾将爱意私藏》· 长篇拆文《盘龙》· 长篇续写工程《让你管账号，你高燃混剪炸全网》· 封面《剑道独尊》示例图。
+真实产出样例见 [demo/](demo/)：短篇拆文《曾将爱意私藏》· 长篇拆文《盘龙》· 长篇续写工程《让你管账号，你高燃混剪炸全网》· 封面《剑道独尊》示例图。
 
 这套 skill 现在能让我度过找工作的过渡期 :joy:，希望也能帮到有需要的朋友。
 

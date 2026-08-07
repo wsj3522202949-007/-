@@ -185,7 +185,7 @@ Read in this order:
 1. [`docs/PHILOSOPHY.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/docs/PHILOSOPHY.md) — Why the approach works.
 2. [`docs/ARCHITECTURE.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/docs/ARCHITECTURE.md) — How the folders are organized and why.
 3. [`docs/JET_OS_PRIMER.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/docs/JET_OS_PRIMER.md) — The story-design framework the pipeline targets.
-4. [`example_project/README.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/example_project/README.md) — Tour of the working project.
+4. [`example_project/README.md`](example_project/README.md) — Tour of the working project.
 5. [`docs/THREE_LAYER_REVIEW.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/docs/THREE_LAYER_REVIEW.md) — How chapter review actually works.
 6. [`docs/CASE_STUDY.md`](https://github.com/mintotsukino/claude-novel-workflow/blob/main/docs/CASE_STUDY.md) — Real numbers from real sprints.
 

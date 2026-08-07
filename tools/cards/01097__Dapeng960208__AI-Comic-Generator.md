@@ -203,7 +203,7 @@ Access in browser: `http://localhost:5173`
 
 ## 🖼️ Examples
 
-You can find a complete example project in the [example/](https://github.com/Dapeng960208/AI-Comic-Generator/tree/main/example/) directory, including story scripts, character designs, and generated storyboard panels.
+You can find a complete example project in the [example/](example/) directory, including story scripts, character designs, and generated storyboard panels.
 
 ### Character Design
 

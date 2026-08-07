@@ -152,7 +152,7 @@ related:
 
 - [![Huggingface PhotoMaker](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker)
 
-- [**PhotoMaker notebook demo**](https://github.com/tencentarc/photomaker/blob/main/photomaker_demo.ipynb)
+- [**PhotoMaker notebook demo**](photomaker_demo.ipynb)
 
 
 
@@ -182,7 +182,7 @@ Note: only change the base model and add the LoRA modules for better stylization
 
 - [![Huggingface PhotoMaker-Style](https://img.shields.io/static/v1?label=Demo&message=Huggingface%20Gradio&color=orange)](https://huggingface.co/spaces/TencentARC/PhotoMaker-Style)
 
-- [**PhotoMaker-Style notebook demo**](https://github.com/tencentarc/photomaker/blob/main/photomaker_style_demo.ipynb) 
+- [**PhotoMaker-Style notebook demo**](photomaker_style_demo.ipynb) 
 
 
 
@@ -434,7 +434,7 @@ python gradio_demo/app.py
 
 
 
-You could customize this script in [this file](https://github.com/tencentarc/photomaker/blob/main/gradio_demo/app.py).
+You could customize this script in [this file](gradio_demo/app.py).
 
 
 

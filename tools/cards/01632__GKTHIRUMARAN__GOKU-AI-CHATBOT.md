@@ -120,7 +120,7 @@ flowchart TD
 > **Goku:** Haha! Training never stops! I just did 10,000 push-ups — gotta keep my power level high even in this AI realm!
 
 <p align="center">
-  <img src="https://github.com/GKTHIRUMARAN/GOKU-AI-CHATBOT/blob/main/V.1/demo.png" alt="Goku AI Chat Demo" width="800">
+  <img src="V.1/demo.png" alt="Goku AI Chat Demo" width="800">
 </p>
 
 ---

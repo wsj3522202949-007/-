@@ -10202,7 +10202,7 @@ agent.mount(document.body);
 loadAvatar('a_abc123', document.getElementById('avatar-slot'));
 ```
 
-`@three-ws/sdk` also exposes `AgentClient` (x402 paid calls), `PermissionsClient`, and ERC-8004 registry helpers. See [sdk/README.md](https://github.com/nirholas/three.ws/blob/main/sdk/README.md), the [SDK guide](https://github.com/nirholas/three.ws/blob/main/docs/sdk.md), and [examples](https://github.com/nirholas/three.ws/blob/main/docs/examples.md).
+`@three-ws/sdk` also exposes `AgentClient` (x402 paid calls), `PermissionsClient`, and ERC-8004 registry helpers. See [sdk/README.md](https://github.com/nirholas/three.ws/blob/main/sdk/README.md), the [SDK guide](https://github.com/nirholas/three.ws/blob/main/docs/sdk.md), and [examples](docs/examples.md).
 
 ---
 
@@ -10263,7 +10263,7 @@ Commands live in [`marketplace/plugins/three-ws-developer/commands/`](https://gi
 
 ## Demos Hub
 
-`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in [`public/demos/`](https://github.com/nirholas/three.ws/tree/main/public/demos/) — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
+`/demos` is a curated index of sandbox pages that exercise individual platform capabilities in isolation. Each demo is a single HTML file in [`public/demos/`](public/demos/) — perfect for screen recordings, bug reproductions, or showing off one feature without the rest of the app.
 
 | Demo                                | Path                             | What it shows                                            |
 | ----------------------------------- | -------------------------------- | -------------------------------------------------------- |
@@ -10726,7 +10726,7 @@ const rows = await listAttestations({ agentAsset, kind: 'all', network: 'devnet'
 
 Server read endpoint: `GET /api/agents/solana-attestations?asset=<pubkey>&kind=feedback|validation|all&network=devnet|mainnet`.
 
-Demo page: [sdk/example/solana-attest.html](https://github.com/nirholas/three.ws/blob/main/sdk/example/solana-attest.html).
+Demo page: [sdk/example/solana-attest.html](sdk/example/solana-attest.html).
 
 ### Pump.fun signals (Solana off-chain reputation)
 

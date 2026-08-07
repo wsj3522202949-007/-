@@ -58,10 +58,10 @@ related:
 
 | 风格 | 模型 | 使用方法 |
 |:----------|:----------|:----------|
-| 三国演义风格 | 🤗 [stylellm/SanGuoYanYi-6b](https://huggingface.co/stylellm/SanGuoYanYi-6b)  | [inference.py](https://github.com/stylellm/stylellm_models/blob/main/examples/SanGuoYanYi-6b/inference.py)  |
-| 西游记风格 | 🤗 [stylellm/XiYouJi-6b](https://huggingface.co/stylellm/XiYouJi-6b)  | [inference.py](https://github.com/stylellm/stylellm_models/blob/main/examples/XiYouJi-6b/inference.py)  |
-| 水浒传风格 | 🤗 [stylellm/ShuiHuZhuan-6b](https://huggingface.co/stylellm/ShuiHuZhuan-6b)  | [inference.py](https://github.com/stylellm/stylellm_models/blob/main/examples/ShuiHuZhuan-6b/inference.py)  |
-| 红楼梦风格 | 🤗 [stylellm/HongLouMeng-6b](https://huggingface.co/stylellm/HongLouMeng-6b)  | [inference.py](https://github.com/stylellm/stylellm_models/blob/main/examples/HongLouMeng-6b/inference.py)  |
+| 三国演义风格 | 🤗 [stylellm/SanGuoYanYi-6b](https://huggingface.co/stylellm/SanGuoYanYi-6b)  | [inference.py](examples/SanGuoYanYi-6b/inference.py)  |
+| 西游记风格 | 🤗 [stylellm/XiYouJi-6b](https://huggingface.co/stylellm/XiYouJi-6b)  | [inference.py](examples/XiYouJi-6b/inference.py)  |
+| 水浒传风格 | 🤗 [stylellm/ShuiHuZhuan-6b](https://huggingface.co/stylellm/ShuiHuZhuan-6b)  | [inference.py](examples/ShuiHuZhuan-6b/inference.py)  |
+| 红楼梦风格 | 🤗 [stylellm/HongLouMeng-6b](https://huggingface.co/stylellm/HongLouMeng-6b)  | [inference.py](examples/HongLouMeng-6b/inference.py)  |
 <br/>
 
 ## 量化模型列表（AWQ，4bits）
@@ -92,7 +92,7 @@ related:
 | 她叫来了一名仆人对他说："给我把白雪公主抓到大森林里去，我再也不希望看到她了。"仆人把白雪公主带走了。在森林里他正要动手杀死她时，她哭泣着哀求他不要杀害她。 | 其女唤一婢曰：“速将白雪公主擒至大林中，吾不复见之。”婢遂引白雪公主而去。行至林内，欲杀之，公主泣告勿杀。 | 遂唤一婢，教：“快与我拿白雪公主于大林中，再不许见也！”那婢即引白雪公主而去。及至林中，欲杀之，只见她哭告曰：“乞勿伤我性命。” | 那娘子唤得一个使女，分付道："且将白雪公主捉到大林子里去，休教见我。"便将白雪公主掣出林外，欲杀之，哭告勿行。 | 只见那丫头便唤了一个使女来说道：“你且将白雪公主捉来，我那里还见得？”那使女领命去了，至大林中欲杀之，哭诉不饶。 |
 | 面对楚楚动人的可怜小公主的哀求，仆人的同情之心油然而生，他说道："你是一个人见人爱的孩子，我不会杀害你。"这样，他把她单独留在了森林里。 | 其仆怜楚楚之幼女，曰：“汝乃可爱之人，吾不杀汝。”遂将孤置于林中。 | 那小公主又哭得凄惨，那仆人心下甚怜，遂言曰：“汝乃好身儿，我岂杀汝？”遂将她独自留在林中。 | 那可怜的小公主楚楚动人，哭得仆人心软，便道："汝乃天姿国色，吾岂忍杀？且将汝独自林中寄放。" | 那小丫头儿哭得可怜，又见仆人怜惜，便说道：“你是好人儿，我岂肯害你？”遂将她一人留在林中。 |
 | 当仆人决定不再杀害白雪公主，而把她留在那儿时，尽管他知道在那荒无人际的大森林里，她十有八九会被野兽撕成碎片，但想到他不必亲手杀害她，他就觉得压在心上的一块沉重的大石头落了下来。 | 其仆见不杀白雪公主，留于彼处，虽知大林之中，必被虎狼食尽，然念吾不用亲刃之，心下遂宽了一块重石。 | 只见那厮家奴不肯杀白雪公主，却将她留此荒林之中，虽知必遭禽兽之嚼，然不须亲下手也，遂宽心矣。 | 仆人自思：若要杀白雪公主，便在此处；又恐此间大林子里，被禽兽啖食了，不如且留她在那里，我亦无须亲自下手。遂放了她去。 | 及至仆人主意已定，不欲加害于白雪公主，遂留之不去，虽知大林深处，必遭禽兽吞噬，然想自己无须亲自动手，便如卸了千钧重担一般。 |
-|  | **🔍[查看全文](https://github.com/stylellm/stylellm_models/blob/main/examples/SanGuoYanYi-6b/output_example.md)** | **🔍[查看全文](https://github.com/stylellm/stylellm_models/blob/main/examples/XiYouJi-6b/output_example.md)** | **🔍[查看全文](https://github.com/stylellm/stylellm_models/blob/main/examples/ShuiHuZhuan-6b/output_example.md)** | **🔍[查看全文](https://github.com/stylellm/stylellm_models/blob/main/examples/HongLouMeng-6b/output_example.md)** |
+|  | **🔍[查看全文](examples/SanGuoYanYi-6b/output_example.md)** | **🔍[查看全文](examples/XiYouJi-6b/output_example.md)** | **🔍[查看全文](examples/ShuiHuZhuan-6b/output_example.md)** | **🔍[查看全文](examples/HongLouMeng-6b/output_example.md)** |
 <br />
   
     

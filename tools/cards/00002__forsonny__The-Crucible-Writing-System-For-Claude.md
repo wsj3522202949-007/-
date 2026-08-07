@@ -245,7 +245,7 @@ The **[The-Crucible-Structure/](https://github.com/forsonny/The-Crucible-Writing
 
 **Worksheets:** Printable planning templates in [worksheets/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/tree/main/The-Crucible-Structure/worksheets/)
 
-**Examples:** Completed worksheets based on a sample story in [worksheets/examples/](https://github.com/forsonny/The-Crucible-Writing-System-For-Claude/tree/main/The-Crucible-Structure/worksheets/examples/)
+**Examples:** Completed worksheets based on a sample story in [worksheets/examples/](The-Crucible-Structure/worksheets/examples/)
 
 ### Plugin Reference
 

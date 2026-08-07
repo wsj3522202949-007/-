@@ -90,7 +90,7 @@ related:
 AI 工作流可以帮助个人和团队提升效率，优化重复性工作流程，并更好地管理日常任务。
 ```
 
-更多调用模板见：[examples/usage_examples.md](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/usage_examples.md) 和 [docs/usage.md](https://github.com/coinluu/humanize-ai-text-skill/blob/main/docs/usage.md)。
+更多调用模板见：[examples/usage_examples.md](examples/usage_examples.md) 和 [docs/usage.md](https://github.com/coinluu/humanize-ai-text-skill/blob/main/docs/usage.md)。
 
 ## 核心能力
 
@@ -232,7 +232,7 @@ Skill 只提炼通用表达规律，例如：
 - 标题
 - 强识别性表达
 
-最终改写必须基于用户原文重新组织表达，而不是复用样本具体内容。详见：[docs/reference_sample_mode.md](https://github.com/coinluu/humanize-ai-text-skill/blob/main/docs/reference_sample_mode.md)。
+最终改写必须基于用户原文重新组织表达，而不是复用样本具体内容。详见：[docs/reference_sample_mode.md](docs/reference_sample_mode.md)。
 
 ## 安全边界
 
@@ -292,17 +292,17 @@ humanize-ai-text-skill/
 
 ## 示例
 
-- [普通去 AI 味](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/basic_humanize_example.md)
-- [小红书改写](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/xiaohongshu_example.md)
-- [抖音口播](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/douyin_script_example.md)
-- [公众号文章](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/wechat_article_example.md)
-- [朋友圈内容](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/moments_example.md)
-- [销售文案](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/sales_copy_example.md)
-- [商务文档](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/business_doc_example.md)
-- [参考样本风格](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/sample_guided_example.md)
-- [Protected Facts 保真](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/protected_facts_example.md)
-- [防过度真人化](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/anti_overhumanize_example.md)
-- [调用模板合集](https://github.com/coinluu/humanize-ai-text-skill/blob/main/examples/usage_examples.md)
+- [普通去 AI 味](examples/basic_humanize_example.md)
+- [小红书改写](examples/xiaohongshu_example.md)
+- [抖音口播](examples/douyin_script_example.md)
+- [公众号文章](examples/wechat_article_example.md)
+- [朋友圈内容](examples/moments_example.md)
+- [销售文案](examples/sales_copy_example.md)
+- [商务文档](examples/business_doc_example.md)
+- [参考样本风格](examples/sample_guided_example.md)
+- [Protected Facts 保真](examples/protected_facts_example.md)
+- [防过度真人化](examples/anti_overhumanize_example.md)
+- [调用模板合集](examples/usage_examples.md)
 
 ## 测试
 
@@ -311,7 +311,7 @@ humanize-ai-text-skill/
 - [基础改写](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/basic_test.md)
 - [平台适配](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/platform_test.md)
 - [内容类型识别](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/content_type_test.md)
-- [参考样本引导](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/sample_guided_test.md)
+- [参考样本引导](tests/sample_guided_test.md)
 - [安全检查](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/safety_test.md)
 - [Protected Facts 保真](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/protected_facts_test.md)
 - [禁止虚构](https://github.com/coinluu/humanize-ai-text-skill/blob/main/tests/no_fabrication_test.md)

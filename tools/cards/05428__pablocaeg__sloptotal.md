@@ -257,7 +257,7 @@ curl -s http://localhost:8000/health | python3 -m json.tool
 
 ## Roadmap
 
-See [TODO.md](https://github.com/pablocaeg/sloptotal/blob/main/TODO.md) for planned engines — including **Qwen** and **Gemma** classifiers and perplexity models optimized for high-RAM CPU servers.
+See [TODO.md](TODO.md) for planned engines — including **Qwen** and **Gemma** classifiers and perplexity models optimized for high-RAM CPU servers.
 
 ## Related Projects & Reading
 

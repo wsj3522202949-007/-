@@ -56,7 +56,7 @@ A full-stack project for detecting AI-generated text. Includes data collection, 
 
 <img src="images/fig1.png" alt="示意圖" width="600">
 
-【註】範例請見 [sample1.csv](https://github.com/MacWillyLiao/ai-text-detector/blob/main//data/sample1.csv)
+【註】範例請見 [sample1.csv](/data/sample1.csv)
 
 **最終資料量**：
 

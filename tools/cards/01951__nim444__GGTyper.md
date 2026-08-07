@@ -47,7 +47,7 @@ related:
 
 **Your text, fixed. Anywhere.**
 
-![Demo](https://github.com/nim444/GGTyper/blob/main/assets/demo.gif)
+![Demo](assets/demo.gif)
 
 GGTyper is an AI writing copilot for macOS, rebuilt from the ground up for macOS 27 with the Liquid Glass design language. Type or speak a messy draft, hit **Let's Process**, and get a clean rewrite with every change highlighted in green - so you see exactly what the AI fixed before you copy it.
 

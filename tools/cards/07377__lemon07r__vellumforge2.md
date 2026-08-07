@@ -139,7 +139,7 @@ chosen_generation = "Write a compelling story (400-600 words): {{.Prompt}}"
 rejected_generation = "Write a simple story (200-300 words): {{.Prompt}}"
 ```
 
-Complete configuration reference in [configs/config.example.toml](https://github.com/lemon07r/vellumforge2/blob/main/configs/config.example.toml).
+Complete configuration reference in [configs/config.example.toml](configs/config.example.toml).
 
 ## Dataset Modes
 
@@ -489,7 +489,7 @@ See [GETTING_STARTED.md](https://github.com/lemon07r/vellumforge2/blob/main/GETT
 - [DATASET_MODES.md](https://github.com/lemon07r/vellumforge2/blob/main/DATASET_MODES.md) - Detailed format specifications
 - [BENCHMARK_README.md](https://github.com/lemon07r/vellumforge2/blob/main/BENCHMARK_README.md) - Performance benchmarking guide
 - [CHANGELOG.md](https://github.com/lemon07r/vellumforge2/blob/main/CHANGELOG.md) - Version history
-- [configs/config.example.toml](https://github.com/lemon07r/vellumforge2/blob/main/configs/config.example.toml) - Complete configuration reference
+- [configs/config.example.toml](configs/config.example.toml) - Complete configuration reference
 
 ## System Requirements
 

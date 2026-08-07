@@ -135,7 +135,7 @@ related:
 >
 > 这版不做 Voice Calibration；相关方向推迟到 v1.9 评估。
 
-release note 的读者要的是变更清单，不是发布宣言。版本号保住，姿态层拆掉，没做的事也写出来。完整样本见 [evals/real-samples.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/real-samples.md) RS-16。
+release note 的读者要的是变更清单，不是发布宣言。版本号保住，姿态层拆掉，没做的事也写出来。完整样本见 [evals/real-samples.md](evals/real-samples.md) RS-16。
 
 ### 公开介绍的宏大开场
 
@@ -147,7 +147,7 @@ release note 的读者要的是变更清单，不是发布宣言。版本号保�
 
 > AI 工具很多，但改完的中文常常还留着套话。这个项目专门清这些残味：过度承接、工程师腔、翻译腔、无源权威和自我拔高。
 
-更多例子见 [references/examples.md](https://github.com/MrGeDiao/shuorenhua/blob/main/references/examples.md) 和 [evals/real-samples.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/real-samples.md)。
+更多例子见 [references/examples.md](references/examples.md) 和 [evals/real-samples.md](evals/real-samples.md)。
 
 ## 30 秒上手
 
@@ -249,7 +249,7 @@ Cursor、OpenClaw 和自建 agent 见[安装](#安装)。
 | Long-form In-place | 4 | 长文保长度场景，检查字数留存、句数对齐和关键转场 |
 | Bounded | 3 | 长文整句空话进删除清单，但不误删实句和节奏句 |
 
-v1.9.0 起 benchmark 改为双模型实跑口径（Codex + Claude 交叉判分，见 [evals/results-v1.9.0.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/results-v1.9.0.md)）；v2.0.0 起实跑盲测化：被测模型只看匿名乱序、不含预期的 [evals/benchmark-blind.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark-blind.md)，judge 按映射表判分，每次实跑的评测集版本、模型和口径登记在 [evals/run-manifest.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/run-manifest.md)。静态走查退为发版前快速自查。2026-07-23 起发布门槛分层：硬约束失败 0、SNF 误杀 < 10%、本版 targeted 达标；全量风格分按模型报告、只看趋势，分层判据见 [evals/benchmark-tiers.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark-tiers.md)。完整用例集见 [evals/benchmark.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark.md)，整段场景样本（高拟真合成）见 [evals/real-samples.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/real-samples.md)。`results-v1.8.6.md` 保留为 v1.8.6 首次模型实跑归档。
+v1.9.0 起 benchmark 改为双模型实跑口径（Codex + Claude 交叉判分，见 [evals/results-v1.9.0.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/results-v1.9.0.md)）；v2.0.0 起实跑盲测化：被测模型只看匿名乱序、不含预期的 [evals/benchmark-blind.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark-blind.md)，judge 按映射表判分，每次实跑的评测集版本、模型和口径登记在 [evals/run-manifest.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/run-manifest.md)。静态走查退为发版前快速自查。2026-07-23 起发布门槛分层：硬约束失败 0、SNF 误杀 < 10%、本版 targeted 达标；全量风格分按模型报告、只看趋势，分层判据见 [evals/benchmark-tiers.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark-tiers.md)。完整用例集见 [evals/benchmark.md](https://github.com/MrGeDiao/shuorenhua/blob/main/evals/benchmark.md)，整段场景样本（高拟真合成）见 [evals/real-samples.md](evals/real-samples.md)。`results-v1.8.6.md` 保留为 v1.8.6 首次模型实跑归档。
 
 ## 安装
 

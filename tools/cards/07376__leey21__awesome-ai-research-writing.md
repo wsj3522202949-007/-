@@ -908,7 +908,7 @@ Skills 安装到 `.claude/skills/` 后，Cursor 启动时会自动发现并提�
  
 配置完成后，无需记忆复杂 prompt，在对话中直接说明「要做什么」和「已有信息」即可。例如：提供研究 repo 路径与目标会议，说明「用 ICLR 2026 模板新建一篇论文、项目放在当前目录」。
 
-![Skills 配置与触发示意](https://github.com/leey21/awesome-ai-research-writing/blob/main/images/example.png)
+![Skills 配置与触发示意](images/example.png)
 
 ## Skills 总览
 

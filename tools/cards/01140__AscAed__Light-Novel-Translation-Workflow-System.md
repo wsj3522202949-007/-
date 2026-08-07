@@ -72,7 +72,7 @@ The system coordinates several decoupled components:
   ```
 
 ### Environment Variables
-Create a `.env` file in the root directory using the [.env.example](https://github.com/AscAed/Light-Novel-Translation-Workflow-System/tree/main/file:///D:/OWN/Programming/AI/TranslatorAI/%E7%A5%9D%E7%A6%8F%E3%81%AE%E3%83%8D%E3%83%88%E3%83%A9%E3%83%AC%E3%83%A9_%E7%A5%9D%E7%A6%8F%E7%9A%84%E5%AF%9D%E5%8F%96%E7%B3%BB%E5%A5%B3%E4%B8%BB/.env.example) template:
+Create a `.env` file in the root directory using the [.env.example](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/.env.example) template:
 ```env
 SAKURA_API_KEY="your-sakura-key"
 DEEPSEEK_API_KEY="your-deepseek-key"
@@ -96,7 +96,7 @@ projects/[ProjectName]/
     └── translation_memory.json # Compiled vector database (generated)
 ```
 
-Refer to [projects/example/](https://github.com/AscAed/Light-Novel-Translation-Workflow-System/tree/main/file:///D:/OWN/Programming/AI/TranslatorAI/%E7%A5%9D%E7%A6%8F%E3%81%AE%E3%83%8D%E3%83%88%E3%83%A9%E3%83%AC%E3%83%A9_%E7%A5%9D%E7%A6%8F%E7%9A%84%E5%AF%9D%E5%8F%96%E7%B3%BB%E5%A5%B3%E4%B8%BB/projects/example/) for a template structure.
+Refer to [projects/example/](file:///D:/OWN/Programming/AI/TranslatorAI/祝福のネトラレラ_祝福的寝取系女主/projects/example/) for a template structure.
 
 ## Usage
 

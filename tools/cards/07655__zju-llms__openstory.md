@@ -135,7 +135,7 @@ http://localhost:8000/frontend/index.html
 ```
 并在页面中选择游玩自由模式或剧情模式。
 
-详细玩法和模型配置请参阅 [西部世界说明](https://github.com/zju-llms/openstory/blob/main/examples/WestWorld/README.md)。
+详细玩法和模型配置请参阅 [西部世界说明](examples/WestWorld/README.md)。
 
 ### 4. 访问可视化界面
 ![Frontend Preview](https://github.com/zju-llms/openstory/blob/main/assets/frontend.png)

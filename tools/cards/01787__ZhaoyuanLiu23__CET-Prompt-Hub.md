@@ -247,8 +247,8 @@ MIT License © 2026 ZhaoyuanLiu23
   - methods/网文写作最强SOP.md
   - methods/最强写作方法论_全球最强综合版.md
 --- |
-| 四级写作万能模板 | PDF | 4种题型框架，可直接套用 | [下载](https://github.com/ZhaoyuanLiu23/CET-Prompt-Hub/blob/main/examples/%E5%9B%9B%E7%BA%A7%E5%86%99%E4%BD%9C%E4%B8%87%E8%83%BD%E6%A8%A1%E6%9D%BF.pdf) |
-| 六级翻译高频词汇表 | Excel | 分领域（经济、文化、科技）整理 | [下载](https://github.com/ZhaoyuanLiu23/CET-Prompt-Hub/blob/main/examples/%E5%85%AD%E7%BA%A7%E7%BF%BB%E8%AF%91%E9%AB%98%E9%A2%91%E8%AF%8D%E6%B1%87%E8%A1%A8.xlsx) |
+| 四级写作万能模板 | PDF | 4种题型框架，可直接套用 | [下载](examples/四级写作万能模板.pdf) |
+| 六级翻译高频词汇表 | Excel | 分领域（经济、文化、科技）整理 | [下载](examples/六级翻译高频词汇表.xlsx) |
 
 ### ☁️ 网盘资源
 

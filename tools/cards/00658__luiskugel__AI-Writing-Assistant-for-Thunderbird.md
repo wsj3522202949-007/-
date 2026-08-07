@@ -42,7 +42,7 @@ A Thunderbird extension that helps improve your email writing using various AI m
 
 ## ✨ Features
 
-![Usage](https://github.com/luiskugel/AI-Writing-Assistant-for-Thunderbird/blob/main/demo.gif)
+![Usage](demo.gif)
 
 ### Multiple AI Models Support
 

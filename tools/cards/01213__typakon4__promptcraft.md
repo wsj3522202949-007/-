@@ -134,7 +134,7 @@ Optional AI and production settings:
 | `APP_ORIGIN` | No | Public app origin used as request referer for AI providers |
 | `ADMIN_IDS` | No | Comma-separated Telegram user IDs for admin commands |
 
-See [.env.example](https://github.com/typakon4/promptcraft/tree/main/.env.example) for the full template.
+See [.env.example](.env.example) for the full template.
 
 ## BotFather Checklist
 

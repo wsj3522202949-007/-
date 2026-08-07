@@ -86,7 +86,7 @@ Fig. 2. Multiple image quality of SCUT-CAB. (a) Pages damaged. (b) Ink fading. (
 + SCUT-CAB-Logical: To better understand the meaning of different regions of ancient books, we define the categories of logical analysis data based on the basic knowledge of ancient books and the "Introduction to the Collation of Ancient Books." In this work, the following logical categories are annotated in SCUT-CAB: {EOV (end of the volume), author, bibliography, book number, caption, centerfold strip, chapter title, collation table, colophon, compiler, ear note, endnote, engraver, figure, foliation, header, interlinear note, marginal annotation, page box, part, section title, sub section title, subtitle, sutra number, text, title, volume number}. It contains 31,925 layout elements annotated in 27 categories. A sample of all categories is given in Fig. 3. 
 + SCUT-CAB-Physical: Physical analysis tasks do not need to classify as in detail as logical analysis tasks, so we modify the categories in SCUT-CAB-Logical. There are 4 categories: {centerfold strip, figure, page box, and text}.
 
-![](https://github.com/hciilab/scut-cab_dataset_release/blob/main/img/cab_example.jpg)
+![](img/cab_example.jpg)
 Fig. 3. Examples of SCUT-CAB images and annotations. 27 categories of layout elements are highlighted in different colors.
 
 

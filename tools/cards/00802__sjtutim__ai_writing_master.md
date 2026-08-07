@@ -52,7 +52,7 @@ related:
 
 [English](https://github.com/sjtutim/ai_writing_master/blob/main/README_EN.md) | 简体中文
 
-![AI4Write Demo](https://github.com/sjtutim/ai_writing_master/blob/main/demo.png)
+![AI4Write Demo](demo.png)
 
 </div>
 

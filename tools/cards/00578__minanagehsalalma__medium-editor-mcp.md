@@ -135,9 +135,9 @@ Start here:
 
 Included examples:
 
-- [`examples/clients/codex.config.toml`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/codex.config.toml)
-- [`examples/clients/vscode.mcp.json`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/vscode.mcp.json)
-- [`examples/clients/cursor.mcp.json`](https://github.com/minanagehsalalma/medium-editor-mcp/blob/main/examples/clients/cursor.mcp.json)
+- [`examples/clients/codex.config.toml`](examples/clients/codex.config.toml)
+- [`examples/clients/vscode.mcp.json`](examples/clients/vscode.mcp.json)
+- [`examples/clients/cursor.mcp.json`](examples/clients/cursor.mcp.json)
 
 ## Architecture
 

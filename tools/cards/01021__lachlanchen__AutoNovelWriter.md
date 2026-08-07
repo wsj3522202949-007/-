@@ -63,7 +63,7 @@ related:
 
 ## 🖼️ Demo
 
-![AutoNovelWriter Autopilot Setup](https://github.com/lachlanchen/AutoNovelWriter/blob/main/demos/autonovelwriter-autopilot-setup.png)
+![AutoNovelWriter Autopilot Setup](demos/autonovelwriter-autopilot-setup.png)
 
 This repo also vendors `AutoAppDev/` as a submodule (reusable auto-development scripts).
 

@@ -164,12 +164,12 @@ Machine-readable API specifications organized by format.
 
 ### Examples
 
-- [albato-albato-automations-automation-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-automations-automation-example.json)
-- [albato-albato-automations-automation-step-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-automations-automation-step-example.json)
-- [albato-albato-automations-execution-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-automations-execution-example.json)
-- [albato-albato-connections-connection-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-connections-connection-example.json)
-- [albato-albato-connections-app-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-connections-app-example.json)
-- [albato-albato-connections-webhook-example.json](https://github.com/api-evangelist/albato-a-single-no-code-platform-for-all-automations/blob/main/examples/albato-albato-connections-webhook-example.json)
+- [albato-albato-automations-automation-example.json](examples/albato-albato-automations-automation-example.json)
+- [albato-albato-automations-automation-step-example.json](examples/albato-albato-automations-automation-step-example.json)
+- [albato-albato-automations-execution-example.json](examples/albato-albato-automations-execution-example.json)
+- [albato-albato-connections-connection-example.json](examples/albato-albato-connections-connection-example.json)
+- [albato-albato-connections-app-example.json](examples/albato-albato-connections-app-example.json)
+- [albato-albato-connections-webhook-example.json](examples/albato-albato-connections-webhook-example.json)
 
 ## Capabilities
 

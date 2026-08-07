@@ -89,7 +89,7 @@ immediately — no API keys, no terminal, no programming knowledge required.
 ## Guides
 
 - [Getting Started with Claude (No Tech Background)](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/guides/getting-started.md)
-- [Building Your First AI Workflow](https://github.com/sajin-prompts/claude-prompts-non-technical/blob/main/guides/building-your-first-workflow.md)
+- [Building Your First AI Workflow](guides/building-your-first-workflow.md)
 
 ---
 

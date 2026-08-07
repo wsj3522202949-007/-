@@ -65,7 +65,7 @@ Staff Technical Writer with 12+ years of experience in Semiconductor and Telecom
 - Mentor and onboard new hires, building strong and efficient teams.  
 
 ## 📂 Portfolio Highlights
-- [Documentation Samples](https://github.com/lakshminirmalkp/lakshmi-nirmal-portfolio/blob/main/documentation-samples) – User manuals, guides, KB articles
+- [Documentation Samples](documentation-samples) – User manuals, guides, KB articles
 - [Automation Projects](https://github.com/lakshminirmalkp/lakshmi-nirmal-portfolio/blob/main/automation-projects) – Scripts, workflows, and ROI case studies  
 - [Testing Experience](https://github.com/lakshminirmalkp/lakshmi-nirmal-portfolio/blob/main/testing-experience) – QA docs, validation reports, test cases  
 - [Achievements](https://github.com/lakshminirmalkp/lakshmi-nirmal-portfolio/blob/main/achievements) – Measurable impact and success stories  

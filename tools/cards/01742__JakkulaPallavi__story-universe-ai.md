@@ -270,7 +270,7 @@ pytest tests/ -v
 
 ## 📊 Example Universes
 
-See [`data/examples/`](https://github.com/JakkulaPallavi/story-universe-ai/tree/main/data/examples/) for pre-generated universes:
+See [`data/examples/`](data/examples/) for pre-generated universes:
 - `dark_fantasy_example.json` — *The Hollow Meridian*
 - `space_opera_example.json` — *Echoes of the Drift*
 - `mythic_horror_example.json` — *The Dreaming Sepulcher*
