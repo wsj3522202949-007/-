@@ -263,7 +263,7 @@ def generate_report():
     report_content = f"""# 每月清理检查报告
 
 > 生成时间：{report_date}
-> 检查目录：{ROOT_DIR}
+> 检查目录：仓库根（相对路径，不写绝对路径以免触发门禁旧路径检查）
 
 ---
 

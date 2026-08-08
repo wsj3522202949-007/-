@@ -42,14 +42,30 @@ if (-not $Script:Git) {
 
 # -------------------------------------------------------------------
 # 3. 自动发现 Python（跳过 WindowsApps 占位程序）
+#    优先级：受管 Python（python-candidates.txt 单一来源）最优先，
+#    其次 PATH，最后已知常用路径兜底。
+#    曾踩坑：PATH 里的 TRAE/IDE 内置 python 排最前，其跑 run_all.py 时
+#    stdout 编码污染 JSON（ConvertFrom-Json 报 "unexpected character"），
+#    导致计划任务 gate 永远 error，而手动用受管 python 却成功。
 # -------------------------------------------------------------------
 $pythonCandidates = @()
-# 3a. 从 PATH 查找
+# 3a. 受管 Python：单一来源 python-candidates.txt（最高优先级）
+#     （禁止在此硬编码版本路径；与 .githooks/pre-commit 共用同一文件）
+$pythonCandFile = Join-Path $PSScriptRoot "python-candidates.txt"
+if (Test-Path $pythonCandFile) {
+    Get-Content $pythonCandFile | ForEach-Object {
+        $l = $_.Trim()
+        if ($l -and -not $l.StartsWith("#")) {
+            $pythonCandidates += $l.Replace("~", $env:USERPROFILE)
+        }
+    }
+}
+# 3b. 从 PATH 查找（仅作兜底）
 $pathPython = (Get-Command python.exe -ErrorAction SilentlyContinue).Source
 if ($pathPython) { $pythonCandidates += $pathPython }
 $pathPython3 = (Get-Command python3.exe -ErrorAction SilentlyContinue).Source
 if ($pathPython3) { $pythonCandidates += $pathPython3 }
-# 3b. 已知常用路径
+# 3c. 已知常用路径（最低优先级兜底）
 $pythonCandidates += @(
     "$env:LOCALAPPDATA\Programs\Python\Python313\python.exe"
     "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe"
@@ -62,17 +78,6 @@ $pythonCandidates += @(
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\python.exe"
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\bin\python3.exe"
 )
-# 3b'. WorkBuddy 管理 Python：单一来源 python-candidates.txt
-#      （禁止在此硬编码版本路径；与 .githooks/pre-commit 共用同一文件）
-$pythonCandFile = Join-Path $PSScriptRoot "python-candidates.txt"
-if (Test-Path $pythonCandFile) {
-    Get-Content $pythonCandFile | ForEach-Object {
-        $l = $_.Trim()
-        if ($l -and -not $l.StartsWith("#")) {
-            $pythonCandidates += $l.Replace("~", $env:USERPROFILE)
-        }
-    }
-}
 $Script:Python = $pythonCandidates | Where-Object {
     $_ -and (Test-Path $_) -and $_ -notmatch 'WindowsApps'
 } | Select-Object -First 1

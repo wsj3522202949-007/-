@@ -39,26 +39,30 @@ $scannedFiles = 0
 # ============================================
 Write-Host "🔍 [阶段 1/4] 统一门禁校验..." -ForegroundColor Yellow
 try {
-    # 注意：必须用 Out-String 把多行 JSON 合并为单字符串再解析，
-    # 否则 $jsonOutput | ConvertFrom-Json 在 PowerShell 7 下对多行 JSON
-    # 逐行解析会失败（与 ci.yml chapter-gate 曾踩过的坑相同），
-    # 导致门禁永远判 error、备份永远无法成功（假失败）。
-    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
-    if (-not $jsonOutput) {
-        throw "run_all.py 返回空输出（Python 路径: $Script:Python）"
-    }
-    $checkResult = $jsonOutput | ConvertFrom-Json
-    $basicErrors = $checkResult.summary.basic.errors
-    $linkErrors = $checkResult.summary.'core_broken_links'.errors
-    $scannedFiles = $checkResult.scope_counts.strict_files
-    $overallPass = $checkResult.summary.overall_pass
-
-    if ($overallPass) {
-        Write-Host "   ✅ 门禁通过（基本: $basicErrors ERROR | 断链: $linkErrors ERROR）" -ForegroundColor Green
+    # 权威判据 = run_all.py 退出码（0=通过，非零=失败），与 ci.yml chapter-gate 一致。
+    # 注意：不要用 stdout JSON 解析做成败判据——PowerShell 管道把 python 的
+    # UTF-8 中文输出按系统 ANSI(GBK) 解码会污染 JSON（曾致 gate 永远 error、
+    # 备份永远假失败）。JSON 仅作统计参考，解析失败不影响成败判定。
+    & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-Null
+    $gateExit = $LASTEXITCODE
+    if ($gateExit -eq 0) {
+        Write-Host "   ✅ 门禁通过（exit 0）" -ForegroundColor Green
         $stageGate = "passed"
     } else {
-        Write-Host "   ❌ 门禁失败，基本错误: $basicErrors，断链错误: $linkErrors" -ForegroundColor Red
+        Write-Host "   ❌ 门禁失败（exit $gateExit）" -ForegroundColor Red
         $stageGate = "failed"
+    }
+    # 统计字段 best-effort：能解析就带上，解析失败置空不影响成败
+    try {
+        $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+        $checkResult = $jsonOutput | ConvertFrom-Json
+        $basicErrors = $checkResult.summary.basic.errors
+        $linkErrors = $checkResult.summary.'core_broken_links'.errors
+        $scannedFiles = $checkResult.scope_counts.strict_files
+    } catch {
+        $basicErrors = 0
+        $linkErrors = 0
+        $scannedFiles = 0
     }
 } catch {
     Write-Host "   ❌ 门禁执行异常: $_" -ForegroundColor Red

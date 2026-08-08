@@ -93,25 +93,37 @@ $gateStart = Get-Date
 $drillPassed = $false   # 追踪演练是否成功，用于最终退出码
 
 try {
-    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+    # 权威判据 = run_all.py 退出码（与 daily-backup / ci.yml 一致）。
+    # JSON 解析仅作统计参考：PowerShell 管道按 ANSI(GBK) 解码 python 的
+    # UTF-8 中文输出会污染 JSON，解析失败不得影响恢复演练成败判定。
+    & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-Null
+    $gateExit = $LASTEXITCODE
     $gateEnd = Get-Date
     $gateDuration = ($gateEnd - $gateStart).TotalSeconds
 
-    if (-not $jsonOutput) {
-        throw "run_all.py 返回空输出（Python 路径: $Script:Python）"
+    if ($gateExit -eq 0) {
+        $drillPassed = $true
+        $overallPass = $true
+        Write-Host "  门禁通过（exit 0）" -ForegroundColor Yellow
+    } else {
+        $drillPassed = $false
+        $overallPass = $false
+        Write-Host "  门禁失败（exit $gateExit）" -ForegroundColor Red
     }
-
-    $checkResult = $jsonOutput | ConvertFrom-Json
-    $basicErrors = $checkResult.summary.basic.errors
-    $linkErrors = $checkResult.summary.'core_broken_links'.errors
-    $overallPass = $checkResult.summary.overall_pass
-    $scannedFiles = $checkResult.scope_counts.strict_files
-
-    Write-Host "  门禁结果: 基本 $basicErrors ERROR | 断链 $linkErrors ERROR | $scannedFiles 文件" -ForegroundColor Yellow
     Write-Host "  耗时: $([math]::Round($gateDuration))秒" -ForegroundColor Yellow
 
-    if ($overallPass) {
-        $drillPassed = $true
+    # 统计字段 best-effort
+    try {
+        $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+        $checkResult = $jsonOutput | ConvertFrom-Json
+        $basicErrors = $checkResult.summary.basic.errors
+        $linkErrors = $checkResult.summary.'core_broken_links'.errors
+        $scannedFiles = $checkResult.scope_counts.strict_files
+        Write-Host "  门禁统计: 基本 $basicErrors ERROR | 断链 $linkErrors ERROR | $scannedFiles 文件" -ForegroundColor Yellow
+    } catch {
+        $basicErrors = -1
+        $linkErrors = -1
+        $scannedFiles = -1
     }
 } catch {
     $overallPass = $false

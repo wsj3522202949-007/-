@@ -22,40 +22,40 @@ updated: 2026-08-08
 
 | 类型 | 数量 |
 |---|---|
-| 总计 | 4944 |
-| Markdown | 4650 |
-| Python | 64 |
-| JSON | 19 |
-| 其他 | 211 |
+| 总计 | 4972 |
+| Markdown | 4657 |
+| Python | 73 |
+| JSON | 21 |
+| 其他 | 221 |
 
 ---
 
 ## 📝 本周变化
 
-### 修改的文件（3987 个）
+### 修改的文件（3655 个）
 
-- `.gitattributes` (2026-08-06T09:55:37.202285)
-- `.gitignore` (2026-08-08T09:43:44.381134)
-- `.pre-commit-config.yaml` (2026-08-05T23:40:22.817619)
-- `CLAUDE.md` (2026-08-04T22:49:38.465365)
-- `index.json` (2026-08-02T16:08:19.472749)
-- `README.md` (2026-08-05T22:09:26.597750)
-- `ai\AI读写优化索引.md` (2026-08-04T22:52:13.204997)
-- `ai\README.md` (2026-08-03T08:28:13.158055)
-- `ai\入口.md` (2026-08-05T22:05:41.748785)
-- `ai\agents\goal-aligner.md` (2026-08-03T09:24:17.073247)
-- `ai\agents\inbox-processor.md` (2026-08-03T09:24:17.063086)
-- `ai\agents\note-organizer.md` (2026-08-03T09:24:17.067093)
-- `ai\agents\README.md` (2026-08-03T09:30:07.820374)
-- `ai\agents\weekly-reviewer.md` (2026-08-03T09:24:17.070118)
-- `ai\constraints\README.md` (2026-08-03T09:24:31.893241)
-- `ai\constraints\写作硬约束.md` (2026-08-03T20:56:34.783825)
-- `ai\constraints\合规红线.md` (2026-08-03T09:24:17.080257)
-- `ai\constraints\格式要求.md` (2026-08-05T21:46:28.357073)
-- `ai\constraints\禁忌清单.md` (2026-08-03T09:24:17.086679)
-- `ai\maintenance\daily-maintenance.md` (2026-08-03T08:34:01.234201)
+- `tools/cards/00002__forsonny__The-Crucible-Writing-System-For-Claude.md` (2026-08-08T14:28:16.462790)
+- `tools/cards/00003__arkaigrowth__pangram-fit.md` (2026-08-08T14:28:16.462790)
+- `tools/cards/00004__benpollarduk__ktvn.md` (2026-08-08T14:28:16.462790)
+- `tools/cards/00005__jiqi136__Ai-Assistant.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00006__hong111109__chinese-ai-polish.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00007__FaceDeer__storyteller.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00008__hope0719__ai-text-detector.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00009__fireton__fireurq.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00010__huangjihua007-rgb__ownpen.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00011__hysunny__NovelDrawing.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00012__Sbbpur__anime-story-weaver.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00013__FrobozzWaxwing__Sweep_Weave.md` (2026-08-08T14:28:16.463789)
+- `tools/cards/00014__i7__i7grip.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00015__SheepReaper__IHeartFiction.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00016__illusionoftalha__ai-content-detector.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00017__Echsecutor__story_adventure.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00018__invicticide__fractive.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00019__kiahamedi__medadfeshari.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00020__lizadaly__windrift.md` (2026-08-08T14:28:16.464786)
+- `tools/cards/00021__idonafraid-create__story-master.md` (2026-08-08T14:28:16.465782)
 
-... 还有 3967 个文件
+... 还有 3635 个文件
 
 ---
 

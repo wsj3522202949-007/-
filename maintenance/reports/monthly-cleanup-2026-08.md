@@ -5,16 +5,16 @@ area: 管理
 status: archived
 tags: [auto-generated]
 title: monthly-cleanup-2026-08
-summary: 自动生成报告，无需人工维护。
+summary: 自动生成的每月清理检查报告。
 source: 自动生成
-created: 2026-08-05
-updated: 2026-08-05
+created: 2026-08-08
+updated: 2026-08-08
 ---
 
 # 每月清理检查报告
 
-> 生成时间：2026-08-04
-> 检查目录：知识库根目录
+> 生成时间：2026-08-08
+> 检查目录：仓库根（相对路径）
 
 ---
 
@@ -22,177 +22,177 @@ updated: 2026-08-05
 
 | 检查项 | 数量 | 状态 |
 |---|---|---|
-| 孤立笔记 | 545 | ⚠️ 需要关注 |
-| 重复文件 | 55 | ⚠️ 需要处理 |
+| 孤立笔记 | 556 | ⚠️ 需要关注 |
+| 重复文件 | 53 | ⚠️ 需要处理 |
 | 陈旧文档 | 7 | ⚠️ 需要更新 |
 | 低价值内容 | 64 | ⚠️ 需要清理 |
 
 ---
 
-## 🔍 孤立笔记（545 个）
+## 🔍 孤立笔记（556 个）
 
 这些文件没有其他文件链接到它们，可能是：
 
-1. `Batch-04执行清理记录.md`
+1. `ai\AI读写优化索引.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-2. `Git仓库整理第三阶段测试报告.md`
+2. `ai\agents\inbox-processor.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-3. `Git仓库整理第三阶段测试计划.md`
+3. `ai\agents\note-organizer.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-4. `Git仓库整理第三阶段重建质量门禁计划.md`
+4. `ai\agents\weekly-reviewer.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-5. `Git仓库整理项目最终总结.md`
+5. `ai\maintenance\daily-maintenance.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-6. `五层结构蓝图.md`
+6. `ai\maintenance\weekly-maintenance.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-7. `优化方案.md`
+7. `ai\search\按任务索引.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-8. `坑点记录.md`
+8. `ai\search\按工具索引.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-9. `排错与禁忌.md`
+9. `ai\search\按平台索引.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-10. `知识库优化执行方案.md`
+10. `ai\skills\check.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-11. `第一阶段-基线建立方案.md`
+11. `ai\skills\daily.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-12. `第三阶段完成报告.md`
+12. `ai\skills\project.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-13. `第二阶段完成报告.md`
+13. `ai\skills\revise.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-14. `第五阶段整理内容质量计划.md`
+14. `ai\skills\write.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-15. `第四阶段重做入口和检索体验计划.md`
+15. `ai\validation\人物卡校验.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-16. `ai\AI读写优化索引.md`
+16. `archive\知识库整理与维护SOP.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-17. `ai\search\按任务索引.md`
+17. `archive\规范归档\优化方案.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-18. `ai\search\按工具索引.md`
+18. `archive\规范归档\坑点记录.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-19. `ai\search\按平台索引.md`
+19. `archive\规范归档\知识图谱优化指南.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
-20. `ai\skills\check.md`
+20. `archive\规范归档\知识库优化检查清单.md`
    - 原因: 无反向链接
    - 建议: 考虑归档或删除
 
 
-... 还有 525 个孤立笔记
+... 还有 536 个孤立笔记
 
 ---
 
-## 🔁 重复文件（55 组）
+## 🔁 重复文件（53 组）
 
 1. 相似度: 100%
-   - 文件: `五层结构蓝图.md`, `archive\规范归档\五层结构蓝图.md`
-   - 建议: 删除重复副本
-
-2. 相似度: 100%
-   - 文件: `排错与禁忌.md`, `archive\规范归档\排错与禁忌.md`
-   - 建议: 删除重复副本
-
-3. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-deslop\references\anti-ai-writing.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\anti-ai-writing.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-review\references\anti-ai-writing.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\anti-ai-writing.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-analyze\references\anti-ai-writing.md`
    - 建议: 删除重复副本
 
-4. 相似度: 100%
+2. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-deslop\references\banned-words.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\banned-words.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-review\references\banned-words.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\banned-words.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-analyze\references\banned-words.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-write\references\banned-words.md`
    - 建议: 删除重复副本
 
-5. 相似度: 100%
+3. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-import\references\format-and-structure.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\format-and-structure.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\format-and-structure.md`
    - 建议: 删除重复副本
 
-6. 相似度: 100%
+4. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-import\references\state-tracking.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\state-tracking.md`
    - 建议: 删除重复副本
 
-7. 相似度: 100%
+5. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\cross-book-recall.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-write\references\cross-book-recall.md`
    - 建议: 删除重复副本
 
-8. 相似度: 100%
+6. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\dialogue-mastery.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-review\references\dialogue-mastery.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\dialogue-mastery.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-write\references\dialogue-mastery.md`
    - 建议: 删除重复副本
 
-9. 相似度: 100%
+7. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\emotional-arc-design.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\emotional-arc-design.md`
    - 建议: 删除重复副本
 
-10. 相似度: 100%
+8. 相似度: 100%
    - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\genre-prose-cards.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\genre-prose-cards.md`
    - 建议: 删除重复副本
 
+9. 相似度: 100%
+   - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\hooks-chapter.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-setup\references\agent-references\hooks-chapter.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-analyze\references\hooks-chapter.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-write\references\hooks-chapter.md`
+   - 建议: 删除重复副本
 
-... 还有 45 组重复文件
+10. 相似度: 100%
+   - 文件: `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-long-write\references\hooks-paragraph.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-analyze\references\hooks-paragraph.md`, `references\原始来源包\oh-story-claudecode-main\oh-story-claudecode-main\skills\story-short-write\references\hooks-paragraph.md`
+   - 建议: 删除重复副本
+
+
+... 还有 43 组重复文件
 
 ---
 
 ## 📅 陈旧文档（7 个，>180天未更新）
 
 1. `references\原始来源包\chatgpt-comparison-detection-main\chatgpt-comparison-detection-main\README.md`
-   - 最后更新: 2023-06-27（1134天前）
+   - 最后更新: 2023-06-27（1137天前）
    - 建议: 考虑归档或更新
 
 2. `references\原始来源包\chatgpt-comparison-detection-main\chatgpt-comparison-detection-main\HC3\README.md`
-   - 最后更新: 2023-06-27（1134天前）
+   - 最后更新: 2023-06-27（1137天前）
    - 建议: 考虑归档或更新
 
 3. `references\原始来源包\chatgpt-comparison-detection-main\chatgpt-comparison-detection-main\human_evaluation\README.md`
-   - 最后更新: 2023-06-27（1134天前）
+   - 最后更新: 2023-06-27（1137天前）
    - 建议: 考虑归档或更新
 
 4. `references\原始来源包\chatgpt-comparison-detection-main\chatgpt-comparison-detection-main\linguistic_analysis\README.md`
-   - 最后更新: 2023-06-27（1134天前）
+   - 最后更新: 2023-06-27（1137天前）
    - 建议: 考虑归档或更新
 
 5. `references\原始来源包\ai-flavor-remover-main\ai-flavor-remover-main\README.md`
-   - 最后更新: 2025-04-02（488天前）
+   - 最后更新: 2025-04-02（492天前）
    - 建议: 考虑归档或更新
 
 6. `references\原始来源包\Humanizer-zh-main\Humanizer-zh-main\README.md`
-   - 最后更新: 2026-01-19（197天前）
+   - 最后更新: 2026-01-19（200天前）
    - 建议: 考虑归档或更新
 
 7. `references\原始来源包\Humanizer-zh-main\Humanizer-zh-main\SKILL.md`
-   - 最后更新: 2026-01-19（197天前）
+   - 最后更新: 2026-01-19（200天前）
    - 建议: 考虑归档或更新
 
 
@@ -200,28 +200,28 @@ updated: 2026-08-05
 
 ## 🗑️ 低价值内容（64 个）
 
-1. `Git仓库整理第三阶段测试报告.md`
+1. `goals\daily\TEMPLATE.md`
+   - 原因: 文件名包含关键词: temp
+   - 建议: 考虑删除或重命名
+
+2. `goals\monthly\TEMPLATE.md`
+   - 原因: 文件名包含关键词: temp
+   - 建议: 考虑删除或重命名
+
+3. `goals\weekly\TEMPLATE.md`
+   - 原因: 文件名包含关键词: temp
+   - 建议: 考虑删除或重命名
+
+4. `goals\yearly\TEMPLATE.md`
+   - 原因: 文件名包含关键词: temp
+   - 建议: 考虑删除或重命名
+
+5. `maintenance\reports\Git仓库整理第三阶段测试报告.md`
    - 原因: 文件名包含关键词: 测试
    - 建议: 考虑删除或重命名
 
-2. `Git仓库整理第三阶段测试计划.md`
+6. `maintenance\reports\Git仓库整理第三阶段测试计划.md`
    - 原因: 文件名包含关键词: 测试
-   - 建议: 考虑删除或重命名
-
-3. `goals\daily\TEMPLATE.md`
-   - 原因: 文件名包含关键词: temp
-   - 建议: 考虑删除或重命名
-
-4. `goals\monthly\TEMPLATE.md`
-   - 原因: 文件名包含关键词: temp
-   - 建议: 考虑删除或重命名
-
-5. `goals\weekly\TEMPLATE.md`
-   - 原因: 文件名包含关键词: temp
-   - 建议: 考虑删除或重命名
-
-6. `goals\yearly\TEMPLATE.md`
-   - 原因: 文件名包含关键词: temp
    - 建议: 考虑删除或重命名
 
 7. `references\原始来源包\nuwa-skill-main\nuwa-skill-main\references\skill-template.md`
@@ -323,4 +323,4 @@ updated: 2026-08-05
 ---
 
 > 本报告由每月清理检查脚本自动生成
-> 最后更新时间：2026-08-04
+> 最后更新时间：2026-08-08
