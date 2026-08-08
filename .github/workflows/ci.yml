@@ -108,6 +108,32 @@ jobs:
           }
           Write-Host "Gate PASSED"
 
+      - name: Index drift check
+        shell: pwsh
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          # 工具卡索引统计漂移检查（新增/改评卡片后未更新 README 统计即失败）
+          python tools/scripts/quality/更新工具索引.py --check
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Index drift detected — run: python tools/scripts/quality/更新工具索引.py"
+            exit 1
+          }
+          Write-Host "Index stats consistent"
+
+      - name: Retrieval baseline check
+        shell: pwsh
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          # 检索基准回归检查（保证脚本可跑，基线值变化时人工确认）
+          python tools/scripts/quality/检索基准.py --check
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Retrieval baseline check FAILED"
+            exit 1
+          }
+          Write-Host "Retrieval baseline OK"
+
       - name: Gate summary
         shell: pwsh
         env:
