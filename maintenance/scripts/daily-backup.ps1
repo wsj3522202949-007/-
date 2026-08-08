@@ -39,13 +39,19 @@ function Write-BackupStatus {
             $backupAgeHours = [math]::Round(((Get-Date) - [datetime]$lastOk).TotalHours, 2)
         } catch { $backupAgeHours = 0.0 }
     }
-    # 仓库文件数 + 内容哈希（tracked 文件集合指纹：hash-object 逐文件计算后拼 SHA 摘要）
+    # 仓库文件数 + 内容哈希（tracked 文件清单指纹：文件名清单字符串的 SHA256 摘要）
     $trackedFiles = (& $Script:Git ls-files 2>$null | Measure-Object).Count
     $repoHash = "n/a"
-    $fileList = @(& $Script:Git ls-files -z 2>$null | ForEach-Object { $_ })
+    $fileList = @(& $Script:Git ls-files 2>$null)
     if ($fileList.Count -gt 0) {
         $hashInput = ($fileList | Sort-Object) -join "`n"
-        $repoHash = (& $Script:Git hash-object --stdin 2>$null | ForEach-Object { $_ }) -join ""
+        $sha = [System.Security.Cryptography.SHA256]::Create()
+        try {
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes($hashInput)
+            $repoHash = ([BitConverter]::ToString($sha.ComputeHash($bytes)) -replace "-", "").ToLower()
+        } finally {
+            $sha.Dispose()
+        }
     }
 
     $backupStatus = @{
