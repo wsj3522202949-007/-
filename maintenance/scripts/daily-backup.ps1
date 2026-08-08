@@ -39,10 +39,14 @@ function Write-BackupStatus {
             $backupAgeHours = [math]::Round(((Get-Date) - [datetime]$lastOk).TotalHours, 2)
         } catch { $backupAgeHours = 0.0 }
     }
-    # 仓库文件数 + 内容哈希（tracked 文件集合指纹）
+    # 仓库文件数 + 内容哈希（tracked 文件集合指纹：hash-object 逐文件计算后拼 SHA 摘要）
     $trackedFiles = (& $Script:Git ls-files 2>$null | Measure-Object).Count
-    $hashInput = (& $Script:Git ls-files 2>$null | Sort-Object) -join "`n"
-    $repoHash = if ($hashInput) { (& $Script:Git hash-object --stdin 2>$null) } else { "n/a" }
+    $repoHash = "n/a"
+    $fileList = @(& $Script:Git ls-files -z 2>$null | ForEach-Object { $_ })
+    if ($fileList.Count -gt 0) {
+        $hashInput = ($fileList | Sort-Object) -join "`n"
+        $repoHash = (& $Script:Git hash-object --stdin 2>$null | ForEach-Object { $_ }) -join ""
+    }
 
     $backupStatus = @{
         generated_at     = $nowIso
