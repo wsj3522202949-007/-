@@ -381,12 +381,14 @@ def _chapter_bodies(chapters_dir):
             for f in _chapter_files(chapters_dir)}
 
 
-def find_exact_duplicate_paras(chapters_dir, min_len=12):
+def find_exact_duplicate_paras(chapters_dir, min_len=12, whitelist=()):
     """跨章完全重复段落：去空白后 ≥min_len 字、出现在 ≥2 章。
 
     旧检测 find_cross_chapter_duplicates 用 min_para_len=30 + 相似度 0.80，
     短句复制（如 "宿主，系统的声音带着一丝意味深长，你确定吗？"）全部漏检，
     作者借此「凑字数 + 模板钩子」刷过门禁。本函数用精确匹配 + 低长度阈值堵住。
+
+    whitelist：口头禅白名单——段落包含任一白名单项（如系统面板 UI）即豁免。
     """
     files = _chapter_files(chapters_dir)
     if len(files) < 2:
@@ -401,6 +403,8 @@ def find_exact_duplicate_paras(chapters_dir, min_len=12):
     dups = []
     for np, chs in owner.items():
         if len(chs) > 1:
+            if any(w and w in np for w in whitelist):
+                continue
             dups.append({"para": np[:120], "chapters": sorted(chs),
                          "count": len(chs)})
     dups.sort(key=lambda d: (-d["count"], -len(d["para"])))
@@ -435,12 +439,14 @@ def find_repeated_phrases(chapters_dir, min_len=12, min_chapters=2, whitelist=()
 
 
 def find_duplicate_sequences(chapters_dir, window=3, min_total_len=20,
-                             min_chapters=2):
+                             min_chapters=2, whitelist=()):
     """跨章段落序列重复：连续 window 段（空行分段）归一拼接后精确匹配。
 
     单段检测的盲区：模板结尾常由**若干短段组成**——"宿主…你确定吗？"/
     "确定。"/"那就明天见。"每段都不足 12 字，但整套序列在 6 章逐字复制。
     本函数按段落滑动窗口，把「整套结尾」作为一个整体指纹来比对。
+
+    whitelist：序列拼接后包含任一白名单项（如系统面板 UI）即豁免。
     """
     files = _chapter_files(chapters_dir)
     if len(files) < 2:
@@ -458,6 +464,8 @@ def find_duplicate_sequences(chapters_dir, window=3, min_total_len=20,
     out = []
     for np, chs in owner.items():
         if len(chs) < min_chapters:
+            continue
+        if any(w and w in np for w in whitelist):
             continue
         out.append({"sequence": np[:140], "chapters": sorted(chs),
                     "count": len(chs)})
@@ -481,7 +489,7 @@ def _crc(s):
 
 
 def find_near_duplicate_paras(chapters_dir, min_len=12, threshold=0.68,
-                              shingle_len=5, min_shared=3):
+                              shingle_len=5, min_shared=3, whitelist=()):
     """近似重复段落：经改写/换词但仍高度雷同的段落（MinHash 思想的精确形态）。
 
     实现：字符 5-gram 倒排生成候选段对（共享 ≥min_shared 个 shingle），再按
@@ -522,6 +530,9 @@ def find_near_duplicate_paras(chapters_dir, min_len=12, threshold=0.68,
         fa, pa = paras[i]
         fb, pb = paras[j]
         if fa == fb:
+            continue
+        # 白名单豁免：任一段包含系统面板 UI 等口头禅项即跳过
+        if any(w and (w in pa or w in pb) for w in whitelist):
             continue
         # 长度悬殊的段落直接跳过（近似重复应篇幅相近）
         if abs(len(pa) - len(pb)) > max(15, 0.4 * min(len(pa), len(pb))):
@@ -670,9 +681,9 @@ def scan_chapter_dir(chapters_dir, label=None):
 
     # —— 跨章重复（四类粒度归并为一条 ERROR；细分清单见 生成清债清单.py）——
     dups = find_cross_chapter_duplicates(chapters_dir)
-    exact = find_exact_duplicate_paras(chapters_dir)
+    exact = find_exact_duplicate_paras(chapters_dir, whitelist=whitelist)
     phrases = find_repeated_phrases(chapters_dir, whitelist=whitelist)
-    seqs = find_duplicate_sequences(chapters_dir)
+    seqs = find_duplicate_sequences(chapters_dir, whitelist=whitelist)
     rep_parts = []
     if exact:
         rep_parts.append(f"完全重复段落{len(exact)}")
@@ -697,7 +708,7 @@ def scan_chapter_dir(chapters_dir, label=None):
             + f": {rel}/"
             + (" [口头禅白名单已豁免部分]" if whitelist else ""))
 
-    near = find_near_duplicate_paras(chapters_dir)
+    near = find_near_duplicate_paras(chapters_dir, whitelist=whitelist)
     if near:
         top = "；".join(f"{d['chapter_a'][:10]}↔{d['chapter_b'][:10]}({d['similarity']})"
                         for d in near[:5])
