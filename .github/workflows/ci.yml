@@ -172,21 +172,31 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: |
-          # 1) _runtime.ps1 必须在 PowerShell 下解析出受管 Python 与中文根路径
+          # 1) _runtime.ps1 必须在 PowerShell 下解析出有效 Python（单一来源机制）
           . "./maintenance/scripts/_runtime.ps1" 6>$null
           if (-not $Script:Python -or -not (Test-Path $Script:Python)) {
             Write-Error "_runtime 未解析到有效 Python: $Script:Python"
             exit 1
           }
-          if ($Script:Root -notmatch '个人知识库') {
-            Write-Error "_runtime Root 未解析到中文路径: $Script:Root"
+          # Root 必须存在且是 git 仓库（CI 目录为 D:\a\-\-，不要求中文匹配；
+          # 中文路径能力由下面第 2 步通过 python 输出中文 + 管道解码来验证）
+          if (-not $Script:Root -or -not (Test-Path $Script:Root)) {
+            Write-Error "_runtime Root 解析失败: $Script:Root"
             exit 1
           }
-          Write-Host "_runtime OK: $Script:Python"
+          Write-Host "_runtime OK: $($Script:Python)"
 
-          # 2) 中文路径 + PowerShell 管道：门禁 JSON 落盘后必须可被 ConvertFrom-Json 解析
-          #    （模拟 daily-backup 的 gate 阶段；GBK 解码污染会在这一步暴露）
-          python tools/scripts/validation/run_all.py --json --json-file=win-gate.json
+          # 2) 中文路径 + PowerShell 管道编码验证：python 输出中文经 Out-String
+          #    管道后不得被 ANSI/GBK 解码污染（daily-backup gate 曾因此假失败）
+          $zhOut = (& $Script:Python -c "print('中文路径测试-个人知识库-章节门禁')" | Out-String).Trim()
+          if ($zhOut -notmatch '个人知识库') {
+            Write-Error "PowerShell 管道解码中文失败，收到: $zhOut"
+            exit 1
+          }
+          Write-Host "PowerShell 管道中文解码 OK: $zhOut"
+
+          # 3) 门禁 JSON 落盘后必须可被 ConvertFrom-Json 解析且通过
+          & $Script:Python tools/scripts/validation/run_all.py --json --json-file=win-gate.json
           if ($LASTEXITCODE -ne 0) { Write-Error "win gate FAILED"; exit 1 }
           $data = Get-Content win-gate.json -Raw | ConvertFrom-Json
           if (-not $data.summary.overall_pass) { Write-Error "win gate JSON parse OK but not pass"; exit 1 }
