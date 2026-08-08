@@ -38,6 +38,7 @@ import os
 import re
 import sys
 import json
+from datetime import datetime
 import time
 import argparse
 import urllib.request
@@ -151,24 +152,59 @@ def check_url(url: str, timeout: int = 8) -> dict:
 
 
 def load_baseline(filepath=None):
-    """加载已知坏链基线。"""
-    path = filepath or _get_paths()[2]
+    """加载已知坏链基线。
+
+    支持两种格式：
+      v2（推荐）：{"created_at": ISO时间, "urls": [...]} —— 可判断基线时效
+      v1（旧）：纯字符串列表 —— 视为未知时效（调用方警告）
+    """
+    path = Path(filepath) if filepath else _get_paths()[2]
     if not path.is_file():
         return set()
     try:
         with open(path, 'r', encoding='utf-8') as f:
             data = json.load(f)
-        return set(data) if isinstance(data, list) else set()
+        if isinstance(data, list):
+            return set(data)
+        if isinstance(data, dict) and isinstance(data.get('urls'), list):
+            return set(data['urls'])
+        return set()
     except Exception:
         return set()
 
 
+def baseline_stale_days(filepath=None):
+    """基线文件存在但超过 STALE_DAYS 未更新 → 返回天数；否则 0。"""
+    path = Path(filepath) if filepath else _get_paths()[2]
+    if not path.is_file():
+        return 0
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        created = None
+        if isinstance(data, dict):
+            created = data.get('created_at')
+        elif isinstance(data, list):
+            # v1 旧格式：以文件 mtime 兜底
+            return 0  # 无法判断，交给调用方提示
+        if not created:
+            return 0
+        created_dt = datetime.fromisoformat(created)
+        return (datetime.now() - created_dt).days
+    except Exception:
+        return 0
+
+
 def save_baseline(urls: set, filepath=None):
-    """保存坏链基线到文件。"""
-    path = filepath or _get_paths()[2]
+    """保存坏链基线到文件（v2 格式：含 created_at 时间戳）。"""
+    path = Path(filepath) if filepath else _get_paths()[2]
     path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "created_at": datetime.now().isoformat(timespec='seconds'),
+        "urls": sorted(urls),
+    }
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
-        json.dump(sorted(urls), f, ensure_ascii=False, indent=2)
+        json.dump(payload, f, ensure_ascii=False, indent=2)
 
 
 def validate_card(filepath: str) -> dict:
@@ -186,6 +222,7 @@ def validate_card(filepath: str) -> dict:
     total_broken = 0
     total_unknown = 0
     broken_urls = []
+    unknown_urls = []
 
     for u in active:
         result = check_url(u['url'])
@@ -197,6 +234,7 @@ def validate_card(filepath: str) -> dict:
             broken_urls.append(u['url'])
         else:
             total_unknown += 1
+            unknown_urls.append(u['url'])
         time.sleep(0.1)
 
     return {
@@ -208,6 +246,7 @@ def validate_card(filepath: str) -> dict:
         'total_skipped': skipped,
         'total_active': len(active),
         'broken_urls': broken_urls,
+        'unknown_urls': unknown_urls,
     }
 
 
@@ -260,17 +299,23 @@ def compute_verdict(results: list[dict], baseline: set,
             'regression': None,
         }
 
-    # 收集当前所有坏链 URL
+    # 收集当前所有坏链 URL 与不可达 URL（UNKNOWN）
     current_broken = set()
+    current_unknown = set()
     for r in results:
         for u in r['broken_urls']:
             current_broken.add(u)
+        for u in r.get('unknown_urls', []):
+            current_unknown.add(u)
 
     # 新增坏链 = 当前坏链 - 基线中的已知坏链
     new_broken = sorted(current_broken - baseline)
 
-    # 已修复的坏链（在基线中但已恢复）
-    fixed = sorted(baseline - current_broken)
+    # 已修复的坏链（在基线中，本次可达且非 UNKNOWN）
+    # 注意：基线中的 URL 若本次返回 UNKNOWN（超时/不可达），不能算"已修复"——
+    # 它可能仍然是坏链，只是网络条件不同。只有本次确认可达（不在 broken 也不在
+    # unknown）才归入 fixed。
+    fixed = sorted(baseline - current_broken - current_unknown)
 
     success_ratio = total_pass / total_active
     unknown_ratio = total_unknown / total_active
@@ -401,6 +446,23 @@ def main():
 
     # 加载基线
     baseline = load_baseline(baseline_file)
+
+    # 基线时效警告：过期的基线会把旧的坏链当成"已知"，掩盖新增回归
+    STALE_DAYS = 30
+    stale = baseline_stale_days(baseline_file)
+    if baseline and stale >= STALE_DAYS:
+        print(f'⚠️ 基线已 {stale} 天未更新（>{STALE_DAYS} 天），可能掩盖新增坏链。'
+              f'如卡片内容已大改，请用 --update-baseline 重建基线。', file=sys.stderr)
+    if baseline and stale == 0 and baseline_file.is_file():
+        # v1 旧格式基线：提醒迁移
+        try:
+            with open(baseline_file, 'r', encoding='utf-8') as f:
+                _d = json.load(f)
+            if isinstance(_d, list):
+                print('⚠️ 检测到 v1 旧格式基线（无时间戳）。'
+                      '建议运行 --update-baseline 升级为 v2 格式。', file=sys.stderr)
+        except Exception:
+            pass
 
     tier_label = ",".join(sorted(tiers)) if tiers else "全量"
     print(f'HTTP 链接有效性校验器 — 门禁2（{tier_label}级）')

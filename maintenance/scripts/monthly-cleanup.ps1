@@ -51,15 +51,17 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 # 运行清理脚本，保存结果
+# 关键：捕获输出到变量再写文件，不可用管道（& python | Out-File 会
+# 让 $LASTEXITCODE 反映 Out-File 的退出码，而非 Python 进程——失败被误记成功）。
 $reportPath = "$Script:Root\maintenance\state\monthly-cleanup-report.json"
 $cleanupFailed = $false
 try {
-    # 注意：管道中 python 的非零退出码不会触发 $ErrorActionPreference="Stop"，
-    # 必须在调用后显式检查 $LASTEXITCODE，否则失败会被误记为成功（假成功 bug）。
-    & $Script:Python tools/scripts/maintenance/每月清理检查.py --json | Out-File -FilePath $reportPath -Encoding UTF8
+    $cleanupOutput = & $Script:Python tools/scripts/maintenance/每月清理检查.py --json 2>&1
     if ($LASTEXITCODE -ne 0) {
-        throw "每月清理检查.py 返回非零退出码 $LASTEXITCODE"
+        throw "每月清理检查.py 返回非零退出码 $LASTEXITCODE。stderr: $($cleanupOutput -join ' ')"
     }
+    # 只有 Python 成功退出，才将输出落盘为 JSON 报告
+    $cleanupOutput | Out-File -FilePath $reportPath -Encoding UTF8
     Write-Host ""
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "  清理检查完成" -ForegroundColor Cyan

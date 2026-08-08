@@ -86,11 +86,21 @@ if ($stageGate -ne "passed") {
 # 阶段 2: commit — Git 提交
 # ============================================
 Write-Host "📦 [阶段 2/4] Git 提交..." -ForegroundColor Yellow
-# 只 add 未被忽略的文件；--ignore-errors 防止权限/锁文件导致整个流程崩溃
-& $Script:Git add -A --ignore-errors
+# 只 add 未被忽略的文件
+& $Script:Git add -A
 if ($LASTEXITCODE -ne 0) {
-    Write-Host "   ⚠️ git add 返回非零 ($LASTEXITCODE)，可能部分文件添加失败" -ForegroundColor Yellow
-    # 不阻断——add 失败（如权限问题）不应阻止对已添加文件的提交
+    Write-Host "   ❌ git add 失败 (exit=$LASTEXITCODE)，无法确保完整备份" -ForegroundColor Red
+    $logEntry = @{
+        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        action   = "daily backup"
+        status   = "add_failed"
+        stages   = @{ gate = $stageGate; commit = $null; push = $null; verify = $null }
+        basic_errors = $basicErrors
+        link_errors  = $linkErrors
+        scanned_files = $scannedFiles
+    } | ConvertTo-Json -Compress
+    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+    exit 1
 }
 
 $commitMessage = "auto: daily backup $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
@@ -126,19 +136,37 @@ if ($stageCommit -eq "failed") {
 }
 
 if ($stageCommit -eq "no_changes") {
-    # 无更改是合法状态，记为 no_changes（非 success 也非 failure）
-    $logEntry = @{
-        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-        action   = "daily backup"
-        status   = "no_changes"
-        stages   = @{ gate = $stageGate; commit = $stageCommit; push = $null; verify = $null }
-        basic_errors = $basicErrors
-        link_errors  = $linkErrors
-        scanned_files = $scannedFiles
-    } | ConvertTo-Json -Compress
-    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
-    Write-Host "✅ 备份流程结束（无需提交）" -ForegroundColor Green
-    exit 0
+    # 即使无新更改，也要检查是否有尚未推送到远端的旧提交
+    $aheadCount = & $Script:Git rev-list --count "origin/main..HEAD" 2>$null
+    if ($aheadCount -and [int]$aheadCount -gt 0) {
+        Write-Host "   📌 检测到 $aheadCount 个未推送的本地提交，尝试推送到远端..." -ForegroundColor Yellow
+        # 更新 localHead（用于后续 verify 阶段）
+        $localHead = & $Script:Git rev-parse HEAD 2>$null
+        $pushOutput = & $Script:Git push 2>&1
+        $pushExitCode = $LASTEXITCODE
+        if ($pushExitCode -eq 0) {
+            Write-Host "   ✅ 远端推送成功（积压提交已同步）" -ForegroundColor Green
+            $stagePush = "pushed"
+            # 继续 verify 阶段
+        } else {
+            Write-Host "   ❌ 推送失败 (exit=$pushExitCode): $pushOutput" -ForegroundColor Red
+            $stagePush = "failed"
+        }
+    } else {
+        # 无更改且无积压提交 = 合法 no_changes
+        $logEntry = @{
+            date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+            action   = "daily backup"
+            status   = "no_changes"
+            stages   = @{ gate = $stageGate; commit = $stageCommit; push = $null; verify = $null }
+            basic_errors = $basicErrors
+            link_errors  = $linkErrors
+            scanned_files = $scannedFiles
+        } | ConvertTo-Json -Compress
+        Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+        Write-Host "✅ 备份流程结束（无需提交）" -ForegroundColor Green
+        exit 0
+    }
 }
 
 # ============================================

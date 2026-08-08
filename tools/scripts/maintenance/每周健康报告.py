@@ -70,31 +70,40 @@ def count_files_by_type(root_dir):
 
 
 def get_recent_changes(root_dir, days=7):
-    """获取最近修改的文件"""
+    """获取最近修改的文件（基于 Git 提交历史，非文件 mtime）。
+
+    mtime 会被 git checkout/拉取/工具触碰等操作虚高（曾一周误报 3986 个文件），
+    不代表内容真实变化。改用 `git log --name-only --since` 统计真实提交。
+    """
     changes = {
         "added": [],
         "modified": []
     }
+    try:
+        import subprocess
+        since = (datetime.now() - timedelta(days=days)).strftime("%Y-%m-%d")
+        # --pretty=format: 让输出只含文件名行（commit 行为空行），避免解析 hash+date
+        proc = subprocess.run(
+            ["git", "log", f"--since={since}", "--name-only",
+             "--pretty=format:", "--no-merges"],
+            cwd=root_dir, capture_output=True, text=True,
+            encoding="utf-8", errors="replace", timeout=60)
+        if proc.returncode != 0 or not proc.stdout.strip():
+            return changes
 
-    cutoff_time = datetime.now() - timedelta(days=days)
-
-    # 这里简化处理：实际应该对比 Git 历史
-    # 目前只返回文件修改时间在范围内的文件
-    for dirpath, dirnames, filenames in os.walk(root_dir):
-        dirnames[:] = [d for d in dirnames if not d.startswith('.') and d != '__pycache__']
-        for filename in filenames:
-            file_path = os.path.join(dirpath, filename)
-            try:
-                mtime = datetime.fromtimestamp(os.path.getmtime(file_path))
-                if mtime >= cutoff_time:
-                    rel_path = os.path.relpath(file_path, root_dir)
-                    changes["modified"].append({
-                        "path": rel_path,
-                        "time": mtime.isoformat()
-                    })
-            except:
-                pass
-
+        seen = set()
+        for line in proc.stdout.splitlines():
+            line = line.strip().strip("'\"")
+            if not line or line in seen:
+                continue
+            seen.add(line)
+            if os.path.exists(os.path.join(root_dir, line)):
+                changes["modified"].append({
+                    "path": line,
+                    "time": datetime.now().isoformat()
+                })
+    except Exception:
+        pass
     return changes
 
 
