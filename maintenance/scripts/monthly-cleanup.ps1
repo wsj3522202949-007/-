@@ -52,8 +52,14 @@ Write-Host ""
 
 # 运行清理脚本，保存结果
 $reportPath = "$Script:Root\maintenance\state\monthly-cleanup-report.json"
+$cleanupFailed = $false
 try {
+    # 注意：管道中 python 的非零退出码不会触发 $ErrorActionPreference="Stop"，
+    # 必须在调用后显式检查 $LASTEXITCODE，否则失败会被误记为成功（假成功 bug）。
     & $Script:Python tools/scripts/maintenance/每月清理检查.py --json | Out-File -FilePath $reportPath -Encoding UTF8
+    if ($LASTEXITCODE -ne 0) {
+        throw "每月清理检查.py 返回非零退出码 $LASTEXITCODE"
+    }
     Write-Host ""
     Write-Host "========================================" -ForegroundColor Cyan
     Write-Host "  清理检查完成" -ForegroundColor Cyan
@@ -68,6 +74,7 @@ try {
     }
 } catch {
     Write-Host "❌ 清理检查失败：$_" -ForegroundColor Red
+    $cleanupFailed = $true
     $cleanupState.history += @{
         month = $monthKey
         timestamp = $cleanupState.last_attempt
@@ -77,3 +84,9 @@ try {
     # 保存状态文件
     $cleanupState | ConvertTo-Json -Depth 5 | Out-File -FilePath $STATE_FILE -Encoding UTF8
 }
+
+# 失败必须返回非零退出码，否则计划任务会把失败当作成功
+if ($cleanupFailed) {
+    exit 1
+}
+exit 0

@@ -39,7 +39,14 @@ $scannedFiles = 0
 # ============================================
 Write-Host "🔍 [阶段 1/4] 统一门禁校验..." -ForegroundColor Yellow
 try {
-    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null
+    # 注意：必须用 Out-String 把多行 JSON 合并为单字符串再解析，
+    # 否则 $jsonOutput | ConvertFrom-Json 在 PowerShell 7 下对多行 JSON
+    # 逐行解析会失败（与 ci.yml chapter-gate 曾踩过的坑相同），
+    # 导致门禁永远判 error、备份永远无法成功（假失败）。
+    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+    if (-not $jsonOutput) {
+        throw "run_all.py 返回空输出（Python 路径: $Script:Python）"
+    }
     $checkResult = $jsonOutput | ConvertFrom-Json
     $basicErrors = $checkResult.summary.basic.errors
     $linkErrors = $checkResult.summary.'core_broken_links'.errors
