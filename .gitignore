@@ -93,6 +93,9 @@ env/
 # ----------------------------------------------------------------------------
 test/
 tests/
+# 豁免：工具脚本的单元测试必须入库（CI unit-tests job 依赖）
+!tools/scripts/tests/
+!tools/scripts/tests/**
 *.test.md
 *.draft.md
 
