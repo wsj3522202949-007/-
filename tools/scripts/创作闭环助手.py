@@ -431,8 +431,10 @@ def move_chapter(chapter_num):
 
 def update_progress(chapter_num):
     """更新项目进度（字数从正式章节文件实算，统一 shared_wordcount 口径）。"""
-    # 使用 shared_wordcount 的 count_chars 函数（含标点统计），
-    # 避免本函数自己写的 [\u4e00-\u9fffA-Za-z0-9] 漏算标点。
+    # 使用 shared_wordcount 的 extract_body + count_chars（去 frontmatter + 元信息块 + CRLF 归一），
+    # 避免本函数此前手写的"只去 frontmatter"逻辑漏掉【数据预估】等元信息块，
+    # 导致 STATUS 字数虚高（曾差 184 字）且与 chapter_selfcheck 口径分裂。
+    from writing.shared_wordcount import extract_body as _sb_extract_body
     from writing.shared_wordcount import count_chars as _wc_count_chars
 
     project_dir = get_project_dir()
@@ -442,17 +444,14 @@ def update_progress(chapter_num):
         print(f"错误：STATUS.md 不存在")
         return
     
-    # 实算全部正式章节字数（去 frontmatter，含标点，与 shared_wordcount 同口径）
+    # 实算全部正式章节字数（去 frontmatter + 元信息块，含标点，与 shared_wordcount 同口径）
     total_words = 0
     chapter_files = sorted(
         glob.glob(os.path.join(project_dir, "chapters", "第*章-*.md")))
     for cf in chapter_files:
         with open(cf, 'r', encoding='utf-8') as f:
             txt = f.read()
-        fm = re.match(r'^---\n.*?\n---\n', txt, re.DOTALL)
-        if fm:
-            txt = txt[fm.end():]
-        total_words += _wc_count_chars(txt)
+        total_words += _wc_count_chars(_sb_extract_body(txt))
     
     # 取本章标题（用于进度表）
     this_matches = sorted(
@@ -482,11 +481,11 @@ def update_progress(chapter_num):
         f'下一章节 | 第{chapter_num + 1}章 | 待创作',
         content
     )
-    # 存稿字数（实算，含真实均值备注）
+    # 存稿字数（实算，含真实均值备注）——兼容「存稿正文|存稿字数」两种表头
     avg = total_words // chapter_num if chapter_num else 0
     content = re.sub(
-        r'存稿字数\s*\|[^\n]*',
-        f'存稿字数 | ~{total_words:,}字 | {chapter_num}章·均~{avg}字',
+        r'存稿(?:正文|字数)\s*\|[^\n]*',
+        f'存稿正文 | ~{total_words:,}字 | {chapter_num}章合计，均~{avg}字/章',
         content
     )
     # 完成率：按第一卷 30 万字（300,000 字）目标实算
@@ -496,6 +495,12 @@ def update_progress(chapter_num):
     content = re.sub(
         r'总进度\s*\|\s*\*\*?[\d.]+%\*\*?\s*\|[^\n|]*',
         f'总进度 | **{completion}%** | {chapter_num}/30章',
+        content
+    )
+    # 字数进度（顶部速览表，含分子实算）
+    content = re.sub(
+        r'字数进度\s*\|[^\n]*',
+        f'字数进度 | **~{completion}%** | {total_words:,} / 300,000 字（正文去空白口径）',
         content
     )
     # 创作统计：总章节数 / 总字数（含真实均值备注）
