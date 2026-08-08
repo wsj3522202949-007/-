@@ -21,10 +21,16 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Install dependencies
+        run: pip install pyyaml
+
       - name: Run online HTTP validation
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
-          $result = python tools/scripts/validation/run_all.py --json --online
+          # Out-String 合并多行 JSON，避免 PS7 逐行解析失败
+          $result = python tools/scripts/validation/run_all.py --json --online | Out-String
           $data = $result | ConvertFrom-Json
 
           if ($data.http_validation) {
@@ -37,6 +43,20 @@ jobs:
             exit 1
           }
           Write-Host "Online gate PASSED"
+
+      - name: Source evidence validation
+        shell: pwsh
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          # 平台指标来源证据结构校验（快照存在性 + 正文长度 + HTTP 可达性）
+          python tools/scripts/quality/来源验证.py --online --json | Out-File -FilePath source-evidence.json -Encoding UTF8
+          if ($LASTEXITCODE -ne 0) {
+            Get-Content source-evidence.json -Raw | ConvertFrom-Json | ForEach-Object { $_.results | Where-Object { -not $_.local_ok } | ForEach-Object { Write-Host "  ❌ $($_.id): $($_.issues -join '; ')" } }
+            Write-Error "Source evidence validation FAILED"
+            exit 1
+          }
+          Write-Host "Source evidence PASSED"
 
   # ==========================================================================
   # 2. 恢复演练（模拟备份 → 重新 checkout → 验证门禁仍通过）
@@ -56,12 +76,14 @@ jobs:
 
       - name: Recovery drill
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
           Write-Host "=== 恢复演练：重新拉取 → 门禁 ==="
           # 确保工作区干净
           git status
           # 运行门禁（不加 --online，纯本地校验）
-          $result = python tools/scripts/validation/run_all.py --json
+          $result = python tools/scripts/validation/run_all.py --json | Out-String
           $data = $result | ConvertFrom-Json
 
           if (-not $data.summary.overall_pass) {
@@ -70,7 +92,7 @@ jobs:
           }
 
           # 确认连续性检查可执行
-          $cont = python tools/scripts/validation/continuity_check.py --json 2>&1
+          $cont = python tools/scripts/validation/continuity_check.py --json 2>&1 | Out-String
           Write-Host $cont
           $cdata = $cont | ConvertFrom-Json
           if ($cdata.errors.Count -gt 0) {
