@@ -216,7 +216,53 @@ def verdict_ai(per_cat, total, severe, wa_per_1k):
         return "中度"
     if total >= 2:
         return "轻度"
+    if total >= 1:
+        return "微量"
     return "干净"
+
+
+def find_cross_chapter_duplicates(chapters_dir, threshold=0.80, min_para_len=30):
+    """检测 chapters/ 目录下跨章重复段落。
+
+    返回 list[dict]，每项包含 {file_a, file_b, para_a, para_b, similarity}。
+    相似度 >= threshold 且段落长度 >= min_para_len 才视为问题。
+    """
+    import os as _os
+    import difflib as _dl
+
+    results = []
+    files = sorted([
+        f for f in _os.listdir(chapters_dir)
+        if f.endswith('.md') and f.startswith('第') and f != 'README.md'
+    ])
+    if len(files) < 2:
+        return results
+
+    # 预加载所有章节的去 frontmatter 正文
+    bodies = {}
+    for fname in files:
+        raw = read_text(_os.path.join(chapters_dir, fname))
+        bodies[fname] = extract_body(raw)
+
+    # 逐对比较
+    for i in range(len(files)):
+        for j in range(i + 1, len(files)):
+            f1, f2 = files[i], files[j]
+            b1, b2 = bodies[f1], bodies[f2]
+            paras1 = [p.strip() for p in b1.split('\n\n') if len(p.strip()) >= min_para_len]
+            paras2 = [p.strip() for p in b2.split('\n\n') if len(p.strip()) >= min_para_len]
+            for p1 in paras1:
+                for p2 in paras2:
+                    ratio = _dl.SequenceMatcher(None, p1, p2).ratio()
+                    if ratio >= threshold:
+                        results.append({
+                            "file_a": f1,
+                            "file_b": f2,
+                            "para_a": p1[:120],
+                            "para_b": p2[:120],
+                            "similarity": round(ratio, 2),
+                        })
+    return results
 
 
 def check_chapter(path, include_raw=False, policy=None):
@@ -326,6 +372,23 @@ def main():
     results = [check_chapter(f, include_raw=args.raw, policy=policy) for f in files]
     print_report(results, show_raw=args.raw, policy=policy)
 
+    # —— 跨章重复检测（仅目录模式下运行）——
+    dup_found = False
+    for p in args.paths:
+        if os.path.isdir(p):
+            dups = find_cross_chapter_duplicates(p)
+            if dups:
+                dup_found = True
+                print(f"\n⚠️ 跨章重复段落检测：发现 {len(dups)} 处疑似重复")
+                print("-" * 72)
+                for d in dups:
+                    print(f"  [{d['file_a']}] ↔ [{d['file_b']}] 相似度 {d['similarity']:.0%}")
+                    print(f"    A: {d['para_a']}...")
+                    print(f"    B: {d['para_b']}...")
+                    print()
+                print("⚠️ 跨章重复属于严重质量问题，建议修改或删除重复段落")
+            break  # 只检查第一个目录
+
     if args.json:
         with open(args.json, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
@@ -337,6 +400,11 @@ def main():
     if hard_block:
         names = ", ".join(r["file"] for r in hard_block)
         print(f"\n硬性阻断：以下章节未通过硬性字数校验：{names}", file=sys.stderr)
+        sys.exit(1)
+
+    # 跨章重复阻断
+    if dup_found:
+        print("硬性阻断：跨章重复段落未处理", file=sys.stderr)
         sys.exit(1)
 
 

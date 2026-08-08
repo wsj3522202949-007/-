@@ -35,7 +35,9 @@ jobs:
                    Where-Object { $_.FullName -notmatch '__pycache__' }
           foreach ($f in $files) {
             try {
-              python -c "import py_compile; py_compile.compile('$($f.FullName)', doraise=True)"
+              # 用 forward-slash 路径避免 Python -c 中反斜杠转义（\t \n \a 等）
+              $pyPath = $f.FullName -replace '\\', '/'
+              python -c "import py_compile; py_compile.compile('$pyPath', doraise=True)"
               $ok++
             } catch {
               Write-Host "FAIL: $($f.Name)"

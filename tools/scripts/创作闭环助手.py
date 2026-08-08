@@ -271,13 +271,17 @@ def self_check(file_path):
     ai_v = result["ai_verdict"]
     ai_total = result["ai_total"]
     if ai_total > 0:
-        print(f"⚠️ AI 味：{ai_v}（命中 {ai_total} 处）")
+        # 严重级别分档：重度→硬阻断，微量/轻度/中度→警告但不可忽略
+        prefix = "❌" if ai_v == "重度" else "⚠️"
+        print(f"{prefix} AI 味：{ai_v}（命中 {ai_total} 处）")
         if result["ai_per_cat"]:
             for cat, n in sorted(result["ai_per_cat"].items()):
                 print(f"   {cat} ×{n}")
         if result["ai_severe"]:
             for s in result["ai_severe"]:
-                issues.append(f"⚠️ 重度信号：{s}")
+                issues.append(f"❌ 重度信号(硬阻断)：{s}")
+        # 非零 AI 味即为问题，不再静默放过
+        issues.append(f"{'硬阻断' if ai_v == '重度' else '警告'}：AI味{ai_v}（{ai_total}处）")
     else:
         print(f"✅ AI 味：干净")
     
