@@ -15,6 +15,8 @@ r"""
   6. 编码检查          —— 严格区文件必须 UTF-8 可解码
   7. 同目录重名检查    —— 同目录同名且内容不同的真实重复文件
   8. 健康报告生成      —— 汇总为统一 JSON
+  9. 章节自检          —— 复用 chapter_selfcheck：硬短/重度AI味/无钩子/
+                           跨章重复/模板句 一律 ERROR（此前门禁从不调用它）
 
 历史记录识别（frontmatter `historical: true`）
 -----------------------------------------------
@@ -25,8 +27,9 @@ frontmatter 显式声明 `historical: true` 的文件视为历史记录，由校
 
 验收标准
 --------
-  · 基础校验 0 ERROR   （frontmatter / 结构 / 旧路径 / 重复ID / 编码 / 同目录重名）
+  · 基础校验 0 ERROR   （frontmatter / 结构 / 旧路径 / 重复ID / 编码 / 同目录重名 / 章节自检）
   · 核心断链 0 ERROR   （core_errors 必须为 0）
+  · 章节自检 0 ERROR   （复用 chapter_selfcheck，禁止门禁自维护第二套检测逻辑）
   · JSON 输出正常      （异常安全，任何时候都输出合法 JSON）
   · 外部资料不会污染核心报告（external_warnings 为独立字段，绝不并入 basic / core）
 
@@ -406,6 +409,79 @@ def check_duplicate_filenames(root):
 
 
 # ---------------------------------------------------------------------------
+# 9. 章节自检（调用 chapter_selfcheck.py，单一检测逻辑，禁止在门禁里重抄词表）
+#    此前门禁从未调用 chapter_selfcheck —— 硬短章 / 重度AI味 / 无钩子章节
+#    依旧可以提交，形成假绿灯。现在统一并入 run_all，pre-commit 与 CI
+#    chapter-gate job 自动获得同等约束。
+# ---------------------------------------------------------------------------
+# 硬阻断（ERROR）：字数硬区间越界 / 重度AI味 / 禁用空钩子或末段无强钩子 /
+#                 跨章重复段落 / 模板化句子（≥3 章重复）
+# 警告（WARN）：   字数偏短/偏长（soft 区间）/ 中轻度AI味 / 钩子在中段
+def check_chapters(root):
+    """章节门禁：逐章自检 + 跨章重复 + 模板化句子（复用 chapter_selfcheck）。"""
+    import importlib.util as _ilu
+    writing_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "..", "writing")
+    sc_path = os.path.join(writing_dir, "chapter_selfcheck.py")
+    if not os.path.isfile(sc_path):
+        return [f"[chapter] chapter_selfcheck.py 不存在: {sc_path}"], []
+    _spec = _ilu.spec_from_file_location("chapter_selfcheck", sc_path)
+    _mod = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+
+    # 收集所有含章节正文的目录：projects/<书名>/{chapters,正文}
+    chapter_dirs = []
+    proj_dir = os.path.join(root, "projects")
+    if os.path.isdir(proj_dir):
+        for _dp, _dn, _fn in os.walk(proj_dir):
+            if os.path.basename(_dp) in ("chapters", "正文"):
+                md_files = [f for f in _fn
+                            if f.lower().endswith(".md") and f != "README.md"]
+                if md_files:
+                    chapter_dirs.append(_dp)
+    if not chapter_dirs:
+        return [], []  # 仓库没有任何章节正文，本项不产生错误
+
+    errors, warns = [], []
+    for cdir in sorted(chapter_dirs):
+        rel_dir = os.path.relpath(cdir, root)
+        policy = _mod.load_policy(cdir)
+        files = sorted(f for f in os.listdir(cdir)
+                       if f.lower().endswith(".md") and f != "README.md")
+        for fname in files:
+            r = _mod.check_chapter(os.path.join(cdir, fname), policy=policy)
+            rel = os.path.join(rel_dir, fname)
+            # 字数：硬区间阻断，soft 区间仅警告
+            cv = r["char_verdict"]
+            if cv.startswith("严重不足") or cv.startswith("严重超标"):
+                errors.append(f"[chapter] 字数硬性越界 {cv}: {rel}")
+            elif cv.startswith("偏短") or cv.startswith("偏长"):
+                warns.append(f"[chapter] 字数 {cv}: {rel}")
+            # AI 味：重度阻断，中/轻/微量警告
+            av = r["ai_verdict"]
+            if av == "重度":
+                errors.append(f"[chapter] 重度AI味(命中{r['ai_total']}): {rel}")
+            elif av in ("中度", "轻度", "微量"):
+                warns.append(f"[chapter] {av}AI味(命中{r['ai_total']}): {rel}")
+            # 章末钩子：禁用空钩子/无钩子阻断，中段钩子警告
+            hv = r["hook_verdict"]
+            if hv.startswith("禁用空钩子") or hv == "末段无强钩子(疑似空钩)":
+                errors.append(f"[chapter] {hv}: {rel}")
+            elif hv.startswith("钩子在中段"):
+                warns.append(f"[chapter] {hv}: {rel}")
+        # 目录级：跨章重复段落 + 模板化句子（与 chapter_selfcheck 目录模式一致）
+        dups = _mod.find_cross_chapter_duplicates(cdir)
+        if dups:
+            errors.append(
+                f"[chapter] 跨章重复段落 {len(dups)} 处: {rel_dir}/")
+        tpl, _hits = _mod.find_cross_chapter_template_sentences(cdir)
+        if tpl:
+            errors.append(
+                f"[chapter] 模板化句子 {len(tpl)} 个(≥3章重复): {rel_dir}/")
+    return errors, warns
+
+
+# ---------------------------------------------------------------------------
 # 3/6. 核心断链校验（复用链接检查器） + 健康报告生成
 # ---------------------------------------------------------------------------
 def load_link_checker():
@@ -432,7 +508,11 @@ def check_continuity(root):
     try:
         result = subprocess.run(
             [sys.executable, cont_path, "--json", f"--root={root}"],
-            capture_output=True, text=True, timeout=30)
+            # text=True 必须显式指定 UTF-8：子进程已 reconfigure 为 UTF-8 输出，
+            # 若省略 encoding，Windows 会按系统默认 GBK 解码，轻则乱码重则
+            # UnicodeDecodeError → 门禁误判失败（曾导致原生 Windows 下门禁全红）。
+            capture_output=True, text=True, encoding="utf-8",
+            errors="replace", timeout=30)
         if result.stdout:
             data = json.loads(result.stdout)
             return data.get("errors", []), data.get("warnings", [])
@@ -467,7 +547,9 @@ def run_http_validator(root):
     try:
         result = subprocess.run(
             [sys.executable, validator, "--json-file", tmp_json, "--root", root],
-            capture_output=True, text=True, timeout=600,
+            # 与 check_continuity 同理：显式 UTF-8 解码子进程输出，避免 GBK 误判
+            capture_output=True, text=True, encoding="utf-8",
+            errors="replace", timeout=600,
             cwd=root)
         if os.path.exists(tmp_json):
             with open(tmp_json, "r", encoding="utf-8") as f:
@@ -503,6 +585,7 @@ def main():
         en_err, en_warn = check_encoding(root)
         df_err, df_warn = check_duplicate_filenames(root)
         ct_err, ct_warn = check_continuity(root)       # 连续性校验
+        ch_err, ch_warn = check_chapters(root)         # 章节自检（第9项）
 
         basic = {
             "frontmatter":  {"errors": fm_err, "warns": fm_warn},
@@ -512,13 +595,14 @@ def main():
             "encoding":     {"errors": en_err, "warns": en_warn},
             "duplicate_files": {"errors": df_err, "warns": df_warn},
             "continuity":   {"errors": ct_err, "warns": ct_warn},
+            "chapter":      {"errors": ch_err, "warns": ch_warn},
         }
         basic_error_count = (len(fm_err) + len(st_err) + len(op_err)
                              + len(di_err) + len(en_err) + len(df_err)
-                             + len(ct_err))
+                             + len(ct_err) + len(ch_err))
         basic_warn_count = (len(fm_warn) + len(st_warn) + len(op_warn)
                             + len(di_warn) + len(en_warn) + len(df_warn)
-                            + len(ct_warn))
+                            + len(ct_warn) + len(ch_warn))
         basic_pass = basic_error_count == 0
 
         # —— 核心断链校验（复用链接检查器）——
@@ -631,13 +715,14 @@ def main():
             print(f"[6] 编码检查(UTF-8) : ERROR {len(en_err)} | WARN {len(en_warn)}")
             print(f"[7] 同目录重名文件  : ERROR {len(df_err)} | WARN {len(df_warn)}")
             print(f"[8] 连续性校验      : ERROR {len(ct_err)} | WARN {len(ct_warn)}（章名/实体/时间/金额）")
+            print(f"[9] 章节自检        : ERROR {len(ch_err)} | WARN {len(ch_warn)}（硬短/重度AI味/无钩子/跨章重复/模板句）")
             if online and online_result:
-                print(f"[8] 联网 HTTP 校验  : {online_verdict}"
+                print(f"[10] 联网 HTTP 校验 : {online_verdict}"
                       f" | PASS {online_result.get('total_pass',0)}"
                       f" | BROKEN {online_result.get('total_broken',0)}"
                       f" | UNKNOWN {online_result.get('total_unknown',0)}")
             elif online:
-                print(f"[8] 联网 HTTP 校验  : 执行失败或超时")
+                print(f"[10] 联网 HTTP 校验 : 执行失败或超时")
             print("-" * 64)
             basic_label = ("PASS ✅" if basic_pass
                           else "FAIL ❌ ({} ERROR)".format(basic_error_count))

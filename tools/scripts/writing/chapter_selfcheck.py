@@ -32,6 +32,10 @@ AI 味与钩子扫描同样只在正文上进行，不再被 frontmatter / 元�
   python chapter_selfcheck.py 正文/            # 扫描目录下全部 *.md
   python chapter_selfcheck.py 正文/第001章.md --json report.json
   python chapter_selfcheck.py 正文/ --raw      # 附带旧口径（整份文件）字符数，便于对账
+
+阻断语义（exit 1，与统一门禁 run_all.py 章节自检一致）：
+  硬字数越界（严重不足/严重超标）· 重度AI味 · 禁用空钩子/末段无强钩子
+  跨章重复段落 · 模板化句子（≥3 章重复）
 """
 
 import os
@@ -460,12 +464,28 @@ def main():
             json.dump(results, f, ensure_ascii=False, indent=2)
         print(f"\nJSON 报告已写入: {args.json}")
 
-    # 硬性区间阻断：发现 hard_short/hard_long 时返回非零退出码
+    # 硬性阻断（与统一门禁 run_all.py 的章节自检语义一致）：
+    # 1) 硬字数区间越界（严重不足/严重超标）
     hard_block = [r for r in results
                   if "严重不足" in r["char_verdict"] or "严重超标" in r["char_verdict"]]
+    # 2) 重度 AI 味
+    heavy_ai = [r for r in results if r["ai_verdict"] == "重度"]
+    # 3) 章末无强钩子 / 禁用空钩子
+    bad_hook = [r for r in results
+                if r["hook_verdict"] == "末段无强钩子(疑似空钩)"
+                or r["hook_verdict"].startswith("禁用空钩子")]
+
+    blocked = []
     if hard_block:
-        names = ", ".join(r["file"] for r in hard_block)
-        print(f"\n硬性阻断：以下章节未通过硬性字数校验：{names}", file=sys.stderr)
+        blocked.append("硬性字数越界: " + ", ".join(r["file"] for r in hard_block))
+    if heavy_ai:
+        blocked.append("重度AI味: " + ", ".join(r["file"] for r in heavy_ai))
+    if bad_hook:
+        blocked.append("章末无强钩子/禁用空钩子: "
+                       + ", ".join(r["file"] for r in bad_hook))
+    if blocked:
+        for msg in blocked:
+            print(f"\n硬性阻断：{msg}", file=sys.stderr)
         sys.exit(1)
 
     # 跨章重复阻断

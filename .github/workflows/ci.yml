@@ -31,23 +31,16 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: |
-          $bad = 0
-          $ok = 0
-          $files = Get-ChildItem -Recurse -Path tools/scripts -Filter *.py |
-                   Where-Object { $_.FullName -notmatch '__pycache__' }
-          foreach ($f in $files) {
-            try {
-              # 用 forward-slash 路径避免 Python -c 中反斜杠转义（\t \n \a 等）
-              $pyPath = $f.FullName -replace '\\', '/'
-              python -c "import py_compile; py_compile.compile('$pyPath', doraise=True)"
-              $ok++
-            } catch {
-              Write-Host "FAIL: $($f.Name)"
-              $bad++
-            }
+          # 用 compileall 一次编译全量 .py（任一文件失败即非零退出）。
+          # 不再手工拼接 $f.FullName 嵌入 python -c —— Windows 绝对路径里的
+          # 反斜杠（\t \v \U 等）会被 Python 字符串转义，中文路径还会引入
+          # 控制台编码问题，两种坑都属于「本地绿、CI 红」的隐形来源。
+          python -m compileall -q -f tools/scripts
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Python compile FAILED (exit $LASTEXITCODE)"
+            exit 1
           }
-          Write-Host "$ok/$($files.Count) OK"
-          if ($bad -gt 0) { Write-Error "$bad files failed compilation"; exit 1 }
+          Write-Host "All Python scripts compiled OK"
 
   # ==========================================================================
   # 2. 单元测试

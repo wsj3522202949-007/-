@@ -91,11 +91,12 @@ env/
 # ----------------------------------------------------------------------------
 # 测试与草稿
 # ----------------------------------------------------------------------------
-test/
-tests/
-# 豁免：工具脚本的单元测试必须入库（CI unit-tests job 依赖）
-!tools/scripts/tests/
-!tools/scripts/tests/**
+# /test/ /tests/ 只锚定仓库根：根级测试目录不入库。
+# tools/ 下的单元测试（tools/scripts/tests/）天然入库，不依赖反向豁免 ——
+# CI unit-tests job 依赖它们（test_chapter_policy.py 共 26 用例），历史上
+# 曾因豁免不足导致测试从未入库、CI checkout 后找不到文件（exit 2）。
+/test/
+/tests/
 *.test.md
 *.draft.md
 
