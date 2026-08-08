@@ -430,92 +430,23 @@ def move_chapter(chapter_num):
 
 
 def update_progress(chapter_num):
-    """更新项目进度（字数从正式章节文件实算，统一 shared_wordcount 口径）。"""
-    # 使用 shared_wordcount 的 extract_body + count_chars（去 frontmatter + 元信息块 + CRLF 归一），
-    # 避免本函数此前手写的"只去 frontmatter"逻辑漏掉【数据预估】等元信息块，
-    # 导致 STATUS 字数虚高（曾差 184 字）且与 chapter_selfcheck 口径分裂。
-    from writing.shared_wordcount import extract_body as _sb_extract_body
-    from writing.shared_wordcount import count_chars as _wc_count_chars
+    """更新项目进度 —— 委托 ProjectCounter 原子生成统计块 + 回写 frontmatter。
+
+    此前本函数用 12 条正则零散拼凑 STATUS.md，同一份文件同时存在互相矛盾的数字
+    （38,333 vs 36,111 vs 37,445；43% vs 13%），且不更新各章 frontmatter word_count。
+    现统一交给 ProjectCounter：扫描全部正式章节 → 实算字数 → 原子替换两个统计块 →
+    回写每章 word_count。任何脚本不得绕过 ProjectCounter 直接 patch STATUS.md。
+    """
+    from writing.ProjectCounter import count_project, apply_stats
 
     project_dir = get_project_dir()
-    status_file = os.path.join(project_dir, "STATUS.md")
-    
-    if not os.path.exists(status_file):
-        print(f"错误：STATUS.md 不存在")
+    cn, tw, pc, policy, hdr = count_project(project_dir)
+    if cn == 0:
+        print("未找到章节文件，跳过进度更新。")
         return
-    
-    # 实算全部正式章节字数（去 frontmatter + 元信息块，含标点，与 shared_wordcount 同口径）
-    total_words = 0
-    chapter_files = sorted(
-        glob.glob(os.path.join(project_dir, "chapters", "第*章-*.md")))
-    for cf in chapter_files:
-        with open(cf, 'r', encoding='utf-8') as f:
-            txt = f.read()
-        total_words += _wc_count_chars(_sb_extract_body(txt))
-    
-    # 取本章标题（用于进度表）
-    this_matches = sorted(
-        glob.glob(os.path.join(project_dir, "chapters", f"第{chapter_num:03d}章-*.md")))
-    chapter_title = ""
-    if this_matches:
-        with open(this_matches[0], 'r', encoding='utf-8') as f:
-            t = f.read()
-        mt = re.search(r'^title:\s*(.+)$', t, re.MULTILINE)
-        if mt:
-            # 去掉「第011章：」式前缀（兼容零填充）
-            chapter_title = re.sub(
-                r'^第0*' + str(chapter_num) + r'章[：:]', '', mt.group(1).strip())
-    
-    with open(status_file, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # 当前章节（含标题）
-    content = re.sub(
-        r'当前章节\s*\|\s*第\d+章\s*\|[^\n|]+',
-        f'当前章节 | 第{chapter_num}章 | {chapter_title or "待命名"}',
-        content
-    )
-    # 下一章节
-    content = re.sub(
-        r'下一章节\s*\|\s*第\d+章\s*\|[^\n|]+',
-        f'下一章节 | 第{chapter_num + 1}章 | 待创作',
-        content
-    )
-    # 存稿字数（实算，含真实均值备注）——兼容「存稿正文|存稿字数」两种表头
-    avg = total_words // chapter_num if chapter_num else 0
-    content = re.sub(
-        r'存稿(?:正文|字数)\s*\|[^\n]*',
-        f'存稿正文 | ~{total_words:,}字 | {chapter_num}章合计，均~{avg}字/章',
-        content
-    )
-    # 完成率：按第一卷 30 万字（300,000 字）目标实算
-    completion = int(round(total_words / 300000 * 100)) if total_words else 0
-    content = re.sub(r'完成率\s*\|\s*[\d.]+%', f'完成率 | {completion}%', content)
-    # 总进度（兼容加粗写法）：原 "**35%** | 10/30万字"
-    content = re.sub(
-        r'总进度\s*\|\s*\*\*?[\d.]+%\*\*?\s*\|[^\n|]*',
-        f'总进度 | **{completion}%** | {chapter_num}/30章',
-        content
-    )
-    # 字数进度（顶部速览表，含分子实算）
-    content = re.sub(
-        r'字数进度\s*\|[^\n]*',
-        f'字数进度 | **~{completion}%** | {total_words:,} / 300,000 字（正文去空白口径）',
-        content
-    )
-    # 创作统计：总章节数 / 总字数（含真实均值备注）
-    content = re.sub(r'总章节数\s*\|\s*\d+章', f'总章节数 | {chapter_num}章', content)
-    content = re.sub(r'总字数\s*\|[^\n]*', f'总字数 | ~{total_words:,}字 | 均~{avg}字/章', content)
-    
-    # 更新日期
-    today = datetime.now().strftime("%Y-%m-%d")
-    content = re.sub(r'最后更新时间：\d{4}-\d{2}-\d{2}', f'最后更新时间：{today}', content)
-    content = re.sub(r'updated:\s*\d{4}-\d{2}-\d{2}', f'updated: {today}', content)
-    
-    with open(status_file, 'w', encoding='utf-8') as f:
-        f.write(content)
-    
-    print(f"已更新 STATUS.md：第{chapter_num}章《{chapter_title}》，存稿约 {total_words:,}字，完成率 {completion}%（第一卷30万字）")
+    changed = apply_stats(project_dir, cn, tw, pc, policy, hdr, dry_run=False)
+    print(f"进度已更新：{cn}章，{tw:,}字，卷完成率{cn/30:.0%}" + (
+        f"，前端字回写{len(changed)}章" if changed else ""))
 
 
 def review():
