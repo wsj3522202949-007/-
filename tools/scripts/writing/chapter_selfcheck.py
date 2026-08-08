@@ -42,6 +42,7 @@ import os
 import sys
 import re
 import json
+import zlib
 import argparse
 
 # 统一篇幅政策（单一来源）：字数标准全部来自 chapter_policy，
@@ -134,13 +135,18 @@ BANNED_TAIL = ["下回分解", "且看下回", "欲知", "下章", "且听下回
 
 # frontmatter：文件开头的 --- ... --- 块
 FRONTMATTER_RE = re.compile(r'^---\r?\n.*?\r?\n---\r?\n', re.DOTALL)
-# 创作元信息块：**【章节数据】** 之后全部内容属于写作笔记，不是正文。
-# 这些块里常含「下章预告」「伏笔」「本章」等词，会同时污染字数、AI味、钩子三项判定。
+# 创作元信息块：**【<标题>】** 之后全部内容属于写作笔记，不是正文。
+# 注意：实际文件用的标题是「数据预估」而非「章节数据」——旧正则在「数据」后
+# 用 \s* 期望紧跟 】，遇到「预估」即失配，导致数据块被算进正文（字数虚高 +
+# 钩子判定污染）。现把常见变体全部列入，防止再次出现格式漂移刷分。
 META_BLOCK_RE = re.compile(
-    r'\*\*【\s*(?:章节数据|数据|自检|创作笔记|写作笔记|备注)\s*】\*\*.*$',
+    r'\*\*【\s*(?:章节数据|数据预估|数据统计|数据|预估|统计|自检|'
+    r'创作笔记|写作笔记|备注|复盘|记录|完读率|追读率)\s*】\*\*.*$',
     re.DOTALL)
 # 行内小标记：**【章末钩子】** 只是排版提示，删标记但保留其后正文
 INLINE_MARK_RE = re.compile(r'\*\*【\s*(?:章末钩子|正文|开篇)\s*】\*\*\r?\n?')
+# 章末钩子区起点（钩子唯一性检查需要单独提取这段正文）
+HOOK_ZONE_MARK_RE = re.compile(r'\*\*【\s*章末钩子\s*】\*\*\r?\n?')
 
 
 def read_text(path):
@@ -161,6 +167,27 @@ def extract_body(raw):
     s = META_BLOCK_RE.sub("", s)
     s = INLINE_MARK_RE.sub("", s)
     return s.strip()
+
+
+def extract_hook_zone(raw):
+    """提取**【章末钩子】**标记之后的正文钩子区（到元信息块或文末为止）。
+
+    钩子唯一性检查需要这一区域：不能拿整章正文去比（会把叙事主体也算进去），
+    也不能被尾部「数据预估」块污染（那里含「下一章/钩子强度」等模板词）。
+    没有钩子标记时返回空串（由钩子判定/钩子唯一性自行处理）。
+    """
+    s = raw.replace("\r\n", "\n").replace("\r", "\n")
+    s = FRONTMATTER_RE.sub("", s)
+    m = HOOK_ZONE_MARK_RE.search(s)
+    if not m:
+        return ""
+    zone = s[m.end():]
+    mm = META_BLOCK_RE.search(zone)
+    if mm:
+        zone = zone[:mm.start()]
+    # 去掉尾部纯分隔线（---）
+    zone = re.sub(r'\n?-{3,}\s*$', '', zone)
+    return zone.strip()
 
 
 def count_chars(body):
@@ -319,6 +346,375 @@ def find_cross_chapter_template_sentences(chapters_dir, min_chapters=3, min_sent
     return template_sents, chapter_hits
 
 
+# ===========================================================================
+# 反「指标刷分」检测（2026-08-08）
+# ---------------------------------------------------------------------------
+# 背景：旧门禁只查「≥30字段落、相似度≥0.80」的跨章重复，作者用短句/短段落
+# 复制即可绕过——实测 81 个跨章完全重复段落（最短约 12 字）、"宿主，系统的
+# 声音带着一丝意味深长，你确定吗？"在 6 章逐字重复，仍被判定「强钩子/达标」。
+# 新增五道检测，全部基于 extract_body 后的纯正文：
+#   1. 跨章精确重复段落（去空白 ≥12 字、≥2 章）
+#   2. 跨章重复短语（句子级，去空白 ≥12 字、≥2 章；口头禅白名单可豁免）
+#   3. MinHash 近似重复段落（字符 5-gram 签名，Jaccard ≥0.85）
+#   4. SimHash 章节整体相似度（64-bit 指纹，汉明距离 ≤10 → WARN）
+#   5. 章末钩子唯一性（各章【章末钩子】区域两两相似度 ≥0.80 → 钩子雷同）
+# 白名单文件：项目目录下 chapter_oral_tic.txt，每行一条，# 开头为注释，
+# 从章节目录向上查找（与 chapter_policy 的查找方式一致）。
+# ===========================================================================
+
+def _chapter_files(chapters_dir):
+    """目录下按名排序的章节 .md 文件（排除 README）。"""
+    return sorted([
+        f for f in os.listdir(chapters_dir)
+        if f.endswith('.md') and f.startswith('第') and f != 'README.md'
+    ])
+
+
+def _norm(s):
+    """去空白归一（字数口径：正文去空白字符）。"""
+    return re.sub(r'\s', '', s)
+
+
+def _chapter_bodies(chapters_dir):
+    """{fname: extract_body(...)} 全量预读，供多道检测共用。"""
+    return {f: extract_body(read_text(os.path.join(chapters_dir, f)))
+            for f in _chapter_files(chapters_dir)}
+
+
+def find_exact_duplicate_paras(chapters_dir, min_len=12):
+    """跨章完全重复段落：去空白后 ≥min_len 字、出现在 ≥2 章。
+
+    旧检测 find_cross_chapter_duplicates 用 min_para_len=30 + 相似度 0.80，
+    短句复制（如 "宿主，系统的声音带着一丝意味深长，你确定吗？"）全部漏检，
+    作者借此「凑字数 + 模板钩子」刷过门禁。本函数用精确匹配 + 低长度阈值堵住。
+    """
+    files = _chapter_files(chapters_dir)
+    if len(files) < 2:
+        return []
+    owner = {}
+    for fname in files:
+        body = _chapter_bodies(chapters_dir).get(fname, "")
+        for p in body.split("\n\n"):
+            np = _norm(p)
+            if len(np) >= min_len:
+                owner.setdefault(np, set()).add(fname)
+    dups = []
+    for np, chs in owner.items():
+        if len(chs) > 1:
+            dups.append({"para": np[:120], "chapters": sorted(chs),
+                         "count": len(chs)})
+    dups.sort(key=lambda d: (-d["count"], -len(d["para"])))
+    return dups
+
+
+def find_repeated_phrases(chapters_dir, min_len=12, min_chapters=2, whitelist=()):
+    """跨章重复短语：句子级（。！？… 切分）去空白 ≥min_len 字、≥min_chapters 章。
+
+    whitelist 为口头禅白名单：短语**包含**任一白名单项即视为作者有意的口头禅，
+    予以豁免（如 "叮"、"系统的声音带着一丝意味深长" 等系统文套路若属人物设定）。
+    """
+    files = _chapter_files(chapters_dir)
+    if len(files) < 2:
+        return []
+    owner = {}
+    for fname in files:
+        body = _chapter_bodies(chapters_dir).get(fname, "")
+        for s in re.split(r'(?<=[。！？…])', body):
+            np = _norm(s)
+            if len(np) >= min_len:
+                owner.setdefault(np, set()).add(fname)
+    out = []
+    for np, chs in owner.items():
+        if len(chs) < min_chapters:
+            continue
+        if any(w and w in np for w in whitelist):
+            continue
+        out.append({"phrase": np[:120], "chapters": sorted(chs), "count": len(chs)})
+    out.sort(key=lambda d: (-d["count"], -len(d["phrase"])))
+    return out
+
+
+def find_duplicate_sequences(chapters_dir, window=3, min_total_len=20,
+                             min_chapters=2):
+    """跨章段落序列重复：连续 window 段（空行分段）归一拼接后精确匹配。
+
+    单段检测的盲区：模板结尾常由**若干短段组成**——"宿主…你确定吗？"/
+    "确定。"/"那就明天见。"每段都不足 12 字，但整套序列在 6 章逐字复制。
+    本函数按段落滑动窗口，把「整套结尾」作为一个整体指纹来比对。
+    """
+    files = _chapter_files(chapters_dir)
+    if len(files) < 2:
+        return []
+    owner = {}
+    for fname in files:
+        body = _chapter_bodies(chapters_dir).get(fname, "")
+        paras = [p for p in body.split("\n\n")]
+        for i in range(0, max(1, len(paras) - window + 1)):
+            seq = paras[i:i + window]
+            np = _norm("".join(seq))
+            if len(np) < min_total_len:
+                continue
+            owner.setdefault(np, set()).add(fname)
+    out = []
+    for np, chs in owner.items():
+        if len(chs) < min_chapters:
+            continue
+        out.append({"sequence": np[:140], "chapters": sorted(chs),
+                    "count": len(chs)})
+    out.sort(key=lambda d: (-d["count"], -len(d["sequence"])))
+    return out
+
+
+# ---------------------------------------------------------------------------
+# MinHash / SimHash 近似重复检测（无第三方依赖）
+# ---------------------------------------------------------------------------
+def _shingles(text, k=5):
+    """字符 k-gram 集合（去空白后）。"""
+    t = _norm(text)
+    if len(t) <= k:
+        return {t} if t else set()
+    return {t[i:i + k] for i in range(len(t) - k + 1)}
+
+
+def _crc(s):
+    return zlib.crc32(s.encode("utf-8")) & 0xFFFFFFFF
+
+
+def find_near_duplicate_paras(chapters_dir, min_len=12, threshold=0.68,
+                              shingle_len=5, min_shared=3):
+    """近似重复段落：经改写/换词但仍高度雷同的段落（MinHash 思想的精确形态）。
+
+    实现：字符 5-gram 倒排生成候选段对（共享 ≥min_shared 个 shingle），再按
+    shingle 集合的 Jaccard 判定（不采样、不估计——短段上比 64 位 MinHash
+    签名估计更稳）。跨章比对，同章内不查。
+
+    jaccard ∈ [threshold, 1.0) 报近似重复；jaccard = 1.0 的完全重复段由
+    find_exact_duplicate_paras 负责，此处不重复报告。
+
+    实测校准（2026-08-08）：真实数据呈双峰分布——不相关段对 jaccard 均为
+    0.0~0.05（29684 对无一介于 0.05~0.68），重复/改写段 ≥0.70；改 2 处短语
+    的短段（65 字）jaccard≈0.70、长段（77 字）≈0.74。故阈值取 0.68 无误报空间。
+    """
+    files = _chapter_files(chapters_dir)
+    paras = []
+    for fname in files:
+        for p in _chapter_bodies(chapters_dir).get(fname, "").split("\n\n"):
+            np = _norm(p)
+            if len(np) >= min_len:
+                paras.append((fname, np))
+    if len(paras) < 2:
+        return []
+    inv = {}
+    for i, (_, np) in enumerate(paras):
+        for s in _shingles(np, shingle_len):
+            inv.setdefault(s, set()).add(i)
+    cand = {}
+    for s, ids in inv.items():
+        ids = sorted(ids)
+        for a in range(len(ids)):
+            for b in range(a + 1, len(ids)):
+                key = (ids[a], ids[b])
+                cand[key] = cand.get(key, 0) + 1
+    results = []
+    for (i, j), shared in cand.items():
+        if shared < min_shared:
+            continue
+        fa, pa = paras[i]
+        fb, pb = paras[j]
+        if fa == fb:
+            continue
+        # 长度悬殊的段落直接跳过（近似重复应篇幅相近）
+        if abs(len(pa) - len(pb)) > max(15, 0.4 * min(len(pa), len(pb))):
+            continue
+        sh_a = _shingles(pa, shingle_len)
+        sh_b = _shingles(pb, shingle_len)
+        if not sh_a or not sh_b:
+            continue
+        jac = len(sh_a & sh_b) / len(sh_a | sh_b)
+        if threshold <= jac < 1.0:
+            results.append({
+                "chapter_a": fa, "chapter_b": fb,
+                "para_a": pa[:120], "para_b": pb[:120],
+                "similarity": round(jac, 2),
+            })
+    seen, uniq = set(), []
+    for r in sorted(results, key=lambda d: -d["similarity"]):
+        k = (r["chapter_a"], r["chapter_b"], r["para_a"][:40])
+        if k in seen:
+            continue
+        seen.add(k)
+        uniq.append(r)
+    return uniq
+
+
+def _simhash(text, bits=64, shingle_len=5):
+    """文本 64-bit 指纹（字符 k-gram 位加权）。"""
+    sh = _shingles(text, shingle_len)
+    if not sh:
+        return 0
+    v = [0] * bits
+    for s in sh:
+        h = _crc(s)
+        for b in range(bits):
+            v[b] += 1 if (h >> (b % 32)) & 1 else -1
+    return sum(1 << b for b in range(bits) if v[b] > 0)
+
+
+def _hamming(a, b):
+    return bin(a ^ b).count("1")
+
+
+def chapter_simhash_report(chapters_dir, max_hamming=10, shingle_len=5):
+    """章节整体相似度：两章正文 simhash 汉明距离 ≤max_hamming 报 WARN。
+
+    语义：不是抄袭判定，而是「这两章全文指纹过于接近」的风险提示——
+    常见于大量复制-粘贴式写作。阈值经 13 章实测（同作者正常分布 30+）。
+    """
+    files = _chapter_files(chapters_dir)
+    if len(files) < 2:
+        return []
+    sigs = {}
+    for fname in files:
+        sigs[fname] = _simhash(_chapter_bodies(chapters_dir).get(fname, ""),
+                               shingle_len=shingle_len)
+    out = []
+    for i in range(len(files)):
+        for j in range(i + 1, len(files)):
+            a, b = files[i], files[j]
+            d = _hamming(sigs[a], sigs[b])
+            if d <= max_hamming:
+                out.append({"chapter_a": a, "chapter_b": b,
+                            "hamming": d,
+                            "similarity": round(1 - d / 64, 2)})
+    out.sort(key=lambda x: -x["similarity"])
+    return out
+
+
+def check_hook_uniqueness(chapters_dir, threshold=0.80):
+    """章末钩子唯一性：各章【章末钩子】区域两两相似度 ≥threshold → 钩子雷同。
+
+    旧钩子判定只看末段是否命中强钩子关键词，作者把同一套钩子场景
+    （如"明天见—失眠—看天花板—不会再错过"）复制到多章仍被判「强钩子」。
+    本检查比较钩子区正文本身，堵住「关键词命中但内容雷同」的刷分。
+    """
+    files = _chapter_files(chapters_dir)
+    zones = {}
+    for fname in files:
+        z = extract_hook_zone(read_text(os.path.join(chapters_dir, fname)))
+        if len(_norm(z)) >= 15:
+            zones[fname] = z
+    if len(zones) < 2:
+        return []
+    import difflib
+    out = []
+    names = sorted(zones)
+    for i in range(len(names)):
+        for j in range(i + 1, len(names)):
+            a, b = names[i], names[j]
+            r = difflib.SequenceMatcher(None, zones[a], zones[b]).ratio()
+            if r >= threshold:
+                out.append({"chapter_a": a, "chapter_b": b,
+                            "similarity": round(r, 2)})
+    out.sort(key=lambda x: -x["similarity"])
+    return out
+
+
+# ---------------------------------------------------------------------------
+# 口头禅白名单（项目可配置）
+# ---------------------------------------------------------------------------
+_ORAL_TIC_NAMES = ("chapter_oral_tic.txt", "oral_tic.txt")
+
+
+def load_oral_tic_whitelist(start_dir=None):
+    """从 start_dir（文件或目录）向上查找口头禅白名单文件。
+
+    每行一条，# 开头为注释。找不到返回空元组（不豁免任何短语）。
+    """
+    base = os.path.abspath(start_dir) if start_dir else os.getcwd()
+    if not os.path.isdir(base):
+        base = os.path.dirname(base)
+    cur = base
+    for _ in range(10):
+        for name in _ORAL_TIC_NAMES:
+            cand = os.path.join(cur, name)
+            if os.path.isfile(cand):
+                items = []
+                try:
+                    with open(cand, "r", encoding="utf-8") as fh:
+                        for line in fh:
+                            line = line.strip()
+                            if line and not line.startswith("#"):
+                                items.append(line)
+                except OSError:
+                    return ()
+                return tuple(items)
+        parent = os.path.dirname(cur)
+        if parent == cur:
+            break
+        cur = parent
+    return ()
+
+
+# ---------------------------------------------------------------------------
+# 目录级质量扫描（统一入口：main 目录模式与 run_all 门禁共用，杜绝双轨）
+# ---------------------------------------------------------------------------
+def scan_chapter_dir(chapters_dir, label=None):
+    """目录级章节质量扫描，返回 (errors, warns)。
+
+    含：精确重复段落 / 重复短语 / MinHash 近似重复 / SimHash 章节相似 /
+    钩子唯一性 / 跨章重复(0.8,30) / 模板化句子。label 用于错误消息中的路径显示。
+    """
+    errors, warns = [], []
+    rel = label or os.path.basename(chapters_dir) or chapters_dir
+    whitelist = load_oral_tic_whitelist(chapters_dir)
+
+    dups = find_cross_chapter_duplicates(chapters_dir)
+    if dups:
+        errors.append(f"跨章重复段落(≥30字,≥80%相似) {len(dups)} 处: {rel}/")
+
+    exact = find_exact_duplicate_paras(chapters_dir)
+    if exact:
+        top = "；".join(f"“{d['para']}”×{d['count']}章" for d in exact[:5])
+        errors.append(f"跨章完全重复段落 {len(exact)} 个（示例: {top}）: {rel}/")
+
+    phrases = find_repeated_phrases(chapters_dir, whitelist=whitelist)
+    if phrases:
+        top = "；".join(f"“{d['phrase']}”×{d['count']}章" for d in phrases[:5])
+        errors.append(
+            f"重复短语(≥12字/≥2章) {len(phrases)} 个（示例: {top}）: {rel}/"
+            + (" [口头禅白名单已豁免部分]" if whitelist else ""))
+
+    seqs = find_duplicate_sequences(chapters_dir)
+    if seqs:
+        top = "；".join(f"“{d['sequence'][:34]}…”×{d['count']}章" for d in seqs[:5])
+        errors.append(
+            f"段落序列重复(连续{seqs[0] and 3}段/≥20字/≥2章) {len(seqs)} 个"
+            f"（示例: {top}）: {rel}/")
+
+    near = find_near_duplicate_paras(chapters_dir)
+    if near:
+        top = "；".join(f"{d['chapter_a'][:10]}↔{d['chapter_b'][:10]}({d['similarity']})"
+                        for d in near[:5])
+        errors.append(f"近似重复段落(改写式,Jaccard≥0.68) {len(near)} 对（示例: {top}）: {rel}/")
+
+    for s in chapter_simhash_report(chapters_dir):
+        warns.append(
+            f"章节整体指纹高度相近 {s['chapter_a'][:14]} ↔ {s['chapter_b'][:14]}"
+            f" (sim {s['similarity']}): {rel}/")
+
+    hk = check_hook_uniqueness(chapters_dir)
+    if hk:
+        top = "；".join(f"{h['chapter_a'][:10]}↔{h['chapter_b'][:10]}({h['similarity']})"
+                        for h in hk[:5])
+        errors.append(f"章末钩子雷同 {len(hk)} 对（示例: {top}）: {rel}/")
+
+    tpl, _hits = find_cross_chapter_template_sentences(chapters_dir)
+    if tpl:
+        errors.append(f"模板化句子(≥3章重复) {len(tpl)} 个: {rel}/")
+
+    return errors, warns
+
+
 def check_chapter(path, include_raw=False, policy=None):
     policy = policy or load_policy(path)
     raw = read_text(path)
@@ -426,15 +822,23 @@ def main():
     results = [check_chapter(f, include_raw=args.raw, policy=policy) for f in files]
     print_report(results, show_raw=args.raw, policy=policy)
 
-    # —— 跨章重复检测（仅目录模式下运行）——
-    dup_found = False
-    template_found = False
+    # —— 目录级质量扫描（跨章重复 / 模板句 / 精确重复 / 短语 / 近似重复 /
+    #    SimHash / 钩子唯一性，全部由 scan_chapter_dir 统一判定）——
+    gate_errors, gate_warns = [], []
     for p in args.paths:
         if os.path.isdir(p):
+            errs, wns = scan_chapter_dir(p)
+            gate_errors += errs
+            gate_warns += wns
+            for w in wns:
+                print(f"\nℹ️ 警告：{w}")
+            for e in errs:
+                print(f"\n⚠️ {e}")
+
+            # —— 详细诊断打印（保留逐对信息，帮助定位）——
             dups = find_cross_chapter_duplicates(p)
             if dups:
-                dup_found = True
-                print(f"\n⚠️ 跨章重复段落检测：发现 {len(dups)} 处疑似重复")
+                print("\n⚠️ 跨章重复段落详情：")
                 print("-" * 72)
                 for d in dups:
                     print(f"  [{d['file_a']}] ↔ [{d['file_b']}] 相似度 {d['similarity']:.0%}")
@@ -446,7 +850,6 @@ def main():
             # —— 模板化句子检测（短句重复，AI 写作指纹）——
             tpl_sents, chapter_hits = find_cross_chapter_template_sentences(p)
             if tpl_sents:
-                template_found = True
                 print(f"\n⚠️ 模板化句子检测：{len(tpl_sents)} 个句子在 ≥3 章重复出现")
                 print("-" * 72)
                 for t in tpl_sents[:20]:
@@ -488,14 +891,11 @@ def main():
             print(f"\n硬性阻断：{msg}", file=sys.stderr)
         sys.exit(1)
 
-    # 跨章重复阻断
-    if dup_found:
-        print("硬性阻断：跨章重复段落未处理", file=sys.stderr)
-        sys.exit(1)
-
-    # 模板化句子阻断
-    if template_found:
-        print("硬性阻断：模板化句子未逐章重写", file=sys.stderr)
+    # 目录级质量阻断（scan_chapter_dir 汇总）
+    if gate_errors:
+        print("\n硬性阻断：目录级章节质量检查未通过：", file=sys.stderr)
+        for e in gate_errors:
+            print(f"  - {e}", file=sys.stderr)
         sys.exit(1)
 
 

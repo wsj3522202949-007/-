@@ -469,15 +469,12 @@ def check_chapters(root):
                 errors.append(f"[chapter] {hv}: {rel}")
             elif hv.startswith("钩子在中段"):
                 warns.append(f"[chapter] {hv}: {rel}")
-        # 目录级：跨章重复段落 + 模板化句子（与 chapter_selfcheck 目录模式一致）
-        dups = _mod.find_cross_chapter_duplicates(cdir)
-        if dups:
-            errors.append(
-                f"[chapter] 跨章重复段落 {len(dups)} 处: {rel_dir}/")
-        tpl, _hits = _mod.find_cross_chapter_template_sentences(cdir)
-        if tpl:
-            errors.append(
-                f"[chapter] 模板化句子 {len(tpl)} 个(≥3章重复): {rel_dir}/")
+        # 目录级质量扫描（复用 chapter_selfcheck.scan_chapter_dir 单一逻辑：
+        # 精确重复段落 / 重复短语 / MinHash近似重复 / SimHash章节相似 /
+        # 钩子唯一性 / 跨章重复 / 模板化句子 —— 门禁禁止自维护第二套检测）
+        _errs, _wns = _mod.scan_chapter_dir(cdir, label=rel_dir)
+        errors.extend(f"[chapter] {e}" for e in _errs)
+        warns.extend(f"[chapter] {w}" for w in _wns)
     return errors, warns
 
 
