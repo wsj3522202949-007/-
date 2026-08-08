@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-08T15:02:24.820498",
-  "observed_commit": "901fccaf0540e705d51d252e7116ea5c01a8e82a",
-  "valid_until": "2026-11-06T15:02:25.035353",
+  "generated_at": "2026-08-08T15:22:50.636717",
+  "observed_commit": "65e19ba4881509d63e782be29327a1b0420e8a3a",
+  "valid_until": "2026-11-06T15:22:50.870569",
   "superseded_by": null,
   "projects": [
     {
