@@ -28,6 +28,8 @@ jobs:
 
       - name: Compile all Python scripts
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
           $bad = 0
           $ok = 0
@@ -65,9 +67,16 @@ jobs:
 
       - name: Run unit tests
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
-          # chapter_policy 单元测试
+          # chapter_policy 单元测试（退出码非零即失败）
           python tools/scripts/tests/test_chapter_policy.py -v
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Unit tests FAILED (exit $LASTEXITCODE)"
+            exit 1
+          }
+          Write-Host "Unit tests PASSED"
 
   # ==========================================================================
   # 3. 章节门禁（等价于 pre-commit hook，不含 HTTP 校验）
@@ -87,21 +96,30 @@ jobs:
 
       - name: Run unified gate
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
-          $result = python tools/scripts/validation/run_all.py --json
-          $data = $result | ConvertFrom-Json
-          if (-not $data.summary.overall_pass) {
-            Write-Error "Gate FAILED"
+          # 不解析 stdout JSON（多行 JSON 经 PowerShell 管道逐行解析会失败），
+          # 以 run_all.py 退出码为权威判据（0=通过，1=失败），JSON 落盘供查看。
+          python tools/scripts/validation/run_all.py --json --json-file=gate_report.json
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Gate FAILED (exit $LASTEXITCODE)"
             exit 1
           }
           Write-Host "Gate PASSED"
 
       - name: Gate summary
         shell: pwsh
+        env:
+          PYTHONUTF8: "1"
         run: |
-          $data = python tools/scripts/validation/run_all.py --json | ConvertFrom-Json
-          $basic = $data.summary.basic
-          $core = $data.summary.'core_broken_links'
-          Write-Host "  basic:        $($basic.errors) errors / $($basic.warns) warns"
-          Write-Host "  core-links:   $($core.errors) errors"
-          Write-Host "  overall:      $($data.summary.overall_pass)"
+          if (Test-Path gate_report.json) {
+            $data = Get-Content gate_report.json -Raw | ConvertFrom-Json
+            $basic = $data.summary.basic
+            $core = $data.summary.'core_broken_links'
+            Write-Host "  basic:        $($basic.errors) errors / $($basic.warns) warns"
+            Write-Host "  core-links:   $($core.errors) errors"
+            Write-Host "  overall:      $($data.summary.overall_pass)"
+          } else {
+            Write-Host "  gate_report.json 未生成"
+          }
