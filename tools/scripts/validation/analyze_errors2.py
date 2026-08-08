@@ -22,8 +22,7 @@ except Exception:  # noqa: BLE001
 result = subprocess.run(
     ['python', r'e:\个人知识库\tools\scripts\validation\_run_link_fixed.py', '--zone', 'core', '--json'],
     capture_output=True,
-    text=True,
-    encoding='utf-8',
+    text=True, encoding='utf-8', errors='replace',
     cwd=r'e:\个人知识库'
 )
 

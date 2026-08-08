@@ -1,0 +1,7 @@
+# Python 解释器候选列表（单一来源）
+# 由 .githooks/pre-commit（bash）与 maintenance/scripts/_runtime.ps1 共同读取。
+# 每行一个路径，~ 代表用户主目录（bash 展开为 $HOME，PowerShell 展开为 $USERPROFILE）。
+# 新增/移除受管 Python 版本时，只改本文件，禁止在各脚本里再硬编码版本路径。
+~/.workbuddy/binaries/python/versions/3.13.12/python.exe
+~/.workbuddy/binaries/python/versions/3.12.9/python.exe
+~/.workbuddy/binaries/python/versions/3.11.11/python.exe

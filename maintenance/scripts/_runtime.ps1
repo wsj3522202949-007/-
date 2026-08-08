@@ -58,14 +58,21 @@ $pythonCandidates += @(
     "C:\Python312\python.exe"
     "${env:ProgramFiles}\Python313\python.exe"
     "${env:ProgramFiles}\Python312\python.exe"
-    # WorkBuddy 管理的 Python（版本独立，优先匹配最新）
-    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.13.12\python.exe"
-    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.12.9\python.exe"
-    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.11.11\python.exe"
     # TRAE / 其他 IDE 内置 Python
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\python.exe"
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\bin\python3.exe"
 )
+# 3b'. WorkBuddy 管理 Python：单一来源 python-candidates.txt
+#      （禁止在此硬编码版本路径；与 .githooks/pre-commit 共用同一文件）
+$pythonCandFile = Join-Path $PSScriptRoot "python-candidates.txt"
+if (Test-Path $pythonCandFile) {
+    Get-Content $pythonCandFile | ForEach-Object {
+        $l = $_.Trim()
+        if ($l -and -not $l.StartsWith("#")) {
+            $pythonCandidates += $l.Replace("~", $env:USERPROFILE)
+        }
+    }
+}
 $Script:Python = $pythonCandidates | Where-Object {
     $_ -and (Test-Path $_) -and $_ -notmatch 'WindowsApps'
 } | Select-Object -First 1

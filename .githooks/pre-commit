@@ -19,18 +19,19 @@ fi
 VALIDATOR="$REPO_ROOT/tools/scripts/maintenance/提交前校验.py"
 
 # —— Step 1: 优先发现 Python ——
-# git bash 中的 $HOME 是 Unix 风格路径（如 /c/Users/wsj），可直接拼接。
+# 候选列表来自单一来源 maintenance/scripts/python-candidates.txt（禁止在此硬编码版本）
+CAND_FILE="$REPO_ROOT/maintenance/scripts/python-candidates.txt"
 PYTHON=""
-for candidate in \
-    "$HOME/.workbuddy/binaries/python/versions/3.13.12/python.exe" \
-    "$HOME/.workbuddy/binaries/python/versions/3.12.9/python.exe" \
-    "$HOME/.workbuddy/binaries/python/versions/3.11.11/python.exe" \
-    ; do
-    if [ -f "$candidate" ]; then
-        PYTHON="$candidate"
-        break
-    fi
-done
+if [ -f "$CAND_FILE" ]; then
+    while IFS= read -r line; do
+        case "$line" in \#*|"") continue ;; esac
+        candidate="${line/\~/$HOME}"
+        if [ -f "$candidate" ]; then
+            PYTHON="$candidate"
+            break
+        fi
+    done < "$CAND_FILE"
+fi
 
 if [ -z "$PYTHON" ]; then
     # 回退到 PATH 中的 python

@@ -18,8 +18,7 @@ except Exception:  # noqa: BLE001
 result = subprocess.run(
     [r'python', r'e:\个人知识库\tools\scripts\maintenance\提交前校验.py', '--json'],
     capture_output=True,
-    text=True,
-    encoding='utf-8'
+    text=True, encoding='utf-8', errors='replace'
 )
 
 output = result.stdout
