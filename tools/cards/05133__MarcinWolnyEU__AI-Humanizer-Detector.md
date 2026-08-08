@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 源仓库无 README，功能未经核验，建议先看作者的其他仓库或在线 demo"
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: be89837439ab846d
   - methods/改稿润色指令库.md
 ---
 

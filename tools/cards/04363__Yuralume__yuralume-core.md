@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
   - methods/人物思维蒸馏法.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 9c0abb4b15a5b879
   - methods/模板库.md
 ---
 

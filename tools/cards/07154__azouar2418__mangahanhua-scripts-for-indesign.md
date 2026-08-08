@@ -19,6 +19,10 @@ use_case: "错别字/语法/风格校对"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: f4ec6bd67f067a45
   - methods/QUICK_START.md
 ---
 

@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e9217e88e7f2eaaa
   - methods/QUICK_START.md
 ---
 

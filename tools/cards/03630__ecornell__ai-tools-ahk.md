@@ -19,6 +19,10 @@ use_case: "提示词/工作流模板"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 17bc7f4bb1c9d06f
   - methods/QUICK_START.md
 ---
 

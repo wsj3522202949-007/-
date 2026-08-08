@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
   - methods/人物思维蒸馏法.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 75a71632387d54db
   - methods/模板库.md
 ---
 

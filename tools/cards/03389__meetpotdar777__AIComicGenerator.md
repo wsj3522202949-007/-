@@ -19,6 +19,10 @@ use_case: "剧本/短剧脚本生成"
 pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 9f7933ea15bbfa82
   - methods/模板库.md
 ---
 

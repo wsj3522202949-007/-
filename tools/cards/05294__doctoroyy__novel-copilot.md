@@ -19,6 +19,10 @@ use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: dcb523d7cb786d00
   - methods/改稿润色指令库.md
 ---
 

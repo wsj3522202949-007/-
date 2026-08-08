@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
   - methods/网文写作最强SOP.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: b29e128d87e26489
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

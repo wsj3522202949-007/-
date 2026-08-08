@@ -18,6 +18,10 @@ tier: "S"
 use_case: "错别字/语法/风格校对"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 042db47b9c1e9e43
   - methods/QUICK_START.md
 ---
 

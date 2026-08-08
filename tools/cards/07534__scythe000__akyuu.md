@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d85966ac7967b0a8
   - methods/QUICK_START.md
 ---
 

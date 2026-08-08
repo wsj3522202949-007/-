@@ -22,6 +22,10 @@ pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 85c6eecde7f99a87
   - methods/改稿润色指令库.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "搭大纲/分卷/节拍"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e7df9debe656addd
   - methods/QUICK_START.md
 ---
 

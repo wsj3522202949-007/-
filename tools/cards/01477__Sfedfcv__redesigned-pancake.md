@@ -22,6 +22,10 @@ pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 4c77d7a833c8f414
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

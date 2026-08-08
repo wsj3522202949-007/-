@@ -19,6 +19,10 @@ use_case: "风格微调/文风迁移"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: f3eb7158b84cc509
   - methods/QUICK_START.md
 ---
 

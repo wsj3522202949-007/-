@@ -19,6 +19,10 @@ use_case: "错别字/语法/风格校对"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e7850adb11a4b157
   - methods/QUICK_START.md
 ---
 

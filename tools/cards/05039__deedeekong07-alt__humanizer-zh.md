@@ -19,6 +19,10 @@ use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: f24ecd949b9aa526
   - methods/改稿润色指令库.md
 ---
 

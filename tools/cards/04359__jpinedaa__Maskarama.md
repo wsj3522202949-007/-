@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
   - methods/人物思维蒸馏法.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d89b879c5a4c93bd
   - methods/模板库.md
 ---
 

@@ -21,6 +21,10 @@ pitfalls:
   - "Superpowers 整体是开发方法论，brainstorming 是其中一个可独立使用的 skill"
   - "安装整个 Superpowers 插件会加载 14 个 skill，可能污染上下文；建议只提取 brainstorming 的 SKILL.md"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: cd789b28464c558c
   - methods/QUICK_START.md
 ---
 

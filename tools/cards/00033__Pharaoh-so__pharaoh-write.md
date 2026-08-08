@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d790a5d192395e87
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

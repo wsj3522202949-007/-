@@ -21,6 +21,10 @@ pitfalls:
   - "章节自动检测需要明确的 Chapter N 标题，纯标题或罗马数字命名的书可能无法自动分段"
   - "每本书转换成本约 $1（API 调用），但一次转换后可反复使用"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: 5fcb62bbac09c221
   - methods/QUICK_START.md
 ---
 

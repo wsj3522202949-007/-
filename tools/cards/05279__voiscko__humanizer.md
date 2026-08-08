@@ -19,6 +19,10 @@ use_case: "Claude Code 插件式写作流"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 1e98e94da41155f6
   - methods/改稿润色指令库.md
 ---
 

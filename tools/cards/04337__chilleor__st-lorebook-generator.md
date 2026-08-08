@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
   - methods/人物思维蒸馏法.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 070d4ea1ede4641f
   - methods/模板库.md
 ---
 

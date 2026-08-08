@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 3328f7bfa068e30f
   - methods/改稿润色指令库.md
 ---
 

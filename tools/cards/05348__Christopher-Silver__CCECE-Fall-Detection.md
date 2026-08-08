@@ -19,6 +19,10 @@ use_case: "搭大纲/分卷/节拍"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 47199e69cf945551
   - methods/改稿润色指令库.md
 ---
 

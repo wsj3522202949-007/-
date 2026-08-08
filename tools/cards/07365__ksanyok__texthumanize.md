@@ -20,6 +20,10 @@ pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d3cf785aaef36660
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "提示词/写作工作流"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: adea9407b01a6e12
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

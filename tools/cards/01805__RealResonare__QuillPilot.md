@@ -21,6 +21,10 @@ pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 0db26e8640fe4a4f
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

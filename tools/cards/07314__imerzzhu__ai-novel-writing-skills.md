@@ -18,6 +18,10 @@ tier: "B"
 use_case: "搭大纲/分卷/节拍"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 8589fb1847a389ed
   - methods/QUICK_START.md
 ---
 

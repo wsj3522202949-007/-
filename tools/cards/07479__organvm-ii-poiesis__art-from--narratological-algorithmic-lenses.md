@@ -19,6 +19,10 @@ use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 1d08b75f054707c0
   - methods/QUICK_START.md
 ---
 

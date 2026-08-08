@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
   - methods/网文写作最强SOP.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 9c0d9e23c90baa4a
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

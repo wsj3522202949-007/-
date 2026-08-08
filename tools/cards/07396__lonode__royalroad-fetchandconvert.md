@@ -19,6 +19,10 @@ use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 8679e29a5e8d0e1e
   - methods/QUICK_START.md
 ---
 

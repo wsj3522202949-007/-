@@ -19,6 +19,10 @@ use_case: "互动叙事/聊天写故事"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 546db859f2a79d01
   - methods/改稿润色指令库.md
 ---
 

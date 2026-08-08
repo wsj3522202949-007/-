@@ -18,6 +18,10 @@ tier: "A"
 use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 0d2ae07b380b69f2
   - methods/QUICK_START.md
 ---
 

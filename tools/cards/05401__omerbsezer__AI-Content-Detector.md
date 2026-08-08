@@ -19,6 +19,10 @@ use_case: "提示词/写作工作流"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 4940417f7de94933
   - methods/改稿润色指令库.md
 ---
 

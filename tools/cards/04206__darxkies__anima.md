@@ -18,6 +18,10 @@ tier: "B"
 use_case: "润色/改写/扩写等通用文本处理"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: cd2edb39905c561e
   - methods/QUICK_START.md
 ---
 

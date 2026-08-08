@@ -19,6 +19,10 @@ use_case: "投稿前给正文降 AI 检测痕迹、改自然语气"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: fc5bb73ad2a3b6f2
   - methods/改稿润色指令库.md
 ---
 

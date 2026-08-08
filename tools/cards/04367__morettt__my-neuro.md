@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls: []
 related:
   - methods/人物思维蒸馏法.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 8040afad9fedf9c4
   - methods/模板库.md
 ---
 

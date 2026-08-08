@@ -18,6 +18,10 @@ tier: "S"
 use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 2cb308aa07b52909
   - methods/QUICK_START.md
 ---
 

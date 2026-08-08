@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 687b5fc56fdb2027
   - methods/QUICK_START.md
 ---
 

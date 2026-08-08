@@ -19,6 +19,10 @@ use_case: "提示词/写作工作流"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 7d1af8bf59244937
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "本地优先、隐私可控的写作工作台"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e6b84d2ba56fbc0b
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "风格微调/文风迁移"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: f8f8427b9b058455
   - methods/QUICK_START.md
 ---
 

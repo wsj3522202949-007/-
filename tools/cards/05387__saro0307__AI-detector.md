@@ -19,6 +19,10 @@ use_case: "风格微调/文风迁移"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: f526daf3b30c4df8
   - methods/改稿润色指令库.md
 ---
 

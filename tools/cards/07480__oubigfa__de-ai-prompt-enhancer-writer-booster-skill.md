@@ -19,6 +19,10 @@ use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: eb27bfadef5b591f
   - methods/QUICK_START.md
 ---
 

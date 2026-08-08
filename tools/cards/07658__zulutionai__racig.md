@@ -18,6 +18,10 @@ tier: "B"
 use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 8afe517a4a0b91b5
   - methods/QUICK_START.md
 ---
 

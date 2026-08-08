@@ -19,6 +19,10 @@ use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 81b329ea6bea3b66
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: ec9fe140bb2a63e9
   - methods/QUICK_START.md
 ---
 

@@ -18,6 +18,10 @@ tier: "S"
 use_case: "风格微调/文风迁移"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 54f187df5b513c1d
   - methods/QUICK_START.md
 ---
 

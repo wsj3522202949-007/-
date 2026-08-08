@@ -19,6 +19,10 @@ use_case: "Claude Code 插件式写作流"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 6a9c1903be7e4985
   - methods/QUICK_START.md
 ---
 

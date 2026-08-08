@@ -20,6 +20,10 @@ pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
   - methods/改稿润色指令库.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 5b29cd4050953cb6
   - methods/自检清单_升级版.md
 ---
 

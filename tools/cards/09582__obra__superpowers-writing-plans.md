@@ -21,6 +21,10 @@ pitfalls:
   - "粒度偏细（2-5分钟/任务），写作场景建议放大到 30-60分钟/章"
   - "需配合 brainstorming 先完成设计后再使用"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: d8d3d66b3e4f2b84
   - methods/QUICK_START.md
 ---
 

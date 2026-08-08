@@ -19,6 +19,10 @@ use_case: "Claude Code 插件式写作流"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 20e995e3fee0c341
   - methods/QUICK_START.md
 ---
 

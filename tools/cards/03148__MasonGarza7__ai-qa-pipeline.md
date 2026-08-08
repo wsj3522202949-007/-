@@ -19,6 +19,10 @@ use_case: "多角色 Agent 协作批量产文"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 32065c08780c226b
   - methods/网文写作最强SOP.md
 ---
 

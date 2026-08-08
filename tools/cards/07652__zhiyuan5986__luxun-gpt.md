@@ -19,6 +19,10 @@ use_case: "风格微调/文风迁移"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: bd890fbe5433b114
   - methods/QUICK_START.md
 ---
 

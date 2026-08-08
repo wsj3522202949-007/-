@@ -19,6 +19,10 @@ use_case: "多 Agent 协作自动产文"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 578e7e1b77ff9818
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

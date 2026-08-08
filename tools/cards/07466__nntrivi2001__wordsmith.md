@@ -19,6 +19,10 @@ use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 1451741599ea1098
   - methods/QUICK_START.md
 ---
 

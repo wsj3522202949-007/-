@@ -19,6 +19,10 @@ use_case: "风格微调/文风迁移"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: b3199a89c9abaeff
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

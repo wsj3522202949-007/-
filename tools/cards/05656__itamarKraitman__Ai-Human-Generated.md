@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
   - methods/最强去AI味铁律.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: dcc7d3402a3ecc67
   - methods/改稿润色指令库.md
 ---
 

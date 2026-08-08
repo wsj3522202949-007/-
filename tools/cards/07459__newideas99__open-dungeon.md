@@ -18,6 +18,10 @@ tier: "S"
 use_case: "互动叙事/聊天写故事"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: bfae39d7ee3743ac
   - methods/QUICK_START.md
 ---
 

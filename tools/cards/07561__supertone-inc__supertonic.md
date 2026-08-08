@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls:
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 2422e493b0fd473a
   - methods/QUICK_START.md
 ---
 

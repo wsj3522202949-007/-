@@ -19,6 +19,10 @@ use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 315349db361777bc
   - methods/QUICK_START.md
 ---
 

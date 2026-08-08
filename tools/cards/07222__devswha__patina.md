@@ -19,6 +19,10 @@ use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 3d29d839e3e382f7
   - methods/QUICK_START.md
 ---
 

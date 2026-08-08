@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 08c2ef18fade867e
   - methods/QUICK_START.md
 ---
 

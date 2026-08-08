@@ -19,6 +19,10 @@ use_case: "长篇人物/设定/伏笔一致性（RAG 记忆库）"
 pitfalls: []
 related:
   - methods/人物思维蒸馏法.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 5174e9edc1ca2c97
   - methods/模板库.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls:
   - "⚠️ 源仓库无 README，功能未经核验，建议先看作者的其他仓库或在线 demo"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 61ede078bddc1e09
   - methods/QUICK_START.md
 ---
 

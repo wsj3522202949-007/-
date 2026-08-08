@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
   - methods/最强去AI味铁律.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 27c23a76084487ed
   - methods/改稿润色指令库.md
 ---
 

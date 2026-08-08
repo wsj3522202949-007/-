@@ -19,6 +19,10 @@ use_case: "从灵感→大纲→正文的全流程写作辅助（搭框架/续�
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e5fbc8a61dca571e
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

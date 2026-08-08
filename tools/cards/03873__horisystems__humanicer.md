@@ -19,6 +19,10 @@ use_case: "投稿前文本降 AI 痕、过检测"
 pitfalls: []
 related:
   - methods/改稿润色指令库.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: cc0c37ee19173c6c
   - methods/自检清单_升级版.md
 ---
 

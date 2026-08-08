@@ -21,6 +21,10 @@ pitfalls:
   - "主要面向技术文档，文学/创意内容的分块策略可能需要调优"
   - "多语言支持有中文 README，但核心文档为英文"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: 988c9ba7e0ba3d64
   - methods/QUICK_START.md
 ---
 

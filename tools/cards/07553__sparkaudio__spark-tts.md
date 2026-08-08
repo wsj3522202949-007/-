@@ -18,6 +18,10 @@ tier: "S"
 use_case: "小说转语音/有声书"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 05af5937ed072d46
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "多 Agent 协作自动产文"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 9339121187d092db
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "互动叙事/聊天写故事"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 51cba3ef34c8f427
   - methods/QUICK_START.md
 ---
 

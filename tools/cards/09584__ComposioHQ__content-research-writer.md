@@ -21,6 +21,10 @@ pitfalls:
   - "需要配合 WebSearch/WebFetch 工具使用"
   - "引用质量依赖搜索结果，中文资料覆盖可能不足"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: ca4cf825779198ed
   - methods/QUICK_START.md
 ---
 

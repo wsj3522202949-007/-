@@ -18,6 +18,10 @@ tier: "S"
 use_case: "多 Agent 协作自动产文"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d6873e3db430c224
   - methods/QUICK_START.md
 ---
 

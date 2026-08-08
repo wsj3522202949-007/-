@@ -21,6 +21,10 @@ pitfalls:
   - "递归深度过高会消耗大量 token，建议限制深度 2-3 层"
   - "英文资料为主，中文调研需配合专门的搜索策略"
 related:
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-31
+content_hash: 4388474bbc9b6e12
   - methods/QUICK_START.md
 ---
 

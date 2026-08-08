@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls: []
 related:
   - methods/最强去AI味铁律.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 522e96c1277303d3
   - methods/改稿润色指令库.md
 ---
 

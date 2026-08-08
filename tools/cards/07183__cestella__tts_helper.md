@@ -19,6 +19,10 @@ use_case: "小说转语音/有声书"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 0127487657b189f6
   - methods/QUICK_START.md
 ---
 

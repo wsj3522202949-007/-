@@ -19,6 +19,10 @@ use_case: "提示词/写作工作流"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: e612b7536b192c37
   - methods/QUICK_START.md
 ---
 

@@ -20,6 +20,10 @@ pitfalls:
   - "⚠️ 源仓库无 README，功能未经核验，建议先看作者的其他仓库或在线 demo"
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 1b3002a7bf44a845
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "错别字/语法/风格校对"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d5fc55cb7b560db2
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

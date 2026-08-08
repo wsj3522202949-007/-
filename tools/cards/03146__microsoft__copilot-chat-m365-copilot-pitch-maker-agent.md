@@ -18,6 +18,10 @@ tier: "B"
 use_case: "风格微调/文风迁移"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 9f522949ca89a369
   - methods/网文写作最强SOP.md
 ---
 

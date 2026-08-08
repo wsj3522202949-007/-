@@ -19,6 +19,10 @@ use_case: "互动叙事/聊天写故事"
 pitfalls:
   - "⚠️ 协议带传染性（GPL/AGPL），闭源或商用分发前需谨慎评估合规"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: d0a3bf58ff6f35bb
   - methods/QUICK_START.md
 ---
 

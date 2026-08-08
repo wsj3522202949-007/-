@@ -201,7 +201,7 @@ def build_assertions(ledger):
                 '死亡': [r'还活着', r'还在.*治疗'],
                 '离开': [r'还在公司', r'还没有.*走'],
                 '辞职': [r'还在上班', r'还在.*工作'],
-                '毕业': [r'还在上学', r'还没有.*毕业'],
+                '毕业': [r'还在上学', r'还在.*读书', r'还没.{0,4}毕业', r'还没有.*毕业'],
                 '结婚': [r'还没结婚', r'还没.*娶'],
             }
             patterns = neg_patterns.get(action, [])
@@ -441,7 +441,7 @@ def check_finance_formulas(chapters_dir):
         fp = os.path.join(chapters_dir, fname)
         with open(fp, 'r', encoding='utf-8') as f:
             content = f.read()
-        pct_matches = re.findall(r'(\d+)%[×xX*]?\s*(\d+\.?\d*)万', content)
+        pct_matches = re.findall(r'(\d+)%\s*[×xX*]?\s*(\d+\.?\d*)万', content)
         for pct_str, amount_str in pct_matches:
             pct = float(pct_str)
             amount = float(amount_str)
@@ -459,8 +459,116 @@ def check_finance_formulas(chapters_dir):
 
 
 # ---------------------------------------------------------------------------
-# 5. 主入口
+# 6. 故障夹具自检（--self-test）
+#    验证断言体系不是"纸面检查"：注入故意错误，断言必须全部抓出才算有效。
+#    夹具覆盖三类核心断言：时间线 / 人物状态 / 金额公式。
 # ---------------------------------------------------------------------------
+def run_self_test(as_json=False):
+    """构造临时项目，注入故障夹具，验证断言确实能抓到错误。
+
+    夹具设计（对应 build_assertions 的 A/B/C 三类）：
+      1. 时间线夹具：账本声明第2章在 6 月，正文写"十二月" → timeline 断言应抓
+      2. 状态夹具：账本声明第1章已手术，第2章正文写"还没做手术" → status 断言应抓
+      3. 金额夹具：正文写"10% × 500万 = 80万"（应为 50万） → finance 公式应抓
+    全部被抓 → 断言体系有效（self-test PASS）；任一漏抓 → FAIL。
+    """
+    import tempfile, shutil, yaml as _yaml
+
+    tmp = tempfile.mkdtemp(prefix="continuity-selftest-")
+    failures = []
+    try:
+        # ---- 迷你账本（故障注入）----
+        ledger = {
+            "characters": [
+                {"name": "林辰", "traits": ["第1章已毕业"]},
+            ],
+            "timeline": [
+                {"chapter": 1, "date": "2010-06-01", "event": "重生觉醒"},
+                {"chapter": 2, "date": "2010-06-10", "event": "第一次估值"},
+            ],
+            "finance": [
+                {"chapter": 1, "event": "初始资产", "amount": 200, "unit": "元", "category": "初始资产"},
+            ],
+        }
+        chapters = {
+            1: "第001章-觉醒.md",
+            2: "第002章-估值.md",
+        }
+        bodies = {
+            1: "六月，林辰睁开眼。\n\n他重生了。",
+            2: "十二月，林辰走在街上。\n\n还没毕业，得抓紧。",
+        }
+        # 第2章正文还注入金额公式错误
+        bodies[2] += "\n\n10% × 500万 = 80万，这笔账要记清。"
+
+        # ---- 1. 时间线断言：第2章预期 6 月，正文写"十二月" ----
+        assertions = build_assertions(ledger)
+        chapters_data = {ch: (name, bodies[ch]) for ch, name in chapters.items()}
+        errs, warns, unks = run_assertions(chapters_data, assertions)
+        timeline_hit = any("timeline" in e for e in errs)
+        status_hit = any("status" in e for e in errs)
+        if not timeline_hit:
+            failures.append("时间线夹具未被抓出（正文'十二月' vs 账本 6 月）")
+        if not status_hit:
+            failures.append("状态夹具未被抓出（已毕业章后出现'还没做手术'矛盾）")
+
+        # ---- 2. 金额公式断言：10% × 500万 = 80万（应为 50万）----
+        fin_errs = check_finance_formulas_from_bodies(chapters_data)
+        fin_hit = any("金额公式" in e for e in fin_errs)
+        if not fin_hit:
+            failures.append("金额夹具未被抓出（10% × 500万 ≠ 80万）")
+
+        # ---- 结果 ----
+        result = {
+            "self_test": "PASS" if not failures else "FAIL",
+            "fixtures": {
+                "timeline_injected": True,
+                "status_injected": True,
+                "finance_injected": True,
+                "timeline_caught": timeline_hit,
+                "status_caught": status_hit,
+                "finance_caught": fin_hit,
+            },
+            "failures": failures,
+        }
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    if as_json:
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+    else:
+        print("=" * 64)
+        print("连续性断言故障夹具自检")
+        print("=" * 64)
+        for k, v in result["fixtures"].items():
+            mark = "✅" if v else "❌"
+            print(f"  {mark} {k}: {v}")
+        if failures:
+            for f in failures:
+                print(f"  ❌ {f}")
+            print(f"\n结论: FAIL ❌（{len(failures)} 个夹具未被抓出）")
+        else:
+            print("\n结论: PASS ✅ 三类断言夹具全部被有效抓出")
+    return 1 if failures else 0
+
+
+def check_finance_formulas_from_bodies(chapters_data):
+    """对内存中的章节正文做金额公式检查（供自检夹具使用）。"""
+    errors = []
+    for ch, (fname, content) in sorted(chapters_data.items()):
+        pct_matches = re.findall(r'(\d+)%\s*[×xX*]?\s*(\d+\.?\d*)万', content)
+        for pct_str, amount_str in pct_matches:
+            pct = float(pct_str)
+            amount = float(amount_str)
+            expected = pct / 100 * amount
+            for claimed in re.findall(
+                    rf'{pct_str}%.*?(\d+\.?\d*)万',
+                    content[content.find(pct_str+'%'):content.find(pct_str+'%')+200]):
+                if abs(expected - float(claimed)) > 1:
+                    errors.append(
+                        f'[{fname}] 金额公式 {pct}% × {amount}万 = {expected:.1f}万，'
+                        f'但正文声明 {claimed}万')
+    return errors
 def _find_book_dir(project_dir):
     """在 projects/ 下查找包含 continuity_ledger.yaml 的项目目录。
 
@@ -559,6 +667,8 @@ def main():
     for a in args:
         if a.startswith('--root='):
             root = a.split('=', 1)[1]
+    if '--self-test' in args:
+        return run_self_test(as_json)
 
     result = run_continuity_check(root)
 

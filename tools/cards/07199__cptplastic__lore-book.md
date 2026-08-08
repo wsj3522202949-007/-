@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
   - "⚠️ 仓库疑似停更/归档，bug 不会修、依赖可能过期"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 75d7c53298fe7334
   - methods/QUICK_START.md
 ---
 

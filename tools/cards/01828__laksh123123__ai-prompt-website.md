@@ -21,6 +21,10 @@ pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
   - methods/网文写作最强SOP.md
+source_kind: distilled
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 4b9ca3f8e117386e
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "润色/改写/扩写等通用文本处理"
 pitfalls:
   - "⚠️ 0 stars，未经社区验证，试用前先小范围测试"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 02f212c88e73111d
   - methods/QUICK_START.md
 ---
 

@@ -19,6 +19,10 @@ use_case: "Claude Code 插件式写作流"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: c59588be33af2ba5
   - methods/最强写作方法论_全球最强综合版.md
 ---
 

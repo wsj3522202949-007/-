@@ -19,6 +19,10 @@ use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls:
   - "🔑 需自备 LLM API Key（多为 OpenAI/Claude/Gemini），有 token 成本与网络门槛"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 335c116e0e1b2ca0
   - methods/QUICK_START.md
 ---
 

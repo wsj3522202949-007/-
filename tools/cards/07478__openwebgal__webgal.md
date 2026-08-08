@@ -18,6 +18,10 @@ tier: "S"
 use_case: "Claude Code 插件式写作流"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 30bfac323e3ecb96
   - methods/QUICK_START.md
 ---
 

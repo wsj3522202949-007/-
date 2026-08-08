@@ -19,6 +19,10 @@ use_case: "上述两类主题的补充源，按子主题二次筛选"
 pitfalls:
   - "⚠️ 协议未声明，商用/分发前务必到仓库确认授权"
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 6cb67a9be7c093e9
   - methods/QUICK_START.md
 ---
 

@@ -18,6 +18,10 @@ tier: "B"
 use_case: "长篇设定/人物一致性（RAG 记忆）"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 54fe3a09209cd087
   - methods/网文写作最强SOP.md
 ---
 

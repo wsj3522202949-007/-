@@ -18,6 +18,10 @@ tier: "B"
 use_case: "本地优先、隐私可控的写作工作台"
 pitfalls: []
 related:
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 26dec4643a446ea0
   - methods/QUICK_START.md
 ---
 

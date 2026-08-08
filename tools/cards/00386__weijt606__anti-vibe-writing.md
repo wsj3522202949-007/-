@@ -19,6 +19,10 @@ use_case: "搭大纲/分卷/节拍"
 pitfalls: []
 related:
   - methods/网文写作最强SOP.md
+source_kind: raw
+spdx: unknown
+fetched_at: 2026-07-18
+content_hash: 1afa029629f0044b
   - methods/最强写作方法论_全球最强综合版.md
 ---
 
