@@ -6,20 +6,36 @@ on:
   push:
     branches: [main]
 
-# 每个 PR 会运行 3 个独立 job，每个 job 名就是 GitHub 必需状态检查名。
-# 在 Settings → Branches → Main → "Require status checks" 中勾选即可。
+# 最小权限：只需读仓库内容，绝不授予写/管理权限
+permissions:
+  contents: read
+
+# 每个 PR 会运行 3 个独立 job（各含 Windows + Linux 两个矩阵变体），
+# 每个矩阵变体的 job 名就是 GitHub 必需状态检查名，例如：
+#   syntax / py-compile (windows-latest)
+#   syntax / py-compile (ubuntu-latest)
+#   unit / tests (windows-latest)
+#   unit / tests (ubuntu-latest)
+#   gate / run-all (windows-latest)
+#   gate / run-all (ubuntu-latest)
+# 在 Settings → Branches → Main → "Require status checks" 中勾选全部 6 项。
+# Windows 变体专项覆盖 GBK 控制台 / PowerShell 管道 / 中文路径三类坑。
 
 jobs:
   # ==========================================================================
-  # 1. 语法检查（全量 .py 编译）
+  # 1. 语法检查（全量 .py 编译，双平台矩阵）
   # ==========================================================================
   syntax-check:
     name: "syntax / py-compile"
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.13"
 
@@ -43,15 +59,19 @@ jobs:
           Write-Host "All Python scripts compiled OK"
 
   # ==========================================================================
-  # 2. 单元测试
+  # 2. 单元测试（双平台矩阵）
   # ==========================================================================
   unit-tests:
     name: "unit / tests"
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.13"
 
@@ -72,15 +92,19 @@ jobs:
           Write-Host "Unit tests PASSED"
 
   # ==========================================================================
-  # 3. 章节门禁（等价于 pre-commit hook，不含 HTTP 校验）
+  # 3. 章节门禁（等价于 pre-commit hook，不含 HTTP 校验；双平台矩阵）
   # ==========================================================================
   chapter-gate:
     name: "gate / run-all"
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.13"
 
@@ -126,6 +150,34 @@ jobs:
             exit 1
           }
           Write-Host "Retrieval baseline OK"
+
+      # 仅 Windows 变体：GBK 控制台 / PowerShell 管道 / 中文路径专项验证
+      # （Linux 变体天然 UTF-8，无需此项；这是「Windows 负责三坑」的落地点）
+      - name: Windows native checks (GBK / PowerShell / 中文路径)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          PYTHONUTF8: "1"
+        run: |
+          # 1) _runtime.ps1 必须在 PowerShell 下解析出受管 Python 与中文根路径
+          . "./maintenance/scripts/_runtime.ps1" 6>$null
+          if (-not $Script:Python -or -not (Test-Path $Script:Python)) {
+            Write-Error "_runtime 未解析到有效 Python: $Script:Python"
+            exit 1
+          }
+          if ($Script:Root -notmatch '个人知识库') {
+            Write-Error "_runtime Root 未解析到中文路径: $Script:Root"
+            exit 1
+          }
+          Write-Host "_runtime OK: $Script:Python"
+
+          # 2) 中文路径 + PowerShell 管道：门禁 JSON 落盘后必须可被 ConvertFrom-Json 解析
+          #    （模拟 daily-backup 的 gate 阶段；GBK 解码污染会在这一步暴露）
+          python tools/scripts/validation/run_all.py --json --json-file=win-gate.json
+          if ($LASTEXITCODE -ne 0) { Write-Error "win gate FAILED"; exit 1 }
+          $data = Get-Content win-gate.json -Raw | ConvertFrom-Json
+          if (-not $data.summary.overall_pass) { Write-Error "win gate JSON parse OK but not pass"; exit 1 }
+          Write-Host "Windows native checks PASSED (GBK/PowerShell/中文路径)"
 
       - name: Gate summary
         shell: pwsh

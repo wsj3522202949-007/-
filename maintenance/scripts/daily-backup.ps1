@@ -17,6 +17,47 @@ if (-not $Script:Git -or -not $Script:Python) {
 
 $LOG_FILE = "$Script:Root\maintenance\state\backup-log.jsonl"
 
+# 备份状态文件（backup-status.json）—— 灾备指标可记录、可验证。
+# 字段：恢复提交 SHA / 备份年龄 / 文件数 / 内容哈希 / RPO·RTO 达标判定。
+# 对应 maintenance/灾备恢复目标.md：RPO≤24h、RTO≤30min
+$BACKUP_STATUS_FILE = "$Script:Root\maintenance\state\backup-status.json"
+
+function Write-BackupStatus {
+    param(
+        [string]$Status,
+        [string]$LocalHead,
+        [string]$RemoteHead
+    )
+    $nowIso = Get-Date -Format "yyyy-MM-ddTHH:mm:sszzz"
+    # 备份年龄 = 上次成功备份到本次的时间差（小时）
+    $backupAgeHours = 0.0
+    $lastOkLine = @(Get-Content $LOG_FILE -ErrorAction SilentlyContinue |
+        Where-Object { $_ -match '"status"\s*:\s*"success"' } | Select-Object -Last 1)
+    if ($lastOkLine) {
+        try {
+            $lastOk = ($lastOkLine | ConvertFrom-Json).date
+            $backupAgeHours = [math]::Round(((Get-Date) - [datetime]$lastOk).TotalHours, 2)
+        } catch { $backupAgeHours = 0.0 }
+    }
+    # 仓库文件数 + 内容哈希（tracked 文件集合指纹）
+    $trackedFiles = (& $Script:Git ls-files 2>$null | Measure-Object).Count
+    $hashInput = (& $Script:Git ls-files 2>$null | Sort-Object) -join "`n"
+    $repoHash = if ($hashInput) { (& $Script:Git hash-object --stdin 2>$null) } else { "n/a" }
+
+    $backupStatus = @{
+        generated_at     = $nowIso
+        status           = $Status
+        recovery_commit  = if ($RemoteHead) { $RemoteHead } else { $LocalHead }
+        local_head       = $LocalHead
+        backup_age_hours = $backupAgeHours
+        rpo_ok           = ($backupAgeHours -le 24)   # RPO≤24h
+        rto_target_min   = 30                          # RTO≤30min（本地克隆+门禁实测）
+        tracked_files    = $trackedFiles
+        content_hash     = $repoHash
+    } | ConvertTo-Json -Compress
+    $backupStatus | Out-File -FilePath $BACKUP_STATUS_FILE -Encoding UTF8
+}
+
 Set-Location $Script:Root
 
 Write-Host "========================================" -ForegroundColor Cyan
@@ -168,6 +209,9 @@ if ($stageCommit -eq "no_changes") {
             scanned_files = $scannedFiles
         } | ConvertTo-Json -Compress
         Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+        # no_changes 也是合法备份状态（远端已对齐），记录状态文件
+        $localHead = & $Script:Git rev-parse HEAD 2>$null
+        Write-BackupStatus -Status "no_changes" -LocalHead $localHead -RemoteHead $localHead
         Write-Host "✅ 备份流程结束（无需提交）" -ForegroundColor Green
         exit 0
     }
@@ -253,9 +297,12 @@ $logEntry = @{
 
 Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
 
+Write-BackupStatus -Status $finalStatus -LocalHead $localHead -RemoteHead $remoteHead
+
 Write-Host "========================================" -ForegroundColor Cyan
 if ($finalStatus -eq "success") {
     Write-Host "  备份完成 ✅（gate/commit/push/verify 全部通过）" -ForegroundColor Cyan
+    Write-Host "  恢复点: $($remoteHead.Substring(0,8)) | RPO $((Get-Content $BACKUP_STATUS_FILE -Raw | ConvertFrom-Json).backup_age_hours) h | 状态文件: $BACKUP_STATUS_FILE" -ForegroundColor Cyan
     exit 0
 } else {
     Write-Host "  备份未完全成功（状态: $finalStatus，详情见日志）" -ForegroundColor Yellow

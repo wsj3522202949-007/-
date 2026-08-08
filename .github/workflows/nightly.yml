@@ -7,17 +7,25 @@ on:
   # 允许手动触发
   workflow_dispatch:
 
+# 最小权限：只需读仓库内容
+permissions:
+  contents: read
+
 jobs:
   # ==========================================================================
-  # 1. 联网 HTTP 链接校验（第二道门禁）
+  # 1. 联网 HTTP 链接校验（第二道门禁，双平台矩阵）
   # ==========================================================================
   online-validation:
     name: "online / http-links"
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.13"
 
@@ -29,18 +37,18 @@ jobs:
         env:
           PYTHONUTF8: "1"
         run: |
-          # Out-String 合并多行 JSON，避免 PS7 逐行解析失败
-          $result = python tools/scripts/validation/run_all.py --json --online | Out-String
-          $data = $result | ConvertFrom-Json
-
-          if ($data.http_validation) {
-            $http = $data.http_validation
-            Write-Host "  HTTP: PASS=$($http.total_pass) BROKEN=$($http.total_broken) UNKNOWN=$($http.total_unknown)"
-          }
-
-          if (-not $data.summary.overall_pass) {
-            Write-Error "Online gate FAILED"
+          # 以退出码为权威判据；JSON 经 Out-String 合并供展示
+          python tools/scripts/validation/run_all.py --json --online --json-file=online_report.json
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Online gate FAILED (exit $LASTEXITCODE)"
             exit 1
+          }
+          if (Test-Path online_report.json) {
+            $data = Get-Content online_report.json -Raw | ConvertFrom-Json
+            if ($data.http_validation) {
+              $http = $data.http_validation
+              Write-Host "  HTTP: PASS=$($http.total_pass) BROKEN=$($http.total_broken) UNKNOWN=$($http.total_unknown)"
+            }
           }
           Write-Host "Online gate PASSED"
 
@@ -50,24 +58,31 @@ jobs:
           PYTHONUTF8: "1"
         run: |
           # 平台指标来源证据结构校验（快照存在性 + 正文长度 + HTTP 可达性）
-          python tools/scripts/quality/来源验证.py --online --json | Out-File -FilePath source-evidence.json -Encoding UTF8
+          python tools/scripts/quality/来源验证.py --online --json > source-evidence.json 2>&1
           if ($LASTEXITCODE -ne 0) {
-            Get-Content source-evidence.json -Raw | ConvertFrom-Json | ForEach-Object { $_.results | Where-Object { -not $_.local_ok } | ForEach-Object { Write-Host "  ❌ $($_.id): $($_.issues -join '; ')" } }
+            if (Test-Path source-evidence.json) {
+              $d = Get-Content source-evidence.json -Raw | ConvertFrom-Json
+              $d.results | Where-Object { -not $_.local_ok } | ForEach-Object { Write-Host "  FAIL $($_.id): $($_.issues -join '; ')" }
+            }
             Write-Error "Source evidence validation FAILED"
             exit 1
           }
           Write-Host "Source evidence PASSED"
 
   # ==========================================================================
-  # 2. 恢复演练（模拟备份 → 重新 checkout → 验证门禁仍通过）
+  # 2. 恢复演练（模拟备份 → 重新 checkout → 验证门禁仍通过；双平台矩阵）
   # ==========================================================================
   recovery-drill:
     name: "drill / recovery"
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: "3.13"
 
@@ -82,21 +97,17 @@ jobs:
           Write-Host "=== 恢复演练：重新拉取 → 门禁 ==="
           # 确保工作区干净
           git status
-          # 运行门禁（不加 --online，纯本地校验）
-          $result = python tools/scripts/validation/run_all.py --json | Out-String
-          $data = $result | ConvertFrom-Json
-
-          if (-not $data.summary.overall_pass) {
+          # 运行门禁（不加 --online，纯本地校验），以退出码为权威判据
+          python tools/scripts/validation/run_all.py --json --json-file=drill_report.json
+          if ($LASTEXITCODE -ne 0) {
             Write-Error "Recovery drill FAILED: gate did not pass"
             exit 1
           }
 
-          # 确认连续性检查可执行
-          $cont = python tools/scripts/validation/continuity_check.py --json 2>&1 | Out-String
-          Write-Host $cont
-          $cdata = $cont | ConvertFrom-Json
-          if ($cdata.errors.Count -gt 0) {
-            Write-Error "Recovery drill FAILED: continuity check has errors"
+          # 确认连续性检查可执行（--self-test 注入故障并验证断言能抓住）
+          python tools/scripts/validation/continuity_check.py --self-test
+          if ($LASTEXITCODE -ne 0) {
+            Write-Error "Recovery drill FAILED: continuity self-test did not pass"
             exit 1
           }
           Write-Host "Recovery drill PASSED"

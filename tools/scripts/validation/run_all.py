@@ -66,9 +66,10 @@ import os
 import re
 import sys
 import json
+import subprocess
 import traceback
 import importlib.util
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # ---------------------------------------------------------------------------
 # 终端编码安全：Windows GBK 控制台遇到 emoji/特殊字符会抛 UnicodeEncodeError。
@@ -195,6 +196,30 @@ def safe_json(data):
             "success": False,
             "error": f"JSON 序列化失败: {e}",
         }, ensure_ascii=False, indent=2)
+
+
+def _git_head_sha(root):
+    """读取仓库当前 HEAD 完整 SHA；非 git 仓库或失败时返回 None。"""
+    try:
+        r = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=root, capture_output=True, text=True, timeout=15,
+            encoding="utf-8", errors="replace",
+        )
+        if r.returncode == 0:
+            return r.stdout.strip() or None
+    except Exception:  # noqa: BLE001
+        pass
+    return None
+
+
+def _valid_until(generated_at_iso, days=7):
+    """报告有效期 = 生成时间 + days 天；默认 7 天（一周内有效）。"""
+    try:
+        return (datetime.fromisoformat(generated_at_iso)
+                + timedelta(days=days)).isoformat()
+    except Exception:  # noqa: BLE001
+        return None
 
 
 # ---------------------------------------------------------------------------
@@ -644,8 +669,17 @@ def main():
             "scanned_files": lc.get("scanned", 0),
         }
 
+        # 版本元数据：防止历史报告长期冒充当前事实。
+        # observed_commit = 本次校验所基于的 git HEAD；valid_until 给出报告
+        # 有效期；superseded_by 由后续生成者回填（见 验收报告登记.py）。
+        observed_commit = _git_head_sha(root)
+        generated_at = datetime.now().isoformat()
         result = {
-            "timestamp": datetime.now().isoformat(),
+            "timestamp": generated_at,
+            "generated_at": generated_at,
+            "observed_commit": observed_commit,
+            "valid_until": _valid_until(generated_at, 7),
+            "superseded_by": None,
             "root": root,
             "scope": scope.describe(),
             "scope_counts": scope_counts,
