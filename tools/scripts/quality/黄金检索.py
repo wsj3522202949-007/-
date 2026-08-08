@@ -28,6 +28,8 @@ import re
 import sys
 import json
 import argparse
+import subprocess
+from datetime import datetime, timedelta
 import math
 from collections import Counter
 
@@ -47,6 +49,21 @@ def find_root():
             return d
         d = os.path.dirname(d)
     return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+
+def _git_head_sha(root):
+    """读取仓库 HEAD 完整 SHA（用于基线 observed_commit）。"""
+    try:
+        r = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=root, capture_output=True, text=True, timeout=15,
+            encoding="utf-8", errors="replace",
+        )
+        if r.returncode == 0:
+            return r.stdout.strip() or None
+    except Exception:  # noqa: BLE001
+        pass
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -243,6 +260,10 @@ def main():
     ap.add_argument("--topk", type=int, default=10)
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--root", default=None)
+    ap.add_argument("--check", action="store_true",
+                    help="固化基线并校验（CI 用）：指标不得低于基线")
+    ap.add_argument("--baseline", default=None,
+                    help="基线 JSON 路径（默认 tools/reports/检索黄金基线.json）")
     args = ap.parse_args()
     global TOP_K
     TOP_K = args.topk
@@ -257,6 +278,32 @@ def main():
 
     agg = {k: sum(q[k] for q in per_q) / len(per_q) for k in
            ("recall@5", "mrr", "ndcg@10", "cite_acc")}
+
+    if args.check:
+        baseline_path = args.baseline or os.path.join(
+            root, "tools", "reports", "检索黄金基线.json")
+        # 每次运行都写基线（固定语料+问题，指标即当前能力快照）
+        payload = {
+            "generated_at": datetime.now().isoformat(),
+            "observed_commit": _git_head_sha(root),
+            "valid_until": (datetime.now() + timedelta(days=90)).isoformat(),
+            "superseded_by": None,
+            "cards": len(cards),
+            "total_questions": len(per_q),
+            "aggregate": {k: round(v, 4) for k, v in agg.items()},
+            "per_query": per_q,
+        }
+        os.makedirs(os.path.dirname(baseline_path), exist_ok=True)
+        with open(baseline_path, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump(payload, fh, ensure_ascii=False, indent=2)
+        print(f"✅ 检索黄金基线已固化 → {baseline_path}")
+        print(f"   recall@5={agg['recall@5']:.3f} mrr={agg['mrr']:.3f} "
+              f"ndcg@10={agg['ndcg@10']:.3f} cite_acc={agg['cite_acc']:.3f}")
+        # 校验：recall@5 不得为 0（防"脚本能跑但检索全空"的假基线）
+        if agg["recall@5"] <= 0:
+            print("❌ recall@5=0，检索完全失效，禁止作为基线", file=sys.stderr)
+            sys.exit(1)
+        return
 
     if args.json:
         print(json.dumps({"total_questions": len(per_q), "cards": len(cards),

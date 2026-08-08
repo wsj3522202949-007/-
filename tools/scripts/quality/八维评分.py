@@ -35,7 +35,9 @@ import re
 import sys
 import json
 import argparse
+import subprocess
 import importlib.util
+from datetime import datetime, timedelta
 
 try:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -68,6 +70,21 @@ def find_root():
             return d
         d = os.path.dirname(d)
     return os.path.dirname(_HERE)
+
+
+def _git_head_sha(root):
+    """读取仓库 HEAD 完整 SHA（用于基线 observed_commit）。"""
+    try:
+        r = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=root, capture_output=True, text=True, timeout=15,
+            encoding="utf-8", errors="replace",
+        )
+        if r.returncode == 0:
+            return r.stdout.strip() or None
+    except Exception:  # noqa: BLE001
+        pass
+    return None
 
 
 def find_projects(root):
@@ -178,7 +195,8 @@ def score_project(root, proj_name):
             agg[d].append(c["scores"][d])
     summary = {d: round(sum(v) / len(v), 1) if v else 0
                for d, v in agg.items()}
-    return {"project": proj_name, "chapters": chapters, "summary": summary}
+    return {"project": proj_name, "chapters": chapters,
+            "chapter_count": len(chapters), "summary": summary}
 
 
 def render_text(project):
@@ -204,11 +222,46 @@ def main():
     ap.add_argument("project", nargs="?", default=None)
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--root", default=None)
+    ap.add_argument("--check", action="store_true",
+                    help="固化创作质量基线（CI 用）：保存各项目八维均值")
     args = ap.parse_args()
 
     root = os.path.abspath(args.root) if args.root else find_root()
     targets = [args.project] if args.project else find_projects(root)
     results = [score_project(root, p) for p in targets]
+
+    if args.check:
+        baseline_path = os.path.join(root, "tools", "reports", "创作质量基线.json")
+        payload = {
+            "generated_at": datetime.now().isoformat(),
+            "observed_commit": _git_head_sha(root),
+            "valid_until": (datetime.now() + timedelta(days=90)).isoformat(),
+            "superseded_by": None,
+            "projects": [
+                {
+                    "project": r["project"],
+                    "summary": r["summary"],
+                } for r in results
+            ],
+        }
+        os.makedirs(os.path.dirname(baseline_path), exist_ok=True)
+        with open(baseline_path, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump(payload, fh, ensure_ascii=False, indent=2)
+        for r in results:
+            s = r["summary"]
+            print(f"✅ {r['project']}: "
+                  + " | ".join(f"{DIM_CN[d]} {s[d]}" for d in DIMS))
+        print(f"创作质量基线已固化 → {baseline_path}")
+        # 校验：有实际章节文件的项目均值全 0 说明评分器失效（假基线）；
+        # 空项目（示范目录无章节）跳过，避免误报。
+        for r in results:
+            if r.get("chapter_count", 0) == 0:
+                continue
+            if all(r["summary"].get(d, 0) == 0 for d in DIMS):
+                print(f"❌ {r['project']} 八维均值全 0，评分器疑似失效",
+                      file=sys.stderr)
+                sys.exit(1)
+        return
 
     if args.json:
         print(json.dumps(results, ensure_ascii=False, indent=2))

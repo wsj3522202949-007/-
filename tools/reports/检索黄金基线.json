@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-08-08T15:01:14.645452",
+  "observed_commit": "901fccaf0540e705d51d252e7116ea5c01a8e82a",
+  "valid_until": "2026-11-06T15:01:14.886658",
+  "superseded_by": null,
+  "cards": 3572,
+  "total_questions": 40,
+  "aggregate": {
+    "recall@5": 0.065,
+    "mrr": 0.075,
+    "ndcg@10": 0.075,
+    "cite_acc": 0.375
+  },
+  "per_query": [
+    {
+      "query": "怎么把 AI 写的网文段落改得更像人写的",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "中文文本 AI 痕迹清洗工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "去除 AI 味的大纲与正文改写提示词",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "帮我把小说对白改成口语化工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "长篇网文自动生成系统",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "小说章节大纲到正文的自动扩展工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "中文网络小说写作辅助工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "多智能体协作写小说的框架",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "知识库检索增强生成框架",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "本地文档问答 RAG 工具",
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 1.0,
+      "cite_acc": 1.0,
+      "hit_count": 10
+    },
+    {
+      "query": "向量数据库检索方案",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "把笔记库变成可检索知识库",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "IDE 里的 AI 代码补全插件",
+      "recall@5": 1.0,
+      "mrr": 1.0,
+      "ndcg@10": 1.0,
+      "cite_acc": 1.0,
+      "hit_count": 10
+    },
+    {
+      "query": "代码审查 AI 工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "命令行里的 AI 助手",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "自动写单元测试的 AI",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "小说大纲生成器",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "章节细纲拆解工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "网文节奏大纲模板",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "从世界观设定生成故事大纲",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "中文语法纠错工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "文本拼写检查 AI",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "校对助手",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "中文病句检测",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "互动小说引擎",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "文字冒险游戏生成器",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "分支剧情可视化工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "沉浸式叙事 AI",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "短剧脚本生成器",
+      "recall@5": 0.6,
+      "mrr": 1.0,
+      "ndcg@10": 1.0,
+      "cite_acc": 1.0,
+      "hit_count": 3
+    },
+    {
+      "query": "剧本格式转换工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "分镜脚本 AI",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "短视频文案助手",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "中文语音合成工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "文字转语音朗读",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "AI 配音工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "情感语音生成",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "小说人物卡生成器",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "世界观设定工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    },
+    {
+      "query": "角色性格分析 AI",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 1.0,
+      "hit_count": 0
+    },
+    {
+      "query": "人物关系图谱工具",
+      "recall@5": 0.0,
+      "mrr": 0.0,
+      "ndcg@10": 0.0,
+      "cite_acc": 0.0,
+      "hit_count": 0
+    }
+  ]
+}

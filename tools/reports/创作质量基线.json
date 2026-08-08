@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-08-08T15:02:24.820498",
+  "observed_commit": "901fccaf0540e705d51d252e7116ea5c01a8e82a",
+  "valid_until": "2026-11-06T15:02:25.035353",
+  "superseded_by": null,
+  "projects": [
+    {
+      "project": "【示范】神瞳鉴宝",
+      "summary": {
+        "plot": 0,
+        "character": 0,
+        "world": 0,
+        "time": 0,
+        "finance": 0,
+        "style": 0,
+        "pacing": 0,
+        "fun": 0
+      }
+    },
+    {
+      "project": "【示范】重逢有期",
+      "summary": {
+        "plot": 0,
+        "character": 0,
+        "world": 0,
+        "time": 0,
+        "finance": 0,
+        "style": 0,
+        "pacing": 0,
+        "fun": 0
+      }
+    },
+    {
+      "project": "（已删除项目）",
+      "summary": {
+        "plot": 0,
+        "character": 0,
+        "world": 0,
+        "time": 0,
+        "finance": 0,
+        "style": 0,
+        "pacing": 0,
+        "fun": 0
+      }
+    },
+    {
+      "project": "（已删除项目）",
+      "summary": {
+        "plot": 9.9,
+        "character": 5.0,
+        "world": 4.3,
+        "time": 10.0,
+        "finance": 8.0,
+        "style": 9.8,
+        "pacing": 7.0,
+        "fun": 6.8
+      }
+    },
+    {
+      "project": "（已删除项目）",
+      "summary": {
+        "plot": 9.3,
+        "character": 5.0,
+        "world": 4.5,
+        "time": 10.0,
+        "finance": 7.5,
+        "style": 10.0,
+        "pacing": 7.6,
+        "fun": 9.0
+      }
+    }
+  ]
+}
