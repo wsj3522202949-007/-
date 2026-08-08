@@ -243,7 +243,6 @@ def find_cross_chapter_duplicates(chapters_dir, threshold=0.80, min_para_len=30)
     for fname in files:
         raw = read_text(_os.path.join(chapters_dir, fname))
         bodies[fname] = extract_body(raw)
-
     # 逐对比较
     for i in range(len(files)):
         for j in range(i + 1, len(files)):
@@ -263,6 +262,57 @@ def find_cross_chapter_duplicates(chapters_dir, threshold=0.80, min_para_len=30)
                             "similarity": round(ratio, 2),
                         })
     return results
+
+
+def find_cross_chapter_template_sentences(chapters_dir, min_chapters=3, min_sent_len=5):
+    """检测跨章「模板化句子」——同一句话出现在 >= min_chapters 章。
+
+    模板化是 AI 写作的典型指纹：段落级检测（find_cross_chapter_duplicates）
+    用 min_para_len 过滤了短句，而结尾模板恰恰由短句组成，因此会漏检。
+    本函数按句号/问号/感叹号切分正文，统计跨章重复句子。
+
+    返回 (template_sents, chapter_hits)：
+      template_sents: list[dict] {sentence, chapters, count}
+      chapter_hits:   dict[chapter] -> int（该章命中的模板句子数）
+    """
+    import os as _os
+    import re as _re
+
+    files = sorted([
+        f for f in _os.listdir(chapters_dir)
+        if f.endswith('.md') and f.startswith('第') and f != 'README.md'
+    ])
+    if len(files) < 2:
+        return [], {}
+
+    sent_owner = {}
+    for fname in files:
+        body = extract_body(read_text(_os.path.join(chapters_dir, fname)))
+        # 切分句子（保留结尾标点），忽略纯空白
+        sents = _re.split(r'(?<=[。！？…])', body)
+        for s in sents:
+            s = s.strip()
+            # 过滤太短（<5 字符）与过长（>60，多为段落误拼）的"句子"
+            if len(s) < min_sent_len or len(s) > 60:
+                continue
+            # 跳过明显的模板外围噪音（引号配对不完整时句内引号）
+            sent_owner.setdefault(s, []).append(fname)
+
+    template_sents = []
+    for s, owners in sorted(sent_owner.items(), key=lambda x: -len(set(x[1]))):
+        uniq = sorted(set(owners))
+        if len(uniq) >= min_chapters:
+            template_sents.append({
+                "sentence": s,
+                "chapters": uniq,
+                "count": len(uniq),
+            })
+
+    chapter_hits = {}
+    for t in template_sents:
+        for ch in t["chapters"]:
+            chapter_hits[ch] = chapter_hits.get(ch, 0) + 1
+    return template_sents, chapter_hits
 
 
 def check_chapter(path, include_raw=False, policy=None):
@@ -374,6 +424,7 @@ def main():
 
     # —— 跨章重复检测（仅目录模式下运行）——
     dup_found = False
+    template_found = False
     for p in args.paths:
         if os.path.isdir(p):
             dups = find_cross_chapter_duplicates(p)
@@ -387,6 +438,21 @@ def main():
                     print(f"    B: {d['para_b']}...")
                     print()
                 print("⚠️ 跨章重复属于严重质量问题，建议修改或删除重复段落")
+
+            # —— 模板化句子检测（短句重复，AI 写作指纹）——
+            tpl_sents, chapter_hits = find_cross_chapter_template_sentences(p)
+            if tpl_sents:
+                template_found = True
+                print(f"\n⚠️ 模板化句子检测：{len(tpl_sents)} 个句子在 ≥3 章重复出现")
+                print("-" * 72)
+                for t in tpl_sents[:20]:
+                    print(f"  [{t['count']}章] {t['chapters'][:4]}{'...' if t['count']>4 else ''} | \"{t['sentence']}\"")
+                print()
+                worst = sorted(chapter_hits.items(), key=lambda x: -x[1])
+                print("  受影响最重的章节：")
+                for ch, n in worst[:6]:
+                    print(f"    {ch[:16]}：{n} 个模板句")
+                print("\n⚠️ 模板化结尾/台词属于严重质量问题（AI 复制指纹），必须逐章差异化重写")
             break  # 只检查第一个目录
 
     if args.json:
@@ -405,6 +471,11 @@ def main():
     # 跨章重复阻断
     if dup_found:
         print("硬性阻断：跨章重复段落未处理", file=sys.stderr)
+        sys.exit(1)
+
+    # 模板化句子阻断
+    if template_found:
+        print("硬性阻断：模板化句子未逐章重写", file=sys.stderr)
         sys.exit(1)
 
 
