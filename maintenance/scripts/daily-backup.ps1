@@ -1,7 +1,10 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 # 每日自动备份脚本
 # 时间：每日 23:30
 # 依赖：run_all.py（统一门禁）、Git
+#
+# 阶段化执行：gate → commit → push → verify
+# 只有全部阶段通过且远端 HEAD 验证一致后，日志才记 success。
 
 $ErrorActionPreference = "Stop"
 
@@ -12,7 +15,7 @@ if (-not $Script:Git -or -not $Script:Python) {
     exit 1
 }
 
-$LOG_FILE = "$Script:Root\maintenance\backup-log.jsonl"
+$LOG_FILE = "$Script:Root\maintenance\state\backup-log.jsonl"
 
 Set-Location $Script:Root
 
@@ -22,62 +25,200 @@ Write-Host "  时间: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColo
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-# 1. 运行统一门禁校验
-Write-Host "🔍 运行统一门禁校验..." -ForegroundColor Yellow
-$jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null
-$checkResult = $jsonOutput | ConvertFrom-Json
+# 阶段结果追踪
+$stageGate = $null
+$stageCommit = $null
+$stagePush = $null
+$stageVerify = $null
+$basicErrors = 0
+$linkErrors = 0
+$scannedFiles = 0
 
-$basicErrors = $checkResult.summary.basic.errors
-$linkErrors = $checkResult.summary.'core_broken_links'.errors
-$overallPass = $checkResult.summary.overall_pass
+# ============================================
+# 阶段 1: gate — 统一门禁校验
+# ============================================
+Write-Host "🔍 [阶段 1/4] 统一门禁校验..." -ForegroundColor Yellow
+try {
+    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null
+    $checkResult = $jsonOutput | ConvertFrom-Json
+    $basicErrors = $checkResult.summary.basic.errors
+    $linkErrors = $checkResult.summary.'core_broken_links'.errors
+    $scannedFiles = $checkResult.scope_counts.strict_files
+    $overallPass = $checkResult.summary.overall_pass
 
-if (-not $overallPass) {
-    Write-Host "❌ 校验失败，基本错误: $basicErrors，断链错误: $linkErrors" -ForegroundColor Red
-    Write-Host "   跳过本次提交和推送" -ForegroundColor Red
+    if ($overallPass) {
+        Write-Host "   ✅ 门禁通过（基本: $basicErrors ERROR | 断链: $linkErrors ERROR）" -ForegroundColor Green
+        $stageGate = "passed"
+    } else {
+        Write-Host "   ❌ 门禁失败，基本错误: $basicErrors，断链错误: $linkErrors" -ForegroundColor Red
+        $stageGate = "failed"
+    }
+} catch {
+    Write-Host "   ❌ 门禁执行异常: $_" -ForegroundColor Red
+    $stageGate = "error"
+}
+Write-Host ""
+
+if ($stageGate -ne "passed") {
+    Write-Host "⛔ 门禁未通过，终止备份流程" -ForegroundColor Red
+    # 仍然记录日志，但标记为 gate_failed
+    $logEntry = @{
+        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        action   = "daily backup"
+        status   = "gate_failed"
+        stages   = @{ gate = $stageGate; commit = $null; push = $null; verify = $null }
+        basic_errors = $basicErrors
+        link_errors  = $linkErrors
+        scanned_files = $scannedFiles
+    } | ConvertTo-Json -Compress
+    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
     exit 1
 }
 
-Write-Host "✅ 校验通过（基本: $basicErrors ERROR | 断链: $linkErrors ERROR）" -ForegroundColor Green
+# ============================================
+# 阶段 2: commit — Git 提交
+# ============================================
+Write-Host "📦 [阶段 2/4] Git 提交..." -ForegroundColor Yellow
+# 只 add 未被忽略的文件；--ignore-errors 防止权限/锁文件导致整个流程崩溃
+& $Script:Git add -A --ignore-errors
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "   ⚠️ git add 返回非零 ($LASTEXITCODE)，可能部分文件添加失败" -ForegroundColor Yellow
+    # 不阻断——add 失败（如权限问题）不应阻止对已添加文件的提交
+}
+
+$commitMessage = "auto: daily backup $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+$commitStdErr = & $Script:Git commit -m $commitMessage 2>&1
+$commitExitCode = $LASTEXITCODE
+
+if ($commitExitCode -eq 0) {
+    Write-Host "   ✅ 提交成功" -ForegroundColor Green
+    $stageCommit = "committed"
+} elseif ($commitStdErr -match 'nothing to commit|nothing added to commit') {
+    Write-Host "   ⚠️ 无更改需要提交" -ForegroundColor Yellow
+    $stageCommit = "no_changes"
+} else {
+    Write-Host "   ❌ 提交失败 (exit=$commitExitCode): $commitStdErr" -ForegroundColor Red
+    $stageCommit = "failed"
+}
+
 Write-Host ""
 
-# 2. 先写日志（纳入 commit，避免 push 后工作区变脏）
+if ($stageCommit -eq "failed") {
+    $logEntry = @{
+        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        action   = "daily backup"
+        status   = "commit_failed"
+        stages   = @{ gate = $stageGate; commit = $stageCommit; push = $null; verify = $null }
+        commit_error = ($commitStdErr -join "`n")
+        basic_errors = $basicErrors
+        link_errors  = $linkErrors
+        scanned_files = $scannedFiles
+    } | ConvertTo-Json -Compress
+    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+    exit 1
+}
+
+if ($stageCommit -eq "no_changes") {
+    # 无更改是合法状态，记为 no_changes（非 success 也非 failure）
+    $logEntry = @{
+        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        action   = "daily backup"
+        status   = "no_changes"
+        stages   = @{ gate = $stageGate; commit = $stageCommit; push = $null; verify = $null }
+        basic_errors = $basicErrors
+        link_errors  = $linkErrors
+        scanned_files = $scannedFiles
+    } | ConvertTo-Json -Compress
+    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+    Write-Host "✅ 备份流程结束（无需提交）" -ForegroundColor Green
+    exit 0
+}
+
+# ============================================
+# 阶段 3: push — Git 推送
+# ============================================
+Write-Host "🚀 [阶段 3/4] Git 推送..." -ForegroundColor Yellow
+# 先获取本地 HEAD 的 commit hash，用于后续 verify
+$localHead = & $Script:Git rev-parse HEAD 2>$null
+
+$pushOutput = & $Script:Git push 2>&1
+$pushExitCode = $LASTEXITCODE
+
+if ($pushExitCode -eq 0) {
+    Write-Host "   ✅ 推送成功" -ForegroundColor Green
+    $stagePush = "pushed"
+} else {
+    Write-Host "   ❌ 推送失败 (exit=$pushExitCode): $pushOutput" -ForegroundColor Red
+    $stagePush = "failed"
+}
+Write-Host ""
+
+if ($stagePush -ne "pushed") {
+    $logEntry = @{
+        date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+        action   = "daily backup"
+        status   = "push_failed"
+        stages   = @{ gate = $stageGate; commit = $stageCommit; push = $stagePush; verify = $null }
+        push_error = ($pushOutput -join "`n")
+        basic_errors = $basicErrors
+        link_errors  = $linkErrors
+        scanned_files = $scannedFiles
+    } | ConvertTo-Json -Compress
+    Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
+    exit 1
+}
+
+# ============================================
+# 阶段 4: verify — 远端 HEAD 一致性验证
+# ============================================
+Write-Host "🔬 [阶段 4/4] 远端一致性验证..." -ForegroundColor Yellow
+$remoteHead = & $Script:Git ls-remote origin HEAD 2>$null | ForEach-Object { ($_ -split '\s+')[0] }
+
+if ($remoteHead -and $localHead -and ($remoteHead -eq $localHead)) {
+    Write-Host "   ✅ 远端 HEAD 与本地一致 ($($localHead.Substring(0,8)))" -ForegroundColor Green
+    $stageVerify = "verified"
+} elseif ($remoteHead) {
+    Write-Host "   ❌ 远端 HEAD ($($remoteHead.Substring(0,8))) 与本地 ($($localHead.Substring(0,8))) 不一致" -ForegroundColor Red
+    $stageVerify = "mismatch"
+} else {
+    Write-Host "   ❌ 无法获取远端 HEAD（网络问题或远程不可达）" -ForegroundColor Red
+    $stageVerify = "unreachable"
+}
+Write-Host ""
+
+# ============================================
+# 最终日志：只有全部 passed/committed/pushed/verified 才记 success
+# ============================================
+$finalStatus = if ($stageGate -eq "passed" -and $stageCommit -eq "committed" -and $stagePush -eq "pushed" -and $stageVerify -eq "verified") {
+    "success"
+} else {
+    "incomplete"
+}
+
 $logEntry = @{
-    date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-    action = "daily backup"
-    status = "success"
+    date     = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    action   = "daily backup"
+    status   = $finalStatus
+    stages   = @{
+        gate   = $stageGate
+        commit = $stageCommit
+        push   = $stagePush
+        verify = $stageVerify
+    }
+    local_head  = $localHead
+    remote_head = $remoteHead
     basic_errors = $basicErrors
-    link_errors = $linkErrors
-    scanned_files = $checkResult.scope_counts.strict_files
+    link_errors  = $linkErrors
+    scanned_files = $scannedFiles
 } | ConvertTo-Json -Compress
 
 Add-Content -Path $LOG_FILE -Value $logEntry -Encoding UTF8
-Write-Host "📝 备份日志已记录" -ForegroundColor Green
-Write-Host ""
 
-# 3. Git 提交
-Write-Host "📦 Git 提交..." -ForegroundColor Yellow
-& $Script:Git add -A
-$commitMessage = "auto: daily backup $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
-& $Script:Git commit -m $commitMessage 2>&1 | Out-Null
-
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "⚠️  无更改需要提交" -ForegroundColor Yellow
+Write-Host "========================================" -ForegroundColor Cyan
+if ($finalStatus -eq "success") {
+    Write-Host "  备份完成 ✅（gate/commit/push/verify 全部通过）" -ForegroundColor Cyan
+    exit 0
 } else {
-    Write-Host "✅ 提交成功" -ForegroundColor Green
-}
-Write-Host ""
-
-# 4. Git 推送
-Write-Host "🚀 Git 推送..." -ForegroundColor Yellow
-& $Script:Git push 2>&1 | Out-Null
-
-if ($LASTEXITCODE -ne 0) {
-    Write-Host "❌ 推送失败，网络问题或远程不可达" -ForegroundColor Red
+    Write-Host "  备份未完全成功（状态: $finalStatus，详情见日志）" -ForegroundColor Yellow
     exit 1
 }
-
-Write-Host "✅ 推送成功" -ForegroundColor Green
-Write-Host ""
-Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "  备份完成" -ForegroundColor Cyan
-Write-Host "========================================" -ForegroundColor Cyan

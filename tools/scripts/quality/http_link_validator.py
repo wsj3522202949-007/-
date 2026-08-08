@@ -1,34 +1,37 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-http_link_validator.py — 工具卡外部链接 HTTP 有效性校验器
+http_link_validator.py — 工具卡外部链接 HTTP 有效性校验器（v2：语义化判决）
 
 与 link_absolutizer.py 的关系
 -----------------------------
 本工具是"第二道门禁"：只做真实 HTTP 200/404 校验，不处理文本/语法转换。
 第一道门禁 link_absolutizer.py 只做语法转换（相对→绝对、blob/tree 修正）。
 
-两门禁模型
-----------
-  门禁1 (link_absolutizer)  → 全量卡片，语法层：URL 格式/路径正确性
-  门禁2 (http_link_validator) → S/A 级卡片，HTTP 层：真实可达性
+判决模型（v2）
+-------------
+  PASS         : 成功率 ≥ 阈值 且 无新增坏链
+  INCONCLUSIVE : 无法判定的链接比例 > 阈值（超时/连接失败太多）
+  FAIL         : 出现新增坏链（不在 known_broken_links 基线中）
 
-这解决了"假绿"问题：转换器报告全部通过不代表链接真的可访问。
-
-校验范围
+基线管理
 --------
-默认只校验 S/A 级工具卡（--tiers S,A），因为 HTTP 校验耗时且受 GitHub API 限流影响。
-C/D 级卡片只需通过第一道门禁即可。需要全量校验时使用 --tiers all。
+  --update-baseline   将当前坏链写入基线（必须显式指定才能修改基线）
+  基线文件: maintenance/state/known_broken_links.json
 
 用法
 ----
-    python tools/scripts/quality/http_link_validator.py              # 默认 S,A 级
-    python tools/scripts/quality/http_link_validator.py --tiers all  # 全部卡片
-    python tools/scripts/quality/http_link_validator.py --tiers S,A,B
-    python tools/scripts/quality/http_link_validator.py --json       # 机器可读
+    python tools/scripts/quality/http_link_validator.py              # S,A 级
+    python tools/scripts/quality/http_link_validator.py --tiers all
+    python tools/scripts/quality/http_link_validator.py --update-baseline
+    python tools/scripts/quality/http_link_validator.py --json
     python tools/scripts/quality/http_link_validator.py --json-file report.json
 
-退出码：发现 404 → 1；全部可达 → 0
+退出码
+------
+  0 → PASS
+  1 → INCONCLUSIVE（非致命，但需关注）
+  2 → FAIL（新增坏链，阻断）
 """
 
 import os
@@ -43,14 +46,33 @@ import urllib.parse
 from pathlib import Path
 from collections import defaultdict
 
-# ---- 路径 ----
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+# ---- 默认阈值 ----
+DEFAULT_SUCCESS_THRESHOLD = 0.80    # 至少 80% 的链接可访问才算通过
+DEFAULT_UNKNOWN_THRESHOLD = 0.50    # 超过 50% 无法判定 → INCONCLUSIVE
+
+# ---- 路径（PROJECT_ROOT 在 main() 中可变）----
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = (SCRIPT_DIR / '..' / '..').resolve()
-CARDS_DIR = PROJECT_ROOT / 'tools' / 'cards'
+
+
+def _get_paths(root=None):
+    """返回 (cards_dir, state_dir, baseline_file)。"""
+    r = root or PROJECT_ROOT
+    return (
+        r / 'tools' / 'cards',
+        r / 'maintenance' / 'state',
+        r / 'maintenance' / 'state' / 'known_broken_links.json',
+    )
 
 # ---- 正则 ----
 TIER_FM_RE = re.compile(r'^tier:\s*"([^"]+)"', re.MULTILINE)
-REPO_FM_RE = re.compile(r'^repo:\s*(.+)$', re.MULTILINE)
 GITHUB_URL_RE = re.compile(
     r'https://github\.com/([^/\s"\')\]]+/[^/\s"\')\]]+)/(?:blob|tree)/([^/\s"\')\]]+)/([^\s"\')\]]+)')
 GITHUB_RAW_RE = re.compile(
@@ -60,7 +82,6 @@ MD_IMG_RE = re.compile(r'!\[([^\]]*)\]\((https?://[^)]+)\)')
 FENCE_RE = re.compile(r'```[^\n]*\n.*?```', re.DOTALL)
 INLINE_CODE_RE = re.compile(r'`[^`\n]*`')
 
-# 占位关键词（这些 URL 中的链接本质是占位符，不参与 HTTP 校验）
 PLACEHOLDER_KW = {
     'your-username', 'your-repo', 'your-org', 'your-name', 'your-token',
     'placeholder', 'username/repo', 'example', 'sample',
@@ -69,12 +90,10 @@ PLACEHOLDER_KW = {
 
 
 def _is_placeholder_url(url: str) -> bool:
-    """检测 URL 是否包含占位内容，不应进行 HTTP 校验。"""
     lower = url.lower()
     for kw in PLACEHOLDER_KW:
         if kw in lower:
             return True
-    # 中文路径 → 可能是占位
     decoded = urllib.parse.unquote(url)
     for kw in ('此处', '请替换', '项目Issue地址', '项目地址'):
         if kw in decoded:
@@ -83,9 +102,7 @@ def _is_placeholder_url(url: str) -> bool:
 
 
 def extract_urls(content: str) -> list[dict]:
-    """从卡片内容中提取所有外部 URL（去重）。"""
     urls = {}
-    # 保护代码块
     masked = content
     for pat in (FENCE_RE, INLINE_CODE_RE):
         masked = pat.sub('', masked)
@@ -112,184 +129,324 @@ def extract_urls(content: str) -> list[dict]:
     return [{'url': url, **info} for url, info in urls.items()]
 
 
-def check_url(url: str, timeout: int = 8) -> tuple[int | None, str | None]:
-    """HTTP HEAD 请求，返回 (status_code, error_message)。"""
+def check_url(url: str, timeout: int = 8) -> dict:
+    """HTTP HEAD 请求，返回 {status, category, error}。
+
+    category: 'pass' (200-399), 'broken' (404/410/5xx), 'unknown' (timeout/dns/其他)
+    """
     try:
         req = urllib.request.Request(url, method='HEAD',
-                                     headers={'User-Agent': 'http-link-validator/1.0'})
+                                     headers={'User-Agent': 'http-link-validator/2.0'})
         with urllib.request.urlopen(req, timeout=timeout) as resp:
-            return (resp.status, None)
+            return {'status': resp.status, 'category': 'pass', 'error': None}
     except urllib.error.HTTPError as e:
-        return (e.code, str(e))
+        cat = 'broken' if e.code in (404, 410) or e.code >= 500 else 'unknown'
+        return {'status': e.code, 'category': cat, 'error': str(e)}
+    except urllib.error.URLError as e:
+        # 连接失败/超时/DNS → unknown（可能是瞬时网络问题）
+        return {'status': None, 'category': 'unknown',
+                'error': str(e.reason) if hasattr(e, 'reason') else str(e)}
     except Exception as e:
-        return (None, str(e))
+        return {'status': None, 'category': 'unknown', 'error': str(e)}
+
+
+def load_baseline(filepath=None):
+    """加载已知坏链基线。"""
+    path = filepath or _get_paths()[2]
+    if not path.is_file():
+        return set()
+    try:
+        with open(path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return set(data) if isinstance(data, list) else set()
+    except Exception:
+        return set()
+
+
+def save_baseline(urls: set, filepath=None):
+    """保存坏链基线到文件。"""
+    path = filepath or _get_paths()[2]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, 'w', encoding='utf-8', newline='\n') as f:
+        json.dump(sorted(urls), f, ensure_ascii=False, indent=2)
 
 
 def validate_card(filepath: str) -> dict:
-    """校验单张工具卡的所有外部链接。"""
     fname = os.path.basename(filepath)
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-
     tm = TIER_FM_RE.search(content)
     tier = tm.group(1).upper() if tm else '?'
 
     urls = extract_urls(content)
-    # 只校验非占位链接
     active = [u for u in urls if not u['skip']]
-    skipped = [u for u in urls if u['skip']]
+    skipped = len(urls) - len(active)
 
-    failures = []
-    ok_count = 0
+    total_pass = 0
+    total_broken = 0
+    total_unknown = 0
+    broken_urls = []
+
     for u in active:
-        status, err = check_url(u['url'])
-        if status == 404 or status is None:
-            failures.append({
-                'url': u['url'],
-                'type': u['type'],
-                'status': status,
-                'error': err,
-            })
+        result = check_url(u['url'])
+        cat = result['category']
+        if cat == 'pass':
+            total_pass += 1
+        elif cat == 'broken':
+            total_broken += 1
+            broken_urls.append(u['url'])
         else:
-            ok_count += 1
-        time.sleep(0.1)  # 限流
+            total_unknown += 1
+        time.sleep(0.1)
 
     return {
         'file': fname,
         'tier': tier,
-        'total_urls': len(active),
-        'ok': ok_count,
-        'failed': len(failures),
-        'skipped': len(skipped),
-        'failures': failures,
+        'total_pass': total_pass,
+        'total_broken': total_broken,
+        'total_unknown': total_unknown,
+        'total_skipped': skipped,
+        'total_active': len(active),
+        'broken_urls': broken_urls,
     }
 
 
 def validate_all(cards_dir: str, tiers: set[str]) -> list[dict]:
-    """扫描并校验指定等级的工具卡。"""
     results = []
     card_files = sorted([
         f for f in os.listdir(cards_dir)
         if f.endswith('.md') and not f.startswith('_')
     ])
-
     total = len(card_files)
-    validated = 0
-    skipped_tier = 0
+    validated = skipped_tier = 0
 
     for i, fname in enumerate(card_files, 1):
         fp = os.path.join(cards_dir, fname)
         with open(fp, 'r', encoding='utf-8') as f:
-            content = f.read(2048)  # 只读头部获取 tier
+            content = f.read(2048)
         tm = TIER_FM_RE.search(content)
         tier = tm.group(1).upper() if tm else '?'
-
         if tiers and tier not in tiers:
             skipped_tier += 1
             continue
-
         validated += 1
         sys.stdout.write(f'\r[{i}/{total}] 校验 {fname}...')
         sys.stdout.flush()
-
-        r = validate_card(fp)
-        results.append(r)
+        results.append(validate_card(fp))
 
     sys.stdout.write('\r' + ' ' * 60 + '\r')
     sys.stdout.flush()
-
-    # 摘要
-    print(f'扫描: {total} 张卡片 | 校验: {validated} ({",".join(sorted(tiers)) if tiers else "all"}级) | 跳过: {skipped_tier}')
+    tier_label = ",".join(sorted(tiers)) if tiers else "all"
+    print(f'扫描: {total} 张卡片 | 校验: {validated} ({tier_label}级) | 跳过: {skipped_tier}')
     return results
 
 
-def print_report(results: list[dict]):
-    """人类可读报告。"""
-    total_ok = sum(r['ok'] for r in results)
-    total_failed = sum(r['failed'] for r in results)
-    total_skipped = sum(r['skipped'] for r in results)
-    total_urls = total_ok + total_failed
+def compute_verdict(results: list[dict], baseline: set,
+                    success_threshold: float, unknown_threshold: float) -> dict:
+    """基于校验结果和基线计算判决。
 
-    print(f'链接总数: {total_urls} (跳过占位: {total_skipped})')
-    print(f'可达: {total_ok}  |  不可达: {total_failed}')
+    返回: {verdict, success_ratio, unknown_ratio, new_broken, ...}
+    """
+    total_pass = sum(r['total_pass'] for r in results)
+    total_broken = sum(r['total_broken'] for r in results)
+    total_unknown = sum(r['total_unknown'] for r in results)
+    total_active = sum(r['total_active'] for r in results)
+
+    if total_active == 0:
+        return {
+            'verdict': 'INCONCLUSIVE', 'reason': '没有有效链接',
+            'total_pass': 0, 'total_broken': 0, 'total_unknown': 0,
+            'success_ratio': 0, 'unknown_ratio': 0, 'new_broken': [],
+            'regression': None,
+        }
+
+    # 收集当前所有坏链 URL
+    current_broken = set()
+    for r in results:
+        for u in r['broken_urls']:
+            current_broken.add(u)
+
+    # 新增坏链 = 当前坏链 - 基线中的已知坏链
+    new_broken = sorted(current_broken - baseline)
+
+    # 已修复的坏链（在基线中但已恢复）
+    fixed = sorted(baseline - current_broken)
+
+    success_ratio = total_pass / total_active
+    unknown_ratio = total_unknown / total_active
+
+    # 判决逻辑
+    if new_broken:
+        verdict = 'FAIL'
+        reason = f'新增 {len(new_broken)} 个坏链'
+    elif unknown_ratio > unknown_threshold:
+        verdict = 'INCONCLUSIVE'
+        reason = (f'无法判定的链接过多 ({total_unknown}/{total_active}, '
+                  f'{unknown_ratio:.0%} > {unknown_threshold:.0%})')
+    elif success_ratio < success_threshold:
+        verdict = 'INCONCLUSIVE'
+        reason = (f'成功率不足 ({total_pass}/{total_active}, '
+                  f'{success_ratio:.0%} < {success_threshold:.0%})')
+    else:
+        verdict = 'PASS'
+        reason = (f'成功率 {success_ratio:.0%} ≥ {success_threshold:.0%}，'
+                  f'无新增坏链')
+
+    return {
+        'verdict': verdict,
+        'reason': reason,
+        'total_pass': total_pass,
+        'total_broken': total_broken,
+        'total_unknown': total_unknown,
+        'total_active': total_active,
+        'success_ratio': round(success_ratio, 4),
+        'unknown_ratio': round(unknown_ratio, 4),
+        'new_broken': new_broken,
+        'regression': {
+            'new': len(new_broken),
+            'fixed': len(fixed),
+            'urls': new_broken,
+            'fixed_urls': fixed,
+        },
+        'baseline_size': len(baseline),
+    }
+
+
+def print_report(results: list[dict], verdict: dict):
+    """人类可读报告。"""
+    print(f'链接总数: {verdict["total_active"]}'
+          f' (跳过占位: {sum(r["total_skipped"] for r in results)})')
+    print(f'可达: {verdict["total_pass"]}  |  坏链: {verdict["total_broken"]}'
+          f'  |  无法判定: {verdict["total_unknown"]}')
+    print(f'成功率: {verdict["success_ratio"]:.0%}'
+          f'  |  判定率: {(verdict["total_pass"] + verdict["total_broken"]) / max(verdict["total_active"], 1):.0%}')
     print('=' * 72)
 
-    # 按 tier 分组
+    # 按 tier 分组显示坏链
     by_tier: dict[str, list] = defaultdict(list)
     for r in results:
         by_tier[r['tier']].append(r)
 
     for tier in sorted(by_tier.keys()):
         cards = by_tier[tier]
-        t_ok = sum(r['ok'] for r in cards)
-        t_failed = sum(r['failed'] for r in cards)
-        if t_failed == 0:
+        t_broken = sum(r['total_broken'] for r in cards)
+        if t_broken == 0:
             continue
-        print(f'\n[{tier} 级] {t_failed} 个不可达链接:')
+        print(f'\n[{tier} 级] {t_broken} 个坏链:')
         for r in cards:
-            if not r['failures']:
+            if not r['broken_urls']:
                 continue
-            for f in r['failures']:
-                icon = '404' if f['status'] == 404 else 'ERR'
-                print(f'  [{icon}] {r["file"]}')
-                print(f'        {f["url"][:90]}')
+            for u in r['broken_urls']:
+                print(f'  [BROKEN] {r["file"]}')
+                print(f'          {u[:90]}')
 
-    if total_failed == 0:
-        print('\n全部校验链接均可达 ✅')
+    # 判决
+    print(f'\n{"=" * 72}')
+    labels = {'PASS': '✅ PASS', 'FAIL': '❌ FAIL', 'INCONCLUSIVE': '⚠️ INCONCLUSIVE'}
+    label = labels.get(verdict['verdict'], verdict['verdict'])
+    print(f'判决: {label}')
+    print(f'原因: {verdict["reason"]}')
+
+    if verdict['regression'] and verdict['regression']['new'] > 0:
+        print(f'\n新增坏链 ({verdict["regression"]["new"]} 个):')
+        for u in verdict['regression']['urls']:
+            print(f'  - {u}')
+
+    if verdict['regression'] and verdict['regression']['fixed'] > 0:
+        print(f'\n已修复 ({verdict["regression"]["fixed"]} 个):')
+        for u in verdict['regression']['fixed_urls']:
+            print(f'  + {u}')
+
+    if verdict['baseline_size'] > 0:
+        print(f'\n基线：{verdict["baseline_size"]} 个已知坏链')
 
 
 def main():
     ap = argparse.ArgumentParser(
         description='工具卡外部链接 HTTP 有效性校验器（第二道门禁）')
     ap.add_argument('--tiers', default='S,A',
-                    help='校验等级，逗号分隔；默认 S,A；all=全部 (default: S,A)')
-    ap.add_argument('--dir', default=str(CARDS_DIR),
-                    help='工具卡目录 (default: tools/cards)')
+                    help='校验等级，逗号分隔；默认 S,A；all=全部')
+    ap.add_argument('--dir', default=str(_get_paths()[0]), help='工具卡目录')
     ap.add_argument('--json', action='store_true', help='输出 JSON')
     ap.add_argument('--json-file', help='写入 JSON 报告文件')
     ap.add_argument('--timeout', type=int, default=8,
                     help='单次 HTTP 超时秒数 (default: 8)')
+    ap.add_argument('--update-baseline', action='store_true',
+                    help='将当前坏链写入基线（必须显式指定）')
+    ap.add_argument('--success-threshold', type=float,
+                    default=DEFAULT_SUCCESS_THRESHOLD,
+                    help=f'成功率阈值 (default: {DEFAULT_SUCCESS_THRESHOLD})')
+    ap.add_argument('--unknown-threshold', type=float,
+                    default=DEFAULT_UNKNOWN_THRESHOLD,
+                    help=f'无法判定比例阈值 (default: {DEFAULT_UNKNOWN_THRESHOLD})')
+    ap.add_argument('--root', help='仓库根目录（覆盖自动检测）')
     args = ap.parse_args()
+
+    # 分辨率路径（--root 覆盖自动检测）
+    root = Path(args.root) if args.root else None
+    cards_dir_path, state_dir, baseline_file = _get_paths(root)
 
     # 解析 tiers
     tiers_raw = args.tiers.upper().strip()
     if tiers_raw == 'ALL':
-        tiers = None  # 全部
+        tiers = None
     else:
         tiers = set(t.strip() for t in tiers_raw.split(',') if t.strip())
 
-    cards_dir = Path(args.dir)
-    if not cards_dir.is_dir():
-        print(f'错误: 目录不存在 {cards_dir}', file=sys.stderr)
+    if args.dir != str(_get_paths()[0]):
+        cards_dir_path = Path(args.dir)
+    if not cards_dir_path.is_dir():
+        print(f'错误: 目录不存在 {cards_dir_path}', file=sys.stderr)
         sys.exit(1)
 
-    print(f'HTTP 链接有效性校验器 — 门禁2（{",".join(sorted(tiers)) if tiers else "全量"}级）')
+    # 加载基线
+    baseline = load_baseline(baseline_file)
+
+    tier_label = ",".join(sorted(tiers)) if tiers else "全量"
+    print(f'HTTP 链接有效性校验器 — 门禁2（{tier_label}级）')
+    print(f'阈值: 成功率≥{args.success_threshold:.0%}  无法判定≤{args.unknown_threshold:.0%}')
+    print(f'基线: {len(baseline)} 个已知坏链')
     print('=' * 72)
 
-    results = validate_all(str(cards_dir), tiers)
-    print_report(results)
+    results = validate_all(str(cards_dir_path), tiers)
+    verdict = compute_verdict(results, baseline,
+                              args.success_threshold, args.unknown_threshold)
+    print_report(results, verdict)
 
-    # 统计失效
-    total_failed = sum(r['failed'] for r in results)
+    # 更新基线
+    if args.update_baseline:
+        current_broken = set()
+        for r in results:
+            for u in r['broken_urls']:
+                current_broken.add(u)
+        save_baseline(current_broken, baseline_file)
+        print(f'\n基线已更新: {len(current_broken)} 个坏链 → {baseline_file}')
+
+    # 输出 JSON
+    output = {
+        'cards_validated': len(results),
+        **verdict,
+        'results': [
+            {k: v for k, v in r.items() if k != 'broken_urls'}
+            for r in results
+        ],
+    }
 
     if args.json_file:
+        os.makedirs(os.path.dirname(args.json_file) or '.', exist_ok=True)
         with open(args.json_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                'cards_validated': len(results),
-                'total_urls': sum(r['total_urls'] for r in results),
-                'total_failed': total_failed,
-                'results': results,
-            }, f, ensure_ascii=False, indent=2)
+            json.dump(output, f, ensure_ascii=False, indent=2)
         print(f'\nJSON 报告已写入: {args.json_file}')
 
     if args.json:
-        print(json.dumps({
-            'cards_validated': len(results),
-            'total_failed': total_failed,
-            'results': results,
-        }, ensure_ascii=False, indent=2))
+        print(json.dumps(output, ensure_ascii=False, indent=2))
 
-    return 1 if total_failed > 0 else 0
+    # 退出码
+    if verdict['verdict'] == 'FAIL':
+        return 2
+    elif verdict['verdict'] == 'INCONCLUSIVE':
+        return 1
+    return 0
 
 
 if __name__ == '__main__':

@@ -9,6 +9,15 @@ import re
 import json
 import subprocess
 
+import sys
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 # 运行链接检查脚本
 result = subprocess.run(
     ['python', r'e:\个人知识库\tools\scripts\validation\_run_link_fixed.py', '--zone', 'core', '--json'],

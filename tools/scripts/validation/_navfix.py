@@ -1,5 +1,14 @@
 import os, re
 
+import sys
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 VAULT = r'E:/个人知识库'
 # 修改 PROJECT_NAME 和 PROJ 来指定目标项目
 PROJECT_NAME = ''  # TODO: 运行前手动设置目标项目名，如 '【你的书名】'

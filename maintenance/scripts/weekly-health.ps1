@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 # 每周健康报告生成脚本
 # 时间：每周日 21:00
 
@@ -11,7 +11,7 @@ if (-not $Script:Python) {
     exit 1
 }
 
-$LOG_FILE = "$Script:Root\maintenance\backup-log.jsonl"
+$LOG_FILE = "$Script:Root\maintenance\state\backup-log.jsonl"
 
 Set-Location $Script:Root
 

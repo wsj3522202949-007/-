@@ -1,19 +1,19 @@
 ---
-id: auto-weekly-health-2026-08-07
+id: auto-weekly-health-2026-08-08
 type: report
 area: 管理
 status: archived
 tags: [auto-generated]
-title: weekly-health-2026-08-07
+title: weekly-health-2026-08-08
 summary: 自动生成的每周健康报告。
 source: 自动生成
-created: 2026-08-07
-updated: 2026-08-07
+created: 2026-08-08
+updated: 2026-08-08
 ---
 
 # 每周健康报告
 
-> 生成时间：2026-08-07
+> 生成时间：2026-08-08
 > 根目录：知识库根目录
 
 ---
@@ -22,20 +22,20 @@ updated: 2026-08-07
 
 | 类型 | 数量 |
 |---|---|
-| 总计 | 4939 |
-| Markdown | 4648 |
-| Python | 63 |
-| JSON | 18 |
-| 其他 | 210 |
+| 总计 | 4943 |
+| Markdown | 4649 |
+| Python | 64 |
+| JSON | 19 |
+| 其他 | 211 |
 
 ---
 
 ## 📝 本周变化
 
-### 修改的文件（3978 个）
+### 修改的文件（3986 个）
 
 - `.gitattributes` (2026-08-06T09:55:37.202285)
-- `.gitignore` (2026-08-03T23:39:51.593723)
+- `.gitignore` (2026-08-08T08:26:07.647236)
 - `.pre-commit-config.yaml` (2026-08-05T23:40:22.817619)
 - `CLAUDE.md` (2026-08-04T22:49:38.465365)
 - `index.json` (2026-08-02T16:08:19.472749)
@@ -55,7 +55,7 @@ updated: 2026-08-07
 - `ai\constraints\禁忌清单.md` (2026-08-03T09:24:17.086679)
 - `ai\maintenance\daily-maintenance.md` (2026-08-03T08:34:01.234201)
 
-... 还有 3958 个文件
+... 还有 3966 个文件
 
 ---
 
@@ -96,4 +96,4 @@ updated: 2026-08-07
 ---
 
 > 本报告由每周健康报告生成器自动生成
-> 最后更新时间：2026-08-07
+> 最后更新时间：2026-08-08

@@ -44,6 +44,14 @@ if WRITING_DIR not in sys.path:
 from chapter_policy import load_policy, char_status
 from shared_wordcount import extract_body, count_chars
 
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 # 项目目录
 PROJECTS_DIR = os.path.join(ROOT_DIR, "projects")
 
@@ -57,17 +65,23 @@ def get_project_dir():
 
 
 def get_current_progress():
-    """获取当前进度"""
-    status_file = os.path.join(get_project_dir(), "STATUS.md")
-    if not os.path.exists(status_file):
-        return None
-    
-    with open(status_file, 'r', encoding='utf-8') as f:
-        content = f.read()
-        match = re.search(r'当前章节\s*\|\s*\*\*(\d+)章\*\*', content)
-        if match:
-            return int(match.group(1))
-    return 0
+    """获取当前进度——以 chapters/ 目录为唯一真源。
+
+    直接扫描 chapters/ 下的 第NNN章-xxx.md 文件，取最大编号。
+    不再依赖 STATUS.md 的正则（该正则长期与 STATUS 实际格式不匹配，
+    导致返回 0 → --next-chapter 永远返回第1章）。
+    """
+    project_dir = get_project_dir()
+    chapters_dir = os.path.join(project_dir, "chapters")
+    if not os.path.isdir(chapters_dir):
+        return 0
+
+    max_chapter = 0
+    for fname in os.listdir(chapters_dir):
+        m = re.match(r'^第(\d{3})章-.+\.md$', fname)
+        if m:
+            max_chapter = max(max_chapter, int(m.group(1)))
+    return max_chapter
 
 
 def get_next_chapter_outline():
@@ -106,9 +120,34 @@ def get_next_chapter_outline():
 
 
 def generate_chapter_template(chapter_num):
-    """生成章节模板"""
+    """生成章节模板——带双守卫验证。
+
+    守卫 1：chapter_num 必须等于下一章（chapters/ 最大编号 + 1），否则拒绝。
+    守卫 2：目标文件不得已存在于 chapters/ 或 drafts/，否则拒绝。
+    """
     project_dir = get_project_dir()
     policy = load_policy(project_dir)
+
+    # —— 守卫 1：必须为下一章 ——
+    current = get_current_progress()
+    expected = current + 1
+    if chapter_num != expected:
+        print(f"错误：当前进度为第 {current} 章，下一章应为第 {expected} 章，"
+              f"不能直接生成第 {chapter_num} 章")
+        sys.exit(1)
+
+    # —— 守卫 2：目标文件不得已存在 ——
+    chapters_dir = os.path.join(project_dir, "chapters")
+    drafts_dir = os.path.join(project_dir, "..", "drafts", "projects",
+                               CURRENT_PROJECT)
+    target_name = f"第{chapter_num:03d}章"
+    for check_dir in [chapters_dir, drafts_dir]:
+        if os.path.isdir(check_dir):
+            for fname in os.listdir(check_dir):
+                if fname.startswith(target_name):
+                    print(f"错误：{target_name} 已存在于 {check_dir}，"
+                          f"拒绝重复生成")
+                    sys.exit(1)
     outline = get_next_chapter_outline()
     
     if not outline:
@@ -183,33 +222,27 @@ volume: 1
 
 
 def self_check(file_path):
-    """正文自检（字数标准来自 chapter_policy，与 chapter_selfcheck / STATUS 统一）"""
+    """正文自检——直接委托 chapter_selfcheck.check_chapter()，不维护第二套检测逻辑。
+
+    此前本函数维护了自己的一套 AI 味词表（14 个），与 chapter_selfcheck.py
+    的 6 类完整词表不一致，导致同一章节在本函数中通过、在完整自检中却命中。
+    现统一委托单一权威来源。
+    """
+    from writing.chapter_selfcheck import check_chapter as _cs_check
+    from writing.chapter_policy import char_status, load_policy as _cs_load_policy
+
     if not os.path.exists(file_path):
         print(f"错误：文件不存在 {file_path}")
         return False
-    
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
+
+    policy = _cs_load_policy(get_project_dir())
+    result = _cs_check(file_path, policy=policy)
     issues = []
-    
-    # 检查 frontmatter
-    if not content.startswith('---'):
-        issues.append("❌ 缺少 frontmatter")
-    else:
-        required_fields = ['id', 'type', 'title', 'chapter', 'volume']
-        for field in required_fields:
-            if re.search(rf'^{field}\s*:', content[:600], re.MULTILINE) is None:
-                issues.append(f"❌ 缺少字段：{field}")
-    
-    # 正文：统一口径（去 frontmatter / 元信息块 / 空白，含标点），与 shared_wordcount 一致
-    body = extract_body(content)
-    word_count = count_chars(body)
-    
-    # 字数标准统一读取 chapter_policy，两级判级（软警告 / 硬阻断）
-    policy = load_policy(get_project_dir())
-    plat = policy["platform"]
+
+    # 字数检查（两级判级：硬阻断/软警告）
+    word_count = result["chars"]
     cs = char_status(word_count, policy)
+    plat = policy["platform"]
     verdict = {
         "hard_short": f"❌ 严重不足：{word_count}字 < 硬下限{policy['hard_min']}（{plat}，硬阻断）",
         "hard_long":  f"❌ 严重超标：{word_count}字 > 硬上限{policy['hard_max']}（{plat}，硬阻断）",
@@ -222,23 +255,31 @@ def self_check(file_path):
         issues.append(verdict[cs])
     elif cs in ("soft_short", "soft_long"):
         issues.append(verdict[cs])
-    
-    # 章末钩子：末 400 字含强钩子特征词
-    tail = body[-400:]
-    hook_kw = ['？', '不知道', '没想到', '原来', '如果', '竟', '却', '突然',
-               '终于', '决定', '机会', '考验', '炸弹', '亿', '危险', '秘密', '时代']
-    if not any(k in tail for k in hook_kw):
-        issues.append("⚠️ 章末钩子可能偏弱（建议强化）")
+
+    # 章末钩子（由 chapter_selfcheck 判定）
+    hook_v = result["hook_verdict"]
+    if "强钩子" in hook_v:
+        print(f"✅ 章末钩子存在")
+    elif "禁用空钩子" in hook_v:
+        issues.append(f"⚠️ {hook_v}")
+        print(f"⚠️ {hook_v}")
     else:
-        print("✅ 章末钩子特征存在")
-    
-    # AI 味（14 类禁用表达精简版）
-    ai_words = ["值得注意的是", "毫无疑问", "诚然", "综上所述", "归根结底", "本质上",
-                "不是 ", "而是 ", "仿佛", "宛若", "眼中闪过一丝", "带着一丝",
-                "这意味着", "不得不说"]
-    for w in ai_words:
-        if w in body:
-            issues.append(f"⚠️ 可能包含 AI 味表达：{w}")
+        issues.append(f"⚠️ {hook_v}")
+        print(f"⚠️ {hook_v}")
+
+    # AI 味（由 chapter_selfcheck 判定）
+    ai_v = result["ai_verdict"]
+    ai_total = result["ai_total"]
+    if ai_total > 0:
+        print(f"⚠️ AI 味：{ai_v}（命中 {ai_total} 处）")
+        if result["ai_per_cat"]:
+            for cat, n in sorted(result["ai_per_cat"].items()):
+                print(f"   {cat} ×{n}")
+        if result["ai_severe"]:
+            for s in result["ai_severe"]:
+                issues.append(f"⚠️ 重度信号：{s}")
+    else:
+        print(f"✅ AI 味：干净")
     
     has_hard = any("硬阻断" in iss for iss in issues)
     if issues:
@@ -252,42 +293,56 @@ def self_check(file_path):
 
 
 def remove_ai(file_path):
-    """去 AI 味处理（简化版）"""
+    """去 AI 味处理——引用 chapter_selfcheck 的黑名单，不维护独立词表。
+
+    替换规则来自 BLACKLIST 各大类，覆盖 14 类共 80+ 条禁用表达。
+    删除类（替换为空）：套话收束、空泛判断、虚假强调、无源权威、工程词泄露
+    改词类（保留语义）：表演性动宾、意义膨胀、论文体、书面语连词
+    警告类（仅标记不自动改）：网文最毒句、高频词、解释腔、升华式收尾（需人工判断）
+    """
+    from writing.chapter_selfcheck import BLACKLIST as _BL
+
     if not os.path.exists(file_path):
         print(f"错误：文件不存在 {file_path}")
         return
-    
+
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
-    
-    # 禁用表达替换
-    replacements = {
-        "值得注意的是": "",
-        "毫无疑问": "",
-        "诚然": "",
-        "综上所述": "",
-        "归根结底": "",
-        "本质上": "",
-        "实现了": "做到了",
-        "推动了": "推进了",
-        "促进了": "帮助了",
-        "彰显了": "显示了",
-        "体现了": "表现了",
-        "见证了": "看到了",
-        "标志着": "意味着",
+
+    # 删除类：直接移除这些禁用表达
+    delete_cats = ["套话收束", "空泛判断", "虚假强调", "无源权威", "工程词泄露"]
+    # 替换类：有明确更自然的替代词
+    replace_map = {
+        "实现了": "做到了", "推动了": "推进了", "促进了": "帮助了",
+        "彰显了": "显示了", "体现了": "表现了", "见证了": "看到了",
+        "标志着": "意味着", "深深植根于": "扎根在", "不可磨灭的印记": "印记",
+        "关键转折点": "转折点", "核心价值在于": "关键是", "意义深远": "影响很大",
+        "前所未有": "从没见过的", "可谓": "可以说", "未来可期": "值得期待",
+        "充满希望": "有希望", "前途无量": "很有前途",
+        "不难看出": "看得出来", "由此可见": "看得出", "事实上": "其实",
+        "于是乎": "于是", "与此同时": "同时", "从而": "就", "因而": "所以",
     }
-    
+
     changes = []
-    for old, new in replacements.items():
-        if old in content:
-            content = content.replace(old, new)
-            changes.append(f"{old} -> {new}")
-    
-    # 保存文件
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(content)
-    
+    body = content
+
+    # 删除类
+    for cat in delete_cats:
+        for phrase in _BL.get(cat, []):
+            if phrase and phrase in body:
+                body = body.replace(phrase, "")
+                changes.append(f"删除[{cat}] {phrase}")
+
+    # 替换类
+    for old, new in replace_map.items():
+        if old in body:
+            body = body.replace(old, new)
+            changes.append(f"替换 {old} → {new}")
+
+    # 保存
     if changes:
+        with open(file_path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write(body)
         print(f"已修复 {len(changes)} 处 AI 味表达：")
         for change in changes:
             print(f"  {change}")
@@ -371,7 +426,11 @@ def move_chapter(chapter_num):
 
 
 def update_progress(chapter_num):
-    """更新项目进度（字数从正式章节文件实算，不写死）"""
+    """更新项目进度（字数从正式章节文件实算，统一 shared_wordcount 口径）。"""
+    # 使用 shared_wordcount 的 count_chars 函数（含标点统计），
+    # 避免本函数自己写的 [\u4e00-\u9fffA-Za-z0-9] 漏算标点。
+    from writing.shared_wordcount import count_chars as _wc_count_chars
+
     project_dir = get_project_dir()
     status_file = os.path.join(project_dir, "STATUS.md")
     
@@ -379,7 +438,7 @@ def update_progress(chapter_num):
         print(f"错误：STATUS.md 不存在")
         return
     
-    # 实算全部正式章节字数（去 frontmatter、去标点）
+    # 实算全部正式章节字数（去 frontmatter，含标点，与 shared_wordcount 同口径）
     total_words = 0
     chapter_files = sorted(
         glob.glob(os.path.join(project_dir, "chapters", "第*章-*.md")))
@@ -389,8 +448,7 @@ def update_progress(chapter_num):
         fm = re.match(r'^---\n.*?\n---\n', txt, re.DOTALL)
         if fm:
             txt = txt[fm.end():]
-        chars = re.findall(r'[\u4e00-\u9fffA-Za-z0-9]', txt)
-        total_words += len(chars)
+        total_words += _wc_count_chars(txt)
     
     # 取本章标题（用于进度表）
     this_matches = sorted(

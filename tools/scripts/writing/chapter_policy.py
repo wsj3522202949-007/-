@@ -31,6 +31,15 @@ from __future__ import annotations
 import os
 import re
 
+import sys
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 DEFAULT_POLICY = {
     "platform": "番茄",
     "policy_version": "v2",

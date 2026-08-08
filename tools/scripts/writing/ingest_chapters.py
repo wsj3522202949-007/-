@@ -21,6 +21,14 @@ import os
 import re
 import sys
 
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 # 章节标题识别：支持「第1章」「第001章」「第一章」「Chapter 3」及其带 # 的 markdown 标题
 CHAPTER_RE = re.compile(
     r'^(?:\s{0,3}#{1,3}\s*)?'

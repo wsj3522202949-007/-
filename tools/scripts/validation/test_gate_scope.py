@@ -24,6 +24,14 @@ import os
 import sys
 import importlib.util
 
+# Windows GBK 终端安全：避免 emoji/中文输出 UnicodeEncodeError
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
+
+
 
 def _load(path, name):
     spec = importlib.util.spec_from_file_location(name, path)

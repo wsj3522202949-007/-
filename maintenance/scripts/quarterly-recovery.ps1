@@ -1,4 +1,4 @@
-#!/usr/bin/env pwsh
+﻿#!/usr/bin/env pwsh
 # 季度恢复演练脚本
 # 时间：每季度 22:00（3/6/9/12月 1日，由定时任务触发）
 # 依赖：run_all.py（统一门禁）、Git
@@ -14,12 +14,40 @@ if (-not $Script:Git -or -not $Script:Python) {
     exit 1
 }
 
-# 季度保护：仅 3/6/9/12 月 1 日执行（Daily 触发器 + 脚本 guard）
+# 季度守卫：追踪本季度是否已有成功演练
+# 替代硬性日期判断（3/6/9/12 月 1 日），避免 StartWhenAvailable 延迟到 2 日时被跳过
 $currentMonth = (Get-Date).Month
-$currentDay = (Get-Date).Day
-if ($currentMonth -notin @(3, 6, 9, 12) -or $currentDay -ne 1) {
-    Write-Host "⏭️ 当前日期 ($currentMonth 月 $currentDay 日) 不是季度首日（3/6/9/12 月 1 日），跳过本次恢复演练" -ForegroundColor Yellow
+$currentYear = (Get-Date).Year
+$currentQuarter = [math]::Ceiling($currentMonth / 3)  # 1-4
+$quarterKey = "$currentYear-Q$currentQuarter"
+
+$STATE_DIR = "$Script:Root\maintenance\state"
+$STATE_FILE = "$STATE_DIR\quarterly-drill-state.json"
+if (-not (Test-Path $STATE_DIR)) { New-Item -ItemType Directory -Path $STATE_DIR -Force | Out-Null }
+
+# 读取状态文件
+$drillState = $null
+if (Test-Path $STATE_FILE) {
+    try { $drillState = Get-Content $STATE_FILE -Raw | ConvertFrom-Json } catch { $drillState = $null }
+}
+if (-not $drillState) {
+    $drillState = [PSCustomObject]@{ last_successful_quarter = $null; last_attempt = $null; history = @() }
+}
+
+# 本季度已成功 → 跳过
+if ($drillState.last_successful_quarter -eq $quarterKey) {
+    Write-Host "⏭️ 本季度 ($quarterKey) 已有成功的恢复演练（$($drillState.last_attempt)），跳过本次" -ForegroundColor Yellow
     exit 0
+}
+
+# 本季度已尝试过但失败 → 允许重新演练（不跳过）
+if ($drillState.last_attempt -and $drillState.last_attempt -match $currentYear) {
+    Write-Host "📌 本季度 ($quarterKey) 上次演练未成功（$($drillState.last_attempt)），重新演练" -ForegroundColor Yellow
+}
+
+# 非季度月份但有 StartWhenAvailable 延迟 → 允许演练（状态文件无本季度记录时放行）
+if ($currentMonth % 3 -ne 0) {
+    Write-Host "📌 当前 ($currentMonth 月) 非季度末月，但本季度 ($quarterKey) 尚无成功演练记录，开始演练" -ForegroundColor Yellow
 }
 
 $TEMP_DIR = "C:\tmp\recovery-test-$(Get-Date -Format 'yyyyMMdd-HHmmss')"
@@ -62,18 +90,38 @@ Set-Location "$TEMP_DIR\recovered"
 # 4. 运行统一门禁
 Write-Host "🔍 运行统一门禁校验..." -ForegroundColor Yellow
 $gateStart = Get-Date
-$jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
-$gateEnd = Get-Date
-$gateDuration = ($gateEnd - $gateStart).TotalSeconds
+$drillPassed = $false   # 追踪演练是否成功，用于最终退出码
 
-$checkResult = $jsonOutput | ConvertFrom-Json
-$basicErrors = $checkResult.summary.basic.errors
-$linkErrors = $checkResult.summary.'core_broken_links'.errors
-$overallPass = $checkResult.summary.overall_pass
-$scannedFiles = $checkResult.scope_counts.strict_files
+try {
+    $jsonOutput = & $Script:Python tools/scripts/validation/run_all.py --json 2>$null | Out-String
+    $gateEnd = Get-Date
+    $gateDuration = ($gateEnd - $gateStart).TotalSeconds
 
-Write-Host "  门禁结果: 基本 $basicErrors ERROR | 断链 $linkErrors ERROR | $scannedFiles 文件" -ForegroundColor Yellow
-Write-Host "  耗时: $([math]::Round($gateDuration))秒" -ForegroundColor Yellow
+    if (-not $jsonOutput) {
+        throw "run_all.py 返回空输出（Python 路径: $Script:Python）"
+    }
+
+    $checkResult = $jsonOutput | ConvertFrom-Json
+    $basicErrors = $checkResult.summary.basic.errors
+    $linkErrors = $checkResult.summary.'core_broken_links'.errors
+    $overallPass = $checkResult.summary.overall_pass
+    $scannedFiles = $checkResult.scope_counts.strict_files
+
+    Write-Host "  门禁结果: 基本 $basicErrors ERROR | 断链 $linkErrors ERROR | $scannedFiles 文件" -ForegroundColor Yellow
+    Write-Host "  耗时: $([math]::Round($gateDuration))秒" -ForegroundColor Yellow
+
+    if ($overallPass) {
+        $drillPassed = $true
+    }
+} catch {
+    $overallPass = $false
+    $basicErrors = -1
+    $linkErrors = -1
+    $scannedFiles = -1
+    $gateDuration = 0
+    $drillPassed = $false
+    Write-Host "  ❌ 门禁执行异常: $_" -ForegroundColor Red
+}
 Write-Host ""
 
 # 5. 回到知识库根目录准备写报告
@@ -126,13 +174,15 @@ updated: $reportDate
 |---|---|---|
 | 1. 创建临时目录 | ✅ | < 1秒 |
 | 2. 从 GitHub 克隆 | ✅ | $([math]::Round($cloneDuration)) 秒 |
-| 3. 运行统一门禁 | $('✅' -f $overallPass) | $([math]::Round($gateDuration)) 秒 |
+| 3. 运行统一门禁 | $(if ($overallPass) { '✅' } else { '❌' }) | $([math]::Round($gateDuration)) 秒 |
 | 4. 清理临时目录 | ✅ | < 1秒 |
 
 ## 结论
 
 本次恢复演练**真实执行**了从 GitHub 克隆 + 门禁校验的完整流程。
-恢复总耗时约 $([math]::Round($totalDuration)) 秒，备份有效。
+恢复总耗时约 $([math]::Round($totalDuration)) 秒，备份$(
+    if ($drillPassed) { '有效，门禁通过' } else { '存在异常，门禁未通过' }
+)。
 
 ---
 
@@ -163,8 +213,36 @@ $logEntry = @{
     scanned_files = $scannedFiles
 } | ConvertTo-Json -Compress
 
-Add-Content -Path "$Script:Root\maintenance\backup-log.jsonl" -Value $logEntry -Encoding UTF8
+Add-Content -Path "$Script:Root\maintenance\state\backup-log.jsonl" -Value $logEntry -Encoding UTF8
+
+# 9. 更新季度演练状态文件
+$nowStr = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$drillState.last_attempt = $nowStr
+if ($drillPassed) {
+    $drillState.last_successful_quarter = $quarterKey
+}
+$newRecord = @{
+    quarter = $quarterKey
+    date    = $nowStr
+    result  = if ($drillPassed) { "success" } else { "failed" }
+    basic_errors = $basicErrors
+    link_errors  = $linkErrors
+}
+# 将旧记录转为普通数组
+$history = @($drillState.history) + @($newRecord)
+$drillState | Add-Member -MemberType NoteProperty -Name "history" -Value $history -Force
+$drillState | ConvertTo-Json -Depth 3 | Set-Content -Path $STATE_FILE -Encoding UTF8
+
+Write-Host "📝 季度演练状态已更新: $STATE_FILE (quarter: $quarterKey, passed: $drillPassed)" -ForegroundColor Gray
 
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  恢复演练完成" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
+
+# 根据演练结果返回退出码
+if ($drillPassed) {
+    exit 0
+} else {
+    Write-Host "⚠️ 恢复演练未完全通过，返回失败退出码" -ForegroundColor Yellow
+    exit 1
+}

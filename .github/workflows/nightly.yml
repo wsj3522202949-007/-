@@ -1,0 +1,80 @@
+name: Nightly
+
+on:
+  schedule:
+    # 每天 UTC 14:00 = 北京时间 22:00
+    - cron: "0 14 * * *"
+  # 允许手动触发
+  workflow_dispatch:
+
+jobs:
+  # ==========================================================================
+  # 1. 联网 HTTP 链接校验（第二道门禁）
+  # ==========================================================================
+  online-validation:
+    name: "online / http-links"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run online HTTP validation
+        shell: pwsh
+        run: |
+          $result = python tools/scripts/validation/run_all.py --json --online
+          $data = $result | ConvertFrom-Json
+
+          if ($data.http_validation) {
+            $http = $data.http_validation
+            Write-Host "  HTTP: PASS=$($http.total_pass) BROKEN=$($http.total_broken) UNKNOWN=$($http.total_unknown)"
+          }
+
+          if (-not $data.summary.overall_pass) {
+            Write-Error "Online gate FAILED"
+            exit 1
+          }
+          Write-Host "Online gate PASSED"
+
+  # ==========================================================================
+  # 2. 恢复演练（模拟备份 → 重新 checkout → 验证门禁仍通过）
+  # ==========================================================================
+  recovery-drill:
+    name: "drill / recovery"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Recovery drill
+        shell: pwsh
+        run: |
+          Write-Host "=== 恢复演练：重新拉取 → 门禁 ==="
+          # 确保工作区干净
+          git status
+          # 运行门禁（不加 --online，纯本地校验）
+          $result = python tools/scripts/validation/run_all.py --json
+          $data = $result | ConvertFrom-Json
+
+          if (-not $data.summary.overall_pass) {
+            Write-Error "Recovery drill FAILED: gate did not pass"
+            exit 1
+          }
+
+          # 确认连续性检查可执行
+          $cont = python tools/scripts/validation/continuity_check.py --json 2>&1
+          Write-Host $cont
+          $cdata = $cont | ConvertFrom-Json
+          if ($cdata.errors.Count -gt 0) {
+            Write-Error "Recovery drill FAILED: continuity check has errors"
+            exit 1
+          }
+          Write-Host "Recovery drill PASSED"

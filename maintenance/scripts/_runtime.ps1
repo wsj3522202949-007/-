@@ -1,4 +1,4 @@
-# _runtime.ps1 - 运行时路径解析器
+﻿# _runtime.ps1 - 运行时路径解析器
 # ============================================
 # 统一解析 $Script:Root / $Script:Git / $Script:Python
 # 消除硬编码路径，避免 WindowsApps 占位程序干扰
@@ -58,6 +58,11 @@ $pythonCandidates += @(
     "C:\Python312\python.exe"
     "${env:ProgramFiles}\Python313\python.exe"
     "${env:ProgramFiles}\Python312\python.exe"
+    # WorkBuddy 管理的 Python（版本独立，优先匹配最新）
+    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.13.12\python.exe"
+    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.12.9\python.exe"
+    "$env:USERPROFILE\.workbuddy\binaries\python\versions\3.11.11\python.exe"
+    # TRAE / 其他 IDE 内置 Python
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\python\python.exe"
     "$env:USERPROFILE\AppData\Roaming\TRAE SOLO CN\ModularData\ai-agent\vm\tools\bin\python3.exe"
 )

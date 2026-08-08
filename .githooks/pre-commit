@@ -1,0 +1,73 @@
+#!/bin/bash
+# pre-commit — 知识库质量门禁（bash 包装器）
+# ============================================
+# 修复 2026-08-07：不再走 PowerShell 中转，改为直接调用 Python。
+# 原问题：bash → powershell → _runtime.ps1 → Python 链路中，
+# _runtime.ps1 候选路径不含 WorkBuddy 管理 Python，导致门禁从未真正启动。
+#
+# 新设计：bash → Python（直接），保留 PowerShell 兜底。
+
+set -euo pipefail
+
+# —— Step 0: 定位仓库根目录 ——
+REPO_ROOT="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [ -z "$REPO_ROOT" ]; then
+    echo "[pre-commit] 错误：无法确定 Git 仓库根目录" >&2
+    exit 1
+fi
+
+VALIDATOR="$REPO_ROOT/tools/scripts/maintenance/提交前校验.py"
+
+# —— Step 1: 优先发现 Python ——
+# git bash 中的 $HOME 是 Unix 风格路径（如 /c/Users/wsj），可直接拼接。
+PYTHON=""
+for candidate in \
+    "$HOME/.workbuddy/binaries/python/versions/3.13.12/python.exe" \
+    "$HOME/.workbuddy/binaries/python/versions/3.12.9/python.exe" \
+    "$HOME/.workbuddy/binaries/python/versions/3.11.11/python.exe" \
+    ; do
+    if [ -f "$candidate" ]; then
+        PYTHON="$candidate"
+        break
+    fi
+done
+
+if [ -z "$PYTHON" ]; then
+    # 回退到 PATH 中的 python
+    PYTHON="$(command -v python3 2>/dev/null || command -v python 2>/dev/null || echo "")"
+fi
+
+if [ -z "$PYTHON" ]; then
+    # 最后兜底：PowerShell（_runtime.ps1 已修复，ps1 已转 UTF-8 BOM）
+    # 优先 pwsh.exe（原生 UTF-8 支持），其次 powershell.exe（需 BOM）
+    POWERSHELL="$(command -v pwsh.exe 2>/dev/null || command -v powershell.exe 2>/dev/null || echo "")"
+    if [ -n "$POWERSHELL" ]; then
+        echo "[pre-commit] 直接 Python 未找到，尝试 PowerShell 兜底..." >&2
+        exec "$POWERSHELL" -NoProfile -ExecutionPolicy Bypass -File "$REPO_ROOT/.githooks/pre-commit.ps1"
+    fi
+    echo "[pre-commit] 错误：无法找到可用的 Python 解释器" >&2
+    echo "[pre-commit] 请确认以下路径之一存在：" >&2
+    echo "  $HOME/.workbuddy/binaries/python/versions/3.13.12/python.exe" >&2
+    echo "  或系统 PATH 中的 python3 / python" >&2
+    exit 1
+fi
+
+# —— Step 2: 检查校验脚本 ——
+if [ ! -f "$VALIDATOR" ]; then
+    echo "[pre-commit] 错误：校验脚本不存在: $VALIDATOR" >&2
+    exit 1
+fi
+
+# —— Step 3: 运行门禁 ——
+echo "[pre-commit] 运行知识库质量门禁..." >&2
+"$PYTHON" -W ignore "$VALIDATOR" --core-only
+EXIT_CODE=$?
+
+if [ $EXIT_CODE -eq 0 ]; then
+    echo "[pre-commit] 门禁通过" >&2
+else
+    echo "[pre-commit] 门禁未通过，提交已阻止" >&2
+    echo "[pre-commit] 如需强制提交，请使用: git commit --no-verify" >&2
+fi
+
+exit $EXIT_CODE

@@ -1,0 +1,105 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+# 每个 PR 会运行 3 个独立 job，每个 job 名就是 GitHub 必需状态检查名。
+# 在 Settings → Branches → Main → "Require status checks" 中勾选即可。
+
+jobs:
+  # ==========================================================================
+  # 1. 语法检查（全量 .py 编译）
+  # ==========================================================================
+  syntax-check:
+    name: "syntax / py-compile"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Compile all Python scripts
+        shell: pwsh
+        run: |
+          $bad = 0
+          $ok = 0
+          $files = Get-ChildItem -Recurse -Path tools/scripts -Filter *.py |
+                   Where-Object { $_.FullName -notmatch '__pycache__' }
+          foreach ($f in $files) {
+            try {
+              python -c "import py_compile; py_compile.compile('$($f.FullName)', doraise=True)"
+              $ok++
+            } catch {
+              Write-Host "FAIL: $($f.Name)"
+              $bad++
+            }
+          }
+          Write-Host "$ok/$($files.Count) OK"
+          if ($bad -gt 0) { Write-Error "$bad files failed compilation"; exit 1 }
+
+  # ==========================================================================
+  # 2. 单元测试
+  # ==========================================================================
+  unit-tests:
+    name: "unit / tests"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run unit tests
+        shell: pwsh
+        run: |
+          # chapter_policy 单元测试
+          python tools/scripts/tests/test_chapter_policy.py -v
+
+  # ==========================================================================
+  # 3. 章节门禁（等价于 pre-commit hook，不含 HTTP 校验）
+  # ==========================================================================
+  chapter-gate:
+    name: "gate / run-all"
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run unified gate
+        shell: pwsh
+        run: |
+          $result = python tools/scripts/validation/run_all.py --json
+          $data = $result | ConvertFrom-Json
+          if (-not $data.summary.overall_pass) {
+            Write-Error "Gate FAILED"
+            exit 1
+          }
+          Write-Host "Gate PASSED"
+
+      - name: Gate summary
+        shell: pwsh
+        run: |
+          $data = python tools/scripts/validation/run_all.py --json | ConvertFrom-Json
+          $basic = $data.summary.basic
+          $core = $data.summary.'core_broken_links'
+          Write-Host "  basic:        $($basic.errors) errors / $($basic.warns) warns"
+          Write-Host "  core-links:   $($core.errors) errors"
+          Write-Host "  overall:      $($data.summary.overall_pass)"

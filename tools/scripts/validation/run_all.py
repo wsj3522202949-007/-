@@ -418,9 +418,71 @@ def load_link_checker():
     return mod.run_link_check
 
 
+def check_continuity(root):
+    """连续性门禁（章名重复、实体引用缺失、时间线、金额公式）。
+
+    如果 continuity_check.py 子进程因任何原因崩溃/超时/返回非 JSON，
+    门禁必须报告为连续性错误（而非静默吞掉假装 0 ERROR）。
+    """
+    import subprocess
+    cont_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                             "continuity_check.py")
+    if not os.path.exists(cont_path):
+        return ["[continuity] continuity_check.py 不存在"], []
+    try:
+        result = subprocess.run(
+            [sys.executable, cont_path, "--json", f"--root={root}"],
+            capture_output=True, text=True, timeout=30)
+        if result.stdout:
+            data = json.loads(result.stdout)
+            return data.get("errors", []), data.get("warnings", [])
+        # 无 stdout 输出 — 子进程崩溃或未正确输出 JSON
+        err_msg = (f"[continuity] 子进程返回码 {result.returncode}，"
+                   f"无 stdout。stderr: {result.stderr.strip()[:200]}")
+        return [err_msg], []
+    except subprocess.TimeoutExpired:
+        return ["[continuity] 子进程运行超时（>30s）"], []
+    except json.JSONDecodeError as e:
+        return [f"[continuity] 子进程输出非 JSON: {e}"], []
+    except Exception as e:
+        return [f"[continuity] 运行异常: {e}"], []
+
+
+def run_http_validator(root):
+    """调用 http_link_validator.py 进行联网 HTTP 校验（第二道门禁）。
+
+    仅在 --online 时调用。返回 JSON 报告或 None（失败时）。
+    """
+    import subprocess
+    quality_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               "..", "quality")
+    validator = os.path.join(quality_dir, "http_link_validator.py")
+    if not os.path.exists(validator):
+        sys.stderr.write("[门禁] http_link_validator.py 不存在\n")
+        return None
+
+    tmp_json = os.path.join(root, "maintenance", "state", "http_validation.json")
+    os.makedirs(os.path.dirname(tmp_json), exist_ok=True)
+
+    try:
+        result = subprocess.run(
+            [sys.executable, validator, "--json-file", tmp_json, "--root", root],
+            capture_output=True, text=True, timeout=600,
+            cwd=root)
+        if os.path.exists(tmp_json):
+            with open(tmp_json, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except subprocess.TimeoutExpired:
+        sys.stderr.write("[门禁] HTTP 校验超时\n")
+    except Exception as e:  # noqa: BLE001
+        sys.stderr.write(f"[门禁] HTTP 校验异常: {e}\n")
+    return None
+
+
 def main():
     args = sys.argv[1:]
     as_json = "--json" in args
+    online = "--online" in args  # 联网 HTTP 校验（第二道门禁）
     json_file = None
     root = None
     for a in args:
@@ -440,6 +502,7 @@ def main():
         di_err, di_warn = check_duplicate_ids(root)
         en_err, en_warn = check_encoding(root)
         df_err, df_warn = check_duplicate_filenames(root)
+        ct_err, ct_warn = check_continuity(root)       # 连续性校验
 
         basic = {
             "frontmatter":  {"errors": fm_err, "warns": fm_warn},
@@ -448,11 +511,14 @@ def main():
             "duplicate_ids": {"errors": di_err, "warns": di_warn},
             "encoding":     {"errors": en_err, "warns": en_warn},
             "duplicate_files": {"errors": df_err, "warns": df_warn},
+            "continuity":   {"errors": ct_err, "warns": ct_warn},
         }
         basic_error_count = (len(fm_err) + len(st_err) + len(op_err)
-                             + len(di_err) + len(en_err) + len(df_err))
+                             + len(di_err) + len(en_err) + len(df_err)
+                             + len(ct_err))
         basic_warn_count = (len(fm_warn) + len(st_warn) + len(op_warn)
-                            + len(di_warn) + len(en_warn) + len(df_warn))
+                            + len(di_warn) + len(en_warn) + len(df_warn)
+                            + len(ct_warn))
         basic_pass = basic_error_count == 0
 
         # —— 核心断链校验（复用链接检查器）——
@@ -463,7 +529,21 @@ def main():
         recognized = lc.get("recognized", {})
         core_pass = len(core_broken_links) == 0
 
-        overall_pass = basic_pass and core_pass
+        # —— 联网 HTTP 校验（第二道门禁，--online 时启用）——
+        # v2 语义：PASS=成功率达标+无新增坏链  INCONCLUSIVE=无法判定太多  FAIL=新增坏链
+        online_result = None
+        online_pass = True
+        online_verdict = "PASS"  # 未启用 --online 时默认 PASS
+        if online:
+            online_result = run_http_validator(root)
+            if online_result:
+                online_verdict = online_result.get("verdict", "PASS")
+                online_pass = (online_verdict == "PASS")
+            else:
+                online_verdict = "ERROR"
+                online_pass = False
+
+        overall_pass = basic_pass and core_pass and online_pass
 
         # 范围透明度：报告必须自证「到底查了哪些文件」，
         # 否则无法判断一个 PASS 是真通过还是范围太小造成的假绿灯。
@@ -508,6 +588,16 @@ def main():
             "external_warnings": external_warnings,
         }
 
+        # 在线 HTTP 校验结果（仅 --online 时）
+        if online_result:
+            result["http_validation"] = {
+                "total_pass": online_result.get("total_pass", 0),
+                "total_broken": online_result.get("total_broken", 0),
+                "total_unknown": online_result.get("total_unknown", 0),
+                "regression": online_result.get("regression"),
+                "pass": online_pass,
+            }
+
         if as_json:
             js = safe_json(result)
             if json_file:
@@ -540,9 +630,32 @@ def main():
             print(f"[5] 重复 ID 检查    : ERROR {len(di_err)} | WARN {len(di_warn)}")
             print(f"[6] 编码检查(UTF-8) : ERROR {len(en_err)} | WARN {len(en_warn)}")
             print(f"[7] 同目录重名文件  : ERROR {len(df_err)} | WARN {len(df_warn)}")
+            print(f"[8] 连续性校验      : ERROR {len(ct_err)} | WARN {len(ct_warn)}（章名/实体/时间/金额）")
+            if online and online_result:
+                print(f"[8] 联网 HTTP 校验  : {online_verdict}"
+                      f" | PASS {online_result.get('total_pass',0)}"
+                      f" | BROKEN {online_result.get('total_broken',0)}"
+                      f" | UNKNOWN {online_result.get('total_unknown',0)}")
+            elif online:
+                print(f"[8] 联网 HTTP 校验  : 执行失败或超时")
             print("-" * 64)
-            print(f"基础校验: {'PASS ✅' if basic_pass else f'FAIL ❌ ({basic_error_count} ERROR)'}")
-            print(f"严格断链: {'PASS ✅' if core_pass else f'FAIL ❌ ({len(core_broken_links)} ERROR)'}")
+            basic_label = ("PASS ✅" if basic_pass
+                          else "FAIL ❌ ({} ERROR)".format(basic_error_count))
+            print(f"基础校验: {basic_label}")
+            core_label = ("PASS ✅" if core_pass
+                          else "FAIL ❌ ({} ERROR)".format(len(core_broken_links)))
+            print(f"严格断链: {core_label}")
+            if online and online_result:
+                verdict_display = {
+                    "PASS": "PASS ✅",
+                    "FAIL": "FAIL ❌ ({} 新增坏链)".format(
+                        len(online_result.get("new_broken", []))),
+                    "INCONCLUSIVE": "⚠️ INCONCLUSIVE (UNKNOWN {}%)".format(
+                        int(online_result.get("unknown_ratio", 0) * 100)),
+                    "ERROR": "❌ 执行失败",
+                }
+                online_label = verdict_display.get(online_verdict, str(online_verdict))
+                print(f"联网校验: {online_label}")
             print(f"外部警告: {len(external_warnings)} 条（仅供参考，不阻断）")
             print(f"单独识别: {recognized}")
             if not basic_pass:
