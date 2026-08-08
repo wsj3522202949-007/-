@@ -668,28 +668,34 @@ def scan_chapter_dir(chapters_dir, label=None):
     rel = label or os.path.basename(chapters_dir) or chapters_dir
     whitelist = load_oral_tic_whitelist(chapters_dir)
 
+    # —— 跨章重复（四类粒度归并为一条 ERROR；细分清单见 生成清债清单.py）——
     dups = find_cross_chapter_duplicates(chapters_dir)
-    if dups:
-        errors.append(f"跨章重复段落(≥30字,≥80%相似) {len(dups)} 处: {rel}/")
-
     exact = find_exact_duplicate_paras(chapters_dir)
-    if exact:
-        top = "；".join(f"“{d['para']}”×{d['count']}章" for d in exact[:5])
-        errors.append(f"跨章完全重复段落 {len(exact)} 个（示例: {top}）: {rel}/")
-
     phrases = find_repeated_phrases(chapters_dir, whitelist=whitelist)
-    if phrases:
-        top = "；".join(f"“{d['phrase']}”×{d['count']}章" for d in phrases[:5])
-        errors.append(
-            f"重复短语(≥12字/≥2章) {len(phrases)} 个（示例: {top}）: {rel}/"
-            + (" [口头禅白名单已豁免部分]" if whitelist else ""))
-
     seqs = find_duplicate_sequences(chapters_dir)
+    rep_parts = []
+    if exact:
+        rep_parts.append(f"完全重复段落{len(exact)}")
+    if phrases:
+        rep_parts.append(f"重复短语{len(phrases)}")
     if seqs:
-        top = "；".join(f"“{d['sequence'][:34]}…”×{d['count']}章" for d in seqs[:5])
+        rep_parts.append(f"序列重复{len(seqs)}")
+    if dups:
+        rep_parts.append(f"段落重复(≥30字/80%){len(dups)}")
+    if rep_parts:
+        examples = []
+        for d in exact[:2]:
+            examples.append(f"“{d['para']}”×{d['count']}章")
+        for d in seqs[:2]:
+            examples.append(f"“{d['sequence'][:30]}…”×{d['count']}章")
+        if not examples and dups:
+            d = dups[0]
+            examples.append(f"“{d['para_a']}”↔“{d['para_b']}”")
         errors.append(
-            f"段落序列重复(连续{seqs[0] and 3}段/≥20字/≥2章) {len(seqs)} 个"
-            f"（示例: {top}）: {rel}/")
+            f"跨章重复共 {'、'.join(rep_parts)}"
+            + (f"（示例: {'；'.join(examples)}）" if examples else "")
+            + f": {rel}/"
+            + (" [口头禅白名单已豁免部分]" if whitelist else ""))
 
     near = find_near_duplicate_paras(chapters_dir)
     if near:
