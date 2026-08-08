@@ -598,8 +598,9 @@ def run_continuity_check(root=None):
     book_dir = _find_book_dir(project_dir)
 
     if book_dir is None:
-        return {'errors': ['[ledger] 未找到项目目录（无 continuity_ledger.yaml）'],
-                'warnings': []}
+        # 无账本项目 = 合法空状态（projects/ 下无小说项目），不是错误。
+        return {'errors': [], 'warnings': [],
+                'note': '无连续性账本项目（continuity_ledger.yaml），跳过'}
 
     chapters_dir = os.path.join(book_dir, 'chapters')
 

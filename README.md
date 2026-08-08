@@ -30,11 +30,7 @@ see_also:
 
 > 高频动作直接放这里，点一下就干活。
 
-- [▶ 写下一章 · （已删除项目）（第11章）](ai/workflows/章节生产.md) → [当前章：第011章 注册公司](projects/（已删除项目）/chapters/第011章-注册公司.md)
-- [✎ 修改章节 · （已删除项目）](ai/workflows/改稿流程.md)
 - [▶ 写下一章 · 小说创作（章节5-10）](projects/小说创作/章节5-10.md)
-- [▶ 写下一章 · （已删除项目）（第3章）](projects/（已删除项目）/chapters/第003章-第一桶金.md)
-- [🧪 前三章体检 · （已删除项目）](methods/templates/02_前3章签约体检表.md)
 - [✅ 跑全库校验](tools/scripts/validation/run_all.py)
 
 ---
@@ -43,19 +39,15 @@ see_also:
 
 | 项目 | 类型 / 平台 | 进度 | 入口 |
 |---|---|---|---|
-| [（已删除项目）](projects/（已删除项目）/README.md) | 男频 · 都市重生+系统流 · 番茄 | 37%（第11/30章 · 约2.6万字正文） | [README](projects/（已删除项目）/README.md) · [STATUS](projects/（已删除项目）/STATUS.md) · [当前章](projects/（已删除项目）/chapters/第011章-注册公司.md) |
 | [小说创作](projects/小说创作/README.md) | 日常写作练习 | 构思中 | [README](projects/小说创作/README.md) · [选题](projects/小说创作/选题分析.md) · [大纲](projects/小说创作/大纲.md) · [成稿](projects/小说创作/章节5-10.md) |
-| [（已删除项目）](projects/（已删除项目）/README.md) | 男频 · 都市脑洞 · 番茄 | 第3章 | [README](projects/（已删除项目）/README.md) · [第003章](projects/（已删除项目）/chapters/第003章-第一桶金.md) |
 
-> 完整项目清单见 [projects/README.md](projects/README.md)。（【示范】神瞳鉴宝 / 重逢有期 / （已删除项目） 为模板示范，非活跃创作。）
+> 完整项目清单见 [projects/README.md](projects/README.md)。
 
 ---
 
 ## 🖊️ 当前章节
 
-- **（已删除项目）** → [第011章 注册公司](projects/（已删除项目）/chapters/第011章-注册公司.md)
 - **小说创作** → [章节5-10（最新成稿）](projects/小说创作/章节5-10.md)
-- **（已删除项目）** → [第003章 第一桶金](projects/（已删除项目）/chapters/第003章-第一桶金.md)
 
 ---
 
@@ -128,7 +120,7 @@ SORT file.mtime DESC LIMIT 15
 
 **最近校验结果**：脚本产物（非笔记元数据），请运行 [run_all.py](tools/scripts/validation/run_all.py) 获取；最近一次：PASS（0 ERROR / 0 WARN，2026-08-04）。
 
-**本周字数目标**：填写与追踪在 [目标级联系统](goals/README.md)（vision → yearly → monthly → weekly → daily）；各书总目标见其 [STATUS](projects/（已删除项目）/STATUS.md)。
+**本周字数目标**：填写与追踪在 [目标级联系统](goals/README.md)（vision → yearly → monthly → weekly → daily）。
 
 ---
 
